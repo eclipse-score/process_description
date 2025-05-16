@@ -51,5 +51,5 @@ bazel_dep(name = "score_python_basics", version = "0.3.0")
 
 # Checker rule for CopyRight checks/fixes
 bazel_dep(name = "score_cr_checker", version = "0.2.2")
-bazel_dep(name = "score_docs_as_code", version = "0.2.1")
+bazel_dep(name = "score_docs_as_code", version = "0.2.2")
 bazel_dep(name = "score_format_checker", version = "0.1.1")

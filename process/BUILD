@@ -24,7 +24,15 @@ docs(
     conf_dir = "process",  # Where 'conf.py' is
     docs_targets = [
         {
-            "suffix": "",  # local build without any dependencies on external needs
+            "suffix": "",  # latest main branch documentation build
+            "external_needs_info": [
+                {
+                    "base_url": "https://eclipse-score.github.io/score/main",
+                    "json_url": "https://eclipse-score.github.io/score/main/needs.json",
+                    "version": "0.1",
+                    "id_prefix": "score_",
+                },
+            ],
         },
     ],
     source_dir = "process",  # Where the RST files are located
