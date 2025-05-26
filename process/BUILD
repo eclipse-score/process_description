@@ -24,12 +24,22 @@ docs(
     conf_dir = "process",  # Where 'conf.py' is
     docs_targets = [
         {
-            "suffix": "",  # latest main branch documentation build
+            "suffix": "latest",  # latest main branch documentation build
             "external_needs_info": [
                 {
-                    "base_url": "https://eclipse-score.github.io/score/main",
+                    "base_url": "https://eclipse-score.github.io/score/main/",
                     "json_url": "https://eclipse-score.github.io/score/main/needs.json",
-                    "version": "0.1",
+                    "id_prefix": "score_",
+                },
+            ],
+        },
+        {
+            "suffix": "release",  # The version imported from MODULE.bazel
+            "target": ["@score_platform//docs:docs_needs"],
+            "external_needs_info": [
+                {
+                    "base_url": "https://eclipse-score.github.io/score/main/",
+                    "json_path": "/score_platform~/docs/docs_needs/_build/needs/needs.json",
                     "id_prefix": "score_",
                 },
             ],
