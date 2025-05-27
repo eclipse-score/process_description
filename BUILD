@@ -1,3 +1,5 @@
+load("@score_cr_checker//:cr_checker.bzl", "copyright_checker")
+
 # *******************************************************************************
 # Copyright (c) 2025 Contributors to the Eclipse Foundation
 #
@@ -12,7 +14,21 @@
 # *******************************************************************************
 load("@score_format_checker//:macros.bzl", "use_format_targets")
 
+package(default_visibility = ["//visibility:public"])
+
 # Enables formatting targets
 #'bazel test //:format.check'
 #'bazel run //:format.fix'
 use_format_targets()
+
+copyright_checker(
+    name = "copyright",
+    srcs = [
+        "process",
+        "//:BUILD",
+        "//:MODULE.bazel",
+    ],
+    config = "@score_cr_checker//resources:config",
+    template = "@score_cr_checker//resources:templates",
+    visibility = ["//visibility:public"],
+)

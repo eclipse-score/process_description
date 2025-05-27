@@ -55,3 +55,10 @@ bazel test //:format.test
 bazel run //:format.fix
 ```
 
+#### Find & fix missing copyright
+
+```bash
+bazel test //:copyright.test
+bazel run //:copyright.fix
+```
+
