@@ -22,6 +22,6 @@ Getting Started
 In case you are appointed as a :need:`Technical Lead <rl__technical_lead>` by the :need:`rl__project_lead` in the S-CORE project:
 
 * On platform level, process community already provided a draft documentation management plan,
-  see :need:`SCORE_doc__documentation_mgt_plan`, just set it to "valid"
+  see `REPLACE_doc__documentation_mgt_plan`, just set it to "valid"
 * On module level, create a documentation management plan using the platform one as a template
 * On both levels: make sure only the documents in your scope appear in the documents list within the plan

@@ -106,8 +106,8 @@ Based on this template the feature architecture shall describe the concept of th
 
 For this step following guidances are available:
 
-* :need:`Branch Naming Conventions <SCORE_doc__naming_conventions>`
-* :need:`Git Guidelines <SCORE_doc__git_coding_guidelines>`
+* `Branch Naming Conventions <REPLACE_doc__naming_conventions>`
+* `Git Guidelines <REPLACE_doc__git_coding_guidelines>`
 * :need:`[[title]] Feature Architecture <gd_temp__arch__feature>`
 
 .. _model_feature_architecture:
@@ -178,8 +178,8 @@ Based on the *feature architecture* the concept for the *component architecture*
 
 For this step following guidances are available:
 
-* :need:`Branch Naming Conventions <SCORE_doc__naming_conventions>`
-* :need:`Git Guidelines <SCORE_doc__git_coding_guidelines>`
+* `Branch Naming Conventions <REPLACE_doc__naming_conventions>`
+* `Git Guidelines <REPLACE_doc__git_coding_guidelines>`
 * :need:`[[title]] <gd_temp__arch__comp>`
 
 .. _allocate_component_requirements:

@@ -26,7 +26,7 @@ including the requirements of the different stakeholders for the Change Manageme
 
 Key concept
 ***********
-A Change Request is the **ONLY** way to contribute (compare :need:`SCORE_doc__contr_guideline`)
+A Change Request is the **ONLY** way to contribute (compare `REPLACE_doc__contr_guideline`)
 new features or to modify the scope of existing features in the **S-CORE** project.
 As features are built-up by Components a Change Request is also needed to add new Components or
 to modify the scope of existing Components.

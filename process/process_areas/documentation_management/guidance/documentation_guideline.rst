@@ -22,7 +22,7 @@ Guideline
 
 The planning for the documents is part of the Platform Management Plan.
 
-The formal elements for documentations in S-CORE are described here: :need:`SCORE_doc__documentation_mgt_plan`.
+The formal elements for documentations in S-CORE are described here: `REPLACE_doc__documentation_mgt_plan`.
 
 For manual review of the formal elements the
 :need:`Documentation Review Checklist <gd_chklst__documentation__review>` may used.

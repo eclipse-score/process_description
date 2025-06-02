@@ -122,8 +122,8 @@ Module Workproducts List
           - <WP status (manual)>
 
         * - :need:`wp__module_sw_build_config`
-          - :need:`SCORE_doc__software_development_plan`
-          - :ndf:`copy('status', need_id='SCORE_doc__software_development_plan')`
+          - `REPLACE_doc__software_development_plan`
+          - `copy('status', need_id='REPLACE_doc__software_development_plan')`
           - <Link to issue>
           - <Link to WP>
           - <automated>

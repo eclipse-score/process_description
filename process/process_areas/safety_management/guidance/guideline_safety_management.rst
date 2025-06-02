@@ -36,10 +36,10 @@ Safety Management Guideline
    | The :need:`rl__safety_manager` on SW platform level is responsible to define a competence management for the whole platform.
    | Expectation is that the safety competence of the persons nominated for the roles is already given and only has to be checked.
    | The exception from this are the committers, for these no safety competence needs to be enforced.
-   | So the module safety managers shall consult the :need:`SCORE_doc__platform_safety_plan` and perform accordingly in their module project.
+   | So the module safety managers shall consult the `REPLACE_doc__platform_safety_plan` and perform accordingly in their module project.
    |
    | Communication:
-   | Development teams are interdisciplinary, so the regular (sprint) planning and review meetings enable communication (as defined in :need:`SCORE_doc__project_mgt_plan`). Another main communication means are the Pull Request reviews.
+   | Development teams are interdisciplinary, so the regular (sprint) planning and review meetings enable communication (as defined in `REPLACE_doc__project_mgt_plan`). Another main communication means are the Pull Request reviews.
    | Also the standard Eclipse Foundation communication strategies are used (e.g. mailing lists)
    |
    | Safety anomalies:
@@ -51,12 +51,12 @@ Safety Management Guideline
    |
    | **Tailoring safety activities:**
    | Main tailoring driver is that the SW platform is pure SW development and is provided as "SEooC" - this explains mainly the generic, platform wide tailoring.
-   | Tailoring is done for the whole SW platform by defining only the relevant work products and an argumentation why the others are not needed in :ref:`standard_iso26262` and :need:`SCORE_doc__platform_safety_plan`.
+   | Tailoring is done for the whole SW platform by defining only the relevant work products and an argumentation why the others are not needed in :ref:`standard_iso26262` and `REPLACE_doc__platform_safety_plan`.
    | But there may be also additional tailoring for each module SEooC development to restrict further the work products. This is documented in every feature safety plan. Here the usage of already existing components is the main tailoring driver.
    |
    | **Planning safety activities:**
    | In the safety plan the nomination of the safety manager and the project manager is documented.
-   | The planning of safety activities is done using issues in the :need:`wp__issue_track_system` as specified in the :need:`SCORE_doc__project_mgt_plan`
+   | The planning of safety activities is done using issues in the :need:`wp__issue_track_system` as specified in the `REPLACE_doc__project_mgt_plan`
    | It contains for each issue
    | * objective - as part of the issue description
    | * dependencies on other activities or information - by links to the respective issues
