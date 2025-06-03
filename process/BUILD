@@ -21,14 +21,14 @@ load("@score_docs_as_code//:docs.bzl", "docs")
 # - `process:docs` for building documentation at build-time
 
 docs(
-    conf_dir="process",  # Where 'conf.py' is
-    docs_targets=[
+    conf_dir = "process",  # Where 'conf.py' is
+    docs_targets = [
         {
             "suffix": "latest",  # latest main branch documentation build
         },
     ],
-    source_dir="process",  # Where the RST files are located
-    source_files_to_scan_for_needs_links=[
+    source_dir = "process",  # Where the RST files are located
+    source_files_to_scan_for_needs_links = [
         # Note: you can add filegroups, globs, or entire targets here.
     ],
 )
