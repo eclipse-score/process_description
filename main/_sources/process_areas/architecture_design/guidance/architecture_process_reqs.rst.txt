@@ -105,7 +105,7 @@ Attributes of Architectural Elements
       * last part of the feature tree
       * keyword describing the content of the requirement.
 
-   The naming convention is defined here: :need:`SCORE_doc__naming_conventions`
+   The naming convention is defined here: `REPLACE_doc__naming_conventions`
 
 .. gd_req:: Architecture attribute: security
    :id: gd_req__arch_attr_security

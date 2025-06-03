@@ -31,7 +31,7 @@ Problem status
 [“open”, “in review”, “in implementation”, “closed”, “rejected”]
 
 If possible, use for problem status the properties of the selected Issue Tracking System
-(for implementation see here :need:`SCORE_doc__platform_problem_resolution_plan`)
+(for implementation see here `REPLACE_doc__platform_problem_resolution_plan`)
 
 | (to be filled out during :need:`wf__problem__create_pr`)
 | (to be updated during :need:`wf__problem__analyse_pr`)
@@ -42,7 +42,7 @@ Problem submitter
 [Who is the reporter of the problem?]
 
 If possible, use for problem submitter the properties of the selected Issue Tracking System
-(for implementation see here :need:`SCORE_doc__platform_problem_resolution_plan`)
+(for implementation see here `REPLACE_doc__platform_problem_resolution_plan`)
 
 (to be filled out during :need:`wf__problem__create_pr`)
 
@@ -83,7 +83,7 @@ Problem stakeholder
 Add affected feature, if possible
 
 If possible, use for problem stakeholder the properties of the selected Issue Tracking System
-(see implementation here :need:`SCORE_doc__platform_problem_resolution_plan`)
+(see implementation here `REPLACE_doc__platform_problem_resolution_plan`)
 
 (to be filled out during :need:`wf__problem__create_pr`)
 
@@ -106,7 +106,7 @@ Bug:
 Safety, Security, Quality: Additional qualifier to highlight, if safety, security or quality is affected
 
 If possible, use for problem category the properties of the selected Issue Tracking System
-(for implementation see here :need:`SCORE_doc__platform_problem_resolution_plan`)
+(for implementation see here `REPLACE_doc__platform_problem_resolution_plan`)
 
 (to be filled out during :need:`wf__problem__create_pr`)
 
@@ -145,7 +145,7 @@ Problem expected closure date
 [Milestone when the problem should be resolved]
 
 If possible, use for problem closure date the properties of the selected Issue Tracking System
-(for implementation see here :need:`SCORE_doc__platform_problem_resolution_plan`)
+(for implementation see here `REPLACE_doc__platform_problem_resolution_plan`)
 
 (to be filled out during :need:`wf__problem__create_pr`)
 

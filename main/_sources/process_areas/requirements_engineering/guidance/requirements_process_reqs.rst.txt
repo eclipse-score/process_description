@@ -52,7 +52,7 @@ Process Requirement Attributes
       * last part of the feature tree
       * keyword describing the content of the requirement.
 
-   The naming convention is defined here: :need:`SCORE_doc__naming_conventions`
+   The naming convention is defined here: `REPLACE_doc__naming_conventions`
 
 .. gd_req:: Requirement attribute: title
    :id: gd_req__requirements_attr_title

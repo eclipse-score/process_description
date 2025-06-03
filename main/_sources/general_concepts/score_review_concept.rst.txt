@@ -60,7 +60,7 @@ In this project there are inspections on the following work products, which are 
         * - :need:`wp__sw_implementation`
           - :need:`gd_chklst__impl_inspection_checklist`
 
-Note that for testcases on unit, component and feature level (as defined in :need:`SCORE_doc__verification_plan`)
+Note that for testcases on unit, component and feature level (as defined in `REPLACE_doc__verification_plan`)
 also a review checklist is provided for guidance, but no formal inspection is required. The same is true for Safety Analysis and DFA.
 The independence of testing respectively of test case review is covered by the use of GitHub also for the review of test cases.
 Which means that at least the test case definition or the test case review is performed by
@@ -83,7 +83,7 @@ based on the CODEOWNER(s) definition of the modified files. In case the fixing o
 between reviewer(s) and author, the safety manager or quality manager can be added to the review to moderate a solution.
 
 The initial step for requirements and architecture is the (informal) GitHub review on every Pull-Request
-(resp. Change Request, see :need:`SCORE_doc__contr_guideline`)
+(resp. Change Request, see `REPLACE_doc__contr_guideline`)
 which creates or modifies one of these work products (subject to inspection).
 After this review the work products are in status "valid", which means they can be used for further development and verification steps.
 In this review the checklist entries shall be considered which are tagged as "incremental".

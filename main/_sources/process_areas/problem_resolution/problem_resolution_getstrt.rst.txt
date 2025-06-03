@@ -24,5 +24,5 @@ In case you want to report a Problem to **S-CORE** consider to:
 
 * Create your Problem Report according to :need:`wf__problem__create_pr`
 * Make familiar with the development and supporting process descriptions in :ref:`process_description`
-* Make familiar with the relevant sections of the :need:`Platform Management Plan <SCORE_doc__platform_mgt_plan>`, here especially with :need:`Problem Resolution Plan <SCORE_doc__platform_problem_resolution_plan>`
+* Make familiar with the relevant sections of the `Platform Management Plan <REPLACE_doc__platform_mgt_plan>`, here especially with `Problem Resolution Plan <REPLACE_doc__platform_problem_resolution_plan>`
 * In case of any questions, contact the :need:`Technical Lead <rl__technical_lead>` for your problem to establish reporting and planning

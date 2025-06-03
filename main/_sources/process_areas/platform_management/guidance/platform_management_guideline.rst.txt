@@ -25,7 +25,7 @@ This document describes the general guidances for Platform Management based on t
 General Hints
 =============
 
-The detailed implementation of the Platform Management Plan for **S-CORE** is described in the :need:`[[title]]<SCORE_doc__platform_mgt_plan>`.
+The detailed implementation of the Platform Management Plan for **S-CORE** is described in the `[[title]]<REPLACE_doc__platform_mgt_plan>`.
 
 An iterative and incremental development model shall be used.
 
