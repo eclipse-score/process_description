@@ -1,0 +1,115 @@
+..
+   # *******************************************************************************
+   # Copyright (c) 2025 Contributors to the Eclipse Foundation
+   #
+   # See the NOTICE file(s) distributed with this work for additional
+   # information regarding copyright ownership.
+   #
+   # This program and the accompanying materials are made available under the
+   # terms of the Apache License Version 2.0 which is available at
+   # https://www.apache.org/licenses/LICENSE-2.0
+   #
+   # SPDX-License-Identifier: Apache-2.0
+   # *******************************************************************************
+.. _external_tsf:
+
+Trustable
+=========
+
+
+*The* `Trustable Software Framework (TSF) <https://codethinklabs.gitlab.io/trustable/trustable/index.html>`_
+*approach is designed for consideration of software where factors such as safety, security,
+performance, availability and reliability are considered critical. Broadly we assert that any
+consideration of trust must be based on evidence.*
+
+You can copy the folder and use this as a template to measure your OSS project trust.
+Link your evidences to the Trustable Assertions (TA) and update the content of the
+Tenets and Assertions according your project and evidences.
+
+Especially replace "XYZ" software or SW with the name of your project, e.g.
+"This release of S-CORE is trustable".
+
+
+.. figure:: _assets/tsf_overview.drawio.svg
+  :width: 100%
+  :align: center
+  :alt: TSF Overview
+
+  TSF Overview
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Contents:
+
+   tenets/tenets
+   assertions/assertions
+
+.. tsf:: TRUSTABLE SOFTWARE
+   :id: tsf__trust__trustable-software
+   :status: valid
+   :links: tenet__trust__tt-changes, tenet__trust__tt-confidence, tenet__trust__tt-construction, tenet__trust__tt-expectations, tenet__trust__tt-provenance, tenet__trust__tt-results
+
+    This release of XYZ is Trustable.
+
+    Trustability of the release is based on aggregation of the evidence from all
+    of the Trustable Tenets and Trustable Assertions.
+    The algorithm for aggregation may involve weighting of specific Tenets or
+    Assertions based on project priorities or experience.
+
+The graphs below presents statistics:
+
+.. needpie:: My trustable pie chart
+   :labels: tsf, tenet, assertion
+
+   type == 'tsf'
+   type == 'tenet'
+   type == 'assertion'
+
+.. needpie:: Tenet status
+   :labels: valid, draft
+
+   type == 'tenet' and status == 'valid'
+   type == 'tenet' and status == 'draft'
+
+.. needpie:: Assertion status
+   :labels: valid, draft
+
+   type == 'assertion' and status == 'valid'
+   type == 'assertion' and status == 'draft'
+
+
+XYZ trustable overview
+----------------------
+
+.. needtable::
+   :style: table
+   :columns: title;id;status;links
+   :colwidths: 25,25,25,25
+   :sort: title
+
+   results = []
+
+   for need in needs.filter_types(["tsf"]):
+                results.append(need)
+
+.. needtable::
+   :style: table
+   :columns: title;id;status;links
+   :colwidths: 25,25,25,25
+   :sort: title
+
+   results = []
+
+   for need in needs.filter_types(["tenet"]):
+                results.append(need)
+
+.. needtable::
+   :style: table
+   :columns: title;id;status;links
+   :colwidths: 25,25,25,25
+   :sort: title
+
+   results = []
+
+   for need in needs.filter_types(["assertion"]):
+                results.append(need)
