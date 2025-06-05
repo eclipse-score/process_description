@@ -38,5 +38,5 @@ jobs:
       id-token: write
 
     with:
-      bazel-target: "//process:incremental_latest -- --github_user=${{ github.repository_owner }} --github_repo=${{ github.event.repository.name }}"
+      bazel-target: "//process:incremental_latest"
       retention-days: 3
