@@ -524,7 +524,7 @@
                   
   <section id="assertions">
 <span id="tsf-assertions"></span><h1>Assertions<a class="headerlink" href="#assertions" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-c05a856a">
+<div class="need_container docutils container" id="SNCB-415e35bf">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_assertion table" id="assertion__trust__ta-supply-chain">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -532,7 +532,7 @@
 </div>
 </td>
 <td class="head_center" colspan="2"><div class="needs_head line-block">
-<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></span></div>
+<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">draft</span></span></span></div>
 <div class="line"><span></span></div>
 <div class="line"><span></span></div>
 </div>
@@ -543,7 +543,7 @@
 </td>
 </tr>
 <tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
-<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></div>
+<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">draft</span></span></div>
 </span></span></div>
 <div class="line"><span><div class="line">links incoming: <span class="links"><span><a class="reference internal" href="../tenets/tenets.html#tenet__trust__tt-provenance" title="assertion__trust__ta-supply-chain">tenet__trust__tt-provenance</a></span></span></div>
 </span></div>
@@ -571,12 +571,22 @@ plaintext. A deeper analysis is required in TA-INPUTS to assess the impact of an
 binaries present within the repositories of the components and tools used.</p>
 <p><strong>Evidence</strong></p>
 <ul class="simple">
-<li><p>list of all XYZ components including
-* URL of mirrored projects in controlled environment
-* URL of upstream projects</p></li>
-<li><p>successful build of XYZ from source
-* without access to external source projects
-* without access to cached data</p></li>
+<li><dl class="simple">
+<dt>list of all XYZ components including</dt><dd><ul>
+<li><p>URL of mirrored projects in controlled environment</p></li>
+<li><p>URL of upstream projects</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>successful build of XYZ from source</dt><dd><ul>
+<li><p>without access to external source projects</p></li>
+<li><p>without access to cached data</p></li>
+</ul>
+</dd>
+</dl>
+</li>
 <li><p>update logs for mirrored projects</p></li>
 <li><p>mirrors reject history rewrites</p></li>
 <li><p>mirroring is configured via infrastructure under direct control</p></li>
@@ -609,7 +619,7 @@ compromised.</p>
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-138abaf7">
+<div class="need_container docutils container" id="SNCB-91c4bbf7">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_assertion table" id="assertion__trust__ta-inputs">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -617,7 +627,7 @@ compromised.</p>
 </div>
 </td>
 <td class="head_center" colspan="2"><div class="needs_head line-block">
-<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></span></div>
+<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">draft</span></span></span></div>
 <div class="line"><span></span></div>
 <div class="line"><span></span></div>
 </div>
@@ -628,7 +638,7 @@ compromised.</p>
 </td>
 </tr>
 <tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
-<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></div>
+<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">draft</span></span></div>
 </span></span></div>
 <div class="line"><span><div class="line">links incoming: <span class="links"><span><a class="reference internal" href="../tenets/tenets.html#tenet__trust__tt-provenance" title="assertion__trust__ta-inputs">tenet__trust__tt-provenance</a></span></span></div>
 </span></div>
@@ -660,28 +670,48 @@ misbehaviours or resulting impacts, and new tests or Expectations should be adde
 to prevent or detect misbehaviours or impacts that are not currently addressed.</p>
 <p><strong>Evidence</strong></p>
 <ul class="simple">
-<li><p>List of components used in construction of XYZ including
-- Indication of whether content is provided as source or binary</p></li>
-<li><p>Record of component assessment:
-* Originating project and version
-* Date of assessments and identity of assessors
-* Role of component in XYZ
-* Sources of bug and risk data for the component
-* Potential misbehaviours and risks identified and assessed</p></li>
+<li><dl class="simple">
+<dt>List of components used in construction of XYZ including</dt><dd><ul>
+<li><p>Indication of whether content is provided as source or binary</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Record of component assessment:</dt><dd><ul>
+<li><p>Originating project and version</p></li>
+<li><p>Date of assessments and identity of assessors</p></li>
+<li><p>Role of component in XYZ</p></li>
+<li><p>Sources of bug and risk data for the component</p></li>
+<li><p>Potential misbehaviours and risks identified and assessed</p></li>
+</ul>
+</dd>
+</dl>
+</li>
 <li><p>List of tools used in construction and verification</p></li>
-<li><p>Record of tool impact assessments:
-* Originating project and version of tool
-* Date of assessments and identity of assessors
-* Roles of tool in production of XYZ releases
-* Potential tool misbehaviours and impacts
-* Detectability and severity of impacts</p></li>
-<li><p>Record of tool qualification reviews
-* For high impact tools only (low detectability and/or high severity)
-* Link to impact assessment
-* Date of reviews and identity of reviewers
-* Analysis of impacts and misbehaviours
-* Existing tests or measures (e.g. manual reviews) to address these
-* Additional tests and/or Expectations required</p></li>
+<li><dl class="simple">
+<dt>Record of tool impact assessments:</dt><dd><ul>
+<li><p>Originating project and version of tool</p></li>
+<li><p>Date of assessments and identity of assessors</p></li>
+<li><p>Roles of tool in production of XYZ releases</p></li>
+<li><p>Potential tool misbehaviours and impacts</p></li>
+<li><p>Detectability and severity of impacts</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Record of tool qualification reviews</dt><dd><ul>
+<li><p>For high impact tools only (low detectability and/or high severity)</p></li>
+<li><p>Link to impact assessment</p></li>
+<li><p>Date of reviews and identity of reviewers</p></li>
+<li><p>Analysis of impacts and misbehaviours</p></li>
+<li><p>Existing tests or measures (e.g. manual reviews) to address these</p></li>
+<li><p>Additional tests and/or Expectations required</p></li>
+</ul>
+</dd>
+</dl>
+</li>
 </ul>
 <p><strong>Confidence scoring</strong></p>
 <p>Confidence scoring for TA-INPUTS is based on the set of components and tools
@@ -720,7 +750,7 @@ and impact for XYZ, and the sources of risk and issue data identified.</p>
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-4b75bfbb">
+<div class="need_container docutils container" id="SNCB-cd4132e8">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_assertion table" id="assertion__trust__ta-tests">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -728,7 +758,7 @@ and impact for XYZ, and the sources of risk and issue data identified.</p>
 </div>
 </td>
 <td class="head_center" colspan="2"><div class="needs_head line-block">
-<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></span></div>
+<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">draft</span></span></span></div>
 <div class="line"><span></span></div>
 <div class="line"><span></span></div>
 </div>
@@ -739,7 +769,7 @@ and impact for XYZ, and the sources of risk and issue data identified.</p>
 </td>
 </tr>
 <tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
-<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></div>
+<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">draft</span></span></div>
 </span></span></div>
 <div class="line"><span><div class="line">links incoming: <span class="links"><span><a class="reference internal" href="../tenets/tenets.html#tenet__trust__tt-construction" title="assertion__trust__ta-tests">tenet__trust__tt-construction</a></span></span></div>
 </span></div>
@@ -755,9 +785,14 @@ controlled/mirrored sources and are reproducible, with any exceptions documented
 <li><p>have implemented all of the tests specified in TA-BEHAVIOURS</p></li>
 <li><p>have implemented fault inductions specified in TA-MISBEHAVIOURS</p></li>
 <li><p>have implemented or integrated test tooling and environments for these</p></li>
-<li><p>can demonstrate that all of these are constructed from:</p></li>
+<li><dl class="simple">
+<dt>can demonstrate that all of these are constructed from:</dt><dd><ul>
 <li><p>change-managed sources (see TA-UPDATES)</p></li>
 <li><p>mirrored sources (see TA-SUPPLY_CHAIN)</p></li>
+</ul>
+</dd>
+</dl>
+</li>
 </ul>
 <p>All of the above must ensure that test results are retroactively reproducible,
 which is easily achieved through automated end-to-end test execution alongside
@@ -802,7 +837,7 @@ under our control?</p></li>
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-a27c0b90">
+<div class="need_container docutils container" id="SNCB-2a0add96">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_assertion table" id="assertion__trust__ta-releases">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -810,7 +845,7 @@ under our control?</p></li>
 </div>
 </td>
 <td class="head_center" colspan="2"><div class="needs_head line-block">
-<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></span></div>
+<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">draft</span></span></span></div>
 <div class="line"><span></span></div>
 <div class="line"><span></span></div>
 </div>
@@ -821,7 +856,7 @@ under our control?</p></li>
 </td>
 </tr>
 <tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
-<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></div>
+<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">draft</span></span></div>
 </span></span></div>
 <div class="line"><span><div class="line">links incoming: <span class="links"><span><a class="reference internal" href="../tenets/tenets.html#tenet__trust__tt-construction" title="assertion__trust__ta-releases">tenet__trust__tt-construction</a></span></span></div>
 </span></div>
@@ -898,7 +933,7 @@ control?</p></li>
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-c0d0638b">
+<div class="need_container docutils container" id="SNCB-c1151544">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_assertion table" id="assertion__trust__ta-iterations">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -906,7 +941,7 @@ control?</p></li>
 </div>
 </td>
 <td class="head_center" colspan="2"><div class="needs_head line-block">
-<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></span></div>
+<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">draft</span></span></span></div>
 <div class="line"><span></span></div>
 <div class="line"><span></span></div>
 </div>
@@ -917,7 +952,7 @@ control?</p></li>
 </td>
 </tr>
 <tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
-<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></div>
+<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">draft</span></span></div>
 </span></span></div>
 <div class="line"><span><div class="line">links incoming: <span class="links"><span><a class="reference internal" href="../tenets/tenets.html#tenet__trust__tt-construction" title="assertion__trust__ta-iterations">tenet__trust__tt-construction</a></span></span></div>
 </span></div>
@@ -937,12 +972,17 @@ that:</p>
 </ul>
 <p><strong>Evidence</strong></p>
 <ul class="simple">
-<li><p>list of components with source
-* source code
-* build instructions
-* test code
-* test results summary
-* attestations</p></li>
+<li><dl class="simple">
+<dt>list of components with source</dt><dd><ul>
+<li><p>source code</p></li>
+<li><p>build instructions</p></li>
+<li><p>test code</p></li>
+<li><p>test results summary</p></li>
+<li><p>attestations</p></li>
+</ul>
+</dd>
+</dl>
+</li>
 <li><dl class="simple">
 <dt>list of components where source code is not available</dt><dd><ul>
 <li><p>risk analysis</p></li>
@@ -983,7 +1023,7 @@ that:</p>
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-617344cd">
+<div class="need_container docutils container" id="SNCB-5450f0d4">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_assertion table" id="assertion__trust__ta-fixes">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -991,7 +1031,7 @@ that:</p>
 </div>
 </td>
 <td class="head_center" colspan="2"><div class="needs_head line-block">
-<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></span></div>
+<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">draft</span></span></span></div>
 <div class="line"><span></span></div>
 <div class="line"><span></span></div>
 </div>
@@ -1002,7 +1042,7 @@ that:</p>
 </td>
 </tr>
 <tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
-<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></div>
+<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">draft</span></span></div>
 </span></span></div>
 <div class="line"><span><div class="line">links incoming: <span class="links"><span><a class="reference internal" href="../tenets/tenets.html#tenet__trust__tt-changes" title="assertion__trust__ta-fixes">tenet__trust__tt-changes</a></span></span></div>
 </span></div>
@@ -1086,7 +1126,7 @@ However we need to weigh the cost/benefit of this work, taking into account</p>
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-774d39ff">
+<div class="need_container docutils container" id="SNCB-0c46a6ff">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_assertion table" id="assertion__trust__ta-updates">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1094,7 +1134,7 @@ However we need to weigh the cost/benefit of this work, taking into account</p>
 </div>
 </td>
 <td class="head_center" colspan="2"><div class="needs_head line-block">
-<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></span></div>
+<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">draft</span></span></span></div>
 <div class="line"><span></span></div>
 <div class="line"><span></span></div>
 </div>
@@ -1105,7 +1145,7 @@ However we need to weigh the cost/benefit of this work, taking into account</p>
 </td>
 </tr>
 <tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
-<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></div>
+<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">draft</span></span></div>
 </span></span></div>
 <div class="line"><span><div class="line">links incoming: <span class="links"><span><a class="reference internal" href="../tenets/tenets.html#tenet__trust__tt-changes" title="assertion__trust__ta-updates">tenet__trust__tt-changes</a></span></span></div>
 </span></div>
@@ -1151,7 +1191,7 @@ dependencies.</p>
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-cb8e78ae">
+<div class="need_container docutils container" id="SNCB-3dd23ddd">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_assertion table" id="assertion__trust__ta-behaviours">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1159,7 +1199,7 @@ dependencies.</p>
 </div>
 </td>
 <td class="head_center" colspan="2"><div class="needs_head line-block">
-<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></span></div>
+<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">draft</span></span></span></div>
 <div class="line"><span></span></div>
 <div class="line"><span></span></div>
 </div>
@@ -1170,7 +1210,7 @@ dependencies.</p>
 </td>
 </tr>
 <tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
-<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></div>
+<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">draft</span></span></div>
 </span></span></div>
 <div class="line"><span><div class="line">links incoming: <span class="links"><span><a class="reference internal" href="../tenets/tenets.html#tenet__trust__tt-expectations" title="assertion__trust__ta-behaviours">tenet__trust__tt-expectations</a></span></span></div>
 </span></div>
@@ -1238,7 +1278,7 @@ strategies.</p>
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-debfdba0">
+<div class="need_container docutils container" id="SNCB-6585a7e2">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_assertion table" id="assertion__trust__ta-misbehaviours">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1246,7 +1286,7 @@ strategies.</p>
 </div>
 </td>
 <td class="head_center" colspan="2"><div class="needs_head line-block">
-<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></span></div>
+<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">draft</span></span></span></div>
 <div class="line"><span></span></div>
 <div class="line"><span></span></div>
 </div>
@@ -1257,7 +1297,7 @@ strategies.</p>
 </td>
 </tr>
 <tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
-<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></div>
+<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">draft</span></span></div>
 </span></span></div>
 <div class="line"><span><div class="line">links incoming: <span class="links"><span><a class="reference internal" href="../tenets/tenets.html#tenet__trust__tt-expectations" title="assertion__trust__ta-misbehaviours">tenet__trust__tt-expectations</a></span></span></div>
 </span></div>
@@ -1319,7 +1359,7 @@ intentionally misinterpreting or liberally interpreting them in a test
 environment. For example, we could consider testing XYZ on different pieces of
 hardware that satisfy its assumptions of use.</p></li>
 </ul>
-<p>Remember that a Misbehaviour is _anything_ that could lead to a deviation from
+<p>Remember that a Misbehaviour is <em>anything</em> that could lead to a deviation from
 Expected Behaviour. The specific technologies in and applications of XYZ should
 always be considered in addition to the guidance above.</p>
 <p><strong>Suggested evidence</strong></p>
@@ -1373,7 +1413,7 @@ and do fail appropriately?</p></li>
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-c590d53e">
+<div class="need_container docutils container" id="SNCB-cc448335">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_assertion table" id="assertion__trust__ta-indicators">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1381,7 +1421,7 @@ and do fail appropriately?</p></li>
 </div>
 </td>
 <td class="head_center" colspan="2"><div class="needs_head line-block">
-<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></span></div>
+<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">draft</span></span></span></div>
 <div class="line"><span></span></div>
 <div class="line"><span></span></div>
 </div>
@@ -1392,7 +1432,7 @@ and do fail appropriately?</p></li>
 </td>
 </tr>
 <tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
-<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></div>
+<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">draft</span></span></div>
 </span></span></div>
 <div class="line"><span><div class="line">links incoming: <span class="links"><span><a class="reference internal" href="../tenets/tenets.html#tenet__trust__tt-expectations" title="assertion__trust__ta-indicators">tenet__trust__tt-expectations</a></span></span></div>
 </span></div>
@@ -1405,7 +1445,7 @@ mechanisms are specified, verified and validated based on analysis.</p>
 <p>Not all deviations from Expected Behaviour can be associated with a specific
 condition. Therefore, we must have a strategy for managing deviations that
 arise from unknown system states, process vulnerabilities or configurations.</p>
-<p>This is the role of _Advanced Warning Indicators (AWI)_. These are specific
+<p>This is the role of <em>Advanced Warning Indicators (AWI)</em>. These are specific
 metrics which correlate with deviations from Expected Behaviour and can be
 monitored in real time. The system should return to a defined known-good
 state when AWIs exceed defined tolerances.</p>
@@ -1483,7 +1523,7 @@ monitoring mechanisms have been implemented to collect the required data.</p>
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-3a2d9193">
+<div class="need_container docutils container" id="SNCB-a1a107d6">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_assertion table" id="assertion__trust__ta-constraints">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1491,7 +1531,7 @@ monitoring mechanisms have been implemented to collect the required data.</p>
 </div>
 </td>
 <td class="head_center" colspan="2"><div class="needs_head line-block">
-<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></span></div>
+<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">draft</span></span></span></div>
 <div class="line"><span></span></div>
 <div class="line"><span></span></div>
 </div>
@@ -1502,7 +1542,7 @@ monitoring mechanisms have been implemented to collect the required data.</p>
 </td>
 </tr>
 <tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
-<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></div>
+<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">draft</span></span></div>
 </span></span></div>
 <div class="line"><span><div class="line">links incoming: <span class="links"><span><a class="reference internal" href="../tenets/tenets.html#tenet__trust__tt-expectations" title="assertion__trust__ta-constraints">tenet__trust__tt-expectations</a></span></span></div>
 </span></div>
@@ -1575,7 +1615,7 @@ notified of any changes?</p></li>
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-04c085c3">
+<div class="need_container docutils container" id="SNCB-eb5cb6a7">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_assertion table" id="assertion__trust__ta-validation">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1583,7 +1623,7 @@ notified of any changes?</p></li>
 </div>
 </td>
 <td class="head_center" colspan="2"><div class="needs_head line-block">
-<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></span></div>
+<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">draft</span></span></span></div>
 <div class="line"><span></span></div>
 <div class="line"><span></span></div>
 </div>
@@ -1594,7 +1634,7 @@ notified of any changes?</p></li>
 </td>
 </tr>
 <tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
-<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></div>
+<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">draft</span></span></div>
 </span></span></div>
 <div class="line"><span><div class="line">links incoming: <span class="links"><span><a class="reference internal" href="../tenets/tenets.html#tenet__trust__tt-results" title="assertion__trust__ta-validation">tenet__trust__tt-results</a></span></span></div>
 </span></div>
@@ -1648,7 +1688,7 @@ results for all tests (both pass / fail and performance)</p>
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-bd47a582">
+<div class="need_container docutils container" id="SNCB-8a53e181">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_assertion table" id="assertion__trust__ta-data">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1656,7 +1696,7 @@ results for all tests (both pass / fail and performance)</p>
 </div>
 </td>
 <td class="head_center" colspan="2"><div class="needs_head line-block">
-<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></span></div>
+<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">draft</span></span></span></div>
 <div class="line"><span></span></div>
 <div class="line"><span></span></div>
 </div>
@@ -1667,7 +1707,7 @@ results for all tests (both pass / fail and performance)</p>
 </td>
 </tr>
 <tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
-<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></div>
+<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">draft</span></span></div>
 </span></span></div>
 <div class="line"><span><div class="line">links incoming: <span class="links"><span><a class="reference internal" href="../tenets/tenets.html#tenet__trust__tt-results" title="assertion__trust__ta-data">tenet__trust__tt-results</a></span></span></div>
 </span></div>
@@ -1723,7 +1763,7 @@ rates with targets, and analysis of spikes and trends</p>
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-9ba31504">
+<div class="need_container docutils container" id="SNCB-a63d2c1c">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_assertion table" id="assertion__trust__ta-analysis">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1731,7 +1771,7 @@ rates with targets, and analysis of spikes and trends</p>
 </div>
 </td>
 <td class="head_center" colspan="2"><div class="needs_head line-block">
-<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></span></div>
+<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">draft</span></span></span></div>
 <div class="line"><span></span></div>
 <div class="line"><span></span></div>
 </div>
@@ -1742,7 +1782,7 @@ rates with targets, and analysis of spikes and trends</p>
 </td>
 </tr>
 <tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
-<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></div>
+<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">draft</span></span></div>
 </span></span></div>
 <div class="line"><span><div class="line">links incoming: <span class="links"><span><a class="reference internal" href="../tenets/tenets.html#tenet__trust__tt-results" title="assertion__trust__ta-analysis">tenet__trust__tt-results</a></span></span></div>
 </span></div>
@@ -1808,7 +1848,7 @@ that may indicate problems in development, test, or production</p>
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-2cd5320c">
+<div class="need_container docutils container" id="SNCB-1cda4894">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_assertion table" id="assertion__trust__ta-methodologies">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1816,7 +1856,7 @@ that may indicate problems in development, test, or production</p>
 </div>
 </td>
 <td class="head_center" colspan="2"><div class="needs_head line-block">
-<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></span></div>
+<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">draft</span></span></span></div>
 <div class="line"><span></span></div>
 <div class="line"><span></span></div>
 </div>
@@ -1827,7 +1867,7 @@ that may indicate problems in development, test, or production</p>
 </td>
 </tr>
 <tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
-<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></div>
+<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">draft</span></span></div>
 </span></span></div>
 <div class="line"><span><div class="line">links incoming: <span class="links"><span><a class="reference internal" href="../tenets/tenets.html#tenet__trust__tt-confidence" title="assertion__trust__ta-methodologies">tenet__trust__tt-confidence</a></span></span></div>
 </span></div>
@@ -1888,7 +1928,7 @@ in comparison to the analysed results</p>
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-ae7b7746">
+<div class="need_container docutils container" id="SNCB-a91d9d9e">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_assertion table" id="assertion__trust__ta-confidence">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1896,7 +1936,7 @@ in comparison to the analysed results</p>
 </div>
 </td>
 <td class="head_center" colspan="2"><div class="needs_head line-block">
-<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></span></div>
+<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">draft</span></span></span></div>
 <div class="line"><span></span></div>
 <div class="line"><span></span></div>
 </div>
@@ -1907,7 +1947,7 @@ in comparison to the analysed results</p>
 </td>
 </tr>
 <tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
-<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></div>
+<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">draft</span></span></div>
 </span></span></div>
 <div class="line"><span><div class="line">links incoming: <span class="links"><span><a class="reference internal" href="../tenets/tenets.html#tenet__trust__tt-confidence" title="assertion__trust__ta-confidence">tenet__trust__tt-confidence</a></span></span></div>
 </span></div>

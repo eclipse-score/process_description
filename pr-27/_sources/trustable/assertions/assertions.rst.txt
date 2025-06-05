@@ -19,7 +19,7 @@ Assertions
 
 .. assertion:: TA-SUPPLY-CHAIN
    :id: assertion__trust__ta-supply-chain
-   :status: valid
+   :status: draft
 
    All sources for XYZ and tools are mirrored in our controlled environment
 
@@ -48,11 +48,11 @@ Assertions
    **Evidence**
 
    - list of all XYZ components including
-     * URL of mirrored projects in controlled environment
-     * URL of upstream projects
+       - URL of mirrored projects in controlled environment
+       - URL of upstream projects
    - successful build of XYZ from source
-     * without access to external source projects
-     * without access to cached data
+       - without access to external source projects
+       - without access to cached data
    - update logs for mirrored projects
    - mirrors reject history rewrites
    - mirroring is configured via infrastructure under direct control
@@ -71,10 +71,9 @@ Assertions
    - Could the content of a mirrored project be compromised by an upstream change?
    - Are mirrored projects up to date with the upstream project?
 
-
 .. assertion:: TA-INPUTS
    :id: assertion__trust__ta-inputs
-   :status: valid
+   :status: draft
 
    Components and tools used to construct and verify XYZ are assessed, to identify
    potential risks and issues
@@ -109,27 +108,27 @@ Assertions
    **Evidence**
 
    - List of components used in construction of XYZ including
-     - Indication of whether content is provided as source or binary
+       - Indication of whether content is provided as source or binary
    - Record of component assessment:
-     * Originating project and version
-     * Date of assessments and identity of assessors
-     * Role of component in XYZ
-     * Sources of bug and risk data for the component
-     * Potential misbehaviours and risks identified and assessed
+       - Originating project and version
+       - Date of assessments and identity of assessors
+       -  Role of component in XYZ
+       - Sources of bug and risk data for the component
+       -  Potential misbehaviours and risks identified and assessed
    - List of tools used in construction and verification
    - Record of tool impact assessments:
-     * Originating project and version of tool
-     * Date of assessments and identity of assessors
-     * Roles of tool in production of XYZ releases
-     * Potential tool misbehaviours and impacts
-     * Detectability and severity of impacts
+       - Originating project and version of tool
+       - Date of assessments and identity of assessors
+       - Roles of tool in production of XYZ releases
+       - Potential tool misbehaviours and impacts
+       - Detectability and severity of impacts
    - Record of tool qualification reviews
-     * For high impact tools only (low detectability and/or high severity)
-     * Link to impact assessment
-     * Date of reviews and identity of reviewers
-     * Analysis of impacts and misbehaviours
-     * Existing tests or measures (e.g. manual reviews) to address these
-     * Additional tests and/or Expectations required
+       - For high impact tools only (low detectability and/or high severity)
+       - Link to impact assessment
+       -  Date of reviews and identity of reviewers
+       - Analysis of impacts and misbehaviours
+       - Existing tests or measures (e.g. manual reviews) to address these
+       - Additional tests and/or Expectations required
 
    **Confidence scoring**
 
@@ -154,10 +153,9 @@ Assertions
    - Are tool and component tests included in release preparation?
    - Can patches be applied, and then upstreamed for long-term maintenance?
 
-
 .. assertion:: TA-TESTS
    :id: assertion__trust__ta-tests
-   :status: valid
+   :status: draft
 
    All tests for XYZ, and its build and test environments, are constructed from
    controlled/mirrored sources and are reproducible, with any exceptions documented
@@ -170,8 +168,8 @@ Assertions
    - have implemented fault inductions specified in TA-MISBEHAVIOURS
    - have implemented or integrated test tooling and environments for these
    - can demonstrate that all of these are constructed from:
-   - change-managed sources (see TA-UPDATES)
-   - mirrored sources (see TA-SUPPLY_CHAIN)
+       - change-managed sources (see TA-UPDATES)
+       - mirrored sources (see TA-SUPPLY_CHAIN)
 
    All of the above must ensure that test results are retroactively reproducible,
    which is easily achieved through automated end-to-end test execution alongside
@@ -203,10 +201,9 @@ Assertions
    - How confident are we that all of the test environments we are using are also
      under our control?
 
-
 .. assertion:: TA-RELEASES
    :id: assertion__trust__ta-releases
-   :status: valid
+   :status: draft
 
    Construction of XYZ releases is fully repeatable and the results are fully
    reproducible, with any exceptions documented and justified.
@@ -266,10 +263,9 @@ Assertions
    - How many of our components are non-reproducible?
    - How confident are we that our reproducibility check is correct?
 
-
 .. assertion:: TA-ITERATIONS
    :id: assertion__trust__ta-iterations
-   :status: valid
+   :status: draft
 
    All constructed iterations of XYZ include source code, build instructions,
    tests, results and attestations.
@@ -286,14 +282,14 @@ Assertions
    **Evidence**
 
    - list of components with source
-     * source code
-     * build instructions
-     * test code
-     * test results summary
-     * attestations
+       - source code
+       - build instructions
+       - test code
+       - test results summary
+       - attestations
    - list of components where source code is not available
-      * risk analysis
-      * attestations
+       - risk analysis
+       - attestations
 
    **Confidence scoring**
 
@@ -313,7 +309,7 @@ Assertions
 
 .. assertion:: TA-FIXES
    :id: assertion__trust__ta-fixes
-   :status: valid
+   :status: draft
 
    Known bugs or misbehaviours are analysed and triaged, and critical fixes or
    mitigations are implemented or applied.
@@ -381,10 +377,9 @@ Assertions
    - How confident are we that outstanding fixes do not impact our expectations?
    - How confident are we that outstanding fixes do not address misbehaviours?
 
-
 .. assertion:: TA-UPDATES
    :id: assertion__trust__ta-updates
-   :status: valid
+   :status: draft
 
    XYZ components, configurations and tools are updated under specified change and
    configuration management controls.
@@ -414,10 +409,9 @@ Assertions
    - Are these controls enforced for all of components, tools and configurations?
    - Are there any ways in which these controls can be subverted, and have we mitigated them?
 
-
 .. assertion:: TA-BEHAVIOURS
    :id: assertion__trust__ta-behaviours
-   :status: valid
+   :status: draft
 
    Expected or required behaviours for XYZ are identified, specified, verified and
    validated based on analysis.
@@ -469,14 +463,12 @@ Assertions
    - Is every Expectation covered by at least one implemented test?
    - Are there any Expectations where we believe more coverage would help?
 
-
 .. assertion:: TA-MISBEHAVIOURS
    :id: assertion__trust__ta-misbehaviours
-   :status: valid
+   :status: draft
 
    Prohibited misbehaviours for XYZ are identified, and mitigations are specified,
    verified and validated based on analysis.
-
 
    The goal of TA-MISBEHAVIOURS is to force engineers to think critically about their work.
    This means understanding and mitigating as many of the situations that cause the
@@ -533,7 +525,7 @@ Assertions
      environment. For example, we could consider testing XYZ on different pieces of
      hardware that satisfy its assumptions of use.
 
-   Remember that a Misbehaviour is _anything_ that could lead to a deviation from
+   Remember that a Misbehaviour is *anything* that could lead to a deviation from
    Expected Behaviour. The specific technologies in and applications of XYZ should
    always be considered in addition to the guidance above.
 
@@ -569,20 +561,18 @@ Assertions
    - Are all the fault induction results actually collected?
    - Are the results evaluated?
 
-
 .. assertion:: TA-INDICATORS
    :id: assertion__trust__ta-indicators
-   :status: valid
+   :status: draft
 
    Advance warning indicators for misbehaviours are identified, and monitoring
    mechanisms are specified, verified and validated based on analysis.
-
 
    Not all deviations from Expected Behaviour can be associated with a specific
    condition. Therefore, we must have a strategy for managing deviations that
    arise from unknown system states, process vulnerabilities or configurations.
 
-   This is the role of _Advanced Warning Indicators (AWI)_. These are specific
+   This is the role of *Advanced Warning Indicators (AWI)*. These are specific
    metrics which correlate with deviations from Expected Behaviour and can be
    monitored in real time. The system should return to a defined known-good
    state when AWIs exceed defined tolerances.
@@ -652,10 +642,9 @@ Assertions
    - If there are gaps or trends, are they analysed and addressed?
    - Is the data actually predictive/useful?
 
-
 .. assertion:: TA-CONSTRAINTS
    :id: assertion__trust__ta-constraints
-   :status: valid
+   :status: draft
 
    Constraints on adaptation and deployment of XYZ are specified.
 
@@ -713,10 +702,9 @@ Assertions
    - Do external users actively keep up with updates, and are they properly
      notified of any changes?
 
-
 .. assertion:: TA-VALIDATION
    :id: assertion__trust__ta-validation
-   :status: valid
+   :status: draft
 
    All specified tests are executed repeatedly, under defined conditions in
    controlled environments, according to specified objectives.
@@ -754,10 +742,9 @@ Assertions
    - Are the test validation strategies credible and appropriate?
    - What proportion of the implemented tests are validated?
 
-
 .. assertion:: TA-DATA
    :id: assertion__trust__ta-data
-   :status: valid
+   :status: draft
 
    Data is collected from tests, and from monitoring of deployed software,
    according to specified objectives.
@@ -796,10 +783,9 @@ Assertions
    - Is data accessible only to intended parties?
    - Are any subsets of our data being published?
 
-
 .. assertion:: TA-ANALYSIS
    :id: assertion__trust__ta-analysis
-   :status: valid
+   :status: draft
 
    Collected data from tests and monitoring of deployed software is analysed
    according to specified objectives.
@@ -849,10 +835,9 @@ Assertions
    - Do we need to check the targets?
    - Are we achieving the targets?
 
-
 .. assertion:: TA-METHODOLOGIES
    :id: assertion__trust__ta-methodologies
-   :status: valid
+   :status: draft
 
    Manual methodologies applied for XYZ by contributors, and their results, are
    managed according to specified objectives.
@@ -897,10 +882,9 @@ Assertions
    - How is the effectiveness of the process evaluated?
    - Is ongoing training required to follow these processes?
 
-
 .. assertion:: TA-CONFIDENCE
    :id: assertion__trust__ta-confidence
-   :status: valid
+   :status: draft
 
    Confidence in XYZ is measured based on results of analysis
 

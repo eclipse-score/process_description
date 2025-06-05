@@ -46,8 +46,8 @@ Especially replace "XYZ" software or SW with the name of your project, e.g.
 
 .. tsf:: TRUSTABLE SOFTWARE
    :id: tsf__trust__trustable-software
-   :status: valid
-   :links: tenet__trust__tt-changes, tenet__trust__tt-confidence, tenet__trust__tt-construction, tenet__trust__tt-expectations, tenet__trust__tt-provenance, tenet__trust__tt-results
+   :status: draft
+   :links: tenet__trust__tt-provenance, tenet__trust__tt-construction, tenet__trust__tt-changes, tenet__trust__tt-expectations, tenet__trust__tt-results, tenet__trust__tt-confidence
 
     This release of XYZ is Trustable.
 
