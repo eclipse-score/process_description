@@ -44,7 +44,7 @@ Checklist for Safety Analysis
         -
       * - REQ_01_02
         - Are the templates for DFA and/or Safety Analysis used?
-        - see :ref:`dfa_templates` / :ref:`safety_analysis_templates`
+        - see :need:`gd_temp__plat_saf_dfa` / :need:`gd_temp__feat_saf_fmea`
         - Templates are used to generate the DFA or / and Safety Analysis.
         - <yes|no>
         -

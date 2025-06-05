@@ -26,7 +26,7 @@ This document describes the general guidances for Safety Analysis based on the c
 Workflow for Safety Analysis
 ============================
 
-Detailed description which steps are need for a safety analysis. In general the workflow is shown in :need:`doc_getstrt__safety_analysis`.
+Detailed description which steps are need for a safety analysis. In general the workflow is shown in :ref:`safety_analysis_workflow_fig`
 
 #. Analyze the dependencies between features by performing a **single platform feature DFA** that references all platform feature static architecture diagrams, highlighting potential shared use of modules.
 #. To analyse the Feature Architecture a Safety Analysis and a DFA shall be executed. The resutls of the platform feature DFA shall be used as an input.
