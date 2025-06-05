@@ -455,8 +455,8 @@
 <li class="toctree-l1"><a class="reference internal" href="../../release_management/index.html">Release Management</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../requirements_engineering/index.html">Requirements Engineering</a></li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../index.html">Safety Analysis</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="../safety_analysis_concept.html">Concept Description</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../safety_analysis_getstrt.html">Getting Started</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../safety_analysis_concept.html">Concept Description</a></li>
 <li class="toctree-l2 current active has-children"><a class="reference internal" href="index.html">Guidance</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="safety_analysis_checklist.html">Checklist for Safety Analysis</a></li>
 <li class="toctree-l3"><a class="reference internal" href="dfa_failure_initiators.html">DFA failure initiators</a></li>
@@ -465,6 +465,8 @@
 <li class="toctree-l3"><a class="reference internal" href="fault_models_guideline.html">Fault Models</a></li>
 <li class="toctree-l3 current active"><a class="current reference internal" href="#">Guidelines</a></li>
 <li class="toctree-l3"><a class="reference internal" href="safety_analysis_process_reqs.html">Safety Analysis Process Requirements</a></li>
+
+
 <li class="toctree-l3"><a class="reference internal" href="safety_analysis_templates.html">Safety Analysis Templates</a></li>
 </ul>
 </details></li>
@@ -544,7 +546,7 @@
                   
   <section id="guidelines">
 <h1>Guidelines<a class="headerlink" href="#guidelines" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-1bad522d">
+<div class="need_container docutils container" id="SNCB-90e64f1a">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_guidl table" id="gd_guidl__safety_analysis">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -588,43 +590,41 @@
 </table>
 </div>
 </div>
-<p>This document describes the general guidances for Safety Analysis based on the concept which is defined <a class="reference internal" href="../safety_analysis_concept.html#doc_concept__safety__analysis" title="doc_concept__safety__analysis"><em class="xref need">Safety Analysis Concept</em></a>.</p>
+<p>This document describes the general guidances for Safety Analysis based on the concept which is defined <a class="reference internal" href="../safety_analysis_concept.html#doc_concept__safety__analysis" title="doc_concept__safety__analysis"><em class="xref need">Safety Analysis Concept (doc_concept__safety__analysis)</em></a>.</p>
 <section id="workflow-for-safety-analysis">
 <h2>Workflow for Safety Analysis<a class="headerlink" href="#workflow-for-safety-analysis" title="Link to this heading">#</a></h2>
-<p>Detailed description which steps are need for a safety analysis. In general the workflow is shown in <a class="reference internal" href="../safety_analysis_getstrt.html#safety-analysis-workflow-fig"><span class="std std-ref">Safety Analysis Workflow</span></a></p>
+<p>Detailed description which steps are need for a safety analysis. In general the workflow is shown in <a class="reference internal" href="../safety_analysis_getstrt.html#doc_getstrt__safety_analysis" title="doc_getstrt__safety_analysis"><em class="xref need">Getting Started on Safety A... (doc_getstrt__safety_analysis)</em></a>.</p>
 <ol class="arabic simple">
-<li><p>To analyse the Platform Architecture DFA shall be executed.</p></li>
-<li><p>Perform DFA on the Platform Architecture.</p></li>
-<li><p>To analyse the Feature Architecture a Safety Analysis and a DFA shall be executed.</p></li>
+<li><p>Analyze the dependencies between features by performing a <strong>single platform feature DFA</strong> that references all platform feature static architecture diagrams, highlighting potential shared use of modules.</p></li>
+<li><p>To analyse the Feature Architecture a Safety Analysis and a DFA shall be executed. The resutls of the platform feature DFA shall be used as an input.</p></li>
 <li><p>Perform Safety Analysis on the Feature Architecture.</p></li>
 <li><p>Perform DFA on the Feature Architecture.</p></li>
-<li><p>To analyse the Component Architecture a Safety Analysis and a DFA shall be executed. This only applies if the component architecture is not already covered by the feature architecture.</p></li>
+<li><p>To analyse the Component Architecture a Safety Analysis and a DFA shall be executed. This only applies if there is a component architecture which decomposes into lower level components.</p></li>
 <li><p>Perform Safety Analysis on the Component Architecture.</p></li>
 <li><p>Perform DFA on the Component Architecture.</p></li>
 <li><p>The performance of the Safety Analysis and DFA (Feature and Component) shall be monitored.</p></li>
-<li><p>For open issues like from the Safety Analysis and DFA and Issue shall be created in the Issue Tracking system. For safety relevant issues types a <code class="docutils literal notranslate"><span class="pre">safety</span></code> label is used. Until there are open issues the safety analysis is “valid” and “not sufficient”.</p></li>
-<li><p>If the analysis is completed, a verification of the analysis shall be done and a report therfore shall be created.</p></li>
+<li><p>For any unresolved findings from the Safety Analysis and DFA, log an issue in the Issue Tracking system and assign the <code class="docutils literal notranslate"><span class="pre">safety</span></code> label to safety-relevant items. The safety analysis remains “valid” but “not sufficient” as long as such issues are open.</p></li>
+<li><p>If the analysis is completed, a verification of the analysis shall be done and a report of the analysis shall be created.</p></li>
 </ol>
 <section id="step-by-step-approach-safety-analysis">
 <h3>Step-by-Step-approach Safety Analysis:<a class="headerlink" href="#step-by-step-approach-safety-analysis" title="Link to this heading">#</a></h3>
 <p>The analysis is done by using the template <a class="reference internal" href="safety_analysis_templates.html#safety-analysis-templates"><span class="std std-ref">Safety Analysis Templates</span></a> on the feature or component architectural diagrams
 (activity and/or sequence diagrams) using a diagram specific applied fault model &lt;<a class="reference internal" href="fault_models_guideline.html#gd_guidl__fault_models" title="gd_guidl__fault_models"><em class="xref need">Fault Models (gd_guidl__fault_models)</em></a>&gt;. Apply the fault
 model to the diagram and document the results in the template. If a fault model is not applicable, fill in a short remark in the
-vialoation cause that it’s not apllicable. So it could be shown that the analysis was done and no fault model is applicable.
+violation cause that it’s not apllicable. So it could be shown that the analysis was done and no fault model is applicable.
 The analysis considers single faults that can mitigate a safety requirement.</p>
 <p><strong>Steps:</strong></p>
 <ul class="simple">
-<li><p>For each affected design element in scope of each diagram, assign the faults by ID from the fault model and document it as a sphinx-needs directive.</p></li>
+<li><p>For each dynamic diagram, assign the faults by ID from the fault model and document it as a sphinx-needs directive.</p></li>
 <li><p>Document the resulting failure mode and effect and the mitigated safety requirement.</p></li>
 <li><p>Document safety mitigation to avoid or control the failure.</p></li>
-<li><p>The mitigation coverage shall be estimated in percent.</p></li>
 <li><p>The attributes of the template are described in <a class="reference internal" href="safety_analysis_process_reqs.html#process-requirements-safety-analysis-attributes"><span class="std std-ref">Process Safety Analysis Attributes</span></a>.</p></li>
 <li><p>Judge if this is sufficient.</p></li>
 <li><p>If not, request to update the diagram and the requirements with additional safety mitigation to come to a sufficient outcome by creating an issue.</p></li>
 <li><p>The analysis is finished, if for each identified faults a sufficient mitigation exists.</p></li>
 <li><p>Unless the attribute sufficient is yes, mitigation and argument attribute can be still empty.</p></li>
-<li><p>Coninue the analysis until all gault models are checked.</p></li>
-<li><p>The verification is done by appling the safety analysis checklist <a class="reference internal" href="safety_analysis_checklist.html#gd_chklst__safety_analysis" title="gd_chklst__safety_analysis"><em class="xref need">Safety Analysis Checklist T... (gd_chklst__safety_analysis)</em></a>.</p></li>
+<li><p>Continue the analysis until all fault models are checked.</p></li>
+<li><p>The verification is done by applying the safety analysis checklist <a class="reference internal" href="safety_analysis_checklist.html#gd_chklst__safety_analysis" title="gd_chklst__safety_analysis"><em class="xref need">Safety Analysis Checklist T... (gd_chklst__safety_analysis)</em></a>.</p></li>
 </ul>
 <p><strong>Examples:</strong></p>
 <div class="line-block">
@@ -636,7 +636,6 @@ The analysis considers single faults that can mitigate a safety requirement.</p>
 <div class="line">:failure_effect: “message from calling app is corrupted”</div>
 <div class="line">:mitigation:</div>
 <div class="line">:mitigation_issue: &lt;ID from Issue Tracker| None if no issue needed&gt;</div>
-<div class="line">:mitigation_coverage: &lt;0..100%&gt;</div>
 <div class="line">:sufficient: no</div>
 <div class="line">:argument:</div>
 <div class="line">:status: valid</div>
@@ -651,7 +650,6 @@ The analysis considers single faults that can mitigate a safety requirement.</p>
 <div class="line">:failure_effect: “message is corrupted due to corrupted call open to OSAL”</div>
 <div class="line">:mitigation: FEAT_REQ_persistency_key_val_storage__error</div>
 <div class="line">:mitigation_issue: &lt;ID from Issue Tracker| None if no issue needed&gt;</div>
-<div class="line">:mitigation_coverage: &lt;0..100%&gt;</div>
 <div class="line">:sufficient: yes</div>
 <div class="line">:argument: “Calling app gets error information”</div>
 <div class="line">:status: valid</div>
@@ -662,18 +660,17 @@ The analysis considers single faults that can mitigate a safety requirement.</p>
 <section id="step-by-step-approach-dfa">
 <h3>Step-by-Step-approach DFA:<a class="headerlink" href="#step-by-step-approach-dfa" title="Link to this heading">#</a></h3>
 <p>The analysis is done by using the template <a class="reference internal" href="dfa_template.html#dfa-templates"><span class="std std-ref">DFA Templates</span></a> on the feature or component architectural diagrams using a list of DFA failure initiators &lt;<a class="reference internal" href="dfa_failure_initiators.html#gd_guidl__dfa_failure_initiators" title="gd_guidl__dfa_failure_initiators"><em class="xref need">DFA failure initiators (gd_guidl__dfa_failure_initiators)</em></a>&gt;.
-If a element of the failure initiators is not applicable, fill in a short remark in the vialoation cause that it’s not apllicable.
+If a element of the failure initiators is not applicable, fill in a short remark in the violation cause that it’s not applicable.
 So it could be shown that the analysis was done and no fault model is applicable.</p>
 <p><strong>Steps:</strong></p>
 <ul class="simple">
 <li><p>For each failure initiator assign the violation by ID from the DFA failure initiators and document it as a sphinx-needs directive.</p></li>
-<li><p>Document the resulting violation causes and effect and the mitigated safety requirement.</p></li>
-<li><p>The mitigation coverage shall be estimated in percent.</p></li>
+<li><p>Document the resulting violation causes and effect and link to a safety requirement that mitigates the violation.</p></li>
 <li><p>The attributes of the template are described in <a class="reference internal" href="safety_analysis_process_reqs.html#process-requirements-safety-analysis-attributes"><span class="std std-ref">Process Safety Analysis Attributes</span></a>.</p></li>
 <li><p>Judge if the mitigation is sufficient. If not, request to update the requirements with additional safety mitigation to come to a sufficient outcome.</p></li>
 <li><p>The analysis is finished, if for each identified violation a mitigation exists.</p></li>
 <li><p>Unless the attribute “sufficient” is “yes”, mitigation and argument attribute can be still empty.</p></li>
-<li><p>Coninue the analysis until all failure initiators are checked.</p></li>
+<li><p>Continue the analysis until all failure initiators are checked.</p></li>
 <li><p>The verification is done by appling the safety analysis checklist <a class="reference internal" href="safety_analysis_checklist.html#gd_chklst__safety_analysis" title="gd_chklst__safety_analysis"><em class="xref need">Safety Analysis Checklist T... (gd_chklst__safety_analysis)</em></a>.</p></li>
 </ul>
 <p><strong>Examples:</strong></p>
@@ -686,13 +683,12 @@ So it could be shown that the analysis was done and no fault model is applicable
 <div class="line">:violation_cause: “Operating system including scheduler”</div>
 <div class="line">:mitigation:</div>
 <div class="line">:mitigation_issue: &lt;ID from Issue Tracker| None if no issue needed&gt;</div>
-<div class="line">:mitigation_coverage: &lt;0..100%&gt;</div>
 <div class="line">:sufficient: no</div>
 <div class="line">:argument:</div>
 <div class="line">:status: valid</div>
 </div>
 </div>
-<p>The example is also used in the concept description &lt;score_building_block_example&gt; and also in the building blocks &lt;building_block_example&gt;.</p>
+<p>The example is also used in the building blocks <a class="reference internal" href="../../../general_concepts/score_building_blocks_concept.html#general-concepts-building-blocks"><span class="std std-ref">Building blocks concept</span></a>.</p>
 </section>
 </section>
 </section>

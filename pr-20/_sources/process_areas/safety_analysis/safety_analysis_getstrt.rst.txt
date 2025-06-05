@@ -20,9 +20,13 @@ Getting Started
    :status: valid
    :tags: safety_analysis
 
-This document describes the steps which are needed to perform safety analysis and also how to monitor and verify the results of the safety analysis.
-The concept of performing safety analysis is described in :need:`doc_concept__safety__analysis`. The verification of the architecure is described
+This document outlines the steps for performing, monitoring, and verifying safety analysis.
+The concept of performing safety analysis is described in :need:`doc_concept__safety__analysis`. The verification of the architecture is described
 in :need:`doc_concept__arch__process`.
+
+Safety Analysis Workflow
+
+The details of what needs to be done in each step are described in the :need:`gd_guidl__safety_analysis`.
 
 General Workflow
 ****************
@@ -32,7 +36,7 @@ General Workflow
    :width: 80%
    :name: safety_analysis_workflow_fig
 
-   Safety Analysis Workflow
 
-The details of what needs to be done in each step are described in the :need:`gd_guidl__safety_analysis`.
+
+
 

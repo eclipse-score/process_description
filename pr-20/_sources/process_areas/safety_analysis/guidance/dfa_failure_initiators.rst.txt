@@ -208,7 +208,7 @@ DFA failure initiators
 | Development failure initiators
 | Secition is **only aplicable if a divers SW development is needed** due to decomposition.
 
-:note: Section shall be applied on platform level. Results shall be implemented in general to the S-CORE development definitions.
+:note: Section shall be applied only once to analyse all dependencies of the features. Results shall be checked during of the analysis of new features if this is applicable to the feature.
 
 .. list-table:: DFA development failure initiators
   :header-rows: 1

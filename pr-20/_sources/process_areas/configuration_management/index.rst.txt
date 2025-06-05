@@ -56,7 +56,7 @@ needed for the building of the documentation and verification reports (e.g. tool
 Work Products
 ^^^^^^^^^^^^^
 
-:need:`SCORE_doc__config_mgt_plan` is a document and part of the work product :need:`wp__platform_mgmt`.
+`REPLACE_doc__config_mgt_plan` is a document and part of the work product :need:`wp__platform_mgmt`.
 
 
 Configuration Management Tooling
@@ -78,11 +78,11 @@ Getting started
 In case you are appointed as a :need:`Technical Lead <rl__technical_lead>` by the :need:`rl__project_lead` in the S-CORE project:
 
 * On platform level, process community already provided a draft configuration management plan,
-  see :need:`SCORE_doc__config_mgt_plan`, just set it to "valid"
+  see `REPLACE_doc__config_mgt_plan`, just set it to "valid"
 * On module level, create a configuration management plan using the platform one as a template.
   If no configuration management plan on module level is created, the platform one is adopted.
 
-As a normal contributor or committer consult the :need:`SCORE_doc__config_mgt_plan`, but this should not
+As a normal contributor or committer consult the `REPLACE_doc__config_mgt_plan`, but this should not
 differ from normal usage of github as a configuration management tool.
 
 Workflows
@@ -98,7 +98,7 @@ Guidance
 --------
 
 The configuration management guideline is contained within the configuration management plan,
-to have all relevant information in one space, see :need:`SCORE_gd_guidl__configuration`
+to have all relevant information in one space, see `REPLACE_gd_guidl__configuration`
 
 Some process requirements to be automated are available:
 

@@ -69,7 +69,7 @@ For all requirements following mandatory attributes need to be defined:
 
 
 * Title and description: For the formulation of requirements following template shall be used :need:`[[title]]<gd_temp__req__formulation>`
-* ID: The naming convention for the ID is defined :need:`here <SCORE_doc__naming_conventions>`.
+* ID: The naming convention for the ID is defined `here <REPLACE_doc__naming_conventions>`.
 * Furthermore the requirements need to be versioned. Therefore a hash value of the requirement will to be calculated. The concept is described: :ref:`traceability concept for requirements`
 * For the remaining attributes only predefined values can be used. A more detailed description can be found here: :ref:`attributes of the requirements`
 
@@ -133,8 +133,8 @@ In this step the parent requirements shall be created. Stakeholder- and feature 
 
 Therefore following guidelines are available:
 
-* :need:`Branch Naming Conventions <SCORE_doc__naming_conventions>`
-* :need:`Git Guidelines <SCORE_doc__git_coding_guidelines>`
+* `Branch Naming Conventions <REPLACE_doc__naming_conventions>`
+* `Git Guidelines <REPLACE_doc__git_coding_guidelines>`
 * :ref:`Requirement Templates <requirement templates>`
 
 .. _review_parent_requirement:
@@ -159,8 +159,8 @@ In an upcoming step the child requirements shall be derived from the parent requ
 
 Following guidelines are available:
 
-* :need:`Branch Naming Conventions <SCORE_doc__naming_conventions>`
-* :need:`Git Guidelines <SCORE_doc__git_coding_guidelines>`
+* `Branch Naming Conventions <REPLACE_doc__naming_conventions>`
+* `Git Guidelines <REPLACE_doc__git_coding_guidelines>`
 * :ref:`Requirement Templates <requirement templates>`
 
 .. _review_child_requirement:

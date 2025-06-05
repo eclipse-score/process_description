@@ -25,4 +25,4 @@ In case you want to contribute a change to **S-CORE** consider to:
 * Contact the :need:`Technical Lead <rl__technical_lead>` for your contribution to establish planning and reporting
 * Create your change requests according to :need:`wf__change__cr_an_change_request`
 * Make familiar with the development and supporting process descriptions in :ref:`process_description`
-* Make familiar with the relevant sections of the :need:`Platform Management Plan <SCORE_doc__platform_mgt_plan>`, here especially with :need:`Change Management Plan <SCORE_doc__platform_change_management_plan>`
+* Make familiar with the relevant sections of the `Platform Management Plan <REPLACE_doc__platform_mgt_plan>`, here especially with `Change Management Plan <REPLACE_doc__platform_change_management_plan>`

@@ -37,36 +37,32 @@ Roles
    Knowledge of standards
 
    * ISO 26262
+   * ISO SAE 21434
 
    Experience
 
-   * 2 years of experience in safety engineering
+   * More than five years of experience in safety engineering and also in safety analysis methods (e.g., FMEA, DFA)
    * Experience in automotive software development projects
    * Experience in creation of workproducts according ISO 26262
 
    Responsibility
 
-   * For content and processing of all work products required in the project
-   * Creating of Safety Analysis (FMEA, DFA)
-   * Support of Safety Manager
-   * Specialist contact person on engineering level for the project
+   * Analyse Feature and Component Architecture by performing Safety Analysis and DFA
+   * Monitor Safety Analyses and DFA
+   * Verify Safety Analyses and DFA
 
    Authority
 
-   * Escalation of planning topics to the safety manager
-   * Implementation of safety requirements
-   * Refusing the approval of work products as defined in the workflows
-
+   * Escalation of safety topics to the Safety Manager
+   * Creation of Issues in the Issue Tracking System for needed mitigations
 
 Contributing Roles:
 
    * :need:`Contributor <rl__contributor>`
    * :need:`Committer <rl__committer>`
-   * :need:`Technical Lead <rl__technical_lead>`
-   * :need:`Module Lead <rl__module_lead>`
    * :need:`Safety Manager <rl__safety_manager>`
    * :need:`Security Manager <rl__security_manager>`
 
-A detailed overview of the responsibility for the steps of the safety analysis process is listed here:
+A detailed overview of the responsibility for the steps of the safety analysis process is listed in the section titled "Workflow for Safety Analysis". You can find it here:
 
 :ref:`workflow_safety_analysis`

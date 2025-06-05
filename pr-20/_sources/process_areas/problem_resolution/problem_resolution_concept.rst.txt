@@ -26,7 +26,7 @@ including the requirements of the different stakeholders for the Problem Resolut
 
 Key concept
 ***********
-A Problem Report is the **ONLY** way to report (compare :need:`SCORE_doc__contr_guideline`)
+A Problem Report is the **ONLY** way to report (compare `REPLACE_doc__contr_guideline`)
 deviations of an expected result for existing features in the **S-CORE** project.
 Deviations include problems found by user, bugs found during verification activites by tester,
 quality issues found by quality checks, safety anomalies, vulnerabilites or any other malfunction.
