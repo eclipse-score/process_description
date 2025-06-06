@@ -17,7 +17,7 @@
 Templates
 =========
 
-.. gd_temp:: Stakeholder Requirements Templates
+.. gd_temp:: Stakeholder Requirements Template
    :id: gd_temp__req__stkh_req
    :status: valid
    :complies: std_wp__iso26262__software_651, std_req__iso26262__support_641, std_req__iso26262__support_6421, std_req__iso26262__support_6425
@@ -27,11 +27,12 @@ Templates
       .. stkh_req:: <Title>
          :id: stkh_req__<Title>
          :reqtype: <Functional|Interface|Process|Legal|Non-Functional>
+         :security: <YES|NO>
          :safety: <QM|ASIL_B|ASIL_D>
          :rational: <The rationale provides the reason that the requirement is needed.>
          :status: <valid|invalid>
 
-.. gd_temp:: Feature Requirements Templates
+.. gd_temp:: Feature Requirements Template
    :id: gd_temp__req__feat_req
    :status: valid
    :complies: std_wp__iso26262__software_651, std_req__iso26262__support_641, std_req__iso26262__support_6421, std_req__iso26262__support_6425
@@ -46,7 +47,7 @@ Templates
         :satisfies: <link to stakeholder requirement id>
         :status: <valid|invalid>
 
-.. gd_temp:: Component Requirements Templates
+.. gd_temp:: Component Requirements Template
    :id: gd_temp__req__comp_req
    :status: valid
    :complies: std_wp__iso26262__software_651, std_req__iso26262__support_641, std_req__iso26262__support_6421, std_req__iso26262__support_6425
@@ -61,7 +62,7 @@ Templates
          :satisfies: <link to feature requirement id>
          :status: <valid|invalid>
 
-.. gd_temp:: AoU Requirement Templates
+.. gd_temp:: AoU Requirement Template
    :id: gd_temp__req__aou_req
    :status: valid
    :complies: std_wp__iso26262__software_651, std_req__iso26262__support_641, std_req__iso26262__support_6421, std_req__iso26262__support_6425
@@ -76,7 +77,7 @@ Templates
          :status: <valid|invalid>
          :mitigates: <link to safety analysis>
 
-.. gd_temp:: Process Requirements Templates
+.. gd_temp:: Process Requirements Template
    :id: gd_temp__req__process_req
    :status: valid
    :complies: std_wp__iso26262__software_651, std_req__iso26262__support_641, std_req__iso26262__support_6421, std_req__iso26262__support_6425
@@ -84,10 +85,25 @@ Templates
    .. code-block:: rst
 
       .. gd_req:: <Title>
-         :id: gd_req__<Tool>__<Title>
+         :id: gd_req__<process>__<Title>
          :satisfies: <link to guidance id>
          :complies: <link to standard requirement>
          :status: <valid|invalid>
+
+.. gd_temp:: Tool Requirements Template
+   :id: gd_temp__req__tool_req
+   :status: valid
+   :complies: std_wp__iso26262__software_651, std_req__iso26262__support_641, std_req__iso26262__support_6421, std_req__iso26262__support_6425
+
+   .. code-block:: rst
+
+      .. tool_req:: <Title>
+         :id: tool_req__<tool>__<Title>
+         :security: <YES|NO>
+         :safety: <QM|ASIL_B|ASIL_D>
+         :satisfies: <link to process req id>
+         :status: <valid|invalid>
+         :implemented: <YES|PARTIAL|NO>
 
 .. gd_temp:: Requirement Formulation Template
    :id: gd_temp__req__formulation
