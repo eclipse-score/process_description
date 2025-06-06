@@ -77,7 +77,7 @@ Process Safety Analysis Attributes
    :satisfies: wf__analyse_featarch, wf__analyse_comparch
    :complies: std_req__iso26262__analysis_844, std_req__iso26262__analysis_746, std_req__iso26262__analysis_747
 
-   For every mitigation that is needed a issue shall be created. If a mitigation is allready implemented without
+   For every mitigation that is needed a issue shall be created. If a mitigation is already implemented without
    an issue, please remark it so this can be reconstructed.
 
 .. gd_req:: Safety Analysis attribute: sufficient
@@ -120,7 +120,7 @@ Safety Analysis Requirement Linkage
    :satisfies: wf__analyse_featarch, wf__analyse_comparch
    :complies: std_req__iso26262__analysis_842, std_req__iso26262__software_7410, std_req__iso26262__software_7411
 
-   Safety Analysis shall be linked to a dynamic diagram via the attribute verifies.
+   Safety Analysis shall be linked to at least one dynamic diagram of the architecture on the corresponding level via the attribute verifies.
 
 .. gd_req:: Safety Analysis Linkage
    :id: gd_req__saf__linkage
@@ -129,7 +129,7 @@ Safety Analysis Requirement Linkage
    :satisfies: wf__analyse_featarch, wf__analyse_comparch
    :complies: std_req__iso26262__analysis_842, std_req__iso26262__software_7410, std_req__iso26262__software_7411
 
-   Each Safety Analysis shall be automatically linked to the corresponding dynamic diagram via the "verifies by" linkage.
+   Each Safety Analysis shall be automatically linked to the corresponding dynamic diagram via the "verified by" linkage.
 
 .. gd_req:: Safety Analysis attribute: check Requirements linkage
    :id: gd_req__saf__attr_requirements_check
@@ -138,7 +138,7 @@ Safety Analysis Requirement Linkage
    :satisfies: wf__analyse_featarch, wf__analyse_comparch
    :complies: std_req__iso26262__analysis_842, std_req__iso26262__software_7410, std_req__iso26262__software_7411
 
-   Safety Analysis shall be linked to a requirement on the corresponding level via the attribute verifies.
+   Safety Analysis shall be linked to a requirement on the corresponding level via the attribute mitigates.
 
 .. gd_req:: Safety Analysis attribute: Requirements linkage
    :id: gd_req__saf__attr_requirements

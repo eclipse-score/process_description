@@ -26,7 +26,7 @@ This document describes the general guidances for Safety Analysis based on the c
 Workflow for Safety Analysis
 ============================
 
-Detailed description which steps are need for a safety analysis. In general the workflow is shown in :ref:`safety_analysis_workflow_fig`
+Detailed description which steps are need for a safety analysis. In general the workflow is shown in :need:`doc_getstrt__safety_analysis`.
 
 #. Analyze the dependencies between features by performing a **single platform feature DFA** that references all platform feature static architecture diagrams, highlighting potential shared use of modules.
 #. To analyse the Feature Architecture a Safety Analysis and a DFA shall be executed. The resutls of the platform feature DFA shall be used as an input.
@@ -51,7 +51,7 @@ The analysis considers single faults that can mitigate a safety requirement.
 **Steps:**
 
 * For each dynamic diagram, assign the faults by ID from the fault model and document it as a sphinx-needs directive.
-* Document the resulting failure mode and effect and the mitigated safety requirement. 
+* Document the resulting failure mode and effect and link to a safety requirement that mitigates the violation. 
 * Document safety mitigation to avoid or control the failure.
 * The attributes of the template are described in :ref:`process_requirements_safety_analysis_attributes`.
 * Judge if this is sufficient. 

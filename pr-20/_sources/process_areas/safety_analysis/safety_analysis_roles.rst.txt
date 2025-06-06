@@ -41,7 +41,8 @@ Roles
 
    Experience
 
-   * More than five years of experience in safety engineering and also in safety analysis methods (e.g., FMEA, DFA)
+   * More than five years of experience in safety engineering 
+   * Experience safety analysis methods (e.g., FMEA, DFA)
    * Experience in automotive software development projects
    * Experience in creation of workproducts according ISO 26262
 

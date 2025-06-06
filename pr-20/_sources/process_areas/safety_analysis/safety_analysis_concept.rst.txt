@@ -35,7 +35,8 @@ Stakeholders for the Safety Analysis
 
 #. :need:`Contributor <rl__contributor>`
 
-   * Contributes features and components to grow the **S-CORE** content
+   * Support the safety analyses and DFA
+   * Support the monitoring and verifying of the safety analyses and DFA
 
 #. :need:`Committer <rl__committer>`
 
@@ -84,8 +85,8 @@ shall be done in the way that we use the static and dynamic diagrams. The follow
    Safety Analysis Feature Perspective
 
 The safety analysis is done with the shown diagrams. The interface 1 and 2 are the interfaces of the feature. These interfaces shall be analyzed with the
-fault models :need:`gd_guidl__fault_models` that here could be applied. With the static diagrams the communication between the components and also the dependencies
-of the components can be analysed. For violations a failure mitigation shall be defined. 
+fault models :need:`gd_guidl__fault_models` that here could be applied. With the dynamic diagrams the communication between the components can be analysed. 
+The static diagrams are used to analyse the dependencies. For violations a failure mitigation shall be defined. 
 
 .. figure:: _assets/safety_analysis_component.drawio.svg
    :align: center
