@@ -168,7 +168,7 @@ Process Requirement Linkage
    :complies: std_req__iso26262__support_6432
    :satisfies: wf__req__stkh_req, wf__req__feat_req, wf__req__comp_req
 
-   Bi-directional traceability shall be provided by adding a "back-link" via attribute satisfied by.
+   Bi-directional traceability shall be provided by adding a "back-link" via attribute satisfied by (i.e. make a <-> out of the <- in :need:`gd_req__req__linkage`).
 
 .. gd_req:: Requirement attribute: requirement covered
    :id: gd_req__req__attr_req_cov
@@ -218,7 +218,7 @@ Process Requirement Linkage
    :satisfies: wf__req__stkh_req, wf__req__feat_req, wf__req__comp_req
    :complies: std_req__iso26262__support_6425, std_req__iso26262__support_6434
 
-   It shall be possible to provide a versioning for requirements. For this all mandatory attributes shall be taken into account: :need:`gd_req__req__attr_mandatory`
+   A versioning for requirements shall be provided. For this all mandatory attributes shall be taken into account: :need:`gd_req__req__attr_mandatory`
 
 .. _process_requirement_checks:
 
