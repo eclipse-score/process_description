@@ -47,27 +47,6 @@ General
 
    Trainings for safety and security for S-CORE
 
-.. workproduct:: Quality management plan
-   :id: wp__qms
-   :status: draft
-   :tags: safety
-   :complies: std_wp__iso26262__management_553
-
-   Quality management process descriptions and definitions
-
-.. workproduct:: Quality report
-   :id: wp__qms_report
-   :status: draft
-   :tags: safety
-   :complies: std_wp__iso26262__management_553
-
-   | Evidence of quality conformance:
-   | * Identifies what tasks/activities/process produce the information
-   | * Identifies when the data was collected
-   | * Identifies source of any associated data
-   | * Identifies the associated quality criteria
-   | * Identifies any associated measurements using the information
-
 Process
 ^^^^^^^
 
@@ -77,13 +56,6 @@ Process
    :tags: process
 
    Process definitions.
-
-.. workproduct:: Process Improvement Report
-   :id: wp__process_impr_report
-   :status: draft
-   :tags: process
-
-   Process improvement report.
 
 .. workproduct:: Process Management Strategy
    :id: wp__process_plan
@@ -98,25 +70,6 @@ Product development
 
 Platform development
 ^^^^^^^^^^^^^^^^^^^^
-
-.. workproduct:: Feature Safety Analysis
-   :id: wp__feature_safety_analysis
-   :status: draft
-   :tags: safety
-   :complies: std_wp__iso26262__analysis_851, std_wp__iso26262__software_752
-
-   Bottom-Up Safety Analysis with e.g. FMEA method, verifies the feature architecture (as part of SW Safety Concept)
-   - Detection and prevention mitigations linked to Software Feature Requirements or Assumptions of Use
-
-.. workproduct:: Feature DFA
-   :id: wp__feature_dfa
-   :status: draft
-   :tags: safety
-   :complies: std_wp__iso26262__analysis_751, std_wp__iso26262__software_753
-
-   Dependent Failure Analysis on platform/feature level
-   - Detection and prevention mitigations linked to Software Feature Requirements or Assumptions of Use
-   Perform analysis on interactions between safety related and non-safety related modules or modules with different ASIL of one feature. Including potential influences from the rest of the SW platform.
 
 .. workproduct:: Platform Build Configuration
    :id: wp__platform_sw_build_config
@@ -139,26 +92,6 @@ Platform development
 
 Component development
 ^^^^^^^^^^^^^^^^^^^^^
-
-.. workproduct:: Component Safety Analysis
-   :id: wp__sw_component_safety_analysis
-   :status: draft
-   :tags: safety
-   :complies: std_wp__iso26262__analysis_851, std_wp__iso26262__software_752, std_wp__isopas8926__4524
-
-   Bottom-Up Safety Analysis with e.g. FMEA method, verifies the component architecture (as part of SW Safety Concept)
-   - Detection and prevention mitigations linked to Software Component Requirements or Assumptions of Use
-
-.. workproduct:: Component DFA
-   :id: wp__sw_component_dfa
-   :status: draft
-   :tags: safety
-   :complies: std_wp__iso26262__analysis_751, std_wp__iso26262__software_753
-
-   Dependent Failure Analysis on component/module level
-   - Detection and prevention mitigations linked to Software Component Requirements or Assumptions of Use
-   Perform analysis of safety related and non-safety related sub-elements or sub-elements with different ASIL.
-   Perform analysis on interactions between safety related and non-safety related sub-components or sub-components with different ASIL of one component. Including potential influences from the other components in the component's module.
 
 .. workproduct:: Module Build Configuration
    :id: wp__module_sw_build_config
