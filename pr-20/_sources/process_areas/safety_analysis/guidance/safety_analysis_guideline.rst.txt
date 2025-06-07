@@ -39,7 +39,7 @@ Detailed description which steps are need for a safety analysis. In general the 
 #. For any unresolved findings from the Safety Analysis and DFA, log an issue in the Issue Tracking system and assign the ``safety`` label to safety-relevant items. The safety analysis remains "valid" but "not sufficient" as long as such issues are open.
 #. If the analysis is completed, a verification of the analysis shall be done and a report of the analysis shall be created.
 
-A example for the safety analysis (FMEA and DFA) is shown in the :ref:`safety_analysis_example`.
+A example for the safety analysis (FMEA and DFA) is shown in the :ref:`examples_fmea_dfa`.
 
 Step-by-Step-approach Safety Analysis:
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
