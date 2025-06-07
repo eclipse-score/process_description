@@ -63,8 +63,6 @@ Also requirements of standards need to be taken into consideration:
 * ISO26262
 * ISO SAE 21434
 
-
-
 How to analyze?
 ===============
 
@@ -82,7 +80,7 @@ shall be done in the way that we use the static and dynamic diagrams. The follow
    :width: 80%
    :name: safety_analysis_feature_fig
 
-   Safety Analysis Feature Perspective
+   Dynamic Architecture 
 
 The safety analysis is done with the shown diagrams. The interface 1 and 2 are the interfaces of the feature. These interfaces shall be analyzed with the
 fault models :need:`gd_guidl__fault_models` that here could be applied. With the dynamic diagrams the communication between the components can be analysed. 
@@ -123,5 +121,41 @@ How to add new safety mitigations?
 
 Identified faults without a mitigation remain open and are tracked in the issue tracking system :need:`wp__issue_track_system` until they are resolved.
 
+.. _examples_fmea_dfa:
 
+Examples for FMEA and DFA at feature level
+==========================================
 
+**FMEA:**
+
+| .. feat_saf_fmea:: Remove key
+|    :verifies: feat_arc_dynamic__kvstorage__remove_key
+|    :id: FEAT_SAF_FMEA__KVSTORAGE__RemoveKey
+|    :failure_mode: "MF_01_01"
+|    :failure_effect: "message is not received"
+|    :mitigation: Detetion and error handling shall be done outside of the middleware.
+|    :mitigation_issue: ID from Issue Tracker that defined mitigation will be documented in the assumtions of use (AoU)
+|    :sufficient: yes
+|    :argument: This error is handled by the calling application.
+|    :status: valid
+
+Use the fault models :need:`gd_guidl__fault_models` to ensure a structured analysis. If a fault model doesn't apply, 
+please fill in a short description in the violation cause of the analysis so it could be recognized that the analysis 
+is done. If there are additional fault models needed, please enlarge the list of fault models.
+
+**DFA:**
+
+| .. feat_saf_dfa:: Static Architecture Persistency
+|    :verifies: feat_arc_sta_persistency_static
+|    :id: feat_saf_DFA__persistency__json_al
+|    :violation_id: "CO_01_02"
+|    :violation_cause: "Data or message corruption / repetition / loss / delay / masquerading or incorrect addressing of information. Failures will lead to falsified execution or to a not available feature.
+|    :mitigation: feat_req__persistency__integrity_check
+|    :mitigation_issue: None
+|    :sufficient: yes
+|    :argument: The integrity check will ensure that the data is not corrupted and the feature will work as expected.
+|    :status: valid
+
+Use the DFA failure initiators :need:`gd_guidl__dfa_failure_initiators` to ensure a structured analysis. If a failure initiator doesn't apply,
+please fill in a short description in the violation cause of the analysis so it could be recognized that the analysis is done. If there are 
+additional failure initiators needed, please enlarge the list of fault models.

@@ -39,6 +39,8 @@ Detailed description which steps are need for a safety analysis. In general the 
 #. For any unresolved findings from the Safety Analysis and DFA, log an issue in the Issue Tracking system and assign the ``safety`` label to safety-relevant items. The safety analysis remains "valid" but "not sufficient" as long as such issues are open.
 #. If the analysis is completed, a verification of the analysis shall be done and a report of the analysis shall be created.
 
+A example for the safety analysis (FMEA and DFA) is shown in the :ref:`safety_analysis_example`.
+
 Step-by-Step-approach Safety Analysis:
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -61,34 +63,6 @@ The analysis considers single faults that can mitigate a safety requirement.
 * Continue the analysis until all fault models are checked.
 * The verification is done by applying the safety analysis checklist :need:`gd_chklst__safety_analysis`.
 
-**Examples:**
-
-
-| .. feat_saf_fmea:: OpenKVS
-|    :verifies: <Feature architecture>
-|    :id: FEAT_SAF_FMEA__KVS__OpenKVS
-|    :failure_mode: "MF_01_05"
-|    :failure_effect: "message from calling app is corrupted"
-|    :mitigation:
-|    :mitigation_issue: <ID from Issue Tracker| None if no issue needed>
-|    :sufficient: no
-|    :argument:
-|    :status: valid
-
-| .. feat_saf_fmea:: GetKeyValue
-|    :verifies: <Feature architecture>
-|    :id: FEAT_SAF_FMEA__KVS__GetKeyValue
-|    :failure_mode: "MF_01_05"
-|    :failure_effect: "message is corrupted due to corrupted call open to OSAL"
-|    :mitigation: FEAT_REQ_persistency_key_val_storage__error
-|    :mitigation_issue: <ID from Issue Tracker| None if no issue needed>
-|    :sufficient: yes
-|    :argument: "Calling app gets error information"
-|    :status: valid
-
-The example is also used in the building blocks <score_building_block_example>.
-
-
 Step-by-Step-approach DFA:
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -107,17 +81,4 @@ So it could be shown that the analysis was done and no fault model is applicable
 * Continue the analysis until all failure initiators are checked.
 * The verification is done by appling the safety analysis checklist :need:`gd_chklst__safety_analysis`.
 
-**Examples:**
 
-| .. feat_saf_dfa:: <Element descriptor>
-|    :verifies: <Feature architecture>
-|    :id: feat_saf_DFA__<Feature>__<Element descriptor>
-|    :violation_id: "SR_01_05"
-|    :violation_cause: "Operating system including scheduler"
-|    :mitigation:
-|    :mitigation_issue: <ID from Issue Tracker| None if no issue needed>
-|    :sufficient: no
-|    :argument:
-|    :status: valid
-
-The example is also used in the building blocks :ref:`general_concepts_building_blocks`.

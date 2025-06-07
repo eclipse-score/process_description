@@ -546,7 +546,7 @@
                   
   <section id="guidelines">
 <h1>Guidelines<a class="headerlink" href="#guidelines" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-48ad44c3">
+<div class="need_container docutils container" id="SNCB-171ebef9">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_guidl table" id="gd_guidl__safety_analysis">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -606,6 +606,7 @@
 <li><p>For any unresolved findings from the Safety Analysis and DFA, log an issue in the Issue Tracking system and assign the <code class="docutils literal notranslate"><span class="pre">safety</span></code> label to safety-relevant items. The safety analysis remains “valid” but “not sufficient” as long as such issues are open.</p></li>
 <li><p>If the analysis is completed, a verification of the analysis shall be done and a report of the analysis shall be created.</p></li>
 </ol>
+<p>A example for the safety analysis (FMEA and DFA) is shown in the <span class="xref std std-ref">safety_analysis_example</span>.</p>
 <section id="step-by-step-approach-safety-analysis">
 <h3>Step-by-Step-approach Safety Analysis:<a class="headerlink" href="#step-by-step-approach-safety-analysis" title="Link to this heading">#</a></h3>
 <p>The analysis is done by using the template <a class="reference internal" href="safety_analysis_templates.html#safety-analysis-templates"><span class="std std-ref">Safety Analysis Templates</span></a> on the feature or component architectural diagrams
@@ -626,36 +627,6 @@ The analysis considers single faults that can mitigate a safety requirement.</p>
 <li><p>Continue the analysis until all fault models are checked.</p></li>
 <li><p>The verification is done by applying the safety analysis checklist <a class="reference internal" href="safety_analysis_checklist.html#gd_chklst__safety_analysis" title="gd_chklst__safety_analysis"><em class="xref need">Safety Analysis Checklist T... (gd_chklst__safety_analysis)</em></a>.</p></li>
 </ul>
-<p><strong>Examples:</strong></p>
-<div class="line-block">
-<div class="line">.. feat_saf_fmea:: OpenKVS</div>
-<div class="line-block">
-<div class="line">:verifies: &lt;Feature architecture&gt;</div>
-<div class="line">:id: FEAT_SAF_FMEA__KVS__OpenKVS</div>
-<div class="line">:failure_mode: “MF_01_05”</div>
-<div class="line">:failure_effect: “message from calling app is corrupted”</div>
-<div class="line">:mitigation:</div>
-<div class="line">:mitigation_issue: &lt;ID from Issue Tracker| None if no issue needed&gt;</div>
-<div class="line">:sufficient: no</div>
-<div class="line">:argument:</div>
-<div class="line">:status: valid</div>
-</div>
-</div>
-<div class="line-block">
-<div class="line">.. feat_saf_fmea:: GetKeyValue</div>
-<div class="line-block">
-<div class="line">:verifies: &lt;Feature architecture&gt;</div>
-<div class="line">:id: FEAT_SAF_FMEA__KVS__GetKeyValue</div>
-<div class="line">:failure_mode: “MF_01_05”</div>
-<div class="line">:failure_effect: “message is corrupted due to corrupted call open to OSAL”</div>
-<div class="line">:mitigation: FEAT_REQ_persistency_key_val_storage__error</div>
-<div class="line">:mitigation_issue: &lt;ID from Issue Tracker| None if no issue needed&gt;</div>
-<div class="line">:sufficient: yes</div>
-<div class="line">:argument: “Calling app gets error information”</div>
-<div class="line">:status: valid</div>
-</div>
-</div>
-<p>The example is also used in the building blocks &lt;score_building_block_example&gt;.</p>
 </section>
 <section id="step-by-step-approach-dfa">
 <h3>Step-by-Step-approach DFA:<a class="headerlink" href="#step-by-step-approach-dfa" title="Link to this heading">#</a></h3>
@@ -673,22 +644,6 @@ So it could be shown that the analysis was done and no fault model is applicable
 <li><p>Continue the analysis until all failure initiators are checked.</p></li>
 <li><p>The verification is done by appling the safety analysis checklist <a class="reference internal" href="safety_analysis_checklist.html#gd_chklst__safety_analysis" title="gd_chklst__safety_analysis"><em class="xref need">Safety Analysis Checklist T... (gd_chklst__safety_analysis)</em></a>.</p></li>
 </ul>
-<p><strong>Examples:</strong></p>
-<div class="line-block">
-<div class="line">.. feat_saf_dfa:: &lt;Element descriptor&gt;</div>
-<div class="line-block">
-<div class="line">:verifies: &lt;Feature architecture&gt;</div>
-<div class="line">:id: feat_saf_DFA__&lt;Feature&gt;__&lt;Element descriptor&gt;</div>
-<div class="line">:violation_id: “SR_01_05”</div>
-<div class="line">:violation_cause: “Operating system including scheduler”</div>
-<div class="line">:mitigation:</div>
-<div class="line">:mitigation_issue: &lt;ID from Issue Tracker| None if no issue needed&gt;</div>
-<div class="line">:sufficient: no</div>
-<div class="line">:argument:</div>
-<div class="line">:status: valid</div>
-</div>
-</div>
-<p>The example is also used in the building blocks <a class="reference internal" href="../../../general_concepts/score_building_blocks_concept.html#general-concepts-building-blocks"><span class="std std-ref">Building blocks concept</span></a>.</p>
 </section>
 </section>
 </section>

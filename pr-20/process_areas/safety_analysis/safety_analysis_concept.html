@@ -531,7 +531,7 @@
                   
   <section id="concept-description">
 <h1>Concept Description<a class="headerlink" href="#concept-description" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-a59b821c">
+<div class="need_container docutils container" id="SNCB-57757246">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_doc_concept table" id="doc_concept__safety__analysis">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -633,7 +633,7 @@ shall be done in the way that we use the static and dynamic diagrams. The follow
 <span id="safety-analysis-feature-example"></span><a class="reference internal image-reference" href="../../_images/safety_analysis_feature.drawio.svg"><img alt="../../_images/safety_analysis_feature.drawio.svg" src="../../_images/safety_analysis_feature.drawio.svg" style="width: 80%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 19 </span><span class="caption-text">Safety Analysis Feature Perspective</span><a class="headerlink" href="#safety-analysis-feature-fig" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 19 </span><span class="caption-text">Dynamic Architecture</span><a class="headerlink" href="#safety-analysis-feature-fig" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>The safety analysis is done with the shown diagrams. The interface 1 and 2 are the interfaces of the feature. These interfaces shall be analyzed with the
@@ -670,6 +670,45 @@ shall be added to the violation cause of the analysis so it could be recognized 
 <section id="how-to-add-new-safety-mitigations">
 <h3>How to add new safety mitigations?<a class="headerlink" href="#how-to-add-new-safety-mitigations" title="Link to this heading">#</a></h3>
 <p>Identified faults without a mitigation remain open and are tracked in the issue tracking system <a class="reference internal" href="../change_management/change_management_workproducts.html#wp__issue_track_system" title="wp__issue_track_system"><em class="xref need">Issue tracking system (wp__issue_track_system)</em></a> until they are resolved.</p>
+</section>
+<section id="examples-for-fmea-and-dfa-at-feature-level">
+<span id="examples-fmea-dfa"></span><h3>Examples for FMEA and DFA at feature level<a class="headerlink" href="#examples-for-fmea-and-dfa-at-feature-level" title="Link to this heading">#</a></h3>
+<p><strong>FMEA:</strong></p>
+<div class="line-block">
+<div class="line">.. feat_saf_fmea:: Remove key</div>
+<div class="line-block">
+<div class="line">:verifies: feat_arc_dynamic__kvstorage__remove_key</div>
+<div class="line">:id: FEAT_SAF_FMEA__KVSTORAGE__RemoveKey</div>
+<div class="line">:failure_mode: “MF_01_01”</div>
+<div class="line">:failure_effect: “message is not received”</div>
+<div class="line">:mitigation: Detetion and error handling shall be done outside of the middleware.</div>
+<div class="line">:mitigation_issue: ID from Issue Tracker that defined mitigation will be documented in the assumtions of use (AoU)</div>
+<div class="line">:sufficient: yes</div>
+<div class="line">:argument: This error is handled by the calling application.</div>
+<div class="line">:status: valid</div>
+</div>
+</div>
+<p>Use the fault models <a class="reference internal" href="guidance/fault_models_guideline.html#gd_guidl__fault_models" title="gd_guidl__fault_models"><em class="xref need">Fault Models (gd_guidl__fault_models)</em></a> to ensure a structured analysis. If a fault model doesn’t apply,
+please fill in a short description in the violation cause of the analysis so it could be recognized that the analysis
+is done. If there are additional fault models needed, please enlarge the list of fault models.</p>
+<p><strong>DFA:</strong></p>
+<div class="line-block">
+<div class="line">.. feat_saf_dfa:: Static Architecture Persistency</div>
+<div class="line-block">
+<div class="line">:verifies: feat_arc_sta_persistency_static</div>
+<div class="line">:id: feat_saf_DFA__persistency__json_al</div>
+<div class="line">:violation_id: “CO_01_02”</div>
+<div class="line">:violation_cause: “Data or message corruption / repetition / loss / delay / masquerading or incorrect addressing of information. Failures will lead to falsified execution or to a not available feature.</div>
+<div class="line">:mitigation: feat_req__persistency__integrity_check</div>
+<div class="line">:mitigation_issue: None</div>
+<div class="line">:sufficient: yes</div>
+<div class="line">:argument: The integrity check will ensure that the data is not corrupted and the feature will work as expected.</div>
+<div class="line">:status: valid</div>
+</div>
+</div>
+<p>Use the DFA failure initiators <a class="reference internal" href="guidance/dfa_failure_initiators.html#gd_guidl__dfa_failure_initiators" title="gd_guidl__dfa_failure_initiators"><em class="xref need">DFA failure initiators (gd_guidl__dfa_failure_initiators)</em></a> to ensure a structured analysis. If a failure initiator doesn’t apply,
+please fill in a short description in the violation cause of the analysis so it could be recognized that the analysis is done. If there are
+additional failure initiators needed, please enlarge the list of fault models.</p>
 </section>
 </section>
 </section>
@@ -730,6 +769,7 @@ shall be added to the violation cause of the analysis so it could be recognized 
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-add-new-safety-mitigations">How to add new safety mitigations?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#examples-for-fmea-and-dfa-at-feature-level">Examples for FMEA and DFA at feature level</a></li>
 </ul>
 </li>
 </ul>
