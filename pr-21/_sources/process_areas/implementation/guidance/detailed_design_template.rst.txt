@@ -21,47 +21,4 @@ Detailed Design Template
    :status: valid
    :complies: std_req__iso26262__software_542, std_req__iso26262__support_641, std_req__iso26262__support_6421, std_req__iso26262__support_6425
 
-Detailed Design for Component: <Component Name>
-===============================================
-
-Description
------------
-
-| Design Decisions
-| Design Constraints
-
-Rationale Behind Decomposition into Units
-******************************************
-| mandatory: a motivation for the decomposition into one or more units.
-
-.. note:: Reason for split into multiple units could be-
-	    - Based on design principles like SOLID,DRY etc
-	    - Based on design pattern's etc.
-
-Static Diagrams for Unit Interactions
--------------------------------------
-.. code-block:: rst
-
-   .. dd_sta:: <Title>
-      :id: dd_sta__<Title>
-      :security: <YES|NO>
-      :safety: <QM|ASIL_B|ASIL_D>
-      :status: <valid|invalid>
-      :implements: <link to component requirement id>
-      :satisfies: <link to component architecture id>
-
-        .. image:: <link to drawio image> or .. uml:: <link to plantuml>
-
-Dynamic Diagrams for Unit Interactions
---------------------------------------
-.. code-block:: rst
-
-   .. dd_dyn:: <Title>
-      :id: dd_dyn__<Title>
-      :security: <YES|NO>
-      :safety: <QM|ASIL_B|ASIL_D>
-      :status: <valid|invalid>
-      :implements: <link to component requirement id>
-      :satisfies: <link to component architecture id>
-
-        .. image:: <link to drawio image> or .. uml:: <link to plantuml>
+   For the content see here: :ref:`component_detailed_design_template`

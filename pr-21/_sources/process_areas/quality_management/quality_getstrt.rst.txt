@@ -28,6 +28,8 @@ Therefore guideslines :need:`gd_guidl__quality_management`, :need:`gd_guidl__qlm
 General Workflow
 ****************
 
+The details of what needs to be done in each steps are described in the :ref:`quality_workflows`.
+
 .. figure:: _assets/quality_workflow.drawio.svg
    :width: 80%
    :align: center
@@ -35,5 +37,4 @@ General Workflow
 
    Quality Workflow
 
-:numref:`quality_workflow_fig` shows all steps which are required to ensure the quality in the project.
-A more detailed description is available at :ref:`quality_workflows`.
+

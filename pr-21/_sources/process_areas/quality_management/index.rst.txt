@@ -20,8 +20,8 @@ Quality Management
 .. toctree::
    :maxdepth: 1
 
+   quality_getstrt 
    quality_concept
-   quality_getstrt
    guidance/index
    quality_roles
    quality_workflow

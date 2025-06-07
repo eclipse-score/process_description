@@ -33,9 +33,9 @@ Workflows
 .. workflow:: Verify/Approve Platform Release
    :id: wf__vy_ap_pltrelease
    :status: valid
-   :responsible: rl__technical_lead
+   :responsible: rl__quality_manager
    :approved_by: rl__project_lead
-   :supported_by: rl__quality_manager
+   :supported_by: 
    :input: wp__qms_plan
    :output: wp__platform_sw_release_note
    :contains: gd_guidl__qlm_plan_definitions, gd_chklst__review_checklist
