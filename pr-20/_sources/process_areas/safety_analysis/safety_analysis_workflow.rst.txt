@@ -82,7 +82,7 @@ RAS(IC) for Safety Analysis
 
 .. needtable:: RASIC Overview for Safety Analysis
    :tags: safety_analysis
-   :filter: "safety_analysis" in tags and type == "workflow"
+   :filter: "safety_analysis" in tags and type == "workflow" and is_external == False
    :style: table
    :sort: status
    :columns: id as "Activity";responsible as "Responsible";approved_by as "Approver";supported_by as "Supporter"

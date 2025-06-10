@@ -546,7 +546,7 @@
                   
   <section id="guidelines">
 <h1>Guidelines<a class="headerlink" href="#guidelines" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-1ad8577d">
+<div class="need_container docutils container" id="SNCB-fa5380fe">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_guidl table" id="gd_guidl__safety_analysis">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -596,15 +596,17 @@
 <p>Detailed description which steps are need for a safety analysis. In general the workflow is shown in <a class="reference internal" href="../safety_analysis_getstrt.html#doc_getstrt__safety_analysis" title="doc_getstrt__safety_analysis"><em class="xref need">Getting Started on Safety A... (doc_getstrt__safety_analysis)</em></a>.</p>
 <ol class="arabic simple">
 <li><p>Analyze the dependencies between features by performing a <strong>single platform feature DFA</strong> that references all platform feature static architecture diagrams, highlighting potential shared use of modules.</p></li>
-<li><p>To analyse the Feature Architecture a Safety Analysis and a DFA shall be executed. The resutls of the platform feature DFA shall be used as an input.</p></li>
-<li><p>Perform Safety Analysis on the Feature Architecture.</p></li>
-<li><p>Perform DFA on the Feature Architecture.</p></li>
-<li><p>To analyse the Component Architecture a Safety Analysis and a DFA shall be executed. This only applies if there is a component architecture which decomposes into lower level components.</p></li>
-<li><p>Perform Safety Analysis on the Component Architecture.</p></li>
-<li><p>Perform DFA on the Component Architecture.</p></li>
-<li><p>The performance of the Safety Analysis and DFA (Feature and Component) shall be monitored.</p></li>
-<li><p>For any unresolved findings from the Safety Analysis and DFA, log an issue in the Issue Tracking system and assign the <code class="docutils literal notranslate"><span class="pre">safety</span></code> label to safety-relevant items. The safety analysis remains “valid” but “not sufficient” as long as such issues are open.</p></li>
-<li><p>If the analysis is completed, a verification of the analysis shall be done and a report of the analysis shall be created.</p></li>
+<li><p>Monitor the results of the platform feature DFA and log any issues in the Issue Tracking system with the <code class="docutils literal notranslate"><span class="pre">safety</span></code> label.</p></li>
+<li><p>Verify the platform feature DFA results by using <a class="reference internal" href="safety_analysis_checklist.html#gd_chklst__safety_analysis" title="gd_chklst__safety_analysis"><em class="xref need">Safety Analysis Checklist T... (gd_chklst__safety_analysis)</em></a>.</p></li>
+<li><p>Platform feature DFA are completed when the verification is done, no issues are open and the status is “valid”.</p></li>
+<li><p>To analyse the Feature Architecture a Safety Analysis and a DFA shall be executed. The results of the platform feature DFA shall be used as an input.</p></li>
+<li><p>Monitor the results of the Safety Analysis and DFA and log any issues in the Issue Tracking system with the <code class="docutils literal notranslate"><span class="pre">safety</span></code> label.</p></li>
+<li><p>Verify the Safety Analysis and DFA results by using <a class="reference internal" href="safety_analysis_checklist.html#gd_chklst__safety_analysis" title="gd_chklst__safety_analysis"><em class="xref need">Safety Analysis Checklist T... (gd_chklst__safety_analysis)</em></a>..</p></li>
+<li><p>Feature Safety Analysis and DFA are completed when the verification is done, no issues are open and the status is “valid”.</p></li>
+<li><p>To analyse the Component Architecture a Safety Analysis and a DFA shall be executed. The results of the feature Safety Analysis and DFA shall be used as an input.</p></li>
+<li><p>Monitor the results of the Safety Analysis and DFA and log any issues in the Issue Tracking system with the <code class="docutils literal notranslate"><span class="pre">safety</span></code> label.</p></li>
+<li><p>Verify the Safety Analysis and DFA results by using <a class="reference internal" href="safety_analysis_checklist.html#gd_chklst__safety_analysis" title="gd_chklst__safety_analysis"><em class="xref need">Safety Analysis Checklist T... (gd_chklst__safety_analysis)</em></a>..</p></li>
+<li><p>Component Safety Analysis and DFA are completed when the verification is done, no issues are open and the status is “valid”.</p></li>
 </ol>
 <p>A example for the safety analysis (FMEA and DFA) is shown in the <a class="reference internal" href="../safety_analysis_concept.html#examples-fmea-dfa"><span class="std std-ref">Examples for FMEA and DFA at feature level</span></a>.</p>
 <section id="step-by-step-approach-safety-analysis">

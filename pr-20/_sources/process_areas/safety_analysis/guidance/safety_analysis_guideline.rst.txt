@@ -29,15 +29,18 @@ Workflow for Safety Analysis
 Detailed description which steps are need for a safety analysis. In general the workflow is shown in :need:`doc_getstrt__safety_analysis`.
 
 #. Analyze the dependencies between features by performing a **single platform feature DFA** that references all platform feature static architecture diagrams, highlighting potential shared use of modules.
-#. To analyse the Feature Architecture a Safety Analysis and a DFA shall be executed. The resutls of the platform feature DFA shall be used as an input.
-#. Perform Safety Analysis on the Feature Architecture.
-#. Perform DFA on the Feature Architecture.
-#. To analyse the Component Architecture a Safety Analysis and a DFA shall be executed. This only applies if there is a component architecture which decomposes into lower level components.
-#. Perform Safety Analysis on the Component Architecture.
-#. Perform DFA on the Component Architecture.
-#. The performance of the Safety Analysis and DFA (Feature and Component) shall be monitored.
-#. For any unresolved findings from the Safety Analysis and DFA, log an issue in the Issue Tracking system and assign the ``safety`` label to safety-relevant items. The safety analysis remains "valid" but "not sufficient" as long as such issues are open.
-#. If the analysis is completed, a verification of the analysis shall be done and a report of the analysis shall be created.
+#. Monitor the results of the platform feature DFA and log any issues in the Issue Tracking system with the ``safety`` label.
+#. Verify the platform feature DFA results by using :need:`gd_chklst__safety_analysis`.
+#. Platform feature DFA are completed when the verification is done, no issues are open and the status is "valid".
+#. To analyse the Feature Architecture a Safety Analysis and a DFA shall be executed. The results of the platform feature DFA shall be used as an input.
+#. Monitor the results of the Safety Analysis and DFA and log any issues in the Issue Tracking system with the ``safety`` label.
+#. Verify the Safety Analysis and DFA results by using :need:`gd_chklst__safety_analysis`..
+#. Feature Safety Analysis and DFA are completed when the verification is done, no issues are open and the status is "valid".
+#. To analyse the Component Architecture a Safety Analysis and a DFA shall be executed. The results of the feature Safety Analysis and DFA shall be used as an input.
+#. Monitor the results of the Safety Analysis and DFA and log any issues in the Issue Tracking system with the ``safety`` label.
+#. Verify the Safety Analysis and DFA results by using :need:`gd_chklst__safety_analysis`..
+#. Component Safety Analysis and DFA are completed when the verification is done, no issues are open and the status is "valid".
+
 
 A example for the safety analysis (FMEA and DFA) is shown in the :ref:`examples_fmea_dfa`.
 
