@@ -539,7 +539,7 @@
                   
   <section id="guideline">
 <h1>Guideline<a class="headerlink" href="#guideline" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-f7c251e6">
+<div class="need_container docutils container" id="SNCB-8d69750c">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_guidl table" id="gd_guidl__req__engineering">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -605,23 +605,27 @@
 <tbody>
 <tr class="row-even"><td><p>Stakeholder Requirements</p></td>
 <td><p><a class="reference internal" href="requirements_templates.html#gd_temp__req__stkh_req" title="gd_temp__req__stkh_req"><em class="xref need">Stakeholder Requirements Te...</em></a></p></td>
-<td><p>stkh_req_t</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">stkh_req__</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p>Feature Requirements</p></td>
-<td><p><a class="reference internal" href="requirements_templates.html#gd_temp__req__feat_req" title="gd_temp__req__feat_req"><em class="xref need">Feature Requirements Templates</em></a></p></td>
-<td><p>feat_req_t</p></td>
+<td><p><a class="reference internal" href="requirements_templates.html#gd_temp__req__feat_req" title="gd_temp__req__feat_req"><em class="xref need">Feature Requirements Template</em></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">feat_req__</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p>Component Requirements</p></td>
 <td><p><a class="reference internal" href="requirements_templates.html#gd_temp__req__comp_req" title="gd_temp__req__comp_req"><em class="xref need">Component Requirements Temp...</em></a></p></td>
-<td><p>comp_req_t</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">comp_req__</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p>AoU Requirements</p></td>
-<td><p><a class="reference internal" href="requirements_templates.html#gd_temp__req__aou_req" title="gd_temp__req__aou_req"><em class="xref need">AoU Requirement Templates</em></a></p></td>
-<td><p>aou_req_t</p></td>
+<td><p><a class="reference internal" href="requirements_templates.html#gd_temp__req__aou_req" title="gd_temp__req__aou_req"><em class="xref need">AoU Requirement Template</em></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">aou_req__</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p>Process Requirements</p></td>
-<td><p><a class="reference internal" href="requirements_templates.html#gd_temp__req__process_req" title="gd_temp__req__process_req"><em class="xref need">Process Requirements Templates</em></a></p></td>
-<td><p>gd_req_t</p></td>
+<td><p><a class="reference internal" href="requirements_templates.html#gd_temp__req__process_req" title="gd_temp__req__process_req"><em class="xref need">Process Requirements Template</em></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">gd_req__</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>Tool Requirements</p></td>
+<td><p><a class="reference internal" href="requirements_templates.html#gd_temp__req__tool_req" title="gd_temp__req__tool_req"><em class="xref need">Tool Requirements Template</em></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">tool_req__</span></code></p></td>
 </tr>
 </tbody>
 </table>
@@ -630,7 +634,7 @@
 </section>
 <section id="attributes">
 <h3>Attributes<a class="headerlink" href="#attributes" title="Link to this heading">#</a></h3>
-<p>For all requirements following mandatory attributes need to be defined:</p>
+<p>For all requirements following mandatory attributes are defined:</p>
 <div class="needstable_wrapper docutils container" id="needtable-process_areas/requirements_engineering/guidance/requirements_guideline-0">
 <div class="pst-scrollable-table-container"><table class="NEEDS_TABLE table" id="needtable-process_areas/requirements_engineering/guidance/requirements_guideline-0-table_node">
 <caption><span class="caption-text">Overview of mandatory requirement attributes</span><a class="headerlink" href="#needtable-process_areas/requirements_engineering/guidance/requirements_guideline-0-table_node" title="Link to this table">#</a></caption>
@@ -667,6 +671,8 @@
 <li><p>ID: The naming convention for the ID is defined <cite>here &lt;REPLACE_doc__naming_conventions&gt;</cite>.</p></li>
 <li><p>Furthermore the requirements need to be versioned. Therefore a hash value of the requirement will to be calculated. The concept is described: <a class="reference internal" href="../requirements_concept.html#traceability-concept-for-requirements"><span class="std std-ref">Traceability Concept for Requirements</span></a></p></li>
 <li><p>For the remaining attributes only predefined values can be used. A more detailed description can be found here: <a class="reference internal" href="../requirements_concept.html#attributes-of-the-requirements"><span class="std std-ref">Attributes of the Requirements</span></a></p></li>
+<li><p>Note that “rationale” is only mandatory for Stakeholder Requirements …</p></li>
+<li><p>and process requirements do not need security and safety because these can be derived from the standards they comply to (as well type attributes as these would all be “Non-functional”)</p></li>
 </ul>
 </section>
 <section id="checks">
