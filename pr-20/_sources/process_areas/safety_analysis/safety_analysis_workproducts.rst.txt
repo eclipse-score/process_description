@@ -15,6 +15,13 @@
 Workproducts Safety Analysis
 ############################
 
+.. workproduct:: Platform Feature DFA
+   :id: wp__platform_feature_dfa
+   :status: valid
+   :complies: std_wp__iso26262__software_751, std_wp__iso26262__software_753, std_wp__isopas8926__4524
+
+   | Analyze the dependencies between features that references all platform feature static architecture diagrams, highlighting potential shared use of modules.
+  
 .. workproduct:: Feature Safety Analysis
    :id: wp__feature_safety_analysis
    :status: valid
@@ -30,7 +37,7 @@ Workproducts Safety Analysis
 
    | Dependent Failure Analysis on feature level
    | - Detection and prevention mitigations linked to Software Feature Requirements or Feature Assumptions of Use
-   | Perform analysis on interactions between safety related and non-safety related modules or modules with different ASIL of one feature. Including potential influences from other features in the platform.
+   | Perform analysis on interactions between safety related and non-safety related modules or modules with different ASIL of one feature.
 
 .. workproduct:: Component Safety Analysis
    :id: wp__sw_component_safety_analysis

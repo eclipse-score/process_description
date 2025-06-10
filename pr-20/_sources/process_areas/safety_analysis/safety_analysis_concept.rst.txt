@@ -33,6 +33,18 @@ Inputs
 Stakeholders for the Safety Analysis
 ====================================
 
+#. :need:`Safety Engineer <rl__safety_engineer>`
+
+   * Analyse the platform feature architecture with a DFA
+   * Analyse the feature architecture with a Safety Analysis and DFA
+   * Analyse the component architecture with a Safety Analysis and DFA
+   * Monitor/verify the Safety Analysis and DFA
+
+#. :need:`Safety Manager <rl__safety_manager>`
+
+   * Approve the safety analysis and DFA
+   * Approve the verification of the safety analysis and DFA   
+
 #. :need:`Contributor <rl__contributor>`
 
    * Support the safety analyses and DFA
@@ -40,14 +52,8 @@ Stakeholders for the Safety Analysis
 
 #. :need:`Committer <rl__committer>`
 
-   * Analyse the feature architecture by performing the safety analyses and DFA
-   * Analyse the component architecture by performing the safety analyses and DFA
-   * Monitor/verify the Safety Analysis and DFA
-
-#. :need:`Safety Manager <rl__safety_manager>`
-
-   * Approve the safety analysis and DFA
-   * Approve the verification of the safety analysis and DFA
+   * Support the safety analyses and DFA
+   * Support the monitoring and verifying of the safety analyses and DFA
 
 #. :need:`Security Manager <rl__security_manager>`
 

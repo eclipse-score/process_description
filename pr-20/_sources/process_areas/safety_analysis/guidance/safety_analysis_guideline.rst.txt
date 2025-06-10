@@ -48,7 +48,7 @@ Step-by-Step-approach Safety Analysis:
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The analysis is done by using the template :ref:`safety_analysis_templates` on the feature or component architectural diagrams
-(activity and/or sequence diagrams) using a diagram specific applied fault model <:need:`gd_guidl__fault_models`>. Apply the fault
+using a diagram specific applied fault model <:need:`gd_guidl__fault_models`>. Apply the fault
 model to the diagram and document the results in the template. If a fault model is not applicable, fill in a short remark in the
 violation cause that it's not apllicable. So it could be shown that the analysis was done and no fault model is applicable.
 The analysis considers single faults that can mitigate a safety requirement.

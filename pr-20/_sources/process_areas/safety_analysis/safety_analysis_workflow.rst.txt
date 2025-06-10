@@ -18,6 +18,20 @@
 Workflow Safety Analysis
 ########################
 
+.. workflow:: Analyse Platform Feature Architecture
+   :id: wf__analyse_platform_featarch
+   :status: valid
+   :tags: safety_analysis
+   :responsible: rl__safety_engineer
+   :approved_by: rl__safety_manager
+   :supported_by: rl__contributor, rl__committer, rl__security_manager
+   :input: wp__requirements__feat, wp__feature_arch, wp__issue_track_system
+   :output: wp__platform_feature_dfa
+   :contains: gd_guidl__dfa_failure_initiators, gd_temp__feat_saf_dfa
+   :has: doc_concept__safety__analysis, doc_getstrt__safety_analysis
+
+   | With a platform features DFA the potential common usage of modules shall be analyzed. It shall be used as an input for all other DFA's.
+
 .. workflow:: Analyse Feature Architecture
    :id: wf__analyse_featarch
    :status: valid
@@ -31,8 +45,7 @@ Workflow Safety Analysis
    :has: doc_concept__safety__analysis, doc_getstrt__safety_analysis
 
    | The safety analysis and DFA for the feature is executed.
-   | With a platform features DFA the potential common usage of modules shall be analyzed. It shall be used as an input for all other DFA's.
-
+ 
 .. workflow:: Analyse Component Architecture
    :id: wf__analyse_comparch
    :status: valid
