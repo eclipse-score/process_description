@@ -19,7 +19,7 @@ Tenets
 
 .. tenet:: TT-PROVENANCE
    :id: tenet__trust__tt-provenance
-   :status: draft
+   :status: valid
    :links: assertion__trust__ta-supply-chain, assertion__trust__ta-inputs
 
    All source code (and attestations for claims) for XYZ are provided with
@@ -55,7 +55,7 @@ Tenets
 
 .. tenet:: TT-CONSTRUCTION
    :id: tenet__trust__tt-construction
-   :status: draft
+   :status: valid
    :links: assertion__trust__ta-tests, assertion__trust__ta-releases, assertion__trust__ta-iterations
 
    Tools are provided to build XYZ from trusted sources (also provided) with
@@ -86,7 +86,7 @@ Tenets
 
 .. tenet:: TT-CHANGES
    :id: tenet__trust__tt-changes
-   :status: draft
+   :status: valid
    :links: assertion__trust__ta-fixes, assertion__trust__ta-updates
 
    XYZ is actively maintained, with regular updates to dependencies, and changes
@@ -119,7 +119,7 @@ Tenets
 
 .. tenet:: TT-EXPECTATIONS
    :id: tenet__trust__tt-expectations
-   :status: draft
+   :status: valid
    :links: assertion__trust__ta-behaviours, assertion__trust__ta-misbehaviours, assertion__trust__ta-indicators, assertion__trust__ta-constraints
 
    Documentation is provided, specifying what XYZ is expected to do, and what
@@ -148,7 +148,7 @@ Tenets
 
 .. tenet:: TT-RESULTS
    :id: tenet__trust__tt-results
-   :status: draft
+   :status: valid
    :links: assertion__trust__ta-validation, assertion__trust__ta-data, assertion__trust__ta-analysis
 
    Evidence is provided to demonstrate that XYZ does what it is supposed to
@@ -173,7 +173,7 @@ Tenets
 
 .. tenet:: TT-CONFIDENCE
    :id: tenet__trust__tt-confidence
-   :status: draft
+   :status: valid
    :links: assertion__trust__ta-methodologies, assertion__trust__ta-confidence
 
    Confidence in XYZ is measured by analysing actual performance in tests and in

@@ -22,12 +22,8 @@ Trustable
 performance, availability and reliability are considered critical. Broadly we assert that any
 consideration of trust must be based on evidence.*
 
-You can copy the folder and use this as a template to measure your OSS project trust.
-Link your evidences to the Trustable Assertions (TA) and update the content of the
-Tenets and Assertions according your project and evidences.
-
-Especially replace "XYZ" software or SW with the name of your project, e.g.
-"This release of S-CORE is trustable".
+You can use these tenets and assertion defined here to measure your OSS project trust score.
+Link your evidences to the Trustable Assertions (TA).
 
 
 .. figure:: _assets/tsf_overview.drawio.svg
@@ -46,7 +42,7 @@ Especially replace "XYZ" software or SW with the name of your project, e.g.
 
 .. tsf:: TRUSTABLE SOFTWARE
    :id: tsf__trust__trustable-software
-   :status: draft
+   :status: valid
    :links: tenet__trust__tt-provenance, tenet__trust__tt-construction, tenet__trust__tt-changes, tenet__trust__tt-expectations, tenet__trust__tt-results, tenet__trust__tt-confidence
 
     This release of XYZ is Trustable.
@@ -56,30 +52,12 @@ Especially replace "XYZ" software or SW with the name of your project, e.g.
     The algorithm for aggregation may involve weighting of specific Tenets or
     Assertions based on project priorities or experience.
 
-The graphs below presents statistics:
-
-.. needpie:: My trustable pie chart
-   :labels: tsf, tenet, assertion
-
-   type == 'tsf'
-   type == 'tenet'
-   type == 'assertion'
-
-.. needpie:: Tenet status
-   :labels: valid, draft
-
-   type == 'tenet' and status == 'valid'
-   type == 'tenet' and status == 'draft'
-
-.. needpie:: Assertion status
-   :labels: valid, draft
-
-   type == 'assertion' and status == 'valid'
-   type == 'assertion' and status == 'draft'
-
 
 XYZ trustable overview
 ----------------------
+
+Trustable Software Framework
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. needtable::
    :style: table
@@ -92,6 +70,9 @@ XYZ trustable overview
    for need in needs.filter_types(["tsf"]):
                 results.append(need)
 
+Trustable Tenets Overview
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
 .. needtable::
    :style: table
    :columns: title;id;status;links
@@ -102,6 +83,9 @@ XYZ trustable overview
 
    for need in needs.filter_types(["tenet"]):
                 results.append(need)
+
+Trustable Assertions Overview
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. needtable::
    :style: table

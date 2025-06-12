@@ -21,7 +21,6 @@ Workflows
 
    process_management
    quality_management
-   safety_analysis
 
 
 S-CORE Workflow list

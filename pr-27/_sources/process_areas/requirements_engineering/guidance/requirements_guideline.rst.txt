@@ -39,26 +39,29 @@ Templates
      - VS Code Snippet
    * - Stakeholder Requirements
      - :need:`[[title]] <gd_temp__req__stkh_req>`
-     - stkh_req_t
+     - ``stkh_req__``
    * - Feature Requirements
      - :need:`[[title]] <gd_temp__req__feat_req>`
-     - feat_req_t
+     - ``feat_req__``
    * - Component Requirements
      - :need:`[[title]] <gd_temp__req__comp_req>`
-     - comp_req_t
+     - ``comp_req__``
    * - AoU Requirements
      - :need:`[[title]] <gd_temp__req__aou_req>`
-     - aou_req_t
+     - ``aou_req__``
    * - Process Requirements
      - :need:`[[title]] <gd_temp__req__process_req>`
-     - gd_req_t
+     - ``gd_req__``
+   * - Tool Requirements
+     - :need:`[[title]] <gd_temp__req__tool_req>`
+     - ``tool_req__``
 
 Additionally for the formulation of requirements following template is available: :need:`[[title]]<gd_temp__req__formulation>`
 
 Attributes
 ----------
 
-For all requirements following mandatory attributes need to be defined:
+For all requirements following mandatory attributes are defined:
 
 .. needtable:: Overview of mandatory requirement attributes
    :tags: requirements_engineering
@@ -72,6 +75,8 @@ For all requirements following mandatory attributes need to be defined:
 * ID: The naming convention for the ID is defined `here <REPLACE_doc__naming_conventions>`.
 * Furthermore the requirements need to be versioned. Therefore a hash value of the requirement will to be calculated. The concept is described: :ref:`traceability concept for requirements`
 * For the remaining attributes only predefined values can be used. A more detailed description can be found here: :ref:`attributes of the requirements`
+* Note that "rationale" is only mandatory for Stakeholder Requirements ...
+* and process requirements do not need security and safety because these can be derived from the standards they comply to (as well type attributes as these would all be "Non-functional")
 
 Checks
 ------
