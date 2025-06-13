@@ -17,6 +17,10 @@
 Trustable
 =========
 
+.. note::
+   The copyright check ignores all files in trustable and its subdirectories.
+   Modified BUILD file in process repository to be reverted after reuse implementation
+   is implemented in tooling.
 
 *The* `Trustable Software Framework (TSF) <https://codethinklabs.gitlab.io/trustable/trustable/index.html>`_
 *approach is designed for consideration of software where factors such as safety, security,
