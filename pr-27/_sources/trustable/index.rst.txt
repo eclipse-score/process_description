@@ -53,7 +53,7 @@ Link your evidences to the Trustable Assertions (TA).
     Assertions based on project priorities or experience.
 
 
-XYZ trustable overview
+XYZ Trustable Overview
 ----------------------
 
 Trustable Software Framework
