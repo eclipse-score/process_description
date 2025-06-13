@@ -38,12 +38,14 @@ Stakeholders for the Quality Management
     * Responsible for the quality conformance in the platform and the project
     * Monitoring and improving of quality activities
     * Execution of Audit's, Quality Checks and Work Product Reviews
-    * Approval of work products
 
 #. :need:`Technical Lead <rl__technical_lead>`
     * Support the work products
-    * Approval of Process Audits
+    * Approval of Quality Management Plan, Platform Process Audit, Feature Process Conformance Checks, Feature Work Product Reviews, Consult and Execute Quality Trainings, Monitor/Improve Quality Activities
 
+#. :need:`Project Lead <rl__project_lead>`
+    * Support the work products
+    * Approval of Platform Release
 
 #. :need:`Committer <rl__committer>`
     * Responsible for the work products

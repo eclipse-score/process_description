@@ -46,7 +46,7 @@ Guideline Quality Management Plan
    | Tailoring is done for the whole SW platform by defining only the relevant processes and their resulting outcomes and an argumentation why the others are not needed in <add link to aspice>.
    |
    | **Planning quality activities:**
-   | In the Quality Management Plan the nomination of the quality manager and the project manager is documented.
+   | In the Quality Management Plan the nomination of the quality manager :need:`rl__quality_manager` and the project lead :need:`rl__project_lead` is documented.
    | The planning of quality activities is done using issues in the :need:`wp__issue_track_system` as specified in the Project Management part of the Project Management Plan.
    | It contains for each issue
    | * objective - as part of the issue description

@@ -32,8 +32,8 @@ Workflow for quality management is shown in :numref:`quality_workflow_fig` to ge
 The following steps are required to ensure the quality in the project:
 
 #. Create/maintain Quality Management Plan
-   For the creation of the Quality Management Plan, the template :need:`gd_temp__qlm_plan` can be used. As a reference also the 
-   Platform Quality Management Plan can be considered. Derivations to the platform plan should 
+   For the creation of the Quality Management Plan, the template :need:`gd_temp__qlm_plan` can be used. As a reference also the
+   Platform Quality Management Plan can be considered. Derivations to the platform plan should
    be documented in the Quality Management Plan. Also the project individual definitions like used resources and milestones.
 
 #. Quality Plan (released)
@@ -41,7 +41,7 @@ The following steps are required to ensure the quality in the project:
    during the project.
 
 #. Verify/Aprove Platform Release
-   The verification of a platform releas is done by the :need:`rl__technical_lead` and supported by the :need:`rl__quality_manager`.
+   The verification of a platform releas is done by the :need:`rl__quality_manager` and supported by the :need:`rl__technical_lead`.
    A checklist is used to ensure that all required items are checked. The checklist is based on the :need:`gd_chklst__review_checklist`.
    Every Platform Release needs at least one process audit.
 
@@ -49,7 +49,7 @@ The following steps are required to ensure the quality in the project:
    The results of the process audit are documented in the :need:`wp__process_impr_report`. For the release 100% of the audit has to be done.
 
 #. Execute Feature Process Compliance Checks
-   For the feature process compliance checks the :need:`gd_chklst__review_checklist` is used. Also spot checks shall be done to ensure that 
+   For the feature process compliance checks the :need:`gd_chklst__review_checklist` is used. Also spot checks shall be done to ensure that
    the processes are followed.
 
 #. Execute Feature Work Product Reviews
@@ -61,7 +61,5 @@ The following steps are required to ensure the quality in the project:
    With the issue tracking system the status of the issues can be monitored. The issues are assigned to the :need:`rl__quality_manager`.
 
 #. Update Issue Tracking System
-   The actual status of the issues is updated in the issue tracking system. If necessary the :need:`rl__quality_manager` has to escalate the 
+   The actual status of the issues is updated in the issue tracking system. If necessary the :need:`rl__quality_manager` has to escalate the
    issues to the :need:`rl__project_lead`.
-
-

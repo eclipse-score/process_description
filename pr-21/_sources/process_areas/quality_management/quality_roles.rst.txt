@@ -24,7 +24,7 @@ Roles
 
    Required skills
 
-   * Degree: Master degree in quality management, or similar technical/economical degree, or comparable work experience
+   * Degree: Master degree in software quality management, or similar technical/economical degree, or comparable work experience
    * Solid understanding of quality management
    * Knowledge in project management
    * Deep understanding of quality criteria and the correlating methods and procedures to achieve and verify them
@@ -39,7 +39,7 @@ Roles
 
    Experience
 
-   * 2 years of experience in quality management
+   * 2 years of experience in software quality management
    * Experience in managing projects
 
    Responsibility
@@ -54,6 +54,6 @@ Roles
 
    Authority
 
-   * Escalation of planning topics to the project manager
+   * Escalation of planning topics to the project lead :need:`rl__project_lead`
    * Definition of quality assurance measures
    * Refusing the approval of work products as defined in the workflows

@@ -28,13 +28,22 @@ Therefore guideslines :need:`gd_guidl__quality_management`, :need:`gd_guidl__qlm
 General Workflow
 ****************
 
-The details of what needs to be done in each steps are described in the :ref:`quality_workflows`.
+One goal of the Quality Management Process is to ensure that the project is following the defined processes and
+that the quality of the deliverables is according to the requirements. The Quality Management process follows an
+continous approach.
 
-.. figure:: _assets/quality_workflow.drawio.svg
-   :width: 80%
-   :align: center
-   :name: quality_workflow_fig
+The workflows are defined in the :ref:`quality_workflows` section. The following workflows shall be executed continously:
 
-   Quality Workflow
+* Consult and Execute Quality Trainings
+* Monitor/Improve Quality Activities
 
+For every release, the following workflows are executed:
 
+* Create/Maintain Quality Management Plan
+* Verify/Approve Platform Release
+* Execute Platform Process Audit
+* Execute Feature Process Conformance Checks
+* Execute Feature Work Product Reviews
+
+For open issues the issue traking system is used to track the issues and to ensure that they are resolved in time.
+The issue tracking system is defined in the :need:`wp__issue_track_system`. 

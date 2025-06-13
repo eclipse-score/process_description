@@ -35,7 +35,7 @@ Workflows
    :status: valid
    :responsible: rl__quality_manager
    :approved_by: rl__project_lead
-   :supported_by: 
+   :supported_by: rl__technical_lead
    :input: wp__qms_plan
    :output: wp__platform_sw_release_note
    :contains: gd_guidl__qlm_plan_definitions, gd_chklst__review_checklist
@@ -93,7 +93,7 @@ Workflows
    :contains: gd_guidl__qlm_plan_definitions
    :has: doc_concept__quality__process, doc_getstrt__quality__process
 
-   | The quality manager consults all project/platform stakeholder for quality topics and executes regularly quality trainings.
+   | The quality manager :need:`rl__quality_manager` consults all project/platform stakeholder for quality topics and executes regularly quality trainings.
 
 .. workflow:: Monitor/Improve Quality Activities
    :id: wf__mr_imp_qlm_plan_processes
@@ -106,8 +106,8 @@ Workflows
    :contains: gd_guidl__qlm_plan_definitions, gd_chklst__review_checklist, gd_req__qlm_report
    :has: doc_concept__quality__process, doc_getstrt__quality__process
 
-   | The Quality Manager is responsible for the monitoring of the activities against the quality management plan.
-   | The Quality Manager is responsible to adjust the plan, if deviations are detected.
+   | The quality manager :need:`rl__quality_manager` is responsible for the monitoring of the activities against the quality management plan.
+   | The quality manager :need:`rl__quality_manager` is responsible to adjust the plan, if deviations are detected.
 
 
 .. needextend:: "process_areas/quality_management" in docname
