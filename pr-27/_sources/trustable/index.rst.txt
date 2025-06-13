@@ -19,11 +19,11 @@ Trustable
 
 *The* `Trustable Software Framework (TSF) <https://codethinklabs.gitlab.io/trustable/trustable/index.html>`_
 *approach is designed for consideration of software where factors such as safety, security,
-performance, availability and reliability are considered critical. Broadly we assert that any
+performance, availability and reliability are considered critical. Broadly it asserts that any
 consideration of trust must be based on evidence.*
 
-You can use these tenets and assertion defined here to measure your OSS project trust score.
-Link your evidences to the Trustable Assertions (TA).
+The tenets and assertions defined in the Trustable Software Framework can be used to measure an (OSS) project trust score.
+To calculate the score link evidences to the Trustable Assertions (TA).
 
 
 .. figure:: _assets/tsf_overview.drawio.svg
