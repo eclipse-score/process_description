@@ -22,6 +22,9 @@ Template Quality Plan
    :status: valid
    :complies: std_wp__iso26262__management_553, std_req__iso26262__management_5423, std_req__aspice_40__SUP-1-BP1, std_req__aspice_40__SUP-1-BP2, std_req__aspice_40__SUP-1-BP3, std_req__aspice_40__SUP-1-BP4, std_req__aspice_40__SUP-1-BP7, std_req__aspice_40__PIM-3-BP1, std_req__aspice_40__PIM-3-BP2, std_req__aspice_40__PIM-3-BP3, std_req__aspice_40__PIM-3-BP4, std_req__aspice_40__PIM-3-BP5, std_req__aspice_40__PIM-3-BP6, std_req__aspice_40__PIM-3-BP7
 
+:note: The quality management plan shall be continuously maintained during the project.
+       Derivations to the platform plan should be documented here.
+
 Purpose
 -------
 Description of the purpose of the Quality Management Plan.

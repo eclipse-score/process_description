@@ -71,10 +71,9 @@ General Quality Concept
 
 The Quality Concept is based on the requirements of the standards and were derived into the Quality Performance
 Objectives that are listed in the Quality Management Plan. The Quality shall be continuous
-checked and improved during the development. All tasks are planned within the Quality Management Plan.
-
-For every release a platform process audit shall be performed. Also a conformance check for every feature release.
-Only 100% compliant work products / releases will be delivered to the community.
+checked and improved during the development. All tasks are planned within the Quality Management Plan. These
+includes tasks like platform process audit or process conformance checks which have to be planed to milestones
+or in a contious manner. Only 100% compliant work products / releases will be delivered to the community.
 
 Every person who contributes shall be trained according to Quality aspects. The committers will ensure the Quality
 by following the workflows defined in the process areas and by producing the required work products. The Quality
