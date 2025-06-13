@@ -28,7 +28,6 @@ Quality Management Guideline
 General Hints
 =============
 
-Workflow for quality management is shown in :numref:`quality_workflow_fig` to get an overview.
 The following steps are required to ensure the quality in the project:
 
 #. Create/maintain Quality Management Plan
