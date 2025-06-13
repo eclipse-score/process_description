@@ -48,14 +48,6 @@ S-CORE Management Roles
    * Election and replacement of all role's personnel
    * Decide on addition/removal of modules repositories or split-off of projects
 
-.. role:: Quality Manager
-   :id: rl__quality_manager
-   :status: valid
-   :tags: quality_management
-   :contains: rl__committer
-
-   The quality managers shall be responsible for the planning and coordination of the quality activities, i.e. the quality management.
-
 .. role:: Security Manager
    :id: rl__security_manager
    :status: draft
