@@ -194,7 +194,7 @@ Following attributes need to be filled manually for each requirement:
      - This attribute contains a hash value which is calculated over all mandatory requirement attributes. However this script needs to be executed manually, as this information is required to be present in the rst file.
      - Script / Bazel Target
    * - Satisfies Hash
-     - It contains the hash of the parent requirement. If the parent requirement is changed the hash will also change and the linkage has to be revisited again. A more detailed description is provided here: :need:`gd_req__req__attr_hash`
+     - It contains the hash of the parent requirement. If the parent requirement is changed the hash will also change and the linkage has to be revisited again. A more detailed description is provided here: :need:`gd_req__req__attr_version`
      - Script / Bazel Target
    * - Implemented by
      - During Build the code files are parsed for a defined tag which includes the requirement id. If this is located a link to the code will be added in the requirement
