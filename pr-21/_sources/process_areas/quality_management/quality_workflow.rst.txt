@@ -69,8 +69,8 @@ Workflows
 
    | The conformance of the feature contribution is checked.
 
-.. workflow:: Execute Feature Work Product Reviews
-   :id: wf__exe_featwp_review
+.. workflow:: Execute Work Product Reviews
+   :id: wf__exe_wp_review
    :status: valid
    :responsible: rl__quality_manager
    :approved_by: rl__technical_lead
@@ -80,7 +80,7 @@ Workflows
    :contains: gd_guidl__qlm_plan_definitions, gd_chklst__review_checklist, gd_guidl__wp_review
    :has: doc_concept__quality__process, doc_getstrt__quality__process
 
-   | The quality of the work products is assured. All work products are listed under :need:`doc_concept__wp_inspections`.
+   | The quality of the work products is assured.
 
 .. workflow:: Consult and Execute Quality Trainings
    :id: wf__consult_exe_qly_training

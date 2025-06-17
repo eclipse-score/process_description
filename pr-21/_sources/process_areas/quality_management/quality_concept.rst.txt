@@ -39,19 +39,19 @@ Stakeholders for the Quality Management
    * Verify/approve Platform release
    * Execute Platform Process Audit
    * Execute Feature Contribution Conformance Checks
-   * Execute Feature Work Product Reviews
+   * Execute Work Product Reviews
    * Consult and execute Quality Trainings
    * Monitoring/improving of Quality activities
 
 #. :need:`Technical Lead <rl__technical_lead>`
     * Support the work products
-    * Approval of Quality Management Plan, Platform Process Audit, Feature Process Conformance Checks, Feature Work Product Reviews, Consult and Execute Quality Trainings, Monitor/Improve Quality Activities
+    * Approval of Quality Management Plan, Platform Process Audit, Feature Process Conformance Checks, Work Product Reviews, Consult and Execute Quality Trainings, Monitor/Improve Quality Activities
 
 #. :need:`Project Lead <rl__project_lead>`
     * Approval of Platform Release
 
 #. :need:`Committer <rl__committer>`
-    * Support the Feature Work Product Reviews
+    * Support the Work Product Reviews
 
 #. :need:`Safety Manager <rl__safety_manager>`
     * Supports the quality activities

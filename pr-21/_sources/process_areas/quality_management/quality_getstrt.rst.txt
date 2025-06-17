@@ -43,7 +43,7 @@ For every release, the following workflows are executed:
 * Verify/Approve Platform Release
 * Execute Platform Process Audit
 * Execute Execute Feature Contribution Conformance Checks
-* Execute Feature Work Product Reviews
+* Execute Work Product Reviews
 
 For open issues the issue tracking system is used to track the issues and to ensure that they are resolved in time.
 The issue tracking system is defined in the :need:`wp__issue_track_system`.

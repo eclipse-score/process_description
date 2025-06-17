@@ -48,7 +48,7 @@ Roles
    * Verify/approve Platform release
    * Execute Platform Process Audit
    * Execute Feature Contribution Conformance Checks
-   * Execute Feature Work Product Reviews
+   * Execute Work Product Reviews
    * Consult and execute Quality Trainings
    * Monitoring/improving of Quality activities
 
