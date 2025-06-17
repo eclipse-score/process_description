@@ -14,7 +14,7 @@
 
 .. _quality workproduct review checklist:
 
-Checklist Quality Work Product Review  
+Checklist Quality Work Product Review
 =====================================
 
 .. gd_chklst:: Quality Work Product Review Checklist
@@ -141,7 +141,7 @@ Checklist Quality Work Product Review
           -
           -
         * - QMP_02_01
-          - Are the quality milestones described or referenced in a quality Schedule? (And are they feasible?)
+          - Are the quality milestones described or referenced in a quality Schedule, and are they feasible?
           -
           -
           -

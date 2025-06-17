@@ -18,6 +18,7 @@ Guidance
 .. toctree::
    :maxdepth: 1
 
+   quality_report_template
    quality_review_checklist
    quality_plan_guideline
    quality_process_reqs

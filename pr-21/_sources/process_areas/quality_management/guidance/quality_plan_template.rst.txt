@@ -61,7 +61,7 @@ Describe the used tailoring of quality assurance activities.
 
 3.6 Quality Management Organization
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Describe the project strategy to qualify the platform or components of the platform to the appropriate international standards and directives
+Describe the project strategy to qualify the platform or components of the platform to the appropriate international standards and directives.
 
 **Eclipse Roles**
 Description of Eclipse roles.
@@ -72,7 +72,7 @@ Description of project roles.
 **Critical dependencies**
 Description of critical dependencies.
 
-**Risk**
+**Risks**
 Description of used risk management.
 
 **Skills**

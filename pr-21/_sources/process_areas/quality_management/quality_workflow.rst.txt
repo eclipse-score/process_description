@@ -56,7 +56,7 @@ Workflows
 
    | The project/platform processes are audited.
 
-.. workflow:: Execute Feature Process Conformance Checks
+.. workflow:: Execute Feature Process Contribution Checks
    :id: wf__exe_featprocess_conformance_checks
    :status: valid
    :responsible: rl__quality_manager
@@ -93,7 +93,7 @@ Workflows
    :contains: gd_guidl__qlm_plan_definitions
    :has: doc_concept__quality__process, doc_getstrt__quality__process
 
-   | The quality manager :need:`rl__quality_manager` consults all project/platform stakeholder for quality topics and executes regularly quality trainings.
+   | The quality manager :need:`rl__quality_manager` consults all project/platform stakeholder as defined in :need:`doc_concept__quality__process` for quality topics and executes regularly quality trainings.
 
 .. workflow:: Monitor/Improve Quality Activities
    :id: wf__mr_imp_qlm_plan_processes
@@ -107,7 +107,7 @@ Workflows
    :has: doc_concept__quality__process, doc_getstrt__quality__process
 
    | The quality manager :need:`rl__quality_manager` is responsible for the monitoring of the activities against the quality management plan.
-   | The quality manager :need:`rl__quality_manager` is responsible to adjust the plan, if deviations are detected.
+   | The quality manager :need:`rl__quality_manager` is responsible to adjust the quality management plan, if deviations are detected.
 
 
 .. needextend:: "process_areas/quality_management" in docname
