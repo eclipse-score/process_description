@@ -23,7 +23,7 @@ Template Quality Plan
    :complies: std_wp__iso26262__management_553, std_req__iso26262__management_5423, std_req__aspice_40__SUP-1-BP1, std_req__aspice_40__SUP-1-BP2, std_req__aspice_40__SUP-1-BP3, std_req__aspice_40__SUP-1-BP4, std_req__aspice_40__SUP-1-BP7, std_req__aspice_40__PIM-3-BP1, std_req__aspice_40__PIM-3-BP2, std_req__aspice_40__PIM-3-BP3, std_req__aspice_40__PIM-3-BP4, std_req__aspice_40__PIM-3-BP5, std_req__aspice_40__PIM-3-BP6, std_req__aspice_40__PIM-3-BP7
 
 :note: The quality management plan shall be continuously maintained during the project.
-       Derivations to the platform plan should be documented here.
+       Derivations to the platform plan should be documented here. Deriviations to the
 
 Purpose
 -------
@@ -38,7 +38,26 @@ Objectives and scope
 
 3.1 Quality Objectives
 ^^^^^^^^^^^^^^^^^^^^^^
-Description of the Quality Objectives.
+
+.. list-table:: Standards to comply with
+    :header-rows: 1
+    :widths: 15,85,15
+
+    * - #
+      - **Standard Name**
+      - **Version**
+    * - 1
+      - Automotive SPICE PAM
+      - 4.0
+    * - 2
+      - ISO 262626:2018
+      - 2018
+    * - 3
+      - ISO/SAE 21434:2021
+      - 2021
+    * - 4
+      - ISO PAS 8926:2024 (will be integrated into ISO 26262 3rd edition as updated part 8 clause 12)
+      - 2024
 
 3.2 Quality Performance Objectives
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -78,7 +97,7 @@ Description of used risk management.
 **Skills**
 Description of the used skill approvals.
 
-4. Quality Management Planning
+1. Quality Management Planning
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 4.1 Quality Resources
 """"""""""""""""""""""

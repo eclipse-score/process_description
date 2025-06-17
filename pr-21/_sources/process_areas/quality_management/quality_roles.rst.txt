@@ -24,8 +24,8 @@ Roles
 
    Required skills
 
-   * Degree: Master degree in software quality management, or similar technical/economical degree, or comparable work experience
-   * Solid understanding of quality management
+   * Master’s degree in electrical engineering/computer science/mathematics, or similar degree, or comparable work experience
+   * Solid understanding of software quality management
    * Knowledge in project management
    * Deep understanding of quality criteria and the correlating methods and procedures to achieve and verify them
    * Technical know-how of embedded systems

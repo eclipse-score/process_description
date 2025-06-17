@@ -56,7 +56,7 @@ Workflows
 
    | The project/platform processes are audited.
 
-.. workflow:: Execute Feature Process Contribution Checks
+.. workflow:: Execute Feature Contribution Conformance Checks
    :id: wf__exe_featprocess_conformance_checks
    :status: valid
    :responsible: rl__quality_manager

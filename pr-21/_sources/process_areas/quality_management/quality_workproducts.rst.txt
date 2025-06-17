@@ -25,7 +25,7 @@ Workproducts
    | * Quality strategy
    | * Description of independencies and objective assurance
    | * Quality assurance activities
-   | * Roles definitions
+   | * Role definitions
    | * Quality Goals
    | * Schedules
 
@@ -36,7 +36,7 @@ Workproducts
    :complies: std_req__aspice_40__iic-13-19
 
    | Evidence of quality conformance:
-   | * Identifies what tasks/activities/processes produce the information
+   | * Summarizes what tasks/activities/processes produce the information
    | * Identifies when the data was collected
    | * Identifies source of any associated data
    | * Identifies the associated quality criteria
@@ -53,6 +53,5 @@ Workproducts
    | * Scope of improvement
    | * Estimations regarding impact and time
    | * Commitment on the improvement
-   | * Description of the improvement incl. goals and priorization
+   | * Description of the improvement incl. goals and prioritisation
    | * Measures to validate the effectiveness of the improvement
-   | * Confirmation of the improvement due to monitoring and measuring results
