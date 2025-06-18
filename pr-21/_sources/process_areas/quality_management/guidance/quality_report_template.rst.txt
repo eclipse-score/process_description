@@ -40,12 +40,9 @@ Template Quality Report
       | - List of all reports, compared to the :need:`wp__qms_plan`
       | - Results of the reports
       |
-      | **1.3. Test Summary**
-      | - Total number of tests
-      | - Number of passed tests
-      | - Number of failed tests
-      | - Number of blocked tests
-      | - Number of not executed tests
+      | **1.3. Test coverage**
+      | - Overview of test coverage (overall, requirements, architecture)
+      | - Ratio of test coverage to the :need:`wp__verification__plan`
       |
       | **1.4. Issues**
       | - List of all issues, compared to the :need:`wp__qms_plan`

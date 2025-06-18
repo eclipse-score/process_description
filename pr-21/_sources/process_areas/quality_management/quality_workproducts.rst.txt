@@ -35,12 +35,7 @@ Workproducts
    :tags: quality_management
    :complies: std_req__aspice_40__iic-13-19
 
-   | Evidence of quality conformance:
-   | * Summarizes what tasks/activities/processes produce the information
-   | * Identifies when the data was collected
-   | * Identifies source of any associated data
-   | * Identifies the associated quality criteria
-   | * Identifies any associated measurements using the information
+   | The quality report summarizes the results of the quality related activities
 
 .. workproduct:: Process Improvement Report
    :id: wp__process_impr_report

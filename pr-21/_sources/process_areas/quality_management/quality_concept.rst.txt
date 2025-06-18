@@ -78,7 +78,7 @@ checked and improved during the development. All tasks are planned within the Qu
 includes tasks like platform process audit or feature contribution conformance checks which have to be planed to milestones
 or in a continuous manner. Only 100% compliant work products / releases will be formally delivered to the community.
 
-Every person who contributes shall be trained according to Quality aspects. The committers will ensure the Quality
-by following the workflows defined in the process areas and by producing the required work products. The Quality
-Manager / Technical Lead for Platform Process Audit approves it. Thus the independence between the Project and
-the Quality is ensured.
+Every person who contributes shall be trained according to Quality aspects. The committers will help to ensure the Quality
+by following the workflows which are defined in the different process areas. The Quality Manager is responsible for the
+Quality related workflows. The Quality Manager shall be independent from the development organisation with a escalation
+to the Project Lead Circle and the Technical Lead Circle.
