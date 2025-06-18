@@ -26,6 +26,7 @@ Process Areas
    implementation/index.rst
    platform_management/index.rst
    problem_resolution/index.rst
+   quality_management/index.rst
    release_management/index.rst
    requirements_engineering/index.rst
    safety_analysis/index.rst

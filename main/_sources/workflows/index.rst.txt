@@ -20,7 +20,6 @@ Workflows
    :caption: Contents:
 
    process_management
-   quality_management
 
 
 S-CORE Workflow list
