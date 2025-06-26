@@ -47,12 +47,6 @@ A test specification contains the following attributes.
        - Expected outcome (e.g. "A success message is displayed.")
        - Test environment (e.g. network configuration, clean system state)
      -
-   * - Status
-     -
-       - valid
-       - invalid
-     -
-     -
    * - TestType
      - Examples are:
 

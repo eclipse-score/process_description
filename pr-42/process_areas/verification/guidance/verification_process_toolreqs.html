@@ -558,7 +558,7 @@
                   
   <section id="test-linking-to-requirements">
 <span id="verification-process-reqs"></span><h1>Test Linking to Requirements<a class="headerlink" href="#test-linking-to-requirements" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-d95723e4">
+<div class="need_container docutils container" id="SNCB-cd799ba5">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__link_tests">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -596,23 +596,7 @@
 </dd>
 </dl>
 </li>
-<li><dl class="simple">
-<dt>ASIL</dt><dd><ul>
-<li><p>QM</p></li>
-<li><p>ASIL_B</p></li>
-</ul>
-</dd>
-</dl>
-</li>
 <li><p>Description</p></li>
-<li><dl class="simple">
-<dt>Status</dt><dd><ul>
-<li><p>valid</p></li>
-<li><p>invalid</p></li>
-</ul>
-</dd>
-</dl>
-</li>
 <li><dl class="simple">
 <dt>TestType</dt><dd><ul>
 <li><p>Fault Injection (fault-injection)</p></li>
@@ -655,7 +639,7 @@ and <a class="reference internal" href="verification_specification.html#gd_guidl
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-f34e4e52">
+<div class="need_container docutils container" id="SNCB-15d5711c">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__link_tests_cpp">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -689,8 +673,6 @@ attributes which are specific for each test case need to be specified within the
 <span class="w">   </span><span class="k">public</span><span class="o">:</span>
 <span class="w">      </span><span class="kt">void</span><span class="w"> </span><span class="n">SetUp</span><span class="p">()</span><span class="w"> </span><span class="k">override</span>
 <span class="w">      </span><span class="p">{</span>
-<span class="w">         </span><span class="n">RecordProperty</span><span class="p">(</span><span class="s">&quot;Status&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;&lt;Status&gt;&quot;</span><span class="p">);</span>
-<span class="w">         </span><span class="n">RecordProperty</span><span class="p">(</span><span class="s">&quot;ASIL&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;&lt;ASIL&gt;&quot;</span><span class="p">);</span>
 <span class="w">         </span><span class="n">RecordProperty</span><span class="p">(</span><span class="s">&quot;TestType&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;&lt;TestType&gt;&quot;</span><span class="p">);</span>
 <span class="w">         </span><span class="n">RecordProperty</span><span class="p">(</span><span class="s">&quot;DerivationTechnique&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;&lt;DerivationTechnique&gt;&quot;</span><span class="p">);</span>
 <span class="w">         </span><span class="p">...</span>
@@ -723,7 +705,7 @@ attributes which are specific for each test case need to be specified within the
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-2f9e4b36">
+<div class="need_container docutils container" id="SNCB-8c773360">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__link_tests_python">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -755,7 +737,6 @@ common for all test cases can be specified in the Test Suite (above the class), 
 attributes which are specific for each test case need to be specified above the test case:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nd">@pytest</span><span class="o">.</span><span class="n">fixture</span><span class="p">(</span><span class="n">scope</span><span class="o">=</span><span class="s2">&quot;session&quot;</span><span class="p">,</span> <span class="n">autouse</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="k">def</span><span class="w"> </span><span class="nf">add_metadata</span><span class="p">(</span><span class="n">record_testsuite_property</span><span class="p">):</span>
-   <span class="n">record_testsuite_property</span><span class="p">(</span><span class="s2">&quot;ASIL&quot;</span><span class="p">,</span> <span class="s2">&quot;&lt;ASIL&gt;&quot;</span><span class="p">)</span>
    <span class="n">record_testsuite_property</span><span class="p">(</span><span class="s2">&quot;TestType&quot;</span><span class="p">,</span> <span class="s2">&quot;&lt;TestType&gt;&quot;</span><span class="p">)</span>
    <span class="n">record_testsuite_property</span><span class="p">(</span><span class="s2">&quot;DerivationTechnique&quot;</span><span class="p">,</span> <span class="s2">&quot;&lt;DerivationTechnique&gt;&quot;</span><span class="p">)</span>
 <span class="k">class</span><span class="w"> </span><span class="nc">Testclass</span><span class="p">(</span><span class="n">TestSim</span><span class="p">):</span>
@@ -782,7 +763,7 @@ attributes which are specific for each test case need to be specified above the 
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-eccf9ced">
+<div class="need_container docutils container" id="SNCB-6a4aa823">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__link_tests_rust">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -815,8 +796,6 @@ attributes which are specific for each test case need to be specified above the 
 <span class="cp">#[record_property(</span><span class="s">&quot;PartiallyVerifies&quot;</span><span class="cp">, </span><span class="s">&quot;ID_2, ID_3, ...&quot;</span><span class="cp">)]</span>
 <span class="cp">#[record_property(</span><span class="s">&quot;FullyVerifies&quot;</span><span class="cp">, </span><span class="s">&quot;ID_4, ID_5, ...&quot;</span><span class="cp">)]</span>
 <span class="cp">#[record_property(</span><span class="s">&quot;Description&quot;</span><span class="cp">, </span><span class="s">&quot;&lt;Description&gt;&quot;</span><span class="cp">)]</span>
-<span class="cp">#[record_property(</span><span class="s">&quot;Status&quot;</span><span class="cp">, </span><span class="s">&quot;&lt;Status&gt;&quot;</span><span class="cp">)]</span>
-<span class="cp">#[record_property(</span><span class="s">&quot;ASIL&quot;</span><span class="cp">, </span><span class="s">&quot;&lt;ASIL&gt;&quot;</span><span class="cp">)]</span>
 <span class="cp">#[record_property(</span><span class="s">&quot;TestType&quot;</span><span class="cp">, </span><span class="s">&quot;&lt;TestType&gt;&quot;</span><span class="cp">)]</span>
 <span class="cp">#[record_property(</span><span class="s">&quot;DerivationTechnique&quot;</span><span class="cp">, </span><span class="s">&quot;&lt;DerivationTechnique&gt;&quot;</span><span class="cp">)]</span>
 <span class="cp">#[test]</span>
@@ -841,7 +820,7 @@ attributes which are specific for each test case need to be specified above the 
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-b58a6e92">
+<div class="need_container docutils container" id="SNCB-a025b72f">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__verification_independence">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">

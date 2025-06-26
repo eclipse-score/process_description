@@ -28,19 +28,12 @@ Test Linking to Requirements
     * Verifies
         * PartiallyVerifies
         * FullyVerifies
-    * ASIL
-        * QM
-        * ASIL_B
     * Description
-    * Status
-        * valid
-        * invalid
     * TestType
         * Fault Injection (fault-injection)
         * Interface Test (interface-test)
         * Requirements-based Test (requirements-based)
         * Resource Usage Evaluation (resource-usage)
-
     * DerivationTechnique
         * Analysis of requirements (requirements-analysis)
         * Analysis of design (design-analysis)
@@ -69,8 +62,6 @@ Test Linking to Requirements
          public:
             void SetUp() override
             {
-               RecordProperty("Status", "<Status>");
-               RecordProperty("ASIL", "<ASIL>");
                RecordProperty("TestType", "<TestType>");
                RecordProperty("DerivationTechnique", "<DerivationTechnique>");
                ...
@@ -99,7 +90,6 @@ Test Linking to Requirements
 
       @pytest.fixture(scope="session", autouse=True)
       def add_metadata(record_testsuite_property):
-         record_testsuite_property("ASIL", "<ASIL>")
          record_testsuite_property("TestType", "<TestType>")
          record_testsuite_property("DerivationTechnique", "<DerivationTechnique>")
       class Testclass(TestSim):
@@ -123,8 +113,6 @@ Test Linking to Requirements
         #[record_property("PartiallyVerifies", "ID_2, ID_3, ...")]
         #[record_property("FullyVerifies", "ID_4, ID_5, ...")]
         #[record_property("Description", "<Description>")]
-        #[record_property("Status", "<Status>")]
-        #[record_property("ASIL", "<ASIL>")]
         #[record_property("TestType", "<TestType>")]
         #[record_property("DerivationTechnique", "<DerivationTechnique>")]
         #[test]
