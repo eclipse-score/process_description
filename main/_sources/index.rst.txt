@@ -102,6 +102,16 @@ The the standard references the S-CORE project's processes are derived from can 
 
    standards/index.rst
 
+Trustable
+---------
+
+The trustable measure based on sphinx-needs for OSS project's can be found here:
+
+.. toctree::
+   :maxdepth: 1
+
+   trustable/index.rst
+
 Templates for Folders
 ---------------------
 
