@@ -13,7 +13,7 @@
 
 module(
     name = "score_process",
-    version = "1.0.1",
+    version = "1.0.2",
     compatibility_level = 1,
 )
 
@@ -22,7 +22,7 @@ module(
 # Packaging dependencies
 #
 ###############################################################################
-bazel_dep(name = "rules_pkg", version = "1.0.1")
+bazel_dep(name = "rules_pkg", version = "1.1.0")
 
 ###############################################################################
 #
@@ -42,15 +42,15 @@ python.toolchain(
 use_repo(python)
 
 # Additional Python rules provided by aspect, e.g. an improved version of
-bazel_dep(name = "aspect_rules_py", version = "1.4.0")
-bazel_dep(name = "buildifier_prebuilt", version = "7.3.1")
+bazel_dep(name = "aspect_rules_py", version = "1.6.0")
+bazel_dep(name = "buildifier_prebuilt", version = "8.2.0.2")
 
 ###############################################################################
 #
 # Generic linting and formatting rules
 #
 ###############################################################################
-bazel_dep(name = "aspect_rules_lint", version = "1.4.2")
+bazel_dep(name = "aspect_rules_lint", version = "1.4.4")
 
 # Provides, pytest & venv
 bazel_dep(name = "score_python_basics", version = "0.3.2")
@@ -58,5 +58,4 @@ bazel_dep(name = "score_python_basics", version = "0.3.2")
 # Checker rule for CopyRight checks/fixes
 bazel_dep(name = "score_cr_checker", version = "0.2.2")
 bazel_dep(name = "score_format_checker", version = "0.1.1")
-bazel_dep(name = "score_platform", version = "0.1.1")
-bazel_dep(name = "score_docs_as_code", version = "0.3.2")
+bazel_dep(name = "score_docs_as_code", version = "0.3.3")
