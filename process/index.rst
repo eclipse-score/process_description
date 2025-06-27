@@ -69,8 +69,8 @@ Process Role definition
 
    roles/index.rst
 
-Workproducts
-~~~~~~~~~~~~
+Work Products
+~~~~~~~~~~~~~
 
 .. toctree::
    :maxdepth: 1
@@ -84,13 +84,6 @@ Workflows
    :maxdepth: 1
 
    workflows/index.rst
-
-How To Contribute
------------------
-
-How to contribute to the S-CORE project (e.g. naming convention, folder structure, IDE setup) can be found here:
-
-`REPLACE_doc__contr_guideline`
 
 Standards
 ---------
