@@ -117,9 +117,10 @@ The derivation of test cases can also be based on certain methods.
  * Analysis of boundary values (boundary-values)
  * Analysis of equivalence classes (equivalence-classes)
  * Analysis of requirements (requirements-analysis)
+ * Analysis of design (design-analysis)
  * Error guessing based on knowledge or experience (error-guessing)
  * Fuzzy testing (fuzz-testing)
- * Exlporative testing (explorative-testing)
+ * Explorative testing (explorative-testing)
 
 Usually the defined methods are not applied on each verification level between unit and platform level.
 Also their execution may differ whether it is a QM or ASIL rated test case.
