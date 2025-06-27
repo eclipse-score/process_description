@@ -89,12 +89,11 @@ Process Requirement Attributes
    :tags: attribute, mandatory
    :satisfies: wf__req__stkh_req, wf__req__feat_req, wf__req__comp_req
 
-   Each requirement shall have a type of one of following options:
+   Each requirement, apart from process requirements, shall have a type of one of following options:
 
       * Functional
       * Interface
       * Process
-      * Legal
       * Non-Functional
 
 .. gd_req:: Requirements attribute: security
@@ -128,7 +127,7 @@ Process Requirement Attributes
    :complies: std_req__iso26262__support_6425
    :satisfies: wf__req__stkh_req, wf__req__feat_req, wf__req__comp_req
 
-   Each requirement shall have a status:
+   Each requirement, apart from process requirements, shall have a status:
 
       * valid
       * invalid

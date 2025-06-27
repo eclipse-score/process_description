@@ -112,7 +112,7 @@ Attributes of Architectural Elements
    :status: valid
    :tags: attribute, mandatory
 
-   Each requirement shall have a security relevance identifier:
+   Each architectural element shall have a security relevance identifier:
 
       * Yes
       * No
@@ -123,7 +123,7 @@ Attributes of Architectural Elements
    :tags: attribute, mandatory
    :complies: std_req__iso26262__support_6421, std_req__iso26262__support_6425
 
-   Each requirement shall have a automotive safety integrity level (ASIL) identifier:
+   Each architectural element shall have a automotive safety integrity level (ASIL) identifier:
 
       * QM
       * ASIL_B
@@ -135,7 +135,7 @@ Attributes of Architectural Elements
    :tags: attribute, mandatory
    :complies: std_req__iso26262__support_6425
 
-   Each requirement shall have a status:
+   Each architectural element shall have a status:
 
       * valid
       * invalid

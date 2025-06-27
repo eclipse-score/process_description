@@ -17,6 +17,54 @@
 Document Management Process Requirements
 ========================================
 
+.. gd_req:: Document Types
+   :id: gd_req__doc_types
+   :status: valid
+   :complies: std_req__iso26262__support_1043
+
+   There is only one generic document type:
+   * document
+
+    .. note::
+      This type is the ONLY type, which can be used for realizing concrete work products,
+      e.g. Safety Plan
+
+   .. note::
+      Process documents are not generic documents and types for that shall only used for
+      process definition, as defined
+
+      * gd_chklst
+      * gd_guidl
+      * gd_req
+      * gd_temp
+      * doc_concept
+      * doc_getstrt
+      * workproduct
+      * workflow
+      * role
+
+
+.. gd_req:: Document attributes
+   :id: gd_req__doc_attributes
+   :status: valid
+   :complies: std_req__iso26262__support_1043
+
+   Documents shall have the following manual attributes:
+
+   * id
+   * status
+   * security
+   * safety
+   * realizes
+
+   Compare also  :need:`gd_temp__documentation`
+
+   Documents shall have automatic added attributes:
+
+   * author
+   * approver
+   * reviewer
+
 .. gd_req:: Document Author
    :id: gd_req__doc_author
    :status: valid
@@ -34,7 +82,7 @@ Document Management Process Requirements
    :complies: std_req__iso26262__support_1045
 
    Documents headers shall contain an "approver" attribute, which is added during documentation build
-   and contains the last PR CODEOWNER reviewer of the file containing the document.
+   and contains the name of the last approval reviewer of the file containing the document.
 
 .. gd_req:: Document Reviewer
    :id: gd_req__doc_reviewer

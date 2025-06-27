@@ -25,7 +25,7 @@ and "Part 8: Supporting processes".
 
 Key concept
 ^^^^^^^^^^^
-The Documentation Management Plan should define the strategy to manage the identifed documentations
+The Documentation Management Plan should define the strategy to manage the identified documentations
 in an effective and repeatable way for the project life cycle.
 
 

@@ -26,7 +26,7 @@ Workflow Platform Management
    :supported_by: rl__safety_manager, rl__security_manager, rl__quality_manager
    :input: wp__policies, wp__issue_track_system
    :output: wp__platform_mgmt, wp__project_mgt, wp__document_mgt_plan
-   :contains: gd_temp__platform__mgmt_plan, gd_guidl__platform__mgmt_plan, gd_guidl__documentation, gd_chklst__documentation__review
+   :contains: gd_temp__platform__mgmt_plan, gd_guidl__platform__mgmt_plan, gd_guidl__documentation, gd_chklst__documentation__review, gd_temp__documentation
    :has: doc_concept__platform__process, doc_getstrt__platform__process
 
    The Platform Management Plan shall include the plans as defined by the
