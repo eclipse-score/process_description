@@ -36,7 +36,7 @@ Architectural Model
 
    The architectural elements shall be hierarchically structured on two levels:
 
-   * Feature Level
+   * Feature Level (=Logical Level)
    * Component Level
 
 .. gd_req:: Structuring of the architectural elements
@@ -47,8 +47,8 @@ Architectural Model
 
    Following architectural elements shall be defined on the respective hierarchical level:
 
-   * Feature Level
-     * Feature (feat_arc_sta)
+   * Logical Level
+     * Feature (logic_arc_sta)
      * Logical Interface (logic_arc_int)
      * Logical Interface Operation (logic_arc_int_op)
 
@@ -81,8 +81,8 @@ Architectural Views
 
    The architecture shall be shown on following views on each architectural level:
 
-   * Package Diagram (feat_arc_sta, comp_arc_sta)
-   * Sequence Diagram (feat_arc_dyn, comp_arc_dyn)
+   * Package Diagram (logic_arc_sta, comp_arc_sta)
+   * Sequence Diagram (logic_arc_dyn, comp_arc_dyn)
    * Interface View (logic_arc_int, comp_arc_int)
 
    Only an additional view  shall be created on module level.
@@ -159,7 +159,7 @@ Traceability to Requirements
 
    **Examples:**
 
-   * feat_req <-> feat_arc_(sta|dyn), logic_arc_int, logic_arc_int_op
+   * feat_req <-> logic_arc_(sta|dyn), logic_arc_int, logic_arc_int_op
    * comp_req <-> comp_arc_(sta|dyn|int|int_op)
 
    .. note::
@@ -193,7 +193,7 @@ Checks for Architectural Design
    :status: valid
    :tags: attribute, check
 
-   It shall be checked that safety architectural elements (Safety != QM) can only be linked against safety architectural elements.
+   It shall be checked that valid safety architectural elements (Safety != QM) can only be linked against valid safety architectural elements.
 
 .. gd_req:: Architecture linkage security
    :id: gd_req__arch__linkage_security_trace
@@ -216,8 +216,8 @@ Checks for Architectural Design
 
    It shall be checked that requirements of a respective type can only be linked to architectural elements according to following traceability:
 
-   * Functional requirements <-> static / dynamic architecture
-   * Interface requirements <-> interface architecture
+   * Functional requirements <-> static / dynamic architectural elements (logic_arc_sta, logic_arc_dyn)
+   * Interface requirements <-> interface architectural elements (logic_arc_int, logic_arc_int_op)
 
 .. gd_req:: Architecture check consistency modules
    :id: gd_req__arch__consistency_model
