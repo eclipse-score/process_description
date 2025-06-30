@@ -138,6 +138,7 @@ Test Linking to Requirements
     :status: valid
 
     The following checks shall be implemented on test metadata:
+
     - TestType and DerivationTechnique shall be set
     - Description shall not be empty
     - In a Platform Test Partially/FullyVerifies shall be set to a Platform Requirement
@@ -150,5 +151,6 @@ Test Linking to Requirements
     :status: draft
 
     The following checks shall be implemented on test metadata:
+
     - If TestType is set to requirements-based then PartiallyVerifies or FullyVerifies shall contain a link to at least one requirement
     - If TestType is set to interface-test then PartiallyVerifies or FullyVerifies shall contain a link to at least one interface
