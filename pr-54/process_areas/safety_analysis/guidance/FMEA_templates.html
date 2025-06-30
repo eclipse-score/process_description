@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Safety Analysis Templates &#8212; Process Description  documentation</title>
+    <title>FMEA Templates &#8212; Process Description  documentation</title>
   
   
   
@@ -62,7 +62,7 @@
     <script src="../../../_static/sphinx-needs/libs/html/datatables.min.js?v=8a4aee21"></script>
     <script src="../../../_static/sphinx-needs/libs/html/datatables_loader.js?v=a2cae175"></script>
     <script src="../../../_static/sphinx-needs/libs/html/sphinx_needs_collapse.js?v=dca66431"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'process_areas/safety_analysis/guidance/safety_analysis_templates';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'process_areas/safety_analysis/guidance/FMEA_templates';</script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
     <link rel="next" title="Roles" href="../safety_analysis_roles.html" />
@@ -429,13 +429,13 @@
 <li class="toctree-l3"><a class="reference internal" href="safety_analysis_checklist.html">Checklist for Safety Analysis</a></li>
 <li class="toctree-l3"><a class="reference internal" href="dfa_failure_initiators.html">DFA failure initiators</a></li>
 
-<li class="toctree-l3"><a class="reference internal" href="dfa_template.html">DFA Templates</a></li>
+<li class="toctree-l3"><a class="reference internal" href="dfa_templates.html">DFA Templates</a></li>
 <li class="toctree-l3"><a class="reference internal" href="fault_models_guideline.html">Fault Models</a></li>
 <li class="toctree-l3"><a class="reference internal" href="safety_analysis_guideline.html">Guidelines</a></li>
 <li class="toctree-l3"><a class="reference internal" href="safety_analysis_process_reqs.html">Safety Analysis Process Requirements</a></li>
 
 
-<li class="toctree-l3 current active"><a class="current reference internal" href="#">Safety Analysis Templates</a></li>
+<li class="toctree-l3 current active"><a class="current reference internal" href="#">FMEA Templates</a></li>
 </ul>
 </details></li>
 <li class="toctree-l2"><a class="reference internal" href="../safety_analysis_roles.html">Roles</a></li>
@@ -495,7 +495,7 @@
     
     <li class="breadcrumb-item"><a href="index.html" class="nav-link">Guidance</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Safety Analysis Templates</span></li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">FMEA Templates</span></li>
   </ul>
 </nav>
 </div>
@@ -512,13 +512,13 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="safety-analysis-templates">
-<span id="id1"></span><h1>Safety Analysis Templates<a class="headerlink" href="#safety-analysis-templates" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-9cd60172">
+  <section id="fmea-templates">
+<span id="id1"></span><h1>FMEA Templates<a class="headerlink" href="#fmea-templates" title="Link to this heading">#</a></h1>
+<div class="need_container docutils container" id="SNCB-8c4f5b55">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_temp table" id="gd_temp__feat_saf_fmea">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
-<div class="line"><span><span class="needs_title"><span class="needs_data">Feature Safety Analysis Template</span></span></span></div>
+<div class="line"><span><span class="needs_title"><span class="needs_data">Feature FMEA Template</span></span></span></div>
 </div>
 </td>
 <td class="head_center" colspan="2"><div class="needs_head line-block">
@@ -548,10 +548,10 @@
 <div class="line-block">
 <div class="line">:verifies: &lt;Feature architecture&gt;</div>
 <div class="line">:id: feat_saf_FMEA__&lt;Feature&gt;__&lt;Element descriptor&gt;</div>
-<div class="line">:failure_mode: &lt;ID from fault model <a class="reference internal" href="fault_models_guideline.html#gd_guidl__fault_models" title="gd_guidl__fault_models"><em class="xref need">Fault Models (gd_guidl__fault_models)</em></a>&gt;</div>
-<div class="line">:failure_effect: “description of failure effect of the failure initiator on the element”</div>
-<div class="line">:mitigation: &lt; NONE|ID from Feature Requirement&gt;</div>
-<div class="line">:mitigation_issue: &lt;ID from Issue Tracker| None if no issue needed&gt;</div>
+<div class="line">:violation_id: &lt;ID from fault model <a class="reference internal" href="fault_models_guideline.html#gd_guidl__fault_models" title="gd_guidl__fault_models"><em class="xref need">Fault Models (gd_guidl__fault_models)</em></a>&gt;</div>
+<div class="line">:violation_cause: “description of failure effect of the fault model on the element”</div>
+<div class="line">:mitigation: &lt;ID from Feature Requirement | ID from AoU Feature Requirement&gt;</div>
+<div class="line">:mitigation_issue: &lt;ID from Issue Tracker&gt;</div>
 <div class="line">:sufficient: &lt;yes|no&gt;</div>
 <div class="line">:argument: &lt;text to argument why mitigation is sufficient&gt;</div>
 <div class="line">:status: &lt;valid|invalid&gt;</div>
@@ -573,11 +573,11 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-4f36e1eb">
+<div class="need_container docutils container" id="SNCB-614d2d67">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_temp table" id="gd_temp__comp_saf_fmea">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
-<div class="line"><span><span class="needs_title"><span class="needs_data">Component Safety Analysis Template</span></span></span></div>
+<div class="line"><span><span class="needs_title"><span class="needs_data">Component FMEA Template</span></span></span></div>
 </div>
 </td>
 <td class="head_center" colspan="2"><div class="needs_head line-block">
@@ -607,10 +607,10 @@
 <div class="line-block">
 <div class="line">:verifies: &lt;Component architecture&gt;</div>
 <div class="line">:id: comp_saf_FMEA__&lt;Component&gt;__&lt;Element descriptor&gt;</div>
-<div class="line">:failure_mode: &lt;ID from fault model <a class="reference internal" href="fault_models_guideline.html#gd_guidl__fault_models" title="gd_guidl__fault_models"><em class="xref need">Fault Models (gd_guidl__fault_models)</em></a>&gt;</div>
-<div class="line">:failure_effect: “description of failure effect of the failure initiator on the element”</div>
-<div class="line">:mitigation: &lt; NONE|ID from Component Requirement&gt;</div>
-<div class="line">:mitigation_issue: &lt;ID from Issue Tracker| None if no issue needed&gt;</div>
+<div class="line">:violation_id: &lt;ID from fault model <a class="reference internal" href="fault_models_guideline.html#gd_guidl__fault_models" title="gd_guidl__fault_models"><em class="xref need">Fault Models (gd_guidl__fault_models)</em></a>&gt;</div>
+<div class="line">:violation_cause: “description of failure effect of the fault model on the element”</div>
+<div class="line">:mitigation: &lt;ID from Component Requirement | ID from AoU Component Requirement&gt;</div>
+<div class="line">:mitigation_issue: &lt;ID from Issue Tracker&gt;</div>
 <div class="line">:sufficient: &lt;yes|no&gt;</div>
 <div class="line">:argument: &lt;text to argument why mitigation is sufficient&gt;</div>
 <div class="line">:status: &lt;valid|invalid&gt;</div>
@@ -677,7 +677,7 @@
 
   
   <div class="tocsection editthispage">
-    <a href="https://github.com/dummy/dummy/edit/main/docs/process_areas/safety_analysis/guidance/safety_analysis_templates.rst">
+    <a href="https://github.com/dummy/dummy/edit/main/docs/process_areas/safety_analysis/guidance/FMEA_templates.rst">
       <i class="fa-solid fa-pencil"></i>
       
       
@@ -693,7 +693,7 @@
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
-      <li><a href="../../../_sources/process_areas/safety_analysis/guidance/safety_analysis_templates.rst.txt"
+      <li><a href="../../../_sources/process_areas/safety_analysis/guidance/FMEA_templates.rst.txt"
             rel="nofollow">Show Source</a></li>
     </ul>
    </div></div>

@@ -23,7 +23,7 @@ DFA failure initiators
   :complies: std_wp__iso26262__software_751, std_wp__iso26262__software_753
 
 
-:note: Use the failure initiators to ensure a structured analysis. If a failure doesn't apply, please fill in a short desciption in the violation cause of the analysis so it could be recognized that the analysis is done. If there are additional failure initiators needed, please enlage the list of fault models.
+:note: Use the failure initiators to ensure a structured analysis. If a failure doesn't apply, please fill in a short description in the violation cause of the analysis so it could be recognized that the analysis is done. If there are additional failure initiators needed, please enlarge the list of fault models.
 
 **Purpose**
 
@@ -53,7 +53,7 @@ DFA failure initiators
     - Medium
   * - SR_01_04
     - Basic software
-    - 
+    -
     - Medium
   * - SR_01_05
     - Operating system including scheduler
@@ -170,7 +170,7 @@ DFA failure initiators
     - Medium
   * - UI_01_04
     - Deadlocks
-    - 
+    -
     - Medium
   * - UI_01_05
     - Livelocks
@@ -202,11 +202,11 @@ DFA failure initiators
     - Medium
   * - UI_01_12
     - Other HW unavailability
-    -         
+    -
     - Medium
 
 | Development failure initiators
-| Secition is **only aplicable if a divers SW development is needed** due to decomposition.
+| Section is **only applicable if a divers SW development is needed** due to decomposition.
 
 :note: Section shall be applied only once to analyse all dependencies of the features. Results shall be checked during of the analysis of new features if this is applicable to the feature.
 

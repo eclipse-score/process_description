@@ -20,45 +20,53 @@ Concept Description
    :status: valid
    :tags: safety_analysis
 
-This section discusses a concept for safety analyses. Inputs for this concept are the requirements of ISO26262 Part 6 Chapter 7 and Part 9 Chapter 7 and 8.
+This section discusses a concept for safety analyses. As methods for safety analysis were used DFA (Dependent Failure Analysis)
+and FMEA (Failure Mode and Effects Analysis). Inputs for this concept are the requirements of ISO26262 Part 6 Chapter 7 and Part 9 Chapter 7 and 8.
+
+The objectives of the DFA are to show that the required freedom from interference is achieved. Therefore the potential causes or initiators are
+analyzed. The DFA is focussed on common cause failures.
+
+The objective of the FMEA is to show that the risk of systematic faults is reduced to an acceptable level. This shall be done by showing that
+systematic faults can be excluded by a full test coverage. Or, if this is not possible, that the systematic faults are mitigated by a sufficient mitigation.
+Cascading failures are also considered in the FMEA and not in the DFA. Is is because it it's not applicable to use within S-CORE a ASIL decomposition.
 
 Inputs
 ******
 
-#. Stakeholders for the safety analysis?
+#. Stakeholders for the safety analysis (DFA and FMEA)?
 #. Who needs which information?
 #. How to analyze existing safety mitigation?
 #. How to add new safety mitigations?
 
-Stakeholders for the Safety Analysis
-====================================
+Stakeholders for the Safety Analysis (DFA and FMEA)
+===================================================
 
 #. :need:`Safety Engineer <rl__safety_engineer>`
 
    * Analyse the platform feature architecture with a DFA
-   * Analyse the feature architecture with a Safety Analysis and DFA
-   * Analyse the component architecture with a Safety Analysis and DFA
-   * Monitor/verify the Safety Analysis and DFA
+   * Analyse the feature architecture with a FMEA and DFA
+   * Analyse the component architecture with a FMEA and DFA
+   * Monitor/verify the FMEA and DFA
 
 #. :need:`Safety Manager <rl__safety_manager>`
 
-   * Approve the safety analysis and DFA
-   * Approve the verification of the safety analysis and DFA   
+   * Approve the FMEA and DFA
+   * Approve the verification of the FMEA and DFA
 
 #. :need:`Contributor <rl__contributor>`
 
-   * Support the safety analyses and DFA
+   * Support the FMEA and DFA
    * Support the monitoring and verifying of the safety analyses and DFA
 
 #. :need:`Committer <rl__committer>`
 
-   * Support the safety analyses and DFA
+   * Support the FMEA and DFA
    * Support the monitoring and verifying of the safety analyses and DFA
 
 #. :need:`Security Manager <rl__security_manager>`
 
-   * Support the safety analyses and DFA
-   * Support the monitoring and verifying of the safety analyses and DFA
+   * Support the FMEA and DFA
+   * Support the monitoring and verifying of FMEA and DFA
 
 
 Standard Requirements
@@ -72,7 +80,7 @@ Also requirements of standards need to be taken into consideration:
 How to analyze?
 ===============
 
-The safety analysis is done on the feature and component architecture. The safety analysis shall be done accompanying to the development.
+The safety analysis (DFA and FMEA) is done on the feature and component architecture. The safety analysis (DFA and FMEA) shall be done accompanying to the development.
 So the results can directly be used for the development of the feature and component. With a iterative approach it is needed to proof
 the evidence of the functional safety of the functions.
 
@@ -86,11 +94,11 @@ shall be done in the way that we use the static and dynamic diagrams. The follow
    :width: 80%
    :name: safety_analysis_feature_fig
 
-   Dynamic Architecture 
+   Dynamic Architecture
 
-The safety analysis is done with the shown diagrams. The interface 1 and 2 are the interfaces of the feature. These interfaces shall be analyzed with the
-fault models :need:`gd_guidl__fault_models` that here could be applied. With the dynamic diagrams the communication between the components can be analysed. 
-The static diagrams are used to analyse the dependencies. For violations a failure mitigation shall be defined. 
+The FMEA is done with the shown diagrams. The interface 1 and 2 are the interfaces of the feature. These interfaces shall be analyzed with the
+fault models :need:`gd_guidl__fault_models` that here could be applied. With the dynamic diagrams the communication between the components can be analysed.
+The static diagrams are used to analyse the dependencies. For violations a failure mitigation shall be defined.
 
 .. figure:: _assets/safety_analysis_component.drawio.svg
    :align: center
@@ -99,28 +107,10 @@ The static diagrams are used to analyse the dependencies. For violations a failu
 
    Safety Analysis Component Perspective
 
-At component level you can see inside of the component when the component consists of two or more subcomponents. If the component consists of 
+At component level you can see inside of the component when the component consists of two or more subcomponents. If the component consists of
 only one subcomponent there results of the analysis are the same as for the feature level. So no additional consideration is needed.
 The component kvstorage consists of two subcomponents, kvs and fs. The dynamic diagram shows the communication between the subcomponents.
 
-DFA
-^^^
-
-A DFA :ref:`dfa_templates` shall be used to proof the absence of dependent failures. For the analysis a list
-of DFA failure initiators :need:`gd_guidl__dfa_failure_initiators` is available. A step by step approach is recommended to
-ensure that all dependent failures are identified :need:`gd_guidl__safety_analysis`. Every failure initiator shall be checked
-and if it applies to the feature or component, a mitigation shall be defined. If the failure initiator doesn't apply, a short description
-shall be added to the violation cause of the analysis so it could be recognized that the analysis is done. 
-
-Safety Analysis
-^^^^^^^^^^^^^^^
-
-For the safety analyses the templates :ref:`safety_analysis_templates` shall be used. For the safety analysis we selected
-the method FMEA on feature and component level. The safety analysis is done on architectural diagrams (state and sequence diagrams).
-For the safety analysis fault models shall be used :need:`gd_guidl__fault_models`.  A step by step approach is recommended to
-ensure that all dependent failures are identified :need:`gd_guidl__safety_analysis`. Every fault model shall be checked
-and if it applies to the feature or component, a mitigation shall be defined. If the fault model doesn't apply, a short description
-shall be added to the violation cause of the analysis so it could be recognized that the analysis is done.
 
 How to add new safety mitigations?
 ==================================
@@ -139,14 +129,14 @@ Examples for FMEA and DFA at feature level
 |    :id: FEAT_SAF_FMEA__KVSTORAGE__RemoveKey
 |    :failure_mode: "MF_01_01"
 |    :failure_effect: "message is not received"
-|    :mitigation: Detetion and error handling shall be done outside of the middleware.
+|    :mitigation: Detection and error handling shall be done outside of the middleware.
 |    :mitigation_issue: ID from Issue Tracker that defined mitigation will be documented in the assumtions of use (AoU)
 |    :sufficient: yes
 |    :argument: This error is handled by the calling application.
 |    :status: valid
 
-Use the fault models :need:`gd_guidl__fault_models` to ensure a structured analysis. If a fault model doesn't apply, 
-please fill in a short description in the violation cause of the analysis so it could be recognized that the analysis 
+Use the fault models :need:`gd_guidl__fault_models` to ensure a structured analysis. If a fault model doesn't apply,
+please fill in a short description in the violation cause of the analysis so it could be recognized that the analysis
 is done. If there are additional fault models needed, please enlarge the list of fault models.
 
 **DFA:**
@@ -163,5 +153,5 @@ is done. If there are additional fault models needed, please enlarge the list of
 |    :status: valid
 
 Use the DFA failure initiators :need:`gd_guidl__dfa_failure_initiators` to ensure a structured analysis. If a failure initiator doesn't apply,
-please fill in a short description in the violation cause of the analysis so it could be recognized that the analysis is done. If there are 
+please fill in a short description in the violation cause of the analysis so it could be recognized that the analysis is done. If there are
 additional failure initiators needed, please enlarge the list of fault models.

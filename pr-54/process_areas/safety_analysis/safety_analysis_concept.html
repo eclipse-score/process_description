@@ -499,7 +499,7 @@
                   
   <section id="concept-description">
 <h1>Concept Description<a class="headerlink" href="#concept-description" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-a46daca0">
+<div class="need_container docutils container" id="SNCB-f59d246e">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_doc_concept table" id="doc_concept__safety__analysis">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -543,48 +543,54 @@
 </table>
 </div>
 </div>
-<p>This section discusses a concept for safety analyses. Inputs for this concept are the requirements of ISO26262 Part 6 Chapter 7 and Part 9 Chapter 7 and 8.</p>
+<p>This section discusses a concept for safety analyses. As methods for safety analysis were used DFA (Dependent Failure Analysis)
+and FMEA (Failure Mode and Effects Analysis). Inputs for this concept are the requirements of ISO26262 Part 6 Chapter 7 and Part 9 Chapter 7 and 8.</p>
+<p>The objectives of the DFA are to show that the required freedom from interference is achieved. Therefore the potential causes or initiators are
+analyzed. The DFA is focussed on common cause failures.</p>
+<p>The objective of the FMEA is to show that the risk of systematic faults is reduced to an acceptable level. This shall be done by showing that
+systematic faults can be excluded by a full test coverage. Or, if this is not possible, that the systematic faults are mitigated by a sufficient mitigation.
+Cascading failures are also considered in the FMEA and not in the DFA. Is is because it it’s not applicable to use within S-CORE a ASIL decomposition.</p>
 <section id="inputs">
 <h2>Inputs<a class="headerlink" href="#inputs" title="Link to this heading">#</a></h2>
 <ol class="arabic simple">
-<li><p>Stakeholders for the safety analysis?</p></li>
+<li><p>Stakeholders for the safety analysis (DFA and FMEA)?</p></li>
 <li><p>Who needs which information?</p></li>
 <li><p>How to analyze existing safety mitigation?</p></li>
 <li><p>How to add new safety mitigations?</p></li>
 </ol>
-<section id="stakeholders-for-the-safety-analysis">
-<h3>Stakeholders for the Safety Analysis<a class="headerlink" href="#stakeholders-for-the-safety-analysis" title="Link to this heading">#</a></h3>
+<section id="stakeholders-for-the-safety-analysis-dfa-and-fmea">
+<h3>Stakeholders for the Safety Analysis (DFA and FMEA)<a class="headerlink" href="#stakeholders-for-the-safety-analysis-dfa-and-fmea" title="Link to this heading">#</a></h3>
 <ol class="arabic simple">
 <li><p><a class="reference internal" href="safety_analysis_roles.html#rl__safety_engineer" title="rl__safety_engineer"><em class="xref need">Safety Engineer (rl__safety_engineer)</em></a></p>
 <ul class="simple">
 <li><p>Analyse the platform feature architecture with a DFA</p></li>
-<li><p>Analyse the feature architecture with a Safety Analysis and DFA</p></li>
-<li><p>Analyse the component architecture with a Safety Analysis and DFA</p></li>
-<li><p>Monitor/verify the Safety Analysis and DFA</p></li>
+<li><p>Analyse the feature architecture with a FMEA and DFA</p></li>
+<li><p>Analyse the component architecture with a FMEA and DFA</p></li>
+<li><p>Monitor/verify the FMEA and DFA</p></li>
 </ul>
 </li>
 <li><p><a class="reference internal" href="../safety_management/roles.html#rl__safety_manager" title="rl__safety_manager"><em class="xref need">Safety Manager (rl__safety_manager)</em></a></p>
 <ul class="simple">
-<li><p>Approve the safety analysis and DFA</p></li>
-<li><p>Approve the verification of the safety analysis and DFA</p></li>
+<li><p>Approve the FMEA and DFA</p></li>
+<li><p>Approve the verification of the FMEA and DFA</p></li>
 </ul>
 </li>
 <li><p><a class="reference internal" href="../../roles/index.html#rl__contributor" title="rl__contributor"><em class="xref need">Contributor (rl__contributor)</em></a></p>
 <ul class="simple">
-<li><p>Support the safety analyses and DFA</p></li>
+<li><p>Support the FMEA and DFA</p></li>
 <li><p>Support the monitoring and verifying of the safety analyses and DFA</p></li>
 </ul>
 </li>
 <li><p><a class="reference internal" href="../../roles/index.html#rl__committer" title="rl__committer"><em class="xref need">Committer (rl__committer)</em></a></p>
 <ul class="simple">
-<li><p>Support the safety analyses and DFA</p></li>
+<li><p>Support the FMEA and DFA</p></li>
 <li><p>Support the monitoring and verifying of the safety analyses and DFA</p></li>
 </ul>
 </li>
 <li><p><a class="reference internal" href="../../roles/index.html#rl__security_manager" title="rl__security_manager"><em class="xref need">Security Manager (rl__security_manager)</em></a></p>
 <ul class="simple">
-<li><p>Support the safety analyses and DFA</p></li>
-<li><p>Support the monitoring and verifying of the safety analyses and DFA</p></li>
+<li><p>Support the FMEA and DFA</p></li>
+<li><p>Support the monitoring and verifying of FMEA and DFA</p></li>
 </ul>
 </li>
 </ol>
@@ -599,7 +605,7 @@
 </section>
 <section id="how-to-analyze">
 <h3>How to analyze?<a class="headerlink" href="#how-to-analyze" title="Link to this heading">#</a></h3>
-<p>The safety analysis is done on the feature and component architecture. The safety analysis shall be done accompanying to the development.
+<p>The safety analysis (DFA and FMEA) is done on the feature and component architecture. The safety analysis (DFA and FMEA) shall be done accompanying to the development.
 So the results can directly be used for the development of the feature and component. With a iterative approach it is needed to proof
 the evidence of the functional safety of the functions.</p>
 <p>The analysis starts at feature level. With a DFA shall be analysed if there are dependent failures which have to be considered. The analysis
@@ -611,7 +617,7 @@ shall be done in the way that we use the static and dynamic diagrams. The follow
 <p><span class="caption-number">Fig. 19 </span><span class="caption-text">Dynamic Architecture</span><a class="headerlink" href="#safety-analysis-feature-fig" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
-<p>The safety analysis is done with the shown diagrams. The interface 1 and 2 are the interfaces of the feature. These interfaces shall be analyzed with the
+<p>The FMEA is done with the shown diagrams. The interface 1 and 2 are the interfaces of the feature. These interfaces shall be analyzed with the
 fault models <a class="reference internal" href="guidance/fault_models_guideline.html#gd_guidl__fault_models" title="gd_guidl__fault_models"><em class="xref need">Fault Models (gd_guidl__fault_models)</em></a> that here could be applied. With the dynamic diagrams the communication between the components can be analysed.
 The static diagrams are used to analyse the dependencies. For violations a failure mitigation shall be defined.</p>
 <figure class="align-center" id="safety-analysis-component-fig">
@@ -624,23 +630,6 @@ The static diagrams are used to analyse the dependencies. For violations a failu
 <p>At component level you can see inside of the component when the component consists of two or more subcomponents. If the component consists of
 only one subcomponent there results of the analysis are the same as for the feature level. So no additional consideration is needed.
 The component kvstorage consists of two subcomponents, kvs and fs. The dynamic diagram shows the communication between the subcomponents.</p>
-<section id="dfa">
-<h4>DFA<a class="headerlink" href="#dfa" title="Link to this heading">#</a></h4>
-<p>A DFA <a class="reference internal" href="guidance/dfa_template.html#dfa-templates"><span class="std std-ref">DFA Templates</span></a> shall be used to proof the absence of dependent failures. For the analysis a list
-of DFA failure initiators <a class="reference internal" href="guidance/dfa_failure_initiators.html#gd_guidl__dfa_failure_initiators" title="gd_guidl__dfa_failure_initiators"><em class="xref need">DFA failure initiators (gd_guidl__dfa_failure_initiators)</em></a> is available. A step by step approach is recommended to
-ensure that all dependent failures are identified <a class="reference internal" href="guidance/safety_analysis_guideline.html#gd_guidl__safety_analysis" title="gd_guidl__safety_analysis"><em class="xref need">Safety Analysis Guideline (gd_guidl__safety_analysis)</em></a>. Every failure initiator shall be checked
-and if it applies to the feature or component, a mitigation shall be defined. If the failure initiator doesn’t apply, a short description
-shall be added to the violation cause of the analysis so it could be recognized that the analysis is done.</p>
-</section>
-<section id="safety-analysis">
-<h4>Safety Analysis<a class="headerlink" href="#safety-analysis" title="Link to this heading">#</a></h4>
-<p>For the safety analyses the templates <a class="reference internal" href="guidance/safety_analysis_templates.html#safety-analysis-templates"><span class="std std-ref">Safety Analysis Templates</span></a> shall be used. For the safety analysis we selected
-the method FMEA on feature and component level. The safety analysis is done on architectural diagrams (state and sequence diagrams).
-For the safety analysis fault models shall be used <a class="reference internal" href="guidance/fault_models_guideline.html#gd_guidl__fault_models" title="gd_guidl__fault_models"><em class="xref need">Fault Models (gd_guidl__fault_models)</em></a>.  A step by step approach is recommended to
-ensure that all dependent failures are identified <a class="reference internal" href="guidance/safety_analysis_guideline.html#gd_guidl__safety_analysis" title="gd_guidl__safety_analysis"><em class="xref need">Safety Analysis Guideline (gd_guidl__safety_analysis)</em></a>. Every fault model shall be checked
-and if it applies to the feature or component, a mitigation shall be defined. If the fault model doesn’t apply, a short description
-shall be added to the violation cause of the analysis so it could be recognized that the analysis is done.</p>
-</section>
 </section>
 <section id="how-to-add-new-safety-mitigations">
 <h3>How to add new safety mitigations?<a class="headerlink" href="#how-to-add-new-safety-mitigations" title="Link to this heading">#</a></h3>
@@ -656,7 +645,7 @@ shall be added to the violation cause of the analysis so it could be recognized 
 <div class="line">:id: FEAT_SAF_FMEA__KVSTORAGE__RemoveKey</div>
 <div class="line">:failure_mode: “MF_01_01”</div>
 <div class="line">:failure_effect: “message is not received”</div>
-<div class="line">:mitigation: Detetion and error handling shall be done outside of the middleware.</div>
+<div class="line">:mitigation: Detection and error handling shall be done outside of the middleware.</div>
 <div class="line">:mitigation_issue: ID from Issue Tracker that defined mitigation will be documented in the assumtions of use (AoU)</div>
 <div class="line">:sufficient: yes</div>
 <div class="line">:argument: This error is handled by the calling application.</div>
@@ -736,13 +725,9 @@ additional failure initiators needed, please enlarge the list of fault models.</
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#inputs">Inputs</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#stakeholders-for-the-safety-analysis">Stakeholders for the Safety Analysis</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#stakeholders-for-the-safety-analysis-dfa-and-fmea">Stakeholders for the Safety Analysis (DFA and FMEA)</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#standard-requirements">Standard Requirements</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-analyze">How to analyze?</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#dfa">DFA</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#safety-analysis">Safety Analysis</a></li>
-</ul>
-</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-analyze">How to analyze?</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-add-new-safety-mitigations">How to add new safety mitigations?</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#examples-for-fmea-and-dfa-at-feature-level">Examples for FMEA and DFA at feature level</a></li>
 </ul>
