@@ -28,7 +28,7 @@ Roles
    Required skills
 
    * Degree: Master's degree in electrical engineering/computer science/mathematics, or similar degree, or comparable work experience
-   * Solid understanding of functional safety engineering including safety analysis
+   * Solid understanding of functional safety engineering including safety analysis (e.g., FMEA, DFA)
    * Knowledge of safety management
    * Deep understanding of quality criteria and the correlating methods and procedures to achieve and verify them
    * Technical know-how of embedded systems
@@ -48,7 +48,7 @@ Roles
 
    Responsibility
 
-   * Analyse Feature and Component Architecture by performing Safety Analysis and DFA
+   * Analyse Feature and Component Architecture by performing FMEA and DFA
    * Monitor Safety Analyses and DFA
    * Verify Safety Analyses and DFA
    * Create the Safety Manual
@@ -65,6 +65,6 @@ Contributing Roles:
    * :need:`Safety Manager <rl__safety_manager>`
    * :need:`Security Manager <rl__security_manager>`
 
-A detailed overview of the responsibility for the steps of the safety analysis process is listed in the section titled "Workflow for Safety Analysis". You can find it here:
+A detailed overview of the responsibility for the steps of the safety analysis process is listed in the section titled "Workflow for safety analysis". You can find it here:
 
 :ref:`workflow_safety_analysis`

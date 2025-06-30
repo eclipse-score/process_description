@@ -32,39 +32,39 @@ Detailed description which steps are need for a safety analysis. In general the 
 #. Monitor the results of the platform feature DFA and log any issues in the Issue Tracking system with the ``safety`` label.
 #. Verify the platform feature DFA results by using :need:`gd_chklst__safety_analysis`.
 #. Platform feature DFA are completed when the verification is done, no issues are open and the status is "valid".
-#. To analyse the Feature Architecture a Safety Analysis and a DFA shall be executed. The results of the platform feature DFA shall be used as an input.
-#. Monitor the results of the Safety Analysis and DFA and log any issues in the Issue Tracking system with the ``safety`` label.
-#. Verify the Safety Analysis and DFA results by using :need:`gd_chklst__safety_analysis`..
-#. Feature Safety Analysis and DFA are completed when the verification is done, no issues are open and the status is "valid".
-#. To analyse the Component Architecture a Safety Analysis and a DFA shall be executed. The results of the feature Safety Analysis and DFA shall be used as an input.
-#. Monitor the results of the Safety Analysis and DFA and log any issues in the Issue Tracking system with the ``safety`` label.
-#. Verify the Safety Analysis and DFA results by using :need:`gd_chklst__safety_analysis`..
-#. Component Safety Analysis and DFA are completed when the verification is done, no issues are open and the status is "valid".
+#. To analyse the Feature Architecture a FMEA and a DFA shall be executed. The results of the platform feature DFA shall be used as an input.
+#. Monitor the results of the FMEA and DFA and log any issues in the Issue Tracking system with the ``safety`` label.
+#. Verify the FMEA and DFA results by using :need:`gd_chklst__safety_analysis`..
+#. Feature FMEA and DFA are completed when the verification is done, no issues are open and the status is "valid".
+#. To analyse the Component Architecture a FMEA and a DFA shall be executed. The results of the feature FMEA and DFA shall be used as an input.
+#. Monitor the results of the FMEA and DFA and log any issues in the Issue Tracking system with the ``safety`` label.
+#. Verify the FMEA and DFA results by using :need:`gd_chklst__safety_analysis`..
+#. Component FMEA and DFA are completed when the verification is done, no issues are open and the status is "valid".
 
 
 A example for the safety analysis (FMEA and DFA) is shown in the :ref:`examples_fmea_dfa`.
 
-Step-by-Step-approach Safety Analysis:
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Step-by-Step-approach FMEA:
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The analysis is done by using the template :ref:`safety_analysis_templates` on the feature or component architectural diagrams
+The analysis is done by using the template :ref:`FMEA_templates` on the feature or component architectural diagrams
 using a diagram specific applied fault model <:need:`gd_guidl__fault_models`>. Apply the fault
 model to the diagram and document the results in the template. If a fault model is not applicable, fill in a short remark in the
-violation cause that it's not apllicable. So it could be shown that the analysis was done and no fault model is applicable.
+violation cause that it's not applicable. So it could be shown that the analysis was done and no fault model is applicable.
 The analysis considers single faults that can mitigate a safety requirement.
 
 **Steps:**
 
 * For each dynamic diagram, assign the faults by ID from the fault model and document it as a sphinx-needs directive.
-* Document the resulting failure mode and effect and link to a safety requirement that mitigates the violation. 
+* Document the resulting failure mode and effect and link to a safety requirement that mitigates the violation.
 * Document safety mitigation to avoid or control the failure.
 * The attributes of the template are described in :ref:`process_requirements_safety_analysis_attributes`.
-* Judge if this is sufficient. 
+* Judge if this is sufficient.
 * If not, request to update the diagram and the requirements with additional safety mitigation to come to a sufficient outcome by creating an issue.
-* The analysis is finished, if for each identified faults a sufficient mitigation exists. 
+* The analysis is finished, if for each identified faults a sufficient mitigation exists.
 * Unless the attribute sufficient is yes, mitigation and argument attribute can be still empty.
 * Continue the analysis until all fault models are checked.
-* The verification is done by applying the safety analysis checklist :need:`gd_chklst__safety_analysis`.
+* The verification is done by applying the FMEA checklist :need:`gd_chklst__safety_analysis`.
 
 Step-by-Step-approach DFA:
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -76,12 +76,10 @@ So it could be shown that the analysis was done and no fault model is applicable
 **Steps:**
 
 * For each failure initiator assign the violation by ID from the DFA failure initiators and document it as a sphinx-needs directive.
-* Document the resulting violation causes and effect and link to a safety requirement that mitigates the violation. 
+* Document the resulting violation causes and effect and link to a safety requirement that mitigates the violation.
 * The attributes of the template are described in :ref:`process_requirements_safety_analysis_attributes`.
 * Judge if the mitigation is sufficient. If not, request to update the requirements with additional safety mitigation to come to a sufficient outcome.
 * The analysis is finished, if for each identified violation a mitigation exists.
 * Unless the attribute "sufficient" is "yes", mitigation and argument attribute can be still empty.
 * Continue the analysis until all failure initiators are checked.
-* The verification is done by appling the safety analysis checklist :need:`gd_chklst__safety_analysis`.
-
-
+* The verification is done by applying the safety analysis checklist :need:`gd_chklst__safety_analysis`.

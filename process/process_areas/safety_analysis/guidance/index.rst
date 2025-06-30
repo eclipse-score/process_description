@@ -20,8 +20,8 @@ Guidance
 
    safety_analysis_checklist
    dfa_failure_initiators
-   dfa_template
+   dfa_templates
    fault_models_guideline
    safety_analysis_guideline
    safety_analysis_process_reqs
-   safety_analysis_templates
+   FMEA_templates
