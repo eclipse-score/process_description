@@ -24,8 +24,8 @@ Verification Report Templates
 
     This document implements :need:`wp__verification__module_ver_report`.
 
-      | Place the document header here following the definitions in your module's
-      | Documentation Management Plan (doc__documentation_mgt_plan).
+      | Place the document header here following the definitions in template
+      | :need:`gd_temp__documentation`.
       |
       | This verification report is based on the :need:`wp__verification__plan`.
       | It covers all the components of the above stated module.
@@ -90,8 +90,8 @@ Verification Report Templates
 
     This document implements :need:`wp__verification__platform_ver_report`.
 
-      | Place the document header here following the definitions in your project's
-      | Documentation Management Plan (doc__documentation_mgt_plan).
+      | Place the document header here following the definitions in template
+      | :need:`gd_temp__documentation`.
       |
       | This verification report is based on the :need:`wp__verification__plan`.
       | It covers all the selected features of the SW platform.
