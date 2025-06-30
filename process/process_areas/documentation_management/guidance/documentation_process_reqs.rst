@@ -76,19 +76,19 @@ Document Management Process Requirements
    Note: In the future this may also be automated based on an analysis of content during the
    documentation build for every commit of the file containing the document.
 
-.. gd_req:: Document Approver
-   :id: gd_req__doc_approver
-   :status: valid
-   :complies: std_req__iso26262__support_1045
-
-   Documents headers shall contain an "approver" attribute, which is added during documentation build
-   and contains the name of the last approval reviewer of the file containing the document.
-
 .. gd_req:: Document Reviewer
    :id: gd_req__doc_reviewer
    :status: valid
    :complies: std_req__iso26262__support_1043
 
    Documents headers shall contain "reviewer" attribute, which is added during documentation build
-   and contains the last PR reviewers of the file containing the document, which were not covered by
-   :need:`gd_req__doc_approver`.
+   and contains only the names of the last PR reviewers, which actually reviewed the file
+   containing the document, which were not covered by :need:`gd_req__doc_approver`.
+
+.. gd_req:: Document Approver
+   :id: gd_req__doc_approver
+   :status: valid
+   :complies: std_req__iso26262__support_1045
+
+   Documents headers shall contain an "approver" attribute, which is added during documentation build
+   and contains only the names of the last approval reviewers, which actually approved the file containing the document.
