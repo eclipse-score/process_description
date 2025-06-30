@@ -47,20 +47,12 @@ A test specification contains the following attributes.
        - Expected outcome (e.g. "A success message is displayed.")
        - Test environment (e.g. network configuration, clean system state)
      -
-   * - Status
-     -
-       - valid
-       - invalid
-     -
-     -
    * - TestType
      - Examples are:
 
        - requirements-based
        - interface-test
-       - boundary
        - coverage (various types apply, shall be tool supported)
-       - for :need:`wp__verification__sw_unit_test` also fault-injection
      - These are example values and an incomplete list.
        A full list of test types is available in :need:`doc_concept__verification__process` at
        :ref:`verification_concept_types_methods`.

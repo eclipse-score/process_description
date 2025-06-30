@@ -511,7 +511,7 @@
                   
   <section id="test-linking-to-requirements">
 <span id="verification-process-reqs"></span><h1>Test Linking to Requirements<a class="headerlink" href="#test-linking-to-requirements" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-085ec4d3">
+<div class="need_container docutils container" id="SNCB-55eb4faa">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__link_tests">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -549,23 +549,7 @@
 </dd>
 </dl>
 </li>
-<li><dl class="simple">
-<dt>ASIL</dt><dd><ul>
-<li><p>QM</p></li>
-<li><p>ASIL_B</p></li>
-</ul>
-</dd>
-</dl>
-</li>
 <li><p>Description</p></li>
-<li><dl class="simple">
-<dt>Status</dt><dd><ul>
-<li><p>valid</p></li>
-<li><p>invalid</p></li>
-</ul>
-</dd>
-</dl>
-</li>
 <li><dl class="simple">
 <dt>TestType</dt><dd><ul>
 <li><p>Fault Injection (fault-injection)</p></li>
@@ -608,7 +592,7 @@ and <a class="reference internal" href="verification_specification.html#gd_guidl
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-f033ec38">
+<div class="need_container docutils container" id="SNCB-f7fddf43">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__link_tests_cpp">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -642,8 +626,6 @@ attributes which are specific for each test case need to be specified within the
 <span class="w">   </span><span class="k">public</span><span class="o">:</span>
 <span class="w">      </span><span class="kt">void</span><span class="w"> </span><span class="n">SetUp</span><span class="p">()</span><span class="w"> </span><span class="k">override</span>
 <span class="w">      </span><span class="p">{</span>
-<span class="w">         </span><span class="n">RecordProperty</span><span class="p">(</span><span class="s">&quot;Status&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;&lt;Status&gt;&quot;</span><span class="p">);</span>
-<span class="w">         </span><span class="n">RecordProperty</span><span class="p">(</span><span class="s">&quot;ASIL&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;&lt;ASIL&gt;&quot;</span><span class="p">);</span>
 <span class="w">         </span><span class="n">RecordProperty</span><span class="p">(</span><span class="s">&quot;TestType&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;&lt;TestType&gt;&quot;</span><span class="p">);</span>
 <span class="w">         </span><span class="n">RecordProperty</span><span class="p">(</span><span class="s">&quot;DerivationTechnique&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;&lt;DerivationTechnique&gt;&quot;</span><span class="p">);</span>
 <span class="w">         </span><span class="p">...</span>
@@ -676,7 +658,7 @@ attributes which are specific for each test case need to be specified within the
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-9edd860f">
+<div class="need_container docutils container" id="SNCB-3e57833f">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__link_tests_python">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -708,7 +690,6 @@ common for all test cases can be specified in the Test Suite (above the class), 
 attributes which are specific for each test case need to be specified above the test case:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nd">@pytest</span><span class="o">.</span><span class="n">fixture</span><span class="p">(</span><span class="n">scope</span><span class="o">=</span><span class="s2">&quot;session&quot;</span><span class="p">,</span> <span class="n">autouse</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="k">def</span><span class="w"> </span><span class="nf">add_metadata</span><span class="p">(</span><span class="n">record_testsuite_property</span><span class="p">):</span>
-   <span class="n">record_testsuite_property</span><span class="p">(</span><span class="s2">&quot;ASIL&quot;</span><span class="p">,</span> <span class="s2">&quot;&lt;ASIL&gt;&quot;</span><span class="p">)</span>
    <span class="n">record_testsuite_property</span><span class="p">(</span><span class="s2">&quot;TestType&quot;</span><span class="p">,</span> <span class="s2">&quot;&lt;TestType&gt;&quot;</span><span class="p">)</span>
    <span class="n">record_testsuite_property</span><span class="p">(</span><span class="s2">&quot;DerivationTechnique&quot;</span><span class="p">,</span> <span class="s2">&quot;&lt;DerivationTechnique&gt;&quot;</span><span class="p">)</span>
 <span class="k">class</span><span class="w"> </span><span class="nc">Testclass</span><span class="p">(</span><span class="n">TestSim</span><span class="p">):</span>
@@ -735,7 +716,7 @@ attributes which are specific for each test case need to be specified above the 
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-1dfee682">
+<div class="need_container docutils container" id="SNCB-973d5519">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__link_tests_rust">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -768,8 +749,6 @@ attributes which are specific for each test case need to be specified above the 
 <span class="cp">#[record_property(</span><span class="s">&quot;PartiallyVerifies&quot;</span><span class="cp">, </span><span class="s">&quot;ID_2, ID_3, ...&quot;</span><span class="cp">)]</span>
 <span class="cp">#[record_property(</span><span class="s">&quot;FullyVerifies&quot;</span><span class="cp">, </span><span class="s">&quot;ID_4, ID_5, ...&quot;</span><span class="cp">)]</span>
 <span class="cp">#[record_property(</span><span class="s">&quot;Description&quot;</span><span class="cp">, </span><span class="s">&quot;&lt;Description&gt;&quot;</span><span class="cp">)]</span>
-<span class="cp">#[record_property(</span><span class="s">&quot;Status&quot;</span><span class="cp">, </span><span class="s">&quot;&lt;Status&gt;&quot;</span><span class="cp">)]</span>
-<span class="cp">#[record_property(</span><span class="s">&quot;ASIL&quot;</span><span class="cp">, </span><span class="s">&quot;&lt;ASIL&gt;&quot;</span><span class="cp">)]</span>
 <span class="cp">#[record_property(</span><span class="s">&quot;TestType&quot;</span><span class="cp">, </span><span class="s">&quot;&lt;TestType&gt;&quot;</span><span class="cp">)]</span>
 <span class="cp">#[record_property(</span><span class="s">&quot;DerivationTechnique&quot;</span><span class="cp">, </span><span class="s">&quot;&lt;DerivationTechnique&gt;&quot;</span><span class="cp">)]</span>
 <span class="cp">#[test]</span>
@@ -794,11 +773,147 @@ attributes which are specific for each test case need to be specified above the 
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-f128cfb5">
+<div class="need_container docutils container" id="SNCB-4ec76d7b">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__verification_independence">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
 <div class="line"><span><span class="needs_title"><span class="needs_data">Test Independence</span></span></span></div>
+</div>
+</td>
+<td class="head_center" colspan="2"><div class="needs_head line-block">
+<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></span></div>
+<div class="line"><span></span></div>
+<div class="line"><span></span></div>
+</div>
+</td>
+<td class="head_right" colspan="2"><div class="needs_head_right line-block">
+<div class="line"><span><span class="needs needs_collapse" id="target__show__meta"><span class="needs collapsed"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg></span><span class="needs visible collapse_is_hidden"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg></span></span></span></div>
+</div>
+</td>
+</tr>
+<tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
+<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></div>
+</span></span></div>
+<div class="line"><span></span></div>
+</div>
+</td>
+<td class="meta" colspan="3"></td>
+</tr>
+<tr class="content row-odd"><td class="content" colspan="6"><p>The approver of a pull request shall differ from the author(s) of the pull request in all pull requests.</p></td>
+</tr>
+<tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
+<div class="line"><span><span class="needs-id"><a class="reference internal" href="#gd_req__verification_independence" title="gd_req__verification_independence">gd_req__verification_independence</a></span></span></div>
+</div>
+</td>
+<td class="footer" colspan="2"><div class="needs_footer line-block">
+<div class="line"><span><span class="needs_type_name"><span class="needs_data">Process Requirements</span></span></span></div>
+</div>
+</td>
+<td class="footer_right" colspan="2"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="need_container docutils container" id="SNCB-c895f0e8">
+<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__verification_reporting">
+<tbody>
+<tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
+<div class="line"><span><span class="needs_title"><span class="needs_data">Verification Reporting</span></span></span></div>
+</div>
+</td>
+<td class="head_center" colspan="2"><div class="needs_head line-block">
+<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></span></div>
+<div class="line"><span></span></div>
+<div class="line"><span></span></div>
+</div>
+</td>
+<td class="head_right" colspan="2"><div class="needs_head_right line-block">
+<div class="line"><span><span class="needs needs_collapse" id="target__show__meta"><span class="needs collapsed"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg></span><span class="needs visible collapse_is_hidden"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg></span></span></span></div>
+</div>
+</td>
+</tr>
+<tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
+<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></div>
+</span></span></div>
+<div class="line"><span></span></div>
+</div>
+</td>
+<td class="meta" colspan="3"></td>
+</tr>
+<tr class="content row-odd"><td class="content" colspan="6"><p>Verification reports shall be automatically generated. These may be independent documents (i.e. not integrated into sphinx documentation).
+The content of the reports is specified in <a class="reference internal" href="verification_report_template.html#gd_temp__platform_ver_report" title="gd_temp__platform_ver_report"><em class="xref need">Platform Verification Repor... (gd_temp__platform_ver_report)</em></a> and <a class="reference internal" href="verification_report_template.html#gd_temp__mod_ver_report" title="gd_temp__mod_ver_report"><em class="xref need">Module Verification Report ... (gd_temp__mod_ver_report)</em></a>.</p></td>
+</tr>
+<tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
+<div class="line"><span><span class="needs-id"><a class="reference internal" href="#gd_req__verification_reporting" title="gd_req__verification_reporting">gd_req__verification_reporting</a></span></span></div>
+</div>
+</td>
+<td class="footer" colspan="2"><div class="needs_footer line-block">
+<div class="line"><span><span class="needs_type_name"><span class="needs_data">Process Requirements</span></span></span></div>
+</div>
+</td>
+<td class="footer_right" colspan="2"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="need_container docutils container" id="SNCB-41011ac3">
+<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__verification_checks">
+<tbody>
+<tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
+<div class="line"><span><span class="needs_title"><span class="needs_data">Verification Documentation Checks</span></span></span></div>
+</div>
+</td>
+<td class="head_center" colspan="2"><div class="needs_head line-block">
+<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></span></div>
+<div class="line"><span></span></div>
+<div class="line"><span></span></div>
+</div>
+</td>
+<td class="head_right" colspan="2"><div class="needs_head_right line-block">
+<div class="line"><span><span class="needs needs_collapse" id="target__show__meta"><span class="needs collapsed"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg></span><span class="needs visible collapse_is_hidden"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg></span></span></span></div>
+</div>
+</td>
+</tr>
+<tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
+<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></div>
+</span></span></div>
+<div class="line"><span></span></div>
+</div>
+</td>
+<td class="meta" colspan="3"></td>
+</tr>
+<tr class="content row-odd"><td class="content" colspan="6"><p>The following checks shall be implemented on test metadata:</p>
+<ul class="simple">
+<li><p>TestType and DerivationTechnique shall be set</p></li>
+<li><p>Description shall not be empty</p></li>
+<li><p>In a Platform Test Partially/FullyVerifies shall be set to a Platform Requirement</p></li>
+<li><p>If Partially/FullyVerifies are set in Feature Integration Test these shall link to Feature Requirements</p></li>
+<li><p>If Partially/FullyVerifies are set in Component Integration Test these shall link to Component Requirements</p></li>
+<li><p>If Partially/FullyVerifies are set in Unit Test these shall link to Component Requirements</p></li>
+</ul>
+</td>
+</tr>
+<tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
+<div class="line"><span><span class="needs-id"><a class="reference internal" href="#gd_req__verification_checks" title="gd_req__verification_checks">gd_req__verification_checks</a></span></span></div>
+</div>
+</td>
+<td class="footer" colspan="2"><div class="needs_footer line-block">
+<div class="line"><span><span class="needs_type_name"><span class="needs_data">Process Requirements</span></span></span></div>
+</div>
+</td>
+<td class="footer_right" colspan="2"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="need_container docutils container" id="SNCB-8cb962ac">
+<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__verification_checks_extended">
+<tbody>
+<tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
+<div class="line"><span><span class="needs_title"><span class="needs_data">Verification Documentation Checks Extended</span></span></span></div>
 </div>
 </td>
 <td class="head_center" colspan="2"><div class="needs_head line-block">
@@ -820,10 +935,15 @@ attributes which are specific for each test case need to be specified above the 
 </td>
 <td class="meta" colspan="3"></td>
 </tr>
-<tr class="content row-odd"><td class="content" colspan="6"><p>The approver of a pull request shall differ from the author(s) of the pull request in all pull requests.</p></td>
+<tr class="content row-odd"><td class="content" colspan="6"><p>The following checks shall be implemented on test metadata:</p>
+<ul class="simple">
+<li><p>If TestType is set to requirements-based then PartiallyVerifies or FullyVerifies shall contain a link to at least one requirement</p></li>
+<li><p>If TestType is set to interface-test then PartiallyVerifies or FullyVerifies shall contain a link to at least one interface</p></li>
+</ul>
+</td>
 </tr>
 <tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
-<div class="line"><span><span class="needs-id"><a class="reference internal" href="#gd_req__verification_independence" title="gd_req__verification_independence">gd_req__verification_independence</a></span></span></div>
+<div class="line"><span><span class="needs-id"><a class="reference internal" href="#gd_req__verification_checks_extended" title="gd_req__verification_checks_extended">gd_req__verification_checks_extended</a></span></span></div>
 </div>
 </td>
 <td class="footer" colspan="2"><div class="needs_footer line-block">
