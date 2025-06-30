@@ -89,7 +89,7 @@ Process Requirement Attributes
    :tags: attribute, mandatory
    :satisfies: wf__req__stkh_req, wf__req__feat_req, wf__req__comp_req
 
-   Each requirement, apart from process requirements, shall have a type of one of following options:
+   Each requirement, apart from process and tool requirements, shall have a type of one of following options:
 
       * Functional
       * Interface
