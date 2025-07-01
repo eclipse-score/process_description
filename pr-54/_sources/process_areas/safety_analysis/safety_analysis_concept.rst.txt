@@ -132,8 +132,8 @@ Examples for FMEA and DFA at feature level
 |    :mitigation: Detection and error handling shall be done outside of the middleware.
 |    :mitigation_issue: ID from Issue Tracker that defined mitigation will be documented in the assumtions of use (AoU)
 |    :sufficient: yes
-|    :argument: This error is handled by the calling application.
 |    :status: valid
+        This error is handled by the calling application.
 
 Use the fault models :need:`gd_guidl__fault_models` to ensure a structured analysis. If a fault model doesn't apply,
 please fill in a short description in the violation cause of the analysis so it could be recognized that the analysis
@@ -149,8 +149,8 @@ is done. If there are additional fault models needed, please enlarge the list of
 |    :mitigation: feat_req__persistency__integrity_check
 |    :mitigation_issue: None
 |    :sufficient: yes
-|    :argument: The integrity check will ensure that the data is not corrupted and the feature will work as expected.
 |    :status: valid
+        The integrity check will ensure that the data is not corrupted and the feature will work as expected.
 
 Use the DFA failure initiators :need:`gd_guidl__dfa_failure_initiators` to ensure a structured analysis. If a failure initiator doesn't apply,
 please fill in a short description in the violation cause of the analysis so it could be recognized that the analysis is done. If there are

@@ -45,7 +45,7 @@ Checklist for Safety Analysis
       * - REQ_01_02
         - Are the templates for DFA and/or FMEA used?
         - see :ref:`dfa_templates` / :ref:`FMEA_templates`
-        - Templates are used to generate the DFA or / and SFMEA.
+        - Templates are used to generate the DFA or / and FMEA.
         - <yes|no>
         -
       * - REQ_01_03
