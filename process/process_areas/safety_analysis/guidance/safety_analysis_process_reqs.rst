@@ -17,6 +17,8 @@
 Safety Analysis Process Requirements
 ====================================
 
+.. note:: Safety analysis is used as a umbrella term for the methods DFA (Dependent Failure Analysis) and FMEA (Failure Mode and Effects Analysis).
+
 .. gd_req:: Safety Analysis Structure
    :id: gd_req__saf_structure
    :status: valid
@@ -226,23 +228,24 @@ DFA Process Requirements
 FMEA Process Requirements
 =========================
 
-.. gd_req:: FMEA attribute: failure mode
+.. gd_req:: FMEA attribute: violation ID
    :id: gd_req__saf_attr_fmode
    :status: valid
    :tags: prio_1_automation, attribute, mandatory
    :satisfies: wf__analyse_featarch, wf__analyse_comparch
    :complies: std_req__iso26262__analysis_848
 
-   Each FMEA shall have a failure mode. The failure mode is used to identify the related fault <:need:`gd_guidl__fault_models`>.
+   Each FMEA shall have a violation ID. The violation ID is used to identify the related fault <:need:`gd_guidl__fault_models`>.
+   The violation ID links to the corresponding fault which describes how a potential violation can occur.
 
-.. gd_req:: FMEA attribute: failure effect
+.. gd_req:: FMEA attribute: violation cause
    :id: gd_req__saf_attr_feffect
    :status: valid
    :tags: prio_1_automation, attribute, mandatory
    :satisfies: wf__analyse_featarch, wf__analyse_comparch
    :complies: std_req__iso26262__analysis_849
 
-   Every FMEA shall have a short description of the failure effect.
+   Every FMEA shall have a short description of the violation cause.
 
 
 .. needextend:: docname is not None and "process_areas/safety_analysis" in docname
