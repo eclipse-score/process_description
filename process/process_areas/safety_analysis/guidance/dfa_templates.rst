@@ -30,7 +30,6 @@ DFA Templates
    |    :mitigation: <ID from Feature Requirement | ID from AoU Feature Requirement>
    |    :mitigation_issue: <ID from Issue Tracker>
    |    :sufficient: <yes|no>
-   |    :argument: <text to argument why mitigation is sufficient>
    |    :status: <valid|invalid>
 
 
@@ -47,7 +46,6 @@ DFA Templates
    |    :mitigation: <ID from Feature Requirement | ID from AoU Feature Requirement>
    |    :mitigation_issue: <ID from Issue Tracker>
    |    :sufficient: <yes|no>
-   |    :argument: <text to argument why mitigation is sufficient>
    |    :status: <valid|invalid>
 
 
@@ -64,5 +62,4 @@ DFA Templates
    |    :mitigation: <ID from Component Requirement | ID from AoU Component Requirement>
    |    :mitigation_issue: <ID from Issue Tracker>
    |    :sufficient: <yes|no>
-   |    :argument: <text to argument why mitigation is sufficient>
    |    :status: <valid|invalid>

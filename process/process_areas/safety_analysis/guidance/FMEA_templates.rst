@@ -24,13 +24,12 @@ FMEA Templates
 
    | .. feat_saf_fmea:: <Element descriptor>
    |    :verifies: <Feature architecture>
-   |    :id: feat_saf_FMEA__<Feature>__<Element descriptor>
+   |    :id: feat_saf_fmea__<Feature>__<Element descriptor>
    |    :violation_id: <ID from fault model :need:`gd_guidl__fault_models`>
    |    :violation_cause: "description of failure effect of the fault model on the element"
    |    :mitigation: <ID from Feature Requirement | ID from AoU Feature Requirement>
    |    :mitigation_issue: <ID from Issue Tracker>
    |    :sufficient: <yes|no>
-   |    :argument: <text to argument why mitigation is sufficient>
    |    :status: <valid|invalid>
 
 
@@ -41,11 +40,10 @@ FMEA Templates
 
    | .. comp_saf_fmea:: <Element descriptor>
    |    :verifies: <Component architecture>
-   |    :id: comp_saf_FMEA__<Component>__<Element descriptor>
+   |    :id: comp_saf_fmea__<Component>__<Element descriptor>
    |    :violation_id: <ID from fault model :need:`gd_guidl__fault_models`>
    |    :violation_cause: "description of failure effect of the fault model on the element"
    |    :mitigation: <ID from Component Requirement | ID from AoU Component Requirement>
    |    :mitigation_issue: <ID from Issue Tracker>
    |    :sufficient: <yes|no>
-   |    :argument: <text to argument why mitigation is sufficient>
    |    :status: <valid|invalid>

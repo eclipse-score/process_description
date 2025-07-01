@@ -97,7 +97,7 @@ Process Safety Analysis Attributes
    :complies: std_req__iso26262__analysis_848, std_req__iso26262__analysis_749, std_req__isopas8926__44433
 
    The argument shall describe why the mitigation is sufficient or not. If it is not sufficient, the argument shall describe how the mitigation
-   can be improved to achieve sufficiency.
+   can be improved to achieve sufficiency. The argument shall be written in the content.
 
 .. gd_req:: Safety Analysis attribute: status
    :id: gd_saf__attr_status
