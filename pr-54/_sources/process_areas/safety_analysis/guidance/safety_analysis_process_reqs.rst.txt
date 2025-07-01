@@ -18,7 +18,7 @@ Safety Analysis Process Requirements
 ====================================
 
 .. gd_req:: Safety Analysis Structure
-   :id: gd_saf__structure
+   :id: gd_req__saf_structure
    :status: valid
    :tags: safety_analysis
    :satisfies: wf__analyse_featarch, wf__analyse_comparch
@@ -37,7 +37,7 @@ Process Safety Analysis Attributes
 ----------------------------------
 
 .. gd_req:: Safety Analysis attribute: UID
-   :id: gd_saf__attr_uid
+   :id: gd_req__saf_attr_uid
    :status: valid
    :tags: attribute, mandatory
    :satisfies: wf__analyse_featarch, wf__analyse_comparch
@@ -52,7 +52,7 @@ Process Safety Analysis Attributes
    The naming convention shall be defined in the project and shall be used consistently.
 
 .. gd_req:: Safety Analysis attribute: title
-   :id: gd_saf__attr_title
+   :id: gd_req__saf_attr_title
    :status: valid
    :tags: attribute, mandatory
    :satisfies: wf__analyse_featarch, wf__analyse_comparch
@@ -61,7 +61,7 @@ Process Safety Analysis Attributes
    The title of the Safety Analysis shall provide a short summary of the description
 
 .. gd_req:: Safety Analysis attribute: mitigation
-   :id: gd_saf__attr_mitigation
+   :id: gd_req__saf_attr_mitigation
    :status: valid
    :tags: attribute, optional
    :satisfies: wf__analyse_featarch, wf__analyse_comparch
@@ -70,7 +70,7 @@ Process Safety Analysis Attributes
    If a mitigation is needed, link to the mitigation requirement or to the AoU.
 
 .. gd_req:: Safety Analysis attribute: mitigation issue
-   :id: gd_saf__attr_mitigation_issue
+   :id: gd_req__saf_attr_mitigation_issue
    :status: valid
    :tags: attribute, optional
    :satisfies: wf__analyse_featarch, wf__analyse_comparch
@@ -79,7 +79,7 @@ Process Safety Analysis Attributes
    If a new mitigation is needed link to the issue and keep status invalid until mitigation is sufficient.
 
 .. gd_req:: Safety Analysis attribute: sufficient
-   :id: gd_saf__attr_sufficient
+   :id: gd_req__saf_attr_sufficient
    :status: valid
    :tags: attribute, mandatory
    :satisfies: wf__analyse_featarch, wf__analyse_comparch
@@ -89,7 +89,7 @@ Process Safety Analysis Attributes
    A mitigation can only be sufficient if a mitigation is linked via the attribute mitigation.
 
 .. gd_req:: Safety Analysis content: argument
-   :id: gd_saf__argument
+   :id: gd_req__saf_argument
    :status: valid
    :tags: content, mandatory
    :satisfies: wf__analyse_featarch, wf__analyse_comparch
@@ -99,7 +99,7 @@ Process Safety Analysis Attributes
    can be improved to achieve sufficiency. The argument shall be written in the content.
 
 .. gd_req:: Safety Analysis attribute: status
-   :id: gd_saf__attr_status
+   :id: gd_req__saf_attr_status
    :status: valid
    :tags: attribute, mandatory
    :satisfies: wf__analyse_featarch, wf__analyse_comparch
@@ -113,7 +113,7 @@ Safety Analysis Requirement Linkage
 '''''''''''''''''''''''''''''''''''
 
 .. gd_req:: Safety Analysis Linkage check
-   :id: gd_saf__linkage_check
+   :id: gd_req__saf_linkage_check
    :status: valid
    :tags: attribute, automated, mandatory
    :satisfies: wf__analyse_featarch, wf__analyse_comparch
@@ -122,7 +122,7 @@ Safety Analysis Requirement Linkage
    Safety Analysis shall be linked to the architecture on the corresponding level via the attribute verifies.
 
 .. gd_req:: Safety Analysis Linkage
-   :id: gd_saf__linkage
+   :id: gd_req__saf_linkage
    :status: valid
    :tags: attribute, automated, mandatory
    :satisfies: wf__analyse_featarch, wf__analyse_comparch
@@ -131,7 +131,7 @@ Safety Analysis Requirement Linkage
    Each Safety Analysis shall be automatically linked (inverse direction) to the corresponding architecture via the "verified by" linkage.
 
 .. gd_req:: Safety Analysis attribute: check Requirements linkage
-   :id: gd_saf__attr_requirements_check
+   :id: gd_req__saf_attr_requirements_check
    :status: valid
    :tags: attribute, automated, mandatory
    :satisfies: wf__analyse_featarch, wf__analyse_comparch
@@ -140,7 +140,7 @@ Safety Analysis Requirement Linkage
    Safety Analysis shall be linked to the architecture on the corresponding level via the attribute mitigates.
 
 .. gd_req:: Safety Analysis attribute: Requirements linkage
-   :id: gd_saf__attr_requirements
+   :id: gd_req__saf_attr_requirements
    :status: valid
    :tags: attribute, automated, mandatory
    :satisfies: wf__analyse_featarch, wf__analyse_comparch
@@ -149,7 +149,7 @@ Safety Analysis Requirement Linkage
    Each Safety Analysis shall be automatically linked (inverse direction) to the corresponding architecture via the "mitigates by" linkage.
 
 .. gd_req:: Safety Analysis attribute: link to violation ID
-   :id: gd_saf__attr_violation_id
+   :id: gd_req__saf_attr_violation_id
    :status: valid
    :tags: attribute, automated, mandatory
    :satisfies: wf__analyse_featarch, wf__analyse_comparch
@@ -158,7 +158,7 @@ Safety Analysis Requirement Linkage
    It shall be possible to link violation ID to fault model :need:`gd_guidl__fault_models` or failure initiators :need:`gd_guidl__dfa_failure_initiators`.
 
 .. gd_req:: Safety Analysis attribute: link to Aou
-   :id: gd_saf__attr_aou
+   :id: gd_req__saf_attr_aou
    :status: valid
    :tags: attribute, automated
    :satisfies: wf__analyse_featarch, wf__analyse_comparch
@@ -167,13 +167,13 @@ Safety Analysis Requirement Linkage
    It shall be possible to link Aou.
 
 .. gd_req:: Safety Analysis attribute: versioning
-   :id: gd_saf__attr_hash
+   :id: gd_req__saf_attr_hash
    :status: valid
    :tags: attribute, automated
    :satisfies: wf__analyse_featarch, wf__analyse_comparch
    :complies: std_req__iso26262__support_6425, std_req__iso26262__support_6434
 
-   It shall be possible to detect any differences in mandatory attributes compared to the versioning: :need:`gd_saf__attr_mandatory`
+   It shall be possible to detect any differences in mandatory attributes compared to the versioning: :need:`gd_req__saf_attr_mandatory`
 
 
 .. _process_requirements_safety_analysis_checks:
@@ -182,7 +182,7 @@ Process Requirements Checks
 '''''''''''''''''''''''''''
 
 .. gd_req:: Safety Analysis mandatory attributes provided
-   :id: gd_saf__attr_mandatory
+   :id: gd_req__saf_attr_mandatory
    :status: valid
    :tags: attribute, check
    :satisfies: wf__analyse_featarch, wf__analyse_comparch
@@ -197,7 +197,7 @@ Process Requirements Checks
       :colwidths: 30
 
 .. gd_req:: Safety Analysis linkage safety
-   :id: gd_saf__linkage_safety
+   :id: gd_req__saf_linkage_safety
    :status: valid
    :tags: attribute, check
    :satisfies: wf__analyse_featarch, wf__analyse_comparch
@@ -212,7 +212,7 @@ DFA Process Requirements
 ========================
 
 .. gd_req:: DFA attribute: violation ID
-   :id: gd_saf__attr_vid
+   :id: gd_req__saf_attr_vid
    :status: valid
    :tags: attribute, mandatory
    :satisfies: wf__analyse_featarch, wf__analyse_comparch
@@ -222,7 +222,7 @@ DFA Process Requirements
    The violation ID links to the corresponding failure initiator which describes how a potential violation can occur.
 
 .. gd_req:: DFA attribute: violation cause
-   :id: gd_saf__attr_vcause
+   :id: gd_req__saf_attr_vcause
    :status: valid
    :tags: attribute, mandatory
    :satisfies: wf__analyse_featarch, wf__analyse_comparch
@@ -234,7 +234,7 @@ FMEA Process Requirements
 =========================
 
 .. gd_req:: FMEA attribute: failure mode
-   :id: gd_saf__attr_fmode
+   :id: gd_req__saf_attr_fmode
    :status: valid
    :tags: attribute, mandatory
    :satisfies: wf__analyse_featarch, wf__analyse_comparch
@@ -243,7 +243,7 @@ FMEA Process Requirements
    Each FMEA shall have a failure mode. The failure mode is used to identify the related fault <:need:`gd_guidl__fault_models`>.
 
 .. gd_req:: FMEA attribute: failure effect
-   :id: gd_saf__attr_feffect
+   :id: gd_req__saf_attr_feffect
    :status: valid
    :tags: attribute, mandatory
    :satisfies: wf__analyse_featarch, wf__analyse_comparch
