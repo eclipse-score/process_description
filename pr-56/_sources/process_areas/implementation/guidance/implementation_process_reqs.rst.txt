@@ -33,6 +33,20 @@ Process Requirements
 
    The dynamic diagram shall represent the unit and their relationships using UML notations.
 
+.. gd_req:: Design to Code Linking
+   :id: gd_req__design_code_link
+   :status: valid
+   :tags: mandatory
+   :satisfies: wf__sw_detailed_design
+   :complies: std_req__iso26262__software_843
+
+   The detailed design (units and interfaces in DD document) shall be linked
+   to the source code which implements the units and interfaces in the DD.
+
+   Note: Not every code element must have such a link (i.e. is represented in the detailed design),
+   these elements are implementation detail.
+
+
 .. gd_req:: Dependency Analysis
    :id: gd_req__dependency_analysis
    :status: valid
