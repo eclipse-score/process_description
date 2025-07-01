@@ -18,7 +18,7 @@ Safety Analysis Process Requirements
 ====================================
 
 .. gd_req:: Safety Analysis Structure
-   :id: gd_saf__structure
+   :id: gd_req__saf_structure
    :status: valid
    :tags: done_automation, safety_analysis
    :satisfies: wf__analyse_featarch, wf__analyse_comparch
@@ -37,7 +37,7 @@ Process Safety Analysis Attributes
 ----------------------------------
 
 .. gd_req:: Safety Analysis attribute: UID
-   :id: gd_saf__attr_uid
+   :id: gd_req__saf_attr_uid
    :status: valid
    :tags: done_automation, attribute, mandatory
    :satisfies: wf__analyse_featarch, wf__analyse_comparch
@@ -80,7 +80,7 @@ Process Safety Analysis Attributes
    If a new mitigation is needed link to the issue and keep status invalid until mitigation is sufficient.
 
 .. gd_req:: Safety Analysis attribute: sufficient
-   :id: gd_saf__attr_sufficient
+   :id: gd_req__saf_attr_sufficient
    :status: valid
    :tags: prio_1_automation, attribute, mandatory
    :satisfies: wf__analyse_featarch, wf__analyse_comparch
@@ -90,7 +90,7 @@ Process Safety Analysis Attributes
    A mitigation can only be sufficient if a mitigation is linked via the attribute mitigation.
 
 .. gd_req:: Safety Analysis content: argument
-   :id: gd_saf__argument
+   :id: gd_req__saf_argument
    :status: valid
    :tags: prio_1_automation, attribute, mandatory
    :satisfies: wf__analyse_featarch, wf__analyse_comparch
@@ -100,7 +100,7 @@ Process Safety Analysis Attributes
    can be improved to achieve sufficiency. The argument shall be written in the content.
 
 .. gd_req:: Safety Analysis attribute: status
-   :id: gd_saf__attr_status
+   :id: gd_req__saf_attr_status
    :status: valid
    :tags: prio_1_automation, attribute, mandatory
    :satisfies: wf__analyse_featarch, wf__analyse_comparch
@@ -114,7 +114,7 @@ Safety Analysis Linkage
 '''''''''''''''''''''''
 
 .. gd_req:: Safety Analysis Linkage check
-   :id: gd_saf__linkage_check
+   :id: gd_req__saf_linkage_check
    :status: valid
    :tags: prio_1_automation, attribute, automated
    :satisfies: wf__analyse_featarch, wf__analyse_comparch
@@ -123,7 +123,7 @@ Safety Analysis Linkage
    Safety Analysis shall be linked to the architecture on the corresponding level via the attribute verifies.
 
 .. gd_req:: Safety Analysis Linkage
-   :id: gd_saf__linkage
+   :id: gd_req__saf_linkage
    :status: valid
    :tags: prio_2_automation, attribute, automated
    :satisfies: wf__analyse_featarch, wf__analyse_comparch
@@ -132,7 +132,7 @@ Safety Analysis Linkage
    Each Safety Analysis shall be automatically linked (inverse direction) to the corresponding architecture via the "verified by" linkage.
 
 .. gd_req:: Safety Analysis attribute: check Requirements linkage
-   :id: gd_saf__attr_requirements_check
+   :id: gd_req__saf_attr_requirements_check
    :status: valid
    :tags: prio_1_automation, attribute, automated
    :satisfies: wf__analyse_featarch, wf__analyse_comparch
@@ -141,7 +141,7 @@ Safety Analysis Linkage
    Safety Analysis shall be linked to a requirement on the corresponding level via the attribute "mitigated by".
 
 .. gd_req:: Safety Analysis attribute: Requirements linkage
-   :id: gd_saf__attr_requirements
+   :id: gd_req__saf_attr_requirements
    :status: valid
    :tags: prio_2_automation, attribute, automated
    :satisfies: wf__analyse_featarch, wf__analyse_comparch
@@ -150,7 +150,7 @@ Safety Analysis Linkage
    Each Safety Analysis shall be automatically linked to the corresponding Safety Requirement via the mitigates linkage.
 
 .. gd_req:: Safety Analysis attribute: link to Aou
-   :id: gd_saf__attr_aou
+   :id: gd_req__saf_attr_aou
    :status: valid
    :tags: prio_1_automation, attribute, automated
    :satisfies: wf__analyse_featarch, wf__analyse_comparch
@@ -159,13 +159,13 @@ Safety Analysis Linkage
    It shall be possible to link Aou.
 
 .. gd_req:: Safety Analysis attribute: versioning
-   :id: gd_saf__attr_hash
+   :id: gd_req__saf_attr_hash
    :status: valid
    :tags: prio_2_automation, attribute, automated
    :satisfies: wf__analyse_featarch, wf__analyse_comparch
    :complies: std_req__iso26262__support_6425, std_req__iso26262__support_6434
 
-   It shall be possible to detect any differences in mandatory attributes compared to the versioning: :need:`gd_saf__attr_mandatory`
+   It shall be possible to detect any differences in mandatory attributes compared to the versioning: :need:`gd_req__saf_attr_mandatory`
 
 
 .. _process_requirements_safety_analysis_checks:
@@ -174,7 +174,7 @@ Process Requirements Checks
 '''''''''''''''''''''''''''
 
 .. gd_req:: Safety Analysis mandatory attributes provided
-   :id: gd_saf__attr_mandatory
+   :id: gd_req__saf_attr_mandatory
    :status: valid
    :tags: prio_1_automation, attribute, check
    :satisfies: wf__analyse_featarch, wf__analyse_comparch
@@ -190,7 +190,7 @@ Process Requirements Checks
 
 
 .. gd_req:: Safety Analysis linkage safety
-   :id: gd_saf__linkage_safety
+   :id: gd_req__saf_linkage_safety
    :status: valid
    :tags: prio_2_automation, attribute, check
    :satisfies: wf__analyse_featarch, wf__analyse_comparch
@@ -205,7 +205,7 @@ DFA Process Requirements
 ========================
 
 .. gd_req:: DFA attribute: violation ID
-   :id: gd_saf__attr_vid
+   :id: gd_req__saf_attr_vid
    :status: valid
    :tags: prio_1_automation, attribute, mandatory
    :satisfies: wf__analyse_featarch, wf__analyse_comparch
@@ -215,7 +215,7 @@ DFA Process Requirements
    The violation ID links to the corresponding failure initiator which describes how a potential violation can occur.
 
 .. gd_req:: DFA attribute: violation cause
-   :id: gd_saf__attr_vcause
+   :id: gd_req__saf_attr_vcause
    :status: valid
    :tags: prio_1_automation, attribute, mandatory
    :satisfies: wf__analyse_featarch, wf__analyse_comparch
@@ -227,7 +227,7 @@ FMEA Process Requirements
 =========================
 
 .. gd_req:: FMEA attribute: failure mode
-   :id: gd_saf__attr_fmode
+   :id: gd_req__saf_attr_fmode
    :status: valid
    :tags: prio_1_automation, attribute, mandatory
    :satisfies: wf__analyse_featarch, wf__analyse_comparch
@@ -236,7 +236,7 @@ FMEA Process Requirements
    Each FMEA shall have a failure mode. The failure mode is used to identify the related fault <:need:`gd_guidl__fault_models`>.
 
 .. gd_req:: FMEA attribute: failure effect
-   :id: gd_saf__attr_feffect
+   :id: gd_req__saf_attr_feffect
    :status: valid
    :tags: prio_1_automation, attribute, mandatory
    :satisfies: wf__analyse_featarch, wf__analyse_comparch
