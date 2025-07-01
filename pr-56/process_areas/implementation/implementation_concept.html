@@ -501,7 +501,7 @@
                   
   <section id="concept-description">
 <h1>Concept Description<a class="headerlink" href="#concept-description" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-3779e6e6">
+<div class="need_container docutils container" id="SNCB-ae6853f9">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_doc_concept table" id="doc_concept__imp__concept">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -615,7 +615,7 @@ It is represented using <strong>UML behavioral diagrams</strong>, including:</p>
 <li><p><strong>Sequence Diagrams</strong> – Depict the interactions between objects in a <strong>time-ordered sequence</strong>,
 highlighting how methods are invoked and how control flows between objects over time.</p></li>
 <li><p><strong>State Machine Diagrams</strong> – Show how the <strong>state of an object changes</strong> in response to events,
-allowing for the modeling of complex state transitions.</p></li>
+allowing for the modeling of complex state transitions (if there is stateful behaviour).</p></li>
 </ul>
 <p>These diagrams are essential for understanding the <strong>dynamic behavior</strong> of the component and how
 units collaborate to perform tasks.</p>
@@ -632,9 +632,6 @@ For this we use the tracing to the documentation generated from the code comment
 <span class="cm">   * @rst</span>
 <span class="cm">   * .. sw_unit:: cpp unit</span>
 <span class="cm">   *    :id: sw_unit__&lt;title&gt;</span>
-<span class="cm">   *    :security:</span>
-<span class="cm">   *    :safety:</span>
-<span class="cm">   *    :status</span>
 <span class="cm">   *</span>
 <span class="cm">   *    This implements the ....</span>
 <span class="cm">   * @endrst</span>
@@ -644,9 +641,6 @@ For this we use the tracing to the documentation generated from the code comment
 <p>for rust -</p>
 <div class="highlight-rust notranslate"><div class="highlight"><pre><span></span><span class="sd">//! .. sw_unit:: rust unit</span>
 <span class="sd">//!     :id: sw_unit__&lt;title&gt;</span>
-<span class="sd">//!     :security:</span>
-<span class="sd">//!     :safety:</span>
-<span class="sd">//!     :status</span>
 <span class="sd">//!</span>
 <span class="sd">//!     This implements the ....</span>
 </pre></div>
@@ -662,9 +656,6 @@ filled and corresponding element is shown in the documentation generated form th
 <span class="cm">   * @rst</span>
 <span class="cm">   * .. sw_unit_int:: cpp unit</span>
 <span class="cm">   *    :id: sw_unit_int__&lt;title&gt;</span>
-<span class="cm">   *    :security:</span>
-<span class="cm">   *    :safety:</span>
-<span class="cm">   *    :status</span>
 <span class="cm">   *</span>
 <span class="cm">   *    This implements the ....</span>
 <span class="cm">   * @endrst</span>
@@ -674,9 +665,6 @@ filled and corresponding element is shown in the documentation generated form th
 <p>For rust -</p>
 <div class="highlight-rust notranslate"><div class="highlight"><pre><span></span><span class="sd">//! .. sw_unit_int:: rust unit</span>
 <span class="sd">//!     :id: sw_unit_int__&lt;title&gt;</span>
-<span class="sd">//!     :security:</span>
-<span class="sd">//!     :safety:</span>
-<span class="sd">//!     :status</span>
 <span class="sd">//!</span>
 <span class="sd">//!     This implements the ....</span>
 </pre></div>
