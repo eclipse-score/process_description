@@ -19,19 +19,44 @@ Process Requirements
    :id: gd_req__static_diagram
    :status: valid
    :tags: mandatory
-   :satisfies: wp__sw_implementation
+   :satisfies: wf__sw_detailed_design
    :complies: std_req__iso26262__software_843
 
-   The static diagram represents the unit and their relationships using UML 2.0 notations by using PlantUML.
+   The static diagram shall represent the unit and their relationships using UML notations.
 
 .. gd_req:: Dynamic Diagram for Unit Interactions
    :id: gd_req__dynamic_diagram
    :status: valid
    :tags: mandatory
-   :satisfies: wp__sw_implementation
+   :satisfies: wf__sw_detailed_design
    :complies: std_req__iso26262__software_843
 
-   The dynamic diagram represents the unit and their relationships using UML 2.0 notations by using PlantUML.
+   The dynamic diagram shall represent the unit and their relationships using UML notations.
+
+.. gd_req:: Design to Code Linking
+   :id: gd_req__design_code_link
+   :status: valid
+   :tags: mandatory
+   :satisfies: wf__sw_detailed_design
+   :complies: std_req__iso26262__software_843
+
+   The detailed design (units and interfaces in DD document) shall be linked
+   to the source code which implements the units and interfaces in the DD.
+
+   Note: Not every code element must have such a link (i.e. is represented in the detailed design),
+   these elements are implementation detail.
+
+
+.. gd_req:: Dependency Analysis
+   :id: gd_req__dependency_analysis
+   :status: valid
+   :satisfies: wf__sw_verify_implementation
+   :complies: std_req__iso26262__software_942
+
+   For each component a dependency tree view shall be created to support design inspection and Safety Analysis.
+   It shall show the libraries used by the component (i.e. which libraries are linked to the component, defined as Bazel target) up to the leaves of the tree.
+
+   Note: This may be realized by using Bazel query mechanism.
 
 .. needextend:: docname is not None and "process_areas/implementation" in docname
    :+tags: implementation

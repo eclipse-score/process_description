@@ -89,6 +89,10 @@ This view focuses **only on units and their relationships**.
 Details such as **attributes and interfaces** are documented under the **Units within the Component section**
 (refer to the template for details).
 
+Note that the detailed design may not be complete in the way that it covers every class which is coded.
+These not covered parts may contain implementation detail and should not be needed to understand the
+the detailed design.
+
 Dynamic View
 ````````````
 The **dynamic view** illustrates how the **units** interact with each other to fulfill a specific
@@ -98,10 +102,11 @@ It is represented using **UML behavioral diagrams**, including:
 - **Sequence Diagrams** – Depict the interactions between objects in a **time-ordered sequence**,
   highlighting how methods are invoked and how control flows between objects over time.
 - **State Machine Diagrams** – Show how the **state of an object changes** in response to events,
-  allowing for the modeling of complex state transitions.
+  allowing for the modeling of complex state transitions (if there is stateful behaviour).
 
 These diagrams are essential for understanding the **dynamic behavior** of the component and how
-units collaborate to perform tasks.
+units collaborate to perform tasks. But this also means that if the dynamic behaviour is simple
+it does not require a dynamic diagram at all (similar to the rules depicted in :need:`gd_guidl__arch__design`).
 
 Units within the Component
 --------------------------
@@ -120,9 +125,6 @@ For cpp using doxygen style comments-
       * @rst
       * .. sw_unit:: cpp unit
       *    :id: sw_unit__<title>
-      *    :security:
-      *    :safety:
-      *    :status
       *
       *    This implements the ....
       * @endrst
@@ -134,9 +136,6 @@ for rust -
 
    //! .. sw_unit:: rust unit
    //!     :id: sw_unit__<title>
-   //!     :security:
-   //!     :safety:
-   //!     :status
    //!
    //!     This implements the ....
 
@@ -156,9 +155,6 @@ For cpp using doxygen comments-
       * @rst
       * .. sw_unit_int:: cpp unit
       *    :id: sw_unit_int__<title>
-      *    :security:
-      *    :safety:
-      *    :status
       *
       *    This implements the ....
       * @endrst
@@ -170,8 +166,5 @@ For rust -
 
    //! .. sw_unit_int:: rust unit
    //!     :id: sw_unit_int__<title>
-   //!     :security:
-   //!     :safety:
-   //!     :status
    //!
    //!     This implements the ....
