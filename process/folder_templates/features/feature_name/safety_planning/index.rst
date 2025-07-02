@@ -70,7 +70,7 @@ Feature Safety Planning
       - :need:`doc__feature_name_architecture`
       - doc :ndf:`copy('status', need_id='doc__feature_name_architecture')` & WP below
 
-    * - :need:`wp__feature_safety_analysis`
+    * - :need:`wp__feature_fmea`
       - <link to process>
       - <automated>
       - <link to issue>

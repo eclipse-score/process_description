@@ -36,15 +36,18 @@ Failure Mode List
 
 .. code-block:: rst
 
+
    .. feat_saf_fmea:: <Element descriptor>
-      :id: feat_saf_FMEA__<Feature>__<Element descriptor>
-      :failure_mode: <ID from fault model :need:`gd_guidl__fault_models`>
-      :failure_effect: <Effect caused by the failure (leading to a violation of a safety goal)>
-      :verifies: <ID from Feature Architecture>
-      :mitigated_by: < NONE|ID from Feature Requirement>
+      :verifies: <Feature architecture>
+      :id: feat_saf_fmea__<Feature>__<Element descriptor>
+      :violation_id: <ID from fault model Fault Models (gd_guidl__fault_models)>
+      :violation_cause: “description of failure effect of the fault model on the element”
+      :mitigation: <ID from Feature Requirement | ID from AoU Feature Requirement>
+      :mitigation_issue: <ID from Issue Tracker>
       :sufficient: <yes|no>
-      :argument: <text to argument why measure is sufficient>
       :status: <valid|invalid>
+
+ .. note::   argument is inside the 'content'. Therefore content is mandatory
 
 .. attention::
     The above directive must be updated according to your feature FMEA.

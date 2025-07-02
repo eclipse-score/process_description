@@ -36,15 +36,18 @@ Dependent Failure Intitiators
 
 .. code-block:: rst
 
+
    .. comp_saf_dfa:: <Element descriptor>
+      :verifies: <Component architecture>
       :id: comp_saf_DFA__<Component>__<Element descriptor>
-      :violation_id: <ID from Dependent Failure Initiators list :need:`gd_guidl__dfi`>
-      :violation_effect: <Effect caused by the initiator (leading to a violation of a safety goal)>
-      :verifies: <ID from Component Architecture>
-      :mitigated_by: < NONE|ID from Component Requirement>
+      :violation_id: <ID from DFA failure initiators DFA failure initiators (gd_guidl__dfa_failure_initiators)>
+      :violation_cause: “description of failure effect of the failure initiator on the element”
+      :mitigation: <ID from Component Requirement | ID from AoU Component Requirement>
+      :mitigation_issue: <ID from Issue Tracker>
       :sufficient: <yes|no>
-      :argument: <text to argument why measure is sufficient>
       :status: <valid|invalid>
+
+.. note::   argument is inside the 'content'. Therefore content is mandatory
 
 .. attention::
     The above directive must be updated according to your component DFA.
