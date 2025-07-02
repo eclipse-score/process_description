@@ -24,7 +24,14 @@ This section discusses a concept for safety analyses. As methods for safety anal
 and FMEA (Failure Mode and Effects Analysis). Inputs for this concept are the requirements of ISO26262 Part 6 Chapter 7 and Part 9 Chapter 7 and 8.
 
 The objectives of the DFA are to show that the required freedom from interference is achieved. Therefore the potential causes or initiators are
-analyzed. The DFA is focussed on common cause failures.
+analysed. The DFA is focussed on common cause failures. With a DFA architectural features are analysed if
+
+ | - there are redundant elements (similar or non-similar)
+ | - identical software is implemented in different features or components
+ | - failures can violate a functions and the safety mechanisms for the function
+ | - failures an violate partitions of features or components
+
+With the DFA shall be shown that the freedom from interference is achieved by the absence of common cause failures.
 
 The objective of the FMEA is to show that the risk of systematic faults is reduced to an acceptable level. This shall be done by showing that
 systematic faults can be excluded by a full test coverage. Or, if this is not possible, that the systematic faults are mitigated by a sufficient mitigation.
@@ -35,7 +42,7 @@ Inputs
 
 #. Stakeholders for the safety analysis (DFA and FMEA)?
 #. Who needs which information?
-#. How to analyze existing safety mitigation?
+#. How to analyse existing safety mitigation?
 #. How to add new safety mitigations?
 
 Stakeholders for the Safety Analysis (DFA and FMEA)
@@ -43,9 +50,9 @@ Stakeholders for the Safety Analysis (DFA and FMEA)
 
 #. :need:`Safety Engineer <rl__safety_engineer>`
 
-   * Analyse the platform feature architecture with a DFA
-   * Analyse the feature architecture with a FMEA and DFA
-   * Analyse the component architecture with a FMEA and DFA
+   * Analyse the platform feature architecture with a Platform Feature DFA
+   * Analyse the feature architecture with a Feature FMEA and Feature DFA
+   * Analyse the component architecture with a Component FMEA and Component DFA
    * Monitor/verify the FMEA and DFA
 
 #. :need:`Safety Manager <rl__safety_manager>`
@@ -56,12 +63,12 @@ Stakeholders for the Safety Analysis (DFA and FMEA)
 #. :need:`Contributor <rl__contributor>`
 
    * Support the FMEA and DFA
-   * Support the monitoring and verifying of the safety analyses and DFA
+   * Support the monitoring and verifying of the FMEA and DFA
 
 #. :need:`Committer <rl__committer>`
 
    * Support the FMEA and DFA
-   * Support the monitoring and verifying of the safety analyses and DFA
+   * Support the monitoring and verifying of the FMEA and DFA
 
 #. :need:`Security Manager <rl__security_manager>`
 
@@ -77,7 +84,7 @@ Also requirements of standards need to be taken into consideration:
 * ISO26262
 * ISO SAE 21434
 
-How to analyze?
+How to analyse?
 ===============
 
 The safety analysis (DFA and FMEA) is done on the feature and component architecture. The safety analysis (DFA and FMEA) shall be done accompanying to the development.
@@ -96,7 +103,7 @@ shall be done in the way that we use the static and dynamic diagrams. The follow
 
    Dynamic Architecture
 
-The FMEA is done with the shown diagrams. The interface 1 and 2 are the interfaces of the feature. These interfaces shall be analyzed with the
+The FMEA is done with the shown diagrams. The interface 1 and 2 are the interfaces of the feature. These interfaces shall be analysed with the
 fault models :need:`gd_guidl__fault_models` that here could be applied. With the dynamic diagrams the communication between the components can be analysed.
 The static diagrams are used to analyse the dependencies. For violations a failure mitigation shall be defined.
 
@@ -107,9 +114,9 @@ The static diagrams are used to analyse the dependencies. For violations a failu
 
    Safety Analysis Component Perspective
 
-At component level you can see inside of the component when the component consists of two or more subcomponents. If the component consists of
-only one subcomponent there results of the analysis are the same as for the feature level. So no additional consideration is needed.
-The component kvstorage consists of two subcomponents, kvs and fs. The dynamic diagram shows the communication between the subcomponents.
+At component level you can see inside of the component when the component consists of two or more sub-components. If the component consists of
+only one sub-component there results of the analysis are the same as for the feature level. So no additional consideration is needed.
+The component kvstorage consists of two sub-components, kvs and fs. The dynamic diagram shows the communication between the sub-components.
 
 
 How to add new safety mitigations?
@@ -130,7 +137,7 @@ Examples for FMEA and DFA at feature level
 |    :failure_mode: "MF_01_01"
 |    :failure_effect: "message is not received"
 |    :mitigation: Detection and error handling shall be done outside of the middleware.
-|    :mitigation_issue: ID from Issue Tracker that defined mitigation will be documented in the assumtions of use (AoU)
+|    :mitigation_issue: ID from Issue Tracker that defined mitigation will be documented in the assumptions of use (AoU)
 |    :sufficient: yes
 |    :status: valid
         This error is handled by the calling application.

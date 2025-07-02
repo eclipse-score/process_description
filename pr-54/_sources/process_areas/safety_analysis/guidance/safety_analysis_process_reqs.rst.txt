@@ -48,7 +48,7 @@ Process Safety Analysis Attributes
    Each Safety Analysis shall have a unique ID. It shall be in a format which is also human readable and consists of
 
       * type of Safety Analysis (DFA or FMEA)
-      * name of analyzed structural element (e.g. Persistency, FEO, etc.)
+      * name of analysed structural element (e.g. Persistency, FEO, etc.)
       * element descriptor (e.g. KVS__Open KVS or KVS__GetKeyValue)
 
    The naming convention shall be defined in the project and shall be used consistently.
@@ -65,7 +65,7 @@ Process Safety Analysis Attributes
 .. gd_req:: Safety Analysis attribute: mitigation
    :id: gd_req__saf_attr_mitigation
    :status: valid
-   :tags: attribute, optional
+   :tags: attribute, mandatory
    :satisfies: wf__analyse_featarch, wf__analyse_comparch
    :complies: std_req__iso26262__analysis_844, std_req__iso26262__analysis_746, std_req__iso26262__analysis_747
 
@@ -109,6 +109,16 @@ Process Safety Analysis Attributes
 
    Each safety analysis shall have the status invalid until the analysis is finished. The status shall be set to valid if the analysis is finished and all issues are closed.
 
+.. gd_req:: Safety Analysis attribute: violation ID
+   :id: gd_req__saf_attr_violation_id
+   :status: valid
+   :tags: attribute, automated, mandatory
+   :satisfies: wf__analyse_featarch, wf__analyse_comparch
+   :complies: std_req__iso26262__analysis_845
+
+   It shall be possible to link to one violation ID to fault model :need:`gd_guidl__fault_models` for FMEA or failure initiators :need:`gd_guidl__dfa_failure_initiators` for DFA.
+
+
 .. _process_requirements_safety_analysis_linkage:
 
 Safety Analysis Requirement Linkage
@@ -149,15 +159,6 @@ Safety Analysis Requirement Linkage
    :complies: std_req__iso26262__analysis_842, std_req__iso26262__software_7410, std_req__iso26262__software_7411
 
    Each Safety Analysis shall be automatically linked (inverse direction) to the corresponding architecture via the "mitigates by" linkage.
-
-.. gd_req:: Safety Analysis attribute: link to violation ID
-   :id: gd_req__saf_attr_violation_id
-   :status: valid
-   :tags: attribute, automated, mandatory
-   :satisfies: wf__analyse_featarch, wf__analyse_comparch
-   :complies: std_req__iso26262__analysis_845
-
-   It shall be possible to link violation ID to fault model :need:`gd_guidl__fault_models` or failure initiators :need:`gd_guidl__dfa_failure_initiators`.
 
 .. gd_req:: Safety Analysis attribute: link to Aou
    :id: gd_req__saf_attr_aou
@@ -208,7 +209,7 @@ Process Requirements Checks
    | It shall be checked that Safety Analysis (DFA and FMEA) can only be linked via mitigate against
    |  - <Feature | Component | AoU> Requirements with the same ASIL or
    |  - <Feature | Component | AoU> Requirements with a higher ASIL
-   | as the corresponding ASIL of the Feature or Component that is analyzed.
+   | as the corresponding ASIL of the Feature or Component that is analysed.
 
 DFA Process Requirements
 ========================
@@ -230,7 +231,7 @@ DFA Process Requirements
    :satisfies: wf__analyse_featarch, wf__analyse_comparch
    :complies: std_req__iso26262__analysis_742
 
-   Every DFA shall have a short description of the violation cause (e.g. failure lead to an unintended actuation of the analyzed element)
+   Every DFA shall have a short description of the violation cause (e.g. failure lead to an unintended actuation of the analysed element)
 
 FMEA Process Requirements
 =========================

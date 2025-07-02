@@ -17,7 +17,7 @@
 Review and Inspection Concept
 =============================
 
-.. doc_concept:: Workproduct Inspections Concept
+.. doc_concept:: Work product Inspections Concept
    :id: doc_concept__wp_inspections
    :status: valid
 
@@ -79,8 +79,8 @@ The detailed design and coding inspection is not of this kind. Here we define th
 already has the (formal) character of an inspection, i.e. the review checklist is used.
 The scope of such a detailed design / code inspection is always the change introduced, as documented in github.
 The inspection is initiated by the author of the change and reviewers are invited automatically
-based on the CODEOWNER(s) definition of the modified files. In case the fixing of review findings is not agreed
-between reviewer(s) and author, the safety manager or quality manager can be added to the review to moderate a solution.
+based on an implemented technical reviewer mechanism defined for the modified files. In case the fixing of review findings is not agreed
+between reviewer(s) and author, the safety manager, security manager or quality manager can be added to the review to moderate a solution.
 
 The initial step for requirements and architecture is the (informal) GitHub review on every Pull-Request
 (resp. Change Request, see `REPLACE_doc__contr_guideline`)
@@ -90,10 +90,10 @@ In this review the checklist entries shall be considered which are tagged as "in
 
 The last step is initiated by the safety manager, security manager or quality manager:
 He asks the main work product author to set the work product's status to "valid(inspected)" and start a Pull-Request (PR).
-GitHub will automatically ask for a review by the defined one or more "CODEOWNER" of the work product.
+GitHub will automatically ask for a review by the defined one or more reviewer implemented by the technical reviewer mechanism of the work product.
 In the PR description the inspection result will be documented for each checklist item
 (pass/fail - with link to a ticket for the corrections, or by citing the checklist item in the github comment).
-The CODEOWNER(s)=reviewers will fill out the checklist and add their findings on the work product in the PR.
+The reviewers will fill out the checklist and add their findings on the work product in the PR.
 They close their review activity by documenting their verdict as "Approve" or "Request Changes".
 Any one "Request Changes" will block the PR from being merged. Note that the PR author cannot "Approve" or "Request Changes".
 After all requested reviews were done, the author answers the findings in GitHub comments and/or performs corrections of the work products.
@@ -101,7 +101,7 @@ Then the reviewer(s) re-review and adapt their verdict accordingly.
 In case the author or the reviewer(s) cannot agree on a solution, the safety/security/quality manger
 who initiated the inspection will be asked to moderate this by requesting also his review.
 
-The following picture shall illustrate how a status lifecycle of a requirement workproduct will look like.
+The following picture shall illustrate how a status lifecycle of a requirement work product will look like.
 The lifecycle for an architecture work product should be similar.
 
 .. figure:: _assets/inspection_workflow.drawio.svg
@@ -115,7 +115,7 @@ The lifecycle for an architecture work product should be similar.
 #. (Informal) Pull-Request Review
 #. Merge valid requirement to main
 #. During development and verification steps the requirement is reworked and again put to PR Review
-#. Implementation and verification workproducts are linked
+#. Implementation and verification work products are linked
 #. Safety manager initiates a (formal) Pull-Request Inspection
 #. After finding resolution, the requirement is merged in valid(inspected) state
 #. In case of changes the requirement returns in the valid state
@@ -133,7 +133,7 @@ for those which are QM but are security related the security manger may request 
 but also the quality manager may ask for inspection for critical QM work products.
 
 Judging if the maturity of a work product is already enough to request an inspection
-can be based for example for the requiremnts on their "Implemented by", "Verified by" and "Requirement Covered" attribute.
+can be based for example for the requirements on their "Implemented by", "Verified by" and "Requirement Covered" attribute.
 For example when requesting a new feature by filling out the :need:`gd_temp__change__feature_request`
 you are asked to also specify the feature's requirements
 - it is not expected that the maturity of the requirements is already enough at this time to make a good inspection.
@@ -147,8 +147,8 @@ Reviewers shall comment also the checklist items which they mark as passed, as a
 to be able to later explain what they considered during review
 (for example in case a requirement is found to be wrong after the release, to be able to do a lessons learned).
 
-Any workproduct which is subject to inspection and is modified after an inspection
-shall transition from "valid(inspected)" back to "valid" state. This shall be automaticly checked.
+Any work product which is subject to inspection and is modified after an inspection
+shall transition from "valid(inspected)" back to "valid" state. This shall be automatically checked.
 
 Process Requirements
 ^^^^^^^^^^^^^^^^^^^^

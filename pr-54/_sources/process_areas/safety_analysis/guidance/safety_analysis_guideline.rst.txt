@@ -28,7 +28,7 @@ Workflow for Safety Analysis
 
 Detailed description which steps are need for a safety analysis. In general the workflow is shown in :need:`doc_getstrt__safety_analysis`.
 
-#. Analyze the dependencies between features by performing a **single platform feature DFA** that references all platform feature static architecture diagrams, highlighting potential shared use of modules.
+#. Analyse the dependencies between features by performing a **single platform feature DFA** that references all platform feature static architecture diagrams, highlighting potential shared use of modules.
 #. Monitor the results of the platform feature DFA and log any issues in the Issue Tracking system with the ``safety`` label.
 #. Verify the platform feature DFA results by using :need:`gd_chklst__safety_analysis`.
 #. Platform feature DFA are completed when the verification is done, no issues are open and the status is "valid".

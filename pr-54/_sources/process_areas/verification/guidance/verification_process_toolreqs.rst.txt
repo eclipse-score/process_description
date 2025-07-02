@@ -28,19 +28,12 @@ Test Linking to Requirements
     * Verifies
         * PartiallyVerifies
         * FullyVerifies
-    * ASIL
-        * QM
-        * ASIL_B
     * Description
-    * Status
-        * valid
-        * invalid
     * TestType
         * Fault Injection (fault-injection)
         * Interface Test (interface-test)
         * Requirements-based Test (requirements-based)
         * Resource Usage Evaluation (resource-usage)
-
     * DerivationTechnique
         * Analysis of requirements (requirements-analysis)
         * Analysis of design (design-analysis)
@@ -69,8 +62,6 @@ Test Linking to Requirements
          public:
             void SetUp() override
             {
-               RecordProperty("Status", "<Status>");
-               RecordProperty("ASIL", "<ASIL>");
                RecordProperty("TestType", "<TestType>");
                RecordProperty("DerivationTechnique", "<DerivationTechnique>");
                ...
@@ -99,7 +90,6 @@ Test Linking to Requirements
 
       @pytest.fixture(scope="session", autouse=True)
       def add_metadata(record_testsuite_property):
-         record_testsuite_property("ASIL", "<ASIL>")
          record_testsuite_property("TestType", "<TestType>")
          record_testsuite_property("DerivationTechnique", "<DerivationTechnique>")
       class Testclass(TestSim):
@@ -123,8 +113,6 @@ Test Linking to Requirements
         #[record_property("PartiallyVerifies", "ID_2, ID_3, ...")]
         #[record_property("FullyVerifies", "ID_4, ID_5, ...")]
         #[record_property("Description", "<Description>")]
-        #[record_property("Status", "<Status>")]
-        #[record_property("ASIL", "<ASIL>")]
         #[record_property("TestType", "<TestType>")]
         #[record_property("DerivationTechnique", "<DerivationTechnique>")]
         #[test]
@@ -134,6 +122,35 @@ Test Linking to Requirements
 
 .. gd_req:: Test Independence
     :id: gd_req__verification_independence
-    :status: draft
+    :status: valid
 
     The approver of a pull request shall differ from the author(s) of the pull request in all pull requests.
+
+.. gd_req:: Verification Reporting
+    :id: gd_req__verification_reporting
+    :status: valid
+
+    Verification reports shall be automatically generated. These may be independent documents (i.e. not integrated into sphinx documentation).
+    The content of the reports is specified in :need:`gd_temp__platform_ver_report` and :need:`gd_temp__mod_ver_report`.
+
+.. gd_req:: Verification Documentation Checks
+    :id: gd_req__verification_checks
+    :status: valid
+
+    The following checks shall be implemented on test metadata:
+
+    - TestType and DerivationTechnique shall be set
+    - Description shall not be empty
+    - In a Platform Test Partially/FullyVerifies shall be set to a Platform Requirement
+    - If Partially/FullyVerifies are set in Feature Integration Test these shall link to Feature Requirements
+    - If Partially/FullyVerifies are set in Component Integration Test these shall link to Component Requirements
+    - If Partially/FullyVerifies are set in Unit Test these shall link to Component Requirements
+
+.. gd_req:: Verification Documentation Checks Extended
+    :id: gd_req__verification_checks_extended
+    :status: draft
+
+    The following checks shall be implemented on test metadata:
+
+    - If TestType is set to requirements-based then PartiallyVerifies or FullyVerifies shall contain a link to at least one requirement
+    - If TestType is set to interface-test then PartiallyVerifies or FullyVerifies shall contain a link to at least one interface

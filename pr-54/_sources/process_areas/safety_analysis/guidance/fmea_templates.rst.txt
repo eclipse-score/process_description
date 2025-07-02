@@ -31,7 +31,7 @@ FMEA Templates
    |    :mitigation_issue: <ID from Issue Tracker>
    |    :sufficient: <yes|no>
    |    :status: <valid|invalid>
-
+.. note::   argument is inside the 'content'. Therefore content is mandatory
 
 .. gd_temp:: Component FMEA Template
    :id: gd_temp__comp_saf_fmea
@@ -47,3 +47,4 @@ FMEA Templates
    |    :mitigation_issue: <ID from Issue Tracker>
    |    :sufficient: <yes|no>
    |    :status: <valid|invalid>
+.. note::   argument is inside the 'content'. Therefore content is mandatory

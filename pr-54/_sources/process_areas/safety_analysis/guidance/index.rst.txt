@@ -24,4 +24,4 @@ Guidance
    fault_models_guideline
    safety_analysis_guideline
    safety_analysis_process_reqs
-   FMEA_templates
+   fmea_templates
