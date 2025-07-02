@@ -511,7 +511,7 @@
                   
   <section id="implementation-inspection-checklist">
 <span id="implementation-checklist"></span><h1>Implementation Inspection Checklist<a class="headerlink" href="#implementation-inspection-checklist" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-5dfca1de">
+<div class="need_container docutils container" id="SNCB-0ce0584c">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_chklst table" id="gd_chklst__impl_inspection_checklist">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -594,18 +594,6 @@ by linking to C++ or Rust specific documentation.</p>
 <td></td>
 </tr>
 <tr class="row-odd"><td><p>IMPL_01_02</p></td>
-<td><p>Are the SOLID design principles applied?</p></td>
-<td><p>The Unit Design shall achieve the following principles:
-Correct order of execution of the functions,
-consistency of the interfaces between the units,
-correctness of data flow and data control between the units,
-simplicity, readability and comprehensibility, robustness,
-suitability for modifications, verifiability</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="row-even"><td><p>IMPL_01_03</p></td>
 <td><p>Is the implementation according to specification?</p></td>
 <td><p>Check if the linked component requirements are fulfilled
 and detailed design also matches architecture description.</p></td>
@@ -613,14 +601,14 @@ and detailed design also matches architecture description.</p></td>
 <td></td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><p>IMPL_01_04</p></td>
+<tr class="row-even"><td><p>IMPL_01_03</p></td>
 <td><p>Are the design decisions and constraints documented?</p></td>
 <td><p>Check also for plausibility of these.</p></td>
 <td></td>
 <td></td>
 <td></td>
 </tr>
-<tr class="row-even"><td><p>IMPL_01_05</p></td>
+<tr class="row-odd"><td><p>IMPL_01_04</p></td>
 <td><p>Are all external libraries used by the component specified in the detailed design?</p></td>
 <td><p>Check the automated dependency analysis.
 Also make sure ASIL rated units also only use ASIL or FFI rated libraries.</p></td>
@@ -628,21 +616,21 @@ Also make sure ASIL rated units also only use ASIL or FFI rated libraries.</p></
 <td></td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><p>IMPL_02_01</p></td>
+<tr class="row-even"><td><p>IMPL_02_01</p></td>
 <td><p>Are the static and dynamic code analysis reports verified for violations?</p></td>
 <td><p>All violations in ASIL related code must be justified. This includes the checks of coding guidelines.</p></td>
 <td></td>
 <td></td>
 <td></td>
 </tr>
-<tr class="row-even"><td><p>IMPL_02_02</p></td>
+<tr class="row-odd"><td><p>IMPL_02_02</p></td>
 <td><p>Do manual checks, that are derived from the coding guideline, find no safety critical error?</p></td>
 <td><p>Check this list for C++ &lt;link&gt; and this list for Rust &lt;link&gt;</p></td>
 <td></td>
 <td></td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><p>IMPL_02_03</p></td>
+<tr class="row-even"><td><p>IMPL_02_03</p></td>
 <td><p>Are detailed design and source code consistent?</p></td>
 <td><p>Check if the static and dynamic design descriptions match the code (e..g. naming of elements)
 and that the respective traceability is established (doxygen style comments)</p></td>

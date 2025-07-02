@@ -52,30 +52,19 @@ Checklist
      -
      -
    * - IMPL_01_02
-     - Are the SOLID design principles applied?
-     - The Unit Design shall achieve the following principles:
-       Correct order of execution of the functions,
-       consistency of the interfaces between the units,
-       correctness of data flow and data control between the units,
-       simplicity, readability and comprehensibility, robustness,
-       suitability for modifications, verifiability
-     -
-     -
-     -
-   * - IMPL_01_03
      - Is the implementation according to specification?
      - Check if the linked component requirements are fulfilled
        and detailed design also matches architecture description.
      -
      -
      -
-   * - IMPL_01_04
+   * - IMPL_01_03
      - Are the design decisions and constraints documented?
      - Check also for plausibility of these.
      -
      -
      -
-   * - IMPL_01_05
+   * - IMPL_01_04
      - Are all external libraries used by the component specified in the detailed design?
      - Check the automated dependency analysis.
        Also make sure ASIL rated units also only use ASIL or FFI rated libraries.
