@@ -17,35 +17,8 @@
 Process Requirements
 ====================
 
-Architectural Structuring
--------------------------
-
-.. gd_req:: Hierarchical structure of architectural elements
-   :id: gd_req__arch__hierarchical_structure
-   :status: valid
-   :complies: std_req__iso26262__support_6431, std_req__iso26262__support_6432
-   :satisfies: wf__cr_mt_featarch
-
-   Architectural elements shall be hierarchically structured on two levels:
-
-   * Feature
-   * Component
-
-   Additionally there shall be a view for the *Top Level SW component* container.
-
-.. gd_req:: Architecture Views
-   :id: gd_req__arch__viewpoints
-   :status: valid
-   :complies: std_req__iso26262__support_6432, std_req__iso26262__software_742
-   :satisfies: wf__cr_mt_featarch
-
-   The architecture shall be shown with following views on each architectural level:
-
-   * static view
-   * dynamic view
-   * interface view
-
-   An additional view only shall be created on module level.
+Architectural Model
+-------------------
 
 .. gd_req:: Architecture Modeling
    :id: gd_req__arch__model
@@ -53,22 +26,36 @@ Architectural Structuring
    :complies: std_req__iso26262__support_6431, std_req__iso26262__support_6432
    :satisfies: wf__cr_mt_featarch
 
-   For architecture design a model based approach should be used.
+   For architecture design a model based approach should be used. The model shall consist of different architectural elements.
 
-.. gd_req:: Structuring of the architectural building blocks
+.. gd_req:: Hierarchical structure of architectural elements
+   :id: gd_req__arch__hierarchical_structure
+   :status: valid
+   :complies: std_req__iso26262__support_6431, std_req__iso26262__support_6432
+   :satisfies: wf__cr_mt_featarch
+
+   The architectural elements shall be hierarchically structured on two levels:
+
+   * Feature Level (=Logical Level)
+   * Component Level
+
+.. gd_req:: Structuring of the architectural elements
    :id: gd_req__arch__build_blocks
    :status: valid
    :complies: std_req__iso26262__support_6431, std_req__iso26262__support_6432
    :satisfies: wf__cr_mt_featarch
 
-   For modeling the viewpoints following elements shall be used:
+   Following architectural elements shall be defined on the respective hierarchical level:
 
-   * Feature
-   * Module
-   * Component
-   * Logical Interfaces
-   * Interfaces
-   * Interface Operation
+   * Logical Level
+     * Feature (logic_arc_sta)
+     * Logical Interface (logic_arc_int)
+     * Logical Interface Operation (logic_arc_int_op)
+
+   * Component Level
+     * Component (comp_arc_sta)
+     * Interface (comp_arc_int)
+     * Interface Operation (comp_arc_int_op)
 
 .. gd_req:: Correlations of the architectural building blocks
    :id: gd_req__arch__build_blocks_corr
@@ -83,12 +70,22 @@ Architectural Structuring
       :align: center
       :alt: Definition of the Metamodel for Architectural Design
 
-.. gd_req:: Building Blocks Dynamic Architecture
-   :id: gd_req__arch__build_blocks_dynamic
+Architectural Views
+-------------------
+
+.. gd_req:: Architecture Viewpoints
+   :id: gd_req__arch__viewpoints
    :status: valid
+   :complies: std_req__iso26262__support_6432, std_req__iso26262__software_742
    :satisfies: wf__cr_mt_featarch
 
-   It shall be possible to provide the required architectural building blocks inside the dynamic architecture.
+   The architecture shall be shown on following views on each architectural level:
+
+   * Package Diagram (logic_arc_sta, comp_arc_sta)
+   * Sequence Diagram (logic_arc_dyn, comp_arc_dyn)
+   * Interface View (logic_arc_int, comp_arc_int)
+
+   Only an additional view  shall be created on module level.
 
 Attributes of Architectural Elements
 ------------------------------------
@@ -102,8 +99,8 @@ Attributes of Architectural Elements
    Each architectural element shall have a unique ID. It shall be in a format which is also human readable and consists of
 
       * type of architectural element
-      * last part of the feature tree
-      * keyword describing the content of the requirement.
+      * structural element (e.g. some part of the feature tree, component acronym)
+      * keyword describing the content of the architectural element
 
    The naming convention is defined here: `REPLACE_doc__naming_conventions`
 
@@ -140,16 +137,16 @@ Attributes of Architectural Elements
       * valid
       * invalid
 
+Traceability to Requirements
+----------------------------
+
 .. gd_req:: Architecture attribute: fulfils
    :id: gd_req__arch__attr_fulfils
    :status: valid
    :tags: attribute, mandatory
    :complies: std_req__iso26262__support_6425
 
-   Each architectural element shall have a link to a requirement.
-
-Traceability to Requirements
-----------------------------
+   Each architectural element shall be linked to a requirement.
 
 .. gd_req:: Architecture traceability
    :id: gd_req__arch__traceability
@@ -158,12 +155,12 @@ Traceability to Requirements
    :complies: std_req__iso26262__support_6432
    :satisfies: wf__cr_mt_featarch
 
-   Requirements shall be fulfilled by the architecture at the corresponding level.
+   Requirements shall be fulfilled by an architectural element on the corresponding level.
 
    **Examples:**
 
-   * feat_req <-> feat_arch_(sta|dyn|int)
-   * comp_req <-> comp_arch_(sta|dyn|int)
+   * feat_req <-> logic_arc_(sta|dyn), logic_arc_int, logic_arc_int_op
+   * comp_req <-> comp_arc_(sta|dyn|int|int_op)
 
    .. note::
       In general the traceability is visualized in :numref:`wp_traceability_model`
@@ -176,7 +173,7 @@ Checks for Architectural Design
    :status: valid
    :tags: attribute, check
 
-   It shall be checked if all mandatory attributes for each architectural element is provided by the user. For all elements following attributes shall be mandatory:
+   It shall be checked if all mandatory attributes for each architectural element are provided by the user. For all elements following attributes shall be mandatory:
 
    .. needtable:: Overview mandatory requirement attributes
       :filter: "mandatory" in tags and "attribute" in tags and "architecture_design" in tags and type == "gd_req" and is_external == False
@@ -184,38 +181,19 @@ Checks for Architectural Design
       :columns: title
       :colwidths: 30
 
-.. gd_req:: Architecture linkage safety
+.. gd_req:: Architecture linkage metamodel
    :id: gd_req__arch__linkage_safety
    :status: valid
    :tags: attribute, check
 
-   It shall be checked that every valid safety architectural element is linked against its top level element as defined in :need:`gd_req__arch__build_blocks_corr`.
-
-.. gd_req:: Architecture linkage requirement
-   :id: gd_req__arch__linkage_requirement
-   :status: valid
-   :tags: attribute, check
-
-   It shall be checked that each architectural element (safety!=QM) is linked against a safety requirement (safety!=QM).
-
-.. gd_req:: Architecture linkage requirement type
-   :id: gd_req__arch__linkage_requirement_type
-   :status: valid
-   :tags: attribute, check
-
-   It shall be checked that requirements can only be linked to architectural elements according to the defined traceability:
-
-   * Functional feature requirements <-> static / dynamic feature architecture
-   * Interface feature requirements <-> interface feature architecture
-   * Functional component requirements <-> static / dynamic component architecture
-   * Interface component requirements <-> interface component architecture
+   It shall be checked that every valid safety architectural element is linked according to the defined model :need:`gd_req__arch__build_blocks_corr`.
 
 .. gd_req:: Architecture linkage safety
    :id: gd_req__arch__linkage_safety_trace
    :status: valid
    :tags: attribute, check
 
-   It shall be checked that safety architectural elements (Safety != QM) can only be linked against safety architectural elements.
+   It shall be checked that valid safety architectural elements (Safety != QM) can only be linked against valid safety architectural elements.
 
 .. gd_req:: Architecture linkage security
    :id: gd_req__arch__linkage_security_trace
@@ -223,6 +201,23 @@ Checks for Architectural Design
    :tags: attribute, check
 
    It shall be checked that security relevant architectural elements (Security == YES) can only be linked against security relevant architectural elements.
+
+.. gd_req:: Architecture linkage requirement
+   :id: gd_req__arch__linkage_requirement
+   :status: valid
+   :tags: attribute, check
+
+   It shall be checked that each architectural element (safety!=QM) is linked against at least one safety requirement (safety!=QM).
+
+.. gd_req:: Architecture linkage requirement type
+   :id: gd_req__arch__linkage_requirement_type
+   :status: valid
+   :tags: attribute, check
+
+   It shall be checked that requirements of a respective type can only be linked to architectural elements according to following traceability:
+
+   * Functional requirements <-> static / dynamic architectural elements (logic_arc_sta, logic_arc_dyn)
+   * Interface requirements <-> interface architectural elements (logic_arc_int, logic_arc_int_op)
 
 .. gd_req:: Architecture check consistency modules
    :id: gd_req__arch__consistency_model
@@ -244,3 +239,10 @@ Checks for Architectural Design
    :tags: model, check
 
    It shall be checked if all SW components which are mentioned in the dynamic architecture are defined in the static architecture.
+
+.. gd_req:: Building Blocks Dynamic Architecture
+   :id: gd_req__arch__build_blocks_dynamic
+   :status: valid
+   :satisfies: wf__cr_mt_featarch
+
+   It shall be possible to provide the required architectural building blocks inside the dynamic architecture.

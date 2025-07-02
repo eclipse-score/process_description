@@ -510,112 +510,9 @@
                   
   <section id="process-requirements">
 <span id="arch-process-requirements"></span><h1>Process Requirements<a class="headerlink" href="#process-requirements" title="Link to this heading">#</a></h1>
-<section id="architectural-structuring">
-<h2>Architectural Structuring<a class="headerlink" href="#architectural-structuring" title="Link to this heading">#</a></h2>
-<div class="need_container docutils container" id="SNCB-18d09aa8">
-<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__arch__hierarchical_structure">
-<tbody>
-<tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
-<div class="line"><span><span class="needs_title"><span class="needs_data">Hierarchical structure of architectural elements</span></span></span></div>
-</div>
-</td>
-<td class="head_center" colspan="2"><div class="needs_head line-block">
-<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></span></div>
-<div class="line"><span></span></div>
-<div class="line"><span></span></div>
-</div>
-</td>
-<td class="head_right" colspan="2"><div class="needs_head_right line-block">
-<div class="line"><span><span class="needs needs_collapse" id="target__show__meta"><span class="needs collapsed"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg></span><span class="needs visible collapse_is_hidden"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg></span></span></span></div>
-</div>
-</td>
-</tr>
-<tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
-<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></div>
-<div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">architecture_design</span></span></span></div>
-</span></span></div>
-<div class="line"><span><div class="line">complies: <span class="complies"><span><a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_req__iso26262__support_6431" title="gd_req__arch__hierarchical_structure">std_req__iso26262__support_6431</a>, <a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_req__iso26262__support_6432" title="gd_req__arch__hierarchical_structure">std_req__iso26262__support_6432</a></span></span></div>
-<div class="line">satisfies: <span class="satisfies"><span><a class="reference internal" href="../architecture_workflow.html#wf__cr_mt_featarch" title="gd_req__arch__hierarchical_structure">wf__cr_mt_featarch</a></span></span></div>
-</span></div>
-</div>
-</td>
-<td class="meta" colspan="3"></td>
-</tr>
-<tr class="content row-odd"><td class="content" colspan="6"><p>Architectural elements shall be hierarchically structured on two levels:</p>
-<ul class="simple">
-<li><p>Feature</p></li>
-<li><p>Component</p></li>
-</ul>
-<p>Additionally there shall be a view for the <em>Top Level SW component</em> container.</p>
-</td>
-</tr>
-<tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
-<div class="line"><span><span class="needs-id"><a class="reference internal" href="#gd_req__arch__hierarchical_structure" title="gd_req__arch__hierarchical_structure">gd_req__arch__hierarchical_structure</a></span></span></div>
-</div>
-</td>
-<td class="footer" colspan="2"><div class="needs_footer line-block">
-<div class="line"><span><span class="needs_type_name"><span class="needs_data">Process Requirements</span></span></span></div>
-</div>
-</td>
-<td class="footer_right" colspan="2"></td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<div class="need_container docutils container" id="SNCB-98477ed7">
-<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__arch__viewpoints">
-<tbody>
-<tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
-<div class="line"><span><span class="needs_title"><span class="needs_data">Architecture Views</span></span></span></div>
-</div>
-</td>
-<td class="head_center" colspan="2"><div class="needs_head line-block">
-<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></span></div>
-<div class="line"><span></span></div>
-<div class="line"><span></span></div>
-</div>
-</td>
-<td class="head_right" colspan="2"><div class="needs_head_right line-block">
-<div class="line"><span><span class="needs needs_collapse" id="target__show__meta"><span class="needs collapsed"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg></span><span class="needs visible collapse_is_hidden"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg></span></span></span></div>
-</div>
-</td>
-</tr>
-<tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
-<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></div>
-<div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">architecture_design</span></span></span></div>
-</span></span></div>
-<div class="line"><span><div class="line">complies: <span class="complies"><span><a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_req__iso26262__support_6432" title="gd_req__arch__viewpoints">std_req__iso26262__support_6432</a>, <a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_req__iso26262__software_742" title="gd_req__arch__viewpoints">std_req__iso26262__software_742</a></span></span></div>
-<div class="line">satisfies: <span class="satisfies"><span><a class="reference internal" href="../architecture_workflow.html#wf__cr_mt_featarch" title="gd_req__arch__viewpoints">wf__cr_mt_featarch</a></span></span></div>
-</span></div>
-</div>
-</td>
-<td class="meta" colspan="3"></td>
-</tr>
-<tr class="content row-odd"><td class="content" colspan="6"><p>The architecture shall be shown with following views on each architectural level:</p>
-<ul class="simple">
-<li><p>static view</p></li>
-<li><p>dynamic view</p></li>
-<li><p>interface view</p></li>
-</ul>
-<p>An additional view only shall be created on module level.</p>
-</td>
-</tr>
-<tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
-<div class="line"><span><span class="needs-id"><a class="reference internal" href="#gd_req__arch__viewpoints" title="gd_req__arch__viewpoints">gd_req__arch__viewpoints</a></span></span></div>
-</div>
-</td>
-<td class="footer" colspan="2"><div class="needs_footer line-block">
-<div class="line"><span><span class="needs_type_name"><span class="needs_data">Process Requirements</span></span></span></div>
-</div>
-</td>
-<td class="footer_right" colspan="2"></td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<div class="need_container docutils container" id="SNCB-2bb8e204">
+<section id="architectural-model">
+<h2>Architectural Model<a class="headerlink" href="#architectural-model" title="Link to this heading">#</a></h2>
+<div class="need_container docutils container" id="SNCB-23791214">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__arch__model">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -644,7 +541,7 @@
 </td>
 <td class="meta" colspan="3"></td>
 </tr>
-<tr class="content row-odd"><td class="content" colspan="6"><p>For architecture design a model based approach should be used.</p></td>
+<tr class="content row-odd"><td class="content" colspan="6"><p>For architecture design a model based approach should be used. The model shall consist of different architectural elements.</p></td>
 </tr>
 <tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
 <div class="line"><span><span class="needs-id"><a class="reference internal" href="#gd_req__arch__model" title="gd_req__arch__model">gd_req__arch__model</a></span></span></div>
@@ -660,11 +557,61 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-03f31e06">
+<div class="need_container docutils container" id="SNCB-a5b5c14b">
+<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__arch__hierarchical_structure">
+<tbody>
+<tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
+<div class="line"><span><span class="needs_title"><span class="needs_data">Hierarchical structure of architectural elements</span></span></span></div>
+</div>
+</td>
+<td class="head_center" colspan="2"><div class="needs_head line-block">
+<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></span></div>
+<div class="line"><span></span></div>
+<div class="line"><span></span></div>
+</div>
+</td>
+<td class="head_right" colspan="2"><div class="needs_head_right line-block">
+<div class="line"><span><span class="needs needs_collapse" id="target__show__meta"><span class="needs collapsed"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg></span><span class="needs visible collapse_is_hidden"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg></span></span></span></div>
+</div>
+</td>
+</tr>
+<tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
+<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></div>
+<div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">architecture_design</span></span></span></div>
+</span></span></div>
+<div class="line"><span><div class="line">complies: <span class="complies"><span><a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_req__iso26262__support_6431" title="gd_req__arch__hierarchical_structure">std_req__iso26262__support_6431</a>, <a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_req__iso26262__support_6432" title="gd_req__arch__hierarchical_structure">std_req__iso26262__support_6432</a></span></span></div>
+<div class="line">satisfies: <span class="satisfies"><span><a class="reference internal" href="../architecture_workflow.html#wf__cr_mt_featarch" title="gd_req__arch__hierarchical_structure">wf__cr_mt_featarch</a></span></span></div>
+</span></div>
+</div>
+</td>
+<td class="meta" colspan="3"></td>
+</tr>
+<tr class="content row-odd"><td class="content" colspan="6"><p>The architectural elements shall be hierarchically structured on two levels:</p>
+<ul class="simple">
+<li><p>Feature Level (=Logical Level)</p></li>
+<li><p>Component Level</p></li>
+</ul>
+</td>
+</tr>
+<tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
+<div class="line"><span><span class="needs-id"><a class="reference internal" href="#gd_req__arch__hierarchical_structure" title="gd_req__arch__hierarchical_structure">gd_req__arch__hierarchical_structure</a></span></span></div>
+</div>
+</td>
+<td class="footer" colspan="2"><div class="needs_footer line-block">
+<div class="line"><span><span class="needs_type_name"><span class="needs_data">Process Requirements</span></span></span></div>
+</div>
+</td>
+<td class="footer_right" colspan="2"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="need_container docutils container" id="SNCB-a771fea0">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__arch__build_blocks">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
-<div class="line"><span><span class="needs_title"><span class="needs_data">Structuring of the architectural building blocks</span></span></span></div>
+<div class="line"><span><span class="needs_title"><span class="needs_data">Structuring of the architectural elements</span></span></span></div>
 </div>
 </td>
 <td class="head_center" colspan="2"><div class="needs_head line-block">
@@ -689,14 +636,16 @@
 </td>
 <td class="meta" colspan="3"></td>
 </tr>
-<tr class="content row-odd"><td class="content" colspan="6"><p>For modeling the viewpoints following elements shall be used:</p>
+<tr class="content row-odd"><td class="content" colspan="6"><p>Following architectural elements shall be defined on the respective hierarchical level:</p>
 <ul class="simple">
-<li><p>Feature</p></li>
-<li><p>Module</p></li>
-<li><p>Component</p></li>
-<li><p>Logical Interfaces</p></li>
-<li><p>Interfaces</p></li>
-<li><p>Interface Operation</p></li>
+<li><p>Logical Level
+* Feature (logic_arc_sta)
+* Logical Interface (logic_arc_int)
+* Logical Interface Operation (logic_arc_int_op)</p></li>
+<li><p>Component Level
+* Component (comp_arc_sta)
+* Interface (comp_arc_int)
+* Interface Operation (comp_arc_int_op)</p></li>
 </ul>
 </td>
 </tr>
@@ -714,7 +663,7 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-2cf29ea1">
+<div class="need_container docutils container" id="SNCB-499cbf31">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__arch__build_blocks_corr">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -764,11 +713,14 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-5485d49e">
-<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__arch__build_blocks_dynamic">
+</section>
+<section id="architectural-views">
+<h2>Architectural Views<a class="headerlink" href="#architectural-views" title="Link to this heading">#</a></h2>
+<div class="need_container docutils container" id="SNCB-232e8172">
+<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__arch__viewpoints">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
-<div class="line"><span><span class="needs_title"><span class="needs_data">Building Blocks Dynamic Architecture</span></span></span></div>
+<div class="line"><span><span class="needs_title"><span class="needs_data">Architecture Viewpoints</span></span></span></div>
 </div>
 </td>
 <td class="head_center" colspan="2"><div class="needs_head line-block">
@@ -786,16 +738,24 @@
 <div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></div>
 <div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">architecture_design</span></span></span></div>
 </span></span></div>
-<div class="line"><span><div class="line">satisfies: <span class="satisfies"><span><a class="reference internal" href="../architecture_workflow.html#wf__cr_mt_featarch" title="gd_req__arch__build_blocks_dynamic">wf__cr_mt_featarch</a></span></span></div>
+<div class="line"><span><div class="line">complies: <span class="complies"><span><a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_req__iso26262__support_6432" title="gd_req__arch__viewpoints">std_req__iso26262__support_6432</a>, <a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_req__iso26262__software_742" title="gd_req__arch__viewpoints">std_req__iso26262__software_742</a></span></span></div>
+<div class="line">satisfies: <span class="satisfies"><span><a class="reference internal" href="../architecture_workflow.html#wf__cr_mt_featarch" title="gd_req__arch__viewpoints">wf__cr_mt_featarch</a></span></span></div>
 </span></div>
 </div>
 </td>
 <td class="meta" colspan="3"></td>
 </tr>
-<tr class="content row-odd"><td class="content" colspan="6"><p>It shall be possible to provide the required architectural building blocks inside the dynamic architecture.</p></td>
+<tr class="content row-odd"><td class="content" colspan="6"><p>The architecture shall be shown on following views on each architectural level:</p>
+<ul class="simple">
+<li><p>Package Diagram (logic_arc_sta, comp_arc_sta)</p></li>
+<li><p>Sequence Diagram (logic_arc_dyn, comp_arc_dyn)</p></li>
+<li><p>Interface View (logic_arc_int, comp_arc_int)</p></li>
+</ul>
+<p>Only an additional view  shall be created on module level.</p>
+</td>
 </tr>
 <tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
-<div class="line"><span><span class="needs-id"><a class="reference internal" href="#gd_req__arch__build_blocks_dynamic" title="gd_req__arch__build_blocks_dynamic">gd_req__arch__build_blocks_dynamic</a></span></span></div>
+<div class="line"><span><span class="needs-id"><a class="reference internal" href="#gd_req__arch__viewpoints" title="gd_req__arch__viewpoints">gd_req__arch__viewpoints</a></span></span></div>
 </div>
 </td>
 <td class="footer" colspan="2"><div class="needs_footer line-block">
@@ -811,7 +771,7 @@
 </section>
 <section id="attributes-of-architectural-elements">
 <h2>Attributes of Architectural Elements<a class="headerlink" href="#attributes-of-architectural-elements" title="Link to this heading">#</a></h2>
-<div class="need_container docutils container" id="SNCB-b7719b03">
+<div class="need_container docutils container" id="SNCB-7df0d20e">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__arch__attribute_uid">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -843,8 +803,8 @@
 <blockquote>
 <div><ul class="simple">
 <li><p>type of architectural element</p></li>
-<li><p>last part of the feature tree</p></li>
-<li><p>keyword describing the content of the requirement.</p></li>
+<li><p>structural element (e.g. some part of the feature tree, component acronym)</p></li>
+<li><p>keyword describing the content of the architectural element</p></li>
 </ul>
 </div></blockquote>
 <p>The naming convention is defined here: <cite>REPLACE_doc__naming_conventions</cite></p>
@@ -864,7 +824,7 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-870908bb">
+<div class="need_container docutils container" id="SNCB-594c270e">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__arch_attr_security">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -914,7 +874,7 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-5b6d0e64">
+<div class="need_container docutils container" id="SNCB-233d4215">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__arch__attr_safety">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -966,7 +926,7 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-b6f05064">
+<div class="need_container docutils container" id="SNCB-3dacc871">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__arch__attr_status">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1017,7 +977,10 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-9e7e6d17">
+</section>
+<section id="traceability-to-requirements">
+<h2>Traceability to Requirements<a class="headerlink" href="#traceability-to-requirements" title="Link to this heading">#</a></h2>
+<div class="need_container docutils container" id="SNCB-f72ba0da">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__arch__attr_fulfils">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1045,7 +1008,7 @@
 </td>
 <td class="meta" colspan="3"></td>
 </tr>
-<tr class="content row-odd"><td class="content" colspan="6"><p>Each architectural element shall have a link to a requirement.</p></td>
+<tr class="content row-odd"><td class="content" colspan="6"><p>Each architectural element shall be linked to a requirement.</p></td>
 </tr>
 <tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
 <div class="line"><span><span class="needs-id"><a class="reference internal" href="#gd_req__arch__attr_fulfils" title="gd_req__arch__attr_fulfils">gd_req__arch__attr_fulfils</a></span></span></div>
@@ -1061,10 +1024,7 @@
 </table>
 </div>
 </div>
-</section>
-<section id="traceability-to-requirements">
-<h2>Traceability to Requirements<a class="headerlink" href="#traceability-to-requirements" title="Link to this heading">#</a></h2>
-<div class="need_container docutils container" id="SNCB-3f6c4b7f">
+<div class="need_container docutils container" id="SNCB-4df9a4a9">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__arch__traceability">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1093,11 +1053,11 @@
 </td>
 <td class="meta" colspan="3"></td>
 </tr>
-<tr class="content row-odd"><td class="content" colspan="6"><p>Requirements shall be fulfilled by the architecture at the corresponding level.</p>
+<tr class="content row-odd"><td class="content" colspan="6"><p>Requirements shall be fulfilled by an architectural element on the corresponding level.</p>
 <p><strong>Examples:</strong></p>
 <ul class="simple">
-<li><p>feat_req &lt;-&gt; feat_arch_(sta|dyn|int)</p></li>
-<li><p>comp_req &lt;-&gt; comp_arch_(sta|dyn|int)</p></li>
+<li><p>feat_req &lt;-&gt; logic_arc_(sta|dyn), logic_arc_int, logic_arc_int_op</p></li>
+<li><p>comp_req &lt;-&gt; comp_arc_(sta|dyn|int|int_op)</p></li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -1122,7 +1082,7 @@
 </section>
 <section id="checks-for-architectural-design">
 <h2>Checks for Architectural Design<a class="headerlink" href="#checks-for-architectural-design" title="Link to this heading">#</a></h2>
-<div class="need_container docutils container" id="SNCB-e248d4cc">
+<div class="need_container docutils container" id="SNCB-1569109e">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__arch__attr_mandatory">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1149,7 +1109,7 @@
 </td>
 <td class="meta" colspan="3"></td>
 </tr>
-<tr class="content row-odd"><td class="content" colspan="6"><p>It shall be checked if all mandatory attributes for each architectural element is provided by the user. For all elements following attributes shall be mandatory:</p>
+<tr class="content row-odd"><td class="content" colspan="6"><p>It shall be checked if all mandatory attributes for each architectural element are provided by the user. For all elements following attributes shall be mandatory:</p>
 <div class="needstable_wrapper docutils container" id="needtable-process_areas/architecture_design/guidance/architecture_process_reqs-0">
 <div class="pst-scrollable-table-container"><table class="NEEDS_TABLE table" id="needtable-process_areas/architecture_design/guidance/architecture_process_reqs-0-table_node">
 <caption><span class="caption-text">Overview mandatory requirement attributes</span><a class="headerlink" href="#needtable-process_areas/architecture_design/guidance/architecture_process_reqs-0-table_node" title="Link to this table">#</a></caption>
@@ -1191,11 +1151,11 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-588f31a4">
+<div class="need_container docutils container" id="SNCB-a5b8f076">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__arch__linkage_safety">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
-<div class="line"><span><span class="needs_title"><span class="needs_data">Architecture linkage safety</span></span></span></div>
+<div class="line"><span><span class="needs_title"><span class="needs_data">Architecture linkage metamodel</span></span></span></div>
 </div>
 </td>
 <td class="head_center" colspan="2"><div class="needs_head line-block">
@@ -1218,7 +1178,7 @@
 </td>
 <td class="meta" colspan="3"></td>
 </tr>
-<tr class="content row-odd"><td class="content" colspan="6"><p>It shall be checked that every valid safety architectural element is linked against its top level element as defined in <a class="reference internal" href="#gd_req__arch__build_blocks_corr" title="gd_req__arch__build_blocks_corr"><em class="xref need">Correlations of the archite... (gd_req__arch__build_blocks_corr)</em></a>.</p></td>
+<tr class="content row-odd"><td class="content" colspan="6"><p>It shall be checked that every valid safety architectural element is linked according to the defined model <a class="reference internal" href="#gd_req__arch__build_blocks_corr" title="gd_req__arch__build_blocks_corr"><em class="xref need">Correlations of the archite... (gd_req__arch__build_blocks_corr)</em></a>.</p></td>
 </tr>
 <tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
 <div class="line"><span><span class="needs-id"><a class="reference internal" href="#gd_req__arch__linkage_safety" title="gd_req__arch__linkage_safety">gd_req__arch__linkage_safety</a></span></span></div>
@@ -1234,100 +1194,7 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-658a6538">
-<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__arch__linkage_requirement">
-<tbody>
-<tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
-<div class="line"><span><span class="needs_title"><span class="needs_data">Architecture linkage requirement</span></span></span></div>
-</div>
-</td>
-<td class="head_center" colspan="2"><div class="needs_head line-block">
-<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></span></div>
-<div class="line"><span></span></div>
-<div class="line"><span></span></div>
-</div>
-</td>
-<td class="head_right" colspan="2"><div class="needs_head_right line-block">
-<div class="line"><span><span class="needs needs_collapse" id="target__show__meta"><span class="needs collapsed"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg></span><span class="needs visible collapse_is_hidden"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg></span></span></span></div>
-</div>
-</td>
-</tr>
-<tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
-<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></div>
-<div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">attribute</span><span class="needs_spacer">, </span><span class="needs_data">check</span><span class="needs_spacer">, </span><span class="needs_data">architecture_design</span></span></span></div>
-</span></span></div>
-<div class="line"><span></span></div>
-</div>
-</td>
-<td class="meta" colspan="3"></td>
-</tr>
-<tr class="content row-odd"><td class="content" colspan="6"><p>It shall be checked that each architectural element (safety!=QM) is linked against a safety requirement (safety!=QM).</p></td>
-</tr>
-<tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
-<div class="line"><span><span class="needs-id"><a class="reference internal" href="#gd_req__arch__linkage_requirement" title="gd_req__arch__linkage_requirement">gd_req__arch__linkage_requirement</a></span></span></div>
-</div>
-</td>
-<td class="footer" colspan="2"><div class="needs_footer line-block">
-<div class="line"><span><span class="needs_type_name"><span class="needs_data">Process Requirements</span></span></span></div>
-</div>
-</td>
-<td class="footer_right" colspan="2"></td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<div class="need_container docutils container" id="SNCB-49c49279">
-<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__arch__linkage_requirement_type">
-<tbody>
-<tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
-<div class="line"><span><span class="needs_title"><span class="needs_data">Architecture linkage requirement type</span></span></span></div>
-</div>
-</td>
-<td class="head_center" colspan="2"><div class="needs_head line-block">
-<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></span></div>
-<div class="line"><span></span></div>
-<div class="line"><span></span></div>
-</div>
-</td>
-<td class="head_right" colspan="2"><div class="needs_head_right line-block">
-<div class="line"><span><span class="needs needs_collapse" id="target__show__meta"><span class="needs collapsed"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg></span><span class="needs visible collapse_is_hidden"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg></span></span></span></div>
-</div>
-</td>
-</tr>
-<tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
-<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></div>
-<div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">attribute</span><span class="needs_spacer">, </span><span class="needs_data">check</span><span class="needs_spacer">, </span><span class="needs_data">architecture_design</span></span></span></div>
-</span></span></div>
-<div class="line"><span></span></div>
-</div>
-</td>
-<td class="meta" colspan="3"></td>
-</tr>
-<tr class="content row-odd"><td class="content" colspan="6"><p>It shall be checked that requirements can only be linked to architectural elements according to the defined traceability:</p>
-<ul class="simple">
-<li><p>Functional feature requirements &lt;-&gt; static / dynamic feature architecture</p></li>
-<li><p>Interface feature requirements &lt;-&gt; interface feature architecture</p></li>
-<li><p>Functional component requirements &lt;-&gt; static / dynamic component architecture</p></li>
-<li><p>Interface component requirements &lt;-&gt; interface component architecture</p></li>
-</ul>
-</td>
-</tr>
-<tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
-<div class="line"><span><span class="needs-id"><a class="reference internal" href="#gd_req__arch__linkage_requirement_type" title="gd_req__arch__linkage_requirement_type">gd_req__arch__linkage_requirement_type</a></span></span></div>
-</div>
-</td>
-<td class="footer" colspan="2"><div class="needs_footer line-block">
-<div class="line"><span><span class="needs_type_name"><span class="needs_data">Process Requirements</span></span></span></div>
-</div>
-</td>
-<td class="footer_right" colspan="2"></td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<div class="need_container docutils container" id="SNCB-a4de7717">
+<div class="need_container docutils container" id="SNCB-42ac8aa3">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__arch__linkage_safety_trace">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1354,7 +1221,7 @@
 </td>
 <td class="meta" colspan="3"></td>
 </tr>
-<tr class="content row-odd"><td class="content" colspan="6"><p>It shall be checked that safety architectural elements (Safety != QM) can only be linked against safety architectural elements.</p></td>
+<tr class="content row-odd"><td class="content" colspan="6"><p>It shall be checked that valid safety architectural elements (Safety != QM) can only be linked against valid safety architectural elements.</p></td>
 </tr>
 <tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
 <div class="line"><span><span class="needs-id"><a class="reference internal" href="#gd_req__arch__linkage_safety_trace" title="gd_req__arch__linkage_safety_trace">gd_req__arch__linkage_safety_trace</a></span></span></div>
@@ -1370,7 +1237,7 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-2b11cb68">
+<div class="need_container docutils container" id="SNCB-60cfebf5">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__arch__linkage_security_trace">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1413,7 +1280,98 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-ddb28dd9">
+<div class="need_container docutils container" id="SNCB-8cb1d28a">
+<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__arch__linkage_requirement">
+<tbody>
+<tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
+<div class="line"><span><span class="needs_title"><span class="needs_data">Architecture linkage requirement</span></span></span></div>
+</div>
+</td>
+<td class="head_center" colspan="2"><div class="needs_head line-block">
+<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></span></div>
+<div class="line"><span></span></div>
+<div class="line"><span></span></div>
+</div>
+</td>
+<td class="head_right" colspan="2"><div class="needs_head_right line-block">
+<div class="line"><span><span class="needs needs_collapse" id="target__show__meta"><span class="needs collapsed"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg></span><span class="needs visible collapse_is_hidden"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg></span></span></span></div>
+</div>
+</td>
+</tr>
+<tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
+<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></div>
+<div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">attribute</span><span class="needs_spacer">, </span><span class="needs_data">check</span><span class="needs_spacer">, </span><span class="needs_data">architecture_design</span></span></span></div>
+</span></span></div>
+<div class="line"><span></span></div>
+</div>
+</td>
+<td class="meta" colspan="3"></td>
+</tr>
+<tr class="content row-odd"><td class="content" colspan="6"><p>It shall be checked that each architectural element (safety!=QM) is linked against at least one safety requirement (safety!=QM).</p></td>
+</tr>
+<tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
+<div class="line"><span><span class="needs-id"><a class="reference internal" href="#gd_req__arch__linkage_requirement" title="gd_req__arch__linkage_requirement">gd_req__arch__linkage_requirement</a></span></span></div>
+</div>
+</td>
+<td class="footer" colspan="2"><div class="needs_footer line-block">
+<div class="line"><span><span class="needs_type_name"><span class="needs_data">Process Requirements</span></span></span></div>
+</div>
+</td>
+<td class="footer_right" colspan="2"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="need_container docutils container" id="SNCB-4901fd34">
+<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__arch__linkage_requirement_type">
+<tbody>
+<tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
+<div class="line"><span><span class="needs_title"><span class="needs_data">Architecture linkage requirement type</span></span></span></div>
+</div>
+</td>
+<td class="head_center" colspan="2"><div class="needs_head line-block">
+<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></span></div>
+<div class="line"><span></span></div>
+<div class="line"><span></span></div>
+</div>
+</td>
+<td class="head_right" colspan="2"><div class="needs_head_right line-block">
+<div class="line"><span><span class="needs needs_collapse" id="target__show__meta"><span class="needs collapsed"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg></span><span class="needs visible collapse_is_hidden"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg></span></span></span></div>
+</div>
+</td>
+</tr>
+<tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
+<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></div>
+<div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">attribute</span><span class="needs_spacer">, </span><span class="needs_data">check</span><span class="needs_spacer">, </span><span class="needs_data">architecture_design</span></span></span></div>
+</span></span></div>
+<div class="line"><span></span></div>
+</div>
+</td>
+<td class="meta" colspan="3"></td>
+</tr>
+<tr class="content row-odd"><td class="content" colspan="6"><p>It shall be checked that requirements of a respective type can only be linked to architectural elements according to following traceability:</p>
+<ul class="simple">
+<li><p>Functional requirements &lt;-&gt; static / dynamic architectural elements (logic_arc_sta, logic_arc_dyn)</p></li>
+<li><p>Interface requirements &lt;-&gt; interface architectural elements (logic_arc_int, logic_arc_int_op)</p></li>
+</ul>
+</td>
+</tr>
+<tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
+<div class="line"><span><span class="needs-id"><a class="reference internal" href="#gd_req__arch__linkage_requirement_type" title="gd_req__arch__linkage_requirement_type">gd_req__arch__linkage_requirement_type</a></span></span></div>
+</div>
+</td>
+<td class="footer" colspan="2"><div class="needs_footer line-block">
+<div class="line"><span><span class="needs_type_name"><span class="needs_data">Process Requirements</span></span></span></div>
+</div>
+</td>
+<td class="footer_right" colspan="2"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="need_container docutils container" id="SNCB-c0c45bc0">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__arch__consistency_model">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1456,7 +1414,7 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-c321fa32">
+<div class="need_container docutils container" id="SNCB-c90f009b">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__arch__consistency_interf">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1499,7 +1457,7 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-42cc72d5">
+<div class="need_container docutils container" id="SNCB-3c7c488a">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__arch__consistency_dynamic">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1530,6 +1488,50 @@
 </tr>
 <tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
 <div class="line"><span><span class="needs-id"><a class="reference internal" href="#gd_req__arch__consistency_dynamic" title="gd_req__arch__consistency_dynamic">gd_req__arch__consistency_dynamic</a></span></span></div>
+</div>
+</td>
+<td class="footer" colspan="2"><div class="needs_footer line-block">
+<div class="line"><span><span class="needs_type_name"><span class="needs_data">Process Requirements</span></span></span></div>
+</div>
+</td>
+<td class="footer_right" colspan="2"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="need_container docutils container" id="SNCB-ebd48c55">
+<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__arch__build_blocks_dynamic">
+<tbody>
+<tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
+<div class="line"><span><span class="needs_title"><span class="needs_data">Building Blocks Dynamic Architecture</span></span></span></div>
+</div>
+</td>
+<td class="head_center" colspan="2"><div class="needs_head line-block">
+<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></span></div>
+<div class="line"><span></span></div>
+<div class="line"><span></span></div>
+</div>
+</td>
+<td class="head_right" colspan="2"><div class="needs_head_right line-block">
+<div class="line"><span><span class="needs needs_collapse" id="target__show__meta"><span class="needs collapsed"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg></span><span class="needs visible collapse_is_hidden"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg></span></span></span></div>
+</div>
+</td>
+</tr>
+<tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
+<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></div>
+<div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">architecture_design</span></span></span></div>
+</span></span></div>
+<div class="line"><span><div class="line">satisfies: <span class="satisfies"><span><a class="reference internal" href="../architecture_workflow.html#wf__cr_mt_featarch" title="gd_req__arch__build_blocks_dynamic">wf__cr_mt_featarch</a></span></span></div>
+</span></div>
+</div>
+</td>
+<td class="meta" colspan="3"></td>
+</tr>
+<tr class="content row-odd"><td class="content" colspan="6"><p>It shall be possible to provide the required architectural building blocks inside the dynamic architecture.</p></td>
+</tr>
+<tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
+<div class="line"><span><span class="needs-id"><a class="reference internal" href="#gd_req__arch__build_blocks_dynamic" title="gd_req__arch__build_blocks_dynamic">gd_req__arch__build_blocks_dynamic</a></span></span></div>
 </div>
 </td>
 <td class="footer" colspan="2"><div class="needs_footer line-block">
@@ -1592,7 +1594,8 @@
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#architectural-structuring">Architectural Structuring</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#architectural-model">Architectural Model</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#architectural-views">Architectural Views</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#attributes-of-architectural-elements">Attributes of Architectural Elements</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#traceability-to-requirements">Traceability to Requirements</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#checks-for-architectural-design">Checks for Architectural Design</a></li>
