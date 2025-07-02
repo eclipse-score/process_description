@@ -18,7 +18,7 @@
 Workflow Safety Analysis
 ########################
 
-.. workflow:: Analyse Platform Feature Architecture
+.. workflow:: Analyze Platform Feature Architecture
    :id: wf__analyse_platform_featarch
    :status: valid
    :tags: safety_analysis

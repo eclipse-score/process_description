@@ -20,7 +20,7 @@ Workproducts Safety Analysis
    :status: valid
    :complies: std_wp__iso26262__software_751, std_wp__iso26262__software_753, std_wp__isopas8926__4524
 
-   | Analyze the dependencies between features that references all platform feature static architecture diagrams, highlighting potential shared use of modules.
+   | Analyse the dependencies between features that references all platform feature static architecture diagrams, highlighting potential shared use of modules.
 
 .. workproduct:: Feature FMEA
    :id: wp__feature_fmea

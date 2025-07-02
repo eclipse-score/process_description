@@ -31,6 +31,7 @@ DFA Templates
    |    :mitigation_issue: <ID from Issue Tracker>
    |    :sufficient: <yes|no>
    |    :status: <valid|invalid>
+.. note::   argument is inside the 'content'. Therefore content is mandatory
 
 
 .. gd_temp:: Feature DFA Templates
@@ -47,6 +48,7 @@ DFA Templates
    |    :mitigation_issue: <ID from Issue Tracker>
    |    :sufficient: <yes|no>
    |    :status: <valid|invalid>
+.. note::   argument is inside the 'content'. Therefore content is mandatory
 
 
 .. gd_temp:: Component DFA Templates
@@ -63,3 +65,4 @@ DFA Templates
    |    :mitigation_issue: <ID from Issue Tracker>
    |    :sufficient: <yes|no>
    |    :status: <valid|invalid>
+.. note::   argument is inside the 'content'. Therefore content is mandatory
