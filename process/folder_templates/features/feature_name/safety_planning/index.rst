@@ -143,3 +143,13 @@ Feature Architecture Status
    :columns: id;status
    :colwidths: 25,25
    :sort: title
+
+Process Requirements
+--------------------
+
+.. needtable::
+   :style: table
+   :types: gd_req
+   :columns: id;status;tags
+   :colwidths: 25,25
+   :sort: title
