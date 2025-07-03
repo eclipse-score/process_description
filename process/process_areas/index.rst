@@ -33,3 +33,4 @@ Process Areas
    safety_management/index.rst
    tool_management/index.rst
    verification/index.rst
+   process_management/index.rst

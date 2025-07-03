@@ -153,32 +153,32 @@ shall transition from "valid(inspected)" back to "valid" state. This shall be au
 Process Requirements
 ^^^^^^^^^^^^^^^^^^^^
 
-.. gd_req:: Storage of pull requests documentation
-   :id: gd_req__general__pull_request_storage
+.. gd_req:: Version for inspected requirements
+   :id: gd_req__general__requirements_version
    :status: valid
+   :tags: prio_1_automation, general
    :complies: std_req__iso26262__support_6433, std_req__iso26262__software_7414
-   :satisfies: wf__monitor_verify_requirements, wf__mr_vy_arch
+   :satisfies: wf__monitor_verify_requirements
 
-   The content of pull requests (conversation, commits, files changed) shall be stored permanently
-   for every release.
-
-   Note: Expectation is that this should be part of configuration management, but as this process
-   is not defined at the moment this requirement is added here.
-
-.. gd_req:: Hash value for inspected requirements
-   :id: gd_req__general__requirements_hash
-   :status: valid
-   :complies: std_req__iso26262__support_6433, std_req__iso26262__software_7414
-   :satisfies: wf__monitor_verify_requirements, wf__mr_vy_arch
-
-   The hash value of a requirement shall not change by an inspection. In case the status of the
+   The version of a requirement shall not change by an inspection. In case the status of the
    requirement is used to notify if a requirement is inspected (or another attribute is introduced),
-   this shall be ignored for hashing (i.e. hash value for valid and valid(inspected) shall be equal).
-   In case hashing is also used for architecture versioning this shall be done in similar way.
+   this shall be ignored for versioning.
+
+.. gd_req:: Version for inspected architecture
+   :id: gd_req__general__architecture_version
+   :status: draft
+   :tags: general
+   :complies: std_req__iso26262__support_6433, std_req__iso26262__software_7414
+   :satisfies: wf__mr_vy_arch
+
+   The version of architecture element shall not change by an inspection. In case the status of the
+   element is used to notify if it is inspected (or another attribute is introduced),
+   this shall be ignored for versioning. (Note: this applies only if architecture also has a version.)
 
 .. gd_req:: Checklist templates in pull requests
    :id: gd_req__general__checklist_templates
    :status: valid
+   :tags: prio_2_automation, general
    :complies: std_req__iso26262__support_6433, std_req__iso26262__software_7414, std_req__iso26262__software_942
    :satisfies: wf__monitor_verify_requirements, wf__mr_vy_arch
 
@@ -190,6 +190,7 @@ Process Requirements
 .. gd_req:: Status Check
    :id: gd_req__general__status_check
    :status: valid
+   :tags: prio_2_automation, general
    :complies: std_req__iso26262__support_6433, std_req__iso26262__software_7414
    :satisfies: wf__monitor_verify_requirements, wf__mr_vy_arch
 

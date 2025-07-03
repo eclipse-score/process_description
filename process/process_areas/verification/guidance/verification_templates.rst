@@ -23,7 +23,7 @@ gTest
 gTest is the preferred and accepted test framework to write test cases for C/C++ code in the project.
 
 Each test case requires a link to one or more requirement/design element.
-A more detailed description of how to link code to requirements is available here: :need:`gd_req__link_tests_cpp`
+A more detailed description of how to link code to requirements is available here: :need:`gd_req__verification__link_tests_cpp`
 
 Writing test cases using gTest shall follow the recommendations from the official gTest documentation.
 For very basic start follow http://google.github.io/googletest/primer.html
@@ -38,7 +38,7 @@ Details on the definition an the test organization in rust can be found here:
 https://doc.rust-lang.org/book/ch11-03-test-organization.html
 
 Each test case requires a link to one or more requirement/design element.
-A more detailed description of how to link code to requirements is available here: :need:`gd_req__link_tests_rust`
+A more detailed description of how to link code to requirements is available here: :need:`gd_req__verification__link_tests_rust`
 
 Writing test cases in rust shall follow the recommendations from the official rust documentation.
 https://doc.rust-lang.org/book/ch11-01-writing-tests.html
@@ -51,7 +51,7 @@ Writing test cases in python should be done using pytest.
 Note that python unittest does not support metatags and therefore should not be considered as test framework.
 
 Each test case requires a link to one or more requirement/design element.
-A more detailed description of how to link code to requirements is available here: :need:`gd_req__link_tests_python`
+A more detailed description of how to link code to requirements is available here: :need:`gd_req__verification__link_tests_python`
 
 Writing test cases in python shall follow the recommendations from the official python and community documentation.
 https://docs.python-guide.org/writing/tests/

@@ -18,8 +18,9 @@ Document Management Process Requirements
 ========================================
 
 .. gd_req:: Document Types
-   :id: gd_req__doc_types
+   :id: gd_req__doc__types
    :status: valid
+   :tags: manual
    :complies: std_req__iso26262__support_1043
 
    There is only one generic document type:
@@ -45,19 +46,29 @@ Document Management Process Requirements
 
 
 .. gd_req:: Document attributes
-   :id: gd_req__doc_attributes
+   :id: gd_req__doc__attributes_manual
    :status: valid
+   :tags: manual
    :complies: std_req__iso26262__support_1043
 
-   Documents shall have the following manual attributes:
+   Documents shall have the following mandatory manual attributes:
 
    * id
    * status
+
+   and the following optional ones:
+
    * security
    * safety
    * realizes
 
    Compare also  :need:`gd_temp__documentation`
+
+.. gd_req:: Document attributes automated
+   :id: gd_req__doc__attributes_automated
+   :status: valid
+   :tags: prio_2_automation
+   :complies: std_req__iso26262__support_1043
 
    Documents shall have automatic added attributes:
 
@@ -66,8 +77,9 @@ Document Management Process Requirements
    * reviewer
 
 .. gd_req:: Document Author
-   :id: gd_req__doc_author
+   :id: gd_req__doc__author
    :status: valid
+   :tags: prio_2_automation
    :complies: std_req__iso26262__support_1045
 
    Documents headers shall contain an "author" attribute. Every committer who adds more than 50%
@@ -77,17 +89,19 @@ Document Management Process Requirements
    documentation build for every commit of the file containing the document.
 
 .. gd_req:: Document Reviewer
-   :id: gd_req__doc_reviewer
+   :id: gd_req__doc__reviewer
    :status: valid
+   :tags: prio_2_automation
    :complies: std_req__iso26262__support_1043
 
    Documents headers shall contain "reviewer" attribute, which is added during documentation build
    and contains only the names of the last PR reviewers, which actually reviewed the file
-   containing the document, which were not covered by :need:`gd_req__doc_approver`.
+   containing the document, which were not covered by :need:`gd_req__doc__approver`.
 
 .. gd_req:: Document Approver
-   :id: gd_req__doc_approver
+   :id: gd_req__doc__approver
    :status: valid
+   :tags: prio_2_automation
    :complies: std_req__iso26262__support_1045
 
    Documents headers shall contain an "approver" attribute, which is added during documentation build

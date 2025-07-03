@@ -75,7 +75,7 @@ Simplified in a nutshell:
 
 More information on the concept of requirements verification can be found in :ref:`requirement_verification_workflow`
 
-A more detailed description of how to link code to requirements is available here: :need:`gd_req__link_tests`
+A more detailed description of how to link code to requirements is available here: :need:`gd_req__verification__link_tests`
 
 Traceability matrix and consistency checks will be automatically established with tool support.
 
@@ -120,7 +120,7 @@ Reuse of existing test cases
 In case pre-existing test cases from components can be used, they have to be reviewed and checked
 for their fit to the defined requirements. The test cases should get patch files to cover missing
 specification parts following :need:`gd_guidl__verification_specification` and have the necessary
-:need:`gd_req__link_tests` followed. These patches are applied on top of the untouched actual
+:need:`gd_req__verification__link_tests` followed. These patches are applied on top of the untouched actual
 implementation of the software code.
 
 Additionally needed test cases should be added as standalone parts. They are developed as any

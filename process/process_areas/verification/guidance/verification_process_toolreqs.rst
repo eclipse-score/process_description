@@ -19,8 +19,9 @@ Test Linking to Requirements
 
 
 .. gd_req:: Linking Requirements to Tests
-    :id: gd_req__link_tests
+    :id: gd_req__verification__link_tests
     :status: valid
+    :tags: prio_1_automation, verification
     :complies: std_req__iso26262__support_6432
 
     For linking test suites to requirements following metadata shall be used:
@@ -48,8 +49,9 @@ Test Linking to Requirements
     and :need:`gd_guidl__verification_specification`.
 
 .. gd_req:: Linking Requirements to Tests (C++)
-    :id: gd_req__link_tests_cpp
+    :id: gd_req__verification__link_tests_cpp
     :status: valid
+    :tags: prio_1_automation, verification
     :complies: std_req__iso26262__support_6432
 
     For linking C++ test suites to requirements **record properties** shall be used. Attributes
@@ -78,8 +80,9 @@ Test Linking to Requirements
       }
 
 .. gd_req:: Linking Requirements to Tests (Python)
-    :id: gd_req__link_tests_python
+    :id: gd_req__verification__link_tests_python
     :status: valid
+    :tags: prio_1_automation, verification
     :complies: std_req__iso26262__support_6432
 
     For linking python tests to requirements **metadata** shall be used. Attributes which are
@@ -100,8 +103,9 @@ Test Linking to Requirements
             record_property("Description","<Description>")
 
 .. gd_req:: Linking Requirements to Tests (Rust)
-    :id: gd_req__link_tests_rust
+    :id: gd_req__verification__link_tests_rust
     :status: valid
+    :tags: prio_1_automation, verification
     :complies: std_req__iso26262__support_6432
 
     For linking Rust tests to requirements **#[record_property]** shall be used:
@@ -121,21 +125,24 @@ Test Linking to Requirements
         }
 
 .. gd_req:: Test Independence
-    :id: gd_req__verification_independence
+    :id: gd_req__verification__independence
     :status: valid
+    :tags: done_automation, verification
 
     The approver of a pull request shall differ from the author(s) of the pull request in all pull requests.
 
 .. gd_req:: Verification Reporting
-    :id: gd_req__verification_reporting
+    :id: gd_req__verification__reporting
     :status: valid
+    :tags: prio_1_automation, verification
 
     Verification reports shall be automatically generated. These may be independent documents (i.e. not integrated into sphinx documentation).
     The content of the reports is specified in :need:`gd_temp__platform_ver_report` and :need:`gd_temp__mod_ver_report`.
 
 .. gd_req:: Verification Documentation Checks
-    :id: gd_req__verification_checks
+    :id: gd_req__verification__checks
     :status: valid
+    :tags: prio_1_automation, verification
 
     The following checks shall be implemented on test metadata:
 
@@ -147,8 +154,9 @@ Test Linking to Requirements
     - If Partially/FullyVerifies are set in Unit Test these shall link to Component Requirements
 
 .. gd_req:: Verification Documentation Checks Extended
-    :id: gd_req__verification_checks_extended
+    :id: gd_req__verification__checks_extended
     :status: draft
+    :tags: verification
 
     The following checks shall be implemented on test metadata:
 
