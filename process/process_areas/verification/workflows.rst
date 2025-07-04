@@ -55,7 +55,7 @@ Workflow Verification
    :supported_by: rl__safety_manager
    :input: wp__component_arch, wp__sw_implementation, wp__requirements__comp, wp__requirements__comp_aou, wp__verification__plan
    :output: wp__verification__comp_int_test
-   :contains: gd_req__link_tests, gd_guidl__verification_specification
+   :contains: gd_req__verification__link_tests, gd_guidl__verification_specification
    :has: doc_concept__verification__process, doc_getstrt__verification__process
 
    Component Integration test cases are based on component architecture and component requirements.
@@ -79,7 +79,7 @@ Workflow Verification
    :input: wp__feature_arch, wp__requirements__feat, wp__requirements__feat_aou,
            wp__verification__plan
    :output: wp__verification__feat_int_test
-   :contains: gd_req__link_tests, gd_guidl__verification_specification
+   :contains: gd_req__verification__link_tests, gd_guidl__verification_specification
    :has: doc_concept__verification__process, doc_getstrt__verification__process
 
    Feature Integration test cases are based on feature requirements and architecture of a specific feature.
@@ -98,7 +98,7 @@ Workflow Verification
    :supported_by: rl__safety_manager
    :input: wp__requirements__stkh, wp__verification__plan
    :output: wp__verification__platform_test
-   :contains: gd_req__link_tests, gd_guidl__verification_specification
+   :contains: gd_req__verification__link_tests, gd_guidl__verification_specification
    :has: doc_concept__verification__process, doc_getstrt__verification__process
 
    Platform test cases are based on Stakeholder requirements. This is the highest test level.

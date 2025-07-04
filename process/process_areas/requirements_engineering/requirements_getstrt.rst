@@ -56,7 +56,7 @@ For linking requirements to source code a tool is available:
 Linking Requirements to Tests
 =============================
 
-For linking Requirements to tests metatags shall be used :need:`gd_req__link_tests`
+For linking Requirements to tests metatags shall be used :need:`gd_req__verification__link_tests`
 
 
 Developer Experience

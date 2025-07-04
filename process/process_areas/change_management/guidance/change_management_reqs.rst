@@ -25,7 +25,7 @@ Change Request Attributes
 .. gd_req:: Change Request attribute: UID
    :id: gd_req__change__attr_uid
    :status: valid
-   :tags: chm, attribute, mandatory
+   :tags: done_automation, attribute, mandatory
    :satisfies: wf__change__cr_an_change_request, wf__change__rv_ap_change_request
    :complies: std_req__aspice_40__SUP-10-BP1, std_req__iso26262__support_8411, std_req__iso26262__support_8421, std_req__iso26262__support_8432, std_req__iso26262__support_8453
 
@@ -34,7 +34,7 @@ Change Request Attributes
 .. gd_req:: Change Request attribute: status
    :id: gd_req__change__attr_status
    :status: valid
-   :tags: chm, attribute, mandatory
+   :tags: done_automation, attribute, mandatory
    :satisfies: wf__change__cr_an_change_request, wf__change__rv_ap_change_request
    :complies: std_req__aspice_40__SUP-10-BP3, std_req__aspice_40__SUP-10-BP5, std_req__aspice_40__SUP-10-BP6, std_req__iso26262__support_8411, std_req__iso26262__support_8422, std_req__iso26262__support_8432, std_req__iso26262__support_8442
 
@@ -48,7 +48,7 @@ Change Request Attributes
 .. gd_req:: Change Request attribute: title
    :id: gd_req__change__attr_title
    :status: valid
-   :tags: attribute, mandatory
+   :tags: manual, attribute, mandatory
    :satisfies: wf__change__cr_an_change_request, wf__change__rv_ap_change_request
    :complies: std_req__aspice_40__SUP-10-BP1, std_req__iso26262__support_8411, std_req__iso26262__support_8422
 
@@ -57,7 +57,7 @@ Change Request Attributes
 .. gd_req:: Change Request attribute: description
    :id: gd_req__change__attr_impact_description
    :status: valid
-   :tags: chm, attribute, mandatory
+   :tags: manual, attribute, mandatory
    :satisfies: wf__change__cr_an_change_request, wf__change__rv_ap_change_request
    :complies: std_req__aspice_40__SUP-10-BP2, std_req__iso26262__support_8411, std_req__iso26262__support_8422, std_req__iso26262__support_8431, std_req__iso26262__support_8432, std_req__iso26262__support_8452, std_req__iso26262__support_8453
 
@@ -67,7 +67,7 @@ Change Request Attributes
 .. gd_req:: Change Request attribute: safety
    :id: gd_req__change__attr_impact_safety
    :status: valid
-   :tags: chm, attribute, mandatory
+   :tags: prio_1_automation, attribute, mandatory
    :satisfies: wf__change__cr_an_change_request, wf__change__rv_ap_change_request
    :complies: std_req__aspice_40__SUP-10-BP2, std_req__iso26262__support_8422
 
@@ -80,7 +80,7 @@ Change Request Attributes
 .. gd_req:: Change Request attribute: security
    :id: gd_req__change__attr_impact_security
    :status: valid
-   :tags: chm, attribute, mandatory
+   :tags: prio_2_automation, attribute, mandatory
    :satisfies: wf__change__cr_an_change_request, wf__change__rv_ap_change_request
    :complies: std_req__aspice_40__SUP-10-BP2, std_req__iso26262__support_8422
 
@@ -92,7 +92,7 @@ Change Request Attributes
 .. gd_req:: Change Request attribute: Types
    :id: gd_req__change__attr_types
    :status: valid
-   :tags: chm, attribute, mandatory
+   :tags: prio_1_automation, attribute, mandatory
    :satisfies: wf__change__cr_an_change_request, wf__change__rv_ap_change_request
    :complies: std_req__aspice_40__SUP-10-BP1
 
@@ -105,8 +105,8 @@ Change Request Attributes
 
 .. gd_req:: Change Request attribute: Affected Work Products
    :id: gd_req__change__attr_affected_wp
-   :status: valid
-   :tags: chm, attribute, mandatory
+   :status: draft
+   :tags: attribute, mandatory
    :satisfies: wf__change__cr_an_change_request, wf__change__rv_ap_change_request
    :complies: std_req__aspice_40__SUP-10-BP4, std_req__iso26262__support_8412, std_req__iso26262__support_8422, std_req__iso26262__support_8452, std_req__iso26262__support_8453
 
@@ -115,7 +115,7 @@ Change Request Attributes
 .. gd_req:: Change Request attribute: Milestone
    :id: gd_req__change__attr_milestone
    :status: valid
-   :tags: chm, attribute, mandatory
+   :tags: done_automation, attribute, mandatory
    :satisfies: wf__change__cr_an_change_request, wf__change__rv_ap_change_request
    :complies: std_req__aspice_40__SUP-10-BP6, std_req__iso26262__support_8413
 
@@ -128,9 +128,9 @@ Change Request Checks
 '''''''''''''''''''''
 
 .. gd_req:: Change Requests mandatory attributes provided
-   :id: gd_req__change_attr_mandatory
+   :id: gd_req__change__attr_mandatory
    :status: valid
-   :tags: chm, attribute, check
+   :tags: prio_2_automation, attribute, check
    :satisfies: wf__change__cr_an_change_request, wf__change__rv_ap_change_request
    :complies: std_req__aspice_40__iic-13-51
 
@@ -138,7 +138,7 @@ Change Request Checks
    is provided by the user. For all requirements following attributes shall be mandatory:
 
    .. needtable:: Overview mandatory change request attributes
-      :filter: "mandatory" in tags and "attribute" in tags and "chm" in tags  and is_external == False
+      :filter: "mandatory" in tags and "attribute" in tags and "change_management" in tags  and is_external == False
       :style: table
       :columns: title
       :colwidths: 30
@@ -150,9 +150,9 @@ Change Request Traceability Impact Analysis Tool
 ''''''''''''''''''''''''''''''''''''''''''''''''
 
 .. gd_req:: Change Requests Impact Analysis Tool
-   :id: gd_req__change_tool_impact_analysis
+   :id: gd_req__change__tool_impact_analysis
    :status: valid
-   :tags: chm, check, tool
+   :tags: prio_3_automation, check, tool
    :satisfies: wf__change__cr_an_change_request, wf__change__rv_ap_change_request
    :complies: std_req__aspice_40__iic-13-51
 

@@ -16,9 +16,9 @@ Process Requirements
 ====================
 
 .. gd_req:: Quality report automated generation
-   :id: gd_req__qlm_report
+   :id: gd_req__quality__report
    :status: valid
-   :tags: quality_management
+   :tags: prio_3_automation, quality_management
    :satisfies: wf__mr_imp_qlm_plan_processes
    :complies: std_req__iso26262__management_5423, std_req__aspice_40__SUP-1-BP5, std_req__aspice_40__SUP-1-BP6
 
