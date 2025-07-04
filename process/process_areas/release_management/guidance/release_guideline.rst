@@ -44,9 +44,9 @@ Software Module Release
 
 4. **Release Preparation**:
 
-   * Update the version number according to the versioning policy (defined in `REPLACE_doc__platform_release_management_plan`).
+   * Update the version number according to the versioning policy of your module (defined in release management part of the :need:`gd_temp__platform__mgmt_plan`).
    * Prepare release notes documenting the changes, improvements, and bug fixes.
-   * Ensure the relevant safety packages are available and complete.
+   * Ensure the module's safety package is available and complete.
    * Tag the release in the GitHub repository.
 
 5. **Release Execution**:
@@ -79,7 +79,7 @@ Platform Release
 4. **Release Preparation**:
 
    * Check if modules are released.
-   * Update the platform version number according to the versioning policy (defined in `REPLACE_doc__platform_release_management_plan`).
+   * Update the platform version number according to the versioning policy (defined in release management part of the :need:`gd_temp__platform__mgmt_plan`).
    * Prepare platform release notes summarizing the updates from all integrated software modules.
    * Ensure the relevant safety packages are available and complete.
    * Tag the platform release in the GitHub repository.
@@ -103,7 +103,7 @@ Tracking and Communication
 
    * Regularly update all stakeholders on the release status as part of the project lead circle.
    * Hold periodic meetings to discuss progress, issues, and dependencies within the tech lead circle.
-   * meeting definition and schedule see `Steering committees <REPLACE_doc__project_mgt_plan>`.
+   * meeting definition and schedule is defined in the projects's platform managemnt plan, as defined in :need:`gd_guidl__platform__mgmt_plan`.
 
 
 Templates
