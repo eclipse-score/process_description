@@ -20,3 +20,4 @@ Guidance
 
    release_guideline
    release_templates
+   release_process_reqs
