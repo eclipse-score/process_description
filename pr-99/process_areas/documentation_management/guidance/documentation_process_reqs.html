@@ -509,7 +509,7 @@
                   
   <section id="document-management-process-requirements">
 <span id="documentation-process-requirements"></span><h1>Document Management Process Requirements<a class="headerlink" href="#document-management-process-requirements" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-a9857c5e">
+<div class="need_container docutils container" id="SNCB-1471dcce">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__doc__types">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -529,7 +529,7 @@
 </tr>
 <tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
 <div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></div>
-<div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">doc_mgt</span></span></span></div>
+<div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">manual</span><span class="needs_spacer">, </span><span class="needs_data">doc_mgt</span></span></span></div>
 </span></span></div>
 <div class="line"><span><div class="line">complies: <span class="complies"><span><a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_req__iso26262__support_1043" title="gd_req__doc__types">std_req__iso26262__support_1043</a></span></span></div>
 </span></div>
@@ -578,8 +578,8 @@ process definition, as defined</p>
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-d25d487b">
-<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__doc__attributes">
+<div class="need_container docutils container" id="SNCB-8fb677ec">
+<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__doc__attributes_manual">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
 <div class="line"><span><span class="needs_title"><span class="needs_data">Document attributes</span></span></span></div>
@@ -598,33 +598,30 @@ process definition, as defined</p>
 </tr>
 <tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
 <div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></div>
-<div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">doc_mgt</span></span></span></div>
+<div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">manual</span><span class="needs_spacer">, </span><span class="needs_data">doc_mgt</span></span></span></div>
 </span></span></div>
-<div class="line"><span><div class="line">complies: <span class="complies"><span><a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_req__iso26262__support_1043" title="gd_req__doc__attributes">std_req__iso26262__support_1043</a></span></span></div>
+<div class="line"><span><div class="line">complies: <span class="complies"><span><a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_req__iso26262__support_1043" title="gd_req__doc__attributes_manual">std_req__iso26262__support_1043</a></span></span></div>
 </span></div>
 </div>
 </td>
 <td class="meta" colspan="3"></td>
 </tr>
-<tr class="content row-odd"><td class="content" colspan="6"><p>Documents shall have the following manual attributes:</p>
+<tr class="content row-odd"><td class="content" colspan="6"><p>Documents shall have the following mandatory manual attributes:</p>
 <ul class="simple">
 <li><p>id</p></li>
 <li><p>status</p></li>
+</ul>
+<p>and the following optional ones:</p>
+<ul class="simple">
 <li><p>security</p></li>
 <li><p>safety</p></li>
 <li><p>realizes</p></li>
 </ul>
 <p>Compare also  <a class="reference internal" href="documentation_templates.html#gd_temp__documentation" title="gd_temp__documentation"><em class="xref need">Documentation Template (gd_temp__documentation)</em></a></p>
-<p>Documents shall have automatic added attributes:</p>
-<ul class="simple">
-<li><p>author</p></li>
-<li><p>approver</p></li>
-<li><p>reviewer</p></li>
-</ul>
 </td>
 </tr>
 <tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
-<div class="line"><span><span class="needs-id"><a class="reference internal" href="#gd_req__doc__attributes" title="gd_req__doc__attributes">gd_req__doc__attributes</a></span></span></div>
+<div class="line"><span><span class="needs-id"><a class="reference internal" href="#gd_req__doc__attributes_manual" title="gd_req__doc__attributes_manual">gd_req__doc__attributes_manual</a></span></span></div>
 </div>
 </td>
 <td class="footer" colspan="2"><div class="needs_footer line-block">
@@ -637,7 +634,57 @@ process definition, as defined</p>
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-ece62461">
+<div class="need_container docutils container" id="SNCB-7a90f77d">
+<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__doc__attributes_automated">
+<tbody>
+<tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
+<div class="line"><span><span class="needs_title"><span class="needs_data">Document attributes automated</span></span></span></div>
+</div>
+</td>
+<td class="head_center" colspan="2"><div class="needs_head line-block">
+<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></span></div>
+<div class="line"><span></span></div>
+<div class="line"><span></span></div>
+</div>
+</td>
+<td class="head_right" colspan="2"><div class="needs_head_right line-block">
+<div class="line"><span><span class="needs needs_collapse" id="target__show__meta"><span class="needs collapsed"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg></span><span class="needs visible collapse_is_hidden"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg></span></span></span></div>
+</div>
+</td>
+</tr>
+<tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
+<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></div>
+<div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">prio_2_automation</span><span class="needs_spacer">, </span><span class="needs_data">doc_mgt</span></span></span></div>
+</span></span></div>
+<div class="line"><span><div class="line">complies: <span class="complies"><span><a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_req__iso26262__support_1043" title="gd_req__doc__attributes_automated">std_req__iso26262__support_1043</a></span></span></div>
+</span></div>
+</div>
+</td>
+<td class="meta" colspan="3"></td>
+</tr>
+<tr class="content row-odd"><td class="content" colspan="6"><p>Documents shall have automatic added attributes:</p>
+<ul class="simple">
+<li><p>author</p></li>
+<li><p>approver</p></li>
+<li><p>reviewer</p></li>
+</ul>
+</td>
+</tr>
+<tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
+<div class="line"><span><span class="needs-id"><a class="reference internal" href="#gd_req__doc__attributes_automated" title="gd_req__doc__attributes_automated">gd_req__doc__attributes_automated</a></span></span></div>
+</div>
+</td>
+<td class="footer" colspan="2"><div class="needs_footer line-block">
+<div class="line"><span><span class="needs_type_name"><span class="needs_data">Process Requirements</span></span></span></div>
+</div>
+</td>
+<td class="footer_right" colspan="2"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="need_container docutils container" id="SNCB-c13d29e6">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__doc__author">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -657,7 +704,7 @@ process definition, as defined</p>
 </tr>
 <tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
 <div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></div>
-<div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">doc_mgt</span></span></span></div>
+<div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">prio_2_automation</span><span class="needs_spacer">, </span><span class="needs_data">doc_mgt</span></span></span></div>
 </span></span></div>
 <div class="line"><span><div class="line">complies: <span class="complies"><span><a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_req__iso26262__support_1045" title="gd_req__doc__author">std_req__iso26262__support_1045</a></span></span></div>
 </span></div>
@@ -685,7 +732,7 @@ documentation build for every commit of the file containing the document.</p>
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-ed0e332a">
+<div class="need_container docutils container" id="SNCB-11150487">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__doc__reviewer">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -705,7 +752,7 @@ documentation build for every commit of the file containing the document.</p>
 </tr>
 <tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
 <div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></div>
-<div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">doc_mgt</span></span></span></div>
+<div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">prio_2_automation</span><span class="needs_spacer">, </span><span class="needs_data">doc_mgt</span></span></span></div>
 </span></span></div>
 <div class="line"><span><div class="line">complies: <span class="complies"><span><a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_req__iso26262__support_1043" title="gd_req__doc__reviewer">std_req__iso26262__support_1043</a></span></span></div>
 </span></div>
@@ -731,7 +778,7 @@ containing the document, which were not covered by <a class="reference internal"
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-79496cf8">
+<div class="need_container docutils container" id="SNCB-761f8e22">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__doc__approver">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -751,7 +798,7 @@ containing the document, which were not covered by <a class="reference internal"
 </tr>
 <tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
 <div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></div>
-<div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">doc_mgt</span></span></span></div>
+<div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">prio_2_automation</span><span class="needs_spacer">, </span><span class="needs_data">doc_mgt</span></span></span></div>
 </span></span></div>
 <div class="line"><span><div class="line">complies: <span class="complies"><span><a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_req__iso26262__support_1045" title="gd_req__doc__approver">std_req__iso26262__support_1045</a></span></span></div>
 </span></div>
