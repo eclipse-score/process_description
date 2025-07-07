@@ -30,7 +30,7 @@ Templates
    |  Overview
    |  --------
    |  This document provides an overview of the changes, improvements, and bug fixes included in the platform release version vX.Y.Z
-   |  as compared to the platform origin release.
+   |  as compared to the platform origin release (which is usually the previous release).
    |
    |  New Features
    |  ------------

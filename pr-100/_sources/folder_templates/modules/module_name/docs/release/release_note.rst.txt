@@ -44,7 +44,7 @@ Release Note
 | --------
 |
 | This document provides an overview of the changes, improvements, and bug fixes included in the software module release version vX.Y.Z
-|  as compared to the module's origin release.
+|  as compared to the module's origin release (which is usually the previous release).
 |
 | New Features
 | ------------
