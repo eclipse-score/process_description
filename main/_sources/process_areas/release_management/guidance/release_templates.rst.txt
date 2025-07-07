@@ -23,12 +23,14 @@ Templates
    |  Platform Release Notes
    |  ======================
    |  Release Tag: vX.Y.Z
+   |  Origin Release Tag: vU.V.W
    |  Release Commit Hash: a1b2c3d4e5f6g7h8i9j0
    |  Release Date: YYYY-MM-DD
    |
    |  Overview
    |  --------
-   |  This document provides an overview of the changes, improvements, and bug fixes included in the platform release version vX.Y.Z.
+   |  This document provides an overview of the changes, improvements, and bug fixes included in the platform release version vX.Y.Z
+   |  as compared to the platform origin release (which is usually the previous release).
    |
    |  New Features
    |  ------------
@@ -53,6 +55,11 @@ Templates
    |  - **Module 1**: Version and brief description of the module. Link to Software module release note.
    |  - **Module 2**: Version and brief description of the module. Link to Software module release note.
    |  - **Module 3**: Version and brief description of the module. Link to Software module release note.
+   |
+   |  Performed Verification
+   |  ----------------------
+   |  This release note is based on the verification as documented in platform verification report
+   |  <add link here> (report derived from template :need:`gd_temp__platform_ver_report`).
    |
    |  Known Issues
    |  ------------
