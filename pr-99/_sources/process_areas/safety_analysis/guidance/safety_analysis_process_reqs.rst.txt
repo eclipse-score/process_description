@@ -111,7 +111,7 @@ Process Safety Analysis Attributes
 .. _process_requirements_safety_analysis_linkage:
 
 Safety Analysis Linkage
-'''''''''''''''''''''''ds
+'''''''''''''''''''''''
 
 .. gd_req:: Safety Analysis Linkage check
    :id: gd_req__saf__linkage_check
