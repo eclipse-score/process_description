@@ -68,7 +68,7 @@ Process Safety Analysis Attributes
    :complies: std_req__iso26262__analysis_844, std_req__iso26262__analysis_746, std_req__iso26262__analysis_747
 
    Each violation shall have an associated mitigation. The mitigation may be a requirement or a brief description of the mitigation.
-   Use "None" if a mitigation has not yet been implemented, and update it once completed.
+   If mitigation has not yet been implemented, do not use this option.
 
 .. gd_req:: Safety Analysis attribute: mitigation issue
    :id: gd_req__saf__attr_mitigation_issue
