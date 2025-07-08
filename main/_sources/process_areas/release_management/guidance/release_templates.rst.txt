@@ -93,16 +93,16 @@ Templates
    :status: valid
    :complies: std_req__iso26262__management_64131, std_req__iso26262__management_64132, std_req__iso26262__management_64133
 
-Copy the below steps into the release ticket:
-
-Release <add version number> for <platform/module_name>
--------------------------------------------------------
-
-1. Link this issue to the correct milestone and assign to the technical lead
-2. Check respective Verification report on the release candidate's github tag
-3. Check bugfixes or justify failed tests
-4. Check the safety package completeness (includes "valid" documents and work products status, supported by the safety manager)
-5. Create/update the release note (pull request to close this issue)
-6. Document safety manager's "recommendation to release" by asking his GitHub review approval of the release note
-7. Create the "release" in GitHub according to :need:`gd_guidl__rel_management`
-8. Merge PR and close this issue to complete the release
+   | Copy the below steps into the release ticket:
+   |
+   | Release <add version number> for <platform/module_name>
+   | -------------------------------------------------------
+   |
+   | 1. Link this issue to the correct milestone and assign to the technical lead
+   | 2. Check respective Verification report on the release candidate's github tag
+   | 3. Check bugfixes or justify failed tests
+   | 4. Check the safety package completeness (includes "valid" documents and work products status, supported by the safety manager)
+   | 5. Create/update the release note (pull request to close this issue)
+   | 6. Document safety manager's "recommendation to release" by asking his GitHub review approval of the release note
+   | 7. Create the "release" in GitHub according to :need:`gd_guidl__rel_management`
+   | 8. Merge PR and close this issue to complete the release
