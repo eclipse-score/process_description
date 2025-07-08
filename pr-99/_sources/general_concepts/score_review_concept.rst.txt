@@ -160,8 +160,10 @@ Process Requirements
    :complies: std_req__iso26262__support_6433, std_req__iso26262__software_7414
    :satisfies: wf__monitor_verify_requirements
 
-   The version of a requirement shall not change by an inspection. In case the status of the
-   requirement is used to notify if a requirement is inspected (or another attribute is introduced),
+   The version of a requirement shall not change by an inspection.
+
+   This means: In case the status of the requirement (see :need:`gd_req__req__attr_status`)
+   is used to notify if a requirement is inspected (or another attribute is introduced),
    this shall be ignored for versioning.
 
 .. gd_req:: Version for inspected architecture
@@ -171,9 +173,13 @@ Process Requirements
    :complies: std_req__iso26262__support_6433, std_req__iso26262__software_7414
    :satisfies: wf__mr_vy_arch
 
-   The version of architecture element shall not change by an inspection. In case the status of the
-   element is used to notify if it is inspected (or another attribute is introduced),
-   this shall be ignored for versioning. (Note: this applies only if architecture also has a version.)
+   The version of architecture element shall not change by an inspection.
+
+   This means: In case the status of the element (see :need:`gd_req__arch__attr_status`)
+   is used to notify if it is inspected (or another attribute is introduced),
+   this shall be ignored for versioning.
+
+   Note: this applies only if architecture also has a version.
 
 .. gd_req:: Checklist templates in pull requests
    :id: gd_req__general__checklist_templates
@@ -187,11 +193,20 @@ Process Requirements
    Ideally this is automatically applied based on the files modified in the PR.
    The requirements and architecture inspections are not automatically applied.
 
-.. gd_req:: Status Check
-   :id: gd_req__general__status_check
+.. gd_req:: Status Set Check
+   :id: gd_req__general__status_set_check
    :status: valid
    :tags: prio_2_automation, general
    :complies: std_req__iso26262__support_6433, std_req__iso26262__software_7414
    :satisfies: wf__monitor_verify_requirements, wf__mr_vy_arch
 
    It shall be checked that only a PR with the inspection checklist filled out can set a status to valid(inspected).
+
+.. gd_req:: Status Reset Check
+   :id: gd_req__general__status_reset_check
+   :status: valid
+   :tags: prio_2_automation, general
+   :complies: std_req__iso26262__support_6433, std_req__iso26262__software_7414
+   :satisfies: wf__monitor_verify_requirements, wf__mr_vy_arch
+
+   It shall be checked that the status is reset to valid whenever a requirement is modified (changes version).

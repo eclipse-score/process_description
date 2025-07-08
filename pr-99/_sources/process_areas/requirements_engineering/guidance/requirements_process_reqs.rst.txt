@@ -234,6 +234,8 @@ Process Requirements Checks
    Based on the requirement versioning it shall be checked if a parent requirement was updated but not the linked child requirements (or tests).
    In case an update was detected, the attribute requirement (or test) covered shall be set to "No"
 
+   Note: This refers to :need:`gd_req__req__attr_req_cov` and :need:`gd_req__req__attr_test_covered`
+
 .. gd_req:: Requirements mandatory attributes provided
    :id: gd_req__req__attr_mandatory
    :status: valid
@@ -284,7 +286,14 @@ Process Requirements Checks
 
    It shall be checked if every feature- and component requirement is linked at least to one valid architectural element on the same level.
 
-   Note: This check should only be enabled for a release build, otherwise it would block creating requirements first without architecture.
+.. gd_req:: Requirements linkage architecture switch
+   :id: gd_req__req__linkage_architecture_switch
+   :status: valid
+   :tags: prio_2_automation, attribute, check
+   :complies: std_req__iso26262__support_6423
+   :satisfies: wf__req__feat_req, wf__req__comp_req
+
+   The check :need:`gd_req__req__linkage_architecture` shall only be enabled for a release build, otherwise it would block creating requirements first without architecture.
 
 .. gd_req:: Requirements linkage safety
    :id: gd_req__req__linkage_safety
@@ -293,7 +302,7 @@ Process Requirements Checks
    :satisfies: wf__req__stkh_req, wf__req__feat_req, wf__req__comp_req
    :complies: std_req__iso26262__support_6422
 
-   It shall be checked that (child) QM requirements (Safety = QM) can not be linked against a (parent) safety requirement (Safety != QM).
+   It shall be checked that (child) QM requirements (Safety == QM) can not be linked against a (parent) safety requirement (Safety != QM).
 
    Note: This ensures that safety requirements are properly derived into their children. Also a mix of safe and QM aspects in a parent is avoided by this.
 
