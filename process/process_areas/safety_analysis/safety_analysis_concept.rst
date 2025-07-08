@@ -31,11 +31,13 @@ analysed. The DFA is focussed on common cause failures. With a DFA architectural
  | - failures can violate a functions and the safety mechanisms for the function
  | - failures an violate partitions of features or components
 
-With the DFA shall be shown that the freedom from interference is achieved by the absence of common cause failures.
+With the DFA shall be shown that the freedom from interference is achieved by the absence of common cause failures. Common cause failures
+shall be analysed at feature platform level and for complex components. A complex component is defined as a component where not directly
+in the architecture can be seen that the freedom from interference is achieved.
 
 The objective of the FMEA is to show that the risk of systematic faults is reduced to an acceptable level. This shall be done by showing that
 systematic faults can be excluded by a full test coverage. Or, if this is not possible, that the systematic faults are mitigated by a sufficient mitigation.
-Cascading failures are also considered in the FMEA and not in the DFA. Is is because it it's not applicable to use within S-CORE a ASIL decomposition.
+Cascading failures are also considered in the FMEA and not in the DFA. It's because a ASIL decomposition is not applicable at S-CORE.
 
 Inputs
 ******
@@ -107,13 +109,6 @@ The FMEA is done with the shown diagrams. The interface 1 and 2 are the interfac
 fault models :need:`gd_guidl__fault_models` that here could be applied. With the dynamic diagrams the communication between the components can be analysed.
 The static diagrams are used to analyse the dependencies. For violations a failure mitigation shall be defined.
 
-.. figure:: _assets/safety_analysis_component.drawio.svg
-   :align: center
-   :width: 80%
-   :name: safety_analysis_component_fig
-
-   Safety Analysis Component Perspective
-
 At component level you can see inside of the component when the component consists of two or more sub-components. If the component consists of
 only one sub-component there results of the analysis are the same as for the feature level. So no additional consideration is needed.
 The component kvstorage consists of two sub-components, kvs and fs. The dynamic diagram shows the communication between the sub-components.
@@ -123,6 +118,8 @@ How to add new safety mitigations?
 ==================================
 
 Identified faults without a mitigation remain open and are tracked in the issue tracking system :need:`wp__issue_track_system` until they are resolved.
+A new safety mitigation could be needed if it can't be shown that the feature or component is completely deterministic and testable. In this case an
+additional safety mitigation is needed.
 
 .. _examples_fmea_dfa:
 
@@ -131,34 +128,93 @@ Examples for FMEA and DFA at feature level
 
 **FMEA:**
 
-| .. feat_saf_fmea:: Remove key
-|    :verifies: feat_arc_dynamic__kvstorage__remove_key
-|    :id: FEAT_SAF_FMEA__KVSTORAGE__RemoveKey
-|    :failure_mode: "MF_01_01"
-|    :failure_effect: "message is not received"
-|    :mitigation: Detection and error handling shall be done outside of the middleware.
-|    :mitigation_issue: ID from Issue Tracker that defined mitigation will be documented in the assumptions of use (AoU)
-|    :sufficient: yes
-|    :status: valid
-        This error is handled by the calling application.
+The dynamic architecture is analysed with the FMEA. Therefore the template :ref:`FMEA_templates` is used.
+
+ .. feat_saf_fmea:: <Element descriptor>
+    :verifies: <Feature architecture>
+    :id: feat_saf_fmea__<Feature>__<Element descriptor>
+    :violation_id: <ID from fault model :need:`gd_guidl__fault_models`>
+    :violation_cause: "description of failure effect of the fault model on the element"
+    :mitigation: <ID from Feature Requirement | ID from AoU Feature Requirement>
+    :mitigation_issue: <ID from Issue Tracker>
+    :sufficient: <yes|no>
+    :status: <valid|invalid>
+.. note::   argument is inside the 'content'. Therefore content is mandatory
 
 Use the fault models :need:`gd_guidl__fault_models` to ensure a structured analysis. If a fault model doesn't apply,
 please fill in a short description in the violation cause of the analysis so it could be recognized that the analysis
 is done. If there are additional fault models needed, please enlarge the list of fault models.
 
+The dynamic architecture for
+"check if key contains default value" is used as an example. The attributes of the template (:ref:`process_requirements_safety_analysis_attributes`)
+shall be filled in as follows:
+
+.. feat_saf_fmea:: Check if key contains default value
+    :verifies: feat_arc_dyn__persistency_check_key_default
+    :id: feat_saf_fmea__persistency_check_key_default
+    :violation_id: "MF_01_01"
+    :violation_cause: The message from the User is not received by the component kvs.
+    :mitigation: feat_req__persistency__default_value_get
+    :mitigation_issue:
+    :sufficient: yes
+    :status: valid
+    This violation is not applicable for persistency. The feature will always work as expected.
+
+.. feat_saf_fmea:: Check if key contains default value
+    :verifies: feat_arc_dyn__persistency_check_key_default
+    :id: feat_saf_fmea__persistency_check_key_default
+    :violation_id: "MF_01_02"
+    :violation_cause: The message from the User is received too late by the component kvs.
+    :mitigation: feat_req__persistency__default_value_get
+    :mitigation_issue:
+    :sufficient: yes
+    :status: valid
+    This violation could not occur. There are no time constraints for the persistency feature. The feature will always work as expected.
+
+The FMEA is finished, if all fault models are checked and for each identified fault a sufficient mitigation exists. For the validation of the
+FMEA the checklist :need:`gd_chklst__safety_analysis` shall be used.
+
 **DFA:**
 
-| .. feat_saf_dfa:: Static Architecture Persistency
-|    :verifies: feat_arc_sta_persistency_static
-|    :id: feat_saf_DFA__persistency__json_al
-|    :violation_id: "CO_01_02"
-|    :violation_cause: "Data or message corruption / repetition / loss / delay / masquerading or incorrect addressing of information. Failures will lead to falsified execution or to a not available feature.
-|    :mitigation: feat_req__persistency__integrity_check
-|    :mitigation_issue: None
-|    :sufficient: yes
-|    :status: valid
-        The integrity check will ensure that the data is not corrupted and the feature will work as expected.
+The static architecture is analysed with the DFA. Therefore the template :ref:`DFA_templates` is used. The goal is to show that
+the freedom from interference is achieved.
+
+ .. feat_saf_dfa:: <Element descriptor>
+    :verifies: <Feature architecture>
+    :id: feat_saf_DFA__<Feature>__<Element descriptor>
+    :violation_id: <ID from DFA failure initiators :need:`gd_guidl__dfa_failure_initiators`>
+    :violation_cause: "description of failure effect of the failure initiator on the element"
+    :mitigation: <ID from Feature Requirement | ID from AoU Feature Requirement>
+    :mitigation_issue: <ID from Issue Tracker>
+    :sufficient: <yes|no>
+    :status: <valid|invalid>
+.. note::   argument is inside the 'content'. Therefore content is mandatory
 
 Use the DFA failure initiators :need:`gd_guidl__dfa_failure_initiators` to ensure a structured analysis. If a failure initiator doesn't apply,
-please fill in a short description in the violation cause of the analysis so it could be recognized that the analysis is done. If there are
-additional failure initiators needed, please enlarge the list of fault models.
+please fill in a short description in the violation cause of the analysis so it could be recognized that the analysis
+is done. If there are additional failure initiators needed, please enlarge the list of failure initiators.
+
+.. feat_saf_dfa:: Static Architecture
+    :verifies: feat_arc_sta_persistency_static
+    :id: feat_saf_dfa__persistency__libraries
+    :violation_id: "CO_01_01"
+    :violation_cause: Shared resources: Libraries
+    :mitigation: feat_req__persistency__persistency
+    :mitigation_issue:
+    :sufficient: yes
+    :status: valid
+    The violation is not applicable. The persistency feature is implemented in a way that it doesn't share libraries between functions and their related safety mechanisms.
+
+.. feat_saf_dfa:: Static Architecture
+    :verifies: feat_arc_sta_persistency_static
+    :id: feat_saf_dfa__persistency__message_corruption
+    :violation_id: "CO_01_01"
+    :violation_cause: "Data or message corruption / repetition / loss / delay / masquerading or incorrect addressing of information. Failures will lead to falsified execution or to a not available feature.
+    :mitigation: feat_req__persistency__integrity_check
+    :mitigation_issue: None
+    :sufficient: yes
+    :status: valid
+      The integrity check will ensure that the data is not corrupted and the feature will work as expected.
+
+The DFA is finished, if all fault models are checked and for each identified fault a sufficient mitigation exists. For the validation of the
+DFA the checklist :need:`gd_chklst__safety_analysis` shall be used.

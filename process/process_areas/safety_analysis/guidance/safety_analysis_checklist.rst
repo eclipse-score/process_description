@@ -60,13 +60,19 @@ Checklist for Safety Analysis
         - The cause of the violation is described completely. The cause can be recognized easily.
         - <yes|no>
         -
-      * - REQ_01_05
+      * - REQ_01_06
         - Is the mitigation described completely and in an easily understandable manner?
         -
         - The mitigation is clearly and completely described.
         - <yes|no>
         -
-      * - REQ_01_06
+      * - REQ_01_07
+        - Is the sufficiency of the mitigation described or can it be recognized easily?
+        -
+        - The mitigation shows clearly that a function an their related safety mechanisms cant't be violated by the same failure.
+        - <yes|no>
+        -
+      * - REQ_01_08
         - Is the overall result of the safety analysis described in the report?
         -
         - The results of the safety analysis are described in the report. The report is available :need:`wp__verification__platform_ver_report`.
