@@ -514,7 +514,7 @@
                   
   <section id="guidelines">
 <h1>Guidelines<a class="headerlink" href="#guidelines" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-00f16d41">
+<div class="need_container docutils container" id="SNCB-fb98af9d">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_guidl table" id="gd_guidl__safety_analysis">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -566,15 +566,15 @@
 <li><p>Analyse the dependencies between features by performing a <strong>single platform feature DFA</strong> that references all platform feature static architecture diagrams, highlighting potential shared use of modules.</p></li>
 <li><p>Monitor the results of the platform feature DFA and log any issues in the Issue Tracking system with the <code class="docutils literal notranslate"><span class="pre">safety</span></code> label.</p></li>
 <li><p>Verify the platform feature DFA results by using <a class="reference internal" href="safety_analysis_checklist.html#gd_chklst__safety_analysis" title="gd_chklst__safety_analysis"><em class="xref need">Safety Analysis Checklist T... (gd_chklst__safety_analysis)</em></a>.</p></li>
-<li><p>Platform feature DFA are completed when the verification is done, no issues are open and the status is “valid”.</p></li>
+<li><p>Platform feature DFA is completed when the verification is done, no issues are open and the status is “valid”. The verification criteria is that it can be proven that a function and the corresponding safety monitoring are not both affected.</p></li>
 <li><p>To analyse the Feature Architecture a FMEA and a DFA shall be executed. The results of the platform feature DFA shall be used as an input.</p></li>
 <li><p>Monitor the results of the FMEA and DFA and log any issues in the Issue Tracking system with the <code class="docutils literal notranslate"><span class="pre">safety</span></code> label.</p></li>
 <li><p>Verify the FMEA and DFA results by using <a class="reference internal" href="safety_analysis_checklist.html#gd_chklst__safety_analysis" title="gd_chklst__safety_analysis"><em class="xref need">Safety Analysis Checklist T... (gd_chklst__safety_analysis)</em></a>..</p></li>
 <li><p>Feature FMEA and DFA are completed when the verification is done, no issues are open and the status is “valid”.</p></li>
 <li><p>To analyse the Component Architecture a FMEA and a DFA shall be executed. The results of the feature FMEA and DFA shall be used as an input.</p></li>
 <li><p>Monitor the results of the FMEA and DFA and log any issues in the Issue Tracking system with the <code class="docutils literal notranslate"><span class="pre">safety</span></code> label.</p></li>
-<li><p>Verify the FMEA and DFA results by using <a class="reference internal" href="safety_analysis_checklist.html#gd_chklst__safety_analysis" title="gd_chklst__safety_analysis"><em class="xref need">Safety Analysis Checklist T... (gd_chklst__safety_analysis)</em></a>..</p></li>
-<li><p>Component FMEA and DFA are completed when the verification is done, no issues are open and the status is “valid”.</p></li>
+<li><p>Verify the FMEA and DFA results by using <a class="reference internal" href="safety_analysis_checklist.html#gd_chklst__safety_analysis" title="gd_chklst__safety_analysis"><em class="xref need">Safety Analysis Checklist T... (gd_chklst__safety_analysis)</em></a>.</p></li>
+<li><p>Component FMEA and DFA are completed when the verification is done, no issues are open and the status is “valid”. The verification criteria is that it can be proven that a function and the corresponding safety monitoring are not both affected.</p></li>
 </ol>
 <p>A example for the safety analysis (FMEA and DFA) is shown in the <a class="reference internal" href="../safety_analysis_concept.html#examples-fmea-dfa"><span class="std std-ref">Examples for FMEA and DFA at feature level</span></a>.</p>
 <section id="step-by-step-approach-fmea">
@@ -588,7 +588,7 @@ The analysis considers single faults that can mitigate a safety requirement.</p>
 <ul class="simple">
 <li><p>For each dynamic diagram, assign the faults by ID from the fault model and document it as a sphinx-needs directive.</p></li>
 <li><p>Document the resulting failure mode and effect and link to a safety requirement that mitigates the violation.</p></li>
-<li><p>Document safety mitigation to avoid or control the failure.</p></li>
+<li><p>Document safety mitigation to avoid or control the failure. If it can’t be shown that a element is completely deterministic and testable, an additional safety mechanisms is needed.</p></li>
 <li><p>The attributes of the template are described in <a class="reference internal" href="safety_analysis_process_reqs.html#process-requirements-safety-analysis-attributes"><span class="std std-ref">Process Safety Analysis Attributes</span></a>.</p></li>
 <li><p>Judge if this is sufficient.</p></li>
 <li><p>If not, request to update the diagram and the requirements with additional safety mitigation to come to a sufficient outcome by creating an issue.</p></li>
@@ -597,6 +597,10 @@ The analysis considers single faults that can mitigate a safety requirement.</p>
 <li><p>Continue the analysis until all fault models are checked.</p></li>
 <li><p>The verification is done by applying the FMEA checklist <a class="reference internal" href="safety_analysis_checklist.html#gd_chklst__safety_analysis" title="gd_chklst__safety_analysis"><em class="xref need">Safety Analysis Checklist T... (gd_chklst__safety_analysis)</em></a>.</p></li>
 </ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If there are changes they have to be analysed with a impact analysis <a class="reference internal" href="../../change_management/guidance/change_management_impact_analysis_template.html#gd_temp__change__impact_analysis" title="gd_temp__change__impact_analysis"><em class="xref need">Impact Analysis Template (gd_temp__change__impact_analysis)</em></a>. If needed the safety analysis has to be updated accordingly. Therefore all necessary steps have to be repeated.</p>
+</div>
 </section>
 <section id="step-by-step-approach-dfa">
 <h3>Step-by-Step-approach DFA:<a class="headerlink" href="#step-by-step-approach-dfa" title="Link to this heading">#</a></h3>
@@ -608,12 +612,16 @@ So it could be shown that the analysis was done and no fault model is applicable
 <li><p>For each failure initiator assign the violation by ID from the DFA failure initiators and document it as a sphinx-needs directive.</p></li>
 <li><p>Document the resulting violation causes and effect and link to a safety requirement that mitigates the violation.</p></li>
 <li><p>The attributes of the template are described in <a class="reference internal" href="safety_analysis_process_reqs.html#process-requirements-safety-analysis-attributes"><span class="std std-ref">Process Safety Analysis Attributes</span></a>.</p></li>
-<li><p>Judge if the mitigation is sufficient. If not, request to update the requirements with additional safety mitigation to come to a sufficient outcome.</p></li>
+<li><p>Judge if the mitigation is sufficient. If not, request to update the requirements with additional safety mitigation to come to a sufficient outcome.  If it can’t be shown that a element is completely deterministic and testable, an additional safety mechanisms is needed.</p></li>
 <li><p>The analysis is finished, if for each identified violation a mitigation exists.</p></li>
 <li><p>Unless the attribute “sufficient” is “yes”, mitigation and argument attribute can be still empty.</p></li>
 <li><p>Continue the analysis until all failure initiators are checked.</p></li>
 <li><p>The verification is done by applying the safety analysis checklist <a class="reference internal" href="safety_analysis_checklist.html#gd_chklst__safety_analysis" title="gd_chklst__safety_analysis"><em class="xref need">Safety Analysis Checklist T... (gd_chklst__safety_analysis)</em></a>.</p></li>
 </ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If there are changes they have to be analysed with a impact analysis <a class="reference internal" href="../../change_management/guidance/change_management_impact_analysis_template.html#gd_temp__change__impact_analysis" title="gd_temp__change__impact_analysis"><em class="xref need">Impact Analysis Template (gd_temp__change__impact_analysis)</em></a>. If needed the safety analysis has to be updated accordingly. Therefore all necessary steps have to be repeated.</p>
+</div>
 </section>
 </section>
 </section>

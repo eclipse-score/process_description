@@ -23,90 +23,94 @@ Fault Models
   | Fault Model for sequence diagrams
 
 
-:note: Use the fault models to ensure a structured analysis. If a fault model doesn't apply, please fill in a short description in the violation cause of the analysis so it could be recognized that the analysis is done. If there are additional fault models needed, please enlarge the list of fault models.
+.. note:: Use the fault models to ensure a structured analysis. If a fault model doesn't apply, please fill in a short description in the violation cause of the analysis so it could be recognized that the analysis is done. If there are additional fault models needed, please enlarge the list of fault models.
 
 
-    .. list-table:: Fault Models for sequence diagrams
-       :header-rows: 1
-       :widths: 15,6,30,30,15
+.. note:: A ASIL related message is trustable in that manner that it is not corrupted, repeated, lost, delayed, masqueraded or addressed incorrectly.
 
-      * - Element
-        - ID
-        - Failure Mode
-        - Simplification
-        - Importance (can be used for priorisation)
-      * - message
-        - MF_01_01
-        - message is not received
-        - MF_01_05
-        - High
-      * - message
-        - MF_01_02
-        - message received too late
-        - relevant only if delay is a realistic fault
-        - Medium
-      * - message
-        - MF_01_03
-        - message received too early
-        - usually not a problem
-        - Low
-      * - message
-        - MF_01_04
-        - message not received correctly by all recipients (different messages or messages partly lost)
-        - only relevant if the same message goes to multiple recipients
-        - High
-      * - message
-        - MF_01_05
-        - message is corrupted
-        -
-        - High
-      * - message
-        - MF_01_06
-        - message is not sent
-        -
-        - High
-      * - message
-        - MF_01_07
-        - message is unintended sent
-        -
-        - High
-      * - duration/time constraint
-        - CO_01_01
-        - minimum constraint boundary is violated
-        -
-        - Medium
-      * - duration/time constraint
-        - CO_01_02
-        - maximum constraint boundary is violated
-        -
-        - High
-      * - execution
-        - EX_01_01
-        - Process calculates wrong result(s)
-        - MF_01_05 or MF_01_04
-        - High
-      * - execution
-        - EX_01_02
-        - processing too slow
-        - relevant only if timing is considered
-        - Medium
-      * - execution
-        - EX_01_03
-        - processing too fast
-        - relevant only if timing is considered
-        - Medium
-      * - execution
-        - EX_01_04
-        - loss of execution
-        -
-        - High
-      * - execution
-        - EX_01_05
-        - processing changes to arbitrary process
-        -
-        - Medium
-      * - execution
-        - EX_01_06
-        - processing is not complete (infinite loop)
-        -
-        - High
+
+Fault Models for sequence diagrams
+  .. list-table:: Fault Models for sequence diagrams
+     :header-rows: 1
+     :widths: 15,6,30,30,15
+
+    * - Element
+      - ID
+      - Failure Mode
+      - Simplification
+      - Importance (can be used for priorisation)
+    * - message
+      - MF_01_01
+      - message is not received
+      - MF_01_05
+      - High
+    * - message
+      - MF_01_02
+      - message received too late
+      - relevant only if delay is a realistic fault
+      - Medium
+    * - message
+      - MF_01_03
+      - message received too early
+      - usually not a problem
+      - Low
+    * - message
+      - MF_01_04
+      - message not received correctly by all recipients (different messages or messages partly lost)
+      - only relevant if the same message goes to multiple recipients
+      - High
+    * - message
+      - MF_01_05
+      - message is corrupted
+      -
+      - High
+    * - message
+      - MF_01_06
+      - message is not sent
+      -
+      - High
+    * - message
+      - MF_01_07
+      - message is unintended sent
+      -
+      - High
+    * - duration/time constraint
+      - CO_01_01
+      - minimum constraint boundary is violated
+      -
+      - Medium
+    * - duration/time constraint
+      - CO_01_02
+      - maximum constraint boundary is violated
+      -
+      - High
+    * - execution
+      - EX_01_01
+      - Process calculates wrong result(s)
+      - MF_01_05 or MF_01_04
+      - High
+    * - execution
+      - EX_01_02
+      - processing too slow
+      - relevant only if timing is considered
+      - Medium
+    * - execution
+      - EX_01_03
+      - processing too fast
+      - relevant only if timing is considered
+      - Medium
+    * - execution
+      - EX_01_04
+      - loss of execution
+      -
+      - High
+    * - execution
+      - EX_01_05
+      - processing changes to arbitrary process
+      -
+      - Medium
+    * - execution
+      - EX_01_06
+      - processing is not complete (infinite loop)
+      -
+      - High

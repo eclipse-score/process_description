@@ -30,7 +30,7 @@ Workflow Safety Analysis
    :contains: gd_guidl__dfa_failure_initiators, gd_temp__feat_saf_dfa
    :has: doc_concept__safety__analysis, doc_getstrt__safety_analysis
 
-   | With a platform features DFA the potential common usage of modules shall be analyzed. It shall be used as an input for all other DFA's.
+   | With a platform features DFA the potential common usage of modules shall be analysed. It shall be used as an input for all other DFA's.
 
 .. workflow:: Analyse Feature Architecture
    :id: wf__analyse_featarch
@@ -86,7 +86,7 @@ Workflow Safety Analysis
    :contains: gd_guidl__dfa_failure_initiators, gd_temp__feat_saf_dfa, gd_temp__comp_saf_dfa, gd_guidl__fault_models, gd_temp__feat_saf_fmea, gd_temp__comp_saf_fmea, gd_chklst__safety_analysis
    :has: doc_concept__safety__analysis, doc_getstrt__safety_analysis
 
-   | The safety analyses and DFA are verified.
+   | The safety analyses and DFA are verified. The verification criteria is that it can be proven that a function and the corresponding safety monitoring are not both affected.
 
 
 RAS(IC) for Safety Analysis

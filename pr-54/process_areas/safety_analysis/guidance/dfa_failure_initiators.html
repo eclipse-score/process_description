@@ -514,7 +514,7 @@
                   
   <section id="dfa-failure-initiators">
 <span id="id1"></span><h1>DFA failure initiators<a class="headerlink" href="#dfa-failure-initiators" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-04d77ab5">
+<div class="need_container docutils container" id="SNCB-47e5e193">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_guidl table" id="gd_guidl__dfa_failure_initiators">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -559,11 +559,14 @@
 </table>
 </div>
 </div>
-<dl class="field-list simple">
-<dt class="field-odd">note<span class="colon">:</span></dt>
-<dd class="field-odd"><p>Use the failure initiators to ensure a structured analysis. If a failure doesn’t apply, please fill in a short description in the violation cause of the analysis so it could be recognized that the analysis is done. If there are additional failure initiators needed, please enlarge the list of fault models.</p>
-</dd>
-</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Use the failure initiators to ensure a structured analysis. If a failure doesn’t apply, please fill in a short description in the violation cause of the analysis so it could be recognized that the analysis is done. If there are additional failure initiators needed, please enlarge the list of fault models.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>A ASIL related message is trustable in that manner that it is not corrupted, repeated, lost, delayed, masqueraded or addressed incorrectly.</p>
+</div>
 <p><strong>Purpose</strong></p>
 <p>In order to identify all cascading and common cause failures, which may initiated from your feature or components to the platform, other features, components, etc.,
 use the following framework of dependent failure initiators to check your completeness of the analysis.</p>
@@ -571,8 +574,12 @@ use the following framework of dependent failure initiators to check your comple
 <section id="id2">
 <h1>DFA failure initiators<a class="headerlink" href="#id2" title="Link to this heading">#</a></h1>
 <p>2.1 Shared resources</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Shared libraries are only than to be considered as a shared resource if the feature and the related safety mechanisms are using this specific library. If the library is not used by the feature or the related safety mechanisms, it is not a shared resource.</p>
+</div>
 <div class="pst-scrollable-table-container"><table class="table" id="id3">
-<caption><span class="caption-number">Table 31 </span><span class="caption-text">DFA shared resources</span><a class="headerlink" href="#id3" title="Link to this table">#</a></caption>
+<caption><span class="caption-number">Table 31 </span><span class="caption-text">DFA shared resources (used for Platform Feature DFA)</span><a class="headerlink" href="#id3" title="Link to this table">#</a></caption>
 <colgroup>
 <col style="width: 10.0%" />
 <col style="width: 30.0%" />
@@ -583,7 +590,7 @@ use the following framework of dependent failure initiators to check your comple
 <tr class="row-odd"><th class="head"><p>ID</p></th>
 <th class="head"><p>Violation cause shared resources</p></th>
 <th class="head"><p>Simplification</p></th>
-<th class="head"><p>Importance (can be used for priorisation)</p></th>
+<th class="head"><p>Importance (can be used for prioritization)</p></th>
 </tr>
 </thead>
 <tbody>
@@ -671,7 +678,7 @@ use the following framework of dependent failure initiators to check your comple
 <td><p>Medium</p></td>
 </tr>
 <tr class="row-even"><td><p>CO_01_05</p></td>
-<td><p>Asymmetric information sent from a sender to multiple receivers, so that not all defined receivers have the same informations</p></td>
+<td><p>Asymmetric information sent from a sender to multiple receivers, so that not all defined receivers have the same information’s</p></td>
 <td></td>
 <td><p>Medium</p></td>
 </tr>
@@ -704,7 +711,7 @@ use the following framework of dependent failure initiators to check your comple
 <tr class="row-odd"><th class="head"><p>ID</p></th>
 <th class="head"><p>Violation cause shared information inputs</p></th>
 <th class="head"><p>Simplification</p></th>
-<th class="head"><p>Importance (can be used for priorisation)</p></th>
+<th class="head"><p>Importance (can be used for prioritization)</p></th>
 </tr>
 </thead>
 <tbody>
@@ -747,7 +754,7 @@ use the following framework of dependent failure initiators to check your comple
 <tr class="row-odd"><th class="head"><p>ID</p></th>
 <th class="head"><p>Violation cause unintended impact</p></th>
 <th class="head"><p>Simplification</p></th>
-<th class="head"><p>Importance (can be used for priorisation)</p></th>
+<th class="head"><p>Importance (can be used for prioritization)</p></th>
 </tr>
 </thead>
 <tbody>
@@ -824,7 +831,7 @@ use the following framework of dependent failure initiators to check your comple
 </dd>
 </dl>
 <div class="pst-scrollable-table-container"><table class="table" id="id7">
-<caption><span class="caption-number">Table 35 </span><span class="caption-text">DFA development failure initiators</span><a class="headerlink" href="#id7" title="Link to this table">#</a></caption>
+<caption><span class="caption-number">Table 35 </span><span class="caption-text">DFA development failure initiators (Feature Platform DFA)</span><a class="headerlink" href="#id7" title="Link to this table">#</a></caption>
 <colgroup>
 <col style="width: 10.0%" />
 <col style="width: 30.0%" />

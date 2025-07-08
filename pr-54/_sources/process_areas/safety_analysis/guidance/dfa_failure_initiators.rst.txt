@@ -23,7 +23,10 @@ DFA failure initiators
   :complies: std_wp__iso26262__software_751, std_wp__iso26262__software_753
 
 
-:note: Use the failure initiators to ensure a structured analysis. If a failure doesn't apply, please fill in a short description in the violation cause of the analysis so it could be recognized that the analysis is done. If there are additional failure initiators needed, please enlarge the list of fault models.
+.. note:: Use the failure initiators to ensure a structured analysis. If a failure doesn't apply, please fill in a short description in the violation cause of the analysis so it could be recognized that the analysis is done. If there are additional failure initiators needed, please enlarge the list of fault models.
+
+.. note:: A ASIL related message is trustable in that manner that it is not corrupted, repeated, lost, delayed, masqueraded or addressed incorrectly.
+
 
 **Purpose**
 
@@ -35,14 +38,16 @@ DFA failure initiators
 
 2.1 Shared resources
 
-.. list-table:: DFA shared resources
+.. note:: Shared libraries are only than to be considered as a shared resource if the feature and the related safety mechanisms are using this specific library. If the library is not used by the feature or the related safety mechanisms, it is not a shared resource.
+
+.. list-table:: DFA shared resources (used for Platform Feature DFA)
   :header-rows: 1
   :widths: 10,30,30,30
 
   * - ID
     - Violation cause shared resources
     - Simplification
-    - Importance (can be used for priorisation)
+    - Importance (can be used for prioritization)
   * - SR_01_01
     - Reused software modules
     -
@@ -105,7 +110,7 @@ DFA failure initiators
     -
     - Medium
   * - CO_01_05
-    - Asymmetric information sent from a sender to multiple receivers, so that not all defined receivers have the same informations
+    - Asymmetric information sent from a sender to multiple receivers, so that not all defined receivers have the same information's
     -
     - Medium
   * - CO_01_06
@@ -127,7 +132,7 @@ DFA failure initiators
   * - ID
     - Violation cause shared information inputs
     - Simplification
-    - Importance (can be used for priorisation)
+    - Importance (can be used for prioritization)
   * - SI_01_02
     - Configuration data
     -
@@ -155,7 +160,7 @@ DFA failure initiators
   * - ID
     - Violation cause unintended impact
     - Simplification
-    - Importance (can be used for priorisation)
+    - Importance (can be used for prioritization)
   * - UI_01_01
     - Memory miss-allocation and leaks
     -
@@ -210,7 +215,7 @@ DFA failure initiators
 
 :note: Section shall be applied only once to analyse all dependencies of the features. Results shall be checked during of the analysis of new features if this is applicable to the feature.
 
-.. list-table:: DFA development failure initiators
+.. list-table:: DFA development failure initiators (Feature Platform DFA)
   :header-rows: 1
   :widths: 10,30,30,30
 

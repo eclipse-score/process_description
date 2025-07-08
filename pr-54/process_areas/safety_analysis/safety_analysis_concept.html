@@ -499,7 +499,7 @@
                   
   <section id="concept-description">
 <h1>Concept Description<a class="headerlink" href="#concept-description" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-213f7dc9">
+<div class="need_container docutils container" id="SNCB-184daf73">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_doc_concept table" id="doc_concept__safety__analysis">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -555,10 +555,12 @@ analysed. The DFA is focussed on common cause failures. With a DFA architectural
 <div class="line">- failures an violate partitions of features or components</div>
 </div>
 </div></blockquote>
-<p>With the DFA shall be shown that the freedom from interference is achieved by the absence of common cause failures.</p>
+<p>With the DFA shall be shown that the freedom from interference is achieved by the absence of common cause failures. Common cause failures
+shall be analysed at feature platform level and for complex components. A complex component is defined as a component where not directly
+in the architecture can be seen that the freedom from interference is achieved.</p>
 <p>The objective of the FMEA is to show that the risk of systematic faults is reduced to an acceptable level. This shall be done by showing that
 systematic faults can be excluded by a full test coverage. Or, if this is not possible, that the systematic faults are mitigated by a sufficient mitigation.
-Cascading failures are also considered in the FMEA and not in the DFA. Is is because it it’s not applicable to use within S-CORE a ASIL decomposition.</p>
+Cascading failures are also considered in the FMEA and not in the DFA. It’s because a ASIL decomposition is not applicable at S-CORE.</p>
 <section id="inputs">
 <h2>Inputs<a class="headerlink" href="#inputs" title="Link to this heading">#</a></h2>
 <ol class="arabic simple">
@@ -629,59 +631,48 @@ shall be done in the way that we use the static and dynamic diagrams. The follow
 <p>The FMEA is done with the shown diagrams. The interface 1 and 2 are the interfaces of the feature. These interfaces shall be analysed with the
 fault models <a class="reference internal" href="guidance/fault_models_guideline.html#gd_guidl__fault_models" title="gd_guidl__fault_models"><em class="xref need">Fault Models (gd_guidl__fault_models)</em></a> that here could be applied. With the dynamic diagrams the communication between the components can be analysed.
 The static diagrams are used to analyse the dependencies. For violations a failure mitigation shall be defined.</p>
-<figure class="align-center" id="safety-analysis-component-fig">
-<a class="reference internal image-reference" href="../../_images/safety_analysis_component.drawio.svg"><img alt="../../_images/safety_analysis_component.drawio.svg" src="../../_images/safety_analysis_component.drawio.svg" style="width: 80%;" />
-</a>
-<figcaption>
-<p><span class="caption-number">Fig. 20 </span><span class="caption-text">Safety Analysis Component Perspective</span><a class="headerlink" href="#safety-analysis-component-fig" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
 <p>At component level you can see inside of the component when the component consists of two or more sub-components. If the component consists of
 only one sub-component there results of the analysis are the same as for the feature level. So no additional consideration is needed.
 The component kvstorage consists of two sub-components, kvs and fs. The dynamic diagram shows the communication between the sub-components.</p>
 </section>
 <section id="how-to-add-new-safety-mitigations">
 <h3>How to add new safety mitigations?<a class="headerlink" href="#how-to-add-new-safety-mitigations" title="Link to this heading">#</a></h3>
-<p>Identified faults without a mitigation remain open and are tracked in the issue tracking system <a class="reference internal" href="../change_management/change_management_workproducts.html#wp__issue_track_system" title="wp__issue_track_system"><em class="xref need">Issue tracking system (wp__issue_track_system)</em></a> until they are resolved.</p>
+<p>Identified faults without a mitigation remain open and are tracked in the issue tracking system <a class="reference internal" href="../change_management/change_management_workproducts.html#wp__issue_track_system" title="wp__issue_track_system"><em class="xref need">Issue tracking system (wp__issue_track_system)</em></a> until they are resolved.
+A new safety mitigation could be needed if it can’t be shown that the feature or component is completely deterministic and testable. In this case an
+additional safety mitigation is needed.</p>
 </section>
 <section id="examples-for-fmea-and-dfa-at-feature-level">
 <span id="examples-fmea-dfa"></span><h3>Examples for FMEA and DFA at feature level<a class="headerlink" href="#examples-for-fmea-and-dfa-at-feature-level" title="Link to this heading">#</a></h3>
 <p><strong>FMEA:</strong></p>
-<div class="line-block">
-<div class="line">.. feat_saf_fmea:: Remove key</div>
-<div class="line-block">
-<div class="line">:verifies: feat_arc_dynamic__kvstorage__remove_key</div>
-<div class="line">:id: FEAT_SAF_FMEA__KVSTORAGE__RemoveKey</div>
-<div class="line">:failure_mode: “MF_01_01”</div>
-<div class="line">:failure_effect: “message is not received”</div>
-<div class="line">:mitigation: Detection and error handling shall be done outside of the middleware.</div>
-<div class="line">:mitigation_issue: ID from Issue Tracker that defined mitigation will be documented in the assumptions of use (AoU)</div>
-<div class="line">:sufficient: yes</div>
-<div class="line">:status: valid
-This error is handled by the calling application.</div>
-</div>
+<p>The dynamic architecture is analysed with the FMEA. Therefore the template <a class="reference internal" href="guidance/fmea_templates.html#fmea-templates"><span class="std std-ref">FMEA Templates</span></a> is used.</p>
+<blockquote>
+<div></div></blockquote>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>argument is inside the ‘content’. Therefore content is mandatory</p>
 </div>
 <p>Use the fault models <a class="reference internal" href="guidance/fault_models_guideline.html#gd_guidl__fault_models" title="gd_guidl__fault_models"><em class="xref need">Fault Models (gd_guidl__fault_models)</em></a> to ensure a structured analysis. If a fault model doesn’t apply,
 please fill in a short description in the violation cause of the analysis so it could be recognized that the analysis
 is done. If there are additional fault models needed, please enlarge the list of fault models.</p>
+<p>The dynamic architecture for
+“check if key contains default value” is used as an example. The attributes of the template (<a class="reference internal" href="guidance/safety_analysis_process_reqs.html#process-requirements-safety-analysis-attributes"><span class="std std-ref">Process Safety Analysis Attributes</span></a>)
+shall be filled in as follows:</p>
+<p>The FMEA is finished, if all fault models are checked and for each identified fault a sufficient mitigation exists. For the validation of the
+FMEA the checklist <a class="reference internal" href="guidance/safety_analysis_checklist.html#gd_chklst__safety_analysis" title="gd_chklst__safety_analysis"><em class="xref need">Safety Analysis Checklist T... (gd_chklst__safety_analysis)</em></a> shall be used.</p>
 <p><strong>DFA:</strong></p>
-<div class="line-block">
-<div class="line">.. feat_saf_dfa:: Static Architecture Persistency</div>
-<div class="line-block">
-<div class="line">:verifies: feat_arc_sta_persistency_static</div>
-<div class="line">:id: feat_saf_DFA__persistency__json_al</div>
-<div class="line">:violation_id: “CO_01_02”</div>
-<div class="line">:violation_cause: “Data or message corruption / repetition / loss / delay / masquerading or incorrect addressing of information. Failures will lead to falsified execution or to a not available feature.</div>
-<div class="line">:mitigation: feat_req__persistency__integrity_check</div>
-<div class="line">:mitigation_issue: None</div>
-<div class="line">:sufficient: yes</div>
-<div class="line">:status: valid
-The integrity check will ensure that the data is not corrupted and the feature will work as expected.</div>
-</div>
+<p>The static architecture is analysed with the DFA. Therefore the template <a class="reference internal" href="guidance/dfa_templates.html#dfa-templates"><span class="std std-ref">DFA Templates</span></a> is used. The goal is to show that
+the freedom from interference is achieved.</p>
+<blockquote>
+<div></div></blockquote>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>argument is inside the ‘content’. Therefore content is mandatory</p>
 </div>
 <p>Use the DFA failure initiators <a class="reference internal" href="guidance/dfa_failure_initiators.html#gd_guidl__dfa_failure_initiators" title="gd_guidl__dfa_failure_initiators"><em class="xref need">DFA failure initiators (gd_guidl__dfa_failure_initiators)</em></a> to ensure a structured analysis. If a failure initiator doesn’t apply,
-please fill in a short description in the violation cause of the analysis so it could be recognized that the analysis is done. If there are
-additional failure initiators needed, please enlarge the list of fault models.</p>
+please fill in a short description in the violation cause of the analysis so it could be recognized that the analysis
+is done. If there are additional failure initiators needed, please enlarge the list of failure initiators.</p>
+<p>The DFA is finished, if all fault models are checked and for each identified fault a sufficient mitigation exists. For the validation of the
+DFA the checklist <a class="reference internal" href="guidance/safety_analysis_checklist.html#gd_chklst__safety_analysis" title="gd_chklst__safety_analysis"><em class="xref need">Safety Analysis Checklist T... (gd_chklst__safety_analysis)</em></a> shall be used.</p>
 </section>
 </section>
 </section>
