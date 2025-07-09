@@ -139,9 +139,12 @@ Following aspect should be considered when developing test cases:
 * **Comprehensive Coverage:** Test cases should cover all functional and tool requirements, including
   positive, negative, and boundary conditions. Specific attention should be given to corner cases and error handling.
 * **Requirements Testing:** Guarantees testing of Component, Feature, and Stakeholder requirements.
-* **Unit Testing:** Focus on isolating and testing individual units or components of the code.
+* **Unit Testing:** Focus on testing individual units or components of the code.
   Strive for high code coverage for branches and lines.
   Coverage goals are defined in the :need:`wp__verification__plan`.
+  Consider not mocking away libraries the unit uses, as long as you can obtain sufficient
+  structural coverage from the unit testing with included/integrated libraries,
+  as this reduces effort on integration testing.
 
   Use the following frameworks for unit testing:
 

@@ -20,7 +20,7 @@ Verification Report
 .. document:: [Your Module Name] Verification Report
    :id: doc__module_name_verification_report
    :status: draft
-   :safety: ASIL_D
+   :safety: ASIL_B
    :realizes: wp__verification__module_ver_report
    :tags: template
 

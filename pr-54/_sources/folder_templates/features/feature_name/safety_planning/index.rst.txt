@@ -20,7 +20,7 @@ Feature Safety Planning
 .. document:: [Your Feature Name] Safety WPs
    :id: doc__feature_name_safety_wp
    :status: draft
-   :safety: ASIL_D
+   :safety: ASIL_B
    :realizes: wp__platform_safety_plan
    :tags: template
 

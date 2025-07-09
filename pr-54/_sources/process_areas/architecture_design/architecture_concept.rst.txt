@@ -369,7 +369,7 @@ Following attributes need to be filled manually for each requirement:
    * - Status
      - Status of the architectural element [valid,invalid]
    * - Safety
-     - This attribute describes the impact of the architectural element on functional safety. Currently only following values are defined [QM, ASIL_B, ASIL_D]. Other values are not required at the moment as *ASIL decomposition* is not used so far.
+     - This attribute describes the impact of the architectural element on functional safety. Currently only following values are defined [QM, ASIL_B]. Other values are not required at the moment as *ASIL decomposition* is not used so far.
    * - Security
      - This attribute describes if the architectural element has any impact on the security of the platform. [YES,NO]
    * - Fulfils

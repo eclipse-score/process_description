@@ -20,7 +20,7 @@ Safety Manual
 .. document:: [Your Module Name] Safety Manual
    :id: doc__module_name_safety_manual
    :status: draft
-   :safety: ASIL_D
+   :safety: ASIL_B
    :realizes: wp__module_safety_manual
    :tags: template
 

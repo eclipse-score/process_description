@@ -20,7 +20,7 @@ Detailed Design
 .. document:: [Your Component Name] Detailed Design
    :id: doc__component_name_detailed_design
    :status: draft
-   :safety: ASIL_D
+   :safety: ASIL_B
    :realizes: wp__sw_implementation
    :tags: template
 
@@ -56,7 +56,7 @@ Static Diagrams for Unit Interactions
    .. dd_sta:: <Title>
       :id: dd_sta__<Title>
       :security: <YES|NO>
-      :safety: <QM|ASIL_B|ASIL_D>
+      :safety: <QM|ASIL_B>
       :status: <valid|invalid>
       :implements: <link to component requirement id>
       :satisfies: <link to component architecture id>
@@ -70,7 +70,7 @@ Dynamic Diagrams for Unit Interactions
    .. dd_dyn:: <Title>
       :id: dd_dyn__<Title>
       :security: <YES|NO>
-      :safety: <QM|ASIL_B|ASIL_D>
+      :safety: <QM|ASIL_B>
       :status: <valid|invalid>
       :implements: <link to component requirement id>
       :satisfies: <link to component architecture id>

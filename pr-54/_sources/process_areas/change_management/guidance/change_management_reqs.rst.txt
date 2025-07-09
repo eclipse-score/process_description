@@ -75,7 +75,6 @@ Change Request Attributes
 
       * QM
       * ASIL_B
-      * ASIL_D
 
 .. gd_req:: Change Request attribute: security
    :id: gd_req__change__attr_impact_security
