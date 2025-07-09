@@ -19,7 +19,7 @@ Dependent Failure Analysis
 .. document:: [Your Feature Name] DFA
    :id: doc__feature_name_dfa
    :status: draft
-   :safety: ASIL_D
+   :safety: ASIL_B
    :realizes: wp__sw_feature_dfa
    :tags: template
 

@@ -22,7 +22,7 @@
 .. document:: [Your Feature Name]
    :id: doc__feature_name
    :status: draft
-   :safety: ASIL_D
+   :safety: ASIL_B
    :realizes: wp__feat_request
    :tags: template
 

@@ -124,7 +124,6 @@ Attributes of Architectural Elements
 
       * QM
       * ASIL_B
-      * ASIL_D
 
 .. gd_req:: Architecture attribute: status
    :id: gd_req__arch__attr_status

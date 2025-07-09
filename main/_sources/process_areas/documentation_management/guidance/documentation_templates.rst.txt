@@ -26,5 +26,5 @@ Documentation Templates
    |    :id: doc__<Document Name>
    |    :status: <valid|invalid>
    |    :security: <YES|NO>
-   |    :safety: <QM|ASIL_B|ASIL_D>
+   |    :safety: <QM|ASIL_B>
    |    :realizes: wp__<name of wp in process description>

@@ -118,7 +118,6 @@ Process Requirement Attributes
 
       * QM
       * ASIL_B
-      * ASIL_D
 
 .. gd_req:: Requirement attribute: status
    :id: gd_req__req__attr_status
