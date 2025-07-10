@@ -75,7 +75,7 @@ Process Safety Analysis Attributes
 .. gd_req:: Safety Analysis attribute: mitigation issue
    :id: gd_req__saf__attr_mitigation_issue
    :status: valid
-   :tags: prio_1_automation, attribute, mandatory
+   :tags: prio_1_automation, attribute, optional
    :satisfies: wf__analyse_featarch, wf__analyse_comparch
    :complies: std_req__iso26262__analysis_844, std_req__iso26262__analysis_746, std_req__iso26262__analysis_747
 

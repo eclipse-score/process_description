@@ -515,7 +515,7 @@
                   
   <section id="guidelines">
 <h1>Guidelines<a class="headerlink" href="#guidelines" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-5a506c9f">
+<div class="need_container docutils container" id="SNCB-57c8a8f6">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_guidl table" id="gd_guidl__safety_analysis">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -582,12 +582,13 @@
 <h3>Step-by-Step-approach FMEA:<a class="headerlink" href="#step-by-step-approach-fmea" title="Link to this heading">#</a></h3>
 <p>The analysis is done by using the template <a class="reference internal" href="fmea_templates.html#fmea-templates"><span class="std std-ref">FMEA Templates</span></a> on the feature or component architectural diagrams
 using a diagram specific applied fault model &lt;<a class="reference internal" href="fault_models_guideline.html#gd_guidl__fault_models" title="gd_guidl__fault_models"><em class="xref need">Fault Models (gd_guidl__fault_models)</em></a>&gt;. Apply the fault
-model to the diagram and document the results in the template. If a fault model is not applicable, fill in a short remark in the
-violation cause that it’s not applicable. So it could be shown that the analysis was done and no fault model is applicable.
-The analysis considers single faults that can mitigate a safety requirement.</p>
+model to the diagram and document the results in the template. Use the content of the document <a class="reference internal" href="../../../folder_templates/features/feature_name/safety_analysis/dfa.html#doc__feature_name_dfa" title="doc__feature_name_dfa"><em class="xref need">[Your Feature Name] DFA (doc__feature_name_dfa)</em></a>, <a class="reference internal" href="../../../folder_templates/features/feature_name/safety_analysis/fmea.html#doc__feature_name_fmea" title="doc__feature_name_fmea"><em class="xref need">[Your Feature Name] FMEA (doc__feature_name_fmea)</em></a>,
+<a class="reference internal" href="../../../folder_templates/modules/module_name/component_name/docs/safety_analysis/dfa.html#doc__component_name_dfa" title="doc__component_name_dfa"><em class="xref need">[Your Component Name] DFA (doc__component_name_dfa)</em></a>, <a class="reference internal" href="../../../folder_templates/modules/module_name/component_name/docs/safety_analysis/fmea.html#doc__component_name_fmea" title="doc__component_name_fmea"><em class="xref need">[Your Component Name] FMEA (doc__component_name_fmea)</em></a> to describe e.g. why
+a fault model is not applicable for the diagram.</p>
+<p>The FMEA considers single faults that can mitigate a safety requirement.</p>
 <p><strong>Steps:</strong></p>
 <ul class="simple">
-<li><p>For each dynamic diagram, assign the faults by ID from the fault model and document it as a sphinx-needs directive.</p></li>
+<li><p>For each dynamic diagram, assign the faults by ID from the applicable fault model and document it as a sphinx-needs directive.</p></li>
 <li><p>Document the resulting failure mode and effect and link to a safety requirement that mitigates the violation.</p></li>
 <li><p>Document safety mitigation to avoid or control the failure. If it can’t be shown that a element is completely deterministic and testable, an additional safety mechanisms is needed.</p></li>
 <li><p>The attributes of the template are described in <a class="reference internal" href="safety_analysis_process_reqs.html#process-requirements-safety-analysis-attributes"><span class="std std-ref">Process Safety Analysis Attributes</span></a>.</p></li>
@@ -595,7 +596,7 @@ The analysis considers single faults that can mitigate a safety requirement.</p>
 <li><p>If not, request to update the diagram and the requirements with additional safety mitigation to come to a sufficient outcome by creating an issue.</p></li>
 <li><p>The analysis is finished, if for each identified faults a sufficient mitigation exists.</p></li>
 <li><p>Unless the attribute sufficient is yes, mitigation and argument attribute can be still empty.</p></li>
-<li><p>Continue the analysis until all fault models are checked.</p></li>
+<li><p>Continue the analysis until all applicable fault models are checked.</p></li>
 <li><p>The verification is done by applying the FMEA checklist <a class="reference internal" href="safety_analysis_checklist.html#gd_chklst__safety_analysis" title="gd_chklst__safety_analysis"><em class="xref need">Safety Analysis Checklist T... (gd_chklst__safety_analysis)</em></a>.</p></li>
 </ul>
 <div class="admonition note">
@@ -606,11 +607,12 @@ The analysis considers single faults that can mitigate a safety requirement.</p>
 <section id="step-by-step-approach-dfa">
 <h3>Step-by-Step-approach DFA:<a class="headerlink" href="#step-by-step-approach-dfa" title="Link to this heading">#</a></h3>
 <p>The analysis is done by using the template <a class="reference internal" href="dfa_templates.html#dfa-templates"><span class="std std-ref">DFA Templates</span></a> on the feature or component architectural diagrams using a list of DFA failure initiators &lt;<a class="reference internal" href="dfa_failure_initiators.html#gd_guidl__dfa_failure_initiators" title="gd_guidl__dfa_failure_initiators"><em class="xref need">DFA failure initiators (gd_guidl__dfa_failure_initiators)</em></a>&gt;.
-If a element of the failure initiators is not applicable, fill in a short remark in the violation cause that it’s not applicable.
-So it could be shown that the analysis was done and no fault model is applicable.</p>
+Use the content of the document <a class="reference internal" href="../../../folder_templates/features/feature_name/safety_analysis/dfa.html#doc__feature_name_dfa" title="doc__feature_name_dfa"><em class="xref need">[Your Feature Name] DFA (doc__feature_name_dfa)</em></a>, <a class="reference internal" href="../../../folder_templates/features/feature_name/safety_analysis/fmea.html#doc__feature_name_fmea" title="doc__feature_name_fmea"><em class="xref need">[Your Feature Name] FMEA (doc__feature_name_fmea)</em></a>,
+<a class="reference internal" href="../../../folder_templates/modules/module_name/component_name/docs/safety_analysis/dfa.html#doc__component_name_dfa" title="doc__component_name_dfa"><em class="xref need">[Your Component Name] DFA (doc__component_name_dfa)</em></a>, <a class="reference internal" href="../../../folder_templates/modules/module_name/component_name/docs/safety_analysis/fmea.html#doc__component_name_fmea" title="doc__component_name_fmea"><em class="xref need">[Your Component Name] FMEA (doc__component_name_fmea)</em></a> to describe e.g. why
+a fault model is not applicable for the diagram.</p>
 <p><strong>Steps:</strong></p>
 <ul class="simple">
-<li><p>For each failure initiator assign the violation by ID from the DFA failure initiators and document it as a sphinx-needs directive.</p></li>
+<li><p>For each applicable failure initiator assign the violation by ID from the DFA failure initiators and document it as a sphinx-needs directive.</p></li>
 <li><p>Document the resulting violation causes and effect and link to a safety requirement that mitigates the violation.</p></li>
 <li><p>The attributes of the template are described in <a class="reference internal" href="safety_analysis_process_reqs.html#process-requirements-safety-analysis-attributes"><span class="std std-ref">Process Safety Analysis Attributes</span></a>.</p></li>
 <li><p>Judge if the mitigation is sufficient. If not, request to update the requirements with additional safety mitigation to come to a sufficient outcome.  If it can’t be shown that a element is completely deterministic and testable, an additional safety mechanisms is needed.</p></li>

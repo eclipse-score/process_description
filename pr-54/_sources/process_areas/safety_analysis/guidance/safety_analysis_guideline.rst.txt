@@ -49,13 +49,15 @@ Step-by-Step-approach FMEA:
 
 The analysis is done by using the template :ref:`FMEA_templates` on the feature or component architectural diagrams
 using a diagram specific applied fault model <:need:`gd_guidl__fault_models`>. Apply the fault
-model to the diagram and document the results in the template. If a fault model is not applicable, fill in a short remark in the
-violation cause that it's not applicable. So it could be shown that the analysis was done and no fault model is applicable.
-The analysis considers single faults that can mitigate a safety requirement.
+model to the diagram and document the results in the template. Use the content of the document :need:`doc__feature_name_dfa`, :need:`doc__feature_name_fmea`,
+:need:`doc__component_name_dfa`, :need:`doc__component_name_fmea` to describe e.g. why
+a fault model is not applicable for the diagram.
+
+The FMEA considers single faults that can mitigate a safety requirement.
 
 **Steps:**
 
-* For each dynamic diagram, assign the faults by ID from the fault model and document it as a sphinx-needs directive.
+* For each dynamic diagram, assign the faults by ID from the applicable fault model and document it as a sphinx-needs directive.
 * Document the resulting failure mode and effect and link to a safety requirement that mitigates the violation.
 * Document safety mitigation to avoid or control the failure. If it can't be shown that a element is completely deterministic and testable, an additional safety mechanisms is needed.
 * The attributes of the template are described in :ref:`process_requirements_safety_analysis_attributes`.
@@ -63,7 +65,7 @@ The analysis considers single faults that can mitigate a safety requirement.
 * If not, request to update the diagram and the requirements with additional safety mitigation to come to a sufficient outcome by creating an issue.
 * The analysis is finished, if for each identified faults a sufficient mitigation exists.
 * Unless the attribute sufficient is yes, mitigation and argument attribute can be still empty.
-* Continue the analysis until all fault models are checked.
+* Continue the analysis until all applicable fault models are checked.
 * The verification is done by applying the FMEA checklist :need:`gd_chklst__safety_analysis`.
 
 .. note:: If there are changes they have to be analysed with a impact analysis :need:`gd_temp__change__impact_analysis`. If needed the safety analysis has to be updated accordingly. Therefore all necessary steps have to be repeated.
@@ -72,12 +74,13 @@ Step-by-Step-approach DFA:
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The analysis is done by using the template :ref:`dfa_templates` on the feature or component architectural diagrams using a list of DFA failure initiators <:need:`gd_guidl__dfa_failure_initiators`>.
-If a element of the failure initiators is not applicable, fill in a short remark in the violation cause that it's not applicable.
-So it could be shown that the analysis was done and no fault model is applicable.
+Use the content of the document :need:`doc__feature_name_dfa`, :need:`doc__feature_name_fmea`,
+:need:`doc__component_name_dfa`, :need:`doc__component_name_fmea` to describe e.g. why
+a fault model is not applicable for the diagram.
 
 **Steps:**
 
-* For each failure initiator assign the violation by ID from the DFA failure initiators and document it as a sphinx-needs directive.
+* For each applicable failure initiator assign the violation by ID from the DFA failure initiators and document it as a sphinx-needs directive.
 * Document the resulting violation causes and effect and link to a safety requirement that mitigates the violation.
 * The attributes of the template are described in :ref:`process_requirements_safety_analysis_attributes`.
 * Judge if the mitigation is sufficient. If not, request to update the requirements with additional safety mitigation to come to a sufficient outcome.  If it can't be shown that a element is completely deterministic and testable, an additional safety mechanisms is needed.
