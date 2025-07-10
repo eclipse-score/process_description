@@ -18,7 +18,7 @@ Requirements
 .. document:: [Your Feature Name] Requirements
    :id: doc__feature_name_requirements
    :status: draft
-   :safety: ASIL_D
+   :safety: ASIL_B
    :realizes: wp__requirements__feat
    :tags: template
 
@@ -36,7 +36,7 @@ Requirements
 .. stkh_req:: Template
    :id: stkh_req__requirements__template
    :reqtype: Non-Functional
-   :safety: ASIL_D
+   :safety: ASIL_B
    :rationale: Exists just for the template example
    :status: invalid
 
@@ -49,7 +49,7 @@ Requirements
    :id: feat_req__feature_name__some_title
    :reqtype: Process
    :security: YES
-   :safety: ASIL_D
+   :safety: ASIL_B
    :satisfies: stkh_req__requirements__template
    :status: invalid
 
@@ -61,7 +61,7 @@ Requirements
    :id: aou_req__feature_name__some_other_title
    :reqtype: Process
    :security: YES
-   :safety: ASIL_D
+   :safety: ASIL_B
    :status: invalid
 
    The Feature User shall do xyz to use the feature safely

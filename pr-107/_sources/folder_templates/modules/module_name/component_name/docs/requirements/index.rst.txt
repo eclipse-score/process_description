@@ -18,7 +18,7 @@ Requirements
 .. document:: [Your Component Name] Requirements
    :id: doc__component_name_requirements
    :status: draft
-   :safety: ASIL_D
+   :safety: ASIL_B
    :realizes: wp__requirements__comp
    :tags: template
 
@@ -37,7 +37,7 @@ Requirements
    :id: comp_req__component_name__some_title
    :reqtype: Process
    :security: YES
-   :safety: ASIL_D
+   :safety: ASIL_B
    :satisfies: feat_req__feature_name__some_title
    :status: invalid
 
@@ -56,7 +56,7 @@ Requirements
    :id: aou_req__component_name__next_title
    :reqtype: Process
    :security: YES
-   :safety: ASIL_D
+   :safety: ASIL_B
    :status: invalid
 
    The Component User shall do xyz to use the component safely

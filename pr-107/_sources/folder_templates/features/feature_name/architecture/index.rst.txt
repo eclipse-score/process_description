@@ -20,7 +20,7 @@ Feature Architecture
 .. document:: [Your Feature Name] Architecture
    :id: doc__feature_name_architecture
    :status: draft
-   :safety: ASIL_D
+   :safety: ASIL_B
    :realizes: wp__feature_arch
    :tags: template
 
@@ -69,7 +69,7 @@ Static Architecture
 .. feat_arc_sta:: Static View
    :id: feat_arc_sta__feature_name__static_view
    :security: YES
-   :safety: ASIL_D
+   :safety: ASIL_B
    :status: invalid
    :fulfils: feat_req__feature_name__some_title
    :includes: logic_arc_int__feature_name__interface_name
@@ -86,7 +86,7 @@ Dynamic Architecture
 .. feat_arc_dyn:: Dynamic View
    :id: feat_arc_dyn__feature_name__dynamic_view
    :security: YES
-   :safety: ASIL_D
+   :safety: ASIL_B
    :status: invalid
    :fulfils: feat_req__feature_name__some_title
 
@@ -98,7 +98,7 @@ Logical Interfaces
 .. logic_arc_int:: Interface Name
    :id: logic_arc_int__feature_name__interface_name
    :security: YES
-   :safety: ASIL_D
+   :safety: ASIL_B
    :status: invalid
 
    .. needarch::
@@ -110,7 +110,7 @@ Logical Interfaces
 .. logic_arc_int_op:: Operation
    :id: logic_arc_int_op__feature_name__operation
    :security: YES
-   :safety: ASIL_D
+   :safety: ASIL_B
    :status: invalid
    :included_by: logic_arc_int__feature_name__interface_name
 
@@ -138,7 +138,7 @@ They will be replaced by linking the proper SW component definitions in the used
 
 .. comp_arc_sta:: Component Name
    :id: comp_arc_sta__feature_name__component_name
-   :safety: ASIL_D
+   :safety: ASIL_B
    :security: YES
    :status: invalid
    :implements: logic_arc_int__feature_name__interface_name

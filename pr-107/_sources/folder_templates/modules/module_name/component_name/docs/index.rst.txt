@@ -22,7 +22,7 @@
 .. document:: [Your Component Name]
    :id: doc__component_name
    :status: draft
-   :safety: ASIL_D
+   :safety: ASIL_B
    :realizes: wp__cmpt_request
    :tags: template
 

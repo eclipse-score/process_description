@@ -174,7 +174,7 @@ Following attributes need to be filled manually for each requirement:
        For *Stakeholder Requirements* a rationale which provides some more background infos shall be provided.
        For any other requirement the reasoning can be deduced from the top level requirement.
    * - Safety
-     - This attribute describes the impact of the requirement on functional safety. Currently only following values are defined [QM, ASIL_B, ASIL_D]. Other values are not required at the moment as *ASIL decomposition* is not used so far.
+     - This attribute describes the impact of the requirement on functional safety. Currently only following values are defined [QM, ASIL_B]. Other values are not required at the moment as *ASIL decomposition* is not used so far.
    * - Security
      - This attribute describes if the requirement has any impact on security of the platform.
    * - Requirements Type
