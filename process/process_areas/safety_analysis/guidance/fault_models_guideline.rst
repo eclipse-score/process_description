@@ -23,10 +23,10 @@ Fault Models
   | Fault Model for sequence diagrams
 
 
-.. note:: Use the fault models to ensure a structured analysis. If a fault model doesn't apply, please fill in a short description in the violation cause of the analysis so it could be recognized that the analysis is done. If there are additional fault models needed, please enlarge the list of fault models.
+.. note:: Use the applicable fault models to ensure a structured analysis. If there are additional fault models needed, please enlarge the list of fault models.
 
 
-.. note:: A ASIL related message is trustable in that manner that it is not corrupted, repeated, lost, delayed, masqueraded or addressed incorrectly.
+.. note:: An ASIL related message is trustable in that manner that it is not corrupted, repeated, lost, delayed, masqueraded or addressed incorrectly.
 
 
 Fault Models for sequence diagrams

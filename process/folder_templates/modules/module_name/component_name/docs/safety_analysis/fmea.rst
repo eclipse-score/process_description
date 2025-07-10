@@ -23,6 +23,8 @@ Safety Analysis : FMEA
    :realizes: wp__sw_component_safety_analysis
    :tags: template
 
+.. note:: Use the content of the document to describe e.g. why a fault model is not applicable for the diagram.
+
 .. attention::
     The above directive must be updated according to your Component.
 
@@ -42,7 +44,7 @@ Failure Mode List
       :id: comp_saf_fmea__<Component>__<Element descriptor>
       :violation_id: <ID from fault model Fault Models (gd_guidl__fault_models)>
       :violation_cause: “description of failure effect of the fault model on the element”
-      :mitigation: <ID from Component Requirement | ID from AoU Component Requirement>
+      :mitigates: <ID from Component Requirement | ID from AoU Component Requirement>
       :mitigation_issue: <ID from Issue Tracker>
       :sufficient: <yes|no>
       :status: <valid|invalid>

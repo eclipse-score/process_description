@@ -23,6 +23,8 @@ Safety Analysis : FMEA
    :realizes: wp__feature_safety_analysis
    :tags: template
 
+.. note:: Use the content of the document to describe e.g. why a fault model is not applicable for the diagram.
+
 .. attention::
     The above directive must be updated according to your Feature.
 
@@ -42,7 +44,7 @@ Failure Mode List
       :id: feat_saf_fmea__<Feature>__<Element descriptor>
       :violation_id: <ID from fault model Fault Models (gd_guidl__fault_models)>
       :violation_cause: “description of failure effect of the fault model on the element”
-      :mitigation: <ID from Feature Requirement | ID from AoU Feature Requirement>
+      :mitigates: <ID from Feature Requirement | ID from AoU Feature Requirement>
       :mitigation_issue: <ID from Issue Tracker>
       :sufficient: <yes|no>
       :status: <valid|invalid>

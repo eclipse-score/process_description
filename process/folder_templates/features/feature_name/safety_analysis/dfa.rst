@@ -23,6 +23,8 @@ Dependent Failure Analysis
    :realizes: wp__feature_dfa
    :tags: template
 
+.. note:: Use the content of the document to describe e.g. why a fault model is not applicable for the diagram.
+
 .. attention::
     The above directive must be updated according to your Feature.
 
@@ -39,9 +41,9 @@ Dependent Failure Intitiators
   .. feat_saf_dfa:: <Element descriptor>
       :verifies: <Feature architecture>
       :id: feat_saf_DFA__<Feature>__<Element descriptor>
-      :violation_id: <ID from DFA failure initiators DFA failure initiators (gd_guidl__dfa_failure_initiators)>
+      :violation_id: <ID from DFA failure initiators (gd_guidl__dfa_failure_initiators)>
       :violation_cause: “description of failure effect of the failure initiator on the element”
-      :mitigation: <ID from Feature Requirement | ID from AoU Feature Requirement>
+      :mitigates: <ID from Feature Requirement | ID from AoU Feature Requirement>
       :mitigation_issue: <ID from Issue Tracker>
       :sufficient: <yes|no>
       :status: <valid|invalid>

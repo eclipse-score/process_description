@@ -23,7 +23,7 @@ DFA failure initiators
   :complies: std_wp__iso26262__software_751, std_wp__iso26262__software_753
 
 
-.. note:: Use the failure initiators to ensure a structured analysis. If a failure doesn't apply, please fill in a short description in the violation cause of the analysis so it could be recognized that the analysis is done. If there are additional failure initiators needed, please enlarge the list of fault models.
+.. note:: Use all applicable failure initiators to ensure a structured analysis. If there are additional failure initiators needed, please enlarge the list of fault models.
 
 .. note:: An ASIL related message is trustable in that manner that it is not corrupted, repeated, lost, delayed, masqueraded or addressed incorrectly.
 
@@ -110,7 +110,7 @@ DFA failure initiators
     -
     - Medium
   * - CO_01_05
-    - Asymmetric information sent from a sender to multiple receivers, so that not all defined receivers have the same information's
+    - Asymmetric information sent from a sender to multiple receivers, so that not all defined receivers have the same information
     -
     - Medium
   * - CO_01_06

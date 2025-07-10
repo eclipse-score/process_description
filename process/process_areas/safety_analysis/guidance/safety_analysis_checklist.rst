@@ -51,7 +51,7 @@ Checklist for Safety Analysis
       * - REQ_01_03
         - Were the failure initiators / fault models applied?
         - see :need:`gd_guidl__dfa_failure_initiators` / :need:`gd_guidl__fault_models`
-        - The items of the failure initiators / fault models are used to ensure a structured analysis.
+        - The applicable items of the failure initiators / fault models are used to ensure a structured analysis.
         - <yes|no>
         -
       * - REQ_01_04
