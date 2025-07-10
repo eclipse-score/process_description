@@ -25,7 +25,7 @@ DFA failure initiators
 
 .. note:: Use the failure initiators to ensure a structured analysis. If a failure doesn't apply, please fill in a short description in the violation cause of the analysis so it could be recognized that the analysis is done. If there are additional failure initiators needed, please enlarge the list of fault models.
 
-.. note:: A ASIL related message is trustable in that manner that it is not corrupted, repeated, lost, delayed, masqueraded or addressed incorrectly.
+.. note:: An ASIL related message is trustable in that manner that it is not corrupted, repeated, lost, delayed, masqueraded or addressed incorrectly.
 
 
 **Purpose**

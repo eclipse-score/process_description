@@ -434,6 +434,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../safety_management/index.html">Safety Management</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tool_management/index.html">Tool Management</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../verification/index.html">Verification</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../process_management/index.html">Process Management</a></li>
 </ul>
 </div>
 </nav></div>
@@ -499,7 +500,7 @@
                   
   <section id="concept-description">
 <h1>Concept Description<a class="headerlink" href="#concept-description" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-ec8f0e92">
+<div class="need_container docutils container" id="SNCB-c8c79b33">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_doc_concept table" id="doc_concept__safety__analysis">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -543,16 +544,15 @@
 </table>
 </div>
 </div>
-<p>This section discusses a concept for safety analyses. As methods for safety analysis were used DFA (Dependent Failure Analysis)
+<p>This section discusses a concept for safety analyses. As methods for safety analysis are used DFA (Dependent Failure Analysis)
 and FMEA (Failure Mode and Effects Analysis). Inputs for this concept are the requirements of ISO26262 Part 6 Chapter 7 and Part 9 Chapter 7 and 8.</p>
 <p>The objectives of the DFA are to show that the required freedom from interference is achieved. Therefore the potential causes or initiators are
 analysed. The DFA is focussed on common cause failures. With a DFA architectural features are analysed if</p>
 <blockquote>
 <div><div class="line-block">
 <div class="line">- there are redundant elements (similar or non-similar)</div>
-<div class="line">- identical software is implemented in different features or components</div>
 <div class="line">- failures can violate a functions and the safety mechanisms for the function</div>
-<div class="line">- failures an violate partitions of features or components</div>
+<div class="line">- failures can violate components</div>
 </div>
 </div></blockquote>
 <p>With the DFA shall be shown that the freedom from interference is achieved by the absence of common cause failures. Common cause failures
@@ -645,11 +645,19 @@ additional safety mitigation is needed.</p>
 <span id="examples-fmea-dfa"></span><h3>Examples for FMEA and DFA at feature level<a class="headerlink" href="#examples-for-fmea-and-dfa-at-feature-level" title="Link to this heading">#</a></h3>
 <p><strong>FMEA:</strong></p>
 <p>The dynamic architecture is analysed with the FMEA. Therefore the template <a class="reference internal" href="guidance/fmea_templates.html#fmea-templates"><span class="std std-ref">FMEA Templates</span></a> is used.</p>
-<blockquote>
-<div></div></blockquote>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>argument is inside the ‘content’. Therefore content is mandatory</p>
+<div class="line-block">
+<div class="line">.. feat_saf_fmea:: &lt;Element descriptor&gt;</div>
+<div class="line-block">
+<div class="line">:verifies: &lt;Feature architecture&gt;</div>
+<div class="line">:id: feat_saf_fmea__&lt;Feature&gt;__&lt;Element descriptor&gt;</div>
+<div class="line">:violation_id: &lt;ID from fault model <a class="reference internal" href="guidance/fault_models_guideline.html#gd_guidl__fault_models" title="gd_guidl__fault_models"><em class="xref need">Fault Models (gd_guidl__fault_models)</em></a>&gt;</div>
+<div class="line">:violation_cause: “description of failure effect of the fault model on the element”</div>
+<div class="line">:mitigation: &lt;ID from Feature Requirement | ID from AoU Feature Requirement&gt;</div>
+<div class="line">:mitigation_issue: &lt;ID from Issue Tracker&gt;</div>
+<div class="line">:sufficient: &lt;yes|no&gt;</div>
+<div class="line">:status: &lt;valid|invalid&gt;
+.. note::   argument is inside the ‘content’. Therefore content is mandatory</div>
+</div>
 </div>
 <p>Use the fault models <a class="reference internal" href="guidance/fault_models_guideline.html#gd_guidl__fault_models" title="gd_guidl__fault_models"><em class="xref need">Fault Models (gd_guidl__fault_models)</em></a> to ensure a structured analysis. If a fault model doesn’t apply,
 please fill in a short description in the violation cause of the analysis so it could be recognized that the analysis
@@ -657,20 +665,84 @@ is done. If there are additional fault models needed, please enlarge the list of
 <p>The dynamic architecture for
 “check if key contains default value” is used as an example. The attributes of the template (<a class="reference internal" href="guidance/safety_analysis_process_reqs.html#process-requirements-safety-analysis-attributes"><span class="std std-ref">Process Safety Analysis Attributes</span></a>)
 shall be filled in as follows:</p>
+<div class="line-block">
+<div class="line">.. feat_saf_fmea:: Persistency</div>
+<div class="line-block">
+<div class="line">:verifies: feat_arc_dyn__persistency__check_key_default, feat_arc_dyn__persistency__delete_key, feat_arc_dyn__persistency__flush, feat_arc_dyn__persistency__read_key, feat_arc_dyn__persistency__read_from_storage, feat_arc_dyn__persistency__write_key, feat_arc_dyn__persistency__snapshot_restore</div>
+<div class="line">:id: feat_saf_FMEA__persistency__message_nreived</div>
+<div class="line">:violation_id: MF_01_01</div>
+<div class="line">:violation_cause: Message is not received.</div>
+<div class="line">:mitigates: aou_req__persistency__error_handling</div>
+<div class="line">:sufficient: yes</div>
+<div class="line">:status: valid</div>
+<div class="line"><br /></div>
+<div class="line">User is not able to use the feature. Middleware cant be used.</div>
+</div>
+</div>
+<div class="line-block">
+<div class="line">.. feat_saf_fmea:: Persistency</div>
+<div class="line-block">
+<div class="line">:verifies: feat_arc_dyn__persistency__check_key_default, feat_arc_dyn__persistency__delete_key, feat_arc_dyn__persistency__flush, feat_arc_dyn__persistency__read_key, feat_arc_dyn__persistency__read_from_storage, feat_arc_dyn__persistency__write_key, feat_arc_dyn__persistency__snapshot_restore</div>
+<div class="line">:id: feat_saf_FMEA__persistency__late_message</div>
+<div class="line">:violation_id: MF_01_02</div>
+<div class="line">:violation_cause: message received too late.</div>
+<div class="line">:mitigates: aou_req__persistency__error_handling</div>
+<div class="line">:sufficient: yes</div>
+<div class="line">:status: valid</div>
+<div class="line"><br /></div>
+<div class="line">User is not able to use the feature. Middleware cant be used.</div>
+</div>
+</div>
 <p>The FMEA is finished, if all fault models are checked and for each identified fault a sufficient mitigation exists. For the validation of the
 FMEA the checklist <a class="reference internal" href="guidance/safety_analysis_checklist.html#gd_chklst__safety_analysis" title="gd_chklst__safety_analysis"><em class="xref need">Safety Analysis Checklist T... (gd_chklst__safety_analysis)</em></a> shall be used.</p>
 <p><strong>DFA:</strong></p>
 <p>The static architecture is analysed with the DFA. Therefore the template <a class="reference internal" href="guidance/dfa_templates.html#dfa-templates"><span class="std std-ref">DFA Templates</span></a> is used. The goal is to show that
 the freedom from interference is achieved.</p>
-<blockquote>
-<div></div></blockquote>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>argument is inside the ‘content’. Therefore content is mandatory</p>
+<div class="line-block">
+<div class="line">.. feat_saf_dfa:: &lt;Element descriptor&gt;</div>
+<div class="line-block">
+<div class="line">:verifies: &lt;Feature architecture&gt;</div>
+<div class="line">:id: feat_saf_DFA__&lt;Feature&gt;__&lt;Element descriptor&gt;</div>
+<div class="line">:violation_id: &lt;ID from DFA failure initiators <a class="reference internal" href="guidance/dfa_failure_initiators.html#gd_guidl__dfa_failure_initiators" title="gd_guidl__dfa_failure_initiators"><em class="xref need">DFA failure initiators (gd_guidl__dfa_failure_initiators)</em></a>&gt;</div>
+<div class="line">:violation_cause: “description of failure effect of the failure initiator on the element”</div>
+<div class="line">:mitigates: &lt;ID from Feature Requirement | ID from AoU Feature Requirement&gt;</div>
+<div class="line">:mitigation_issue: &lt;ID from Issue Tracker&gt;</div>
+<div class="line">:sufficient: &lt;yes|no&gt;</div>
+<div class="line">:status: &lt;valid|invalid&gt;
+.. note::   argument is inside the ‘content’. Therefore content is mandatory</div>
+</div>
 </div>
 <p>Use the DFA failure initiators <a class="reference internal" href="guidance/dfa_failure_initiators.html#gd_guidl__dfa_failure_initiators" title="gd_guidl__dfa_failure_initiators"><em class="xref need">DFA failure initiators (gd_guidl__dfa_failure_initiators)</em></a> to ensure a structured analysis. If a failure initiator doesn’t apply,
 please fill in a short description in the violation cause of the analysis so it could be recognized that the analysis
 is done. If there are additional failure initiators needed, please enlarge the list of failure initiators.</p>
+<div class="line-block">
+<div class="line">.. feat_saf_dfa:: Persistency</div>
+<div class="line-block">
+<div class="line">:verifies: feat_arc_sta__persistency__static</div>
+<div class="line">:id: feat_saf_dfa__persistency__config</div>
+<div class="line">:violation_id: SR_01_07</div>
+<div class="line">:violation_cause: Configuration data. Return values might be falsified.</div>
+<div class="line">:mitigates: feat_req__persistency__integrity_check</div>
+<div class="line">:sufficient: yes</div>
+<div class="line">:status: valid</div>
+<div class="line"><br /></div>
+<div class="line">Integrity check will fail, so the failure will be detected.</div>
+</div>
+</div>
+<div class="line-block">
+<div class="line">.. feat_saf_dfa:: Persistency</div>
+<div class="line-block">
+<div class="line">:verifies: feat_arc_sta__persistency__static</div>
+<div class="line">:id: feat_saf_dfa__persistency__arg_passed</div>
+<div class="line">:violation_id: CO_01_01</div>
+<div class="line">:violation_cause: Information passed via argument through a function call, or via writing/reading a variable being global to the two software functions (data flow)</div>
+<div class="line">:mitigates: feat_req__persistency__cpp_rust_interop</div>
+<div class="line">:sufficient: yes</div>
+<div class="line">:status: valid</div>
+<div class="line"><br /></div>
+<div class="line">Failure initiator not applicable at persistency, so no mitigates is needed.</div>
+</div>
+</div>
 <p>The DFA is finished, if all fault models are checked and for each identified fault a sufficient mitigation exists. For the validation of the
 DFA the checklist <a class="reference internal" href="guidance/safety_analysis_checklist.html#gd_chklst__safety_analysis" title="gd_chklst__safety_analysis"><em class="xref need">Safety Analysis Checklist T... (gd_chklst__safety_analysis)</em></a> shall be used.</p>
 </section>
