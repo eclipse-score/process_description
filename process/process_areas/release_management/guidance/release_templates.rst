@@ -32,6 +32,12 @@ Templates
    |  This document provides an overview of the changes, improvements, and bug fixes included in the platform release version vX.Y.Z
    |  as compared to the platform origin release (which is usually the previous release).
    |
+   |  Disclaimer
+   |  ----------
+   |  This release note does not "release for production", as it does not come with a safety argumentation and a performed safety assessment.
+   |  The work products compiled in the safety package are created with care according to a process satisfying standards, but the S-CORE project,
+   |  being a non-profit and open source organization, can not take over any liability for its content.
+   |
    |  New Features
    |  ------------
    |  - **Feature 1**: Brief description of the new feature.
@@ -99,10 +105,10 @@ Templates
    | -------------------------------------------------------
    |
    | 1. Link this issue to the correct milestone and assign to the technical lead
-   | 2. Check respective Verification report on the release candidate's github tag
+   | 2. Check respective Verification report on the release candidate's baseline
    | 3. Check bugfixes or justify failed tests
    | 4. Check the safety package completeness (includes "valid" documents and work products status, supported by the safety manager)
    | 5. Create/update the release note (pull request to close this issue)
-   | 6. Document safety manager's "recommendation to release" by asking his GitHub review approval of the release note
-   | 7. Create the "release" in GitHub according to :need:`gd_guidl__rel_management`
+   | 6. Document project manager's consent by asking review approval of the release note
+   | 7. Create the "release" in version management tool according to :need:`gd_guidl__rel_management`
    | 8. Merge PR and close this issue to complete the release

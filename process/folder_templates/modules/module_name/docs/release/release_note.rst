@@ -46,6 +46,12 @@ Release Note
 | This document provides an overview of the changes, improvements, and bug fixes included in the software module release version vX.Y.Z
 |  as compared to the module's origin release (which is usually the previous release).
 |
+|  Disclaimer
+|  ----------
+|  This release note does not "release for production", as it does not come with a safety argumentation and a performed safety assessment.
+|  The work products compiled in the safety package are created with care according to a process satisfying standards, but the S-CORE project,
+|  being a non-profit and open source organization, can not take over any liability for its content.
+|
 | New Features
 | ------------
 |
