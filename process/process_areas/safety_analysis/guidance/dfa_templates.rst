@@ -27,7 +27,7 @@ DFA Templates
    |    :id: feat_saf_DFA__<Feature>__<Element descriptor>
    |    :violation_id: <ID from DFA failure initiators :need:`gd_guidl__dfa_failure_initiators`>
    |    :violation_cause: "description of failure effect of the failure initiator on the element"
-   |    :mitigation: <ID from Feature Requirement | ID from AoU Feature Requirement>
+   |    :mitigates: <ID from Feature Requirement | ID from AoU Feature Requirement>
    |    :mitigation_issue: <ID from Issue Tracker>
    |    :sufficient: <yes|no>
    |    :status: <valid|invalid>
@@ -44,7 +44,7 @@ DFA Templates
    |    :id: feat_saf_DFA__<Feature>__<Element descriptor>
    |    :violation_id: <ID from DFA failure initiators :need:`gd_guidl__dfa_failure_initiators`>
    |    :violation_cause: "description of failure effect of the failure initiator on the element"
-   |    :mitigation: <ID from Feature Requirement | ID from AoU Feature Requirement>
+   |    :mitigates: <ID from Feature Requirement | ID from AoU Feature Requirement>
    |    :mitigation_issue: <ID from Issue Tracker>
    |    :sufficient: <yes|no>
    |    :status: <valid|invalid>
@@ -61,7 +61,7 @@ DFA Templates
    |    :id: comp_saf_DFA__<Component>__<Element descriptor>
    |    :violation_id: <ID from DFA failure initiators :need:`gd_guidl__dfa_failure_initiators`>
    |    :violation_cause: "description of failure effect of the failure initiator on the element"
-   |    :mitigation: <ID from Component Requirement | ID from AoU Component Requirement>
+   |    :mitigates: <ID from Component Requirement | ID from AoU Component Requirement>
    |    :mitigation_issue: <ID from Issue Tracker>
    |    :sufficient: <yes|no>
    |    :status: <valid|invalid>
