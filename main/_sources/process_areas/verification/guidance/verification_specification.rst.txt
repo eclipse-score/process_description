@@ -122,4 +122,4 @@ A example for a bad test description could be:
 Additional information can also be found in :need:`gd_guidl__verification_guide`.
 
 The specification is part of the test implementation and has to comply to the requirements
-specified in :need:`gd_req__link_tests`.
+specified in :need:`gd_req__verification__link_tests`.

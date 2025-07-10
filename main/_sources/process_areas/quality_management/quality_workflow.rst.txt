@@ -103,7 +103,7 @@ Workflows
    :supported_by: rl__safety_manager, rl__security_manager
    :input: wp__qms_plan, wp__platform_sw_release_note, wp__module_sw_release_note, wp__process_impr_report, wp__qms_report, wp__verification__platform_ver_report, wp__verification__module_ver_report, wp__training_path
    :output: wp__issue_track_system
-   :contains: gd_guidl__qlm_plan_definitions, gd_chklst__review_checklist, gd_req__qlm_report
+   :contains: gd_guidl__qlm_plan_definitions, gd_chklst__review_checklist, gd_req__quality__report
    :has: doc_concept__quality__process, doc_getstrt__quality__process
 
    | The quality manager :need:`rl__quality_manager` is responsible for the monitoring of the activities against the quality management plan.

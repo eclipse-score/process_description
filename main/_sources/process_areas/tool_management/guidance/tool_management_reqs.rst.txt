@@ -25,7 +25,7 @@ Tool Verification Report Attributes
 .. gd_req:: Tool attribute: UID
    :id: gd_req__tool__attr_uid
    :status: valid
-   :tags: tool_management, attribute, mandatory
+   :tags: done_automation, tool_management, attribute, mandatory
    :satisfies: wf__tool__create_tool_verification_report
    :complies: std_req__iso26262__support_1141, std_req__aspice_40__SUP-8-BP1
 
@@ -34,7 +34,7 @@ Tool Verification Report Attributes
 .. gd_req:: Tool attribute: status
    :id: gd_req__tool__attr_status
    :status: valid
-   :tags: tool_management, attribute, mandatory
+   :tags: prio_1_automation, tool_management, attribute, mandatory
    :satisfies: wf__tool__create_tool_verification_report
    :complies: std_req__iso26262__support_1141, std_req__aspice_40__SUP-8-BP1
 
@@ -49,7 +49,7 @@ Tool Verification Report Attributes
 .. gd_req:: Tool attribute:: safety affected
    :id: gd_req__tool__attr_safety_affected
    :status: valid
-   :tags: tool_management, attribute, mandatory
+   :tags: manual, tool_management, attribute, mandatory
    :satisfies: wf__tool__create_tool_verification_report
    :complies: std_req__iso26262__support_1141, std_req__aspice_40__SUP-8-BP1
 
@@ -59,9 +59,9 @@ Tool Verification Report Attributes
       * No
 
 .. gd_req:: Tool attribute:: security affected
-   :id: gd_req__tool_attr_security_affected
+   :id: gd_req__tool__attr_security_affected
    :status: valid
-   :tags: tool_management, attribute, mandatory
+   :tags: manual, tool_management, attribute, mandatory
    :satisfies: wf__tool__create_tool_verification_report
    :complies: std_req__isosae21434__org_management_5451, std_req__aspice_40__SUP-8-BP1
 
@@ -77,7 +77,7 @@ Tool Verification Report Checks
 .. gd_req:: Tool Management mandatory attributes provided
    :id: gd_req__tool__check_mandatory
    :status: valid
-   :tags: tool_management, attribute, check
+   :tags: prio_1_automation, tool_management, attribute, check
    :satisfies: wf__tool__create_tool_verification_report
    :complies: std_req__aspice_40__SUP-8-BP1
 

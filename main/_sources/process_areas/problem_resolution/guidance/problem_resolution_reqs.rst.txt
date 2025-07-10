@@ -25,7 +25,7 @@ Problem Attributes
 .. gd_req:: Problem attribute: UID
    :id: gd_req__problem__attr_uid
    :status: valid
-   :tags: problem_resolution, attribute, mandatory
+   :tags: done_automation, problem_resolution, attribute, mandatory
    :satisfies: wf__problem__create_pr, wf__problem__analyse_pr, wf__problem__initiate_monitor_pr, wf__problem__close_pr
    :complies: std_req__aspice_40__SUP-9-BP1
 
@@ -34,7 +34,7 @@ Problem Attributes
 .. gd_req:: Problem attribute: status
    :id: gd_req__problem__attr_status
    :status: valid
-   :tags: problem_resolution, attribute, mandatory
+   :tags: manual, problem_resolution, attribute, mandatory
    :satisfies: wf__problem__create_pr, wf__problem__analyse_pr, wf__problem__initiate_monitor_pr, wf__problem__close_pr
    :complies: std_req__aspice_40__SUP-9-BP1
 
@@ -49,7 +49,7 @@ Problem Attributes
 .. gd_req:: Problem attribute: title
    :id: gd_req__problem__attr_title
    :status: valid
-   :tags: problem_resolution, attribute, mandatory
+   :tags: manual, problem_resolution, attribute, mandatory
    :satisfies: wf__problem__create_pr, wf__problem__analyse_pr, wf__problem__initiate_monitor_pr, wf__problem__close_pr
    :complies: std_req__aspice_40__SUP-9-BP1
 
@@ -58,7 +58,7 @@ Problem Attributes
 .. gd_req:: Problem attribute: description
    :id: gd_req__problem__attr_impact_description
    :status: valid
-   :tags: problem_resolution, attribute, mandatory
+   :tags: manual, problem_resolution, attribute, mandatory
    :satisfies: wf__problem__create_pr, wf__problem__analyse_pr, wf__problem__initiate_monitor_pr, wf__problem__close_pr
    :complies: std_req__aspice_40__SUP-9-BP1, std_req__aspice_40__SUP-9-BP2
 
@@ -72,16 +72,16 @@ Problem Attributes
 .. gd_req:: Problem attribute: analysis results
    :id: gd_req__problem__attr_anaylsis_results
    :status: valid
-   :tags: problem_resolution, attribute, mandatory
+   :tags: manual, problem_resolution, attribute, mandatory
    :satisfies: wf__problem__create_pr, wf__problem__analyse_pr, wf__problem__initiate_monitor_pr, wf__problem__close_pr
    :complies: std_req__aspice_40__SUP-9-BP2
 
-   Record analysis results (e.g. reason for rejection, safety, security, quality impact)
+   Record analysis results (e.g. reason for rejection, safety, security, quality impact) as comments.
 
 .. gd_req:: Problem attribute: stakeholder
    :id: gd_req__problem__attr_stakeholder
    :status: valid
-   :tags: problem_resolution, attribute, mandatory
+   :tags: prio_1_automation, problem_resolution, attribute, mandatory
    :satisfies: wf__problem__create_pr, wf__problem__analyse_pr, wf__problem__initiate_monitor_pr, wf__problem__close_pr
    :complies: std_req__aspice_40__SUP-9-BP2, std_req__aspice_40__SUP-9-BP5
 
@@ -91,7 +91,7 @@ Problem Attributes
 .. gd_req:: Problem attribute: classification
    :id: gd_req__problem__attr_classification
    :status: valid
-   :tags: problem_resolution, attribute, mandatory
+   :tags: prio_1_automation, problem_resolution, attribute, mandatory
    :satisfies: wf__problem__create_pr, wf__problem__analyse_pr, wf__problem__initiate_monitor_pr, wf__problem__close_pr
    :complies: std_req__aspice_40__SUP-9-BP1, std_req__aspice_40__SUP-9-BP2
 
@@ -105,7 +105,7 @@ Problem Attributes
 .. gd_req:: Problem attribute: category
    :id: gd_req__problem__attr_category
    :status: valid
-   :tags: problem_resolution, attribute, mandatory
+   :tags: prio_3_automation, problem_resolution, attribute, mandatory
    :satisfies: wf__problem__create_pr, wf__problem__analyse_pr, wf__problem__initiate_monitor_pr, wf__problem__close_pr
    :complies: std_req__aspice_40__SUP-9-BP1
 
@@ -117,7 +117,7 @@ Problem Attributes
 .. gd_req:: Problem attribute:: safety affected
    :id: gd_req__problem__attr_safety_affected
    :status: valid
-   :tags: problem_resolution, attribute, mandatory
+   :tags: prio_1_automation, problem_resolution, attribute, mandatory
    :satisfies: wf__problem__create_pr, wf__problem__analyse_pr, wf__problem__initiate_monitor_pr, wf__problem__close_pr
    :complies: std_req__aspice_40__SUP-9-BP1
 
@@ -126,10 +126,12 @@ Problem Attributes
       * Yes
       * No
 
+   Note: If neither security or safety relevance is set the bug is always quality relevant.
+
 .. gd_req:: Problem attribute:: security affected
    :id: gd_req__problem__attr_security_affected
    :status: valid
-   :tags: problem_resolution, attribute, mandatory
+   :tags: prio_1_automation, problem_resolution, attribute, mandatory
    :satisfies: wf__problem__create_pr, wf__problem__analyse_pr, wf__problem__initiate_monitor_pr, wf__problem__close_pr
    :complies: std_req__aspice_40__SUP-9-BP1
 
@@ -138,22 +140,12 @@ Problem Attributes
       * Yes
       * No
 
-.. gd_req:: Problem attribute:: quality affected
-   :id: gd_req__problem__attr_quality_affected
-   :status: valid
-   :tags: problem_resolution, attribute, mandatory
-   :satisfies: wf__problem__create_pr, wf__problem__analyse_pr, wf__problem__initiate_monitor_pr, wf__problem__close_pr
-   :complies: std_req__aspice_40__SUP-9-BP1
-
-   Each Problem shall have a quality relevance identifier:
-
-      * Yes
-      * No
+   Note: If neither security or safety relevance is set the bug is always quality relevant.
 
 .. gd_req:: Problem attribute: milestone
    :id: gd_req__problem__attr_milestone
    :status: valid
-   :tags: problem_resolution, attribute, mandatory
+   :tags: manual, problem_resolution, attribute, mandatory
    :satisfies: wf__problem__create_pr, wf__problem__analyse_pr, wf__problem__initiate_monitor_pr, wf__problem__close_pr
    :complies: std_req__aspice_40__SUP-9-BP1, std_req__aspice_40__SUP-9-BP6
 
@@ -166,7 +158,7 @@ Problem Resolution Checks
 .. gd_req:: Problem Resolution mandatory attributes provided
    :id: gd_req__problem__check_mandatory
    :status: valid
-   :tags: problem_resolution, attribute, check
+   :tags: prio_2_automation, problem_resolution, attribute, check
    :satisfies: wf__problem__create_pr, wf__problem__analyse_pr, wf__problem__initiate_monitor_pr, wf__problem__close_pr
    :complies: std_req__aspice_40__SUP-9-BP1
 
@@ -182,7 +174,7 @@ Problem Resolution Checks
 .. gd_req:: Problem Report issues closing constraints
    :id: gd_req__problem__check_closing
    :status: valid
-   :tags: problem_resolution, attribute, check
+   :tags: prio_1_automation, problem_resolution, attribute, check
    :satisfies: wf__problem__create_pr, wf__problem__analyse_pr, wf__problem__initiate_monitor_pr, wf__problem__close_pr
    :complies: std_req__aspice_40__SUP-9-BP1
 
