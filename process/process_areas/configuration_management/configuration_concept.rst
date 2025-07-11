@@ -28,12 +28,15 @@ Key concept
 The Configuration Management Plan should define the strategy to manage the configuration items
 in an effective and repeatable way for the project life cycle.
 
+Note: configuration items are all defined work products in the project plus additional arefacts not developed by the project
+needed for the building of the binaries, documentation and verification reports (e.g. tools, external SW libraries).
+
 Inputs
 ^^^^^^
 
 #. Stakeholders for the configuration process work products?
 #. Who needs which information?
-#. Which work products do we have?
+#. Which configuration items do we have?
 #. What tooling do we need?
 
 Stakeholders
@@ -45,9 +48,6 @@ Stakeholders
 
 #. :need:`Contributor <rl__contributor>` and :need:`Committer <rl__committer>`
 
-   * wants know which configuration items version has to be used as input for his work
+   * wants know which work products's version has to be used as input for his work
    * wants to share their created work product with others for example to get those reviewed
    * wants to integrate their created work product with other work products
-
-note: configuration items are all defined S-CORE work products plus additional arefacts not produced by S-CORE
-needed for the building of the documentation and verification reports (e.g. tools, external SW libraries)
