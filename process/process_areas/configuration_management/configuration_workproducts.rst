@@ -12,15 +12,13 @@
    # SPDX-License-Identifier: Apache-2.0
    # *******************************************************************************
 
-.. _folder_templates:
+Work Products Configuration Management
+######################################
 
-Folder Templates
-################
+.. workproduct:: Platform Configuration Management Plan
+   :id: wp__config_mgt_plan
+   :status: valid
+   :tags: config_management
+   :complies: std_wp__iso26262__support_751
 
-.. toctree::
-   :maxdepth: 1
-   :glob:
-   :titlesonly:
-
-   features/index.rst
-   modules/index.rst
+   Config Management Plan (Part of the Platform Management Plan, :need:`wp__platform_mgmt`)

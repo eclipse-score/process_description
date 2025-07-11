@@ -18,13 +18,13 @@ Work Products Documentation Management
 .. workproduct:: Documentation Management Plan
    :id: wp__document_mgt_plan
    :status: valid
-   :complies: std_wp__iso26262__support_1051, std_wp__iso26262__support_1052
+   :complies: std_wp__iso26262__support_1051, std_wp__iso26262__support_1052, std_req__aspice_40__iic-01-52
 
    Document Management Plan (Part of the Platform Management Plan)
 
    Defines the documentation strategy which covers the following aspects:
 
-   * What is documented where and when?
+   * What is documented where and when? (Leading to a configuration item list)
    * How to review, update, (re-)approve documentations?
    * What is the status of a document and how are changes identified?
    * How to ensure the avaibility of the documents over time?

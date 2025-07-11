@@ -12,15 +12,18 @@
    # SPDX-License-Identifier: Apache-2.0
    # *******************************************************************************
 
-.. _folder_templates:
+Roles
+#####
 
-Folder Templates
-################
+For configuration management no additional roles need to be defined.
 
-.. toctree::
-   :maxdepth: 1
-   :glob:
-   :titlesonly:
+Contributing Roles:
 
-   features/index.rst
-   modules/index.rst
+   * :need:`Contributor <rl__contributor>`
+   * :need:`Committer <rl__committer>`
+   * :need:`Technical Lead <rl__technical_lead>`
+   * :need:`Module Project Lead <rl__module_lead>`
+
+A detailed overview of the responsibility for the steps of the configuration management is listed here:
+
+:need:`wf__platform__cr_mt_platform_mgmt_plan`

@@ -12,15 +12,11 @@
    # SPDX-License-Identifier: Apache-2.0
    # *******************************************************************************
 
-.. _folder_templates:
-
-Folder Templates
-################
+Guidance
+########
 
 .. toctree::
    :maxdepth: 1
-   :glob:
-   :titlesonly:
 
-   features/index.rst
-   modules/index.rst
+   configuration_templates
+   configuration_process_req
