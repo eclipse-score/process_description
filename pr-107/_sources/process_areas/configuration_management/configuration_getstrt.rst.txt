@@ -22,8 +22,9 @@ Getting Started
 In case you are appointed as a :need:`Technical Lead <rl__technical_lead>` by the :need:`rl__project_lead` in the S-CORE project:
 
 * On platform level, process community already provided a draft configuration management plan,
-  based on the template <link>, just set it to "valid"
+  based on the template :need:`gd_temp__config_mgt_plan`, just set it to "valid"
 * On module level, follow the configuration management plan of the platform also in your module.
+  If the configuration management plan needs updating for your module, the same template can be used.
 
 As a normal contributor or committer consult the configuration management plan, it should
 be mainly your task to use the project's selected version management tool.
