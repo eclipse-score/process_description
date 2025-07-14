@@ -20,11 +20,11 @@ Security Package Formal Review Checklist
    :status: valid
    :complies: std_req__isosae21434__prj_management_6471, std_req__isosae21434__prj_management_6491, std_req__isosae21434__prj_management_6492
 
-   **1. Purpose**
+**1. Purpose**
 
-   The purpose of this review checklist is to report status of the formal review for the security package.
+The purpose of this review checklist is to report status of the formal review for the security package.
 
-   **2. Checklist**
+**2. Checklist**
 
 .. list-table:: Security Package Checklist
         :header-rows: 1

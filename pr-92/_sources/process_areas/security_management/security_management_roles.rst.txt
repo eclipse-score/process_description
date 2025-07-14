@@ -22,7 +22,9 @@ Roles
    :tags: security_management
    :contains: rl__committer
 
-   The Security Manager is responsible for making sure that ISO SAE 21434 is complied to in the project. He/She shall lead and monitor the security relevant activities of the project.
+   The Security Manager is responsible for making sure that ISO SAE 21434 is complied
+   to in the project. The Security Manager shall lead and monitor the security relevant
+   activities of the project.
 
    Required skills
 
@@ -41,20 +43,23 @@ Roles
 
    * 2 years of experience in the management of security topics
    * Experience in managing projects
-   * Experience in managing security weaknessess, vulnerabilities
+   * Experience in managing security weaknesses, vulnerabilities
 
    Responsibility
 
-   * Creating the Security Plan
-   * Security related project status reporting
-   * Creation and Monitoring of completeness of the security package
-   * Reporting of security weaknesses, vulnerabilities
-   * Verify, that the preconditions for the "release for production", which are  part of the release notes, are fulfilled, and the correctness, completeness and consistency of the release notes
-   * Coaching the project team w.r.t all questions related to security
-   * Planning of security audit (to be discussed, currently not in scope)
+   * Creates and maintains the Security Plan
+   * Creates and monitors the completeness of the security package
+   * Creates and maintains the Security Manual
+   * Supports creation and maintaining of the SBOM
+   * Verifies, that the preconditions for the "release for production", which are  part of the release notes, are fulfilled, and the correctness, completeness and consistency of the release notes
+   * Supports reporting of security related project status
+   * Reports security weaknesses, vulnerabilities
+   * Coaches the project team w.r.t all questions related to security
+   * Plans and approves the security audit (to be discussed, currently not in scope)
+   * Plans and approves the formal security reviews
    * Approval of security analyses
-   * Creating the security manuals on platform and module level
-   * Checking that every person in his team has sufficient security skills for his role
+   * Creates and maintains the security manuals on platform and module level
+   * Checks that every person in his team has sufficient security skills for their role
 
    Authority
 

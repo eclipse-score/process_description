@@ -22,7 +22,7 @@ Work Products Security Management
 
    Plan to manage and guide the execution of the security activities of a project including dates, milestones, tasks, deliverables, responsibilities (including the Security Manager appointment)  and resources.
 
-   This platform security plan also takes into accout the eclipse organization's rules relevant for security development.
+   This platform security plan also takes into account the eclipse organization's rules relevant for security development.
 
    Guidelines on how an change impact analysis shall be concluded on each item or element involved together with it's connected items or elements.
 
@@ -48,7 +48,7 @@ Work Products Security Management
    :status: valid
    :complies: std_wp__isosae21434__prj_management_652
 
-   Compiled Security Relevant Work Products. For Platform EooC.
+   Compiled Security Relevant Work Products. For Platform OoC.
 
    Note that the platform security package does not contain an argument that the platform is safe and secure.
 
@@ -57,7 +57,7 @@ Work Products Security Management
    :status: valid
    :complies:
 
-   Compiled Security Relevant Work Products. For Module EooC.
+   Compiled Security Relevant Work Products. For Module OoC.
 
    Note that the module security package does not contain an argument that the module is safe and secure.
 
@@ -86,7 +86,7 @@ Work Products Security Management
    The security manual describes:
 
    * the Assumed Platform Requirements (Security related, including for post-development);
-   * the security concept of the EooC (i.e. which attack paths are taken care of);
+   * the security concept of the OoC (i.e. which attack paths are taken care of);
    * the Assumptions of Use (of the features);
    * a link to the user manual;
    * the reactions of the implemented functions under threatened operating conditions; and
@@ -102,7 +102,7 @@ Work Products Security Management
    The security manual describes:
 
    * the Assumed Platform Requirements (Security related, including for post-development);
-   * the security concept of the EooC (i.e. which attack paths are taken care of);
+   * the security concept of the OoC (i.e. which attack paths are taken care of);
    * the Assumptions of Use (of the modules's components);
    * a link to the user manual;
    * the reactions of the implemented functions under threatened operating conditions; and

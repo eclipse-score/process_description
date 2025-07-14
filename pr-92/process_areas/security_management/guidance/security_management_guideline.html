@@ -39,10 +39,10 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-data-viewer/jsonview.bundle.css?v=f6ef2277" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/libs/html/datatables.min.css?v=4b4fd840" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/need_links.css?v=2150a916" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/need_style.css?v=92936fa5" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/need_toggle.css?v=5c6620df" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/needstable.css?v=5e1b6797" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/need_core.css?v=f5b60a78" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/need_style.css?v=92936fa5" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/modern.css?v=803738c0" />
   
   <!-- So that users can add custom icons -->
@@ -512,7 +512,7 @@
                   
   <section id="security-management-guideline">
 <span id="guideline-security-management"></span><h1>Security Management Guideline<a class="headerlink" href="#security-management-guideline" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-6c94a5e1">
+<div class="need_container docutils container" id="SNCB-4fccf93f">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_guidl table" id="gd_guidl__security_plan_definitions">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -546,7 +546,7 @@
 <p>Security culture is planned to grow in the SW platform.
 This shall be fostered by doing a lessons learned after each feature development completion,
 using the ISO SAE 21434 Annex B, Table B.1 as a questionnaire.
-This lessons learned is the main input for process improvement managed by <a class="reference internal" href="../../quality_management/quality_workproducts.html#wp__process_impr_report" title="wp__process_impr_report"><em class="xref need">Process Improvement Report (wp__process_impr_report)</em></a>
+This lessons learned is the main input for process improvement managed by <a class="reference internal" href="../../quality_management/quality_workproducts.html#wp__process_impr_report" title="wp__process_impr_report"><em class="xref need">Process Improvement Report (wp__process_impr_report)</em></a>.
 As starting point for security culture we define a Committer selection process to already have
 professionals with security experience in the teams. Additionally the SW platform’s processes
 are defined with experience of several companies already performing successful safe and secure
@@ -559,38 +559,37 @@ SW development. This also improves independence of reviews for the process defin
 management for the whole platform. Expectation is that the security competence of the persons
 nominated for the roles is already given and only has to be checked. The exception from this
 are the committers, for these no security competence needs to be enforced.
-So the module security managers shall consult the <cite>REPLACE_doc__platform_security_plan</cite> and
+So the module security managers shall consult the <a class="reference internal" href="../security_management_workproducts.html#wp__platform_security_plan" title="wp__platform_security_plan"><em class="xref need">Platform Security Plan (wp__platform_security_plan)</em></a> and
 perform accordingly in their module project.</p>
 <p>Communication:</p>
 <p>Development teams are interdisciplinary, so the regular (sprint) planning and review meetings
-enable communication (as defined in <cite>REPLACE_doc__project_mgt_plan</cite>). Another main communication
+enable communication (as defined in <a class="reference internal" href="../../platform_management/platform_management_workproducts.html#wp__platform_mgmt" title="wp__platform_mgmt"><em class="xref need">Platform Management Plan (wp__platform_mgmt)</em></a>). Another main communication
 means are the Pull Request reviews. Also the standard Eclipse Foundation communication strategies
 are used (e.g. mailing lists)</p>
-<p>Security Weaknessess, Vulnerabilities:</p>
+<p>Security Weaknesses, Vulnerabilities:</p>
 <p>As the SW platform organization does not have own vehicles in the field, it relies on feedback
 from OEMs and Distributors on bugs discovered in the field. The need for this feedback is part
 of each security manual. But also during development of change requests to existing features,
 bug reporting by the Open Source community or integration of existing SW components into new
-features may lead to the discovery of new security weaknessess and vulnerabilities. Security
-weaknessess and vulnerabilities can also be deviations from the development process with impact
+features may lead to the discovery of new security weaknesses and vulnerabilities. Security
+weaknesses and vulnerabilities can also be deviations from the development process with impact
 on security. If these are known at the time of creation of a release they will be part of the
-<a class="reference internal" href="../security_management_workproducts.html#wp__module_security_package" title="wp__module_security_package"><em class="xref need">Module Security Package (wp__module_security_package)</em></a> or <a class="reference internal" href="../security_management_workproducts.html#wp__platform_security_package" title="wp__platform_security_package"><em class="xref need">Platform Security Package (wp__platform_security_package)</em></a> for the EooC.
-Security weaknessess and vulnerabilities relevant for already delivered releases will be
+<a class="reference internal" href="../security_management_workproducts.html#wp__module_security_package" title="wp__module_security_package"><em class="xref need">Module Security Package (wp__module_security_package)</em></a> or <a class="reference internal" href="../security_management_workproducts.html#wp__platform_security_package" title="wp__platform_security_package"><em class="xref need">Platform Security Package (wp__platform_security_package)</em></a> for the OoC.
+Security weaknesses and vulnerabilities relevant for already delivered releases will be
 identified as such and communicated (as defined in Problem Resolution part of <a class="reference internal" href="../../platform_management/platform_management_workproducts.html#wp__platform_mgmt" title="wp__platform_mgmt"><em class="xref need">Platform Management Plan (wp__platform_mgmt)</em></a>)
 via the <a class="reference internal" href="../../change_management/change_management_workproducts.html#wp__issue_track_system" title="wp__issue_track_system"><em class="xref need">Issue tracking system (wp__issue_track_system)</em></a> (which is also Open Source).</p>
 <p><strong>Tailoring security activities:</strong></p>
-<p>Main tailoring driver is that the SW platform is pure SW development and is provided as “EooC” -
+<p>Main tailoring driver is that the SW platform is pure SW development and is provided as “(component) OoC” -
 this explains mainly the generic, platform wide tailoring.
 Tailoring is done for the whole SW platform by defining only the relevant work products and an
-argumentation why the others are not needed in <a class="reference internal" href="../../../standards/isosae21434/isosae21434.html#standard-isosae21434"><span class="std std-ref">ISO/SAE 21434:2021(E)</span></a> and
-<cite>REPLACE_doc__platform_security_plan</cite>.
-But there may be also additional tailoring for each module EooC development to restrict further
-the work products. This is documented in every feature security plan. Here the usage of already
+argumentation why the others are not needed in <a class="reference internal" href="../../../standards/isosae21434/isosae21434.html#standard-isosae21434"><span class="std std-ref">ISO/SAE 21434:2021(E)</span></a> and <a class="reference internal" href="../security_management_workproducts.html#wp__platform_security_plan" title="wp__platform_security_plan"><em class="xref need">Platform Security Plan (wp__platform_security_plan)</em></a>.
+But there may be also additional tailoring for each module/component OoC development to restrict further
+the work products. This is documented in every module security plan. Here the usage of already
 existing components is the main tailoring driver.</p>
 <p><strong>Planning security activities:</strong></p>
-<p>In the security plan the nomination of the security manager and the project manager is documented.
+<p>In the security plan the nomination of the security manager and the technical/module lead is documented.
 The planning of security activities is done using issues in the <a class="reference internal" href="../../change_management/change_management_workproducts.html#wp__issue_track_system" title="wp__issue_track_system"><em class="xref need">Issue tracking system (wp__issue_track_system)</em></a>
-as specified in the <cite>REPLACE_doc__project_mgt_plan</cite></p>
+as specified in the <a class="reference internal" href="../../platform_management/platform_management_workproducts.html#wp__platform_mgmt" title="wp__platform_mgmt"><em class="xref need">Platform Management Plan (wp__platform_mgmt)</em></a>.</p>
 <p>It contains for each issue</p>
 <ul class="simple">
 <li><p>objective - as part of the issue description</p></li>
@@ -602,8 +601,8 @@ as specified in the <cite>REPLACE_doc__project_mgt_plan</cite></p>
 </ul>
 <p>The planning of security activities is divided into the</p>
 <ul class="simple">
-<li><p>platform EooC planning, dealing with all work products needed only once for the platform. This is included in <a class="reference internal" href="../security_management_workproducts.html#wp__platform_security_plan" title="wp__platform_security_plan"><em class="xref need">Platform Security Plan (wp__platform_security_plan)</em></a></p></li>
-<li><p>module EooC planning, dealing with all work products needed for each module development (initiated by a contribution request), included in <a class="reference internal" href="../security_management_workproducts.html#wp__module_security_plan" title="wp__module_security_plan"><em class="xref need">Module Security Plan (wp__module_security_plan)</em></a>.</p></li>
+<li><p>Platform OoC planning, dealing with all work products needed only once for the platform. This is included in <a class="reference internal" href="../security_management_workproducts.html#wp__platform_security_plan" title="wp__platform_security_plan"><em class="xref need">Platform Security Plan (wp__platform_security_plan)</em></a></p></li>
+<li><p>Module/Component OoC planning, dealing with all work products needed for each module development (initiated by a change request), included in <a class="reference internal" href="../security_management_workproducts.html#wp__module_security_plan" title="wp__module_security_plan"><em class="xref need">Module Security Plan (wp__module_security_plan)</em></a>.</p></li>
 </ul>
 <p>A template exists to guide this: <a class="reference internal" href="security_management_module_security_plan_template.html#gd_temp__module_security_plan" title="gd_temp__module_security_plan"><em class="xref need">Module Security Plan Template (gd_temp__module_security_plan)</em></a>.</p>
 <p><strong>Planning supporting processes:</strong></p>
@@ -648,7 +647,7 @@ SBOMs are used as sources for collection of information and as trigger for furth
 as identifying weaknesses and vulnerabilities.</p>
 <p><a class="reference external" href="https://www.eclipse.org/projects/handbook/#vulnerability-team">Eclipse Foundation Security Team</a>
 provides help and advice to Eclipse projects on security issues and is the first point of
-contact for handling security vulnerabilities. Nevertheless the all <a class="reference internal" href="../../../roles/index.html#rl__contributor" title="rl__contributor"><em class="xref need">Contributor (rl__contributor)</em></a> and
+contact for handling security vulnerabilities. Nevertheless <a class="reference internal" href="../../../roles/index.html#rl__contributor" title="rl__contributor"><em class="xref need">Contributor (rl__contributor)</em></a> and
 <a class="reference internal" href="../../../roles/index.html#rl__committer" title="rl__committer"><em class="xref need">Committer (rl__committer)</em></a> are responsible for following the <a class="reference external" href="https://www.eclipse.org/security/policy/">Eclipse Foundation Security Policy</a>.
 The <a class="reference internal" href="../../../roles/index.html#rl__security_team" title="rl__security_team"><em class="xref need">Security Team (rl__security_team)</em></a> is responsible for coordinating the resolution of
 vulnerabilities within the Project.</p>
@@ -668,7 +667,7 @@ vulnerabilities within the Project.</p>
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-19abf0ba">
+<div class="need_container docutils container" id="SNCB-ac0b1c30">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_guidl table" id="gd_guidl__security_manual">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -698,8 +697,8 @@ vulnerabilities within the Project.</p>
 <td class="meta" colspan="3"></td>
 </tr>
 <tr class="content row-odd"><td class="content" colspan="6"><p>The security manual collects several work products and adds some additional content mainly to
-instruct the user of a EooC (in this project on platform and module level) to securely use it
-in the context of the user’s own security element and requirements for post-development.
+instruct the user of a OoC (in this project on platform and module level) to securely use it
+in the context of the user’s OoC and requirements for post-development.
 Its main content is described in <a class="reference internal" href="../security_management_workproducts.html#wp__platform_security_manual" title="wp__platform_security_manual"><em class="xref need">Platform Security Manual (wp__platform_security_manual)</em></a> and <a class="reference internal" href="../security_management_workproducts.html#wp__module_security_manual" title="wp__module_security_manual"><em class="xref need">Module Security Manual (wp__module_security_manual)</em></a>.
 A template exists to guide the definition of the security manual on platform and module level (<a class="reference internal" href="security_management_security_manual_template.html#gd_temp__security_manual" title="gd_temp__security_manual"><em class="xref need">Security Manual Template (gd_temp__security_manual)</em></a>).</p></td>
 </tr>
@@ -717,7 +716,7 @@ A template exists to guide the definition of the security manual on platform and
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-369bcfc9">
+<div class="need_container docutils container" id="SNCB-93737e05">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_guidl table" id="gd_guidl__security_package">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">

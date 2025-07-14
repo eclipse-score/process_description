@@ -20,7 +20,10 @@ Module Security Plan Template
    :status: valid
    :complies:
 
-This document implements <add "need" link>
+   Will be moved to Folder Templates (tbd https://github.com/eclipse-score/process_description/issues/109)
+   For the content see here: need:`doc__module_name_security_plan`
+   Will also adapted to the latest Safety Plan Template
+
 
 
    | **1. Security Management Context**
@@ -32,11 +35,11 @@ This document implements <add "need" link>
    |
    | **3. Security Management Roles**
 
-   +---------------------------+--------------------------------------------------------+
-   | Security Manager          | <link to Module's Security Manager assignment or name> |
-   +---------------------------+--------------------------------------------------------+
-   | Project Manager           | <link to Module's Project Manager assignment or name>  |
-   +---------------------------+--------------------------------------------------------+
+   +---------------------------+--------------------------------------------------------------+
+   | Security Manager          | <link to Module's Security Manager assignment or name>       |
+   +---------------------------+--------------------------------------------------------------+
+   | Project Manager           | <link to Module's Technical/Module Lead assignment or name>  |
+   +---------------------------+--------------------------------------------------------------+
 
    | **4. Tailoring**
    | Additional to the tailoring in the SW platform project as defined in the :ref:`process_security_management` we define here the additional tailoring on module level.
@@ -92,7 +95,7 @@ This document implements <add "need" link>
           - <Link to WP>
           - <automated>
 
-        * - :need:`wp__audit_report`
+        * - :need:`wp__audit_report_security`
           - performed by external experts
           - n/a
           - <Link to issue>
@@ -128,7 +131,7 @@ This document implements <add "need" link>
           - <automated>
 
         * - :need:`wp__sw_module_sbom`
-          - :ref:`tool_management`
+          - :ref:`security_management`
           - not started
           - <Link to issue>
           - <Link to WP>

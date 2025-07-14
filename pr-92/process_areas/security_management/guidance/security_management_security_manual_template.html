@@ -39,10 +39,10 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-data-viewer/jsonview.bundle.css?v=f6ef2277" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/libs/html/datatables.min.css?v=4b4fd840" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/need_links.css?v=2150a916" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/need_style.css?v=92936fa5" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/need_toggle.css?v=5c6620df" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/needstable.css?v=5e1b6797" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/need_core.css?v=f5b60a78" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/need_style.css?v=92936fa5" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/modern.css?v=803738c0" />
   
   <!-- So that users can add custom icons -->
@@ -512,7 +512,7 @@
                   
   <section id="security-manual-template">
 <h1>Security Manual Template<a class="headerlink" href="#security-manual-template" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-20b75ea7">
+<div class="need_container docutils container" id="SNCB-d9666fbc">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_temp table" id="gd_temp__security_manual">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -540,7 +540,9 @@
 </td>
 <td class="meta" colspan="3"></td>
 </tr>
-<tr class="content row-odd"><td class="content" colspan="6"></td>
+<tr class="content row-odd"><td class="content" colspan="6"><p>Will be moved to Folder Templates (tbd <a class="github reference external" href="https://github.com/eclipse-score/process_description/issues/109">eclipse-score/process_description#109</a>)
+For the content see here: need:<cite>doc__module_name_security_manual</cite>
+Will also adapted to the latest Safety ManualTemplate</p></td>
 </tr>
 <tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
 <div class="line"><span><span class="needs-id"><a class="reference internal" href="#gd_temp__security_manual" title="gd_temp__security_manual">gd_temp__security_manual</a></span></span></div>
@@ -556,7 +558,6 @@
 </table>
 </div>
 </div>
-<p>This document implements &lt;add “need” link&gt;</p>
 <section id="introduction-scope">
 <h2>Introduction/Scope<a class="headerlink" href="#introduction-scope" title="Link to this heading">#</a></h2>
 <div class="line-block">
@@ -566,7 +567,7 @@
 <section id="assumed-platform-security-requirements">
 <h2>Assumed Platform Security Requirements<a class="headerlink" href="#assumed-platform-security-requirements" title="Link to this heading">#</a></h2>
 <div class="line-block">
-<div class="line">For the &lt;S-CORE platform / module name&gt; the following security related stakeholder requirements are assumed to define the top level functionality (purpose) of the &lt;S-CORE platform / module name&gt;. I.e. from these all the feature and component requirements implemented are derived.</div>
+<div class="line">For the &lt;Project platform / module name&gt; the following security related stakeholder requirements are assumed to define the top level functionality (purpose) of the &lt;Project platform / module name&gt;. I.e. from these all the feature and component requirements implemented are derived.</div>
 <div class="line">&lt;List here all the stakeholder requirements, with security relevance, the module’s components requirements are derived from.&gt;</div>
 </div>
 </section>
@@ -575,8 +576,8 @@
 <section id="assumptions-on-the-environment">
 <h3>Assumptions on the Environment<a class="headerlink" href="#assumptions-on-the-environment" title="Link to this heading">#</a></h3>
 <div class="line-block">
-<div class="line">Generally the assumption of the S-CORE platform EooC is that it is integrated in a secure system, i.e. the POSIX OS it runs on is qualified and also the HW related failures are taken into account by the system integrator, if not otherwise stated in the module’s security concept.</div>
-<div class="line">&lt;List here all the OS calls the S-CORE platform expects to be secure.&gt;</div>
+<div class="line">Generally the assumption of the Project platform OoC is that it is integrated in a secure system, i.e. the POSIX OS it runs on is qualified and also the HW related failures are taken into account by the system integrator, if not otherwise stated in the module’s security concept.</div>
+<div class="line">&lt;List here all the OS calls the Project platform expects to be secure.&gt;</div>
 </div>
 <p>List of AoUs expected from the environment the platform / module runs on:</p>
 <p class="needs_filter_warning" id="needtable-process_areas/security_management/guidance/security_management_security_manual_template-0">No needs passed the filters</p>
@@ -587,7 +588,7 @@
 <div class="line">As there is no assumption on which specific OS and HW is used, the integration testing of the stakeholder and feature requirements is expected to be performed by the user of the platform EooC. Tests covering all stakeholder and feature requirements performed on a reference platform (tbd link to reference platform specification), reviewed and passed are included in the platform EooC security package.</div>
 <div class="line">Additionally the components of the platform may have additional specific assumptions how they are used. These are part of every module documentation: &lt;link to add&gt;. Assumptions from components to their users can be fulfilled in two ways:</div>
 <div class="line">1. There are assumption which need to be fulfilled by all SW components, e.g. “every user of an IPC mechanism needs to make sure that he provides correct data (e.g. including appropriate security (access) control)” - in this case the AoU is marked as “platform”.</div>
-<div class="line">2. There are assumption which can be fulfilled by a security control realized by some other S-CORE platform component and are therefore not relevant for an user who uses the whole platform. But those are relevant if you chose to use the module EooC stand-alone - in this case the AoU is marked as “module”. An example would be the “JSON read” which requires “The user shall provide a string as input which is not corrupted due to HW or QM SW errors.” - which is covered when using together with safe S-CORE platform persistency feature.</div>
+<div class="line">2. There are assumption which can be fulfilled by a security control realized by some other Project platform component and are therefore not relevant for an user who uses the whole platform. But those are relevant if you chose to use the module EooC stand-alone - in this case the AoU is marked as “module”. An example would be the “JSON read” which requires “The user shall provide a string as input which is not corrupted due to HW or QM SW errors.” - which is covered when using together with safe S-CORE platform persistency feature.</div>
 </div>
 <p>List of AoUs on the user of the platform features or the module of this security manual:</p>
 <div class="needstable_wrapper docutils container" id="needtable-process_areas/security_management/guidance/security_management_security_manual_template-1">
@@ -618,8 +619,8 @@
 </div>
 </section>
 </section>
-<section id="security-concept-of-the-eooc">
-<h2>Security concept of the EooC<a class="headerlink" href="#security-concept-of-the-eooc" title="Link to this heading">#</a></h2>
+<section id="security-concept-of-the-ooc">
+<h2>Security concept of the OoC<a class="headerlink" href="#security-concept-of-the-ooc" title="Link to this heading">#</a></h2>
 <div class="line-block">
 <div class="line">&lt;Describe here the security concept incl. which attack paths are taken care of, reactions of the implemented functions under threatened operating conditions … if this is not already documented sufficiently in the feature documentation “security impact” section of all the features the module is used in.&gt;</div>
 </div>
@@ -693,7 +694,7 @@
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#assumptions-on-the-user">Assumptions on the User</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#security-concept-of-the-eooc">Security concept of the EooC</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#security-concept-of-the-ooc">Security concept of the OoC</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#security-weaknesses-vulnerabilities">Security Weaknesses, Vulnerabilities</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>
 </ul>
