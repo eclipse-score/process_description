@@ -70,7 +70,7 @@ The purpose of this security plan review checklist is to report status of the re
           - <Rationale for result>
 
         * - 8
-          - If Off-the-shelf software components is used, is it planned to be analysed?
+          - If Off-the-shelf (e.g. existing OSS) software components is used, is it planned to be analysed?
           - [YES | NO ]
           - <Rationale for result>
 
@@ -103,3 +103,6 @@ The purpose of this security plan review checklist is to report status of the re
           - Does the security plan define regular vulnerability scans for the generated SBOM?
           - [YES | NO ]
           - <Rationale for result>
+
+.. note::
+    Off-the-shelf means existing software which may used w/o modification, e.g. existing OSS
