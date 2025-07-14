@@ -42,7 +42,7 @@ The purpose of this review checklist is to report status of the formal review fo
         * - 2
           - Is the argument how security is achieved, provided in the security package, plausible and sufficient?
           - NO
-          - The argument is intentionally not provided by S-CORE.
+          - The argument is intentionally not provided by the Project.
 
         * - 3
           - Are the referenced work products available?
