@@ -17,15 +17,6 @@
 Configuration Management
 ========================
 
-Configuration Management Tooling
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Almost all requirements of the standards towards configuration management can be covered by
-standard tooling of the Eclipse Foundation (github for versioning) and of the S-CORE project
-(sphinx-needs for text based identification of work products).
-
-For the automated storage additional tooling is created (see :doc:`guidance/configuration_process_req`)
-
 .. toctree::
    :maxdepth: 1
 

@@ -51,3 +51,11 @@ Stakeholders
    * wants know which work products's version has to be used as input for his work
    * wants to share their created work product with others for example to get those reviewed
    * wants to integrate their created work product with other work products
+
+Configuration Management Tooling
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Almost all requirements of the standards towards configuration management can be covered by
+standard versioning tooling and of tooling for the "Docs-as-Code" approach.
+
+For the automated storage additional tooling is needed see :doc:`guidance/configuration_process_req`)
