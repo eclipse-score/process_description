@@ -46,7 +46,7 @@ Software Module Release
 
    * Update the version number according to the versioning policy of your module (defined in release management part of the :need:`gd_temp__platform__mgmt_plan`).
    * Prepare release notes documenting the changes, improvements, and bug fixes.
-   * Check if all planned documents and work products are in valid state.
+   * Check if all planned configuration items are in correct state (i.e. work products are valid, external libraries/tools are used in the correct released version).
    * Ensure the module's safety package is available and complete.
    * Tag the release in the GitHub repository.
 
@@ -82,7 +82,7 @@ Platform Release
    * Check if modules are released.
    * Update the platform version number according to the versioning policy (defined in release management part of the :need:`gd_temp__platform__mgmt_plan`).
    * Prepare platform release notes summarizing the updates from all integrated software modules.
-   * Check if all planned documents and work products are in valid state.
+   * Check if all planned configuration items are in correct state (i.e. work products are valid, external libraries/tools are used in the correct released version).
    * Ensure the relevant safety packages are available and complete.
    * Tag the platform release in the GitHub repository.
 

@@ -64,10 +64,10 @@ Identification and Properties
 
 This should cover :need:`std_req__aspice_40__SUP-8-BP1` and :need:`std_req__aspice_40__SUP-8-BP2`.
 
-Each work product is identified by its "structured text" Id, this includes documents identified as such (by the document header as defined in :need:`gd_temp__documentation`).
+Each work product is identified by its "Docs-as-Code" Id, this includes documents identified as such (by the document header as defined in :need:`gd_temp__documentation`).
 The complete list of project documents is defined in the project's <link to doc__documentation_mgt_plan>.
 Ids are checked for uniqueness, see :need:`gd_req__configuration_uid`.
-"Structured text" is also used to document the work products properties/attributes defined in the process area descriptions.
+"Docs-as-Code" is also used to document the work products properties/attributes defined in the process area descriptions.
 The work products are stored in text or code files (these are identified by their filenames) within the selected version management tool.
 
 For additional artefacts these are either
@@ -153,13 +153,13 @@ Configuration Management Tooling
 
 Almost all requirements of the standards towards configuration management can be covered by
 standard versioning tooling of the Eclipse Foundation and of the <project name> project
-("structured text" identification of work products).
+("Docs-as-Code" identification of work products).
 The respective tools used in the project are:
 
 * versioning tool: <tool name>
-* "structured text" tool: <tool name>
+* "Docs-as-Code" tool: <tool name>
 * CI build tool: <tool name>
 
 Note 1: A versioning tool covers part of configuration management but not all (namely: storage, retrieval, control and modification, branching and baselining).
 
-Note 2: A "structured text" tool is used to identify, attribute and link parts of text files and generate human and machine readable documentation.
+Note 2: A "Docs-as-Code" tool is used to identify, attribute and link parts of text files and generate human and machine readable documentation.
