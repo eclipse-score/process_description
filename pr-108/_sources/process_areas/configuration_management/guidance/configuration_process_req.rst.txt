@@ -15,6 +15,14 @@
 Configuration Management Process Requirements
 =============================================
 
+.. gd_req:: Unique Id
+   :id: gd_req__configuration_uid
+   :status: valid
+   :tags: done_automation, config_mgt
+   :complies: std_req__iso26262__support_745, std_req__aspice_40__SUP-8-BP8
+
+   The structured text tool shall check that the Id's of the configuration items are unique.
+
 .. gd_req:: Permanent Storage
    :id: gd_req__config__workproducts_storage
    :status: valid
