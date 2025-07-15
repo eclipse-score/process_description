@@ -18,7 +18,7 @@ Guideline
 .. gd_guidl:: Release Management Guideline
    :id: gd_guidl__rel_management
    :status: valid
-   :complies: std_req__iso26262__management_64131, std_req__iso26262__management_64132, std_req__iso26262__management_64133, std_req__iso26262__management_64135
+   :complies: std_req__iso26262__management_64131, std_req__iso26262__management_64132, std_req__iso26262__management_64133, std_req__iso26262__management_64134, std_req__iso26262__management_64135
 
 .. _workflow_release:
 
@@ -27,7 +27,7 @@ Software Module Release
 
 1. **Repository Management**:
 
-   * Each software module is contained in its own GitHub repository.
+   * Each software module is contained in its own repository.
    * Ensure that the repository follows the standard naming conventions and structure.
 
 2. **Release Planning**:
@@ -48,12 +48,13 @@ Software Module Release
    * Prepare release notes documenting the changes, improvements, and bug fixes.
    * Check if all planned configuration items are in correct state (i.e. work products are valid, external libraries/tools are used in the correct released version).
    * Ensure the module's safety package is available and complete.
-   * Tag the release in the GitHub repository.
+   * Tag the release in the repository.
 
 5. **Release Execution**:
 
-   * Create a release in the GitHub repository release branch and attach the release notes. For this consider the `GitHub Howto Release <https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository/>`_
+   * Create a release in the repository release branch and attach the release notes. For this consider the `Howto Release <https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository/>`_
    * Notify the project lead circle about the release for approval.
+   * One of the project leads will give a review approval for the release note in the versioning tool, which is equivalent to his signing the release.
 
 
 Platform Release
@@ -84,12 +85,13 @@ Platform Release
    * Prepare platform release notes summarizing the updates from all integrated software modules.
    * Check if all planned configuration items are in correct state (i.e. work products are valid, external libraries/tools are used in the correct released version).
    * Ensure the relevant safety packages are available and complete.
-   * Tag the platform release in the GitHub repository.
+   * Tag the platform release in the repository.
 
 5. **Release Execution**:
 
-   * Create a release in the GitHub repository release branch and attach the platform release notes. For this consider the `GitHub Howto Release <https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository/>`_
+   * Create a release in the repository release branch and attach the platform release notes. For this consider the `Howto Release <https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository/>`_
    * Notify the project lead circle about the release for approval.
+   * One of the project leads will give a review approval for the release note in the versioning tool, which is equivalent to his signing the release.
    * Publish within Eclipse SDV.
 
 
@@ -98,7 +100,7 @@ Tracking and Communication
 
 1. **Tracking**:
 
-   * Use the github project management tools to track the progress of software module releases and the platform release.
+   * Use the project management tools to track the progress of software module releases and the platform release.
    * Maintain a release calendar to visualize the timelines and milestones.
 
 2. **Communication**:
