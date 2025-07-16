@@ -48,14 +48,6 @@ S-CORE Management Roles
    * Election and replacement of all role's personnel
    * Decide on addition/removal of modules repositories or split-off of projects
 
-.. role:: Security Manager
-   :id: rl__security_manager
-   :status: draft
-   :tags: quality_management
-   :contains: rl__committer
-
-   The security managers shall be responsible for the planning and coordination of the security activities.
-
 S-CORE process roles
 --------------------
 
@@ -110,6 +102,14 @@ S-CORE development roles
    independence argumentation when involved in the development of unit testing on safety critical
    units. In this way the testing community takes a supportive role for unit testing
 
+.. role:: S-CORE Security Team
+   :id: rl__security_team
+   :status: valid
+   :tags: verification
+   :contains: rl__committer
+
+   (Eclipse) Open Source Role, person(s) who is(are) responsible for coordinating the resolution of Vulnerabilities within the Project.
+   By default, the S-CORE Security Team includes all Committers. However, the Project may choose a different arrangement and establish specific criteria for team nominations.
 
 S-CORE cross functional teams
 -----------------------------

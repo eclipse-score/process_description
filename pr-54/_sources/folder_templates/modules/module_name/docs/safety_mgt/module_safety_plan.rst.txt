@@ -176,13 +176,6 @@ Component <name> Workproducts List
           - :need:`doc__component_name_requirements`
           - doc :ndf:`copy('status', need_id='doc__component_name_requirements')` & WP below
 
-        * - :need:`wp__hsi`
-          - <Link to process>
-          - <automated>
-          - <Link to issue>
-          - <Link to WP>
-          - <automated>
-
         * - :need:`wp__requirements__inspect`
           - :need:`gd_chklst__req__inspection`
           - :ndf:`copy('status', need_id='gd_chklst__req__inspection')`
@@ -279,10 +272,6 @@ If the OSS element is classified as a
         * - :need:`wp__requirements__comp_aou`
           - <Link to issue>
           - Always needed (for Q and QR classification) and also improves process Id 5
-
-        * - :need:`wp__hsi`
-          - n/a
-          - OSS needing special HW is an extreme exception.
 
         * - :need:`wp__requirements__inspect`
           - n/a

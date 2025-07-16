@@ -20,7 +20,7 @@ Dependent Failure Analysis
    :id: doc__feature_name_dfa
    :status: draft
    :safety: ASIL_B
-   :realizes: wp__sw_feature_dfa
+   :realizes: wp__feature_dfa
    :tags: template
 
 .. note:: Use the content of the document to describe e.g. why a fault model is not applicable for the diagram.

@@ -80,15 +80,6 @@ Platform development
    Build configuration capable to create the SEooC Library for the reference HW, platform level.
    Note: Embedded software in the sense of the Iso (i.e. deployed on the production HW) is not part of our delivery.
 
-.. workproduct:: Hardware-software interface document
-   :id: wp__hsi
-   :status: draft
-   :tags: safety
-   :complies: std_wp__iso26262__software_652, std_wp__isopas8926__4522
-
-   | The document shall specify the hardware and software interaction and be consistent with the safety concept.
-   | It shall include the platform's hardware parts that are controlled by software and hardware resources that support the execution of the software.
-
 
 Component development
 ^^^^^^^^^^^^^^^^^^^^^

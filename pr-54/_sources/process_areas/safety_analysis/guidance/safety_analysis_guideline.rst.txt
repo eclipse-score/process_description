@@ -57,7 +57,7 @@ The FMEA considers single faults that can mitigate a safety requirement.
 
 **Steps:**
 
-* For each dynamic diagram, assign the faults by ID from the applicable fault model and document it as a sphinx-needs directive.
+* For each dynamic diagram, assign the faults by ID from the applicable fault model and document it.
 * Document the resulting failure mode and effect and link to a safety requirement that mitigates the violation.
 * Document safety mitigation to avoid or control the failure. If it can't be shown that a element is completely deterministic and testable, an additional safety mechanisms is needed.
 * The attributes of the template are described in :ref:`process_requirements_safety_analysis_attributes`.
@@ -80,7 +80,7 @@ a fault model is not applicable for the diagram.
 
 **Steps:**
 
-* For each applicable failure initiator assign the violation by ID from the DFA failure initiators and document it as a sphinx-needs directive.
+* For each applicable failure initiator assign the violation by ID from the DFA failure initiators and document it.
 * Document the resulting violation causes and effect and link to a safety requirement that mitigates the violation.
 * The attributes of the template are described in :ref:`process_requirements_safety_analysis_attributes`.
 * Judge if the mitigation is sufficient. If not, request to update the requirements with additional safety mitigation to come to a sufficient outcome.  If it can't be shown that a element is completely deterministic and testable, an additional safety mechanisms is needed.
