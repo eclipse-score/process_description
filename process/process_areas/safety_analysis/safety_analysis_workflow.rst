@@ -31,6 +31,7 @@ Workflow Safety Analysis
    :has: doc_concept__safety__analysis, doc_getstrt__safety_analysis
 
    | With a platform features DFA the potential common usage of modules shall be analysed. It shall be used as an input for all other DFA's.
+   | There will be only one platform feature DFA.
 
 .. workflow:: Analyse Feature Architecture
    :id: wf__analyse_featarch

@@ -27,7 +27,7 @@ Workproducts Safety Analysis
    :status: valid
    :complies: std_wp__iso26262__software_751, std_wp__iso26262__analysis_851, std_wp__isopas8926__4524
 
-   | Bottom-Up FMEA verifies the feature architecture (as part of SW Safety Concept)
+   | FMEA verifies the feature architecture (as part of SW Safety Concept)
    | - Detection and prevention mitigations linked to Software Feature Requirements or Feature Assumptions of Use
 
 .. workproduct:: Feature DFA
@@ -44,7 +44,7 @@ Workproducts Safety Analysis
    :status: valid
    :complies: std_wp__iso26262__analysis_751, std_wp__iso26262__analysis_851, std_wp__isopas8926__4524
 
-   | Bottom-Up FMEA, verifies the component architecture (as part of SW Safety Concept)
+   | FMEA, verifies the component architecture (as part of SW Safety Concept)
    | - Detection and prevention mitigations linked to Software Component Requirements or Assumptions of Use
 
 .. workproduct:: Component DFA
