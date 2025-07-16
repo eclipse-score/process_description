@@ -20,7 +20,7 @@ Safety Analysis : FMEA
    :id: doc__feature_name_fmea
    :status: draft
    :safety: ASIL_B
-   :realizes: wp__feature_safety_analysis
+   :realizes: wp__feature_fmea
    :tags: template
 
 .. note:: Use the content of the document to describe e.g. why a fault model is not applicable for the diagram.
