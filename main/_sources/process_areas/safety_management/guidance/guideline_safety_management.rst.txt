@@ -115,3 +115,5 @@ Safety Management Guideline
    :complies: std_req__iso26262__management_6481, std_req__iso26262__management_6482
 
    | The safety package shall be generated progressively and automatically compiling the work products.
+   | One of the checks to perform on the platform safety package is to check completeness of the
+   | process compliance to standards, which can be seen from standard linkage charts in :ref:`external_standards`.
