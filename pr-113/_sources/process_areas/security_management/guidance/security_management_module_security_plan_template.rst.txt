@@ -162,13 +162,6 @@ Module Security Plan Template
           - <Link to WP>
           - <automated>
 
-        * - :need:`wp__hsi`
-          - <Link to process>
-          - <automated>
-          - <Link to issue>
-          - <Link to WP>
-          - <automated>
-
         * - :need:`wp__requirements__inspect`
           - <Link to process>
           - <automated>
