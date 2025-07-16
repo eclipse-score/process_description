@@ -20,7 +20,7 @@ Templates
 .. gd_temp:: Stakeholder Requirements Template
    :id: gd_temp__req__stkh_req
    :status: valid
-   :complies: std_wp__iso26262__software_651, std_req__iso26262__support_641, std_req__iso26262__support_6421, std_req__iso26262__support_6425
+   :complies: std_req__iso26262__system_6411, std_req__iso26262__system_6413, std_req__iso26262__support_641, std_req__iso26262__support_6421, std_req__iso26262__support_6425
 
    .. code-block:: rst
 

@@ -501,7 +501,7 @@
                   
   <section id="concept-description">
 <h1>Concept Description<a class="headerlink" href="#concept-description" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-989ea1c0">
+<div class="need_container docutils container" id="SNCB-4a63d4d8">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_doc_concept table" id="doc_concept__req__process">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -636,14 +636,16 @@
 <p>Based on the inputs of the previous chapter the types of requirements which need to be implemented in the project can be derived. The defined levels are shown in the <a class="reference internal" href="../../general_concepts/score_traceability_concept.html#score-wp-traceability"><span class="std std-ref">Traceability Concept</span></a>.</p>
 <section id="stakeholder-requirements">
 <h3>Stakeholder Requirements<a class="headerlink" href="#stakeholder-requirements" title="Link to this heading">#</a></h3>
-<p>On the platform level the <em>Stakeholder (=customer) Requirements</em> are defined. These requirements describe which content the platform needs to contain, and serve as a project description of the top-level functionality. An example could be e.g.</p>
+<p>On the platform level the <em>Stakeholder (=customer) Requirements</em> are defined. These requirements describe which content (functionality and safety mechanisms) the platform needs to contain, and serve as a project description of the top-level functionality. An example could be e.g.</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>The platform shall support configuration of applications via files (e.g. yaml, json)
 </pre></div>
 </div>
+<p>Note that the <em>Stakeholder Requirements</em> represent the assumed technical safety requirements for the platform SEooC,
+i.e. the assumption on what content is needed, which shall be matched by the user to their expectations.</p>
 </section>
 <section id="feature-requirements">
 <h3>Feature Requirements<a class="headerlink" href="#feature-requirements" title="Link to this heading">#</a></h3>
-<p>The <em>Feature Requirements</em> addresses mainly the integration level of SW modules and components. These shall describe the behavior of the feature on platform level shall be described including the correlations of the integrated components. They serves mainly as an input for (SW + Safety) Architects, Testers, Integrators and are derived from the <em>Stakeholder Requirements</em>. To provide an example</p>
+<p>The <em>Feature Requirements</em> derived from stakeholder requirements address mainly the integration level of SW modules and components. These shall describe the behavior of the feature on platform level shall be described including the correlations of the integrated components. They serves mainly as an input for (SW + Safety) Architects, Testers, Integrators and are derived from the <em>Stakeholder Requirements</em>. To provide an example</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>The feature shall accept JSON formatted string input according to RFC-8259
 </pre></div>
 </div>

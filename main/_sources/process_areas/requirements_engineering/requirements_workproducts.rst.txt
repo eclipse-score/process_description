@@ -18,7 +18,7 @@ Workproducts Requirements Engineering
 .. workproduct:: Stakeholder Requirements
    :id: wp__requirements__stkh
    :status: valid
-   :complies: std_wp__iso26262__system_651, std_wp__iso26262__software_651
+   :complies: std_wp__iso26262__system_651
 
    Technical requirements from a stakeholder viewpoint and assumptions of use based on the integration as SW platform SEooC in an assumed context.
 

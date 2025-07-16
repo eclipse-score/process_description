@@ -101,16 +101,19 @@ Based on the inputs of the previous chapter the types of requirements which need
 Stakeholder Requirements
 ========================
 
-On the platform level the *Stakeholder (=customer) Requirements* are defined. These requirements describe which content the platform needs to contain, and serve as a project description of the top-level functionality. An example could be e.g.
+On the platform level the *Stakeholder (=customer) Requirements* are defined. These requirements describe which content (functionality and safety mechanisms) the platform needs to contain, and serve as a project description of the top-level functionality. An example could be e.g.
 
 .. code-block:: text
 
    The platform shall support configuration of applications via files (e.g. yaml, json)
 
+Note that the *Stakeholder Requirements* represent the assumed technical safety requirements for the platform SEooC,
+i.e. the assumption on what content is needed, which shall be matched by the user to their expectations.
+
 Feature Requirements
 ====================
 
-The *Feature Requirements* addresses mainly the integration level of SW modules and components. These shall describe the behavior of the feature on platform level shall be described including the correlations of the integrated components. They serves mainly as an input for (SW + Safety) Architects, Testers, Integrators and are derived from the *Stakeholder Requirements*. To provide an example
+The *Feature Requirements* derived from stakeholder requirements address mainly the integration level of SW modules and components. These shall describe the behavior of the feature on platform level shall be described including the correlations of the integrated components. They serves mainly as an input for (SW + Safety) Architects, Testers, Integrators and are derived from the *Stakeholder Requirements*. To provide an example
 
 .. code-block:: text
 
