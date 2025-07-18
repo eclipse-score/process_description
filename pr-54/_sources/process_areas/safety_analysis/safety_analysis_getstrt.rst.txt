@@ -28,10 +28,11 @@ in :need:`doc_concept__arch__process`.
 Safety Analysis Workflow
 ************************
 
-The goal of the safety analysis is to proof that a function and the corresponding safety monitoring are not effected both by a violation.
-The safety analysis is performed in three steps. Analyse the considered element (Feature or Component) architecture with a DFA and FMEA.
-Monitor the DFA and FMEA and log any issues in the Issue Tracking system with the ``safety`` label until the analysis is completed.
-The safety analysis is completed when the verification is done, no issues are open and the status is "valid".
+The goal of the safety analysis is to proof that the safety requirements for functions and monitors are not violated.
+The safety analysis is performed in three steps.
+ * Analyse the architecture with a DFA and FMEA.
+ * Monitor the DFA and FMEA and log any issues in the Issue Tracking system with the ``safety`` label until the analysis is completed.
+ * Verify the safety analysis. The verification is done when no issues are open and the status is "valid".
 
 The details of what needs to be done in each step are described in the :need:`gd_guidl__safety_analysis`. For the safety analysis
 templates are used. The templates are described in the :ref:`FMEA_templates` and :ref:`DFA_templates`. A checklist for the safety analysis is provided in

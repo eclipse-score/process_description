@@ -24,7 +24,7 @@ This section discusses a concept for safety analyses. As methods for safety anal
 and FMEA (Failure Mode and Effects Analysis). Inputs for this concept are the requirements of ISO26262 Part 6 Chapter 7 and Part 9 Chapter 7 and 8.
 
 The objectives of the DFA are to show that the required freedom from interference is achieved. Therefore the potential causes or initiators are
-analysed. The DFA is focussed on common cause failures. With a DFA architectural features are analysed if
+analysed :need:`gd_guidl__safety_analysis`. The DFA is focussed on common cause failures. With a DFA architectural features are analysed if
 
  | - there are redundant elements (similar or non-similar)
  | - failures can violate a functions and the safety mechanisms for the function
@@ -36,7 +36,7 @@ in the architecture can be seen that the freedom from interference is achieved.
 
 The objective of the FMEA is to show that the risk of systematic faults is reduced to an acceptable level. This shall be done by showing that
 systematic faults can be excluded by a full test coverage. Or, if this is not possible, that the systematic faults are mitigated by a sufficient mitigation.
-Cascading failures are also considered in the FMEA and not in the DFA. It's because a ASIL decomposition is not applicable at S-CORE.
+Cascading failures are also considered in the FMEA and not in the DFA. It's because a ASIL decomposition is not foreseen.
 
 Inputs
 ******
@@ -102,15 +102,22 @@ shall be done in the way that we use the static and dynamic diagrams. The follow
    :width: 80%
    :name: safety_analysis_feature_fig
 
-   Dynamic Architecture
+   Feature Architecture
 
-The FMEA is done with the shown diagrams. The interface 1 and 2 are the interfaces of the feature. These interfaces shall be analysed with the
+The FMEA is done with the shown diagrams. The interface 1 is the interfaces of the feature. Interfaces shall be analysed with the
 fault models :need:`gd_guidl__fault_models` that here could be applied. With the dynamic diagrams the communication between the components can be analysed.
 The static diagrams are used to analyse the dependencies. For violations a failure mitigation shall be defined.
 
+.. figure:: _assets/safety_analysis_component.drawio.svg
+   :align: center
+   :width: 80%
+   :name: safety_analysis_component_fig
+
+   Component Architecture
+
 At component level you can see inside of the component when the component consists of two or more sub-components. If the component consists of
 only one sub-component there results of the analysis are the same as for the feature level. So no additional consideration is needed.
-The component kvstorage consists of two sub-components, kvs and fs. The dynamic diagram shows the communication between the sub-components.
+The component "Component 1" consists of two sub-components, "Component 3" and "Component 4". The dynamic diagram shows the communication between the sub-components.
 
 
 How to add new safety mitigations?
@@ -148,8 +155,7 @@ Use the content of the document :need:`doc__feature_name_dfa`, :need:`doc__featu
 a fault model is not applicable for the diagram.
 If there are additional fault models needed, please enlarge the list of fault models.
 
-The dynamic architecture for
-"check if key contains default value" is used as an example. The attributes of the template (:ref:`process_requirements_safety_analysis_attributes`)
+The dynamic architecture of the feature architecture is used as an example. The attributes of the template (:ref:`process_requirements_safety_analysis_attributes`)
 shall be filled in as follows:
 
 .. code-block:: rst
@@ -179,7 +185,8 @@ shall be filled in as follows:
       User is not able to use the feature. Middleware cant be used.
 
 The FMEA is finished, if all fault models are checked and for each identified fault a sufficient mitigation exists. For the validation of the
-FMEA the checklist :need:`gd_chklst__safety_analysis` shall be used.
+FMEA the checklist :need:`gd_chklst__safety_analysis` shall be used. For all fault models that are not applicable, the reason has to be documented
+in the content of the document, so it can be recognized.
 
 **DFA:**
 

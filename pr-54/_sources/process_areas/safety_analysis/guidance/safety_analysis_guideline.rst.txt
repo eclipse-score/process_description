@@ -51,7 +51,9 @@ The analysis is done by using the template :ref:`FMEA_templates` on the feature 
 using a diagram specific applied fault model <:need:`gd_guidl__fault_models`>. Apply the fault
 model to the diagram and document the results in the template. Use the content of the document :need:`doc__feature_name_dfa`, :need:`doc__feature_name_fmea`,
 :need:`doc__component_name_dfa`, :need:`doc__component_name_fmea` to describe e.g. why
-a fault model is not applicable for the diagram.
+a fault model is not applicable for the diagram.  If a FMEA can't be applied, the reason has to be documented in the content of the document, so it
+can be recognized.
+
 
 The FMEA considers single faults that can mitigate a safety requirement.
 
@@ -76,7 +78,8 @@ Step-by-Step-approach DFA:
 The analysis is done by using the template :ref:`dfa_templates` on the feature or component architectural diagrams using a list of DFA failure initiators <:need:`gd_guidl__dfa_failure_initiators`>.
 Use the content of the document :need:`doc__feature_name_dfa`, :need:`doc__feature_name_fmea`,
 :need:`doc__component_name_dfa`, :need:`doc__component_name_fmea` to describe e.g. why
-a fault model is not applicable for the diagram.
+a fault model is not applicable for the diagram. If a DFA can't be applied, the reason has to be documented in the content of the document, so it
+can be recognized.
 
 **Steps:**
 

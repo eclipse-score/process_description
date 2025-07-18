@@ -20,6 +20,7 @@ Requirement Inspection Checklist
 .. gd_chklst:: Requirements Inspection Checklist Template
    :id: gd_chklst__req__inspection
    :status: valid
+   :complies: std_req__iso26262__system_6412, std_req__iso26262__system_6414, std_req__iso26262__system_6421, std_req__iso26262__system_6422
    :tags: requirements_engineering
 
    **Purpose**
@@ -119,6 +120,18 @@ Requirement Inspection Checklist
       * - REQ_08_01
         - Is the requirement *verifiable*?
         - Expectation is that at the time of the inspection already tests are created for the requirement. This can be checked via traces, but also :need:`gd_req__req__attr_test_covered` shows this. In case the requirement is not mature enough at the time of inspection (i.e. missing test cases), a test expert should be invited to the Pull-Request review to explicitly check this item.
+        -
+        -
+        -
+      * - REQ_09_01
+        - For stakeholder requirements: Do those cover assumed safety mechanisms needed by the hardware and system?
+        - Note that the feature/component requirements also cover safety mechanisms in case those are needed to mitigate failures found during :ref:`safety_analysis`
+        -
+        -
+        -
+      * - REQ_09_02
+        - For other requirements: Do the requirements defining a safety mechanism contain the error reaction leading to a safe state?
+        - Alternatively to the safe state there could also be "repair" mechanisms. Also do not forget to consider REQ_05_01 for these.
         -
         -
         -

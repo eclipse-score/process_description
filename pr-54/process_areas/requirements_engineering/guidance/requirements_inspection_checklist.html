@@ -510,7 +510,7 @@
                   
   <section id="requirement-inspection-checklist">
 <span id="id1"></span><h1>Requirement Inspection Checklist<a class="headerlink" href="#requirement-inspection-checklist" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-5f7e5827">
+<div class="need_container docutils container" id="SNCB-7a823eea">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_chklst table" id="gd_chklst__req__inspection">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -533,6 +533,7 @@
 <div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">requirements_engineering</span></span></span></div>
 </span></span></div>
 <div class="line"><span><div class="line">contained by: <span class="contains"><span><a class="reference internal" href="../requirements_workflow.html#wf__monitor_verify_requirements" title="gd_chklst__req__inspection">wf__monitor_verify_requirements</a></span></span></div>
+<div class="line">complies: <span class="complies"><span><a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_req__iso26262__system_6412" title="gd_chklst__req__inspection">std_req__iso26262__system_6412</a>, <a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_req__iso26262__system_6414" title="gd_chklst__req__inspection">std_req__iso26262__system_6414</a>, <a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_req__iso26262__system_6421" title="gd_chklst__req__inspection">std_req__iso26262__system_6421</a>, <a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_req__iso26262__system_6422" title="gd_chklst__req__inspection">std_req__iso26262__system_6422</a></span></span></div>
 </span></div>
 </div>
 </td>
@@ -656,6 +657,20 @@ It will be filled out within the github “inspection” pull request review of 
 <tr class="row-odd"><td><p>REQ_08_01</p></td>
 <td><p>Is the requirement <em>verifiable</em>?</p></td>
 <td><p>Expectation is that at the time of the inspection already tests are created for the requirement. This can be checked via traces, but also <a class="reference internal" href="requirements_process_reqs.html#gd_req__req__attr_test_covered" title="gd_req__req__attr_test_covered"><em class="xref need">Requirement attribute: test... (gd_req__req__attr_test_covered)</em></a> shows this. In case the requirement is not mature enough at the time of inspection (i.e. missing test cases), a test expert should be invited to the Pull-Request review to explicitly check this item.</p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>REQ_09_01</p></td>
+<td><p>For stakeholder requirements: Do those cover assumed safety mechanisms needed by the hardware and system?</p></td>
+<td><p>Note that the feature/component requirements also cover safety mechanisms in case those are needed to mitigate failures found during <a class="reference internal" href="../../safety_analysis/index.html#safety-analysis"><span class="std std-ref">Safety Analysis</span></a></p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>REQ_09_02</p></td>
+<td><p>For other requirements: Do the requirements defining a safety mechanism contain the error reaction leading to a safe state?</p></td>
+<td><p>Alternatively to the safe state there could also be “repair” mechanisms. Also do not forget to consider REQ_05_01 for these.</p></td>
 <td></td>
 <td></td>
 <td></td>

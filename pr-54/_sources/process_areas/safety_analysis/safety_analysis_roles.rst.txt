@@ -48,9 +48,9 @@ Roles
 
    Responsibility
 
-   * Analyse Feature and Component Architecture by performing FMEA and DFA
-   * Monitor Safety Analyses and DFA
-   * Verify Safety Analyses and DFA
+   * Analyse Architecture by performing FMEA and DFA
+   * Monitor FMEA and DFA
+   * Verify FMEA and DFA
 
    Authority
 

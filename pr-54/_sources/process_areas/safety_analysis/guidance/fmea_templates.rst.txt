@@ -25,10 +25,10 @@ FMEA Templates
 .. code-block:: rst
 
     .. feat_saf_fmea:: <Element descriptor>
-       :verifies: <Feature architecture>
+       :violates: <Feature architecture>
        :id: feat_saf_fmea__<Feature>__<Element descriptor>
-       :violation_id: <ID from fault model :need:`gd_guidl__fault_models`>
-       :violation_cause: "description of failure effect of the fault model on the element"
+       :fault_id: <ID from fault model :need:`gd_guidl__fault_models`>
+       :fault_cause: "description of failure effect of the fault model on the element"
        :mitigates: <ID from Feature Requirement | ID from AoU Feature Requirement>
        :mitigation_issue: <ID from Issue Tracker>
        :sufficient: <yes|no>
@@ -43,10 +43,10 @@ FMEA Templates
 .. code-block:: rst
 
     .. comp_saf_fmea:: <Element descriptor>
-       :verifies: <Component architecture>
+       :violates: <Component architecture>
        :id: comp_saf_fmea__<Component>__<Element descriptor>
-       :violation_id: <ID from fault model :need:`gd_guidl__fault_models`>
-       :violation_cause: "description of failure effect of the fault model on the element"
+       :fault_id: <ID from fault model :need:`gd_guidl__fault_models`>
+       :fault_cause: "description of failure effect of the fault model on the element"
        :mitigates: <ID from Component Requirement | ID from AoU Component Requirement>
        :mitigation_issue: <ID from Issue Tracker>
        :sufficient: <yes|no>
