@@ -19,7 +19,7 @@ Workproducts Implementation
    :id: wp__sw_implementation
    :status: valid
    :tags: safety
-   :complies: std_wp__iso26262__software_851, std_wp__iso26262__software_852
+   :complies: std_wp__iso26262__software_851, std_wp__iso26262__software_852, std_wp__iso26262__software_app_c_53
 
    Implementation includes source code and detailed design (e.g. in form of comments or linked graphical representations) and SW configuration (e.g. #ifdef)
    The "how to" is described in the SW Development Plan guidelines

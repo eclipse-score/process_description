@@ -58,7 +58,7 @@ Description of used coding guidelines.
 SW configuration guideline
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Descriptionof used SW configuration guideline.
+Description of used SW configuration guideline.
 
 SW development tools
 ^^^^^^^^^^^^^^^^^^^^
