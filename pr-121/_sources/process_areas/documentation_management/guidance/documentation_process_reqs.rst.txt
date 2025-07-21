@@ -85,10 +85,11 @@ Document Management Process Requirements
    :tags: prio_2_automation
    :complies: std_req__iso26262__support_1045
 
-   Generic documents headers shall contain an "author" attribute. Every committer who adds more than 50%
-   of the content shall put his name.
+   Generic documents headers shall contain an "author" attribute which is filled with the
+   committer/contributor name(s) who added/modified most lines in the document (more than one name in case of same numbers).
+   Plus the name of the person doing the last commit, if different from the before.
 
-   Note: In the future this may also be automated based on an analysis of content during the
+   Note: This should be automated based on an analysis of content during the
    documentation build for every commit of the file containing the document.
 
 .. gd_req:: Document Reviewer
