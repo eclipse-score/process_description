@@ -1,0 +1,179 @@
+..
+   # *******************************************************************************
+   # Copyright (c) 2025 Contributors to the Eclipse Foundation
+   #
+   # See the NOTICE file(s) distributed with this work for additional
+   # information regarding copyright ownership.
+   #
+   # This program and the accompanying materials are made available under the
+   # terms of the Apache License Version 2.0 which is available at
+   # https://www.apache.org/licenses/LICENSE-2.0
+   #
+   # SPDX-License-Identifier: Apache-2.0
+   # *******************************************************************************
+
+Guideline
+#########
+
+.. gd_guidl:: Problem Resolution Guideline
+   :id: gd_guidl__problem__problem
+   :status: valid
+   :complies: std_req__aspice_40__SUP-9-BP1, std_req__aspice_40__SUP-9-BP5, std_req__aspice_40__SUP-9-BP6, std_req__aspice_40__SUP-9-BP7
+
+This document describes the general guidances for Problem Resolution based on the concept which is defined :need:`[[title]]<doc_concept__problem__process>`.
+
+General Hints
+=============
+
+The detailed implementation of the Problem Resolution for the project shall be described in the :ref:`Workflow Platform Management <workflow_platform_management>`.
+
+Templates
+---------
+
+To create problem reports, the project shall provide the content of the following template
+in project's selected Issue Tracking System: :need:`[[title]]<gd_temp__problem__template>`.
+
+.. note::
+  An example template for the Issue Tracking System in GitHub (`GitHub Issues <https://github.com/features/issues>`_)
+  can be found here:
+  `Issue Template Bugfix <https://github.com/eclipse-score/process_description/blob/main/.github/ISSUE_TEMPLATE/1-bugfix.yml>`_
+
+Attributes
+----------
+
+For all Problems following mandatory attributes need to be defined:
+
+.. needtable:: Overview of mandatory problem resolution attributes
+   :tags: problem_resolution
+   :filter: "mandatory" in tags and "attribute" and "problem_resolution" in tags and is_external == False
+   :style: table
+   :columns: title
+   :colwidths: 30
+
+
+A more detailed description can be found here: :ref:`prm_process_requirements`
+
+.. _workflow_prm_requirements:
+
+Activities for Problem Resolution
+=================================
+
+This section describes in detail which steps need to be performed for a Problem Resolution.
+
+.. list-table:: Activities for Problem Resolution
+   :header-rows: 1
+   :widths: 10,60,30,30
+
+   * - Step
+     - Description
+     - Responsible
+     - Approver
+   * - :ref:`1. <prm_create_problem_report>`
+     - Create Problem Report
+     - :need:`[[title]] <rl__contributor>`
+     - :need:`[[title]] <rl__committer>`
+   * - :ref:`2. <prm_analyze_problem_report>`
+     - Analyze Problem Report
+     - :need:`[[title]] <rl__contributor>`
+     - :need:`[[title]] <rl__committer>`
+   * - :ref:`3. <prm_initiate_problem_resolution>`
+     - Initiate and Monitor Problem Resolution
+     - :need:`[[title]] <rl__contributor>`
+     - :need:`[[title]] <rl__committer>`
+   * - :ref:`4. <prm_monitor_problem_resolution>`
+     - Close Problem Resolution
+     - :need:`[[title]] <rl__committer>`
+     - :need:`[[title]] <rl__technical_lead>`, :need:`[[title]] <rl__module_lead>`
+
+.. _prm_create_problem_report:
+
+Create Problem Report
+---------------------
+
+:need:`[[title]] <rl__contributor>` (as author, submitter, reporter) creates the Problem
+Report in the defined Issue Tracking System of the project based on the content of the
+provided template:
+:need:`[[title]]<gd_temp__problem__template>`.
+
+It is expected that the select Issue Tracking system supports template definition. Best
+practice is to define a template with the required content, so that it can be copied
+from the different users.
+
+.. note::
+  For the Issue Tracking System in GitHub, there is a template created, which can be
+  be found here:
+  `Issue Template Bugfix <https://github.com/eclipse-score/process_description/blob/main/.github/ISSUE_TEMPLATE/1-bugfix.yml>`_
+
+.. note::
+  A Problem Report Example based on that template is here:
+  `Example Problem Report <https://github.com/eclipse-score/process_description/issues/124>`_
+
+It is expected, that the UID will be provided automatically by the Issue Tracking System.
+
+It is expected, that the status of the problem report is set to "open" automatically.
+As long as the content is updated, the status of the Problem is kept "open".
+
+It is expected, that the problem submitter will be set automatically by the Issue
+Tracking System.
+
+The title of the Problem Report should reflect the topic accordingly.
+
+The description should reflect the problem root cause and impact in detail.
+
+.. note::
+  | For the Problem Report Example:
+  | * The UID is provided by the Issue Tracking System as: **#124**
+  | * The status is provided by the Issue Tracking System as: **Open**
+  | * The submitter is provided by the Issue Tracking System as: **masc2023**
+  | * The title contains the main root cause, missing safety/security attribute
+  | * The descriptions has a section for the root cause and impact
+  | * Further supporting information is added as the link to the official feature request template
+
+When ready to review and to analyze, the reporter sets the status to "in review" manually.
+
+.. note::
+  | For the Problem Report Example:
+  | * The "Process Development Community" dashboard is added and the status must be changed to **Todo**
+  | * The combination of **Open** and **Todo** defines the status **in review**
+
+.. _prm_analyze_problem_report:
+
+Analyze Problem Report
+----------------------
+
+The projects :need:`[[title]] <rl__committer>` analyzes the problem together with the
+:need:`[[title]] <rl__contributor>` and takes a decision for accepting or rejecting it.
+
+If accepted, the status is set to "in implementation" and :need:`[[title]] <rl__contributor>`
+can start with the initiation of the Problem Resolution, otherwise the status is set to "rejected".
+
+The author has the freedom to cancel it at any time by setting the status to "rejected".
+
+.. _prm_initiate_problem_resolution:
+
+Initiate and Monitor Problem Resolution
+---------------------------------------
+
+:need:`[[title]] <rl__committer>` initiates the resolution of the Problem.
+
+Therefore further activities needs to be planned and linked to the Problem Report.
+
+During the resolution the responsible lead :need:`[[title]] <rl__technical_lead>` or
+:need:`[[title]] <rl__module_lead>` reports regularly the status to the affected projects teams.
+
+The author has the freedom to cancel it at any time by setting the status to "rejected".
+
+.. _prm_monitor_problem_resolution:
+
+Close Problem Resolution
+------------------------
+
+During the resolution the :need:`[[title]] <rl__contributor>` monitors all activities linked to
+the problem, until they are closed.
+
+:need:`[[title]] <rl__committer>` checks finally if the problem Resolution is sufficient before
+the status is finally closed.
+To check, if it is sufficient, :need:`Problem Checklist <gd_chklst__problem__cr_review>` may used.
+
+:need:`[[title]] <rl__committer>` has the freedom to reject it at any time by setting the status
+to "reject".
