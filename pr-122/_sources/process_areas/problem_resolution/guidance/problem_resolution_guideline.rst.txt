@@ -31,8 +31,7 @@ Templates
 ---------
 
 To create problem reports, the project shall provide the following template: :need:`[[title]]<gd_temp__problem__template>`.
-An example template for the issue trackings system GitHub can be found here:
-`https://github.com/eclipse-score/communication/blob/main/.github/ISSUE_TEMPLATE/1-bugfix.yml`_.
+An example template for the issue trackings system GitHub can be found here: (to be updated later)
 
 Attributes
 ----------

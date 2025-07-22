@@ -36,7 +36,7 @@ The workflows are defined in the :ref:`problem_workflows` section.
 For every problem identified, the following workflows are executed:
 
 * Create your problem report according to :need:`wf__problem__create_pr`
-* Analyze your problem report according to :need:`wf__problem__analyse_pr`
+* Analyze your problem report according to :need:`wf__problem__analyze_pr`
 * Initiate problem resolution and monitor it until closure according to :need:`wf__problem__initiate_monitor_pr`
 * Close the problem resolution according to :need:`wf__problem__close_pr`
 

@@ -102,18 +102,6 @@ Problem Attributes
       * critical
       * blocker
 
-.. gd_req:: Problem attribute: category
-   :id: gd_req__problem__attr_category
-   :status: valid
-   :tags: prio_3_automation, problem_resolution, attribute, mandatory
-   :satisfies: wf__problem__create_pr, wf__problem__analyze_pr, wf__problem__initiate_monitor_pr, wf__problem__close_pr
-   :complies: std_req__aspice_40__SUP-9-BP1
-
-   Each Problem shall have a category identifier:
-
-      * User
-      * Bug
-
 .. gd_req:: Problem attribute:: safety affected
    :id: gd_req__problem__attr_safety_affected
    :status: valid
