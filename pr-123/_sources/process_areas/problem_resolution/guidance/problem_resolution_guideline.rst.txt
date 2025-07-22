@@ -25,12 +25,13 @@ This document describes the general guidances for Problem Resolution based on th
 General Hints
 =============
 
-The detailed implementation of the Problem Resolution for **S-CORE** is described in the `[[title]]<REPLACE_doc__platform_problem_resolution_plan>`.
+The detailed implementation of the Problem Resolution for the project shall be described in the :ref:`Workflow Platform Management <workflow_platform_management>`.
 
 Templates
 ---------
 
-To create problem reports, **S-CORE** provides the following template: :need:`[[title]]<gd_temp__problem__template>`.
+To create problem reports, the project shall provide the following template: :need:`[[title]]<gd_temp__problem__template>`.
+An example template for the issue trackings system GitHub can be found here: (to be updated later)
 
 Attributes
 ----------
@@ -52,31 +53,32 @@ A more detailed description can be found here: :ref:`prm_process_requirements`
 Activities for Problem Resolution
 =================================
 
-This section describes in detail which steps need to be performed for a Problem resolution.
-
-Refer to the `Problem Resolution Plan <REPLACE_doc__platform_problem_resolution_plan>` for examples
-how to create problem reports.
+This section describes in detail which steps need to be performed for a Problem Resolution.
 
 .. list-table:: Activities for Problem Resolution
    :header-rows: 1
-   :widths: 10,60,30
+   :widths: 10,60,30,30
 
    * - Step
      - Description
      - Responsible
+     - Approver
    * - :ref:`1. <prm_create_problem_report>`
      - Create Problem Report
      - :need:`[[title]] <rl__contributor>`
+     - :need:`[[title]] <rl__committer>`
    * - :ref:`2. <prm_analyze_problem_report>`
-     - Analyse Problem Report
+     - Analyze Problem Report
      - :need:`[[title]] <rl__contributor>`
+     - :need:`[[title]] <rl__committer>`
    * - :ref:`3. <prm_initiate_problem_resolution>`
      - Initiate and Monitor Problem Resolution
      - :need:`[[title]] <rl__contributor>`
+     - :need:`[[title]] <rl__committer>`
    * - :ref:`4. <prm_monitor_problem_resolution>`
      - Close Problem Resolution
      - :need:`[[title]] <rl__committer>`
-
+     - :need:`[[title]] <rl__technical_lead>`, :need:`[[title]] <rl__module_lead>`
 
 .. _prm_create_problem_report:
 
@@ -94,18 +96,18 @@ The description should reflect the problem root cause and impact in detail.
 Copy therefore the :need:`Problem Template <gd_temp__problem__template>` into the created Problem
 Report (Issue Tracking System).
 
-Set the status of the Problem to "open", when ready to review and analyse set to "in review".
+Set the status of the Problem to "open", when ready to review and analyze set to "in review".
 
 .. _prm_analyze_problem_report:
 
-Analyse Problem Report
+Analyze Problem Report
 ----------------------
 
-The **S-CORE** :need:`[[title]] <rl__committer>` analyzes the problem together with the
+The projects :need:`[[title]] <rl__committer>` analyzes the problem together with the
 :need:`[[title]] <rl__contributor>` and takes a decision for accepting or rejecting it.
 
 If accepted, the status is set to "in implementation" and :need:`[[title]] <rl__contributor>`
-can start with the iniation of the Problem Resolution, otherwise the status is set to "rejected".
+can start with the initiation of the Problem Resolution, otherwise the status is set to "rejected".
 
 The author has the freedom to cancel it at any time by setting the status to "rejected".
 
@@ -119,7 +121,7 @@ Initiate and Monitor Problem Resolution
 Therefore further activities needs to be planned and linked to the Problem Report.
 
 During the resolution the responsible lead :need:`[[title]] <rl__technical_lead>` or
-:need:`[[title]] <rl__module_lead>` reports regularly the status to the affected **S-CORE** teams.
+:need:`[[title]] <rl__module_lead>` reports regularly the status to the affected projects teams.
 
 The author has the freedom to cancel it at any time by setting the status to "rejected".
 

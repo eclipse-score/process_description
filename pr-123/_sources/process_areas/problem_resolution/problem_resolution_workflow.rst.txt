@@ -12,6 +12,7 @@
    # SPDX-License-Identifier: Apache-2.0
    # *******************************************************************************
 
+.. _problem_workflows:
 
 Workflow Problem Resolution
 ###########################
@@ -33,8 +34,8 @@ Workflow Problem Resolution
 
    To start the review and the analysis the Problem status is changed to "in review"
 
-.. workflow:: Analyse Problem Report
-   :id: wf__problem__analyse_pr
+.. workflow:: Analyze Problem Report
+   :id: wf__problem__analyze_pr
    :status: valid
    :responsible: rl__contributor
    :approved_by: rl__committer
@@ -44,7 +45,7 @@ Workflow Problem Resolution
    :contains: gd_temp__problem__template, gd_chklst__problem__cr_review, gd_guidl__problem__problem
    :has: doc_concept__problem__process, doc_getstrt__problem__process
 
-   The Problem Report is analysed.
+   The Problem Report is analyzed.
 
    Until the template is not filled out properly, the Problem may be set back to “open” from the
    :need:`Committer <rl__committer>`.

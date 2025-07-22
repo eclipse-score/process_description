@@ -26,10 +26,10 @@ including the requirements of the different stakeholders for the Problem Resolut
 
 Key concept
 ***********
-A Problem Report is the **ONLY** way to report (compare `REPLACE_doc__contr_guideline`)
-deviations of an expected result for existing features in the **S-CORE** project.
-Deviations include problems found by user, bugs found during verification activites by tester,
-quality issues found by quality checks, safety anomalies, vulnerabilites or any other malfunction.
+A Problem Report is the **ONLY** way to report deviations of an expected result for
+existing features in the project. Deviations include problems found by user,
+bugs found during verification activities by tester, quality issues found by quality
+checks, safety anomalies, vulnerabilities or any other malfunction.
 
 Inputs
 ******
@@ -44,11 +44,11 @@ Stakeholders for the Problem Report
 
 #. :need:`Contributor <rl__contributor>`
 
-   * Contributes features and components to grow the **S-CORE** content
+   * Contributes features and components to grow the project content
 
 #. :need:`Committer <rl__committer>`
 
-   * Verifies that the contribution fulfills the **S-CORE** policies
+   * Verifies that the contribution fulfills the project policies
    * Approves the contribution
 
 Standard Requirements
@@ -63,7 +63,7 @@ Also requirements of standards need to be taken into consideration:
 Problem Report Categories
 *************************
 
-User: Problems relating to requirements, design, or code found by user of the platform.
+User: Problems relating to requirements, architecture, implementation, or code found by user of the platform.
 
 Bug: Problems found by contributor based on component, feature or platform integration tests including verification and quality assurance activities.
 
