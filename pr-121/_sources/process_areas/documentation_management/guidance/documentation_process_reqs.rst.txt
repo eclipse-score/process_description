@@ -73,7 +73,7 @@ Document Management Process Requirements
    :tags: prio_1_automation
    :complies: std_req__iso26262__support_1045
 
-   The version management tool shall document the authorship of a document.
+   The version management tool shall document and report (be able to show) the authorship of a document.
    I.e. for each change of a document the author of the changes is stored.
 
 .. gd_req:: Document Reviewer
@@ -82,7 +82,7 @@ Document Management Process Requirements
    :tags: prio_1_automation
    :complies: std_req__iso26262__support_1043
 
-   The version management tool shall document the reviewers of a document.
+   The version management tool shall document and report (be able to show) the reviewers of a document.
    I.e. for each change of a document the reviewers of the change are stored.
 
 .. gd_req:: Document Approver
@@ -91,7 +91,7 @@ Document Management Process Requirements
    :tags: prio_1_automation
    :complies: std_req__iso26262__support_1045
 
-   The version management tool shall document the approver of a document.
+   The version management tool shall document and report (be able to show) the approver of a document.
    I.e. for each change of a document the approver of the change is stored,
    which is usually the person with "write-rights" on the document approving
    the merge of a Pull Request (this may also be more than one person).
