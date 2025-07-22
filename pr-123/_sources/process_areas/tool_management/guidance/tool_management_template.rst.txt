@@ -39,7 +39,7 @@ Tool Verification Report Template
     The above directive must be updated according to your tool.
 
 An example of a Tool Verification Report can be find here:
-`https://eclipse-score.github.io/score/main/score_tools/doc_as_code.html#doc_tool__doc_as_code`_
+`Example Tool Verification Report <https://eclipse-score.github.io/score/main/score_tools/doc_as_code.html#doc_tool__doc_as_code>`_
 
 
 [Your Tool Name] Verification Report
