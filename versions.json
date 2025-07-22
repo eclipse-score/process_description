@@ -130,5 +130,9 @@
   {
     "version": "pr-123",
     "url": "https://eclipse-score.github.io/process_description/pr-123/"
+  },
+  {
+    "version": "pr-125",
+    "url": "https://eclipse-score.github.io/process_description/pr-125/"
   }
 ]
