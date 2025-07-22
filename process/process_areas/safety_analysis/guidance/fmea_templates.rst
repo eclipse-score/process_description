@@ -28,8 +28,8 @@ FMEA Templates
        :violates: <Feature architecture>
        :id: feat_saf_fmea__<Feature>__<Element descriptor>
        :fault_id: <ID from fault model :need:`gd_guidl__fault_models`>
-       :fault_cause: "description of failure effect of the fault model on the element"
-       :mitigates: <ID from Feature Requirement | ID from AoU Feature Requirement>
+       :failure_effect: "description of failure effect of the fault model on the element"
+       :mitigated_by: <ID from Feature Requirement | ID from AoU Feature Requirement>
        :mitigation_issue: <ID from Issue Tracker>
        :sufficient: <yes|no>
        :status: <valid|invalid>
@@ -46,8 +46,8 @@ FMEA Templates
        :violates: <Component architecture>
        :id: comp_saf_fmea__<Component>__<Element descriptor>
        :fault_id: <ID from fault model :need:`gd_guidl__fault_models`>
-       :fault_cause: "description of failure effect of the fault model on the element"
-       :mitigates: <ID from Component Requirement | ID from AoU Component Requirement>
+       :failure_effect: "description of failure effect of the fault model on the element"
+       :mitigated_by: <ID from Component Requirement | ID from AoU Component Requirement>
        :mitigation_issue: <ID from Issue Tracker>
        :sufficient: <yes|no>
        :status: <valid|invalid>

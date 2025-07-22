@@ -18,6 +18,8 @@
 Workflow Safety Analysis
 ########################
 
+Safety analysis is used as a umbrella term for the methods FMEA (Failure Modes and Effects Analysis) and DFA (Dependent Failure Analysis).
+
 .. workflow:: Analyze Platform Feature Architecture
    :id: wf__analyse_platform_featarch
    :status: valid
@@ -61,7 +63,7 @@ Workflow Safety Analysis
 
    | The FMEA and DFA for the component is executed.
 
-.. workflow:: Monitor Safety Analyses and DFA
+.. workflow:: Monitor FMEA and DFA
    :id: wf__mr_saf_analyses_dfa
    :status: valid
    :tags: safety_analysis
@@ -73,9 +75,9 @@ Workflow Safety Analysis
    :contains: gd_guidl__dfa_failure_initiators, gd_temp__feat_saf_dfa, gd_temp__comp_saf_dfa, gd_guidl__fault_models, gd_temp__feat_saf_fmea, gd_temp__comp_saf_fmea
    :has: doc_concept__safety__analysis, doc_getstrt__safety_analysis
 
-   | The safety analyses and DFA are monitored.
+   | The FMEA and DFA are monitored.
 
-.. workflow:: Verify Safety Analyses and DFA
+.. workflow:: Verify FMEA and DFA
    :id: wf__vy_saf_analyses_dfa
    :status: valid
    :tags: safety_analysis
@@ -87,14 +89,14 @@ Workflow Safety Analysis
    :contains: gd_guidl__dfa_failure_initiators, gd_temp__feat_saf_dfa, gd_temp__comp_saf_dfa, gd_guidl__fault_models, gd_temp__feat_saf_fmea, gd_temp__comp_saf_fmea, gd_chklst__safety_analysis
    :has: doc_concept__safety__analysis, doc_getstrt__safety_analysis
 
-   | The safety analyses and DFA are verified. The verification criteria is that it can be proven that a function and the corresponding safety monitoring are not both affected.
+   | The FMEA and DFA are verified. The verification criteria is that it can be proven that a function and the corresponding safety monitoring are not both affected.
 
 
-RAS(IC) for Safety Analysis
-***************************
+RAS(IC) for Safety Analysis  (FMEA and DFA)
+*******************************************
 
 
-.. needtable:: RASIC Overview for Safety Analysis
+.. needtable:: RASIC Overview for Safety Analysis  (FMEA and DFA)
    :tags: safety_analysis
    :filter: "safety_analysis" in tags and type == "workflow" and is_external == False
    :style: table

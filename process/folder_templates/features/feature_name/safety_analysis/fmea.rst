@@ -13,8 +13,8 @@
    # *******************************************************************************
 
 
-Safety Analysis : FMEA
-======================
+FMEA (Failure Modes and Effects Analysis)
+=========================================
 
 .. document:: [Your Feature Name] FMEA
    :id: doc__feature_name_fmea
@@ -39,20 +39,20 @@ Failure Mode List
 .. code-block:: rst
 
 
-   .. feat_saf_fmea:: <Element descriptor>
-      :verifies: <Feature architecture>
-      :id: feat_saf_fmea__<Feature>__<Element descriptor>
-      :violation_id: <ID from fault model Fault Models (gd_guidl__fault_models)>
-      :violation_cause: “description of failure effect of the fault model on the element”
-      :mitigates: <ID from Feature Requirement | ID from AoU Feature Requirement>
-      :mitigation_issue: <ID from Issue Tracker>
-      :sufficient: <yes|no>
-      :status: <valid|invalid>
+    .. feat_saf_fmea:: <Element descriptor>
+       :violates: <Feature architecture>
+       :id: feat_saf_fmea__<Feature>__<Element descriptor>
+       :fault_id: <ID from fault model :need:`gd_guidl__fault_models`>
+       :failure_effect: "description of failure effect of the fault model on the element"
+       :mitigated_by: <ID from Feature Requirement | ID from AoU Feature Requirement>
+       :mitigation_issue: <ID from Issue Tracker>
+       :sufficient: <yes|no>
+       :status: <valid|invalid>
 
  .. note::   argument is inside the 'content'. Therefore content is mandatory
 
 .. attention::
     The above directive must be updated according to your feature FMEA.
 
-    - Remove the ``code-block``
+    - The above "code-block" directive must be updated
     - Fill in all the needed information in the <brackets>

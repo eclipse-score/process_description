@@ -12,16 +12,15 @@
    # SPDX-License-Identifier: Apache-2.0
    # *******************************************************************************
 
-Fault Models
-============
+FMEA Fault Models
+=================
 
-.. gd_guidl:: Fault Models
+.. gd_guidl:: FMEA Fault Models
   :id: gd_guidl__fault_models
   :status: valid
   :complies: std_wp__iso26262__software_752, std_req__iso26262__analysis_846
 
   | Fault Model for sequence diagrams
-
 
 .. note:: Use the applicable fault models to ensure a structured analysis. If there are additional fault models needed, please enlarge the list of fault models.
 
@@ -38,7 +37,7 @@ Fault Models for sequence diagrams
       - ID
       - Failure Mode
       - Simplification
-      - Importance (can be used for priorisation)
+      - Importance (can be used for prioritization)
     * - message
       - MF_01_01
       - message is not received

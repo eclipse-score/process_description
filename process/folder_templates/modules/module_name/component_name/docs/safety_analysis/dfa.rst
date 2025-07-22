@@ -13,8 +13,8 @@
    # *******************************************************************************
 
 
-Dependent Failure Analysis
-==========================
+DFA (Dependent Failure Analysis)
+================================
 
 .. document:: [Your Component Name] DFA
    :id: doc__component_name_dfa
@@ -33,26 +33,25 @@ Dependent Failure Analysis
     - Adjust ``status`` to be ``valid``
     - Adjust ``safety`` and ``tags`` according to your needs
 
-Dependent Failure Intitiators
------------------------------
+Dependent Failure Initiators
+----------------------------
 
 .. code-block:: rst
 
-
-   .. comp_saf_dfa:: <Element descriptor>
-      :verifies: <Component architecture>
-      :id: comp_saf_DFA__<Component>__<Element descriptor>
-      :violation_id: <ID from DFA failure initiators (gd_guidl__dfa_failure_initiators)>
-      :violation_cause: “description of failure effect of the failure initiator on the element”
-      :mitigates: <ID from Component Requirement | ID from AoU Component Requirement>
-      :mitigation_issue: <ID from Issue Tracker>
-      :sufficient: <yes|no>
-      :status: <valid|invalid>
+    .. comp_saf_dfa:: <Element descriptor>
+       :violates: <Component architecture>
+       :id: comp_saf_DFA__<Component>__<Element descriptor>
+       :failure_id: <ID from DFA failure initiators :need:`gd_guidl__dfa_failure_initiators`>
+       :failure_effect: "description of failure effect of the failure initiator on the element"
+       :mitigated_by: <ID from Component Requirement | ID from AoU Component Requirement>
+       :mitigation_issue: <ID from Issue Tracker>
+       :sufficient: <yes|no>
+       :status: <valid|invalid>
 
 .. note::   argument is inside the 'content'. Therefore content is mandatory
 
 .. attention::
     The above directive must be updated according to your component DFA.
 
-    - Remove the ``code-block``
+    - The above "code-block" directive must be updated
     - Fill in all the needed information in the <brackets>

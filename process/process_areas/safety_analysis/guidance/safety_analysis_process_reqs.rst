@@ -26,7 +26,7 @@ Safety Analysis Process Requirements
    :satisfies: wf__analyse_platform_featarch, wf__analyse_featarch, wf__analyse_comparch
    :complies: std_req__iso26262__support_6432
 
-   Safety Analysis shall be hierarchically grouped into different levels.
+   Safety Analysis (FMEA and DFA) shall be hierarchically grouped into different levels.
 
    Following levels are defined:
 
@@ -62,14 +62,14 @@ Process Safety Analysis Attributes
 
    The title of the Safety Analysis shall provide a short summary of the description
 
-.. gd_req:: Safety Analysis attribute: mitigation
-   :id: gd_req__saf__attr_mitigation
+.. gd_req:: Safety Analysis attribute: mitigated by
+   :id: gd_req__saf__attr_mitigated_by
    :status: valid
    :tags: prio_1_automation, attribute, mandatory
    :satisfies: wf__analyse_platform_featarch, wf__analyse_featarch, wf__analyse_comparch
    :complies: std_req__iso26262__analysis_844, std_req__iso26262__analysis_746, std_req__iso26262__analysis_747
 
-   Each violation shall have an associated mitigation. The mitigation may be a requirement or a brief description of the mitigation.
+   Each violation shall have an associated mitigation (e.g. prevention, detection or mitigation). The mitigation may be a requirement or a brief description of the mitigation.
    If mitigation has not yet been implemented, do not use this option.
 
 .. gd_req:: Safety Analysis attribute: mitigation issue
@@ -79,7 +79,7 @@ Process Safety Analysis Attributes
    :satisfies: wf__analyse_platform_featarch, wf__analyse_featarch, wf__analyse_comparch
    :complies: std_req__iso26262__analysis_844, std_req__iso26262__analysis_746, std_req__iso26262__analysis_747
 
-   If a new mitigation is needed link to the issue and keep status invalid until mitigation is sufficient.
+   If a new mitigation (e.g. prevention, detection or mitigation) is needed link to the issue and keep status invalid until mitigation is sufficient.
 
 .. gd_req:: Safety Analysis attribute: sufficient
    :id: gd_req__saf_attr_sufficient
@@ -88,7 +88,7 @@ Process Safety Analysis Attributes
    :satisfies: wf__analyse_platform_featarch, wf__analyse_featarch, wf__analyse_comparch
    :complies: std_req__iso26262__analysis_848, std_req__iso26262__analysis_749, std_req__isopas8926__44431, std_req__isopas8926__44432
 
-   Each mitigation shall be rated as sufficient with <yes> or <no>.
+   Each mitigation (e.g. prevention, detection or mitigation) shall be rated as sufficient with <yes> or <no>.
    A mitigation can only be sufficient if a mitigation is linked via the attribute mitigation.
 
 .. gd_req:: Safety Analysis content: argument
@@ -98,7 +98,7 @@ Process Safety Analysis Attributes
    :satisfies: wf__analyse_platform_featarch, wf__analyse_featarch, wf__analyse_comparch
    :complies: std_req__iso26262__analysis_848, std_req__iso26262__analysis_749, std_req__isopas8926__44433
 
-   The argument shall describe why the mitigation is sufficient or not. If it is not sufficient, the argument shall describe how the mitigation
+   The argument shall describe why the mitigation (e.g. prevention, detection or mitigation) is sufficient or not. If it is not sufficient, the argument shall describe how the mitigation
    can be improved to achieve sufficiency. The argument shall be written in the content.
 
 .. gd_req:: Safety Analysis attribute: status
@@ -109,16 +109,6 @@ Process Safety Analysis Attributes
    :complies: std_req__iso26262__analysis_848, std_req__iso26262__analysis_749, std_req__isopas8926__44431, std_req__isopas8926__44432
 
    Each safety analysis shall have the status invalid until the analysis is finished. The status shall be set to valid if the analysis is finished and all issues are closed.
-
-.. gd_req:: Safety Analysis attribute: violation ID
-   :id: gd_req__saf_attr_violation_id
-   :status: valid
-   :tags: attribute, automated, mandatory
-   :satisfies: wf__analyse_platform_featarch, wf__analyse_featarch, wf__analyse_comparch
-   :complies: std_req__iso26262__analysis_845
-
-   It shall be possible to link to one violation ID to fault model :need:`gd_guidl__fault_models` for FMEA or failure initiators :need:`gd_guidl__dfa_failure_initiators` for DFA.
-
 
 .. _process_requirements_safety_analysis_linkage:
 
@@ -159,7 +149,7 @@ Safety Analysis Linkage
    :satisfies: wf__analyse_platform_featarch, wf__analyse_featarch, wf__analyse_comparch
    :complies: std_req__iso26262__analysis_842, std_req__iso26262__software_7410, std_req__iso26262__software_7411
 
-   Each Safety Analysis shall be automatically linked to the corresponding Safety Requirement via the mitigates linkage.
+   Each Safety Analysis shall be automatically linked to the corresponding Safety Requirement via the mitigated_by linkage.
 
 .. gd_req:: Safety Analysis attribute: link to Aou
    :id: gd_req__saf_attr_aou
@@ -190,8 +180,8 @@ Safety Analysis Linkage
 
 .. _process_requirements_safety_analysis_checks:
 
-Process Requirements Checks
-'''''''''''''''''''''''''''
+Safety Analysis Checks
+''''''''''''''''''''''
 
 .. gd_req:: Safety Analysis mandatory attributes provided
    :id: gd_req__saf_attr_mandatory
@@ -234,14 +224,24 @@ DFA Process Requirements
    Each DFA shall have a violation ID. The violation ID is used to identify the related fault <:need:`gd_guidl__dfa_failure_initiators`>.
    The violation ID links to the corresponding failure initiator which describes how a potential violation can occur.
 
-.. gd_req:: DFA attribute: violation cause
+.. gd_req:: DFA attribute: failure effect
    :id: gd_req__saf_attr_vcause
    :status: valid
    :tags: prio_1_automation, attribute, mandatory
    :satisfies: wf__analyse_platform_featarch, wf__analyse_featarch, wf__analyse_comparch
    :complies: std_req__iso26262__analysis_742
 
-   Every DFA shall have a short description of the violation cause (e.g. failure lead to an unintended actuation of the analysed element)
+   Every DFA shall have a short description of the failure effect (e.g. failure lead to an unintended actuation of the analysed element)
+
+.. gd_req:: DFA attribute: failure ID
+   :id: gd_req__saf_attr_failure_id
+   :status: valid
+   :tags: attribute, automated, mandatory
+   :satisfies: wf__analyse_platform_featarch, wf__analyse_featarch, wf__analyse_comparch
+   :complies: std_req__iso26262__analysis_845
+
+   It shall be possible to link to one failure ID to failure initiators :need:`gd_guidl__dfa_failure_initiators`.
+
 
 FMEA Process Requirements
 =========================
@@ -256,14 +256,23 @@ FMEA Process Requirements
    Each FMEA shall have a violation ID. The violation ID is used to identify the related fault <:need:`gd_guidl__fault_models`>.
    The violation ID links to the corresponding fault which describes how a potential violation can occur.
 
-.. gd_req:: FMEA attribute: violation cause
+.. gd_req:: FMEA attribute: failure effect
    :id: gd_req__saf_attr_feffect
    :status: valid
    :tags: prio_1_automation, attribute, mandatory
    :satisfies: wf__analyse_featarch, wf__analyse_comparch
    :complies: std_req__iso26262__analysis_849
 
-   Every FMEA shall have a short description of the violation cause.
+   Every FMEA shall have a short description of the failure effect.
+
+.. gd_req:: FMEA attribute: fault ID
+   :id: gd_req__saf_attr_fault_id
+   :status: valid
+   :tags: attribute, automated, mandatory
+   :satisfies: wf__analyse_platform_featarch, wf__analyse_featarch, wf__analyse_comparch
+   :complies: std_req__iso26262__analysis_845
+
+   It shall be possible to link to one fault ID to fault model :need:`gd_guidl__fault_models`.
 
 
 .. needextend:: docname is not None and "process_areas/safety_analysis" in docname
