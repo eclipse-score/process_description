@@ -31,7 +31,7 @@ Work Products Tool Management
    In addition security topics must be considered, as tool user manuals, access control for tools,
    proper tool documentation, guidelines, protection against malware introduction, etc.
 
-   Based on TCL the appropriate qualification methods shall be applied. For S-CORE
+   Based on TCL the appropriate qualification methods shall be applied. For the project
    the method **validation of software tool** must be used.
 
 

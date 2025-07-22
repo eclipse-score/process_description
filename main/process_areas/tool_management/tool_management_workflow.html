@@ -501,7 +501,7 @@
                   
   <section id="workflow-tool-management">
 <span id="tlm-workflows"></span><h1>Workflow Tool Management<a class="headerlink" href="#workflow-tool-management" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-dbf14e2d">
+<div class="need_container docutils container" id="SNCB-75cf4041">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workflow table" id="wf__tool__create_tool_verification_report">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -528,24 +528,187 @@
 <div class="line">needs input: <span class="input"><span><a class="reference internal" href="../change_management/change_management_workproducts.html#wp__issue_track_system" title="wf__tool__create_tool_verification_report">wp__issue_track_system</a>, <a class="reference internal" href="tool_management_workproducts.html#wp__tlm_plan" title="wf__tool__create_tool_verification_report">wp__tlm_plan</a></span></span></div>
 <div class="line">outputs: <span class="output"><span><a class="reference internal" href="tool_management_workproducts.html#wp__tool_verification_report" title="wf__tool__create_tool_verification_report">wp__tool_verification_report</a></span></span></div>
 <div class="line">responsible: <span class="responsible"><span><a class="reference internal" href="../../roles/index.html#rl__contributor" title="wf__tool__create_tool_verification_report">rl__contributor</a></span></span></div>
-<div class="line">approved by: <span class="approved_by"><span><a class="reference internal" href="../../roles/index.html#rl__committer" title="wf__tool__create_tool_verification_report">rl__committer</a>, <a class="reference internal" href="../safety_management/roles.html#rl__safety_manager" title="wf__tool__create_tool_verification_report">rl__safety_manager</a>, <a class="reference internal" href="../security_management/security_management_roles.html#rl__security_manager" title="wf__tool__create_tool_verification_report">rl__security_manager</a></span></span></div>
-<div class="line">supported by: <span class="supported_by"><span><a class="reference internal" href="../platform_management/platform_management_roles.html#rl__technical_lead" title="wf__tool__create_tool_verification_report">rl__technical_lead</a>, <a class="reference internal" href="../platform_management/platform_management_roles.html#rl__module_lead" title="wf__tool__create_tool_verification_report">rl__module_lead</a>, <a class="reference internal" href="../../roles/index.html#rl__infrastructure_tooling_community" title="wf__tool__create_tool_verification_report">rl__infrastructure_tooling_community</a></span></span></div>
-<div class="line">satisfied by: <span class="satisfies"><span><a class="reference internal" href="guidance/tool_management_reqs.html#gd_req__tool__attr_uid" title="wf__tool__create_tool_verification_report">gd_req__tool__attr_uid</a>, <a class="reference internal" href="guidance/tool_management_reqs.html#gd_req__tool__attr_status" title="wf__tool__create_tool_verification_report">gd_req__tool__attr_status</a>, <a class="reference internal" href="guidance/tool_management_reqs.html#gd_req__tool__attr_safety_affected" title="wf__tool__create_tool_verification_report">gd_req__tool__attr_safety_affected</a>, <a class="reference internal" href="guidance/tool_management_reqs.html#gd_req__tool__attr_security_affected" title="wf__tool__create_tool_verification_report">gd_req__tool__attr_security_affected</a>, <a class="reference internal" href="guidance/tool_management_reqs.html#gd_req__tool__check_mandatory" title="wf__tool__create_tool_verification_report">gd_req__tool__check_mandatory</a></span></span></div>
+<div class="line">approved by: <span class="approved_by"><span><a class="reference internal" href="../../roles/index.html#rl__committer" title="wf__tool__create_tool_verification_report">rl__committer</a></span></span></div>
+<div class="line">supported by: <span class="supported_by"><span><a class="reference internal" href="../safety_management/roles.html#rl__safety_manager" title="wf__tool__create_tool_verification_report">rl__safety_manager</a>, <a class="reference internal" href="../security_management/security_management_roles.html#rl__security_manager" title="wf__tool__create_tool_verification_report">rl__security_manager</a>, <a class="reference internal" href="../../roles/index.html#rl__infrastructure_tooling_community" title="wf__tool__create_tool_verification_report">rl__infrastructure_tooling_community</a></span></span></div>
+<div class="line">satisfied by: <span class="satisfies"><span><a class="reference internal" href="guidance/tool_management_reqs.html#gd_req__tool__attr_uid" title="wf__tool__create_tool_verification_report">gd_req__tool__attr_uid</a>, <a class="reference internal" href="guidance/tool_management_reqs.html#gd_req__tool__attr_status" title="wf__tool__create_tool_verification_report">gd_req__tool__attr_status</a>, <a class="reference internal" href="guidance/tool_management_reqs.html#gd_req__tool__attr_version" title="wf__tool__create_tool_verification_report">gd_req__tool__attr_version</a>, <a class="reference internal" href="guidance/tool_management_reqs.html#gd_req__tool__attr_tcl" title="wf__tool__create_tool_verification_report">gd_req__tool__attr_tcl</a>, <a class="reference internal" href="guidance/tool_management_reqs.html#gd_req__tool__attr_safety_affected" title="wf__tool__create_tool_verification_report">gd_req__tool__attr_safety_affected</a>, <a class="reference internal" href="guidance/tool_management_reqs.html#gd_req__tool__attr_security_affected" title="wf__tool__create_tool_verification_report">gd_req__tool__attr_security_affected</a>, <a class="reference internal" href="guidance/tool_management_reqs.html#gd_req__tool__check_mandatory" title="wf__tool__create_tool_verification_report">gd_req__tool__check_mandatory</a></span></span></div>
 </span></div>
 </div>
 </td>
 <td class="meta" colspan="3"></td>
 </tr>
-<tr class="content row-odd"><td class="content" colspan="6"><p>The Tool Verification Report is created during identification of a tool in status draft.</p>
-<p>Each identified tool is evaluated and if applicable, qualified. During evaluation and
-qualification the Tool Verification Report is updated and the status is set accordingly to
-evaluated or qualified.</p>
-<p>Finally the Tool Verification Report is verified and approved, and thus set to status released.</p>
-<p>For creating the Tool Verification Report the content of the linked template be used.</p>
+<tr class="content row-odd"><td class="content" colspan="6"><p>The Tool Verification Report is created during identification of a tool in status
+draft.</p>
+<p>For creating the Tool Verification Report the content of the linked template shall
+be used.</p>
 </td>
 </tr>
 <tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
 <div class="line"><span><span class="needs-id"><a class="reference internal" href="#wf__tool__create_tool_verification_report" title="wf__tool__create_tool_verification_report">wf__tool__create_tool_verification_report</a></span></span></div>
+</div>
+</td>
+<td class="footer" colspan="2"><div class="needs_footer line-block">
+<div class="line"><span><span class="needs_type_name"><span class="needs_data">Workflow</span></span></span></div>
+</div>
+</td>
+<td class="footer_right" colspan="2"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="need_container docutils container" id="SNCB-2ea99947">
+<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workflow table" id="wf__tool__evaluate_tool">
+<tbody>
+<tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
+<div class="line"><span><span class="needs_title"><span class="needs_data">Evaluate Tool and Update Tool Verification Report</span></span></span></div>
+</div>
+</td>
+<td class="head_center" colspan="2"><div class="needs_head line-block">
+<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></span></div>
+<div class="line"><span></span></div>
+<div class="line"><span></span></div>
+</div>
+</td>
+<td class="head_right" colspan="2"><div class="needs_head_right line-block">
+<div class="line"><span><span class="needs needs_collapse" id="target__show__meta"><span class="needs collapsed"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg></span><span class="needs visible collapse_is_hidden"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg></span></span></span></div>
+</div>
+</td>
+</tr>
+<tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
+<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></div>
+<div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">tool_management</span></span></span></div>
+</span></span></div>
+<div class="line"><span><div class="line">contains: <span class="contains"><span><a class="reference internal" href="guidance/tool_management_template.html#gd_temp__tool_management__verif_rpt_template" title="wf__tool__evaluate_tool">gd_temp__tool_management__verif_rpt_template</a>, <a class="reference internal" href="guidance/tool_management_checklist.html#gd_chklst__tool__cr_review" title="wf__tool__evaluate_tool">gd_chklst__tool__cr_review</a></span></span></div>
+<div class="line">has: <span class="has"><span><a class="reference internal" href="tool_management_concept.html#doc_concept__tool__process" title="wf__tool__evaluate_tool">doc_concept__tool__process</a>, <a class="reference internal" href="tool_management_getstrt.html#doc_getstrt__tool__process" title="wf__tool__evaluate_tool">doc_getstrt__tool__process</a></span></span></div>
+<div class="line">needs input: <span class="input"><span><a class="reference internal" href="tool_management_workproducts.html#wp__tool_verification_report" title="wf__tool__evaluate_tool">wp__tool_verification_report</a></span></span></div>
+<div class="line">outputs: <span class="output"><span><a class="reference internal" href="tool_management_workproducts.html#wp__tool_verification_report" title="wf__tool__evaluate_tool">wp__tool_verification_report</a></span></span></div>
+<div class="line">responsible: <span class="responsible"><span><a class="reference internal" href="../../roles/index.html#rl__contributor" title="wf__tool__evaluate_tool">rl__contributor</a></span></span></div>
+<div class="line">approved by: <span class="approved_by"><span><a class="reference internal" href="../../roles/index.html#rl__committer" title="wf__tool__evaluate_tool">rl__committer</a>, <a class="reference internal" href="../safety_management/roles.html#rl__safety_manager" title="wf__tool__evaluate_tool">rl__safety_manager</a>, <a class="reference internal" href="../security_management/security_management_roles.html#rl__security_manager" title="wf__tool__evaluate_tool">rl__security_manager</a></span></span></div>
+<div class="line">supported by: <span class="supported_by"><span><a class="reference internal" href="../../roles/index.html#rl__infrastructure_tooling_community" title="wf__tool__evaluate_tool">rl__infrastructure_tooling_community</a></span></span></div>
+</span></div>
+</div>
+</td>
+<td class="meta" colspan="3"></td>
+</tr>
+<tr class="content row-odd"><td class="content" colspan="6"><p>Each identified tool is evaluated. During evaluation the Tool Verification Report
+is updated accordingly.
+After successful evaluation the status of the Tool Verification Report
+is set to evaluated.</p>
+<p>The successful evaluation shall contain a statement, if the tool shall be qualified
+or not.</p>
+<p>If tool qualification is not needed, the next step is <a class="reference internal" href="#wf__tool__approve_tool_verification_report" title="wf__tool__approve_tool_verification_report"><em class="xref need">Approve Tool Verification R... (wf__tool__approve_tool_verification_report)</em></a>
+otherwise continue with <a class="reference internal" href="#wf__tool__qualify_tool" title="wf__tool__qualify_tool"><em class="xref need">Qualify Tool and Update Too... (wf__tool__qualify_tool)</em></a>.</p>
+</td>
+</tr>
+<tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
+<div class="line"><span><span class="needs-id"><a class="reference internal" href="#wf__tool__evaluate_tool" title="wf__tool__evaluate_tool">wf__tool__evaluate_tool</a></span></span></div>
+</div>
+</td>
+<td class="footer" colspan="2"><div class="needs_footer line-block">
+<div class="line"><span><span class="needs_type_name"><span class="needs_data">Workflow</span></span></span></div>
+</div>
+</td>
+<td class="footer_right" colspan="2"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="need_container docutils container" id="SNCB-aba59bfc">
+<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workflow table" id="wf__tool__qualify_tool">
+<tbody>
+<tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
+<div class="line"><span><span class="needs_title"><span class="needs_data">Qualify Tool and Update Tool Verification Report</span></span></span></div>
+</div>
+</td>
+<td class="head_center" colspan="2"><div class="needs_head line-block">
+<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></span></div>
+<div class="line"><span></span></div>
+<div class="line"><span></span></div>
+</div>
+</td>
+<td class="head_right" colspan="2"><div class="needs_head_right line-block">
+<div class="line"><span><span class="needs needs_collapse" id="target__show__meta"><span class="needs collapsed"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg></span><span class="needs visible collapse_is_hidden"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg></span></span></span></div>
+</div>
+</td>
+</tr>
+<tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
+<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></div>
+<div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">tool_management</span></span></span></div>
+</span></span></div>
+<div class="line"><span><div class="line">contains: <span class="contains"><span><a class="reference internal" href="guidance/tool_management_template.html#gd_temp__tool_management__verif_rpt_template" title="wf__tool__qualify_tool">gd_temp__tool_management__verif_rpt_template</a>, <a class="reference internal" href="guidance/tool_management_checklist.html#gd_chklst__tool__cr_review" title="wf__tool__qualify_tool">gd_chklst__tool__cr_review</a></span></span></div>
+<div class="line">has: <span class="has"><span><a class="reference internal" href="tool_management_concept.html#doc_concept__tool__process" title="wf__tool__qualify_tool">doc_concept__tool__process</a>, <a class="reference internal" href="tool_management_getstrt.html#doc_getstrt__tool__process" title="wf__tool__qualify_tool">doc_getstrt__tool__process</a></span></span></div>
+<div class="line">needs input: <span class="input"><span><a class="reference internal" href="tool_management_workproducts.html#wp__tool_verification_report" title="wf__tool__qualify_tool">wp__tool_verification_report</a></span></span></div>
+<div class="line">outputs: <span class="output"><span><a class="reference internal" href="tool_management_workproducts.html#wp__tool_verification_report" title="wf__tool__qualify_tool">wp__tool_verification_report</a></span></span></div>
+<div class="line">responsible: <span class="responsible"><span><a class="reference internal" href="../../roles/index.html#rl__contributor" title="wf__tool__qualify_tool">rl__contributor</a></span></span></div>
+<div class="line">approved by: <span class="approved_by"><span><a class="reference internal" href="../../roles/index.html#rl__committer" title="wf__tool__qualify_tool">rl__committer</a>, <a class="reference internal" href="../safety_management/roles.html#rl__safety_manager" title="wf__tool__qualify_tool">rl__safety_manager</a>, <a class="reference internal" href="../security_management/security_management_roles.html#rl__security_manager" title="wf__tool__qualify_tool">rl__security_manager</a></span></span></div>
+<div class="line">supported by: <span class="supported_by"><span><a class="reference internal" href="../../roles/index.html#rl__infrastructure_tooling_community" title="wf__tool__qualify_tool">rl__infrastructure_tooling_community</a></span></span></div>
+</span></div>
+</div>
+</td>
+<td class="meta" colspan="3"></td>
+</tr>
+<tr class="content row-odd"><td class="content" colspan="6"><p>The identified tool is qualified, if applicable. During qualification the Tool
+Verification Report is updated accordingly.
+After successful qualification the status of the Tool Verification Report
+is set to qualified.</p></td>
+</tr>
+<tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
+<div class="line"><span><span class="needs-id"><a class="reference internal" href="#wf__tool__qualify_tool" title="wf__tool__qualify_tool">wf__tool__qualify_tool</a></span></span></div>
+</div>
+</td>
+<td class="footer" colspan="2"><div class="needs_footer line-block">
+<div class="line"><span><span class="needs_type_name"><span class="needs_data">Workflow</span></span></span></div>
+</div>
+</td>
+<td class="footer_right" colspan="2"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="need_container docutils container" id="SNCB-db8b648b">
+<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workflow table" id="wf__tool__approve_tool_verification_report">
+<tbody>
+<tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
+<div class="line"><span><span class="needs_title"><span class="needs_data">Approve Tool Verification Report</span></span></span></div>
+</div>
+</td>
+<td class="head_center" colspan="2"><div class="needs_head line-block">
+<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></span></div>
+<div class="line"><span></span></div>
+<div class="line"><span></span></div>
+</div>
+</td>
+<td class="head_right" colspan="2"><div class="needs_head_right line-block">
+<div class="line"><span><span class="needs needs_collapse" id="target__show__meta"><span class="needs collapsed"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg></span><span class="needs visible collapse_is_hidden"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg></span></span></span></div>
+</div>
+</td>
+</tr>
+<tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
+<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></div>
+<div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">tool_management</span></span></span></div>
+</span></span></div>
+<div class="line"><span><div class="line">contains: <span class="contains"><span><a class="reference internal" href="guidance/tool_management_template.html#gd_temp__tool_management__verif_rpt_template" title="wf__tool__approve_tool_verification_report">gd_temp__tool_management__verif_rpt_template</a>, <a class="reference internal" href="guidance/tool_management_checklist.html#gd_chklst__tool__cr_review" title="wf__tool__approve_tool_verification_report">gd_chklst__tool__cr_review</a></span></span></div>
+<div class="line">has: <span class="has"><span><a class="reference internal" href="tool_management_concept.html#doc_concept__tool__process" title="wf__tool__approve_tool_verification_report">doc_concept__tool__process</a>, <a class="reference internal" href="tool_management_getstrt.html#doc_getstrt__tool__process" title="wf__tool__approve_tool_verification_report">doc_getstrt__tool__process</a></span></span></div>
+<div class="line">needs input: <span class="input"><span><a class="reference internal" href="tool_management_workproducts.html#wp__tool_verification_report" title="wf__tool__approve_tool_verification_report">wp__tool_verification_report</a></span></span></div>
+<div class="line">outputs: <span class="output"><span><a class="reference internal" href="tool_management_workproducts.html#wp__tool_verification_report" title="wf__tool__approve_tool_verification_report">wp__tool_verification_report</a></span></span></div>
+<div class="line">responsible: <span class="responsible"><span><a class="reference internal" href="../safety_management/roles.html#rl__safety_manager" title="wf__tool__approve_tool_verification_report">rl__safety_manager</a>, <a class="reference internal" href="../security_management/security_management_roles.html#rl__security_manager" title="wf__tool__approve_tool_verification_report">rl__security_manager</a></span></span></div>
+<div class="line">approved by: <span class="approved_by"><span><a class="reference internal" href="../platform_management/platform_management_roles.html#rl__technical_lead" title="wf__tool__approve_tool_verification_report">rl__technical_lead</a>, <a class="reference internal" href="../platform_management/platform_management_roles.html#rl__module_lead" title="wf__tool__approve_tool_verification_report">rl__module_lead</a></span></span></div>
+<div class="line">supported by: <span class="supported_by"><span><a class="reference internal" href="../../roles/index.html#rl__infrastructure_tooling_community" title="wf__tool__approve_tool_verification_report">rl__infrastructure_tooling_community</a></span></span></div>
+</span></div>
+</div>
+</td>
+<td class="meta" colspan="3"></td>
+</tr>
+<tr class="content row-odd"><td class="content" colspan="6"><p>Finally the Tool Verification Report is verified and approved, and thus the status
+is set to released.</p>
+<p>If the verification is not successful or due to any other reason, e.g. the tool is
+not needed any more as planned, the tool verification may also rejected at this point.</p>
+</td>
+</tr>
+<tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
+<div class="line"><span><span class="needs-id"><a class="reference internal" href="#wf__tool__approve_tool_verification_report" title="wf__tool__approve_tool_verification_report">wf__tool__approve_tool_verification_report</a></span></span></div>
 </div>
 </td>
 <td class="footer" colspan="2"><div class="needs_footer line-block">
@@ -579,8 +742,23 @@ evaluated or qualified.</p>
 <tbody>
 <tr class="need row-even"><td class="needs_id"><p><a class="reference internal" href="#wf__tool__create_tool_verification_report">wf__tool__create_tool_verification_report</a></p></td>
 <td class="needs_responsible"><p><a class="reference internal" href="../../roles/index.html#rl__contributor">rl__contributor</a></p></td>
+<td class="needs_approved_by"><p><a class="reference internal" href="../../roles/index.html#rl__committer">rl__committer</a></p></td>
+<td class="needs_supported_by"><p><a class="reference internal" href="../safety_management/roles.html#rl__safety_manager">rl__safety_manager</a><em>; </em><a class="reference internal" href="../security_management/security_management_roles.html#rl__security_manager">rl__security_manager</a><em>; </em><a class="reference internal" href="../../roles/index.html#rl__infrastructure_tooling_community">rl__infrastructure_tooling_community</a></p></td>
+</tr>
+<tr class="need row-odd"><td class="needs_id"><p><a class="reference internal" href="#wf__tool__evaluate_tool">wf__tool__evaluate_tool</a></p></td>
+<td class="needs_responsible"><p><a class="reference internal" href="../../roles/index.html#rl__contributor">rl__contributor</a></p></td>
 <td class="needs_approved_by"><p><a class="reference internal" href="../../roles/index.html#rl__committer">rl__committer</a><em>; </em><a class="reference internal" href="../safety_management/roles.html#rl__safety_manager">rl__safety_manager</a><em>; </em><a class="reference internal" href="../security_management/security_management_roles.html#rl__security_manager">rl__security_manager</a></p></td>
-<td class="needs_supported_by"><p><a class="reference internal" href="../platform_management/platform_management_roles.html#rl__technical_lead">rl__technical_lead</a><em>; </em><a class="reference internal" href="../platform_management/platform_management_roles.html#rl__module_lead">rl__module_lead</a><em>; </em><a class="reference internal" href="../../roles/index.html#rl__infrastructure_tooling_community">rl__infrastructure_tooling_community</a></p></td>
+<td class="needs_supported_by"><p><a class="reference internal" href="../../roles/index.html#rl__infrastructure_tooling_community">rl__infrastructure_tooling_community</a></p></td>
+</tr>
+<tr class="need row-even"><td class="needs_id"><p><a class="reference internal" href="#wf__tool__qualify_tool">wf__tool__qualify_tool</a></p></td>
+<td class="needs_responsible"><p><a class="reference internal" href="../../roles/index.html#rl__contributor">rl__contributor</a></p></td>
+<td class="needs_approved_by"><p><a class="reference internal" href="../../roles/index.html#rl__committer">rl__committer</a><em>; </em><a class="reference internal" href="../safety_management/roles.html#rl__safety_manager">rl__safety_manager</a><em>; </em><a class="reference internal" href="../security_management/security_management_roles.html#rl__security_manager">rl__security_manager</a></p></td>
+<td class="needs_supported_by"><p><a class="reference internal" href="../../roles/index.html#rl__infrastructure_tooling_community">rl__infrastructure_tooling_community</a></p></td>
+</tr>
+<tr class="need row-odd"><td class="needs_id"><p><a class="reference internal" href="#wf__tool__approve_tool_verification_report">wf__tool__approve_tool_verification_report</a></p></td>
+<td class="needs_responsible"><p><a class="reference internal" href="../safety_management/roles.html#rl__safety_manager">rl__safety_manager</a><em>; </em><a class="reference internal" href="../security_management/security_management_roles.html#rl__security_manager">rl__security_manager</a></p></td>
+<td class="needs_approved_by"><p><a class="reference internal" href="../platform_management/platform_management_roles.html#rl__technical_lead">rl__technical_lead</a><em>; </em><a class="reference internal" href="../platform_management/platform_management_roles.html#rl__module_lead">rl__module_lead</a></p></td>
+<td class="needs_supported_by"><p><a class="reference internal" href="../../roles/index.html#rl__infrastructure_tooling_community">rl__infrastructure_tooling_community</a></p></td>
 </tr>
 </tbody>
 </table>

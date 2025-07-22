@@ -23,20 +23,27 @@ Tool Verification Report Template
    :complies: std_req__iso26262__support_1141, std_req__iso26262__support_1142, std_req__iso26262__support_1143, std_req__iso26262__support_11441, std_req__iso26262__support_11442, std_req__iso26262__support_11451, std_req__iso26262__support_11452, std_req__iso26262__support_11453, std_req__iso26262__support_11454, std_req__iso26262__support_11461, std_req__iso26262__support_11462, std_req__isosae21434__org_management_5451, std_req__aspice_40__SUP-8-BP1, std_req__aspice_40__SUP-8-BP2
 
 
-[Your Tool Name]
-----------------
+.. note:: Tool Verification Report header
 
-.. note:: Document header
-
-      | .. document:: [Your Tool Name]
+      | .. doc_tool:: [Your Tool Name]
       |  :id: doc__tool__tool_name_version
-      |  :status: draft
-      |  :safety_affected: YES
-      |  :scurity_affected: YES
+      |  :status: [draft | evaluated | qualified | released | rejected]
+      |  :version: vX.Y.Z
+      |  :tcl: [LOW | HIGH]
+      |  :safety_affected: [YES | NO]
+      |  :security_affected: [YES | NO]
+      |  :realizes: PROCESS_wp__tool_verification_report
       |  :tags: tool_management
 
 .. attention::
     The above directive must be updated according to your tool.
+
+An example of a Tool Verification Report can be find here:
+`Example Tool Verification Report <https://eclipse-score.github.io/score/main/score_tools/doc_as_code.html#doc_tool__doc_as_code>`_
+
+
+[Your Tool Name] Verification Report
+------------------------------------
 
 Identification
 --------------

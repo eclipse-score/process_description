@@ -501,7 +501,7 @@
                   
   <section id="concept-description">
 <h1>Concept Description<a class="headerlink" href="#concept-description" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-78041fd2">
+<div class="need_container docutils container" id="SNCB-5bc5ad08">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_doc_concept table" id="doc_concept__tool__process">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -523,7 +523,7 @@
 <div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></div>
 <div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">tool_management</span></span></span></div>
 </span></span></div>
-<div class="line"><span><div class="line">relates to: <span class="has"><span><a class="reference internal" href="tool_management_workflow.html#wf__tool__create_tool_verification_report" title="doc_concept__tool__process">wf__tool__create_tool_verification_report</a></span></span></div>
+<div class="line"><span><div class="line">relates to: <span class="has"><span><a class="reference internal" href="tool_management_workflow.html#wf__tool__create_tool_verification_report" title="doc_concept__tool__process">wf__tool__create_tool_verification_report</a>, <a class="reference internal" href="tool_management_workflow.html#wf__tool__evaluate_tool" title="doc_concept__tool__process">wf__tool__evaluate_tool</a>, <a class="reference internal" href="tool_management_workflow.html#wf__tool__qualify_tool" title="doc_concept__tool__process">wf__tool__qualify_tool</a>, <a class="reference internal" href="tool_management_workflow.html#wf__tool__approve_tool_verification_report" title="doc_concept__tool__process">wf__tool__approve_tool_verification_report</a></span></span></div>
 </span></div>
 </div>
 </td>
@@ -546,14 +546,14 @@
 </div>
 </div>
 <p>In this section a concept for the Tool Management will be discussed. Inputs for this concepts
-are the requirements of ISO2 6262 Part-8, Clause 11, ASPICE PAM 4.0, SUP.8 and
-ISO SAE 21434 Clause 5, 5.4.5 additionally including the requirements of the different stakeholders
-for the Tool Management process.</p>
+are the requirements of ISO 26262 Part-8, Clause 11, ASPICE PAM 4.0, SUP.8 and
+ISO/SAE 21434 Clause 5, 5.4.5 additionally including the requirements of the different stakeholders
+for the Tool Management Process.</p>
 <section id="key-concept">
 <h2>Key concept<a class="headerlink" href="#key-concept" title="Link to this heading">#</a></h2>
-<p>In general all Tools to generate the S-CORE product must be identified. As it is a S-CORE objective
-to use Tools wherever applicable to generate any kind of work products, the selection criteria for
-any Tool including OSS Tools must include therefore the determination of the Tool Confidence Level
+<p>In general all tools to generate the project product must be identified. As it is a project objective
+to use tools wherever applicable to generate any kind of work product, the selection criteria for
+any tool including OSS tools must include therefore the determination of the Tool Confidence Level
 <a class="reference external" href="https://www.validas.de/publications/automotive2012.pdf">(TCL)</a> for the tool under consideration.</p>
 <p>Based on the resulting TCL additional Tool Qualification activities may required.</p>
 </section>
@@ -571,7 +571,7 @@ any Tool including OSS Tools must include therefore the determination of the Too
 <li><p><a class="reference internal" href="../../roles/index.html#rl__contributor" title="rl__contributor"><em class="xref need">Contributor (rl__contributor)</em></a>
 <a class="reference internal" href="../../roles/index.html#rl__infrastructure_tooling_community" title="rl__infrastructure_tooling_community"><em class="xref need">Infrastructure, Tooling Community (rl__infrastructure_tooling_community)</em></a></p>
 <ul class="simple">
-<li><p>Contributes tooling, infrastructure elements to grow and mature the <strong>S-CORE</strong> development environment</p></li>
+<li><p>Contributes tooling, infrastructure elements to grow and mature the project development environment</p></li>
 </ul>
 </li>
 <li><p><a class="reference internal" href="../safety_management/roles.html#rl__safety_manager" title="rl__safety_manager"><em class="xref need">Safety Manager (rl__safety_manager)</em></a>, <a class="reference internal" href="../security_management/security_management_roles.html#rl__security_manager" title="rl__security_manager"><em class="xref need">Security Manager (rl__security_manager)</em></a>,
@@ -587,7 +587,7 @@ any Tool including OSS Tools must include therefore the determination of the Too
 <ul class="simple">
 <li><p>ISO 26262</p></li>
 <li><p>ASPICE</p></li>
-<li><p>ISO SAE 21434</p></li>
+<li><p>ISO/SAE 21434</p></li>
 </ul>
 </section>
 </section>
@@ -599,8 +599,9 @@ the relevant information.</p>
 <section id="activities-for-tool-management">
 <h2>Activities for Tool Management<a class="headerlink" href="#activities-for-tool-management" title="Link to this heading">#</a></h2>
 <p>The main work product is the <a class="reference internal" href="tool_management_workproducts.html#wp__tool_verification_report" title="wp__tool_verification_report"><em class="xref need">Tool Verification Report (wp__tool_verification_report)</em></a>.
-Thus the workflow <a class="reference internal" href="tool_management_workflow.html#wf__tool__create_tool_verification_report" title="wf__tool__create_tool_verification_report"><em class="xref need">Create Tool Verification Report (wf__tool__create_tool_verification_report)</em></a>
-applies.</p>
+This work product is created and maintained until it is released. It contains the tool
+evaluation results as well as the qualification results, if applicable.
+For each tool the <a class="reference internal" href="tool_management_workflow.html#tlm-workflows"><span class="std std-ref">Workflows</span></a> applies.</p>
 </section>
 <section id="attributes-for-tool-management">
 <h2>Attributes for Tool Management<a class="headerlink" href="#attributes-for-tool-management" title="Link to this heading">#</a></h2>

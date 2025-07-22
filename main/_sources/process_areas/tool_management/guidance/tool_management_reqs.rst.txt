@@ -46,6 +46,29 @@ Tool Verification Report Attributes
       * released
       * rejected
 
+.. gd_req:: Tool attribute:: version
+   :id: gd_req__tool__attr_version
+   :status: valid
+   :tags: manual, tool_management, attribute, mandatory
+   :satisfies: wf__tool__create_tool_verification_report
+   :complies: std_req__iso26262__support_1141, std_req__aspice_40__SUP-8-BP1
+
+   Each Tool Verification Report shall have a version:
+
+      * v.X.Y.Z (major, minor, patch)
+
+.. gd_req:: Tool attribute:: tcl
+   :id: gd_req__tool__attr_tcl
+   :status: valid
+   :tags: manual, tool_management, attribute, mandatory
+   :satisfies: wf__tool__create_tool_verification_report
+   :complies: std_req__iso26262__support_1141, std_req__aspice_40__SUP-8-BP1
+
+   Each Tool Verification Report shall have a tool confidence level:
+
+      * LOW
+      * HIGH
+
 .. gd_req:: Tool attribute:: safety affected
    :id: gd_req__tool__attr_safety_affected
    :status: valid
@@ -55,8 +78,8 @@ Tool Verification Report Attributes
 
    Each Tool Verification Report shall have a safety relevance identifier:
 
-      * Yes
-      * No
+      * YES
+      * NO
 
 .. gd_req:: Tool attribute:: security affected
    :id: gd_req__tool__attr_security_affected
@@ -67,8 +90,8 @@ Tool Verification Report Attributes
 
    Each Tool Verification Report shall have a security relevance identifier:
 
-      * Yes
-      * No
+      * YES
+      * NO
 
 
 Tool Verification Report Checks

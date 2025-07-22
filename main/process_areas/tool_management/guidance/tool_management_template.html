@@ -509,7 +509,7 @@
                   
   <section id="tool-verification-report-template">
 <span id="tlm-templates"></span><h1>Tool Verification Report Template<a class="headerlink" href="#tool-verification-report-template" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-1c6db039">
+<div class="need_container docutils container" id="SNCB-eb9c4933">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_temp table" id="gd_temp__tool_management__verif_rpt_template">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -531,7 +531,7 @@
 <div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></div>
 <div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">tool_management</span></span></span></div>
 </span></span></div>
-<div class="line"><span><div class="line">contained by: <span class="contains"><span><a class="reference internal" href="../tool_management_workflow.html#wf__tool__create_tool_verification_report" title="gd_temp__tool_management__verif_rpt_template">wf__tool__create_tool_verification_report</a></span></span></div>
+<div class="line"><span><div class="line">contained by: <span class="contains"><span><a class="reference internal" href="../tool_management_workflow.html#wf__tool__create_tool_verification_report" title="gd_temp__tool_management__verif_rpt_template">wf__tool__create_tool_verification_report</a>, <a class="reference internal" href="../tool_management_workflow.html#wf__tool__evaluate_tool" title="gd_temp__tool_management__verif_rpt_template">wf__tool__evaluate_tool</a>, <a class="reference internal" href="../tool_management_workflow.html#wf__tool__qualify_tool" title="gd_temp__tool_management__verif_rpt_template">wf__tool__qualify_tool</a>, <a class="reference internal" href="../tool_management_workflow.html#wf__tool__approve_tool_verification_report" title="gd_temp__tool_management__verif_rpt_template">wf__tool__approve_tool_verification_report</a></span></span></div>
 <div class="line">complies: <span class="complies"><span><a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_req__iso26262__support_1141" title="gd_temp__tool_management__verif_rpt_template">std_req__iso26262__support_1141</a>, <a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_req__iso26262__support_1142" title="gd_temp__tool_management__verif_rpt_template">std_req__iso26262__support_1142</a>, <a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_req__iso26262__support_1143" title="gd_temp__tool_management__verif_rpt_template">std_req__iso26262__support_1143</a>, <a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_req__iso26262__support_11441" title="gd_temp__tool_management__verif_rpt_template">std_req__iso26262__support_11441</a>, <a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_req__iso26262__support_11442" title="gd_temp__tool_management__verif_rpt_template">std_req__iso26262__support_11442</a>, <a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_req__iso26262__support_11451" title="gd_temp__tool_management__verif_rpt_template">std_req__iso26262__support_11451</a>, <a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_req__iso26262__support_11452" title="gd_temp__tool_management__verif_rpt_template">std_req__iso26262__support_11452</a>, <a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_req__iso26262__support_11453" title="gd_temp__tool_management__verif_rpt_template">std_req__iso26262__support_11453</a>, <a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_req__iso26262__support_11454" title="gd_temp__tool_management__verif_rpt_template">std_req__iso26262__support_11454</a>, <a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_req__iso26262__support_11461" title="gd_temp__tool_management__verif_rpt_template">std_req__iso26262__support_11461</a>, <a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_req__iso26262__support_11462" title="gd_temp__tool_management__verif_rpt_template">std_req__iso26262__support_11462</a>, <a class="reference internal" href="../../../standards/isosae21434/isosae21434.html#std_req__isosae21434__org_management_5451" title="gd_temp__tool_management__verif_rpt_template">std_req__isosae21434__org_management_5451</a>, <a class="reference internal" href="../../../standards/aspice_40/sup/sup.8.html#std_req__aspice_40__SUP-8-BP1" title="gd_temp__tool_management__verif_rpt_template">std_req__aspice_40__SUP-8-BP1</a>, <a class="reference internal" href="../../../standards/aspice_40/sup/sup.8.html#std_req__aspice_40__SUP-8-BP2" title="gd_temp__tool_management__verif_rpt_template">std_req__aspice_40__SUP-8-BP2</a></span></span></div>
 </span></div>
 </div>
@@ -554,18 +554,19 @@
 </table>
 </div>
 </div>
-<section id="your-tool-name">
-<h2>[Your Tool Name]<a class="headerlink" href="#your-tool-name" title="Link to this heading">#</a></h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Document header</p>
+<p>Tool Verification Report header</p>
 <div class="line-block">
-<div class="line">.. document:: [Your Tool Name]</div>
+<div class="line">.. doc_tool:: [Your Tool Name]</div>
 <div class="line-block">
 <div class="line">:id: doc__tool__tool_name_version</div>
-<div class="line">:status: draft</div>
-<div class="line">:safety_affected: YES</div>
-<div class="line">:scurity_affected: YES</div>
+<div class="line">:status: [draft | evaluated | qualified | released | rejected]</div>
+<div class="line">:version: vX.Y.Z</div>
+<div class="line">:tcl: [LOW | HIGH]</div>
+<div class="line">:safety_affected: [YES | NO]</div>
+<div class="line">:security_affected: [YES | NO]</div>
+<div class="line">:realizes: PROCESS_wp__tool_verification_report</div>
 <div class="line">:tags: tool_management</div>
 </div>
 </div>
@@ -574,6 +575,10 @@
 <p class="admonition-title">Attention</p>
 <p>The above directive must be updated according to your tool.</p>
 </div>
+<p>An example of a Tool Verification Report can be find here:
+<a class="reference external" href="https://eclipse-score.github.io/score/main/score_tools/doc_as_code.html#doc_tool__doc_as_code">Example Tool Verification Report</a></p>
+<section id="your-tool-name-verification-report">
+<h2>[Your Tool Name] Verification Report<a class="headerlink" href="#your-tool-name-verification-report" title="Link to this heading">#</a></h2>
 </section>
 <section id="identification">
 <h2>Identification<a class="headerlink" href="#identification" title="Link to this heading">#</a></h2>
@@ -702,7 +707,7 @@
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#your-tool-name">[Your Tool Name]</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#your-tool-name-verification-report">[Your Tool Name] Verification Report</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#identification">Identification</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">Introduction</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#use-cases">Use cases</a></li>
