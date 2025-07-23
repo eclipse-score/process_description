@@ -87,15 +87,17 @@ Activities for Problem Resolution
 Creation of the Problem Report
 ==============================
 
-Use the :ref:`Problem Report Template <prm_templates>` to create the Problem Report.
+Use the content :ref:`Problem Report Template <prm_templates>` to create the Problem Report.
 
 In case safety or security is affected, in addition the impact analysis template
 : :ref:`Impact Analysis Template <chm_impact_analysis_templates>`  can be used to detail out the
 impact on safety/security as part of the description.
 
+(needs to be updated)
+
 .. _prm_analysis:
 
-Anaylsis of the Problem Report
+Analysis of the Problem Report
 ==============================
 
 Based on the analysis results decision about the acceptance or rejection must be taken
