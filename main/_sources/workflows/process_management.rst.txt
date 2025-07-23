@@ -38,8 +38,8 @@ todo: need to add guidance and standard links
    :id: wf__def_app_process_definition
    :status: draft
    :tags: process
-   :responsible: rl__process_community
-   :approved_by: rl__technical_lead
+   :responsible: rl__committer
+   :approved_by: rl__process_community
    :supported_by: rl__external_auditor
    :input: wp__process_plan, wp__issue_track_system
    :output: wp__process_definition, wp__tailoring
@@ -50,8 +50,8 @@ todo: need to add guidance and standard links
    :id: wf__mon_ctrl_process_definition
    :status: draft
    :tags: process
-   :responsible: rl__process_community
-   :approved_by: rl__technical_lead
+   :responsible: rl__committer
+   :approved_by: rl__process_community
    :supported_by: rl__external_auditor
    :input: wp__process_definition
    :output: wp__process_impr_report
