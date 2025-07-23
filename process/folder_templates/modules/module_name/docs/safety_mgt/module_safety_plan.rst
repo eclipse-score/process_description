@@ -316,6 +316,7 @@ Component Requirements Status
 -----------------------------
 
 .. needtable::
+   :filter: "feature_name" in docname and "requirements" in docname and docname is not None
    :style: table
    :types: comp_req
    :tags: component_name
@@ -327,6 +328,7 @@ Component AoU Status
 --------------------
 
 .. needtable::
+   :filter: "feature_name" in docname and "requirements" in docname and docname is not None
    :style: table
    :types: aou_req
    :tags: component_name
@@ -338,9 +340,16 @@ Component Architecture Status
 -----------------------------
 
 .. needtable::
+   :filter: "feature_name" in docname and "requirements" in docname and docname is not None
    :style: table
    :types: comp_arc_sta; comp_arc_dyn
    :tags: component_name
    :columns: id;status;tags
    :colwidths: 25,25,25
    :sort: title
+
+
+.. attention::
+    The above tables must be updated according to your feature safety planning.
+
+    - Modify the filter ``feature_name`` to be your Feature Name

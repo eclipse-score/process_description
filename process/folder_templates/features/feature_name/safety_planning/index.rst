@@ -111,10 +111,12 @@ Feature Safety Planning
     - Create and link the issues to plan the work products (according to :need:`gd_guidl__saf_plan_definitions`)
     - Fill the work producs links and add their status (also possible below) to create the safety package (according to :need:`gd_guidl__saf_package`)
 
+
 Feature Requirements Status
 ---------------------------
 
 .. needtable::
+   :filter: "feature_name" in docname and "requirements" in docname and docname is not None
    :style: table
    :types: feat_req
    :tags: feature_name
@@ -126,6 +128,7 @@ Feature AoU Status
 ------------------
 
 .. needtable::
+   :filter: "feature_name" in docname and "requirements" in docname and docname is not None
    :style: table
    :types: aou_req
    :tags: feature_name
@@ -137,9 +140,16 @@ Feature Architecture Status
 ---------------------------
 
 .. needtable::
+   :filter: "feature_name" in docname and "requirements" in docname and docname is not None
    :style: table
    :types: feat_arc_sta; feat_arc_dyn
    :tags: feature_name
    :columns: id;status
    :colwidths: 25,25
    :sort: title
+
+
+.. attention::
+    The above tables must be updated according to your feature safety planning.
+
+    - Modify the filter ``feature_name`` to be your Feature Name
