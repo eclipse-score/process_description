@@ -28,7 +28,7 @@ Key concept
 The Configuration Management Plan should define the strategy to manage the configuration items
 in an effective and repeatable way for the project life cycle.
 
-Note: configuration items are all defined work products in the project plus additional arefacts not developed by the project
+Note: configuration items are all realizations of defined work products in the project plus additional arefacts not developed by the project
 needed for the building of the binaries, documentation and verification reports (e.g. tools, external SW libraries).
 
 Inputs

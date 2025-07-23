@@ -23,16 +23,19 @@ Document Management Process Requirements
    :tags: manual
    :complies: std_req__iso26262__support_1043
 
-   There is only one generic document type:
+   There are the following document types:
+
    * document
+   * doc_tool
 
     .. note::
-      This type is the ONLY type, which can be used for realizing concrete work products,
-      e.g. Safety Plan
+      The type "document" is the GENERIC type, which can be used for realizing concrete work products,
+      with the exception of the tool verification report (which uses the "doc_tool" type).
+      The "doc_tool" type is described in :ref:`tlm_process_requirements`.
 
    .. note::
-      Process documents are not generic documents and types for that shall only used for
-      process definition, as defined
+      Process documents are not documents realizing work products,
+      types for that shall only used for process definition, as defined
 
       * gd_chklst
       * gd_guidl
@@ -51,7 +54,7 @@ Document Management Process Requirements
    :tags: manual
    :complies: std_req__iso26262__support_1043
 
-   Documents shall have the following mandatory manual attributes:
+   Generic documents shall have the following mandatory manual attributes:
 
    * id
    * status
@@ -64,45 +67,32 @@ Document Management Process Requirements
 
    Compare also  :need:`gd_temp__documentation`
 
-.. gd_req:: Document attributes automated
-   :id: gd_req__doc__attributes_automated
-   :status: valid
-   :tags: prio_2_automation
-   :complies: std_req__iso26262__support_1043
-
-   Documents shall have automatic added attributes:
-
-   * author
-   * approver
-   * reviewer
-
 .. gd_req:: Document Author
    :id: gd_req__doc__author
    :status: valid
-   :tags: prio_2_automation
+   :tags: prio_1_automation
    :complies: std_req__iso26262__support_1045
 
-   Documents headers shall contain an "author" attribute. Every committer who adds more than 50%
-   of the content shall put his name.
-
-   Note: In the future this may also be automated based on an analysis of content during the
-   documentation build for every commit of the file containing the document.
+   The version management tool shall document and report (be able to show) the authorship of a document.
+   I.e. for each change of a document the author of the changes is stored.
 
 .. gd_req:: Document Reviewer
    :id: gd_req__doc__reviewer
    :status: valid
-   :tags: prio_2_automation
+   :tags: prio_1_automation
    :complies: std_req__iso26262__support_1043
 
-   Documents headers shall contain "reviewer" attribute, which is added during documentation build
-   and contains only the names of the last PR reviewers, which actually reviewed the file
-   containing the document, which were not covered by :need:`gd_req__doc__approver`.
+   The version management tool shall document and report (be able to show) the reviewers of a document.
+   I.e. for each change of a document the reviewers of the change are stored.
 
 .. gd_req:: Document Approver
    :id: gd_req__doc__approver
    :status: valid
-   :tags: prio_2_automation
+   :tags: prio_1_automation
    :complies: std_req__iso26262__support_1045
 
-   Documents headers shall contain an "approver" attribute, which is added during documentation build
-   and contains only the names of the last approval reviewers, which actually approved the file containing the document.
+   The version management tool shall document and report (be able to show) the approver of a document.
+   I.e. for each change of a document the approver of the change is stored,
+   which is usually the person with "write-rights" on the document approving
+   the merge of a Pull Request (this may also be more than one person).
+   Note that every approver is also reviewer.

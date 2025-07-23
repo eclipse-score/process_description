@@ -162,7 +162,7 @@ Process Requirement Linkage
 .. gd_req:: Requirement Traceability
    :id: gd_req__req__traceability
    :status: valid
-   :tags: prio_1_automation
+   :tags: prio_1_automation, attribute
    :complies: std_req__iso26262__support_6432
    :satisfies: wf__req__stkh_req, wf__req__feat_req, wf__req__comp_req
 
@@ -216,7 +216,7 @@ Process Requirement Linkage
    :satisfies: wf__req__stkh_req, wf__req__feat_req, wf__req__comp_req
    :complies: std_req__iso26262__support_6425, std_req__iso26262__support_6434
 
-   A versioning for requirements shall be provided. For this all mandatory attributes shall be taken into account: :need:`gd_req__req__attr_mandatory`
+   A versioning for requirements shall be provided. For this all mandatory attributes shall be taken into account: see :need:`gd_req__req__check_mandatory`
 
 .. _process_requirement_checks:
 
@@ -224,9 +224,9 @@ Process Requirements Checks
 '''''''''''''''''''''''''''
 
 .. gd_req:: Requirement check: suspicious
-   :id: gd_req__req__attr_suspicious
+   :id: gd_req__req__suspicious
    :status: valid
-   :tags: prio_2_automation, attribute
+   :tags: prio_2_automation, check
    :satisfies: wf__req__stkh_req, wf__req__feat_req, wf__req__comp_req
    :complies: std_req__iso26262__support_6425, std_req__iso26262__support_6434
 
@@ -236,9 +236,9 @@ Process Requirements Checks
    Note: This refers to :need:`gd_req__req__attr_req_cov` and :need:`gd_req__req__attr_test_covered`
 
 .. gd_req:: Requirements mandatory attributes provided
-   :id: gd_req__req__attr_mandatory
+   :id: gd_req__req__check_mandatory
    :status: valid
-   :tags: prio_1_automation, attribute, check
+   :tags: prio_1_automation, check
    :satisfies: wf__req__stkh_req, wf__req__feat_req, wf__req__comp_req
 
    It shall be checked if all mandatory attributes for each requirement is provided by the user. For all requirements following attributes shall be mandatory:
@@ -250,9 +250,9 @@ Process Requirements Checks
       :colwidths: 30
 
 .. gd_req:: Requirements no weak words
-   :id: gd_req__req__attr_desc_weak
+   :id: gd_req__req__desc_weak
    :status: valid
-   :tags: done_automation, attribute, check
+   :tags: done_automation, check
    :satisfies: wf__req__stkh_req, wf__req__feat_req, wf__req__comp_req
 
    It shall be ensured that no *weak words* are contained in the requirement description for:
@@ -268,7 +268,7 @@ Process Requirements Checks
 .. gd_req:: Requirements linkage level
    :id: gd_req__req__linkage_fulfill
    :status: valid
-   :tags: done_automation, attribute, check
+   :tags: done_automation, check
    :complies: std_req__iso26262__support_6432
    :satisfies: wf__req__stkh_req, wf__req__feat_req, wf__req__comp_req
 
@@ -279,7 +279,7 @@ Process Requirements Checks
 .. gd_req:: Requirements linkage architecture
    :id: gd_req__req__linkage_architecture
    :status: valid
-   :tags: prio_2_automation, attribute, check
+   :tags: prio_2_automation, check
    :complies: std_req__iso26262__support_6423
    :satisfies: wf__req__feat_req, wf__req__comp_req
 
@@ -288,7 +288,7 @@ Process Requirements Checks
 .. gd_req:: Requirements linkage architecture switch
    :id: gd_req__req__linkage_architecture_switch
    :status: valid
-   :tags: prio_2_automation, attribute, check
+   :tags: prio_2_automation, check
    :complies: std_req__iso26262__support_6423
    :satisfies: wf__req__feat_req, wf__req__comp_req
 
@@ -297,7 +297,7 @@ Process Requirements Checks
 .. gd_req:: Requirements linkage safety
    :id: gd_req__req__linkage_safety
    :status: valid
-   :tags: prio_1_automation, attribute, check
+   :tags: prio_1_automation, check
    :satisfies: wf__req__stkh_req, wf__req__feat_req, wf__req__comp_req
    :complies: std_req__iso26262__support_6422
 

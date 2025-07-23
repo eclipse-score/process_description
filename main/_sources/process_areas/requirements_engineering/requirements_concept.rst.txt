@@ -183,6 +183,8 @@ Following attributes need to be filled manually for each requirement:
    * - Requirements Type
      - The requirement type defines which category the requirement relates to. Following categories are defined: [Functional, Interface, Process, Legal, Non-Functional]
 
+Following attributes are automatically generated:
+
 .. list-table:: Automated Attributes
    :header-rows: 1
    :widths: 15,70,15

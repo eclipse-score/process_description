@@ -151,13 +151,15 @@ Problem Resolution Checks
    :complies: std_req__aspice_40__SUP-9-BP1
 
    It shall be checked if all mandatory attributes for each Problem
-   is provided by the user. For all requirements following attributes shall be mandatory:
+   is provided by the user. Following attributes shall be mandatory:
 
    .. needtable:: Overview mandatory problem attributes
       :filter: "mandatory" in tags and "attribute" and "problem_resolution" in tags and is_external == False
       :style: table
       :columns: title
       :colwidths: 30
+
+   Note: See also template for problem report: :need:`gd_temp__problem__template`
 
 .. gd_req:: Problem Report issues closing constraints
    :id: gd_req__problem__check_closing
