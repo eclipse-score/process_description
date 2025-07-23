@@ -89,7 +89,7 @@ Safety analysis is used as a umbrella term for the methods FMEA (Failure Modes a
    :contains: gd_guidl__dfa_failure_initiators, gd_temp__feat_saf_dfa, gd_temp__comp_saf_dfa, gd_guidl__fault_models, gd_temp__feat_saf_fmea, gd_temp__comp_saf_fmea, gd_chklst__safety_analysis
    :has: doc_concept__safety__analysis, doc_getstrt__safety_analysis
 
-   | The FMEA and DFA are verified. The verification criteria is that it can be proven that a function and the corresponding safety monitoring are not both affected.
+   | The FMEA and DFA are verified. The verification criteria is that it can be proven that the safety requirements for functions and the corresponding safety monitoring are not violated.
 
 
 RAS(IC) for Safety Analysis  (FMEA and DFA)

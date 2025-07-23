@@ -20,22 +20,24 @@ Concept Description
    :status: valid
    :tags: safety_analysis
 
-This section discusses a concept for safety analyses. As methods for safety analysis are used DFA (Dependent Failure Analysis)
+This section discusses a concept for safety analysis. As methods for safety analysis are used DFA (Dependent Failure Analysis)
 and FMEA (Failure Mode and Effects Analysis). Inputs for this concept are the requirements of ISO26262 Part 6 Chapter 7 and Part 9 Chapter 7 and 8.
 
-The objective of the DFA is to show the absence of dependent failures. Dependent failures are split into common cause failures and cascading failures.
-The freedom from interference (FFI) is the absence of common cause failures. How to perform a safety analysis is described in :need:`gd_guidl__safety_analysis`.
-To have a structured analysis the failure initiators have to be applied :need:`gd_guidl__dfa_failure_initiators`. These are separated into the following categories:
+The objective of the **DFA** is to show the absence of dependent failures. Dependent failures are split into common cause failures and cascading failures.
+The freedom from interference (FFI) is the absence of cascading failures. How to perform a safety analysis is described in :need:`gd_guidl__safety_analysis`.
+To have a structured DFA the failure initiators have to be applied :need:`gd_guidl__dfa_failure_initiators`. These are separated into the following categories:
 
  | - Shared resources: Shared resources are resources that are used by two or more elements. If one element fails, it could lead to a failure in another element.
  | - Communication between the two elements: Receiving function is affected by information that is false, lost, sent multiple times, or in the wrong order etc. from the sender.
+ | - DFA shared information inputs: Same information input used by multiple functions.
  | - Unintended impact: Unintended impacts to function due to various failures.
  | - Development failure initiators: Failures that occur during the development process, potentially leading to safety issues.
 
-The objective of the FMEA is to show that the risk of systematic faults is reduced to an acceptable level. This can be done by detection, prevention or mitigation.
-The FMEA is used to analyse the fault models and their effects. The fault models are systematically identified by applying :need:`gd_guidl__fault_models`.
+The objective of the **FMEA** is to show that the architecture created to fulfill the requirements does not introduce possible errors which would
+break the safety requirements. Or rather that the possibility of these errors is reduced to an acceptable level.". This can be done by detection, prevention or mitigation.
+The FMEA is used to find possible failures and their effects. The possible failures are systematically identified by applying fault models :need:`gd_guidl__fault_models`.
 
-The DFA shall be performed once at feature platform level to analyse the dependencies between the features of the platform.
+The DFA shall be performed once at platform level to analyse the dependencies between the features of the platform.
 Typically the FMEA and DFA shall be performed at feature level and component level.
 If a component have no sub-components, the results of the analysis are the same as at feature level. So no additional consideration is needed.
 In this case please document this in the content of the document.
@@ -55,7 +57,7 @@ Stakeholders for the Safety Analysis (DFA and FMEA)
 
 #. :need:`Safety Engineer <rl__safety_engineer>`
 
-   * Analyse the platform feature architecture with a Platform Feature DFA
+   * Analyse all the feature architectures together with a Platform DFA
    * Analyse the feature architecture with a Feature FMEA and Feature DFA
    * Analyse the component architecture with a Component FMEA and Component DFA
    * Monitor/verify the FMEA and DFA
@@ -108,8 +110,8 @@ The analysis were applied at static and dynamic architecture diagrams. The follo
    Feature Architecture
 
 With the diagrams the dependencies and signal flows are shown. The analysis is done by applying the fault models :need:`gd_guidl__fault_models`
-for FMEA and the failure initiators :need:`gd_guidl__dfa_failure_initiators` for DFA. All reason why fault models and failure initiators that
-are not applicable shall be documented in the content of the documents. So it can be shown that the analysis is completely done.
+for FMEA and the failure initiators :need:`gd_guidl__dfa_failure_initiators` for DFA. Some fault models and failure initiators may not be applicable
+for one safety function. In this case the reason shall be documented in the FMEA/DFA documents. So it can be shown that the analysis is completely done.
 
 
 .. figure:: _assets/safety_analysis_component.drawio.svg
@@ -134,13 +136,11 @@ additional safety mitigation is needed.
 What analysis shall be done in which level?
 ===========================================
 
-The safety analysis (DFA and FMEA) shall consider the architectural elements on different levels. The DFA is a deductive analysis that starts with top level elements and identifies possible effects for it.
-The FMEA is an inductive analysis that starts with known causes and analysis their possible effects. The combination of both methods it shall be ensured that all potential fault models are identified and addressed.
+The safety analysis (DFA and FMEA) shall consider the architectural elements on different levels.
 
-1. **Feature Platform Level**: At this level, the focus is on the overall feature architecture to analyse if there are failures that effects more than one feature.
+1. **Platform Level**: At this level, the focus is on the overall feature architecture to analyse if there are failures that effects more than one feature.
 
     | **Example DFA:** Dependencies between features shall be analysed. This could be the usage of modules by different features, shared libraries or shared services. A common cause failure could be a erroneous signal that effects the behavior of several functions.
-    | **Example FMEA:** The interactions between two or more features shall be analysed. This might be a unintended sent of a message that violates the safety goals or safety requirements of fwo or more features.
 
 2. **Feature Level**: This level involves a more detailed analysis of individual components within the feature. The analysis shall consider the internal structure of components and their interactions with other components in the feature.
 

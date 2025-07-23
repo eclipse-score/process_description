@@ -39,7 +39,7 @@ Failure Mode List
 .. code-block:: rst
 
 
-    .. feat_saf_fmea:: <Element descriptor>
+    .. feat_saf_fmea:: <Title>
        :violates: <Feature architecture>
        :id: feat_saf_fmea__<Feature>__<Element descriptor>
        :fault_id: <ID from fault model :need:`gd_guidl__fault_models`>

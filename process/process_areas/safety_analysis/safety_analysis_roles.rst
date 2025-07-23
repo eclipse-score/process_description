@@ -24,7 +24,7 @@ Roles
    :contains: rl__committer
 
    The safety engineer is responsible for the safety analysis (FMEA and DFA) in the project. There might be several analysis
-   on different levels (e.g., Feature Platform DFA, Feature and Component FMEA/DFA).
+   on different levels (e.g., Platform DFA, Feature and Component FMEA/DFA).
 
    Required skills
 

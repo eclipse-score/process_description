@@ -38,7 +38,7 @@ Dependent Failure Initiators
 
 .. code-block:: rst
 
-    .. feat_saf_dfa:: <Element descriptor>
+    .. feat_saf_dfa:: <Title>
        :violates: <Feature architecture>
        :id: feat_saf_DFA__<Feature>__<Element descriptor>
        :failure_id: <ID from DFA failure initiators :need:`gd_guidl__dfa_failure_initiators`>

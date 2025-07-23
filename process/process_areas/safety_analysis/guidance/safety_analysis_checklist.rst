@@ -37,9 +37,9 @@ Safety Analysis Checklist
         - Remarks
         - Issue link
       * - REQ_01_01
-        - Is / are the safety analysis is / are finished?
-        - The safety analysis is finished, if all artifacts of the analysis are "valid" and "sufficient".
-        - No open topics in safety analysis report.
+        - Is / are the attribute sufficient set correctly?
+        - The mitigations shall have a direct influence ont the violation by prevention, detection or mitigation to reduce the risk to an acceptable level.
+        - The mitigations are sufficient.
         - <yes|no>
         -
       * - REQ_01_02
@@ -56,7 +56,7 @@ Safety Analysis Checklist
         -
       * - REQ_01_04
         - Are the failure effects clearly and completely described?
-        - Use the generic failure effect descriptions and enlarge the if it's applicable to the considered element.
+        - Use the generic failure effect descriptions and enlarge the description if it's applicable to the considered element.
         - The effects of the failure is described completely. The effect can be recognized easily.
         - <yes|no>
         -

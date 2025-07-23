@@ -23,25 +23,11 @@ Safety Analysis Guidelines
 
 This document describes the general guidances for Safety Analysis (DFA and FMEA) based on the concept which is defined :need:`Safety Analysis Concept<doc_concept__safety__analysis>`.
 
-Workflow for Platform Feature DFA
-=================================
+Workflow for Safety Analysis
+==========================
 
-The dependencies between platform features are analysed by performing a **single platform feature DFA**. The platform feature DFA shall be updated for every platform release.
+The workflow of the safety analysis are described in :ref:`workflow_safety_analysis`. The single steps in these workflows are described in detail in the following sections.
 
-#. Analyse the dependencies between features by performing a single platform feature DFA that references all platform feature static architecture diagrams, highlighting potential shared use of modules.
-#. Monitor the results of the platform feature DFA and log any issues in the Issue Tracking system with the ``safety`` label.
-#. Verify the platform feature DFA results by using :need:`gd_chklst__safety_analysis`.
-#. Platform feature DFA is completed when the verification is done, no issues are open and the status is "valid". The verification criteria is that it can be proven that a function and the corresponding safety monitoring are not both affected.
-
-Workflow for Safety Analysis at Feature and Component Level
-===========================================================
-
-For the safety analysis (FMEA and DFA) this workflow shall be applied at feature and component level:
-
-#. Analyse the Architecture (Feature and Component) with a FMEA and a DFA. If it's not applicable to perform a safety analysis a argumentation shall be documented in the content field of the analysis. The results of other safety analysis also from platform feature DFA can be used as an input.
-#. Monitor the results of the FMEA and DFA and log any issues in the Issue Tracking system with the ``safety`` label.
-#. Verify the FMEA and DFA results by using :need:`gd_chklst__safety_analysis`.
-#. The safety analysis are completed when the verification is done, no issues are open and the status is "valid".
 
 Step-by-Step-approach FMEA:
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -56,13 +42,13 @@ The attributes of the template are described in :ref:`process_requirements_safet
 
 **Steps:**
 
-#. For each architectural element check if a fault from the fault model :need:`gd_guidl__fault_models` applies.
+#. For each of the safety functions realized by an architecture element check if a fault from the fault model :need:`gd_guidl__fault_models` applies.
 #. If a fault model applies, use the template :need:`gd_temp__feat_saf_fmea` or :need:`gd_temp__comp_saf_fmea` to perform the analysis.
-#. Fill out the title of the analysis with the element descriptor. So it should be easily recognizable which element is analysed.
+#. The title of the analysis should be easily recognizable e.g. "Component xy unintended triggered".
 #. Link the violated architecture with the "violates" attribute.
-#. Fill out the id of the FMEA with in the style of ``feat_saf_fmea__<Feature>__<Element descriptor>`` or ``comp_saf_fmea__<Component>__<Element descriptor>``.
+#. Replace the placeholders in the "id" attribute with the name of the feature or component and a short description of the element so that it can be easily identified.
 #. Document the fault ID from the fault model :need:`gd_guidl__fault_models` that applies to the element in the "fault_id" attribute.
-#. Describe the failure effect of the fault model on the element in the "failure_effect" attribute. Use the generic failure effect descriptions and enlarge the if it's applicable to the considered element.
+#. Describe the failure effect of the fault model on the element in the "failure_effect" attribute. Use the failure mode description and enlarge the if it's applicable to the considered element.
 #. Document the safety mitigation. This can be a detection, prevention or mitigation of the fault.
 #. If there is no mitigation or existing mitigation is not sufficient a mitigation issue has to be created in the Issue Tracking system and linked in the "mitigation_issue" attribute.
 #. The analysis is finished, if for each identified fault a sufficient mitigation exists.
@@ -87,16 +73,16 @@ The attributes of the template are described in :ref:`process_requirements_safet
 
 #. For each architectural element check if a failure from the failure initiators :need:`gd_guidl__dfa_failure_initiators` applies.
 #. If a failure initiator applies, use the template :need:`gd_temp__feat_saf_dfa` or :need:`gd_temp__comp_saf_dfa` to perform the analysis.
-#. Fill out the title of the analysis with the element descriptor. So it should be easily recognizable which element is analysed.
+#. The title of the analysis should be easily recognizable e.g. "Component xy unintended triggered".
 #. Link the violated architecture with the "violates" attribute.
-#. Fill out the id of the DFA with in the style of ``feat_saf_dfa__<Feature>__<Element descriptor>`` or ``comp_saf_dfa__<Component>__<Element descriptor>``.
+#. Replace the placeholders in the "id" attribute with the name of the feature or component and a short description of the element so that it can be easily identified.
 #. Document the failure ID from the failure initiator :need:`gd_guidl__dfa_failure_initiators` that applies to the element in the "failure_id" attribute.
-#. Describe the failure effect of the fault model on the element in the "failure_effect" attribute. Use the generic failure effect descriptions and enlarge the if it's applicable to the considered element.
+#. Describe the failure effect of the failure initiator on the element in the "failure_effect" attribute. Use the violation cause description and enlarge the if it's applicable to the considered element.
 #. Document the safety mitigation. This can be a detection, prevention or mitigation of the fault.
 #. If there is no mitigation or the mitigation is not sufficient a mitigation issue has to be created in the Issue Tracking system and linked in the "mitigation_issue" attribute.
 #. The analysis is finished, if for each identified fault a sufficient mitigation exists.
 #. Unless the attribute sufficient is yes, mitigation and argument attribute can be still empty.
-#. Continue the analysis until all applicable fault models are checked.
+#. Continue the analysis until all applicable failure initiators are checked.
 #. The verification is done by applying the checklist :need:`gd_chklst__safety_analysis`.
 
 .. note:: If there are changes they have to be analysed with a impact analysis :need:`gd_temp__change__impact_analysis`. If needed the safety analysis (DFA or FMEA) has to be updated accordingly. Therefore all necessary steps have to be repeated.
@@ -106,24 +92,12 @@ The attributes of the template are described in :ref:`process_requirements_safet
 Examples for FMEA and DFA at feature level
 ==========================================
 
-For the examples the architectural diagrams :ref:`safety_analysis_feature_example` are used. The feature architecture is shown in the figure :ref:`safety_analysis_feature_fig`.
+For the examples the architectural diagrams :ref:`safety_analysis_feature_example` are used.
 
 **FMEA:**
 
-The dynamic architecture is analysed with the FMEA. Therefore the template :ref:`FMEA_templates` is used.
+The dynamic architecture is analysed with the FMEA. Therefore the template :need:`doc__feature_name_fmea` is used.
 
-.. code-block:: rst
-
-    .. feat_saf_fmea:: <Element descriptor>
-       :violates: <Feature architecture>
-       :id: feat_saf_fmea__<Feature>__<Element descriptor>
-       :fault_id: <ID from fault model :need:`gd_guidl__fault_models`>
-       :failure_effect: "description of failure effect of the fault model on the element"
-       :mitigated_by: <ID from Feature Requirement | ID from AoU Feature Requirement>
-       :mitigation_issue: <ID from Issue Tracker>
-       :sufficient: <yes|no>
-       :status: <valid|invalid>
-.. note::   argument is inside the 'content'. Therefore content is mandatory
 
 Use the fault models :need:`gd_guidl__fault_models` to ensure a structured analysis.
 Use the content of the document :need:`doc__feature_name_fmea`, :need:`doc__component_name_fmea` to describe e.g. why
@@ -136,7 +110,7 @@ shall be filled in as follows:
 
     .. feat_saf_fmea:: Component 1 Call message not received
        :violates: feat_arc_dyn__Mab__dynamic
-       :id: feat_saf_fmea__Mab__Component_1
+       :id: feat_saf_fmea__Mab__Component_1_call_not_received
        :fault_id: MF_01_01
        :failure_effect: Message is not received. Component 1 will not be called.
        :mitigated_by: aou_req__Mab__func_call
@@ -168,21 +142,8 @@ in the content of the document, so it can be recognized.
 
 **DFA:**
 
-The static architecture is analysed with the DFA. Therefore the template :ref:`DFA_templates` is used. The goal is to show that
+The static architecture is analysed with the DFA. Therefore the template :need:`doc__feature_name_dfa` is used. The goal is to show that
 the freedom from interference is achieved.
-
-.. code-block:: rst
-
-    .. feat_saf_dfa:: <Element descriptor>
-       :violates: <Feature architecture>
-       :id: feat_saf_DFA__<Feature>__<Element descriptor>
-       :failure_id: <ID from DFA failure initiators :need:`gd_guidl__dfa_failure_initiators`>
-       :failure_effect: "description of failure effect of the failure initiator on the element"
-       :mitigated_by: <ID from Feature Requirement | ID from AoU Feature Requirement>
-       :mitigation_issue: <ID from Issue Tracker>
-       :sufficient: <yes|no>
-       :status: <valid|invalid>
-.. note::   argument is inside the 'content'. Therefore content is mandatory
 
 Use the DFA failure initiators :need:`gd_guidl__dfa_failure_initiators` to ensure a structured analysis.
 Use the content of the document :need:`doc__feature_name_dfa`, :need:`doc__component_name_fmea` to describe e.g. why
@@ -190,7 +151,7 @@ a fault model is not applicable for the diagram. If there are additional failure
 
 .. code-block:: rst
 
-    .. feat_saf_dfa:: <Element descriptor>
+    .. feat_saf_dfa:: <Title>
        :violates: feat_arc_sta__Mab__static
        :id: feat_saf_DFA__Mab__call_Component_1
        :failure_id: SI_01_03
@@ -198,14 +159,14 @@ a fault model is not applicable for the diagram. If there are additional failure
        :mitigated_by:
        :mitigation_issue: link_to_issue_tracker/issues/issue_1234
        :sufficient: no
-       :status: invalid
+       :status: <valid|invalid>
 
       To avoid the failure cause a issue is created in the issue tracker. The issue is not resolved yet, therefore the mitigation (e.g. prevention, detection or mitigation) is not sufficient.
 
 
 .. code-block:: rst
 
-    .. feat_saf_dfa:: <Element descriptor>
+    .. feat_saf_dfa:: <Title>
        :violates: feat_arc_sta__Mab__static
        :id: feat_saf_DFA__<Feature>__<Element descriptor>
        :failure_id: UI_01_11
