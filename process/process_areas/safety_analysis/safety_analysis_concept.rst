@@ -30,7 +30,7 @@ To have a structured DFA the failure initiators have to be applied :need:`gd_gui
  | - Shared resources: Shared resources are resources that are used by two or more elements. If one element fails, it could lead to a failure in another element.
  | - Communication between the two elements: Receiving function is affected by information that is false, lost, sent multiple times, or in the wrong order etc. from the sender.
  | - DFA shared information inputs: Same information input used by multiple functions.
- | - Unintended impact: Unintended impacts to function due to various failures.
+ | - Unintended impact: Unintended impacts to function due to various failures like deadlocks or memory depletion.
  | - Development failure initiators: Failures that occur during the development process, potentially leading to safety issues.
 
 The objective of the **FMEA** is to show that the architecture created to fulfill the requirements does not introduce possible errors which would
@@ -129,7 +129,7 @@ In the example the component "Component 1" consists of two sub-components, "Comp
 How to add new safety mitigations?
 ==================================
 
-Identified faults without a mitigation (e.g. prevention, detection or mitigation) remain open and are tracked in the issue tracking system :need:`wp__issue_track_system` until they are resolved.
+Identified faults without a mitigation remain open and are tracked in the issue tracking system :need:`wp__issue_track_system` until they are resolved.
 A new safety mitigation could be needed e.g. if it can't be shown that the feature or component is completely deterministic and testable. In this case an
 additional safety mitigation is needed.
 
@@ -145,12 +145,12 @@ The safety analysis (DFA and FMEA) shall consider the architectural elements on 
 2. **Feature Level**: This level involves a more detailed analysis of individual components within the feature. The analysis shall consider the internal structure of components and their interactions with other components in the feature.
 
     | **Example DFA:** A dependent failure could be if two or more components share a common resource or if they are dependent on the same signal. If one component fails, it could lead to a failure in another component.
-    | **Example FMEA:** The FMEA shall used to analyse if the safety goals or safety requirements of a feature can be violated. This might be a unintended sent of a message between two components.
+    | **Example FMEA:** The FMEA shall used to analyse if the safety requirements of a feature can be violated. This might be a unintended sent of a message between two components.
 
 3. **Component Level**: If a component consists of multiple sub-components, the analysis shall be extended to these sub-components. This level of detail is necessary to identify specific fault models that may not be apparent at higher levels.
 
     | **Example DFA:** Similar to the feature level, but with a focus on the interactions between sub-components within a single component.
-    | **Example FMEA:** The FMEA shall used to analyse if the safety goals or safety requirements of a component can be violated. This might be a unintended sent of a message between two sub-components.
+    | **Example FMEA:** The FMEA shall used to analyse if the safety requirements of a component can be violated. This might be a unintended sent of a message between two sub-components.
 
 
 How to perform the analysis?

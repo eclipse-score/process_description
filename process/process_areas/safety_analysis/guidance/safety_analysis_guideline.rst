@@ -24,7 +24,7 @@ Safety Analysis Guidelines
 This document describes the general guidances for Safety Analysis (DFA and FMEA) based on the concept which is defined :need:`Safety Analysis Concept<doc_concept__safety__analysis>`.
 
 Workflow for Safety Analysis
-==========================
+============================
 
 The workflow of the safety analysis are described in :ref:`workflow_safety_analysis`. The single steps in these workflows are described in detail in the following sections.
 
@@ -96,87 +96,108 @@ For the examples the architectural diagrams :ref:`safety_analysis_feature_exampl
 
 **FMEA:**
 
-The dynamic architecture is analysed with the FMEA. Therefore the template :need:`doc__feature_name_fmea` is used.
+
+.. feat_saf_fmea:: Component 1 Call message not received
+   :violates: feat_arc_dyn__Mab__dynamic
+   :id: feat_saf_fmea__Mab__Component_1_call_not_received
+   :fault_id: MF_01_01
+   :failure_effect: Message is not received. This leads to a unavailability of a safety related functionality of the feature.
+   :mitigated_by: aou_req__Mab__call_not_received
+   :mitigation_issue:
+   :sufficient: yes
+   :status: valid
+
+    If the message is not received by the feature it will be unavailable for the user. This has to be detected by the User because
+    the feature can't detect if it's not called. This requirement is addressed by the AoU requirement aou_req__Mab__func_call_not_received.
+
+.. aou_req:: Mab Function Call Not Received
+   :id: aou_req__mab__call_not_received
+   :reqtype: Functional
+   :security: NO
+   :safety: ASIL_B
+   :status: valid
+
+    The function call shall be ensured by the user. If the function is not called, but it's intended, the user has to be informed.
 
 
-Use the fault models :need:`gd_guidl__fault_models` to ensure a structured analysis.
-Use the content of the document :need:`doc__feature_name_fmea`, :need:`doc__component_name_fmea` to describe e.g. why
-a fault model is not applicable for the diagram. If there are additional fault models needed, please enlarge the list of fault models.
+.. feat_saf_fmea:: Component 1 unintended triggered
+   :violates: feat_arc_dyn__Mab__dynamic
+   :id: feat_saf_fmea__Mab__Component_1
+   :fault_id: MF_01_07
+   :failure_effect: Message is unintended sent. Component 1 will be unintended triggered.
+   :mitigated_by:
+   :mitigation_issue:
+   :sufficient: yes
+   :status: valid
 
-The dynamic architecture of the feature architecture is used as an example. The attributes of the template (:ref:`process_requirements_safety_analysis_attributes`)
-shall be filled in as follows:
+    An unintended return can be neglected as the component is ASIL B developed, non complex and sufficiently tested.
 
-.. code-block:: rst
 
-    .. feat_saf_fmea:: Component 1 Call message not received
-       :violates: feat_arc_dyn__Mab__dynamic
-       :id: feat_saf_fmea__Mab__Component_1_call_not_received
-       :fault_id: MF_01_01
-       :failure_effect: Message is not received. Component 1 will not be called.
-       :mitigated_by: aou_req__Mab__func_call
-       :mitigation_issue:
-       :sufficient: yes
-       :status: valid
+For all fault models that are not applicable, the reason has to be documented in the content of the document, so it can be recognized. An example could be that
 
-      If the message is not received the feature will not be called. Therefore possible faults have to be mitigated, detected or avoided
-      by the Use. This requirement is addressed by the AoU requirement aou_req__Mab__func_call. Because of a mitigation exists there is no
-      need to create an mitigation issue.
+* Fault model FX_01_04 "loss of execution" is not applicable, because feature is completely determinisitic. Other failures like HW failures are not considered in this analysis because it's developed as a SEooC.
 
-.. code-block:: rst
-
-    .. feat_saf_fmea:: Component 2 unintended triggered
-       :violates: feat_arc_dyn__Mab__dynamic
-       :id: feat_saf_fmea__Mab__Component_2
-       :fault_id: MF_01_07
-       :failure_effect: Message is unintended sent. Component 2 will be unintended triggered.
-       :mitigated_by: feat_req__Mab__func_call_monitor
-       :mitigation_issue:
-       :sufficient: yes
-       :status: valid
-
-      An unintended trigger of the component 2 is detected shall be detected. Therefore the requirement feat_req__Mab__func_call_monitor is created.
-
-The FMEA is finished, if all fault models are checked and for each identified fault a sufficient mitigation (e.g. prevention, detection or mitigation) exists. For the validation of the
-FMEA the checklist :need:`gd_chklst__safety_analysis` shall be used. For all fault models that are not applicable, the reason has to be documented
-in the content of the document, so it can be recognized.
 
 **DFA:**
 
-The static architecture is analysed with the DFA. Therefore the template :need:`doc__feature_name_dfa` is used. The goal is to show that
-the freedom from interference is achieved.
+.. feat_saf_dfa:: Mab data corruption
+   :violates: feat_arc_sta__Mab__static
+   :id: feat_saf_DFA__Mab__data_corruption
+   :failure_id: CO_01_02
+   :failure_effect: Data or message corruption will lead to a corruption of the data or message that could violate a safety functionality.
+   :mitigated_by: feat_req__mab_integritiy_check
+   :mitigation_issue:
+   :sufficient: yes
+   :status: valid
 
-Use the DFA failure initiators :need:`gd_guidl__dfa_failure_initiators` to ensure a structured analysis.
-Use the content of the document :need:`doc__feature_name_dfa`, :need:`doc__component_name_fmea` to describe e.g. why
-a fault model is not applicable for the diagram. If there are additional failure initiators needed, please enlarge the list of failure initiators.
-
-.. code-block:: rst
-
-    .. feat_saf_dfa:: <Title>
-       :violates: feat_arc_sta__Mab__static
-       :id: feat_saf_DFA__Mab__call_Component_1
-       :failure_id: SI_01_03
-       :failure_effect: Constants, or variables, being global to the two software functions
-       :mitigated_by:
-       :mitigation_issue: link_to_issue_tracker/issues/issue_1234
-       :sufficient: no
-       :status: <valid|invalid>
-
-      To avoid the failure cause a issue is created in the issue tracker. The issue is not resolved yet, therefore the mitigation (e.g. prevention, detection or mitigation) is not sufficient.
+    The feature shall detect and report data corruption.
 
 
-.. code-block:: rst
+.. feat_req:: Mab Integrity Check
+   :id: feat_req__mab_integritiy_check
+   :reqtype: Functional
+   :security: NO
+   :satisfies: stkh_req__integrity_check
+   :safety: ASIL_B
+   :status: valid
 
-    .. feat_saf_dfa:: <Title>
-       :violates: feat_arc_sta__Mab__static
-       :id: feat_saf_DFA__<Feature>__<Element descriptor>
-       :failure_id: UI_01_11
-       :failure_effect: Memory depletion
-       :mitigated_by: feat_req__Mab__MMU
-       :mitigation_issue:
-       :sufficient: yes
-       :status: valid
+    The feature shall detect and report data corruption. This is done by a integrity check of the data or message.
 
-      The memory will be managed by the MMU. Therefore the requirement feat_req__Mab__MMU is created.
 
-The DFA is finished, if all fault models are checked and for each identified fault a sufficient mitigation (e.g. prevention, detection or mitigation) exists. For the validation of the
-DFA the checklist :need:`gd_chklst__safety_analysis` shall be used.
+.. stkh_req:: Integrity Check
+   :id: stkh_req__integrity_check
+   :reqtype: Functional
+   :security: NO
+   :safety: ASIL_B
+   :rationale: The integrity check is needed to ensure that the data or message is not corrupted.
+   :status: valid
+
+    The shall be possible to detect and report data corruption.
+
+
+.. feat_saf_dfa:: Mab allocated memory
+   :violates: feat_arc_sta__Mab__static
+   :id: feat_saf_DFA__mab__allocated_memory
+   :failure_id: SR_01_10
+   :failure_effect: The allocated memory is not managed by the MMU. This could lead to a violation of the safety functionality.
+   :mitigated_by: aou_req__mab__mmu
+   :mitigation_issue:
+   :sufficient: yes
+   :status: valid
+
+    The memory will be managed by the MMU. Therefore the requirement feat_req__Mab__MMU is created.
+
+.. aou_req:: Mab MMU
+   :id: aou_req__mab__mmu
+   :reqtype: Functional
+   :security: NO
+   :safety: ASIL_B
+   :status: valid
+
+    The memory shall be managed by the MMU. This is needed to ensure that the memory is not corrupted by other components or features.
+
+
+For all failure initiators that are not applicable, the reason has to be documented in the content of the document, so it can be recognized. An example could be that
+
+* Failure initiator SR_01_01 "reused software modules" is not applicable, no software modules are reused in the feature.
+* Failure initiator SI_01_03 "constants, or variables, being global to the two software functions" is not applicable, because it's not possible to create constants or variables that being global to the two software functions in Rust.
