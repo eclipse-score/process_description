@@ -24,6 +24,12 @@ This document describes the steps to create a problem report, and further to ana
 resolve, and to control the problem until closure. Where a problem is defined as a
 deviation of an expected result.
 
+Examples for problem origins:
+
+* Deviations relating to requirements, architecture, implementation or code found by user of the platform.
+* Deviations found by contributor based on component, feature or platform integration tests.
+* Deviations found by Quality Management activities as defined in the Quality Management Plan.
+
 Therefore guidelines :need:`gd_temp__problem__template`,
 :need:`gd_guidl__problem__problem` and a :need:`doc_concept__problem__process`
 are available.

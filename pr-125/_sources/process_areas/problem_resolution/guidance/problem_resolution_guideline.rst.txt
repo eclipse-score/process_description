@@ -147,7 +147,7 @@ The affected version of the release should be documented, where the problem was 
   | * Further supporting information is added as the link to the official feature request template which makes it reproducible
   | * Checkboxes are selected to highlight, that Safety and Security is affected, no further classification, as the project is defined as ASIL B
   | * The problem classification is provided as minor
-  | * The affected version is provided: *0.5*
+  | * The affected version is provided: *pre-0.5*
 
 When ready to review and to analyze, the author sets the status to "in review" manually.
 
@@ -171,7 +171,7 @@ consistency.
 If required, the information is updated accordingly.
 
 If accepted, the stakeholder of the problem and the expected release, where the problem
-should be closed, shall be defined. In addition the corresponding milestone should be set.
+should be closed, shall be defined. Optionally, the corresponding milestone can be set.
 
 If applicable, the features affected should be identified too.
 

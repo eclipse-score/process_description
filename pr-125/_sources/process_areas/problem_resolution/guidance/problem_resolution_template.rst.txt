@@ -71,13 +71,12 @@ Problem category
 ----------------
 [Safety affected, Security affected]
 
-Safety, Security: Additional qualifier to highlight, if safety or security is affected
+Safety, Security: Additional qualifiers to highlight, if safety or security is affected
 
-* Problems relating to requirements, architecture, implementation or code found by user of the platform.
-* Problems found by contributor based on component, feature or platform integration tests.
-* Problems or gaps found by Quality Management activities as defined in the Quality Management Plan.
+They qualifiers have to be filled. If not filled out, a quality problem is assumed as
+default category.
 
-In addition to the category Safety affected, the ASIL classification may added in the
+In addition to the category Safety affected, the ASIL classification may be added in the
 documentation, if applicable.
 
 | (to be filled out during :need:`wf__problem__create_pr`)
@@ -128,8 +127,6 @@ Problem affected version
 
 Document the version of the release where the problem was detected.
 
-Add further versions, if applicable during analysis activities.
-
 | (to be filled out during :need:`wf__problem__create_pr`)
 | (to be updated during :need:`wf__problem__analyze_pr`)
 
@@ -137,7 +134,12 @@ Problem analysis results
 ------------------------
 [What is the problem analysis result? Accepted or Rejected?]
 
-| Especially document rejection Reason, if applicable
+| Especially document rejection reason, if applicable
+
+In addition the safety/security relevance is confirmed or disconfirmed by safety/Security
+Experts.
+
+| Especially document disconfirming reason, if applicable
 
 (to be filled out during :need:`wf__problem__analyze_pr`)
 
@@ -153,7 +155,9 @@ Problem expected closure version
 --------------------------------
 [Version when the problem should be resolved]
 
-[Milestone when the problem should be resolved]
+Document the version of the release where the problem should be resolved.
+
+Optionally add a concrete Milestone, if applicable.
 
 (to be filled out during :need:`wf__problem__analyze_pr`)
 
@@ -174,7 +178,7 @@ Are all arguments convincing
 
 Problem escalations
 -------------------
-[Document escalation activities?]
+[Document escalation activities, if applicable]
 
 | (to be filled out during :need:`wf__problem__initiate_monitor_pr`)
 | (to be updated during :need:`wf__problem__close_pr`)

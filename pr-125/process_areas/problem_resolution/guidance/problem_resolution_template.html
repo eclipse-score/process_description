@@ -510,7 +510,7 @@
                   
   <section id="problem-report-template">
 <span id="prm-templates"></span><h1>Problem Report Template<a class="headerlink" href="#problem-report-template" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-52901702">
+<div class="need_container docutils container" id="SNCB-cba96185">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_temp table" id="gd_temp__problem__template">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -605,13 +605,10 @@ of the project.</p>
 <section id="problem-category">
 <h2>Problem category<a class="headerlink" href="#problem-category" title="Link to this heading">#</a></h2>
 <p>[Safety affected, Security affected]</p>
-<p>Safety, Security: Additional qualifier to highlight, if safety or security is affected</p>
-<ul class="simple">
-<li><p>Problems relating to requirements, architecture, implementation or code found by user of the platform.</p></li>
-<li><p>Problems found by contributor based on component, feature or platform integration tests.</p></li>
-<li><p>Problems or gaps found by Quality Management activities as defined in the Quality Management Plan.</p></li>
-</ul>
-<p>In addition to the category Safety affected, the ASIL classification may added in the
+<p>Safety, Security: Additional qualifiers to highlight, if safety or security is affected</p>
+<p>They qualifiers have to be filled. If not filled out, a quality problem is assumed as
+default category.</p>
+<p>In addition to the category Safety affected, the ASIL classification may be added in the
 documentation, if applicable.</p>
 <div class="line-block">
 <div class="line">(to be filled out during <a class="reference internal" href="../problem_resolution_workflow.html#wf__problem__create_pr" title="wf__problem__create_pr"><em class="xref need">Create Problem Report (wf__problem__create_pr)</em></a>)</div>
@@ -673,7 +670,6 @@ documentation, if applicable.</p>
 <h2>Problem affected version<a class="headerlink" href="#problem-affected-version" title="Link to this heading">#</a></h2>
 <p>[What version of the release is affected?]</p>
 <p>Document the version of the release where the problem was detected.</p>
-<p>Add further versions, if applicable during analysis activities.</p>
 <div class="line-block">
 <div class="line">(to be filled out during <a class="reference internal" href="../problem_resolution_workflow.html#wf__problem__create_pr" title="wf__problem__create_pr"><em class="xref need">Create Problem Report (wf__problem__create_pr)</em></a>)</div>
 <div class="line">(to be updated during <a class="reference internal" href="../problem_resolution_workflow.html#wf__problem__analyze_pr" title="wf__problem__analyze_pr"><em class="xref need">Analyze Problem Report (wf__problem__analyze_pr)</em></a>)</div>
@@ -683,7 +679,12 @@ documentation, if applicable.</p>
 <h2>Problem analysis results<a class="headerlink" href="#problem-analysis-results" title="Link to this heading">#</a></h2>
 <p>[What is the problem analysis result? Accepted or Rejected?]</p>
 <div class="line-block">
-<div class="line">Especially document rejection Reason, if applicable</div>
+<div class="line">Especially document rejection reason, if applicable</div>
+</div>
+<p>In addition the safety/security relevance is confirmed or disconfirmed by safety/Security
+Experts.</p>
+<div class="line-block">
+<div class="line">Especially document disconfirming reason, if applicable</div>
 </div>
 <p>(to be filled out during <a class="reference internal" href="../problem_resolution_workflow.html#wf__problem__analyze_pr" title="wf__problem__analyze_pr"><em class="xref need">Analyze Problem Report (wf__problem__analyze_pr)</em></a>)</p>
 </section>
@@ -696,7 +697,8 @@ documentation, if applicable.</p>
 <section id="problem-expected-closure-version">
 <h2>Problem expected closure version<a class="headerlink" href="#problem-expected-closure-version" title="Link to this heading">#</a></h2>
 <p>[Version when the problem should be resolved]</p>
-<p>[Milestone when the problem should be resolved]</p>
+<p>Document the version of the release where the problem should be resolved.</p>
+<p>Optionally add a concrete Milestone, if applicable.</p>
 <p>(to be filled out during <a class="reference internal" href="../problem_resolution_workflow.html#wf__problem__analyze_pr" title="wf__problem__analyze_pr"><em class="xref need">Analyze Problem Report (wf__problem__analyze_pr)</em></a>)</p>
 </section>
 <section id="problem-solutions">
@@ -713,7 +715,7 @@ documentation, if applicable.</p>
 </section>
 <section id="problem-escalations">
 <h2>Problem escalations<a class="headerlink" href="#problem-escalations" title="Link to this heading">#</a></h2>
-<p>[Document escalation activities?]</p>
+<p>[Document escalation activities, if applicable]</p>
 <div class="line-block">
 <div class="line">(to be filled out during <a class="reference internal" href="../problem_resolution_workflow.html#wf__problem__initiate_monitor_pr" title="wf__problem__initiate_monitor_pr"><em class="xref need">Initiate and Monitor Proble... (wf__problem__initiate_monitor_pr)</em></a>)</div>
 <div class="line">(to be updated during <a class="reference internal" href="../problem_resolution_workflow.html#wf__problem__close_pr" title="wf__problem__close_pr"><em class="xref need">Close Problem Resolution (wf__problem__close_pr)</em></a>)</div>
