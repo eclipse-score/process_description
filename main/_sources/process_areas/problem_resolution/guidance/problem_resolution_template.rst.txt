@@ -22,31 +22,27 @@ Problem Report Template
    :status: draft
    :complies: std_req__aspice_40__SUP-9-BP1, std_req__aspice_40__SUP-9-BP2, std_req__aspice_40__SUP-9-BP3, std_req__aspice_40__SUP-9-BP4,
 
-Will be reworked, after this PR with ISSUE_TEMPLATES is merged
+This template defines the content to be implemented in the selected Issue Tracking System
+of the project.
+
 
 Problem status
 --------------
 [“open”, “in review”, “in implementation”, “closed”, “rejected”]
 
-If possible, use for problem status the properties of the selected Issue Tracking System.
-(Update here with example from GitHub, after this PR is merged)
-
 | (to be filled out during :need:`wf__problem__create_pr`)
 | (to be updated during :need:`wf__problem__analyze_pr`)
 | (to be updated during :need:`wf__problem__initiate_monitor_pr`)
+| (to be updated during :need:`wf__problem__close_pr`)
 
 Problem submitter
 -----------------
 [Who is the reporter of the problem?]
 
-If possible, use for problem submitter the properties of the selected Issue Tracking System
-(for implementation see here: to be update with Example later)
-
 (to be filled out during :need:`wf__problem__create_pr`)
 
 Problem description
 -------------------
-
 [What is the problem?]
 
 | Determine the cause of the problem, if possible.
@@ -58,52 +54,36 @@ Problem description
 
 Problem supporting information
 ------------------------------
-
 [How to reproduce the problem?]
 
-(to be filled out during :need:`wf__problem__create_pr`)
+| Add additional information, e.g.
+| add which operational state the problem occurred?
+| observations, screenshots, debug traces, etc.
 
-Problem analysis results
-------------------------
+[Error occurrence rate?]
 
-[What is the problem analysis result?]
+| Select one [None | Single Event | Sporadic | Highly Intermittent | Reproducible]
 
-| Especially document rejection Reason
-| Determine the safety/security impact, if applicable
-
-(to be filled out during :need:`wf__problem__analyze_pr`)
-
-Problem stakeholder
--------------------
-
-[What are the potential stakeholder to resolve the problem?]
-
-Add affected feature, if possible
-
-If possible, use for problem stakeholder the properties of the selected Issue Tracking System
-(Update here with example from GitHub, after this PR is merged)
-
-(to be filled out during :need:`wf__problem__create_pr`)
+| (to be filled out during :need:`wf__problem__create_pr`)
+| (to be updated during :need:`wf__problem__analyze_pr`)
 
 Problem category
 ----------------
-
 [Safety affected, Security affected]
 
-* Problems relating to requirements, design, ore code found by user of the platform.
-* Problems found by contributor based on component, feature or platform integration tests.
-* Problems or gaps found by Quality Management activities as defined in the Quality Management Plan.
+Safety, Security: Additional qualifiers to highlight, if safety or security is affected
 
-Safety, Security: Additional qualifier to highlight, if safety or security is affected
+They qualifiers have to be filled. If not filled out, a quality problem is assumed as
+default category.
 
-If possible, use for problem category the properties of the selected Issue Tracking System
-(Update here with example from GitHub, after this PR is merged)
+In addition to the category Safety affected, the ASIL classification may be added in the
+documentation, if applicable.
 
-(to be filled out during :need:`wf__problem__create_pr`)
+| (to be filled out during :need:`wf__problem__create_pr`)
+| (to be updated during :need:`wf__problem__analyze_pr`)
 
 Problem classification
 ----------------------
-
 [minor, major, critical, blocker]
 
 Classify the problem severity
@@ -141,26 +121,54 @@ Determine if Urgent resolution is required? (yes, no, only valid for critical, b
 | (to be filled out during :need:`wf__problem__create_pr`)
 | (to be updated during :need:`wf__problem__analyze_pr`)
 
-Problem expected closure date
------------------------------
+Problem affected version
+------------------------
+[What version of the release is affected?]
 
-[Milestone when the problem should be resolved]
+Document the version of the release where the problem was detected.
 
-If possible, use for problem closure date the properties of the selected Issue Tracking System
-(Update here with example from GitHub, after this PR is merged)
+| (to be filled out during :need:`wf__problem__create_pr`)
 
-(to be filled out during :need:`wf__problem__create_pr`)
+Problem analysis results
+------------------------
+[What is the problem analysis result? Accepted or Rejected?]
+
+| Especially document rejection reason, if applicable
+
+In addition the safety/security relevance is confirmed or disconfirmed by safety/Security
+Experts.
+
+| Especially document disconfirming reason, if applicable
+
+(to be filled out during :need:`wf__problem__analyze_pr`)
+
+Problem stakeholder
+-------------------
+[What are the potential stakeholder to resolve the problem?]
+
+Add affected features, if applicable
+
+(to be filled out during :need:`wf__problem__analyze_pr`)
+
+Problem expected closure version
+--------------------------------
+[Version when the problem should be resolved]
+
+Document the version of the release where the problem should be resolved.
+
+Optionally add a concrete Milestone, if applicable.
+
+(to be filled out during :need:`wf__problem__analyze_pr`)
 
 Problem solutions
 -----------------
-
 [What are measures to solve the problem?]
 
 Specify the measures to resolve the problem, based on a rationale
 
 Verify the effectiveness of the implemented measure
 
-Report the results of the verification
+Report the results of the verification, if applicable
 
 Are all arguments convincing
 
@@ -169,8 +177,7 @@ Are all arguments convincing
 
 Problem escalations
 -------------------
-
-[Document escalation activities?]
+[Document escalation activities, if applicable]
 
 | (to be filled out during :need:`wf__problem__initiate_monitor_pr`)
 | (to be updated during :need:`wf__problem__close_pr`)

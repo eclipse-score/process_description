@@ -44,12 +44,24 @@ Stakeholders for the Problem Report
 
 #. :need:`Contributor <rl__contributor>`
 
-   * Contributes features and components to grow the project content
+   * In general contributes features and components to grow the project content
+   * Reports problems, analyze problems, implement problem resolutions
 
 #. :need:`Committer <rl__committer>`
 
-   * Verifies that the contribution fulfills the project policies
-   * Approves the contribution
+   * Verifies that the contribution including problem resolutions fulfills the project policies
+   * Approves all problem resolution activities besides problem closing
+   * Is responsible to initiate the the closure of the problem reported
+
+#. :need:`Technical Lead <rl__technical_lead>`, :need:`Module Lead <rl__module_lead>`
+
+   * Supports all problem resolution activities
+   * Approves the closing of the problem resolution
+
+#. :need:`Safety Manager <rl__safety_manager>`, :need:`Security Manager <rl__security_manager>`, :need:`Quality Manager <rl__quality_manager>`
+
+   * Supports all problem resolution activities
+
 
 Standard Requirements
 =====================
@@ -58,15 +70,7 @@ Also requirements of standards need to be taken into consideration:
 
 * ISO 26262
 * ASPICE
-* ISO SAE 21434
-
-Problem Report Categories
-*************************
-
-User: Problems relating to requirements, architecture, implementation, or code found by user of the platform.
-
-Bug: Problems found by contributor based on component, feature or platform integration tests including verification and quality assurance activities.
-
+* ISO/SAE 21434
 
 .. _prm_attributes:
 
@@ -83,15 +87,17 @@ Activities for Problem Resolution
 Creation of the Problem Report
 ==============================
 
-Use the :ref:`Problem Report Template <prm_templates>` to create the Problem Report.
+Use the content :ref:`Problem Report Template <prm_templates>` to create the Problem Report.
 
 In case safety or security is affected, in addition the impact analysis template
 : :ref:`Impact Analysis Template <chm_impact_analysis_templates>`  can be used to detail out the
 impact on safety/security as part of the description.
 
+(needs to be updated)
+
 .. _prm_analysis:
 
-Anaylsis of the Problem Report
+Analysis of the Problem Report
 ==============================
 
 Based on the analysis results decision about the acceptance or rejection must be taken

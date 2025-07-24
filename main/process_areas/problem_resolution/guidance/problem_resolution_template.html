@@ -510,7 +510,7 @@
                   
   <section id="problem-report-template">
 <span id="prm-templates"></span><h1>Problem Report Template<a class="headerlink" href="#problem-report-template" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-1d615ede">
+<div class="need_container docutils container" id="SNCB-b87482f2">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_temp table" id="gd_temp__problem__template">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -555,23 +555,21 @@
 </table>
 </div>
 </div>
-<p>Will be reworked, after this PR with ISSUE_TEMPLATES is merged</p>
+<p>This template defines the content to be implemented in the selected Issue Tracking System
+of the project.</p>
 <section id="problem-status">
 <h2>Problem status<a class="headerlink" href="#problem-status" title="Link to this heading">#</a></h2>
 <p>[“open”, “in review”, “in implementation”, “closed”, “rejected”]</p>
-<p>If possible, use for problem status the properties of the selected Issue Tracking System.
-(Update here with example from GitHub, after this PR is merged)</p>
 <div class="line-block">
 <div class="line">(to be filled out during <a class="reference internal" href="../problem_resolution_workflow.html#wf__problem__create_pr" title="wf__problem__create_pr"><em class="xref need">Create Problem Report (wf__problem__create_pr)</em></a>)</div>
 <div class="line">(to be updated during <a class="reference internal" href="../problem_resolution_workflow.html#wf__problem__analyze_pr" title="wf__problem__analyze_pr"><em class="xref need">Analyze Problem Report (wf__problem__analyze_pr)</em></a>)</div>
 <div class="line">(to be updated during <a class="reference internal" href="../problem_resolution_workflow.html#wf__problem__initiate_monitor_pr" title="wf__problem__initiate_monitor_pr"><em class="xref need">Initiate and Monitor Proble... (wf__problem__initiate_monitor_pr)</em></a>)</div>
+<div class="line">(to be updated during <a class="reference internal" href="../problem_resolution_workflow.html#wf__problem__close_pr" title="wf__problem__close_pr"><em class="xref need">Close Problem Resolution (wf__problem__close_pr)</em></a>)</div>
 </div>
 </section>
 <section id="problem-submitter">
 <h2>Problem submitter<a class="headerlink" href="#problem-submitter" title="Link to this heading">#</a></h2>
 <p>[Who is the reporter of the problem?]</p>
-<p>If possible, use for problem submitter the properties of the selected Issue Tracking System
-(for implementation see here: to be update with Example later)</p>
 <p>(to be filled out during <a class="reference internal" href="../problem_resolution_workflow.html#wf__problem__create_pr" title="wf__problem__create_pr"><em class="xref need">Create Problem Report (wf__problem__create_pr)</em></a>)</p>
 </section>
 <section id="problem-description">
@@ -590,37 +588,32 @@
 <section id="problem-supporting-information">
 <h2>Problem supporting information<a class="headerlink" href="#problem-supporting-information" title="Link to this heading">#</a></h2>
 <p>[How to reproduce the problem?]</p>
-<p>(to be filled out during <a class="reference internal" href="../problem_resolution_workflow.html#wf__problem__create_pr" title="wf__problem__create_pr"><em class="xref need">Create Problem Report (wf__problem__create_pr)</em></a>)</p>
-</section>
-<section id="problem-analysis-results">
-<h2>Problem analysis results<a class="headerlink" href="#problem-analysis-results" title="Link to this heading">#</a></h2>
-<p>[What is the problem analysis result?]</p>
 <div class="line-block">
-<div class="line">Especially document rejection Reason</div>
-<div class="line">Determine the safety/security impact, if applicable</div>
+<div class="line">Add additional information, e.g.</div>
+<div class="line">add which operational state the problem occurred?</div>
+<div class="line">observations, screenshots, debug traces, etc.</div>
 </div>
-<p>(to be filled out during <a class="reference internal" href="../problem_resolution_workflow.html#wf__problem__analyze_pr" title="wf__problem__analyze_pr"><em class="xref need">Analyze Problem Report (wf__problem__analyze_pr)</em></a>)</p>
-</section>
-<section id="problem-stakeholder">
-<h2>Problem stakeholder<a class="headerlink" href="#problem-stakeholder" title="Link to this heading">#</a></h2>
-<p>[What are the potential stakeholder to resolve the problem?]</p>
-<p>Add affected feature, if possible</p>
-<p>If possible, use for problem stakeholder the properties of the selected Issue Tracking System
-(Update here with example from GitHub, after this PR is merged)</p>
-<p>(to be filled out during <a class="reference internal" href="../problem_resolution_workflow.html#wf__problem__create_pr" title="wf__problem__create_pr"><em class="xref need">Create Problem Report (wf__problem__create_pr)</em></a>)</p>
+<p>[Error occurrence rate?]</p>
+<div class="line-block">
+<div class="line">Select one [None | Single Event | Sporadic | Highly Intermittent | Reproducible]</div>
+</div>
+<div class="line-block">
+<div class="line">(to be filled out during <a class="reference internal" href="../problem_resolution_workflow.html#wf__problem__create_pr" title="wf__problem__create_pr"><em class="xref need">Create Problem Report (wf__problem__create_pr)</em></a>)</div>
+<div class="line">(to be updated during <a class="reference internal" href="../problem_resolution_workflow.html#wf__problem__analyze_pr" title="wf__problem__analyze_pr"><em class="xref need">Analyze Problem Report (wf__problem__analyze_pr)</em></a>)</div>
+</div>
 </section>
 <section id="problem-category">
 <h2>Problem category<a class="headerlink" href="#problem-category" title="Link to this heading">#</a></h2>
 <p>[Safety affected, Security affected]</p>
-<ul class="simple">
-<li><p>Problems relating to requirements, design, ore code found by user of the platform.</p></li>
-<li><p>Problems found by contributor based on component, feature or platform integration tests.</p></li>
-<li><p>Problems or gaps found by Quality Management activities as defined in the Quality Management Plan.</p></li>
-</ul>
-<p>Safety, Security: Additional qualifier to highlight, if safety or security is affected</p>
-<p>If possible, use for problem category the properties of the selected Issue Tracking System
-(Update here with example from GitHub, after this PR is merged)</p>
-<p>(to be filled out during <a class="reference internal" href="../problem_resolution_workflow.html#wf__problem__create_pr" title="wf__problem__create_pr"><em class="xref need">Create Problem Report (wf__problem__create_pr)</em></a>)</p>
+<p>Safety, Security: Additional qualifiers to highlight, if safety or security is affected</p>
+<p>They qualifiers have to be filled. If not filled out, a quality problem is assumed as
+default category.</p>
+<p>In addition to the category Safety affected, the ASIL classification may be added in the
+documentation, if applicable.</p>
+<div class="line-block">
+<div class="line">(to be filled out during <a class="reference internal" href="../problem_resolution_workflow.html#wf__problem__create_pr" title="wf__problem__create_pr"><em class="xref need">Create Problem Report (wf__problem__create_pr)</em></a>)</div>
+<div class="line">(to be updated during <a class="reference internal" href="../problem_resolution_workflow.html#wf__problem__analyze_pr" title="wf__problem__analyze_pr"><em class="xref need">Analyze Problem Report (wf__problem__analyze_pr)</em></a>)</div>
+</div>
 </section>
 <section id="problem-classification">
 <h2>Problem classification<a class="headerlink" href="#problem-classification" title="Link to this heading">#</a></h2>
@@ -673,19 +666,46 @@
 <div class="line">(to be updated during <a class="reference internal" href="../problem_resolution_workflow.html#wf__problem__analyze_pr" title="wf__problem__analyze_pr"><em class="xref need">Analyze Problem Report (wf__problem__analyze_pr)</em></a>)</div>
 </div>
 </section>
-<section id="problem-expected-closure-date">
-<h2>Problem expected closure date<a class="headerlink" href="#problem-expected-closure-date" title="Link to this heading">#</a></h2>
-<p>[Milestone when the problem should be resolved]</p>
-<p>If possible, use for problem closure date the properties of the selected Issue Tracking System
-(Update here with example from GitHub, after this PR is merged)</p>
-<p>(to be filled out during <a class="reference internal" href="../problem_resolution_workflow.html#wf__problem__create_pr" title="wf__problem__create_pr"><em class="xref need">Create Problem Report (wf__problem__create_pr)</em></a>)</p>
+<section id="problem-affected-version">
+<h2>Problem affected version<a class="headerlink" href="#problem-affected-version" title="Link to this heading">#</a></h2>
+<p>[What version of the release is affected?]</p>
+<p>Document the version of the release where the problem was detected.</p>
+<div class="line-block">
+<div class="line">(to be filled out during <a class="reference internal" href="../problem_resolution_workflow.html#wf__problem__create_pr" title="wf__problem__create_pr"><em class="xref need">Create Problem Report (wf__problem__create_pr)</em></a>)</div>
+</div>
+</section>
+<section id="problem-analysis-results">
+<h2>Problem analysis results<a class="headerlink" href="#problem-analysis-results" title="Link to this heading">#</a></h2>
+<p>[What is the problem analysis result? Accepted or Rejected?]</p>
+<div class="line-block">
+<div class="line">Especially document rejection reason, if applicable</div>
+</div>
+<p>In addition the safety/security relevance is confirmed or disconfirmed by safety/Security
+Experts.</p>
+<div class="line-block">
+<div class="line">Especially document disconfirming reason, if applicable</div>
+</div>
+<p>(to be filled out during <a class="reference internal" href="../problem_resolution_workflow.html#wf__problem__analyze_pr" title="wf__problem__analyze_pr"><em class="xref need">Analyze Problem Report (wf__problem__analyze_pr)</em></a>)</p>
+</section>
+<section id="problem-stakeholder">
+<h2>Problem stakeholder<a class="headerlink" href="#problem-stakeholder" title="Link to this heading">#</a></h2>
+<p>[What are the potential stakeholder to resolve the problem?]</p>
+<p>Add affected features, if applicable</p>
+<p>(to be filled out during <a class="reference internal" href="../problem_resolution_workflow.html#wf__problem__analyze_pr" title="wf__problem__analyze_pr"><em class="xref need">Analyze Problem Report (wf__problem__analyze_pr)</em></a>)</p>
+</section>
+<section id="problem-expected-closure-version">
+<h2>Problem expected closure version<a class="headerlink" href="#problem-expected-closure-version" title="Link to this heading">#</a></h2>
+<p>[Version when the problem should be resolved]</p>
+<p>Document the version of the release where the problem should be resolved.</p>
+<p>Optionally add a concrete Milestone, if applicable.</p>
+<p>(to be filled out during <a class="reference internal" href="../problem_resolution_workflow.html#wf__problem__analyze_pr" title="wf__problem__analyze_pr"><em class="xref need">Analyze Problem Report (wf__problem__analyze_pr)</em></a>)</p>
 </section>
 <section id="problem-solutions">
 <h2>Problem solutions<a class="headerlink" href="#problem-solutions" title="Link to this heading">#</a></h2>
 <p>[What are measures to solve the problem?]</p>
 <p>Specify the measures to resolve the problem, based on a rationale</p>
 <p>Verify the effectiveness of the implemented measure</p>
-<p>Report the results of the verification</p>
+<p>Report the results of the verification, if applicable</p>
 <p>Are all arguments convincing</p>
 <div class="line-block">
 <div class="line">(to be filled out during <a class="reference internal" href="../problem_resolution_workflow.html#wf__problem__initiate_monitor_pr" title="wf__problem__initiate_monitor_pr"><em class="xref need">Initiate and Monitor Proble... (wf__problem__initiate_monitor_pr)</em></a>)</div>
@@ -694,7 +714,7 @@
 </section>
 <section id="problem-escalations">
 <h2>Problem escalations<a class="headerlink" href="#problem-escalations" title="Link to this heading">#</a></h2>
-<p>[Document escalation activities?]</p>
+<p>[Document escalation activities, if applicable]</p>
 <div class="line-block">
 <div class="line">(to be filled out during <a class="reference internal" href="../problem_resolution_workflow.html#wf__problem__initiate_monitor_pr" title="wf__problem__initiate_monitor_pr"><em class="xref need">Initiate and Monitor Proble... (wf__problem__initiate_monitor_pr)</em></a>)</div>
 <div class="line">(to be updated during <a class="reference internal" href="../problem_resolution_workflow.html#wf__problem__close_pr" title="wf__problem__close_pr"><em class="xref need">Close Problem Resolution (wf__problem__close_pr)</em></a>)</div>
@@ -753,11 +773,12 @@
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problem-submitter">Problem submitter</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problem-description">Problem description</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problem-supporting-information">Problem supporting information</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problem-analysis-results">Problem analysis results</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problem-stakeholder">Problem stakeholder</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problem-category">Problem category</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problem-classification">Problem classification</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problem-expected-closure-date">Problem expected closure date</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problem-affected-version">Problem affected version</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problem-analysis-results">Problem analysis results</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problem-stakeholder">Problem stakeholder</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problem-expected-closure-version">Problem expected closure version</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problem-solutions">Problem solutions</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problem-escalations">Problem escalations</a></li>
 </ul>

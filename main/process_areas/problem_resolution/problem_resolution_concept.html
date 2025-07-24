@@ -501,7 +501,7 @@
                   
   <section id="concept-description">
 <h1>Concept Description<a class="headerlink" href="#concept-description" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-9fc6fa60">
+<div class="need_container docutils container" id="SNCB-df3c6622">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_doc_concept table" id="doc_concept__problem__process">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -569,13 +569,26 @@ checks, safety anomalies, vulnerabilities or any other malfunction.</p>
 <ol class="arabic simple">
 <li><p><a class="reference internal" href="../../roles/index.html#rl__contributor" title="rl__contributor"><em class="xref need">Contributor (rl__contributor)</em></a></p>
 <ul class="simple">
-<li><p>Contributes features and components to grow the project content</p></li>
+<li><p>In general contributes features and components to grow the project content</p></li>
+<li><p>Reports problems, analyze problems, implement problem resolutions</p></li>
 </ul>
 </li>
 <li><p><a class="reference internal" href="../../roles/index.html#rl__committer" title="rl__committer"><em class="xref need">Committer (rl__committer)</em></a></p>
 <ul class="simple">
-<li><p>Verifies that the contribution fulfills the project policies</p></li>
-<li><p>Approves the contribution</p></li>
+<li><p>Verifies that the contribution including problem resolutions fulfills the project policies</p></li>
+<li><p>Approves all problem resolution activities besides problem closing</p></li>
+<li><p>Is responsible to initiate the the closure of the problem reported</p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="../platform_management/platform_management_roles.html#rl__technical_lead" title="rl__technical_lead"><em class="xref need">Technical Lead (rl__technical_lead)</em></a>, <a class="reference internal" href="../platform_management/platform_management_roles.html#rl__module_lead" title="rl__module_lead"><em class="xref need">Module Lead (rl__module_lead)</em></a></p>
+<ul class="simple">
+<li><p>Supports all problem resolution activities</p></li>
+<li><p>Approves the closing of the problem resolution</p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="../safety_management/roles.html#rl__safety_manager" title="rl__safety_manager"><em class="xref need">Safety Manager (rl__safety_manager)</em></a>, <a class="reference internal" href="../security_management/security_management_roles.html#rl__security_manager" title="rl__security_manager"><em class="xref need">Security Manager (rl__security_manager)</em></a>, <a class="reference internal" href="../quality_management/quality_roles.html#rl__quality_manager" title="rl__quality_manager"><em class="xref need">Quality Manager (rl__quality_manager)</em></a></p>
+<ul class="simple">
+<li><p>Supports all problem resolution activities</p></li>
 </ul>
 </li>
 </ol>
@@ -585,14 +598,9 @@ checks, safety anomalies, vulnerabilities or any other malfunction.</p>
 <ul class="simple">
 <li><p>ISO 26262</p></li>
 <li><p>ASPICE</p></li>
-<li><p>ISO SAE 21434</p></li>
+<li><p>ISO/SAE 21434</p></li>
 </ul>
 </section>
-</section>
-<section id="problem-report-categories">
-<h2>Problem Report Categories<a class="headerlink" href="#problem-report-categories" title="Link to this heading">#</a></h2>
-<p>User: Problems relating to requirements, architecture, implementation, or code found by user of the platform.</p>
-<p>Bug: Problems found by contributor based on component, feature or platform integration tests including verification and quality assurance activities.</p>
 </section>
 <section id="problem-report-attributes">
 <span id="prm-attributes"></span><h2>Problem Report Attributes<a class="headerlink" href="#problem-report-attributes" title="Link to this heading">#</a></h2>
@@ -602,13 +610,14 @@ checks, safety anomalies, vulnerabilities or any other malfunction.</p>
 <h2>Activities for Problem Resolution<a class="headerlink" href="#activities-for-problem-resolution" title="Link to this heading">#</a></h2>
 <section id="creation-of-the-problem-report">
 <span id="prm-creation"></span><h3>Creation of the Problem Report<a class="headerlink" href="#creation-of-the-problem-report" title="Link to this heading">#</a></h3>
-<p>Use the <a class="reference internal" href="guidance/problem_resolution_template.html#prm-templates"><span class="std std-ref">Problem Report Template</span></a> to create the Problem Report.</p>
+<p>Use the content <a class="reference internal" href="guidance/problem_resolution_template.html#prm-templates"><span class="std std-ref">Problem Report Template</span></a> to create the Problem Report.</p>
 <p>In case safety or security is affected, in addition the impact analysis template
 : <a class="reference internal" href="../change_management/guidance/change_management_impact_analysis_template.html#chm-impact-analysis-templates"><span class="std std-ref">Impact Analysis Template</span></a>  can be used to detail out the
 impact on safety/security as part of the description.</p>
+<p>(needs to be updated)</p>
 </section>
-<section id="anaylsis-of-the-problem-report">
-<span id="prm-analysis"></span><h3>Anaylsis of the Problem Report<a class="headerlink" href="#anaylsis-of-the-problem-report" title="Link to this heading">#</a></h3>
+<section id="analysis-of-the-problem-report">
+<span id="prm-analysis"></span><h3>Analysis of the Problem Report<a class="headerlink" href="#analysis-of-the-problem-report" title="Link to this heading">#</a></h3>
 <p>Based on the analysis results decision about the acceptance or rejection must be taken
 by authorized persons.</p>
 <p>Authorized person includes</p>
@@ -693,11 +702,10 @@ arguments, e.g. verification measures must be used to confirm the implementation
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#standard-requirements">Standard Requirements</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problem-report-categories">Problem Report Categories</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problem-report-attributes">Problem Report Attributes</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#activities-for-problem-resolution">Activities for Problem Resolution</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#creation-of-the-problem-report">Creation of the Problem Report</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#anaylsis-of-the-problem-report">Anaylsis of the Problem Report</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#analysis-of-the-problem-report">Analysis of the Problem Report</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#implementation-and-monitoring-of-the-problem-resolution">Implementation and Monitoring of the Problem Resolution</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#closing-of-the-problem-resolution">Closing of the Problem Resolution</a></li>
 </ul>
