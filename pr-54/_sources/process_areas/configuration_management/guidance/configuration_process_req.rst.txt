@@ -21,7 +21,9 @@ Configuration Management Process Requirements
    :tags: done_automation, config_mgt
    :complies: std_req__iso26262__support_745, std_req__aspice_40__SUP-8-BP8
 
-   The structured text tool shall check that the Id's of the configuration items are unique.
+   The doc-as-code tool shall check that the Id's of the configuration items (documented in doc-as-code) are unique.
+
+   Note: For definition of configuration items see :need:`doc_concept__configuration__process`
 
 .. gd_req:: Permanent Storage
    :id: gd_req__config__workproducts_storage

@@ -21,23 +21,73 @@ Workflow Tool Management
    :id: wf__tool__create_tool_verification_report
    :status: valid
    :responsible: rl__contributor
-   :approved_by: rl__committer, rl__safety_manager, rl__security_manager,
-   :supported_by: rl__technical_lead, rl__module_lead, rl__infrastructure_tooling_community
+   :approved_by: rl__committer
+   :supported_by: rl__safety_manager, rl__security_manager, rl__infrastructure_tooling_community
    :input: wp__issue_track_system, wp__tlm_plan
    :output: wp__tool_verification_report
    :contains: gd_temp__tool_management__verif_rpt_template, gd_chklst__tool__cr_review
    :has: doc_concept__tool__process, doc_getstrt__tool__process
 
-   The Tool Verification Report is created during identification of a tool in status draft.
+   The Tool Verification Report is created during identification of a tool in status
+   draft.
 
-   Each identified tool is evaluated and if applicable, qualified. During evaluation and
-   qualification the Tool Verification Report is updated and the status is set accordingly to
-   evaluated or qualified.
+   For creating the Tool Verification Report the content of the linked template shall
+   be used.
 
-   Finally the Tool Verification Report is verified and approved, and thus set to status released.
+.. workflow:: Evaluate Tool and Update Tool Verification Report
+   :id: wf__tool__evaluate_tool
+   :status: valid
+   :responsible: rl__contributor
+   :approved_by: rl__committer, rl__safety_manager, rl__security_manager
+   :supported_by: rl__infrastructure_tooling_community
+   :input: wp__tool_verification_report
+   :output: wp__tool_verification_report
+   :contains: gd_temp__tool_management__verif_rpt_template, gd_chklst__tool__cr_review
+   :has: doc_concept__tool__process, doc_getstrt__tool__process
 
-   For creating the Tool Verification Report the content of the linked template be used.
+   Each identified tool is evaluated. During evaluation the Tool Verification Report
+   is updated accordingly.
+   After successful evaluation the status of the Tool Verification Report
+   is set to evaluated.
 
+   The successful evaluation shall contain a statement, if the tool shall be qualified
+   or not.
+
+   If tool qualification is not needed, the next step is :need:`wf__tool__approve_tool_verification_report`
+   otherwise continue with :need:`wf__tool__qualify_tool`.
+
+.. workflow:: Qualify Tool and Update Tool Verification Report
+   :id: wf__tool__qualify_tool
+   :status: valid
+   :responsible: rl__contributor
+   :approved_by: rl__committer, rl__safety_manager, rl__security_manager
+   :supported_by: rl__infrastructure_tooling_community
+   :input: wp__tool_verification_report
+   :output: wp__tool_verification_report
+   :contains: gd_temp__tool_management__verif_rpt_template, gd_chklst__tool__cr_review
+   :has: doc_concept__tool__process, doc_getstrt__tool__process
+
+   The identified tool is qualified, if applicable. During qualification the Tool
+   Verification Report is updated accordingly.
+   After successful qualification the status of the Tool Verification Report
+   is set to qualified.
+
+.. workflow:: Approve Tool Verification Report
+   :id: wf__tool__approve_tool_verification_report
+   :status: valid
+   :responsible: rl__safety_manager, rl__security_manager
+   :approved_by: rl__technical_lead, rl__module_lead
+   :supported_by: rl__infrastructure_tooling_community
+   :input: wp__tool_verification_report
+   :output: wp__tool_verification_report
+   :contains: gd_temp__tool_management__verif_rpt_template, gd_chklst__tool__cr_review
+   :has: doc_concept__tool__process, doc_getstrt__tool__process
+
+   Finally the Tool Verification Report is verified and approved, and thus the status
+   is set to released.
+
+   If the verification is not successful or due to any other reason, e.g. the tool is
+   not needed any more as planned, the tool verification may also rejected at this point.
 
 .. needextend:: docname is not None and "process_areas/tool_management" in docname
    :+tags: tool_management

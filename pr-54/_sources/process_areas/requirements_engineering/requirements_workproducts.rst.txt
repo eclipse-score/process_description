@@ -32,9 +32,9 @@ Workproducts Requirements Engineering
 .. workproduct:: Component Requirements
    :id: wp__requirements__comp
    :status: valid
-   :complies: std_wp__iso26262__software_651, std_wp__isopas8926__4521
+   :complies: std_wp__iso26262__software_651, std_wp__isopas8926__4521, std_wp__iso26262__analysis_651, std_wp__iso26262__software_app_c_51
 
-   SW Requirements for components
+   SW Requirements for components, broken down from feature requirements to the realizing component. These include configuration specification.
 
 .. workproduct:: Feature Assumptions of Use
    :id: wp__requirements__feat_aou

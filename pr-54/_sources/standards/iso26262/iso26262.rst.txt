@@ -946,7 +946,7 @@ Part 6: Product development at the software level
 
 
      .. std_wp:: software_C56
-       :id: std_wp__iso26262__software_app_c_6
+       :id: std_wp__iso26262__software_app_c_56
        :status: valid
 
 

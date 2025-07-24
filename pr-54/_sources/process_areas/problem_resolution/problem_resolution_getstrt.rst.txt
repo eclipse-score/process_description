@@ -20,9 +20,30 @@ Getting Started
    :status: valid
    :tags: problem_resolution
 
-In case you want to report a Problem to **S-CORE** consider to:
+This document describes the steps to create a problem report, and further to analyze,
+resolve, and to control the problem until closure. Where a problem is defined as a
+deviation of an expected result.
 
-* Create your Problem Report according to :need:`wf__problem__create_pr`
-* Make familiar with the development and supporting process descriptions in :ref:`process_description`
-* Make familiar with the relevant sections of the `Platform Management Plan <REPLACE_doc__platform_mgt_plan>`, here especially with `Problem Resolution Plan <REPLACE_doc__platform_problem_resolution_plan>`
-* In case of any questions, contact the :need:`Technical Lead <rl__technical_lead>` for your problem to establish reporting and planning
+Examples for problem origins:
+
+* Deviations relating to requirements, architecture, implementation or code found by user of the platform.
+* Deviations found by contributor based on component, feature or platform integration tests.
+* Deviations found by Quality Management activities as defined in the Quality Management Plan.
+
+Therefore guidelines :need:`gd_temp__problem__template`,
+:need:`gd_guidl__problem__problem` and a :need:`doc_concept__problem__process`
+are available.
+
+General Workflow
+****************
+
+The workflows are defined in the :ref:`problem_workflows` section.
+
+For every problem identified, the following workflows are executed:
+
+* Create your problem report according to :need:`wf__problem__create_pr`
+* Analyze your problem report according to :need:`wf__problem__analyze_pr`
+* Initiate problem resolution and monitor it until closure according to :need:`wf__problem__initiate_monitor_pr`
+* Close the problem resolution according to :need:`wf__problem__close_pr`
+
+In addition create a problem resolution plan as part of the platform management plan according to :need:`wf__platform__cr_mt_platform_mgmt_plan`.

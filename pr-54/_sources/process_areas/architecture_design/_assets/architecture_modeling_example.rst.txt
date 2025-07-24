@@ -213,6 +213,8 @@ Component Architecure File(s)
    :rationale: needed for archdes example
    :status: valid
 
+   The platform shall provide the feature ....
+
 .. feat_req:: Example Feature Req
    :id: feat_req__archdes_example_req
    :reqtype: Functional

@@ -124,7 +124,7 @@ Test Linking to Requirements
             ...
         }
 
-.. gd_req:: Test Independence
+.. gd_req:: Independence
     :id: gd_req__verification__independence
     :status: valid
     :tags: done_automation, verification

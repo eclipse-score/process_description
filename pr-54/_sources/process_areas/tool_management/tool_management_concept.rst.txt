@@ -21,15 +21,15 @@ Concept Description
    :tags: tool_management
 
 In this section a concept for the Tool Management will be discussed. Inputs for this concepts
-are the requirements of ISO2 6262 Part-8, Clause 11, ASPICE PAM 4.0, SUP.8 and
-ISO SAE 21434 Clause 5, 5.4.5 additionally including the requirements of the different stakeholders
-for the Tool Management process.
+are the requirements of ISO 26262 Part-8, Clause 11, ASPICE PAM 4.0, SUP.8 and
+ISO/SAE 21434 Clause 5, 5.4.5 additionally including the requirements of the different stakeholders
+for the Tool Management Process.
 
 Key concept
 ***********
-In general all Tools to generate the S-CORE product must be identified. As it is a S-CORE objective
-to use Tools wherever applicable to generate any kind of work products, the selection criteria for
-any Tool including OSS Tools must include therefore the determination of the Tool Confidence Level
+In general all tools to generate the project product must be identified. As it is a project objective
+to use tools wherever applicable to generate any kind of work product, the selection criteria for
+any tool including OSS tools must include therefore the determination of the Tool Confidence Level
 `(TCL) <https://www.validas.de/publications/automotive2012.pdf>`_ for the tool under consideration.
 
 Based on the resulting TCL additional Tool Qualification activities may required.
@@ -48,7 +48,7 @@ Stakeholders for the Tool Management
 #. :need:`Contributor <rl__contributor>`
    :need:`Infrastructure, Tooling Community <rl__infrastructure_tooling_community>`
 
-   * Contributes tooling, infrastructure elements to grow and mature the **S-CORE** development environment
+   * Contributes tooling, infrastructure elements to grow and mature the project development environment
 
 #. :need:`Safety Manager<rl__safety_manager>`, :need:`Security Manager <rl__security_manager>`,
    :need:`Committer <rl__committer>`
@@ -62,7 +62,7 @@ Also requirements of standards need to be taken into consideration:
 
 * ISO 26262
 * ASPICE
-* ISO SAE 21434
+* ISO/SAE 21434
 
 Required documentation
 **********************
@@ -74,8 +74,9 @@ Activities for Tool Management
 ******************************
 
 The main work product is the :need:`Tool Verification Report <wp__tool_verification_report>`.
-Thus the workflow :need:`Create Tool Verification Report <wf__tool__create_tool_verification_report>`
-applies.
+This work product is created and maintained until it is released. It contains the tool
+evaluation results as well as the qualification results, if applicable.
+For each tool the :ref:`Workflows <tlm_workflows>` applies.
 
 
 Attributes for Tool Management

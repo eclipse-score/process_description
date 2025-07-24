@@ -501,7 +501,7 @@
                   
   <section id="getting-started">
 <h1>Getting Started<a class="headerlink" href="#getting-started" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-3bec27e1">
+<div class="need_container docutils container" id="SNCB-308a6feb">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_doc_getstrt table" id="doc_getstrt__problem__process">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -523,7 +523,7 @@
 <div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></div>
 <div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">problem_resolution</span></span></span></div>
 </span></span></div>
-<div class="line"><span><div class="line">relates to: <span class="has"><span><a class="reference internal" href="problem_resolution_workflow.html#wf__problem__create_pr" title="doc_getstrt__problem__process">wf__problem__create_pr</a>, <a class="reference internal" href="problem_resolution_workflow.html#wf__problem__analyse_pr" title="doc_getstrt__problem__process">wf__problem__analyse_pr</a>, <a class="reference internal" href="problem_resolution_workflow.html#wf__problem__initiate_monitor_pr" title="doc_getstrt__problem__process">wf__problem__initiate_monitor_pr</a>, <a class="reference internal" href="problem_resolution_workflow.html#wf__problem__close_pr" title="doc_getstrt__problem__process">wf__problem__close_pr</a></span></span></div>
+<div class="line"><span><div class="line">relates to: <span class="has"><span><a class="reference internal" href="problem_resolution_workflow.html#wf__problem__create_pr" title="doc_getstrt__problem__process">wf__problem__create_pr</a>, <a class="reference internal" href="problem_resolution_workflow.html#wf__problem__analyze_pr" title="doc_getstrt__problem__process">wf__problem__analyze_pr</a>, <a class="reference internal" href="problem_resolution_workflow.html#wf__problem__initiate_monitor_pr" title="doc_getstrt__problem__process">wf__problem__initiate_monitor_pr</a>, <a class="reference internal" href="problem_resolution_workflow.html#wf__problem__close_pr" title="doc_getstrt__problem__process">wf__problem__close_pr</a></span></span></div>
 </span></div>
 </div>
 </td>
@@ -545,13 +545,30 @@
 </table>
 </div>
 </div>
-<p>In case you want to report a Problem to <strong>S-CORE</strong> consider to:</p>
+<p>This document describes the steps to create a problem report, and further to analyze,
+resolve, and to control the problem until closure. Where a problem is defined as a
+deviation of an expected result.</p>
+<p>Examples for problem origins:</p>
 <ul class="simple">
-<li><p>Create your Problem Report according to <a class="reference internal" href="problem_resolution_workflow.html#wf__problem__create_pr" title="wf__problem__create_pr"><em class="xref need">Create Problem Report (wf__problem__create_pr)</em></a></p></li>
-<li><p>Make familiar with the development and supporting process descriptions in <a class="reference internal" href="../../index.html#process-description"><span class="std std-ref">Process</span></a></p></li>
-<li><p>Make familiar with the relevant sections of the <cite>Platform Management Plan &lt;REPLACE_doc__platform_mgt_plan&gt;</cite>, here especially with <cite>Problem Resolution Plan &lt;REPLACE_doc__platform_problem_resolution_plan&gt;</cite></p></li>
-<li><p>In case of any questions, contact the <a class="reference internal" href="../platform_management/platform_management_roles.html#rl__technical_lead" title="rl__technical_lead"><em class="xref need">Technical Lead (rl__technical_lead)</em></a> for your problem to establish reporting and planning</p></li>
+<li><p>Deviations relating to requirements, architecture, implementation or code found by user of the platform.</p></li>
+<li><p>Deviations found by contributor based on component, feature or platform integration tests.</p></li>
+<li><p>Deviations found by Quality Management activities as defined in the Quality Management Plan.</p></li>
 </ul>
+<p>Therefore guidelines <a class="reference internal" href="guidance/problem_resolution_template.html#gd_temp__problem__template" title="gd_temp__problem__template"><em class="xref need">Problem Template (gd_temp__problem__template)</em></a>,
+<a class="reference internal" href="guidance/problem_resolution_guideline.html#gd_guidl__problem__problem" title="gd_guidl__problem__problem"><em class="xref need">Problem Resolution Guideline (gd_guidl__problem__problem)</em></a> and a <a class="reference internal" href="problem_resolution_concept.html#doc_concept__problem__process" title="doc_concept__problem__process"><em class="xref need">Concept Description (doc_concept__problem__process)</em></a>
+are available.</p>
+<section id="general-workflow">
+<h2>General Workflow<a class="headerlink" href="#general-workflow" title="Link to this heading">#</a></h2>
+<p>The workflows are defined in the <a class="reference internal" href="problem_resolution_workflow.html#problem-workflows"><span class="std std-ref">Workflow Problem Resolution</span></a> section.</p>
+<p>For every problem identified, the following workflows are executed:</p>
+<ul class="simple">
+<li><p>Create your problem report according to <a class="reference internal" href="problem_resolution_workflow.html#wf__problem__create_pr" title="wf__problem__create_pr"><em class="xref need">Create Problem Report (wf__problem__create_pr)</em></a></p></li>
+<li><p>Analyze your problem report according to <a class="reference internal" href="problem_resolution_workflow.html#wf__problem__analyze_pr" title="wf__problem__analyze_pr"><em class="xref need">Analyze Problem Report (wf__problem__analyze_pr)</em></a></p></li>
+<li><p>Initiate problem resolution and monitor it until closure according to <a class="reference internal" href="problem_resolution_workflow.html#wf__problem__initiate_monitor_pr" title="wf__problem__initiate_monitor_pr"><em class="xref need">Initiate and Monitor Proble... (wf__problem__initiate_monitor_pr)</em></a></p></li>
+<li><p>Close the problem resolution according to <a class="reference internal" href="problem_resolution_workflow.html#wf__problem__close_pr" title="wf__problem__close_pr"><em class="xref need">Close Problem Resolution (wf__problem__close_pr)</em></a></p></li>
+</ul>
+<p>In addition create a problem resolution plan as part of the platform management plan according to <a class="reference internal" href="../platform_management/platform_management_workflow.html#wf__platform__cr_mt_platform_mgmt_plan" title="wf__platform__cr_mt_platform_mgmt_plan"><em class="xref need">Create/Maintain Platform Ma... (wf__platform__cr_mt_platform_mgmt_plan)</em></a>.</p>
+</section>
 </section>
 
 
@@ -592,6 +609,18 @@
                 <dialog id="pst-secondary-sidebar-modal"></dialog>
                 <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#general-workflow">General Workflow</a></li>
+</ul>
+  </nav></div>
 
   <div class="sidebar-secondary-item">
 

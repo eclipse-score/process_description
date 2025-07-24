@@ -20,10 +20,23 @@ Getting Started
    :status: valid
    :tags: tool_management
 
-In case you want to use a tool within **S-CORE** consider to:
+This document describes the steps to evaluate tools and qualify them according to
+ISO 26262 and ISO/SAE 21434 as used standards in the project.
 
-* Check the tool list first: :need:`platform_tool_list <wp__tlm_plan>`. If the tool is already there and covers the intended use case, no further activity is needed
-* Make yourself familiar with the development and supporting process descriptions in :ref:`process_description`
-* Make yourself familiar with the relevant sections of the `Platform Management Plan <REPLACE_doc__platform_mgt_plan>`, here especially with `Tool Management Plan <REPLACE_doc__platform_tool_management_plan>`
-* If the tool is not on the list or does not cover the intended uses cases, continue with creation of a Tool Verification Report according to :need:`wf__tool__create_tool_verification_report`
-* In case of any questions, contact the :need:`Technical Lead <rl__technical_lead>`
+Therefore guidelines :need:`gd_temp__tool_management__verif_rpt_template` and a
+ :need:`doc_concept__tool__process` are available.
+
+
+General Workflow
+****************
+
+The workflows are defined in the :ref:`tlm_workflows` section.
+
+For every tool identified, the following workflows are executed:
+
+* Create tool verification report according to :need:`wf__tool__create_tool_verification_report`
+* Evaluate tool and update tool verification report according to :need:`wf__tool__evaluate_tool`
+* Qualify tool and update tool verification report according to :need:`wf__tool__qualify_tool`
+* Approve tool verification report according to :need:`wf__tool__approve_tool_verification_report`
+
+In addition create a tool management plan as part of the platform management plan according to :need:`wf__platform__cr_mt_platform_mgmt_plan`.

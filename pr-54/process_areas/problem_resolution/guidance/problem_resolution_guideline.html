@@ -510,7 +510,7 @@
                   
   <section id="guideline">
 <h1>Guideline<a class="headerlink" href="#guideline" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-8f2d2daa">
+<div class="need_container docutils container" id="SNCB-5b8d9ec3">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_guidl table" id="gd_guidl__problem__problem">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -532,7 +532,7 @@
 <div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></div>
 <div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">problem_resolution</span></span></span></div>
 </span></span></div>
-<div class="line"><span><div class="line">contained by: <span class="contains"><span><a class="reference internal" href="../problem_resolution_workflow.html#wf__problem__create_pr" title="gd_guidl__problem__problem">wf__problem__create_pr</a>, <a class="reference internal" href="../problem_resolution_workflow.html#wf__problem__analyse_pr" title="gd_guidl__problem__problem">wf__problem__analyse_pr</a>, <a class="reference internal" href="../problem_resolution_workflow.html#wf__problem__initiate_monitor_pr" title="gd_guidl__problem__problem">wf__problem__initiate_monitor_pr</a>, <a class="reference internal" href="../problem_resolution_workflow.html#wf__problem__close_pr" title="gd_guidl__problem__problem">wf__problem__close_pr</a></span></span></div>
+<div class="line"><span><div class="line">contained by: <span class="contains"><span><a class="reference internal" href="../problem_resolution_workflow.html#wf__problem__create_pr" title="gd_guidl__problem__problem">wf__problem__create_pr</a>, <a class="reference internal" href="../problem_resolution_workflow.html#wf__problem__analyze_pr" title="gd_guidl__problem__problem">wf__problem__analyze_pr</a>, <a class="reference internal" href="../problem_resolution_workflow.html#wf__problem__initiate_monitor_pr" title="gd_guidl__problem__problem">wf__problem__initiate_monitor_pr</a>, <a class="reference internal" href="../problem_resolution_workflow.html#wf__problem__close_pr" title="gd_guidl__problem__problem">wf__problem__close_pr</a></span></span></div>
 <div class="line">complies: <span class="complies"><span><a class="reference internal" href="../../../standards/aspice_40/sup/sup.9.html#std_req__aspice_40__SUP-9-BP1" title="gd_guidl__problem__problem">std_req__aspice_40__SUP-9-BP1</a>, <a class="reference internal" href="../../../standards/aspice_40/sup/sup.9.html#std_req__aspice_40__SUP-9-BP5" title="gd_guidl__problem__problem">std_req__aspice_40__SUP-9-BP5</a>, <a class="reference internal" href="../../../standards/aspice_40/sup/sup.9.html#std_req__aspice_40__SUP-9-BP6" title="gd_guidl__problem__problem">std_req__aspice_40__SUP-9-BP6</a>, <a class="reference internal" href="../../../standards/aspice_40/sup/sup.9.html#std_req__aspice_40__SUP-9-BP7" title="gd_guidl__problem__problem">std_req__aspice_40__SUP-9-BP7</a></span></span></div>
 </span></div>
 </div>
@@ -558,10 +558,17 @@
 <p>This document describes the general guidances for Problem Resolution based on the concept which is defined <a class="reference internal" href="../problem_resolution_concept.html#doc_concept__problem__process" title="doc_concept__problem__process"><em class="xref need">Concept Description</em></a>.</p>
 <section id="general-hints">
 <h2>General Hints<a class="headerlink" href="#general-hints" title="Link to this heading">#</a></h2>
-<p>The detailed implementation of the Problem Resolution for <strong>S-CORE</strong> is described in the <cite>[[title]]&lt;REPLACE_doc__platform_problem_resolution_plan&gt;</cite>.</p>
+<p>The detailed implementation of the Problem Resolution for the project shall be described in the <a class="reference internal" href="../../platform_management/platform_management_workflow.html#workflow-platform-management"><span class="std std-ref">Workflow Platform Management</span></a>.</p>
 <section id="templates">
 <h3>Templates<a class="headerlink" href="#templates" title="Link to this heading">#</a></h3>
-<p>To create problem reports, <strong>S-CORE</strong> provides the following template: <a class="reference internal" href="problem_resolution_template.html#gd_temp__problem__template" title="gd_temp__problem__template"><em class="xref need">Problem Template</em></a>.</p>
+<p>To create problem reports, the project shall provide the content of the following template
+in project’s selected Issue Tracking System: <a class="reference internal" href="problem_resolution_template.html#gd_temp__problem__template" title="gd_temp__problem__template"><em class="xref need">Problem Template</em></a>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>An example template for the Issue Tracking System in GitHub (<a class="reference external" href="https://github.com/features/issues">GitHub Issues</a>)
+can be found here:
+<a class="reference external" href="https://github.com/eclipse-score/process_description/blob/main/.github/ISSUE_TEMPLATE/1-bugfix.yml">Issue Template Bugfix</a></p>
+</div>
 </section>
 <section id="attributes">
 <h3>Attributes<a class="headerlink" href="#attributes" title="Link to this heading">#</a></h3>
@@ -579,25 +586,23 @@
 <tbody>
 <tr class="need row-even"><td class="needs_title"><p>Problem attribute: analysis results</p></td>
 </tr>
-<tr class="need row-odd"><td class="needs_title"><p>Problem attribute: category</p></td>
+<tr class="need row-odd"><td class="needs_title"><p>Problem attribute: classification</p></td>
 </tr>
-<tr class="need row-even"><td class="needs_title"><p>Problem attribute: classification</p></td>
+<tr class="need row-even"><td class="needs_title"><p>Problem attribute: description</p></td>
 </tr>
-<tr class="need row-odd"><td class="needs_title"><p>Problem attribute: description</p></td>
+<tr class="need row-odd"><td class="needs_title"><p>Problem attribute: milestone</p></td>
 </tr>
-<tr class="need row-even"><td class="needs_title"><p>Problem attribute: milestone</p></td>
+<tr class="need row-even"><td class="needs_title"><p>Problem attribute:: safety affected</p></td>
 </tr>
-<tr class="need row-odd"><td class="needs_title"><p>Problem attribute:: safety affected</p></td>
+<tr class="need row-odd"><td class="needs_title"><p>Problem attribute:: security affected</p></td>
 </tr>
-<tr class="need row-even"><td class="needs_title"><p>Problem attribute:: security affected</p></td>
+<tr class="need row-even"><td class="needs_title"><p>Problem attribute: stakeholder</p></td>
 </tr>
-<tr class="need row-odd"><td class="needs_title"><p>Problem attribute: stakeholder</p></td>
+<tr class="need row-odd"><td class="needs_title"><p>Problem attribute: status</p></td>
 </tr>
-<tr class="need row-even"><td class="needs_title"><p>Problem attribute: status</p></td>
+<tr class="need row-even"><td class="needs_title"><p>Problem attribute: title</p></td>
 </tr>
-<tr class="need row-odd"><td class="needs_title"><p>Problem attribute: title</p></td>
-</tr>
-<tr class="need row-even"><td class="needs_title"><p>Problem attribute: UID</p></td>
+<tr class="need row-odd"><td class="needs_title"><p>Problem attribute: UID</p></td>
 </tr>
 </tbody>
 </table>
@@ -608,67 +613,203 @@
 </section>
 <section id="activities-for-problem-resolution">
 <span id="workflow-prm-requirements"></span><h2>Activities for Problem Resolution<a class="headerlink" href="#activities-for-problem-resolution" title="Link to this heading">#</a></h2>
-<p>This section describes in detail which steps need to be performed for a Problem resolution.</p>
-<p>Refer to the <cite>Problem Resolution Plan &lt;REPLACE_doc__platform_problem_resolution_plan&gt;</cite> for examples
-how to create problem reports.</p>
-<div class="pst-scrollable-table-container"><table class="table" id="id1">
-<caption><span class="caption-number">Table 18 </span><span class="caption-text">Activities for Problem Resolution</span><a class="headerlink" href="#id1" title="Link to this table">#</a></caption>
+<p>This section describes in detail which steps need to be performed for a Problem Resolution.</p>
+<div class="pst-scrollable-table-container"><table class="table" id="id2">
+<caption><span class="caption-number">Table 18 </span><span class="caption-text">Activities for Problem Resolution</span><a class="headerlink" href="#id2" title="Link to this table">#</a></caption>
 <colgroup>
-<col style="width: 10.0%" />
-<col style="width: 60.0%" />
-<col style="width: 30.0%" />
+<col style="width: 7.7%" />
+<col style="width: 46.2%" />
+<col style="width: 23.1%" />
+<col style="width: 23.1%" />
 </colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Step</p></th>
 <th class="head"><p>Description</p></th>
 <th class="head"><p>Responsible</p></th>
+<th class="head"><p>Approver</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="row-even"><td><p><a class="reference internal" href="#prm-create-problem-report"><span class="std std-ref">1.</span></a></p></td>
 <td><p>Create Problem Report</p></td>
 <td><p><a class="reference internal" href="../../../roles/index.html#rl__contributor" title="rl__contributor"><em class="xref need">Contributor</em></a></p></td>
+<td><p><a class="reference internal" href="../../../roles/index.html#rl__committer" title="rl__committer"><em class="xref need">Committer</em></a></p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="#prm-analyze-problem-report"><span class="std std-ref">2.</span></a></p></td>
-<td><p>Analyse Problem Report</p></td>
+<td><p>Analyze Problem Report</p></td>
 <td><p><a class="reference internal" href="../../../roles/index.html#rl__contributor" title="rl__contributor"><em class="xref need">Contributor</em></a></p></td>
+<td><p><a class="reference internal" href="../../../roles/index.html#rl__committer" title="rl__committer"><em class="xref need">Committer</em></a></p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="#prm-initiate-problem-resolution"><span class="std std-ref">3.</span></a></p></td>
 <td><p>Initiate and Monitor Problem Resolution</p></td>
 <td><p><a class="reference internal" href="../../../roles/index.html#rl__contributor" title="rl__contributor"><em class="xref need">Contributor</em></a></p></td>
+<td><p><a class="reference internal" href="../../../roles/index.html#rl__committer" title="rl__committer"><em class="xref need">Committer</em></a></p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="#prm-monitor-problem-resolution"><span class="std std-ref">4.</span></a></p></td>
 <td><p>Close Problem Resolution</p></td>
 <td><p><a class="reference internal" href="../../../roles/index.html#rl__committer" title="rl__committer"><em class="xref need">Committer</em></a></p></td>
+<td><p><a class="reference internal" href="../../platform_management/platform_management_roles.html#rl__technical_lead" title="rl__technical_lead"><em class="xref need">Technical Lead</em></a>, <a class="reference internal" href="../../platform_management/platform_management_roles.html#rl__module_lead" title="rl__module_lead"><em class="xref need">Module Project Lead</em></a></p></td>
 </tr>
 </tbody>
 </table>
 </div>
 <section id="create-problem-report">
 <span id="prm-create-problem-report"></span><h3>Create Problem Report<a class="headerlink" href="#create-problem-report" title="Link to this heading">#</a></h3>
-<p><a class="reference internal" href="../../../roles/index.html#rl__contributor" title="rl__contributor"><em class="xref need">Contributor</em></a> (as author) creates the Problem Report in the defined Issue
-Tracking System based on the provided template.
-It is expected, that the UID will be provided by the Issue Tracking System.</p>
+<p><a class="reference internal" href="../../../roles/index.html#rl__contributor" title="rl__contributor"><em class="xref need">Contributor</em></a> (as author, submitter, reporter) creates the Problem
+Report in the defined Issue Tracking System of the project based on the content of the
+provided template:
+<a class="reference internal" href="problem_resolution_template.html#gd_temp__problem__template" title="gd_temp__problem__template"><em class="xref need">Problem Template</em></a>.</p>
+<p>It is expected that the select Issue Tracking system supports template definition. Best
+practice is to define a template with the required content, so that it can be copied
+from the different users.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>For the Issue Tracking System in GitHub, there is a template created, which can be
+be found here:
+<a class="reference external" href="https://github.com/eclipse-score/process_description/blob/main/.github/ISSUE_TEMPLATE/1-bugfix.yml">Issue Template Bugfix</a></p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>A Problem Report Example based on that template is here:
+<a class="reference external" href="https://github.com/eclipse-score/process_description/issues/124">Example Problem Report</a></p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>A Problem Report Example 2 based on that template is here:
+<a class="reference external" href="https://github.com/eclipse-score/process_description/issues/126">Example Problem Report 2</a></p>
+</div>
+<p>It is expected, that the UID will be provided automatically by the Issue Tracking System.</p>
+<p>It is expected, that the status of the problem report is set to “open” automatically.
+As long as the content is updated, the status of the Problem is kept “open”.</p>
+<p>It is expected, that the problem submitter will be set automatically by the Issue
+Tracking System.</p>
 <p>The title of the Problem Report should reflect the topic accordingly.</p>
 <p>The description should reflect the problem root cause and impact in detail.</p>
-<p>Copy therefore the <a class="reference internal" href="problem_resolution_template.html#gd_temp__problem__template" title="gd_temp__problem__template"><em class="xref need">Problem Template (gd_temp__problem__template)</em></a> into the created Problem
-Report (Issue Tracking System).</p>
-<p>Set the status of the Problem to “open”, when ready to review and analyse set to “in review”.</p>
+<p>If applicable affected parties should be notified.</p>
+<p>Further supporting information should ge given, especially how to reproduce the problem,
+and what is the error occurrence rate?</p>
+<p>If the problem affects safety or security it should be stated explicitly.
+If safety is affected, the ASIL classification should be added, if applicable.</p>
+<p>The problem should be classified according minor, major, critical or blocker.</p>
+<p>The affected version of the release should be documented, where the problem was detected.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<div class="line-block">
+<div class="line">For the Problem Report Example:</div>
+<div class="line">* The UID is provided by the Issue Tracking System as: <strong>#124</strong></div>
+<div class="line">* The status of the issue is provided by the Issue Tracking System as: <strong>Open</strong></div>
+<div class="line">* The submitter is provided by the Issue Tracking System as: <strong>masc2023</strong></div>
+<div class="line">* The title contains the main root cause, missing safety/security attribute</div>
+<div class="line">* The descriptions has a section for the <strong>Root cause</strong> and <strong>Impact</strong></div>
+<div class="line">* The description has a section for notification: <strong>Notification required?</strong></div>
+<div class="line">* Further supporting information is added as the link to the official feature request template which makes it reproducible</div>
+<div class="line">* Checkboxes are selected to highlight, that Safety and Security is affected, no further classification, as the project is defined as ASIL B</div>
+<div class="line">* The problem classification is provided as minor</div>
+<div class="line">* The affected version is provided: <em>pre-0.5</em></div>
+</div>
+</div>
+<p>When ready to review and to analyze, the author sets the status to “in review” manually.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<div class="line-block">
+<div class="line">For the Problem Report Example:</div>
+<div class="line">* The “Process Development Community” dashboard is added and the status must be changed to <strong>Todo</strong></div>
+<div class="line">* The combination of the issue**Open** and <strong>Todo</strong> defines the status <strong>in review</strong></div>
+</div>
+</div>
 </section>
-<section id="analyse-problem-report">
-<span id="prm-analyze-problem-report"></span><h3>Analyse Problem Report<a class="headerlink" href="#analyse-problem-report" title="Link to this heading">#</a></h3>
-<p>The <strong>S-CORE</strong> <a class="reference internal" href="../../../roles/index.html#rl__committer" title="rl__committer"><em class="xref need">Committer</em></a> analyzes the problem together with the
+<section id="analyze-problem-report">
+<span id="prm-analyze-problem-report"></span><h3>Analyze Problem Report<a class="headerlink" href="#analyze-problem-report" title="Link to this heading">#</a></h3>
+<p>The projects <a class="reference internal" href="../../../roles/index.html#rl__committer" title="rl__committer"><em class="xref need">Committer</em></a> analyzes the problem together with the
 <a class="reference internal" href="../../../roles/index.html#rl__contributor" title="rl__contributor"><em class="xref need">Contributor</em></a> and takes a decision for accepting or rejecting it.</p>
-<p>If accepted, the status is set to “in implementation” and <a class="reference internal" href="../../../roles/index.html#rl__contributor" title="rl__contributor"><em class="xref need">Contributor</em></a>
-can start with the iniation of the Problem Resolution, otherwise the status is set to “rejected”.</p>
+<p>The analysis will start by reviewing all the information given during the creation of the
+problem report. All topics are revisited and checked for correctness, completeness and
+consistency.</p>
+<p>If required, the information is updated accordingly.</p>
+<p>If accepted, the stakeholder of the problem and the expected release, where the problem
+should be closed, shall be defined. Optionally, the corresponding milestone can be set.</p>
+<p>If applicable, the features affected should be identified too.</p>
+<p>The description shall reflect the result of the analysis.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<div class="line-block">
+<div class="line">For the Problem Report Example:</div>
+<div class="line">* The descriptions has a section for the analysis results: <strong>Accepted</strong></div>
+<div class="line">* The stakeholder are provided using Assignees field: <strong>masc2023</strong></div>
+<div class="line">* The expected closure version is provided: <em>0.5</em></div>
+<div class="line">* The “Milestone” is provided: <strong>Release 2.0.0 - Maturity Level 2</strong></div>
+<div class="line">* Feature identification is not applicable for this example, so no label is set, beside <strong>bug</strong></div>
+</div>
+</div>
+<p>If accepted, <a class="reference internal" href="../../../roles/index.html#rl__contributor" title="rl__contributor"><em class="xref need">Contributor</em></a> can start with the initiation of the
+Problem Resolution.</p>
 <p>The author has the freedom to cancel it at any time by setting the status to “rejected”.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<div class="line-block">
+<div class="line">For the Problem Report Example:</div>
+<div class="line">* For rejection the status of the issue must be changed to <strong>Closed as not planned</strong></div>
+<div class="line">* The combination of <strong>Closed as not planned</strong> and any “Process Development Community” status defines the status <strong>rejected</strong></div>
+</div>
+</div>
 </section>
 <section id="initiate-and-monitor-problem-resolution">
 <span id="prm-initiate-problem-resolution"></span><h3>Initiate and Monitor Problem Resolution<a class="headerlink" href="#initiate-and-monitor-problem-resolution" title="Link to this heading">#</a></h3>
-<p><a class="reference internal" href="../../../roles/index.html#rl__committer" title="rl__committer"><em class="xref need">Committer</em></a> initiates the resolution of the Problem.</p>
-<p>Therefore further activities needs to be planned and linked to the Problem Report.</p>
+<p>If accepted, the projects <a class="reference internal" href="../../../roles/index.html#rl__committer" title="rl__committer"><em class="xref need">Committer</em></a> initiates the resolution of
+the problem together with the <a class="reference internal" href="../../../roles/index.html#rl__contributor" title="rl__contributor"><em class="xref need">Contributor</em></a>.</p>
+<p>The description shall reflect the proposed solutions, e.g. measure to resolve the problem.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<div class="line-block">
+<div class="line">For the Problem Report Example:</div>
+<div class="line">* The descriptions has a section for the proposed <strong>Solution</strong></div>
+</div>
+</div>
+<p>The concrete implementation of the solution may require several additional activities.
+In this case additional issues may created and linked to the Problem Report.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<div class="line-block">
+<div class="line">For the Problem Report Example:</div>
+<div class="line">* The <strong>Create sub-issue</strong> should be used to create further linked issues.</div>
+</div>
+</div>
+<p>Minimal a Pull Request is sufficient to resolve the problem, which shall be linked
+to the Problem Report. It is expected, that the status of the Pull Request is set to
+“draft” or “open” automatically.</p>
+<p>When ready to implement, the author sets the status to “in implementation” manually.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<div class="line-block">
+<div class="line">For the Problem Report Example:</div>
+<div class="line">* The “Process Development Community” status must be changed to <strong>In Progress</strong></div>
+<div class="line">* The linked Pull Request status is either “Draft” or “Open”</div>
+<div class="line">* The combination of <strong>Open</strong> and any “Process Development Community” status <strong>In Progress</strong> and the Pull Request status <strong>Draft</strong> or <strong>Open</strong> defines the status <strong>in implementation</strong></div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<div class="line-block">
+<div class="line">For the Problem Report Example:</div>
+<div class="line">* The <strong>Development</strong> section should be used to link to an pull request</div>
+<div class="line">* The <strong>Create a branch</strong> action may used to create automatically a linked pull request</div>
+<div class="line">For the Problem Report Example 2:</div>
+<div class="line">* The <strong>Create a branch</strong> action was used to create a automatically linked Pull Request</div>
+<div class="line">* The automatically created branch name reflects the issue UID and the title as</div>
+<div class="line">* <strong>126-bug-stkh_req__archdes_example_req-has-no-content</strong></div>
+</div>
+</div>
 <p>During the resolution the responsible lead <a class="reference internal" href="../../platform_management/platform_management_roles.html#rl__technical_lead" title="rl__technical_lead"><em class="xref need">Technical Lead</em></a> or
-<a class="reference internal" href="../../platform_management/platform_management_roles.html#rl__module_lead" title="rl__module_lead"><em class="xref need">Module Project Lead</em></a> reports regularly the status to the affected <strong>S-CORE</strong> teams.</p>
+<a class="reference internal" href="../../platform_management/platform_management_roles.html#rl__module_lead" title="rl__module_lead"><em class="xref need">Module Project Lead</em></a> reports regularly the status to the affected
+projects teams.</p>
+<p>Escalations topics should be documented in the description, if possible.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<div class="line-block">
+<div class="line">For the Problem Report Example and Example 2:</div>
+<div class="line">* Their is no escalation topic documented</div>
+</div>
+</div>
 <p>The author has the freedom to cancel it at any time by setting the status to “rejected”.</p>
 </section>
 <section id="close-problem-resolution">
@@ -677,7 +818,18 @@ can start with the iniation of the Problem Resolution, otherwise the status is s
 the problem, until they are closed.</p>
 <p><a class="reference internal" href="../../../roles/index.html#rl__committer" title="rl__committer"><em class="xref need">Committer</em></a> checks finally if the problem Resolution is sufficient before
 the status is finally closed.
-To check, if it is sufficient, <a class="reference internal" href="problem_resolution_checklist.html#gd_chklst__problem__cr_review" title="gd_chklst__problem__cr_review"><em class="xref need">Problem Checklist (gd_chklst__problem__cr_review)</em></a> may used.</p>
+To check, if it is sufficient, <a class="reference internal" href="problem_resolution_checklist.html#gd_chklst__problem__cr_review" title="gd_chklst__problem__cr_review"><em class="xref need">Problem Checklist (gd_chklst__problem__cr_review)</em></a> may used.
+Further the effectiveness of the implemented measure is confirmed and the availability
+of the required reports, as verification results, if applicable.</p>
+<p>When confirmed, the author sets the status to “closed” manually, if not done automatically.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<div class="line-block">
+<div class="line">For the Problem Report Example 2:</div>
+<div class="line">* The status of the issue is provided by the Issue Tracking System as: <strong>Closed</strong></div>
+<div class="line">* The combination of <strong>Closed</strong> and any “Process Development Community” status <strong>Done</strong> and the Pull Request status <strong>Merged</strong> defines the status <strong>closed</strong></div>
+</div>
+</div>
 <p><a class="reference internal" href="../../../roles/index.html#rl__committer" title="rl__committer"><em class="xref need">Committer</em></a> has the freedom to reject it at any time by setting the status
 to “reject”.</p>
 </section>
@@ -738,7 +890,7 @@ to “reject”.</p>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#activities-for-problem-resolution">Activities for Problem Resolution</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#create-problem-report">Create Problem Report</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#analyse-problem-report">Analyse Problem Report</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#analyze-problem-report">Analyze Problem Report</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#initiate-and-monitor-problem-resolution">Initiate and Monitor Problem Resolution</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#close-problem-resolution">Close Problem Resolution</a></li>
 </ul>
