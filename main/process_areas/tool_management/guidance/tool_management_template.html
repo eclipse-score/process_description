@@ -509,7 +509,7 @@
                   
   <section id="tool-verification-report-template">
 <span id="tlm-templates"></span><h1>Tool Verification Report Template<a class="headerlink" href="#tool-verification-report-template" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-17e567c6">
+<div class="need_container docutils container" id="SNCB-be9c1c09">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_temp table" id="gd_temp__tool_management__verif_rpt_template">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -538,7 +538,7 @@
 </td>
 <td class="meta" colspan="3"></td>
 </tr>
-<tr class="content row-odd"><td class="content" colspan="6"></td>
+<tr class="content row-odd"><td class="content" colspan="6"><p>For the content see here: <a class="reference internal" href="../../../folder_templates/tools/tool_verification_report_template.html#doc_tool__tool_name_version" title="doc_tool__tool_name_version"><em class="xref need">[Your Tool Name] (doc_tool__tool_name_version)</em></a></p></td>
 </tr>
 <tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
 <div class="line"><span><span class="needs-id"><a class="reference internal" href="#gd_temp__tool_management__verif_rpt_template" title="gd_temp__tool_management__verif_rpt_template">gd_temp__tool_management__verif_rpt_template</a></span></span></div>
@@ -554,110 +554,6 @@
 </table>
 </div>
 </div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Tool Verification Report header</p>
-<div class="line-block">
-<div class="line">.. doc_tool:: [Your Tool Name]</div>
-<div class="line-block">
-<div class="line">:id: doc__tool__tool_name_version</div>
-<div class="line">:status: [draft | evaluated | qualified | released | rejected]</div>
-<div class="line">:version: vX.Y.Z</div>
-<div class="line">:tcl: [LOW | HIGH]</div>
-<div class="line">:safety_affected: [YES | NO]</div>
-<div class="line">:security_affected: [YES | NO]</div>
-<div class="line">:realizes: PROCESS_wp__tool_verification_report</div>
-<div class="line">:tags: tool_management</div>
-</div>
-</div>
-</div>
-<div class="admonition attention">
-<p class="admonition-title">Attention</p>
-<p>The above directive must be updated according to your tool.</p>
-</div>
-<p>An example of a Tool Verification Report can be find here:
-<a class="reference external" href="https://eclipse-score.github.io/score/main/score_tools/doc_as_code.html#doc_tool__doc_as_code">Example Tool Verification Report</a></p>
-<section id="your-tool-name-verification-report">
-<h2>[Your Tool Name] Verification Report<a class="headerlink" href="#your-tool-name-verification-report" title="Link to this heading">#</a></h2>
-</section>
-<section id="identification">
-<h2>Identification<a class="headerlink" href="#identification" title="Link to this heading">#</a></h2>
-<p>[Identify the tool]</p>
-<p>E.g. by unique name or UID?</p>
-<p>Add the tool version</p>
-<p>Add tool verification status (draft, evaluated, qualified) defined?</p>
-</section>
-<section id="introduction">
-<h2>Introduction<a class="headerlink" href="#introduction" title="Link to this heading">#</a></h2>
-<p>[Describe the scope and purpose of the tool]</p>
-<p>May also add some general information about the tool</p>
-<p>May add some comments to get started</p>
-<p>May add links to the public available information, if applicable.</p>
-</section>
-<section id="use-cases">
-<h2>Use cases<a class="headerlink" href="#use-cases" title="Link to this heading">#</a></h2>
-<p>[Describe the use case for the tool in the project]</p>
-<p>Add the purposes of the tool (e.g. use cases, scenarios, etc.)</p>
-<p>What are the inputs for the tool?</p>
-<p>What are the output for the tool?</p>
-<p>Add tool usage constraints/limitations</p>
-</section>
-<section id="installation">
-<h2>Installation<a class="headerlink" href="#installation" title="Link to this heading">#</a></h2>
-<p>[Describe here how to install the tool]</p>
-<p>How is the tool is configured in order to be used in safe/secure way?</p>
-<p>Describe environment and its constraints/limitations</p>
-<p>(Constraints/Limitation must cover functional, safety, security)</p>
-<p>E.g. version &gt;= x.yz, access/usage protection required?, execution authority required?</p>
-<p>May add links to the public available information, if applicable.</p>
-</section>
-<section id="integration">
-<h2>Integration<a class="headerlink" href="#integration" title="Link to this heading">#</a></h2>
-<p>[Describe here how to integrate the tool in existing toolchain]</p>
-<p>How works the tool together ?</p>
-<p>Where is the tool located?</p>
-<p>How are bugs of the tool tracked?</p>
-<p>May add links to the public available information, if applicable.</p>
-<p>Add malfunctions which the tool could introduce.</p>
-<p>Add threats which the tool could introduce, e.g. unintended, non-authorized use.</p>
-</section>
-<section id="documentation">
-<h2>Documentation<a class="headerlink" href="#documentation" title="Link to this heading">#</a></h2>
-<p>[Describe here detailed information about the tool documentation]</p>
-<p>Where are the tool documents like User Manual, Guidelines, Erratas, etc. located?</p>
-<p>May add links to the public available information, if applicable.</p>
-</section>
-<section id="evaluation">
-<h2>Evaluation<a class="headerlink" href="#evaluation" title="Link to this heading">#</a></h2>
-<p>[Describe here detailed information about the tool evaluation]</p>
-<p>Determine the tool impact based on the malfunctions/threats</p>
-<p>Define safety measures/security controls against the tool malfunctions/threats</p>
-<p>Determine the  tool error detection based on confidence on the defined safety measures/security controls</p>
-<p>Determine the tool confidence level based on tool impact and tool error detection</p>
-<p>Determine if tool qualification is required</p>
-</section>
-<section id="optional-section-for-tool-qualification">
-<h2><strong>Optional Section for Tool Qualification</strong><a class="headerlink" href="#optional-section-for-tool-qualification" title="Link to this heading">#</a></h2>
-<p>Based on method: validation of the software tool</p>
-</section>
-<section id="requirements-and-testing-aspects">
-<h2>Requirements and testing aspects<a class="headerlink" href="#requirements-and-testing-aspects" title="Link to this heading">#</a></h2>
-<p>[Describe here requirements and their tests from user point of view]</p>
-<p>Where are tool requirements defined?</p>
-<p>Where are the test cases for the requirements defined?</p>
-<p>Where are the requirements coverage documented?</p>
-</section>
-<section id="usage-and-analysis-perspective">
-<h2>Usage and analysis perspective<a class="headerlink" href="#usage-and-analysis-perspective" title="Link to this heading">#</a></h2>
-<p>[Describe here usage and analysis perspective]</p>
-<p>Where is the tool input and output described?</p>
-<p>Where are the use cases of the tool defined?</p>
-<p>Where are workflows for the tool defined?</p>
-<p>Optional:</p>
-<p>Where is the architectural design of the tool defined?</p>
-<p>Where is the safety analysis for the tool defined?</p>
-<p>Where is the security analysis for the tool defined?</p>
-</section>
 </section>
 
 
@@ -698,28 +594,6 @@
                 <dialog id="pst-secondary-sidebar-modal"></dialog>
                 <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
-
-  <div class="sidebar-secondary-item">
-<div
-    id="pst-page-navigation-heading-2"
-    class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> On this page
-  </div>
-  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#your-tool-name-verification-report">[Your Tool Name] Verification Report</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#identification">Identification</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">Introduction</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#use-cases">Use cases</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#installation">Installation</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#integration">Integration</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#documentation">Documentation</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#evaluation">Evaluation</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#optional-section-for-tool-qualification"><strong>Optional Section for Tool Qualification</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#requirements-and-testing-aspects">Requirements and testing aspects</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#usage-and-analysis-perspective">Usage and analysis perspective</a></li>
-</ul>
-  </nav></div>
 
   <div class="sidebar-secondary-item">
 
