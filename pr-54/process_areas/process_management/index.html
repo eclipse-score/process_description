@@ -870,7 +870,7 @@ It is used for monitoring/steering our process automation effort.</p>
 <td class="needs_status"><p>valid</p></td>
 <td class="needs_tags"><p>prio_1_automation<em>; </em>requirements_engineering</p></td>
 </tr>
-<tr class="need row-odd"><td class="needs_id"><p><a class="reference internal" href="../safety_analysis/guidance/safety_analysis_process_reqs.html#gd_req__saf__attr_mitigation">gd_req__saf__attr_mitigation</a></p></td>
+<tr class="need row-odd"><td class="needs_id"><p><a class="reference internal" href="../safety_analysis/guidance/safety_analysis_process_reqs.html#gd_req__saf__attr_mitigated_by">gd_req__saf__attr_mitigated_by</a></p></td>
 <td class="needs_status"><p>valid</p></td>
 <td class="needs_tags"><p>prio_1_automation<em>; </em>attribute<em>; </em>mandatory<em>; </em>safety_analysis</p></td>
 </tr>
@@ -889,6 +889,14 @@ It is used for monitoring/steering our process automation effort.</p>
 <tr class="need row-odd"><td class="needs_id"><p><a class="reference internal" href="../safety_analysis/guidance/safety_analysis_process_reqs.html#gd_req__saf_attr_aou">gd_req__saf_attr_aou</a></p></td>
 <td class="needs_status"><p>valid</p></td>
 <td class="needs_tags"><p>prio_1_automation<em>; </em>attribute<em>; </em>automated<em>; </em>safety_analysis</p></td>
+</tr>
+<tr class="need row-even"><td class="needs_id"><p><a class="reference internal" href="../safety_analysis/guidance/safety_analysis_process_reqs.html#gd_req__saf_attr_failure_id">gd_req__saf_attr_failure_id</a></p></td>
+<td class="needs_status"><p>valid</p></td>
+<td class="needs_tags"><p>attribute<em>; </em>automated<em>; </em>mandatory<em>; </em>safety_analysis</p></td>
+</tr>
+<tr class="need row-odd"><td class="needs_id"><p><a class="reference internal" href="../safety_analysis/guidance/safety_analysis_process_reqs.html#gd_req__saf_attr_fault_id">gd_req__saf_attr_fault_id</a></p></td>
+<td class="needs_status"><p>valid</p></td>
+<td class="needs_tags"><p>attribute<em>; </em>automated<em>; </em>mandatory<em>; </em>safety_analysis</p></td>
 </tr>
 <tr class="need row-even"><td class="needs_id"><p><a class="reference internal" href="../safety_analysis/guidance/safety_analysis_process_reqs.html#gd_req__saf_attr_feffect">gd_req__saf_attr_feffect</a></p></td>
 <td class="needs_status"><p>valid</p></td>
@@ -934,95 +942,91 @@ It is used for monitoring/steering our process automation effort.</p>
 <td class="needs_status"><p>valid</p></td>
 <td class="needs_tags"><p>prio_1_automation<em>; </em>attribute<em>; </em>mandatory<em>; </em>safety_analysis</p></td>
 </tr>
-<tr class="need row-odd"><td class="needs_id"><p><a class="reference internal" href="../safety_analysis/guidance/safety_analysis_process_reqs.html#gd_req__saf_attr_violation_id">gd_req__saf_attr_violation_id</a></p></td>
-<td class="needs_status"><p>valid</p></td>
-<td class="needs_tags"><p>attribute<em>; </em>automated<em>; </em>mandatory<em>; </em>safety_analysis</p></td>
-</tr>
-<tr class="need row-even"><td class="needs_id"><p><a class="reference internal" href="../safety_analysis/guidance/safety_analysis_process_reqs.html#gd_req__saf_linkage">gd_req__saf_linkage</a></p></td>
+<tr class="need row-odd"><td class="needs_id"><p><a class="reference internal" href="../safety_analysis/guidance/safety_analysis_process_reqs.html#gd_req__saf_linkage">gd_req__saf_linkage</a></p></td>
 <td class="needs_status"><p>valid</p></td>
 <td class="needs_tags"><p>prio_2_automation<em>; </em>attribute<em>; </em>automated<em>; </em>safety_analysis</p></td>
 </tr>
-<tr class="need row-odd"><td class="needs_id"><p><a class="reference internal" href="../safety_analysis/guidance/safety_analysis_process_reqs.html#gd_req__saf_linkage_check">gd_req__saf_linkage_check</a></p></td>
+<tr class="need row-even"><td class="needs_id"><p><a class="reference internal" href="../safety_analysis/guidance/safety_analysis_process_reqs.html#gd_req__saf_linkage_check">gd_req__saf_linkage_check</a></p></td>
 <td class="needs_status"><p>valid</p></td>
 <td class="needs_tags"><p>prio_1_automation<em>; </em>attribute<em>; </em>automated<em>; </em>safety_analysis</p></td>
 </tr>
-<tr class="need row-even"><td class="needs_id"><p><a class="reference internal" href="../safety_analysis/guidance/safety_analysis_process_reqs.html#gd_req__saf_linkage_safety">gd_req__saf_linkage_safety</a></p></td>
+<tr class="need row-odd"><td class="needs_id"><p><a class="reference internal" href="../safety_analysis/guidance/safety_analysis_process_reqs.html#gd_req__saf_linkage_safety">gd_req__saf_linkage_safety</a></p></td>
 <td class="needs_status"><p>valid</p></td>
 <td class="needs_tags"><p>prio_2_automation<em>; </em>attribute<em>; </em>check<em>; </em>safety_analysis</p></td>
 </tr>
-<tr class="need row-odd"><td class="needs_id"><p><a class="reference internal" href="../safety_analysis/guidance/safety_analysis_process_reqs.html#gd_req__saf_linkage_status_check">gd_req__saf_linkage_status_check</a></p></td>
+<tr class="need row-even"><td class="needs_id"><p><a class="reference internal" href="../safety_analysis/guidance/safety_analysis_process_reqs.html#gd_req__saf_linkage_status_check">gd_req__saf_linkage_status_check</a></p></td>
 <td class="needs_status"><p>valid</p></td>
 <td class="needs_tags"><p>prio_3_automation<em>; </em>attribute<em>; </em>automated<em>; </em>safety_analysis</p></td>
 </tr>
-<tr class="need row-even"><td class="needs_id"><p><a class="reference internal" href="../safety_analysis/guidance/safety_analysis_process_reqs.html#gd_req__saf_structure">gd_req__saf_structure</a></p></td>
+<tr class="need row-odd"><td class="needs_id"><p><a class="reference internal" href="../safety_analysis/guidance/safety_analysis_process_reqs.html#gd_req__saf_structure">gd_req__saf_structure</a></p></td>
 <td class="needs_status"><p>valid</p></td>
 <td class="needs_tags"><p>done_automation<em>; </em>safety_analysis</p></td>
 </tr>
-<tr class="need row-odd"><td class="needs_id"><p><a class="reference internal" href="../safety_management/guidance/process_req.html#gd_req__safety__doc_status">gd_req__safety__doc_status</a></p></td>
+<tr class="need row-even"><td class="needs_id"><p><a class="reference internal" href="../safety_management/guidance/process_req.html#gd_req__safety__doc_status">gd_req__safety__doc_status</a></p></td>
 <td class="needs_status"><p>valid</p></td>
 <td class="needs_tags"><p>done_automation<em>; </em>safety_mgt</p></td>
 </tr>
-<tr class="need row-even"><td class="needs_id"><p><a class="reference internal" href="../safety_management/guidance/process_req.html#gd_req__safety__wp_status">gd_req__safety__wp_status</a></p></td>
+<tr class="need row-odd"><td class="needs_id"><p><a class="reference internal" href="../safety_management/guidance/process_req.html#gd_req__safety__wp_status">gd_req__safety__wp_status</a></p></td>
 <td class="needs_status"><p>valid</p></td>
 <td class="needs_tags"><p>prio_1_automation<em>; </em>safety_mgt</p></td>
 </tr>
-<tr class="need row-odd"><td class="needs_id"><p><a class="reference internal" href="../security_management/guidance/security_management_process_reqs.html#gd_req__security_doc_status">gd_req__security_doc_status</a></p></td>
+<tr class="need row-even"><td class="needs_id"><p><a class="reference internal" href="../security_management/guidance/security_management_process_reqs.html#gd_req__security_doc_status">gd_req__security_doc_status</a></p></td>
 <td class="needs_status"><p>valid</p></td>
 <td class="needs_tags"><p>attribute<em>; </em>mandatory<em>; </em>security_management</p></td>
 </tr>
-<tr class="need row-even"><td class="needs_id"><p><a class="reference internal" href="../security_management/guidance/security_management_process_reqs.html#gd_req__security_wp_status">gd_req__security_wp_status</a></p></td>
+<tr class="need row-odd"><td class="needs_id"><p><a class="reference internal" href="../security_management/guidance/security_management_process_reqs.html#gd_req__security_wp_status">gd_req__security_wp_status</a></p></td>
 <td class="needs_status"><p>valid</p></td>
 <td class="needs_tags"><p>attribute<em>; </em>mandatory<em>; </em>security_management</p></td>
 </tr>
-<tr class="need row-odd"><td class="needs_id"><p><a class="reference internal" href="../tool_management/guidance/tool_management_reqs.html#gd_req__tool__attr_safety_affected">gd_req__tool__attr_safety_affected</a></p></td>
+<tr class="need row-even"><td class="needs_id"><p><a class="reference internal" href="../tool_management/guidance/tool_management_reqs.html#gd_req__tool__attr_safety_affected">gd_req__tool__attr_safety_affected</a></p></td>
 <td class="needs_status"><p>valid</p></td>
 <td class="needs_tags"><p>manual<em>; </em>tool_management<em>; </em>attribute<em>; </em>mandatory</p></td>
 </tr>
-<tr class="need row-even"><td class="needs_id"><p><a class="reference internal" href="../tool_management/guidance/tool_management_reqs.html#gd_req__tool__attr_security_affected">gd_req__tool__attr_security_affected</a></p></td>
+<tr class="need row-odd"><td class="needs_id"><p><a class="reference internal" href="../tool_management/guidance/tool_management_reqs.html#gd_req__tool__attr_security_affected">gd_req__tool__attr_security_affected</a></p></td>
 <td class="needs_status"><p>valid</p></td>
 <td class="needs_tags"><p>manual<em>; </em>tool_management<em>; </em>attribute<em>; </em>mandatory</p></td>
 </tr>
-<tr class="need row-odd"><td class="needs_id"><p><a class="reference internal" href="../tool_management/guidance/tool_management_reqs.html#gd_req__tool__attr_status">gd_req__tool__attr_status</a></p></td>
+<tr class="need row-even"><td class="needs_id"><p><a class="reference internal" href="../tool_management/guidance/tool_management_reqs.html#gd_req__tool__attr_status">gd_req__tool__attr_status</a></p></td>
 <td class="needs_status"><p>valid</p></td>
 <td class="needs_tags"><p>prio_1_automation<em>; </em>tool_management<em>; </em>attribute<em>; </em>mandatory</p></td>
 </tr>
-<tr class="need row-even"><td class="needs_id"><p><a class="reference internal" href="../tool_management/guidance/tool_management_reqs.html#gd_req__tool__attr_uid">gd_req__tool__attr_uid</a></p></td>
+<tr class="need row-odd"><td class="needs_id"><p><a class="reference internal" href="../tool_management/guidance/tool_management_reqs.html#gd_req__tool__attr_uid">gd_req__tool__attr_uid</a></p></td>
 <td class="needs_status"><p>valid</p></td>
 <td class="needs_tags"><p>done_automation<em>; </em>tool_management<em>; </em>attribute<em>; </em>mandatory</p></td>
 </tr>
-<tr class="need row-odd"><td class="needs_id"><p><a class="reference internal" href="../tool_management/guidance/tool_management_reqs.html#gd_req__tool__check_mandatory">gd_req__tool__check_mandatory</a></p></td>
+<tr class="need row-even"><td class="needs_id"><p><a class="reference internal" href="../tool_management/guidance/tool_management_reqs.html#gd_req__tool__check_mandatory">gd_req__tool__check_mandatory</a></p></td>
 <td class="needs_status"><p>valid</p></td>
 <td class="needs_tags"><p>prio_1_automation<em>; </em>tool_management<em>; </em>attribute<em>; </em>check</p></td>
 </tr>
-<tr class="need row-even"><td class="needs_id"><p><a class="reference internal" href="../verification/guidance/verification_process_toolreqs.html#gd_req__verification__checks">gd_req__verification__checks</a></p></td>
+<tr class="need row-odd"><td class="needs_id"><p><a class="reference internal" href="../verification/guidance/verification_process_toolreqs.html#gd_req__verification__checks">gd_req__verification__checks</a></p></td>
 <td class="needs_status"><p>valid</p></td>
 <td class="needs_tags"><p>prio_1_automation<em>; </em>verification</p></td>
 </tr>
-<tr class="need row-odd"><td class="needs_id"><p><a class="reference internal" href="../verification/guidance/verification_process_toolreqs.html#gd_req__verification__checks_extended">gd_req__verification__checks_extended</a></p></td>
+<tr class="need row-even"><td class="needs_id"><p><a class="reference internal" href="../verification/guidance/verification_process_toolreqs.html#gd_req__verification__checks_extended">gd_req__verification__checks_extended</a></p></td>
 <td class="needs_status"><p>draft</p></td>
 <td class="needs_tags"><p>verification</p></td>
 </tr>
-<tr class="need row-even"><td class="needs_id"><p><a class="reference internal" href="../verification/guidance/verification_process_toolreqs.html#gd_req__verification__independence">gd_req__verification__independence</a></p></td>
+<tr class="need row-odd"><td class="needs_id"><p><a class="reference internal" href="../verification/guidance/verification_process_toolreqs.html#gd_req__verification__independence">gd_req__verification__independence</a></p></td>
 <td class="needs_status"><p>valid</p></td>
 <td class="needs_tags"><p>done_automation<em>; </em>verification</p></td>
 </tr>
-<tr class="need row-odd"><td class="needs_id"><p><a class="reference internal" href="../verification/guidance/verification_process_toolreqs.html#gd_req__verification__link_tests">gd_req__verification__link_tests</a></p></td>
+<tr class="need row-even"><td class="needs_id"><p><a class="reference internal" href="../verification/guidance/verification_process_toolreqs.html#gd_req__verification__link_tests">gd_req__verification__link_tests</a></p></td>
 <td class="needs_status"><p>valid</p></td>
 <td class="needs_tags"><p>prio_1_automation<em>; </em>verification</p></td>
 </tr>
-<tr class="need row-even"><td class="needs_id"><p><a class="reference internal" href="../verification/guidance/verification_process_toolreqs.html#gd_req__verification__link_tests_cpp">gd_req__verification__link_tests_cpp</a></p></td>
+<tr class="need row-odd"><td class="needs_id"><p><a class="reference internal" href="../verification/guidance/verification_process_toolreqs.html#gd_req__verification__link_tests_cpp">gd_req__verification__link_tests_cpp</a></p></td>
 <td class="needs_status"><p>valid</p></td>
 <td class="needs_tags"><p>prio_1_automation<em>; </em>verification</p></td>
 </tr>
-<tr class="need row-odd"><td class="needs_id"><p><a class="reference internal" href="../verification/guidance/verification_process_toolreqs.html#gd_req__verification__link_tests_python">gd_req__verification__link_tests_python</a></p></td>
+<tr class="need row-even"><td class="needs_id"><p><a class="reference internal" href="../verification/guidance/verification_process_toolreqs.html#gd_req__verification__link_tests_python">gd_req__verification__link_tests_python</a></p></td>
 <td class="needs_status"><p>valid</p></td>
 <td class="needs_tags"><p>prio_1_automation<em>; </em>verification</p></td>
 </tr>
-<tr class="need row-even"><td class="needs_id"><p><a class="reference internal" href="../verification/guidance/verification_process_toolreqs.html#gd_req__verification__link_tests_rust">gd_req__verification__link_tests_rust</a></p></td>
+<tr class="need row-odd"><td class="needs_id"><p><a class="reference internal" href="../verification/guidance/verification_process_toolreqs.html#gd_req__verification__link_tests_rust">gd_req__verification__link_tests_rust</a></p></td>
 <td class="needs_status"><p>valid</p></td>
 <td class="needs_tags"><p>prio_1_automation<em>; </em>verification</p></td>
 </tr>
-<tr class="need row-odd"><td class="needs_id"><p><a class="reference internal" href="../verification/guidance/verification_process_toolreqs.html#gd_req__verification__reporting">gd_req__verification__reporting</a></p></td>
+<tr class="need row-even"><td class="needs_id"><p><a class="reference internal" href="../verification/guidance/verification_process_toolreqs.html#gd_req__verification__reporting">gd_req__verification__reporting</a></p></td>
 <td class="needs_status"><p>valid</p></td>
 <td class="needs_tags"><p>prio_1_automation<em>; </em>verification</p></td>
 </tr>

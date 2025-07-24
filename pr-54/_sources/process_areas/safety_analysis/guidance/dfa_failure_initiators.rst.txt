@@ -92,7 +92,7 @@ DFA failure initiators
   * - ID
     - Violation cause communication between elements
     - Simplification
-    - Importance (can be used for priorisation)
+    - Importance (can be used for prioritization)
   * - CO_01_01
     - Information passed via argument through a function call, or via writing/reading a variable being global to the two software functions (data flow)
     -
@@ -222,7 +222,7 @@ DFA failure initiators
   * - ID
     - Violation cause development failure initiators
     - Simplification
-    - Importance (can be used for priorisation)
+    - Importance (can be used for prioritization)
   * - SC_01_02
     - Same development approaches (e.g. IDE, programming and/or modelling language)
     -

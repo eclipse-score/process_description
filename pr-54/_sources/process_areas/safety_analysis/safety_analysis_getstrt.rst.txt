@@ -15,10 +15,11 @@
 Getting Started
 ###############
 
-.. doc_getstrt:: Getting Started on Safety Analysis
+.. doc_getstrt:: Getting Started on Safety Analysis (FMEA and DFA)
    :id: doc_getstrt__safety_analysis
    :status: valid
    :tags: safety_analysis
+
 
 This document outlines the steps for performing, monitoring, and verifying safety analysis. Safety analysis is used as a umbrella term for the methods
 DFA (Dependent Failure Analysis) and FMEA (Failure Mode and Effects Analysis).
@@ -30,6 +31,7 @@ Safety Analysis Workflow
 
 The goal of the safety analysis is to proof that the safety requirements for functions and monitors are not violated.
 The safety analysis is performed in three steps.
+
 | * Analyse the architecture with a DFA and FMEA.
 | * Monitor the DFA and FMEA and log any issues in the Issue Tracking system with the ``safety`` label until the analysis is completed.
 | * Verify the safety analysis. The verification is done when no issues are open and the status is "valid".

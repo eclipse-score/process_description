@@ -65,8 +65,8 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'process_areas/safety_analysis/guidance/fmea_templates';</script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="Roles" href="../safety_analysis_roles.html" />
-    <link rel="prev" title="Safety Analysis Process Requirements" href="safety_analysis_process_reqs.html" />
+    <link rel="next" title="Safety Analysis Checklist" href="safety_analysis_checklist.html" />
+    <link rel="prev" title="FMEA Fault Models" href="fault_models_guideline.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="0.1" />
@@ -426,16 +426,16 @@
 <li class="toctree-l2"><a class="reference internal" href="../safety_analysis_getstrt.html">Getting Started</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../safety_analysis_concept.html">Concept Description</a></li>
 <li class="toctree-l2 current active has-children"><a class="reference internal" href="index.html">Guidance</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="safety_analysis_checklist.html">Checklist for Safety Analysis</a></li>
 <li class="toctree-l3"><a class="reference internal" href="dfa_failure_initiators.html">DFA failure initiators</a></li>
 
 <li class="toctree-l3"><a class="reference internal" href="dfa_templates.html">DFA Templates</a></li>
-<li class="toctree-l3"><a class="reference internal" href="fault_models_guideline.html">Fault Models</a></li>
-<li class="toctree-l3"><a class="reference internal" href="safety_analysis_guideline.html">Guidelines</a></li>
+<li class="toctree-l3"><a class="reference internal" href="fault_models_guideline.html">FMEA Fault Models</a></li>
+<li class="toctree-l3 current active"><a class="current reference internal" href="#">FMEA Templates</a></li>
+<li class="toctree-l3"><a class="reference internal" href="safety_analysis_checklist.html">Safety Analysis Checklist</a></li>
+<li class="toctree-l3"><a class="reference internal" href="safety_analysis_guideline.html">Safety Analysis Guidelines</a></li>
 <li class="toctree-l3"><a class="reference internal" href="safety_analysis_process_reqs.html">Safety Analysis Process Requirements</a></li>
 
 
-<li class="toctree-l3 current active"><a class="current reference internal" href="#">FMEA Templates</a></li>
 </ul>
 </details></li>
 <li class="toctree-l2"><a class="reference internal" href="../safety_analysis_roles.html">Roles</a></li>
@@ -516,7 +516,7 @@
                   
   <section id="fmea-templates">
 <span id="id1"></span><h1>FMEA Templates<a class="headerlink" href="#fmea-templates" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-7947e272">
+<div class="need_container docutils container" id="SNCB-4875c2ba">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_temp table" id="gd_temp__feat_saf_fmea">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -565,8 +565,8 @@
    <span class="nc">:violates:</span> <span class="nt">&lt;Feature architecture&gt;</span>
    <span class="nc">:id:</span> feat_saf_fmea__&lt;Feature&gt;__&lt;Element descriptor&gt;
    <span class="nc">:fault_id:</span> <span class="nt">&lt;ID from fault model :need:`gd_guidl__fault_models`&gt;</span>
-   <span class="nc">:fault_cause:</span> &quot;description of failure effect of the fault model on the element&quot;
-   <span class="nc">:mitigates:</span> <span class="nt">&lt;ID from Feature Requirement | ID from AoU Feature Requirement&gt;</span>
+   <span class="nc">:failure_effect:</span> &quot;description of failure effect of the fault model on the element&quot;
+   <span class="nc">:mitigated_by:</span> <span class="nt">&lt;ID from Feature Requirement | ID from AoU Feature Requirement&gt;</span>
    <span class="nc">:mitigation_issue:</span> <span class="nt">&lt;ID from Issue Tracker&gt;</span>
    <span class="nc">:sufficient:</span> <span class="nt">&lt;yes|no&gt;</span>
    <span class="nc">:status:</span> <span class="nt">&lt;valid|invalid&gt;</span>
@@ -576,7 +576,7 @@
 <p class="admonition-title">Note</p>
 <p>argument is inside the ‘content’. Therefore content is mandatory</p>
 </div>
-<div class="need_container docutils container" id="SNCB-ba3d248f">
+<div class="need_container docutils container" id="SNCB-4985e8d8">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_temp table" id="gd_temp__comp_saf_fmea">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -625,8 +625,8 @@
    <span class="nc">:violates:</span> <span class="nt">&lt;Component architecture&gt;</span>
    <span class="nc">:id:</span> comp_saf_fmea__&lt;Component&gt;__&lt;Element descriptor&gt;
    <span class="nc">:fault_id:</span> <span class="nt">&lt;ID from fault model :need:`gd_guidl__fault_models`&gt;</span>
-   <span class="nc">:fault_cause:</span> &quot;description of failure effect of the fault model on the element&quot;
-   <span class="nc">:mitigates:</span> <span class="nt">&lt;ID from Component Requirement | ID from AoU Component Requirement&gt;</span>
+   <span class="nc">:failure_effect:</span> &quot;description of failure effect of the fault model on the element&quot;
+   <span class="nc">:mitigated_by:</span> <span class="nt">&lt;ID from Component Requirement | ID from AoU Component Requirement&gt;</span>
    <span class="nc">:mitigation_issue:</span> <span class="nt">&lt;ID from Issue Tracker&gt;</span>
    <span class="nc">:sufficient:</span> <span class="nt">&lt;yes|no&gt;</span>
    <span class="nc">:status:</span> <span class="nt">&lt;valid|invalid&gt;</span>
@@ -649,20 +649,20 @@
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="safety_analysis_process_reqs.html"
+       href="fault_models_guideline.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Safety Analysis Process Requirements</p>
+        <p class="prev-next-title">FMEA Fault Models</p>
       </div>
     </a>
     <a class="right-next"
-       href="../safety_analysis_roles.html"
+       href="safety_analysis_checklist.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Roles</p>
+        <p class="prev-next-title">Safety Analysis Checklist</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>

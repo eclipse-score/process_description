@@ -28,8 +28,8 @@ DFA Templates
        :violates: <Feature architecture>
        :id: feat_saf_DFA__<Feature>__<Element descriptor>
        :failure_id: <ID from DFA failure initiators :need:`gd_guidl__dfa_failure_initiators`>
-       :failure_cause: "description of failure effect of the failure initiator on the element"
-       :mitigates: <ID from Feature Requirement | ID from AoU Feature Requirement>
+       :failure_effect: "description of failure effect of the failure initiator on the element"
+       :mitigated_by: <ID from Feature Requirement | ID from AoU Feature Requirement>
        :mitigation_issue: <ID from Issue Tracker>
        :sufficient: <yes|no>
        :status: <valid|invalid>
@@ -47,8 +47,8 @@ DFA Templates
        :violates: <Feature architecture>
        :id: feat_saf_DFA__<Feature>__<Element descriptor>
        :failure_id: <ID from DFA failure initiators :need:`gd_guidl__dfa_failure_initiators`>
-       :failure_cause: "description of failure effect of the failure initiator on the element"
-       :mitigates: <ID from Feature Requirement | ID from AoU Feature Requirement>
+       :failure_effect: "description of failure effect of the failure initiator on the element"
+       :mitigated_by: <ID from Feature Requirement | ID from AoU Feature Requirement>
        :mitigation_issue: <ID from Issue Tracker>
        :sufficient: <yes|no>
        :status: <valid|invalid>
@@ -66,8 +66,8 @@ DFA Templates
        :violates: <Component architecture>
        :id: comp_saf_DFA__<Component>__<Element descriptor>
        :failure_id: <ID from DFA failure initiators :need:`gd_guidl__dfa_failure_initiators`>
-       :failure_cause: "description of failure effect of the failure initiator on the element"
-       :mitigates: <ID from Component Requirement | ID from AoU Component Requirement>
+       :failure_effect: "description of failure effect of the failure initiator on the element"
+       :mitigated_by: <ID from Component Requirement | ID from AoU Component Requirement>
        :mitigation_issue: <ID from Issue Tracker>
        :sufficient: <yes|no>
        :status: <valid|invalid>

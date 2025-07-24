@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Safety Analysis : FMEA &#8212; Process Description  documentation</title>
+    <title>FMEA (Failure Modes and Effects Analysis) &#8212; Process Description  documentation</title>
   
   
   
@@ -65,7 +65,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'folder_templates/modules/module_name/component_name/docs/safety_analysis/fmea';</script>
     <link rel="index" title="Index" href="../../../../../../genindex.html" />
     <link rel="search" title="Search" href="../../../../../../search.html" />
-    <link rel="next" title="Dependent Failure Analysis" href="dfa.html" />
+    <link rel="next" title="DFA (Dependent Failure Analysis)" href="dfa.html" />
     <link rel="prev" title="Detailed Design" href="../detailed_design/index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -419,8 +419,8 @@
 <li class="toctree-l3"><a class="reference internal" href="../requirements/index.html">Requirements</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../architecture/index.html">Component Architecture</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../detailed_design/index.html">Detailed Design</a></li>
-<li class="toctree-l3 current active"><a class="current reference internal" href="#">Safety Analysis : FMEA</a></li>
-<li class="toctree-l3"><a class="reference internal" href="dfa.html">Dependent Failure Analysis</a></li>
+<li class="toctree-l3 current active"><a class="current reference internal" href="#">FMEA (Failure Modes and Effects Analysis)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="dfa.html">DFA (Dependent Failure Analysis)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../component_classification.html">Component Classification</a></li>
 </ul>
 </details></li>
@@ -475,7 +475,7 @@
     
     <li class="breadcrumb-item"><a href="../index.html" class="nav-link">[Your Component Name]</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Safety Analysis : FMEA</span></li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">FMEA (Failure Modes and Effects Analysis)</span></li>
   </ul>
 </nav>
 </div>
@@ -492,9 +492,9 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="safety-analysis-fmea">
-<h1>Safety Analysis : FMEA<a class="headerlink" href="#safety-analysis-fmea" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-0b335c95">
+  <section id="fmea-failure-modes-and-effects-analysis">
+<h1>FMEA (Failure Modes and Effects Analysis)<a class="headerlink" href="#fmea-failure-modes-and-effects-analysis" title="Link to this heading">#</a></h1>
+<div class="need_container docutils container" id="SNCB-d840688f">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_document table" id="doc__component_name_fmea">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -556,11 +556,11 @@
 <section id="failure-mode-list">
 <h2>Failure Mode List<a class="headerlink" href="#failure-mode-list" title="Link to this heading">#</a></h2>
 <div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">comp_saf_fmea</span><span class="p">::</span> <span class="nt">&lt;Element descriptor&gt;</span>
-   <span class="nc">:verifies:</span> <span class="nt">&lt;Component architecture&gt;</span>
+   <span class="nc">:violates:</span> <span class="nt">&lt;Component architecture&gt;</span>
    <span class="nc">:id:</span> comp_saf_fmea__&lt;Component&gt;__&lt;Element descriptor&gt;
-   <span class="nc">:violation_id:</span> <span class="nt">&lt;ID from fault model Fault Models (gd_guidl__fault_models)&gt;</span>
-   <span class="nc">:violation_cause:</span> “description of failure effect of the fault model on the element”
-   <span class="nc">:mitigates:</span> <span class="nt">&lt;ID from Component Requirement | ID from AoU Component Requirement&gt;</span>
+   <span class="nc">:fault_id:</span> <span class="nt">&lt;ID from fault model :need:`gd_guidl__fault_models`&gt;</span>
+   <span class="nc">:failure_effect:</span> &quot;description of failure effect of the fault model on the element&quot;
+   <span class="nc">:mitigated_by:</span> <span class="nt">&lt;ID from Component Requirement | ID from AoU Component Requirement&gt;</span>
    <span class="nc">:mitigation_issue:</span> <span class="nt">&lt;ID from Issue Tracker&gt;</span>
    <span class="nc">:sufficient:</span> <span class="nt">&lt;yes|no&gt;</span>
    <span class="nc">:status:</span> <span class="nt">&lt;valid|invalid&gt;</span>
@@ -574,7 +574,7 @@
 <p class="admonition-title">Attention</p>
 <p>The above directive must be updated according to your component FMEA.</p>
 <ul class="simple">
-<li><p>Remove the <code class="docutils literal notranslate"><span class="pre">code-block</span></code></p></li>
+<li><p>The above “code-block” directive must be updated</p></li>
 <li><p>Fill in all the needed information in the &lt;brackets&gt;</p></li>
 </ul>
 </div>
@@ -605,7 +605,7 @@
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Dependent Failure Analysis</p>
+        <p class="prev-next-title">DFA (Dependent Failure Analysis)</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
