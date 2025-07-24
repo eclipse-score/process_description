@@ -179,7 +179,7 @@ The description shall reflect the result of the analysis.
 
 .. note::
   | For the Problem Report Example:
-  | * The descriptions has a section for the analysis result: **Accepted**
+  | * The descriptions has a section for the analysis results: **Accepted**
   | * The stakeholder are provided using Assignees field: **masc2023**
   | * The expected closure version is provided: *0.5*
   | * The "Milestone" is provided: **Release 2.0.0 - Maturity Level 2**
@@ -200,8 +200,8 @@ The author has the freedom to cancel it at any time by setting the status to "re
 Initiate and Monitor Problem Resolution
 ---------------------------------------
 
-If accepted, The projects :need:`[[title]] <rl__committer>` initiates the resolution of
-the Problem together with the :need:`[[title]] <rl__contributor>`.
+If accepted, the projects :need:`[[title]] <rl__committer>` initiates the resolution of
+the problem together with the :need:`[[title]] <rl__contributor>`.
 
 The description shall reflect the proposed solutions, e.g. measure to resolve the problem.
 

@@ -128,7 +128,6 @@ Problem affected version
 Document the version of the release where the problem was detected.
 
 | (to be filled out during :need:`wf__problem__create_pr`)
-| (to be updated during :need:`wf__problem__analyze_pr`)
 
 Problem analysis results
 ------------------------
