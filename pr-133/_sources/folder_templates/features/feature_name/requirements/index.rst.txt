@@ -37,6 +37,7 @@ Requirements
    :id: stkh_req__requirements__template
    :reqtype: Non-Functional
    :safety: ASIL_B
+   :security: YES
    :rationale: Exists just for the template example
    :status: invalid
 
