@@ -86,8 +86,8 @@ Safety Management Guideline
    |
    | **Planning of dependent failures and safety analyses:**
    | In cases where the components consist of sub-components there will be more than one architecture level. DFA and Safety analysis will then be done on these multiple levels. See the respective work products:
-   | * feature level: :need:`wp__feature_safety_analysis` and :need:`wp__feature_dfa`
-   | * component level: :need:`wp__sw_component_safety_analysis` and :need:`wp__sw_component_dfa`
+   | * feature level: :need:`wp__feature_fmea` and :need:`wp__feature_dfa`
+   | * component level: :need:`wp__sw_component_fmea` and :need:`wp__sw_component_dfa`
    |
    | **Provision of the confidence in the use of software tools:**
    | Tool Management planning is part of the :need:`wp__platform_mgmt`. The respective work product to be planned as an issue  of the generic safety plan is the :need:`wp__tool_verification_report`, which contains tool evaluation and if applicable qualification of the SW platform toolchain.

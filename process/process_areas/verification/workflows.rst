@@ -157,7 +157,7 @@ Workflow Verification
    :supported_by: rl__safety_manager, rl__infrastructure_tooling_community
    :input: wp__verification__plan, wp__requirements__comp, wp__requirements__comp_aou,
            wp__component_arch, wp__module_sw_release_note, wp__platform_mgmt,
-           wp__sw_component_safety_analysis, wp__sw_component_dfa,
+           wp__sw_component_fmea, wp__sw_component_dfa,
            wp__sw_arch_verification, wp__sw_implementation_inspection, wp__requirements__inspect,
            wp__verification__comp_int_test, wp__verification__sw_unit_test
    :output: wp__verification__module_ver_report
@@ -181,7 +181,7 @@ Workflow Verification
    :supported_by: rl__safety_manager, rl__infrastructure_tooling_community
    :input: wp__verification__plan, wp__requirements__stkh, wp__requirements__feat, wp__requirements__feat_aou,
            wp__feature_arch, wp__platform_sw_release_note, wp__platform_mgmt,
-           wp__feature_safety_analysis, wp__feature_dfa,
+           wp__feature_fmea, wp__feature_dfa, wp__feature_platform_dfa,
            wp__sw_arch_verification, wp__requirements__inspect,
            wp__verification__feat_int_test, wp__verification__platform_test
    :output: wp__verification__platform_ver_report

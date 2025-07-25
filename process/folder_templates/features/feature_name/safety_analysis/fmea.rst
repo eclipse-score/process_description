@@ -13,15 +13,17 @@
    # *******************************************************************************
 
 
-Safety Analysis : FMEA
-======================
+FMEA (Failure Modes and Effects Analysis)
+=========================================
 
 .. document:: [Your Feature Name] FMEA
    :id: doc__feature_name_fmea
    :status: draft
    :safety: ASIL_B
-   :realizes: wp__feature_safety_analysis
+   :realizes: wp__feature_fmea
    :tags: template
+
+.. note:: Use the content of the document to describe e.g. why a fault model is not applicable for the diagram.
 
 .. attention::
     The above directive must be updated according to your Feature.
@@ -36,18 +38,21 @@ Failure Mode List
 
 .. code-block:: rst
 
-   .. feat_saf_fmea:: <Element descriptor>
-      :id: feat_saf_FMEA__<Feature>__<Element descriptor>
-      :failure_mode: <ID from fault model :need:`gd_guidl__fault_models`>
-      :failure_effect: <Effect caused by the failure (leading to a violation of a safety goal)>
-      :verifies: <ID from Feature Architecture>
-      :mitigated_by: < NONE|ID from Feature Requirement>
-      :sufficient: <yes|no>
-      :argument: <text to argument why measure is sufficient>
-      :status: <valid|invalid>
+
+    .. feat_saf_fmea:: <Title>
+       :violates: <Feature architecture>
+       :id: feat_saf_fmea__<Feature>__<Element descriptor>
+       :fault_id: <ID from fault model :need:`gd_guidl__fault_models`>
+       :failure_effect: "description of failure effect of the fault model on the element"
+       :mitigated_by: <ID from Feature Requirement | ID from AoU Feature Requirement>
+       :mitigation_issue: <ID from Issue Tracker>
+       :sufficient: <yes|no>
+       :status: <valid|invalid>
+
+ .. note::   argument is inside the 'content'. Therefore content is mandatory
 
 .. attention::
     The above directive must be updated according to your feature FMEA.
 
-    - Remove the ``code-block``
+    - The above "code-block" directive must be updated
     - Fill in all the needed information in the <brackets>
