@@ -210,6 +210,7 @@ Component Architecure File(s)
    :id: stkh_req__archdes_example_req
    :reqtype: Functional
    :safety: ASIL_B
+   :security: YES
    :rationale: needed for archdes example
    :status: valid
 
