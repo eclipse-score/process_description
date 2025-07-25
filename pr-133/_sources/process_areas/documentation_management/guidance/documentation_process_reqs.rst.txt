@@ -21,6 +21,7 @@ Document Management Process Requirements
    :id: gd_req__doc__types
    :status: valid
    :tags: manual
+   :satisfies: wf__platform__cr_mt_platform_mgmt_plan
    :complies: std_req__iso26262__support_1043
 
    There are the following document types:
@@ -52,6 +53,7 @@ Document Management Process Requirements
    :id: gd_req__doc__attributes_manual
    :status: valid
    :tags: manual
+   :satisfies: wf__platform__cr_mt_platform_mgmt_plan
    :complies: std_req__iso26262__support_1043
 
    Generic documents shall have the following mandatory manual attributes:
@@ -71,6 +73,7 @@ Document Management Process Requirements
    :id: gd_req__doc__author
    :status: valid
    :tags: prio_1_automation
+   :satisfies: wf__platform__cr_mt_platform_mgmt_plan
    :complies: std_req__iso26262__support_1045
 
    The version management tool shall document and report (be able to show) the authorship of a document.
@@ -80,6 +83,7 @@ Document Management Process Requirements
    :id: gd_req__doc__reviewer
    :status: valid
    :tags: prio_1_automation
+   :satisfies: wf__platform__cr_mt_platform_mgmt_plan
    :complies: std_req__iso26262__support_1043
 
    The version management tool shall document and report (be able to show) the reviewers of a document.
@@ -89,6 +93,7 @@ Document Management Process Requirements
    :id: gd_req__doc__approver
    :status: valid
    :tags: prio_1_automation
+   :satisfies: wf__platform__cr_mt_platform_mgmt_plan
    :complies: std_req__iso26262__support_1045
 
    The version management tool shall document and report (be able to show) the approver of a document.

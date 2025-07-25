@@ -22,7 +22,9 @@ Test Linking to Requirements
     :id: gd_req__verification__link_tests
     :status: valid
     :tags: prio_1_automation, verification
+    :satisfies: wf__verification__unit_test, wf__verification__comp_int_test, wf__verification__feat_int_test, wf__verification__platform_test
     :complies: std_req__iso26262__support_6432
+
 
     For linking test suites to requirements following metadata shall be used:
 
@@ -52,7 +54,9 @@ Test Linking to Requirements
     :id: gd_req__verification__link_tests_cpp
     :status: valid
     :tags: prio_1_automation, verification
+    :satisfies: wf__verification__unit_test, wf__verification__comp_int_test, wf__verification__feat_int_test, wf__verification__platform_test
     :complies: std_req__iso26262__support_6432
+
 
     For linking C++ test suites to requirements **record properties** shall be used. Attributes
     which are common for all test cases can be specified in the Setup Function (SetUp()), the other
@@ -83,7 +87,9 @@ Test Linking to Requirements
     :id: gd_req__verification__link_tests_python
     :status: valid
     :tags: prio_1_automation, verification
+    :satisfies: wf__verification__unit_test, wf__verification__comp_int_test, wf__verification__feat_int_test, wf__verification__platform_test
     :complies: std_req__iso26262__support_6432
+
 
     For linking python tests to requirements **metadata** shall be used. Attributes which are
     common for all test cases can be specified in the Test Suite (above the class), the other
@@ -106,6 +112,7 @@ Test Linking to Requirements
     :id: gd_req__verification__link_tests_rust
     :status: valid
     :tags: prio_1_automation, verification
+    :satisfies: wf__verification__unit_test, wf__verification__comp_int_test, wf__verification__feat_int_test, wf__verification__platform_test
     :complies: std_req__iso26262__support_6432
 
     For linking Rust tests to requirements **#[record_property]** shall be used:
@@ -128,6 +135,8 @@ Test Linking to Requirements
     :id: gd_req__verification__independence
     :status: valid
     :tags: done_automation, verification
+    :satisfies: wf__verification__unit_test, wf__verification__comp_int_test, wf__verification__feat_int_test, wf__verification__platform_test
+    :complies:
 
     The approver of a pull request shall differ from the author(s) of the pull request in all pull requests.
 
@@ -135,6 +144,8 @@ Test Linking to Requirements
     :id: gd_req__verification__reporting
     :status: valid
     :tags: prio_1_automation, verification
+    :satisfies: wf__verification__mod_ver_report
+    :complies:
 
     Verification reports shall be automatically generated. These may be independent documents (i.e. not integrated into sphinx documentation).
     The content of the reports is specified in :need:`gd_temp__platform_ver_report` and :need:`gd_temp__mod_ver_report`.
@@ -143,6 +154,8 @@ Test Linking to Requirements
     :id: gd_req__verification__checks
     :status: valid
     :tags: prio_1_automation, verification
+    :satisfies: wf__verification__unit_test, wf__verification__comp_int_test, wf__verification__feat_int_test, wf__verification__platform_test
+    :complies:
 
     The following checks shall be implemented on test metadata:
 
@@ -157,6 +170,8 @@ Test Linking to Requirements
     :id: gd_req__verification__checks_extended
     :status: draft
     :tags: verification
+    :satisfies: wf__verification__unit_test, wf__verification__comp_int_test, wf__verification__feat_int_test, wf__verification__platform_test
+    :complies:
 
     The following checks shall be implemented on test metadata:
 
