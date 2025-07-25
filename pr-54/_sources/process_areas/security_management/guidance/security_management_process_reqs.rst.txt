@@ -20,7 +20,7 @@ Security Management Process Requirements
    :id: gd_req__security_doc_status
    :status: valid
    :tags: attribute, mandatory
-   :satisfies:
+   :satisfies: wf__cr_mt_security_plan
    :complies:
 
    Security plans shall contain documents references where the status is derived automatically.
@@ -31,7 +31,7 @@ Security Management Process Requirements
    :id: gd_req__security_wp_status
    :status: valid
    :tags: attribute, mandatory
-   :satisfies:
+   :satisfies: wf__cr_mt_security_plan
    :complies:
 
    Security plans shall contain work product references where the accumulated status is derived automatically.
