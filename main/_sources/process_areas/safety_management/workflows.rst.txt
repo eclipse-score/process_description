@@ -44,8 +44,8 @@ Workflows
 .. workflow:: Create/Maintain Safety Package
    :id: wf__cr_mt_safety_package
    :status: valid
-   :responsible: rl__safety_manager
-   :approved_by: rl__technical_lead
+   :responsible: rl__safety_engineer
+   :approved_by: rl__safety_manager
    :input: wp__module_safety_plan, wp__platform_safety_plan, wp__issue_track_system
    :output: wp__module_safety_package, wp__platform_safety_package
    :contains: gd_guidl__saf_package, gd_temp__feature_safety_wp, gd_temp__module_safety_plan
@@ -89,15 +89,15 @@ Workflows
 .. workflow:: Create/Maintain Safety Manual
    :id: wf__cr_mt_safety_manual
    :status: valid
-   :responsible: rl__safety_manager
-   :approved_by: rl__technical_lead
+   :responsible: rl__safety_engineer
+   :approved_by: rl__safety_manager
    :input: wp__requirements__feat_aou, wp__requirements__feat, wp__feature_arch, wp__feature_safety_analysis, wp__feature_dfa, wp__requirements__comp_aou, wp__requirements__comp, wp__component_arch, wp__sw_component_safety_analysis, wp__sw_component_dfa
    :output: wp__platform_safety_manual, wp__module_safety_manual
    :contains: gd_guidl__saf_man, gd_temp__safety_manual
    :has: doc_concept__safety_management__process, doc_getstrt__safety_management__process
 
-   | The Safety Manager collects the necessary input for the safety manuals on platform and module level and documents it.
-   | He makes sure all items are in valid state for a release of the safety manual.
+   | The Safety Engineer collects the necessary input for the safety manuals on platform and module level and documents it.
+   | The safety manager makes sure all items are in valid state for a release of the safety manual.
    | Also for the safety manual a template exists as a guidance.
 
 .. workflow:: Monitor/Verify Safety
@@ -111,5 +111,5 @@ Workflows
    :has: doc_concept__safety_management__process, doc_getstrt__safety_management__process
 
    | The Safety Manager is responsible for the monitoring of the safety activities against the safety plan.
-   | The Safety Manager is responsible to verify, that the preconditions for the "release for production", which are  part of the release notes, are fulfilled.
+   | The Safety Manager is responsible to verify, that the preconditions for the release, which are  part of the release notes, are fulfilled.
    | The Safety Manager is responsible to verify the correctness, completeness and consistency of the release notes.
