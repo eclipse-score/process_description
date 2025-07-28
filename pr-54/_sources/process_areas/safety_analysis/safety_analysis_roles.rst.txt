@@ -15,9 +15,6 @@
 Roles
 #####
 
-Roles
------
-
 .. role:: Safety Engineer
    :id: rl__safety_engineer
    :status: valid

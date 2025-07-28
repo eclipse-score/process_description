@@ -40,7 +40,7 @@ Dependent Failure Initiators
 
     .. comp_saf_dfa:: <Title>
        :violates: <Component architecture>
-       :id: comp_saf_DFA__<Component>__<Element descriptor>
+       :id: comp_saf_dfa__<Component>__<Element descriptor>
        :failure_id: <ID from DFA failure initiators :need:`gd_guidl__dfa_failure_initiators`>
        :failure_effect: "description of failure effect of the failure initiator on the element"
        :mitigated_by: <ID from Component Requirement | ID from AoU Component Requirement>

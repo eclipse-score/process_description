@@ -516,7 +516,7 @@
                   
   <section id="safety-analysis-guidelines">
 <h1>Safety Analysis Guidelines<a class="headerlink" href="#safety-analysis-guidelines" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-41f9fd85">
+<div class="need_container docutils container" id="SNCB-3cd222e5">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_guidl table" id="gd_guidl__safety_analysis">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -626,77 +626,89 @@ can be recognized.</p>
 <span id="examples-fmea-dfa"></span><h2>Examples for FMEA and DFA at feature level<a class="headerlink" href="#examples-for-fmea-and-dfa-at-feature-level" title="Link to this heading">#</a></h2>
 <p>For the examples the architectural diagrams <a class="reference internal" href="../safety_analysis_concept.html#safety-analysis-feature-example"><span class="std std-ref">Feature Architecture</span></a> are used.</p>
 <p><strong>FMEA:</strong></p>
-<p>The dynamic architecture is analysed with the FMEA. Therefore the template <a class="reference internal" href="../../../folder_templates/features/feature_name/safety_analysis/fmea.html#doc__feature_name_fmea" title="doc__feature_name_fmea"><em class="xref need">[Your Feature Name] FMEA (doc__feature_name_fmea)</em></a> is used.</p>
-<p>Use the fault models <a class="reference internal" href="fault_models_guideline.html#gd_guidl__fault_models" title="gd_guidl__fault_models"><em class="xref need">FMEA Fault Models (gd_guidl__fault_models)</em></a> to ensure a structured analysis.
-Use the content of the document <a class="reference internal" href="../../../folder_templates/features/feature_name/safety_analysis/fmea.html#doc__feature_name_fmea" title="doc__feature_name_fmea"><em class="xref need">[Your Feature Name] FMEA (doc__feature_name_fmea)</em></a>, <a class="reference internal" href="../../../folder_templates/modules/module_name/component_name/docs/safety_analysis/fmea.html#doc__component_name_fmea" title="doc__component_name_fmea"><em class="xref need">[Your Component Name] FMEA (doc__component_name_fmea)</em></a> to describe e.g. why
-a fault model is not applicable for the diagram. If there are additional fault models needed, please enlarge the list of fault models.</p>
-<p>The dynamic architecture of the feature architecture is used as an example. The attributes of the template (<a class="reference internal" href="safety_analysis_process_reqs.html#process-requirements-safety-analysis-attributes"><span class="std std-ref">Process Safety Analysis Attributes</span></a>)
-shall be filled in as follows:</p>
+<p>In the dynamic view of the example the “flow component 1” to the user realizes a safety requirement. If we apply the fault model we may
+find possible failures. Therefore we need a mitigation.</p>
 <div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">feat_saf_fmea</span><span class="p">::</span> Component 1 Call message not received
-   <span class="nc">:violates:</span> feat_arc_dyn__Mab__dynamic
-   <span class="nc">:id:</span> feat_saf_fmea__Mab__Component_1_call_not_received
+   <span class="nc">:violates:</span> feat_arc_dyn__mab__dynamic
+   <span class="nc">:id:</span> feat_saf_fmea__mab__comp1_call_nreceived
    <span class="nc">:fault_id:</span> MF_01_01
-   <span class="nc">:failure_effect:</span> Message is not received. Component 1 will not be called.
-   <span class="nc">:mitigated_by:</span> aou_req__Mab__func_call
+   <span class="nc">:failure_effect:</span> Message is not received. This leads to a unavailability of a safety related functionality of the feature.
+   <span class="nc">:mitigated_by:</span> aou_req__mab__call_not_received
    <span class="nc">:mitigation_issue:</span>
    <span class="nc">:sufficient:</span> yes
    <span class="nc">:status:</span> valid
 
-  If the message is not received the feature will not be called. Therefore possible faults have to be mitigated, detected or avoided
-  by the Use. This requirement is addressed by the AoU requirement aou_req__Mab__func_call. Because of a mitigation exists there is no
-  need to create an mitigation issue.
+ If the message is not received by the feature it will be unavailable for the user. This has to be detected by the User because
+ the feature can&#39;t detect if it&#39;s not called. This requirement is addressed by the AoU requirement aou_req__Mab__func_call_not_received.
 </pre></div>
 </div>
-<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">feat_saf_fmea</span><span class="p">::</span> Component 2 unintended triggered
-   <span class="nc">:violates:</span> feat_arc_dyn__Mab__dynamic
-   <span class="nc">:id:</span> feat_saf_fmea__Mab__Component_2
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">feat_saf_fmea</span><span class="p">::</span> Component 1 unintended triggered
+   <span class="nc">:violates:</span> feat_arc_dyn__mab__dynamic
+   <span class="nc">:id:</span> feat_saf_fmea__mab__component_1
    <span class="nc">:fault_id:</span> MF_01_07
-   <span class="nc">:failure_effect:</span> Message is unintended sent. Component 2 will be unintended triggered.
-   <span class="nc">:mitigated_by:</span> feat_req__Mab__func_call_monitor
-   <span class="nc">:mitigation_issue:</span>
-   <span class="nc">:sufficient:</span> yes
-   <span class="nc">:status:</span> valid
-
-  An unintended trigger of the component 2 is detected shall be detected. Therefore the requirement feat_req__Mab__func_call_monitor is created.
-</pre></div>
-</div>
-<p>The FMEA is finished, if all fault models are checked and for each identified fault a sufficient mitigation (e.g. prevention, detection or mitigation) exists. For the validation of the
-FMEA the checklist <a class="reference internal" href="safety_analysis_checklist.html#gd_chklst__safety_analysis" title="gd_chklst__safety_analysis"><em class="xref need">Safety Analysis Checklist T... (gd_chklst__safety_analysis)</em></a> shall be used. For all fault models that are not applicable, the reason has to be documented
-in the content of the document, so it can be recognized.</p>
-<p><strong>DFA:</strong></p>
-<p>The static architecture is analysed with the DFA. Therefore the template <a class="reference internal" href="../../../folder_templates/features/feature_name/safety_analysis/dfa.html#doc__feature_name_dfa" title="doc__feature_name_dfa"><em class="xref need">[Your Feature Name] DFA (doc__feature_name_dfa)</em></a> is used. The goal is to show that
-the freedom from interference is achieved.</p>
-<p>Use the DFA failure initiators <a class="reference internal" href="dfa_failure_initiators.html#gd_guidl__dfa_failure_initiators" title="gd_guidl__dfa_failure_initiators"><em class="xref need">DFA failure initiators (gd_guidl__dfa_failure_initiators)</em></a> to ensure a structured analysis.
-Use the content of the document <a class="reference internal" href="../../../folder_templates/features/feature_name/safety_analysis/dfa.html#doc__feature_name_dfa" title="doc__feature_name_dfa"><em class="xref need">[Your Feature Name] DFA (doc__feature_name_dfa)</em></a>, <a class="reference internal" href="../../../folder_templates/modules/module_name/component_name/docs/safety_analysis/fmea.html#doc__component_name_fmea" title="doc__component_name_fmea"><em class="xref need">[Your Component Name] FMEA (doc__component_name_fmea)</em></a> to describe e.g. why
-a fault model is not applicable for the diagram. If there are additional failure initiators needed, please enlarge the list of failure initiators.</p>
-<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">feat_saf_dfa</span><span class="p">::</span> <span class="nt">&lt;Title&gt;</span>
-   <span class="nc">:violates:</span> feat_arc_sta__Mab__static
-   <span class="nc">:id:</span> feat_saf_DFA__Mab__call_Component_1
-   <span class="nc">:failure_id:</span> SI_01_03
-   <span class="nc">:failure_effect:</span> Constants, or variables, being global to the two software functions
+   <span class="nc">:failure_effect:</span> Message is unintended sent. Component 1 will be unintended triggered.
    <span class="nc">:mitigated_by:</span>
-   <span class="nc">:mitigation_issue:</span> link_to_issue_tracker/issues/issue_1234
-   <span class="nc">:sufficient:</span> no
-   <span class="nc">:status:</span> <span class="nt">&lt;valid|invalid&gt;</span>
-
-  To avoid the failure cause a issue is created in the issue tracker. The issue is not resolved yet, therefore the mitigation (e.g. prevention, detection or mitigation) is not sufficient.
-</pre></div>
-</div>
-<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">feat_saf_dfa</span><span class="p">::</span> <span class="nt">&lt;Title&gt;</span>
-   <span class="nc">:violates:</span> feat_arc_sta__Mab__static
-   <span class="nc">:id:</span> feat_saf_DFA__&lt;Feature&gt;__&lt;Element descriptor&gt;
-   <span class="nc">:failure_id:</span> UI_01_11
-   <span class="nc">:failure_effect:</span> Memory depletion
-   <span class="nc">:mitigated_by:</span> feat_req__Mab__MMU
    <span class="nc">:mitigation_issue:</span>
    <span class="nc">:sufficient:</span> yes
    <span class="nc">:status:</span> valid
 
-  The memory will be managed by the MMU. Therefore the requirement feat_req__Mab__MMU is created.
+ An unintended return can be neglected as the component is ASIL B developed, non complex and sufficiently tested.
 </pre></div>
 </div>
-<p>The DFA is finished, if all fault models are checked and for each identified fault a sufficient mitigation (e.g. prevention, detection or mitigation) exists. For the validation of the
-DFA the checklist <a class="reference internal" href="safety_analysis_checklist.html#gd_chklst__safety_analysis" title="gd_chklst__safety_analysis"><em class="xref need">Safety Analysis Checklist T... (gd_chklst__safety_analysis)</em></a> shall be used.</p>
+<p>For all fault models that are not applicable, the reason has to be documented in the content of the document, so it can be recognized. An example could be that</p>
+<ul class="simple">
+<li><p>Fault model FX_01_04 “loss of execution” is not applicable, because feature is completely deterministic. Other failures like HW failures are not considered in this analysis because it’s developed as a SEooC.</p></li>
+</ul>
+<p><strong>DFA:</strong></p>
+<p>In the static view of the example could be seen that component 1 uses component 2. If we apply the failure initiators we may find the possible failures.</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">feat_saf_dfa</span><span class="p">::</span> Mab data corruption
+   <span class="nc">:violates:</span> feat_arc_sta__mab__static
+   <span class="nc">:id:</span> feat_saf_dfa__mab__data_corruption
+   <span class="nc">:failure_id:</span> CO_01_02
+   <span class="nc">:failure_effect:</span> Data or message corruption will lead to a corruption of the data or message that could violate a safety functionality.
+   <span class="nc">:mitigated_by:</span> feat_req__mab_integritiy_check
+   <span class="nc">:mitigation_issue:</span>
+   <span class="nc">:sufficient:</span> yes
+   <span class="nc">:status:</span> valid
+
+ The feature shall detect and report data corruption.
+
+ The shall be possible to detect and report data corruption.
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Failure initiator SR_01_01 “reused software modules” is not applicable, no software modules are reused in the feature.</p></li>
+<li><p>Failure initiator SI_01_03 “constants, or variables, being global to the two software functions” is not applicable, because it’s not possible to create constants or variables that being global to the two software functions in Rust.</p></li>
+</ul>
+</section>
+<section id="examples-for-fmea-and-dfa-at-component-level">
+<h2>Examples for FMEA and DFA at component level<a class="headerlink" href="#examples-for-fmea-and-dfa-at-component-level" title="Link to this heading">#</a></h2>
+<p>For the examples the architectural diagrams <a class="reference internal" href="../safety_analysis_concept.html#safety-analysis-feature-example"><span class="std std-ref">Feature Architecture</span></a> are used.</p>
+<p><strong>FMEA:</strong></p>
+<p>There is no need to do a FMEA on component 3 as it offers the same as component 1 (which we already analyzed in the feature analysis). So we can skip this component.
+But please note it in the content of the document.</p>
+<p>It has to be considered if a FMEA has to be done on component 4 or if it’s covered by the DFA.</p>
+<p><strong>DFA:</strong></p>
+<p>In the dynamic view we see that Component 4 is returning a message to component 3. If we apply the failure initiators we may find the possible
+failure: “message corruption” of “flow component 3” - but we find out that this is a flow which is not contributing to the safety function.
+Additionally in the static view we see Component 4 is a library used by Component 3. Therefore we have to apply the failure initiators again.</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">comp_saf_dfa</span><span class="p">::</span> Allocated memory
+   <span class="nc">:violates:</span> comp_arc_sta__mab__static
+   <span class="nc">:id:</span> comp_saf_dfa__component4__allocated_memory
+   <span class="nc">:failure_id:</span> SR_01_10
+   <span class="nc">:failure_effect:</span> Component 4 is using allocated memory of Component 3
+   <span class="nc">:mitigated_by:</span> comp_req__memory_management
+   <span class="nc">:mitigation_issue:</span>
+   <span class="nc">:sufficient:</span> yes
+   <span class="nc">:status:</span> valid
+
+   The allocation of the memory of Component 4 is managed by the memory management.
+</pre></div>
+</div>
+<p>For all failure initiators that are not applicable, the reason has to be documented in the content of the document, so it can be recognized. An example could be that</p>
+<ul class="simple">
+<li><p>Failure initiator CO_01_02 “Data or message corruption” of “flow component 3” is not applicable, this flow is not contributing to the safety function.</p></li>
+</ul>
 </section>
 </section>
 
@@ -753,6 +765,7 @@ DFA the checklist <a class="reference internal" href="safety_analysis_checklist.
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#examples-for-fmea-and-dfa-at-feature-level">Examples for FMEA and DFA at feature level</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#examples-for-fmea-and-dfa-at-component-level">Examples for FMEA and DFA at component level</a></li>
 </ul>
   </nav></div>
 
