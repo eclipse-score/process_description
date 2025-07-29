@@ -22,6 +22,7 @@ Safety Analysis Guidelines
    :complies: std_req__iso26262__analysis_841, std_req__iso26262__analysis_842, std_req__iso26262__analysis_843, std_req__iso26262__analysis_844, std_req__iso26262__analysis_847, std_req__iso26262__analysis_848, std_req__iso26262__analysis_849, std_req__iso26262__analysis_8410, std_req__isopas8926__44431, std_req__isopas8926__44432
 
 This document describes the general guidances for Safety Analysis (DFA and FMEA) based on the concept which is defined :need:`Safety Analysis Concept<doc_concept__safety__analysis>`.
+Use the platform DFA as an input so that general safety mechanisms are only defined once and not in every single safety analysis.
 
 Workflow for Safety Analysis
 ============================
@@ -100,7 +101,7 @@ In the dynamic view of the example the "flow component 1" to the user realizes a
 find possible failures. Therefore we need a mitigation.
 
 .. code-block:: rst
-   
+
    .. feat_saf_fmea:: Component 1 Call message not received
       :violates: feat_arc_dyn__mab__dynamic
       :id: feat_saf_fmea__mab__comp1_call_nreceived
@@ -114,23 +115,9 @@ find possible failures. Therefore we need a mitigation.
     If the message is not received by the feature it will be unavailable for the user. This has to be detected by the User because
     the feature can't detect if it's not called. This requirement is addressed by the AoU requirement aou_req__Mab__func_call_not_received.
 
-.. code-block:: rst
-
-   .. feat_saf_fmea:: Component 1 unintended triggered
-      :violates: feat_arc_dyn__mab__dynamic
-      :id: feat_saf_fmea__mab__component_1
-      :fault_id: MF_01_07
-      :failure_effect: Message is unintended sent. Component 1 will be unintended triggered.
-      :mitigated_by:
-      :mitigation_issue:
-      :sufficient: yes
-      :status: valid
-
-    An unintended return can be neglected as the component is ASIL B developed, non complex and sufficiently tested.
-
-
 For all fault models that are not applicable, the reason has to be documented in the content of the document, so it can be recognized. An example could be that
 
+* Fault model FM_01_07 "Message is unintended sent. Component 1 will be unintended triggered." is not applicable, because the component is ASIL B developed, non complex and sufficiently tested.
 * Fault model FX_01_04 "loss of execution" is not applicable, because feature is completely deterministic. Other failures like HW failures are not considered in this analysis because it's developed as a SEooC.
 
 

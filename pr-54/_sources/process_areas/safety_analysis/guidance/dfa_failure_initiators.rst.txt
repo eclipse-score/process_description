@@ -40,7 +40,7 @@ DFA failure initiators
 
 .. note:: Shared libraries are only than to be considered as a shared resource if the feature and the related safety mechanisms are using this specific library. If the library is not used by the feature or the related safety mechanisms, it is not a shared resource.
 
-.. list-table:: DFA shared resources (used for Platform Feature DFA)
+.. list-table:: DFA shared resources (used for Platform DFA)
   :header-rows: 1
   :widths: 10,50,10
 
@@ -180,7 +180,7 @@ DFA failure initiators
 
 :note: Section shall be applied only once to analyse all dependencies of the features. Results shall be checked during of the analysis of new features if this is applicable to the feature.
 
-.. list-table:: DFA development failure initiators (Feature Platform DFA)
+.. list-table:: DFA development failure initiators (Platform DFA)
   :header-rows: 1
   :widths: 10,50,10
 

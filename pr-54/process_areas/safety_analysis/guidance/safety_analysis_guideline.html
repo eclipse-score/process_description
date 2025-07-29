@@ -516,7 +516,7 @@
                   
   <section id="safety-analysis-guidelines">
 <h1>Safety Analysis Guidelines<a class="headerlink" href="#safety-analysis-guidelines" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-3cd222e5">
+<div class="need_container docutils container" id="SNCB-7f003033">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_guidl table" id="gd_guidl__safety_analysis">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -560,7 +560,8 @@
 </table>
 </div>
 </div>
-<p>This document describes the general guidances for Safety Analysis (DFA and FMEA) based on the concept which is defined <a class="reference internal" href="../safety_analysis_concept.html#doc_concept__safety__analysis" title="doc_concept__safety__analysis"><em class="xref need">Safety Analysis Concept (doc_concept__safety__analysis)</em></a>.</p>
+<p>This document describes the general guidances for Safety Analysis (DFA and FMEA) based on the concept which is defined <a class="reference internal" href="../safety_analysis_concept.html#doc_concept__safety__analysis" title="doc_concept__safety__analysis"><em class="xref need">Safety Analysis Concept (doc_concept__safety__analysis)</em></a>.
+Use the platform DFA as an input so that general safety mechanisms are only defined once and not in every single safety analysis.</p>
 <section id="workflow-for-safety-analysis">
 <h2>Workflow for Safety Analysis<a class="headerlink" href="#workflow-for-safety-analysis" title="Link to this heading">#</a></h2>
 <p>The workflow of the safety analysis are described in <a class="reference internal" href="../safety_analysis_workflow.html#workflow-safety-analysis"><span class="std std-ref">Workflow Safety Analysis</span></a>. The single steps in these workflows are described in detail in the following sections.</p>
@@ -642,21 +643,9 @@ find possible failures. Therefore we need a mitigation.</p>
  the feature can&#39;t detect if it&#39;s not called. This requirement is addressed by the AoU requirement aou_req__Mab__func_call_not_received.
 </pre></div>
 </div>
-<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">feat_saf_fmea</span><span class="p">::</span> Component 1 unintended triggered
-   <span class="nc">:violates:</span> feat_arc_dyn__mab__dynamic
-   <span class="nc">:id:</span> feat_saf_fmea__mab__component_1
-   <span class="nc">:fault_id:</span> MF_01_07
-   <span class="nc">:failure_effect:</span> Message is unintended sent. Component 1 will be unintended triggered.
-   <span class="nc">:mitigated_by:</span>
-   <span class="nc">:mitigation_issue:</span>
-   <span class="nc">:sufficient:</span> yes
-   <span class="nc">:status:</span> valid
-
- An unintended return can be neglected as the component is ASIL B developed, non complex and sufficiently tested.
-</pre></div>
-</div>
 <p>For all fault models that are not applicable, the reason has to be documented in the content of the document, so it can be recognized. An example could be that</p>
 <ul class="simple">
+<li><p>Fault model FM_01_07 “Message is unintended sent. Component 1 will be unintended triggered.” is not applicable, because the component is ASIL B developed, non complex and sufficiently tested.</p></li>
 <li><p>Fault model FX_01_04 “loss of execution” is not applicable, because feature is completely deterministic. Other failures like HW failures are not considered in this analysis because it’s developed as a SEooC.</p></li>
 </ul>
 <p><strong>DFA:</strong></p>

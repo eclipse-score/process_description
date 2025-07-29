@@ -15,8 +15,8 @@
 Workproducts Safety Analysis
 ############################
 
-.. workproduct:: Platform Feature DFA
-   :id: wp__feature_platform_dfa
+.. workproduct:: Platform DFA
+   :id: wp__platform_dfa
    :status: valid
    :complies: std_wp__iso26262__software_751, std_wp__iso26262__software_753, std_wp__isopas8926__4524
 
