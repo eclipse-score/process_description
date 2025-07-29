@@ -15,8 +15,8 @@
 Roles
 =====
 
-S-CORE Management Roles
------------------------
+Project Management Roles
+------------------------
 
 .. role:: Project Lead
    :id: rl__project_lead
@@ -39,7 +39,7 @@ S-CORE Management Roles
 
    * Decisions about strategical topics
    * Filling the Project Lead role according to the `Eclipse Foundation Project Handbook <https://www.eclipse.org/projects/handbook>`_
-   * Election of all roles in the S-CORE project, including the :need:`Safety Manager <rl__safety_manager>` on SW platform and module level
+   * Election of all roles in the project, including the :need:`Safety Manager <rl__safety_manager>` on SW platform and module level
    * Approval of release planning and releases
 
    Authority
@@ -48,8 +48,8 @@ S-CORE Management Roles
    * Election and replacement of all role's personnel
    * Decide on addition/removal of modules repositories or split-off of projects
 
-S-CORE process roles
---------------------
+Project Process roles
+---------------------
 
 .. role:: Process Community Member
    :id: rl__process_community
@@ -60,8 +60,8 @@ S-CORE process roles
    The process community members are responsible for the definition of the process architecture of the project integrated management system and how they processes interact.
    The approval and release of the process is done by the safety, quality and security managers and the technical leads (for the parts which affect them).
 
-S-CORE development roles
-------------------------
+Project Development roles
+-------------------------
 
 .. role:: Infrastructure Tooling Community Member
    :id: rl__infrastructure_tooling_community
@@ -76,7 +76,7 @@ S-CORE development roles
    :status: valid
 
    (Eclipse) Open Source Role, person(s) who provide(s) possible contribution(s) as pull request(s) to the main line.
-   Any contributor which contributes code, tests or documentation to S-CORE.
+   Any contributor which contributes code, tests or documentation to the project.
 
    .. note::
       Follows the processes defined by the :need:`rl__process_community`
@@ -102,17 +102,17 @@ S-CORE development roles
    independence argumentation when involved in the development of unit testing on safety critical
    units. In this way the testing community takes a supportive role for unit testing
 
-.. role:: S-CORE Security Team
+.. role:: Project Security Team
    :id: rl__security_team
    :status: valid
    :tags: verification
    :contains: rl__committer
 
    (Eclipse) Open Source Role, person(s) who is(are) responsible for coordinating the resolution of Vulnerabilities within the Project.
-   By default, the S-CORE Security Team includes all Committers. However, the Project may choose a different arrangement and establish specific criteria for team nominations.
+   By default, the project Security Team includes all Committers. However, the Project may choose a different arrangement and establish specific criteria for team nominations.
 
-S-CORE cross functional teams
------------------------------
+Project Feature teams
+---------------------
 
 .. role:: Platform Team
    :id: rl__platform_team
@@ -130,8 +130,8 @@ S-CORE cross functional teams
 
    The module team is responsible for all artifacts within the module SEooCs. Each module has only one responsible team but a team may also be responsible for several (small) modules.
 
-S-CORE Roles list
------------------
+Project Roles list
+------------------
 
 .. needtable::
    :style: table

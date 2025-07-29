@@ -32,10 +32,10 @@ Feature Safety Planning
     - Adjust ``status`` to be ``valid``
     - Adjust ``safety`` and ``tags`` according to your needs
 
-.. list-table:: Feature <feature_name> Workproducts
+.. list-table:: Feature <feature_name> Work products
     :header-rows: 1
 
-    * - Workproduct Id
+    * - Work product Id
       - Link to process
       - Process status
       - Link to issue

@@ -17,16 +17,16 @@
 ISO 26262
 ---------
 
-S-CORE uses the ISO 26262 Second edition 2018-12.
+The project uses the ISO 26262 Second edition 2018-12.
 
 The standard ISO 26262 has several parts. All work products and requirements are
-defined as references below, if those are relevant for the S-CORE project.
+defined as references below, if those are relevant for the project.
 
-Irrelevant parts for S-CORE process requirements and work products compliance are:
+Irrelevant parts for project process requirements and work products compliance are:
 
 "Part 3: Concept phase" - as this is in responsibility of system integrator
 
-"Part 1: Vocabluary" - as it contains no requirements and work products
+"Part 1: Vocabulary" - as it contains no requirements and work products
 
 "Part 5: Product development at the hardware level" - as this is in responsibility of HW provider
 
@@ -34,7 +34,7 @@ Irrelevant parts for S-CORE process requirements and work products compliance ar
 
 "Part 10: Guidelines on ISO 26262" - as it contains no requirements and work products
 
-"Part 11: Guidelines on application of ISO 26262 to semiconductors" - as no semiconductors are in the project scope of S-CORE
+"Part 11: Guidelines on application of ISO 26262 to semiconductors" - as no semiconductors are in the project scope
 
 "Part 12: Adaptation of ISO 26262 for motorcycles" - if needed, motorcycles part is in responsibility of system integrator
 

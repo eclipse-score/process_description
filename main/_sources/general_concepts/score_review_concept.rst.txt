@@ -80,7 +80,7 @@ based on an implemented technical reviewer mechanism defined for the modified fi
 between reviewer(s) and author, the safety manager, security manager or quality manager can be added to the review to moderate a solution.
 
 The initial step for requirements and architecture is the (informal) GitHub review on every Pull-Request
-(resp. Change Request, see `REPLACE_doc__contr_guideline`)
+(resp. Change Request, see :need:`gd_guidl__change__change_request`)
 which creates or modifies one of these work products (subject to inspection).
 After this review the work products are in status "valid", which means they can be used for further development and verification steps.
 In this review the checklist entries shall be considered which are tagged as "incremental".

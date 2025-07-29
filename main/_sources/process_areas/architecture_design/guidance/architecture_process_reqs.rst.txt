@@ -172,7 +172,7 @@ Traceability to Requirements
    * comp_req <-> comp_arc_(sta|dyn|int|int_op)
 
    .. note::
-      In general the traceability is visualized in :numref:`wp_traceability_model`
+      In general the traceability is visualized in :ref:`general_concepts_traceability`
 
 Checks for Architectural Design
 -------------------------------

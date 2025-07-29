@@ -18,9 +18,9 @@ ISO/SAE 21434:2021(E)
 ---------------------
 
 The standard ISO/SAE 21434:2021(E) has several clauses. All work products and requirements are
-defined as references below, if those are relevant for the S-CORE project.
+defined as references below, if those are relevant for the project.
 
-Irrelevant clauses for S-CORE process requirements and work products compliance are:
+Irrelevant clauses for the project process requirements and work products compliance are:
 
 "Clause 1-4:" - as it contains no requirements and work products
 
