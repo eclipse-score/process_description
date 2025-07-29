@@ -34,7 +34,7 @@ All distribution of derivative works shall be made at no cost to the recipient.
 
 Copyright notice
 ----------------
-There is no alteration, transformation or building upon in the *S-CORE* project. Detailed descriptions are included to facilitate process assessment in the *S-CORE* project and are provided in an open source framework free of charge.
+There is no alteration, transformation or building upon in this project. Detailed descriptions are included to facilitate process assessment in projects and are provided in an open source framework free of charge.
 
 
 Tailoring

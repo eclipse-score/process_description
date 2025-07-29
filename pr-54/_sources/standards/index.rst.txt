@@ -28,7 +28,7 @@ Standards
 The graphs below presents statistics on:
 
 * percentage of standard requirements linked to guidances
-* percentage of standard workproducts linked to S-CORE workproducts
+* percentage of standard work products linked to process areas work products
 
 ISO26262
 --------
@@ -39,7 +39,7 @@ ISO26262
    :colors: LightSeaGreen, lightgray
    :filter-func: score_metamodel.checks.standards.my_pie_linked_standard_requirements(iso26262)
 
-.. needpie:: Linked Workproducts ISO26262
+.. needpie:: Linked Work products ISO26262
    :labels: Linked, Not Linked
    :legend:
    :colors: LightSeaGreen, lightgray
@@ -63,7 +63,7 @@ ISOPAS8926
    :colors: LightSeaGreen, lightgray
    :filter-func: score_metamodel.checks.standards.my_pie_linked_standard_requirements(isopas8926)
 
-.. needpie:: Linked Workproducts ISOPAS8926
+.. needpie:: Linked Work products ISOPAS8926
    :labels: Linked, Not Linked
    :legend:
    :colors: LightSeaGreen, lightgray
@@ -78,7 +78,7 @@ ISO21434
    :colors: LightSeaGreen, lightgray
    :filter-func: score_metamodel.checks.standards.my_pie_linked_standard_requirements(isosae21434)
 
-.. needpie:: Linked Workproducts ISO21434
+.. needpie:: Linked Work products ISO21434
    :labels: Linked, Not Linked
    :legend:
    :colors: LightSeaGreen, lightgray

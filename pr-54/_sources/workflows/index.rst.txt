@@ -22,8 +22,8 @@ Workflows
    process_management
 
 
-S-CORE Workflow list
---------------------
+Project Workflow list
+---------------------
 
 .. needtable::
    :style: table

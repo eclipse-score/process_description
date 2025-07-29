@@ -33,7 +33,7 @@ Verification Report
     - Adjust ``safety`` and ``tags`` according to your needs
 
 
-This verification report is based on the `REPLACE_doc__verification_plan`.
+This verification report is based on the :need:`gd_temp__verification__plan`.
 It covers all the components of the above stated module.
 
 Verification Report contains:

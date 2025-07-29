@@ -12,17 +12,10 @@
    # SPDX-License-Identifier: Apache-2.0
    # *******************************************************************************
 
-Workproducts
-============
+Work products
+=============
 
-
-.. figure:: _assets/wp_traceability_model.drawio.svg
-  :width: 100%
-  :align: center
-  :alt: Project work product traceability model
-  :name: wp_traceability_model
-
-  Project development work product traceability model
+Project development work product traceability model overview: :ref:`general_concepts_traceability`
 
 
 Platform management
@@ -45,7 +38,7 @@ General
    :tags: safety
    :complies: std_wp__iso26262__management_552
 
-   Trainings for safety and security for S-CORE
+   Trainings for safety and security for the project
 
 Process
 ^^^^^^^
@@ -99,17 +92,17 @@ Supporting activities
 
 
 
-S-CORE Work product Linkage
----------------------------
+Project Work product Linkage
+----------------------------
 
-.. needpie:: S-CORE workproducts contained in exactly one S-CORE workflow
-   :labels: Not-Linked, Linked Workproduct, Linked Workproduct To Multiple Workflows
+.. needpie:: The project work products contained in exactly one project workflow
+   :labels: Not-Linked, Linked Work product, Linked Work product To Multiple Workflows
    :legend:
    :colors: red, green, blue
    :filter-func: score_metamodel.checks.standards.my_pie_workproducts_contained_in_exactly_one_workflow
 
-S-CORE Work product list
-------------------------
+Project Work product list
+-------------------------
 
 .. needtable::
    :style: table

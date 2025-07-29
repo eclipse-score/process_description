@@ -48,14 +48,14 @@ The purpose of this review checklist is to report status of the formal review fo
           - Comment
 
         * - 1
-          - Is a safety package provided which matches the safety plan (i.e. all planned workproducts referenced)?
+          - Is a safety package provided which matches the safety plan (i.e. all planned work products referenced)?
           - [YES | NO ]
           - <Rationale for result>
 
         * - 2
           - Is the argument how functional safety is achieved, provided in the safety package, plausible and sufficient?
           - NO
-          - The argument is intentionally not provided by S-CORE.
+          - The argument is intentionally not provided by the project.
 
         * - 3
           - Are the referenced work products available?

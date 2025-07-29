@@ -27,7 +27,7 @@ Verification Plan Template
     It provides a template for a software verification plan and should be adapted to the specific
     project needs.
 
-      The document should start with a header following the `REPLACE_doc__documentation_mgt_plan`.
+      The document should start with a header following the :need:`gd_temp__documentation`.
 
       .. code-block:: rst
 

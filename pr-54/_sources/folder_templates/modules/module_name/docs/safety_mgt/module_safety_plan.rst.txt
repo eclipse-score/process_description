@@ -36,7 +36,7 @@ Module Safety Plan
 Functional Safety Management Context
 ====================================
 
-This Safety Plan adds to the :ref:`process_safety_management` all the module development relevant workproducts needed for ISO 26262 conformity.
+This Safety Plan adds to the :ref:`process_safety_management` all the module development relevant work products needed for ISO 26262 conformity.
 
 Functional Safety Management Scope
 ==================================
@@ -58,21 +58,21 @@ Tailoring
 
 Additional to the tailoring in the SW platform project as defined in the :ref:`process_safety_management` we define here the additional tailoring on module level.
 
-- Excluded for this module are additionally the following workproducts (and their related requirements):
-  - <ISO 26262 reference>: <workproduct/requirement> - <Argumentation why it is not needed or replaced by another workproduct or activity.>
+- Excluded for this module are additionally the following work products (and their related requirements):
+  - <ISO 26262 reference>: <work product/requirement> - <Argumentation why it is not needed or replaced by another work product or activity.>
 
-Functional Safety Module Workproducts
-=====================================
+Functional Safety Module Work products
+======================================
 
-One set of workproducts for the module and one set for each component of the module:
+One set of work products for the module and one set for each component of the module:
 
-Module Workproducts List
-------------------------
+Module Work products List
+-------------------------
 
-.. list-table:: Module Workproducts
+.. list-table:: Module Work products
         :header-rows: 1
 
-        * - Workproduct Id
+        * - Work product Id
           - Link to process
           - Process status
           - Link to issue
@@ -122,8 +122,8 @@ Module Workproducts List
           - <WP status (manual)>
 
         * - :need:`wp__module_sw_build_config`
-          - `REPLACE_doc__software_development_plan`
-          - `copy('status', need_id='REPLACE_doc__software_development_plan')`
+          - :need:`gd_temp__software_development_plan`
+          - `copy('status', need_id='gd_temp__software_development_plan')`
           - <Link to issue>
           - <Link to WP>
           - <automated>
@@ -149,13 +149,13 @@ Module Workproducts List
           - :need:`doc__module_name_release_note`
           - :ndf:`copy('status', need_id='doc__module_name_release_note')`
 
-Component <name> Workproducts List
-----------------------------------
+Component <name> Work products List
+-----------------------------------
 
-.. list-table:: Component <name> Workproducts
+.. list-table:: Component <name> Work products
         :header-rows: 1
 
-        * - Workproduct Id
+        * - Work product Id
           - Link to process
           - Process status
           - Link to issue
@@ -252,16 +252,16 @@ In case an OSS element is used in the module, part 6 has to be filled out.
 OSS (sub-)component qualification plan
 ======================================
 
-For the selected OSS component the following workproducts will be implemented (and why):
+For the selected OSS component the following work products will be implemented (and why):
 
 If the OSS element is classified as a
     - component, then the below table shall match the above, adding the reasoning for tailoring of work products according to the OSS component classification.
-    - lower level component, then no workproducts additional to the component’s will be planned and activities below are part of the component’s issues.
+    - lower level component, then no work products additional to the component’s will be planned and activities below are part of the component’s issues.
 
-.. list-table:: OSS (sub-)component <name> Workproducts
+.. list-table:: OSS (sub-)component <name> Work products
         :header-rows: 1
 
-        * - Workproduct Id
+        * - Work product Id
           - Link to issue
           - Reasoning for tailoring
 
