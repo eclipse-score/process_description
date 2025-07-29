@@ -24,7 +24,7 @@ This section discusses a concept for safety analysis. As methods for safety anal
 and FMEA (Failure Mode and Effects Analysis). Inputs for this concept are the requirements of ISO26262 Part 6 Chapter 7 and Part 9 Chapter 7 and 8.
 
 The objective of the **DFA** is to show the absence of dependent failures. Dependent failures are split into common cause failures and cascading failures.
-The freedom from interference (FFI) is the absence of cascading failures. How to perform a safety analysis is described in :need:`gd_guidl__safety_analysis`.
+How to perform a safety analysis is described in :need:`gd_guidl__safety_analysis`.
 To have a structured DFA the failure initiators have to be applied :need:`gd_guidl__dfa_failure_initiators`. These are separated into the following categories:
 
  | - Shared resources: Shared resources are resources that are used by two or more elements. If one element fails, it could lead to a failure in another element.
