@@ -48,11 +48,201 @@ ISO26262
 
 ASPICE 4.0
 ----------
-.. needpie:: Linked Requirements ASPICE 4.0
+.. needpie:: Linked Requirements ASPICE 4.0 MAN.3
    :labels: Linked, Not Linked
    :legend:
    :colors: LightSeaGreen, lightgray
-   :filter-func: score_metamodel.checks.standards.my_pie_linked_standard_requirements(aspice_40)
+   :filter-func: score_metamodel.checks.standards.my_pie_linked_standard_requirements_by_tag(aspice40_man3)
+
+.. needpie:: Linked Requirements ASPICE 4.0 MAN.5
+   :labels: Linked, Not Linked
+   :legend:
+   :colors: LightSeaGreen, lightgray
+   :filter-func: score_metamodel.checks.standards.my_pie_linked_standard_requirements_by_tag(aspice40_man5)
+
+.. needpie:: Linked Requirements ASPICE 4.0 SWE.1
+   :labels: Linked, Not Linked
+   :legend:
+   :colors: LightSeaGreen, lightgray
+   :filter-func: score_metamodel.checks.standards.my_pie_linked_standard_requirements_by_tag(aspice40_swe1)
+
+.. needpie:: Linked Requirements ASPICE 4.0 SWE.2
+   :labels: Linked, Not Linked
+   :legend:
+   :colors: LightSeaGreen, lightgray
+   :filter-func: score_metamodel.checks.standards.my_pie_linked_standard_requirements_by_tag(aspice40_swe2)
+
+.. needpie:: Linked Requirements ASPICE 4.0 SWE.3
+   :labels: Linked, Not Linked
+   :legend:
+   :colors: LightSeaGreen, lightgray
+   :filter-func: score_metamodel.checks.standards.my_pie_linked_standard_requirements_by_tag(aspice40_swe3)
+
+.. needpie:: Linked Requirements ASPICE 4.0 SWE.4
+   :labels: Linked, Not Linked
+   :legend:
+   :colors: LightSeaGreen, lightgray
+   :filter-func: score_metamodel.checks.standards.my_pie_linked_standard_requirements_by_tag(aspice40_swe4)
+
+
+.. needpie:: Linked Requirements ASPICE 4.0 SWE.5
+   :labels: Linked, Not Linked
+   :legend:
+   :colors: LightSeaGreen, lightgray
+   :filter-func: score_metamodel.checks.standards.my_pie_linked_standard_requirements_by_tag(aspice40_swe5)
+
+
+.. needpie:: Linked Requirements ASPICE 4.0 SWE.6
+   :labels: Linked, Not Linked
+   :legend:
+   :colors: LightSeaGreen, lightgray
+   :filter-func: score_metamodel.checks.standards.my_pie_linked_standard_requirements_by_tag(aspice40_swe6)
+
+.. needpie:: Linked Requirements ASPICE 4.0 IIC1
+   :labels: Linked, Not Linked
+   :legend:
+   :colors: LightSeaGreen, lightgray
+   :filter-func: score_metamodel.checks.standards.my_pie_linked_standard_requirements_by_tag(aspice40_iic01)
+
+.. needpie:: Linked Requirements ASPICE 4.0 IIC2
+   :labels: Linked, Not Linked
+   :legend:
+   :colors: LightSeaGreen, lightgray
+   :filter-func: score_metamodel.checks.standards.my_pie_linked_standard_requirements_by_tag(aspice40_iic02)
+
+.. needpie:: Linked Requirements ASPICE 4.0 IIC3
+   :labels: Linked, Not Linked
+   :legend:
+   :colors: LightSeaGreen, lightgray
+   :filter-func: score_metamodel.checks.standards.my_pie_linked_standard_requirements_by_tag(aspice40_iic03)
+
+.. needpie:: Linked Requirements ASPICE 4.0 IIC4
+   :labels: Linked, Not Linked
+   :legend:
+   :colors: LightSeaGreen, lightgray
+   :filter-func: score_metamodel.checks.standards.my_pie_linked_standard_requirements_by_tag(aspice40_iic04)
+
+.. needpie:: Linked Requirements ASPICE 4.0 IIC6
+   :labels: Linked, Not Linked
+   :legend:
+   :colors: LightSeaGreen, lightgray
+   :filter-func: score_metamodel.checks.standards.my_pie_linked_standard_requirements_by_tag(aspice40_iic06)
+
+.. needpie:: Linked Requirements ASPICE 4.0 IIC7
+   :labels: Linked, Not Linked
+   :legend:
+   :colors: LightSeaGreen, lightgray
+   :filter-func: score_metamodel.checks.standards.my_pie_linked_standard_requirements_by_tag(aspice40_iic07)
+
+.. needpie:: Linked Requirements ASPICE 4.0 IIC8
+   :labels: Linked, Not Linked
+   :legend:
+   :colors: LightSeaGreen, lightgray
+   :filter-func: score_metamodel.checks.standards.my_pie_linked_standard_requirements_by_tag(aspice40_iic08)
+
+
+.. needpie:: Linked Requirements ASPICE 4.0 IIC10
+   :labels: Linked, Not Linked
+   :legend:
+   :colors: LightSeaGreen, lightgray
+   :filter-func: score_metamodel.checks.standards.my_pie_linked_standard_requirements_by_tag(aspice40_iic10)
+
+.. needpie:: Linked Requirements ASPICE 4.0 IIC11
+   :labels: Linked, Not Linked
+   :legend:
+   :colors: LightSeaGreen, lightgray
+   :filter-func: score_metamodel.checks.standards.my_pie_linked_standard_requirements_by_tag(aspice40_iic11)
+
+.. needpie:: Linked Requirements ASPICE 4.0 IIC12
+   :labels: Linked, Not Linked
+   :legend:
+   :colors: LightSeaGreen, lightgray
+   :filter-func: score_metamodel.checks.standards.my_pie_linked_standard_requirements_by_tag(aspice40_iic12)
+
+.. needpie:: Linked Requirements ASPICE 4.0 IIC13
+   :labels: Linked, Not Linked
+   :legend:
+   :colors: LightSeaGreen, lightgray
+   :filter-func: score_metamodel.checks.standards.my_pie_linked_standard_requirements_by_tag(aspice40_iic13)
+
+.. needpie:: Linked Requirements ASPICE 4.0 IIC14
+   :labels: Linked, Not Linked
+   :legend:
+   :colors: LightSeaGreen, lightgray
+   :filter-func: score_metamodel.checks.standards.my_pie_linked_standard_requirements_by_tag(aspice40_iic14)
+
+.. needpie:: Linked Requirements ASPICE 4.0 IIC15
+   :labels: Linked, Not Linked
+   :legend:
+   :colors: LightSeaGreen, lightgray
+   :filter-func: score_metamodel.checks.standards.my_pie_linked_standard_requirements_by_tag(aspice40_iic15)
+
+
+.. needpie:: Linked Requirements ASPICE 4.0 IIC16
+   :labels: Linked, Not Linked
+   :legend:
+   :colors: LightSeaGreen, lightgray
+   :filter-func: score_metamodel.checks.standards.my_pie_linked_standard_requirements_by_tag(aspice40_iic16)
+
+.. needpie:: Linked Requirements ASPICE 4.0 IIC17
+   :labels: Linked, Not Linked
+   :legend:
+   :colors: LightSeaGreen, lightgray
+   :filter-func: score_metamodel.checks.standards.my_pie_linked_standard_requirements_by_tag(aspice40_iic17)
+
+.. needpie:: Linked Requirements ASPICE 4.0 IIC18
+   :labels: Linked, Not Linked
+   :legend:
+   :colors: LightSeaGreen, lightgray
+   :filter-func: score_metamodel.checks.standards.my_pie_linked_standard_requirements_by_tag(aspice40_iic18)
+
+.. needpie:: Linked Requirements ASPICE 4.0 IIC19
+   :labels: Linked, Not Linked
+   :legend:
+   :colors: LightSeaGreen, lightgray
+   :filter-func: score_metamodel.checks.standards.my_pie_linked_standard_requirements_by_tag(aspice40_iic19)
+
+.. needpie:: Linked Requirements ASPICE 4.0 REU2
+   :labels: Linked, Not Linked
+   :legend:
+   :colors: LightSeaGreen, lightgray
+   :filter-func: score_metamodel.checks.standards.my_pie_linked_standard_requirements_by_tag(aspice40_reu2)
+
+.. needpie:: Linked Requirements ASPICE 4.0 PIM3
+   :labels: Linked, Not Linked
+   :legend:
+   :colors: LightSeaGreen, lightgray
+   :filter-func: score_metamodel.checks.standards.my_pie_linked_standard_requirements_by_tag(aspice40_pim3)
+
+.. needpie:: Linked Requirements ASPICE 4.0 SPL2
+   :labels: Linked, Not Linked
+   :legend:
+   :colors: LightSeaGreen, lightgray
+   :filter-func: score_metamodel.checks.standards.my_pie_linked_standard_requirements_by_tag(aspice40_spl2)
+
+.. needpie:: Linked Requirements ASPICE 4.0 SUP1
+   :labels: Linked, Not Linked
+   :legend:
+   :colors: LightSeaGreen, lightgray
+   :filter-func: score_metamodel.checks.standards.my_pie_linked_standard_requirements_by_tag(aspice40_sup1)
+
+.. needpie:: Linked Requirements ASPICE 4.0 SUP8
+   :labels: Linked, Not Linked
+   :legend:
+   :colors: LightSeaGreen, lightgray
+   :filter-func: score_metamodel.checks.standards.my_pie_linked_standard_requirements_by_tag(aspice40_sup8)
+
+.. needpie:: Linked Requirements ASPICE 4.0 SUP9
+   :labels: Linked, Not Linked
+   :legend:
+   :colors: LightSeaGreen, lightgray
+   :filter-func: score_metamodel.checks.standards.my_pie_linked_standard_requirements_by_tag(aspice40_sup9)
+
+.. needpie:: Linked Requirements ASPICE 4.0 SUP10
+   :labels: Linked, Not Linked
+   :legend:
+   :colors: LightSeaGreen, lightgray
+   :filter-func: score_metamodel.checks.standards.my_pie_linked_standard_requirements_by_tag(aspice40_sup10)
 
 
 ISOPAS8926

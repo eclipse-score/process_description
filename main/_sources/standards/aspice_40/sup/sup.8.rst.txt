@@ -145,3 +145,5 @@ Base practices
       This may include references to corresponding procedures or regulations.
 
 
+.. needextend:: "c.this_doc()"
+   :+tags: aspice40_sup8

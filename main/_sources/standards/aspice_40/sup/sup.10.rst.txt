@@ -109,3 +109,5 @@ Base practices
          Examples for informing affected parties can be daily standup meetings or tool-supported workflows.
 
 
+.. needextend:: "c.this_doc()" 
+   :+tags: aspice40_sup10

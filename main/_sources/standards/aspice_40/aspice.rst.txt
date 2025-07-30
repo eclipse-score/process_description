@@ -418,8 +418,8 @@ Generic practices
 
       For guidance on how to perform process improvements see the Process Improvement process (PIM.3).
 
-.. needextend:: docname is not None and "process/standards/aspice" in docname
-   :+tags: aspice
+.. needextend:: "c.this_doc()" 
+   :+tags: aspice40_gp3
 
 Appendix
 --------
@@ -427,4 +427,4 @@ Appendix
 .. needtable:: General Practices
    :style: datatables
    :columns: id;title;status;content
-   :filter: id.startswith("std_req__aspice_40__gp") and is_external == False
+   :filter: c.this_doc()

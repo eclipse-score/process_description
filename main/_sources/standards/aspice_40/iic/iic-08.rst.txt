@@ -156,3 +156,6 @@
      or common causes of variation
    - Effective implementation of these counter measures
 
+
+.. needextend:: "c.this_doc()" 
+   :+tags: aspice40_iic08

@@ -64,3 +64,6 @@
    - Required services
    - Required samples
 
+
+.. needextend:: "c.this_doc()" 
+   :+tags: aspice40_iic10
