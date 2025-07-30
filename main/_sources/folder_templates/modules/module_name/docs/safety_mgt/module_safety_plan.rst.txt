@@ -316,6 +316,7 @@ Component Requirements Status
 -----------------------------
 
 .. needtable::
+   :filter: "component_name" in docname and "requirements" in docname and docname is not None
    :style: table
    :types: comp_req
    :tags: component_name
@@ -327,6 +328,7 @@ Component AoU Status
 --------------------
 
 .. needtable::
+   :filter: "component_name" in docname and "requirements" in docname and docname is not None
    :style: table
    :types: aou_req
    :tags: component_name
@@ -338,6 +340,7 @@ Component Architecture Status
 -----------------------------
 
 .. needtable::
+   :filter: "component_name" in docname and "requirements" in docname and docname is not None
    :style: table
    :types: comp_arc_sta; comp_arc_dyn
    :tags: component_name
