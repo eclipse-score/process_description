@@ -63,10 +63,17 @@
     <script src="../_static/sphinx-needs/libs/html/datatables_loader.js?v=a2cae175"></script>
     <script src="../_static/sphinx-needs/libs/html/sphinx_needs_collapse.js?v=dca66431"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'workflows/index';</script>
+    <script>
+        DOCUMENTATION_OPTIONS.theme_version = '0.16.1';
+        DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://eclipse-score.github.io/process_description/versions.json';
+        DOCUMENTATION_OPTIONS.theme_switcher_version_match = '';
+        DOCUMENTATION_OPTIONS.show_version_warning_banner =
+            false;
+        </script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Process Management" href="process_management.html" />
-    <link rel="prev" title="Workproducts" href="../workproducts/index.html" />
+    <link rel="prev" title="Work products" href="../workproducts/index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="0.1" />
@@ -175,7 +182,7 @@
 
 <li class="nav-item ">
   <a class="nav-link nav-internal" href="../workproducts/index.html">
-    Workproducts
+    Work products
   </a>
 </li>
 
@@ -260,6 +267,26 @@
         </li>
 </ul></div>
       
+        <div class="navbar-item">
+<div class="version-switcher__container dropdown pst-js-only">
+  <button id="pst-version-switcher-button-2"
+    type="button"
+    class="version-switcher__button btn btn-sm dropdown-toggle"
+    data-bs-toggle="dropdown"
+    aria-haspopup="listbox"
+    aria-controls="pst-version-switcher-list-2"
+    aria-label="Version switcher list"
+  >
+    Choose version  <!-- this text may get changed later by javascript -->
+    <span class="caret"></span>
+  </button>
+  <div id="pst-version-switcher-list-2"
+    class="version-switcher__menu dropdown-menu list-group-flush py-0"
+    role="listbox" aria-labelledby="pst-version-switcher-button-2">
+    <!-- dropdown will be populated by javascript on page load -->
+  </div>
+</div></div>
+      
     </div>
     
   </div>
@@ -336,7 +363,7 @@
 
 <li class="nav-item ">
   <a class="nav-link nav-internal" href="../workproducts/index.html">
-    Workproducts
+    Work products
   </a>
 </li>
 
@@ -401,6 +428,26 @@
             <span class="sr-only">GitHub</span></a>
         </li>
 </ul></div>
+        
+          <div class="navbar-item">
+<div class="version-switcher__container dropdown pst-js-only">
+  <button id="pst-version-switcher-button-3"
+    type="button"
+    class="version-switcher__button btn btn-sm dropdown-toggle"
+    data-bs-toggle="dropdown"
+    aria-haspopup="listbox"
+    aria-controls="pst-version-switcher-list-3"
+    aria-label="Version switcher list"
+  >
+    Choose version  <!-- this text may get changed later by javascript -->
+    <span class="caret"></span>
+  </button>
+  <div id="pst-version-switcher-list-3"
+    class="version-switcher__menu dropdown-menu list-group-flush py-0"
+    role="listbox" aria-labelledby="pst-version-switcher-button-3">
+    <!-- dropdown will be populated by javascript on page load -->
+  </div>
+</div></div>
         
       </div>
     
@@ -479,8 +526,8 @@
 <li class="toctree-l1"><a class="reference internal" href="process_management.html">Process Management</a></li>
 </ul>
 </div>
-<section id="s-core-workflow-list">
-<h2>S-CORE Workflow list<a class="headerlink" href="#s-core-workflow-list" title="Link to this heading">#</a></h2>
+<section id="project-workflow-list">
+<h2>Project Workflow list<a class="headerlink" href="#project-workflow-list" title="Link to this heading">#</a></h2>
 <div class="needstable_wrapper docutils container" id="needtable-workflows/index-0">
 <div class="pst-scrollable-table-container"><table class="NEEDS_TABLE table" id="needtable-workflows/index-0-table_node">
 <colgroup>
@@ -503,7 +550,7 @@
 <td class="needs_id"><p><a class="reference internal" href="../process_areas/safety_analysis/safety_analysis_workflow.html#wf__analyse_featarch">wf__analyse_featarch</a></p></td>
 <td class="needs_tags"><p>safety_analysis</p></td>
 </tr>
-<tr class="need row-even"><td class="needs_title"><p>Analyse Platform Feature Architecture</p></td>
+<tr class="need row-even"><td class="needs_title"><p>Analyze Platform Feature Architecture</p></td>
 <td class="needs_id"><p><a class="reference internal" href="../process_areas/safety_analysis/safety_analysis_workflow.html#wf__analyse_platform_featarch">wf__analyse_platform_featarch</a></p></td>
 <td class="needs_tags"><p>safety_analysis</p></td>
 </tr>
@@ -675,7 +722,7 @@
 <td class="needs_id"><p><a class="reference internal" href="../process_areas/verification/workflows.html#wf__verification__plan_maintain">wf__verification__plan_maintain</a></p></td>
 <td class="needs_tags"><p>verification</p></td>
 </tr>
-<tr class="need row-odd"><td class="needs_title"><p>Monitor Safety Analyses and DFA</p></td>
+<tr class="need row-odd"><td class="needs_title"><p>Monitor FMEA and DFA</p></td>
 <td class="needs_id"><p><a class="reference internal" href="../process_areas/safety_analysis/safety_analysis_workflow.html#wf__mr_saf_analyses_dfa">wf__mr_saf_analyses_dfa</a></p></td>
 <td class="needs_tags"><p>safety_analysis</p></td>
 </tr>
@@ -739,13 +786,13 @@
 <td class="needs_id"><p><a class="reference internal" href="../process_areas/change_management/change_management_workflow.html#wf__change__rv_ap_change_request">wf__change__rv_ap_change_request</a></p></td>
 <td class="needs_tags"><p>change_management</p></td>
 </tr>
-<tr class="need row-odd"><td class="needs_title"><p>Verify Implementation</p></td>
-<td class="needs_id"><p><a class="reference internal" href="../process_areas/implementation/implementation_workflow.html#wf__sw_verify_implementation">wf__sw_verify_implementation</a></p></td>
-<td class="needs_tags"><p>implementation</p></td>
-</tr>
-<tr class="need row-even"><td class="needs_title"><p>Verify Safety Analyses and DFA</p></td>
+<tr class="need row-odd"><td class="needs_title"><p>Verify FMEA and DFA</p></td>
 <td class="needs_id"><p><a class="reference internal" href="../process_areas/safety_analysis/safety_analysis_workflow.html#wf__vy_saf_analyses_dfa">wf__vy_saf_analyses_dfa</a></p></td>
 <td class="needs_tags"><p>safety_analysis</p></td>
+</tr>
+<tr class="need row-even"><td class="needs_title"><p>Verify Implementation</p></td>
+<td class="needs_id"><p><a class="reference internal" href="../process_areas/implementation/implementation_workflow.html#wf__sw_verify_implementation">wf__sw_verify_implementation</a></p></td>
+<td class="needs_tags"><p>implementation</p></td>
 </tr>
 <tr class="need row-odd"><td class="needs_title"><p>Verify/Approve Platform Release</p></td>
 <td class="needs_id"><p><a class="reference internal" href="../process_areas/quality_management/quality_workflow.html#wf__vy_ap_pltrelease">wf__vy_ap_pltrelease</a></p></td>
@@ -774,7 +821,7 @@
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Workproducts</p>
+        <p class="prev-next-title">Work products</p>
       </div>
     </a>
     <a class="right-next"
@@ -805,7 +852,7 @@
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#s-core-workflow-list">S-CORE Workflow list</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project-workflow-list">Project Workflow list</a></li>
 </ul>
   </nav></div>
 
@@ -813,7 +860,7 @@
 
   
   <div class="tocsection editthispage">
-    <a href="https://github.com/dummy/dummy/edit/main/docs/workflows/index.rst">
+    <a href="https://github.com/eclipse-score/process_description/edit/main/docs/workflows/index.rst">
       <i class="fa-solid fa-pencil"></i>
       
       

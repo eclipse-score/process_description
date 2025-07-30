@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Dependent Failure Analysis &#8212; Process Description  documentation</title>
+    <title>DFA (Dependent Failure Analysis) &#8212; Process Description  documentation</title>
   
   
   
@@ -63,10 +63,17 @@
     <script src="../../../../_static/sphinx-needs/libs/html/datatables_loader.js?v=a2cae175"></script>
     <script src="../../../../_static/sphinx-needs/libs/html/sphinx_needs_collapse.js?v=dca66431"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'folder_templates/features/feature_name/safety_analysis/dfa';</script>
+    <script>
+        DOCUMENTATION_OPTIONS.theme_version = '0.16.1';
+        DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://eclipse-score.github.io/process_description/versions.json';
+        DOCUMENTATION_OPTIONS.theme_switcher_version_match = '';
+        DOCUMENTATION_OPTIONS.show_version_warning_banner =
+            false;
+        </script>
     <link rel="index" title="Index" href="../../../../genindex.html" />
     <link rel="search" title="Search" href="../../../../search.html" />
-    <link rel="next" title="Modules" href="../../../modules/index.html" />
-    <link rel="prev" title="Safety Analysis : FMEA" href="fmea.html" />
+    <link rel="next" title="Platform DFA (Dependent Failure Analysis)" href="platform_dfa.html" />
+    <link rel="prev" title="FMEA (Failure Modes and Effects Analysis)" href="fmea.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="0.1" />
@@ -175,7 +182,7 @@
 
 <li class="nav-item ">
   <a class="nav-link nav-internal" href="../../../../workproducts/index.html">
-    Workproducts
+    Work products
   </a>
 </li>
 
@@ -260,6 +267,26 @@
         </li>
 </ul></div>
       
+        <div class="navbar-item">
+<div class="version-switcher__container dropdown pst-js-only">
+  <button id="pst-version-switcher-button-2"
+    type="button"
+    class="version-switcher__button btn btn-sm dropdown-toggle"
+    data-bs-toggle="dropdown"
+    aria-haspopup="listbox"
+    aria-controls="pst-version-switcher-list-2"
+    aria-label="Version switcher list"
+  >
+    Choose version  <!-- this text may get changed later by javascript -->
+    <span class="caret"></span>
+  </button>
+  <div id="pst-version-switcher-list-2"
+    class="version-switcher__menu dropdown-menu list-group-flush py-0"
+    role="listbox" aria-labelledby="pst-version-switcher-button-2">
+    <!-- dropdown will be populated by javascript on page load -->
+  </div>
+</div></div>
+      
     </div>
     
   </div>
@@ -336,7 +363,7 @@
 
 <li class="nav-item ">
   <a class="nav-link nav-internal" href="../../../../workproducts/index.html">
-    Workproducts
+    Work products
   </a>
 </li>
 
@@ -402,6 +429,26 @@
         </li>
 </ul></div>
         
+          <div class="navbar-item">
+<div class="version-switcher__container dropdown pst-js-only">
+  <button id="pst-version-switcher-button-3"
+    type="button"
+    class="version-switcher__button btn btn-sm dropdown-toggle"
+    data-bs-toggle="dropdown"
+    aria-haspopup="listbox"
+    aria-controls="pst-version-switcher-list-3"
+    aria-label="Version switcher list"
+  >
+    Choose version  <!-- this text may get changed later by javascript -->
+    <span class="caret"></span>
+  </button>
+  <div id="pst-version-switcher-list-3"
+    class="version-switcher__menu dropdown-menu list-group-flush py-0"
+    role="listbox" aria-labelledby="pst-version-switcher-button-3">
+    <!-- dropdown will be populated by javascript on page load -->
+  </div>
+</div></div>
+        
       </div>
     
   </div>
@@ -417,8 +464,9 @@
 <li class="toctree-l3"><a class="reference internal" href="../requirements/index.html">Requirements</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../architecture/index.html">Feature Architecture</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../safety_planning/index.html">Feature Safety Planning</a></li>
-<li class="toctree-l3"><a class="reference internal" href="fmea.html">Safety Analysis : FMEA</a></li>
-<li class="toctree-l3 current active"><a class="current reference internal" href="#">Dependent Failure Analysis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="fmea.html">FMEA (Failure Modes and Effects Analysis)</a></li>
+<li class="toctree-l3 current active"><a class="current reference internal" href="#">DFA (Dependent Failure Analysis)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="platform_dfa.html">Platform DFA (Dependent Failure Analysis)</a></li>
 </ul>
 </details></li>
 </ul>
@@ -474,7 +522,7 @@
     
     <li class="breadcrumb-item"><a href="../index.html" class="nav-link">[Your Feature Name]</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Dependent Failure Analysis</span></li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">DFA (Dependent Failure Analysis)</span></li>
   </ul>
 </nav>
 </div>
@@ -491,9 +539,9 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="dependent-failure-analysis">
-<h1>Dependent Failure Analysis<a class="headerlink" href="#dependent-failure-analysis" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-fcbcf428">
+  <section id="dfa-dependent-failure-analysis">
+<h1>DFA (Dependent Failure Analysis)<a class="headerlink" href="#dfa-dependent-failure-analysis" title="Link to this heading">#</a></h1>
+<div class="need_container docutils container" id="SNCB-46f9f3bc">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_document table" id="doc__feature_name_dfa">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -538,6 +586,10 @@
 </table>
 </div>
 </div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Use the content of the document to describe e.g. why a fault model is not applicable for the diagram.</p>
+</div>
 <div class="admonition attention">
 <p class="admonition-title">Attention</p>
 <p>The above directive must be updated according to your Feature.</p>
@@ -548,24 +600,26 @@
 <li><p>Adjust <code class="docutils literal notranslate"><span class="pre">safety</span></code> and <code class="docutils literal notranslate"><span class="pre">tags</span></code> according to your needs</p></li>
 </ul>
 </div>
-<section id="dependent-failure-intitiators">
-<h2>Dependent Failure Intitiators<a class="headerlink" href="#dependent-failure-intitiators" title="Link to this heading">#</a></h2>
-<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">feat_saf_dfa</span><span class="p">::</span> <span class="nt">&lt;Element descriptor&gt;</span>
-   <span class="nc">:id:</span> feat_saf_DFA__&lt;Feature&gt;__&lt;Element descriptor&gt;
-   <span class="nc">:violation_id:</span> <span class="nt">&lt;ID from Dependent Failure Initiators list :need:`gd_guidl__dfi`&gt;</span>
-   <span class="nc">:violation_effect:</span> <span class="nt">&lt;Effect caused by the initiator (leading to a violation of a safety goal)&gt;</span>
-   <span class="nc">:verifies:</span> <span class="nt">&lt;ID from Feature Architecture&gt;</span>
-   <span class="nc">:mitigated_by:</span> <span class="nt">&lt; NONE|ID from Feature Requirement&gt;</span>
-   <span class="nc">:sufficient:</span> <span class="nt">&lt;yes|no&gt;</span>
-   <span class="nc">:argument:</span> <span class="nt">&lt;text to argument why measure is sufficient&gt;</span>
-   <span class="nc">:status:</span> <span class="nt">&lt;valid|invalid&gt;</span>
+<section id="dependent-failure-initiators">
+<h2>Dependent Failure Initiators<a class="headerlink" href="#dependent-failure-initiators" title="Link to this heading">#</a></h2>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">   ..</span> <span class="ow">feat_saf_dfa</span><span class="p">::</span> <span class="nt">&lt;Title&gt;</span>
+      <span class="nc">:violates:</span> <span class="nt">&lt;Feature architecture&gt;</span>
+      <span class="nc">:id:</span> feat_saf_dfa__&lt;Feature&gt;__&lt;Element descriptor&gt;
+      <span class="nc">:failure_id:</span> <span class="nt">&lt;ID from DFA failure initiators :need:`gd_guidl__dfa_failure_initiators`&gt;</span>
+      <span class="nc">:failure_effect:</span> &quot;description of failure effect of the failure initiator on the element&quot;
+      <span class="nc">:mitigated_by:</span> <span class="nt">&lt;ID from Feature Requirement | ID from AoU Feature Requirement&gt;</span>
+      <span class="nc">:mitigation_issue:</span> <span class="nt">&lt;ID from Issue Tracker&gt;</span>
+      <span class="nc">:sufficient:</span> <span class="nt">&lt;yes|no&gt;</span>
+      <span class="nc">:status:</span> <span class="nt">&lt;valid|invalid&gt;</span>
+
+<span class="p">..</span> <span class="ow">note</span><span class="p">::</span>   argument is inside the &#39;content&#39;. Therefore content is mandatory
 </pre></div>
 </div>
 <div class="admonition attention">
 <p class="admonition-title">Attention</p>
 <p>The above directive must be updated according to your feature DFA.</p>
 <ul class="simple">
-<li><p>Remove the <code class="docutils literal notranslate"><span class="pre">code-block</span></code></p></li>
+<li><p>The above “code-block” directive must be updated</p></li>
 <li><p>Fill in all the needed information in the &lt;brackets&gt;</p></li>
 </ul>
 </div>
@@ -588,15 +642,15 @@
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Safety Analysis : FMEA</p>
+        <p class="prev-next-title">FMEA (Failure Modes and Effects Analysis)</p>
       </div>
     </a>
     <a class="right-next"
-       href="../../../modules/index.html"
+       href="platform_dfa.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Modules</p>
+        <p class="prev-next-title">Platform DFA (Dependent Failure Analysis)</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -619,7 +673,7 @@
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dependent-failure-intitiators">Dependent Failure Intitiators</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dependent-failure-initiators">Dependent Failure Initiators</a></li>
 </ul>
   </nav></div>
 
@@ -627,7 +681,7 @@
 
   
   <div class="tocsection editthispage">
-    <a href="https://github.com/dummy/dummy/edit/main/docs/folder_templates/features/feature_name/safety_analysis/dfa.rst">
+    <a href="https://github.com/eclipse-score/process_description/edit/main/docs/folder_templates/features/feature_name/safety_analysis/dfa.rst">
       <i class="fa-solid fa-pencil"></i>
       
       

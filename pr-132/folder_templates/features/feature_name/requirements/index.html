@@ -63,6 +63,13 @@
     <script src="../../../../_static/sphinx-needs/libs/html/datatables_loader.js?v=a2cae175"></script>
     <script src="../../../../_static/sphinx-needs/libs/html/sphinx_needs_collapse.js?v=dca66431"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'folder_templates/features/feature_name/requirements/index';</script>
+    <script>
+        DOCUMENTATION_OPTIONS.theme_version = '0.16.1';
+        DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://eclipse-score.github.io/process_description/versions.json';
+        DOCUMENTATION_OPTIONS.theme_switcher_version_match = '';
+        DOCUMENTATION_OPTIONS.show_version_warning_banner =
+            false;
+        </script>
     <link rel="index" title="Index" href="../../../../genindex.html" />
     <link rel="search" title="Search" href="../../../../search.html" />
     <link rel="next" title="Feature Architecture" href="../architecture/index.html" />
@@ -175,7 +182,7 @@
 
 <li class="nav-item ">
   <a class="nav-link nav-internal" href="../../../../workproducts/index.html">
-    Workproducts
+    Work products
   </a>
 </li>
 
@@ -260,6 +267,26 @@
         </li>
 </ul></div>
       
+        <div class="navbar-item">
+<div class="version-switcher__container dropdown pst-js-only">
+  <button id="pst-version-switcher-button-2"
+    type="button"
+    class="version-switcher__button btn btn-sm dropdown-toggle"
+    data-bs-toggle="dropdown"
+    aria-haspopup="listbox"
+    aria-controls="pst-version-switcher-list-2"
+    aria-label="Version switcher list"
+  >
+    Choose version  <!-- this text may get changed later by javascript -->
+    <span class="caret"></span>
+  </button>
+  <div id="pst-version-switcher-list-2"
+    class="version-switcher__menu dropdown-menu list-group-flush py-0"
+    role="listbox" aria-labelledby="pst-version-switcher-button-2">
+    <!-- dropdown will be populated by javascript on page load -->
+  </div>
+</div></div>
+      
     </div>
     
   </div>
@@ -336,7 +363,7 @@
 
 <li class="nav-item ">
   <a class="nav-link nav-internal" href="../../../../workproducts/index.html">
-    Workproducts
+    Work products
   </a>
 </li>
 
@@ -402,6 +429,26 @@
         </li>
 </ul></div>
         
+          <div class="navbar-item">
+<div class="version-switcher__container dropdown pst-js-only">
+  <button id="pst-version-switcher-button-3"
+    type="button"
+    class="version-switcher__button btn btn-sm dropdown-toggle"
+    data-bs-toggle="dropdown"
+    aria-haspopup="listbox"
+    aria-controls="pst-version-switcher-list-3"
+    aria-label="Version switcher list"
+  >
+    Choose version  <!-- this text may get changed later by javascript -->
+    <span class="caret"></span>
+  </button>
+  <div id="pst-version-switcher-list-3"
+    class="version-switcher__menu dropdown-menu list-group-flush py-0"
+    role="listbox" aria-labelledby="pst-version-switcher-button-3">
+    <!-- dropdown will be populated by javascript on page load -->
+  </div>
+</div></div>
+        
       </div>
     
   </div>
@@ -417,8 +464,9 @@
 <li class="toctree-l3 current active"><a class="current reference internal" href="#">Requirements</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../architecture/index.html">Feature Architecture</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../safety_planning/index.html">Feature Safety Planning</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../safety_analysis/fmea.html">Safety Analysis : FMEA</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../safety_analysis/dfa.html">Dependent Failure Analysis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../safety_analysis/fmea.html">FMEA (Failure Modes and Effects Analysis)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../safety_analysis/dfa.html">DFA (Dependent Failure Analysis)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../safety_analysis/platform_dfa.html">Platform DFA (Dependent Failure Analysis)</a></li>
 </ul>
 </details></li>
 </ul>
@@ -493,7 +541,7 @@
                   
   <section id="requirements">
 <h1>Requirements<a class="headerlink" href="#requirements" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-d0d862d1">
+<div class="need_container docutils container" id="SNCB-a9b1f4ba">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_document table" id="doc__feature_name_requirements">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -550,7 +598,7 @@
 </div>
 <section id="headlines-for-the-list-of-requirements-if-structuring-is-needed">
 <h2>&lt;Headlines (for the list of requirements if structuring is needed)&gt;<a class="headerlink" href="#headlines-for-the-list-of-requirements-if-structuring-is-needed" title="Link to this heading">#</a></h2>
-<div class="need_container docutils container" id="SNCB-0808407b">
+<div class="need_container docutils container" id="SNCB-ab218333">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_stkh_req table" id="stkh_req__requirements__template">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -559,7 +607,7 @@
 </td>
 <td class="head_center" colspan="2"><div class="needs_head line-block">
 <div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">invalid</span></span></span></div>
-<div class="line"><span></span></div>
+<div class="line"><span><span class="needs_security"><span class="needs_label">security: </span><span class="needs_data">YES</span></span></span></div>
 <div class="line"><span><span class="needs_safety"><span class="needs_label">safety: </span><span class="needs_data">ASIL_B</span></span></span></div>
 </div>
 </td>
@@ -573,6 +621,7 @@
 <div class="line"><span class="needs_rationale"><span class="needs_label">rationale: </span><span class="needs_data">Exists just for the template example</span></span></div>
 <div class="line"><span class="needs_reqtype"><span class="needs_label">reqtype: </span><span class="needs_data">Non-Functional</span></span></div>
 <div class="line"><span class="needs_safety"><span class="needs_label">safety: </span><span class="needs_data">ASIL_B</span></span></div>
+<div class="line"><span class="needs_security"><span class="needs_label">security: </span><span class="needs_data">YES</span></span></div>
 </span></span></div>
 <div class="line"><span><div class="line">satisfied by: <span class="satisfies"><span><a class="reference internal" href="#feat_req__feature_name__some_title" title="stkh_req__requirements__template">feat_req__feature_name__some_title</a></span></span></div>
 </span></div>
@@ -600,7 +649,7 @@
 <p class="admonition-title">Attention</p>
 <p>The above stakeholder requirement must be removed, it just serves as a link target for this template.</p>
 </div>
-<div class="need_container docutils container" id="SNCB-a7b9a810">
+<div class="need_container docutils container" id="SNCB-710f1c35">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_feat_req table" id="feat_req__feature_name__some_title">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -651,7 +700,7 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-fdfb90fc">
+<div class="need_container docutils container" id="SNCB-8f616f70">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_aou_req table" id="aou_req__feature_name__some_other_title">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -764,7 +813,7 @@
 
   
   <div class="tocsection editthispage">
-    <a href="https://github.com/dummy/dummy/edit/main/docs/folder_templates/features/feature_name/requirements/index.rst">
+    <a href="https://github.com/eclipse-score/process_description/edit/main/docs/folder_templates/features/feature_name/requirements/index.rst">
       <i class="fa-solid fa-pencil"></i>
       
       

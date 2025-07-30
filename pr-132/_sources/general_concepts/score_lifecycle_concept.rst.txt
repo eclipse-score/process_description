@@ -14,10 +14,10 @@
 
 .. _general_concepts_lifecycle:
 
-Lifecylce concept
+Lifecycle concept
 -----------------
 
-Contributions to the **S-CORE** project are driven by Change Requests.
+Contributions to the project are driven by Change Requests.
 
 As features are the main structuring element of the platform, new features are requested by
 a change request from type feature. The request may be supported by source code.
@@ -25,7 +25,7 @@ A new feature request happens in the **Concept Phase**.
 
 During the **Development Phase** features are implemented and verified. The Development
 is planned, checked and adjusted to meet the requirements. Planning is also required from
-several standards especically to achieve functional safety.
+several standards especially to achieve functional safety.
 
 Features are improved during the **Maintenance Phase**. In case bugs are found, they are also
 fixed during this phase.
@@ -33,8 +33,6 @@ fixed during this phase.
 .. figure:: _assets/score_lifecycle_model.drawio.svg
   :width: 100%
   :align: center
-  :alt: Lifecycle model for S-CORE
+  :alt: Lifecycle model for the project
 
-  Lifecycle model for S-CORE
-
-
+  Lifecycle model for the project

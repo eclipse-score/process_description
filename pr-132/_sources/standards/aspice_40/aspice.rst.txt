@@ -34,7 +34,7 @@ All distribution of derivative works shall be made at no cost to the recipient.
 
 Copyright notice
 ----------------
-There is no alteration, transformation or building upon in the *S-CORE* project. Detailed descriptions are included to facilitate process assessment in the *S-CORE* project and are provided in an open source framework free of charge.
+There is no alteration, transformation or building upon in this project. Detailed descriptions are included to facilitate process assessment in projects and are provided in an open source framework free of charge.
 
 
 Tailoring
@@ -418,8 +418,8 @@ Generic practices
 
       For guidance on how to perform process improvements see the Process Improvement process (PIM.3).
 
-.. needextend:: docname is not None and "process/standards/aspice" in docname
-   :+tags: aspice
+.. needextend:: "c.this_doc()" 
+   :+tags: aspice40_gp3
 
 Appendix
 --------
@@ -427,4 +427,4 @@ Appendix
 .. needtable:: General Practices
    :style: datatables
    :columns: id;title;status;content
-   :filter: id.startswith("std_req__aspice_40__gp") and is_external == False
+   :filter: c.this_doc()

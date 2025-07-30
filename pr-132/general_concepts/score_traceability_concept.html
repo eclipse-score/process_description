@@ -63,6 +63,13 @@
     <script src="../_static/sphinx-needs/libs/html/datatables_loader.js?v=a2cae175"></script>
     <script src="../_static/sphinx-needs/libs/html/sphinx_needs_collapse.js?v=dca66431"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'general_concepts/score_traceability_concept';</script>
+    <script>
+        DOCUMENTATION_OPTIONS.theme_version = '0.16.1';
+        DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://eclipse-score.github.io/process_description/versions.json';
+        DOCUMENTATION_OPTIONS.theme_switcher_version_match = '';
+        DOCUMENTATION_OPTIONS.show_version_warning_banner =
+            false;
+        </script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Review and Inspection Concept" href="score_review_concept.html" />
@@ -175,7 +182,7 @@
 
 <li class="nav-item ">
   <a class="nav-link nav-internal" href="../workproducts/index.html">
-    Workproducts
+    Work products
   </a>
 </li>
 
@@ -260,6 +267,26 @@
         </li>
 </ul></div>
       
+        <div class="navbar-item">
+<div class="version-switcher__container dropdown pst-js-only">
+  <button id="pst-version-switcher-button-2"
+    type="button"
+    class="version-switcher__button btn btn-sm dropdown-toggle"
+    data-bs-toggle="dropdown"
+    aria-haspopup="listbox"
+    aria-controls="pst-version-switcher-list-2"
+    aria-label="Version switcher list"
+  >
+    Choose version  <!-- this text may get changed later by javascript -->
+    <span class="caret"></span>
+  </button>
+  <div id="pst-version-switcher-list-2"
+    class="version-switcher__menu dropdown-menu list-group-flush py-0"
+    role="listbox" aria-labelledby="pst-version-switcher-button-2">
+    <!-- dropdown will be populated by javascript on page load -->
+  </div>
+</div></div>
+      
     </div>
     
   </div>
@@ -336,7 +363,7 @@
 
 <li class="nav-item ">
   <a class="nav-link nav-internal" href="../workproducts/index.html">
-    Workproducts
+    Work products
   </a>
 </li>
 
@@ -402,6 +429,26 @@
         </li>
 </ul></div>
         
+          <div class="navbar-item">
+<div class="version-switcher__container dropdown pst-js-only">
+  <button id="pst-version-switcher-button-3"
+    type="button"
+    class="version-switcher__button btn btn-sm dropdown-toggle"
+    data-bs-toggle="dropdown"
+    aria-haspopup="listbox"
+    aria-controls="pst-version-switcher-list-3"
+    aria-label="Version switcher list"
+  >
+    Choose version  <!-- this text may get changed later by javascript -->
+    <span class="caret"></span>
+  </button>
+  <div id="pst-version-switcher-list-3"
+    class="version-switcher__menu dropdown-menu list-group-flush py-0"
+    role="listbox" aria-labelledby="pst-version-switcher-button-3">
+    <!-- dropdown will be populated by javascript on page load -->
+  </div>
+</div></div>
+        
       </div>
     
   </div>
@@ -413,7 +460,7 @@
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
   <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Content</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="score_lifecycle_concept.html">Lifecylce concept</a></li>
+<li class="toctree-l1"><a class="reference internal" href="score_lifecycle_concept.html">Lifecycle concept</a></li>
 <li class="toctree-l1"><a class="reference internal" href="score_building_blocks_concept.html">Building blocks concept</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Traceability concept</a></li>
 <li class="toctree-l1"><a class="reference internal" href="score_review_concept.html">Review and Inspection Concept</a></li>
@@ -482,31 +529,31 @@
 <p>Traceability is the key to ensure consistency between work products.
 Furthermore, traceability supports impact analysis, dependency analysis, coverage determination
 for requirements and verification, and tracking of implementation status.</p>
-<p>Therefore <strong>S-CORE</strong> requires at least for safety-relevant work products single-requirement
+<p>Therefore the project requires at least for safety-relevant work products single-requirement
 granularity of traceability.</p>
 <p>The following figures gives an overview about the traceability between different work products
 on different levels and detail.</p>
 <section id="high-level-traceability-overview">
 <h2>High level traceability overview<a class="headerlink" href="#high-level-traceability-overview" title="Link to this heading">#</a></h2>
-<p>The following figure shows the traceability between the major <strong>S-CORE</strong> work products on each
+<p>The following figure shows the traceability between the major project work products on each
 requirements level. Starting from top, the platform level, going down to feature, component
 to the bottom the unit level. The concept is based on the classical V-model approach.</p>
 <p>Change request are traced to all affected work products.</p>
 <figure class="align-center" id="score-wp-traceability">
-<a class="reference internal image-reference" href="../_images/score_traceability_model_wp_overview.drawio.svg"><img alt="High level traceability overview for **S-CORE** work products" src="../_images/score_traceability_model_wp_overview.drawio.svg" style="width: 100%;" />
+<a class="reference internal image-reference" href="../_images/score_traceability_model_wp_overview.drawio.svg"><img alt="High level traceability overview for project work products" src="../_images/score_traceability_model_wp_overview.drawio.svg" style="width: 100%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 6 </span><span class="caption-text">High level traceability overview for <strong>S-CORE</strong> work products</span><a class="headerlink" href="#score-wp-traceability" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 6 </span><span class="caption-text">High level traceability overview for project work products</span><a class="headerlink" href="#score-wp-traceability" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>The next figure sets the focus on the feature level and adds the traceability from the Feature
 Requirements to the Feature Architecture, Feature Safety Analysis and the Feature Assumption
 of use. For convenience also the traceability to upper and lower lever requirements is shown.</p>
 <figure class="align-center" id="id1">
-<a class="reference internal image-reference" href="../_images/score_traceability_model_feat_overview.drawio.svg"><img alt="High level traceability overview for **S-CORE** feature work products" src="../_images/score_traceability_model_feat_overview.drawio.svg" style="width: 100%;" />
+<a class="reference internal image-reference" href="../_images/score_traceability_model_feat_overview.drawio.svg"><img alt="High level traceability overview for project feature work products" src="../_images/score_traceability_model_feat_overview.drawio.svg" style="width: 100%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 7 </span><span class="caption-text">High level traceability overview for <strong>S-CORE</strong> feature work products</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 7 </span><span class="caption-text">High level traceability overview for project feature work products</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>The next figures sets the focus on the component level and adds the traceability from the
@@ -514,28 +561,28 @@ Component Requirements to the Component Architecture, Component Safety Analysis
 and the Component Assumption of use. Further the traceability to Component Assumptions of use
 from external Components is included.</p>
 <figure class="align-center" id="id2">
-<a class="reference internal image-reference" href="../_images/score_traceability_model_cmp_overview_1.drawio.svg"><img alt="High level traceability overview for **S-CORE** component work products" src="../_images/score_traceability_model_cmp_overview_1.drawio.svg" style="width: 100%;" />
+<a class="reference internal image-reference" href="../_images/score_traceability_model_cmp_overview_1.drawio.svg"><img alt="High level traceability overview for project component work products" src="../_images/score_traceability_model_cmp_overview_1.drawio.svg" style="width: 100%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 8 </span><span class="caption-text">High level traceability overview for <strong>S-CORE</strong> component work products</span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 8 </span><span class="caption-text">High level traceability overview for project component work products</span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Component Architecture may either built-up of other components, then the traceability may in
 addition also needed to their architectures.</p>
 <figure class="align-center" id="id3">
-<a class="reference internal image-reference" href="../_images/score_traceability_model_cmp_overview_2.drawio.svg"><img alt="High level traceability overview for **S-CORE** component work products including sub-components" src="../_images/score_traceability_model_cmp_overview_2.drawio.svg" style="width: 100%;" />
+<a class="reference internal image-reference" href="../_images/score_traceability_model_cmp_overview_2.drawio.svg"><img alt="High level traceability overview for project component work products including sub-components" src="../_images/score_traceability_model_cmp_overview_2.drawio.svg" style="width: 100%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 9 </span><span class="caption-text">High level traceability overview for <strong>S-CORE</strong> component work products including sub-components</span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 9 </span><span class="caption-text">High level traceability overview for project component work products including sub-components</span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Or less complex components may not require a Component Architecture, the traceability is not
 required as the architecture can be skipped.</p>
 <figure class="align-center" id="id4">
-<a class="reference internal image-reference" href="../_images/score_traceability_model_cmp_overview_3.drawio.svg"><img alt="High level traceability overview for **S-CORE** component work products including sub-components" src="../_images/score_traceability_model_cmp_overview_3.drawio.svg" style="width: 100%;" />
+<a class="reference internal image-reference" href="../_images/score_traceability_model_cmp_overview_3.drawio.svg"><img alt="High level traceability overview for project component work products including sub-components" src="../_images/score_traceability_model_cmp_overview_3.drawio.svg" style="width: 100%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 10 </span><span class="caption-text">High level traceability overview for <strong>S-CORE</strong> component work products including sub-components</span><a class="headerlink" href="#id4" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 10 </span><span class="caption-text">High level traceability overview for project component work products including sub-components</span><a class="headerlink" href="#id4" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -596,7 +643,7 @@ required as the architecture can be skipped.</p>
 
   
   <div class="tocsection editthispage">
-    <a href="https://github.com/dummy/dummy/edit/main/docs/general_concepts/score_traceability_concept.rst">
+    <a href="https://github.com/eclipse-score/process_description/edit/main/docs/general_concepts/score_traceability_concept.rst">
       <i class="fa-solid fa-pencil"></i>
       
       

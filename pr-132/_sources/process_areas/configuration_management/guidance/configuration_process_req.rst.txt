@@ -20,6 +20,7 @@ Configuration Management Process Requirements
    :status: valid
    :tags: done_automation, config_mgt
    :complies: std_req__iso26262__support_745, std_req__aspice_40__SUP-8-BP8
+   :satisfies: wf__monitor_verify_requirements, wf__mr_vy_arch, wf__mr_saf_analyses_dfa, wf__vy_saf_analyses_dfa, wf__platform__mr_im_platform_mgmt_plan
 
    The doc-as-code tool shall check that the Id's of the configuration items (documented in doc-as-code) are unique.
 
@@ -30,6 +31,7 @@ Configuration Management Process Requirements
    :status: valid
    :tags: prio_3_automation, config_mgt
    :complies: std_req__iso26262__support_745, std_req__aspice_40__SUP-8-BP8
+   :satisfies: wf__rel__platform_rel_note, wf__rel__mod_rel_note
 
    At least every platform release shall be stored permanently as a collection of text documents
    (docs and code) including the used OSS tooling outside of github servers.
@@ -54,6 +56,7 @@ Configuration Management Process Requirements
    :status: valid
    :tags: prio_2_automation, config_mgt
    :complies: std_req__iso26262__support_741
+   :satisfies: wf__rel__platform_rel_note, wf__rel__mod_rel_note
 
    It shall be possible to show the differences between two baselines.
 

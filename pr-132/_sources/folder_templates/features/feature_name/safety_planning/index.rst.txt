@@ -32,10 +32,10 @@ Feature Safety Planning
     - Adjust ``status`` to be ``valid``
     - Adjust ``safety`` and ``tags`` according to your needs
 
-.. list-table:: Feature <feature_name> Workproducts
+.. list-table:: Feature <feature_name> Work products
     :header-rows: 1
 
-    * - Workproduct Id
+    * - Work product Id
       - Link to process
       - Process status
       - Link to issue
@@ -70,7 +70,7 @@ Feature Safety Planning
       - :need:`doc__feature_name_architecture`
       - doc :ndf:`copy('status', need_id='doc__feature_name_architecture')` & WP below
 
-    * - :need:`wp__feature_safety_analysis`
+    * - :need:`wp__feature_fmea`
       - <link to process>
       - <automated>
       - <link to issue>
@@ -115,6 +115,7 @@ Feature Requirements Status
 ---------------------------
 
 .. needtable::
+   :filter: "feature_name" in docname and "requirements" in docname and docname is not None
    :style: table
    :types: feat_req
    :tags: feature_name
@@ -126,6 +127,7 @@ Feature AoU Status
 ------------------
 
 .. needtable::
+   :filter: "feature_name" in docname and "requirements" in docname and docname is not None
    :style: table
    :types: aou_req
    :tags: feature_name
@@ -137,6 +139,7 @@ Feature Architecture Status
 ---------------------------
 
 .. needtable::
+   :filter: "feature_name" in docname and "requirements" in docname and docname is not None
    :style: table
    :types: feat_arc_sta; feat_arc_dyn
    :tags: feature_name

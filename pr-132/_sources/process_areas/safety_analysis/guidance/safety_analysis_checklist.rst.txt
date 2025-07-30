@@ -13,8 +13,8 @@
    # *******************************************************************************
 
 
-Checklist for Safety Analysis
-================================
+Safety Analysis Checklist
+=========================
 
 .. gd_chklst:: Safety Analysis Checklist Template
    :id: gd_chklst__safety_analysis
@@ -22,7 +22,7 @@ Checklist for Safety Analysis
    :tags: safety_analysis
 
    **Purpose**
-   The purpose of this safety analysis checklist template is to collect the topics to be checked during verification of the safety analysis.
+   The purpose of this safety analysis (DFA and FMEA) checklist template is to collect the topics to be checked during verification of the safety analysis.
 
    **Checklist**
 
@@ -37,38 +37,44 @@ Checklist for Safety Analysis
         - Remarks
         - Issue link
       * - REQ_01_01
-        - Is / are the safety analysis is / are finished?
-        - 
-        - No open topics in safety analysis report.
+        - Is / are the attribute sufficient set correctly?
+        - The mitigations shall have a direct influence ont the violation by prevention, detection or mitigation to reduce the risk to an acceptable level.
+        - The mitigations are sufficient.
         - <yes|no>
         -
       * - REQ_01_02
-        - Are the templates for DFA and/or Safety Analysis used?
-        - see :ref:`dfa_templates` / :ref:`safety_analysis_templates`
-        - Templates are used to generate the DFA or / and Safety Analysis.
+        - Are the templates for DFA and/or FMEA used?
+        - See :ref:`dfa_templates` / :ref:`FMEA_templates` and also :ref:`process_requirements_safety_analysis`
+        - Templates are used to generate the DFA or / and FMEA.
         - <yes|no>
         -
       * - REQ_01_03
         - Were the failure initiators / fault models applied?
-        - see :need:`gd_guidl__dfa_failure_initiators` / :need:`gd_guidl__fault_models`
-        - The items of the failure initiators / fault models are used to ensure a structured analysis.
+        - See :need:`gd_guidl__dfa_failure_initiators` / :need:`gd_guidl__fault_models`
+        - The applicable items of the failure initiators / fault models are used to ensure a structured analysis. For all not applicable items an argument shall be given in the content of the document.
         - <yes|no>
-        - 
+        -
       * - REQ_01_04
-        - Is the violation cause clearly and completely described?
-        - 
-        - The cause of the violation is described completely. The cause can be recognized easily.
+        - Are the failure effects clearly and completely described?
+        - Use the generic failure effect descriptions and enlarge the description if it's applicable to the considered element.
+        - The effects of the failure is described completely. The effect can be recognized easily.
         - <yes|no>
-        -        
-      * - REQ_01_05
-        - Is the mitigation described completely and in an easily understandable manner?
-        - 
-        - The mitigation is clearly and completely described.
-        - <yes|no>
-        -          
+        -
       * - REQ_01_06
+        - Is the attribute "mitigated by" linked correct?
+        - Check if the correct failure effect is linked via "mitigated by".
+        - The "mitigated by" link is correct.
+        - <yes|no>
+        -
+      * - REQ_01_07
+        - Is the sufficiency of the "mitigated by" (prevention, detection or mitigation) described or can it be recognized easily?
+        - The sufficiency of the "mitigated by" is described in the content of the document. It can be recognized easily.
+        - The "mitigated by" shows clearly that a fault / failure can be mitigated by the linked requirement by prevention, detection or mitigation. It shall be described in the contend.
+        - <yes|no>
+        -
+      * - REQ_01_08
         - Is the overall result of the safety analysis described in the report?
-        - 
+        - It shall be shown in the report if the safety analysis are finished and if all artifacts are "valid" and "sufficient".
         - The results of the safety analysis are described in the report. The report is available :need:`wp__verification__platform_ver_report`.
         - <yes|no>
-        -          
+        -

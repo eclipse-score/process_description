@@ -13,8 +13,8 @@
    # *******************************************************************************
 
 
-Dependent Failure Analysis
-==========================
+DFA (Dependent Failure Analysis)
+================================
 
 .. document:: [Your Component Name] DFA
    :id: doc__component_name_dfa
@@ -22,6 +22,8 @@ Dependent Failure Analysis
    :safety: ASIL_B
    :realizes: wp__sw_component_dfa
    :tags: template
+
+.. note:: Use the content of the document to describe e.g. why a fault model is not applicable for the diagram.
 
 .. attention::
     The above directive must be updated according to your Component.
@@ -31,23 +33,25 @@ Dependent Failure Analysis
     - Adjust ``status`` to be ``valid``
     - Adjust ``safety`` and ``tags`` according to your needs
 
-Dependent Failure Intitiators
------------------------------
+Dependent Failure Initiators
+----------------------------
 
 .. code-block:: rst
 
-   .. comp_saf_dfa:: <Element descriptor>
-      :id: comp_saf_DFA__<Component>__<Element descriptor>
-      :violation_id: <ID from Dependent Failure Initiators list :need:`gd_guidl__dfi`>
-      :violation_effect: <Effect caused by the initiator (leading to a violation of a safety goal)>
-      :verifies: <ID from Component Architecture>
-      :mitigated_by: < NONE|ID from Component Requirement>
-      :sufficient: <yes|no>
-      :argument: <text to argument why measure is sufficient>
-      :status: <valid|invalid>
+    .. comp_saf_dfa:: <Title>
+       :violates: <Component architecture>
+       :id: comp_saf_dfa__<Component>__<Element descriptor>
+       :failure_id: <ID from DFA failure initiators :need:`gd_guidl__dfa_failure_initiators`>
+       :failure_effect: "description of failure effect of the failure initiator on the element"
+       :mitigated_by: <ID from Component Requirement | ID from AoU Component Requirement>
+       :mitigation_issue: <ID from Issue Tracker>
+       :sufficient: <yes|no>
+       :status: <valid|invalid>
+
+.. note::   argument is inside the 'content'. Therefore content is mandatory
 
 .. attention::
     The above directive must be updated according to your component DFA.
 
-    - Remove the ``code-block``
+    - The above "code-block" directive must be updated
     - Fill in all the needed information in the <brackets>

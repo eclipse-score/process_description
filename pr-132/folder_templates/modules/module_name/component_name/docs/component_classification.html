@@ -63,10 +63,17 @@
     <script src="../../../../../_static/sphinx-needs/libs/html/datatables_loader.js?v=a2cae175"></script>
     <script src="../../../../../_static/sphinx-needs/libs/html/sphinx_needs_collapse.js?v=dca66431"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'folder_templates/modules/module_name/component_name/docs/component_classification';</script>
+    <script>
+        DOCUMENTATION_OPTIONS.theme_version = '0.16.1';
+        DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://eclipse-score.github.io/process_description/versions.json';
+        DOCUMENTATION_OPTIONS.theme_switcher_version_match = '';
+        DOCUMENTATION_OPTIONS.show_version_warning_banner =
+            false;
+        </script>
     <link rel="index" title="Index" href="../../../../../genindex.html" />
     <link rel="search" title="Search" href="../../../../../search.html" />
     <link rel="next" title="Tools" href="../../../../tools/index.html" />
-    <link rel="prev" title="Dependent Failure Analysis" href="safety_analysis/dfa.html" />
+    <link rel="prev" title="DFA (Dependent Failure Analysis)" href="safety_analysis/dfa.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="0.1" />
@@ -175,7 +182,7 @@
 
 <li class="nav-item ">
   <a class="nav-link nav-internal" href="../../../../../workproducts/index.html">
-    Workproducts
+    Work products
   </a>
 </li>
 
@@ -260,6 +267,26 @@
         </li>
 </ul></div>
       
+        <div class="navbar-item">
+<div class="version-switcher__container dropdown pst-js-only">
+  <button id="pst-version-switcher-button-2"
+    type="button"
+    class="version-switcher__button btn btn-sm dropdown-toggle"
+    data-bs-toggle="dropdown"
+    aria-haspopup="listbox"
+    aria-controls="pst-version-switcher-list-2"
+    aria-label="Version switcher list"
+  >
+    Choose version  <!-- this text may get changed later by javascript -->
+    <span class="caret"></span>
+  </button>
+  <div id="pst-version-switcher-list-2"
+    class="version-switcher__menu dropdown-menu list-group-flush py-0"
+    role="listbox" aria-labelledby="pst-version-switcher-button-2">
+    <!-- dropdown will be populated by javascript on page load -->
+  </div>
+</div></div>
+      
     </div>
     
   </div>
@@ -336,7 +363,7 @@
 
 <li class="nav-item ">
   <a class="nav-link nav-internal" href="../../../../../workproducts/index.html">
-    Workproducts
+    Work products
   </a>
 </li>
 
@@ -402,6 +429,26 @@
         </li>
 </ul></div>
         
+          <div class="navbar-item">
+<div class="version-switcher__container dropdown pst-js-only">
+  <button id="pst-version-switcher-button-3"
+    type="button"
+    class="version-switcher__button btn btn-sm dropdown-toggle"
+    data-bs-toggle="dropdown"
+    aria-haspopup="listbox"
+    aria-controls="pst-version-switcher-list-3"
+    aria-label="Version switcher list"
+  >
+    Choose version  <!-- this text may get changed later by javascript -->
+    <span class="caret"></span>
+  </button>
+  <div id="pst-version-switcher-list-3"
+    class="version-switcher__menu dropdown-menu list-group-flush py-0"
+    role="listbox" aria-labelledby="pst-version-switcher-button-3">
+    <!-- dropdown will be populated by javascript on page load -->
+  </div>
+</div></div>
+        
       </div>
     
   </div>
@@ -419,8 +466,8 @@
 <li class="toctree-l3"><a class="reference internal" href="requirements/index.html">Requirements</a></li>
 <li class="toctree-l3"><a class="reference internal" href="architecture/index.html">Component Architecture</a></li>
 <li class="toctree-l3"><a class="reference internal" href="detailed_design/index.html">Detailed Design</a></li>
-<li class="toctree-l3"><a class="reference internal" href="safety_analysis/fmea.html">Safety Analysis : FMEA</a></li>
-<li class="toctree-l3"><a class="reference internal" href="safety_analysis/dfa.html">Dependent Failure Analysis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="safety_analysis/fmea.html">FMEA (Failure Modes and Effects Analysis)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="safety_analysis/dfa.html">DFA (Dependent Failure Analysis)</a></li>
 <li class="toctree-l3 current active"><a class="current reference internal" href="#">Component Classification</a></li>
 </ul>
 </details></li>
@@ -499,7 +546,7 @@
 <p class="admonition-title">Note</p>
 <p>Document header</p>
 </div>
-<div class="need_container docutils container" id="SNCB-f71e451d">
+<div class="need_container docutils container" id="SNCB-5b86b9a6">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_document table" id="doc__component_name_comp_class">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -695,7 +742,7 @@
 <div class="line">(C=1) shall be selected when none of the determined complexity measures indicate HM or NM.</div>
 <div class="line">(C=2) shall be selected when at least one of the determined complexity measures indicate HM or NM, but the gaps evaluated are acceptable, means</div>
 <div class="line-block">
-<div class="line">the risk of systematic faults due to these gaps is sufficiently low in the context of S-CORE or manageable by mitigating the gaps.</div>
+<div class="line">the risk of systematic faults due to these gaps is sufficiently low in the context of the project or manageable by mitigating the gaps.</div>
 </div>
 <div class="line">(C=3) in all other cases.</div>
 <div class="line"><br /></div>
@@ -770,7 +817,7 @@
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Dependent Failure Analysis</p>
+        <p class="prev-next-title">DFA (Dependent Failure Analysis)</p>
       </div>
     </a>
     <a class="right-next"
@@ -813,7 +860,7 @@
 
   
   <div class="tocsection editthispage">
-    <a href="https://github.com/dummy/dummy/edit/main/docs/folder_templates/modules/module_name/component_name/docs/component_classification.rst">
+    <a href="https://github.com/eclipse-score/process_description/edit/main/docs/folder_templates/modules/module_name/component_name/docs/component_classification.rst">
       <i class="fa-solid fa-pencil"></i>
       
       

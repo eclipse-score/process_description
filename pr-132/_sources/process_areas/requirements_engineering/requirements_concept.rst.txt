@@ -293,4 +293,4 @@ Traceability Concept for Requirements
 
 The standards require that a requirement can be traced throughout the complete hierarchy levels including its :ref:`implementation <implementation>` and :ref:`verification <process_verification>`. In this project it is implemented the following way:
 
-In general the traceability is visualized in main development work product traceability model (:numref:`wp_traceability_model`).
+In general the traceability is visualized in main development work product traceability model (:ref:`general_concepts_traceability`).

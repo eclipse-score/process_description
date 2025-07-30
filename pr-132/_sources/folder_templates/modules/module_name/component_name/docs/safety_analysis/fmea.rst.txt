@@ -13,15 +13,17 @@
    # *******************************************************************************
 
 
-Safety Analysis : FMEA
-======================
+FMEA (Failure Modes and Effects Analysis)
+=========================================
 
 .. document:: [Your Component Name] FMEA
    :id: doc__component_name_fmea
    :status: draft
    :safety: ASIL_B
-   :realizes: wp__sw_component_safety_analysis
+   :realizes: wp__sw_component_fmea
    :tags: template
+
+.. note:: Use the content of the document to describe e.g. why a fault model is not applicable for the diagram.
 
 .. attention::
     The above directive must be updated according to your Component.
@@ -36,18 +38,20 @@ Failure Mode List
 
 .. code-block:: rst
 
-   .. comp_saf_fmea:: <Element descriptor>
-      :id: comp_saf_FMEA__<Component>__<Element descriptor>
-      :failure_mode: <ID from fault model :need:`gd_guidl__fault_models`>
-      :failure_effect: <Effect caused by the failure (leading to a violation of a safety goal)>
-      :verifies: <ID from Component Architecture>
-      :mitigated_by: < NONE|ID from Component Requirement>
-      :sufficient: <yes|no>
-      :argument: <text to argument why measure is sufficient>
-      :status: <valid|invalid>
+    .. comp_saf_fmea:: <Title>
+       :violates: <Component architecture>
+       :id: comp_saf_fmea__<Component>__<Element descriptor>
+       :fault_id: <ID from fault model :need:`gd_guidl__fault_models`>
+       :failure_effect: "description of failure effect of the fault model on the element"
+       :mitigated_by: <ID from Component Requirement | ID from AoU Component Requirement>
+       :mitigation_issue: <ID from Issue Tracker>
+       :sufficient: <yes|no>
+       :status: <valid|invalid>
+
+.. note::   argument is inside the 'content'. Therefore content is mandatory
 
 .. attention::
     The above directive must be updated according to your component FMEA.
 
-    - Remove the ``code-block``
+    - The above "code-block" directive must be updated
     - Fill in all the needed information in the <brackets>

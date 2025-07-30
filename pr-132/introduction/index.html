@@ -63,6 +63,13 @@
     <script src="../_static/sphinx-needs/libs/html/datatables_loader.js?v=a2cae175"></script>
     <script src="../_static/sphinx-needs/libs/html/sphinx_needs_collapse.js?v=dca66431"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'introduction/index';</script>
+    <script>
+        DOCUMENTATION_OPTIONS.theme_version = '0.16.1';
+        DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://eclipse-score.github.io/process_description/versions.json';
+        DOCUMENTATION_OPTIONS.theme_switcher_version_match = '';
+        DOCUMENTATION_OPTIONS.show_version_warning_banner =
+            false;
+        </script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="General concepts" href="../general_concepts/index.html" />
@@ -175,7 +182,7 @@
 
 <li class="nav-item ">
   <a class="nav-link nav-internal" href="../workproducts/index.html">
-    Workproducts
+    Work products
   </a>
 </li>
 
@@ -260,6 +267,26 @@
         </li>
 </ul></div>
       
+        <div class="navbar-item">
+<div class="version-switcher__container dropdown pst-js-only">
+  <button id="pst-version-switcher-button-2"
+    type="button"
+    class="version-switcher__button btn btn-sm dropdown-toggle"
+    data-bs-toggle="dropdown"
+    aria-haspopup="listbox"
+    aria-controls="pst-version-switcher-list-2"
+    aria-label="Version switcher list"
+  >
+    Choose version  <!-- this text may get changed later by javascript -->
+    <span class="caret"></span>
+  </button>
+  <div id="pst-version-switcher-list-2"
+    class="version-switcher__menu dropdown-menu list-group-flush py-0"
+    role="listbox" aria-labelledby="pst-version-switcher-button-2">
+    <!-- dropdown will be populated by javascript on page load -->
+  </div>
+</div></div>
+      
     </div>
     
   </div>
@@ -336,7 +363,7 @@
 
 <li class="nav-item ">
   <a class="nav-link nav-internal" href="../workproducts/index.html">
-    Workproducts
+    Work products
   </a>
 </li>
 
@@ -401,6 +428,26 @@
             <span class="sr-only">GitHub</span></a>
         </li>
 </ul></div>
+        
+          <div class="navbar-item">
+<div class="version-switcher__container dropdown pst-js-only">
+  <button id="pst-version-switcher-button-3"
+    type="button"
+    class="version-switcher__button btn btn-sm dropdown-toggle"
+    data-bs-toggle="dropdown"
+    aria-haspopup="listbox"
+    aria-controls="pst-version-switcher-list-3"
+    aria-label="Version switcher list"
+  >
+    Choose version  <!-- this text may get changed later by javascript -->
+    <span class="caret"></span>
+  </button>
+  <div id="pst-version-switcher-list-3"
+    class="version-switcher__menu dropdown-menu list-group-flush py-0"
+    role="listbox" aria-labelledby="pst-version-switcher-button-3">
+    <!-- dropdown will be populated by javascript on page load -->
+  </div>
+</div></div>
         
       </div>
     
@@ -474,7 +521,7 @@
 <section id="motivation">
 <h2>Motivation<a class="headerlink" href="#motivation" title="Link to this heading">#</a></h2>
 <div class="line-block">
-<div class="line">The score process model aims to establish organization rules for developing</div>
+<div class="line">The process model aims to establish organization rules for developing</div>
 <div class="line">open source software in the automotive industry, which can be used in safety and security context.</div>
 </div>
 </section>
@@ -494,15 +541,15 @@
 <li><p>We aim for a process model as common basis for process documentation (compare figure below).</p></li>
 <li><p>We work code centric (trace text as code) and iteratively.</p></li>
 <li><p>We aim to develop the process in conformance to the targeted standards (compare figure below).</p></li>
-<li><p>We aim to establish traceability from the begin (compare figure below, <a class="reference internal" href="../workproducts/index.html#wp-traceability-model"><span class="std std-ref">Project development work product traceability model</span></a>).</p></li>
+<li><p>We aim to establish traceability from the begin (compare <a class="reference internal" href="../general_concepts/score_traceability_concept.html#general-concepts-traceability"><span class="std std-ref">Traceability concept</span></a>).</p></li>
 <li><p>We aim to verify conformity and traceability by tool automation as much as possible (compare figure below).</p></li>
-<li><p>We aim for an iterative collaboration model initiated by change requests (compare <cite>REPLACE_doc__contr_guideline</cite>)</p></li>
+<li><p>We aim for an iterative collaboration model initiated by change requests (compare <a class="reference internal" href="../process_areas/change_management/guidance/change_management_guideline.html#gd_guidl__change__change_request" title="gd_guidl__change__change_request"><em class="xref need">Change Request Guideline (gd_guidl__change__change_request)</em></a>)</p></li>
 </ol>
 <figure class="align-center" id="id1">
-<a class="reference internal image-reference" href="../_images/score_process_model.drawio.svg"><img alt="S-CORE process model" src="../_images/score_process_model.drawio.svg" style="width: 100%;" />
+<a class="reference internal image-reference" href="../_images/score_process_model.drawio.svg"><img alt="Overview process model" src="../_images/score_process_model.drawio.svg" style="width: 100%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 1 </span><span class="caption-text">S-CORE process model</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 1 </span><span class="caption-text">Overview process model</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -565,7 +612,7 @@
 
   
   <div class="tocsection editthispage">
-    <a href="https://github.com/dummy/dummy/edit/main/docs/introduction/index.rst">
+    <a href="https://github.com/eclipse-score/process_description/edit/main/docs/introduction/index.rst">
       <i class="fa-solid fa-pencil"></i>
       
       

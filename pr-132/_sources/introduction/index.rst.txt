@@ -23,7 +23,7 @@ Introduction
 
 Motivation
 ----------
-| The score process model aims to establish organization rules for developing
+| The process model aims to establish organization rules for developing
 | open source software in the automotive industry, which can be used in safety and security context.
 
 Objectives
@@ -40,14 +40,14 @@ Approach
 1. We aim for a process model as common basis for process documentation (compare figure below).
 2. We work code centric (trace text as code) and iteratively.
 3. We aim to develop the process in conformance to the targeted standards (compare figure below).
-4. We aim to establish traceability from the begin (compare figure below, :ref:`wp_traceability_model`).
+4. We aim to establish traceability from the begin (compare :ref:`general_concepts_traceability`).
 5. We aim to verify conformity and traceability by tool automation as much as possible (compare figure below).
-6. We aim for an iterative collaboration model initiated by change requests (compare `REPLACE_doc__contr_guideline`)
+6. We aim for an iterative collaboration model initiated by change requests (compare :need:`gd_guidl__change__change_request`)
 
 
 .. figure:: _assets/score_process_model.drawio.svg
   :width: 100%
   :align: center
-  :alt: S-CORE process model
+  :alt: Overview process model
 
-  S-CORE process model
+  Overview process model
