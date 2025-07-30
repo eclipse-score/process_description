@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Fault Models &#8212; Process Description  documentation</title>
+    <title>FMEA Fault Models &#8212; Process Description  documentation</title>
   
   
   
@@ -72,8 +72,8 @@
         </script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="Guidelines" href="safety_analysis_guideline.html" />
-    <link rel="prev" title="DFA Templates" href="dfa_template.html" />
+    <link rel="next" title="FMEA Templates" href="fmea_templates.html" />
+    <link rel="prev" title="DFA Templates" href="dfa_templates.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="0.1" />
@@ -473,16 +473,16 @@
 <li class="toctree-l2"><a class="reference internal" href="../safety_analysis_getstrt.html">Getting Started</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../safety_analysis_concept.html">Concept Description</a></li>
 <li class="toctree-l2 current active has-children"><a class="reference internal" href="index.html">Guidance</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="safety_analysis_checklist.html">Checklist for Safety Analysis</a></li>
 <li class="toctree-l3"><a class="reference internal" href="dfa_failure_initiators.html">DFA failure initiators</a></li>
 
-<li class="toctree-l3"><a class="reference internal" href="dfa_template.html">DFA Templates</a></li>
-<li class="toctree-l3 current active"><a class="current reference internal" href="#">Fault Models</a></li>
-<li class="toctree-l3"><a class="reference internal" href="safety_analysis_guideline.html">Guidelines</a></li>
+<li class="toctree-l3"><a class="reference internal" href="dfa_templates.html">DFA Templates</a></li>
+<li class="toctree-l3 current active"><a class="current reference internal" href="#">FMEA Fault Models</a></li>
+<li class="toctree-l3"><a class="reference internal" href="fmea_templates.html">FMEA Templates</a></li>
+<li class="toctree-l3"><a class="reference internal" href="safety_analysis_checklist.html">Safety Analysis Checklist</a></li>
+<li class="toctree-l3"><a class="reference internal" href="safety_analysis_guideline.html">Safety Analysis Guidelines</a></li>
 <li class="toctree-l3"><a class="reference internal" href="safety_analysis_process_reqs.html">Safety Analysis Process Requirements</a></li>
 
 
-<li class="toctree-l3"><a class="reference internal" href="safety_analysis_templates.html">Safety Analysis Templates</a></li>
 </ul>
 </details></li>
 <li class="toctree-l2"><a class="reference internal" href="../safety_analysis_roles.html">Roles</a></li>
@@ -544,7 +544,7 @@
     
     <li class="breadcrumb-item"><a href="index.html" class="nav-link">Guidance</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Fault Models</span></li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">FMEA Fault Models</span></li>
   </ul>
 </nav>
 </div>
@@ -561,13 +561,13 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="fault-models">
-<h1>Fault Models<a class="headerlink" href="#fault-models" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-dc62f7e4">
+  <section id="fmea-fault-models">
+<h1>FMEA Fault Models<a class="headerlink" href="#fmea-fault-models" title="Link to this heading">#</a></h1>
+<div class="need_container docutils container" id="SNCB-c7bcc84d">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_guidl table" id="gd_guidl__fault_models">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
-<div class="line"><span><span class="needs_title"><span class="needs_data">Fault Models</span></span></span></div>
+<div class="line"><span><span class="needs_title"><span class="needs_data">FMEA Fault Models</span></span></span></div>
 </div>
 </td>
 <td class="head_center" colspan="2"><div class="needs_head line-block">
@@ -611,108 +611,98 @@
 </table>
 </div>
 </div>
-<dl class="field-list">
-<dt class="field-odd">note<span class="colon">:</span></dt>
-<dd class="field-odd"><p>Use the fault models to ensure a structed analysis. If a fault model doesn’t apply, please fill in a short desciption in the violation cause of the analysis so it could be recognized that the analysis is done. If there are additional fault models needed, please enlage the list of fault models.</p>
-<div class="pst-scrollable-table-container"><table class="table" id="id1">
-<caption><span class="caption-number">Table 36 </span><span class="caption-text">Fault Models for sequence diagrams
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Use the applicable fault models to ensure a structured analysis. If there are additional fault models needed, please enlarge the list of fault models.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>An ASIL related message is trustable in that manner that it is not corrupted, repeated, lost, delayed, masqueraded or addressed incorrectly.</p>
+</div>
+<dl>
+<dt>Fault Models for sequence diagrams</dt><dd><div class="pst-scrollable-table-container"><table class="table" id="id1">
+<caption><span class="caption-number">Table 35 </span><span class="caption-text">Fault Models for sequence diagrams
  :header-rows: 1
- :widths: 15,6,30,30,15</span><a class="headerlink" href="#id1" title="Link to this table">#</a></caption>
+ :widths: 15,15,45,15</span><a class="headerlink" href="#id1" title="Link to this table">#</a></caption>
 <tbody>
 <tr class="row-odd"><td><p>Element</p></td>
 <td><p>ID</p></td>
 <td><p>Failure Mode</p></td>
-<td><p>Simplification</p></td>
-<td><p>Importance (can be used for priorisation)</p></td>
+<td><p>Importance (can be used for prioritization)</p></td>
 </tr>
 <tr class="row-even"><td><p>message</p></td>
 <td><p>MF_01_01</p></td>
-<td><p>message is not received</p></td>
-<td><p>MF_01_05</p></td>
+<td><p>message is not received (is a subset/more precise description of MF_01_05)</p></td>
 <td><p>High</p></td>
 </tr>
 <tr class="row-odd"><td><p>message</p></td>
 <td><p>MF_01_02</p></td>
-<td><p>message received too late</p></td>
-<td><p>relevant only if delay is a realistic fault</p></td>
+<td><p>message received too late (only relevant if delay is a realistic fault)</p></td>
 <td><p>Medium</p></td>
 </tr>
 <tr class="row-even"><td><p>message</p></td>
 <td><p>MF_01_03</p></td>
-<td><p>message received too early</p></td>
-<td><p>usually not a problem</p></td>
+<td><p>message received too early (usually not a problem)</p></td>
 <td><p>Low</p></td>
 </tr>
 <tr class="row-odd"><td><p>message</p></td>
 <td><p>MF_01_04</p></td>
-<td><p>message not received correctly by all recipients (different messages or messages partly lost)</p></td>
-<td><p>only relevant if the same message goes to multiple recipients</p></td>
+<td><p>message not received correctly by all recipients (different messages or messages partly lost). Only relevant if the same message goes to multiple recipients.</p></td>
 <td><p>High</p></td>
 </tr>
 <tr class="row-even"><td><p>message</p></td>
 <td><p>MF_01_05</p></td>
 <td><p>message is corrupted</p></td>
-<td></td>
 <td><p>High</p></td>
 </tr>
 <tr class="row-odd"><td><p>message</p></td>
 <td><p>MF_01_06</p></td>
 <td><p>message is not sent</p></td>
-<td></td>
 <td><p>High</p></td>
 </tr>
 <tr class="row-even"><td><p>message</p></td>
 <td><p>MF_01_07</p></td>
 <td><p>message is unintended sent</p></td>
-<td></td>
 <td><p>High</p></td>
 </tr>
 <tr class="row-odd"><td><p>duration/time constraint</p></td>
 <td><p>CO_01_01</p></td>
 <td><p>minimum constraint boundary is violated</p></td>
-<td></td>
 <td><p>Medium</p></td>
 </tr>
 <tr class="row-even"><td><p>duration/time constraint</p></td>
 <td><p>CO_01_02</p></td>
 <td><p>maximum constraint boundary is violated</p></td>
-<td></td>
 <td><p>High</p></td>
 </tr>
 <tr class="row-odd"><td><p>execution</p></td>
 <td><p>EX_01_01</p></td>
-<td><p>Process calculates wrong result(s)</p></td>
-<td><p>MF_01_05 or MF_01_04</p></td>
+<td><p>Process calculates wrong result(s) (is a subset/more precise description of MF_01_05 or MF_01_04)</p></td>
 <td><p>High</p></td>
 </tr>
 <tr class="row-even"><td><p>execution</p></td>
 <td><p>EX_01_02</p></td>
-<td><p>processing too slow</p></td>
-<td><p>relevant only if timing is considered</p></td>
+<td><p>processing too slow (only relevant if timing is considered)</p></td>
 <td><p>Medium</p></td>
 </tr>
 <tr class="row-odd"><td><p>execution</p></td>
 <td><p>EX_01_03</p></td>
-<td><p>processing too fast</p></td>
-<td><p>relevant only if timing is considered</p></td>
+<td><p>processing too fast (only relevant if timing is considered)</p></td>
 <td><p>Medium</p></td>
 </tr>
 <tr class="row-even"><td><p>execution</p></td>
 <td><p>EX_01_04</p></td>
 <td><p>loss of execution</p></td>
-<td></td>
 <td><p>High</p></td>
 </tr>
 <tr class="row-odd"><td><p>execution</p></td>
 <td><p>EX_01_05</p></td>
 <td><p>processing changes to arbitrary process</p></td>
-<td></td>
 <td><p>Medium</p></td>
 </tr>
 <tr class="row-even"><td><p>execution</p></td>
 <td><p>EX_01_06</p></td>
 <td><p>processing is not complete (infinite loop)</p></td>
-<td></td>
 <td><p>High</p></td>
 </tr>
 </tbody>
@@ -733,7 +723,7 @@
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="dfa_template.html"
+       href="dfa_templates.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
@@ -742,11 +732,11 @@
       </div>
     </a>
     <a class="right-next"
-       href="safety_analysis_guideline.html"
+       href="fmea_templates.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Guidelines</p>
+        <p class="prev-next-title">FMEA Templates</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>

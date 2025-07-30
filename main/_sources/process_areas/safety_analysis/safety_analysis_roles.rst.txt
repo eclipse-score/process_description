@@ -15,22 +15,19 @@
 Roles
 #####
 
-Roles
------
-
 .. role:: Safety Engineer
    :id: rl__safety_engineer
    :status: valid
    :contains: rl__committer
 
-   The safety engineer is responsible for content and processing of all work products required in the project.
+   The safety engineer is responsible for the safety analysis (FMEA and DFA) in the project. There might be several analysis
+   on different levels (e.g., Platform DFA, Feature and Component FMEA/DFA).
 
    Required skills
 
    * Degree: Master's degree in electrical engineering/computer science/mathematics, or similar degree, or comparable work experience
-   * Solid understanding of functional safety engineering including safety analysis
-   * Knowledge of safety management
-   * Deep understanding of quality criteria and the correlating methods and procedures to achieve and verify them
+   * Deep understanding of functional safety engineering including safety analysis (e.g., FMEA, DFA)
+   * Knowledge of safety management to ensure collaboration with the Safety Manager
    * Technical know-how of embedded systems
    * Preferred training: Automotive Functional Safety Expert (AFSE) or similar
 
@@ -48,7 +45,7 @@ Roles
 
    Responsibility
 
-   * Analyse Feature and Component Architecture by performing Safety Analysis and DFA
+   * Analyse Feature and Component Architecture by performing FMEA and DFA
    * Monitor Safety Analyses and DFA
    * Verify Safety Analyses and DFA
    * Create the Safety Manual
@@ -56,7 +53,7 @@ Roles
    Authority
 
    * Escalation of safety topics to the Safety Manager
-   * Creation of Issues in the Issue Tracking System for needed mitigations
+   * Creation of Issues in the Issue Tracking System for needed mitigations (e.g. prevention, detection or mitigation)
 
 Contributing Roles:
 
@@ -65,6 +62,6 @@ Contributing Roles:
    * :need:`Safety Manager <rl__safety_manager>`
    * :need:`Security Manager <rl__security_manager>`
 
-A detailed overview of the responsibility for the steps of the safety analysis process is listed in the section titled "Workflow for Safety Analysis". You can find it here:
+A detailed overview of the responsibility for the steps of the safety analysis process is listed in the section titled "Workflow for safety analysis". You can find it here:
 
 :ref:`workflow_safety_analysis`

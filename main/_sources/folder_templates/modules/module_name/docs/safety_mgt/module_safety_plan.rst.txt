@@ -197,7 +197,7 @@ Component <name> Work products List
           - Checklist used in Pull Request Review
           - n/a
 
-        * - :need:`wp__sw_component_safety_analysis`
+        * - :need:`wp__sw_component_fmea`
           - <Link to process>
           - <automated>
           - <Link to issue>
@@ -281,7 +281,7 @@ If the OSS element is classified as a
           - <Link to issue>
           - <Reasoning for tailoring, needed for example in case of deficits in process Id 3&4 and complexity Ids 1&4>
 
-        * - :need:`wp__sw_component_safety_analysis`
+        * - :need:`wp__sw_component_fmea`
           - <Link to issue>
           - <Reasoning for tailoring, could help arguing too high cyclomatic complexity covered by safety mechanisms>
 
