@@ -234,3 +234,5 @@
    - for non-standard and critical resources and infrastructure.
 
 
+.. needextend:: "c.this_doc()" 
+   :+tags: aspice40_iic13

@@ -158,5 +158,6 @@ Base practices
    Communicate the agreed software requirements, and the results of the analysis
    of impact on the operating environment, to all affected parties.
 
-.. needextend:: docname is not None and "process/standards/aspice" in docname
-   :+tags: aspice
+
+.. needextend:: "c.this_doc()" 
+   :+tags: aspice40_swe1

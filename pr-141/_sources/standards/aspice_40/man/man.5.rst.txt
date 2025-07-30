@@ -104,3 +104,5 @@ Base practices
       Corrective actions may involve reevaluation of risks, developing and implementing new mitigation concepts or adjusting the existing concepts.
 
 
+.. needextend:: "c.this_doc()" 
+   :+tags: aspice40_man5

@@ -115,6 +115,7 @@ Feature Requirements Status
 ---------------------------
 
 .. needtable::
+   :filter: "feature_name" in docname and "requirements" in docname and docname is not None
    :style: table
    :types: feat_req
    :tags: feature_name
@@ -126,6 +127,7 @@ Feature AoU Status
 ------------------
 
 .. needtable::
+   :filter: "feature_name" in docname and "requirements" in docname and docname is not None
    :style: table
    :types: aou_req
    :tags: feature_name
@@ -137,6 +139,7 @@ Feature Architecture Status
 ---------------------------
 
 .. needtable::
+   :filter: "feature_name" in docname and "requirements" in docname and docname is not None
    :style: table
    :types: feat_arc_sta; feat_arc_dyn
    :tags: feature_name

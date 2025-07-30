@@ -59,3 +59,5 @@
       - reviews such as optical inspections à findings record
       - analyses: values
 
+.. needextend:: "c.this_doc()" 
+   :+tags: aspice40_iic03
