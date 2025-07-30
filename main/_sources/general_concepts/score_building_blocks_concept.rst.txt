@@ -43,7 +43,8 @@ verified by **Unit Tests** (grey box, middle, 5nd column).
 
 Components are defined by **Component Requirements** (green box, middle, 3nd column) and the
 **Component Architecture** (green box, middle, 4nd column). A **Component Safety Analysis**
-(green box, middle, 6nd column) is required to verify the Component Architecture. Potential faults
+(green box, middle, 6nd column) is required to verify the Component Architecture, whereby
+violations of safety requirements must be documented. Potential faults
 may mitigated by updating the Component Requirements or by the **Component Assumptions of Use**
 (green box, middle, 8nd column). The latter one must be considered by the user of the Component.
 **Component Tests** (green box, middle, 5nd column) verify the Component requirements, and
@@ -54,7 +55,8 @@ As mentioned above a Software Module is defined as a Component or a set of compo
 Feature of the platform. Features consists of Components and are defined by **Feature Requirements**
 (yellow box, middle, 3nd column) and the **Feature Architecture** (yellow box, middle, 4nd column).
 A **Feature Safety Analysis** (yellow box, middle, 6nd column) is required to verify the Feature
-Architecture. Potential faults may mitigated by updating the Feature Requirements or by the
+Architecture, whereby violations of safety requirements must be documented. Potential
+faults may mitigated by updating the Feature Requirements or by the
 **Feature Assumptions of Use** (yellow box, middle, 8nd column). The latter one must be considered
 by the user of the Feature. **Feature Integration Tests** (yellow box, middle, 5nd column) verify
 the Feature Requirements and the Feature Architecture as well as the Integration of multiple Units
