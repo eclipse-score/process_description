@@ -143,8 +143,8 @@ Module Work products List
           - :ndf:`copy('status', need_id='doc__module_name_verification_report')`
 
         * - :need:`wp__module_sw_release_note`
-          - :need:`gd_temp__rel__mod_rel_note`
-          - :ndf:`copy('status', need_id='gd_temp__rel__mod_rel_note')`
+          - :need:`gd_temp__rel_mod_rel_note`
+          - :ndf:`copy('status', need_id='gd_temp__rel_mod_rel_note')`
           - <Link to issue>
           - :need:`doc__module_name_release_note`
           - :ndf:`copy('status', need_id='doc__module_name_release_note')`
@@ -162,37 +162,37 @@ Component <name> Work products List
           - Link to WP
           - WP/doc status
 
-        * - :need:`wp__requirements__comp`
-          - :need:`gd_temp__req__comp_req`
-          - :ndf:`copy('status', need_id='gd_temp__req__comp_req')`
+        * - :need:`wp__requirements_comp`
+          - :need:`gd_temp__req_comp_req`
+          - :ndf:`copy('status', need_id='gd_temp__req_comp_req')`
           - <Link to issue>
           - :need:`doc__component_name_requirements`
           - doc :ndf:`copy('status', need_id='doc__component_name_requirements')` & WP below
 
-        * - :need:`wp__requirements__comp_aou`
-          - :need:`gd_temp__req__aou_req`
-          - :ndf:`copy('status', need_id='gd_temp__req__aou_req')`
+        * - :need:`wp__requirements_comp_aou`
+          - :need:`gd_temp__req_aou_req`
+          - :ndf:`copy('status', need_id='gd_temp__req_aou_req')`
           - <Link to issue>
           - :need:`doc__component_name_requirements`
           - doc :ndf:`copy('status', need_id='doc__component_name_requirements')` & WP below
 
-        * - :need:`wp__requirements__inspect`
-          - :need:`gd_chklst__req__inspection`
-          - :ndf:`copy('status', need_id='gd_chklst__req__inspection')`
+        * - :need:`wp__requirements_inspect`
+          - :need:`gd_chklst__req_inspection`
+          - :ndf:`copy('status', need_id='gd_chklst__req_inspection')`
           - n/a
           - Checklist used in Pull Request Review
           - n/a
 
         * - :need:`wp__component_arch`
-          - :need:`gd_temp__arch__comp`
-          - :ndf:`copy('status', need_id='gd_temp__arch__comp')`
+          - :need:`gd_temp__arch_comp`
+          - :ndf:`copy('status', need_id='gd_temp__arch_comp')`
           - <Link to issue>
           - :need:`doc__component_name_architecture`
           - doc :ndf:`copy('status', need_id='doc__component_name_architecture')` & WP below
 
         * - :need:`wp__sw_arch_verification`
-          - :need:`gd_chklst__arch__inspection_checklist`
-          - :ndf:`copy('status', need_id='gd_chklst__arch__inspection_checklist')`
+          - :need:`gd_chklst__arch_inspection_checklist`
+          - :ndf:`copy('status', need_id='gd_chklst__arch_inspection_checklist')`
           - n/a
           - Checklist used in Pull Request Review
           - n/a
@@ -265,15 +265,15 @@ If the OSS element is classified as a
           - Link to issue
           - Reasoning for tailoring
 
-        * - :need:`wp__requirements__comp`
+        * - :need:`wp__requirements_comp`
           - <Link to issue>
           - Always needed (for Q and QR classification) and also improves process Id 2
 
-        * - :need:`wp__requirements__comp_aou`
+        * - :need:`wp__requirements_comp_aou`
           - <Link to issue>
           - Always needed (for Q and QR classification) and also improves process Id 5
 
-        * - :need:`wp__requirements__inspect`
+        * - :need:`wp__requirements_inspect`
           - n/a
           - Checklist used in Pull Request Review
 

@@ -16,7 +16,7 @@ Checklists
 ##########
 
 .. gd_chklst:: Documentation Review Checklist
-   :id: gd_chklst__documentation__review
+   :id: gd_chklst__documentation_review
    :status: valid
    :complies: std_req__iso26262__support_1045
 

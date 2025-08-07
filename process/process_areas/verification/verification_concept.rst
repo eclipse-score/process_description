@@ -16,7 +16,7 @@ Verification Concept
 ####################
 
 .. doc_concept:: Verification Concept
-   :id: doc_concept__verification__process
+   :id: doc_concept__verification_process
    :status: valid
    :tags: requirements_engineering
 
@@ -180,7 +180,7 @@ stakeholder requirements as stakeholder requirements describe the platform behav
 
 Requirements always include Assumptions Of Use.
 
-A more detailed description of how to link code to requirements is available here: :need:`gd_req__verification__link_tests`
+A more detailed description of how to link code to requirements is available here: :need:`gd_req__verification_link_tests`
 
 Workflow for Verification Guidance
 ----------------------------------

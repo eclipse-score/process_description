@@ -16,7 +16,7 @@ Concept Description
 ###################
 
 .. doc_concept:: Concept Description
-   :id: doc_concept__rel__process
+   :id: doc_concept__rel_process
    :status: valid
 
 This section describes the general concept for the release management process.

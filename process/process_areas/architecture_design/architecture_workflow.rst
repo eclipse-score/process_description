@@ -24,10 +24,10 @@ Architecture Workflow
    :responsible: rl__contributor
    :approved_by: rl__committer
    :supported_by: rl__safety_manager, rl__security_manager
-   :input: wp__requirements__feat, wp__issue_track_system
+   :input: wp__requirements_feat, wp__issue_track_system
    :output: wp__feature_arch
-   :contains: gd_guidl__arch__design, gd_temp__arch__feature
-   :has: doc_concept__arch__process, doc_getstrt__arch__process
+   :contains: gd_guidl__arch_design, gd_temp__arch_feature
+   :has: doc_concept__arch_process, doc_getstrt__arch_process
 
    The feature architectures are created and maintained.
 
@@ -38,10 +38,10 @@ Architecture Workflow
    :responsible: rl__contributor
    :approved_by: rl__committer
    :supported_by: rl__safety_manager, rl__security_manager
-   :input: wp__feature_arch, wp__requirements__comp, wp__issue_track_system
+   :input: wp__feature_arch, wp__requirements_comp, wp__issue_track_system
    :output: wp__component_arch
-   :contains: gd_guidl__arch__design, gd_temp__arch__comp
-   :has: doc_concept__arch__process, doc_getstrt__arch__process
+   :contains: gd_guidl__arch_design, gd_temp__arch_comp
+   :has: doc_concept__arch_process, doc_getstrt__arch_process
 
    The component architectures are created and maintained.
 
@@ -54,8 +54,8 @@ Architecture Workflow
    :supported_by: rl__safety_manager, rl__security_manager
    :input: wp__feature_arch, wp__component_arch
    :output: wp__issue_track_system, wp__sw_arch_verification
-   :contains: gd_guidl__arch__design, gd_chklst__arch__inspection_checklist
-   :has: doc_concept__arch__process, doc_getstrt__arch__process
+   :contains: gd_guidl__arch_design, gd_chklst__arch_inspection_checklist
+   :has: doc_concept__arch_process, doc_getstrt__arch_process
 
    The architecture designs are monitored and verified.
 

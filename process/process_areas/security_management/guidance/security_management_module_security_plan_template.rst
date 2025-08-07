@@ -148,21 +148,21 @@ Module Security Plan Template
           - Link to WP
           - WP status
 
-        * - :need:`wp__requirements__comp`
+        * - :need:`wp__requirements_comp`
           - <Link to process>
           - <automated>
           - <Link to issue>
           - <Link to WP>
           - <automated>
 
-        * - :need:`wp__requirements__comp_aou`
+        * - :need:`wp__requirements_comp_aou`
           - <Link to process>
           - <automated>
           - <Link to issue>
           - <Link to WP>
           - <automated>
 
-        * - :need:`wp__requirements__inspect`
+        * - :need:`wp__requirements_inspect`
           - <Link to process>
           - <automated>
           - n/a

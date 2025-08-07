@@ -89,7 +89,7 @@ Workflow Security Management
    :responsible: rl__security_manager
    :approved_by: rl__technical_lead, rl__module_lead
    :supported_by: rl__safety_manager
-   :input: wp__requirements__feat_aou, wp__requirements__feat, wp__feature_arch, wp__feature_fmea, wp__feature_dfa, wp__requirements__comp_aou, wp__requirements__comp, wp__component_arch, wp__sw_component_fmea, wp__sw_component_dfa
+   :input: wp__requirements_feat_aou, wp__requirements_feat, wp__feature_arch, wp__feature_fmea, wp__feature_dfa, wp__requirements_comp_aou, wp__requirements_comp, wp__component_arch, wp__sw_component_fmea, wp__sw_component_dfa
    :output: wp__platform_security_manual, wp__module_security_manual
    :contains: gd_guidl__security_manual, gd_temp__security_manual, gd_guidl__security_plan_definitions
    :has: doc_concept__security_management_process, doc_getstrt__security_management_process

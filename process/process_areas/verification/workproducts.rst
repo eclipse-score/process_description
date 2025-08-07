@@ -127,7 +127,7 @@ Inspection activities on requirement, architecture and detailed design are handl
 
 The work products are handled within these process areas:
 
-     * :ref:`requirements_engineering` implementing :need:`wp__requirements__inspect`
+     * :ref:`requirements_engineering` implementing :need:`wp__requirements_inspect`
      * :ref:`arch_design_process` implementing :need:`wp__sw_arch_verification`
      * :ref:`implementation` implementing :need:`wp__sw_implementation_inspection`
 
@@ -136,6 +136,6 @@ Tool Verification
 
 As part of tool management as supporting function it is handled as follows
 
-     * :need:`wf__tool__create_tool_verification_report` describes implementation of :need:`wp__tool_verification_report`
+     * :need:`wf__tool_create_tool_verification_report` describes implementation of :need:`wp__tool_verification_report`
 
 It is planned in the :need:`wp__platform_mgmt`

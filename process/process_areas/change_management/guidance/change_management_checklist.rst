@@ -18,7 +18,7 @@ Checklists
 ##########
 
 .. gd_chklst:: Change Request Review Checklist
-   :id: gd_chklst__change__cr_review
+   :id: gd_chklst__change_cr_review
    :status: valid
    :tags: change_management
    :complies: std_req__aspice_40__SUP-10-BP1, std_req__aspice_40__SUP-10-BP3, std_req__aspice_40__SUP-10-BP5, std_req__aspice_40__iic-13-51

@@ -126,5 +126,5 @@ Lower Level Components
 .. attention::
     The above directives must be updated according to your component architecture.
 
-    - Replace the example content by the real content (according to :need:`gd_guidl__arch__design`)
+    - Replace the example content by the real content (according to :need:`gd_guidl__arch_design`)
     - Set the status to valid and start the review/merge process

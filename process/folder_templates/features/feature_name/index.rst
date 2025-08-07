@@ -119,7 +119,7 @@ Safety Impact
 
    .. note::
       If there are safety concerns in relation to the CR, those concerns should be explicitly written out to make sure reviewers of the CR are aware of them.
-      Link here to the filled out :need:`Impact Analysis Template <gd_temp__change__impact_analysis>` or copy the template in this chapter.
+      Link here to the filled out :need:`Impact Analysis Template <gd_temp__change_impact_analysis>` or copy the template in this chapter.
 
 Which safety requirements are affected or has to be changed?
 Could the new/modified feature be a potential common cause or cascading failure initiator?

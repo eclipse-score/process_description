@@ -16,7 +16,7 @@ Concept Description
 ###################
 
 .. doc_concept:: Concept Description
-   :id: doc_concept__imp__concept
+   :id: doc_concept__imp_concept
    :status: valid
    :tags: implementation
 
@@ -28,7 +28,7 @@ Inputs
 
 #. ISO 26262 Part-6 Chapter 8+9
 #. ASPICE SWE 3+4
-#. Component Requirements :need:`wp__requirements__comp` and Architecture :need:`wp__component_arch`
+#. Component Requirements :need:`wp__requirements_comp` and Architecture :need:`wp__component_arch`
 #. Software Development Plan :need:`gd_temp__software_development_plan`
 
 Outputs
@@ -106,7 +106,7 @@ It is represented using **UML behavioral diagrams**, including:
 
 These diagrams are essential for understanding the **dynamic behavior** of the component and how
 units collaborate to perform tasks. But this also means that if the dynamic behaviour is simple
-it does not require a dynamic diagram at all (similar to the rules depicted in :need:`gd_guidl__arch__design`).
+it does not require a dynamic diagram at all (similar to the rules depicted in :need:`gd_guidl__arch_design`).
 
 Units within the Component
 --------------------------
