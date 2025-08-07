@@ -124,7 +124,7 @@ For cpp using doxygen style comments-
    /**
       * @rst
       * .. sw_unit:: cpp unit
-      *    :id: sw_unit__<title>
+      *    :id: sw_unit__<Feature>__<title>
       *
       *    This implements the ....
       * @endrst
@@ -135,7 +135,7 @@ for rust -
 .. code-block:: rust
 
    //! .. sw_unit:: rust unit
-   //!     :id: sw_unit__<title>
+   //!     :id: sw_unit__<Feature>__<title>
    //!
    //!     This implements the ....
 
@@ -154,7 +154,7 @@ For cpp using doxygen comments-
    /**
       * @rst
       * .. sw_unit_int:: cpp unit
-      *    :id: sw_unit_int__<title>
+      *    :id: sw_unit_int__<Feature>__<title>
       *
       *    This implements the ....
       * @endrst
@@ -165,6 +165,6 @@ For rust -
 .. code-block:: rust
 
    //! .. sw_unit_int:: rust unit
-   //!     :id: sw_unit_int__<title>
+   //!     :id: sw_unit_int__<Feature>__<title>
    //!
    //!     This implements the ....
