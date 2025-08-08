@@ -54,7 +54,7 @@ Process Safety Analysis Attributes
    The naming convention shall be defined in the project and shall be used consistently.
 
 .. gd_req:: Safety Analysis attribute: title
-   :id: gd_req__saf__attr_title
+   :id: gd_req__saf_attr_title
    :status: valid
    :tags: manual, attribute, mandatory
    :satisfies: wf__analyse_platform_featarch, wf__analyse_featarch, wf__analyse_comparch
@@ -63,7 +63,7 @@ Process Safety Analysis Attributes
    The title of the Safety Analysis shall provide a short summary of the description
 
 .. gd_req:: Safety Analysis attribute: mitigated by
-   :id: gd_req__saf__attr_mitigated_by
+   :id: gd_req__saf_attr_mitigated_by
    :status: valid
    :tags: prio_1_automation, attribute, optional
    :satisfies: wf__analyse_platform_featarch, wf__analyse_featarch, wf__analyse_comparch
@@ -74,7 +74,7 @@ Process Safety Analysis Attributes
    If status == valid then mitigated_by is mandatory.
 
 .. gd_req:: Safety Analysis attribute: mitigation issue
-   :id: gd_req__saf__attr_mitigation_issue
+   :id: gd_req__saf_attr_mitigation_issue
    :status: valid
    :tags: prio_1_automation, attribute, optional
    :satisfies: wf__analyse_platform_featarch, wf__analyse_featarch, wf__analyse_comparch

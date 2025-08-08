@@ -16,7 +16,7 @@ Safety Management Process Requirements
 ======================================
 
 .. gd_req:: Safety Management Document Status
-   :id: gd_req__safety__doc_status
+   :id: gd_req__safety_doc_status
    :status: valid
    :tags: done_automation
    :complies: std_req__iso26262__management_6468
@@ -27,7 +27,7 @@ Safety Management Process Requirements
    Note: This can be done by defining the document as a sphinx-need and using sphinx mechanisms.
 
 .. gd_req:: Safety Management Work Product Status
-   :id: gd_req__safety__wp_status
+   :id: gd_req__safety_wp_status
    :status: valid
    :tags: prio_1_automation
    :complies: std_req__iso26262__management_6468

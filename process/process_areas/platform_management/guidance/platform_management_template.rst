@@ -18,7 +18,7 @@ Platform Management Template
 ============================
 
 .. gd_temp:: Platform Management Plan Template
-   :id: gd_temp__platform__mgmt_plan
+   :id: gd_temp__platform_mgmt_plan
    :status: valid
    :complies: std_req__aspice_40__MAN-3-BP1
 

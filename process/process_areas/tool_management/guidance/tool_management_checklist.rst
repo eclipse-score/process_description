@@ -18,7 +18,7 @@ Tool Verification Report Review Checklist
 #########################################
 
 .. gd_chklst:: Tool Verification Report Review Checklist
-   :id: gd_chklst__tool__cr_review
+   :id: gd_chklst__tool_cr_review
    :status: valid
    :tags: tool_management
    :complies: std_req__iso26262__support_1141, std_req__iso26262__support_1142, std_req__iso26262__support_1143, std_req__iso26262__support_11441, std_req__iso26262__support_11442, std_req__iso26262__support_11451, std_req__iso26262__support_11452, std_req__iso26262__support_11453, std_req__iso26262__support_11454, std_req__iso26262__support_11461, std_req__iso26262__support_11462

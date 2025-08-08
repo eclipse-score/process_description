@@ -16,13 +16,13 @@ Getting Started
 ###############
 
 .. doc_getstrt:: Getting Started on Requirements
-   :id: doc_getstrt__req__process
+   :id: doc_getstrt__req_process
    :status: valid
    :tags: requirements_engineering
 
 This document describes the steps which need to be done to create requirements, derive child requirements and finally to perform the formal requirement inspection.
 
-Therefore both a :need:`[[title]] <gd_guidl__req__engineering>` and a :need:`[[title]] <doc_concept__req__process>` are available.
+Therefore both a :need:`[[title]] <gd_guidl__req_engineering>` and a :need:`[[title]] <doc_concept__req_process>` are available.
 
 The subsequent steps of linking requirements to code and test cases are described in different guidelines:
 
@@ -56,7 +56,7 @@ For linking requirements to source code a tool is available:
 Linking Requirements to Tests
 =============================
 
-For linking Requirements to tests metatags shall be used :need:`gd_req__verification__link_tests`
+For linking Requirements to tests metatags shall be used :need:`gd_req__verification_link_tests`
 
 
 Developer Experience

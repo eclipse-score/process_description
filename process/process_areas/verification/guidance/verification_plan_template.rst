@@ -18,7 +18,7 @@ Verification Plan Template
 ##########################
 
 .. gd_temp:: Platform Verification Plan Template
-    :id: gd_temp__verification__plan
+    :id: gd_temp__verification_plan
     :status: valid
     :complies: std_wp__iso26262__support_951, std_wp__iso26262__support_1252
 

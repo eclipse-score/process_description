@@ -18,7 +18,7 @@ Inspection Checklist Template
 =============================
 
 .. gd_chklst:: Architecture Inspection Checklist Template
-    :id: gd_chklst__arch__inspection_checklist
+    :id: gd_chklst__arch_inspection_checklist
     :status: valid
     :tags: architecture_design
     :complies: std_req__iso26262__software_647

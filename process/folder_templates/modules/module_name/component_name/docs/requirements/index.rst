@@ -19,7 +19,7 @@ Requirements
    :id: doc__component_name_requirements
    :status: draft
    :safety: ASIL_B
-   :realizes: wp__requirements__comp
+   :realizes: wp__requirements_comp
    :tags: template
 
 .. attention::
@@ -64,7 +64,7 @@ Requirements
 .. attention::
     The above directives must be updated according to your feature requirements.
 
-    - Replace the example content by the real content for your first requirement (according to :need:`gd_guidl__req__engineering`)
+    - Replace the example content by the real content for your first requirement (according to :need:`gd_guidl__req_engineering`)
     - Set the status to valid and start the review/merge process
     - Add other needed requirements for your feature
 

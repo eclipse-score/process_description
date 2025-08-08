@@ -54,7 +54,7 @@ Static Diagrams for Unit Interactions
 .. code-block:: rst
 
    .. dd_sta:: <Title>
-      :id: dd_sta__<Title>
+      :id: dd_sta__<Feature>__<Title>
       :security: <YES|NO>
       :safety: <QM|ASIL_B>
       :status: <valid|invalid>
@@ -68,7 +68,7 @@ Dynamic Diagrams for Unit Interactions
 .. code-block:: rst
 
    .. dd_dyn:: <Title>
-      :id: dd_dyn__<Title>
+      :id: dd_dyn__<Feature>__<Title>
       :security: <YES|NO>
       :safety: <QM|ASIL_B>
       :status: <valid|invalid>

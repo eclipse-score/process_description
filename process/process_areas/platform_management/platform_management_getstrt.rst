@@ -16,7 +16,7 @@ Getting Started
 ###############
 
 .. doc_getstrt:: Getting Started on Platform/Project Management
-   :id: doc_getstrt__platform__process
+   :id: doc_getstrt__platform_process
    :status: valid
    :tags: platform_management
 

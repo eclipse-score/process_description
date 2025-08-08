@@ -21,7 +21,7 @@ Concept
 -------
 
 .. doc_concept:: Safety Management Concept
-   :id: doc_concept__safety_management__process
+   :id: doc_concept__safety_management_process
    :status: valid
 
 In this section a concept for the safety management will be discussed. Inputs for this concepts are mainly the requirements of ISO26262 "Part 2: Management of functional safety"
@@ -88,7 +88,7 @@ Getting started
 ---------------
 
 .. doc_getstrt:: Safety Management Get Started
-   :id: doc_getstrt__safety_management__process
+   :id: doc_getstrt__safety_management_process
    :status: valid
 
 

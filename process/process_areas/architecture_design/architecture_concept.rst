@@ -16,7 +16,7 @@ Concept Description
 ###################
 
 .. doc_concept:: Architecture Process
-   :id: doc_concept__arch__process
+   :id: doc_concept__arch_process
    :status: valid
 
 In this section a concept for the architecture design will be discussed.
@@ -124,12 +124,12 @@ Static View
 The first viewpoint is named as *feature architecture*. It displays the SW modules (= top level SW components) which are required to realize the feature including their interactions. Also the *logical interfaces* and the interaction between the feature and the user are included in this view. On this architectural level the feature requirements shall be allocated. An example for the static architecture is shown here:
 
 .. feat_arc_sta:: Feature 1
-   :id: feat_arc_sta__feature_1
+   :id: feat_arc_sta__example_feature__feature_1
    :security: YES
    :safety: QM
    :status: valid
-   :includes: logic_arc_int__archdes_logical_interface_1, logic_arc_int__archdes_logical_interface_2
-   :fulfils: feat_req__archdes_example_req
+   :includes: logic_arc_int__example_feature__archdes_logical_interface_1, logic_arc_int__example_feature__archdes_logical_interface_2
+   :fulfils: feat_req__example_feature__archdes_example_req
 
    .. needarch::
       :scale: 50
@@ -160,11 +160,11 @@ Interface View
 On the feature level only *logical interfaces* shall be displayed. This means that only logical names shall be provided for both the interface and the operations within. Those *logical interfaces* shall be connected to component interfaces on the module view.
 
 .. logic_arc_int:: Logical Interface 1
-   :id: logic_arc_int__archdes_logical_interface_1
+   :id: logic_arc_int__example_feature__archdes_logical_interface_1
    :security: YES
    :safety:  ASIL_B
    :status: valid
-   :fulfils: feat_req__archdes_example_req
+   :fulfils: feat_req__example_feature__archdes_example_req
 
    .. needarch::
       :scale: 50
@@ -180,8 +180,8 @@ A SW Module in S-CORE represents a `Bazel Module <https://bazel.build/external/m
 On this level also a view shall be defined which is called *Module View*. It represents the allocation of components into modules and displays the dependencies between the single modules. In this view also cyclic dependencies between modules can be identified.
 
 .. mod_view_sta:: Module 3
-   :id: mod_view_sta__archdes_3
-   :includes: comp_arc_sta__archdes_component_1
+   :id: mod_view_sta__example_feature__archdes_3
+   :includes: comp_arc_sta__example_feature__archdes_component_1
 
    .. needarch::
       :scale: 50
@@ -199,12 +199,12 @@ Static View
 The second viewpoint is named as *component architecture* and describes the implementation of the functionalities in a white-box view of the platform. It describes the structural decomposition of the *SW components* into *lower level* SW components. In the S-CORE project this viewpoint provides more detailed information concerning the respective interfaces of a component. If a SW component interacts with a different component it is also included via a *use* relationship in the diagram. An example of the *component architecture* is displayed here:
 
 .. comp_arc_sta:: Component 2
-   :id: comp_arc_sta__archdes_component_2
+   :id: comp_arc_sta__example_feature__archdes_component_2
    :status: valid
    :safety: ASIL_B
    :security: NO
-   :includes: comp_arc_sta__archdes_sub_component_1, comp_arc_sta__archdes_sub_component_2, comp_arc_sta__archdes_sub_component_3
-   :fulfils: comp_req__archdes_example_req
+   :includes: comp_arc_sta__example_feature__archdes_sub_component_1, comp_arc_sta__example_feature__archdes_sub_component_2, comp_arc_sta__example_feature__archdes_sub_component_3
+   :fulfils: comp_req__example_feature__archdes_example_req
 
    .. needarch::
       :scale: 50
@@ -229,11 +229,11 @@ Interface View
 The component interface view shows the actual interfaces of the component. Also links to their corresponding logical interfaces are displayed in this view:
 
 .. real_arc_int:: Component Interface 1
-   :id: real_arc_int__archdes_component_interface_1
+   :id: real_arc_int__example_feature__archdes_component_interface_1
    :status: valid
    :safety: ASIL_B
    :security: NO
-   :fulfils: comp_req__archdes_example_req
+   :fulfils: comp_req__example_feature__archdes_example_req
    :language: cpp
 
    .. needarch::
@@ -363,7 +363,7 @@ Following attributes need to be filled manually for each requirement:
    * - Attribute
      - Description
    * - Unique ID
-     - The naming scheme for the UID is defined here: :need:`gd_req__arch__attribute_uid`
+     - The naming scheme for the UID is defined here: :need:`gd_req__arch_attribute_uid`
    * - Title
      - The title of the architectural element shall be expressive.
    * - Status
@@ -377,8 +377,8 @@ Following attributes need to be filled manually for each requirement:
 
 For creating architectural elements also templates for each level are available:
 
-* Feature Architecture: :need:`[[title]] <gd_temp__arch__feature>`
-* Component Architecture: :need:`[[title]] <gd_temp__arch__comp>`
+* Feature Architecture: :need:`[[title]] <gd_temp__arch_feature>`
+* Component Architecture: :need:`[[title]] <gd_temp__arch_comp>`
 
 .. _traceability of the architecture:
 
@@ -392,4 +392,4 @@ During the architectural design process all feature and component requirements s
 Reviews of the architecture
 ***************************
 
-Some of the checks cannot be performed automatically. Therefore a manual inspection of the architecture is needed. The architecture review itself is included in the PR review which is triggered if a contributor wants to commit code to the main line. For this review a checklist is available: :need:`gd_chklst__arch__inspection_checklist`.
+Some of the checks cannot be performed automatically. Therefore a manual inspection of the architecture is needed. The architecture review itself is included in the PR review which is triggered if a contributor wants to commit code to the main line. For this review a checklist is available: :need:`gd_chklst__arch_inspection_checklist`.

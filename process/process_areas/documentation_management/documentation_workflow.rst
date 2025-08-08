@@ -17,7 +17,7 @@ Workflow Documentation Management
 #################################
 
 The main work product is the documentation management plan, which is a part of the platform
-management plan. Thus the work flow :need:`wf__platform__cr_mt_platform_mgmt_plan` applies.
+management plan. Thus the work flow :need:`wf__platform_cr_mt_platform_mgmt_plan` applies.
 
 The documentation management plan should contain the strategy to manage the identified
 documentations in an effective and repeatable way for the project life cycle.

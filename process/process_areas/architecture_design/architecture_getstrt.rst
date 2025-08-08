@@ -18,12 +18,12 @@ Getting Started
 ###############
 
 .. doc_getstrt:: Architecture Design Process
-   :id: doc_getstrt__arch__process
+   :id: doc_getstrt__arch_process
    :status: valid
 
 As described in the :ref:`Architecture Design Concept <architectural_viewpoints>` currently two views are defined. The *getting started* provides an overview which steps need to be done to create the feature architecture and the component architecture.
 
-For the detailed description both an :need:`[[title]] <gd_guidl__arch__design>` and an :need:`[[title]]<doc_concept__arch__process>` are available.
+For the detailed description both an :need:`[[title]] <gd_guidl__arch_design>` and an :need:`[[title]]<doc_concept__arch_process>` are available.
 
 General Workflow
 ****************
@@ -35,7 +35,7 @@ General Workflow
 
    Architecture Design Workflow
 
-:numref:`architecture_workflow_fig` shows all steps which are required to create an architectural design. In this getting started only a short overview is given. A more detailed description of all the step is provided in the :need:`guideline <gd_guidl__arch__design>`
+:numref:`architecture_workflow_fig` shows all steps which are required to create an architectural design. In this getting started only a short overview is given. A more detailed description of all the step is provided in the :need:`guideline <gd_guidl__arch_design>`
 
 Tooling support
 ***************
@@ -110,12 +110,12 @@ Here are some excerpts of UML diagrams made from the requirements of that file.
 Feature Architecture
 ^^^^^^^^^^^^^^^^^^^^
 .. feat_arc_sta:: Feature Getting Started
-      :id: feat_arc_sta__archdes_getstrt
+      :id: feat_arc_sta__example_feature__archdes_getstrt
       :security: YES
       :safety: QM
       :status: valid
-      :includes: logic_arc_int__archdes_logical_interface_1, logic_arc_int__archdes_logical_interface_2
-      :fulfils: feat_req__archdes_example_req
+      :includes: logic_arc_int__example_feature__archdes_logical_interface_1, logic_arc_int__example_feature__archdes_logical_interface_2
+      :fulfils: feat_req__example_feature__archdes_example_req
 
       .. needarch::
          :scale: 50
@@ -126,12 +126,12 @@ Feature Architecture
 .. code-block:: rst
 
    .. feat_arc_sta:: Feature Getting Started
-      :id: feat_arc_sta__archdes_getstrt
+      :id: feat_arc_sta__example_feature__archdes_getstrt
       :security: YES
       :safety: QM
       :status: valid
-      :includes: logic_arc_int__archdes_logical_interface_1, logic_arc_int__archdes_logical_interface_2
-      :fulfils: feat_req__archdes_example_req
+      :includes: logic_arc_int__example_feature__archdes_logical_interface_1, logic_arc_int__example_feature__archdes_logical_interface_2
+      :fulfils: feat_req__example_feature__archdes_example_req
 
       .. needarch::
          :scale: 50
@@ -142,13 +142,13 @@ Feature Architecture
 Component Architecture
 ^^^^^^^^^^^^^^^^^^^^^^
 .. comp_arc_sta:: Component 1
-   :id: comp_arc_sta__component_getstrt
+   :id: comp_arc_sta__example_feature__component_getstrt
    :status: valid
    :safety: ASIL_B
    :security: NO
-   :uses: logic_arc_int__archdes_logical_interface_3
-   :implements: logic_arc_int__archdes_logical_interface_1
-   :fulfils: comp_req__archdes_example_req
+   :uses: logic_arc_int__example_feature__archdes_logical_interface_3
+   :implements: logic_arc_int__example_feature__archdes_logical_interface_1
+   :fulfils: comp_req__example_feature__archdes_example_req
 
    .. needarch::
       :scale: 50
@@ -159,13 +159,13 @@ Component Architecture
 .. code-block:: rst
 
    .. comp_arc_sta:: Component 1
-      :id: comp_arc_sta__component_getstrt
+      :id: comp_arc_sta__example_feature__component_getstrt
       :status: valid
       :safety: ASIL_B
       :security: NO
       :uses: real_arc_int__archdes_component_interface_3
-      :implements: real_arc_int__archdes_component_interface_1
-      :fulfils: comp_req__archdes_example_req
+      :implements: real_arc_int__example_feature__archdes_component_interface_1
+      :fulfils: comp_req__example_feature__archdes_example_req
 
       .. needarch::
          :scale: 50
@@ -207,33 +207,33 @@ To make *needuml* work we have to replace the *need()* call with a different fun
 .. code-block:: rst
 
    .. comp_arc_sta:: Component Get Started Manually Edited
-      :id: comp_arc_sta__component_manual_getstrt
+      :id: comp_arc_sta__example_feature__component_manual_getstrt
       :status: valid
       :safety: ASIL_B
       :security: NO
       :uses: real_arc_int__archdes_component_interface_3
-      :implements: real_arc_int__archdes_component_interface_1
-      :fulfils: comp_req__archdes_example_req
+      :implements: real_arc_int__example_feature__archdes_component_interface_1
+      :fulfils: comp_req__example_feature__archdes_example_req
 
       .. needuml::
 
-         {{ draw_component( needs.__getitem__('comp_arc_sta__component_getstrt'), needs ) }}
+         {{ draw_component( needs.__getitem__('comp_arc_sta__example_feature__component_getstrt'), needs ) }}
          component "Component Manual" as CM {
          }
          CM -> LI1: EXTRA_LINKAGE_MANUALLY_ADDED
 
 .. comp_arc_sta:: Component Get Started Manually Edited
-   :id: comp_arc_sta__component_manual_getstrt
+   :id: comp_arc_sta__example_feature__component_manual_getstrt
    :status: valid
    :safety: ASIL_B
    :security: NO
-   :uses: logic_arc_int__archdes_logical_interface_3
-   :implements: logic_arc_int__archdes_logical_interface_1
-   :fulfils: comp_req__archdes_example_req
+   :uses: logic_arc_int__example_feature__archdes_logical_interface_3
+   :implements: logic_arc_int__example_feature__archdes_logical_interface_1
+   :fulfils: comp_req__example_feature__archdes_example_req
 
    .. needuml::
 
-         {{ draw_component( needs.__getitem__('comp_arc_sta__component_getstrt'), needs ) }}
+         {{ draw_component( needs.__getitem__('comp_arc_sta__example_feature__component_getstrt'), needs ) }}
          component "Component Manual" as CM {
          }
          CM -> LI1: EXTRA_LINKAGE_MANUALLY_ADDED

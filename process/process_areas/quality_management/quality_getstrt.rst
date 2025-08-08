@@ -16,7 +16,7 @@ Getting started
 ###############
 
 .. doc_getstrt:: Getting Started on Quality Management
-   :id: doc_getstrt__quality__process
+   :id: doc_getstrt__quality_process
    :status: valid
    :tags: quality_management
 

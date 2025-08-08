@@ -16,11 +16,11 @@ Guideline
 #########
 
 .. gd_guidl:: Problem Resolution Guideline
-   :id: gd_guidl__problem__problem
+   :id: gd_guidl__problem_problem
    :status: valid
    :complies: std_req__aspice_40__SUP-9-BP1, std_req__aspice_40__SUP-9-BP5, std_req__aspice_40__SUP-9-BP6, std_req__aspice_40__SUP-9-BP7
 
-This document describes the general guidances for Problem Resolution based on the concept which is defined :need:`[[title]]<doc_concept__problem__process>`.
+This document describes the general guidances for Problem Resolution based on the concept which is defined :need:`[[title]]<doc_concept__problem_process>`.
 
 General Hints
 =============
@@ -235,7 +235,7 @@ When ready to implement, the author sets the status to "in implementation" manua
   | For the Problem Report Example 2:
   | * The **Create a branch** action was used to create a automatically linked Pull Request
   | * The automatically created branch name reflects the issue UID and the title as
-  | * **126-bug-stkh_req__archdes_example_req-has-no-content**
+  | * **126-bug-stkh_req__example_feature__archdes_example_req-has-no-content**
 
 During the resolution the responsible lead :need:`[[title]] <rl__technical_lead>` or
 :need:`[[title]] <rl__module_lead>` reports regularly the status to the affected
@@ -259,7 +259,7 @@ the problem, until they are closed.
 
 :need:`[[title]] <rl__committer>` checks finally if the problem Resolution is sufficient before
 the status is finally closed.
-To check, if it is sufficient, :need:`Problem Checklist <gd_chklst__problem__cr_review>` may used.
+To check, if it is sufficient, :need:`Problem Checklist <gd_chklst__problem_cr_review>` may used.
 Further the effectiveness of the implemented measure is confirmed and the availability
 of the required reports, as verification results, if applicable.
 

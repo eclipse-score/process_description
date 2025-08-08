@@ -16,7 +16,7 @@ Concept Description
 ###################
 
 .. doc_concept:: Safety Analysis Concept
-   :id: doc_concept__safety__analysis
+   :id: doc_concept__safety_analysis
    :status: valid
    :tags: safety_analysis
 

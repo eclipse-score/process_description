@@ -115,3 +115,39 @@ and they include the available templates for the work products already in the ri
    :maxdepth: 1
 
    folder_templates/index.rst
+\n\n// Small change marker file created at Fri Jul 25 16:04:28 CEST 2025
+\n\n// Small change marker file created at Fri Jul 25 16:04:36 CEST 2025
+\n\n// Small change marker file created at Fri Jul 25 16:04:42 CEST 2025
+\n\n// Small change marker file created at Fri Jul 25 16:07:12 CEST 2025
+\n\n// Small change marker file created at Fri Jul 25 16:07:13 CEST 2025
+\n\n// Small change marker file created at Fri Jul 25 16:07:15 CEST 2025
+\n\n// Small change marker file created at Fri Jul 25 16:12:36 CEST 2025
+\n\n// Small change marker file created at Fri Jul 25 16:12:41 CEST 2025
+\n\n// Small change marker file created at Fri Jul 25 16:12:46 CEST 2025
+\n\n// Small change marker file created at Fri Jul 25 16:23:10 CEST 2025
+\n\n// Small change marker file created at Fri Jul 25 16:23:15 CEST 2025
+\n\n// Small change marker file created at Fri Jul 25 16:23:19 CEST 2025
+\n\n// Small change marker file created at Wed Aug  6 15:50:27 CEST 2025
+\n\n// Small change marker file created at Wed Aug  6 15:50:38 CEST 2025
+\n\n// Small change marker file created at Wed Aug  6 15:50:46 CEST 2025
+\n\n// Small change marker file created at Wed Aug  6 15:56:30 CEST 2025
+\n\n// Small change marker file created at Wed Aug  6 15:56:41 CEST 2025
+\n\n// Small change marker file created at Wed Aug  6 15:56:50 CEST 2025
+\n\n// Small change marker file created at Wed Aug  6 16:04:28 CEST 2025
+\n\n// Small change marker file created at Wed Aug  6 16:04:36 CEST 2025
+\n\n// Small change marker file created at Wed Aug  6 16:04:42 CEST 2025
+\n\n// Small change marker file created at Wed Aug  6 16:06:06 CEST 2025
+\n\n// Small change marker file created at Wed Aug  6 16:06:08 CEST 2025
+\n\n// Small change marker file created at Wed Aug  6 16:06:09 CEST 2025
+\n\n// Small change marker file created at Wed Aug  6 16:08:38 CEST 2025
+\n\n// Small change marker file created at Wed Aug  6 16:08:43 CEST 2025
+\n\n// Small change marker file created at Wed Aug  6 16:08:50 CEST 2025
+\n\n// Small change marker file created at Wed Aug  6 16:12:35 CEST 2025
+\n\n// Small change marker file created at Wed Aug  6 16:12:40 CEST 2025
+\n\n// Small change marker file created at Wed Aug  6 16:12:47 CEST 2025
+\n\n// Small change marker file created at Wed Aug  6 16:17:36 CEST 2025
+\n\n// Small change marker file created at Wed Aug  6 16:17:37 CEST 2025
+\n\n// Small change marker file created at Wed Aug  6 16:17:38 CEST 2025
+\n\n// Small change marker file created at Wed Aug  6 16:20:17 CEST 2025
+\n\n// Small change marker file created at Wed Aug  6 16:20:19 CEST 2025
+\n\n// Small change marker file created at Wed Aug  6 16:20:21 CEST 2025

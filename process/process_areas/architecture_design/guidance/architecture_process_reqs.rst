@@ -21,7 +21,7 @@ Architectural Model
 -------------------
 
 .. gd_req:: Architecture Modeling
-   :id: gd_req__arch__model
+   :id: gd_req__arch_model
    :status: valid
    :tags: manual
    :complies: std_req__iso26262__support_6431, std_req__iso26262__support_6432
@@ -30,7 +30,7 @@ Architectural Model
    For architecture design a model based approach should be used. The model shall consist of different architectural elements.
 
 .. gd_req:: Hierarchical structure of architectural elements
-   :id: gd_req__arch__hierarchical_structure
+   :id: gd_req__arch_hierarchical_structure
    :status: valid
    :tags: done_automation
    :complies: std_req__iso26262__support_6431, std_req__iso26262__support_6432
@@ -42,7 +42,7 @@ Architectural Model
    * Component Level
 
 .. gd_req:: Structuring of the architectural elements
-   :id: gd_req__arch__build_blocks
+   :id: gd_req__arch_build_blocks
    :status: valid
    :tags: done_automation
    :complies: std_req__iso26262__support_6431, std_req__iso26262__support_6432
@@ -61,7 +61,7 @@ Architectural Model
      * Interface Operation (real_arc_int_op)
 
 .. gd_req:: Correlations of the architectural building blocks
-   :id: gd_req__arch__build_blocks_corr
+   :id: gd_req__arch_build_blocks_corr
    :status: valid
    :tags: done_automation
    :complies: std_req__iso26262__support_6431, std_req__iso26262__support_6432
@@ -78,7 +78,7 @@ Architectural Views
 -------------------
 
 .. gd_req:: Architecture Viewpoints
-   :id: gd_req__arch__viewpoints
+   :id: gd_req__arch_viewpoints
    :status: valid
    :tags: manual
    :complies: std_req__iso26262__support_6432, std_req__iso26262__software_742
@@ -96,7 +96,7 @@ Attributes of Architectural Elements
 ------------------------------------
 
 .. gd_req:: Architecture attribute: UID
-   :id: gd_req__arch__attribute_uid
+   :id: gd_req__arch_attribute_uid
    :status: valid
    :tags: manual, attribute, mandatory
    :complies: std_req__iso26262__support_6425, std_req__iso26262__support_6432
@@ -111,7 +111,7 @@ Attributes of Architectural Elements
    Check your project's naming conventions (should be called "doc__naming_conventions")
 
 .. gd_req:: Architecture attribute: security
-   :id: gd_req__arch__attr_security
+   :id: gd_req__arch_attr_security
    :status: valid
    :tags: manual, attribute, mandatory
    :satisfies: wf__cr_mt_featarch, wf__cr_mt_comparch
@@ -122,7 +122,7 @@ Attributes of Architectural Elements
       * No
 
 .. gd_req:: Architecture attribute: safety
-   :id: gd_req__arch__attr_safety
+   :id: gd_req__arch_attr_safety
    :status: valid
    :tags: manual, attribute, mandatory
    :complies: std_req__iso26262__support_6421, std_req__iso26262__support_6425
@@ -134,7 +134,7 @@ Attributes of Architectural Elements
       * ASIL_B
 
 .. gd_req:: Architecture attribute: status
-   :id: gd_req__arch__attr_status
+   :id: gd_req__arch_attr_status
    :status: valid
    :tags: manual, attribute, mandatory
    :complies: std_req__iso26262__support_6425
@@ -149,7 +149,7 @@ Traceability to Requirements
 ----------------------------
 
 .. gd_req:: Architecture attribute: fulfils
-   :id: gd_req__arch__attr_fulfils
+   :id: gd_req__arch_attr_fulfils
    :status: valid
    :tags: manual, attribute, mandatory
    :complies: std_req__iso26262__support_6425
@@ -158,7 +158,7 @@ Traceability to Requirements
    Each architectural element shall be linked to a requirement.
 
 .. gd_req:: Architecture traceability
-   :id: gd_req__arch__traceability
+   :id: gd_req__arch_traceability
    :status: valid
    :tags: manual
    :complies: std_req__iso26262__support_6432
@@ -178,7 +178,7 @@ Checks for Architectural Design
 -------------------------------
 
 .. gd_req:: Architecture mandatory attributes
-   :id: gd_req__arch__attr_mandatory
+   :id: gd_req__arch_attr_mandatory
    :status: valid
    :tags: prio_1_automation, attribute, check
    :satisfies: wf__cr_mt_featarch, wf__cr_mt_comparch
@@ -192,15 +192,15 @@ Checks for Architectural Design
       :colwidths: 30
 
 .. gd_req:: Architecture linkage metamodel
-   :id: gd_req__arch__linkage_safety
+   :id: gd_req__arch_linkage_safety
    :status: valid
    :tags: prio_1_automation, attribute, check
    :satisfies: wf__cr_mt_featarch, wf__cr_mt_comparch
 
-   It shall be checked that every valid safety architectural element is linked according to the defined model :need:`gd_req__arch__build_blocks_corr`.
+   It shall be checked that every valid safety architectural element is linked according to the defined model :need:`gd_req__arch_build_blocks_corr`.
 
 .. gd_req:: Architecture linkage safety
-   :id: gd_req__arch__linkage_safety_trace
+   :id: gd_req__arch_linkage_safety_trace
    :status: valid
    :tags: prio_1_automation, attribute, check
    :satisfies: wf__cr_mt_featarch, wf__cr_mt_comparch
@@ -208,7 +208,7 @@ Checks for Architectural Design
    It shall be checked that valid safety architectural elements (Safety != QM) can only be linked against valid safety architectural elements.
 
 .. gd_req:: Architecture linkage security
-   :id: gd_req__arch__linkage_security_trace
+   :id: gd_req__arch_linkage_security_trace
    :status: valid
    :tags: prio_2_automation, attribute, check
    :satisfies: wf__cr_mt_featarch, wf__cr_mt_comparch
@@ -216,7 +216,7 @@ Checks for Architectural Design
    It shall be checked that security relevant architectural elements (Security == YES) can only be linked against security relevant architectural elements.
 
 .. gd_req:: Architecture linkage requirement
-   :id: gd_req__arch__linkage_requirement
+   :id: gd_req__arch_linkage_requirement
    :status: valid
    :tags: prio_1_automation, attribute, check
    :satisfies: wf__cr_mt_featarch, wf__cr_mt_comparch
@@ -225,7 +225,7 @@ Checks for Architectural Design
    It shall be checked that architectural elements with safety=QM are not linked against safety requirements (safety!=QM).
 
 .. gd_req:: Architecture linkage requirement type
-   :id: gd_req__arch__linkage_requirement_type
+   :id: gd_req__arch_linkage_requirement_type
    :status: valid
    :tags: prio_3_automation, attribute, check
    :satisfies: wf__cr_mt_featarch, wf__cr_mt_comparch
@@ -236,7 +236,7 @@ Checks for Architectural Design
    * Interface requirements <-> interface architectural elements (logic_arc_int, logic_arc_int_op)
 
 .. gd_req:: Architecture check consistency modules
-   :id: gd_req__arch__consistency_model
+   :id: gd_req__arch_consistency_model
    :status: valid
    :tags: prio_2_automation, model, check
    :satisfies: wf__cr_mt_featarch, wf__cr_mt_comparch
@@ -244,7 +244,7 @@ Checks for Architectural Design
    It shall be checked if all mentioned SW components are available in the modules repository.
 
 .. gd_req:: Architecture check consistency interfaces
-   :id: gd_req__arch__consistency_interf
+   :id: gd_req__arch_consistency_interf
    :status: valid
    :tags: prio_2_automation, model, check
    :satisfies: wf__cr_mt_featarch, wf__cr_mt_comparch
@@ -252,7 +252,7 @@ Checks for Architectural Design
    It shall be checked if all mentioned component interfaces are available in the modules repository.
 
 .. gd_req:: Architecture check consistency dynamic architecture
-   :id: gd_req__arch__consistency_dynamic
+   :id: gd_req__arch_consistency_dynamic
    :status: valid
    :tags: prio_3_automation, model, check
    :satisfies: wf__cr_mt_featarch, wf__cr_mt_comparch
@@ -260,7 +260,7 @@ Checks for Architectural Design
    It shall be checked if all SW components which are mentioned in the dynamic architecture are defined in the static architecture.
 
 .. gd_req:: Building Blocks Dynamic Architecture
-   :id: gd_req__arch__build_blocks_dynamic
+   :id: gd_req__arch_build_blocks_dynamic
    :status: valid
    :tags: done_automation
    :satisfies: wf__cr_mt_featarch, wf__cr_mt_comparch

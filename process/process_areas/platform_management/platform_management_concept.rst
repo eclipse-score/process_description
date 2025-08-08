@@ -16,7 +16,7 @@ Concept Description
 ###################
 
 .. doc_concept:: Concept Description
-   :id: doc_concept__platform__process
+   :id: doc_concept__platform_process
    :status: valid
    :tags: platform_management
 

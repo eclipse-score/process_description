@@ -16,7 +16,7 @@ Concept
 -------
 
 .. doc_concept:: Configuration Management Concept
-   :id: doc_concept__configuration__process
+   :id: doc_concept__configuration_process
    :status: valid
 
 In this section a concept for the configuration management will be discussed.

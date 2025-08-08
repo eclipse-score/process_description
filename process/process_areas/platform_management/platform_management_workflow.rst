@@ -18,7 +18,7 @@ Workflow Platform Management
 ############################
 
 .. workflow:: Create/Maintain Platform Management Plan
-   :id: wf__platform__cr_mt_platform_mgmt_plan
+   :id: wf__platform_cr_mt_platform_mgmt_plan
    :status: valid
    :tags: platform_management
    :responsible: rl__technical_lead
@@ -26,8 +26,8 @@ Workflow Platform Management
    :supported_by: rl__safety_manager, rl__security_manager, rl__quality_manager
    :input: wp__policies, wp__issue_track_system
    :output: wp__platform_mgmt, wp__project_mgt, wp__document_mgt_plan, wp__config_mgt_plan, wp__prm_plan, wp__tlm_plan
-   :contains: gd_temp__platform__mgmt_plan, gd_guidl__platform__mgmt_plan, gd_guidl__documentation, gd_chklst__documentation__review, gd_temp__documentation
-   :has: doc_concept__platform__process, doc_getstrt__platform__process
+   :contains: gd_temp__platform_mgmt_plan, gd_guidl__platform_mgmt_plan, gd_guidl__documentation, gd_chklst__documentation_review, gd_temp__documentation
+   :has: doc_concept__platform_process, doc_getstrt__platform_process
 
    The Platform Management Plan shall include the plans as defined by the
    :ref:`Platform Management Plan Template <platform_templates>`.
@@ -36,7 +36,7 @@ Workflow Platform Management
    planning and monitoring approaches, project schedule, escalation and communication path.
 
 .. workflow:: Monitor/Improve Platform Management Plan
-   :id: wf__platform__mr_im_platform_mgmt_plan
+   :id: wf__platform_mr_im_platform_mgmt_plan
    :status: valid
    :tags: platform_management
    :responsible: rl__technical_lead
@@ -44,8 +44,8 @@ Workflow Platform Management
    :supported_by: rl__safety_manager, rl__security_manager, rl__quality_manager
    :input: wp__platform_mgmt, wp__project_mgt, wp__document_mgt_plan, wp__config_mgt_plan
    :output: wp__issue_track_system
-   :contains: gd_temp__platform__mgmt_plan, gd_guidl__platform__mgmt_plan, gd_guidl__documentation, gd_chklst__documentation__review
-   :has: doc_concept__platform__process, doc_getstrt__platform__process
+   :contains: gd_temp__platform_mgmt_plan, gd_guidl__platform_mgmt_plan, gd_guidl__documentation, gd_chklst__documentation_review
+   :has: doc_concept__platform_process, doc_getstrt__platform_process
 
    The :need:`Technical Lead <rl__technical_lead>` is responsible for the monitoring and reporting
    of the work products and activities against the platform management plan.

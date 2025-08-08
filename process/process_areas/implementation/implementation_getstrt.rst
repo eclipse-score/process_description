@@ -16,13 +16,13 @@ Getting Started
 ###############
 
 .. doc_getstrt:: Getting Started on Implementation
-   :id: doc_getstrt__imp__getstrt
+   :id: doc_getstrt__imp_getstrt
    :status: valid
    :tags: Implementation
 
 This document describes the steps which need to be done to document detailed design and implement the code.
 
-Therefore a detailed guideline :need:`gd_guidl__implementation` and a :need:`[[title]] <doc_concept__imp__concept>` is available.
+Therefore a detailed guideline :need:`gd_guidl__implementation` and a :need:`[[title]] <doc_concept__imp_concept>` is available.
 
 
 General Workflow
@@ -41,7 +41,7 @@ The details of what needs to be done in each steps are described in the :need:`g
 Relevant Documents
 ******************
 
-Concept Document: :need:`doc_concept__imp__concept` provides a high-level overview of the integration concept.
+Concept Document: :need:`doc_concept__imp_concept` provides a high-level overview of the integration concept.
 
 Implementation Guideline: :need:`gd_guidl__implementation` Details on the implemenation.
 

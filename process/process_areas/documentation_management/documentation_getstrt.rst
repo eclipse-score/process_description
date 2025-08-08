@@ -16,7 +16,7 @@ Getting Started
 ###############
 
 .. doc_getstrt:: Documentation Management Get Started
-   :id: doc_getstrt__documentation__process
+   :id: doc_getstrt__documentation_process
    :status: valid
 
 In case you are appointed as a :need:`Technical Lead <rl__technical_lead>` by the :need:`rl__project_lead` in the S-CORE project:

@@ -18,11 +18,11 @@ Architecture Guideline
 ######################
 
 .. gd_guidl:: Architectural Design
-   :id: gd_guidl__arch__design
+   :id: gd_guidl__arch_design
    :status: valid
    :complies: std_req__isopas8926__44411, std_req__isopas8926__44412
 
-The guideline focuses on the steps which need to be performed in order to create the architectural design. The concept behind those steps is described in the :need:`[[title]] <doc_concept__arch__process>`
+The guideline focuses on the steps which need to be performed in order to create the architectural design. The concept behind those steps is described in the :need:`[[title]] <doc_concept__arch_process>`
 
 General Hints
 =============
@@ -100,7 +100,7 @@ Create feature architecture (Concept)
 ----------------------------------------
 
 The feature architecture (= high level architecture) shall be created in the feature tree of the platform repository.
-As a starting point a :need:`template <gd_temp__arch__feature>` is available.
+As a starting point a :need:`template <gd_temp__arch_feature>` is available.
 
 Based on this template the feature architecture shall describe the concept of the feature including supporting figures and drawings.
 
@@ -108,7 +108,7 @@ For this step following guidances are available:
 
 * `Branch Naming Conventions <REPLACE_doc__naming_conventions>`
 * `Git Guidelines <REPLACE_doc__git_coding_guidelines>`
-* :need:`[[title]] Feature Architecture <gd_temp__arch__feature>`
+* :need:`[[title]] Feature Architecture <gd_temp__arch_feature>`
 
 .. _model_feature_architecture:
 
@@ -160,7 +160,7 @@ Review architectural design
 As soon as the design is in a mature state it can be reviewed according to :need:`doc_concept__wp_inspections`
 and merged into the main branch of the score repository.
 
-For the review process a checklist template is available: :need:`[[title]] <gd_chklst__arch__inspection_checklist>`
+For the review process a checklist template is available: :need:`[[title]] <gd_chklst__arch_inspection_checklist>`
 
 Following roles should be included in the review:
 
@@ -174,20 +174,20 @@ Following roles should be included in the review:
 Create component architecture (Concept)
 ---------------------------------------
 
-Based on the *feature architecture* the concept for the *component architecture* shall be created in the SW module. It shall describe which components need to be created and how they correlate with each other in order to provide the required functionality. As a starting point a :need:`template <gd_temp__arch__comp>` is provided.
+Based on the *feature architecture* the concept for the *component architecture* shall be created in the SW module. It shall describe which components need to be created and how they correlate with each other in order to provide the required functionality. As a starting point a :need:`template <gd_temp__arch_comp>` is provided.
 
 For this step following guidances are available:
 
 * `Branch Naming Conventions <REPLACE_doc__naming_conventions>`
 * `Git Guidelines <REPLACE_doc__git_coding_guidelines>`
-* :need:`[[title]] <gd_temp__arch__comp>`
+* :need:`[[title]] <gd_temp__arch_comp>`
 
 .. _allocate_component_requirements:
 
 Allocate component requirements to architectural elements
 ---------------------------------------------------------
 
-In this step the component requirements shall be derived (see :need:`[[title]] <gd_guidl__req__engineering>`) and allocated to the architectural elements via the attribute *fulfils*.
+In this step the component requirements shall be derived (see :need:`[[title]] <gd_guidl__req_engineering>`) and allocated to the architectural elements via the attribute *fulfils*.
 
 .. _model_component_architecture:
 
@@ -230,19 +230,19 @@ Following roles should be included in the review:
 
 For the review process a checklist template is available:
 
-:need:`[[title]] <gd_chklst__arch__inspection_checklist>`
+:need:`[[title]] <gd_chklst__arch_inspection_checklist>`
 
 UML diagram selection
 =====================
 
 Static architecture
 -------------------
-As can be seen from the examples presented in :need:`feat_arc_sta__feature_1` and :need:`comp_arc_sta__archdes_component_2`
+As can be seen from the examples presented in :need:`feat_arc_sta__example_feature__feature_1` and :need:`comp_arc_sta__example_feature__archdes_component_2`
 for the static architecture a UML component diagram is expected (and supported by the tooling).
 
 Dynamic architecture
 --------------------
-The :need:`doc_concept__arch__process` shows the usage of UML sequence diagrams to describe dynamic
+The :need:`doc_concept__arch_process` shows the usage of UML sequence diagrams to describe dynamic
 behaviour. This is also the expected default diagram. Alternatively also state machine diagrams can be used
 to describe stateful behaviour. Other types like the activity diagram are not encouraged to use,
 if an activity diagram is used instead of a sequence diagram, this has to be argued as part of the

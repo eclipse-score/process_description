@@ -16,7 +16,7 @@ Concept
 -------
 
 .. doc_concept:: Documentation Management Concept
-   :id: doc_concept__documentation__process
+   :id: doc_concept__documentation_process
    :status: valid
 
 In this section a concept for the documentation management will be discussed.
