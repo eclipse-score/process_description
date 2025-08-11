@@ -36,7 +36,7 @@ General Principles
 * **Independence:** Where possible, verification activities should be performed by someone other than the original author of the code or documentation.
 * **Documentation:** All verification activities and their results must be documented appropriately.
 
-More details on the test strategy and execution can be found in the :need:`wp__verification__plan` implemented by
+More details on the test strategy and execution can be found in the :need:`wp__verification_plan` implemented by
 `REPLACE_doc__verification_plan`.
 
 
@@ -58,7 +58,7 @@ Test specifications should follow :need:`gd_guidl__verification_specification`
 Structuring of the Test Case
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-To fulfill the demands of the work product :need:`wp__verification__plan` the
+To fulfill the demands of the work product :need:`wp__verification_plan` the
 templates in :ref:`verification_process_reqs` shall be used and the :need:`gd_guidl__verification_specification`
 should be followed . This includes general information and templates for the allowed programming languages.
 
@@ -107,7 +107,7 @@ Any failing test case requires an ISSUE.
 The passing rate of safety-critical test cases need to be 100% in order to release the affected component.
 In case of a lower pass rate than 100% for QM level tests, the :need:`rl__technical_lead` and
 :need:`rl__project_lead` can decide, if the platform is in a releasable state. The accepted minimal
-path rate is defined in the :need:`wp__verification__plan`. Due to the high degree of automation, a
+path rate is defined in the :need:`wp__verification_plan`. Due to the high degree of automation, a
 it is recommended that a path rate lower 95% is not acceptable.
 
 In case an existing test case is failing due to regression in the CI, the respective issuer of the

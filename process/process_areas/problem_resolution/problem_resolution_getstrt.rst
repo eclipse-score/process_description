@@ -30,7 +30,7 @@ Examples for problem origins:
 * Deviations found by contributor based on component, feature or platform integration tests.
 * Deviations found by Quality Management activities as defined in the Quality Management Plan.
 
-Therefore guidelines :need:`gd_temp__problem__template`,
+Therefore guidelines :need:`gd_temp__problem_template`,
 :need:`gd_guidl__problem_problem` and a :need:`doc_concept__problem_process`
 are available.
 

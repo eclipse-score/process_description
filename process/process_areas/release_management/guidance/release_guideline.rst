@@ -39,7 +39,7 @@ Software Module Release
 3. **Development and Testing**:
 
    * According process, cross functional teams implement and test.
-   * Check the :need:`wp__verification__module_ver_report` to ensure that all tests pass before proceeding to the release.
+   * Check the :need:`wp__verification_module_ver_report` to ensure that all tests pass before proceeding to the release.
    * In case of failed test, evaluate and possibly justify their failure.
 
 4. **Release Preparation**:
@@ -74,7 +74,7 @@ Platform Release
 
    * Integrate the software modules release candidates into the platform.
    * Conduct comprehensive testing to ensure compatibility and stability.
-   * Check the :need:`wp__verification__platform_ver_report` to ensure that all tests pass before proceeding to the release.
+   * Check the :need:`wp__verification_platform_ver_report` to ensure that all tests pass before proceeding to the release.
    * Address any integration issues promptly to initiate bugfixing of the modules.
    * In case of still failed test, evaluate and possibly justify their failure.
 

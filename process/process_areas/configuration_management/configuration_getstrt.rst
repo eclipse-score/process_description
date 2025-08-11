@@ -16,7 +16,7 @@ Getting Started
 ###############
 
 .. doc_getstrt:: Configuration Management Get Started
-   :id: doc_concept__configuration_process
+   :id: doc_concept__configuration_process_start
    :status: valid
 
 In case you are appointed as a :need:`Technical Lead <rl__technical_lead>` by the :need:`rl__project_lead` in the project:

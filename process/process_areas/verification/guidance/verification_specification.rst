@@ -69,7 +69,7 @@ A test specification contains the following attributes.
        :ref:`verification_concept_types_methods`.
      -
 
-The implementation of :need:`wp__verification__plan` defines the full list of allowed types and methods.
+The implementation of :need:`wp__verification_plan` defines the full list of allowed types and methods.
 
 
 Test description

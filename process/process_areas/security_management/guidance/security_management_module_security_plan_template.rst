@@ -116,7 +116,7 @@ Module Security Plan Template
           - <Link to WP>
           - <automated>
 
-        * - :need:`wp__verification__module_ver_report`
+        * - :need:`wp__verification_module_ver_report`
           - :ref:`process_verification`
           - <automated>
           - <Link to issue>
@@ -197,7 +197,7 @@ Module Security Plan Template
           - <Link to WP>
           - <automated>
 
-        * - :need:`wp__verification__sw_unit_test`
+        * - :need:`wp__verification_sw_unit_test`
           - <Link to process>
           - <automated>
           - <Link to issue>
@@ -211,7 +211,7 @@ Module Security Plan Template
           - <Link to WP>
           - <automated>
 
-        * - :need:`wp__verification__comp_int_test`
+        * - :need:`wp__verification_comp_int_test`
           - <Link to process>
           - <automated>
           - <Link to issue>

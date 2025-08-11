@@ -24,8 +24,8 @@ Workflow Verification
    :responsible: rl__contributor
    :approved_by: rl__committer
    :supported_by: rl__safety_manager
-   :input: wp__sw_implementation, wp__verification__plan
-   :output: wp__verification__sw_unit_test
+   :input: wp__sw_implementation, wp__verification_plan
+   :output: wp__verification_sw_unit_test
    :contains: gd_req__verification_link_tests, gd_req__verification_link_tests_cpp, gd_req__verification_link_tests_python, gd_req__verification_link_tests_rust, gd_req__verification_independence
    :has: doc_concept__verification_process, doc_getstrt__verification_process,
          doc_concept__imp_concept, doc_getstrt__imp_getstrt
@@ -37,7 +37,7 @@ Workflow Verification
    During the review process the test cases will be approved by a committer.
    Committer and contributor need to differ.
    The actual :need:`rl__committer` of the implementation can also be the creator of the unit tests.
-   Independence is achieved by different approver at PRs and by the :need:`wp__verification__module_ver_report`.
+   Independence is achieved by different approver at PRs and by the :need:`wp__verification_module_ver_report`.
 
    The typical steps when creating a unit tests are:
 
@@ -54,8 +54,8 @@ Workflow Verification
    :responsible: rl__contributor
    :approved_by: rl__committer, rl__testing_community
    :supported_by: rl__safety_manager
-   :input: wp__component_arch, wp__sw_implementation, wp__requirements_comp, wp__requirements_comp_aou, wp__verification__plan
-   :output: wp__verification__comp_int_test
+   :input: wp__component_arch, wp__sw_implementation, wp__requirements_comp, wp__requirements_comp_aou, wp__verification_plan
+   :output: wp__verification_comp_int_test
    :contains: gd_req__verification_link_tests, gd_req__verification_link_tests_cpp, gd_req__verification_link_tests_python, gd_req__verification_link_tests_rust, gd_req__verification_independence, gd_guidl__verification_specification
    :has: doc_concept__verification_process, doc_getstrt__verification_process
 
@@ -78,8 +78,8 @@ Workflow Verification
    :approved_by: rl__committer, rl__testing_community
    :supported_by: rl__safety_manager
    :input: wp__feature_arch, wp__requirements_feat, wp__requirements_feat_aou,
-           wp__verification__plan
-   :output: wp__verification__feat_int_test
+           wp__verification_plan
+   :output: wp__verification_feat_int_test
    :contains: gd_req__verification_link_tests, gd_req__verification_link_tests_cpp, gd_req__verification_link_tests_python, gd_req__verification_link_tests_rust, gd_req__verification_independence, gd_guidl__verification_specification
    :has: doc_concept__verification_process, doc_getstrt__verification_process
 
@@ -97,8 +97,8 @@ Workflow Verification
    :responsible: rl__contributor
    :approved_by: rl__committer, rl__testing_community
    :supported_by: rl__safety_manager
-   :input: wp__requirements_stkh, wp__verification__plan
-   :output: wp__verification__platform_test
+   :input: wp__requirements_stkh, wp__verification_plan
+   :output: wp__verification_platform_test
    :contains: gd_req__verification_link_tests, gd_req__verification_link_tests_cpp, gd_req__verification_link_tests_python, gd_req__verification_link_tests_rust, gd_req__verification_independence, gd_guidl__verification_specification
    :has: doc_concept__verification_process, doc_getstrt__verification_process
 
@@ -117,7 +117,7 @@ Workflow Verification
    :approved_by: rl__technical_lead
    :supported_by: rl__safety_manager, rl__infrastructure_tooling_community
    :input: wp__requirements_stkh, wp__platform_mgmt, wp__tool_verification_report
-   :output: wp__verification__plan
+   :output: wp__verification_plan
    :contains: gd_guidl__verification_guide, gd_temp__verification_plan
    :has: doc_concept__verification_process, doc_getstrt__verification_process
 
@@ -133,11 +133,11 @@ Workflow Verification
    :responsible: rl__committer, rl__testing_community
    :approved_by: rl__technical_lead
    :supported_by: rl__safety_manager, rl__infrastructure_tooling_community
-   :input: wp__verification__plan, wp__requirements_stkh, wp__platform_mgmt,
+   :input: wp__verification_plan, wp__requirements_stkh, wp__platform_mgmt,
            wp__feature_arch, wp__requirements_feat, wp__requirements_feat_aou,
            wp__component_arch, wp__requirements_comp, wp__requirements_comp_aou,
            wp__tool_verification_report
-   :output: wp__verification__plan
+   :output: wp__verification_plan
    :contains: gd_guidl__verification_guide, gd_temp__verification_plan
    :has: doc_concept__verification_process, doc_getstrt__verification_process
 
@@ -155,20 +155,20 @@ Workflow Verification
    :responsible: rl__committer, rl__testing_community
    :approved_by: rl__technical_lead
    :supported_by: rl__safety_manager, rl__infrastructure_tooling_community
-   :input: wp__verification__plan, wp__requirements_comp, wp__requirements_comp_aou,
+   :input: wp__verification_plan, wp__requirements_comp, wp__requirements_comp_aou,
            wp__component_arch, wp__module_sw_release_note, wp__platform_mgmt,
            wp__sw_component_fmea, wp__sw_component_dfa,
            wp__sw_arch_verification, wp__sw_implementation_inspection, wp__requirements_inspect,
-           wp__verification__comp_int_test, wp__verification__sw_unit_test
-   :output: wp__verification__module_ver_report
+           wp__verification_comp_int_test, wp__verification_sw_unit_test
+   :output: wp__verification_module_ver_report
    :contains: gd_temp__mod_ver_report
    :has: doc_concept__verification_process, doc_getstrt__verification_process
 
    The verification report is created and maintained by a :need:`rl__committer`.
-   It is based on the :need:`wp__verification__plan` and covers all the components of a module.
+   It is based on the :need:`wp__verification_plan` and covers all the components of a module.
    This includes their requirements, AoUs, Architecture, Detailed Design, Units, DFA, Safety Analyses,
    Unit Code coverage. The respective necessary test methods and rigor of their application is
-   defined in the :need:`wp__verification__plan`.
+   defined in the :need:`wp__verification_plan`.
 
    The report is valid for ONE version of a module.
 
@@ -179,19 +179,19 @@ Workflow Verification
    :responsible: rl__committer, rl__testing_community
    :approved_by: rl__technical_lead
    :supported_by: rl__safety_manager, rl__infrastructure_tooling_community
-   :input: wp__verification__plan, wp__requirements_stkh, wp__requirements_feat, wp__requirements_feat_aou,
+   :input: wp__verification_plan, wp__requirements_stkh, wp__requirements_feat, wp__requirements_feat_aou,
            wp__feature_arch, wp__platform_sw_release_note, wp__platform_mgmt,
            wp__feature_fmea, wp__feature_dfa, wp__platform_dfa,
            wp__sw_arch_verification, wp__requirements_inspect,
-           wp__verification__feat_int_test, wp__verification__platform_test
-   :output: wp__verification__platform_ver_report
+           wp__verification_feat_int_test, wp__verification_platform_test
+   :output: wp__verification_platform_ver_report
    :contains: gd_temp__platform_ver_report
    :has: doc_concept__verification_process, doc_getstrt__verification_process
 
    The verification report is created and maintained by a :need:`rl__committer`.
-   It is based on the :need:`wp__verification__plan` and covers all the selected features of a SW platform.
+   It is based on the :need:`wp__verification_plan` and covers all the selected features of a SW platform.
    This includes their requirements, AoUs, Architecture, DFA, Safety Analyses,
    The respective necessary test methods and rigor of their application is
-   defined in the :need:`wp__verification__plan` and :need:`wp__platform_mgmt`.
+   defined in the :need:`wp__verification_plan` and :need:`wp__platform_mgmt`.
 
    The report is valid for ONE specific platform version baseline.

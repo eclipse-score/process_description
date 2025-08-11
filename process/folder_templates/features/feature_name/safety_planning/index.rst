@@ -98,7 +98,7 @@ Feature Safety Planning
       - Checklist used in Pull Request Review
       - n/a
 
-    * - :need:`wp__verification__feat_int_test`
+    * - :need:`wp__verification_feat_int_test`
       - :need:`gd_guidl__verification_guide`
       - :ndf:`copy('status', need_id='gd_guidl__verification_guide')`
       - <link to issue>

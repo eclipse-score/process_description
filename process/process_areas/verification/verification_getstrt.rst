@@ -31,7 +31,7 @@ Key documents to get an understanding about verification activities are:
 
 * **Concept Document:** :need:`doc_concept__verification_process` provides a high-level overview of the verification concept.
 * **Verification Guideline:** :need:`gd_guidl__verification_guide` details test case development, execution, and reporting procedures.
-* **Verification Plan:** :need:`wp__verification__plan` implementation outlines the overall verification strategy and objectives.
+* **Verification Plan:** :need:`wp__verification_plan` implementation outlines the overall verification strategy and objectives.
   (Note that the implementation of the verification plan can be found in the platform management plan.)
 
 

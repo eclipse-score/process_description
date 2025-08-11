@@ -18,7 +18,7 @@ Problem Report Template
 =======================
 
 .. gd_temp:: Problem Template
-   :id: gd_temp__problem__template
+   :id: gd_temp__problem_template
    :status: draft
    :complies: std_req__aspice_40__SUP-9-BP1, std_req__aspice_40__SUP-9-BP2, std_req__aspice_40__SUP-9-BP3, std_req__aspice_40__SUP-9-BP4,
 

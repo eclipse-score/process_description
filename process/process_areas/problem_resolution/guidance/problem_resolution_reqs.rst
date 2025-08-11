@@ -159,7 +159,7 @@ Problem Resolution Checks
       :columns: title
       :colwidths: 30
 
-   Note: See also template for problem report: :need:`gd_temp__problem__template`
+   Note: See also template for problem report: :need:`gd_temp__problem_template`
 
 .. gd_req:: Problem Report issues closing constraints
    :id: gd_req__problem_check_closing

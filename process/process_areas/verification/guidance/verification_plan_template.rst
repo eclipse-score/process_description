@@ -22,7 +22,7 @@ Verification Plan Template
     :status: valid
     :complies: std_wp__iso26262__support_951, std_wp__iso26262__support_1252
 
-    This document implements :need:`wp__verification__plan`.
+    This document implements :need:`wp__verification_plan`.
 
     It provides a template for a software verification plan and should be adapted to the specific
     project needs.

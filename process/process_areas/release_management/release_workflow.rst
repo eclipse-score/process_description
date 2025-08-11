@@ -21,7 +21,7 @@ Workflow Release Management
    :status: valid
    :responsible: rl__technical_lead
    :approved_by: rl__project_lead
-   :input: wp__module_safety_package, wp__module_sw_release_plan, wp__verification__module_ver_report
+   :input: wp__module_safety_package, wp__module_sw_release_plan, wp__verification_module_ver_report
    :output: wp__module_sw_release_note
    :contains: gd_temp__rel_mod_rel_note, gd_guidl__rel_management
    :has: doc_concept__rel_process
@@ -34,7 +34,7 @@ Workflow Release Management
    :status: valid
    :responsible: rl__technical_lead
    :approved_by: rl__project_lead
-   :input: wp__platform_safety_package, wp__platform_sw_release_plan, wp__verification__platform_ver_report
+   :input: wp__platform_safety_package, wp__platform_sw_release_plan, wp__verification_platform_ver_report
    :output: wp__platform_sw_release_note
    :contains: gd_temp__rel_plat_rel_note, gd_guidl__rel_management
    :has: doc_concept__rel_process

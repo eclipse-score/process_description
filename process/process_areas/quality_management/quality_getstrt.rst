@@ -23,7 +23,7 @@ Getting started
 This document describes the steps which need to be done to ensure Quality according to ASPICE 4.0 as used
 standard in the project.
 
-Therefore guidelines :need:`gd_guidl__qlm_plan_definitions`, :need:`gd_guidl__wp_review` and a :need:`doc_concept__quality__process` are available.
+Therefore guidelines :need:`gd_guidl__qlm_plan_definitions`, :need:`gd_guidl__wp_review` and a :need:`doc_concept__quality_process` are available.
 
 General Workflow
 ****************

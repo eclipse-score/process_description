@@ -89,7 +89,7 @@ Change Request Attributes
       * No
 
 .. gd_req:: Change Request attribute: Types
-   :id: gd_req__change__attr_types
+   :id: gd_req__change_attr_types
    :status: valid
    :tags: prio_1_automation, attribute, mandatory
    :satisfies: wf__change_cr_an_change_request, wf__change_rv_ap_change_request

@@ -31,7 +31,7 @@ Templates
 ---------
 
 To create problem reports, the project shall provide the content of the following template
-in project's selected Issue Tracking System: :need:`[[title]]<gd_temp__problem__template>`.
+in project's selected Issue Tracking System: :need:`[[title]]<gd_temp__problem_template>`.
 
 .. note::
   An example template for the Issue Tracking System in GitHub (`GitHub Issues <https://github.com/features/issues>`_)
@@ -93,7 +93,7 @@ Create Problem Report
 :need:`[[title]] <rl__contributor>` (as author, submitter, reporter) creates the Problem
 Report in the defined Issue Tracking System of the project based on the content of the
 provided template:
-:need:`[[title]]<gd_temp__problem__template>`.
+:need:`[[title]]<gd_temp__problem_template>`.
 
 It is expected that the select Issue Tracking system supports template definition. Best
 practice is to define a template with the required content, so that it can be copied
@@ -235,7 +235,7 @@ When ready to implement, the author sets the status to "in implementation" manua
   | For the Problem Report Example 2:
   | * The **Create a branch** action was used to create a automatically linked Pull Request
   | * The automatically created branch name reflects the issue UID and the title as
-  | * **126-bug-stkh_req__example_feature__archdes_example_req-has-no-content**
+  | * **126-bug-stkh_req__archdes_example_req-has-no-content**
 
 During the resolution the responsible lead :need:`[[title]] <rl__technical_lead>` or
 :need:`[[title]] <rl__module_lead>` reports regularly the status to the affected

@@ -42,7 +42,7 @@ Template Quality Report
       |
       | **1.3. Test coverage**
       | - Overview of test coverage (overall, requirements, architecture)
-      | - Ratio of test coverage to the :need:`wp__verification__plan`
+      | - Ratio of test coverage to the :need:`wp__verification_plan`
       |
       | **1.4. Issues**
       | - List of all issues, compared to the :need:`wp__qms_plan`

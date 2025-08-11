@@ -25,7 +25,7 @@ Workflow Problem Resolution
    :supported_by: rl__technical_lead, rl__module_lead, rl__safety_manager, rl__security_manager, rl__quality_manager
    :input: wp__issue_track_system, wp__prm_plan
    :output: wp__issue_track_system
-   :contains: gd_temp__problem__template, gd_chklst__problem_cr_review, gd_guidl__problem_problem
+   :contains: gd_temp__problem_template, gd_chklst__problem_cr_review, gd_guidl__problem_problem
    :has: doc_concept__problem_process, doc_getstrt__problem_process
 
    The Problem Report is created.
@@ -42,7 +42,7 @@ Workflow Problem Resolution
    :supported_by: rl__technical_lead, rl__module_lead, rl__safety_manager, rl__security_manager, rl__quality_manager
    :input: wp__issue_track_system, wp__prm_plan
    :output: wp__issue_track_system
-   :contains: gd_temp__problem__template, gd_chklst__problem_cr_review, gd_guidl__problem_problem
+   :contains: gd_temp__problem_template, gd_chklst__problem_cr_review, gd_guidl__problem_problem
    :has: doc_concept__problem_process, doc_getstrt__problem_process
 
    The Problem Report is analyzed.
@@ -63,7 +63,7 @@ Workflow Problem Resolution
    :supported_by: rl__technical_lead, rl__module_lead, rl__safety_manager, rl__security_manager, rl__quality_manager
    :input: wp__issue_track_system, wp__prm_plan
    :output: wp__issue_track_system
-   :contains: gd_temp__problem__template, gd_chklst__problem_cr_review, gd_guidl__problem_problem
+   :contains: gd_temp__problem_template, gd_chklst__problem_cr_review, gd_guidl__problem_problem
    :has: doc_concept__problem_process, doc_getstrt__problem_process
 
    The Problem Resolution is implemented and monitored.
@@ -87,7 +87,7 @@ Workflow Problem Resolution
    :supported_by: rl__safety_manager, rl__security_manager, rl__quality_manager
    :input: wp__issue_track_system, wp__prm_plan
    :output: wp__issue_track_system
-   :contains: gd_temp__problem__template, gd_chklst__problem_cr_review, gd_guidl__problem_problem
+   :contains: gd_temp__problem_template, gd_chklst__problem_cr_review, gd_guidl__problem_problem
    :has: doc_concept__problem_process, doc_getstrt__problem_process
 
    The Problem Resolution is closed.

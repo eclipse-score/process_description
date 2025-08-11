@@ -26,7 +26,7 @@ Static Diagrams for Unit Interactions
 -------------------------------------
 
 .. dd_sta:: dd example static
-    :id: gd_req__example_feature__doc__approver
+    :id: dd_sta__example_feature__doc_approver
     :security: NO
     :safety: ASIL_B
     :status: valid
@@ -40,7 +40,7 @@ Dynamic Diagrams for Unit Interactions
 --------------------------------------
 
 .. dd_dyn:: dd example dynamic
-    :id: dd_dyn__example_feature_dd_example_dynamic
+    :id: dd_dyn__example_feature__dd_example_dynamic
     :security: NO
     :safety: ASIL_B
     :status: valid
