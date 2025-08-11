@@ -22,12 +22,12 @@ Guideline
 
 The planning for the documents is part of the :need:`wp__document_mgt_plan` within the Platform Management Plan.
 This plan includes the configuration item list containing all work products created in the project
-as well as additional artefacts as defined in :need:`doc_concept__configuration__process`.
+as well as additional artefacts as defined in :need:`doc_concept__configuration_process`.
 
 The formal elements for documentations in S-CORE are described here: `REPLACE_doc__documentation_mgt_plan`.
 
 For manual review of the formal elements the
-:need:`Documentation Review Checklist <gd_chklst__documentation__review>` may used.
+:need:`Documentation Review Checklist <gd_chklst__documentation_review>` may used.
 
 The review of each document is done as defined for this type of work product in the respective
 process description.

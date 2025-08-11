@@ -16,7 +16,7 @@ Verification Concept
 ####################
 
 .. doc_concept:: Verification Concept
-   :id: doc_concept__verification__process
+   :id: doc_concept__verification_process
    :status: valid
    :tags: requirements_engineering
 
@@ -124,7 +124,7 @@ The derivation of test cases can also be based on certain methods.
 
 Usually the defined methods are not applied on each verification level between unit and platform level.
 Also their execution may differ whether it is a QM or ASIL rated test case.
-The rigor is described in the implementation of :need:`wp__verification__plan`.
+The rigor is described in the implementation of :need:`wp__verification_plan`.
 
 
 Automated test cases should contain further information about which methods have been applied.
@@ -141,7 +141,7 @@ Following aspect should be considered when developing test cases:
 * **Requirements Testing:** Guarantees testing of Component, Feature, and Stakeholder requirements.
 * **Unit Testing:** Focus on testing individual units or components of the code.
   Strive for high code coverage for branches and lines.
-  Coverage goals are defined in the :need:`wp__verification__plan`.
+  Coverage goals are defined in the :need:`wp__verification_plan`.
   Consider not mocking away libraries the unit uses, as long as you can obtain sufficient
   structural coverage from the unit testing with included/integrated libraries,
   as this reduces effort on integration testing.
@@ -180,7 +180,7 @@ stakeholder requirements as stakeholder requirements describe the platform behav
 
 Requirements always include Assumptions Of Use.
 
-A more detailed description of how to link code to requirements is available here: :need:`gd_req__verification__link_tests`
+A more detailed description of how to link code to requirements is available here: :need:`gd_req__verification_link_tests`
 
 Workflow for Verification Guidance
 ----------------------------------

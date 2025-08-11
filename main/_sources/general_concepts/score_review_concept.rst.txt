@@ -33,26 +33,26 @@ In this project there are inspections on the following work products, which are 
         * - inspected work product Id
           - Link to checklist
 
-        * - :need:`wp__requirements__stkh`
-          - :need:`gd_chklst__req__inspection`
+        * - :need:`wp__requirements_stkh`
+          - :need:`gd_chklst__req_inspection`
 
-        * - :need:`wp__requirements__feat`
-          - :need:`gd_chklst__req__inspection`
+        * - :need:`wp__requirements_feat`
+          - :need:`gd_chklst__req_inspection`
 
-        * - :need:`wp__requirements__comp`
-          - :need:`gd_chklst__req__inspection`
+        * - :need:`wp__requirements_comp`
+          - :need:`gd_chklst__req_inspection`
 
-        * - :need:`wp__requirements__feat_aou`
-          - :need:`gd_chklst__req__inspection`
+        * - :need:`wp__requirements_feat_aou`
+          - :need:`gd_chklst__req_inspection`
 
-        * - :need:`wp__requirements__comp_aou`
-          - :need:`gd_chklst__req__inspection`
+        * - :need:`wp__requirements_comp_aou`
+          - :need:`gd_chklst__req_inspection`
 
         * - :need:`wp__feature_arch`
-          - :need:`gd_chklst__arch__inspection_checklist`
+          - :need:`gd_chklst__arch_inspection_checklist`
 
         * - :need:`wp__component_arch`
-          - :need:`gd_chklst__arch__inspection_checklist`
+          - :need:`gd_chklst__arch_inspection_checklist`
 
         * - :need:`wp__sw_implementation`
           - :need:`gd_chklst__impl_inspection_checklist`
@@ -61,7 +61,7 @@ Note that for test cases also a review checklist is provided for guidance, but n
 The same is true for Safety Analysis and DFA.
 The independence of testing respectively of test case review is covered by the use of version managment tool also for the review of test cases.
 Which means that at least the test case definition or the test case review is performed by
-another person as the author of the verified work product (see :need:`gd_req__verification__independence`).
+another person as the author of the verified work product (see :need:`gd_req__verification_independence`).
 
 Inspection Conduct
 ^^^^^^^^^^^^^^^^^^
@@ -80,7 +80,7 @@ based on an implemented technical reviewer mechanism defined for the modified fi
 between reviewer(s) and author, the safety manager, security manager or quality manager can be added to the review to moderate a solution.
 
 The initial step for requirements and architecture is the (informal) GitHub review on every Pull-Request
-(resp. Change Request, see :need:`gd_guidl__change__change_request`)
+(resp. Change Request, see :need:`gd_guidl__change_change_request`)
 which creates or modifies one of these work products (subject to inspection).
 After this review the work products are in status "valid", which means they can be used for further development and verification steps.
 In this review the checklist entries shall be considered which are tagged as "incremental".
@@ -131,7 +131,7 @@ but also the quality manager may ask for inspection for critical QM work product
 
 Judging if the maturity of a work product is already enough to request an inspection
 can be based for example for the requirements on their "Implemented by", "Verified by" and "Requirement Covered" attribute.
-For example when requesting a new feature by filling out the :need:`gd_temp__change__feature_request`
+For example when requesting a new feature by filling out the :need:`gd_temp__change_feature_request`
 you are asked to also specify the feature's requirements
 - it is not expected that the maturity of the requirements is already enough at this time to make a good inspection.
 On the other end of a development "lifecycle",
@@ -151,7 +151,7 @@ Process Requirements
 ^^^^^^^^^^^^^^^^^^^^
 
 .. gd_req:: Version for inspected requirements
-   :id: gd_req__general__requirements_version
+   :id: gd_req__general_requirements_version
    :status: valid
    :tags: prio_1_automation, general
    :complies: std_req__iso26262__support_6433, std_req__iso26262__software_7414
@@ -159,12 +159,12 @@ Process Requirements
 
    The version of a requirement shall not change by an inspection.
 
-   This means: In case the status of the requirement (see :need:`gd_req__req__attr_status`)
+   This means: In case the status of the requirement (see :need:`gd_req__req_attr_status`)
    is used to notify if a requirement is inspected (or another attribute is introduced),
    this shall be ignored for versioning.
 
 .. gd_req:: Version for inspected architecture
-   :id: gd_req__general__architecture_version
+   :id: gd_req__general_architecture_version
    :status: draft
    :tags: general
    :complies: std_req__iso26262__support_6433, std_req__iso26262__software_7414
@@ -172,14 +172,14 @@ Process Requirements
 
    The version of architecture element shall not change by an inspection.
 
-   This means: In case the status of the element (see :need:`gd_req__arch__attr_status`)
+   This means: In case the status of the element (see :need:`gd_req__arch_attr_status`)
    is used to notify if it is inspected (or another attribute is introduced),
    this shall be ignored for versioning.
 
    Note: this applies only if architecture also has a version.
 
 .. gd_req:: Checklist templates in pull requests
-   :id: gd_req__general__checklist_templates
+   :id: gd_req__general_checklist_templates
    :status: valid
    :tags: prio_2_automation, general
    :complies: std_req__iso26262__support_6433, std_req__iso26262__software_7414, std_req__iso26262__software_942
@@ -191,7 +191,7 @@ Process Requirements
    The requirements and architecture inspections are not automatically applied.
 
 .. gd_req:: Status Set Check
-   :id: gd_req__general__status_set_check
+   :id: gd_req__general_status_set_check
    :status: valid
    :tags: prio_2_automation, general
    :complies: std_req__iso26262__support_6433, std_req__iso26262__software_7414
@@ -200,7 +200,7 @@ Process Requirements
    It shall be checked that only a PR with the inspection checklist filled out can set a status to valid(inspected).
 
 .. gd_req:: Status Reset Check
-   :id: gd_req__general__status_reset_check
+   :id: gd_req__general_status_reset_check
    :status: valid
    :tags: prio_2_automation, general
    :complies: std_req__iso26262__support_6433, std_req__iso26262__software_7414

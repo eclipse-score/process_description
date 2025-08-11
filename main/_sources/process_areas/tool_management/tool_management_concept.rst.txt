@@ -16,7 +16,7 @@ Concept Description
 ###################
 
 .. doc_concept:: Concept Description
-   :id: doc_concept__tool__process
+   :id: doc_concept__tool_process
    :status: valid
    :tags: tool_management
 
@@ -67,7 +67,7 @@ Also requirements of standards need to be taken into consideration:
 Required documentation
 **********************
 
-For each tool the :need:`gd_temp__tool_management__verif_rpt_template` shall be used to document
+For each tool the :need:`gd_temp__tool_management_verif_rpt_template` shall be used to document
 the relevant information.
 
 Activities for Tool Management

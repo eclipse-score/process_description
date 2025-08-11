@@ -64,12 +64,12 @@ Guideline Quality Management Plan
    | Supporting processes (Requirements Management, Configuration Management, Change Management, Documentation Management, Tool Management) are planned within the Project Management Plan.
    |
    | **Planning integration and verification:**
-   | Integration on the target hardware is not done in the scope of the SW platform project, but SW/SW integration up to the feature level is performed and its test results are part of the :need:`wp__verification__platform_ver_report`.
+   | Integration on the target hardware is not done in the scope of the SW platform project, but SW/SW integration up to the feature level is performed and its test results are part of the :need:`wp__verification_platform_ver_report`.
    | The integration on the target hardware, done by the distributor or OEM, is supported by delivering a set of HW/SW feature integration and platform tests which were already run successfully on a reference HW platform.
    | This is planned by the respective workproducts:
-   | * :need:`wp__verification__feat_int_test`
-   | * :need:`wp__verification__platform_test`
-   | Verification planning is documented in :need:`wp__verification__plan`
+   | * :need:`wp__verification_feat_int_test`
+   | * :need:`wp__verification_platform_test`
+   | Verification planning is documented in :need:`wp__verification_plan`
    |
    | **Scheduling of audits, conformance checks, work product reviews, release verification and approval:**
    | Scheduling is done in the same way as for all work products definition by issues. The respective work products are listed in :need:`doc_concept__wp_inspections`.

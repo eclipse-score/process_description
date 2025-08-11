@@ -39,12 +39,12 @@ Software Module Release
 3. **Development and Testing**:
 
    * According process, cross functional teams implement and test.
-   * Check the :need:`wp__verification__module_ver_report` to ensure that all tests pass before proceeding to the release.
+   * Check the :need:`wp__verification_module_ver_report` to ensure that all tests pass before proceeding to the release.
    * In case of failed test, evaluate and possibly justify their failure.
 
 4. **Release Preparation**:
 
-   * Update the version number according to the versioning policy of your module (defined in release management part of the :need:`gd_temp__platform__mgmt_plan`).
+   * Update the version number according to the versioning policy of your module (defined in release management part of the :need:`gd_temp__platform_mgmt_plan`).
    * Prepare release notes documenting the changes, improvements, and bug fixes.
    * Check if all planned configuration items are in correct state (i.e. work products are valid, external libraries/tools are used in the correct released version).
    * Ensure the module's safety package is available and complete.
@@ -74,14 +74,14 @@ Platform Release
 
    * Integrate the software modules release candidates into the platform.
    * Conduct comprehensive testing to ensure compatibility and stability.
-   * Check the :need:`wp__verification__platform_ver_report` to ensure that all tests pass before proceeding to the release.
+   * Check the :need:`wp__verification_platform_ver_report` to ensure that all tests pass before proceeding to the release.
    * Address any integration issues promptly to initiate bugfixing of the modules.
    * In case of still failed test, evaluate and possibly justify their failure.
 
 4. **Release Preparation**:
 
    * Check if modules are released.
-   * Update the platform version number according to the versioning policy (defined in release management part of the :need:`gd_temp__platform__mgmt_plan`).
+   * Update the platform version number according to the versioning policy (defined in release management part of the :need:`gd_temp__platform_mgmt_plan`).
    * Prepare platform release notes summarizing the updates from all integrated software modules.
    * Check if all planned configuration items are in correct state (i.e. work products are valid, external libraries/tools are used in the correct released version).
    * Ensure the relevant safety packages are available and complete.
@@ -107,7 +107,7 @@ Tracking and Communication
 
    * Regularly update all stakeholders on the release status as part of the project lead circle.
    * Hold periodic meetings to discuss progress, issues, and dependencies within the tech lead circle.
-   * meeting definition and schedule is defined in the projects's platform managemnt plan, as defined in :need:`gd_guidl__platform__mgmt_plan`.
+   * meeting definition and schedule is defined in the projects's platform managemnt plan, as defined in :need:`gd_guidl__platform_mgmt_plan`.
 
 
 Templates
@@ -122,8 +122,8 @@ For the release note a template has been created for module level and for platfo
    * - Project scope
      - Template
    * - Module Release Notes
-     - :need:`[[title]] <gd_temp__rel__mod_rel_note>`
+     - :need:`[[title]] <gd_temp__rel_mod_rel_note>`
    * - Platform Release Notes
-     - :need:`[[title]] <gd_temp__rel__plat_rel_note>`
+     - :need:`[[title]] <gd_temp__rel_plat_rel_note>`
 
 The above templates shall be used

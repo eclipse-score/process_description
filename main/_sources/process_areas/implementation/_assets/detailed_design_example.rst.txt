@@ -26,13 +26,13 @@ Static Diagrams for Unit Interactions
 -------------------------------------
 
 .. dd_sta:: dd example static
-    :id: dd_sta__dd_example_static
+    :id: dd_sta__example_feature__doc_approver
     :security: NO
     :safety: ASIL_B
     :status: valid
-    :implements: comp_req__archdes_example_req
-    :satisfies: comp_arc_sta__archdes_sub_component_1
-    :includes: sw_unit__unit1, sw_unit__unit2
+    :implements: comp_req__example_feature__archdes_example_req
+    :satisfies: comp_arc_sta__example_feature__archdes_sub_component_1
+    :includes: sw_unit__example_feature__unit1, sw_unit__example_feature__unit2
 
 .. uml:: dd_example_ex_sta.puml
 
@@ -40,12 +40,12 @@ Dynamic Diagrams for Unit Interactions
 --------------------------------------
 
 .. dd_dyn:: dd example dynamic
-    :id: dd_dyn__dd_example_dynamic
+    :id: dd_dyn__example_feature__dd_example_dynamic
     :security: NO
     :safety: ASIL_B
     :status: valid
-    :implements: comp_req__archdes_example_req
-    :satisfies: comp_arc_sta__archdes_sub_component_1
+    :implements: comp_req__example_feature__archdes_example_req
+    :satisfies: comp_arc_sta__example_feature__archdes_sub_component_1
 
 .. uml:: dd_example_ex_dyn.puml
 
@@ -57,7 +57,7 @@ SW Unit
 *******
 
 .. sw_unit:: unit1
-    :id: sw_unit__unit1
+    :id: sw_unit__example_feature__unit1
     :security: NO
     :safety: ASIL_B
     :status: valid
@@ -68,7 +68,7 @@ Interface
 *********
 
 .. sw_unit_int:: int1
-    :id: sw_unit_int__unit1_int1
+    :id: sw_unit_int__example_feature__unit1_int1
     :security: NO
     :safety: ASIL_B
     :status: valid
@@ -79,7 +79,7 @@ SW Unit
 *******
 
 .. sw_unit:: unit2
-    :id: sw_unit__unit2
+    :id: sw_unit__example_feature__unit2
     :security: NO
     :safety: ASIL_B
     :status: valid
@@ -90,7 +90,7 @@ Interface
 *********
 
 .. sw_unit_int:: int2
-    :id: sw_unit_int__unit2_int2
+    :id: sw_unit_int__example_feature__unit2_int2
     :security: NO
     :safety: ASIL_B
     :status: valid

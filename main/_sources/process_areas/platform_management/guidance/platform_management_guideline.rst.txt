@@ -16,11 +16,11 @@ Guideline
 #########
 
 .. gd_guidl:: Working model
-   :id: gd_guidl__platform__mgmt_plan
+   :id: gd_guidl__platform_mgmt_plan
    :status: valid
    :complies: std_req__aspice_40__MAN-3-BP1, std_req__aspice_40__MAN-3-BP2, std_req__aspice_40__MAN-3-BP3, std_req__aspice_40__MAN-3-BP4, std_req__aspice_40__MAN-3-BP5, std_req__aspice_40__MAN-3-BP6, std_req__aspice_40__MAN-3-BP7, std_req__aspice_40__MAN-3-BP8, std_req__aspice_40__MAN-3-BP9, std_req__aspice_40__MAN-3-BP10
 
-This document describes the general guidances for Platform Management based on the concept which is defined :need:`[[title]]<doc_concept__platform__process>`.
+This document describes the general guidances for Platform Management based on the concept which is defined :need:`[[title]]<doc_concept__platform_process>`.
 
 General Hints
 =============
@@ -40,7 +40,7 @@ Templates
 ---------
 
 The content of the Platform Management Plan shall consider the
-:need:`[[title]] <gd_temp__platform__mgmt_plan>`.
+:need:`[[title]] <gd_temp__platform_mgmt_plan>`.
 
 Activities for Platform Management Plan
 =======================================

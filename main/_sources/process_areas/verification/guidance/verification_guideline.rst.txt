@@ -36,7 +36,7 @@ General Principles
 * **Independence:** Where possible, verification activities should be performed by someone other than the original author of the code or documentation.
 * **Documentation:** All verification activities and their results must be documented appropriately.
 
-More details on the test strategy and execution can be found in the :need:`wp__verification__plan` implemented by
+More details on the test strategy and execution can be found in the :need:`wp__verification_plan` implemented by
 `REPLACE_doc__verification_plan`.
 
 
@@ -58,7 +58,7 @@ Test specifications should follow :need:`gd_guidl__verification_specification`
 Structuring of the Test Case
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-To fulfill the demands of the work product :need:`wp__verification__plan` the
+To fulfill the demands of the work product :need:`wp__verification_plan` the
 templates in :ref:`verification_process_reqs` shall be used and the :need:`gd_guidl__verification_specification`
 should be followed . This includes general information and templates for the allowed programming languages.
 
@@ -75,7 +75,7 @@ Simplified in a nutshell:
 
 More information on the concept of requirements verification can be found in :ref:`requirement_verification_workflow`
 
-A more detailed description of how to link code to requirements is available here: :need:`gd_req__verification__link_tests`
+A more detailed description of how to link code to requirements is available here: :need:`gd_req__verification_link_tests`
 
 Traceability matrix and consistency checks will be automatically established with tool support.
 
@@ -107,7 +107,7 @@ Any failing test case requires an ISSUE.
 The passing rate of safety-critical test cases need to be 100% in order to release the affected component.
 In case of a lower pass rate than 100% for QM level tests, the :need:`rl__technical_lead` and
 :need:`rl__project_lead` can decide, if the platform is in a releasable state. The accepted minimal
-path rate is defined in the :need:`wp__verification__plan`. Due to the high degree of automation, a
+path rate is defined in the :need:`wp__verification_plan`. Due to the high degree of automation, a
 it is recommended that a path rate lower 95% is not acceptable.
 
 In case an existing test case is failing due to regression in the CI, the respective issuer of the
@@ -120,7 +120,7 @@ Reuse of existing test cases
 In case pre-existing test cases from components can be used, they have to be reviewed and checked
 for their fit to the defined requirements. The test cases should get patch files to cover missing
 specification parts following :need:`gd_guidl__verification_specification` and have the necessary
-:need:`gd_req__verification__link_tests` followed. These patches are applied on top of the untouched actual
+:need:`gd_req__verification_link_tests` followed. These patches are applied on top of the untouched actual
 implementation of the software code.
 
 Additionally needed test cases should be added as standalone parts. They are developed as any
@@ -130,7 +130,7 @@ useful, this shall be planned and added to the project milestone plan.
 Verification types and methods
 ------------------------------
 
-Verification types and methods are described in the :need:`gd_meth__verification__methods` and the
-derivation techniques in :need:`gd_meth__verification__derivation`. The detailed method guideline
+Verification types and methods are described in the :need:`gd_meth__verification_methods` and the
+derivation techniques in :need:`gd_meth__verification_derivation`. The detailed method guideline
 helps to get an understanding what the different methods and derivation techniques mean and how to
 create test cases using the same.

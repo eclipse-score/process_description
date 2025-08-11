@@ -22,12 +22,12 @@ Verification Report Templates
     :status: valid
     :complies: std_wp__iso26262__software_952, std_wp__iso26262__software_1053, std_wp__iso26262__support_953, std_wp__iso26262__support_1253, std_wp__iso26262__analysis_752, std_wp__iso26262__analysis_852, std_wp__iso26262__support_1252
 
-    This document implements :need:`wp__verification__module_ver_report`.
+    This document implements :need:`wp__verification_module_ver_report`.
 
       | Place the document header here following the definitions in template
       | :need:`gd_temp__documentation`.
       |
-      | This verification report is based on the :need:`wp__verification__plan`.
+      | This verification report is based on the :need:`wp__verification_plan`.
       | It covers all the components of the above stated module.
       |
       | Verification Report contains:
@@ -88,12 +88,12 @@ Verification Report Templates
     :status: valid
     :complies: std_wp__iso26262__software_1053, std_wp__iso26262__support_953, std_wp__iso26262__analysis_752, std_wp__iso26262__analysis_852
 
-    This document implements :need:`wp__verification__platform_ver_report`.
+    This document implements :need:`wp__verification_platform_ver_report`.
 
       | Place the document header here following the definitions in template
       | :need:`gd_temp__documentation`.
       |
-      | This verification report is based on the :need:`wp__verification__plan`.
+      | This verification report is based on the :need:`wp__verification_plan`.
       | It covers all the selected features of the SW platform.
       |
       | Verification Report contains:

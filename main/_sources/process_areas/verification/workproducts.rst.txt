@@ -21,7 +21,7 @@ Platform
 ********
 
 .. workproduct:: Verification Plan
-   :id: wp__verification__plan
+   :id: wp__verification_plan
    :status: valid
    :complies: std_wp__iso26262__support_951, std_wp__iso26262__support_952, std_wp__iso26262__support_1252
 
@@ -32,16 +32,16 @@ Platform
    This also covers the work product Verification Specification.
 
 .. workproduct:: Platform test
-   :id: wp__verification__platform_test
+   :id: wp__verification_platform_test
    :status: valid
    :complies: std_wp__iso26262__support_952
 
    Platform Testing verifies Stakeholder Requirements performed on reference HW.
    Depending on the nature of the project, respective tailoring (e.g. for reduced requirements
-   coverage) has to be reflected in the :need:`wp__verification__plan` and :need:`wp__platform_safety_plan`.
+   coverage) has to be reflected in the :need:`wp__verification_plan` and :need:`wp__platform_safety_plan`.
 
 .. workproduct:: Platform Verification Report
-   :id: wp__verification__platform_ver_report
+   :id: wp__verification_platform_ver_report
    :status: valid
    :complies: std_wp__iso26262__software_1053, std_wp__iso26262__support_953, std_wp__iso26262__analysis_752, std_wp__iso26262__analysis_852
 
@@ -58,7 +58,7 @@ Feature
 *******
 
 .. workproduct:: Feature Integration test
-   :id: wp__verification__feat_int_test
+   :id: wp__verification_feat_int_test
    :status: valid
    :complies: std_wp__iso26262__software_1051, std_wp__iso26262__support_952
 
@@ -73,7 +73,7 @@ Module
 ******
 
 .. workproduct:: Module Verification Report
-   :id: wp__verification__module_ver_report
+   :id: wp__verification_module_ver_report
    :status: valid
    :complies: std_wp__iso26262__software_952, std_wp__iso26262__software_1053, std_wp__iso26262__support_953, std_wp__iso26262__support_1253, std_wp__iso26262__analysis_752, std_wp__iso26262__analysis_852, std_wp__iso26262__support_1252, std_wp__isopas8926__4526, std_wp__iso26262__software_app_c_56
 
@@ -94,7 +94,7 @@ Component
 *********
 
 .. workproduct:: Component Integration test
-   :id: wp__verification__comp_int_test
+   :id: wp__verification_comp_int_test
    :status: valid
    :complies: std_wp__iso26262__software_1051, std_wp__iso26262__support_952, std_wp__isopas8926__4525, std_wp__iso26262__software_app_c_55
 
@@ -108,16 +108,16 @@ Component
    Performance (i.e. RAM and processor usage) is only tested on reference HW.
 
    As an optional part component integration tests can cover additional testing for complex units
-   touching specifically the detailed design. This is needed where :need:`wp__verification__sw_unit_test`
-   is not sufficient to cover the measures defined in the implementation of the :need:`wp__verification__plan`.
+   touching specifically the detailed design. This is needed where :need:`wp__verification_sw_unit_test`
+   is not sufficient to cover the measures defined in the implementation of the :need:`wp__verification_plan`.
 
 .. workproduct:: Unit test
-   :id: wp__verification__sw_unit_test
+   :id: wp__verification_sw_unit_test
    :status: valid
    :complies: std_wp__iso26262__software_951, std_wp__iso26262__support_952, std_req__iso26262__software_845, std_wp__isopas8926__4525, std_wp__iso26262__software_app_c_55
 
    Unit testing verifies detailed design (traced to).
-   Respective tooling is defined in :need:`wp__platform_mgmt`, :need:`wp__verification__plan` and integrated in CI/Build.
+   Respective tooling is defined in :need:`wp__platform_mgmt`, :need:`wp__verification_plan` and integrated in CI/Build.
    Unit testing is in responsible of the :need:`rl__contributor` providing the :need:`wp__sw_implementation`.
 
 Inspection
@@ -127,7 +127,7 @@ Inspection activities on requirement, architecture and detailed design are handl
 
 The work products are handled within these process areas:
 
-     * :ref:`requirements_engineering` implementing :need:`wp__requirements__inspect`
+     * :ref:`requirements_engineering` implementing :need:`wp__requirements_inspect`
      * :ref:`arch_design_process` implementing :need:`wp__sw_arch_verification`
      * :ref:`implementation` implementing :need:`wp__sw_implementation_inspection`
 
@@ -136,6 +136,6 @@ Tool Verification
 
 As part of tool management as supporting function it is handled as follows
 
-     * :need:`wf__tool__create_tool_verification_report` describes implementation of :need:`wp__tool_verification_report`
+     * :need:`wf__tool_create_tool_verification_report` describes implementation of :need:`wp__tool_verification_report`
 
 It is planned in the :need:`wp__platform_mgmt`

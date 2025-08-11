@@ -54,7 +54,7 @@ A test specification contains the following attributes.
        - interface-test
        - coverage (various types apply, shall be tool supported)
      - These are example values and an incomplete list.
-       A full list of test types is available in :need:`doc_concept__verification__process` at
+       A full list of test types is available in :need:`doc_concept__verification_process` at
        :ref:`verification_concept_types_methods`.
      -
    * - DerivationTechnique
@@ -65,11 +65,11 @@ A test specification contains the following attributes.
        - equivalence-classes
        - error-guessing
      - These are example values and an incomplete list.
-       A full list of test methods is available in :need:`doc_concept__verification__process` at
+       A full list of test methods is available in :need:`doc_concept__verification_process` at
        :ref:`verification_concept_types_methods`.
      -
 
-The implementation of :need:`wp__verification__plan` defines the full list of allowed types and methods.
+The implementation of :need:`wp__verification_plan` defines the full list of allowed types and methods.
 
 
 Test description
@@ -122,4 +122,4 @@ A example for a bad test description could be:
 Additional information can also be found in :need:`gd_guidl__verification_guide`.
 
 The specification is part of the test implementation and has to comply to the requirements
-specified in :need:`gd_req__verification__link_tests`.
+specified in :need:`gd_req__verification_link_tests`.
