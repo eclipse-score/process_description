@@ -55,10 +55,10 @@ Platform
    - Formal evidence about the performed Safety Analyses
    - Test result per test case from
      :need:`wp__verification__platform_test` and :need:`wp__verification__feat_int_test`
-     with status passed/failed/not_run  
+     with status passed/failed/not_run
    - Test log per test case from
-     :need:`wp__verification__platform_test` and :need:`wp__verification__feat_int_test` 
-     with stutes passed/failed/not_run
+     :need:`wp__verification__platform_test` and :need:`wp__verification__feat_int_test`
+     with status passed/failed/not_run
 
 Feature
 *******
@@ -97,10 +97,10 @@ Module
    - Software component qualification verification report
    - Test result per test case from :need:`wp__verification__sw_unit_test`,
      :need:`wp__verification__feat_int_test`, and :need:`wp__verification__comp_int_test`
-     with status passed/failed/not_run  
+     with status passed/failed/not_run
    - Test log per test case from :need:`wp__verification__sw_unit_test`,
-     :need:`wp__verification__feat_int_test`, and :need:`wp__verification__comp_int_test` 
-     with stutes passed/failed/not_run
+     :need:`wp__verification__feat_int_test`, and :need:`wp__verification__comp_int_test`
+     with status passed/failed/not_run
 
 Component
 *********
