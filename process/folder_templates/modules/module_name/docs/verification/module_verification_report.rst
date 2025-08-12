@@ -21,7 +21,7 @@ Verification Report
    :id: doc__module_name_verification_report
    :status: draft
    :safety: ASIL_B
-   :realizes: wp__verification__module_ver_report
+   :realizes: wp__verification_module_ver_report
    :tags: template
 
 .. attention::
@@ -33,7 +33,7 @@ Verification Report
     - Adjust ``safety`` and ``tags`` according to your needs
 
 
-This verification report is based on the :need:`gd_temp__verification__plan`.
+This verification report is based on the :need:`gd_temp__verification_plan`.
 It covers all the components of the above stated module.
 
 Verification Report contains:

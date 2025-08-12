@@ -18,15 +18,15 @@ Workflow Problem Resolution
 ###########################
 
 .. workflow:: Create Problem Report
-   :id: wf__problem__create_pr
+   :id: wf__problem_create_pr
    :status: valid
    :responsible: rl__contributor
    :approved_by: rl__committer
    :supported_by: rl__technical_lead, rl__module_lead, rl__safety_manager, rl__security_manager, rl__quality_manager
    :input: wp__issue_track_system, wp__prm_plan
    :output: wp__issue_track_system
-   :contains: gd_temp__problem__template, gd_chklst__problem__cr_review, gd_guidl__problem__problem
-   :has: doc_concept__problem__process, doc_getstrt__problem__process
+   :contains: gd_temp__problem_template, gd_chklst__problem_cr_review, gd_guidl__problem_problem
+   :has: doc_concept__problem_process, doc_getstrt__problem_process
 
    The Problem Report is created.
 
@@ -35,15 +35,15 @@ Workflow Problem Resolution
    To start the review and the analysis the Problem status is changed to "in review"
 
 .. workflow:: Analyze Problem Report
-   :id: wf__problem__analyze_pr
+   :id: wf__problem_analyze_pr
    :status: valid
    :responsible: rl__contributor
    :approved_by: rl__committer
    :supported_by: rl__technical_lead, rl__module_lead, rl__safety_manager, rl__security_manager, rl__quality_manager
    :input: wp__issue_track_system, wp__prm_plan
    :output: wp__issue_track_system
-   :contains: gd_temp__problem__template, gd_chklst__problem__cr_review, gd_guidl__problem__problem
-   :has: doc_concept__problem__process, doc_getstrt__problem__process
+   :contains: gd_temp__problem_template, gd_chklst__problem_cr_review, gd_guidl__problem_problem
+   :has: doc_concept__problem_process, doc_getstrt__problem_process
 
    The Problem Report is analyzed.
 
@@ -56,15 +56,15 @@ Workflow Problem Resolution
    The author of the Problem Report may cancel it, thus the status is set to "rejected".
 
 .. workflow:: Initiate and Monitor Problem Resolution
-   :id: wf__problem__initiate_monitor_pr
+   :id: wf__problem_initiate_monitor_pr
    :status: valid
    :responsible: rl__contributor
    :approved_by: rl__committer
    :supported_by: rl__technical_lead, rl__module_lead, rl__safety_manager, rl__security_manager, rl__quality_manager
    :input: wp__issue_track_system, wp__prm_plan
    :output: wp__issue_track_system
-   :contains: gd_temp__problem__template, gd_chklst__problem__cr_review, gd_guidl__problem__problem
-   :has: doc_concept__problem__process, doc_getstrt__problem__process
+   :contains: gd_temp__problem_template, gd_chklst__problem_cr_review, gd_guidl__problem_problem
+   :has: doc_concept__problem_process, doc_getstrt__problem_process
 
    The Problem Resolution is implemented and monitored.
 
@@ -80,15 +80,15 @@ Workflow Problem Resolution
    The author of the Problem Report may cancel it, thus the status is set to "rejected".
 
 .. workflow:: Close Problem Resolution
-   :id: wf__problem__close_pr
+   :id: wf__problem_close_pr
    :status: valid
    :responsible: rl__committer
    :approved_by: rl__technical_lead, rl__module_lead
    :supported_by: rl__safety_manager, rl__security_manager, rl__quality_manager
    :input: wp__issue_track_system, wp__prm_plan
    :output: wp__issue_track_system
-   :contains: gd_temp__problem__template, gd_chklst__problem__cr_review, gd_guidl__problem__problem
-   :has: doc_concept__problem__process, doc_getstrt__problem__process
+   :contains: gd_temp__problem_template, gd_chklst__problem_cr_review, gd_guidl__problem_problem
+   :has: doc_concept__problem_process, doc_getstrt__problem_process
 
    The Problem Resolution is closed.
 

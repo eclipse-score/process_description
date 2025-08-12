@@ -26,4 +26,4 @@ Contributing Roles:
 
 A detailed overview of the responsibility for the steps of the configuration management is listed here:
 
-:need:`wf__platform__cr_mt_platform_mgmt_plan`
+:need:`wf__platform_cr_mt_platform_mgmt_plan`

@@ -20,18 +20,18 @@ Configuration Management Process Requirements
    :status: valid
    :tags: done_automation, config_mgt
    :complies: std_req__iso26262__support_745, std_req__aspice_40__SUP-8-BP8
-   :satisfies: wf__monitor_verify_requirements, wf__mr_vy_arch, wf__mr_saf_analyses_dfa, wf__vy_saf_analyses_dfa, wf__platform__mr_im_platform_mgmt_plan
+   :satisfies: wf__monitor_verify_requirements, wf__mr_vy_arch, wf__mr_saf_analyses_dfa, wf__vy_saf_analyses_dfa, wf__platform_mr_im_platform_mgmt_plan
 
    The doc-as-code tool shall check that the Id's of the configuration items (documented in doc-as-code) are unique.
 
-   Note: For definition of configuration items see :need:`doc_concept__configuration__process`
+   Note: For definition of configuration items see :need:`doc_concept__configuration_process`
 
 .. gd_req:: Permanent Storage
-   :id: gd_req__config__workproducts_storage
+   :id: gd_req__config_workproducts_storage
    :status: valid
    :tags: prio_3_automation, config_mgt
    :complies: std_req__iso26262__support_745, std_req__aspice_40__SUP-8-BP8
-   :satisfies: wf__rel__platform_rel_note, wf__rel__mod_rel_note
+   :satisfies: wf__rel_platform_rel_note, wf__rel_mod_rel_note
 
    At least every platform release shall be stored permanently as a collection of text documents
    (docs and code) including the used OSS tooling outside of github servers.
@@ -40,7 +40,7 @@ Configuration Management Process Requirements
    products (cars) the SW platform is used in.
 
 .. gd_req:: Storage of pull requests documentation
-   :id: gd_req__config__pull_request_storage
+   :id: gd_req__config_pull_request_storage
    :status: valid
    :tags: prio_2_automation, config_mgt
    :complies: std_req__iso26262__support_6433, std_req__iso26262__software_7414
@@ -52,11 +52,11 @@ Configuration Management Process Requirements
    Note: The reason is that the PRs could be altered after the release and therefore for example the inspection documented within the review would be corrupted.
 
 .. gd_req:: Baseline Differences
-   :id: gd_req__config__baseline_diff
+   :id: gd_req__config_baseline_diff
    :status: valid
    :tags: prio_2_automation, config_mgt
    :complies: std_req__iso26262__support_741
-   :satisfies: wf__rel__platform_rel_note, wf__rel__mod_rel_note
+   :satisfies: wf__rel_platform_rel_note, wf__rel_mod_rel_note
 
    It shall be possible to show the differences between two baselines.
 

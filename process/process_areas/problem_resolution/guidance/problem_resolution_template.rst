@@ -18,7 +18,7 @@ Problem Report Template
 =======================
 
 .. gd_temp:: Problem Template
-   :id: gd_temp__problem__template
+   :id: gd_temp__problem_template
    :status: draft
    :complies: std_req__aspice_40__SUP-9-BP1, std_req__aspice_40__SUP-9-BP2, std_req__aspice_40__SUP-9-BP3, std_req__aspice_40__SUP-9-BP4,
 
@@ -30,16 +30,16 @@ Problem status
 --------------
 [“open”, “in review”, “in implementation”, “closed”, “rejected”]
 
-| (to be filled out during :need:`wf__problem__create_pr`)
-| (to be updated during :need:`wf__problem__analyze_pr`)
-| (to be updated during :need:`wf__problem__initiate_monitor_pr`)
-| (to be updated during :need:`wf__problem__close_pr`)
+| (to be filled out during :need:`wf__problem_create_pr`)
+| (to be updated during :need:`wf__problem_analyze_pr`)
+| (to be updated during :need:`wf__problem_initiate_monitor_pr`)
+| (to be updated during :need:`wf__problem_close_pr`)
 
 Problem submitter
 -----------------
 [Who is the reporter of the problem?]
 
-(to be filled out during :need:`wf__problem__create_pr`)
+(to be filled out during :need:`wf__problem_create_pr`)
 
 Problem description
 -------------------
@@ -49,8 +49,8 @@ Problem description
 | Determine the impact of the problem, if possible.
 | Is notification required due to determined impact on affected parties?
 
-| (to be filled out during :need:`wf__problem__create_pr`)
-| (to be updated during :need:`wf__problem__analyze_pr`)
+| (to be filled out during :need:`wf__problem_create_pr`)
+| (to be updated during :need:`wf__problem_analyze_pr`)
 
 Problem supporting information
 ------------------------------
@@ -64,8 +64,8 @@ Problem supporting information
 
 | Select one [None | Single Event | Sporadic | Highly Intermittent | Reproducible]
 
-| (to be filled out during :need:`wf__problem__create_pr`)
-| (to be updated during :need:`wf__problem__analyze_pr`)
+| (to be filled out during :need:`wf__problem_create_pr`)
+| (to be updated during :need:`wf__problem_analyze_pr`)
 
 Problem category
 ----------------
@@ -79,8 +79,8 @@ default category.
 In addition to the category Safety affected, the ASIL classification may be added in the
 documentation, if applicable.
 
-| (to be filled out during :need:`wf__problem__create_pr`)
-| (to be updated during :need:`wf__problem__analyze_pr`)
+| (to be filled out during :need:`wf__problem_create_pr`)
+| (to be updated during :need:`wf__problem_analyze_pr`)
 
 Problem classification
 ----------------------
@@ -118,8 +118,8 @@ Classify the problem severity
 
 Determine if Urgent resolution is required? (yes, no, only valid for critical, blocker)
 
-| (to be filled out during :need:`wf__problem__create_pr`)
-| (to be updated during :need:`wf__problem__analyze_pr`)
+| (to be filled out during :need:`wf__problem_create_pr`)
+| (to be updated during :need:`wf__problem_analyze_pr`)
 
 Problem affected version
 ------------------------
@@ -127,7 +127,7 @@ Problem affected version
 
 Document the version of the release where the problem was detected.
 
-| (to be filled out during :need:`wf__problem__create_pr`)
+| (to be filled out during :need:`wf__problem_create_pr`)
 
 Problem analysis results
 ------------------------
@@ -140,7 +140,7 @@ Experts.
 
 | Especially document disconfirming reason, if applicable
 
-(to be filled out during :need:`wf__problem__analyze_pr`)
+(to be filled out during :need:`wf__problem_analyze_pr`)
 
 Problem stakeholder
 -------------------
@@ -148,7 +148,7 @@ Problem stakeholder
 
 Add affected features, if applicable
 
-(to be filled out during :need:`wf__problem__analyze_pr`)
+(to be filled out during :need:`wf__problem_analyze_pr`)
 
 Problem expected closure version
 --------------------------------
@@ -158,7 +158,7 @@ Document the version of the release where the problem should be resolved.
 
 Optionally add a concrete Milestone, if applicable.
 
-(to be filled out during :need:`wf__problem__analyze_pr`)
+(to be filled out during :need:`wf__problem_analyze_pr`)
 
 Problem solutions
 -----------------
@@ -172,12 +172,12 @@ Report the results of the verification, if applicable
 
 Are all arguments convincing
 
-| (to be filled out during :need:`wf__problem__initiate_monitor_pr`)
-| (to be updated during :need:`wf__problem__close_pr`)
+| (to be filled out during :need:`wf__problem_initiate_monitor_pr`)
+| (to be updated during :need:`wf__problem_close_pr`)
 
 Problem escalations
 -------------------
 [Document escalation activities, if applicable]
 
-| (to be filled out during :need:`wf__problem__initiate_monitor_pr`)
-| (to be updated during :need:`wf__problem__close_pr`)
+| (to be filled out during :need:`wf__problem_initiate_monitor_pr`)
+| (to be updated during :need:`wf__problem_close_pr`)

@@ -18,10 +18,10 @@ Process Requirements
 ====================
 
 .. gd_req:: Requirements Structure
-   :id: gd_req__req__structure
+   :id: gd_req__req_structure
    :status: valid
    :tags: done_automation, structure
-   :satisfies: wf__req__stkh_req, wf__req__feat_req, wf__req__comp_req
+   :satisfies: wf__req_stkh_req, wf__req_feat_req, wf__req_comp_req
    :complies: std_req__iso26262__support_6431, std_req__iso26262__support_6432
 
    Requirements shall be hierarchically grouped into three levels.
@@ -43,10 +43,10 @@ Process Requirement Attributes
 ------------------------------
 
 .. gd_req:: Requirement attribute: UID
-   :id: gd_req__req__attr_uid
+   :id: gd_req__req_attr_uid
    :status: valid
    :tags: manual, attribute, mandatory
-   :satisfies: wf__req__stkh_req, wf__req__feat_req, wf__req__comp_req
+   :satisfies: wf__req_stkh_req, wf__req_feat_req, wf__req_comp_req
    :complies: std_req__iso26262__support_6425, std_req__iso26262__support_6432
 
    Each requirement shall have a unique ID. It shall consist of three parts:
@@ -58,10 +58,10 @@ Process Requirement Attributes
    Consider the project's naming convention.
 
 .. gd_req:: Requirement attribute: title
-   :id: gd_req__req__attr_title
+   :id: gd_req__req_attr_title
    :status: valid
    :tags: manual, attribute, mandatory
-   :satisfies: wf__req__stkh_req, wf__req__feat_req, wf__req__comp_req
+   :satisfies: wf__req_stkh_req, wf__req_feat_req, wf__req_comp_req
    :complies: std_req__iso26262__support_6424
 
    The title of the requirement shall provide a short summary of the description, but is not an "additional" requirement.
@@ -69,10 +69,10 @@ Process Requirement Attributes
    This means for example that the word "shall" is not allowed in the title for all requirements.
 
 .. gd_req:: Requirement attribute: description
-   :id: gd_req__req__attr_description
+   :id: gd_req__req_attr_description
    :status: valid
    :tags: manual, attribute, mandatory
-   :satisfies: wf__req__stkh_req, wf__req__feat_req, wf__req__comp_req
+   :satisfies: wf__req_stkh_req, wf__req_feat_req, wf__req_comp_req
    :complies: std_req__iso26262__support_6424
 
    Each requirement shall have a description.
@@ -84,10 +84,10 @@ Process Requirement Attributes
       The concepts shall apply.
 
 .. gd_req:: Requirement attribute: type
-   :id: gd_req__req__attr_type
+   :id: gd_req__req_attr_type
    :status: valid
    :tags: manual, attribute, mandatory
-   :satisfies: wf__req__stkh_req, wf__req__feat_req, wf__req__comp_req
+   :satisfies: wf__req_stkh_req, wf__req_feat_req, wf__req_comp_req
 
    Each requirement, apart from process and tool requirements, shall have a type of one of following options:
 
@@ -97,10 +97,10 @@ Process Requirement Attributes
       * Non-Functional
 
 .. gd_req:: Requirements attribute: security
-   :id: gd_req__req__attr_security
+   :id: gd_req__req_attr_security
    :status: valid
    :tags: manual, attribute, mandatory
-   :satisfies: wf__req__feat_req, wf__req__comp_req
+   :satisfies: wf__req_feat_req, wf__req_comp_req
 
    Each requirement, apart from process and tool requirements, shall have a security relevance identifier:
 
@@ -108,11 +108,11 @@ Process Requirement Attributes
       * No
 
 .. gd_req:: Requirement attribute: safety
-   :id: gd_req__req__attr_safety
+   :id: gd_req__req_attr_safety
    :status: valid
    :tags: manual, attribute, mandatory
    :complies: std_req__iso26262__support_6421, std_req__iso26262__support_6425
-   :satisfies: wf__req__stkh_req, wf__req__feat_req, wf__req__comp_req
+   :satisfies: wf__req_stkh_req, wf__req_feat_req, wf__req_comp_req
 
    Each requirement, apart from process and tool requirements, shall have a automotive safety integrity level (ASIL) identifier:
 
@@ -120,11 +120,11 @@ Process Requirement Attributes
       * ASIL_B
 
 .. gd_req:: Requirement attribute: status
-   :id: gd_req__req__attr_status
+   :id: gd_req__req_attr_status
    :status: valid
    :tags: manual, attribute, mandatory
    :complies: std_req__iso26262__support_6425
-   :satisfies: wf__req__stkh_req, wf__req__feat_req, wf__req__comp_req
+   :satisfies: wf__req_stkh_req, wf__req_feat_req, wf__req_comp_req
 
    Each requirement, apart from process and tool requirements, shall have a status:
 
@@ -132,10 +132,10 @@ Process Requirement Attributes
       * invalid
 
 .. gd_req:: Requirement attribute: rationale
-   :id: gd_req__req__attr_rationale
+   :id: gd_req__req_attr_rationale
    :status: valid
    :tags: manual, attribute, mandatory
-   :satisfies: wf__req__stkh_req
+   :satisfies: wf__req_stkh_req
 
    Each stakeholder requirement shall provide an attribute called rationale.
    The rationale shall contain the reason why the requirement is needed.
@@ -146,11 +146,11 @@ Process Requirement Linkage
 '''''''''''''''''''''''''''
 
 .. gd_req:: Requirement Linkage
-   :id: gd_req__req__linkage
+   :id: gd_req__req_linkage
    :status: valid
    :tags: manual, attribute
    :complies: std_req__iso26262__support_6432
-   :satisfies: wf__req__stkh_req, wf__req__feat_req, wf__req__comp_req
+   :satisfies: wf__req_stkh_req, wf__req_feat_req, wf__req_comp_req
 
    Requirements shall be linked to its adjacent level via the attribute satisfies.
 
@@ -160,20 +160,20 @@ Process Requirement Linkage
       * process requirements <- tool requirements
 
 .. gd_req:: Requirement Traceability
-   :id: gd_req__req__traceability
+   :id: gd_req__req_traceability
    :status: valid
    :tags: prio_1_automation, attribute
    :complies: std_req__iso26262__support_6432
-   :satisfies: wf__req__stkh_req, wf__req__feat_req, wf__req__comp_req
+   :satisfies: wf__req_stkh_req, wf__req_feat_req, wf__req_comp_req
 
-   Bi-directional traceability shall be provided by adding a "back-link" via attribute satisfied by (i.e. make a <-> out of the <- in :need:`gd_req__req__linkage`).
+   Bi-directional traceability shall be provided by adding a "back-link" via attribute satisfied by (i.e. make a <-> out of the <- in :need:`gd_req__req_linkage`).
 
 .. gd_req:: Requirement attribute: requirement covered
-   :id: gd_req__req__attr_req_cov
+   :id: gd_req__req_attr_req_cov
    :status: valid
    :tags: manual, attribute
    :complies: std_req__iso26262__support_6423
-   :satisfies: wf__req__stkh_req, wf__req__feat_req
+   :satisfies: wf__req_stkh_req, wf__req_feat_req
 
    It shall be possible to specify the requirement coverage, meaning the requirement is covered fully by its linked children.
 
@@ -181,27 +181,27 @@ Process Requirement Linkage
       * No
 
 .. gd_req:: Requirement attribute: link to implementation
-   :id: gd_req__req__attr_impl
+   :id: gd_req__req_attr_impl
    :status: valid
    :tags: prio_2_automation, attribute
-   :satisfies: wf__req__feat_req, wf__req__comp_req
+   :satisfies: wf__req_feat_req, wf__req_comp_req
 
    It shall be possible to link requirements to code and include a link to github to the respective line of code in an attribute of the requirement.
 
 .. gd_req:: Requirement attribute: link to test
-   :id: gd_req__req__attr_testlink
+   :id: gd_req__req_attr_testlink
    :status: valid
    :tags: prio_1_automation, attribute
-   :satisfies: wf__req__feat_req, wf__req__comp_req
+   :satisfies: wf__req_feat_req, wf__req_comp_req
    :complies: std_req__iso26262__support_6433, std_req__iso26262__software_944
 
    It shall be possible to link requirements to tests and automatically include a link to the test case in the attribute testlink.
 
 .. gd_req:: Requirement attribute: test covered
-   :id: gd_req__req__attr_test_covered
+   :id: gd_req__req_attr_test_covered
    :status: valid
    :tags: manual, attribute
-   :satisfies: wf__req__feat_req, wf__req__comp_req
+   :satisfies: wf__req_feat_req, wf__req_comp_req
    :complies: std_req__iso26262__support_6433, std_req__iso26262__software_944
 
    It shall be possible to specify if requirements are completely covered by the linked test cases.
@@ -210,13 +210,13 @@ Process Requirement Linkage
       * No
 
 .. gd_req:: Requirement attribute: versioning
-   :id: gd_req__req__attr_version
+   :id: gd_req__req_attr_version
    :status: valid
    :tags: prio_1_automation, attribute
-   :satisfies: wf__req__stkh_req, wf__req__feat_req, wf__req__comp_req
+   :satisfies: wf__req_stkh_req, wf__req_feat_req, wf__req_comp_req
    :complies: std_req__iso26262__support_6425, std_req__iso26262__support_6434
 
-   A versioning for requirements shall be provided. For this all mandatory attributes shall be taken into account: see :need:`gd_req__req__check_mandatory`
+   A versioning for requirements shall be provided. For this all mandatory attributes shall be taken into account: see :need:`gd_req__req_check_mandatory`
 
 .. _process_requirement_checks:
 
@@ -224,22 +224,22 @@ Process Requirements Checks
 '''''''''''''''''''''''''''
 
 .. gd_req:: Requirement check: suspicious
-   :id: gd_req__req__suspicious
+   :id: gd_req__req_suspicious
    :status: valid
    :tags: prio_2_automation, check
-   :satisfies: wf__req__stkh_req, wf__req__feat_req, wf__req__comp_req
+   :satisfies: wf__req_stkh_req, wf__req_feat_req, wf__req_comp_req
    :complies: std_req__iso26262__support_6425, std_req__iso26262__support_6434
 
    Based on the requirement versioning it shall be checked if a parent requirement was updated but not the linked child requirements (or tests).
    In case an update was detected, the attribute requirement (or test) covered shall be set to "No"
 
-   Note: This refers to :need:`gd_req__req__attr_req_cov` and :need:`gd_req__req__attr_test_covered`
+   Note: This refers to :need:`gd_req__req_attr_req_cov` and :need:`gd_req__req_attr_test_covered`
 
 .. gd_req:: Requirements mandatory attributes provided
-   :id: gd_req__req__check_mandatory
+   :id: gd_req__req_check_mandatory
    :status: valid
    :tags: prio_1_automation, check
-   :satisfies: wf__req__stkh_req, wf__req__feat_req, wf__req__comp_req
+   :satisfies: wf__req_stkh_req, wf__req_feat_req, wf__req_comp_req
 
    It shall be checked if all mandatory attributes for each requirement is provided by the user. For all requirements following attributes shall be mandatory:
 
@@ -250,10 +250,10 @@ Process Requirements Checks
       :colwidths: 30
 
 .. gd_req:: Requirements no weak words
-   :id: gd_req__req__desc_weak
+   :id: gd_req__req_desc_weak
    :status: valid
    :tags: done_automation, check
-   :satisfies: wf__req__stkh_req, wf__req__feat_req, wf__req__comp_req
+   :satisfies: wf__req_stkh_req, wf__req_feat_req, wf__req_comp_req
 
    It shall be ensured that no *weak words* are contained in the requirement description for:
 
@@ -266,39 +266,39 @@ Process Requirements Checks
 
 
 .. gd_req:: Requirements linkage level
-   :id: gd_req__req__linkage_fulfill
+   :id: gd_req__req_linkage_fulfill
    :status: valid
    :tags: done_automation, check
    :complies: std_req__iso26262__support_6432
-   :satisfies: wf__req__stkh_req, wf__req__feat_req, wf__req__comp_req
+   :satisfies: wf__req_stkh_req, wf__req_feat_req, wf__req_comp_req
 
    Every feature- and component requirement shall be linked to at least one parent requirement according to the defined traceability scheme:
 
    :ref:`traceability concept for requirements`
 
 .. gd_req:: Requirements linkage architecture
-   :id: gd_req__req__linkage_architecture
+   :id: gd_req__req_linkage_architecture
    :status: valid
    :tags: prio_2_automation, check
    :complies: std_req__iso26262__support_6423
-   :satisfies: wf__req__feat_req, wf__req__comp_req
+   :satisfies: wf__req_feat_req, wf__req_comp_req
 
    It shall be checked if every feature- and component requirement is linked at least to one valid architectural element on the same level.
 
 .. gd_req:: Requirements linkage architecture switch
-   :id: gd_req__req__linkage_architecture_switch
+   :id: gd_req__req_linkage_architecture_switch
    :status: valid
    :tags: prio_2_automation, check
    :complies: std_req__iso26262__support_6423
-   :satisfies: wf__req__feat_req, wf__req__comp_req
+   :satisfies: wf__req_feat_req, wf__req_comp_req
 
-   The check :need:`gd_req__req__linkage_architecture` shall only be enabled for a release build, otherwise it would block creating requirements first without architecture.
+   The check :need:`gd_req__req_linkage_architecture` shall only be enabled for a release build, otherwise it would block creating requirements first without architecture.
 
 .. gd_req:: Requirements linkage safety
-   :id: gd_req__req__linkage_safety
+   :id: gd_req__req_linkage_safety
    :status: valid
    :tags: prio_1_automation, check
-   :satisfies: wf__req__stkh_req, wf__req__feat_req, wf__req__comp_req
+   :satisfies: wf__req_stkh_req, wf__req_feat_req, wf__req_comp_req
    :complies: std_req__iso26262__support_6422
 
    It shall be checked that (child) QM requirements (Safety == QM) can not be linked against a (parent) safety requirement (Safety != QM).

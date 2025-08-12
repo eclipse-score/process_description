@@ -16,11 +16,11 @@ Guideline
 #########
 
 .. gd_guidl:: Problem Resolution Guideline
-   :id: gd_guidl__problem__problem
+   :id: gd_guidl__problem_problem
    :status: valid
    :complies: std_req__aspice_40__SUP-9-BP1, std_req__aspice_40__SUP-9-BP5, std_req__aspice_40__SUP-9-BP6, std_req__aspice_40__SUP-9-BP7
 
-This document describes the general guidances for Problem Resolution based on the concept which is defined :need:`[[title]]<doc_concept__problem__process>`.
+This document describes the general guidances for Problem Resolution based on the concept which is defined :need:`[[title]]<doc_concept__problem_process>`.
 
 General Hints
 =============
@@ -31,7 +31,7 @@ Templates
 ---------
 
 To create problem reports, the project shall provide the content of the following template
-in project's selected Issue Tracking System: :need:`[[title]]<gd_temp__problem__template>`.
+in project's selected Issue Tracking System: :need:`[[title]]<gd_temp__problem_template>`.
 
 .. note::
   An example template for the Issue Tracking System in GitHub (`GitHub Issues <https://github.com/features/issues>`_)
@@ -93,7 +93,7 @@ Create Problem Report
 :need:`[[title]] <rl__contributor>` (as author, submitter, reporter) creates the Problem
 Report in the defined Issue Tracking System of the project based on the content of the
 provided template:
-:need:`[[title]]<gd_temp__problem__template>`.
+:need:`[[title]]<gd_temp__problem_template>`.
 
 It is expected that the select Issue Tracking system supports template definition. Best
 practice is to define a template with the required content, so that it can be copied
@@ -259,7 +259,7 @@ the problem, until they are closed.
 
 :need:`[[title]] <rl__committer>` checks finally if the problem Resolution is sufficient before
 the status is finally closed.
-To check, if it is sufficient, :need:`Problem Checklist <gd_chklst__problem__cr_review>` may used.
+To check, if it is sufficient, :need:`Problem Checklist <gd_chklst__problem_cr_review>` may used.
 Further the effectiveness of the implemented measure is confirmed and the availability
 of the required reports, as verification results, if applicable.
 

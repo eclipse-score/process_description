@@ -16,15 +16,15 @@ Getting Started
 ###############
 
 .. doc_getstrt:: Getting Started on Tool Management
-   :id: doc_getstrt__tool__process
+   :id: doc_getstrt__tool_process
    :status: valid
    :tags: tool_management
 
 This document describes the steps to evaluate tools and qualify them according to
 ISO 26262 and ISO/SAE 21434 as used standards in the project.
 
-Therefore guidelines :need:`gd_temp__tool_management__verif_rpt_template` and a
- :need:`doc_concept__tool__process` are available.
+Therefore guidelines :need:`gd_temp__tool_management_verif_rpt_template` and a
+ :need:`doc_concept__tool_process` are available.
 
 
 General Workflow
@@ -34,9 +34,9 @@ The workflows are defined in the :ref:`tlm_workflows` section.
 
 For every tool identified, the following workflows are executed:
 
-* Create tool verification report according to :need:`wf__tool__create_tool_verification_report`
-* Evaluate tool and update tool verification report according to :need:`wf__tool__evaluate_tool`
-* Qualify tool and update tool verification report according to :need:`wf__tool__qualify_tool`
-* Approve tool verification report according to :need:`wf__tool__approve_tool_verification_report`
+* Create tool verification report according to :need:`wf__tool_create_tool_verification_report`
+* Evaluate tool and update tool verification report according to :need:`wf__tool_evaluate_tool`
+* Qualify tool and update tool verification report according to :need:`wf__tool_qualify_tool`
+* Approve tool verification report according to :need:`wf__tool_approve_tool_verification_report`
 
-In addition create a tool management plan as part of the platform management plan according to :need:`wf__platform__cr_mt_platform_mgmt_plan`.
+In addition create a tool management plan as part of the platform management plan according to :need:`wf__platform_cr_mt_platform_mgmt_plan`.
