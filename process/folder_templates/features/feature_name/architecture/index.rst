@@ -41,7 +41,7 @@ Description
 
 General Description
 
-Design Decisions
+Design Decisions - For the documentation of the decision the :need:`gd_temp__change_decision_record` can be used.
 
 Design Constraints
 
