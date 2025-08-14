@@ -16,11 +16,11 @@ Guideline
 #########
 
 .. gd_guidl:: Change Request Guideline
-   :id: gd_guidl__change__change_request
+   :id: gd_guidl__change_change_request
    :status: valid
    :complies: std_req__iso26262__support_8414, std_req__iso26262__support_8432, std_req__iso26262__support_8442, std_req__iso26262__support_8451
 
-This document describes the general guidances for Change Management based on the concept which is defined :need:`[[title]]<doc_concept__change__process>`.
+This document describes the general guidances for Change Management based on the concept which is defined :need:`[[title]]<doc_concept__change_process>`.
 
 General Hints
 =============
@@ -40,13 +40,13 @@ Change Request type.
    * - Change Request Type
      - Template
    * - Feature
-     - :need:`[[title]] <gd_temp__change__feature_request>`
+     - :need:`[[title]] <gd_temp__change_feature_request>`
    * - Feature Modification
-     - :need:`[[title]] <gd_temp__change__feature_request>`
+     - :need:`[[title]] <gd_temp__change_feature_request>`
    * - Component
-     - :need:`[[title]] <gd_temp__change__component_request>`
+     - :need:`[[title]] <gd_temp__change_component_request>`
    * - Component Modification
-     - :need:`[[title]] <gd_temp__change__component_request>`
+     - :need:`[[title]] <gd_temp__change_component_request>`
 
 Attributes
 ----------

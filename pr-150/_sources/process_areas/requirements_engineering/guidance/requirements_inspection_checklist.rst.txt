@@ -18,7 +18,7 @@ Requirement Inspection Checklist
 ================================
 
 .. gd_chklst:: Requirements Inspection Checklist Template
-   :id: gd_chklst__req__inspection
+   :id: gd_chklst__req_inspection
    :status: valid
    :complies: std_req__iso26262__system_6412, std_req__iso26262__system_6414, std_req__iso26262__system_6421, std_req__iso26262__system_6422
    :tags: requirements_engineering
@@ -41,7 +41,7 @@ Requirement Inspection Checklist
         - Issue link
       * - REQ_01_01
         - Is the requirement sentence template used?
-        - see :need:`gd_temp__req__formulation`, this includes the use of "shall".
+        - see :need:`gd_temp__req_formulation`, this includes the use of "shall".
         -
         -
         -
@@ -65,7 +65,7 @@ Requirement Inspection Checklist
         -
       * - REQ_02_04
         - Is the requirement description *feasible* ?
-        - Expectation is that at the time of the inspection the requirement has already some implementation. This can be checked via traces, but also :need:`gd_req__req__attr_impl` shows this. In case the requirement is not mature enough at the time of inspection (i.e. not implemented at least as "proof-of-concept"), a development expert should be invited to the Pull-Request review to explicitly check this item.
+        - Expectation is that at the time of the inspection the requirement has already some implementation. This can be checked via traces, but also :need:`gd_req__req_attr_impl` shows this. In case the requirement is not mature enough at the time of inspection (i.e. not implemented at least as "proof-of-concept"), a development expert should be invited to the Pull-Request review to explicitly check this item.
         -
         -
         -
@@ -107,7 +107,7 @@ Requirement Inspection Checklist
         -
       * - REQ_07_01
         - Is the *ASIL Attribute* set correctly?
-        - Derived requirements are checked automatically, see :need:`gd_req__req__linkage_safety`. But for the top level requirements this needs to be checked for correctness. Also AoU from external components need check for correct ASIL as those are the "origin" of safety requirements towards the SW platform.
+        - Derived requirements are checked automatically, see :need:`gd_req__req_linkage_safety`. But for the top level requirements this needs to be checked for correctness. Also AoU from external components need check for correct ASIL as those are the "origin" of safety requirements towards the SW platform.
         -
         -
         -
@@ -119,7 +119,7 @@ Requirement Inspection Checklist
         -
       * - REQ_08_01
         - Is the requirement *verifiable*?
-        - Expectation is that at the time of the inspection already tests are created for the requirement. This can be checked via traces, but also :need:`gd_req__req__attr_test_covered` shows this. In case the requirement is not mature enough at the time of inspection (i.e. missing test cases), a test expert should be invited to the Pull-Request review to explicitly check this item.
+        - Expectation is that at the time of the inspection already tests are created for the requirement. This can be checked via traces, but also :need:`gd_req__req_attr_test_covered` shows this. In case the requirement is not mature enough at the time of inspection (i.e. missing test cases), a test expert should be invited to the Pull-Request review to explicitly check this item.
         -
         -
         -

@@ -42,7 +42,7 @@ Approach
 3. We aim to develop the process in conformance to the targeted standards (compare figure below).
 4. We aim to establish traceability from the begin (compare :ref:`general_concepts_traceability`).
 5. We aim to verify conformity and traceability by tool automation as much as possible (compare figure below).
-6. We aim for an iterative collaboration model initiated by change requests (compare :need:`gd_guidl__change__change_request`)
+6. We aim for an iterative collaboration model initiated by change requests (compare :need:`gd_guidl__change_change_request`)
 
 
 .. figure:: _assets/score_process_model.drawio.svg

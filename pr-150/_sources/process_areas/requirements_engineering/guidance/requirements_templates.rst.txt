@@ -18,7 +18,7 @@ Templates
 =========
 
 .. gd_temp:: Stakeholder Requirements Template
-   :id: gd_temp__req__stkh_req
+   :id: gd_temp__req_stkh_req
    :status: valid
    :complies: std_req__iso26262__system_6411, std_req__iso26262__system_6413, std_req__iso26262__support_641, std_req__iso26262__support_6421, std_req__iso26262__support_6425
 
@@ -33,7 +33,7 @@ Templates
          :status: <valid|invalid>
 
 .. gd_temp:: Feature Requirements Template
-   :id: gd_temp__req__feat_req
+   :id: gd_temp__req_feat_req
    :status: valid
    :complies: std_wp__iso26262__software_651, std_req__iso26262__support_641, std_req__iso26262__support_6421, std_req__iso26262__support_6425
 
@@ -48,7 +48,7 @@ Templates
         :status: <valid|invalid>
 
 .. gd_temp:: Component Requirements Template
-   :id: gd_temp__req__comp_req
+   :id: gd_temp__req_comp_req
    :status: valid
    :complies: std_wp__iso26262__software_651, std_req__iso26262__support_641, std_req__iso26262__support_6421, std_req__iso26262__support_6425
 
@@ -63,7 +63,7 @@ Templates
          :status: <valid|invalid>
 
 .. gd_temp:: AoU Requirement Template
-   :id: gd_temp__req__aou_req
+   :id: gd_temp__req_aou_req
    :status: valid
    :complies: std_wp__iso26262__software_651, std_req__iso26262__support_641, std_req__iso26262__support_6421, std_req__iso26262__support_6425
 
@@ -78,7 +78,7 @@ Templates
          :mitigates: <link to safety analysis>
 
 .. gd_temp:: Process Requirements Template
-   :id: gd_temp__req__process_req
+   :id: gd_temp__req_process_req
    :status: valid
    :complies: std_wp__iso26262__software_651, std_req__iso26262__support_641, std_req__iso26262__support_6421, std_req__iso26262__support_6425
 
@@ -91,7 +91,7 @@ Templates
          :status: <valid|invalid>
 
 .. gd_temp:: Tool Requirements Template
-   :id: gd_temp__req__tool_req
+   :id: gd_temp__req_tool_req
    :status: valid
    :complies: std_wp__iso26262__software_651, std_req__iso26262__support_641, std_req__iso26262__support_6421, std_req__iso26262__support_6425
 
@@ -106,7 +106,7 @@ Templates
          :implemented: <YES|PARTIAL|NO>
 
 .. gd_temp:: Requirement Formulation Template
-   :id: gd_temp__req__formulation
+   :id: gd_temp__req_formulation
    :status: valid
    :complies: std_wp__iso26262__software_651, std_req__iso26262__support_641, std_req__iso26262__support_6421, std_req__iso26262__support_6425
 

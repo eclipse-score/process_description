@@ -75,6 +75,6 @@ Safety Analysis Checklist
       * - REQ_01_08
         - Is the overall result of the safety analysis described in the report?
         - It shall be shown in the report if the safety analysis are finished and if all artifacts are "valid" and "sufficient".
-        - The results of the safety analysis are described in the report. The report is available :need:`wp__verification__platform_ver_report`.
+        - The results of the safety analysis are described in the report. The report is available :need:`wp__verification_platform_ver_report`.
         - <yes|no>
         -

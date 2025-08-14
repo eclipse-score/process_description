@@ -45,7 +45,7 @@ Goal of this plan is to describe
 * how to backup and recover (including long term storage)
 * how to report the configuration status
 
-note: for definition of "configuration items" check :need:`doc_concept__configuration__process`
+note: for definition of "configuration items" check :need:`doc_concept__configuration_process`
 
 
 Approach
@@ -115,7 +115,7 @@ Branches are used as a means of parallel development. In the <project name> proj
 * main branch - a "remote" branch (named "main") which contains all the latest file versions checked by CI, reviewed, accepted and merged.
 * release branch - a "remote" branch derived from main branch which is used to prepare a release,
   no functional code changes are allowed, only bug fixes and verification based improvements.
-  Only the technical lead is allowed to approve a merge into a release branch. The branch name is given as defined in :need:`doc_concept__rel__process`.
+  Only the technical lead is allowed to approve a merge into a release branch. The branch name is given as defined in :need:`doc_concept__rel_process`.
 
 The "remote" branch is not "local" to the developer but resides on the "remote" version management server.
 
@@ -134,7 +134,7 @@ Backup and Recovery
 This should cover :need:`std_req__aspice_40__SUP-8-BP8`
 
 <Describe how backup and recovery are covered in the project.>
-For the long term storage, additional measures should be taken, see :need:`gd_req__config__workproducts_storage`
+For the long term storage, additional measures should be taken, see :need:`gd_req__config_workproducts_storage`
 
 Status and Reporting
 ^^^^^^^^^^^^^^^^^^^^
