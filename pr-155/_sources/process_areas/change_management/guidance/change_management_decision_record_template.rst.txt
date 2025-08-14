@@ -23,7 +23,7 @@ Decision Record Template
    :status: valid
    :complies: std_req__aspice_40__SWE-2-BP3
 
-This template is used to create new Decision Records (DRs) for S-CORE.
+This template is used to create new Decision Records (DRs) in the project.
 
 Suggest to store close to the artefact which is affected by the DR. For example for platform wide decisions store close to the platform's stakeholder requirements.
 
