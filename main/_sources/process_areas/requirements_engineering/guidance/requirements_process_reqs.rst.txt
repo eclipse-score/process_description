@@ -157,7 +157,7 @@ Process Requirement Linkage
       * stakeholder requirements <- feature requirements
       * feature requirements <- component requirements
       * workflow <- process requirements
-      * process requirements <- tool requirements
+      * process requirements or stakeholder requirements <- tool requirements
 
 .. gd_req:: Requirement Traceability
    :id: gd_req__req_traceability
