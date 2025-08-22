@@ -91,22 +91,28 @@ Test Linking to Requirements
     :complies: std_req__iso26262__support_6432
 
 
-    For linking python tests to requirements **metadata** shall be used. Attributes which are
-    common for all test cases can be specified in the Test Suite (above the class), the other
-    attributes which are specific for each test case need to be specified above the test case:
+    For linking python tests to requirements **metadata** shall be used. 
+    For this the 'add_test_properties' decorator has been provided. 
+    You need to add it to the test and fill out:
+    
+    * partially_verifies OR fully_verifies 
+    * test_type 
+    * derivation_technique
+
+    For allowed values for test_type & derivation_technique please check :need:`gd_req__verification_link_tests`
+    Further more, this decorator will also check if your test has a `docstring` which should act as the description of the test.
+   
 
     .. code-block:: python
 
-      @pytest.fixture(scope="session", autouse=True)
-      def add_metadata(record_testsuite_property):
-         record_testsuite_property("TestType", "<TestType>")
-         record_testsuite_property("DerivationTechnique", "<DerivationTechnique>")
-      class Testclass(TestSim):
-
-         def TestFunction(self, record_property):
-            record_property("PartiallyVerifies", "ID_2, ID_3, ...")
-            record_property("FullyVerifies", "ID_4, ID_5, ...")
-            record_property("Description","<Description>")
+         @add_test_properties(
+             partially_verifies=["tool_req__docs_dd_link_source_code_link"],
+             test_type="requirements-based",
+             derivation_technique="requirements-analysis",
+         )
+         def test_group_by_need_empty_list():
+             """Test grouping empty list of needlinks."""
+             ...
 
 .. gd_req:: Linking Requirements to Tests (Rust)
     :id: gd_req__verification_link_tests_rust
