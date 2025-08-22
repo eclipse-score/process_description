@@ -61,7 +61,7 @@ Rationale
 
    .. note::
       The rationale should provide evidence of consensus within the community and discuss important objections or concerns raised during discussion.
-
+      For the documentation of the decision the :need:`gd_temp__change_decision_record` can be used.
 
 Specification
 =============
