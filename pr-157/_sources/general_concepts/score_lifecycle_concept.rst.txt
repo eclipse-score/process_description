@@ -20,8 +20,8 @@ Lifecycle concept
 Contributions to the project are driven by Feature/Component Requests.
 
 As features and components are the main structuring elements of the project, new
-features and components are requested by feature or components requests. Both are special
-types of change requests.
+features and components are requested by feature or components requests (compare
+:need:`wf__change_cr_an_change_request`). Both are special types of change requests.
 
 The figure below shows the standard lifecycle of any feature/component in the project.
 
@@ -35,9 +35,9 @@ The figure below shows the standard lifecycle of any feature/component in the pr
 A new feature or component request starts the **Concept Phase**.
 The **Concept Phase** is used to provide feasibility and further decision criteria, which
 are needed to finally accept the new feature/component for the project platform.
-The request may supported by source code provided within incubator repositories. In this
-phase only the the :need:`Change Management<doc_getstrt__change_process>` process must
-be applied, all other are optional.
+The request may be supported by source code provided within incubator repositories. In
+this phase only the the :need:`Change Management<doc_getstrt__change_process>` process
+needs to be executed, all other are optional.
 
 Accepted features must be planned and developed according the defined project processes.
 Thus the accepted Feature/Component Request starts the **Development Phase**.
@@ -46,14 +46,21 @@ it is implemented and verified. The development may based on several iterative
 implementation cycles. Any modification of the origin feature/component request may re-
 trigger the start of the development phase, as impact analysis and replanning may required.
 The development is planned, checked and adjusted to meet the objectives.
-Planning is also required from several standards especially to achieve functional safety.
-Finally the implemented Features/Components are release.
+Planning is also required from several standards to provide necessary artifacts aka work
+products especially to achieve functional safety. Finally the implemented
+Features/Components are released.
 
-Released Features/Components are maintained. They may have bugs so a problem report for
-a released Feature/Component starts the **Maintenance Phase**. In this phase the
-:need:`Problem Resolution<doc_getstrt__problem_process>` process must be applied.
-Depending on the reported problem and the agreed resolution, also other process areas may
-apply.
+Released Features/Components are maintained after their first major release. They may
+have bugs so a problem report for the released Feature/Component starts the
+**Maintenance Phase**. In this phase the :need:`Problem Resolution<doc_getstrt__problem_process>`
+process must be applied. Depending on the reported problem and the agreed resolution,
+also other process areas may apply. After resolving the problem the release version of
+the Features/Components will change (e.g. minor, patch), but they are still in maintenance.
+
+If the problem resolution requires a change request, then the feature will trigger again
+a **Development phase**. Also feature/component modifications (e.g. change or adding
+new API) result in a change request. In this case the existing Feature/Component Request
+are modified and thus start the **Development Phase** again.
 
 Mandatory Processes for each Phase
 
@@ -66,6 +73,6 @@ Mandatory Processes for each Phase
    * - Concept
      - :need:`Change Management<doc_getstrt__change_process>`
    * - Development
-     - All, if applicable
+     - As applicable as defined in the :need:`wp__platform_mgmt`
    * - Maintenance
      - :need:`Problem Resolution<doc_getstrt__problem_process>`, and all applicable to resolve the problem
