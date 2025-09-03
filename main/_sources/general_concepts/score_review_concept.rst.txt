@@ -66,40 +66,50 @@ another person as the author of the verified work product (see :need:`gd_req__ve
 Inspection Conduct
 ^^^^^^^^^^^^^^^^^^
 
-Inspections are conducted by using GitHub mechanisms.
+Inspections are conducted by using version management tooling mechanisms and files based on inspection templates.
 We expect that the requirement and architecture work products need to mature during implementation and testing
 and that the inspection checklists also contain questions which can not be answered already at creation of the work product,
 because also other work products content also has to be taken into account (which is not available at the beginning,
 therefore we use a two-step approach for the review and inspection for these.
 
-The detailed design and coding inspection is not of this kind. Here we define that every PR review
-already has the (formal) character of an inspection, i.e. the review checklist is used.
-The scope of such a detailed design / code inspection is always the change introduced, as documented in github.
-The inspection is initiated by the author of the change and reviewers are invited automatically
-based on an implemented technical reviewer mechanism defined for the modified files. In case the fixing of review findings is not agreed
-between reviewer(s) and author, the safety manager, security manager or quality manager can be added to the review to moderate a solution.
+The detailed design and coding inspection is also done in this two-step approach, at least for the
+initial development of a feature/component. This is also to have a unified approach for the inspections
+and reduce initial tooling support effort.
 
-The initial step for requirements and architecture is the (informal) GitHub review on every Pull-Request
+The initial step for review and inspection is the (informal) version management tooling review on every Pull-Request
 (resp. Change Request, see :need:`gd_guidl__change_change_request`)
 which creates or modifies one of these work products (subject to inspection).
-After this review the work products are in status "valid", which means they can be used for further development and verification steps.
+After this review the work products are in status "valid", which means they can be used
+for further development and verification steps (note that merged code is always "valid").
 In this review the checklist entries shall be considered which are tagged as "incremental".
 
 The last step is initiated by the safety manager, security manager or quality manager:
 He asks the main work product author to set the work product's status to "valid(inspected)" and start a Pull-Request (PR).
-GitHub will automatically ask for a review by the defined one or more reviewer implemented by the technical reviewer mechanism of the work product.
-In the PR description the inspection result will be documented for each checklist item
-(pass/fail - with link to a ticket for the corrections, or by citing the checklist item in the github comment).
+This marks the scope of the inspection but also the work product's version.
+For documentation of the review either the PR comments are used (based on inspection templates),
+or the author creates/updates an inspection documentation file based on the respective templates in the same PR
+containing the same information (scope/version of work products under inspection, author/reviewer/moderator, findings).
+The latter option is not preferred but needs to be used in case the PR data can/could not be stored.
+When opening the PR, Version management tooling will automatically ask for a review by the defined one or more reviewer
+implemented by the codeowner mechanism of the work product.
+In the PR (resp. inspection documentation file) the inspection result will be documented for each checklist item
+(pass/fail - with link to a ticket for the corrections).
 The reviewers will fill out the checklist and add their findings on the work product in the PR.
 They close their review activity by documenting their verdict as "Approve" or "Request Changes".
 Any one "Request Changes" will block the PR from being merged. Note that the PR author cannot "Approve" or "Request Changes".
-After all requested reviews were done, the author answers the findings in GitHub comments and/or performs corrections of the work products.
+After all requested reviews were done, the author answers the findings and/or performs corrections of the work products
+- either directly or by creating a Bug ticket to resolve.
 Then the reviewer(s) re-review and adapt their verdict accordingly.
 In case the author or the reviewer(s) cannot agree on a solution, the safety/security/quality manger
 who initiated the inspection will be asked to moderate this by requesting also his review.
+After all the required reviewers approved, the PR is merged.
+
+In future the project will try to establish (also) incremental inspections based on version management tooling only,
+i.e. the inspection template, findings documentation and storage will be part of this tooling.
+But this is currently not implemented.
 
 The following picture shall illustrate how a status lifecycle of a requirement work product will look like.
-The lifecycle for an architecture work product should be similar.
+The lifecycle for other work product should be similar.
 
 .. figure:: _assets/inspection_workflow.drawio.svg
     :width: 80%

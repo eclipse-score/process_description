@@ -526,7 +526,7 @@
                   
   <section id="review-and-inspection-concept">
 <span id="review-concept"></span><h1>Review and Inspection Concept<a class="headerlink" href="#review-and-inspection-concept" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-a807c104">
+<div class="need_container docutils container" id="SNCB-78ce7c5f">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_doc_concept table" id="doc_concept__wp_inspections">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -614,36 +614,45 @@ another person as the author of the verified work product (see <a class="referen
 </section>
 <section id="inspection-conduct">
 <h2>Inspection Conduct<a class="headerlink" href="#inspection-conduct" title="Link to this heading">#</a></h2>
-<p>Inspections are conducted by using GitHub mechanisms.
+<p>Inspections are conducted by using version management tooling mechanisms and files based on inspection templates.
 We expect that the requirement and architecture work products need to mature during implementation and testing
 and that the inspection checklists also contain questions which can not be answered already at creation of the work product,
 because also other work products content also has to be taken into account (which is not available at the beginning,
 therefore we use a two-step approach for the review and inspection for these.</p>
-<p>The detailed design and coding inspection is not of this kind. Here we define that every PR review
-already has the (formal) character of an inspection, i.e. the review checklist is used.
-The scope of such a detailed design / code inspection is always the change introduced, as documented in github.
-The inspection is initiated by the author of the change and reviewers are invited automatically
-based on an implemented technical reviewer mechanism defined for the modified files. In case the fixing of review findings is not agreed
-between reviewer(s) and author, the safety manager, security manager or quality manager can be added to the review to moderate a solution.</p>
-<p>The initial step for requirements and architecture is the (informal) GitHub review on every Pull-Request
+<p>The detailed design and coding inspection is also done in this two-step approach, at least for the
+initial development of a feature/component. This is also to have a unified approach for the inspections
+and reduce initial tooling support effort.</p>
+<p>The initial step for review and inspection is the (informal) version management tooling review on every Pull-Request
 (resp. Change Request, see <a class="reference internal" href="../process_areas/change_management/guidance/change_management_guideline.html#gd_guidl__change_change_request" title="gd_guidl__change_change_request"><em class="xref need">Change Request Guideline (gd_guidl__change_change_request)</em></a>)
 which creates or modifies one of these work products (subject to inspection).
-After this review the work products are in status “valid”, which means they can be used for further development and verification steps.
+After this review the work products are in status “valid”, which means they can be used
+for further development and verification steps (note that merged code is always “valid”).
 In this review the checklist entries shall be considered which are tagged as “incremental”.</p>
 <p>The last step is initiated by the safety manager, security manager or quality manager:
 He asks the main work product author to set the work product’s status to “valid(inspected)” and start a Pull-Request (PR).
-GitHub will automatically ask for a review by the defined one or more reviewer implemented by the technical reviewer mechanism of the work product.
-In the PR description the inspection result will be documented for each checklist item
-(pass/fail - with link to a ticket for the corrections, or by citing the checklist item in the github comment).
+This marks the scope of the inspection but also the work product’s version.
+For documentation of the review either the PR comments are used (based on inspection templates),
+or the author creates/updates an inspection documentation file based on the respective templates in the same PR
+containing the same information (scope/version of work products under inspection, author/reviewer/moderator, findings).
+The latter option is not preferred but needs to be used in case the PR data can/could not be stored.
+When opening the PR, Version management tooling will automatically ask for a review by the defined one or more reviewer
+implemented by the codeowner mechanism of the work product.
+In the PR (resp. inspection documentation file) the inspection result will be documented for each checklist item
+(pass/fail - with link to a ticket for the corrections).
 The reviewers will fill out the checklist and add their findings on the work product in the PR.
 They close their review activity by documenting their verdict as “Approve” or “Request Changes”.
 Any one “Request Changes” will block the PR from being merged. Note that the PR author cannot “Approve” or “Request Changes”.
-After all requested reviews were done, the author answers the findings in GitHub comments and/or performs corrections of the work products.
+After all requested reviews were done, the author answers the findings and/or performs corrections of the work products
+- either directly or by creating a Bug ticket to resolve.
 Then the reviewer(s) re-review and adapt their verdict accordingly.
 In case the author or the reviewer(s) cannot agree on a solution, the safety/security/quality manger
-who initiated the inspection will be asked to moderate this by requesting also his review.</p>
+who initiated the inspection will be asked to moderate this by requesting also his review.
+After all the required reviewers approved, the PR is merged.</p>
+<p>In future the project will try to establish (also) incremental inspections based on version management tooling only,
+i.e. the inspection template, findings documentation and storage will be part of this tooling.
+But this is currently not implemented.</p>
 <p>The following picture shall illustrate how a status lifecycle of a requirement work product will look like.
-The lifecycle for an architecture work product should be similar.</p>
+The lifecycle for other work product should be similar.</p>
 <figure class="align-center" id="id2">
 <a class="reference internal image-reference" href="../_images/inspection_workflow.drawio.svg"><img alt="Inspections Workflow" src="../_images/inspection_workflow.drawio.svg" style="width: 80%;" />
 </a>
@@ -689,7 +698,7 @@ shall transition from “valid(inspected)” back to “valid” state. This sha
 </section>
 <section id="process-requirements">
 <h2>Process Requirements<a class="headerlink" href="#process-requirements" title="Link to this heading">#</a></h2>
-<div class="need_container docutils container" id="SNCB-9902a7bc">
+<div class="need_container docutils container" id="SNCB-b245bec9">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__general_requirements_version">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -737,7 +746,7 @@ this shall be ignored for versioning.</p>
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-82b616be">
+<div class="need_container docutils container" id="SNCB-ee63dbc3">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__general_architecture_version">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -786,7 +795,7 @@ this shall be ignored for versioning.</p>
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-56bc7942">
+<div class="need_container docutils container" id="SNCB-7e09da8f">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__general_checklist_templates">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -833,7 +842,7 @@ The requirements and architecture inspections are not automatically applied.</p>
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-6afad9f7">
+<div class="need_container docutils container" id="SNCB-eed66304">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__general_status_set_check">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -877,7 +886,7 @@ The requirements and architecture inspections are not automatically applied.</p>
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-7dc1f874">
+<div class="need_container docutils container" id="SNCB-dbc94d49">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__general_status_reset_check">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
