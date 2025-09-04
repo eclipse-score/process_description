@@ -37,7 +37,7 @@ Work Products Change Management
    |
    | Safety anomaly: Conditions that deviate from expectations and that can lead to harm.
    | The documentation of a change request shall contain the list of changed work products,
-     the details of the change and the planned date of deployment of the change.
+   | the details of the change and the planned date of deployment of the change.
 
 .. workproduct:: Feature Request
    :id: wp__feat_request
@@ -47,7 +47,7 @@ Work Products Change Management
 
    | - Feature request for a new feature or a feature modification
    |
-   | Change Request for a new platform feature or a modification of an existing platform feature,
+   | Change Request for a new feature or a modification of an existing feature,
    | which changes the scope of the feature.
 
 .. workproduct:: Component Request
@@ -58,7 +58,7 @@ Work Products Change Management
 
    | - Component request for a new component or a component modification
    |
-   | Change Request for a new platform component or a modification of an existing platform component,
+   | Change Request for a new component or a modification of an existing component,
    | which changes the scope of the component.
    | Software Modules are also Components (top-level component).
 
