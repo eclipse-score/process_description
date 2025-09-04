@@ -78,6 +78,12 @@ Verification Report Templates
       |
       | **5. Software component qualification verification report**
       | - Contains the needed verification results if for some components a qualification of pre-developed SW is performed.
+      |
+      | **6. Test results**
+      | - Test result per test case with status passed/failed/not_run
+      |
+      | **7. Test logs**
+      | - Test log per test case with status passed/failed/not_run
 
     **Note1:** The verification report is valid for the module version tagged together with the report
 
@@ -120,6 +126,12 @@ Verification Report Templates
       |
       | **3. Safety Analysis Report**
       | - List of the performed Feature Safety Analysis, pass/fail with open mitigations
+      |
+      | **4. Test results**
+      | - Test result per test case with status passed/failed/not_run
+      |
+      | **5. Test logs**
+      | - Test log per test case with status passed/failed/not_run
 
     **Note1:** The verification report is valid for the platform version tagged together with the report
 
