@@ -158,5 +158,12 @@ Change Request Traceability Impact Analysis Tool
    It shall be reported, which work products and elements are affected by adding a new
    feature or component or by a modification of an existing feature or component.
 
+   Below picture illustrates the relations:
+
+   .. figure:: ../_assets/impact_analysis.drawio.svg
+      :width: 100%
+      :align: center
+      :alt: How to follow changes for impact analysis.
+
 .. needextend:: docname is not None and "process_areas/change_management" in docname
    :+tags: change_management
