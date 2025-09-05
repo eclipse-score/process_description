@@ -14,7 +14,6 @@
 
 .. _decision_record_template:
 
-========================
 Decision Record Template
 ========================
 
