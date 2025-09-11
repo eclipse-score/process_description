@@ -31,7 +31,8 @@ Workflow Change Management
 
    The Change Request is created.
 
-   For creating the Change Request template must be used.
+   For creating the Change Request template must be used. Check here for the available
+   templates: :need:`doc_getstrt__change_process` or :need:`gd_guidl__change_change_request`.
 
    To start the review and the analysis the Change Request status is changed to "in review"
 

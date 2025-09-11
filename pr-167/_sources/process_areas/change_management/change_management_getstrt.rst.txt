@@ -26,13 +26,13 @@ introduction of a new feature/component or modification of an existing feature/c
 
 Examples for change requests:
 
-* New feature for communication purposes introduced (feature request).
-* Existing communication feature supports new protocol (feature modification).
+* New feature e.g. communication, debugging, health management, cryptography introduced (feature request).
+* Existing feature, e.g. communication supports new protocol (feature modification).
 * New component for parsing a protocol introduced (component request).
 * API change for an existing component (component modification).
 
-Therefore guidelines :need:gd_temp__change_feature_request` and
-:need:`gd_temp__change_component_request`., :need:`gd_guidl__change_change_request` and
+Therefore guidelines :need:`gd_temp__change_feature_request` and
+:need:`gd_temp__change_component_request`, :need:`gd_guidl__change_change_request` and
 a :need:`doc_concept__change_process` are available.
 
 General Workflow
