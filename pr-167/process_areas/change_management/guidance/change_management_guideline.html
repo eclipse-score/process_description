@@ -560,7 +560,7 @@
                   
   <section id="guideline">
 <h1>Guideline<a class="headerlink" href="#guideline" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-59edec45">
+<div class="need_container docutils container" id="SNCB-0a561e4c">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_guidl table" id="gd_guidl__change_change_request">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -686,7 +686,7 @@ can be found here:
 <tr class="row-odd"><td><p><a class="reference internal" href="#chm-analyze-change-request"><span class="std std-ref">2.</span></a></p></td>
 <td><p>Analyze Change Request</p></td>
 <td><p><a class="reference internal" href="../../../roles/index.html#rl__contributor" title="rl__contributor"><em class="xref need">Contributor</em></a></p></td>
-<td><p><a class="reference internal" href="../../../roles/index.html#rl__committer" title="rl__committer"><em class="xref need">Committer</em></a></p></td>
+<td><p><a class="reference internal" href="../../platform_management/platform_management_roles.html#rl__technical_lead" title="rl__technical_lead"><em class="xref need">Technical Lead</em></a>, <a class="reference internal" href="../../platform_management/platform_management_roles.html#rl__module_lead" title="rl__module_lead"><em class="xref need">Module Project Lead</em></a></p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="#chm-imp-mon-change-request"><span class="std std-ref">3.</span></a></p></td>
 <td><p>Implement and Monitor Change Request</p></td>
@@ -709,7 +709,7 @@ provided templates: <a class="reference internal" href="change_management_featur
 <a class="reference internal" href="change_management_component_template.html#gd_temp__change_component_request" title="gd_temp__change_component_request"><em class="xref need">Component Request Template</em></a>.</p>
 <p>It is expected that the select Issue Tracking system supports template definition. Best
 practice is to define a template with the required content, so that it can be copied
-from the different users.</p>
+by the different users.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>For the Issue Tracking System in GitHub, there is a template created, which can be
@@ -721,24 +721,17 @@ be found here:
 <p>A Change Request Example based on that template is here:
 <a class="reference external" href="https://github.com/eclipse-score/process_description/issues/168">Example Change Request</a></p>
 </div>
-<p>It is expected, that the UID will be provided automatically by the Issue Tracking System.</p>
-<p>It is expected, that the status of the change request is set to “open” automatically.
-As long as the content is updated, the status of the change request is kept “open”.</p>
-<p>It is expected, that the change request submitter will be set automatically by the Issue
-Tracking System.</p>
-<p>The title of the change request should reflect the topic accordingly.</p>
-<p>The change request type should reflect level of the change: feature or component.</p>
-<dl class="simple">
-<dt>The description should reflect in detail:</dt><dd><p>Exact description of the Change Request including reason, including impact analysis
-on user, effort for implementation (schedule, risks, resources) and
-verification (measures defined).</p>
-</dd>
-</dl>
-<p>If details for the realization of the change are from interest, they may be added.</p>
-<p>It is expected, that the affected work products from high level perspective are identified.</p>
-<p>It it expected, that an detailed impact analysis is available.</p>
-<p>If the change affects safety or security it should be stated explicitly.
-If safety is affected, the ASIL classification should be added, if applicable.</p>
+<p>It is expected, that</p>
+<ul class="simple">
+<li><p>UID will be provided automatically by the Issue Tracking System.</p></li>
+<li><p>the status of the change request is set to “open” automatically. As long as the content is updated, the status of the change request is kept “open”.</p></li>
+<li><p>the change request submitter will be set automatically by the Issue Tracking System.</p></li>
+<li><p>the title of the change request reflects the topic accordingly.</p></li>
+<li><p>The change request type reflects level of the change: feature or component.</p></li>
+<li><p>the description reflects in detail: Exact description of the Change Request including reason, impact analysis on user, effort for implementation (schedule, risks, resources) and verification (measures defined).</p></li>
+<li><p>the affected work products from high level perspective are identified.</p></li>
+<li><p>an detailed impact analysis is available. If the change affects safety or security it should be stated explicitly. If safety is affected, the ASIL classification should be added, if applicable.</p></li>
+</ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <div class="line-block">
@@ -746,7 +739,7 @@ If safety is affected, the ASIL classification should be added, if applicable.</
 <div class="line">* The UID is provided by the Issue Tracking System as: <strong>#168</strong></div>
 <div class="line">* The status of the issue is provided by the Issue Tracking System as: <strong>Open</strong></div>
 <div class="line">* The submitter is provided by the Issue Tracking System as: <strong>masc2023</strong></div>
-<div class="line">* The title contains the change reason, as API of a component modified</div>
+<div class="line">* the title contains the change reason, as API of a component modified</div>
 <div class="line">* The change request type is selected as Component Request/Modification</div>
 <div class="line">* The descriptions considers reason and effort for implementation, verification, impact for user</div>
 <div class="line">* There are no details for the implementation given</div>
@@ -761,14 +754,16 @@ If safety is affected, the ASIL classification should be added, if applicable.</
 <div class="line-block">
 <div class="line">For the Change Request Example:</div>
 <div class="line">* The “Process Development Community” dashboard is added and the status must be changed to <strong>Todo</strong></div>
-<div class="line">* The combination of the issue**Open** and <strong>Todo</strong> defines the status <strong>in review</strong></div>
+<div class="line">* The combination of the issue status <strong>Open</strong> and “Process Development Community” <strong>Todo</strong> defines the status <strong>in review</strong></div>
 </div>
 </div>
 </section>
 <section id="analyze-change-request">
 <span id="chm-analyze-change-request"></span><h3>Analyze Change Request<a class="headerlink" href="#analyze-change-request" title="Link to this heading">#</a></h3>
-<p>The projects <a class="reference internal" href="../../../roles/index.html#rl__committer" title="rl__committer"><em class="xref need">Committer</em></a> analyzes the change request together with
-the <a class="reference internal" href="../../../roles/index.html#rl__contributor" title="rl__contributor"><em class="xref need">Contributor</em></a> and takes a decision for accepting or rejecting it.</p>
+<p>The projects <a class="reference internal" href="../../platform_management/platform_management_roles.html#rl__technical_lead" title="rl__technical_lead"><em class="xref need">Technical Lead</em></a> or <a class="reference internal" href="../../platform_management/platform_management_roles.html#rl__module_lead" title="rl__module_lead"><em class="xref need">Module Project Lead</em></a> supported by
+<a class="reference internal" href="../../../roles/index.html#rl__committer" title="rl__committer"><em class="xref need">Committer</em></a> (includes Safety, Security and Quality Manager) analyzes the change
+request together with the <a class="reference internal" href="../../../roles/index.html#rl__contributor" title="rl__contributor"><em class="xref need">Contributor</em></a> and takes a decision with the submitting/authoring
+contributor for accepting or rejecting it.</p>
 <p>The analysis will start by reviewing all the information given during the creation of the
 change request. All topics are revisited and checked for correctness, completeness and
 consistency.</p>
@@ -786,13 +781,13 @@ should be closed, shall be defined. Optionally, the corresponding milestone can 
 </div>
 <p>If accepted, <a class="reference internal" href="../../../roles/index.html#rl__contributor" title="rl__contributor"><em class="xref need">Contributor</em></a> can start with the implementation of the
 Change Request.</p>
-<p>The author has the freedom to cancel it at any time by setting the status to “rejected”.</p>
+<p>The author has the freedom to cancel the change request at any time by setting the status to “rejected”.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <div class="line-block">
 <div class="line">For the Change Request Example:</div>
 <div class="line">* For rejection the status of the issue must be changed to <strong>Closed as not planned</strong></div>
-<div class="line">* The combination of <strong>Closed as not planned</strong> and any “Process Development Community” status defines the status <strong>rejected</strong></div>
+<div class="line">* The combination of issue status <strong>Closed as not planned</strong> and any “Process Development Community” status defines the status <strong>rejected</strong></div>
 </div>
 </div>
 </section>
@@ -827,7 +822,7 @@ to the Change Request. It is expected, that the status of the Pull Request is se
 <div class="line">For the Change Request Example:</div>
 <div class="line">* The “Process Development Community” status must be changed to <strong>In Progress</strong></div>
 <div class="line">* The linked Pull Request status is either “Draft” or “Open”</div>
-<div class="line">* The combination of <strong>Open</strong> and any “Process Development Community” status <strong>In Progress</strong> and the Pull Request status <strong>Draft</strong> or <strong>Open</strong> defines the status <strong>in implementation</strong></div>
+<div class="line">* The combination of issue status <strong>Open</strong> and any “Process Development Community” status <strong>In Progress</strong> and the Pull Request status <strong>Draft</strong> or <strong>Open</strong> defines the status <strong>in implementation</strong></div>
 </div>
 </div>
 <div class="admonition note">
@@ -841,7 +836,7 @@ to the Change Request. It is expected, that the status of the Pull Request is se
 <p>During the implementation of the change the responsible lead <a class="reference internal" href="../../platform_management/platform_management_roles.html#rl__technical_lead" title="rl__technical_lead"><em class="xref need">Technical Lead</em></a>
 or <a class="reference internal" href="../../platform_management/platform_management_roles.html#rl__module_lead" title="rl__module_lead"><em class="xref need">Module Project Lead</em></a> reports regularly the status to the affected
 projects teams.</p>
-<p>The author has the freedom to cancel it at any time by setting the status to “rejected”.</p>
+<p>The author has the freedom to cancel the change request at any time by setting the status to “rejected”.</p>
 </section>
 <section id="close-change-request">
 <span id="chm-close-change-request"></span><h3>Close Change Request<a class="headerlink" href="#close-change-request" title="Link to this heading">#</a></h3>
@@ -852,7 +847,8 @@ is sufficient before the status is finally closed. To check, if it is sufficient
 <a class="reference internal" href="change_management_checklist.html#gd_chklst__change_cr_review" title="gd_chklst__change_cr_review"><em class="xref need">Change Request Checklist (gd_chklst__change_cr_review)</em></a> may used.
 Further the effectiveness of the implemented measure is confirmed and the availability
 of the required reports, as verification results, if applicable.</p>
-<p>When confirmed, the author sets the status to “closed” manually, if not done automatically.</p>
+<p>When confirmed, the <a class="reference internal" href="../../platform_management/platform_management_roles.html#rl__technical_lead" title="rl__technical_lead"><em class="xref need">Technical Lead</em></a> or <a class="reference internal" href="../../platform_management/platform_management_roles.html#rl__module_lead" title="rl__module_lead"><em class="xref need">Module Project Lead</em></a>
+sets the status to “closed” manually, if not done automatically.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <div class="line-block">
@@ -860,7 +856,7 @@ of the required reports, as verification results, if applicable.</p>
 <div class="line">* For closing the status of the issue must be changed to <strong>Closed</strong></div>
 <div class="line">* The “Process Development Community” status must be changed to <strong>Done</strong></div>
 <div class="line">* The PR status must be changed to <strong>Merged</strong></div>
-<div class="line">* The combination of <strong>Closed</strong> and any “Process Development Community” status <strong>Done</strong> and the Pull Request status <strong>Merged</strong> defines the status <strong>closed</strong></div>
+<div class="line">* The combination of issue status <strong>Closed</strong> and any “Process Development Community” status <strong>Done</strong> and the Pull Request status <strong>Merged</strong> defines the status <strong>closed</strong></div>
 </div>
 </div>
 <p><a class="reference internal" href="../../../roles/index.html#rl__committer" title="rl__committer"><em class="xref need">Committer</em></a> has the freedom to reject it at any time by setting the status

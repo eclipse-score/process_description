@@ -79,7 +79,7 @@ This section describes in detail which steps need to be performed for a Change R
    * - :ref:`2. <chm_analyze_change_request>`
      - Analyze Change Request
      - :need:`[[title]] <rl__contributor>`
-     - :need:`[[title]] <rl__committer>`
+     - :need:`[[title]] <rl__technical_lead>`, :need:`[[title]] <rl__module_lead>`
    * - :ref:`3. <chm_imp_mon_change_request>`
      - Implement and Monitor Change Request
      - :need:`[[title]] <rl__contributor>`
@@ -102,7 +102,7 @@ provided templates: :need:`[[title]] <gd_temp__change_feature_request>` or
 
 It is expected that the select Issue Tracking system supports template definition. Best
 practice is to define a template with the required content, so that it can be copied
-from the different users.
+by the different users.
 
 .. note::
   For the Issue Tracking System in GitHub, there is a template created, which can be
@@ -113,38 +113,23 @@ from the different users.
   A Change Request Example based on that template is here:
   `Example Change Request <https://github.com/eclipse-score/process_description/issues/168>`_
 
-It is expected, that the UID will be provided automatically by the Issue Tracking System.
+It is expected, that
 
-It is expected, that the status of the change request is set to "open" automatically.
-As long as the content is updated, the status of the change request is kept "open".
-
-It is expected, that the change request submitter will be set automatically by the Issue
-Tracking System.
-
-The title of the change request should reflect the topic accordingly.
-
-The change request type should reflect level of the change: feature or component.
-
-The description should reflect in detail:
-   Exact description of the Change Request including reason, including impact analysis
-   on user, effort for implementation (schedule, risks, resources) and
-   verification (measures defined).
-
-If details for the realization of the change are from interest, they may be added.
-
-It is expected, that the affected work products from high level perspective are identified.
-
-It it expected, that an detailed impact analysis is available.
-
-If the change affects safety or security it should be stated explicitly.
-If safety is affected, the ASIL classification should be added, if applicable.
+* UID will be provided automatically by the Issue Tracking System.
+* the status of the change request is set to "open" automatically. As long as the content is updated, the status of the change request is kept "open".
+* the change request submitter will be set automatically by the Issue Tracking System. 
+* the title of the change request reflects the topic accordingly. 
+* The change request type reflects level of the change: feature or component.
+* the description reflects in detail: Exact description of the Change Request including reason, impact analysis on user, effort for implementation (schedule, risks, resources) and verification (measures defined).
+* the affected work products from high level perspective are identified.
+* an detailed impact analysis is available. If the change affects safety or security it should be stated explicitly. If safety is affected, the ASIL classification should be added, if applicable.
 
 .. note::
   | For the Change Request Example:
   | * The UID is provided by the Issue Tracking System as: **#168**
   | * The status of the issue is provided by the Issue Tracking System as: **Open**
   | * The submitter is provided by the Issue Tracking System as: **masc2023**
-  | * The title contains the change reason, as API of a component modified
+  | * the title contains the change reason, as API of a component modified
   | * The change request type is selected as Component Request/Modification
   | * The descriptions considers reason and effort for implementation, verification, impact for user
   | * There are no details for the implementation given
@@ -157,16 +142,17 @@ When ready to review and to analyze, the author sets the status to "in review" m
 .. note::
   | For the Change Request Example:
   | * The "Process Development Community" dashboard is added and the status must be changed to **Todo**
-  | * The combination of the issue**Open** and **Todo** defines the status **in review**
+  | * The combination of the issue status **Open** and "Process Development Community" **Todo** defines the status **in review**
 
 
 .. _chm_analyze_change_request:
 
 Analyze Change Request
 ----------------------
-
-The projects :need:`[[title]] <rl__committer>` analyzes the change request together with
-the :need:`[[title]] <rl__contributor>` and takes a decision for accepting or rejecting it.
+The projects :need:`[[title]] <rl__technical_lead>` or :need:`[[title]] <rl__module_lead>` supported by
+:need:`[[title]] <rl__committer>` (includes Safety, Security and Quality Manager) analyzes the change 
+request together with the :need:`[[title]] <rl__contributor>` and takes a decision with the submitting/authoring 
+contributor for accepting or rejecting it.
 
 The analysis will start by reviewing all the information given during the creation of the
 change request. All topics are revisited and checked for correctness, completeness and
@@ -186,12 +172,12 @@ should be closed, shall be defined. Optionally, the corresponding milestone can 
 If accepted, :need:`[[title]] <rl__contributor>` can start with the implementation of the
 Change Request.
 
-The author has the freedom to cancel it at any time by setting the status to "rejected".
+The author has the freedom to cancel the change request at any time by setting the status to "rejected".
 
 .. note::
   | For the Change Request Example:
   | * For rejection the status of the issue must be changed to **Closed as not planned**
-  | * The combination of **Closed as not planned** and any "Process Development Community" status defines the status **rejected**
+  | * The combination of issue status **Closed as not planned** and any "Process Development Community" status defines the status **rejected**
 
 
 .. _chm_imp_mon_change_request:
@@ -225,7 +211,7 @@ When ready to implement, the author sets the status to "in implementation" manua
   | For the Change Request Example:
   | * The "Process Development Community" status must be changed to **In Progress**
   | * The linked Pull Request status is either "Draft" or "Open"
-  | * The combination of **Open** and any "Process Development Community" status **In Progress** and the Pull Request status **Draft** or **Open** defines the status **in implementation**
+  | * The combination of issue status **Open** and any "Process Development Community" status **In Progress** and the Pull Request status **Draft** or **Open** defines the status **in implementation**
 
 .. note::
   | For the Change Request Example:
@@ -236,7 +222,7 @@ During the implementation of the change the responsible lead :need:`[[title]] <r
 or :need:`[[title]] <rl__module_lead>` reports regularly the status to the affected
 projects teams.
 
-The author has the freedom to cancel it at any time by setting the status to "rejected".
+The author has the freedom to cancel the change request at any time by setting the status to "rejected".
 
 
 .. _chm_close_change_request:
@@ -253,14 +239,15 @@ is sufficient before the status is finally closed. To check, if it is sufficient
 Further the effectiveness of the implemented measure is confirmed and the availability
 of the required reports, as verification results, if applicable.
 
-When confirmed, the author sets the status to "closed" manually, if not done automatically.
+When confirmed, the :need:`[[title]] <rl__technical_lead>` or :need:`[[title]] <rl__module_lead>` 
+sets the status to "closed" manually, if not done automatically.
 
 .. note::
   | For the Change Request Example:
   | * For closing the status of the issue must be changed to **Closed**
   | * The "Process Development Community" status must be changed to **Done**
   | * The PR status must be changed to **Merged**
-  | * The combination of **Closed** and any "Process Development Community" status **Done** and the Pull Request status **Merged** defines the status **closed**
+  | * The combination of issue status **Closed** and any "Process Development Community" status **Done** and the Pull Request status **Merged** defines the status **closed**
 
 :need:`[[title]] <rl__committer>` has the freedom to reject it at any time by setting the status
 to "reject".

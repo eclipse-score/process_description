@@ -46,7 +46,7 @@ Stakeholders for the Change Requests
 #. :need:`Contributor <rl__contributor>`
 
    * In general contributes features and components to grow the project content
-   * Creates change requests, analyze changes, implement changes
+   * Creates change requests, analyzes changes, implement changes
 
 #. :need:`Committer <rl__committer>`
 
