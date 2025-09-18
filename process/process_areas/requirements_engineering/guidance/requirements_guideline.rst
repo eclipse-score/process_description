@@ -198,7 +198,7 @@ Following roles should be included in the review:
 
 
 Workflow for Creating and Linking Assumption of Use (AoU)
-*********************************************************
+=========================================================
 
 An AoU is a category of requirement which is originates from a safety concept of an architectural element (and thus it is confirmed by a safety analysis). As it can not be fulfilled by the architecture element (e.g. component) itself, it needs to be fulfilled by the user of the module.
 In Safety Elements out of Context (SEooC) the AoUs will normally be part of the safety manual.
@@ -221,3 +221,32 @@ AoUs can be of different class and shall be handled by tracing those
    AoU Traceability
 
 :numref:`aou_traceability` is an extension of the workproduct traceability to show the handling of (external) AoU. Note that the component level displayed in green shows two components - on the right the one exporting AoU to be fulfilled by others, left the component which fulfills and exports AoU (but without the traceability shown on the right to reduce complexity).
+
+Special cases
+=============
+
+Requirements for future (or past) milestones
+--------------------------------------------
+
+A project release is always consistent, i.e. all development artefacts linked to each other do not contradict each other
+and complete, i.e. all requirements are derived into dependent work products down to the implementation.
+This is also the case for the selection of the scope of a platform by feature flags, as these
+select a part of the platform but this part is complete.
+
+In this chapter we cover a special use case where requirements not for the next milestone but for later milestones are specified.
+This could be the case when a function is already specified but it is decided to delay its implementation.
+
+A use case where the specification AND implementation of a new/modified feature is done
+already during the development time of an earlier milestone than the feature is planned
+can be realized by the feature flags (for new features) or by branching off.
+
+For the "only specification" use case, the following attributes can be used:
+- :need:`gd_req__req_attr_valid_from`
+- :need:`gd_req__req_attr_valid_until`
+
+These attributes can be used for stakeholder and feature requirements, but not for
+the component requirements, as these are expected to be developed during small implementation cycles.
+
+If an existing requirement needs to be reworked for the new function it will be split in two.
+The requirement with the old specification will be valid_until the milestone before the
+new function is planned and the requirement with the new specification is valid_from the planned milestone.
