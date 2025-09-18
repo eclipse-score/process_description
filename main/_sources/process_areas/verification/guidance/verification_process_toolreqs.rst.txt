@@ -153,8 +153,19 @@ Test Linking to Requirements
     :satisfies: wf__verification_mod_ver_report
     :complies:
 
-    Verification reports shall be automatically generated. These may be independent documents (i.e. not integrated into sphinx documentation).
+    The tool automation shall automatically generate the Verification reports.
+    These may be independent documents (i.e. not integrated into sphinx documentation).
     The content of the reports is specified in :need:`gd_temp__platform_ver_report` and :need:`gd_temp__mod_ver_report`.
+
+.. gd_req:: Verification Report Archiving
+    :id: gd_req__verification_report_archiving
+    :status: valid
+    :tags: prio_1_automation, verification
+    :satisfies: wf__verification_mod_ver_report
+    :complies:
+
+    The tool automation shall automatically archive the Verification reports for releases.
+    The reports are generated according to :need:`gd_req__verification_reporting`.
 
 .. gd_req:: Verification Documentation Checks
     :id: gd_req__verification_checks
