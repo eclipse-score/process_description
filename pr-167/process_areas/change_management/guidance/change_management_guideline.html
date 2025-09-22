@@ -560,7 +560,7 @@
                   
   <section id="guideline">
 <h1>Guideline<a class="headerlink" href="#guideline" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-d427258e">
+<div class="need_container docutils container" id="SNCB-4892eb4f">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_guidl table" id="gd_guidl__change_change_request">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -610,9 +610,12 @@
 <p>The detailed implementation of the Change Management for the project shall be described in the <a class="reference internal" href="../../platform_management/platform_management_workflow.html#workflow-platform-management"><span class="std std-ref">Workflow Platform Management</span></a>.</p>
 <section id="templates">
 <h3>Templates<a class="headerlink" href="#templates" title="Link to this heading">#</a></h3>
-<p>To create change request, the project shall provide the content of the following templates
-in project’s selected Issue Tracking System: <a class="reference internal" href="change_management_feature_template.html#gd_temp__change_feature_request" title="gd_temp__change_feature_request"><em class="xref need">Feature Request Template</em></a>
-and <a class="reference internal" href="change_management_component_template.html#gd_temp__change_component_request" title="gd_temp__change_component_request"><em class="xref need">Component Request Template</em></a>.</p>
+<p>To create a change request, the project shall provide the content of the following
+templates in a pull request (PR) linked to an issue in the project’s selected Issue
+Tracking System: <a class="reference internal" href="change_management_feature_template.html#gd_temp__change_feature_request" title="gd_temp__change_feature_request"><em class="xref need">Feature Request Template</em></a> and
+<a class="reference internal" href="change_management_component_template.html#gd_temp__change_component_request" title="gd_temp__change_component_request"><em class="xref need">Component Request Template</em></a>.</p>
+<p>The project’s selected Issue Tracking System may also use the content of these templates
+to provide e.g. a change request issue template.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>An example template for the Issue Tracking System in GitHub (<a class="reference external" href="https://github.com/features/issues">GitHub Issues</a>)
@@ -704,12 +707,16 @@ can be found here:
 <section id="create-change-request">
 <span id="chm-create-change-request"></span><h3>Create Change Request<a class="headerlink" href="#create-change-request" title="Link to this heading">#</a></h3>
 <p><a class="reference internal" href="../../../roles/index.html#rl__contributor" title="rl__contributor"><em class="xref need">Contributor</em></a> (as author, submitter) creates the Change Request
-in the defined Issue Tracking System of the project based on the content of the
-provided templates: <a class="reference internal" href="change_management_feature_template.html#gd_temp__change_feature_request" title="gd_temp__change_feature_request"><em class="xref need">Feature Request Template</em></a> or
-<a class="reference internal" href="change_management_component_template.html#gd_temp__change_component_request" title="gd_temp__change_component_request"><em class="xref need">Component Request Template</em></a>.</p>
-<p>It is expected that the selected Issue Tracking system supports template definition. Best
-practice is to define a template with the required content, so that it can be copied
-by the different users.</p>
+as a pull request (PR) based on the content of the provided templates:
+<a class="reference internal" href="change_management_feature_template.html#gd_temp__change_feature_request" title="gd_temp__change_feature_request"><em class="xref need">Feature Request Template</em></a> or <a class="reference internal" href="change_management_component_template.html#gd_temp__change_component_request" title="gd_temp__change_component_request"><em class="xref need">Component Request Template</em></a>.
+This PR is linked to an issue of the selected Issue Tracking System of the project.</p>
+<p>It is expected, that the status of the pull request is set to “draft” or “open” automatically.</p>
+<p>To start the process only to open the issue is allowed. But the issue shall then provide
+already the content of the mentioned templates above.</p>
+<p>It is expected, that the status of the issue is set to “open” automatically.</p>
+<p>It is expected that the selected Issue Tracking system supports template definition.
+Best practice is to define a template with the required content, so that it can be either
+automatically included or copied by the different users.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>For the Issue Tracking System in GitHub, there is a template created, which can be
@@ -746,12 +753,13 @@ be found here:
 <div class="line">* The status of the issue is provided by the Issue Tracking System as: <strong>Open</strong></div>
 <div class="line">* The submitter is provided by the Issue Tracking System as: <strong>masc2023</strong></div>
 <div class="line">* the title contains the change reason, as API of a component modified</div>
-<div class="line">* The change request type is selected as Component Request/Modification</div>
-<div class="line">* The descriptions considers reason and effort for implementation, verification, impact for user</div>
-<div class="line">* There are no details for the implementation given</div>
+<div class="line">* The change request type is selected as Component Modification</div>
+<div class="line">* The descriptions considers details of the change and how the user is impacted</div>
+<div class="line">* Estimations for realization are given</div>
 <div class="line">* The affected high level work products are identified: Requirements, Architecture and Detailed Design</div>
 <div class="line">* The detailed affected work products are listed.</div>
-<div class="line">* Checkboxes are selected to highlight, that Safety is affected with classification ASLI_B</div>
+<div class="line">* Checkboxes are selected to highlight, that Safety is affected with classification ASIL_B</div>
+<div class="line">* The expected implementation version is defined</div>
 </div>
 </div>
 <p>When ready to review and to analyze, the author sets the status to “in review” manually.</p>
@@ -768,8 +776,8 @@ be found here:
 <span id="chm-analyze-change-request"></span><h3>Analyze Change Request<a class="headerlink" href="#analyze-change-request" title="Link to this heading">#</a></h3>
 <p>The projects <a class="reference internal" href="../../platform_management/platform_management_roles.html#rl__technical_lead" title="rl__technical_lead"><em class="xref need">Technical Lead</em></a> or <a class="reference internal" href="../../platform_management/platform_management_roles.html#rl__module_lead" title="rl__module_lead"><em class="xref need">Module Project Lead</em></a> supported by
 <a class="reference internal" href="../../../roles/index.html#rl__committer" title="rl__committer"><em class="xref need">Committer</em></a> (includes Safety, Security and Quality Manager) analyzes the change
-request together with the <a class="reference internal" href="../../../roles/index.html#rl__contributor" title="rl__contributor"><em class="xref need">Contributor</em></a> and takes a decision with the submitting/authoring
-contributor for accepting or rejecting it.</p>
+request together with the <a class="reference internal" href="../../../roles/index.html#rl__contributor" title="rl__contributor"><em class="xref need">Contributor</em></a> and takes a decision with
+the submitting/authoring contributor for accepting or rejecting it.</p>
 <p>The analysis will start by reviewing all the information given during the creation of the
 change request. All topics are revisited and checked for correctness, completeness and
 consistency.</p>
@@ -818,8 +826,8 @@ In this case additional issues may created and linked to the Change Request.</p>
 <div class="line">* The <strong>Create sub-issue</strong> should be used to create further linked issues.</div>
 </div>
 </div>
-<p>Minimal a Pull Request is sufficient to implement the change, which shall be linked
-to the Change Request. It is expected, that the status of the Pull Request is set to
+<p>Minimal a pull request is sufficient to implement the change, which shall be linked
+to the Change Request. It is expected, that the status of the pull request is set to
 “draft” or “open” automatically.</p>
 <p>When ready to implement, the author sets the status to “in implementation” manually.</p>
 <div class="admonition note">
@@ -828,7 +836,7 @@ to the Change Request. It is expected, that the status of the Pull Request is se
 <div class="line">For the Change Request Example:</div>
 <div class="line">* The “Process Development Community” status must be changed to <strong>In Progress</strong></div>
 <div class="line">* The linked Pull Request status is either “Draft” or “Open”</div>
-<div class="line">* The combination of issue status <strong>Open</strong> and any “Process Development Community” status <strong>In Progress</strong> and the Pull Request status <strong>Draft</strong> or <strong>Open</strong> defines the status <strong>in implementation</strong></div>
+<div class="line">* The combination of issue status <strong>Open</strong> and “Process Development Community” status <strong>In Progress</strong> and the pull request status <strong>Draft</strong> or <strong>Open</strong> defines the status <strong>in implementation</strong></div>
 </div>
 </div>
 <div class="admonition note">
@@ -862,7 +870,7 @@ sets the status to “closed” manually, if not done automatically.</p>
 <div class="line">* For closing the status of the issue must be changed to <strong>Closed</strong></div>
 <div class="line">* The “Process Development Community” status must be changed to <strong>Done</strong></div>
 <div class="line">* The PR status must be changed to <strong>Merged</strong></div>
-<div class="line">* The combination of issue status <strong>Closed</strong> and any “Process Development Community” status <strong>Done</strong> and the Pull Request status <strong>Merged</strong> defines the status <strong>closed</strong></div>
+<div class="line">* The combination of issue status <strong>Closed</strong> and “Process Development Community” status <strong>Done</strong> and the pull request status <strong>Merged</strong> defines the status <strong>closed</strong></div>
 </div>
 </div>
 <p><a class="reference internal" href="../../../roles/index.html#rl__committer" title="rl__committer"><em class="xref need">Committer</em></a> has the freedom to reject it at any time by setting the status

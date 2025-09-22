@@ -32,9 +32,13 @@ The detailed implementation of the Change Management for the project shall be de
 Templates
 ---------
 
-To create change request, the project shall provide the content of the following templates
-in project's selected Issue Tracking System: :need:`[[title]] <gd_temp__change_feature_request>`
-and :need:`[[title]] <gd_temp__change_component_request>`.
+To create a change request, the project shall provide the content of the following
+templates in a pull request (PR) linked to an issue in the project's selected Issue
+Tracking System: :need:`[[title]] <gd_temp__change_feature_request>` and
+:need:`[[title]] <gd_temp__change_component_request>`.
+
+The project's selected Issue Tracking System may also use the content of these templates
+to provide e.g. a change request issue template.
 
 .. note::
   An example template for the Issue Tracking System in GitHub (`GitHub Issues <https://github.com/features/issues>`_)
@@ -96,13 +100,20 @@ Create Change Request
 ---------------------
 
 :need:`[[title]] <rl__contributor>` (as author, submitter) creates the Change Request
-in the defined Issue Tracking System of the project based on the content of the
-provided templates: :need:`[[title]] <gd_temp__change_feature_request>` or
-:need:`[[title]] <gd_temp__change_component_request>`.
+as a pull request (PR) based on the content of the provided templates:
+:need:`[[title]] <gd_temp__change_feature_request>` or :need:`[[title]] <gd_temp__change_component_request>`.
+This PR is linked to an issue of the selected Issue Tracking System of the project.
 
-It is expected that the selected Issue Tracking system supports template definition. Best
-practice is to define a template with the required content, so that it can be copied
-by the different users.
+It is expected, that the status of the pull request is set to "draft" or "open" automatically.
+
+To start the process only to open the issue is allowed. But the issue shall then provide
+already the content of the mentioned templates above.
+
+It is expected, that the status of the issue is set to "open" automatically.
+
+It is expected that the selected Issue Tracking system supports template definition.
+Best practice is to define a template with the required content, so that it can be either
+automatically included or copied by the different users.
 
 .. note::
   For the Issue Tracking System in GitHub, there is a template created, which can be
@@ -131,12 +142,13 @@ It is expected, that
   | * The status of the issue is provided by the Issue Tracking System as: **Open**
   | * The submitter is provided by the Issue Tracking System as: **masc2023**
   | * the title contains the change reason, as API of a component modified
-  | * The change request type is selected as Component Request/Modification
-  | * The descriptions considers reason and effort for implementation, verification, impact for user
-  | * There are no details for the implementation given
+  | * The change request type is selected as Component Modification
+  | * The descriptions considers details of the change and how the user is impacted
+  | * Estimations for realization are given
   | * The affected high level work products are identified: Requirements, Architecture and Detailed Design
   | * The detailed affected work products are listed.
-  | * Checkboxes are selected to highlight, that Safety is affected with classification ASLI_B
+  | * Checkboxes are selected to highlight, that Safety is affected with classification ASIL_B
+  | * The expected implementation version is defined
 
 When ready to review and to analyze, the author sets the status to "in review" manually.
 
@@ -152,8 +164,8 @@ Analyze Change Request
 ----------------------
 The projects :need:`[[title]] <rl__technical_lead>` or :need:`[[title]] <rl__module_lead>` supported by
 :need:`[[title]] <rl__committer>` (includes Safety, Security and Quality Manager) analyzes the change
-request together with the :need:`[[title]] <rl__contributor>` and takes a decision with the submitting/authoring
-contributor for accepting or rejecting it.
+request together with the :need:`[[title]] <rl__contributor>` and takes a decision with
+the submitting/authoring contributor for accepting or rejecting it.
 
 The analysis will start by reviewing all the information given during the creation of the
 change request. All topics are revisited and checked for correctness, completeness and
@@ -202,8 +214,8 @@ In this case additional issues may created and linked to the Change Request.
   | For the Change Request Example:
   | * The **Create sub-issue** should be used to create further linked issues.
 
-Minimal a Pull Request is sufficient to implement the change, which shall be linked
-to the Change Request. It is expected, that the status of the Pull Request is set to
+Minimal a pull request is sufficient to implement the change, which shall be linked
+to the Change Request. It is expected, that the status of the pull request is set to
 "draft" or "open" automatically.
 
 When ready to implement, the author sets the status to "in implementation" manually.
@@ -212,7 +224,7 @@ When ready to implement, the author sets the status to "in implementation" manua
   | For the Change Request Example:
   | * The "Process Development Community" status must be changed to **In Progress**
   | * The linked Pull Request status is either "Draft" or "Open"
-  | * The combination of issue status **Open** and any "Process Development Community" status **In Progress** and the Pull Request status **Draft** or **Open** defines the status **in implementation**
+  | * The combination of issue status **Open** and "Process Development Community" status **In Progress** and the pull request status **Draft** or **Open** defines the status **in implementation**
 
 .. note::
   | For the Change Request Example:
@@ -248,7 +260,7 @@ sets the status to "closed" manually, if not done automatically.
   | * For closing the status of the issue must be changed to **Closed**
   | * The "Process Development Community" status must be changed to **Done**
   | * The PR status must be changed to **Merged**
-  | * The combination of issue status **Closed** and any "Process Development Community" status **Done** and the Pull Request status **Merged** defines the status **closed**
+  | * The combination of issue status **Closed** and "Process Development Community" status **Done** and the pull request status **Merged** defines the status **closed**
 
 :need:`[[title]] <rl__committer>` has the freedom to reject it at any time by setting the status
 to "reject".
