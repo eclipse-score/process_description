@@ -100,7 +100,7 @@ in the defined Issue Tracking System of the project based on the content of the
 provided templates: :need:`[[title]] <gd_temp__change_feature_request>` or
 :need:`[[title]] <gd_temp__change_component_request>`.
 
-It is expected that the select Issue Tracking system supports template definition. Best
+It is expected that the selected Issue Tracking system supports template definition. Best
 practice is to define a template with the required content, so that it can be copied
 by the different users.
 
@@ -116,13 +116,14 @@ by the different users.
 It is expected, that
 
 * UID will be provided automatically by the Issue Tracking System.
-* the status of the change request is set to "open" automatically. As long as the content is updated, the status of the change request is kept "open".
-* the change request submitter will be set automatically by the Issue Tracking System. 
-* the title of the change request reflects the topic accordingly. 
+* The status of the change request is set to "open" automatically. As long as the content is updated, the status of the change request is kept "open".
+* The change request submitter will be set automatically by the Issue Tracking System.
+* The title of the change request reflects the topic accordingly.
 * The change request type reflects level of the change: feature or component.
-* the description reflects in detail: Exact description of the Change Request including reason, impact analysis on user, effort for implementation (schedule, risks, resources) and verification (measures defined).
-* the affected work products from high level perspective are identified.
-* an detailed impact analysis is available. If the change affects safety or security it should be stated explicitly. If safety is affected, the ASIL classification should be added, if applicable.
+* The description reflects in detail: Exact description of the Change Request including reason, impact analysis on user, effort for implementation (schedule, risks, resources) and verification (measures defined).
+* A detailed impact analysis is available.
+    * If the change affects safety or security it should be stated explicitly.
+    * If safety is affected, the ASIL classification should be added, if applicable.
 
 .. note::
   | For the Change Request Example:
@@ -150,8 +151,8 @@ When ready to review and to analyze, the author sets the status to "in review" m
 Analyze Change Request
 ----------------------
 The projects :need:`[[title]] <rl__technical_lead>` or :need:`[[title]] <rl__module_lead>` supported by
-:need:`[[title]] <rl__committer>` (includes Safety, Security and Quality Manager) analyzes the change 
-request together with the :need:`[[title]] <rl__contributor>` and takes a decision with the submitting/authoring 
+:need:`[[title]] <rl__committer>` (includes Safety, Security and Quality Manager) analyzes the change
+request together with the :need:`[[title]] <rl__contributor>` and takes a decision with the submitting/authoring
 contributor for accepting or rejecting it.
 
 The analysis will start by reviewing all the information given during the creation of the
@@ -233,13 +234,13 @@ Close Change Request
 During implementation the :need:`[[title]] <rl__contributor>` monitors all activities linked to
 the change, until they are closed.
 
-:need:`[[title]] <rl__committer>` checks finally if the Change Request implementation
-is sufficient before the status is finally closed. To check, if it is sufficient,
-:need:`Change Request Checklist <gd_chklst__change_cr_review>` may used.
+:need:`[[title]] <rl__committer>` finally checks if the Change Request implementation
+is sufficient before the status is changed to closed. To check, if it is sufficient,
+:need:`Change Request Checklist <gd_chklst__change_cr_review>` can be used.
 Further the effectiveness of the implemented measure is confirmed and the availability
-of the required reports, as verification results, if applicable.
+of the required reports, as well as verification results, if applicable.
 
-When confirmed, the :need:`[[title]] <rl__technical_lead>` or :need:`[[title]] <rl__module_lead>` 
+When confirmed, the :need:`[[title]] <rl__technical_lead>` or :need:`[[title]] <rl__module_lead>`
 sets the status to "closed" manually, if not done automatically.
 
 .. note::
