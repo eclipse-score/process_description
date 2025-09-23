@@ -24,8 +24,8 @@ This document describes the steps to create a release of the SW and collaterals 
 
 Releases can be done in every repository, mainly:
 
-* S-CORE repository
-* Module repositories
+* Platform (Main project/Integration) repository
+* Module (platform's components) repositories
 
 For this a templates :need:`gd_temp__rel_plat_rel_note` & :need:`gd_temp__rel_mod_rel_note`, guidelines
 :need:`gd_guidl__rel_management` and a :need:`doc_concept__rel_process`
