@@ -30,6 +30,8 @@ Templates
          :security: <YES|NO>
          :safety: <QM|ASIL_B>
          :rational: <The rationale provides the reason that the requirement is needed.>
+         :valid_from: <milestone version>
+         :valid_until: <milestone version>
          :status: <valid|invalid>
 
 .. gd_temp:: Feature Requirements Template
@@ -45,6 +47,8 @@ Templates
         :security: <YES|NO>
         :safety: <QM|ASIL_B>
         :satisfies: <link to stakeholder requirement id>
+        :valid_from: <milestone version>
+        :valid_until: <milestone version>
         :status: <valid|invalid>
 
 .. gd_temp:: Component Requirements Template

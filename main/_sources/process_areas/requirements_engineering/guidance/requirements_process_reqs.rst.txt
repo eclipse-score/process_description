@@ -140,6 +140,24 @@ Process Requirement Attributes
    Each stakeholder requirement shall provide an attribute called rationale.
    The rationale shall contain the reason why the requirement is needed.
 
+.. gd_req:: Requirement attribute: valid_from
+   :id: gd_req__req_attr_valid_from
+   :status: valid
+   :tags: manual, attribute
+   :satisfies: wf__req_stkh_req, wf__req_feat_req
+
+   Stakeholder and feature requirements can have a validity attribute that tells
+   from which milestone onwards the requirement is part of a feature.
+
+.. gd_req:: Requirement attribute: valid_until
+   :id: gd_req__req_attr_valid_until
+   :status: valid
+   :tags: manual, attribute
+   :satisfies: wf__req_stkh_req, wf__req_feat_req
+
+   Stakeholder and feature requirements can have a validity attribute that tells
+   until which milestone the requirement is part of a feature.
+
 .. _process_requirement_linkage:
 
 Process Requirement Linkage
@@ -304,6 +322,15 @@ Process Requirements Checks
    It shall be checked that (child) QM requirements (Safety == QM) can not be linked against a (parent) safety requirement (Safety != QM).
 
    Note: This ensures that safety requirements are properly derived into their children. Also a mix of safe and QM aspects in a parent is avoided by this.
+
+.. gd_req:: Requirements validity
+   :id: gd_req__req_validity
+   :status: valid
+   :tags: prio_3_automation, check
+   :satisfies: wf__req_stkh_req, wf__req_feat_req
+
+   Validity attributes (:need:`gd_req__req_attr_valid_from` and :need:`gd_req__req_attr_valid_until`) shall be checked for correctness (i.e. they denote an existing milestone) and consistent (e.g. the until is not before from)
+   Several of the above checks are not to be executed on requirements not valid in the next milestone, these are TBD
 
 .. needextend:: docname is not None and "process_areas/requirements_engineering" in docname
    :+tags: requirements_engineering
