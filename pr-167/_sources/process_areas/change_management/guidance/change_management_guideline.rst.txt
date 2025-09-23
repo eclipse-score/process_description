@@ -45,6 +45,16 @@ to provide e.g. a change request issue template.
   can be found here:
   `Issue Template Change Request <https://github.com/eclipse-score/process_description/blob/main/.github/ISSUE_TEMPLATE/3-change.yml>`_
 
+Improvements including Process Improvements are not Change Requests.
+The project's selected Issue Tracking System may also provide a template for improvements,
+e.g. an improvement issue template.
+
+.. note::
+  An example template for the Issue Tracking System in GitHub (`GitHub Issues <https://github.com/features/issues>`_)
+  can be found here:
+  `Issue Template Improvement <https://github.com/eclipse-score/process_description/blob/main/.github/ISSUE_TEMPLATE/2-improvement.yml>`_
+
+
 Attributes
 ----------
 
