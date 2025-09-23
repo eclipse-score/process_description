@@ -21,7 +21,7 @@ Contributions to the project are driven by feature/component requests.
 
 As features and components are the main structuring elements of the project, new
 features and components are requested by feature or components requests (compare
-:need:`wf__change_cr_an_change_request`). Both are special types of change requests.
+:need:`wf__change_create_cr`). Both are special types of change requests.
 
 The figure below shows the standard lifecycle of any feature/component in the project.
 

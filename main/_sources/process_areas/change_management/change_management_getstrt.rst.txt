@@ -20,9 +20,31 @@ Getting Started
    :status: valid
    :tags: change_management
 
-In case you want to contribute a change to **S-CORE** consider to:
+This document describes the steps to create a change request, and further to analyze,
+implement, and to control the change until closure. Where a change is defined as an
+introduction of a new feature/component or modification of an existing feature/component.
 
-* Contact the :need:`Technical Lead <rl__technical_lead>` for your contribution to establish planning and reporting
-* Create your change requests according to :need:`wf__change_cr_an_change_request`
-* Make familiar with the development and supporting process descriptions in :ref:`process_description`
-* Make familiar with the relevant sections of the `Platform Management Plan <REPLACE_doc__platform_mgt_plan>`, here especially with `Change Management Plan <REPLACE_doc__platform_change_management_plan>`
+Examples for change requests:
+
+* New feature e.g. communication, debugging, health management, cryptography introduced (feature request).
+* Existing feature, e.g. communication supports new protocol (feature modification).
+* New component for parsing a protocol introduced (component request).
+* API change for an existing component (component modification).
+
+Therefore guidelines :need:`gd_temp__change_feature_request` and
+:need:`gd_temp__change_component_request`, :need:`gd_guidl__change_change_request` and
+a :need:`doc_concept__change_process` are available.
+
+General Workflow
+****************
+
+The workflows are defined in the :ref:`chm_change_workflows` section.
+
+For every change identified, the following workflows are executed:
+
+* Create your change request according to :need:`wf__change_create_cr`
+* Analyze change request report according to :need:`wf__change_analyze_cr`
+* Implement change request and monitor it until closure according to :need:`wf__change_implement_monitor_cr`
+* Close the change request according to :need:`wf__change_close_cr`
+
+In addition create a change management plan as part of the platform management plan according to :need:`wf__platform_cr_mt_platform_mgmt_plan`

@@ -548,7 +548,7 @@
                   
   <section id="getting-started">
 <h1>Getting Started<a class="headerlink" href="#getting-started" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-ada87df5">
+<div class="need_container docutils container" id="SNCB-fb256402">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_doc_getstrt table" id="doc_getstrt__change_process">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -569,7 +569,7 @@
 <tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
 <div class="line"><span><span><div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">change_management</span></span></span></div>
 </span></span></div>
-<div class="line"><span><div class="line">relates to: <span class="has"><span><a class="reference internal" href="change_management_workflow.html#wf__change_cr_an_change_request" title="doc_getstrt__change_process">wf__change_cr_an_change_request</a>, <a class="reference internal" href="change_management_workflow.html#wf__change_rv_ap_change_request" title="doc_getstrt__change_process">wf__change_rv_ap_change_request</a></span></span></div>
+<div class="line"><span><div class="line">relates to: <span class="has"><span><a class="reference internal" href="change_management_workflow.html#wf__change_create_cr" title="doc_getstrt__change_process">wf__change_create_cr</a>, <a class="reference internal" href="change_management_workflow.html#wf__change_analyze_cr" title="doc_getstrt__change_process">wf__change_analyze_cr</a>, <a class="reference internal" href="change_management_workflow.html#wf__change_implement_monitor_cr" title="doc_getstrt__change_process">wf__change_implement_monitor_cr</a>, <a class="reference internal" href="change_management_workflow.html#wf__change_close_cr" title="doc_getstrt__change_process">wf__change_close_cr</a></span></span></div>
 </span></div>
 </div>
 </td>
@@ -591,13 +591,31 @@
 </table>
 </div>
 </div>
-<p>In case you want to contribute a change to <strong>S-CORE</strong> consider to:</p>
+<p>This document describes the steps to create a change request, and further to analyze,
+implement, and to control the change until closure. Where a change is defined as an
+introduction of a new feature/component or modification of an existing feature/component.</p>
+<p>Examples for change requests:</p>
 <ul class="simple">
-<li><p>Contact the <a class="reference internal" href="../platform_management/platform_management_roles.html#rl__technical_lead" title="rl__technical_lead"><em class="xref need">Technical Lead (rl__technical_lead)</em></a> for your contribution to establish planning and reporting</p></li>
-<li><p>Create your change requests according to <a class="reference internal" href="change_management_workflow.html#wf__change_cr_an_change_request" title="wf__change_cr_an_change_request"><em class="xref need">Create/Analyze Change Request (wf__change_cr_an_change_request)</em></a></p></li>
-<li><p>Make familiar with the development and supporting process descriptions in <a class="reference internal" href="../../index.html#process-description"><span class="std std-ref">Process</span></a></p></li>
-<li><p>Make familiar with the relevant sections of the <cite>Platform Management Plan &lt;REPLACE_doc__platform_mgt_plan&gt;</cite>, here especially with <cite>Change Management Plan &lt;REPLACE_doc__platform_change_management_plan&gt;</cite></p></li>
+<li><p>New feature e.g. communication, debugging, health management, cryptography introduced (feature request).</p></li>
+<li><p>Existing feature, e.g. communication supports new protocol (feature modification).</p></li>
+<li><p>New component for parsing a protocol introduced (component request).</p></li>
+<li><p>API change for an existing component (component modification).</p></li>
 </ul>
+<p>Therefore guidelines <a class="reference internal" href="guidance/change_management_feature_template.html#gd_temp__change_feature_request" title="gd_temp__change_feature_request"><em class="xref need">Feature Request Template (gd_temp__change_feature_request)</em></a> and
+<a class="reference internal" href="guidance/change_management_component_template.html#gd_temp__change_component_request" title="gd_temp__change_component_request"><em class="xref need">Component Request Template (gd_temp__change_component_request)</em></a>, <a class="reference internal" href="guidance/change_management_guideline.html#gd_guidl__change_change_request" title="gd_guidl__change_change_request"><em class="xref need">Change Request Guideline (gd_guidl__change_change_request)</em></a> and
+a <a class="reference internal" href="change_management_concept.html#doc_concept__change_process" title="doc_concept__change_process"><em class="xref need">Concept Description (doc_concept__change_process)</em></a> are available.</p>
+<section id="general-workflow">
+<h2>General Workflow<a class="headerlink" href="#general-workflow" title="Link to this heading">#</a></h2>
+<p>The workflows are defined in the <a class="reference internal" href="change_management_workflow.html#chm-change-workflows"><span class="std std-ref">Workflow Change Management</span></a> section.</p>
+<p>For every change identified, the following workflows are executed:</p>
+<ul class="simple">
+<li><p>Create your change request according to <a class="reference internal" href="change_management_workflow.html#wf__change_create_cr" title="wf__change_create_cr"><em class="xref need">Create Change Request (wf__change_create_cr)</em></a></p></li>
+<li><p>Analyze change request report according to <a class="reference internal" href="change_management_workflow.html#wf__change_analyze_cr" title="wf__change_analyze_cr"><em class="xref need">Analyze Change Request (wf__change_analyze_cr)</em></a></p></li>
+<li><p>Implement change request and monitor it until closure according to <a class="reference internal" href="change_management_workflow.html#wf__change_implement_monitor_cr" title="wf__change_implement_monitor_cr"><em class="xref need">Implement and Monitor Chang... (wf__change_implement_monitor_cr)</em></a></p></li>
+<li><p>Close the change request according to <a class="reference internal" href="change_management_workflow.html#wf__change_close_cr" title="wf__change_close_cr"><em class="xref need">Close Change Request (wf__change_close_cr)</em></a></p></li>
+</ul>
+<p>In addition create a change management plan as part of the platform management plan according to <a class="reference internal" href="../platform_management/platform_management_workflow.html#wf__platform_cr_mt_platform_mgmt_plan" title="wf__platform_cr_mt_platform_mgmt_plan"><em class="xref need">Create/Maintain Platform Ma... (wf__platform_cr_mt_platform_mgmt_plan)</em></a></p>
+</section>
 </section>
 
 
@@ -638,6 +656,18 @@
                 <dialog id="pst-secondary-sidebar-modal"></dialog>
                 <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#general-workflow">General Workflow</a></li>
+</ul>
+  </nav></div>
 
   <div class="sidebar-secondary-item">
 

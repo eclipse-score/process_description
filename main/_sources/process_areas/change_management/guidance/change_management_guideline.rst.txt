@@ -18,35 +18,42 @@ Guideline
 .. gd_guidl:: Change Request Guideline
    :id: gd_guidl__change_change_request
    :status: valid
+   :tags: change_management
    :complies: std_req__iso26262__support_8414, std_req__iso26262__support_8432, std_req__iso26262__support_8442, std_req__iso26262__support_8451
+
 
 This document describes the general guidances for Change Management based on the concept which is defined :need:`[[title]]<doc_concept__change_process>`.
 
 General Hints
 =============
 
-The detailed implementation of the Change Management for **S-CORE** is described in the `[[title]]<REPLACE_doc__platform_change_management_plan>`.
+The detailed implementation of the Change Management for the project shall be described in the :ref:`Workflow Platform Management <workflow_platform_management>`.
 
 Templates
 ---------
 
-*Need* templates displaying the correct syntax and attribute definition are provided for each
-Change Request type.
+To create a change request, the project shall provide the content of the following
+templates in a pull request (PR) linked to an issue in the project's selected Issue
+Tracking System: :need:`[[title]] <gd_temp__change_feature_request>` and
+:need:`[[title]] <gd_temp__change_component_request>`.
 
-.. list-table:: Overview
-   :header-rows: 1
-   :widths: 37, 37
+The project's selected Issue Tracking System may also use the content of these templates
+to provide e.g. a change request issue template.
 
-   * - Change Request Type
-     - Template
-   * - Feature
-     - :need:`[[title]] <gd_temp__change_feature_request>`
-   * - Feature Modification
-     - :need:`[[title]] <gd_temp__change_feature_request>`
-   * - Component
-     - :need:`[[title]] <gd_temp__change_component_request>`
-   * - Component Modification
-     - :need:`[[title]] <gd_temp__change_component_request>`
+.. note::
+  An example template for the Issue Tracking System in GitHub (`GitHub Issues <https://github.com/features/issues>`_)
+  can be found here:
+  `Issue Template Change Request <https://github.com/eclipse-score/process_description/blob/main/.github/ISSUE_TEMPLATE/3-change.yml>`_
+
+Improvements including Process Improvements are not Change Requests.
+The project's selected Issue Tracking System may also provide a template for improvements,
+e.g. an improvement issue template.
+
+.. note::
+  An example template for the Issue Tracking System in GitHub (`GitHub Issues <https://github.com/features/issues>`_)
+  can be found here:
+  `Issue Template Improvement <https://github.com/eclipse-score/process_description/blob/main/.github/ISSUE_TEMPLATE/2-improvement.yml>`_
+
 
 Attributes
 ----------
@@ -55,13 +62,13 @@ For all Change Requests following mandatory attributes need to be defined:
 
 .. needtable:: Overview of mandatory change request attributes
    :tags: change_management
-   :filter: "mandatory" in tags and "attribute" in tags and "chm" in tags and is_external == False
+   :filter: "mandatory" in tags and "attribute" in tags and "change_management" in tags and is_external == False
    :style: table
    :columns: title
    :colwidths: 30
 
 
-A more detailed description can be found here: :ref:`chm_process_requirements`
+A more detailed description can be found here: :ref:`chm_process_change_request_attributes`.
 
 
 .. _workflow_chm_requirements:
@@ -69,117 +76,201 @@ A more detailed description can be found here: :ref:`chm_process_requirements`
 Activities for Change Requests
 ==============================
 
-This section describes in detail which steps need to be performed for a Change Request. They may
-be combined in on Change Request or split to multiple Change Requests, if necessary.
-
-Split may required, if
-
-| 1. Implementation is to complex and has dependencies, thus separate the activities for analyzing and
-|    approving and the multiple implementation and verification activities in different Change Requests,
-|    and link them according their dependencies.
-
-| 2. Affected work products are in different locations.
-
-Refer to the `Change Management Plan <REPLACE_doc__platform_change_management_plan>` for examples
-how to create simple or more complex Change Requests.
+This section describes in detail which steps need to be performed for a Change Request.
 
 .. list-table:: Activities for Change Request
    :header-rows: 1
-   :widths: 10,60,30
+   :widths: 10,60,30,30
 
    * - Step
      - Description
      - Responsible
+     - Approver
    * - :ref:`1. <chm_create_change_request>`
-     - Create change request
+     - Create Change Request
      - :need:`[[title]] <rl__contributor>`
+     - :need:`[[title]] <rl__committer>`
    * - :ref:`2. <chm_analyze_change_request>`
      - Analyze Change Request
      - :need:`[[title]] <rl__contributor>`
-   * - :ref:`3. <chm_approve_change_request>`
-     - Approve Change Request
-     - :need:`[[title]] <rl__committer>`
-   * - :ref:`4. <chm_implement_change_request>`
-     - Implement Change Request
+     - :need:`[[title]] <rl__technical_lead>`, :need:`[[title]] <rl__module_lead>`
+   * - :ref:`3. <chm_imp_mon_change_request>`
+     - Implement and Monitor Change Request
      - :need:`[[title]] <rl__contributor>`
-   * - :ref:`5. <chm_verify_change_request>`
-     - Verify Change Request
      - :need:`[[title]] <rl__committer>`
+   * - :ref:`4. <chm_close_change_request>`
+     - Close Change Request
+     - :need:`[[title]] <rl__committer>`
+     - :need:`[[title]] <rl__technical_lead>`, :need:`[[title]] <rl__module_lead>`
+
 
 .. _chm_create_change_request:
 
 Create Change Request
 ---------------------
 
-:need:`[[title]] <rl__contributor>` creates the Change Request in the defined Issue Tracking
-System linked to the created Feature or Component Request work products based on the provided templates.
-It is expected, that the UID will be provided by the Issue Tracking System.
+:need:`[[title]] <rl__contributor>` (as author, submitter) creates the Change Request
+as a pull request (PR) based on the content of the provided templates:
+:need:`[[title]] <gd_temp__change_feature_request>` or :need:`[[title]] <gd_temp__change_component_request>`.
+This PR is linked to an issue of the selected Issue Tracking System of the project.
 
-The title of the Change Request should reflect the type (new feature/component request or
-feature/component modification).
+It is expected, that the status of the pull request is set to "draft" or "open" automatically.
 
-The description should reflect the detailed changes. In case of a new feature/component request,
-fill-out the template sections properly. For modifications touch only the concerned sections.
+To start the process only to open the issue is allowed. But the issue shall then provide
+already the content of the mentioned templates above.
 
-Set the status of the Change Request to "draft", indicating that is not ready for review.
+It is expected, that the status of the issue is set to "open" automatically.
+
+It is expected that the selected Issue Tracking system supports template definition.
+Best practice is to define a template with the required content, so that it can be either
+automatically included or copied by the different users.
+
+.. note::
+  For the Issue Tracking System in GitHub, there is a template created, which can be
+  be found here:
+  `Issue Template Change <https://github.com/eclipse-score/process_description/blob/main/.github/ISSUE_TEMPLATE/3-change.yml>`_
+
+.. note::
+  A Change Request Example based on that template is here:
+  `Example Change Request <https://github.com/eclipse-score/process_description/issues/168>`_
+
+It is expected, that
+
+* UID will be provided automatically by the Issue Tracking System.
+* The status of the change request is set to "open" automatically. As long as the content is updated, the status of the change request is kept "open".
+* The change request submitter will be set automatically by the Issue Tracking System.
+* The title of the change request reflects the topic accordingly.
+* The change request type reflects level of the change: feature or component.
+* The description reflects in detail: Exact description of the Change Request including reason, impact analysis on user, effort for implementation (schedule, risks, resources) and verification (measures defined).
+* A detailed impact analysis is available.
+    * If the change affects safety or security it should be stated explicitly.
+    * If safety is affected, the ASIL classification should be added, if applicable.
+
+.. note::
+  | For the Change Request Example:
+  | * The UID is provided by the Issue Tracking System as: **#168**
+  | * The status of the issue is provided by the Issue Tracking System as: **Open**
+  | * The submitter is provided by the Issue Tracking System as: **masc2023**
+  | * the title contains the change reason, as API of a component modified
+  | * The change request type is selected as Component Modification
+  | * The descriptions considers details of the change and how the user is impacted
+  | * Estimations for realization are given
+  | * The affected high level work products are identified: Requirements, Architecture and Detailed Design
+  | * The detailed affected work products are listed.
+  | * Checkboxes are selected to highlight, that Safety is affected with classification ASIL_B
+  | * The expected implementation version is defined
+
+When ready to review and to analyze, the author sets the status to "in review" manually.
+
+.. note::
+  | For the Change Request Example:
+  | * The "Process Development Community" dashboard is added and the status must be changed to **Todo**
+  | * The combination of the issue status **Open** and "Process Development Community" **Todo** defines the status **in review**
+
 
 .. _chm_analyze_change_request:
 
 Analyze Change Request
 ----------------------
+The projects :need:`[[title]] <rl__technical_lead>` or :need:`[[title]] <rl__module_lead>` supported by
+:need:`[[title]] <rl__committer>` (includes Safety, Security and Quality Manager) analyzes the change
+request together with the :need:`[[title]] <rl__contributor>` and takes a decision with
+the submitting/authoring contributor for accepting or rejecting it.
 
-To enable the **S-CORE** :need:`[[title]] <rl__committer>` to take a decision for approval of the
-Change Request, :need:`[[title]] <rl__contributor>` analyses and documents the request concerning
-the following topics in the created Change Request:
+The analysis will start by reviewing all the information given during the creation of the
+change request. All topics are revisited and checked for correctness, completeness and
+consistency.
 
-1. List of all affected work products
-2. Provide potential implementation schedule including targeted Milestone
-3. Identify risks for implementation, required **S-CORE** resources
-4. Identify impact on existing work products and on functional safety, security
-5. Define verification measures used to confirm the implementation
+If required, the information is updated accordingly.
 
-Use therefore the : :ref:`Impact Analysis Template <chm_impact_analysis_templates>` and copy it
-into the created Change Request (Issue Tracking System).
+If accepted, the stakeholder of the change and the expected release, where the change
+should be closed, shall be defined. Optionally, the corresponding milestone can be set.
 
-Set the status of the Change Request to "draft", indicating that is not ready for review.
-Otherwise, change the status to "in review", so that :need:`[[title]] <rl__committer>` is
-informed to start approval.
+.. note::
+  | For the Change Request Example:
+  | * The stakeholder are provided using Assignees field: **masc2023**
+  | * The expected closure version is provided: *0.5*
+  | * The "Milestone" is provided: **Release 2.0.0 - Maturity Level 2**
 
-.. _chm_approve_change_request:
+If accepted, :need:`[[title]] <rl__contributor>` can start with the implementation of the
+Change Request.
 
-Approve Change Request
-----------------------
+The author has the freedom to cancel the change request at any time by setting the status to "rejected".
 
-:need:`[[title]] <rl__committer>` checks the Change Request in status "in review" based on
-checklist questions and provided content. If the check is passed, the Change Request is approved,
-which is pre-requisite for the implementation of the Change Request. In this case the status
-of the Change Request is changed to "accepted".
+.. note::
+  | For the Change Request Example:
+  | * For rejection the status of the issue must be changed to **Closed as not planned**
+  | * The combination of issue status **Closed as not planned** and any "Process Development Community" status defines the status **rejected**
 
-In case information are missing the status will be kept in "in review" and the creator is asked
-for resolving the review comments.
 
-Finally the Change Request may also "rejected", then the implementation is not wanted.
+.. _chm_imp_mon_change_request:
 
-.. _chm_implement_change_request:
+Implement and Monitor Change Request
+------------------------------------
 
-Implement Change Request
-------------------------
+If accepted, the projects :need:`[[title]] <rl__committer>` initiates the implementation
+of the change together with the :need:`[[title]] <rl__contributor>`.
 
-:need:`[[title]] <rl__contributor>` implements the Change Request. This is indicated by the
-Change Request status "in review". During implementation the responsible lead
-:need:`[[title]] <rl__technical_lead>` or :need:`[[title]] <rl__module_lead>` reports regularly
-the status to the involved **S-CORE** teams until is completed and verified.
+The description may reflect details for the implementation.
 
-The traceability from the Change Request to the affected work products must be established
-during implementation.
-Also the verification measures must be executed.
+.. note::
+  | For the Change Request Example:
+  | * The descriptions has a section for **How is the change realized**, but it is empty.
 
-.. _chm_verify_change_request:
+The concrete implementation of the solution may require several additional activities.
+In this case additional issues may created and linked to the Change Request.
 
-Verify Change Request
----------------------
-:need:`[[title]] <rl__committer>` must finally check, that implementation is complete
-and the defined verification measures are properly executed and successfully pass, before the
-Change Request can be finally approved.
+.. note::
+  | For the Change Request Example:
+  | * The **Create sub-issue** should be used to create further linked issues.
 
-The Change Request is closed by setting the status to "accepted".
+Minimal a pull request is sufficient to implement the change, which shall be linked
+to the Change Request. It is expected, that the status of the pull request is set to
+"draft" or "open" automatically.
+
+When ready to implement, the author sets the status to "in implementation" manually.
+
+.. note::
+  | For the Change Request Example:
+  | * The "Process Development Community" status must be changed to **In Progress**
+  | * The linked Pull Request status is either "Draft" or "Open"
+  | * The combination of issue status **Open** and "Process Development Community" status **In Progress** and the pull request status **Draft** or **Open** defines the status **in implementation**
+
+.. note::
+  | For the Change Request Example:
+  | * The **Development** section should be used to link to an pull request
+  | * The **Create a branch** action may used to create automatically a linked pull request
+
+During the implementation of the change the responsible lead :need:`[[title]] <rl__technical_lead>`
+or :need:`[[title]] <rl__module_lead>` reports regularly the status to the affected
+projects teams.
+
+The author has the freedom to cancel the change request at any time by setting the status to "rejected".
+
+
+.. _chm_close_change_request:
+
+Close Change Request
+--------------------
+
+During implementation the :need:`[[title]] <rl__contributor>` monitors all activities linked to
+the change, until they are closed.
+
+:need:`[[title]] <rl__committer>` finally checks if the Change Request implementation
+is sufficient before the status is changed to closed. To check, if it is sufficient,
+:need:`Change Request Checklist <gd_chklst__change_cr_review>` can be used.
+Further the effectiveness of the implemented measure is confirmed and the availability
+of the required reports, as well as verification results, if applicable.
+
+When confirmed, the :need:`[[title]] <rl__technical_lead>` or :need:`[[title]] <rl__module_lead>`
+sets the status to "closed" manually, if not done automatically.
+
+.. note::
+  | For the Change Request Example:
+  | * For closing the status of the issue must be changed to **Closed**
+  | * The "Process Development Community" status must be changed to **Done**
+  | * The PR status must be changed to **Merged**
+  | * The combination of issue status **Closed** and "Process Development Community" status **Done** and the pull request status **Merged** defines the status **closed**
+
+:need:`[[title]] <rl__committer>` has the freedom to reject it at any time by setting the status
+to "reject".

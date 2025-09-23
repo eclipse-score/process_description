@@ -548,7 +548,7 @@
                   
   <section id="concept-description">
 <h1>Concept Description<a class="headerlink" href="#concept-description" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-99f1c09e">
+<div class="need_container docutils container" id="SNCB-438cefcc">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_doc_concept table" id="doc_concept__change_process">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -569,7 +569,7 @@
 <tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
 <div class="line"><span><span><div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">change_management</span></span></span></div>
 </span></span></div>
-<div class="line"><span><div class="line">relates to: <span class="has"><span><a class="reference internal" href="change_management_workflow.html#wf__change_cr_an_change_request" title="doc_concept__change_process">wf__change_cr_an_change_request</a>, <a class="reference internal" href="change_management_workflow.html#wf__change_rv_ap_change_request" title="doc_concept__change_process">wf__change_rv_ap_change_request</a></span></span></div>
+<div class="line"><span><div class="line">relates to: <span class="has"><span><a class="reference internal" href="change_management_workflow.html#wf__change_create_cr" title="doc_concept__change_process">wf__change_create_cr</a>, <a class="reference internal" href="change_management_workflow.html#wf__change_analyze_cr" title="doc_concept__change_process">wf__change_analyze_cr</a>, <a class="reference internal" href="change_management_workflow.html#wf__change_implement_monitor_cr" title="doc_concept__change_process">wf__change_implement_monitor_cr</a>, <a class="reference internal" href="change_management_workflow.html#wf__change_close_cr" title="doc_concept__change_process">wf__change_close_cr</a></span></span></div>
 </span></div>
 </div>
 </td>
@@ -596,36 +596,46 @@ are both the requirements of ISO26262 Part-8 and ASPICE Requirements from SUP.10
 including the requirements of the different stakeholders for the Change Management process.</p>
 <section id="key-concept">
 <h2>Key concept<a class="headerlink" href="#key-concept" title="Link to this heading">#</a></h2>
-<p>A Change Request is the <strong>ONLY</strong> way to contribute (compare <cite>REPLACE_doc__contr_guideline</cite>)
-new features or to modify the scope of existing features in the <strong>S-CORE</strong> project.
-As features are built-up by Components a Change Request is also needed to add new Components or
-to modify the scope of existing Components.
-As a Software Module is defined as the top-level Component, all statements here for Components
-are also valid for Software Modules.</p>
+<p>A Change Request is the <strong>ONLY</strong> way to contribute new features or to modify the scope
+of existing features in the project.
+As features are built-up by Components a Change Request is also needed to add new
+Components or to modify the scope of existing Components.
+As a Software Module is defined as the top-level Component, all statements here for
+Components are also valid for Software Modules.</p>
 </section>
 <section id="inputs">
 <h2>Inputs<a class="headerlink" href="#inputs" title="Link to this heading">#</a></h2>
 <ol class="arabic simple">
 <li><p>Stakeholders for the Change Requests?</p></li>
-<li><p>Which Change Requests types can we derive from that?</p></li>
 <li><p>Which attributes are required?</p></li>
 <li><p>Which activities are required?</p></li>
 </ol>
 </section>
 <section id="stakeholders-for-the-change-requests">
 <h2>Stakeholders for the Change Requests<a class="headerlink" href="#stakeholders-for-the-change-requests" title="Link to this heading">#</a></h2>
-<ol class="arabic">
+<ol class="arabic simple">
 <li><p><a class="reference internal" href="../../roles/index.html#rl__contributor" title="rl__contributor"><em class="xref need">Contributor (rl__contributor)</em></a></p>
 <ul class="simple">
-<li><p>Contributes features and components to grow the <strong>S-CORE</strong> content</p></li>
+<li><p>In general contributes features and components to grow the project content</p></li>
+<li><p>Creates change requests, analyzes changes, implement changes</p></li>
 </ul>
-<p>Contribution include scope modification of existing features/components or adding new
-features/components.</p>
 </li>
 <li><p><a class="reference internal" href="../../roles/index.html#rl__committer" title="rl__committer"><em class="xref need">Committer (rl__committer)</em></a></p>
 <ul class="simple">
-<li><p>Verifies that the contribution fulfills the <strong>S-CORE</strong> policies</p></li>
-<li><p>Approves the contribution</p></li>
+<li><p>Verifies that the contribution including change requests fulfills the project policies</p></li>
+<li><p>Approves all change request activities besides changes closing</p></li>
+<li><p>Is responsible to initiate the the closure of the change request</p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="../platform_management/platform_management_roles.html#rl__technical_lead" title="rl__technical_lead"><em class="xref need">Technical Lead (rl__technical_lead)</em></a>, <a class="reference internal" href="../platform_management/platform_management_roles.html#rl__module_lead" title="rl__module_lead"><em class="xref need">Module Lead (rl__module_lead)</em></a></p>
+<ul class="simple">
+<li><p>Supports all change request activities</p></li>
+<li><p>Approves the closing of the change request</p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="../safety_management/roles.html#rl__safety_manager" title="rl__safety_manager"><em class="xref need">Safety Manager (rl__safety_manager)</em></a>, <a class="reference internal" href="../security_management/security_management_roles.html#rl__security_manager" title="rl__security_manager"><em class="xref need">Security Manager (rl__security_manager)</em></a>, <a class="reference internal" href="../quality_management/quality_roles.html#rl__quality_manager" title="rl__quality_manager"><em class="xref need">Quality Manager (rl__quality_manager)</em></a></p>
+<ul class="simple">
+<li><p>Supports all change request activities</p></li>
 </ul>
 </li>
 </ol>
@@ -639,89 +649,23 @@ features/components.</p>
 </ul>
 </section>
 </section>
-<section id="change-request-types">
-<h2>Change Request Types<a class="headerlink" href="#change-request-types" title="Link to this heading">#</a></h2>
-<section id="feature">
-<h3>Feature<a class="headerlink" href="#feature" title="Link to this heading">#</a></h3>
-<p>This Change Request describes a potential new feature for the platform.
-The Change Request uses the Feature request template: <a class="reference internal" href="guidance/change_management_feature_template.html#chm-feature-templates"><span class="std std-ref">Feature Template</span></a>.</p>
-</section>
-<section id="feature-modification">
-<h3>Feature Modification<a class="headerlink" href="#feature-modification" title="Link to this heading">#</a></h3>
-<p>This Change Request describes a scope modification of an existing feature (requirement or work
-product). The Change Request modifies the already existing Feature Request template: <a class="reference internal" href="guidance/change_management_feature_template.html#chm-feature-templates"><span class="std std-ref">Feature Template</span></a>.</p>
-</section>
-<section id="component">
-<h3>Component<a class="headerlink" href="#component" title="Link to this heading">#</a></h3>
-<p>This Change Request describes a potential new component for the platform.
-The Change Request uses the Component request template: <a class="reference internal" href="guidance/change_management_component_template.html#chm-component-templates"><span class="std std-ref">Component Template</span></a>.</p>
-</section>
-<section id="component-modification">
-<h3>Component Modification<a class="headerlink" href="#component-modification" title="Link to this heading">#</a></h3>
-<p>This Change Request describes a scope modification of an existing component (requirement or work
-product). The Change Request modifies the already existing Component Request template: <a class="reference internal" href="guidance/change_management_component_template.html#chm-component-templates"><span class="std std-ref">Component Template</span></a>.</p>
-</section>
-</section>
 <section id="attributes-of-change-requests">
 <span id="chm-attributes"></span><h2>Attributes of Change Requests<a class="headerlink" href="#attributes-of-change-requests" title="Link to this heading">#</a></h2>
-<p>The required attributes for the Change Requests are defined in this subchapter.</p>
-<p>Following attributes need to be filled manually for each Change Request:</p>
-<div class="pst-scrollable-table-container"><table class="table" id="id1">
-<caption><span class="caption-number">Table 12 </span><span class="caption-text">Manual Attributes</span><a class="headerlink" href="#id1" title="Link to this table">#</a></caption>
-<colgroup>
-<col style="width: 15.0%" />
-<col style="width: 85.0%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>Attribute</p></th>
-<th class="head"><p>Description</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>Unique ID</p></td>
-<td><p>The unique id</p></td>
-</tr>
-<tr class="row-odd"><td><p>Status</p></td>
-<td><p>The status of a Change Request can either be “draft”, “in review”, “accepted” or “rejected”.</p></td>
-</tr>
-<tr class="row-even"><td><p>Title</p></td>
-<td><p>Reason for the Change Request</p></td>
-</tr>
-<tr class="row-odd"><td><p>Description</p></td>
-<td><p>Exact description of the Change Request</p></td>
-</tr>
-<tr class="row-even"><td><p>Safety</p></td>
-<td><p>These attribute describes the impact on functional safety.</p></td>
-</tr>
-<tr class="row-odd"><td><p>Security</p></td>
-<td><p>This attribute describes the impact on security</p></td>
-</tr>
-<tr class="row-even"><td><p>Change Request Type</p></td>
-<td><p>Following types are defined: [Feature, Feature Modification, Component, Component Modification]</p></td>
-</tr>
-<tr class="row-odd"><td><p>Affected work products</p></td>
-<td><p>Links to the work products affected by the Change Request</p></td>
-</tr>
-<tr class="row-even"><td><p>Milestone</p></td>
-<td><p>Planned date (milestone) of deployment of the Change Request</p></td>
-</tr>
-</tbody>
-</table>
-</div>
+<p>The required attributes for the Change Request are defined here: <a class="reference internal" href="guidance/change_management_reqs.html#chm-process-change-request-attributes"><span class="std std-ref">Process Requirements</span></a>.</p>
 </section>
 <section id="activities-for-a-change-request">
 <h2>Activities for a Change Request<a class="headerlink" href="#activities-for-a-change-request" title="Link to this heading">#</a></h2>
+<section id="creation-of-the-change-request">
+<span id="chm-creation"></span><h3>Creation of the Change Request<a class="headerlink" href="#creation-of-the-change-request" title="Link to this heading">#</a></h3>
+<p>Use the content <a class="reference internal" href="guidance/change_management_feature_template.html#chm-feature-templates"><span class="std std-ref">Feature Request Template</span></a> or
+<a class="reference internal" href="guidance/change_management_component_template.html#chm-component-templates"><span class="std std-ref">Component Request Template</span></a> to create a Change Request.</p>
+<p>In case safety or security is affected, in addition the impact analysis template
+: <a class="reference internal" href="guidance/change_management_impact_analysis_template.html#chm-impact-analysis-templates"><span class="std std-ref">Impact Analysis Template</span></a> can be used to detail
+out the impact on safety/security.</p>
+</section>
 <section id="analysis-of-the-change-request">
 <span id="chm-analysis"></span><h3>Analysis of the Change Request<a class="headerlink" href="#analysis-of-the-change-request" title="Link to this heading">#</a></h3>
-<p>The affected work products must be identified.
-The potential impact on functional safety and security must be addressed.
-Schedule, risks, resources for the realization must be evaluated.
-Verification measures must be defined.
-Use therefore the : <a class="reference internal" href="guidance/change_management_impact_analysis_template.html#chm-impact-analysis-templates"><span class="std std-ref">Impact Analysis Template</span></a>.</p>
-</section>
-<section id="evaluation-of-the-change-request">
-<span id="chm-evaluation"></span><h3>Evaluation of the Change Request<a class="headerlink" href="#evaluation-of-the-change-request" title="Link to this heading">#</a></h3>
-<p>Based on the analysis results decision about the acceptance, rejection or delay must be taken
+<p>Based on the analysis results decision about the acceptance or rejection must be taken
 by authorized persons.</p>
 <p>Authorized person includes</p>
 <ol class="arabic simple">
@@ -733,24 +677,23 @@ by authorized persons.</p>
 </ol>
 <p>Further prioritization must be done, e.g. based on release planning.</p>
 </section>
-<section id="implementation-of-the-change-request">
-<span id="chm-implementation"></span><h3>Implementation of the Change Request<a class="headerlink" href="#implementation-of-the-change-request" title="Link to this heading">#</a></h3>
-<p>If the Change Request is accepted, it must be implemented.</p>
-</section>
-<section id="verification-of-the-change-request">
-<span id="chm-verification"></span><h3>Verification of the Change Request<a class="headerlink" href="#verification-of-the-change-request" title="Link to this heading">#</a></h3>
-<p>The defined verification measures must be use to confirm the implementation.</p>
-</section>
-<section id="reporting-of-the-change-request">
-<span id="chm-reporting"></span><h3>Reporting of the Change Request<a class="headerlink" href="#reporting-of-the-change-request" title="Link to this heading">#</a></h3>
+<section id="implementation-and-monitoring-of-the-change-request">
+<span id="chm-implementation-monitoring"></span><h3>Implementation and Monitoring of the Change Request<a class="headerlink" href="#implementation-and-monitoring-of-the-change-request" title="Link to this heading">#</a></h3>
+<p>If the Change Request is accepted, the implementation of the change must be initiated and
+monitored.</p>
+<p>The Change Request implementation must be tracked until it is closed.</p>
 <p>The status of the Change Request must be communicated by the
 <a class="reference internal" href="../platform_management/platform_management_roles.html#rl__technical_lead" title="rl__technical_lead"><em class="xref need">Technical Lead (rl__technical_lead)</em></a> or <a class="reference internal" href="../platform_management/platform_management_roles.html#rl__module_lead" title="rl__module_lead"><em class="xref need">Module Lead (rl__module_lead)</em></a> until
 the implementation is completed and confirmed.</p>
 </section>
-<section id="traceability-concept-for-change-requests">
-<span id="chm-traceability"></span><h3>Traceability Concept for Change Requests<a class="headerlink" href="#traceability-concept-for-change-requests" title="Link to this heading">#</a></h3>
-<p>The standards require that a Change Request can be traced throughout the complete hierarchy levels
-including all affected work products.</p>
+<section id="closing-of-the-change-request">
+<span id="chm-closing"></span><h3>Closing of the Change Request<a class="headerlink" href="#closing-of-the-change-request" title="Link to this heading">#</a></h3>
+<p>Use the <a class="reference internal" href="guidance/change_management_checklist.html#chm-checklist"><span class="std std-ref">Change Request Review Checklist</span></a> to control the completeness of the
+Change Request to be closed.</p>
+<p>Especially the effectiveness of the solution measures must be shown, based on convincing
+arguments, e.g. verification measures must be used to confirm the implementation.</p>
+<p>The standards require that a Change Request can be traced throughout the complete
+hierarchy levels including all affected work products.</p>
 <p>In general the traceability is visualized in the general traceability concept (<a class="reference internal" href="../../general_concepts/score_traceability_concept.html#general-concepts-traceability"><span class="std std-ref">Traceability concept</span></a>).</p>
 </section>
 </section>
@@ -809,21 +752,12 @@ including all affected work products.</p>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#standard-requirements">Standard Requirements</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#change-request-types">Change Request Types</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#feature">Feature</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#feature-modification">Feature Modification</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#component">Component</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#component-modification">Component Modification</a></li>
-</ul>
-</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#attributes-of-change-requests">Attributes of Change Requests</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#activities-for-a-change-request">Activities for a Change Request</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#creation-of-the-change-request">Creation of the Change Request</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#analysis-of-the-change-request">Analysis of the Change Request</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#evaluation-of-the-change-request">Evaluation of the Change Request</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#implementation-of-the-change-request">Implementation of the Change Request</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#verification-of-the-change-request">Verification of the Change Request</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reporting-of-the-change-request">Reporting of the Change Request</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#traceability-concept-for-change-requests">Traceability Concept for Change Requests</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#implementation-and-monitoring-of-the-change-request">Implementation and Monitoring of the Change Request</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#closing-of-the-change-request">Closing of the Change Request</a></li>
 </ul>
 </li>
 </ul>
