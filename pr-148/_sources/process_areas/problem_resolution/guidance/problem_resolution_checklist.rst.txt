@@ -18,7 +18,7 @@ Problem Checklist
 #################
 
 .. gd_chklst:: Problem Review Checklist
-   :id: gd_chklst__problem__cr_review
+   :id: gd_chklst__problem_cr_review
    :status: valid
    :tags: problem_resolution
    :complies:

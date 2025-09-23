@@ -16,7 +16,7 @@ Process Requirements
 ####################
 
 .. gd_req:: Static Diagram for Unit Interactions
-   :id: gd_req__impl__static_diagram
+   :id: gd_req__impl_static_diagram
    :status: valid
    :tags: manual, mandatory
    :satisfies: wf__sw_detailed_design
@@ -25,7 +25,7 @@ Process Requirements
    The static diagram shall represent the unit and their relationships using UML notations.
 
 .. gd_req:: Dynamic Diagram for Unit Interactions
-   :id: gd_req__impl__dynamic_diagram
+   :id: gd_req__impl_dynamic_diagram
    :status: valid
    :tags: manual, mandatory
    :satisfies: wf__sw_detailed_design
@@ -34,7 +34,7 @@ Process Requirements
    The dynamic diagram shall represent the unit and their relationships using UML notations.
 
 .. gd_req:: Design to Code Linking
-   :id: gd_req__impl__design_code_link
+   :id: gd_req__impl_design_code_link
    :status: valid
    :tags: prio_1_automation, mandatory
    :satisfies: wf__sw_detailed_design
@@ -48,7 +48,7 @@ Process Requirements
 
 
 .. gd_req:: Dependency Analysis
-   :id: gd_req__impl__dependency_analysis
+   :id: gd_req__impl_dependency_analysis
    :status: valid
    :tags: prio_2_automation
    :satisfies: wf__sw_verify_implementation

@@ -52,7 +52,7 @@ Description
 
 General Description
 
-Design Decisions
+Design Decisions - For the documentation of the decision the :need:`gd_temp__change_decision_record` can be used.
 
 Design Constraints
 
@@ -126,5 +126,5 @@ Lower Level Components
 .. attention::
     The above directives must be updated according to your component architecture.
 
-    - Replace the example content by the real content (according to :need:`gd_guidl__arch__design`)
+    - Replace the example content by the real content (according to :need:`gd_guidl__arch_design`)
     - Set the status to valid and start the review/merge process

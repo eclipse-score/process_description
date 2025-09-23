@@ -16,7 +16,7 @@ Getting Started
 ###############
 
 .. doc_getstrt:: Getting Started on Problem Resolution
-   :id: doc_getstrt__problem__process
+   :id: doc_getstrt__problem_process
    :status: valid
    :tags: problem_resolution
 
@@ -30,8 +30,8 @@ Examples for problem origins:
 * Deviations found by contributor based on component, feature or platform integration tests.
 * Deviations found by Quality Management activities as defined in the Quality Management Plan.
 
-Therefore guidelines :need:`gd_temp__problem__template`,
-:need:`gd_guidl__problem__problem` and a :need:`doc_concept__problem__process`
+Therefore guidelines :need:`gd_temp__problem_template`,
+:need:`gd_guidl__problem_problem` and a :need:`doc_concept__problem_process`
 are available.
 
 General Workflow
@@ -41,9 +41,9 @@ The workflows are defined in the :ref:`problem_workflows` section.
 
 For every problem identified, the following workflows are executed:
 
-* Create your problem report according to :need:`wf__problem__create_pr`
-* Analyze your problem report according to :need:`wf__problem__analyze_pr`
-* Initiate problem resolution and monitor it until closure according to :need:`wf__problem__initiate_monitor_pr`
-* Close the problem resolution according to :need:`wf__problem__close_pr`
+* Create your problem report according to :need:`wf__problem_create_pr`
+* Analyze your problem report according to :need:`wf__problem_analyze_pr`
+* Initiate problem resolution and monitor it until closure according to :need:`wf__problem_initiate_monitor_pr`
+* Close the problem resolution according to :need:`wf__problem_close_pr`
 
-In addition create a problem resolution plan as part of the platform management plan according to :need:`wf__platform__cr_mt_platform_mgmt_plan`.
+In addition create a problem resolution plan as part of the platform management plan according to :need:`wf__platform_cr_mt_platform_mgmt_plan`.

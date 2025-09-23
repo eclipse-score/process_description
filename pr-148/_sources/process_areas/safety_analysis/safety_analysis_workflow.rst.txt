@@ -27,10 +27,10 @@ Safety analysis is used as a umbrella term for the methods FMEA (Failure Modes a
    :responsible: rl__safety_engineer
    :approved_by: rl__safety_manager
    :supported_by: rl__contributor, rl__committer, rl__security_manager
-   :input: wp__requirements__feat, wp__feature_arch, wp__issue_track_system
+   :input: wp__requirements_feat, wp__feature_arch, wp__issue_track_system
    :output: wp__platform_dfa
    :contains: gd_guidl__dfa_failure_initiators, gd_temp__feat_saf_dfa
-   :has: doc_concept__safety__analysis, doc_getstrt__safety_analysis
+   :has: doc_concept__safety_analysis, doc_getstrt__safety_analysis
 
    | With a platform DFA the potential common usage of modules shall be analysed. It shall be used as an input for all other DFA's.
    | There will be only one platform DFA.
@@ -42,10 +42,10 @@ Safety analysis is used as a umbrella term for the methods FMEA (Failure Modes a
    :responsible: rl__safety_engineer
    :approved_by: rl__safety_manager
    :supported_by: rl__contributor, rl__committer, rl__security_manager
-   :input: wp__requirements__feat, wp__feature_arch, wp__issue_track_system
+   :input: wp__requirements_feat, wp__feature_arch, wp__issue_track_system
    :output: wp__feature_fmea, wp__feature_dfa
    :contains: gd_guidl__dfa_failure_initiators, gd_temp__feat_saf_dfa, gd_guidl__fault_models, gd_temp__feat_saf_fmea
-   :has: doc_concept__safety__analysis, doc_getstrt__safety_analysis
+   :has: doc_concept__safety_analysis, doc_getstrt__safety_analysis
 
    | The FMEA and DFA for the feature is executed.
 
@@ -56,10 +56,10 @@ Safety analysis is used as a umbrella term for the methods FMEA (Failure Modes a
    :responsible: rl__safety_engineer
    :approved_by: rl__safety_manager
    :supported_by: rl__contributor, rl__committer, rl__security_manager
-   :input:  wp__requirements__comp, wp__component_arch, wp__issue_track_system
+   :input:  wp__requirements_comp, wp__component_arch, wp__issue_track_system
    :output: wp__sw_component_fmea, wp__sw_component_dfa
    :contains: gd_guidl__dfa_failure_initiators, gd_temp__comp_saf_dfa, gd_guidl__fault_models, gd_temp__comp_saf_fmea
-   :has: doc_concept__safety__analysis, doc_getstrt__safety_analysis
+   :has: doc_concept__safety_analysis, doc_getstrt__safety_analysis
 
    | The FMEA and DFA for the component is executed.
 
@@ -71,9 +71,9 @@ Safety analysis is used as a umbrella term for the methods FMEA (Failure Modes a
    :approved_by: rl__safety_manager
    :supported_by: rl__contributor, rl__committer, rl__security_manager
    :input: wp__feature_fmea, wp__feature_dfa, wp__sw_component_fmea, wp__sw_component_dfa
-   :output: wp__verification__platform_ver_report, wp__issue_track_system, wp__verification__module_ver_report
+   :output: wp__verification_platform_ver_report, wp__issue_track_system, wp__verification_module_ver_report
    :contains: gd_guidl__dfa_failure_initiators, gd_temp__feat_saf_dfa, gd_temp__comp_saf_dfa, gd_guidl__fault_models, gd_temp__feat_saf_fmea, gd_temp__comp_saf_fmea
-   :has: doc_concept__safety__analysis, doc_getstrt__safety_analysis
+   :has: doc_concept__safety_analysis, doc_getstrt__safety_analysis
 
    | The FMEA and DFA are monitored.
 
@@ -85,9 +85,9 @@ Safety analysis is used as a umbrella term for the methods FMEA (Failure Modes a
    :approved_by: rl__safety_manager
    :supported_by: rl__contributor, rl__committer, rl__security_manager
    :input: wp__platform_dfa, wp__feature_fmea, wp__feature_dfa, wp__sw_component_fmea, wp__sw_component_dfa
-   :output: wp__verification__platform_ver_report, wp__verification__module_ver_report
+   :output: wp__verification_platform_ver_report, wp__verification_module_ver_report
    :contains: gd_guidl__dfa_failure_initiators, gd_temp__feat_saf_dfa, gd_temp__comp_saf_dfa, gd_guidl__fault_models, gd_temp__feat_saf_fmea, gd_temp__comp_saf_fmea, gd_chklst__safety_analysis
-   :has: doc_concept__safety__analysis, doc_getstrt__safety_analysis
+   :has: doc_concept__safety_analysis, doc_getstrt__safety_analysis
 
    | The FMEA and DFA are verified. The verification criteria is that it can be proven that the safety requirements for functions and the corresponding safety monitoring are not violated.
 

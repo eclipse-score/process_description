@@ -30,8 +30,9 @@ Safety Analysis Process Requirements
 
    Following levels are defined:
 
-      * Feature architecture
-      * Component architecture
+      * Platform DFA
+      * Feature DFA/FMEA
+      * Component DFA/FMEA
 
 .. _process_requirements_safety_analysis_attributes:
 
@@ -54,7 +55,7 @@ Process Safety Analysis Attributes
    The naming convention shall be defined in the project and shall be used consistently.
 
 .. gd_req:: Safety Analysis attribute: title
-   :id: gd_req__saf__attr_title
+   :id: gd_req__saf_attr_title
    :status: valid
    :tags: manual, attribute, mandatory
    :satisfies: wf__analyse_platform_featarch, wf__analyse_featarch, wf__analyse_comparch
@@ -63,7 +64,7 @@ Process Safety Analysis Attributes
    The title of the Safety Analysis shall provide a short summary of the description
 
 .. gd_req:: Safety Analysis attribute: mitigated by
-   :id: gd_req__saf__attr_mitigated_by
+   :id: gd_req__saf_attr_mitigated_by
    :status: valid
    :tags: prio_1_automation, attribute, optional
    :satisfies: wf__analyse_platform_featarch, wf__analyse_featarch, wf__analyse_comparch
@@ -74,7 +75,7 @@ Process Safety Analysis Attributes
    If status == valid then mitigated_by is mandatory.
 
 .. gd_req:: Safety Analysis attribute: mitigation issue
-   :id: gd_req__saf__attr_mitigation_issue
+   :id: gd_req__saf_attr_mitigation_issue
    :status: valid
    :tags: prio_1_automation, attribute, optional
    :satisfies: wf__analyse_platform_featarch, wf__analyse_featarch, wf__analyse_comparch
@@ -132,7 +133,7 @@ Safety Analysis Linkage
    :satisfies: wf__analyse_platform_featarch, wf__analyse_featarch, wf__analyse_comparch
    :complies: std_req__iso26262__analysis_842, std_req__iso26262__software_7410, std_req__iso26262__software_7411
 
-   Safety Analysis shall be linked to the architecture on the corresponding level via the attribute violates.
+   Safety Analysis shall be linked to the architecture view on the corresponding level via the attribute violates.
 
 .. gd_req:: Safety Analysis Linkage
    :id: gd_req__saf_linkage
@@ -141,7 +142,7 @@ Safety Analysis Linkage
    :satisfies: wf__analyse_platform_featarch, wf__analyse_featarch, wf__analyse_comparch
    :complies: std_req__iso26262__analysis_842, std_req__iso26262__software_7410, std_req__iso26262__software_7411
 
-   Each Safety Analysis shall be automatically linked (inverse direction) to the corresponding architecture via the "violates by" linkage.
+   Each Safety Analysis shall be automatically linked (inverse direction) to the corresponding architecture view via the "violates by" linkage.
 
 .. gd_req:: Safety Analysis attribute: check Requirements linkage
    :id: gd_req__saf_attr_requirements_check
@@ -186,7 +187,7 @@ Safety Analysis Linkage
    :satisfies: wf__analyse_platform_featarch, wf__analyse_featarch, wf__analyse_comparch
    :complies: std_req__iso26262__analysis_842, std_req__iso26262__software_7410, std_req__iso26262__software_7411
 
-   It shall be checked that safety analysis can only be linked against valid safety elements (architecture, requirement, AoU). A valid safety element has the attribute 'status == valid' and safety != QM.
+   It shall be checked that safety analysis can only be linked against valid safety elements (architecture view, requirement, AoU). A valid safety element has the attribute 'status == valid' and safety != QM.
 
 .. _process_requirements_safety_analysis_checks:
 

@@ -24,7 +24,7 @@ Methods
 ^^^^^^^
 
 .. gd_method:: Verification Methods
-   :id: gd_meth__verification__methods
+   :id: gd_meth__verification_methods
    :status: valid
 
    Following methods are explained
@@ -128,7 +128,7 @@ Derivation Techniques
 ^^^^^^^^^^^^^^^^^^^^^
 
 .. gd_method:: Verification Derivation Technique
-   :id: gd_meth__verification__derivation
+   :id: gd_meth__verification_derivation
    :status: valid
 
    Following derivation techniques are explained

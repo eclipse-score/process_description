@@ -24,3 +24,4 @@ Guidance
    change_management_component_template
    change_management_impact_analysis_template
    change_management_reqs
+   change_management_decision_record_template

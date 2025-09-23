@@ -26,7 +26,7 @@ Workflows
    :input: wp__policies, wp__issue_track_system, wp__platform_mgmt
    :output: wp__qms_plan
    :contains: gd_guidl__qlm_plan_definitions, gd_temp__qlm_plan
-   :has: doc_concept__quality__process, doc_getstrt__quality__process
+   :has: doc_concept__quality_process, doc_getstrt__quality_process
 
    | The Quality Management Plan is created and maintained by the :need:`rl__quality_manager`.
 
@@ -39,7 +39,7 @@ Workflows
    :input: wp__qms_plan
    :output: wp__platform_sw_release_note
    :contains: gd_guidl__qlm_plan_definitions, gd_chklst__review_checklist
-   :has: doc_concept__quality__process, doc_getstrt__quality__process
+   :has: doc_concept__quality_process, doc_getstrt__quality_process
 
    | The project/platform release is verified and approved.
 
@@ -52,7 +52,7 @@ Workflows
    :input: wp__qms_plan, wp__process_definition
    :output: wp__process_impr_report
    :contains: gd_guidl__qlm_plan_definitions, gd_chklst__review_checklist
-   :has: doc_concept__quality__process, doc_getstrt__quality__process
+   :has: doc_concept__quality_process, doc_getstrt__quality_process
 
    | The project/platform processes are audited.
 
@@ -65,7 +65,7 @@ Workflows
    :input: wp__qms_plan, wp__feat_request, wp__process_definition
    :output: wp__qms_report
    :contains: gd_guidl__qlm_plan_definitions, gd_chklst__review_checklist
-   :has: doc_concept__quality__process, doc_getstrt__quality__process
+   :has: doc_concept__quality_process, doc_getstrt__quality_process
 
    | The conformance of the feature contribution is checked.
 
@@ -76,9 +76,9 @@ Workflows
    :approved_by: rl__technical_lead
    :supported_by: rl__committer
    :input: wp__qms_plan, wp__process_definition
-   :output: wp__verification__platform_ver_report
+   :output: wp__verification_platform_ver_report
    :contains: gd_guidl__qlm_plan_definitions, gd_chklst__review_checklist, gd_guidl__wp_review
-   :has: doc_concept__quality__process, doc_getstrt__quality__process
+   :has: doc_concept__quality_process, doc_getstrt__quality_process
 
    | The quality of the work products is assured.
 
@@ -91,9 +91,9 @@ Workflows
    :input: wp__qms_plan, wp__policies, wp__process_definition
    :output: wp__training_path
    :contains: gd_guidl__qlm_plan_definitions
-   :has: doc_concept__quality__process, doc_getstrt__quality__process
+   :has: doc_concept__quality_process, doc_getstrt__quality_process
 
-   | The quality manager :need:`rl__quality_manager` consults all project/platform stakeholder as defined in :need:`doc_concept__quality__process` for quality topics and executes regularly quality trainings.
+   | The quality manager :need:`rl__quality_manager` consults all project/platform stakeholder as defined in :need:`doc_concept__quality_process` for quality topics and executes regularly quality trainings.
 
 .. workflow:: Monitor/Improve Quality Activities
    :id: wf__mr_imp_qlm_plan_processes
@@ -101,10 +101,10 @@ Workflows
    :responsible: rl__quality_manager
    :approved_by: rl__technical_lead
    :supported_by: rl__safety_manager, rl__security_manager
-   :input: wp__qms_plan, wp__platform_sw_release_note, wp__module_sw_release_note, wp__process_impr_report, wp__qms_report, wp__verification__platform_ver_report, wp__verification__module_ver_report, wp__training_path
+   :input: wp__qms_plan, wp__platform_sw_release_note, wp__module_sw_release_note, wp__process_impr_report, wp__qms_report, wp__verification_platform_ver_report, wp__verification_module_ver_report, wp__training_path
    :output: wp__issue_track_system
-   :contains: gd_guidl__qlm_plan_definitions, gd_chklst__review_checklist, gd_req__quality__report
-   :has: doc_concept__quality__process, doc_getstrt__quality__process
+   :contains: gd_guidl__qlm_plan_definitions, gd_chklst__review_checklist, gd_req__quality_report
+   :has: doc_concept__quality_process, doc_getstrt__quality_process
 
    | The quality manager :need:`rl__quality_manager` is responsible for the monitoring of the activities against the quality management plan.
    | The quality manager :need:`rl__quality_manager` is responsible to adjust the quality management plan, if deviations are detected.
