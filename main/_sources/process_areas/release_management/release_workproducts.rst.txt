@@ -12,8 +12,8 @@
    # SPDX-License-Identifier: Apache-2.0
    # *******************************************************************************
 
-Workproducts
-############
+Work Products Release Management
+################################
 
 .. workproduct:: Platform Release Notes
    :id: wp__platform_sw_release_note

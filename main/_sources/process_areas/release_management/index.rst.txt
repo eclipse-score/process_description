@@ -15,16 +15,17 @@
 .. _release_management:
 
 Release Management
-########################
+##################
 
 .. toctree::
    :maxdepth: 1
 
+   release_getstrt
    release_concept
-   release_workflow
    guidance/index
-   release_workproducts
    release_roles
+   release_workflow
+   release_workproducts
 
 .. needextend:: docname is not None and "process_areas/release_management" in docname
    :+tags: release_mgt
