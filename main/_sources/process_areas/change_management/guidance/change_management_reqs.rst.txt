@@ -172,5 +172,32 @@ Change Request Traceability Impact Analysis Tool
    It shall be reported, which work products and elements are affected by adding a new
    feature or component or by a modification of an existing feature or component.
 
+   Below picture illustrates the relations:
+
+   .. figure:: ../_assets/impact_analysis.drawio.svg
+      :width: 100%
+      :align: center
+      :alt: Which changes to follow for impact analysis.
+
+   The picture is derived from the building blocks metamodel containing all the work products
+   (:ref:`general_concepts_building_blocks`). Its arrows show how every work product is
+   linked (manually) to other work products (e.g. feature requirements are linked to
+   stakeholder requirements via "satisfies"). The color code describes which of these Links
+   need to be followed for the impact analysis (so for the example this means: if a stakeholder
+   requirement is changed, the feature requirements linked are affected, but not the other way round).
+   "Black" links do not need to be followed, these are the "verifies" links. And these are
+   expected to fail after implementation change, so the impact on testing will be detected
+   by the test automation without the need for an additional tooling. Note that for some
+   links it is expected to have both directions followed (red arrows) - these are the
+   artefacts which reside in different repositories.
+
+   Note also: The impact analysis needs to follow the links iteratively, so first to the directly
+   connected work products, then to the next, ... (see the next illustration):
+
+   .. figure:: ../_assets/impact_iteration.drawio.svg
+      :width: 100%
+      :align: center
+      :alt: How to follow changes for impact analysis iteratively.
+
 .. needextend:: docname is not None and "process_areas/change_management" in docname
    :+tags: change_management
