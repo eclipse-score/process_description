@@ -19,7 +19,7 @@ Security Management Process Requirements
 .. gd_req:: Security Management attribute: status derivation
    :id: gd_req__security_doc_status
    :status: valid
-   :tags: attribute, mandatory
+   :tags: done_automation, attribute, mandatory
    :satisfies: wf__cr_mt_security_plan
    :complies:
 
@@ -30,7 +30,7 @@ Security Management Process Requirements
 .. gd_req:: Security Management attribute: status accumulation
    :id: gd_req__security_wp_status
    :status: valid
-   :tags: attribute, mandatory
+   :tags: prio_2_automation, attribute, mandatory
    :satisfies: wf__cr_mt_security_plan
    :complies:
 

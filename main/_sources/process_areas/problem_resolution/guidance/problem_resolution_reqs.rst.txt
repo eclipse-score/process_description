@@ -34,7 +34,7 @@ Problem Attributes
 .. gd_req:: Problem attribute: status
    :id: gd_req__problem_attr_status
    :status: valid
-   :tags: manual, problem_resolution, attribute, mandatory
+   :tags: manual_prio_1, problem_resolution, attribute, mandatory
    :satisfies: wf__problem_create_pr, wf__problem_analyze_pr, wf__problem_initiate_monitor_pr, wf__problem_close_pr
    :complies: std_req__aspice_40__SUP-9-BP1
 
@@ -49,7 +49,7 @@ Problem Attributes
 .. gd_req:: Problem attribute: title
    :id: gd_req__problem_attr_title
    :status: valid
-   :tags: manual, problem_resolution, attribute, mandatory
+   :tags: manual_prio_1, problem_resolution, attribute, mandatory
    :satisfies: wf__problem_create_pr, wf__problem_analyze_pr, wf__problem_initiate_monitor_pr, wf__problem_close_pr
    :complies: std_req__aspice_40__SUP-9-BP1
 
@@ -58,7 +58,7 @@ Problem Attributes
 .. gd_req:: Problem attribute: description
    :id: gd_req__problem_attr_impact_description
    :status: valid
-   :tags: manual, problem_resolution, attribute, mandatory
+   :tags: manual_prio_1, problem_resolution, attribute, mandatory
    :satisfies: wf__problem_create_pr, wf__problem_analyze_pr, wf__problem_initiate_monitor_pr, wf__problem_close_pr
    :complies: std_req__aspice_40__SUP-9-BP1, std_req__aspice_40__SUP-9-BP2
 
@@ -72,7 +72,7 @@ Problem Attributes
 .. gd_req:: Problem attribute: analysis results
    :id: gd_req__problem_attr_anaylsis_results
    :status: valid
-   :tags: manual, problem_resolution, attribute, mandatory
+   :tags: manual_prio_1, problem_resolution, attribute, mandatory
    :satisfies: wf__problem_create_pr, wf__problem_analyze_pr, wf__problem_initiate_monitor_pr, wf__problem_close_pr
    :complies: std_req__aspice_40__SUP-9-BP2
 
@@ -133,7 +133,7 @@ Problem Attributes
 .. gd_req:: Problem attribute: milestone
    :id: gd_req__problem_attr_milestone
    :status: valid
-   :tags: manual, problem_resolution, attribute, mandatory
+   :tags: manual_prio_1, problem_resolution, attribute, mandatory
    :satisfies: wf__problem_create_pr, wf__problem_analyze_pr, wf__problem_initiate_monitor_pr, wf__problem_close_pr
    :complies: std_req__aspice_40__SUP-9-BP1, std_req__aspice_40__SUP-9-BP6
 

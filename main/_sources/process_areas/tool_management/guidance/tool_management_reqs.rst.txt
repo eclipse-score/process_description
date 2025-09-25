@@ -49,7 +49,7 @@ Tool Verification Report Attributes
 .. gd_req:: Tool attribute:: version
    :id: gd_req__tool_attr_version
    :status: valid
-   :tags: manual, tool_management, attribute, mandatory
+   :tags: manual_prio_1, tool_management, attribute, mandatory
    :satisfies: wf__tool_create_tool_verification_report
    :complies: std_req__iso26262__support_1141, std_req__aspice_40__SUP-8-BP1
 
@@ -60,7 +60,7 @@ Tool Verification Report Attributes
 .. gd_req:: Tool attribute:: tcl
    :id: gd_req__tool_attr_tcl
    :status: valid
-   :tags: manual, tool_management, attribute, mandatory
+   :tags: manual_prio_1, tool_management, attribute, mandatory
    :satisfies: wf__tool_create_tool_verification_report
    :complies: std_req__iso26262__support_1141, std_req__aspice_40__SUP-8-BP1
 
@@ -72,7 +72,7 @@ Tool Verification Report Attributes
 .. gd_req:: Tool attribute:: safety affected
    :id: gd_req__tool_attr_safety_affected
    :status: valid
-   :tags: manual, tool_management, attribute, mandatory
+   :tags: manual_prio_1, tool_management, attribute, mandatory
    :satisfies: wf__tool_create_tool_verification_report
    :complies: std_req__iso26262__support_1141, std_req__aspice_40__SUP-8-BP1
 
@@ -84,7 +84,7 @@ Tool Verification Report Attributes
 .. gd_req:: Tool attribute:: security affected
    :id: gd_req__tool_attr_security_affected
    :status: valid
-   :tags: manual, tool_management, attribute, mandatory
+   :tags: manual_prio_2, tool_management, attribute, mandatory
    :satisfies: wf__tool_create_tool_verification_report
    :complies: std_req__isosae21434__org_management_5451, std_req__aspice_40__SUP-8-BP1
 

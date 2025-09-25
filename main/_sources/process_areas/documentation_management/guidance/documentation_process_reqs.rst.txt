@@ -20,7 +20,7 @@ Document Management Process Requirements
 .. gd_req:: Document Types
    :id: gd_req__doc_types
    :status: valid
-   :tags: manual
+   :tags: done_automation
    :satisfies: wf__platform_cr_mt_platform_mgmt_plan
    :complies: std_req__iso26262__support_1043
 
@@ -52,7 +52,7 @@ Document Management Process Requirements
 .. gd_req:: Document attributes
    :id: gd_req__doc_attributes_manual
    :status: valid
-   :tags: manual
+   :tags: manual_prio_1
    :satisfies: wf__platform_cr_mt_platform_mgmt_plan
    :complies: std_req__iso26262__support_1043
 

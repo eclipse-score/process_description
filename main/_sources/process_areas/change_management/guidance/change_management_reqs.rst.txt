@@ -47,7 +47,7 @@ Change Request Attributes
 .. gd_req:: Change Request attribute: title
    :id: gd_req__change_attr_title
    :status: valid
-   :tags: manual, attribute, mandatory
+   :tags: manual_prio_1, attribute, mandatory
    :satisfies: wf__change_create_cr, wf__change_analyze_cr, wf__change_implement_monitor_cr, wf__change_close_cr
    :complies: std_req__aspice_40__SUP-10-BP1, std_req__iso26262__support_8411, std_req__iso26262__support_8422
 
@@ -56,7 +56,7 @@ Change Request Attributes
 .. gd_req:: Change Request attribute: description
    :id: gd_req__change_attr_impact_description
    :status: valid
-   :tags: manual, attribute, mandatory
+   :tags: manual_prio_1, attribute, mandatory
    :satisfies: wf__change_create_cr, wf__change_analyze_cr, wf__change_implement_monitor_cr, wf__change_close_cr
    :complies: std_req__aspice_40__SUP-10-BP2, std_req__iso26262__support_8411, std_req__iso26262__support_8422, std_req__iso26262__support_8431, std_req__iso26262__support_8432, std_req__iso26262__support_8452, std_req__iso26262__support_8453
 

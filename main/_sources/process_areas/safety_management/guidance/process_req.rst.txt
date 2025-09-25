@@ -29,7 +29,7 @@ Safety Management Process Requirements
 .. gd_req:: Safety Management Work Product Status
    :id: gd_req__safety_wp_status
    :status: valid
-   :tags: prio_1_automation
+   :tags: prio_2_automation
    :complies: std_req__iso26262__management_6468
    :satisfies: wf__cr_mt_safety_plan, wf__cr_comp_class, wf__cr_mt_safety_manual
 

@@ -23,7 +23,7 @@ Architectural Model
 .. gd_req:: Architecture Modeling
    :id: gd_req__arch_model
    :status: valid
-   :tags: manual
+   :tags: manual_prio_1
    :complies: std_req__iso26262__support_6431, std_req__iso26262__support_6432
    :satisfies: wf__cr_mt_featarch, wf__cr_mt_comparch
 
@@ -80,7 +80,7 @@ Architectural Views
 .. gd_req:: Architecture Viewpoints
    :id: gd_req__arch_viewpoints
    :status: valid
-   :tags: manual
+   :tags: manual_prio_1
    :complies: std_req__iso26262__support_6432, std_req__iso26262__software_742
    :satisfies: wf__cr_mt_featarch, wf__cr_mt_comparch
 
@@ -98,7 +98,7 @@ Attributes of Architectural Elements
 .. gd_req:: Architecture attribute: UID
    :id: gd_req__arch_attribute_uid
    :status: valid
-   :tags: manual, attribute, mandatory
+   :tags: manual_prio_1, attribute, mandatory
    :complies: std_req__iso26262__support_6425, std_req__iso26262__support_6432
    :satisfies: wf__cr_mt_featarch, wf__cr_mt_comparch
 
@@ -113,7 +113,7 @@ Attributes of Architectural Elements
 .. gd_req:: Architecture attribute: security
    :id: gd_req__arch_attr_security
    :status: valid
-   :tags: manual, attribute, mandatory
+   :tags: manual_prio_1, attribute, mandatory
    :satisfies: wf__cr_mt_featarch, wf__cr_mt_comparch
 
    Each architectural element shall have a security relevance identifier:
@@ -124,7 +124,7 @@ Attributes of Architectural Elements
 .. gd_req:: Architecture attribute: safety
    :id: gd_req__arch_attr_safety
    :status: valid
-   :tags: manual, attribute, mandatory
+   :tags: manual_prio_1, attribute, mandatory
    :complies: std_req__iso26262__support_6421, std_req__iso26262__support_6425
    :satisfies: wf__cr_mt_featarch, wf__cr_mt_comparch
 
@@ -136,7 +136,7 @@ Attributes of Architectural Elements
 .. gd_req:: Architecture attribute: status
    :id: gd_req__arch_attr_status
    :status: valid
-   :tags: manual, attribute, mandatory
+   :tags: manual_prio_1, attribute, mandatory
    :complies: std_req__iso26262__support_6425
    :satisfies: wf__cr_mt_featarch, wf__cr_mt_comparch
 
@@ -151,7 +151,7 @@ Traceability to Requirements
 .. gd_req:: Architecture attribute: fulfils
    :id: gd_req__arch_attr_fulfils
    :status: valid
-   :tags: manual, attribute, mandatory
+   :tags: manual_prio_1, attribute, mandatory
    :complies: std_req__iso26262__support_6425
    :satisfies: wf__cr_mt_featarch, wf__cr_mt_comparch
 
@@ -160,7 +160,7 @@ Traceability to Requirements
 .. gd_req:: Architecture traceability
    :id: gd_req__arch_traceability
    :status: valid
-   :tags: manual
+   :tags: manual_prio_2
    :complies: std_req__iso26262__support_6432
    :satisfies: wf__cr_mt_featarch, wf__cr_mt_comparch
 

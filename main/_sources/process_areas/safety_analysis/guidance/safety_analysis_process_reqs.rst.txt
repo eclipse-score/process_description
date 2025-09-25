@@ -57,7 +57,7 @@ Process Safety Analysis Attributes
 .. gd_req:: Safety Analysis attribute: title
    :id: gd_req__saf_attr_title
    :status: valid
-   :tags: manual, attribute, mandatory
+   :tags: manual_prio_1, attribute, mandatory
    :satisfies: wf__analyse_platform_featarch, wf__analyse_featarch, wf__analyse_comparch
    :complies: std_req__iso26262__support_6424
 

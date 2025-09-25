@@ -12,20 +12,17 @@
    # SPDX-License-Identifier: Apache-2.0
    # *******************************************************************************
 
-.. _process_mgt:
+.. _process_req:
 
-Process Management
-##################
-
-Disclaimer: this is not the real content, not even the draft content.
-It is used for monitoring/steering our process automation effort.
+Process Requirements List
+#########################
 
 Automation Status via Process Requirement Table
 ***********************************************
 
 All process requirements should be labelled with the priorization of automation implementation:
 
-- A label "manual" means nothing to do, because it must be fulfilled manually (e.g. by filling attributes).
+- A label "manual" means nothing to do, because it must be fulfilled manually (e.g. by filling attributes). It can be added a prio (to denote that this req is a must for v0.5 add "prio_1")
 - A label "done_automation" means nothing to do, because it already works. Note that in docs-as-code repository there are tool requirements linking to the process requirements with an "Implemented" attribute.
 - A label "prio_*_automation" means the prio 1, 2, ... labelled requirement shall be implemented in this order. Prio 1 is everything we need for the re-audit, prio 2 could be done manually as a fallback, prio 3 is nice to have ...
 

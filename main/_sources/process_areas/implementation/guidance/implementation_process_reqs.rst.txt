@@ -18,7 +18,7 @@ Process Requirements
 .. gd_req:: Static Diagram for Unit Interactions
    :id: gd_req__impl_static_diagram
    :status: valid
-   :tags: manual, mandatory
+   :tags: manual_prio_1, mandatory
    :satisfies: wf__sw_detailed_design
    :complies: std_req__iso26262__software_843
 
@@ -27,7 +27,7 @@ Process Requirements
 .. gd_req:: Dynamic Diagram for Unit Interactions
    :id: gd_req__impl_dynamic_diagram
    :status: valid
-   :tags: manual, mandatory
+   :tags: manual_prio_2, mandatory
    :satisfies: wf__sw_detailed_design
    :complies: std_req__iso26262__software_843
 

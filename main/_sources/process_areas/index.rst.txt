@@ -34,4 +34,4 @@ Process Areas
    security_management/index.rst
    tool_management/index.rst
    verification/index.rst
-   process_management/index.rst
+   process_reqs_list/index.rst

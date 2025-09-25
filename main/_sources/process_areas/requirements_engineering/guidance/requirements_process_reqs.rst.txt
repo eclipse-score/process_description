@@ -45,7 +45,7 @@ Process Requirement Attributes
 .. gd_req:: Requirement attribute: UID
    :id: gd_req__req_attr_uid
    :status: valid
-   :tags: manual, attribute, mandatory
+   :tags: manual_prio_1, attribute, mandatory
    :satisfies: wf__req_stkh_req, wf__req_feat_req, wf__req_comp_req
    :complies: std_req__iso26262__support_6425, std_req__iso26262__support_6432
 
@@ -60,7 +60,7 @@ Process Requirement Attributes
 .. gd_req:: Requirement attribute: title
    :id: gd_req__req_attr_title
    :status: valid
-   :tags: manual, attribute, mandatory
+   :tags: manual_prio_1 attribute, mandatory
    :satisfies: wf__req_stkh_req, wf__req_feat_req, wf__req_comp_req
    :complies: std_req__iso26262__support_6424
 
@@ -71,7 +71,7 @@ Process Requirement Attributes
 .. gd_req:: Requirement attribute: description
    :id: gd_req__req_attr_description
    :status: valid
-   :tags: manual, attribute, mandatory
+   :tags: manual_prio_1, attribute, mandatory
    :satisfies: wf__req_stkh_req, wf__req_feat_req, wf__req_comp_req
    :complies: std_req__iso26262__support_6424
 
@@ -86,7 +86,7 @@ Process Requirement Attributes
 .. gd_req:: Requirement attribute: type
    :id: gd_req__req_attr_type
    :status: valid
-   :tags: manual, attribute, mandatory
+   :tags: manual_prio_2, attribute, mandatory
    :satisfies: wf__req_stkh_req, wf__req_feat_req, wf__req_comp_req
 
    Each requirement, apart from process and tool requirements, shall have a type of one of following options:
@@ -99,7 +99,7 @@ Process Requirement Attributes
 .. gd_req:: Requirements attribute: security
    :id: gd_req__req_attr_security
    :status: valid
-   :tags: manual, attribute, mandatory
+   :tags: manual_prio_2, attribute, mandatory
    :satisfies: wf__req_feat_req, wf__req_comp_req
 
    Each requirement, apart from process and tool requirements, shall have a security relevance identifier:
@@ -110,7 +110,7 @@ Process Requirement Attributes
 .. gd_req:: Requirement attribute: safety
    :id: gd_req__req_attr_safety
    :status: valid
-   :tags: manual, attribute, mandatory
+   :tags: manual_prio_1, attribute, mandatory
    :complies: std_req__iso26262__support_6421, std_req__iso26262__support_6425
    :satisfies: wf__req_stkh_req, wf__req_feat_req, wf__req_comp_req
 
@@ -122,7 +122,7 @@ Process Requirement Attributes
 .. gd_req:: Requirement attribute: status
    :id: gd_req__req_attr_status
    :status: valid
-   :tags: manual, attribute, mandatory
+   :tags: manual_prio_1, attribute, mandatory
    :complies: std_req__iso26262__support_6425
    :satisfies: wf__req_stkh_req, wf__req_feat_req, wf__req_comp_req
 
@@ -134,7 +134,7 @@ Process Requirement Attributes
 .. gd_req:: Requirement attribute: rationale
    :id: gd_req__req_attr_rationale
    :status: valid
-   :tags: manual, attribute, mandatory
+   :tags: manual_prio_1, attribute, mandatory
    :satisfies: wf__req_stkh_req
 
    Each stakeholder requirement shall provide an attribute called rationale.
@@ -143,7 +143,7 @@ Process Requirement Attributes
 .. gd_req:: Requirement attribute: valid_from
    :id: gd_req__req_attr_valid_from
    :status: valid
-   :tags: manual, attribute
+   :tags: manual_prio_2, attribute
    :satisfies: wf__req_stkh_req, wf__req_feat_req
 
    Stakeholder and feature requirements can have a validity attribute that tells
@@ -152,7 +152,7 @@ Process Requirement Attributes
 .. gd_req:: Requirement attribute: valid_until
    :id: gd_req__req_attr_valid_until
    :status: valid
-   :tags: manual, attribute
+   :tags: manual_prio_2, attribute
    :satisfies: wf__req_stkh_req, wf__req_feat_req
 
    Stakeholder and feature requirements can have a validity attribute that tells
@@ -166,7 +166,7 @@ Process Requirement Linkage
 .. gd_req:: Requirement Linkage
    :id: gd_req__req_linkage
    :status: valid
-   :tags: manual, attribute
+   :tags: manual_prio_1, attribute
    :complies: std_req__iso26262__support_6432
    :satisfies: wf__req_stkh_req, wf__req_feat_req, wf__req_comp_req
 
@@ -189,7 +189,7 @@ Process Requirement Linkage
 .. gd_req:: Requirement attribute: requirement covered
    :id: gd_req__req_attr_req_cov
    :status: valid
-   :tags: manual, attribute
+   :tags: manual_prio_1, attribute
    :complies: std_req__iso26262__support_6423
    :satisfies: wf__req_stkh_req, wf__req_feat_req
 
@@ -218,7 +218,7 @@ Process Requirement Linkage
 .. gd_req:: Requirement attribute: test covered
    :id: gd_req__req_attr_test_covered
    :status: valid
-   :tags: manual, attribute
+   :tags: manual_prio_1, attribute
    :satisfies: wf__req_feat_req, wf__req_comp_req
    :complies: std_req__iso26262__support_6433, std_req__iso26262__software_944
 
