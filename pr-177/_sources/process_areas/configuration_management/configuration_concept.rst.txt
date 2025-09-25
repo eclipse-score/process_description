@@ -12,8 +12,8 @@
    # SPDX-License-Identifier: Apache-2.0
    # *******************************************************************************
 
-Concept
--------
+Concept Description
+-------------------
 
 .. doc_concept:: Configuration Management Concept
    :id: doc_concept__configuration_process
