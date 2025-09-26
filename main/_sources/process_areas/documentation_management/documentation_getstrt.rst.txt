@@ -19,9 +19,11 @@ Getting Started
    :id: doc_getstrt__documentation_process
    :status: valid
 
-In case you are appointed as a :need:`Technical Lead <rl__technical_lead>` by the :need:`rl__project_lead` in the S-CORE project:
+This document describes how to get started with documentation management in the project.
 
-* On platform level, process community already provided a draft documentation management plan,
-  see `REPLACE_doc__documentation_mgt_plan`, just set it to "valid"
-* On module level, create a documentation management plan using the platform one as a template
-* On both levels: make sure only the documents in your scope appear in the documents list within the plan
+Therefore a guideline :need:`gd_guidl__documentation` and a concept :need:`doc_concept__documentation_process` are available.
+
+General Workflow
+****************
+
+The main workflow is to create and maintain the :need:`wp__document_mgt_plan`.
