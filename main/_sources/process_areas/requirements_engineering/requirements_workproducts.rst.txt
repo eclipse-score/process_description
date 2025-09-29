@@ -55,10 +55,9 @@ Workproducts Requirements Engineering
    :status: draft
    :complies: std_wp__iso26262__software_653
 
-   | Depends on requirements management tooling, expect text based requirements maintained in git.
-   | - github review with integrated inspection checklist, only valid requirements get merged
-   |
-   | Compare also `Gitub documentationt <https://docs.github.com/en>`_
+   Depends on requirements management tooling, expect text based requirements.
+
+   Review done with inspection checklist. This checklist may be integrated in requirements/version management tooling.
 
 .. needextend:: docname is not None and "process_areas/requirements_engineering" in docname
    :+tags: requirements_engineering
