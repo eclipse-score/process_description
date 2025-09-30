@@ -25,7 +25,7 @@ Requirement Inspection Checklist
 
    **Purpose**
    The purpose of this requirement inspection template is to collect the topics to be checked during requirements inspection.
-   It will be filled out within the github "inspection" pull request review of every requirement type.
+   It will be filled out within the "inspection" pull request review of every requirement type.
 
    **Checklist**
 

@@ -557,7 +557,7 @@
                   
   <section id="guideline">
 <h1>Guideline<a class="headerlink" href="#guideline" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-de209781">
+<div class="need_container docutils container" id="SNCB-9cfbf34a">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_guidl table" id="gd_guidl__req_engineering">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -600,7 +600,7 @@
 </table>
 </div>
 </div>
-<p>This document describes the general guidances for requirements based on the concept which is defined <a class="reference internal" href="../requirements_concept.html#doc_concept__req_process" title="doc_concept__req_process"><em class="xref need">Requirements Concept</em></a>.</p>
+<p>This document describes the general guidances for requirements based on the concept which is defined in <a class="reference internal" href="../requirements_concept.html#doc_concept__req_process" title="doc_concept__req_process"><em class="xref need">Requirements Concept</em></a>.</p>
 <section id="general-hints">
 <h2>General Hints<a class="headerlink" href="#general-hints" title="Link to this heading">#</a></h2>
 <section id="templates">
@@ -683,7 +683,7 @@
 </div>
 <ul class="simple">
 <li><p>Title and description: For the formulation of requirements following template shall be used <a class="reference internal" href="requirements_templates.html#gd_temp__req_formulation" title="gd_temp__req_formulation"><em class="xref need">Requirement Formulation Tem...</em></a></p></li>
-<li><p>ID: The naming convention for the ID is defined <cite>here &lt;REPLACE_doc__naming_conventions&gt;</cite>.</p></li>
+<li><p>ID: The naming convention for the ID is defined for every project in a central place (e.g. in the general contributor’s guidelines)</p></li>
 <li><p>Furthermore the requirements need to be versioned. Therefore a hash value of the requirement will to be calculated. The concept is described: <a class="reference internal" href="../requirements_concept.html#traceability-concept-for-requirements"><span class="std std-ref">Traceability Concept for Requirements</span></a></p></li>
 <li><p>For the remaining attributes only predefined values can be used. A more detailed description can be found here: <a class="reference internal" href="../requirements_concept.html#attributes-of-the-requirements"><span class="std std-ref">Attributes of the Requirements</span></a></p></li>
 <li><p>Note that “rationale” is only mandatory for Stakeholder Requirements …</p></li>
@@ -692,8 +692,48 @@
 </section>
 <section id="checks">
 <h3>Checks<a class="headerlink" href="#checks" title="Link to this heading">#</a></h3>
-<p>During the sphinx build checks will be performed on the requirements. Those are specified via following process requirements:</p>
-<p class="needs_filter_warning" id="needtable-process_areas/requirements_engineering/guidance/requirements_guideline-1">No needs passed the filters</p>
+<p>During the docs build checks will be performed on the requirements. Those are specified via following process requirements:</p>
+<div class="needstable_wrapper docutils container" id="needtable-process_areas/requirements_engineering/guidance/requirements_guideline-1">
+<div class="pst-scrollable-table-container"><table class="NEEDS_TABLE table" id="needtable-process_areas/requirements_engineering/guidance/requirements_guideline-1-table_node">
+<caption><span class="caption-text">Overview checks for requirement</span><a class="headerlink" href="#needtable-process_areas/requirements_engineering/guidance/requirements_guideline-1-table_node" title="Link to this table">#</a></caption>
+<colgroup>
+<col style="width: 60.0%" />
+<col style="width: 40.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Title</p></th>
+<th class="head"><p>ID</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="need row-even"><td class="needs_title"><p>Requirements mandatory attributes provided</p></td>
+<td class="needs_id"><p><a class="reference internal" href="requirements_process_reqs.html#gd_req__req_check_mandatory">gd_req__req_check_mandatory</a></p></td>
+</tr>
+<tr class="need row-odd"><td class="needs_title"><p>Requirements no weak words</p></td>
+<td class="needs_id"><p><a class="reference internal" href="requirements_process_reqs.html#gd_req__req_desc_weak">gd_req__req_desc_weak</a></p></td>
+</tr>
+<tr class="need row-even"><td class="needs_title"><p>Requirements linkage architecture</p></td>
+<td class="needs_id"><p><a class="reference internal" href="requirements_process_reqs.html#gd_req__req_linkage_architecture">gd_req__req_linkage_architecture</a></p></td>
+</tr>
+<tr class="need row-odd"><td class="needs_title"><p>Requirements linkage architecture switch</p></td>
+<td class="needs_id"><p><a class="reference internal" href="requirements_process_reqs.html#gd_req__req_linkage_architecture_switch">gd_req__req_linkage_architecture_switch</a></p></td>
+</tr>
+<tr class="need row-even"><td class="needs_title"><p>Requirements linkage level</p></td>
+<td class="needs_id"><p><a class="reference internal" href="requirements_process_reqs.html#gd_req__req_linkage_fulfill">gd_req__req_linkage_fulfill</a></p></td>
+</tr>
+<tr class="need row-odd"><td class="needs_title"><p>Requirements linkage safety</p></td>
+<td class="needs_id"><p><a class="reference internal" href="requirements_process_reqs.html#gd_req__req_linkage_safety">gd_req__req_linkage_safety</a></p></td>
+</tr>
+<tr class="need row-even"><td class="needs_title"><p>Requirement check: suspicious</p></td>
+<td class="needs_id"><p><a class="reference internal" href="requirements_process_reqs.html#gd_req__req_suspicious">gd_req__req_suspicious</a></p></td>
+</tr>
+<tr class="need row-odd"><td class="needs_title"><p>Requirements validity</p></td>
+<td class="needs_id"><p><a class="reference internal" href="requirements_process_reqs.html#gd_req__req_validity">gd_req__req_validity</a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
 </section>
 </section>
 <section id="workflow-for-creating-a-requirement">
@@ -721,10 +761,7 @@
 <td><p>Review parent requirement</p></td>
 <td><p><a class="reference internal" href="../../../roles/index.html#rl__committer" title="rl__committer"><em class="xref need">Committer</em></a></p></td>
 </tr>
-<tr class="row-even"><td><ol class="arabic simple" start="3">
-<li></li>
-</ol>
-</td>
+<tr class="row-even"><td><p><a class="reference internal" href="#review-parent-requirement"><span class="std std-ref">3.</span></a></p></td>
 <td><p>Merge valid parent requirement to main branch</p></td>
 <td><p><a class="reference internal" href="../../../roles/index.html#rl__committer" title="rl__committer"><em class="xref need">Committer</em></a></p></td>
 </tr>
@@ -736,10 +773,7 @@
 <td><p>Review child requirement</p></td>
 <td><p><a class="reference internal" href="../../../roles/index.html#rl__committer" title="rl__committer"><em class="xref need">Committer</em></a></p></td>
 </tr>
-<tr class="row-odd"><td><ol class="arabic simple" start="6">
-<li></li>
-</ol>
-</td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#review-child-requirement"><span class="std std-ref">6.</span></a></p></td>
 <td><p>Merge valid child requirement to main branch</p></td>
 <td><p><a class="reference internal" href="../../../roles/index.html#rl__committer" title="rl__committer"><em class="xref need">Committer</em></a></p></td>
 </tr>
@@ -756,17 +790,17 @@
 </div>
 <section id="create-parent-requirement">
 <span id="id1"></span><h3>Create parent requirement<a class="headerlink" href="#create-parent-requirement" title="Link to this heading">#</a></h3>
-<p>In this step the parent requirements shall be created. Stakeholder- and feature requirements should be generated in the score repository.</p>
-<p>Therefore following guidelines are available:</p>
+<p>In this step the parent requirements shall be created. Stakeholder- and feature requirements should be generated in the project’s main repository.</p>
+<p>For this the following templates are available:</p>
 <ul class="simple">
-<li><p><cite>Branch Naming Conventions &lt;REPLACE_doc__naming_conventions&gt;</cite></p></li>
-<li><p><cite>Git Guidelines &lt;REPLACE_doc__git_coding_guidelines&gt;</cite></p></li>
 <li><p><a class="reference internal" href="requirements_templates.html#requirement-templates"><span class="std std-ref">Requirement Templates</span></a></p></li>
 </ul>
+<p>Note: The projec’s way of contributing new content (how to branch, how to commit, how to merge with the selected version management tool)
+has to be documented in a central place, stick to this guideline also for the requirement contributions.</p>
 </section>
 <section id="review-parent-requirement">
 <span id="id2"></span><h3>Review parent requirement<a class="headerlink" href="#review-parent-requirement" title="Link to this heading">#</a></h3>
-<p>As soon as the parent requirements are in a mature state it can be <a class="reference internal" href="../../../general_concepts/score_review_concept.html#review-concept"><span class="std std-ref">reviewed</span></a> and merged into the main branch of the score repository. However this is not the formal inspection of the requirements, this will follow in an upcoming step.</p>
+<p>As soon as the parent requirements are in a mature state it can be <a class="reference internal" href="../../../general_concepts/score_review_concept.html#review-concept"><span class="std std-ref">reviewed</span></a> and merged into the main branch of the main project’s repository. However this is not the formal inspection of the requirements, this will follow in an upcoming step.</p>
 <p>Following roles should be included in the review:</p>
 <ul class="simple">
 <li><p><a class="reference internal" href="../../safety_management/roles.html#rl__safety_manager" title="rl__safety_manager"><em class="xref need">Safety Manager</em></a></p></li>
@@ -776,11 +810,9 @@
 </section>
 <section id="derive-child-requirement-and-establish-traceability">
 <span id="derive-child-requirement"></span><h3>Derive child requirement and establish traceability<a class="headerlink" href="#derive-child-requirement-and-establish-traceability" title="Link to this heading">#</a></h3>
-<p>In an upcoming step the child requirements shall be derived from the parent requirements. Feature requirements shall be placed in the score repository again, while component requirements shall be placed in the module repository. During this process the derived requirements shall also be linked according to the defined traceability matrix to the parent requirements.</p>
-<p>Following guidelines are available:</p>
+<p>In an upcoming step the child requirements shall be derived from the parent requirements. Feature requirements shall be placed in the main project’s repository again, while component requirements shall be placed in the module repository. During this process the derived requirements shall also be linked according to the defined traceability matrix to the parent requirements.</p>
+<p>For this the following templates are available:</p>
 <ul class="simple">
-<li><p><cite>Branch Naming Conventions &lt;REPLACE_doc__naming_conventions&gt;</cite></p></li>
-<li><p><cite>Git Guidelines &lt;REPLACE_doc__git_coding_guidelines&gt;</cite></p></li>
 <li><p><a class="reference internal" href="requirements_templates.html#requirement-templates"><span class="std std-ref">Requirement Templates</span></a></p></li>
 </ul>
 </section>
@@ -805,10 +837,11 @@
 </section>
 <section id="workflow-for-creating-and-linking-assumption-of-use-aou">
 <h2>Workflow for Creating and Linking Assumption of Use (AoU)<a class="headerlink" href="#workflow-for-creating-and-linking-assumption-of-use-aou" title="Link to this heading">#</a></h2>
-<p>An AoU is a category of requirement which is originates from a safety concept of an architectural element (and thus it is confirmed by a safety analysis). As it can not be fulfilled by the architecture element (e.g. component) itself, it needs to be fulfilled by the user of the module.
+<p>An AoU is a category of requirement which is originates from a safety concept of an architectural element (and thus it is confirmed by a safety analysis).
+As it can not be fulfilled by the architecture element (e.g. component) itself, it needs to be fulfilled by the user of the module.
 In Safety Elements out of Context (SEooC) the AoUs will normally be part of the safety manual.
-In this project (as it develops SEooCs) these AoUs are created both internally and externally - if existing SEooCs are integrated into the platform (e.g. a qualified Operating System).
-For AoU which arise from S-CORE specific modules the template is almost identical to the one for feature/component requirements. The only difference is that it defined such that the attribute “satisfies” is replaced with the attribute “mitigates” (see picture below).
+In this process description (as it describes SEooC development) these AoUs are created both internally and externally - the latter if existing SEooCs are integrated into the platform (e.g. a qualified Operating System).
+For AoU which arise internally (i.e. from project specific modules) the template is almost identical to the one for feature/component requirements. The only difference is that it is defined such that the attribute “satisfies” is replaced with the attribute “mitigates” (see picture below).
 For externally provided AoUs of course the sentence template cannot be taken into account, as these are only imported from an external safety manual. It is also not possible to link it to other development artifacts via the attribute “mitigates”.</p>
 <p>AoUs can be of different class and shall be handled by tracing those</p>
 <ul class="simple">
@@ -847,6 +880,60 @@ the component requirements, as these are expected to be developed during small i
 The requirement with the old specification will be valid_until the milestone before the
 new function is planned and the requirement with the new specification is valid_from the planned milestone.</p>
 </section>
+</section>
+<section id="tailoring">
+<h2>Tailoring<a class="headerlink" href="#tailoring" title="Link to this heading">#</a></h2>
+<div class="need_container docutils container" id="SNCB-b72c9c40">
+<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_guidl table" id="gd_guidl__req_tailored">
+<tbody>
+<tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
+<div class="line"><span><span class="needs_title"><span class="needs_data">Requirements Tailored</span></span></span></div>
+</div>
+</td>
+<td class="head_center" colspan="2"><div class="needs_head line-block">
+<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></span></div>
+<div class="line"><span></span></div>
+<div class="line"><span></span></div>
+</div>
+</td>
+<td class="head_right" colspan="2"><div class="needs_head_right line-block">
+<div class="line"><span><span class="needs needs_collapse" id="target__show__meta"><span class="needs collapsed"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg></span><span class="needs visible collapse_is_hidden"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg></span></span></span></div>
+</div>
+</td>
+</tr>
+<tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
+<div class="line"><span><span><div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">requirements_engineering</span></span></span></div>
+</span></span></div>
+<div class="line"><span><div class="line">complies: <span class="complies"><span><a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_req__iso26262__system_6423" title="gd_guidl__req_tailored">std_req__iso26262__system_6423</a>, <a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_req__iso26262__system_6424" title="gd_guidl__req_tailored">std_req__iso26262__system_6424</a>, <a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_req__iso26262__system_6425" title="gd_guidl__req_tailored">std_req__iso26262__system_6425</a>, <a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_req__iso26262__software_643" title="gd_guidl__req_tailored">std_req__iso26262__software_643</a>, <a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_req__iso26262__software_644" title="gd_guidl__req_tailored">std_req__iso26262__software_644</a>, <a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_req__iso26262__software_646" title="gd_guidl__req_tailored">std_req__iso26262__software_646</a></span></span></div>
+</span></div>
+</div>
+</td>
+<td class="meta" colspan="3"></td>
+</tr>
+<tr class="content row-odd"><td class="content" colspan="6"><p>This part of the guideline links to all the requirements which are not fulfilled by the
+requirements engineering process. Make sure these are tailored out in the safety plan
+for your project (documented in the PMP). Reasoning given below must be confirmed there.</p>
+<p>The reasoning is:</p>
+<ul class="simple">
+<li><p>for “system” standard requirements: see platform safety plan in PMP</p></li>
+<li><p>for “software” standard requirements: 644, 646: because they refer to (PMP) tailored work product, 643: because this refers to (PMP) tailored activity</p></li>
+</ul>
+</td>
+</tr>
+<tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
+<div class="line"><span><span class="needs-id"><a class="reference internal" href="#gd_guidl__req_tailored" title="gd_guidl__req_tailored">gd_guidl__req_tailored</a></span></span></div>
+</div>
+</td>
+<td class="footer" colspan="2"><div class="needs_footer line-block">
+<div class="line"><span><span class="needs_type_name"><span class="needs_data">Process Guideline</span></span></span></div>
+</div>
+</td>
+<td class="footer_right" colspan="2"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
 </section>
 </section>
 
@@ -917,6 +1004,7 @@ new function is planned and the requirement with the new specification is valid_
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#requirements-for-future-or-past-milestones">Requirements for future (or past) milestones</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tailoring">Tailoring</a></li>
 </ul>
   </nav></div>
 

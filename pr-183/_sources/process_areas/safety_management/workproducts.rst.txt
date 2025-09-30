@@ -136,29 +136,13 @@ Work products
 
    It belongs to the Safety Plan.
 
-.. workproduct:: Tailoring Document Platform
-   :id: wp__tailoring_platform
+.. workproduct:: Tailoring Document Work Products
+   :id: wp__tailoring_work_products
    :status: valid
    :complies: std_wp__iso26262__management_651, std_wp__iso26262__management_751, std_wp__iso26262__system_652, std_wp__iso26262__system_653, std_wp__iso26262__system_654, std_wp__iso26262__system_655, std_wp__iso26262__system_656, std_wp__iso26262__system_657, std_wp__iso26262__system_751, std_wp__iso26262__system_752, std_wp__iso26262__system_851, std_wp__iso26262__system_852, std_wp__iso26262__software_652, std_wp__iso26262__software_1151, std_wp__iso26262__software_1152, std_wp__iso26262__software_app_c_52, std_wp__iso26262__software_app_c_54, std_wp__iso26262__software_app_c_57, std_wp__iso26262__support_551, std_wp__iso26262__support_552, std_wp__iso26262__support_553, std_wp__iso26262__support_554, std_wp__iso26262__support_555, std_wp__iso26262__support_1351, std_wp__iso26262__support_1352, std_wp__iso26262__support_1353, std_wp__iso26262__support_1451, std_wp__iso26262__support_1452, std_wp__iso26262__support_1551, std_wp__iso26262__support_1651, std_wp__iso26262__analysis_551, std_wp__iso26262__analysis_552, std_wp__isopas8926__4522
 
-   This work product "definition" links to all the work products which can be tailored out
-   in the platform safety plan for your project if following the same approach as S-CORE,
-   to be able to demonstrate completeness as described in :need:`gd_guidl__saf_package`.
+   This work product "definition" links to all the work products which are not covered by the
+   processes work products documented. Make sure these are tailored out in the safety plan
+   for your project (documented in the PMP), to be able to demonstrate completeness as described in :need:`gd_guidl__saf_package`.
    It is not really a work product definition,
-   but this is the best way to link to the tailored standard work products.
-
-.. workproduct:: Tailoring Document Platform Reqs
-   :id: wp__tailoring_platform_req
-   :status: valid
-   :complies: std_req__iso26262__system_6423, std_req__iso26262__system_6424, std_req__iso26262__system_6425, std_req__iso26262__software_643, std_req__iso26262__software_644, std_req__iso26262__software_646
-
-   This work product "definition" links to all the requirements which can be tailored out
-   in the platform safety plan for your project if following the same approach as S-CORE,
-   to be able to demonstrate completeness as described in :need:`gd_guidl__saf_package`.
-   It is not really a work product definition,
-   but this is the best way to link to the tailored standard requirements.
-
-   The reasoning is:
-
-   - for "system": see platform safety plan in PMP
-   - for "software": 644, 646: because they refer to (PMP) tailored work product, 643: because this refers to (PMP) tailored activity
+   but this is the best way to link to the tailored out standard work products.
