@@ -70,4 +70,4 @@ Workflow Requirements Engineering
    :output: wp__issue_track_system, wp__requirements_inspect
    :contains: gd_chklst__req_inspection
 
-   The requirements are monitored and verified. The inspection shall be implemented as integral part of the review in GitHub.
+   The requirements are monitored and verified. The inspection shall be implemented as integral part of the review in version management tool.

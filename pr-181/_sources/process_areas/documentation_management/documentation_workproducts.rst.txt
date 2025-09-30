@@ -24,10 +24,10 @@ Work Products Documentation Management
 
    Defines the documentation strategy which covers the following aspects:
 
-   * What is documented where and when? (Leading to a configuration item list)
    * How to review, update, (re-)approve documentations?
    * What is the status of a document and how are changes identified?
-   * How to ensure the avaibility of the documents over time?
+   * How to ensure the availability of the documents over time?
    * How to ensure the controlled distribution of documents?
    * How to avoid distribution of obsolete documents?
    * Which formal elements are used?
+   * List of all documents including their status

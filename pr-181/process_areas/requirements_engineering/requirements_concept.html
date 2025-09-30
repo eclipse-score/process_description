@@ -548,7 +548,7 @@
                   
   <section id="concept-description">
 <h1>Concept Description<a class="headerlink" href="#concept-description" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-9ab45678">
+<div class="need_container docutils container" id="SNCB-8eadb664">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_doc_concept table" id="doc_concept__req_process">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -781,27 +781,27 @@ For any other requirement the reasoning can be deduced from the top level requir
 <tbody>
 <tr class="row-even"><td><p>Satisfied by</p></td>
 <td><p>This attribute is automatically generated into the parent requirement based on the attribute satisfies of the current requirement</p></td>
-<td><p>Sphinx Needs Build</p></td>
+<td><p>Docs-as-Code</p></td>
 </tr>
 <tr class="row-odd"><td><p>Hash</p></td>
 <td><p>This attribute contains a hash value which is calculated over all mandatory requirement attributes. However this script needs to be executed manually, as this information is required to be present in the rst file.</p></td>
-<td><p>Script / Bazel Target</p></td>
+<td><p>Script</p></td>
 </tr>
 <tr class="row-even"><td><p>Satisfies Hash</p></td>
 <td><p>It contains the hash of the parent requirement. If the parent requirement is changed the hash will also change and the linkage has to be revisited again. A more detailed description is provided here: <a class="reference internal" href="guidance/requirements_process_reqs.html#gd_req__req_attr_version" title="gd_req__req_attr_version"><em class="xref need">Requirement attribute: vers... (gd_req__req_attr_version)</em></a></p></td>
-<td><p>Script / Bazel Target</p></td>
+<td><p>Script</p></td>
 </tr>
 <tr class="row-odd"><td><p>Implemented by</p></td>
 <td><p>During Build the code files are parsed for a defined tag which includes the requirement id. If this is located a link to the code will be added in the requirement</p></td>
-<td><p>Sphinx Needs Build</p></td>
+<td><p>Docs-as-Code</p></td>
 </tr>
 <tr class="row-even"><td><p>Verified by</p></td>
 <td><p>During build the junit test files are parsed for a defined marker which includes the requirement id. If the marker is located in the test a link to the test case will be added to the requirement</p></td>
-<td><p>Sphinx Needs Build</p></td>
+<td><p>Docs-as-Code</p></td>
 </tr>
 <tr class="row-odd"><td><p>Requirement Covered</p></td>
 <td><p>During build it will be checked if the requirements hashes which are mentioned in the coverage file match the hashes of the linked child requirements. If so then this attribute will be set to yes.</p></td>
-<td><p>Sphinx Needs Build</p></td>
+<td><p>Docs-as-Code</p></td>
 </tr>
 </tbody>
 </table>
@@ -812,7 +812,7 @@ For any other requirement the reasoning can be deduced from the top level requir
 <span id="requirement-versioning"></span><h2>Requirements Versioning<a class="headerlink" href="#requirements-versioning" title="Link to this heading">#</a></h2>
 <section id="individual-requirements">
 <h3>Individual Requirements<a class="headerlink" href="#individual-requirements" title="Link to this heading">#</a></h3>
-<p>For the requirements the version management is basically provided by the git history. However it needs to be identified if the content of a requirement changed. So this concept aims only at identifying a change in the mandatory attributes of a requirement.</p>
+<p>For the requirements the version management is basically provided by version managemnt tooling (e.g. git history). However it needs to be identified if the content of a requirement changed. So this concept aims only at identifying a change in the mandatory attributes of a requirement.</p>
 <section id="calculate-hash-for-current-requirements">
 <h4>Calculate hash for current requirements<a class="headerlink" href="#calculate-hash-for-current-requirements" title="Link to this heading">#</a></h4>
 <p>For each requirement a hash shall be calculated and stored in its dedicated own attribute <em>Hash</em> in the RST file. It shall include all mandatory manual attributes:</p>
@@ -855,12 +855,12 @@ For any other requirement the reasoning can be deduced from the top level requir
 </div>
 </div>
 <p>There shall be a tooling available which can be executed by the user during the creation of the requirements. This tooling shall calculate the hashes based on the mandatory attributes, calculate the hash values and enter the calculated hash values into the rst file for each requirement in the attribute <em>hash</em>.</p>
-<p>During Sphinx build it shall be checked if the attribute hash matches the actual has value of the requirement.</p>
+<p>During docs build it shall be checked if the attribute hash matches the actual has value of the requirement.</p>
 </section>
 <section id="linking-child-requirements-including-hashes">
 <h4>Linking child requirements including hashes<a class="headerlink" href="#linking-child-requirements-including-hashes" title="Link to this heading">#</a></h4>
-<p>If a requirement is linked to a top level requirement also the hash of the target requirement shall be part of the link. It shall automatically be written into the attribute <em>satisfies hash</em>. Upon Sphinx Build it shall be checked if the attribute <em>satisfies hash</em> matches the calculated hash of the requirement which is linked via <em>satisfies</em>.</p>
-<p>As this check is included in the sphinx build as a warning it can be guaranteed that a change of a parent requirement can only be merged if the <cite>linkhashes</cite> in the requirements are also updated in a <cite>Depends-On</cite> PR.</p>
+<p>If a requirement is linked to a top level requirement also the hash of the target requirement shall be part of the link. It shall automatically be written into the attribute <em>satisfies hash</em>. Upon docs build it shall be checked if the attribute <em>satisfies hash</em> matches the calculated hash of the requirement which is linked via <em>satisfies</em>.</p>
+<p>As this check is included in the docs build as a warning it can be guaranteed that a change of a parent requirement can only be merged if the <cite>linkhashes</cite> in the requirements are also updated in a <cite>Depends-On</cite> PR.</p>
 <figure class="align-center" id="id7">
 <a class="reference internal image-reference" href="../../_images/requirements_versioning.drawio.svg"><img alt="Requirements Versioning" src="../../_images/requirements_versioning.drawio.svg" style="width: 50%;" />
 </a>
@@ -871,17 +871,17 @@ For any other requirement the reasoning can be deduced from the top level requir
 </section>
 </section>
 <section id="sets-of-requirements-baselines">
-<span id="reviews-of-the-requirements"></span><h3>Sets of Requirements / Baselines<a class="headerlink" href="#sets-of-requirements-baselines" title="Link to this heading">#</a></h3>
-<p>GitHub standard functionality provides the means to version sets of requirements, as those are collected in files.</p>
+<h3>Sets of Requirements / Baselines<a class="headerlink" href="#sets-of-requirements-baselines" title="Link to this heading">#</a></h3>
+<p>Version management tooling standard functionality provides the means to version sets of requirements, as those are collected in files:</p>
 <ul class="simple">
 <li><p>The files commit history can be displayed, to show change date, author and differences</p></li>
-<li><p>via git “Blame” also the changes on every line are available</p></li>
+<li><p>Also the changes on every line are available (e.g. via git “Blame”)</p></li>
 </ul>
-<p>Requirement baseline generation is part of the configuration management, it is also done with GitHub means by tagging a complete set of artifacts/files in a repository.</p>
+<p>Requirement baseline generation is part of the configuration management, it is done by tagging a complete set of artifacts/files in a repository.</p>
 </section>
 </section>
-<section id="id2">
-<h2>Reviews of the Requirements<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
+<section id="reviews-of-the-requirements">
+<span id="id2"></span><h2>Reviews of the Requirements<a class="headerlink" href="#reviews-of-the-requirements" title="Link to this heading">#</a></h2>
 <p>Some of the checks cannot be performed automatically. Therefore a manual inspection of the requirements is needed. The requirement review itself is triggered when a contributor wants to trigger a requirement review.</p>
 <p>In the general for the reviews a <a class="reference internal" href="../../general_concepts/score_review_concept.html#review-concept"><span class="std std-ref">guideline</span></a> exists.</p>
 </section>
@@ -969,7 +969,7 @@ For any other requirement the reasoning can be deduced from the top level requir
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sets-of-requirements-baselines">Sets of Requirements / Baselines</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Reviews of the Requirements</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reviews-of-the-requirements">Reviews of the Requirements</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#coverage-of-requirements">Coverage of requirements</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#traceability-concept-for-requirements">Traceability Concept for Requirements</a></li>
 </ul>

@@ -20,7 +20,7 @@ Guideline
    :status: valid
    :complies: std_req__isopas8926__44421, std_req__isopas8926__44422, std_req__isopas8926__44423
 
-This document describes the general guidances for requirements based on the concept which is defined :need:`[[title]]<doc_concept__req_process>`.
+This document describes the general guidances for requirements based on the concept which is defined in :need:`[[title]]<doc_concept__req_process>`.
 
 General Hints
 =============
@@ -72,7 +72,7 @@ For all requirements following mandatory attributes are defined:
 
 
 * Title and description: For the formulation of requirements following template shall be used :need:`[[title]]<gd_temp__req_formulation>`
-* ID: The naming convention for the ID is defined `here <REPLACE_doc__naming_conventions>`.
+* ID: The naming convention for the ID is defined for every project in a central place (e.g. in the general contributor's guidelines)
 * Furthermore the requirements need to be versioned. Therefore a hash value of the requirement will to be calculated. The concept is described: :ref:`traceability concept for requirements`
 * For the remaining attributes only predefined values can be used. A more detailed description can be found here: :ref:`attributes of the requirements`
 * Note that "rationale" is only mandatory for Stakeholder Requirements ...
@@ -81,11 +81,11 @@ For all requirements following mandatory attributes are defined:
 Checks
 ------
 
-During the sphinx build checks will be performed on the requirements. Those are specified via following process requirements:
+During the docs build checks will be performed on the requirements. Those are specified via following process requirements:
 
 .. needtable:: Overview checks for requirement
    :tags: requirements_engineering
-   :filter: "check" in tags and "attribute" in tags and type == "gd_req" and is_external == False
+   :filter: "check" in tags and type == "gd_req" and is_external == False
    :style: table
    :columns: title;id
    :colwidths: 60,40
@@ -110,7 +110,7 @@ This section describes in detail which steps need to be performed to create a re
    * - :ref:`2. <review_parent_requirement>`
      - Review parent requirement
      - :need:`[[title]] <rl__committer>`
-   * - 3.
+   * - :ref:`3. <review_parent_requirement>`
      - Merge valid parent requirement to main branch
      - :need:`[[title]] <rl__committer>`
    * - :ref:`4. <derive_child_requirement>`
@@ -119,7 +119,7 @@ This section describes in detail which steps need to be performed to create a re
    * - :ref:`5. <review_child_requirement>`
      - Review child requirement
      - :need:`[[title]] <rl__committer>`
-   * - 6.
+   * - :ref:`6. <review_child_requirement>`
      - Merge valid child requirement to main branch
      - :need:`[[title]] <rl__committer>`
    * - :ref:`7. <generate_linkage_document>`
@@ -134,20 +134,21 @@ This section describes in detail which steps need to be performed to create a re
 Create parent requirement
 -------------------------
 
-In this step the parent requirements shall be created. Stakeholder- and feature requirements should be generated in the score repository.
+In this step the parent requirements shall be created. Stakeholder- and feature requirements should be generated in the project's main repository.
 
-Therefore following guidelines are available:
+For this the following templates are available:
 
-* `Branch Naming Conventions <REPLACE_doc__naming_conventions>`
-* `Git Guidelines <REPLACE_doc__git_coding_guidelines>`
 * :ref:`Requirement Templates <requirement templates>`
+
+Note: The projec's way of contributing new content (how to branch, how to commit, how to merge with the selected version management tool)
+has to be documented in a central place, stick to this guideline also for the requirement contributions.
 
 .. _review_parent_requirement:
 
 Review parent requirement
 -------------------------
 
-As soon as the parent requirements are in a mature state it can be :ref:`reviewed <review_concept>` and merged into the main branch of the score repository. However this is not the formal inspection of the requirements, this will follow in an upcoming step.
+As soon as the parent requirements are in a mature state it can be :ref:`reviewed <review_concept>` and merged into the main branch of the main project's repository. However this is not the formal inspection of the requirements, this will follow in an upcoming step.
 
 Following roles should be included in the review:
 
@@ -160,12 +161,10 @@ Following roles should be included in the review:
 Derive child requirement and establish traceability
 ---------------------------------------------------
 
-In an upcoming step the child requirements shall be derived from the parent requirements. Feature requirements shall be placed in the score repository again, while component requirements shall be placed in the module repository. During this process the derived requirements shall also be linked according to the defined traceability matrix to the parent requirements.
+In an upcoming step the child requirements shall be derived from the parent requirements. Feature requirements shall be placed in the main project's repository again, while component requirements shall be placed in the module repository. During this process the derived requirements shall also be linked according to the defined traceability matrix to the parent requirements.
 
-Following guidelines are available:
+For this the following templates are available:
 
-* `Branch Naming Conventions <REPLACE_doc__naming_conventions>`
-* `Git Guidelines <REPLACE_doc__git_coding_guidelines>`
 * :ref:`Requirement Templates <requirement templates>`
 
 .. _review_child_requirement:
@@ -200,10 +199,11 @@ Following roles should be included in the review:
 Workflow for Creating and Linking Assumption of Use (AoU)
 =========================================================
 
-An AoU is a category of requirement which is originates from a safety concept of an architectural element (and thus it is confirmed by a safety analysis). As it can not be fulfilled by the architecture element (e.g. component) itself, it needs to be fulfilled by the user of the module.
+An AoU is a category of requirement which is originates from a safety concept of an architectural element (and thus it is confirmed by a safety analysis).
+As it can not be fulfilled by the architecture element (e.g. component) itself, it needs to be fulfilled by the user of the module.
 In Safety Elements out of Context (SEooC) the AoUs will normally be part of the safety manual.
-In this project (as it develops SEooCs) these AoUs are created both internally and externally - if existing SEooCs are integrated into the platform (e.g. a qualified Operating System).
-For AoU which arise from S-CORE specific modules the template is almost identical to the one for feature/component requirements. The only difference is that it defined such that the attribute "satisfies" is replaced with the attribute "mitigates" (see picture below).
+In this process description (as it describes SEooC development) these AoUs are created both internally and externally - the latter if existing SEooCs are integrated into the platform (e.g. a qualified Operating System).
+For AoU which arise internally (i.e. from project specific modules) the template is almost identical to the one for feature/component requirements. The only difference is that it is defined such that the attribute "satisfies" is replaced with the attribute "mitigates" (see picture below).
 For externally provided AoUs of course the sentence template cannot be taken into account, as these are only imported from an external safety manual. It is also not possible to link it to other development artifacts via the attribute "mitigates".
 
 AoUs can be of different class and shall be handled by tracing those

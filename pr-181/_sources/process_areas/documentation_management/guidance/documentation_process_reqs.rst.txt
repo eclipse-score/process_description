@@ -60,12 +60,11 @@ Document Management Process Requirements
 
    * id
    * status
-
-   and the following optional ones:
-
    * security
    * safety
    * realizes
+
+   The attribute "tags" is optional.
 
    Compare also  :need:`gd_temp__documentation`
 

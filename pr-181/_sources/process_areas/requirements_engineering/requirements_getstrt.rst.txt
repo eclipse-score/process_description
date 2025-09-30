@@ -22,7 +22,7 @@ Getting Started
 
 This document describes the steps which need to be done to create requirements, derive child requirements and finally to perform the formal requirement inspection.
 
-Therefore both a :need:`[[title]] <gd_guidl__req_engineering>` and a :need:`[[title]] <doc_concept__req_process>` are available.
+For this a :need:`[[title]] <gd_guidl__req_engineering>`, :ref:`requirement templates` and a :need:`[[title]] <doc_concept__req_process>` are available.
 
 The subsequent steps of linking requirements to code and test cases are described in different guidelines:
 
@@ -46,36 +46,6 @@ The details of what needs to be done in each steps are described in the :ref:`wo
 Tooling Support
 ***************
 
-Linking Requirements to Source Code
-===================================
-
-For linking requirements to source code a tool is available:
-
-<TBD Linking Reqs to Source>
-
-Linking Requirements to Tests
-=============================
-
-For linking Requirements to tests metatags shall be used :need:`gd_req__verification_link_tests`
-
-
-Developer Experience
-====================
-
-Additionally tooling is provided to assist the :need:`[[title]] <rl__contributor>` to define the requirements in spinx needs. The current feature set is described as IDE requirements:
-
-.. needtable:: Implemented IDE Requirements
-   :tags: sphinx, ide
-   :style: table
-   :columns: title;id
-   :filter: "ide" in tags and type == "tool_req" and is_external == False
-   :colwidths: 70,30
-
-A *HowTo* which describes the setup of the development environment for Sphinx Needs is available `here <REPLACE_doc__develop_environment>`.
-
-For all RST files also a linter is configured, it will be automatically run in the CI upon check-in.
-Locally it can be run via
-
-.. code-block:: shell
-
-   bazel test //:format.check
+The requirements templates and examples are built by using the means of a specific "Docs-as-Code" tool,
+but this does not mean that projects are required to use this, as long as the content (e.g. attributes)
+and functionality described in :ref:`process_requirements` is covered by the selected tool.

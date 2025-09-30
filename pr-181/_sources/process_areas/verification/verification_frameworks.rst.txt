@@ -141,10 +141,10 @@ on a pull request when a feature is requested to be integrated in SCORE.
 Existing Verification Frameworks
 ********************************
 * **ITF (Integration Test Framework):** Allows execution of Feature Integration Tests on target hardware or simulation.
-  `Link to repository <https://https://github.com/eclipse-score/itf/>`__
+  `Link to repository <https://github.com/eclipse-score/itf/>`__
 * **Scenario Framework:** Supports Component Integration Tests by providing scenarios in C++ and Rust
   that are tested with single Test Case implementation in Pytest.
-  `Link to repository <https://https://github.com/eclipse-score/itftesting_tools/>`__
+  `Link to repository <https://github.com/eclipse-score/itftesting_tools/>`__
 
 .. * **SCTF (Software Component Test Framework):** A framework for Component Integration Tests...
 

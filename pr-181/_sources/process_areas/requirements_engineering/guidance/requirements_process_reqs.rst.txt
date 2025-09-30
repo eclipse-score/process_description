@@ -204,7 +204,7 @@ Process Requirement Linkage
    :tags: prio_2_automation, attribute
    :satisfies: wf__req_feat_req, wf__req_comp_req
 
-   It shall be possible to link requirements to code and include a link to github to the respective line of code in an attribute of the requirement.
+   It shall be possible to link requirements to code (to the respective line of code in an attribute of the requirement).
 
 .. gd_req:: Requirement attribute: link to test
    :id: gd_req__req_attr_testlink

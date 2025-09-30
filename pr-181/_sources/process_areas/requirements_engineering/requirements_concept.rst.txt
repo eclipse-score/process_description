@@ -194,22 +194,22 @@ Following attributes are automatically generated:
      - Tool
    * - Satisfied by
      - This attribute is automatically generated into the parent requirement based on the attribute satisfies of the current requirement
-     - Sphinx Needs Build
+     - Docs-as-Code
    * - Hash
      - This attribute contains a hash value which is calculated over all mandatory requirement attributes. However this script needs to be executed manually, as this information is required to be present in the rst file.
-     - Script / Bazel Target
+     - Script
    * - Satisfies Hash
      - It contains the hash of the parent requirement. If the parent requirement is changed the hash will also change and the linkage has to be revisited again. A more detailed description is provided here: :need:`gd_req__req_attr_version`
-     - Script / Bazel Target
+     - Script
    * - Implemented by
      - During Build the code files are parsed for a defined tag which includes the requirement id. If this is located a link to the code will be added in the requirement
-     - Sphinx Needs Build
+     - Docs-as-Code
    * - Verified by
      - During build the junit test files are parsed for a defined marker which includes the requirement id. If the marker is located in the test a link to the test case will be added to the requirement
-     - Sphinx Needs Build
+     - Docs-as-Code
    * - Requirement Covered
      - During build it will be checked if the requirements hashes which are mentioned in the coverage file match the hashes of the linked child requirements. If so then this attribute will be set to yes.
-     - Sphinx Needs Build
+     - Docs-as-Code
 
 More details about the generation of the automated attributes are explained in the following chapter where the general workflow for generating requirements including their status is shown.
 
@@ -221,7 +221,7 @@ Requirements Versioning
 Individual Requirements
 =======================
 
-For the requirements the version management is basically provided by the git history. However it needs to be identified if the content of a requirement changed. So this concept aims only at identifying a change in the mandatory attributes of a requirement.
+For the requirements the version management is basically provided by version managemnt tooling (e.g. git history). However it needs to be identified if the content of a requirement changed. So this concept aims only at identifying a change in the mandatory attributes of a requirement.
 
 Calculate hash for current requirements
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -238,14 +238,14 @@ For each requirement a hash shall be calculated and stored in its dedicated own 
 
 There shall be a tooling available which can be executed by the user during the creation of the requirements. This tooling shall calculate the hashes based on the mandatory attributes, calculate the hash values and enter the calculated hash values into the rst file for each requirement in the attribute *hash*.
 
-During Sphinx build it shall be checked if the attribute hash matches the actual has value of the requirement.
+During docs build it shall be checked if the attribute hash matches the actual has value of the requirement.
 
 Linking child requirements including hashes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-If a requirement is linked to a top level requirement also the hash of the target requirement shall be part of the link. It shall automatically be written into the attribute *satisfies hash*. Upon Sphinx Build it shall be checked if the attribute *satisfies hash* matches the calculated hash of the requirement which is linked via *satisfies*.
+If a requirement is linked to a top level requirement also the hash of the target requirement shall be part of the link. It shall automatically be written into the attribute *satisfies hash*. Upon docs build it shall be checked if the attribute *satisfies hash* matches the calculated hash of the requirement which is linked via *satisfies*.
 
-As this check is included in the sphinx build as a warning it can be guaranteed that a change of a parent requirement can only be merged if the `linkhashes` in the requirements are also updated in a `Depends-On` PR.
+As this check is included in the docs build as a warning it can be guaranteed that a change of a parent requirement can only be merged if the `linkhashes` in the requirements are also updated in a `Depends-On` PR.
 
 .. figure:: _assets/requirements_versioning.drawio.svg
    :alt: Requirements Versioning
@@ -254,17 +254,18 @@ As this check is included in the sphinx build as a warning it can be guaranteed 
 
    Versioning of Requirements
 
-.. _reviews of the requirements:
 
 Sets of Requirements / Baselines
 ================================
 
-GitHub standard functionality provides the means to version sets of requirements, as those are collected in files.
+Version management tooling standard functionality provides the means to version sets of requirements, as those are collected in files:
 
 * The files commit history can be displayed, to show change date, author and differences
-* via git "Blame" also the changes on every line are available
+* Also the changes on every line are available (e.g. via git "Blame")
 
-Requirement baseline generation is part of the configuration management, it is also done with GitHub means by tagging a complete set of artifacts/files in a repository.
+Requirement baseline generation is part of the configuration management, it is done by tagging a complete set of artifacts/files in a repository.
+
+.. _reviews of the requirements:
 
 Reviews of the Requirements
 ***************************

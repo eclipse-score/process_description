@@ -35,34 +35,27 @@ Checklists
       * - Id
         - Topic
         - Status [FAIL|PASS]
+
       * - 1
-        - Does the Document have an unique id as specified?
+        - Are available templates used for the documents?
         -
 
       * - 2
-        - Does the Document have a date?
+        - Does the Document have a unique id as specified in the naming conventions?
         -
 
       * - 3
-        - Does the Document have an author information?
+        - Are the attributes (safety, security, status) set correctly?
         -
 
       * - 4
-        - Does the Document have a lifecycle, status as specified?
+        - Is the Document stored in the correct location?
         -
 
       * - 5
-        - Does the Document have a reviewer?
+        - Is the document listed correctly in the documentation management plan?
         -
 
       * - 6
-        - Does the Document have an approver?
-        -
-
-      * - 7
-        - Does the Document have a versioning, baseline as specified?
-        -
-
-      * - 8
-        - Does the Document have the correct storage location?
+        - Is the Document linked via realizes to the correct workproduct of the process description?
         -
