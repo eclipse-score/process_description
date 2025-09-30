@@ -22,21 +22,21 @@ Work Products Process Management
 
    Strategy to manage and guide execution of the process management activities.
 
-   The process management strategy in general is described here :ref:`process_description`.
+   The process management strategy in general is described here: :ref:`process_description`.
 
-   The process (meta) model see :ref:`processes_introduction` summarizes the strategy.
+   The process (meta) model (see :ref:`processes_introduction`) summarizes the strategy.
 
-   Further strategical concepts are defined here::ref:`process_general_concepts`.
+   Further strategical concepts are defined here: :ref:`process_general_concepts`.
 
 
-.. workproduct:: Process Definition
-   :id: wp__process_definition
+.. workproduct:: Process Description
+   :id: wp__process_description
    :status: valid
-   :complies: std_wp__iso26262__management_551, std_wp__isosae21434__org_management_551, std_wp__isosae21434__org_management_552, std_wp__isosae21434__org_management_553, std_wp__isosae21434__org_management_554, std_wp__isosae21434__org_management_555
+   :complies: std_wp__iso26262__management_551, std_wp__isosae21434__org_management_551, std_wp__isosae21434__org_management_552, std_wp__isosae21434__org_management_553, std_wp__isosae21434__org_management_554, std_wp__isosae21434__org_management_555, std_req__aspice_40__iic-10-00, std_req__aspice_40__iic-10-50, std_req__aspice_40__iic-06-51, std_req__aspice_40__iic-15-54, std_req__aspice_40__iic-14-53
 
-   The process definition in general is described here :ref:`process_description`.
+   The process description is defined here: :ref:`process_description`.
 
-   The process definitions are defined here :ref:`process_areas`.
+   :ref:`process_areas` as part of that representing the process definitions.
 
 .. needextend:: docname is not None and "process_areas/process_management" in docname
    :+tags: process_management

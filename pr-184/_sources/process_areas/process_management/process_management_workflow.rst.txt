@@ -18,7 +18,7 @@ Workflow Process Management
 ###########################
 
 .. workflow:: Create/Maintain Process Management Strategy
-   :id: wf__cr_mt_proc_mgt_strategy
+   :id: wf__cr_mt_process_mgt_strategy
    :status: valid
    :responsible: rl__contributor
    :approved_by: rl__process_community
@@ -30,36 +30,36 @@ Workflow Process Management
 
    The process management strategy is created and maintained.
 
-.. workflow:: Define/Approve Process Definition
-   :id: wf__def_app_process_definition
+.. workflow:: Define/Approve Process Description
+   :id: wf__def_app_process_description
    :status: valid
    :responsible: rl__contributor
    :approved_by: rl__process_community
    :supported_by: rl__external_auditor, rl__project_lead
    :input: wp__process_strategy, wp__issue_track_system
-   :output: wp__process_definition
+   :output: wp__process_description
    :contains: gd_guidl__process_management
    :has: doc_concept__process_management_process, doc_getstrt__process_management_process
 
-   The process definition is defined and approved.
+   The process description is defined and approved.
 
 .. workflow:: Monitor/Control Process Implementation
-   :id: wf__mon_ctrl_process_definition
+   :id: wf__mon_ctrl_process_description
    :status: valid
    :responsible: rl__contributor
    :approved_by: rl__process_community
    :supported_by: rl__external_auditor, rl__project_lead
-   :input: wp__process_definition
+   :input: wp__process_description
    :output: wp__process_impr_report, wp__issue_track_system
    :contains: gd_guidl__process_management
    :has: doc_concept__process_management_process, doc_getstrt__process_management_process
 
-   The process strategy and definition implementation is monitored and improvements are
+   The process strategy and description implementation is monitored and improvements are
    triggered, if required.
 
 
 .. needextend:: docname is not None and "process_areas/process_management" in docname
-   :+tags: change_management
+   :+tags: process_management
 
 RAS(IC) for Process Management:
 *******************************

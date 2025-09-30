@@ -14,8 +14,8 @@
 
 .. _process_description:
 
-Process
-=======
+Process description
+===================
 
 Processes are the basis to describe the way of working within a Project.
 

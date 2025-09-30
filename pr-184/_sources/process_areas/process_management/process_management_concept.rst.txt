@@ -20,8 +20,10 @@ Concept Description
    :status: draft
    :tags: process_management
 
-In this section a concept for the Process Management will be discussed. Inputs for this concepts
-are the requirements of ISO26262 Part-2, ISO/SAE21434 Clause 5 and ASPICE Requirements from PIM.3 additionally
-including the requirements of the different stakeholders for the Process Management process.
+In this section a concept for the Process Management will be discussed. Inputs for this
+concepts are the requirements of ISO26262 Part-2, ISO/SAE21434 Clause 5 and ASPICE
+Requirements from PA 3.1 Process definition process attribute,
+PA 3.2 Process deployment process attribute and PIM.3 additionally including the
+requirements of the different stakeholders for the Process Management process.
 
 TO BE DONE LATER IN ANOTHER PR.

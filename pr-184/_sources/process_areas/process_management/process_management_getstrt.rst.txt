@@ -33,9 +33,6 @@ The workflows are defined in the :ref:`process_management_workflows` section.
 
 For every change identified, the following workflows are executed:
 
-* Create and maintain process management strategy according to :need:`wf__cr_mt_proc_mgt_strategy`
-* Define and approves your process definition according to :need:`wf__def_app_process_definition`
-* Implement change request and monitor it until closure according to :need:`wf__change_implement_monitor_cr`
-* Close the change request according to :need:`wf__change_close_cr`
-
-In addition create a change management plan as part of the platform management plan according to :need:`wf__platform_cr_mt_platform_mgmt_plan`
+* Create and maintain process management strategy according to :need:`wf__cr_mt_process_mgt_strategy`
+* Define and approves process description according to :need:`wf__def_app_process_description`
+* Monitor and control process implementation and trigger improvements according  :need:`wf__mon_ctrl_process_description`

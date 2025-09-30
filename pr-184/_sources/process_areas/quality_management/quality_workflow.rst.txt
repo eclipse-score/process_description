@@ -49,7 +49,7 @@ Workflows
    :responsible: rl__quality_manager
    :approved_by: rl__technical_lead
    :supported_by: rl__safety_manager, rl__security_manager
-   :input: wp__qms_plan, wp__process_definition
+   :input: wp__qms_plan, wp__process_description
    :output: wp__process_impr_report
    :contains: gd_guidl__qlm_plan_definitions, gd_chklst__review_checklist
    :has: doc_concept__quality_process, doc_getstrt__quality_process
@@ -62,7 +62,7 @@ Workflows
    :responsible: rl__quality_manager
    :approved_by: rl__technical_lead
    :supported_by: rl__safety_manager, rl__security_manager
-   :input: wp__qms_plan, wp__feat_request, wp__process_definition
+   :input: wp__qms_plan, wp__feat_request, wp__process_description
    :output: wp__qms_report
    :contains: gd_guidl__qlm_plan_definitions, gd_chklst__review_checklist
    :has: doc_concept__quality_process, doc_getstrt__quality_process
@@ -75,7 +75,7 @@ Workflows
    :responsible: rl__quality_manager
    :approved_by: rl__technical_lead
    :supported_by: rl__committer
-   :input: wp__qms_plan, wp__process_definition
+   :input: wp__qms_plan, wp__process_description
    :output: wp__verification_platform_ver_report
    :contains: gd_guidl__qlm_plan_definitions, gd_chklst__review_checklist, gd_guidl__wp_review
    :has: doc_concept__quality_process, doc_getstrt__quality_process
@@ -88,7 +88,7 @@ Workflows
    :responsible: rl__quality_manager
    :approved_by: rl__technical_lead
    :supported_by: rl__safety_manager, rl__security_manager
-   :input: wp__qms_plan, wp__policies, wp__process_definition
+   :input: wp__qms_plan, wp__policies, wp__process_description
    :output: wp__training_path
    :contains: gd_guidl__qlm_plan_definitions
    :has: doc_concept__quality_process, doc_getstrt__quality_process
