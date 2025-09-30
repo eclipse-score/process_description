@@ -23,6 +23,7 @@ Verification
    verification_getstrt
    verification_concept
    guidance/index
+   verification_frameworks
    verification_roles
    workflows
    workproducts
