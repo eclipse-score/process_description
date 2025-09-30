@@ -141,6 +141,7 @@ They will be replaced by linking the proper SW component definitions in the used
    :safety: ASIL_B
    :security: YES
    :status: invalid
+   :fulfils: comp_req__component_name__some_title
    :implements: logic_arc_int__feature_name__interface_name
 
 .. note::

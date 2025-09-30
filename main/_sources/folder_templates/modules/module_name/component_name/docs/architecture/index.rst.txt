@@ -116,6 +116,7 @@ Lower Level Components
    :status: invalid
    :safety: ASIL_B
    :security: YES
+   :fulfils: comp_req__component_name__some_title
    :implements: logic_arc_int__feature_name__interface_name
 
    no architecture but detailed design
