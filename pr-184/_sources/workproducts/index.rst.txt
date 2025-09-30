@@ -40,24 +40,6 @@ General
 
    Trainings for safety and security for the project
 
-Process
-^^^^^^^
-
-.. workproduct:: Process Definition
-   :id: wp__process_definition
-   :status: draft
-   :tags: process
-
-   Process definitions.
-
-.. workproduct:: Process Management Strategy
-   :id: wp__process_plan
-   :status: draft
-   :tags: process
-
-   Plan to manage and guide execution of the process management activities.
-
-
 Product development
 -------------------
 
@@ -85,11 +67,6 @@ Component development
 
    Build configuration capable to create the SEooC Library for the reference HW, module level.
    Note: Embedded software in the sense of the Iso (i.e. deployed on the production HW) is not part of our delivery.
-
-
-Supporting activities
----------------------
-
 
 
 Project Work product Linkage

@@ -74,7 +74,7 @@ General roles not part of any process area.
 Work Products
 ~~~~~~~~~~~~~
 
-General work products not part of any process area.
+General work products not part of any process area and work product overview list.
 
 .. toctree::
    :maxdepth: 1
@@ -84,7 +84,7 @@ General work products not part of any process area.
 Workflows
 ~~~~~~~~~
 
-General work flows not part of any process area.
+General workflows not part of any process area and workflow overview list.
 
 .. toctree::
    :maxdepth: 1

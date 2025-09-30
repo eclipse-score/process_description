@@ -1,0 +1,30 @@
+..
+   # *******************************************************************************
+   # Copyright (c) 2025 Contributors to the Eclipse Foundation
+   #
+   # See the NOTICE file(s) distributed with this work for additional
+   # information regarding copyright ownership.
+   #
+   # This program and the accompanying materials are made available under the
+   # terms of the Apache License Version 2.0 which is available at
+   # https://www.apache.org/licenses/LICENSE-2.0
+   #
+   # SPDX-License-Identifier: Apache-2.0
+   # *******************************************************************************
+
+.. _workflow_process_management_requirements:
+
+
+Guideline
+#########
+
+.. gd_guidl:: Process Management Guideline
+   :id: gd_guidl__process_management
+   :status: valid
+   :tags: process_management
+   :complies: std_req__iso26262__support_8414, std_req__iso26262__support_8432, std_req__iso26262__support_8442, std_req__iso26262__support_8451
+
+
+This document describes the general guidances for Process Management based on the concept which is defined :need:`[[title]]<doc_concept__process_management_process>`.
+
+TO BE DONE LATER

@@ -1,0 +1,27 @@
+..
+   # *******************************************************************************
+   # Copyright (c) 2025 Contributors to the Eclipse Foundation
+   #
+   # See the NOTICE file(s) distributed with this work for additional
+   # information regarding copyright ownership.
+   #
+   # This program and the accompanying materials are made available under the
+   # terms of the Apache License Version 2.0 which is available at
+   # https://www.apache.org/licenses/LICENSE-2.0
+   #
+   # SPDX-License-Identifier: Apache-2.0
+   # *******************************************************************************
+
+Concept Description
+###################
+
+.. doc_concept:: Concept Description
+   :id: doc_concept__process_management_process
+   :status: draft
+   :tags: process_management
+
+In this section a concept for the Process Management will be discussed. Inputs for this concepts
+are the requirements of ISO26262 Part-2, ISO/SAE21434 Clause 5 and ASPICE Requirements from PIM.3 additionally
+including the requirements of the different stakeholders for the Process Management process.
+
+TO BE DONE LATER IN ANOTHER PR.
