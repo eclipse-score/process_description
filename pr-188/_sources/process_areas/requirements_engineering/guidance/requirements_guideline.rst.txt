@@ -167,6 +167,10 @@ For this the following templates are available:
 
 * :ref:`Requirement Templates <requirement templates>`
 
+Note: For non-functional (and process) type requirements no children need to be derived (on lower requirement levels),
+these can mostly be directly fulfilled and verified.
+To ease verification a link to these ("process" type) requirements can be established from :need:`gd_temp__req_process_req`.
+
 .. _review_child_requirement:
 
 Review child requirement

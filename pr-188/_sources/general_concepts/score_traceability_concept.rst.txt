@@ -33,6 +33,7 @@ High level traceability overview
 The following figure shows the traceability between the major project work products on each
 requirements level. Starting from top, the platform level, going down to feature, component
 to the bottom the unit level. The concept is based on the classical V-model approach.
+Note also that this decribes the traceability of functional (and interface) type requirements.
 
 Change request are traced to all affected work products.
 
