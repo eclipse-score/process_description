@@ -174,7 +174,7 @@ Process Requirement Linkage
 
       * stakeholder requirements <- feature requirements
       * feature requirements <- component requirements
-      * workflow <- process requirements
+      * workflow or stakeholder requirements <- process requirements
       * process requirements or stakeholder requirements <- tool requirements
 
 .. gd_req:: Requirement Traceability
@@ -302,6 +302,13 @@ Process Requirements Checks
    :satisfies: wf__req_feat_req, wf__req_comp_req
 
    It shall be checked if every feature- and component requirement is linked at least to one valid architectural element on the same level.
+   This should also include requirement type checking:
+
+   * If the requirement is of type "Functional" it shall be linked to architecture diagram elements.
+   * If the requirement is of type "Interface" it shall be linked to architecture interface elements. Here the level matching is feature <> logical and component <> real.
+   * If the requirement is of any other type there shall not be a link to architecture elements.
+
+   Note that the linking is done from the architecture element to the requirement as described for example in :ref:`allocate_feature_requirements`.
 
 .. gd_req:: Requirements linkage architecture switch
    :id: gd_req__req_linkage_architecture_switch

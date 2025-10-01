@@ -181,7 +181,9 @@ Following attributes need to be filled manually for each requirement:
    * - Security
      - This attribute describes if the requirement has any impact on security of the platform.
    * - Requirements Type
-     - The requirement type defines which category the requirement relates to. Following categories are defined: [Functional, Interface, Process, Legal, Non-Functional]
+     - The requirement type defines which category the requirement relates to. Following categories are defined: [Functional, Interface, Process, Non-Functional]
+
+       Note that the linking to the requirements is affected by these types, see :need:`gd_req__req_linkage_architecture`
 
 Following attributes are automatically generated:
 

@@ -26,7 +26,7 @@ Templates
 
       .. stkh_req:: <Title>
          :id: stkh_req__<Title>
-         :reqtype: <Functional|Interface|Process|Legal|Non-Functional>
+         :reqtype: <Functional|Interface|Process|Non-Functional>
          :security: <YES|NO>
          :safety: <QM|ASIL_B>
          :rational: <The rationale provides the reason that the requirement is needed.>
@@ -43,7 +43,7 @@ Templates
 
       .. feat_req:: <Title>
         :id: feat_req__<Feature>__<Title>
-        :reqtype: <Functional|Interface|Process|Legal|Non-Functional>
+        :reqtype: <Functional|Interface|Process|Non-Functional>
         :security: <YES|NO>
         :safety: <QM|ASIL_B>
         :satisfies: <link to stakeholder requirement id>
@@ -60,7 +60,7 @@ Templates
 
       .. comp_req:: <Title>
          :id: comp_req__<Component>__<Title>
-         :reqtype: <Functional|Interface|Process|Legal|Non-Functional>
+         :reqtype: <Functional|Interface|Process|Non-Functional>
          :security: <YES|NO>
          :safety: <QM|ASIL_B>
          :satisfies: <link to feature requirement id>
@@ -75,7 +75,7 @@ Templates
 
       .. aou_req:: <Title>
          :id: aou_req__<Component>__<Title>
-         :reqtype: <Functional|Interface|Process|Legal|Non-Functional>
+         :reqtype: <Functional|Interface|Process|Non-Functional>
          :security: <YES|NO>
          :safety: <QM|ASIL_B>
          :status: <valid|invalid>
