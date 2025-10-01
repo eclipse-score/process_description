@@ -4,10 +4,6 @@
     "url": "https://eclipse-score.github.io/process_description/main/"
   },
   {
-    "version": "pr-179",
-    "url": "https://eclipse-score.github.io/process_description/pr-179/"
-  },
-  {
     "version": "pr-181",
     "url": "https://eclipse-score.github.io/process_description/pr-181/"
   },
@@ -18,9 +14,5 @@
   {
     "version": "pr-184",
     "url": "https://eclipse-score.github.io/process_description/pr-184/"
-  },
-  {
-    "version": "pr-185",
-    "url": "https://eclipse-score.github.io/process_description/pr-185/"
   }
 ]
