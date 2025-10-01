@@ -549,15 +549,15 @@
                   
   <section id="concept-description">
 <h1>Concept Description<a class="headerlink" href="#concept-description" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-15265402">
-<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_doc_concept table" id="doc_concept__process_management_process">
+<div class="need_container docutils container" id="SNCB-67f021d0">
+<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_doc_concept table" id="doc_concept__process_management">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
 <div class="line"><span><span class="needs_title"><span class="needs_data">Concept Description</span></span></span></div>
 </div>
 </td>
 <td class="head_center" colspan="2"><div class="needs_head line-block">
-<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">draft</span></span></span></div>
+<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></span></div>
 <div class="line"><span></span></div>
 <div class="line"><span></span></div>
 </div>
@@ -570,7 +570,7 @@
 <tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
 <div class="line"><span><span><div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">process_management</span></span></span></div>
 </span></span></div>
-<div class="line"><span><div class="line">relates to: <span class="has"><span><a class="reference internal" href="process_management_workflow.html#wf__cr_mt_process_mgt_strategy" title="doc_concept__process_management_process">wf__cr_mt_process_mgt_strategy</a>, <a class="reference internal" href="process_management_workflow.html#wf__def_app_process_description" title="doc_concept__process_management_process">wf__def_app_process_description</a>, <a class="reference internal" href="process_management_workflow.html#wf__mon_ctrl_process_description" title="doc_concept__process_management_process">wf__mon_ctrl_process_description</a></span></span></div>
+<div class="line"><span><div class="line">relates to: <span class="has"><span><a class="reference internal" href="process_management_workflow.html#wf__cr_mt_process_mgt_strategy" title="doc_concept__process_management">wf__cr_mt_process_mgt_strategy</a>, <a class="reference internal" href="process_management_workflow.html#wf__def_app_process_description" title="doc_concept__process_management">wf__def_app_process_description</a>, <a class="reference internal" href="process_management_workflow.html#wf__mon_imp_process_description" title="doc_concept__process_management">wf__mon_imp_process_description</a></span></span></div>
 </span></div>
 </div>
 </td>
@@ -579,7 +579,7 @@
 <tr class="content row-odd"><td class="content" colspan="6"></td>
 </tr>
 <tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
-<div class="line"><span><span class="needs-id"><a class="reference internal" href="#doc_concept__process_management_process" title="doc_concept__process_management_process">doc_concept__process_management_process</a></span></span></div>
+<div class="line"><span><span class="needs-id"><a class="reference internal" href="#doc_concept__process_management" title="doc_concept__process_management">doc_concept__process_management</a></span></span></div>
 </div>
 </td>
 <td class="footer" colspan="2"><div class="needs_footer line-block">
@@ -592,12 +592,108 @@
 </table>
 </div>
 </div>
-<p>In this section a concept for the Process Management will be discussed. Inputs for this
+<p>In this section concepts for the Process Management are discussed. Inputs for these
 concepts are the requirements of ISO26262 Part-2, ISO/SAE21434 Clause 5 and ASPICE
 Requirements from PA 3.1 Process definition process attribute,
 PA 3.2 Process deployment process attribute and PIM.3 additionally including the
 requirements of the different stakeholders for the Process Management process.</p>
-<p>TO BE DONE LATER IN ANOTHER PR.</p>
+<section id="key-concept">
+<h2>Key concept<a class="headerlink" href="#key-concept" title="Link to this heading">#</a></h2>
+<p>A suitable standard process for developing software in an Open-Source environment is
+developed. The standard process aka process description is based on building blocks
+as shown here: <a class="reference internal" href="../../introduction/index.html#processes-introduction"><span class="std std-ref">Introduction</span></a>.
+The central building blocks is the ‘workflow’ representing activities.
+Workflows have inputs and outputs, roles executing them and guidances to support the
+execution.
+Especially process requirements are defined to support automatic checks from tools
+designed for process deployment and implementation.
+Finally workflows are linked to standard requirements to show compliance with them.</p>
+</section>
+<section id="inputs">
+<h2>Inputs<a class="headerlink" href="#inputs" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>Stakeholders for the Process Management?</p></li>
+<li><p>Which building blocks are required?</p></li>
+<li><p>Which activities are required?</p></li>
+</ol>
+</section>
+<section id="stakeholders-for-the-process-management">
+<h2>Stakeholders for the Process Management<a class="headerlink" href="#stakeholders-for-the-process-management" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p><a class="reference internal" href="../../roles/index.html#rl__contributor" title="rl__contributor"><em class="xref need">Contributor (rl__contributor)</em></a></p>
+<ul class="simple">
+<li><p>Contributes workflows, work products, guidances to grow the process content</p></li>
+<li><p>Creates, Maintains Strategy</p></li>
+<li><p>Defines, Monitors, Improves Strategy, Process Description and Implementation</p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="../../roles/index.html#rl__process_community" title="rl__process_community"><em class="xref need">Process Community (rl__process_community)</em></a></p>
+<ul class="simple">
+<li><p>Verifies that the contribution including strategy and definitions fulfills the project policies</p></li>
+<li><p>Approves contributions</p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="../../roles/index.html#rl__project_lead" title="rl__project_lead"><em class="xref need">Project Lead (rl__project_lead)</em></a></p>
+<ul class="simple">
+<li><p>Supports all activities</p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="../safety_management/roles.html#rl__external_auditor" title="rl__external_auditor"><em class="xref need">External Auditor (rl__external_auditor)</em></a></p>
+<ul class="simple">
+<li><p>Supports all activities, especially during iterative audits</p></li>
+</ul>
+</li>
+</ol>
+<section id="standard-requirements">
+<h3>Standard Requirements<a class="headerlink" href="#standard-requirements" title="Link to this heading">#</a></h3>
+<p>Also requirements of standards need to be taken into consideration:</p>
+<ul class="simple">
+<li><p>ISO 26262</p></li>
+<li><p>ASPICE</p></li>
+<li><p>ISO SAE 21434</p></li>
+</ul>
+</section>
+</section>
+<section id="building-blocks">
+<span id="pm-building-blocks"></span><h2>Building blocks<a class="headerlink" href="#building-blocks" title="Link to this heading">#</a></h2>
+<p>The required building blocks for the process description are defined here:
+<a class="reference internal" href="guidance/process_management_templates.html#process-management-templates"><span class="std std-ref">Templates</span></a>.
+They are complemented by requirements here: <a class="reference internal" href="guidance/process_management_reqs.html#process-management-requirements"><span class="std std-ref">Process Requirements</span></a>.</p>
+</section>
+<section id="activities-for-process-management">
+<h2>Activities for process management<a class="headerlink" href="#activities-for-process-management" title="Link to this heading">#</a></h2>
+<p>In general strategy, process descriptions and improvements are discussed during
+public Process Community Meetings. The Meeting schedules are available in the public
+calendar here: &lt;<a class="reference external" href="https://calendar.google.com/calendar/u/0/r/month">https://calendar.google.com/calendar/u/0/r/month</a>&gt;.
+So every <a class="reference internal" href="../../roles/index.html#rl__contributor" title="rl__contributor"><em class="xref need">Contributor (rl__contributor)</em></a> can join them discuss topics from interest there.</p>
+<section id="creation-maintenance-of-the-process-management-strategy">
+<span id="pm-cm-strategy"></span><h3>Creation/Maintenance of the Process Management Strategy<a class="headerlink" href="#creation-maintenance-of-the-process-management-strategy" title="Link to this heading">#</a></h3>
+<p>The process management strategy is part of the <a class="reference internal" href="../../index.html#process-description"><span class="std std-ref">Process description</span></a>.</p>
+<p>The process (meta) model (see <a class="reference internal" href="../../introduction/index.html#processes-introduction"><span class="std std-ref">Introduction</span></a>) summarizes the strategy.</p>
+<p>Further strategical concepts are defined here: <a class="reference internal" href="../../general_concepts/index.html#process-general-concepts"><span class="std std-ref">General concepts</span></a>.</p>
+<p>Every <a class="reference internal" href="../../roles/index.html#rl__contributor" title="rl__contributor"><em class="xref need">Contributor (rl__contributor)</em></a> can join the community meetings and contribute
+using standard pull requests.</p>
+<p>Strategy changes are approved by the <a class="reference internal" href="../../roles/index.html#rl__process_community" title="rl__process_community"><em class="xref need">Process Community Member (rl__process_community)</em></a>.</p>
+</section>
+<section id="definition-approval-of-the-process-description">
+<span id="pm-da-process"></span><h3>Definition/Approval of the Process Description<a class="headerlink" href="#definition-approval-of-the-process-description" title="Link to this heading">#</a></h3>
+<p>The process description is defined here: <a class="reference internal" href="../../index.html#process-description"><span class="std std-ref">Process description</span></a>.</p>
+<p><a class="reference internal" href="../index.html#process-areas"><span class="std std-ref">Process Areas</span></a> as part of that representing the process definitions.</p>
+<p>Every <a class="reference internal" href="../../roles/index.html#rl__contributor" title="rl__contributor"><em class="xref need">Contributor (rl__contributor)</em></a> can join the community meetings and contribute
+using standard pull requests.</p>
+<p>Process Description are approved by the <a class="reference internal" href="../../roles/index.html#rl__process_community" title="rl__process_community"><em class="xref need">Process Community Member (rl__process_community)</em></a>.</p>
+<p>Regular audits supported by <a class="reference internal" href="../safety_management/roles.html#rl__external_auditor" title="rl__external_auditor"><em class="xref need">External Auditor (rl__external_auditor)</em></a> ensure compliance with
+existing standards.</p>
+</section>
+<section id="monitoring-improving-of-the-process-description-implementation">
+<span id="pm-mc-process"></span><h3>Monitoring/Improving of the Process Description Implementation<a class="headerlink" href="#monitoring-improving-of-the-process-description-implementation" title="Link to this heading">#</a></h3>
+<p>The process strategy and description implementation is monitored and improvements are
+triggered, if required.</p>
+<p>Every <a class="reference internal" href="../../roles/index.html#rl__contributor" title="rl__contributor"><em class="xref need">Contributor (rl__contributor)</em></a> can propose improvements using the project ISSUE Tracking
+system.</p>
+<p>Improvements are approved by the <a class="reference internal" href="../../roles/index.html#rl__process_community" title="rl__process_community"><em class="xref need">Process Community Member (rl__process_community)</em></a>.</p>
+</section>
+</section>
 </section>
 
 
@@ -638,6 +734,30 @@ requirements of the different stakeholders for the Process Management process.</
                 <dialog id="pst-secondary-sidebar-modal"></dialog>
                 <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-concept">Key concept</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#inputs">Inputs</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#stakeholders-for-the-process-management">Stakeholders for the Process Management</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#standard-requirements">Standard Requirements</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#building-blocks">Building blocks</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#activities-for-process-management">Activities for process management</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#creation-maintenance-of-the-process-management-strategy">Creation/Maintenance of the Process Management Strategy</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#definition-approval-of-the-process-description">Definition/Approval of the Process Description</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#monitoring-improving-of-the-process-description-implementation">Monitoring/Improving of the Process Description Implementation</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
 
   <div class="sidebar-secondary-item">
 

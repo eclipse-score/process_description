@@ -19,4 +19,5 @@ Guidance
    :maxdepth: 1
 
    process_management_guideline
+   process_management_templates
    process_management_reqs

@@ -25,8 +25,8 @@ Workflow Process Management
    :supported_by: rl__external_auditor, rl__project_lead
    :input: wp__policies, wp__issue_track_system
    :output: wp__process_strategy
-   :contains: gd_guidl__process_management
-   :has: doc_concept__process_management_process, doc_getstrt__process_management_process
+   :contains: gd_guidl__process_management, gd_temp__process_workflow, gd_req__process_management_build_blocks_attr, gd_req__process_management_build_blocks_link, gd_req__process_management_build_blocks_check
+   :has: doc_concept__process_management, doc_getstrt__process_management
 
    The process management strategy is created and maintained.
 
@@ -38,21 +38,21 @@ Workflow Process Management
    :supported_by: rl__external_auditor, rl__project_lead
    :input: wp__process_strategy, wp__issue_track_system
    :output: wp__process_description
-   :contains: gd_guidl__process_management
-   :has: doc_concept__process_management_process, doc_getstrt__process_management_process
+   :contains: gd_guidl__process_management, gd_temp__process_workflow, gd_req__process_management_build_blocks_attr, gd_req__process_management_build_blocks_link, gd_req__process_management_build_blocks_check
+   :has: doc_concept__process_management, doc_getstrt__process_management
 
    The process description is defined and approved.
 
-.. workflow:: Monitor/Control Process Implementation
-   :id: wf__mon_ctrl_process_description
+.. workflow:: Monitor/Improve Process Implementation
+   :id: wf__mon_imp_process_description
    :status: valid
    :responsible: rl__contributor
    :approved_by: rl__process_community
    :supported_by: rl__external_auditor, rl__project_lead
    :input: wp__process_description
    :output: wp__process_impr_report, wp__issue_track_system
-   :contains: gd_guidl__process_management
-   :has: doc_concept__process_management_process, doc_getstrt__process_management_process
+   :contains: gd_guidl__process_management, gd_temp__process_workflow, gd_req__process_management_build_blocks_attr, gd_req__process_management_build_blocks_link, gd_req__process_management_build_blocks_check
+   :has: doc_concept__process_management, doc_getstrt__process_management
 
    The process strategy and description implementation is monitored and improvements are
    triggered, if required.
