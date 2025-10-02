@@ -34,7 +34,7 @@ Templates
          :supported_by: <defined role:rl__<...>>, ..., <defined role:rl__<...>>
          :input: <defined workproduct:wp__<...>>
          :output: <defined workproduct:wp__<...>>
-         :contains: <defined guidances: guideline:gd_guidl__<...>, template:gd_temp__<...>, checklist:gd_chklst__<...>, method:gd_meth__<...>, process requirement:gd_req__<...>>
+         :contains: <defined guidances: guideline:gd_guidl__<...>, template:gd_temp__<...>, checklist:gd_chklst__<...>, method:gd_meth__<...>
          :has: <concept:doc_concept__<...>, getting started:doc_getstrt__<...>>
 
 
@@ -175,11 +175,8 @@ Templates
          :id: gd_req__<process area or abbreviation>_<...>
          :status: <draft|valid>
          :tags: <process area or abbreviation>
+         :satisfies: <defined workflow:wf__<...>>, ..., <defined workflow:wf__<...>>
          :complies: <standard requirement:std_req__<...>>, ..., <standard requirement:std_req__<...>>
-
-
-Open Points:
-:satisfied: is found in requirements engineering, needed?
 
 
 .. gd_temp:: Standard Requirement Template
