@@ -260,7 +260,7 @@ Tailoring
    :complies: std_req__iso26262__system_6423, std_req__iso26262__system_6424, std_req__iso26262__system_6425, std_req__iso26262__software_643, std_req__iso26262__software_644, std_req__iso26262__software_646
 
    This part of the guideline links to all the requirements which are not fulfilled by the
-   requirements engineering process. Make sure these are tailored out in the safety plan
+   requirements engineering process. Make sure these are tailored out in the safety/security/quality plans
    for your project (documented in the PMP). Reasoning given below must be confirmed there.
 
    The reasoning is:
