@@ -12,6 +12,8 @@
    # SPDX-License-Identifier: Apache-2.0
    # *******************************************************************************
 
+.. _process_areas:
+
 Process Areas
 #############
 
@@ -26,6 +28,7 @@ Process Areas
    implementation/index.rst
    platform_management/index.rst
    problem_resolution/index.rst
+   process_management/index.rst
    quality_management/index.rst
    release_management/index.rst
    requirements_engineering/index.rst

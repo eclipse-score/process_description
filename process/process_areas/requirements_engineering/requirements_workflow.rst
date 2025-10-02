@@ -91,7 +91,7 @@ Workflow Requirements Engineering
    :responsible: rl__contributor
    :approved_by: rl__committer
    :supported_by: rl__safety_manager, rl__security_manager
-   :input: wp__process_definition
+   :input: wp__process_description
    :output: wp__requirements_proc_tool
    :contains: gd_temp__req_process_req, gd_temp__req_tool_req, gd_temp__req_formulation
    :has: doc_concept__req_process, doc_getstrt__req_process

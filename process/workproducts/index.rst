@@ -30,7 +30,24 @@ General
    :tags: requirements_management
    :complies: std_wp__iso26262__management_551
 
-   Policies for functional safety and cybersecurity.
+   In general the project follows the Eclipse Foundation Development Process (EDP,
+   `https://www.eclipse.org/projects/dev_process/`). The EDP defines important concepts,
+   including the Open Source Rules of Engagement, the organizational framework for open
+   source projects and teams, releases, reviews, and more.
+
+   Further the Eclipse Foundation Security Policy
+   (`https://www.eclipse.org/security/policy/`) applies.
+
+   The Eclipse Foundation Functional Safety Process (EFFSP, currently in DRAFT
+   `https://gitlab.eclipse.org/eclipsefdn/emo-team/policies/functional-safety-process/-/blob/main/source/fsp.adoc?ref_type=heads`)
+   applies.
+
+   Concerning the use of Generative Artificial Intelligence
+   `https://www.eclipse.org/projects/guidelines/genai/` applies.
+
+   Project specific Policies for functional safety and cybersecurity may extend the
+   ones from ECLIPSE.
+
 
 .. workproduct:: Training path
    :id: wp__training_path
@@ -39,24 +56,6 @@ General
    :complies: std_wp__iso26262__management_552
 
    Trainings for safety and security for the project
-
-Process
-^^^^^^^
-
-.. workproduct:: Process Definition
-   :id: wp__process_definition
-   :status: draft
-   :tags: process
-
-   Process definitions.
-
-.. workproduct:: Process Management Strategy
-   :id: wp__process_plan
-   :status: draft
-   :tags: process
-
-   Plan to manage and guide execution of the process management activities.
-
 
 Product development
 -------------------
@@ -85,11 +84,6 @@ Component development
 
    Build configuration capable to create the SEooC Library for the reference HW, module level.
    Note: Embedded software in the sense of the Iso (i.e. deployed on the production HW) is not part of our delivery.
-
-
-Supporting activities
----------------------
-
 
 
 Project Work product Linkage

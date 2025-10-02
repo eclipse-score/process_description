@@ -136,7 +136,7 @@ Workflow Security Management
    :responsible: rl__security_manager
    :approved_by: rl__technical_lead, rl__module_lead
    :supported_by: rl__safety_manager, rl__quality_manager
-   :input: wp__module_security_plan, wp__platform_security_plan, wp__policies, wp__process_definition
+   :input: wp__module_security_plan, wp__platform_security_plan, wp__policies, wp__process_description
    :output: wp__training_path
    :contains: gd_temp__module_security_plan
    :has: doc_concept__security_management_process, doc_getstrt__security_management_process

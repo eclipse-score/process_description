@@ -1,6 +1,6 @@
 ..
    # *******************************************************************************
-   # Copyright (c) 2024 Contributors to the Eclipse Foundation
+   # Copyright (c) 2025 Contributors to the Eclipse Foundation
    #
    # See the NOTICE file(s) distributed with this work for additional
    # information regarding copyright ownership.
@@ -12,22 +12,12 @@
    # SPDX-License-Identifier: Apache-2.0
    # *******************************************************************************
 
-Workflows
-=========
+Guidance
+########
 
-There are no general workflows.
+.. toctree::
+   :maxdepth: 1
 
-Project Workflow list
----------------------
-
-.. needtable::
-   :style: table
-   :columns: title;id;tags
-   :colwidths: 25,25,25
-   :sort: title
-
-   results = []
-
-   for need in needs.filter_types(["workflow"]):
-         if need['is_external'] == False:
-                results.append(need)
+   process_management_guideline
+   process_management_templates
+   process_management_reqs

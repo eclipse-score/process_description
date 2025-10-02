@@ -21,6 +21,7 @@ Project Management Roles
 .. role:: Project Lead
    :id: rl__project_lead
    :status: valid
+   :tags: process_management
 
    The Project Leads decide about strategy, addition of modules and election of all other roles.
 
@@ -74,6 +75,7 @@ Project Development roles
 .. role:: Contributor
    :id: rl__contributor
    :status: valid
+   :tags: development
 
    (Eclipse) Open Source Role, person(s) who provide(s) possible contribution(s) as pull request(s) to the main line.
    Any contributor which contributes code, tests or documentation to the project.
@@ -105,7 +107,7 @@ Project Development roles
 .. role:: Project Security Team
    :id: rl__security_team
    :status: valid
-   :tags: verification
+   :tags: verification, security_analysis
    :contains: rl__committer
 
    (Eclipse) Open Source Role, person(s) who is(are) responsible for coordinating the resolution of Vulnerabilities within the Project.

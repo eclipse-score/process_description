@@ -1,6 +1,6 @@
 ..
    # *******************************************************************************
-   # Copyright (c) 2024 Contributors to the Eclipse Foundation
+   # Copyright (c) 2025 Contributors to the Eclipse Foundation
    #
    # See the NOTICE file(s) distributed with this work for additional
    # information regarding copyright ownership.
@@ -12,22 +12,18 @@
    # SPDX-License-Identifier: Apache-2.0
    # *******************************************************************************
 
-Workflows
-=========
+Roles
+#####
 
-There are no general workflows.
+For process management no additional roles need to be defined.
 
-Project Workflow list
----------------------
+Contributing Roles:
 
-.. needtable::
-   :style: table
-   :columns: title;id;tags
-   :colwidths: 25,25,25
-   :sort: title
+   * :need:`Contributor <rl__contributor>`
+   * :need:`Process Community <rl__process_community>`
+   * :need:`External Auditor <rl__external_auditor>`
+   * :need:`Project Lead <rl__project_lead>`
 
-   results = []
+A detailed overview of the responsibility for the steps of the requirement process is listed here:
 
-   for need in needs.filter_types(["workflow"]):
-         if need['is_external'] == False:
-                results.append(need)
+:ref:`workflow_process_management_requirements`
