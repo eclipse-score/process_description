@@ -21,7 +21,7 @@ Process Requirements
    :id: gd_req__req_structure
    :status: valid
    :tags: done_automation, structure
-   :satisfies: wf__req_stkh_req, wf__req_feat_req, wf__req_comp_req
+   :satisfies: wf__req_stkh_req, wf__req_feat_req, wf__req_comp_req, wf__req_proc_tool, wf__req_feat_aou, wf__req_comp_aou
    :complies: std_req__iso26262__support_6431, std_req__iso26262__support_6432
 
    Requirements shall be hierarchically grouped into three levels.
@@ -46,7 +46,7 @@ Process Requirement Attributes
    :id: gd_req__req_attr_uid
    :status: valid
    :tags: manual_prio_1, attribute, mandatory
-   :satisfies: wf__req_stkh_req, wf__req_feat_req, wf__req_comp_req
+   :satisfies: wf__req_stkh_req, wf__req_feat_req, wf__req_comp_req, wf__req_proc_tool, wf__req_feat_aou, wf__req_comp_aou
    :complies: std_req__iso26262__support_6425, std_req__iso26262__support_6432
 
    Each requirement shall have a unique ID. It shall consist of three parts:
@@ -61,7 +61,7 @@ Process Requirement Attributes
    :id: gd_req__req_attr_title
    :status: valid
    :tags: manual_prio_1 attribute, mandatory
-   :satisfies: wf__req_stkh_req, wf__req_feat_req, wf__req_comp_req
+   :satisfies: wf__req_stkh_req, wf__req_feat_req, wf__req_comp_req, wf__req_proc_tool, wf__req_feat_aou, wf__req_comp_aou
    :complies: std_req__iso26262__support_6424
 
    The title of the requirement shall provide a short summary of the description, but is not an "additional" requirement.
@@ -72,7 +72,7 @@ Process Requirement Attributes
    :id: gd_req__req_attr_description
    :status: valid
    :tags: manual_prio_1, attribute, mandatory
-   :satisfies: wf__req_stkh_req, wf__req_feat_req, wf__req_comp_req
+   :satisfies: wf__req_stkh_req, wf__req_feat_req, wf__req_comp_req, wf__req_proc_tool, wf__req_feat_aou, wf__req_comp_aou
    :complies: std_req__iso26262__support_6424
 
    Each requirement shall have a description.
@@ -87,7 +87,7 @@ Process Requirement Attributes
    :id: gd_req__req_attr_type
    :status: valid
    :tags: manual_prio_2, attribute, mandatory
-   :satisfies: wf__req_stkh_req, wf__req_feat_req, wf__req_comp_req
+   :satisfies: wf__req_stkh_req, wf__req_feat_req, wf__req_comp_req, wf__req_feat_aou, wf__req_comp_aou
 
    Each requirement, apart from process and tool requirements, shall have a type of one of following options:
 
@@ -100,7 +100,7 @@ Process Requirement Attributes
    :id: gd_req__req_attr_security
    :status: valid
    :tags: manual_prio_2, attribute, mandatory
-   :satisfies: wf__req_feat_req, wf__req_comp_req
+   :satisfies: wf__req_feat_req, wf__req_comp_req, wf__req_feat_aou, wf__req_comp_aou
 
    Each requirement, apart from process and tool requirements, shall have a security relevance identifier:
 
@@ -112,7 +112,7 @@ Process Requirement Attributes
    :status: valid
    :tags: manual_prio_1, attribute, mandatory
    :complies: std_req__iso26262__support_6421, std_req__iso26262__support_6425
-   :satisfies: wf__req_stkh_req, wf__req_feat_req, wf__req_comp_req
+   :satisfies: wf__req_stkh_req, wf__req_feat_req, wf__req_comp_req, wf__req_feat_aou, wf__req_comp_aou
 
    Each requirement, apart from process and tool requirements, shall have a automotive safety integrity level (ASIL) identifier:
 
@@ -124,7 +124,7 @@ Process Requirement Attributes
    :status: valid
    :tags: manual_prio_1, attribute, mandatory
    :complies: std_req__iso26262__support_6425
-   :satisfies: wf__req_stkh_req, wf__req_feat_req, wf__req_comp_req
+   :satisfies: wf__req_stkh_req, wf__req_feat_req, wf__req_comp_req, wf__req_feat_aou, wf__req_comp_aou
 
    Each requirement, apart from process and tool requirements, shall have a status:
 
@@ -168,7 +168,7 @@ Process Requirement Linkage
    :status: valid
    :tags: manual_prio_1, attribute
    :complies: std_req__iso26262__support_6432
-   :satisfies: wf__req_stkh_req, wf__req_feat_req, wf__req_comp_req
+   :satisfies: wf__req_stkh_req, wf__req_feat_req, wf__req_comp_req, wf__req_proc_tool
 
    Requirements shall be linked to its adjacent level via the attribute satisfies.
 
@@ -182,7 +182,7 @@ Process Requirement Linkage
    :status: valid
    :tags: prio_1_automation, attribute
    :complies: std_req__iso26262__support_6432
-   :satisfies: wf__req_stkh_req, wf__req_feat_req, wf__req_comp_req
+   :satisfies: wf__req_stkh_req, wf__req_feat_req, wf__req_comp_req, wf__req_proc_tool
 
    Bi-directional traceability shall be provided by adding a "back-link" via attribute satisfied by (i.e. make a <-> out of the <- in :need:`gd_req__req_linkage`).
 
@@ -257,7 +257,7 @@ Process Requirements Checks
    :id: gd_req__req_check_mandatory
    :status: valid
    :tags: prio_1_automation, check
-   :satisfies: wf__req_stkh_req, wf__req_feat_req, wf__req_comp_req
+   :satisfies: wf__req_stkh_req, wf__req_feat_req, wf__req_comp_req, wf__req_proc_tool, wf__req_feat_aou, wf__req_comp_aou
 
    It shall be checked if all mandatory attributes for each requirement is provided by the user. For all requirements following attributes shall be mandatory:
 
@@ -271,7 +271,7 @@ Process Requirements Checks
    :id: gd_req__req_desc_weak
    :status: valid
    :tags: done_automation, check
-   :satisfies: wf__req_stkh_req, wf__req_feat_req, wf__req_comp_req
+   :satisfies: wf__req_stkh_req, wf__req_feat_req, wf__req_comp_req, wf__req_proc_tool, wf__req_feat_aou, wf__req_comp_aou
 
    It shall be ensured that no *weak words* are contained in the requirement description for:
 

@@ -38,12 +38,25 @@ Workflow Requirements Engineering
    :approved_by: rl__technical_lead
    :supported_by: rl__safety_manager, rl__security_manager
    :input: wp__requirements_stkh, wp__issue_track_system
-   :output: wp__requirements_feat, wp__requirements_feat_aou, wp__platform_safety_manual
+   :output: wp__requirements_feat
    :contains: gd_temp__req_feat_req, gd_temp__req_formulation
    :has: doc_concept__req_process, doc_getstrt__req_process
 
-   Depending on the stakeholder requirements feature requirements can be derived. This can be done by any contributor and will be approved by a contributor. If needed safety and security managers can provide support.
+   Depending on the stakeholder requirements feature requirements can be derived. This can be done by any contributor and will be approved by a technical lead. If needed safety and security managers can provide support.
 
+.. workflow:: Create/Maintain Feature AoUs
+   :id: wf__req_feat_aou
+   :status: valid
+   :tags: requirements_engineering
+   :responsible: rl__contributor
+   :approved_by: rl__technical_lead
+   :supported_by: rl__safety_manager, rl__security_manager
+   :input: wp__requirements_feat, wp__feature_arch, wp__issue_track_system
+   :output: wp__requirements_feat_aou, wp__platform_safety_manual
+   :contains: gd_temp__req_aou_req, gd_temp__req_formulation
+   :has: doc_concept__req_process, doc_getstrt__req_process
+
+   Based on the safety concept on feature level, feature AoUs can be derived. See also :ref:`aou_workflow`
 
 .. workflow:: Create/Maintain Component requirements
    :id: wf__req_comp_req
@@ -53,11 +66,37 @@ Workflow Requirements Engineering
    :approved_by: rl__committer
    :supported_by: rl__safety_manager, rl__security_manager
    :input: wp__requirements_feat, wp__issue_track_system
-   :output: wp__requirements_comp, wp__requirements_comp_aou, wp__platform_safety_manual
+   :output: wp__requirements_comp
    :contains: gd_temp__req_comp_req, gd_temp__req_formulation
    :has: doc_concept__req_process, doc_getstrt__req_process
 
-   On the lowest level the component requirements are created and maintained. This can be done by any contributor and will be approved by a committer. If needed safety and security managers can provide support.
+.. workflow:: Create/Maintain Component AoUs
+   :id: wf__req_comp_aou
+   :status: valid
+   :tags: requirements_engineering
+   :responsible: rl__contributor
+   :approved_by: rl__committer
+   :supported_by: rl__safety_manager, rl__security_manager
+   :input: wp__requirements_comp, wp__component_arch, wp__issue_track_system
+   :output: wp__requirements_comp_aou, wp__module_safety_manual
+   :contains: gd_temp__req_aou_req, gd_temp__req_formulation
+   :has: doc_concept__req_process, doc_getstrt__req_process
+
+   Based on the safety concept on component level, component AoUs can be derived. See also :ref:`aou_workflow`
+
+.. workflow:: Create/Maintain Process and Tool Requirements
+   :id: wf__req_proc_tool
+   :status: valid
+   :tags: requirements_engineering
+   :responsible: rl__contributor
+   :approved_by: rl__committer
+   :supported_by: rl__safety_manager, rl__security_manager
+   :input: wp__process_definition
+   :output: wp__requirements_proc_tool
+   :contains: gd_temp__req_process_req, gd_temp__req_tool_req, gd_temp__req_formulation
+   :has: doc_concept__req_process, doc_getstrt__req_process
+
+   Based on the process descriptions (which comply to standards) and/or stakeholder requirements process and tool requirements are derived.
 
 .. workflow:: Monitor/Verify Requirements
    :id: wf__monitor_verify_requirements
