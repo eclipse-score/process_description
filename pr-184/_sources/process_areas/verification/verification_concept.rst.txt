@@ -168,15 +168,17 @@ General Traceability Concept
 
 To allow a traceability of code to a written requirement, unit tests are linked to other unit
 tests or component tests. This linking is done using metatags. This is also true for component
-integration tests linking to the component architecture.
-
-Component tests are linked to component requirements directly.
+integration tests linking to the component requirements and architecture.
 
 Traceability of feature integration tests shall be established through linking those test cases to
 feature requirements and architecture as features describe the integrated behavior of all components.
 
-Traceability of platform integration tests shall be established through linking those test cases to
+Traceability of platform tests shall be established through linking those test cases to
 stakeholder requirements as stakeholder requirements describe the platform behavior.
+
+Note that all the above tests shall only link to requirements of type "Functional" and "Interface".
+The verification of requirements of types "Process" and "Non-Functional" will be done via Analysis,
+which is a verification method still to be defined. ``[TODO: Link to Analysis process once available. See ticket #577]``
 
 Requirements always include Assumptions Of Use.
 
