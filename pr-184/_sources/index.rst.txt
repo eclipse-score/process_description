@@ -17,7 +17,7 @@
 Process description
 ===================
 
-Processes are the basis to describe the way of working within a Project.
+Processes are the basis to describe the way of working within a project.
 
 Introduction
 ------------
