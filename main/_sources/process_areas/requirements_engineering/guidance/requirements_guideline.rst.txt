@@ -256,3 +256,20 @@ the component requirements, as these are expected to be developed during small i
 If an existing requirement needs to be reworked for the new function it will be split in two.
 The requirement with the old specification will be valid_until the milestone before the
 new function is planned and the requirement with the new specification is valid_from the planned milestone.
+
+Tailoring
+=========
+
+.. gd_guidl:: Requirements Tailored
+   :id: gd_guidl__req_tailored
+   :status: valid
+   :complies: std_req__iso26262__system_6423, std_req__iso26262__system_6424, std_req__iso26262__system_6425, std_req__iso26262__software_643, std_req__iso26262__software_644, std_req__iso26262__software_646
+
+   This part of the guideline links to all the requirements which are not fulfilled by the
+   requirements engineering process. Make sure these are tailored out in the safety/security/quality plans
+   for your project (documented in the PMP). Reasoning given below must be confirmed there.
+
+   The reasoning is:
+
+   - for "system" standard requirements: see platform safety plan in PMP
+   - for "software" standard requirements: 644, 646: because they refer to (PMP) tailored work product, 643: because this refers to (PMP) tailored activity
