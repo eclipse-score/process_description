@@ -168,8 +168,8 @@ Traceability to Requirements
 
    **Examples:**
 
-   * feat_req <-> logic_arc_(sta|dyn), logic_arc_int, logic_arc_int_op
-   * comp_req <-> comp_arc_(sta|dyn|int|int_op)
+   * feat_req <-> feat_arc_(sta|dyn), logic_arc_(int|int_op)
+   * comp_req <-> comp_arc_(sta|dyn), real_arc_(int|int_op)
 
    .. note::
       In general the traceability is visualized in :ref:`general_concepts_traceability`

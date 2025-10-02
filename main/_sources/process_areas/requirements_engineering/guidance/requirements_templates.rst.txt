@@ -37,7 +37,7 @@ Templates
 .. gd_temp:: Feature Requirements Template
    :id: gd_temp__req_feat_req
    :status: valid
-   :complies: std_wp__iso26262__software_651, std_req__iso26262__support_641, std_req__iso26262__support_6421, std_req__iso26262__support_6425
+   :complies: std_req__iso26262__support_641, std_req__iso26262__support_6421, std_req__iso26262__support_6425
 
    .. code-block:: rst
 
@@ -54,7 +54,7 @@ Templates
 .. gd_temp:: Component Requirements Template
    :id: gd_temp__req_comp_req
    :status: valid
-   :complies: std_wp__iso26262__software_651, std_req__iso26262__support_641, std_req__iso26262__support_6421, std_req__iso26262__support_6425
+   :complies: std_req__iso26262__support_641, std_req__iso26262__support_6421, std_req__iso26262__support_6425
 
    .. code-block:: rst
 
@@ -69,7 +69,7 @@ Templates
 .. gd_temp:: AoU Requirement Template
    :id: gd_temp__req_aou_req
    :status: valid
-   :complies: std_wp__iso26262__software_651, std_req__iso26262__support_641, std_req__iso26262__support_6421, std_req__iso26262__support_6425
+   :complies: std_req__iso26262__support_641, std_req__iso26262__support_6421, std_req__iso26262__support_6425
 
    .. code-block:: rst
 
@@ -84,7 +84,7 @@ Templates
 .. gd_temp:: Process Requirements Template
    :id: gd_temp__req_process_req
    :status: valid
-   :complies: std_wp__iso26262__software_651, std_req__iso26262__support_641, std_req__iso26262__support_6421, std_req__iso26262__support_6425
+   :complies: std_req__iso26262__support_641, std_req__iso26262__support_6421, std_req__iso26262__support_6425
 
    .. code-block:: rst
 
@@ -97,7 +97,7 @@ Templates
 .. gd_temp:: Tool Requirements Template
    :id: gd_temp__req_tool_req
    :status: valid
-   :complies: std_wp__iso26262__software_651, std_req__iso26262__support_641, std_req__iso26262__support_6421, std_req__iso26262__support_6425
+   :complies: std_req__iso26262__support_641, std_req__iso26262__support_6421, std_req__iso26262__support_6425
 
    .. code-block:: rst
 
@@ -112,7 +112,7 @@ Templates
 .. gd_temp:: Requirement Formulation Template
    :id: gd_temp__req_formulation
    :status: valid
-   :complies: std_wp__iso26262__software_651, std_req__iso26262__support_641, std_req__iso26262__support_6421, std_req__iso26262__support_6425
+   :complies: std_req__iso26262__support_641, std_req__iso26262__support_6421, std_req__iso26262__support_6425
 
    Requirements shall be specified according to the following schema:
 
