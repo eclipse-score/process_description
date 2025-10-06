@@ -14,10 +14,10 @@
 
 .. _process_description:
 
-Process
-=======
+Process description
+===================
 
-Processes are the basis to describe the way of working within the S-CORE project.
+Processes are the basis to describe the way of working within a project.
 
 Introduction
 ------------
@@ -31,20 +31,20 @@ Introduction
 
 Process Model
 -------------
-The S-CORE process model is described by workflows, executed by roles and is creating work products.
+The project process model is described by workflows, executed by roles and is creating work products.
 Workflow activities are supported by guidances.
 
 .. figure:: _assets/score_process_area_overview.drawio.svg
   :width: 100%
   :align: center
-  :alt: Process area overview for **S-CORE** platform
+  :alt: Process area overview for the **Project**
 
-  Process area overview for **S-CORE** platform
+  Process area overview for **Project**
 
 General Concepts
 ~~~~~~~~~~~~~~~~
 
-General concepts like traceability of work products, life cycle model, buidling blocks can be found here:
+General concepts like traceability of work products, life cycle model, building blocks can be found here:
 
 .. toctree::
    :maxdepth: 1
@@ -54,7 +54,7 @@ General concepts like traceability of work products, life cycle model, buidling 
 Process Areas
 ~~~~~~~~~~~~~
 
-The process description for the S-CORE project (e.g. requirements, architecture, safety management) can be found here:
+The process description for the project (e.g. requirements, architecture, safety management) can be found here:
 
 .. toctree::
    :maxdepth: 1
@@ -64,6 +64,8 @@ The process description for the S-CORE project (e.g. requirements, architecture,
 Process Role definition
 ~~~~~~~~~~~~~~~~~~~~~~~
 
+General roles not part of any process area.
+
 .. toctree::
    :maxdepth: 1
 
@@ -71,6 +73,8 @@ Process Role definition
 
 Work Products
 ~~~~~~~~~~~~~
+
+General work products not part of any process area and work product overview list.
 
 .. toctree::
    :maxdepth: 1
@@ -80,6 +84,8 @@ Work Products
 Workflows
 ~~~~~~~~~
 
+General workflows not part of any process area and workflow overview list.
+
 .. toctree::
    :maxdepth: 1
 
@@ -88,7 +94,7 @@ Workflows
 Standards
 ---------
 
-The the standard references the S-CORE project's processes are derived from can be found here:
+The the standard references the project's processes are derived from can be found here:
 
 .. toctree::
    :maxdepth: 1

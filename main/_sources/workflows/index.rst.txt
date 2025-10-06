@@ -15,12 +15,7 @@
 Workflows
 =========
 
-.. toctree::
-   :maxdepth: 1
-   :caption: Contents:
-
-   process_management
-
+There are no general workflows.
 
 Project Workflow list
 ---------------------
