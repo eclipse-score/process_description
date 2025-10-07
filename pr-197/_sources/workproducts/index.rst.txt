@@ -70,7 +70,7 @@ Platform development
    :status: valid
    :complies: std_wp__iso26262__software_651
 
-   SW Safety Requirements for the user of the platform, exportable requirements for the user to integrate in their req mgt system.
+   SW Safety Requirements for the user of the platform, exportable requirements for the user to integrate in their requirements management system.
 
 
 .. workproduct:: Platform Build Configuration
