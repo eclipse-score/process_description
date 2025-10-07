@@ -31,19 +31,21 @@ General
    :complies: std_wp__iso26262__management_551
 
    In general the project follows the Eclipse Foundation Development Process (EDP,
-   `https://www.eclipse.org/projects/dev_process/`). The EDP defines important concepts,
-   including the Open Source Rules of Engagement, the organizational framework for open
-   source projects and teams, releases, reviews, and more.
+   `Eclipse Foundation Development Process <https://www.eclipse.org/projects/dev_process/>`_).
+   The EDP defines important concepts, including the Open Source Rules of Engagement,
+   the organizational framework for open source projects and teams, releases, reviews,
+   and more.
 
    Further the Eclipse Foundation Security Policy
-   (`https://www.eclipse.org/security/policy/`) applies.
+   (`Eclipse Foundation Security Policy <https://www.eclipse.org/security/policy/>`_)
+   applies.
 
    The Eclipse Foundation Functional Safety Process (EFFSP, currently in DRAFT
-   `https://gitlab.eclipse.org/eclipsefdn/emo-team/policies/functional-safety-process/-/blob/main/source/fsp.adoc?ref_type=heads`)
+   `Eclipse Foundation Functional Safety Process <https://gitlab.eclipse.org/eclipsefdn/emo-team/policies/functional-safety-process/-/blob/main/source/fsp.adoc?ref_type=heads>`_)
    applies.
 
    Concerning the use of Generative Artificial Intelligence
-   `https://www.eclipse.org/projects/guidelines/genai/` applies.
+   `Usage Guidelines <https://www.eclipse.org/projects/guidelines/genai/>`_ applies.
 
    Project specific Policies for functional safety and cybersecurity may extend the
    ones from ECLIPSE.
@@ -62,6 +64,14 @@ Product development
 
 Platform development
 ^^^^^^^^^^^^^^^^^^^^
+
+.. workproduct:: SW-Platform Assumptions of Use
+   :id: wp__platform_sw_aou
+   :status: valid
+   :complies: std_wp__iso26262__software_651
+
+   SW Safety Requirements for the user of the platform, exportable requirements for the user to integrate in their requirements management system.
+
 
 .. workproduct:: Platform Build Configuration
    :id: wp__platform_sw_build_config

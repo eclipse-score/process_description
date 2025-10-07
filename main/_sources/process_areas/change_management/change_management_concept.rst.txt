@@ -94,6 +94,9 @@ In case safety or security is affected, in addition the impact analysis template
 : :ref:`Impact Analysis Template <chm_impact_analysis_templates>` can be used to detail
 out the impact on safety/security.
 
+The impact analysis tool (:need:`gd_req__change_tool_impact_analysis`) can support to
+here to identify the affected work products.
+
 .. _chm_analysis:
 
 Analysis of the Change Request
