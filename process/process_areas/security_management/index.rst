@@ -18,12 +18,7 @@ Security Management
 ###################
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 3
 
 
-   security_management_getstrt
-   security_management_concept
-   guidance/index
-   security_management_roles
-   security_management_workflow
-   security_management_workproducts
+   SMP
