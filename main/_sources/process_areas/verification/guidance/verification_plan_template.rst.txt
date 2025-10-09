@@ -20,7 +20,7 @@ Verification Plan Template
 .. gd_temp:: Platform Verification Plan Template
     :id: gd_temp__verification_plan
     :status: valid
-    :complies: std_wp__iso26262__support_951, std_wp__iso26262__support_1252
+    :complies: std_req__iso26262__support_9411, std_req__iso26262__support_9412, std_req__iso26262__support_12422, std_req__iso26262__support_12423, std_req__iso26262__support_12424, std_req__iso26262__support_12425
 
     This document implements :need:`wp__verification_plan`.
 

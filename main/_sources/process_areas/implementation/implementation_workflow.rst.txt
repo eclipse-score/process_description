@@ -54,7 +54,8 @@ Workflow Implementation
    :approved_by: rl__committer
    :input: wp__sw_implementation, wp__sw_development_plan
    :output: wp__issue_track_system, wp__sw_implementation_inspection, wp__verification_module_ver_report
-   :contains: gd_chklst__impl_inspection_checklist, doc_getstrt__imp_getstrt
+   :contains: gd_chklst__impl_inspection_checklist
+   :has: doc_concept__imp_concept, doc_getstrt__imp_getstrt
 
    The Implementation Verification of the Detailed Design and Code consists of the following topics
      - Detailed Design and Code Inspection

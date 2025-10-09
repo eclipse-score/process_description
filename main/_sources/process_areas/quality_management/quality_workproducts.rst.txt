@@ -19,7 +19,7 @@ Workproducts
    :id: wp__qms_plan
    :status: valid
    :tags: quality_management
-   :complies: std_wp__iso26262__management_553, std_req__iso26262__management_5423
+   :complies: std_wp__iso26262__management_553, std_req__aspice_40__iic-18-07, std_req__aspice_40__iic-18-52
 
    | Quality Management Plan to define the quality aspects like:
    | * Quality strategy

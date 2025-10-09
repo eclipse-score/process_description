@@ -20,7 +20,7 @@ DFA failure initiators
 .. gd_guidl:: DFA failure initiators
   :id: gd_guidl__dfa_failure_initiators
   :status: valid
-  :complies: std_wp__iso26262__software_751, std_wp__iso26262__software_753
+  :complies: std_req__iso26262__software_7411
 
 
 .. note:: Use all applicable failure initiators to ensure a structured analysis. If there are additional failure initiators needed, please enlarge the list of fault models.
