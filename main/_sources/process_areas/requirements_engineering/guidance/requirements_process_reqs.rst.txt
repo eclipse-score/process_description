@@ -149,6 +149,12 @@ Process Requirement Attributes
    Stakeholder and feature requirements can have a validity attribute that tells
    from which milestone onwards the requirement is part of a feature.
 
+   This validity attribute is defined as including the defined milestone.
+
+   Milestone shall be valid release version tag, e.g. v1.0.2 as defined in
+   Platform Release Note Template: :need:`gd_temp__rel_plat_rel_note`. Thus the
+   corresponding requirement is valid from the defined milestone, including it.
+
 .. gd_req:: Requirement attribute: valid_until
    :id: gd_req__req_attr_valid_until
    :status: valid
@@ -157,6 +163,12 @@ Process Requirement Attributes
 
    Stakeholder and feature requirements can have a validity attribute that tells
    until which milestone the requirement is part of a feature.
+
+   This validity attribute is defined as excluding the defined milestone.
+
+   Milestone shall be valid release version tag, e.g. v1.0.2 as defined in
+   Platform Release Note Template: :need:`gd_temp__rel_plat_rel_note`. Thus the
+   corresponding requirement is only valid until the defined milestone, excluding it.
 
 .. _process_requirement_linkage:
 
