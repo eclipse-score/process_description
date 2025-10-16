@@ -183,6 +183,11 @@ Following attributes need to be filled manually for each requirement:
    * - Requirements Type
      - The requirement type defines which category the requirement relates to. Following categories are defined: [Functional, Interface, Process, Non-Functional]
 
+       - Functional: If implemented can be verified by a test (unit, integration)
+       - Interface: Does not define a functionality but the API provided to use the functionality
+       - Process: If implemented can be verified by reviewing the process description (sub-type of non-functional)
+       - Non-Functional: If implemented can be checked by review/analysis (of e.g. code, documentation)
+
        Note that the linking to the requirements is affected by these types, see :need:`gd_req__req_linkage_architecture`
 
 Following attributes are automatically generated:
