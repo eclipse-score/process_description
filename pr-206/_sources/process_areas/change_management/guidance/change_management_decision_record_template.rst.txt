@@ -41,6 +41,42 @@ In each DR file, include the following sections:
       Decision: <Your text>
       Consequences: <Your text>
 
+      or use the the provided template below (if not marked as optional, it is mandatory content):
+
+      <Decision>
+
+      Context
+      -------
+      <your text, diagrams, etc>
+
+      Consequences
+      ------------
+      <your text, diagrams, etc>
+
+      (optional)
+      [
+      Alternatives Considered
+      -----------------------
+
+      <Alternative A>
+      ^^^^^^^^^^^^^^^
+      <description of the alternative>
+
+      Advantages
+      """"""""""
+      *  **<Advantage 1>:** <Explanation>
+      *  **<Advantage 2>:** <Explanation>
+
+      Disadvantages
+      """""""""""""
+      *  **<Disadvantage 1>:** <Explanation>
+      *  **<Disadvantage 2>:** <Explanation>
+      ]
+
+      Justification for the Decision
+      ------------------------------
+      <your text>
+
 .. attention::
     The above directive must be updated according to your decision record.
 
