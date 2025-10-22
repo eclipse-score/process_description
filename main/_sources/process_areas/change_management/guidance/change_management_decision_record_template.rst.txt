@@ -34,17 +34,57 @@ In each DR file, include the following sections:
       :id: dec_rec__<Platform|Feature|Component>__<Title>
       :status: <proposed|accepted|deprecated|rejected|superseded>
       :affects: <link>
-      :context: <Your text>
-      :decision: <Your text>
-      :consequences: <Your text>
+
+      <Description>
+      Descriptions shall contain at least the following sections:
+      Context: <Your text>
+      Decision: <Your text>
+      Consequences: <Your text>
+
+      or use the the provided template below (if not marked as optional, it is mandatory content):
+
+      <Decision>
+
+      Context
+      -------
+      <your text, diagrams, etc>
+
+      Consequences
+      ------------
+      <your text, diagrams, etc>
+
+      (optional)
+      [
+      Alternatives Considered
+      -----------------------
+
+      <Alternative A>
+      ^^^^^^^^^^^^^^^
+      <description of the alternative>
+
+      Advantages
+      """"""""""
+      *  **<Advantage 1>:** <Explanation>
+      *  **<Advantage 2>:** <Explanation>
+
+      Disadvantages
+      """""""""""""
+      *  **<Disadvantage 1>:** <Explanation>
+      *  **<Disadvantage 2>:** <Explanation>
+      ]
+
+      Justification for the Decision
+      ------------------------------
+      <your text>
 
 .. attention::
     The above directive must be updated according to your decision record.
 
-    - Modify ``dec_rec`` to provide a descriptive and concise title. Summarizing the decision. (manadatory)
-    - Modify ``id`` to contain the Platform/Feature/Component name the DR belongs to and the title, in upper snake case preceded by ``dec_rec__`` (manadatory)
-    - Adjust ``status`` according to your needs (manadatory)
+    - Modify ``dec_rec`` to provide a descriptive and concise title. Summarizing the decision. (mandatory)
+    - Modify ``id`` to contain the Platform/Feature/Component name the DR belongs to and the title, in upper snake case preceded by ``dec_rec__`` (mandatory)
+    - Adjust ``status`` according to your needs (mandatory)
     - Modify ``affects`` to point to the work product it affects, mostly this will be architecture or design (recommended)
-    - Modify ``context`` to describe the issue or motivation behind this decision or change (manadatory)
-    - Modify ``decision`` to detail the proposed change or decision (manadatory)
-    - Modify ``consequences`` to explain the impact of this change, including what becomes easier or more difficult (recommended)
+    - Provide ``Description`` (mandatory)
+    - Add ``Context`` to describe the issue or motivation behind this decision or change (mandatory)
+    - Add ``decision`` to detail the proposed change or decision (mandatory)
+    - Add ``consequences`` to explain the impact of this change, including what becomes easier or more difficult (recommended)
