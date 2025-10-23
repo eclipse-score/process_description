@@ -20,7 +20,7 @@ Workproducts Requirements Engineering
    :status: valid
    :complies: std_wp__iso26262__system_651
 
-   Technical requirements from a stakeholder viewpoint and assumptions of use based on the integration as SW platform SEooC in an assumed context.
+   Technical requirements from a stakeholder viewpoint on SW-platform level, contain "assumed Technical Safety Requirements" in SW-Platform SEooC development.
 
 .. workproduct:: Feature Requirements
    :id: wp__requirements_feat
@@ -35,6 +35,13 @@ Workproducts Requirements Engineering
    :complies: std_wp__iso26262__software_651, std_wp__isopas8926__4521, std_wp__iso26262__analysis_651, std_wp__iso26262__software_app_c_51
 
    SW Requirements for components, broken down from feature requirements to the realizing component. These include configuration specification.
+
+.. workproduct:: SW-Platform Assumptions of Use
+   :id: wp__requirements_sw_platform_aou
+   :status: valid
+   :complies: std_wp__iso26262__software_651
+
+   SW Safety Requirements for the user of the platform, exportable requirements for the user to integrate in their requirements management system.
 
 .. workproduct:: Feature Assumptions of Use
    :id: wp__requirements_feat_aou

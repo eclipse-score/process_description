@@ -133,7 +133,7 @@ The lowest abstraction level is represented by the *component requirements*. The
 Assumption of Use Requirements
 ==============================
 
-Last but not least a requirement type is needed which describes e.g. the boundary conditions which need to be fulfilled when using a software module. Those requirements are called *Assumption of Use* (AoUs)
+Last but not least a requirement type is needed which describes e.g. the boundary conditions which need to be fulfilled when using a software element. Those requirements are called *Assumption of Use* (AoUs) and can be defined on every level (stakeholder/SW-platform, feature, component).
 
 .. code-block:: text
 

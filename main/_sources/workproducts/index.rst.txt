@@ -65,14 +65,6 @@ Product development
 Platform development
 ^^^^^^^^^^^^^^^^^^^^
 
-.. workproduct:: SW-Platform Assumptions of Use
-   :id: wp__platform_sw_aou
-   :status: valid
-   :complies: std_wp__iso26262__software_651
-
-   SW Safety Requirements for the user of the platform, exportable requirements for the user to integrate in their requirements management system.
-
-
 .. workproduct:: Platform Build Configuration
    :id: wp__platform_sw_build_config
    :status: draft

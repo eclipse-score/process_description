@@ -16,7 +16,7 @@
 Workflow Requirements Engineering
 #################################
 
-.. workflow:: Create/Maintain Stakeholder requirements
+.. workflow:: Create/Maintain Stakeholder requirements and SW-Platform AoU
    :id: wf__req_stkh_req
    :status: valid
    :tags: requirements_engineering
@@ -24,11 +24,12 @@ Workflow Requirements Engineering
    :approved_by: rl__technical_lead
    :supported_by: rl__safety_manager
    :input: wp__policies, wp__issue_track_system
-   :output: wp__requirements_stkh
+   :output: wp__requirements_stkh, wp__requirements_sw_platform_aou
    :contains: gd_temp__req_stkh_req, gd_temp__req_formulation
    :has: doc_concept__req_process, doc_getstrt__req_process
 
-   Stakeholder requirements can be created during a change request. Any contributor can create a stakeholder requirement and propose it for approval.
+   Stakeholder requirements and SW-Platform Assumptions of Use (AoU) can be created during a change request.
+   Any contributor can create a stakeholder requirement (or AoU) and propose it for approval.
 
 .. workflow:: Create/Maintain Feature requirements
    :id: wf__req_feat_req
