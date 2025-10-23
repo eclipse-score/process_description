@@ -47,7 +47,7 @@ Guideline Quality Management Plan
    | Tailoring is done for the whole SW platform by defining only the relevant processes and their resulting outcomes and an argumentation why the others are not needed in `ASPICE 4.0 <https://eclipse-score.github.io/process_description/main/standards/aspice_40/aspice.html>`_.
    |
    | **Planning quality activities:**
-   | In the Quality Management Plan the nomination of the quality manager :need:`rl__quality_manager` and the project lead :need:`rl__project_lead` is documented.
+   | In the Quality Management Plan the nomination of the :need:`rl__quality_manager` and the :need:`rl__project_lead` is documented.
    | The planning of quality activities is done using issues in the :need:`wp__issue_track_system` as specified in the Project Management part of the Project Management Plan.
    | It contains for each issue
    | * objective - as part of the issue description

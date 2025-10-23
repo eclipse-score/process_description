@@ -84,7 +84,7 @@ Project Management plan review checklist template
         * - PJP_00_01
           - Are the purpose and goals of the project defined (including references to related projects, if existing)?
           -
-          -
+          - The purpose and goals should be clearly stated.
           -
         * - PJP_00_02
           - Is the scope of the project defined?
@@ -94,7 +94,7 @@ Project Management plan review checklist template
         * - PJP_00_04
           - Is the project life-cycle defined?
           -
-          -
+          - The project life-cycle shall match to the purpose and goals of the project.
           -
         * - PJP_00_05
           - Are major project metrics to track the progress described?
@@ -110,7 +110,7 @@ Project Management plan review checklist template
         * - PJP_01_02
           - Are skill needs and planned trainings documented/referenced?
           -
-          -
+          - Check training plan and issue tracking system for related issues.
           -
         * - PJP_02_01
           - Are the project milestones described/referenced? (And are they feasible?)
@@ -135,17 +135,17 @@ Project Management plan review checklist template
         * - PJP_02_05
           - Is the technical infrastructure and resources needed described?
           -
-          -
+          - Check if technical infrastructure and resources match to the project needs.
           -
         * - PJP_03_01
           - Are communication interfaces between all involved parties defined (who communicates, what, in which intervals, over which channels, internal vs. Customer communication)?
           -
-          -
+          - Check if communication interfaces are defined and followed.
           -
         * - PJP_04_01
-          - Have the reports for the project being defined? (Including required content, maintenance schedule etc.)
+          - Have the reports for the project being defined? (Including required content, maintenance schedule etc.).
           -
-          -
+          - Check if reports are defined and available.
           -
 
 
@@ -171,7 +171,7 @@ Security Management plan review checklist template
 
         * - Review Id
           - Link to checklist
-        * - SafMP_00_01
+        * - SecMP_00_01
           - :need:`gd_chklst__security_plan`
 
 
@@ -193,69 +193,69 @@ Quality Management plan review checklist template
           - Are the quality objectives and scope aligned with the project’s standards and stakeholder requirements?
           -
         * - QMP_00_02
-          - Are all work products in the process area of quality management defined?
+          - Are work product quality goals defined?
           -
-          -
+          - Check the definition and also if they are reachable.
           -
         * - QMP_00_03
           - Are roles and responsibilities in the process area of quality management defined?
           -
-          -
+          - Check if all needed roles are assigned to team members.
           -
         * - QMP_01_01
           - Are quality goals and metrics for in the project specified, tracked and are they suitable for process improvement?
           -
-          -
+          - Check if the defined metrics are measurable and suitable for process improvement. Check if there is a tracking done in the issue tracking system.
           -
         * - QMP_01_02
           - Do all quality metrics have an acceptance criteria specified?
           -
-          -
+          - Check if acceptance criteria are defined for all quality metrics.
           -
         * - QMP_01_03
           - Is quality reporting described including cadence, relevant parties and documentation?
           -
-          -
+          - Check if the quality reporting is following the defined cadence and if all relevant parties are involved.
           -
         * - QMP_02_01
           - Are the quality milestones described or referenced in a quality Schedule, and are they feasible?
           -
-          -
+          - Check the planning boards in the issue tracking system.
           -
         * - QMP_03_01
           - Is the approach of conducting work product reviews defined and appropriate?
           -
-          -
+          - Check if the work product reviews are following the defined process and if all relevant parties are involved.
           -
         * - QMP_03_02
           - Is the approach of conducting process audits defined and appropriate?
           -
-          -
+          - Check if the process audits are following the defined process and if all relevant parties are involved.
           -
         * - QMP_04_01
           - Is the process of handling problems and/or non-conformances defined?
           -
-          -
+          - Check if there is a defined process for handling problems and non-conformances. Check if there are related issues in the issue tracking system.
           -
         * - QMP_04_02
           - Is there a specification on how to ensure the resolution of process non-conformances?
           -
-          -
+          - Check if there are defined actions for resolving non-conformances and if they are tracked in the issue tracking system.
           -
         * - QMP_04_03
           - Is there a specification on how to escalate process non-conformances in situations where goals of quality management conflict with those of other process areas?
           -
-          -
+          - Check if there is a defined escalation process for non-conformances.
           -
         * - QMP_04_04
           - Do the described mechanisms show that quality assurance has the independence and authority to escalate problems to appropriate levels of management?
           -
-          -
+          - Check if the quality assurance has the independence and authority to escalate problems. This should be ensured by the project set up.
           -
         * - QMP_05_01
           - Are process improvement activities planned, monitored, and documented?
           -
-          -
+          - Check if there are planned process improvement activities and if they are tracked in the issue tracking system. Check if they are up to date and planned in a realistic way.
           -
 
 
@@ -274,32 +274,32 @@ Configuration Management plan review checklist template
         * - CMP_00_01
           - Are the objectives and scope defined?
           -
-          -
+          - Check if the objectives and scope are clearly defined and understood by all relevant parties.
           -
         * - CMP_00_02
           - Is the project lifecycle according to the configuration management plan?
           -
-          -
+          - Check if the project lifecycle is followed as defined in the configuration management plan.
           -
         * - CMP_00_03
           - Are retrievals(s) described?
           -
-          -
+          - Check if the retrieval processes are clearly described and followed.
           -
         * - CMP_00_04
           - Are the branches and baselines described?
           -
-          -
+          - Check if the branching and baseline strategies are clearly defined and followed.
           -
         * - CMP_00_05
           - Is the backup and recovery for the project described?
           -
-          -
+          - Check if the backup and recovery procedures are clearly described and followed.
           -
         * - CMP_00_06
           - Is the configuration management tooling (inclusive tool names and CI build tools) described?
           -
-          -
+          - Check if the configuration management tools are clearly described and used as defined.
           -
 
 
@@ -312,7 +312,7 @@ Tool Management plan review checklist template
 
         * - Review Id
           - Link to checklist
-        * - SafMP_00_01
+        * - TMP_00_01
           - :need:`gd_chklst__tool_cr_review`
 
 
@@ -331,7 +331,7 @@ Release Management plan review checklist template
         * - RMP_00_01
           - Are release notes available for every release?
           -
-          -
+          - Check if release notes are created for every release. Check if the template is used and the content is complete.
           -
 
 
@@ -344,7 +344,7 @@ Problem Resolution plan review checklist template
 
         * - Review Id
           - Link to checklist
-        * - SafMP_00_01
+        * - PMMP_00_01
           - :need:`gd_chklst__problem_cr_review`
 
 
@@ -357,12 +357,12 @@ Change Management plan review checklist template
 
         * - Review Id
           - Link to checklist
-        * - SafMP_00_01
+        * - CMP_00_01
           - :need:`gd_chklst__change_cr_review`
 
 
-Release Management plan review checklist template
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Software Verification plan review checklist template
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. list-table:: Software verification review checklist template
         :header-rows: 1
@@ -376,32 +376,32 @@ Release Management plan review checklist template
         * - SWV_00_01
           - Are the objectives and scope defined?
           -
-          -
+          - Check if the objectives and scope are clearly defined and understood by all relevant parties.
           -
         * - SWV_00_02
           - Are the verification methods documented and up to date?
           -
-          -
+          - Check if the verification methods are clearly described and followed.
           -
         * - SWV_00_03
           - Are the test derivation methods documented and up to date?
           -
-          -
+          - Check if the test derivation methods are clearly described and followed.
           -
         * - SWV_00_04
           - Are the software quality criteria defined and documented?
           -
-          -
+          - Check if the software quality criteria are clearly defined and understood by all relevant parties. Have a look on the reports to verify if the criteria are fulfilled.
           -
         * - SWV_00_05
           - Are all used tools described?
           -
-          -
+          - Check if all tools used for software verification are clearly described and used as defined. Are additional tools used that are not described?
           -
         * - SWV_00_06
           - Are verification setups and variants described, documented and up to date?
           -
-          -
+          - Check if the verification setups and variants are clearly described and followed.
           -
 
 
@@ -414,7 +414,7 @@ Documentation Management plan review checklist template
 
         * - Review Id
           - Link to checklist
-        * - SafMP_00_01
+        * - DMP_00_01
           - :need:`gd_chklst__documentation_review`
 
 
@@ -430,28 +430,28 @@ Software Development Plan review checklist template
           - passed [yes | no]
           - Remarks
           - Issue link
-        * - SWV_00_01
+        * - SDP_00_01
           - Are the objectives and scope defined?
           -
+          - Check if the objectives and scope are clearly defined and understood by all relevant parties.
           -
-          -
-        * - SWV_00_02
+        * - SDP_00_02
           - Are the design and programming languages defined?
           -
+          - Check if the design and programming languages are clearly defined and suitable for the project.
           -
-          -
-        * - SWV_00_03
+        * - SDP_00_03
           - Are coding guidelines available, documented and up to date?
           -
+          - Check if coding guidelines are followed and if they are up to date.
           -
-          -
-        * - SWV_00_04
+        * - SDP_00_04
           - Is a software configuration guideline available, documented and up to date?
           -
+          - Check if the software configuration guideline is followed and if deviations have an approved argumentation by the CODEOWNER.
           -
-          -
-        * - SWV_00_05
+        * - SDP_00_05
           - Are all SW development tools described?
           -
-          -
+          - Check if all tools used for software development are clearly described. If possible check if they are used as defined.
           -
