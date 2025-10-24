@@ -198,15 +198,15 @@ Component <name> Work products List
           - n/a
 
         * - :need:`wp__sw_component_fmea`
-          - <Link to process>
-          - <automated>
+          - :need:`gd_temp__comp_saf_fmea`
+          - :ndf:`copy('status', need_id='gd_temp__comp_saf_fmea')`
           - <Link to issue>
           - :need:`doc__component_name_fmea`
           - doc :ndf:`copy('status', need_id='doc__component_name_fmea')` & WP below
 
         * - :need:`wp__sw_component_dfa`
-          - <Link to process>
-          - <automated>
+          - :need:`gd_temp__comp_saf_dfa`
+          - :ndf:`copy('status', need_id='gd_temp__comp_saf_dfa')`
           - <Link to issue>
           - :need:`doc__component_name_dfa`
           - doc :ndf:`copy('status', need_id='doc__component_name_dfa')` & WP below
