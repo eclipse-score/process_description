@@ -71,15 +71,15 @@ Feature Safety Planning
       - doc :ndf:`copy('status', need_id='doc__feature_name_architecture')` & WP below
 
     * - :need:`wp__feature_fmea`
-      - <link to process>
-      - <automated>
+      - :need:`gd_temp__feat_saf_fmea`
+      - :ndf:`copy('status', need_id='gd_temp__feat_saf_fmea')`
       - <link to issue>
       - :need:`doc__feature_name_fmea`
       - doc :ndf:`copy('status', need_id='doc__feature_name_fmea')` & WP below
 
     * - :need:`wp__feature_dfa`
-      - <Link to process>
-      - <Process status>
+      - :need:`gd_temp__plat_saf_dfa`
+      - :ndf:`copy('status', need_id='gd_temp__plat_saf_dfa')`
       - <Link to issue>
       - :need:`doc__feature_name_dfa`
       - doc :ndf:`copy('status', need_id='doc__feature_name_dfa')` & WP below
