@@ -35,29 +35,27 @@ Stakeholders for the Quality Management
 =======================================
 
 #. :need:`Quality Manager <rl__quality_manager>`
-   * Creating/maintain Quality Management Plan
-   * Verify/approve Platform release
-   * Execute Platform Process Audit
-   * Execute Feature Contribution Conformance Checks
-   * Execute Work Product Reviews
-   * Consult and execute Quality Trainings
-   * Monitoring/improving of Quality activities
-
-#. :need:`Technical Lead <rl__technical_lead>`
-    * Support the work products
-    * Approval of Quality Management Plan, Platform Process Audit, Feature Process Conformance Checks, Work Product Reviews, Consult and Execute Quality Trainings, Monitor/Improve Quality Activities
+     * Creating/maintain Quality Management Plan
+     * Verify/approve Platform release
+     * Execute Platform Process Audit
+     * Execute Feature Contribution Conformance Checks
+     * Execute Work Product Reviews
+     * Consult and execute Quality Trainings
+     * Monitoring/improving of Quality activities
 
 #. :need:`Project Lead <rl__project_lead>`
-    * Approval of Platform Release
+     * Approval of Platform Release
+     * Support the work products
+     * Approval of Quality Management Plan, Platform Process Audit, Feature Process Conformance Checks, Work Product Reviews, Consult and Execute Quality Trainings, Monitor/Improve Quality Activities
 
 #. :need:`Committer <rl__committer>`
-    * Support the Work Product Reviews
+     * Support the Work Product Reviews
 
 #. :need:`Safety Manager <rl__safety_manager>`
-    * Supports the quality activities
+     * Supports the quality activities
 
 #. :need:`Security Manager <rl__security_manager>`
-    * Supports the quality activities
+     * Supports the quality activities
 
 Standard Requirements
 =====================
@@ -80,5 +78,5 @@ or in a continuous manner. Only 100% compliant work products / releases will be 
 
 Every person who contributes shall be trained according to Quality aspects. The committers will help to ensure the Quality
 by following the workflows which are defined in the different process areas. The Quality Manager is responsible for the
-Quality related workflows. The Quality Manager shall be independent from the development organisation with a escalation
+Quality related workflows. The Quality Manager shall be independent from the development organization with a escalation
 to the Project Lead Circle and the Technical Lead Circle.

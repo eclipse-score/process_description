@@ -51,14 +51,6 @@ General
    ones from ECLIPSE.
 
 
-.. workproduct:: Training path
-   :id: wp__training_path
-   :status: draft
-   :tags: safety
-   :complies: std_wp__iso26262__management_552
-
-   Trainings for safety and security for the project
-
 Product development
 -------------------
 
