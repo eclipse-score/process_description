@@ -174,6 +174,7 @@ Footnotes
    :hidden:
 
    requirements/index.rst
+   requirements/chklst_req_inspection.rst
    architecture/index.rst
    detailed_design/index.rst
    safety_analysis/fmea.rst
