@@ -34,6 +34,7 @@ In each DR file, include the following sections:
       :id: dec_rec__<Platform|Feature|Component>__<Title>
       :status: <proposed|accepted|deprecated|rejected|superseded>
       :affects: <link>
+      :date: <YYYY-MM-DD>
 
       <Description>
       Descriptions shall contain at least the following sections:
@@ -83,6 +84,7 @@ In each DR file, include the following sections:
     - Modify ``dec_rec`` to provide a descriptive and concise title. Summarizing the decision. (mandatory)
     - Modify ``id`` to contain the Platform/Feature/Component name the DR belongs to and the title, in upper snake case preceded by ``dec_rec__`` (mandatory)
     - Adjust ``status`` according to your needs (mandatory)
+    - Modify ``date`` to reflect the date of the last status change (mandatory)
     - Modify ``affects`` to point to the work product it affects, mostly this will be architecture or design (recommended)
     - Provide ``Description`` (mandatory)
     - Add ``Context`` to describe the issue or motivation behind this decision or change (mandatory)
