@@ -205,8 +205,9 @@ Following roles should be included in the review:
 Workflow for Creating and Linking Assumption of Use (AoU)
 =========================================================
 
-An AoU is a category of requirement which is originates from a safety concept of an architectural element (and thus it is confirmed by a safety analysis).
-As it can not be fulfilled by the architecture element (e.g. component) itself, it needs to be fulfilled by the user of the module.
+An AoU is a category of requirement which originates from a safety concept of an architectural element (and thus it is confirmed by a safety analysis).
+This is different for AoU created on SW-platform level, these are also coming from the scope of the project (i.e. the knowledge which safety activities are not part of a project).
+As it can not be fulfilled by the architecture element (e.g. component) itself, it needs to be fulfilled by the user of the element.
 In Safety Elements out of Context (SEooC) the AoUs will normally be part of the safety manual.
 In this process description (as it describes SEooC development) these AoUs are created both internally and externally - the latter if existing SEooCs are integrated into the platform (e.g. a qualified Operating System).
 For AoU which arise internally (i.e. from project specific modules) the template is almost identical to the one for feature/component requirements. The only difference is that it is defined such that the attribute "satisfies" is replaced with the attribute "mitigates" (see picture below).

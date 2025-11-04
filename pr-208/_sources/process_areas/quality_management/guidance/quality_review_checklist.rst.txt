@@ -351,13 +351,13 @@ Problem Resolution plan review checklist template
 Change Management plan review checklist template
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. list-table:: Release Management plan review checklist template
+.. list-table:: Change Management plan review checklist template
         :header-rows: 1
         :widths: 10,90
 
         * - Review Id
           - Link to checklist
-        * - CMP_00_01
+        * - ChMP_00_01
           - :need:`gd_chklst__change_cr_review`
 
 

@@ -59,7 +59,7 @@ Templates
    .. code-block:: rst
 
       .. comp_req:: <Title>
-         :id: comp_req__<Component>__<Title>
+         :id: comp_req__<platform|Feature|Component>__<Title>
          :reqtype: <Functional|Interface|Process|Non-Functional>
          :security: <YES|NO>
          :safety: <QM|ASIL_B>

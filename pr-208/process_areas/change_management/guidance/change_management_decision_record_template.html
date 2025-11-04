@@ -561,7 +561,7 @@
                   
   <section id="decision-record-template">
 <span id="id1"></span><h1>Decision Record Template<a class="headerlink" href="#decision-record-template" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-aad1fc15">
+<div class="need_container docutils container" id="SNCB-2d2618d4">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_temp table" id="gd_temp__change_decision_record">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -582,7 +582,8 @@
 <tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
 <div class="line"><span><span><div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">change_management</span></span></span></div>
 </span></span></div>
-<div class="line"><span><div class="line">complies: <span class="complies"><span><a class="reference internal" href="../../../standards/aspice_40/swe/swe.2.html#std_req__aspice_40__SWE-2-BP3" title="gd_temp__change_decision_record">std_req__aspice_40__SWE-2-BP3</a></span></span></div>
+<div class="line"><span><div class="line">contained by: <span class="contains"><span><a class="reference internal" href="../change_management_workflow.html#wf__change_create_cr" title="gd_temp__change_decision_record">wf__change_create_cr</a>, <a class="reference internal" href="../change_management_workflow.html#wf__change_analyze_cr" title="gd_temp__change_decision_record">wf__change_analyze_cr</a>, <a class="reference internal" href="../change_management_workflow.html#wf__change_implement_monitor_cr" title="gd_temp__change_decision_record">wf__change_implement_monitor_cr</a>, <a class="reference internal" href="../change_management_workflow.html#wf__change_close_cr" title="gd_temp__change_decision_record">wf__change_close_cr</a></span></span></div>
+<div class="line">complies: <span class="complies"><span><a class="reference internal" href="../../../standards/aspice_40/swe/swe.2.html#std_req__aspice_40__SWE-2-BP3" title="gd_temp__change_decision_record">std_req__aspice_40__SWE-2-BP3</a></span></span></div>
 </span></div>
 </div>
 </td>
@@ -611,22 +612,62 @@
    <span class="nc">:id:</span> dec_rec__&lt;Platform|Feature|Component&gt;__&lt;Title&gt;
    <span class="nc">:status:</span> <span class="nt">&lt;proposed|accepted|deprecated|rejected|superseded&gt;</span>
    <span class="nc">:affects:</span> <span class="nt">&lt;link&gt;</span>
-   <span class="nc">:context:</span> <span class="nt">&lt;Your text&gt;</span>
-   <span class="nc">:decision:</span> <span class="nt">&lt;Your text&gt;</span>
-   <span class="nc">:consequences:</span> <span class="nt">&lt;Your text&gt;</span>
+
+   &lt;Description&gt;
+   Descriptions shall contain at least the following sections:
+   Context: &lt;Your text&gt;
+   Decision: &lt;Your text&gt;
+   Consequences: &lt;Your text&gt;
+
+   or use the the provided template below (if not marked as optional, it is mandatory content):
+
+   &lt;Decision&gt;
+
+   Context
+   -------
+   &lt;your text, diagrams, etc&gt;
+
+   Consequences
+   ------------
+   &lt;your text, diagrams, etc&gt;
+
+   (optional)
+   [
+   Alternatives Considered
+   -----------------------
+
+   &lt;Alternative A&gt;
+   ^^^^^^^^^^^^^^^
+   &lt;description of the alternative&gt;
+
+   Advantages
+   &quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;
+   <span class="m">*</span>  <span class="gs">**&lt;Advantage 1&gt;:**</span> &lt;Explanation&gt;
+   <span class="m">*</span>  <span class="gs">**&lt;Advantage 2&gt;:**</span> &lt;Explanation&gt;
+
+   Disadvantages
+   &quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;
+   <span class="m">*</span>  <span class="gs">**&lt;Disadvantage 1&gt;:**</span> &lt;Explanation&gt;
+   <span class="m">*</span>  <span class="gs">**&lt;Disadvantage 2&gt;:**</span> &lt;Explanation&gt;
+   ]
+
+   Justification for the Decision
+   ------------------------------
+   &lt;your text&gt;
 </pre></div>
 </div>
 <div class="admonition attention">
 <p class="admonition-title">Attention</p>
 <p>The above directive must be updated according to your decision record.</p>
 <ul class="simple">
-<li><p>Modify <code class="docutils literal notranslate"><span class="pre">dec_rec</span></code> to provide a descriptive and concise title. Summarizing the decision. (manadatory)</p></li>
-<li><p>Modify <code class="docutils literal notranslate"><span class="pre">id</span></code> to contain the Platform/Feature/Component name the DR belongs to and the title, in upper snake case preceded by <code class="docutils literal notranslate"><span class="pre">dec_rec__</span></code> (manadatory)</p></li>
-<li><p>Adjust <code class="docutils literal notranslate"><span class="pre">status</span></code> according to your needs (manadatory)</p></li>
+<li><p>Modify <code class="docutils literal notranslate"><span class="pre">dec_rec</span></code> to provide a descriptive and concise title. Summarizing the decision. (mandatory)</p></li>
+<li><p>Modify <code class="docutils literal notranslate"><span class="pre">id</span></code> to contain the Platform/Feature/Component name the DR belongs to and the title, in upper snake case preceded by <code class="docutils literal notranslate"><span class="pre">dec_rec__</span></code> (mandatory)</p></li>
+<li><p>Adjust <code class="docutils literal notranslate"><span class="pre">status</span></code> according to your needs (mandatory)</p></li>
 <li><p>Modify <code class="docutils literal notranslate"><span class="pre">affects</span></code> to point to the work product it affects, mostly this will be architecture or design (recommended)</p></li>
-<li><p>Modify <code class="docutils literal notranslate"><span class="pre">context</span></code> to describe the issue or motivation behind this decision or change (manadatory)</p></li>
-<li><p>Modify <code class="docutils literal notranslate"><span class="pre">decision</span></code> to detail the proposed change or decision (manadatory)</p></li>
-<li><p>Modify <code class="docutils literal notranslate"><span class="pre">consequences</span></code> to explain the impact of this change, including what becomes easier or more difficult (recommended)</p></li>
+<li><p>Provide <code class="docutils literal notranslate"><span class="pre">Description</span></code> (mandatory)</p></li>
+<li><p>Add <code class="docutils literal notranslate"><span class="pre">Context</span></code> to describe the issue or motivation behind this decision or change (mandatory)</p></li>
+<li><p>Add <code class="docutils literal notranslate"><span class="pre">decision</span></code> to detail the proposed change or decision (mandatory)</p></li>
+<li><p>Add <code class="docutils literal notranslate"><span class="pre">consequences</span></code> to explain the impact of this change, including what becomes easier or more difficult (recommended)</p></li>
 </ul>
 </div>
 </section>
