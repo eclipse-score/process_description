@@ -26,6 +26,8 @@ Templates
    |  Origin Release Tag: vU.V.W
    |  Release Commit Hash: a1b2c3d4e5f6g7h8i9j0
    |  Release Date: YYYY-MM-DD
+   |  Safety: [QM | ASIL_B]
+   |  Security: [NO | YES]
    |
    |  Overview
    |  --------
@@ -35,7 +37,7 @@ Templates
    |  Disclaimer
    |  ----------
    |  This release note does not "release for production", as it does not come with a safety argumentation and a performed safety assessment.
-   |  The work products compiled in the safety package are created with care according to a process satisfying standards, but the S-CORE project,
+   |  The work products compiled in the safety package are created with care according to a process satisfying standards, but the <e.g. S-CORE> project,
    |  being a non-profit and open source organization, can not take over any liability for its content.
    |
    |  New Features
@@ -72,6 +74,12 @@ Templates
    |  - **Issue 1**: Brief description of the known issue. Justification regarding safety impact.
    |  - **Issue 2**: Brief description of the known issue. Justification regarding safety impact.
    |  - **Issue 3**: Brief description of the known issue. Justification regarding safety impact.
+   |
+   |  Known Vulnerabilities
+   |  ---------------------
+   |  - **CVE 1**: Brief description of the known CVE. Justification regarding security impact.
+   |  - **CVE 2**: Brief description of the known CVE. Justification regarding security impact.
+   |  - **CVE 3**: Brief description of the known CVE. Justification regarding security impact.
    |
    |  Upgrade Instructions
    |  --------------------
