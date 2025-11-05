@@ -155,7 +155,7 @@ Following aspect should be considered when developing test cases:
     For integration testing, the ITF (Integration Test Framework) is used.
 
     For more information, see ``[TODO: Link to ITF documentation once available. Related feature request is #599]``.
-* **platform integration testing:** Test the platform with configured features as a whole.
+* **Platform Integration Testing:** Test the platform with configured features as a whole.
 * **Regression Testing:** Ensure that changes do not introduce new defects.
   Automate regression tests where possible as they will get executed as part of the CI.
 * **Performance Testing (when applicable):** Evaluate the performance characteristics of the code,

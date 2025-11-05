@@ -90,7 +90,7 @@ Workflow Verification
    The tests are automatically executed as part of the CI after PR merge.
    In case of changes at inputs, the workflow need to be executed again as part of maintenance.
 
-.. workflow:: Create/Maintain platform integration test
+.. workflow:: Create/Maintain Platform Integration Test
    :id: wf__verification_platform_test
    :status: valid
    :tags: verification
@@ -102,7 +102,7 @@ Workflow Verification
    :contains: gd_req__verification_link_tests, gd_req__verification_link_tests_cpp, gd_req__verification_link_tests_python, gd_req__verification_link_tests_rust, gd_req__verification_independence, gd_guidl__verification_specification
    :has: doc_concept__verification_process, doc_getstrt__verification_process
 
-   platform integration test cases are based on Stakeholder requirements. This is the highest test level.
+   Platform Integration Test cases are based on Stakeholder requirements. This is the highest test level.
    Any contributor can create a platform integration test and create a PR for it.
    During the review process the test cases will be approved by a committer.
    Committer and contributor need to differ.

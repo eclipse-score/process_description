@@ -65,7 +65,7 @@ Guideline Quality Management Plan
    |
    | **Planning integration and verification:**
    | Integration on the target hardware is not done in the scope of the SW platform project, but SW/SW integration up to the feature level is performed and its test results are part of the :need:`wp__verification_platform_ver_report`.
-   | The integration on the target hardware, done by the distributor or OEM, is supported by delivering a set of HW/SW feature integration and platform integration tests which were already run successfully on a reference HW platform.
+   | The integration on the target hardware, done by the distributor or OEM, is supported by delivering a set of HW/SW feature integration and Platform Integration Tests which were already run successfully on a reference HW platform.
    | This is planned by the respective workproducts:
    | * :need:`wp__verification_feat_int_test`
    | * :need:`wp__verification_platform_test`

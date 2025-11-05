@@ -178,7 +178,7 @@ Test Linking to Requirements
 
     - TestType and DerivationTechnique shall be set
     - Description shall not be empty
-    - In a platform integration test Partially/FullyVerifies shall be set to a Platform Requirement
+    - In a Platform Integration Test Partially/FullyVerifies shall be set to a Platform Requirement
     - If Partially/FullyVerifies are set in Feature Integration Test these shall link to Feature Requirements
     - If Partially/FullyVerifies are set in Component Integration Test these shall link to Component Requirements
     - If Partially/FullyVerifies are set in Unit Test these shall link to Component Requirements
