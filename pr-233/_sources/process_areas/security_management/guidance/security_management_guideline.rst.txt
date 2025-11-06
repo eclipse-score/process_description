@@ -121,7 +121,7 @@ Security Management Guideline
    This is planned by the respective work products:
 
    * :need:`wp__verification_feat_int_test`
-   * :need:`wp__verification_platform_test`
+   * :need:`wp__verification_platform_int_test`
 
    Verification planning is documented in :need:`wp__verification_plan`
 

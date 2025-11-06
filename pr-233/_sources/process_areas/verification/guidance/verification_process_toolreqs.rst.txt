@@ -22,7 +22,7 @@ Test Linking to Requirements
     :id: gd_req__verification_link_tests
     :status: valid
     :tags: prio_1_automation, verification
-    :satisfies: wf__verification_unit_test, wf__verification_comp_int_test, wf__verification_feat_int_test, wf__verification_platform_test
+    :satisfies: wf__verification_unit_test, wf__verification_comp_int_test, wf__verification_feat_int_test, wf__verification_platform_int_test
     :complies: std_req__iso26262__support_6432
 
 
@@ -54,7 +54,7 @@ Test Linking to Requirements
     :id: gd_req__verification_link_tests_cpp
     :status: valid
     :tags: prio_1_automation, verification
-    :satisfies: wf__verification_unit_test, wf__verification_comp_int_test, wf__verification_feat_int_test, wf__verification_platform_test
+    :satisfies: wf__verification_unit_test, wf__verification_comp_int_test, wf__verification_feat_int_test, wf__verification_platform_int_test
     :complies: std_req__iso26262__support_6432
 
 
@@ -87,7 +87,7 @@ Test Linking to Requirements
     :id: gd_req__verification_link_tests_python
     :status: valid
     :tags: prio_1_automation, verification
-    :satisfies: wf__verification_unit_test, wf__verification_comp_int_test, wf__verification_feat_int_test, wf__verification_platform_test
+    :satisfies: wf__verification_unit_test, wf__verification_comp_int_test, wf__verification_feat_int_test, wf__verification_platform_int_test
     :complies: std_req__iso26262__support_6432
 
 
@@ -118,7 +118,7 @@ Test Linking to Requirements
     :id: gd_req__verification_link_tests_rust
     :status: valid
     :tags: prio_1_automation, verification
-    :satisfies: wf__verification_unit_test, wf__verification_comp_int_test, wf__verification_feat_int_test, wf__verification_platform_test
+    :satisfies: wf__verification_unit_test, wf__verification_comp_int_test, wf__verification_feat_int_test, wf__verification_platform_int_test
     :complies: std_req__iso26262__support_6432
 
     For linking Rust tests to requirements **#[record_property]** shall be used:
@@ -141,7 +141,7 @@ Test Linking to Requirements
     :id: gd_req__verification_independence
     :status: valid
     :tags: done_automation, verification
-    :satisfies: wf__verification_unit_test, wf__verification_comp_int_test, wf__verification_feat_int_test, wf__verification_platform_test
+    :satisfies: wf__verification_unit_test, wf__verification_comp_int_test, wf__verification_feat_int_test, wf__verification_platform_int_test
     :complies:
 
     The approver of a pull request shall differ from the author(s) of the pull request in all pull requests.
@@ -171,7 +171,7 @@ Test Linking to Requirements
     :id: gd_req__verification_checks
     :status: valid
     :tags: prio_1_automation, verification
-    :satisfies: wf__verification_unit_test, wf__verification_comp_int_test, wf__verification_feat_int_test, wf__verification_platform_test
+    :satisfies: wf__verification_unit_test, wf__verification_comp_int_test, wf__verification_feat_int_test, wf__verification_platform_int_test
     :complies:
 
     The following checks shall be implemented on test metadata:
@@ -187,7 +187,7 @@ Test Linking to Requirements
     :id: gd_req__verification_checks_extended
     :status: draft
     :tags: verification
-    :satisfies: wf__verification_unit_test, wf__verification_comp_int_test, wf__verification_feat_int_test, wf__verification_platform_test
+    :satisfies: wf__verification_unit_test, wf__verification_comp_int_test, wf__verification_feat_int_test, wf__verification_platform_int_test
     :complies:
 
     The following checks shall be implemented on test metadata:

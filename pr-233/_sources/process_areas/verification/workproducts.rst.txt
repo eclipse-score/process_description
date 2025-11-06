@@ -32,7 +32,7 @@ Platform
    This also covers the work product Verification Specification.
 
 .. workproduct:: Platform Integration Test
-   :id: wp__verification_platform_test
+   :id: wp__verification_platform_int_test
    :status: valid
    :complies: std_wp__iso26262__support_952
 
@@ -54,10 +54,10 @@ Platform
    - Formal evidence about the performed DFA
    - Formal evidence about the performed Safety Analyses
    - Test result per test case from
-     :need:`wp__verification_platform_test` and :need:`wp__verification_feat_int_test`
+     :need:`wp__verification_platform_int_test` and :need:`wp__verification_feat_int_test`
      with status passed/failed/not_run
    - Test log per test case from
-     :need:`wp__verification_platform_test` and :need:`wp__verification_feat_int_test`
+     :need:`wp__verification_platform_int_test` and :need:`wp__verification_feat_int_test`
      with status passed/failed/not_run
 
 Feature

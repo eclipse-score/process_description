@@ -68,7 +68,7 @@ Guideline Quality Management Plan
    | The integration on the target hardware, done by the distributor or OEM, is supported by delivering a set of HW/SW feature integration and Platform Integration Tests which were already run successfully on a reference HW platform.
    | This is planned by the respective workproducts:
    | * :need:`wp__verification_feat_int_test`
-   | * :need:`wp__verification_platform_test`
+   | * :need:`wp__verification_platform_int_test`
    | Verification planning is documented in :need:`wp__verification_plan`
    |
    | **Scheduling of audits, conformance checks, work product reviews, release verification and approval:**
