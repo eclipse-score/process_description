@@ -155,7 +155,7 @@ Following aspect should be considered when developing test cases:
     For integration testing, the ITF (Integration Test Framework) is used.
 
     For more information, see ``[TODO: Link to ITF documentation once available. Related feature request is #599]``.
-* **Platform Testing:** Test the platform with configured features as a whole.
+* **Platform Integration Testing:** Test the platform with configured features as a whole.
 * **Regression Testing:** Ensure that changes do not introduce new defects.
   Automate regression tests where possible as they will get executed as part of the CI.
 * **Performance Testing (when applicable):** Evaluate the performance characteristics of the code,
@@ -173,7 +173,7 @@ integration tests linking to the component requirements and architecture.
 Traceability of feature integration tests shall be established through linking those test cases to
 feature requirements and architecture as features describe the integrated behavior of all components.
 
-Traceability of platform tests shall be established through linking those test cases to
+Traceability of platform integration tests shall be established through linking those test cases to
 stakeholder requirements as stakeholder requirements describe the platform behavior.
 
 Note that all the above tests shall only link to requirements of type "Functional" and "Interface".

@@ -22,7 +22,7 @@ Test Linking to Requirements
     :id: gd_req__verification_link_tests
     :status: valid
     :tags: prio_1_automation, verification
-    :satisfies: wf__verification_unit_test, wf__verification_comp_int_test, wf__verification_feat_int_test, wf__verification_platform_test
+    :satisfies: wf__verification_unit_test, wf__verification_comp_int_test, wf__verification_feat_int_test, wf__verification_platform_int_test
     :complies: std_req__iso26262__support_6432
 
 
@@ -54,7 +54,7 @@ Test Linking to Requirements
     :id: gd_req__verification_link_tests_cpp
     :status: valid
     :tags: prio_1_automation, verification
-    :satisfies: wf__verification_unit_test, wf__verification_comp_int_test, wf__verification_feat_int_test, wf__verification_platform_test
+    :satisfies: wf__verification_unit_test, wf__verification_comp_int_test, wf__verification_feat_int_test, wf__verification_platform_int_test
     :complies: std_req__iso26262__support_6432
 
 
@@ -87,21 +87,21 @@ Test Linking to Requirements
     :id: gd_req__verification_link_tests_python
     :status: valid
     :tags: prio_1_automation, verification
-    :satisfies: wf__verification_unit_test, wf__verification_comp_int_test, wf__verification_feat_int_test, wf__verification_platform_test
+    :satisfies: wf__verification_unit_test, wf__verification_comp_int_test, wf__verification_feat_int_test, wf__verification_platform_int_test
     :complies: std_req__iso26262__support_6432
 
 
-    For linking python tests to requirements **metadata** shall be used. 
-    For this the 'add_test_properties' decorator has been provided. 
+    For linking python tests to requirements **metadata** shall be used.
+    For this the 'add_test_properties' decorator has been provided.
     You need to add it to the test and fill out:
-    
-    * partially_verifies OR fully_verifies 
-    * test_type 
+
+    * partially_verifies OR fully_verifies
+    * test_type
     * derivation_technique
 
     For allowed values for test_type & derivation_technique please check :need:`gd_req__verification_link_tests`
     Further more, this decorator will also check if your test has a `docstring` which should act as the description of the test.
-   
+
 
     .. code-block:: python
 
@@ -118,7 +118,7 @@ Test Linking to Requirements
     :id: gd_req__verification_link_tests_rust
     :status: valid
     :tags: prio_1_automation, verification
-    :satisfies: wf__verification_unit_test, wf__verification_comp_int_test, wf__verification_feat_int_test, wf__verification_platform_test
+    :satisfies: wf__verification_unit_test, wf__verification_comp_int_test, wf__verification_feat_int_test, wf__verification_platform_int_test
     :complies: std_req__iso26262__support_6432
 
     For linking Rust tests to requirements **#[record_property]** shall be used:
@@ -141,7 +141,7 @@ Test Linking to Requirements
     :id: gd_req__verification_independence
     :status: valid
     :tags: done_automation, verification
-    :satisfies: wf__verification_unit_test, wf__verification_comp_int_test, wf__verification_feat_int_test, wf__verification_platform_test
+    :satisfies: wf__verification_unit_test, wf__verification_comp_int_test, wf__verification_feat_int_test, wf__verification_platform_int_test
     :complies:
 
     The approver of a pull request shall differ from the author(s) of the pull request in all pull requests.
@@ -171,14 +171,14 @@ Test Linking to Requirements
     :id: gd_req__verification_checks
     :status: valid
     :tags: prio_1_automation, verification
-    :satisfies: wf__verification_unit_test, wf__verification_comp_int_test, wf__verification_feat_int_test, wf__verification_platform_test
+    :satisfies: wf__verification_unit_test, wf__verification_comp_int_test, wf__verification_feat_int_test, wf__verification_platform_int_test
     :complies:
 
     The following checks shall be implemented on test metadata:
 
     - TestType and DerivationTechnique shall be set
     - Description shall not be empty
-    - In a Platform Test Partially/FullyVerifies shall be set to a Platform Requirement
+    - In a Platform Integration Test Partially/FullyVerifies shall be set to a Platform Requirement
     - If Partially/FullyVerifies are set in Feature Integration Test these shall link to Feature Requirements
     - If Partially/FullyVerifies are set in Component Integration Test these shall link to Component Requirements
     - If Partially/FullyVerifies are set in Unit Test these shall link to Component Requirements
@@ -187,7 +187,7 @@ Test Linking to Requirements
     :id: gd_req__verification_checks_extended
     :status: draft
     :tags: verification
-    :satisfies: wf__verification_unit_test, wf__verification_comp_int_test, wf__verification_feat_int_test, wf__verification_platform_test
+    :satisfies: wf__verification_unit_test, wf__verification_comp_int_test, wf__verification_feat_int_test, wf__verification_platform_int_test
     :complies:
 
     The following checks shall be implemented on test metadata:

@@ -31,12 +31,12 @@ Platform
    technology maturity or risks.
    This also covers the work product Verification Specification.
 
-.. workproduct:: Platform test
-   :id: wp__verification_platform_test
+.. workproduct:: Platform Integration Test
+   :id: wp__verification_platform_int_test
    :status: valid
    :complies: std_wp__iso26262__support_952
 
-   Platform Testing verifies Stakeholder Requirements performed on reference HW.
+   Platform Integration Testing verifies Stakeholder Requirements performed on reference HW.
    Depending on the nature of the project, respective tailoring (e.g. for reduced requirements
    coverage) has to be reflected in the :need:`wp__verification_plan` and :need:`wp__platform_safety_plan`.
 
@@ -54,10 +54,10 @@ Platform
    - Formal evidence about the performed DFA
    - Formal evidence about the performed Safety Analyses
    - Test result per test case from
-     :need:`wp__verification_platform_test` and :need:`wp__verification_feat_int_test`
+     :need:`wp__verification_platform_int_test` and :need:`wp__verification_feat_int_test`
      with status passed/failed/not_run
    - Test log per test case from
-     :need:`wp__verification_platform_test` and :need:`wp__verification_feat_int_test`
+     :need:`wp__verification_platform_int_test` and :need:`wp__verification_feat_int_test`
      with status passed/failed/not_run
 
 Feature

@@ -78,7 +78,7 @@ Safety Management Guideline
    | The integration on the target hardware done by the distributor or OEM is supported by delivering a set of HW/SW integration tests which were already run successfully on a reference HW platform.
    | This is planned by the respective work products:
    | * :need:`wp__verification_feat_int_test`
-   | * :need:`wp__verification_platform_test`
+   | * :need:`wp__verification_platform_int_test`
    | Verification planning is documented in :need:`wp__verification_plan`
    |
    | **Scheduling of confirmation reviews, audit and assessment:**
