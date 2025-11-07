@@ -28,6 +28,7 @@ Workproducts
    | * Role definitions
    | * Quality Goals
    | * Schedules
+   | * Quality trainings
 
 .. workproduct:: Quality report
    :id: wp__qms_report

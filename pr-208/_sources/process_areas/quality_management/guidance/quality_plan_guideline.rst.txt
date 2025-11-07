@@ -73,3 +73,11 @@ Guideline Quality Management Plan
    |
    | **Scheduling of audits, conformance checks, work product reviews, release verification and approval:**
    | Scheduling is done in the same way as for all work products definition by issues. The respective work products are listed in :need:`doc_concept__wp_inspections`.
+   |
+   | **Planning quality trainings:**
+   | Quality trainings are planned also by issues. They should cover the following aspects:
+   | * Target audience
+   | * Training objectives
+   | * Training content
+   | * Training schedule
+   | * Responsible persons
