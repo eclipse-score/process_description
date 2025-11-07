@@ -22,43 +22,36 @@ Template Quality Report
    :status: valid
    :complies: std_req__iso26262__management_5423, std_req__aspice_40__SUP-1-BP1, std_req__aspice_40__SUP-1-BP2, std_req__aspice_40__SUP-1-BP3, std_req__aspice_40__SUP-1-BP4, std_req__aspice_40__SUP-1-BP7, std_req__aspice_40__PIM-3-BP1, std_req__aspice_40__PIM-3-BP2, std_req__aspice_40__PIM-3-BP3, std_req__aspice_40__PIM-3-BP4, std_req__aspice_40__PIM-3-BP5, std_req__aspice_40__PIM-3-BP6, std_req__aspice_40__PIM-3-BP7
 
-   This document implements :need:`wp__qms_report`.
+   This document implements :need:`wp__qms_report` and based on the :need:`wp__qms_plan`. It summarizes
+   the results of the quality related activities. It shall be referred in the :need:`wp__platform_sw_release_note`
+   of a platform release.
 
-      | Place the document header here following the `REPLACE_doc__documentation_mgt_plan`.
-      |
-      | This Quality Report is based on the :need:`wp__qms_plan`.
-      |
-      | Quality Report contains:
-      |
-      | **1. Quality Overview**
-      |
-      | **1.1. Lists of all work products**
-      | - List of all work products, compared to the :need:`wp__qms_plan`
-      | - Status (valid / invalid)
-      |
-      | **1.2. Lists of all reports**
-      | - List of all reports, compared to the :need:`wp__qms_plan`
-      | - Results of the reports
-      |
-      | **1.3. Test coverage**
-      | - Overview of test coverage (overall, requirements, architecture)
-      | - Ratio of test coverage to the :need:`wp__verification_plan`
-      |
-      | **1.4. Issues**
-      | - List of all issues, compared to the :need:`wp__qms_plan`
-      | - Status of the issues (open / closed)
-      |
-      | **1.5. Quality Trainings**
-      | - List of all quality trainings, compared to the :need:`wp__qms_plan`
-      | - Status of the quality trainings (planned / completed)
-      |
-      | **1.5. Process Improvement**
-      | - List of all process improvements, compared to the :need:`wp__process_impr_report`
-      | - Status of the process improvements (open / closed)
-      |
-      | **1.6. External reports**
-      | - List of all external reports, compared to the :need:`wp__qms_plan`
-      | - Status of the external reports (valid / invalid)
-      |
+   The Quality Report contains:
+
+   **1. Quality Overview**
+
+   **1.1. Quality Objectives and Goals**
+    - Quality objectives and goals as defined in the :need:`wp__qms_plan`
+    - Status of achievement of the quality objectives and goals
+
+   **1.2. Lists of all work products**
+    - List of all work products, compared to the :need:`wp__qms_plan`
+    - Status (valid / invalid)
+
+   **1.3. Lists of all reports**
+    - List of all reports, compared to the :need:`wp__qms_plan`
+    - Results of the reports
+
+   **1.4. Test coverage**
+    - Overview of test coverage (overall, requirements, architecture)
+    - Ratio of test coverage to the :need:`wp__verification_plan`
+
+   **1.5. Issues**
+    - List of all issues, compared to the :need:`wp__qms_plan`
+    - Status of the issues (open / closed)
+
+   **1.6. Process Improvement**
+    - List of all process improvements, compared to the :need:`wp__process_impr_report`
+    - Status of the process improvements (open / closed)
 
     **Note1:** All the above lists are generated automatically

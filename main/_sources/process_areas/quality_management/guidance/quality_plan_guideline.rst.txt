@@ -23,20 +23,20 @@ Guideline Quality Management Plan
    :complies: std_req__iso26262__management_5423, std_req__aspice_40__SUP-1-BP1, std_req__aspice_40__SUP-1-BP2, std_req__aspice_40__SUP-1-BP3, std_req__aspice_40__SUP-1-BP4, std_req__aspice_40__SUP-1-BP7, std_req__aspice_40__PIM-3-BP1, std_req__aspice_40__PIM-3-BP2, std_req__aspice_40__PIM-3-BP3, std_req__aspice_40__PIM-3-BP4, std_req__aspice_40__PIM-3-BP5, std_req__aspice_40__PIM-3-BP6, std_req__aspice_40__PIM-3-BP7, std_req__aspice_40__SUP-1-BP5, std_req__aspice_40__SUP-1-BP6, std_req__aspice_40__PIM-3-BP8
 
    | **Overall quality management:**
-   | Quality culture:
+   |
+   | **Quality culture:**
    | Quality as well as Safety and Security Culture is planned to grow in the SW platform. This shall be fostered by doing process conformance checks and work product reviews, as well as lessons learned
    | after each feature development completion and a process audit after each platform/project release. Delta audits allowed based on variation statement.
    | The main outcome is the :need:`wp__process_impr_report`, which is used to improve the processes for the platform/project.
-
    |
-   | Quality Management:
+   | **Quality Management:**
    | ASPICE 4.0 standard is selected for quality management. Processes will always link to the :ref:`standard_iso26262` standard, :ref:`standard_isopas8926` standard, :ref:`standard_isosae21434` and to the `ASPICE 4.0 <https://eclipse-score.github.io/process_description/main/standards/aspice_40/aspice.html>`_ standard.
    |
-   | Communication:
+   | **Communication:**
    | Cross functional teams are interdisciplinary, so the regular (sprint) planning and review meetings enable communication. The organization of the project is described in the Project Management Plan. Another main communication means are the Pull Request (PR) reviews.
    | Also the standard Eclipse Foundation communication strategies are used (e.g. mailing lists, messenger).
    |
-   | Quality issues, non-conformances and improvements:
+   | **Quality issues, non-conformances and improvements:**
    | Feedback from the field, but also during development of change requests to existing features, bug reporting by the Open Source community or integration of existing SW components into new features may lead to the discovery of issues, non-conformances or improvements.
    | Non-conformance can also be deviations from the development process with impact on safety or security.
    | If these are known at the time of creation of a release they will be part of the :need:`wp__platform_sw_release_note` for the feature.
@@ -47,7 +47,7 @@ Guideline Quality Management Plan
    | Tailoring is done for the whole SW platform by defining only the relevant processes and their resulting outcomes and an argumentation why the others are not needed in `ASPICE 4.0 <https://eclipse-score.github.io/process_description/main/standards/aspice_40/aspice.html>`_.
    |
    | **Planning quality activities:**
-   | In the Quality Management Plan the nomination of the quality manager :need:`rl__quality_manager` and the project lead :need:`rl__project_lead` is documented.
+   | In the Quality Management Plan the nomination of the :need:`rl__quality_manager` and the :need:`rl__project_lead` is documented.
    | The planning of quality activities is done using issues in the :need:`wp__issue_track_system` as specified in the Project Management part of the Project Management Plan.
    | It contains for each issue
    | * objective - as part of the issue description
@@ -73,3 +73,11 @@ Guideline Quality Management Plan
    |
    | **Scheduling of audits, conformance checks, work product reviews, release verification and approval:**
    | Scheduling is done in the same way as for all work products definition by issues. The respective work products are listed in :need:`doc_concept__wp_inspections`.
+   |
+   | **Planning quality trainings:**
+   | Quality trainings are planned also by issues. They should cover the following aspects:
+   | * Target audience
+   | * Training objectives
+   | * Training content
+   | * Training schedule
+   | * Responsible persons
