@@ -39,6 +39,8 @@ extensions = [
     "score_draw_uml_funcs",
     "score_source_code_linker",
     "score_layout",
+    "needs_config_writer",
+    "score_sync_toml",
 ]
 
 exclude_patterns = [
