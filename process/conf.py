@@ -22,37 +22,4 @@
 
 project = "Process Description"
 project_url = "https://eclipse-score.github.io/process_description/"
-project_prefix = "PROCESS_"
-author = "S-CORE"
 version = "0.1"
-
-# -- General configuration ---------------------------------------------------
-# https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
-
-
-extensions = [
-    "sphinx_design",
-    "sphinx_needs",
-    "sphinxcontrib.plantuml",
-    "score_plantuml",
-    "score_metamodel",
-    "score_draw_uml_funcs",
-    "score_source_code_linker",
-    "score_layout",
-    "needs_config_writer",
-    "score_sync_toml",
-]
-
-exclude_patterns = [
-    # The following entries are not required when building the documentation via 'bazel
-    # build //docs:docs', as that command runs in a sandboxed environment. However, when
-    # building the documentation via 'bazel run //docs:incremental' or esbonio, these
-    # entries are required to prevent the build from failing.
-    "bazel-*",
-    ".venv_docs",
-]
-
-templates_path = ["templates"]
-
-# Enable numref
-numfig = True
