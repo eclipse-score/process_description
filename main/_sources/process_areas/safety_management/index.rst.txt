@@ -38,7 +38,7 @@ Inputs
 Stakeholders
 ^^^^^^^^^^^^
 
-#. :need:`Technical Lead <rl__technical_lead>`
+#. :need:`Project Lead <rl__project_lead>`
 
    * planning of development for module and for platform projects
    * status reporting of safety activities
@@ -92,9 +92,9 @@ Getting started
    :status: valid
 
 
-In case you are appointed as a :need:`Safety Manager <rl__safety_manager>` by the :need:`rl__project_lead` in the S-CORE project:
+In case you are appointed as a :need:`Safety Manager <rl__safety_manager>` by the :need:`rl__project_lead` in the <Project> project:
 
-* Contact the :need:`Technical Lead <rl__technical_lead>` for your SEooC to establish planning and reporting (the TL should already have established a Github project for planning)
+* Contact the :need:`Project Lead <rl__project_lead>` for your SEooC to establish planning and reporting (the TL should already have established a Github project for planning)
 * Create your safety plan according to :need:`wf__cr_mt_safety_plan`
 * Make familiar with your role description and the other workflows of safety management (see below)
 * Make familiar with the development and supporting process descriptions in :ref:`process_description` plus the relevant sections of the `Platform Management Plan <REPLACE_doc__platform_mgt_plan>`

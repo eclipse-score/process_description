@@ -166,7 +166,7 @@ Following roles should be included in the review:
 
 * :need:`[[title]] <rl__safety_manager>`
 * :need:`[[title]] <rl__security_manager>`
-* :need:`[[title]] <rl__technical_lead>`
+* :need:`[[title]] <rl__project_lead>`
 * :need:`[[title]] <rl__committer>`
 
 .. _create_component_architecture:
