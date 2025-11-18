@@ -541,7 +541,7 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <div class="need_container docutils container" id="SNCB-97b3025e">
+  <div class="need_container docutils container" id="SNCB-4b1c0911">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_document table" id="doc__component_name_req_inspection">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -651,14 +651,14 @@
 </tr>
 <tr class="row-odd"><td><p>REQ_02_03</p></td>
 <td><p>Is the requirement description <em>atomic</em> ?</p></td>
-<td><p>A good way to think about this is to consider if the requirement may be tested by one (positive) test case or needs more of these. The sentence template should also avoid being non-atomic already. Note that there are cases where also non-atomic requirements are the better ones, for example if those are better understandable.</p></td>
+<td><p>A good way to think about this is to consider if the requirement may be tested by one (positive) test case or needs more of these. The requirement formulation template should also avoid being non-atomic already. Note that there are cases where also non-atomic requirements are the better ones, for example if those are better understandable.</p></td>
 <td></td>
 <td></td>
 <td></td>
 </tr>
 <tr class="row-even"><td><p>REQ_02_04</p></td>
 <td><p>Is the requirement description <em>feasible</em> ?</p></td>
-<td><p>Expectation is that at the time of the inspection the requirement has already some implementation. This can be checked via traces, but also <a class="reference internal" href="../../../../../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_attr_impl" title="gd_req__req_attr_impl"><em class="xref need">Requirement attribute: link... (gd_req__req_attr_impl)</em></a> shows this. In case the requirement is not mature enough at the time of inspection (i.e. not implemented at least as “proof-of-concept”), a development expert should be invited to the Pull-Request review to explicitly check this item.</p></td>
+<td><p>If at the time of the inspection the requirement has already some implementation, the answer is yes. This can be checked via traces, but also <a class="reference internal" href="../../../../../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_attr_impl" title="gd_req__req_attr_impl"><em class="xref need">Requirement attribute: link... (gd_req__req_attr_impl)</em></a> shows this. In case the requirement has no implementation at the time of inspection (i.e. not implemented at least as “proof-of-concept”), a development expert should be invited to the Pull-Request review to explicitly check this item.</p></td>
 <td></td>
 <td></td>
 <td></td>
@@ -678,7 +678,7 @@
 <td></td>
 </tr>
 <tr class="row-odd"><td><p>REQ_03_02</p></td>
-<td><p>For other requirements: Is the <em>linkage to the parent requirement</em> correct?</p></td>
+<td><p>For feature/component requirements: Is the <em>linkage to the parent requirement</em> correct?</p></td>
 <td><p>Linkage to correct levels and ASIL attributes is checked automatically, but it needs checking if the child requirement implements (at least) a part of the parent requirement.</p></td>
 <td></td>
 <td></td>
@@ -693,28 +693,28 @@
 </tr>
 <tr class="row-odd"><td><p>REQ_05_01</p></td>
 <td><p>Do the software requirements consider <em>timing constraints</em>?</p></td>
-<td><p>This bullet point encourages to think about timing constraints even if those are not explicitly mentioned in the parent requirement. If the reviewer of a requirement already knows or suspects that the code execution will be consuming a lot of time, one should think of the expectation of a “user”.</p></td>
+<td><p>This checkpoint encourages to think about timing constraints even if those are not explicitly mentioned in the parent requirement. If the reviewer of a requirement already knows or suspects that the code execution will be consuming a lot of time, one should think of the expectation of a “user”.</p></td>
 <td></td>
 <td></td>
 <td></td>
 </tr>
 <tr class="row-even"><td><p>REQ_06_01</p></td>
 <td><p>Does the requirement consider <em>external interfaces</em>?</p></td>
-<td><p>The SW platform’s external interfaces (to the user) are defined in the Feature Architecture, so the Feature and Component Requirements should determine the data consumed and set on these interfaces. Are output values completely defined?</p></td>
+<td><p>The SW platform’s external interfaces (to the user) are defined in the Feature Architecture, so the Feature and Component Requirements should determine the input data use and setting of output data for these interfaces. Are all output values defined?</p></td>
 <td></td>
 <td></td>
 <td></td>
 </tr>
 <tr class="row-odd"><td><p>REQ_07_01</p></td>
-<td><p>Is the <em>ASIL attribute</em> set correctly?</p></td>
-<td><p>Derived requirements are checked automatically, see <a class="reference internal" href="../../../../../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_linkage_safety" title="gd_req__req_linkage_safety"><em class="xref need">Requirements linkage safety (gd_req__req_linkage_safety)</em></a>. But for the top level requirements this needs to be checked for correctness. Also AoU from external components need check for correct ASIL as those are the “origin” of safety requirements towards the SW platform.</p></td>
+<td><p>Is the <em>safety</em> attribute set correctly?</p></td>
+<td><p>Derived requirements are checked automatically, see <a class="reference internal" href="../../../../../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_linkage_safety" title="gd_req__req_linkage_safety"><em class="xref need">Requirements linkage safety (gd_req__req_linkage_safety)</em></a>. But for the top level requirements (and also all AoU) this needs to be checked manually for correctness.</p></td>
 <td></td>
 <td></td>
 <td></td>
 </tr>
 <tr class="row-even"><td><p>REQ_07_02</p></td>
 <td><p>Is the attribute <em>security</em> set correctly?</p></td>
-<td><p>Stakeholder requirements security attribute should be set based on Threat Analysis and Risk Assessment (TARA) (process is TBD). Checklist item is supported by automated check: “Every requirement which satisfies a requirement with security attribute set to YES inherits this”. Expectation is that the feature/component requirements/architecture may also be subject to a Software Security Criticality Analysis (process is TBD).</p></td>
+<td><p>Stakeholder requirements security attribute should be set based on Threat Analysis and Risk Assessment (TARA) (process is TBD). For feature/component requirements this checklist item is supported by automated check: “Every requirement which satisfies a requirement with security attribute set to YES inherits this”. But the feature/component requirements/architecture may additionally also be subject to a Software Security Criticality Analysis (process is TBD).</p></td>
 <td></td>
 <td></td>
 <td></td>
@@ -728,13 +728,13 @@
 </tr>
 <tr class="row-even"><td><p>REQ_09_01</p></td>
 <td><p>For stakeholder requirements: Do those cover assumed safety mechanisms needed by the hardware and system?</p></td>
-<td><p>Note that the feature/component requirements also cover safety mechanisms in case those are needed to mitigate failures found during <a class="reference internal" href="../../../../../../process_areas/safety_analysis/guidance/safety_analysis_checklist.html#gd_chklst__safety_analysis" title="gd_chklst__safety_analysis"><em class="xref need">Safety Analysis Checklist T... (gd_chklst__safety_analysis)</em></a></p></td>
+<td><p>Note that stakeholder requirements covering safety mechanisms come from rationales, whereas feature/component requirements are covering safety mechanisms coming from <a class="reference internal" href="../../../../../../process_areas/safety_analysis/guidance/safety_analysis_checklist.html#gd_chklst__safety_analysis" title="gd_chklst__safety_analysis"><em class="xref need">Safety Analysis Checklist T... (gd_chklst__safety_analysis)</em></a></p></td>
 <td></td>
 <td></td>
 <td></td>
 </tr>
 <tr class="row-odd"><td><p>REQ_09_02</p></td>
-<td><p>For other requirements: Do the requirements defining a safety mechanism contain the error reaction leading to a safe state?</p></td>
+<td><p>For feature/component requirements: Do the requirements defining a safety mechanism contain the error reaction leading to a safe state?</p></td>
 <td><p>Alternatively to the safe state there could also be “repair” mechanisms. Also do not forget to consider REQ_05_01 for these.</p></td>
 <td></td>
 <td></td>
@@ -750,9 +750,9 @@
 Also the need links mentioned in the checklist must be renamed to PROCESS_&lt;old id&gt; to point to the process documentation.</p>
 </div>
 <p>Note: If a Review ID is not applicable for your requirement, then state “”n/a” in status and comment accordingly in remarks. For example “no stakeholder requirement (no rationale needed)”</p>
-<p>The following requirements with “inspected” tag set are in the scope of this inspection:</p>
+<p>The following requirements in “valid” state and with “inspected” tag set are in the scope of this inspection:</p>
 <p class="needs_filter_warning" id="needtable-folder_templates/modules/module_name/component_name/docs/requirements/chklst_req_inspection-0">No needs passed the filters</p>
-<p>And also the following AoUs with “inspected” tag set:</p>
+<p>And also the following AoUs in “valid” state and with “inspected” tag set (for these please answer the questions above as if the AoUs are requirements, except questions REQ_03_01 and REQ_03_02):</p>
 <p class="needs_filter_warning" id="needtable-folder_templates/modules/module_name/component_name/docs/requirements/chklst_req_inspection-1">No needs passed the filters</p>
 <div class="admonition attention">
 <p class="admonition-title">Attention</p>
