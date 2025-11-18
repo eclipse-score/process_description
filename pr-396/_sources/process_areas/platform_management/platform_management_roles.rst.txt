@@ -15,7 +15,7 @@
 Roles
 #####
 
-For change management no additional roles need to be defined.
+For platform management no additional roles need to be defined.
 
 Contributing Roles:
 
