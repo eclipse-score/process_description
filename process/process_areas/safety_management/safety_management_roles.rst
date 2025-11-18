@@ -12,17 +12,16 @@
    # SPDX-License-Identifier: Apache-2.0
    # *******************************************************************************
 
-.. _process_safety_management:
+Roles
+-----
 
-Safety Management
-=================
+For safety management no additional roles need to be defined.
 
-.. toctree::
-   :maxdepth: 1
+Contributing Roles:
 
-   safety_management_getstrt
-   safety_management_concept
-   guidance/index
-   safety_management_roles
-   safety_management_workflow
-   safety_management_workproducts
+   * :need:`Safety Manager <rl__safety_manager>`
+   * :need:`External Auditor <rl__external_auditor>`
+
+A detailed overview of the responsibility for the steps of the requirement process is listed here:
+
+:ref:`workflow_requirements`

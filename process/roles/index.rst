@@ -64,6 +64,12 @@ Project Process roles
    The process community members are responsible for the definition of the process architecture of the project integrated management system and how they processes interact.
    The approval and release of the process is done by the safety, quality and security managers and the project leads (for the parts which affect them).
 
+.. role:: External Auditor
+   :id: rl__external_auditor
+   :status: valid
+
+   External auditing instance confirming the compliance to ISO26262 and the defined processes in S-CORE. The external auditor is not part of the project organization.
+
 Project Development roles
 -------------------------
 
@@ -134,6 +140,20 @@ Project Feature teams
    :contains: rl__project_lead, rl__safety_manager, rl__quality_manager, rl__security_manager, rl__contributor, rl__committer
 
    The module team is responsible for all artifacts within the module SEooCs. Each module has only one responsible team but a team may also be responsible for several (small) modules.
+
+.. role:: Safety Manager
+   :id: rl__safety_manager
+   :status: valid
+   :contains: rl__committer
+
+   The safety manager is responsible for making sure that ISO26262 is complied to in the project. He/She shall lead and monitor the safety relevant activities of the feature development.
+   The safety manager is assigned and elected by a committee considering the project lead(s)
+
+   Experience
+
+   * 3+ years of proven experience in the management of safety topics
+   * Experience in managing projects
+   * Experience in managing safety anomalies
 
 Project Roles list
 ------------------
