@@ -23,6 +23,7 @@
    :id: doc__component_name
    :status: draft
    :safety: ASIL_B
+   :security: NO
    :realizes: wp__cmpt_request
    :tags: template
 
