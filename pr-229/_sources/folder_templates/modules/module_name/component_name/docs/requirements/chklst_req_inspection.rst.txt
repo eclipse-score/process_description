@@ -156,7 +156,6 @@ Requirement Inspection Checklist
 
 .. attention::
     The above checklist entries must be filled according to your component requirements in scope.
-    Also the need links mentioned in the checklist must be renamed to PROCESS_<old id> to point to the process documentation.
 
 Note: If a Review ID is not applicable for your requirement, then state ""n/a" in status and comment accordingly in remarks. For example "no stakeholder requirement (no rationale needed)"
 
