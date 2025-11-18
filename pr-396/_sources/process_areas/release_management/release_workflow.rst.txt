@@ -27,7 +27,7 @@ Workflow Release Management
    :contains: gd_temp__rel_mod_rel_note, gd_guidl__rel_management
    :has: doc_concept__rel_process, doc_getstrt__release_process
 
-   The module release note is created for each release by the module technical lead. It may be updated
+   The module release note is created for each release by the module project lead. It may be updated
    later in case of bugs found after the release is published.
 
 .. workflow:: Create/Maintain Platform Release Note
@@ -40,7 +40,7 @@ Workflow Release Management
    :contains: gd_temp__rel_plat_rel_note, gd_guidl__rel_management
    :has: doc_concept__rel_process, doc_getstrt__release_process
 
-   The platform release note is created for each release by the technical lead circle. It may be updated
+   The platform release note is created for each release by the project lead circle. It may be updated
    later in case of bugs found after the release is published.
 
 .. workflow:: Plan Module Release

@@ -43,7 +43,7 @@ Workflow Requirements Engineering
    :contains: gd_temp__req_feat_req, gd_temp__req_formulation
    :has: doc_concept__req_process, doc_getstrt__req_process
 
-   Depending on the stakeholder requirements feature requirements can be derived. This can be done by any contributor and will be approved by a technical lead. If needed safety and security managers can provide support.
+   Depending on the stakeholder requirements feature requirements can be derived. This can be done by any contributor and will be approved by a project lead. If needed safety and security managers can provide support.
 
 .. workflow:: Create/Maintain Feature AoUs
    :id: wf__req_feat_aou

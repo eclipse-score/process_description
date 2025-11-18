@@ -47,8 +47,8 @@ Workflow Platform Management
    :contains: gd_temp__platform_mgmt_plan, gd_guidl__platform_mgmt_plan, gd_guidl__documentation, gd_chklst__documentation_review
    :has: doc_concept__platform_process, doc_getstrt__platform_process
 
-   The :need:`Technical Lead <rl__project_lead>` is responsible for the monitoring and reporting
+   The :need:`Project Lead <rl__project_lead>` is responsible for the monitoring and reporting
    of the work products and activities against the platform management plan.
 
-   The :need:`Technical Lead <rl__project_lead>` is responsible to adjust the plan,
+   The :need:`Project Lead <rl__project_lead>` is responsible to adjust the plan,
    if deviations are detected.

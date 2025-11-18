@@ -48,7 +48,7 @@ Activities for Platform Management Plan
 Create/Maintain Platform Management Plan
 ----------------------------------------
 
-The platform management is created and maintained by the :need:`Technical Lead <rl__project_lead>`.
+The platform management is created and maintained by the :need:`Project Lead <rl__project_lead>`.
 As it is a container, this activity is valid for all addressed plan documents.
 
 It may consider:
@@ -109,7 +109,7 @@ Training pathes are described. These may include:
 Monitor/Improve Platform Management Plan
 ----------------------------------------
 
-:need:`Technical Lead <rl__project_lead>` is responsible for the monitoring of the
+:need:`Project Lead <rl__project_lead>` is responsible for the monitoring of the
 work products and activities against the platform management plan. If deviations are detected,
 the plan must be adjusted. Deviations may include estimates, resources, schedules, plans,
 interfaces, etc. as defined in the scope of work.
