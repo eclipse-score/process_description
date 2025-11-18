@@ -90,20 +90,20 @@ Workflow Verification
    The tests are automatically executed as part of the CI after PR merge.
    In case of changes at inputs, the workflow need to be executed again as part of maintenance.
 
-.. workflow:: Create/Maintain Platform Test
-   :id: wf__verification_platform_test
+.. workflow:: Create/Maintain Platform Integration Test
+   :id: wf__verification_platform_int_test
    :status: valid
    :tags: verification
    :responsible: rl__contributor
    :approved_by: rl__committer, rl__testing_community
    :supported_by: rl__safety_manager
    :input: wp__requirements_stkh, wp__verification_plan
-   :output: wp__verification_platform_test
+   :output: wp__verification_platform_int_test
    :contains: gd_req__verification_link_tests, gd_req__verification_link_tests_cpp, gd_req__verification_link_tests_python, gd_req__verification_link_tests_rust, gd_req__verification_independence, gd_guidl__verification_specification
    :has: doc_concept__verification_process, doc_getstrt__verification_process
 
-   Platform test cases are based on Stakeholder requirements. This is the highest test level.
-   Any contributor can create a platform test and create a PR for it.
+   Platform Integration Test cases are based on Stakeholder requirements. This is the highest test level.
+   Any contributor can create a platform integration test and create a PR for it.
    During the review process the test cases will be approved by a committer.
    Committer and contributor need to differ.
    The tests are automatically executed as part of the CI after PR merge.
@@ -183,7 +183,7 @@ Workflow Verification
            wp__feature_arch, wp__platform_sw_release_note, wp__platform_mgmt,
            wp__feature_fmea, wp__feature_dfa, wp__platform_dfa,
            wp__sw_arch_verification, wp__requirements_inspect,
-           wp__verification_feat_int_test, wp__verification_platform_test
+           wp__verification_feat_int_test, wp__verification_platform_int_test
    :output: wp__verification_platform_ver_report
    :contains: gd_temp__platform_ver_report
    :has: doc_concept__verification_process, doc_getstrt__verification_process

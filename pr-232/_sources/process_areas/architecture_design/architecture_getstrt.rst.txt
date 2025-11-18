@@ -109,6 +109,9 @@ Here are some excerpts of UML diagrams made from the requirements of that file.
 
 Feature Architecture
 ^^^^^^^^^^^^^^^^^^^^
+
+The following section is an example, how an `Feature <https://eclipse-score.github.io/score/main/features/index.html>`_ looks like and how the architecture of an Feature is described. Please notice, that in the diagram components with an safety rating to "ASIL_B" is drawn with an red border (see "Component 1" as example).
+
 .. feat_arc_sta:: Feature Getting Started
       :id: feat_arc_sta__example_feature__archdes_getstrt
       :security: YES

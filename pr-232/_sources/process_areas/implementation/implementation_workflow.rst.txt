@@ -20,7 +20,7 @@ Workflow Implementation
    :status: valid
    :tags: implementation
    :responsible: rl__committer
-   :approved_by: rl__technical_lead
+   :approved_by: rl__project_lead
    :input: wp__platform_mgmt
    :output: wp__sw_development_plan
    :contains: gd_temp__software_development_plan

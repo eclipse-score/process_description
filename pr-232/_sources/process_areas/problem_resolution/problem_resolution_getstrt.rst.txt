@@ -27,7 +27,7 @@ deviation of an expected result.
 Examples for problem origins:
 
 * Deviations relating to requirements, architecture, implementation or code found by user of the platform.
-* Deviations found by contributor based on component, feature or platform integration tests.
+* Deviations found by contributor based on component, feature or Platform Integration Tests.
 * Deviations found by Quality Management activities as defined in the Quality Management Plan.
 
 Therefore guidelines :need:`gd_temp__problem_template`,

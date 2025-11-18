@@ -21,6 +21,7 @@ Feature Safety Planning
    :id: doc__feature_name_safety_wp
    :status: draft
    :safety: ASIL_B
+   :security: NO
    :realizes: wp__platform_safety_plan
    :tags: template
 

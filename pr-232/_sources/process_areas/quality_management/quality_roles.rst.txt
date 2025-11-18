@@ -54,6 +54,6 @@ Roles
 
    Authority
 
-   * Escalation of planning topics to the project lead :need:`rl__project_lead`
+   * Escalation of planning topics to the :need:`rl__project_lead`
    * Definition of quality assurance measures
    * Refusing the approval of work products as defined in the workflows

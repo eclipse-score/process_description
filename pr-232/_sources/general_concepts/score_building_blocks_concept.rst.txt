@@ -25,9 +25,9 @@ The following figure gives an overview about the building blocks of the project 
 (blue box, top, 2nd column). The objectives of the project platform include
 enabling of feature integration for different use cases and domains. This includes safety-critical
 applications. Thus the intention is, that the platform can be developed as a Safety
-Element out of Context (**SEooC**) (green box, top, 1 column). The objectives of the platform are
+Element out of Context (**SEooC**) (green box, top, 1st column). The objectives of the platform are
 expressed as concrete **Stakeholder Requirements** (blue box, top, 2nd column), which can be tested
-by provided **Platform Tests** (blue box, top, 5nd column) for reference hardware platforms. The
+by provided **Platform Integration Tests** (blue box, top, 5th column) for reference hardware platforms. The
 platform consists of **Features** (yellow box, middle, 2nd column).
 
 Further the project provides **Software Modules** (red box, middle, 1st column), which can also be
@@ -37,28 +37,28 @@ highest level component in our model. A Software Module represents e.g. executab
 
 Components are the major building blocks of the platform. Components consists of **Units**
 (grey box, bottom, 2nd column), the lowest level in our model. The represent the source code,
-which implements the Unit. Units has a **Detailed Design** (grey box, middle, 3nd column), which is
-also implemented by the **Source Code** (grey box, bottom, 3nd column). The Detailed Design is
-verified by **Unit Tests** (grey box, middle, 5nd column).
+which implements the Unit. Units has a **Detailed Design** (grey box, middle, 3rd column), which is
+also implemented by the **Source Code** (grey box, bottom, 3rd column). The Detailed Design is
+verified by **Unit Tests** (grey box, middle, 5th column).
 
-Components are defined by **Component Requirements** (green box, middle, 3nd column) and the
-**Component Architecture** (green box, middle, 4nd column). A **Component Safety Analysis**
-(green box, middle, 6nd column) is required to verify the Component Architecture, whereby
+Components are defined by **Component Requirements** (green box, middle, 3rd column) and the
+**Component Architecture** (green box, middle, 4th column). A **Component Safety Analysis**
+(green box, middle, 6th column) is required to verify the Component Architecture, whereby
 violations of safety requirements must be documented. Potential faults
 may mitigated by updating the Component Requirements or by the **Component Assumptions of Use**
 (green box, middle, 8nd column). The latter one must be considered by the user of the Component.
-**Component Tests** (green box, middle, 5nd column) verify the Component requirements, and
-**Component Integration Tests** (green box, middle, 7nd column) verify the Component Architecture
+**Component Tests** (green box, middle, 5th column) verify the Component requirements, and
+**Component Integration Tests** (green box, middle, 7th column) verify the Component Architecture
 as well as the Integration of multiple Units to a Component.
 
 As mentioned above a Software Module is defined as a Component or a set of components realizing a
 Feature of the platform. Features consists of Components and are defined by **Feature Requirements**
-(yellow box, middle, 3nd column) and the **Feature Architecture** (yellow box, middle, 4nd column).
-A **Feature Safety Analysis** (yellow box, middle, 6nd column) is required to verify the Feature
+(yellow box, middle, 3rd column) and the **Feature Architecture** (yellow box, middle, 4th column).
+A **Feature Safety Analysis** (yellow box, middle, 6th column) is required to verify the Feature
 Architecture, whereby violations of safety requirements must be documented. Potential
 faults may mitigated by updating the Feature Requirements or by the
 **Feature Assumptions of Use** (yellow box, middle, 8nd column). The latter one must be considered
-by the user of the Feature. **Feature Integration Tests** (yellow box, middle, 5nd column) verify
+by the user of the Feature. **Feature Integration Tests** (yellow box, middle, 5th column) verify
 the Feature Requirements and the Feature Architecture as well as the Integration of multiple Units
 to a Component.
 

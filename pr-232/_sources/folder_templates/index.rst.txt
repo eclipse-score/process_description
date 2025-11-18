@@ -25,3 +25,4 @@ Folder Templates
    features/index.rst
    modules/index.rst
    tools/index.rst
+   platform/index.rst

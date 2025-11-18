@@ -28,6 +28,7 @@ Workproducts
    | * Role definitions
    | * Quality Goals
    | * Schedules
+   | * Quality trainings
 
 .. workproduct:: Quality report
    :id: wp__qms_report
@@ -50,3 +51,12 @@ Workproducts
    | * Commitment on the improvement
    | * Description of the improvement incl. goals and prioritisation
    | * Measures to validate the effectiveness of the improvement
+
+
+.. workproduct:: Training path
+   :id: wp__training_path
+   :status: valid
+   :tags: quality_management
+   :complies: std_wp__iso26262__management_552, std_req__aspice_40__iic-06-04, std_req__aspice_40__iic-10-51
+
+   | Trainings shall give dedicated information how to apply the processes and work products in the project.
