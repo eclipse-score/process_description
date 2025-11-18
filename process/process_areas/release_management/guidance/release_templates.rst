@@ -104,7 +104,7 @@ Templates
    | Release <add version number> for <platform/module_name>
    | -------------------------------------------------------
    |
-   | 1. Link this issue to the correct milestone and assign to the technical lead
+   | 1. Link this issue to the correct milestone and assign to the project lead
    | 2. Check respective Verification report on the release candidate's baseline
    | 3. Check bugfixes or justify failed tests
    | 4. Check the safety package completeness (includes "valid" documents and work products status, supported by the safety manager)

@@ -84,7 +84,7 @@ Specification
 
    .. note::
       A CR shall specify the stakeholder requirements as part of our platform/project.
-      Thereby the :need:`rl__technical_lead` will approve these requirements as part of accepting the CR (e.g. merging the PR with the CR).
+      Thereby the :need:`rl__project_lead` will approve these requirements as part of accepting the CR (e.g. merging the PR with the CR).
 
 
 
