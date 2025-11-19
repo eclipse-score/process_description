@@ -39,7 +39,7 @@ Inputs
 Stakeholders
 ^^^^^^^^^^^^
 
-#. :need:`Project Lead <rl__project_lead>`
+#. :need:`Technical Lead <rl__technical_lead>`
 
    * planning of development for module and for platform projects
    * status reporting of safety activities
@@ -47,7 +47,7 @@ Stakeholders
 #. :need:`Safety Manager <rl__safety_manager>`
 
    * main responsible for the safety management work products
-   * role definition in :doc:`roles`
+   * role definition in :doc:`/process_areas/safety_management/safety_management_roles`
 
 #. :need:`External Auditor <rl__external_auditor>`
 
