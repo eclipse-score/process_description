@@ -23,7 +23,8 @@ Project Management Roles
    :status: valid
    :tags: process_management
 
-   The Project Leads decide about strategy, addition of modules and election of all other roles.
+   The Project Leads decide about strategy, approve feature requests and perform the
+   project management of the <Project>.
 
    Required skills
 
@@ -40,13 +41,15 @@ Project Management Roles
 
    * Decisions about strategical topics
    * Filling the Project Lead role according to the `Eclipse Foundation Project Handbook <https://www.eclipse.org/projects/handbook>`_
-   * Election of all roles in the project, including the :need:`Safety Manager <rl__safety_manager>` on SW platform and module level
-   * Approval of release planning and releases
+   * Review and approval of contributions, e.g. Feature Requests, which add or modify features
+   * Project management of the <Project> development - i.e. filling the project management role as defined by ISO26262
+   * High-level project control and coordination between multiple software modules
+   * Escalation instance
+   * Planning and Approval the releases of the <Project>
 
    Authority
 
    * Ultimate decisions on escalated topics
-   * Election and replacement of all role's personnel
    * Decide on addition/removal of modules repositories or split-off of projects
 
 Project Process roles
@@ -59,13 +62,7 @@ Project Process roles
    :contains: rl__committer
 
    The process community members are responsible for the definition of the process architecture of the project integrated management system and how they processes interact.
-   The approval and release of the process is done by the safety, quality and security managers and the technical leads (for the parts which affect them).
-
-.. role:: External Auditor
-   :id: rl__external_auditor
-   :status: valid
-
-   External auditing instance confirming the compliance to ISO26262 and the defined processes in S-CORE. The external auditor is not part of the project organization.
+   The approval and release of the process is done by the safety, quality and security managers and the project leads (for the parts which affect them).
 
 Project Development roles
 -------------------------
@@ -126,7 +123,7 @@ Project Feature teams
    :id: rl__platform_team
    :status: valid
    :tags: cross_functional
-   :contains: rl__technical_lead, rl__safety_manager, rl__quality_manager, rl__security_manager, rl__contributor, rl__committer, rl__infrastructure_tooling_community, rl__process_community
+   :contains: rl__project_lead, rl__safety_manager, rl__quality_manager, rl__security_manager, rl__contributor, rl__committer, rl__infrastructure_tooling_community, rl__process_community
 
    The platform team is responsible for all artifacts within the platform SEooC. Additionally it is also responsible for the overall process including its support by tooling.
 
@@ -134,23 +131,9 @@ Project Feature teams
    :id: rl__module_team
    :status: valid
    :tags: cross_functional
-   :contains: rl__module_lead, rl__safety_manager, rl__quality_manager, rl__security_manager, rl__contributor, rl__committer
+   :contains: rl__project_lead, rl__safety_manager, rl__quality_manager, rl__security_manager, rl__contributor, rl__committer
 
    The module team is responsible for all artifacts within the module SEooCs. Each module has only one responsible team but a team may also be responsible for several (small) modules.
-
-.. role:: Safety Manager
-   :id: rl__safety_manager
-   :status: valid
-   :contains: rl__committer
-
-   The safety manager is responsible for making sure that ISO26262 is complied to in the project. He/She shall lead and monitor the safety relevant activities of the feature development.
-   The safety manager is assigned and elected by a committee considering the project lead(s)
-
-   Experience
-
-   * 3+ years of proven experience in the management of safety topics
-   * Experience in managing projects
-   * Experience in managing safety anomalies
 
 Project Roles list
 ------------------

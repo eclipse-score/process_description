@@ -132,3 +132,16 @@ Workflow Safety Management
    |   - Assessing the impact on affected elements, safety requirements, and work products
    |   - Documenting the rationale for decisions regarding acceptance, implementation, or rejection of the change
    | The outcome is a change impact analysis report and a documented decision, which are reviewed and approved as part of the safety management process.
+
+.. workflow:: Create/Maintain Safety Case
+   :id: wf__cr_mt_safety_case
+   :status: valid
+   :responsible: rl__safety_manager
+   :approved_by: rl__project_lead
+   :input: wp__module_safety_package, wp__platform_safety_package
+   :output: wp__safety_case
+   :contains: gd_guidl__saf_case
+   :has: doc_concept__safety_management_process
+
+   | The Safety Manager creates and maintains the safety case, compiling evidence from safety packages and other work products.
+   | The safety case provides the structured argument for functional safety compliance according to ISO 26262.
