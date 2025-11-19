@@ -39,7 +39,7 @@ Inputs
 Stakeholders
 ^^^^^^^^^^^^
 
-#. :need:`Technical Lead <rl__technical_lead>`
+#. :need:`Project Lead <rl__project_lead>`
 
    * planning of development for module and for platform projects
    * status reporting of safety activities

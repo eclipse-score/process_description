@@ -153,3 +153,17 @@ Safety Management Guideline
    | The safety package shall be generated progressively and automatically compiling the work products.
    | One of the checks to perform on the platform safety package is to check completeness of the
    | process compliance to standards, which can be seen from standard linkage charts in :ref:`external_standards`.
+
+.. gd_guidl:: Safety case creation and maintenance
+   :id: gd_guidl__saf_case
+   :status: valid
+   :complies: std_req__iso26262__management_6481, std_req__iso26262__management_6482
+
+   | **Safety Case Creation and Maintenance**
+   | A safety case shall be created and maintained for each item or element developed according to ISO 26262.
+   | The safety case provides the structured argument, supported by evidence, that functional safety has been achieved, in accordance with the safety plan.
+   | The safety case is developed progressively as work products are generated throughout the safety lifecycle.
+   | The safety manager is responsible for initiating, updating, and finalizing the safety case.
+   | Updates to the safety case are triggered by major lifecycle milestones, audits, or significant changes to the item or its context.
+   | The safety case references the safety package, which compiles the relevant work products as evidence for the safety argument.
+   | The safety case is reviewed and approved as part of the release process to demonstrate compliance with ISO 26262.
