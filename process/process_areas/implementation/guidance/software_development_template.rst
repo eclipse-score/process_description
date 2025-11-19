@@ -18,7 +18,7 @@ Software Development Plan Template
 .. gd_temp:: Software Development Plan Template
    :id: gd_temp__software_development_plan
    :status: draft
-   :complies: std_req__iso26262__software_541
+   :complies: std_req__iso26262__software_541, std_req__iso26262__software_543
 
 Purpose
 +++++++
@@ -26,8 +26,8 @@ Purpose
 The main purpose of the software development plan is to define several software development related conditions:
 
 * selection of design and programming language
-* design guideline
-* coding guideline (e.g. MISRA, can also include style guide or naming convention)
+* design guideline (e.g. Enforcement of low complexity, Use of naming conventions, etc)
+* coding guideline (e.g. MISRA, can also include style guide or naming convention; Furthermore the coding guideline should respect the usual topics like Use of language subsets, Use of style guides, etc.)
 * SW configuration guideline
 * development tools
 

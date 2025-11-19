@@ -41,20 +41,6 @@ Workflow Safety Management
 
    | The Safety Manager shall approve the OSS component classification performed by an expert on this component.
 
-   .. workflow:: Perform Component Safety Analysis
-      :id: wf__perform_comp_safety_analysis
-      :status: valid
-      :responsible: rl__committer
-      :approved_by: rl__safety_manager
-      :input: wp__sw_component_class
-      :output: wp__component_safety_analysis
-      :contains: gd_guidl__component_safety_analysis, gd_temp__component_safety_analysis
-      :has: doc_concept__safety_management_process, doc_getstrt__safety_management_process
-
-      | The committer is responsible for performing the safety analysis of the component after its classification.
-      | The safety analysis identifies and documents potential safety risks and mitigations for the component.
-      | The Safety Manager reviews and approves the analysis to ensure completeness and compliance with safety requirements.
-
 .. workflow:: Create/Maintain Safety Package
    :id: wf__cr_mt_safety_package
    :status: valid
@@ -146,4 +132,3 @@ Workflow Safety Management
    |   - Assessing the impact on affected elements, safety requirements, and work products
    |   - Documenting the rationale for decisions regarding acceptance, implementation, or rejection of the change
    | The outcome is a change impact analysis report and a documented decision, which are reviewed and approved as part of the safety management process.
-
