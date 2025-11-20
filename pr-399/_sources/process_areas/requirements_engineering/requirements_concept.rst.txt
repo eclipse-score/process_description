@@ -228,7 +228,7 @@ Requirements Versioning
 Individual Requirements
 =======================
 
-For the requirements the version management is basically provided by version managemnt tooling (e.g. git history). However it needs to be identified if the content of a requirement changed. So this concept aims only at identifying a change in the mandatory attributes of a requirement.
+For the requirements the version management is basically provided by version management tooling (e.g. git history). However it needs to be identified if the content of a requirement changed. So this concept aims only at identifying a change in the mandatory attributes of a requirement.
 
 Calculate hash for current requirements
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
