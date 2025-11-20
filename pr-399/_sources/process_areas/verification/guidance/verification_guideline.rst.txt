@@ -105,7 +105,7 @@ Reporting of failing test cases
 
 Any failing test case requires an ISSUE.
 The passing rate of safety-critical test cases need to be 100% in order to release the affected component.
-In case of a lower pass rate than 100% for QM level tests, the :need:`rl__technical_lead` and
+In case of a lower pass rate than 100% for QM level tests, the :need:`rl__project_lead` and
 :need:`rl__project_lead` can decide, if the platform is in a releasable state. The accepted minimal
 path rate is defined in the :need:`wp__verification_plan`. Due to the high degree of automation, a
 it is recommended that a path rate lower 95% is not acceptable.

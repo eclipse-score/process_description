@@ -21,6 +21,7 @@ Release Note
    :id: doc__module_name_release_note
    :status: draft
    :safety: ASIL_B
+   :security: NO
    :realizes: wp__module_sw_release_note
    :tags: template
 

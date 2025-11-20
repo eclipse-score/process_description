@@ -34,7 +34,7 @@ Inputs
 Stakeholders for the requirements
 =================================
 
-#. :need:`Tech Lead Circle <rl__technical_lead>`
+#. :need:`Project Lead Circle <rl__project_lead>`
 
    * Define specification and content for the platform
    * Creation of a project timeline

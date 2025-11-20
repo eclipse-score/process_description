@@ -38,7 +38,7 @@ Module Security Plan Template
    +---------------------------+--------------------------------------------------------------+
    | Security Manager          | <link to Module's Security Manager assignment or name>       |
    +---------------------------+--------------------------------------------------------------+
-   | Project Manager           | <link to Module's Technical/Module Lead assignment or name>  |
+   | Project Manager           | <link to Module's Project Lead assignment or name>           |
    +---------------------------+--------------------------------------------------------------+
 
    | **4. Tailoring**
@@ -48,7 +48,7 @@ Module Security Plan Template
    |   - <ISO SAE 21434 reference>: <work product/requirement> - <Argumentation why it is not needed or replaced by another work product or activity.>
    |
    | **5. Security Module Work Products**
-   | One set of workproducts for the module and one set for each component of the module:
+   | One set of work products for the module and one set for each component of the module:
 
 .. list-table:: Module Work Products
         :header-rows: 1
