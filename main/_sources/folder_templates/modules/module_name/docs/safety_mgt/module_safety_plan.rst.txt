@@ -341,7 +341,7 @@ Component Architecture Status
 -----------------------------
 
 .. needtable::
-   :filter: "component_name" in docname and "requirements" in docname and docname is not None
+   :filter: "component_name" in docname and "architecture" in docname and docname is not None
    :style: table
    :types: comp_arc_sta; comp_arc_dyn
    :tags: component_name
