@@ -27,7 +27,7 @@ Purpose
 -------
 
 The purpose of the software architecture checklist is to ensure that the design meets the criteria and quality as
-defined per S-CORE processes and guidelines for feature and component architectural design elements.
+defined per project processes and guidelines for feature and component architectural design elements.
 It helps to check the compliance with requirements, identify errors or inconsistencies, and ensure adherence to best
 practices.
 The checklist guides evaluation of the architecture design, identifies potential problems, and aids in

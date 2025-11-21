@@ -36,8 +36,8 @@ General Principles
 * **Independence:** Where possible, verification activities should be performed by someone other than the original author of the code or documentation.
 * **Documentation:** All verification activities and their results must be documented appropriately.
 
-More details on the test strategy and execution can be found in the :need:`wp__verification_plan` implemented by
-`REPLACE_doc__verification_plan`.
+More details on the test strategy and execution can be found in the verification plan implemented by
+:need:`wp__verification_plan` of the project.
 
 
 Test Case Description

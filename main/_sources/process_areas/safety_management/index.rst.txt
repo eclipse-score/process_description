@@ -64,7 +64,7 @@ Safety Plans
 
 This SW platform project defines two levels of planning: platform and module. There will be one safety plan on platform level and several safety plans on module level (one for each module).
 This is how we organize our development teams and repositories. Each of these safety plan "creates" one SEooC.
-The `Platform Safety Plan <REPLACE_doc__platform_safety_plan>` exists only once and is part of the `Platform Management Plan <REPLACE_doc__platform_mgt_plan>` of S-CORE.
+The :need:`Platform Safety Plan <wp__platform_safety_plan>` exists only once and is part of the :need:`Platform Management Plan <wp__platform_mgmt>`.
 
 Safety Management Work Products
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -97,7 +97,7 @@ In case you are appointed as a :need:`Safety Manager <rl__safety_manager>` by th
 * Contact the :need:`Project Lead <rl__project_lead>` for your SEooC to establish planning and reporting (the TL should already have established a Github project for planning)
 * Create your safety plan according to :need:`wf__cr_mt_safety_plan`
 * Make familiar with your role description and the other workflows of safety management (see below)
-* Make familiar with the development and supporting process descriptions in :ref:`process_description` plus the relevant sections of the `Platform Management Plan <REPLACE_doc__platform_mgt_plan>`
+* Make familiar with the development and supporting process descriptions in :ref:`process_description` plus the relevant sections of the :need:`Platform Management Plan <wp__platform_mgmt>`
 
 Workflows
 ---------

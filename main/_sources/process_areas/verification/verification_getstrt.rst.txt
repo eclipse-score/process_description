@@ -52,7 +52,7 @@ The details of what needs to be done in each part are described in the :ref:`ver
 Tooling Support
 ***************
 
-The following tools support the verification process:
+The following tools may support the verification process (according to the project specific :need:`SW development Plan <wp__sw_development_plan>`):
 
 * **Bazel:** For building the software and running tests (supported by ITF).
 * **Google Test:** For unit testing in C++.

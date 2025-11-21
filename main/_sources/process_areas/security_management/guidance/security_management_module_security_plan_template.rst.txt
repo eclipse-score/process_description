@@ -82,7 +82,7 @@ Module Security Plan Template
           - <automated>
 
         * - :need:`wp__fdr_reports` (module Security Package)
-          - :need:`gd_chklst__security_package`
+          - :need:`Security Package Formal Review Checklist <gd_chklst__security_package>`
           - <automated>
           - <Link to issue>
           - <Link to WP>
@@ -103,7 +103,7 @@ Module Security Plan Template
           - <WP status (manual)>
 
         * - :need:`wp__module_sw_build_config`
-          - `REPLACE_sw_development`
+          - :need:`Software Development Plan Template <gd_temp__software_development_plan>`
           - <automated>
           - <Link to issue>
           - <Link to WP>

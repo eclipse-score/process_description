@@ -73,7 +73,7 @@ Project Development roles
    :tags: development
    :contains: rl__committer
 
-   The infrastructure and tooling community members are responsible for the infrastructure and tooling setup for development namely github, bazel, sphinx-needs, but also the rest of the tool chain.
+   The infrastructure and tooling community members are responsible for the infrastructure and tooling setup for development, but also the rest of the tool chain.
 
 .. role:: Contributor
    :id: rl__contributor
