@@ -12,8 +12,8 @@
    # SPDX-License-Identifier: Apache-2.0
    # *******************************************************************************
 
-Verification Guideline
-======================
+Guideline
+=========
 .. gd_guidl:: Verification Guideline
    :id: gd_guidl__verification_guide
    :status: valid

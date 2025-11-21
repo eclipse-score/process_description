@@ -195,3 +195,14 @@ Workflow Verification
    defined in the :need:`wp__verification_plan` and :need:`wp__platform_mgmt`.
 
    The report is valid for ONE specific platform version baseline.
+
+RAS(IC) for Verification:
+*************************
+
+.. needtable:: RASIC Overview for Problem Resolution
+   :tags: verification_process
+   :filter: "verification_process" in tags and type == "workflow" and is_external == False
+   :style: table
+   :sort: status
+   :columns: id as "Activity";responsible as "Responsible";approved_by as "Approver";supported_by as "Supporter"
+   :colwidths: 30,30,30,30

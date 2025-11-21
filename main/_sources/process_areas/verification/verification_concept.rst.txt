@@ -12,8 +12,8 @@
    # SPDX-License-Identifier: Apache-2.0
    # *******************************************************************************
 
-Verification Concept
-####################
+Concept Description
+###################
 
 .. doc_concept:: Verification Concept
    :id: doc_concept__verification_process
