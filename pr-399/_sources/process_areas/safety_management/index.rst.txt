@@ -64,7 +64,7 @@ Safety Plans
 
 This SW platform project defines two levels of planning: platform and module. There will be one safety plan on platform level and several safety plans on module level (one for each module).
 This is how we organize our development teams and repositories. Each of these safety plan "creates" one SEooC.
-The :need:`Platform Safety Plan <wp__platform_safety_plan>` exists only once and is part of the :need:`Platform Management Plan <wp__platform_mgmt>` of S-CORE.
+The :need:`Platform Safety Plan <wp__platform_safety_plan>` exists only once and is part of the :need:`Platform Management Plan <wp__platform_mgmt>`.
 
 Safety Management Work Products
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

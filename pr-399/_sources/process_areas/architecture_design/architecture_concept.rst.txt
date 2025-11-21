@@ -280,7 +280,7 @@ The *static view* shows the *building blocks* of the architecture. It shall be c
      - comp_arc_sta
      - comp_arc_sta_t
 
-To represent the CI build tool artifact an additional container (or package) is introduced. It can only contain components:
+To represent the CI build tool module (for example a `Bazel Modules <https://bazel.build/external/module>`_) an additional container (or package) is introduced. It can only contain components:
 
 .. list-table:: Definition of the static module view
    :header-rows: 1

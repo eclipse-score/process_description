@@ -130,7 +130,7 @@ In S-CORE we do both:
 S-CORE evaluates this coverage using the compiler selected for the target reference platform.
 
 If a sufficient structural coverage is not reached then additional test cases are added.
-What is sufficient and how to determine the coverage is defined in the :need:`wp__verification_plan`.
+What is sufficient and how to determine the coverage is defined in the :need:`wp__verification_plan` of the project.
 
 
 Derivation Techniques

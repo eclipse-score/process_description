@@ -37,7 +37,7 @@ General Principles
 * **Documentation:** All verification activities and their results must be documented appropriately.
 
 More details on the test strategy and execution can be found in the verification plan implemented by
-:need:`wp__verification_plan`.
+:need:`wp__verification_plan` of the project.
 
 
 Test Case Description
