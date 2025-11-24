@@ -17,6 +17,7 @@
    :id: doc__component_name_arc_inspection
    :status: draft
    :safety: ASIL_B
+   :security: YES
    :realizes: wp__sw_arch_verification
    :tags: template
 
@@ -26,7 +27,7 @@
     - Modify ``Your Component Name`` to be your component Name
     - Modify ``id`` to be your component Name in lower snake case preceded by ``doc__`` and followed by ``_arc_inspection``
     - Adjust ``status`` to be ``valid``
-    - Adjust ``safety`` and ``tags`` according to your needs
+    - Adjust ``safety``, ``security`` and ``tags`` according to your needs
 
 Architecture Inspection Checklist
 =================================

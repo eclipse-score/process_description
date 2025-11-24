@@ -43,8 +43,8 @@ Additional to the tailoring in the SW platform project as defined in the project
   - <work product/requirement> - <Argumentation why it is not needed or replaced by another work product or activity.>
 
 
-Inter-process Communication Safety Work Products
-================================================
+Safety Work products List
+=========================
 
 .. list-table:: Feature <feature_name> Work products
     :header-rows: 1
