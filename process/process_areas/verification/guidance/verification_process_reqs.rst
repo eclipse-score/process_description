@@ -153,7 +153,7 @@ Process Requirements
     :complies:
 
     The tool automation shall automatically generate the Verification reports.
-    These may be independent documents (i.e. not integrated into sphinx documentation).
+    These may be independent documents (i.e. not integrated into docs-as-code based repositories).
     The content of the reports is specified in :need:`gd_temp__platform_ver_report` and :need:`gd_temp__mod_ver_report`.
 
 .. gd_req:: Verification Report Archiving
