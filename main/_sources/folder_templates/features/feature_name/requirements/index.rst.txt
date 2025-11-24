@@ -75,5 +75,5 @@ Requirements
     - Set the status to valid and start the review/merge process
     - Add other needed requirements for your feature
 
-.. needextend:: "feature_name" in id
+.. needextend:: docname is not None and "feature_name" in id
    :+tags: feature_name

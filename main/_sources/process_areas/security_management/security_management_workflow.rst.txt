@@ -144,7 +144,7 @@ Workflow Security Management
    | The security manager :need:`rl__security_manager` consults all project/platform stakeholder as defined in :need:`doc_concept__security_management_process` for security topics and executes regularly security trainings.
 
 
-.. needextend:: "process_areas/security_management" in docname
+.. needextend:: docname is not None and "process_areas/security_management" in docname
    :+tags: security_management
 
 RAS(IC) for Security Management:
