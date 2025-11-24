@@ -76,6 +76,13 @@ Release Note
 | - **Bug 2**: Brief description of the bug fix.
 | - **Bug 3**: Brief description of the bug fix.
 |
+| Other changes by Label
+| ----------------------
+|
+| - **Label 1/Refactor 1**: Brief description of the change.
+| - **Label 2/Refactor 2**: Brief description of the change.
+| - **Label 3/Refactor 3**: Brief description of the change.
+|
 | Compatibility
 | -------------
 |
@@ -95,6 +102,7 @@ Release Note
 |
 | Known Vulnerabilities
 | ---------------------
+|
 | - **CVE 1**: Brief description of the known CVE. Justification regarding security impact.
 | - **CVE 2**: Brief description of the known CVE. Justification regarding security impact.
 | - **CVE 3**: Brief description of the known CVE. Justification regarding security impact.
@@ -106,6 +114,17 @@ Release Note
 | 2. **Step 2**: Description of the second step.
 | 3. **Step 3**: Description of the third step.
 |
+| Contributors
+| ------------
+|
+| Thanks to everyone who contributed to this release:
+|
+| Contributor 1
+| Contributor 2
+|
+
+---
+
 | Contact Information
 | -------------------
 |

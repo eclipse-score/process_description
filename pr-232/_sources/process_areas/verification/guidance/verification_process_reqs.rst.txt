@@ -14,9 +14,8 @@
 
 .. _verification_process_reqs:
 
-Test Linking to Requirements
-============================
-
+Process Requirements
+====================
 
 .. gd_req:: Linking Requirements to Tests
     :id: gd_req__verification_link_tests

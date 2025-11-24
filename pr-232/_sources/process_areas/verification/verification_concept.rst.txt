@@ -12,8 +12,8 @@
    # SPDX-License-Identifier: Apache-2.0
    # *******************************************************************************
 
-Verification Concept
-####################
+Concept Description
+###################
 
 .. doc_concept:: Verification Concept
    :id: doc_concept__verification_process
@@ -39,15 +39,18 @@ Inputs
 Stakeholder
 ===========
 
-#. :need:`Technical Lead <rl__technical_lead>`
+#. :need:`Project Lead <rl__project_lead>`
 
    * Set the scope of platform and testing
    * Status reporting of verification activities
    * Defining release content
    * Judge the releasable software state in case of failing test cases.
+   * Set the scope of platform and testing
+   * Status reporting of verification activities
+   * Defining release content
 
-     This may need involvement of :need:`rl__project_lead`,
-     :need:`rl__safety_manager`, and :need:`rl__security_manager`
+     This may need involvement of
+     :need:`rl__safety_manager` and :need:`rl__security_manager`
 
 #. :need:`SW developer/Architects <rl__contributor>`
 
@@ -63,12 +66,6 @@ Stakeholder
 
    * Review and approve verification artifacts
    * Get support by the :need:`rl__safety_manager` for safety-critical artifacts
-
-#. :need:`Technical Lead <rl__committer>`
-
-   * Set the scope of platform and testing
-   * Status reporting of verification activities
-   * Defining release content
 
 #. :need:`Infrastructure/Tooling Developer <rl__infrastructure_tooling_community>`
 
@@ -95,7 +92,7 @@ Stakeholder
 .. _verification_concept_types_methods:
 
 Verification Methods
-=====================
+====================
 
 A verification is based on different methods. An overview of the different methods that are
 applicable are:

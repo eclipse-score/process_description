@@ -54,7 +54,7 @@ Stakeholders for the Change Requests
    * Approves all change request activities besides changes closing
    * Is responsible to initiate the the closure of the change request
 
-#. :need:`Technical Lead <rl__technical_lead>`, :need:`Module Lead <rl__module_lead>`
+#. :need:`Project Lead <rl__project_lead>`
 
    * Supports all change request activities
    * Approves the closing of the change request
@@ -106,8 +106,7 @@ by authorized persons.
 
 Authorized person includes
 
-#. :need:`Technical Lead <rl__technical_lead>`
-#. :need:`Module Lead <rl__module_lead>`
+#. :need:`Project Lead <rl__project_lead>`
 #. :need:`Safety Manager <rl__safety_manager>`
 #. :need:`Security Manager <rl__security_manager>`
 #. :need:`Quality Manager <rl__quality_manager>`
@@ -124,7 +123,7 @@ monitored.
 The Change Request implementation must be tracked until it is closed.
 
 The status of the Change Request must be communicated by the
-:need:`Technical Lead <rl__technical_lead>` or :need:`Module Lead <rl__module_lead>` until
+:need:`Project Lead <rl__project_lead>` until
 the implementation is completed and confirmed.
 
 .. _chm_closing:
