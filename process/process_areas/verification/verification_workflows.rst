@@ -154,7 +154,7 @@ Workflow Verification
    :tags: verification
    :responsible: rl__committer, rl__testing_community
    :approved_by: rl__project_lead
-   :supported_by: rl__safety_manager, rl__infrastructure_tooling_community
+   :supported_by: rl__safety_manager, rl__infrastructure_tooling_community, rl__contributor
    :input: wp__verification_plan, wp__requirements_comp, wp__requirements_comp_aou,
            wp__component_arch, wp__module_sw_release_note, wp__platform_mgmt,
            wp__sw_component_fmea, wp__sw_component_dfa,
@@ -165,10 +165,17 @@ Workflow Verification
    :has: doc_concept__verification_process, doc_getstrt__verification_process
 
    The verification report is created and maintained by a :need:`rl__committer`.
-   It is based on the :need:`wp__verification_plan` and covers all the components of a module.
+   It is based on the :need:`wp__verification_plan` and covers all the components of a developed module.
    This includes their requirements, AoUs, Architecture, Detailed Design, Units, DFA, Safety Analyses,
    Unit Code coverage. The respective necessary test methods and rigor of their application is
    defined in the :need:`wp__verification_plan`.
+
+   In case of externally provided pre-existing software maintained outside of the project,
+   the Module Verification Report also applies as documentation for the Qualification Verification
+   Report. The respective component(s) are verified with the same methods and deviation techniques
+   as mentioned in the :need:`wp__verification_plan`. The report will be filled by the :need:`rl__committer`
+   responsible for integration of the external component and will get support by the :need:`rl__contributor`
+   who proposed the component to the added to the project scope.
 
    The report is valid for ONE version of a module.
 
