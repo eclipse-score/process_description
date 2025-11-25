@@ -54,26 +54,27 @@ Safety Management Guideline
    | Safety anomalies relevant for already delivered releases will be identified as such and communicated (as defined in Problem Resolution part of :need:`wp__platform_mgmt`) via the :need:`wp__issue_track_system` (which is also Open Source).
    |
    | **Tailoring Safety Activities**
-   | The main driver for tailoring safety activities in the software platform context is that the platform is developed purely as software and provided as a Safety Element out of Context (SEooC). This requires a generic, platform-wide approach to tailoring, ensuring that safety processes are both efficient and relevant.
-   | Before any tailoring is performed, an **impact analysis** must be conducted in accordance with ISO 26262. This analysis determines whether the item or component is a new development, a modification, or an existing item with a modified environment. The results of this analysis guide the extent and nature of any tailoring.
-   | If tailoring is necessary, it must be justified and documented. The rationale should demonstrate that the tailored approach is sufficient to achieve the required level of functional safety. Tailoring may be driven by several factors, including:
-   | - Proven-in-use arguments,
+   | The software platform is developed purely as software and provided as a Safety Element out of Context (SEooC). That is why only software relevant parts of :ref:`standard_iso26262` are used.
+   | This requires a generic, platform-wide approach to tailoring so that safety processes remain efficient, relevant, and compliant with the software relevant ISO 26262.
+   | Before any tailoring is performed, an **impact analysis** must be conducted in accordance with ISO 26262. This analysis is performed on element level, not on the item level as previously stated.
+   | This analysis determines whether the element is a new development, a modification, or an existing element with a modified environment. The results guide the extent and nature of any tailoring.
+   |
+   | If tailoring is necessary, it must be justified and documented. The rationale should demonstrate that the tailored approach is sufficient to achieve the required level of functional safety. Tailoring may be driven by factors such as:
+   |
    | - Qualification of software components,
    | - Confidence in the use of software tools.
-   | In each case, the tailoring must follow the relevant guidance and requirements set out in ISO 26262, ensuring that all safety goals are met and that the integrity of the safety lifecycle is maintained.
-   | For the software platform as a whole, tailoring is typically achieved by clearly defining which work products are relevant and providing a reasoned argument for omitting others. This is documented in the platform safety plan and the standard ISO 26262 reference documentation.
-   | Where necessary, additional tailoring may be applied at the module or feature level, particularly for SEooC developments. In these cases, the main driver for tailoring is often the reuse of existing, qualified components. Such module-specific tailoring is documented in the respective feature safety plans.
-   | This approach ensures that safety activities are focused, efficient, and appropriate to the context of a reusable software platform, while maintaining compliance with the intent and requirements of ISO 26262.
-   | Tailoring is done for the whole SW platform by defining only the relevant work products and an argumentation why the others are not needed in :ref:`standard_iso26262` and :need:`platform safety plan <wp__platform_safety_plan>`.
-   | When safety activities are tailored because an element is developed as a Safety Element out of Context (SEooC):
-   | a) The SEooC development must be based on a requirements specification that is derived from well-defined assumptions about its intended use and context, including all relevant external interfaces.
-   | b) These assumptions regarding intended use and context must be validated when the SEooC is integrated into its target application.
-   | This approach ensures that SEooC development remains compliant with ISO 26262 expectations.
-   | Such SEooC tailoring can happen for each module SEooC development to restrict further the work products. This is documented in every :need:`wp__module_safety_plan`. Here the usage of already existing components is the main tailoring driver.
-
-   | Main tailoring driver is that the SW platform is pure SW development and is provided as "SEooC" - this explains mainly the generic, platform wide tailoring.
-   | Tailoring is done for the whole SW platform by defining only the relevant work products and an argumentation why the others are not needed in :ref:`standard_iso26262` and `REPLACE_doc__platform_safety_plan`.
-   | But there may be also additional tailoring for each module SEooC development to restrict further the work products. This is documented in every feature safety plan. Here the usage of already existing components is the main tailoring driver.
+   |
+   | Note: Proven-in-use arguments are generally not applicable for a reusable SEooC platform intended for integration into various target applications and environments.
+   |
+   | For the software platform as a whole, tailoring is achieved by clearly defining which work products are relevant and providing a reasoned argument for omitting others. This is documented in the platform safety plan and the ISO 26262 reference documentation.
+   |
+   | Additional tailoring may apply at the module or feature level, particularly for SEooC developments where reuse of existing qualified components is the main driver. Such tailoring is documented in the respective module safety plans.
+   |
+   | When safety activities are tailored because an element is developed as SEooC:
+   | a) The SEooC development must be based on a requirements specification derived from well-defined assumptions about its intended use and context, including all relevant external interfaces.
+   | b) These assumptions must be validated when the SEooC is integrated into its target application.
+   |
+   | This approach ensures that safety activities are focused, efficient, and appropriate to the context of a reusable software platform, while maintaining compliance with ISO 26262 requirements and intent.
    |
    | **Planning safety activities:**
    | In the safety plan the nomination of the safety manager and the project manager is documented.
@@ -107,14 +108,12 @@ Safety Management Guideline
    | * :need:`wp__verification_platform_int_test`
    |
    | Verification planning is documented in :need:`wp__verification_plan`
-   | As part of the verification process for production releases, it shall be ensured that the embedded software contains all specified functions and properties,
-   | and only contains other unspecified functions if these do not impair compliance with the software safety requirements.
    | Any unspecified functions, such as code for debugging or instrumentation, must either be deactivated or removed prior to release, unless their presence does not affect safety compliance.
    |
-   | **Scheduling of confirmation reviews, audit and assessment:**
+   | **Scheduling of formal document reviews, audit and assessment:**
    | Scheduling is done in the same way as for all work products definition by issues. The respective work products are :need:`wp__fdr_reports` and  :need:`wp__audit_report`
    | A person responsible for carrying out the functional safety audit shall be appointed as part of the scheduling process. This person has to have the required skillset and knowledge.
-   | The functional safety assessor may appoint one or more assistants to support the assessment.
+   | The functional safety auditor may appoint one or more assistants to support the audit.
    | These assistants may not be fully independent from the developers of the relevant item, elements, or work products, but must possess at least a basic level of independence.
    | The assessor is responsible for appraising the input from any assistants to ensure that the assessment remains objective and that an unbiased opinion is provided.
    | The planning and follow-up of the audit or assessment shall also take into account the type of report to be issued—whether it is an acceptance, conditional acceptance (with required corrective actions and conditions for acceptance), or a rejection.
@@ -153,17 +152,3 @@ Safety Management Guideline
    | The safety package shall be generated progressively and automatically compiling the work products.
    | One of the checks to perform on the platform safety package is to check completeness of the
    | process compliance to standards, which can be seen from standard linkage charts in :ref:`external_standards`.
-
-.. gd_guidl:: Safety case creation and maintenance
-   :id: gd_guidl__saf_case
-   :status: valid
-   :complies: std_req__iso26262__management_6481, std_req__iso26262__management_6482
-
-   | **Safety Case Creation and Maintenance**
-   | A safety case shall be created and maintained for each item or element developed according to ISO 26262.
-   | The safety case provides the structured argument, supported by evidence, that functional safety has been achieved, in accordance with the safety plan.
-   | The safety case is developed progressively as work products are generated throughout the safety lifecycle.
-   | The safety manager is responsible for initiating, updating, and finalizing the safety case.
-   | Updates to the safety case are triggered by major lifecycle milestones, audits, or significant changes to the item or its context.
-   | The safety case references the safety package, which compiles the relevant work products as evidence for the safety argument.
-   | The safety case is reviewed and approved as part of the release process to demonstrate compliance with ISO 26262.

@@ -46,7 +46,7 @@ Roles
 
    * Creating the Safety Plan
    * Functional Safety related project status reporting
-   * Creation and Monitoring of completeness of the safety case
+   * Creation and Monitoring of completeness of the safety package
    * Reporting of safety anomalies
    * Verify, that the preconditions for the "release for production", which are  part of the release notes, are fulfilled, and the correctness, completeness and consistency of the release notes
    * Coaching the project team w.r.t all questions related to functional safety
@@ -71,12 +71,12 @@ Roles
    Required skills, Knowledge of standards, Experience
 
    * External Auditor comes from organization specialized in safety audits and assessment, thus sufficient skill should be guaranteed by the sending organization.
-   * For performing the confirmation reviews also a safety manager from another (S-CORE) project can play the role of an external auditor, in this case the same skills apply as for the safety manager.
+   * For performing the formal document reviews also a safety manager from another project can play the role of an external auditor, in this case the same skills apply as for the safety manager.
 
    Responsibility
 
    * Performing and reporting of safety audit
-   * Performing of confirmation reviews on safety plans, safety case and safety analysis (incl. DFA)
+   * Performing of formal document reviews on safety plans, safety pacakge and safety analysis (incl. DFA)
 
    Authority
 

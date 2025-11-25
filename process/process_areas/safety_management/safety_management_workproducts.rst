@@ -146,19 +146,3 @@ Workproducts Safety Management
    for your project (documented in the PMP), to be able to demonstrate completeness as described in :need:`gd_guidl__saf_package`.
    It is not really a work product definition,
    but this is the best way to link to the tailored out standard work products.
-
-.. workproduct:: Safety Case
-   :id: wp__safety_case
-   :status: valid
-   :complies: std_wp__iso26262__management_654
-
-   The safety case provides the structured argument, supported by evidence, that functional safety has been achieved for the item or element, in accordance with the safety plan.
-
-   The safety case:
-   * Compiles and references the relevant work products generated throughout the safety lifecycle to support the safety argument.
-   * Is developed progressively as work products become available, allowing for incremental release and assessment.
-   * In distributed developments, may combine the safety cases of customer and suppliers, referencing evidence from all parties and defining interfaces in a Development Interface Agreement (DIA).
-   * Supports safety planning by identifying intended safety arguments early, and supports progressive functional safety assessments as evidence accumulates.
-
-   The safety case is a key deliverable to demonstrate compliance with ISO 26262 functional safety requirements.
-   The creation and maintenance of the safety case shall follow the process described in :need:`gd_guidl__saf_case`.
