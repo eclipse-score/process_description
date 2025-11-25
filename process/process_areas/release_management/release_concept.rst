@@ -48,7 +48,7 @@ Platform Release Plan
 The platform release plan provides a reliable plan on what software modules can be expected in the
 upcoming platform release. The platform release plan is reflected by feature requests which are
 demanded. Therefore it is of importance that the *Project Leads* on platform level are aligned with
-the various software module *Project Leads* and to align the platform release
+the various software *Module Leads* and to align the platform release
 plan properly with the module release plan as the platform release plan has a clear dependency on
 its output.
 
@@ -79,12 +79,15 @@ Module Release Plan
 ===================
 
 The module release plan gives a guidance when certain features can be expected on a module level.
-It is created by the respective *Project Leads* of the module.
+It is created by the respective *Module Leads*.
 
-#. :need:`Project Lead Circle <rl__project_lead>`
+#. :need:`Committer (acting as Module Lead) <rl__committer>`
 
    * Define and proposes scope of individual module Release
    * Creates and maintains the module release plan
+
+#. :need:`Project Lead Circle <rl__project_lead>`
+
    * Approves the module release plan
 
 Module Release
@@ -93,9 +96,12 @@ Module Release
 Each software module needs to have its dedicated release and the accompanying release notes.
 Only released software modules can be included into a platform release.
 
-#. :need:`Project Lead Circle <rl__project_lead>`
+#. :need:`Committer (acting as Module Lead) <rl__committer>`
 
    * Provides the software module release notes
+
+#. :need:`Project Lead Circle <rl__project_lead>`
+
    * Approves the module release notes
    * Adds and removes Software modules to the Platform
    * Releases the module
