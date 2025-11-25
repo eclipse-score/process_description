@@ -15,14 +15,23 @@
 Getting started
 ---------------
 
-.. doc_getstrt:: Safety Management Get Started
+.. doc_getstrt:: Getting started on Safety Management
    :id: doc_getstrt__safety_management_process
    :status: valid
 
+If you are appointed as a :need:`Safety Manager <rl__safety_manager>` by the :need:`Project Lead <rl__project_lead>` in the project:
 
-In case you are appointed as a :need:`Safety Manager <rl__safety_manager>` by the :need:`rl__project_lead` in the S-CORE project:
+* **Establish Planning and Reporting**
+  - Contact the :need:`Project Lead <rl__project_lead>` for your SEooC.
+  - Confirm that an Issue Tracking system is in place for planning and reporting.
 
-* Contact the :need:`Technical Lead <rl__technical_lead>` for your SEooC to establish planning and reporting (the TL should already have established a Github project for planning)
-* Create your safety plan according to :need:`wf__cr_mt_safety_plan`
-* Make familiar with your role description and the other workflows of safety management (see below)
-* Make familiar with the development and supporting process descriptions in :ref:`process_description` plus the relevant sections of the :need:`wp__platform_mgmt`
+* **Create Your Safety Plan**
+  - Follow the workflow described in :need:`wf__cr_mt_safety_plan`.
+
+* **Understand Your Role and Responsibilities**
+  - Review your role description in :doc:`/process_areas/safety_management/safety_management_roles`.
+  - Familiarize yourself with the Safety Management workflow in :doc:`/process_areas/safety_management/safety_management_workflow`.
+
+* **Explore Supporting Processes**
+  - Read the development and supporting process descriptions in :ref:`process_description`.
+  - Check relevant sections of :need:`wp__platform_mgmt`.

@@ -24,8 +24,9 @@ Inputs for this concepts are mainly the requirements of ISO26262 "Part 2: Manage
 
 Key concept
 ^^^^^^^^^^^
-The Safety Management Plan should define the strategy to manage the identified safety activities
-in an effective and repeatable way for the project life cycle.
+The Safety Management Plan establishes a comprehensive strategy for managing all identified safety activities throughout the entire project life cycle.
+It ensures that these activities are executed in a systematic, effective, and repeatable manner, providing clear guidance on responsibilities, processes, and control measures.
+This approach supports risk mitigation, regulatory compliance, and continuous improvement, enabling the project team to maintain safety standards consistently from initiation to completion.
 
 Inputs
 ^^^^^^
@@ -39,24 +40,27 @@ Inputs
 Stakeholders
 ^^^^^^^^^^^^
 
-#. :need:`Technical Lead <rl__technical_lead>`
+#. :need:`Project Lead <rl__project_lead>`
 
    * planning of development for module and for platform projects
-   * status reporting of safety activities
 
 #. :need:`Safety Manager <rl__safety_manager>`
 
-   * main responsible for the safety management work products
+   * main responsible to ensure ISO 26262 compliance in the project
    * role definition in :doc:`/process_areas/safety_management/safety_management_roles`
+   * status reporting of safety activities
 
 #. :need:`External Auditor <rl__external_auditor>`
 
-   * understand activities planning, processes definition and execution
+   * Performs independent safety audits and formal document reviews (e.g., safety plans, safety packages, safety analyses).
+   * Verifies compliance with defined safety processes and standards.
+   * Reports audit results and decides on pass/fail status.
+
 
 #. "Distributor" (external role)
 
    * use the platform in a safe way
-   * integrate the platform in his product (distribution) and safety case
+   * integrate the platform in his product (distribution) and safety pacakge
    * plan this integration (also in time)
    * qualify the SW platform as part of his product
 
@@ -65,7 +69,7 @@ Safety Plans
 
 This SW platform project defines two levels of planning: platform and module. There will be one safety plan on platform level and several safety plans on module level (one for each module).
 This is how we organize our development teams and repositories. Each of these safety plan "creates" one SEooC.
-The Platform Safety Plan exists only once and is part of the Platform Management Plan of S-CORE.
+The Platform Safety Plan exists only once and is part of the Platform Management Plan.
 
 Safety Management Work Products
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -73,15 +77,15 @@ Safety Management Work Products
 Apart from the safety plans the main work products of safety management are:
 
 * :need:`Safety Manual <wp__platform_safety_manual>` - the safety manual defines the requirements for safe usage or integration of the SW platform (or its individual modules)
-* :need:`Confirmation Reviews <wp__fdr_reports>` - on safety plan, safety package and safety analyses, according to ISO 26262 requirements
-* :need:`Safety Package <wp__platform_safety_package>` - the safety package does not contain the safety argumentation. By this the S-CORE project ensures it does not take over liability for the SW platform (or its individual modules). But it enables the distributors to integrate the SW platform (or its individual modules) in their safety package.
+* :need:`Formal Document Review Reports <wp__fdr_reports>` - on safety plan, safety package and safety analyses, according to ISO 26262 requirements
+* :need:`Safety Package <wp__platform_safety_package>` - the safety package does not contain the safety argumentation. By this the project ensures it does not take over liability for the SW platform (or its individual modules). But it enables the distributors to integrate the SW platform (or its individual modules) in their safety package.
 
 Safety Management Tooling
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-For the safety planning and safety manual, `sphinx-needs <https://www.sphinx-needs.com/>`_ will be used for referencing.
+For the safety planning and safety manual a “Docs-as-Code” approach is used and within that approach Id will be used for referencing.
 
-For the activities planning (who, when) we use `GitHub issues <https://github.com/features/issues>`_ and monitor these in GitHub projects.
+For the activities planning (who, when) we use a task tracking stystem to create and manage issues, and monitor progress through a project managemnet dashboard.
 
 For the reporting (e.g. displaying the status of the work products) additional tooling is created.
 

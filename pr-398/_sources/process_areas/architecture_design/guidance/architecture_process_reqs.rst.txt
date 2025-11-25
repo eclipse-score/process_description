@@ -51,11 +51,13 @@ Architectural Model
    Following architectural elements shall be defined on the respective hierarchical level:
 
    * Logical Level
+
      * Feature (feature_arc_sta)
      * Logical Interface (logic_arc_int)
      * Logical Interface Operation (logic_arc_int_op)
 
    * Component Level
+
      * Component (comp_arc_sta)
      * Interface (real_arc_int)
      * Interface Operation (real_arc_int_op)
