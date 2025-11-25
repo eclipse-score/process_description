@@ -561,7 +561,7 @@
                   
   <section id="process-requirements">
 <span id="verification-process-reqs"></span><h1>Process Requirements<a class="headerlink" href="#process-requirements" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-cf6749ca">
+<div class="need_container docutils container" id="SNCB-30988179">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__verification_link_tests">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -626,7 +626,7 @@
 </li>
 </ul>
 <p>More information can be found in the <a class="reference internal" href="verification_guideline.html#gd_guidl__verification_guide" title="gd_guidl__verification_guide"><em class="xref need">Verification Guideline (gd_guidl__verification_guide)</em></a>, <a class="reference internal" href="../verification_concept.html#doc_concept__verification_process" title="doc_concept__verification_process"><em class="xref need">Verification Concept (doc_concept__verification_process)</em></a>,
-and <a class="reference internal" href="verification_specification.html#gd_guidl__verification_specification" title="gd_guidl__verification_specification"><em class="xref need">Test Specification Guideline (gd_guidl__verification_specification)</em></a>.</p>
+and <a class="reference internal" href="verification_specification.html#gd_guidl__verification_specification" title="gd_guidl__verification_specification"><em class="xref need">Test Specification Guideline (gd_guidl__verification_specification)</em></a> .</p>
 </td>
 </tr>
 <tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
@@ -643,7 +643,7 @@ and <a class="reference internal" href="verification_specification.html#gd_guidl
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-15b30e80">
+<div class="need_container docutils container" id="SNCB-5270f2e2">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__verification_link_tests_cpp">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -672,29 +672,10 @@ and <a class="reference internal" href="verification_specification.html#gd_guidl
 </td>
 <td class="meta" colspan="3"></td>
 </tr>
-<tr class="content row-odd"><td class="content" colspan="6"><p>For linking C++ test suites to requirements <strong>record properties</strong> shall be used. Attributes
+<tr class="content row-odd"><td class="content" colspan="6"><p>For linking C++ tests to requirements <strong>record properties</strong> shall be used. Attributes
 which are common for all test cases can be specified in the Setup Function (SetUp()), the other
 attributes which are specific for each test case need to be specified within the test case:</p>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">TestSuite</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="o">::</span><span class="n">testing</span><span class="o">::</span><span class="n">Test</span><span class="p">{</span>
-<span class="w">   </span><span class="k">public</span><span class="o">:</span>
-<span class="w">      </span><span class="kt">void</span><span class="w"> </span><span class="n">SetUp</span><span class="p">()</span><span class="w"> </span><span class="k">override</span>
-<span class="w">      </span><span class="p">{</span>
-<span class="w">         </span><span class="n">RecordProperty</span><span class="p">(</span><span class="s">&quot;TestType&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;&lt;TestType&gt;&quot;</span><span class="p">);</span>
-<span class="w">         </span><span class="n">RecordProperty</span><span class="p">(</span><span class="s">&quot;DerivationTechnique&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;&lt;DerivationTechnique&gt;&quot;</span><span class="p">);</span>
-<span class="w">         </span><span class="p">...</span>
-<span class="w">      </span><span class="p">}</span>
-<span class="p">};</span>
-
-<span class="n">TEST_F</span><span class="p">(</span><span class="n">TestSuite</span><span class="p">,</span><span class="w"> </span><span class="o">&lt;</span><span class="n">Test</span><span class="w"> </span><span class="n">Case</span><span class="o">&gt;</span><span class="p">)</span>
-<span class="p">{</span>
-<span class="w">   </span><span class="n">RecordProperty</span><span class="p">(</span><span class="s">&quot;PartiallyVerifies&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;ID_2, ID_3, ...&quot;</span><span class="p">);</span>
-<span class="w">   </span><span class="n">RecordProperty</span><span class="p">(</span><span class="s">&quot;FullyVerifies&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;ID_4, ID_5, ...&quot;</span><span class="p">);</span>
-<span class="w">   </span><span class="n">RecordProperty</span><span class="p">(</span><span class="s">&quot;Description&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;&lt;Description&gt;&quot;</span><span class="p">);</span>
-
-<span class="w">   </span><span class="n">ASSERT</span><span class="w"> </span><span class="p">...</span>
-<span class="p">}</span>
-</pre></div>
-</div>
+<p>A more detailed description of how to link code to requirements looks like is available in the <a class="reference internal" href="verification_templates.html#verification-template-cpp"><span class="std std-ref">C++ Properties Template</span></a></p>
 </td>
 </tr>
 <tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
@@ -711,7 +692,7 @@ attributes which are specific for each test case need to be specified within the
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-2232b4cd">
+<div class="need_container docutils container" id="SNCB-61c5cbec">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__verification_link_tests_python">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -750,16 +731,7 @@ You need to add it to the test and fill out:</p>
 </ul>
 <p>For allowed values for test_type &amp; derivation_technique please check <a class="reference internal" href="#gd_req__verification_link_tests" title="gd_req__verification_link_tests"><em class="xref need">Linking Requirements to Tests (gd_req__verification_link_tests)</em></a>
 Further more, this decorator will also check if your test has a <cite>docstring</cite> which should act as the description of the test.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nd">@add_test_properties</span><span class="p">(</span>
-    <span class="n">partially_verifies</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;tool_req__docs_dd_link_source_code_link&quot;</span><span class="p">],</span>
-    <span class="n">test_type</span><span class="o">=</span><span class="s2">&quot;requirements-based&quot;</span><span class="p">,</span>
-    <span class="n">derivation_technique</span><span class="o">=</span><span class="s2">&quot;requirements-analysis&quot;</span><span class="p">,</span>
-<span class="p">)</span>
-<span class="k">def</span><span class="w"> </span><span class="nf">test_group_by_need_empty_list</span><span class="p">():</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Test grouping empty list of needlinks.&quot;&quot;&quot;</span>
-    <span class="o">...</span>
-</pre></div>
-</div>
+<p>A more detailed description of how to link code to requirements looks like is available in the <a class="reference internal" href="verification_templates.html#verification-template-python"><span class="std std-ref">Python Properties Template</span></a></p>
 </td>
 </tr>
 <tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
@@ -776,7 +748,7 @@ Further more, this decorator will also check if your test has a <cite>docstring<
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-d3ff289f">
+<div class="need_container docutils container" id="SNCB-361ec99c">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__verification_link_tests_rust">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -806,19 +778,7 @@ Further more, this decorator will also check if your test has a <cite>docstring<
 <td class="meta" colspan="3"></td>
 </tr>
 <tr class="content row-odd"><td class="content" colspan="6"><p>For linking Rust tests to requirements <strong>#[record_property]</strong> shall be used:</p>
-<div class="highlight-rust notranslate"><div class="highlight"><pre><span></span><span class="k">use</span><span class="w"> </span><span class="n">test_properties</span><span class="p">::</span><span class="n">record_property</span><span class="p">;</span>
-
-<span class="cp">#[record_property(</span><span class="s">&quot;PartiallyVerifies&quot;</span><span class="cp">, </span><span class="s">&quot;ID_2, ID_3, ...&quot;</span><span class="cp">)]</span>
-<span class="cp">#[record_property(</span><span class="s">&quot;FullyVerifies&quot;</span><span class="cp">, </span><span class="s">&quot;ID_4, ID_5, ...&quot;</span><span class="cp">)]</span>
-<span class="cp">#[record_property(</span><span class="s">&quot;Description&quot;</span><span class="cp">, </span><span class="s">&quot;&lt;Description&gt;&quot;</span><span class="cp">)]</span>
-<span class="cp">#[record_property(</span><span class="s">&quot;TestType&quot;</span><span class="cp">, </span><span class="s">&quot;&lt;TestType&gt;&quot;</span><span class="cp">)]</span>
-<span class="cp">#[record_property(</span><span class="s">&quot;DerivationTechnique&quot;</span><span class="cp">, </span><span class="s">&quot;&lt;DerivationTechnique&gt;&quot;</span><span class="cp">)]</span>
-<span class="cp">#[test]</span>
-<span class="k">fn</span><span class="w"> </span><span class="nf">test_case_function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="o">..</span><span class="p">.</span>
-<span class="p">}</span>
-</pre></div>
-</div>
+<p>A more detailed description of how to link code to requirements looks like is available in the <a class="reference internal" href="verification_templates.html#verification-template-rust"><span class="std std-ref">Rust Properties Template</span></a></p>
 </td>
 </tr>
 <tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
@@ -835,7 +795,7 @@ Further more, this decorator will also check if your test has a <cite>docstring<
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-1a0c7fdf">
+<div class="need_container docutils container" id="SNCB-4b8a279f">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__verification_independence">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -879,7 +839,7 @@ Further more, this decorator will also check if your test has a <cite>docstring<
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-f551973c">
+<div class="need_container docutils container" id="SNCB-033624ee">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__verification_reporting">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -924,7 +884,7 @@ The content of the reports is specified in <a class="reference internal" href="v
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-97a40dd6">
+<div class="need_container docutils container" id="SNCB-06a60d87">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__verification_report_archiving">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -968,7 +928,7 @@ The reports are generated according to <a class="reference internal" href="#gd_r
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-c3fd0cf5">
+<div class="need_container docutils container" id="SNCB-e00ff680">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__verification_checks">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1020,7 +980,7 @@ The reports are generated according to <a class="reference internal" href="#gd_r
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-97ac4719">
+<div class="need_container docutils container" id="SNCB-5b113707">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__verification_checks_extended">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
