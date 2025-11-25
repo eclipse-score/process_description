@@ -20,11 +20,11 @@ Concept Description
    :status: valid
    :tags: safety_analysis
 
-This section discusses a concept for safety analysis. As methods for safety analysis are used DFA (Dependent Failure Analysis)
+This section discusses a concept for Safety Analysis. As methods for Safety Analysis are used DFA (Dependent Failure Analysis)
 and FMEA (Failure Mode and Effects Analysis). Inputs for this concept are the requirements of ISO26262 Part 6 Chapter 7 and Part 9 Chapter 7 and 8.
 
 The objective of the **DFA** is to show the absence of dependent failures. Dependent failures are split into common cause failures and cascading failures.
-How to perform a safety analysis is described in :need:`gd_guidl__safety_analysis`.
+How to perform a Safety Analysis is described in :need:`gd_guidl__safety_analysis`.
 To have a structured DFA the failure initiators have to be applied :need:`gd_guidl__dfa_failure_initiators`. These are separated into the following categories:
 
  | - Shared resources: Shared resources are resources that are used by two or more elements. If one element fails, it could lead to a failure in another element.
@@ -45,7 +45,7 @@ In this case please document this in the content of the document.
 Inputs
 ******
 
-#. Stakeholders for the safety analysis (DFA and FMEA)?
+#. Stakeholders for the Safety Analysis (DFA and FMEA)?
 #. Who needs which information?
 #. How to analyse existing safety mitigation?
 #. How to add new safety mitigations?
@@ -94,7 +94,7 @@ Also requirements of standards need to be taken into consideration:
 How to analyse?
 ===============
 
-The safety analysis (DFA and FMEA) are done on the feature and component architecture. The safety analysis (DFA and FMEA) shall be done accompanying to the development.
+The Safety Analysis are done on the platform (DFA only), feature and component architecture. The Safety Analysis (DFA and FMEA) shall be done accompanying to the development.
 So the results can directly be used for the development of the feature and component. With a iterative approach it is needed to proof
 the evidence of the functional safety of the functions.
 
@@ -140,7 +140,7 @@ additional safety mitigation is needed.
 What analysis shall be done in which level?
 ===========================================
 
-The safety analysis (DFA and FMEA) shall consider the architectural elements on different levels.
+The Safety Analysis (DFA and FMEA) shall consider the architectural elements on different levels.
 
 1. **Platform Level**: At this level, the focus is on the overall feature architecture to analyse if there are failures that effects more than one feature.
 
