@@ -17,13 +17,13 @@
 .. _workflow_security_analysis:
 
 Workflow Security Analysis
-###########################
+##########################
 
 Security analysis is used as an umbrella term.
 
 .. workflow:: Analyze Platform
    :id: wf__analyse_sec_platform_featarch
-   :status: draft
+   :status: valid
    :tags: security_analysis
    :responsible: rl__security_engineer
    :approved_by: rl__security_manager
@@ -33,7 +33,8 @@ Security analysis is used as an umbrella term.
    :contains: gd_guidl__sec_ana_threat_scenarios, gd_temp__plat_threat_scenario
    :has: doc_concept__security_analysis, doc_getstrt__security_analysis
 
-   | With a platform Security Analysis the potential attack surfaces of modules shall be analyzed. It shall be used as an input for all other analysis.
+   | With a platform Security Analysis the potential attack surfaces of features shall
+   | be analyzed. It shall be used as an input for all other analysis.
    | There will be only one platform Security Analysis.
 
 .. workflow:: Analyse Feature Architecture

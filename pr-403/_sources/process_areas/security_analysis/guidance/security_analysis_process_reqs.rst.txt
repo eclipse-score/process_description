@@ -23,7 +23,7 @@ Security Analysis Process Requirements
 
 .. gd_req:: Security Analysis Structure
    :id: gd_req__sec_structure
-   :status: draft
+   :status: valid
    :tags: done_automation, security_analysis
    :satisfies: wf__analyse_sec_platform_featarch, wf__analyse_sec_featarch, wf__analyse_sec_comparch
    :complies:
@@ -43,7 +43,7 @@ Process Security Analysis Attributes
 
 .. gd_req:: Security Analysis attribute: UID
    :id: gd_req__sec_attr_uid
-   :status: draft
+   :status: valid
    :tags: done_automation, attribute, mandatory
    :satisfies: wf__analyse_sec_platform_featarch, wf__analyse_sec_featarch, wf__analyse_sec_comparch
    :complies:
@@ -58,7 +58,7 @@ Process Security Analysis Attributes
 
 .. gd_req:: Security Analysis attribute: title
    :id: gd_req__sec_attr_title
-   :status: draft
+   :status: valid
    :tags: manual_prio_1, attribute, mandatory
    :satisfies: wf__analyse_sec_platform_featarch, wf__analyse_sec_featarch, wf__analyse_sec_comparch
    :complies:
@@ -67,7 +67,7 @@ Process Security Analysis Attributes
 
 .. gd_req:: Security Analysis attribute: mitigated by
    :id: gd_req__sec_attr_mitigated_by
-   :status: draft
+   :status: valid
    :tags: prio_1_automation, attribute, optional
    :satisfies: wf__analyse_sec_platform_featarch, wf__analyse_sec_featarch, wf__analyse_sec_comparch
    :complies:
@@ -78,7 +78,7 @@ Process Security Analysis Attributes
 
 .. gd_req:: Security Analysis attribute: mitigation issue
    :id: gd_req__sec_attr_mitigation_issue
-   :status: draft
+   :status: valid
    :tags: prio_1_automation, attribute, optional
    :satisfies: wf__analyse_sec_platform_featarch, wf__analyse_sec_featarch, wf__analyse_sec_comparch
    :complies:
@@ -87,7 +87,7 @@ Process Security Analysis Attributes
 
 .. gd_req:: Security Analysis attribute: sufficient
    :id: gd_req__sec_attr_sufficient
-   :status: draft
+   :status: valid
    :tags: prio_1_automation, attribute, mandatory
    :satisfies: wf__analyse_sec_platform_featarch, wf__analyse_sec_featarch, wf__analyse_sec_comparch
    :complies:
@@ -97,7 +97,7 @@ Process Security Analysis Attributes
 
 .. gd_req:: Security Analysis content: argument
    :id: gd_req__sec_argument
-   :status: draft
+   :status: valid
    :tags: prio_1_automation, attribute, mandatory
    :satisfies: wf__analyse_sec_platform_featarch, wf__analyse_sec_featarch, wf__analyse_sec_comparch
    :complies:
@@ -107,7 +107,7 @@ Process Security Analysis Attributes
 
 .. gd_req:: Security Analysis attribute: status
    :id: gd_req__sec_attr_status
-   :status: draft
+   :status: valid
    :tags: prio_1_automation, attribute, mandatory
    :satisfies: wf__analyse_sec_platform_featarch, wf__analyse_sec_featarch, wf__analyse_sec_comparch
    :complies:
@@ -116,7 +116,7 @@ Process Security Analysis Attributes
 
 .. gd_req:: Security Analysis attribute: threat impact
    :id: gd_req__sec_attr_teffect
-   :status: draft
+   :status: valid
    :tags: prio_1_automation, attribute, mandatory
    :satisfies: wf__analyse_sec_platform_featarch, wf__analyse_sec_featarch, wf__analyse_sec_comparch
    :complies:
@@ -130,7 +130,7 @@ Security Analysis Linkage
 
 .. gd_req:: Security Analysis Linkage check
    :id: gd_req__sec_linkage_check
-   :status: draft
+   :status: valid
    :tags: prio_1_automation, attribute, automated
    :satisfies: wf__analyse_sec_platform_featarch, wf__analyse_sec_featarch, wf__analyse_sec_comparch
    :complies:
@@ -139,7 +139,7 @@ Security Analysis Linkage
 
 .. gd_req:: Security Analysis Linkage
    :id: gd_req__sec_linkage
-   :status: draft
+   :status: valid
    :tags: prio_2_automation, attribute, automated
    :satisfies: wf__analyse_sec_platform_featarch, wf__analyse_sec_featarch, wf__analyse_sec_comparch
    :complies:
@@ -148,7 +148,7 @@ Security Analysis Linkage
 
 .. gd_req:: Security Analysis attribute: check Requirements linkage
    :id: gd_req__sec_attr_requirements_check
-   :status: draft
+   :status: valid
    :tags: prio_1_automation, attribute, automated
    :satisfies: wf__analyse_sec_platform_featarch, wf__analyse_sec_featarch, wf__analyse_sec_comparch
    :complies:
@@ -157,7 +157,7 @@ Security Analysis Linkage
 
 .. gd_req:: Security Analysis attribute: Requirements linkage
    :id: gd_req__sec_attr_requirements
-   :status: draft
+   :status: valid
    :tags: prio_2_automation, attribute, automated
    :satisfies: wf__analyse_sec_platform_featarch, wf__analyse_sec_featarch, wf__analyse_sec_comparch
    :complies:
@@ -175,7 +175,7 @@ Security Analysis Linkage
 
 .. gd_req:: Security Analysis attribute: versioning
    :id: gd_req__sec_attr_ver
-   :status: draft
+   :status: valid
    :tags: prio_2_automation, attribute, automated
    :satisfies: wf__analyse_sec_platform_featarch, wf__analyse_sec_featarch, wf__analyse_sec_comparch
    :complies:
@@ -184,7 +184,7 @@ Security Analysis Linkage
 
 .. gd_req:: Security Analysis Linkage status check
    :id: gd_req__sec_linkage_status_check
-   :status: draft
+   :status: valid
    :tags: prio_3_automation, attribute, automated
    :satisfies: wf__analyse_sec_platform_featarch, wf__analyse_sec_featarch, wf__analyse_sec_comparch
    :complies:
@@ -198,7 +198,7 @@ Security Analysis Checks
 
 .. gd_req:: Security Analysis mandatory attributes provided
    :id: gd_req__sec_attr_mandatory
-   :status: draft
+   :status: valid
    :tags: prio_1_automation, attribute, check
    :satisfies: wf__analyse_sec_platform_featarch, wf__analyse_sec_featarch, wf__analyse_sec_comparch
    :complies:
@@ -214,7 +214,7 @@ Security Analysis Checks
 
 .. gd_req:: Security Analysis linkage security
    :id: gd_req__sec_linkage_security
-   :status: draft
+   :status: valid
    :tags: prio_2_automation, attribute, check
    :satisfies: wf__analyse_sec_platform_featarch, wf__analyse_sec_featarch, wf__analyse_sec_comparch
    :complies:
@@ -226,7 +226,7 @@ Security Analysis Checks
 
 .. gd_req:: Security Analysis finalization check
    :id: gd_req__sec_finalization_check
-   :status: draft
+   :status: valid
    :tags: prio_2_automation, attribute, automated
    :satisfies: wf__analyse_sec_platform_featarch, wf__analyse_sec_featarch, wf__analyse_sec_comparch
    :complies:
@@ -238,7 +238,7 @@ Threat Scenario Security Process Requirements
 
 .. gd_req:: Security Analysis attribute: threat scenario ID
    :id: gd_req__sec_attr_threat_scenario_id
-   :status: draft
+   :status: valid
    :tags: prio_1_automation, attribute, mandatory
    :satisfies: wf__analyse_sec_platform_featarch, wf__analyse_sec_featarch, wf__analyse_sec_comparch
    :complies:
@@ -252,7 +252,7 @@ Threat Models Process Requirements
 
 .. gd_req:: Threat Model attribute: threat ID
    :id: gd_req__sec_attr_stride_threat_id
-   :status: draft
+   :status: valid
    :tags: prio_1_automation, attribute, mandatory
    :satisfies: wf__analyse_sec_featarch, wf__analyse_sec_comparch
    :complies:

@@ -19,17 +19,17 @@ Roles
 
 .. role:: Security Engineer
    :id: rl__security_engineer
-   :status: draft
+   :status: valid
    :contains: rl__committer
 
-   The security engineer is responsible for the security analysis in the project. There might be several analyses
-   on different levels (e.g. Platform  Feature and Component).
+   The Security Engineer is responsible for the Security Analysis in the project.
+   There might be several analyses on different levels (Platform, Feature and Component).
 
    Required skills
 
    * Degree: Master's degree in electrical engineering/computer science/mathematics, or similar degree, or comparable work experience
    * Deep understanding of cybersecurity engineering including security analysis
-   * Knowledge of security management to ensure collaboration with the Security Manager
+   * Knowledge of Security Management to ensure collaboration with the Security Manager
    * Technical know-how of embedded systems
    * Preferred training: Automotive Cybersecurity Expert or similar
 
@@ -47,7 +47,7 @@ Roles
 
    Responsibility
 
-   * Analyze Feature and Component Architecture by performing security analysis
+   * Analyze Feature and Component Architecture by performing Security Analysis
    * Monitor Security Analysis
    * Verify Security Analysis
    * Create the Security Manual
@@ -55,7 +55,7 @@ Roles
    Authority
 
    * Escalation of security topics to the Security Manager
-   * Creation of Issues in the Issue Tracking System for needed mitigations (e.g. prevention, detection or mitigation)
+   * Creation of Issues in the Issue Tracking System for needed mitigations (accept, avoid, reduce, share)
 
 Contributing Roles:
 
@@ -64,6 +64,7 @@ Contributing Roles:
    * :need:`Security Manager <rl__security_manager>`
    * :need:`Safety Manager <rl__safety_manager>`
 
-A detailed overview of the responsibility for the steps of the security analysis process is listed in the section titled "Workflow for security analysis". You can find it here:
+A detailed overview of the responsibility for the steps of the Security Analysis process
+is listed in the section titled "Workflow Security Analysis". You can find it here:
 
 :ref:`workflow_security_analysis`

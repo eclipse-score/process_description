@@ -19,7 +19,7 @@ Security Analysis Threat Models
 
 .. gd_guidl:: STRIDE Threat Model
   :id: gd_guidl__threat_models_stride
-  :status: draft
+  :status: valid
   :complies:
 
   | Threat Model for sequence diagrams using STRIDE methodology

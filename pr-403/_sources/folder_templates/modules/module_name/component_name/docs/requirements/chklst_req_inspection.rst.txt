@@ -17,6 +17,7 @@
    :id: doc__component_name_req_inspection
    :status: draft
    :safety: ASIL_B
+   :security: YES
    :realizes: wp__requirements_inspect
    :tags: template
 
@@ -26,7 +27,7 @@
     - Modify ``Your Component Name`` to be your Component Name
     - Modify ``id`` to be your Component Name in lower snake case preceded by ``doc__`` and followed by ``_req_inspection``
     - Adjust ``status`` to be ``valid``
-    - Adjust ``safety`` and ``tags`` according to your needs
+    - Adjust ``safety``, ``security`` and ``tags`` according to your needs
 
 Requirement Inspection Checklist
 ================================

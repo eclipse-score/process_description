@@ -550,7 +550,7 @@
                   
   <section id="concept-description">
 <h1>Concept Description<a class="headerlink" href="#concept-description" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-fb2121e9">
+<div class="need_container docutils container" id="SNCB-e545e04d">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_doc_concept table" id="doc_concept__security_analysis">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -558,7 +558,7 @@
 </div>
 </td>
 <td class="head_center" colspan="2"><div class="needs_head line-block">
-<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">draft</span></span></span></div>
+<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></span></div>
 <div class="line"><span></span></div>
 <div class="line"><span></span></div>
 </div>
@@ -593,10 +593,17 @@
 </table>
 </div>
 </div>
-<p>This section discusses a concept for security analysis. Different methods for security analysis are used (e.g. STRIDE). Inputs for this concept are the requirements of ISO/SAE 21434 Part 8 and Part 15.</p>
-<p>The objective of the <strong>Security Analysis</strong> is to identify and analyze potential cybersecurity threat scenarios, threats and vulnerabilities. Security analysis identifies potential attack scenarios that could compromise the security of the defined elements.
-How to perform a security analysis is described in <a class="reference internal" href="guidance/security_analysis_guideline.html#gd_guidl__security_analysis" title="gd_guidl__security_analysis"><em class="xref need">Security Analysis Guideline (gd_guidl__security_analysis)</em></a>.
-To have a structured Security Analysis, the threat scenarios have to be applied <a class="reference internal" href="guidance/security_analysis_threat_scenarios_guideline.html#gd_guidl__sec_ana_threat_scenarios" title="gd_guidl__sec_ana_threat_scenarios"><em class="xref need">Security Analysis threat sc... (gd_guidl__sec_ana_threat_scenarios)</em></a>.. These are separated into the following categories:</p>
+<p>This section discusses a concept for Security Analysis. Different methods for Security
+Analysis are used (e.g. STRIDE). Inputs for this concept are the requirements of
+ISO/SAE 21434 Part 8 and Part 15.</p>
+<p>The objective of the <strong>Security Analysis</strong> is to identify and analyze potential
+cybersecurity threat scenarios, threats and vulnerabilities. Security Analysis
+identifies potential attack scenarios that could compromise the cybersecurity of the
+defined elements.
+How to perform a Security Analysis is described in <a class="reference internal" href="guidance/security_analysis_guideline.html#gd_guidl__security_analysis" title="gd_guidl__security_analysis"><em class="xref need">Security Analysis Guideline (gd_guidl__security_analysis)</em></a>.
+To have a structured Security Analysis, the threat scenarios have to be applied
+<a class="reference internal" href="guidance/security_analysis_threat_scenarios_guideline.html#gd_guidl__sec_ana_threat_scenarios" title="gd_guidl__sec_ana_threat_scenarios"><em class="xref need">Security Analysis threat sc... (gd_guidl__sec_ana_threat_scenarios)</em></a>. These are separated into the following
+categories:</p>
 <blockquote>
 <div><div class="line-block">
 <div class="line">- Attack surfaces: Interfaces and entry points that could be exploited by attackers.</div>
@@ -606,22 +613,27 @@ To have a structured Security Analysis, the threat scenarios have to be applied 
 <div class="line">- Development threat scenarios: Vulnerabilities that occur during the development process, potentially leading to security issues.</div>
 </div>
 </div></blockquote>
-<p>The objective of the <strong>Security Analysis</strong> is to show that the architecture created to fulfill the requirements does not introduce possible security vulnerabilities which would
-break the security requirements. Or rather that the possibility of these vulnerabilities is reduced to an acceptable level. This can be done by detection, prevention or mitigation.
-The Security Analysis is used to find possible threats and their effects. The possible threats are systematically identified by applying threat models <a class="reference internal" href="guidance/security_analysis_threat_models_guideline.html#gd_guidl__threat_models_stride" title="gd_guidl__threat_models_stride"><em class="xref need">STRIDE Threat Model (gd_guidl__threat_models_stride)</em></a>.</p>
-<p>The Security Analysis shall be performed once at platform level to analyze the attack surfaces between the features of the platform.
+<p>The objective of the <strong>Security Analysis</strong> is to show that the architecture created to
+fulfill the requirements does not introduce possible vulnerabilities which would
+break the security requirements (cybersecurity goals, top level security requirements).
+Or rather that the possibility of these vulnerabilities is reduced to an acceptable
+level. This can be done by mitigation (accept, avoid, reduce, share). The Security
+Analysis is used to find possible threats and their effects. The possible threats are
+systematically identified by applying threat models <a class="reference internal" href="guidance/security_analysis_threat_models_guideline.html#gd_guidl__threat_models_stride" title="gd_guidl__threat_models_stride"><em class="xref need">STRIDE Threat Model (gd_guidl__threat_models_stride)</em></a>.</p>
+<p>The Security Analysis shall be performed once at platform level to analyze the attack
+surfaces between the features of the platform.
 Typically the Security Analysis shall be performed at feature level and component level.
-If a component has no sub-components, the results of the analysis are the same as at feature level. So no additional consideration is needed.
+If a component has no sub-components, the results of the analysis are the same as at
+feature level. So no additional consideration is needed.
 In this case please document this in the content of the document.</p>
 <section id="inputs">
 <h2>Inputs<a class="headerlink" href="#inputs" title="Link to this heading">#</a></h2>
 <ol class="arabic simple">
-<li><p>Stakeholders for the security analysis?</p></li>
+<li><p>Stakeholders for the Security Analysis?</p></li>
 <li><p>Who needs which information?</p></li>
-<li><p>How to analyze existing security mitigations?</p></li>
-<li><p>How to add new security mitigations?</p></li>
+<li><p>How to analyze?</p></li>
+<li><p>How to mitigate?</p></li>
 <li><p>What analysis shall be done in which level?</p></li>
-<li><p>How to perform the analysis?</p></li>
 </ol>
 <section id="stakeholders-for-the-security-analysis">
 <h3>Stakeholders for the Security Analysis<a class="headerlink" href="#stakeholders-for-the-security-analysis" title="Link to this heading">#</a></h3>
@@ -630,14 +642,14 @@ In this case please document this in the content of the document.</p>
 <ul class="simple">
 <li><p>Analyze all the feature architectures together with a Platform Security Analysis</p></li>
 <li><p>Analyze the feature architecture with the defined method</p></li>
-<li><p>Analyze the component architecture with a Security Analysis</p></li>
+<li><p>Analyze the component architecture with the defined method</p></li>
 <li><p>Monitor/verify the Security Analyses</p></li>
 </ul>
 </li>
 <li><p><a class="reference internal" href="../security_management/security_management_roles.html#rl__security_manager" title="rl__security_manager"><em class="xref need">Security Manager (rl__security_manager)</em></a></p>
 <ul class="simple">
 <li><p>Approve the Security Analysis</p></li>
-<li><p>Approve the verification of the Security Analysis</p></li>
+<li><p>Approve the verification of the Security Analyses</p></li>
 </ul>
 </li>
 <li><p><a class="reference internal" href="../../roles/index.html#rl__contributor" title="rl__contributor"><em class="xref need">Contributor (rl__contributor)</em></a></p>
@@ -670,9 +682,35 @@ In this case please document this in the content of the document.</p>
 </section>
 <section id="how-to-analyze">
 <h3>How to analyze?<a class="headerlink" href="#how-to-analyze" title="Link to this heading">#</a></h3>
-<p>The security analysis are done on the feature and component architecture. The security analysis shall be done accompanying to the development.
-So the results can directly be used for the development of the feature and component. With an iterative approach it is needed to provide
-the evidence of the cybersecurity of the functions.</p>
+<p>The Security Analysis are done on the feature and component architecture.
+The Security Analysis shall be done accompanying to the development.
+So the results can directly be used for the development of the feature and component.
+With an iterative approach it is needed to provide the evidence of the cybersecurity of
+the functions.
+The analysis were applied at static and dynamic architecture diagrams. Examples will
+be added here in an future PR.</p>
+</section>
+<section id="how-to-mitigate">
+<h3>How to mitigate?<a class="headerlink" href="#how-to-mitigate" title="Link to this heading">#</a></h3>
+<p>Identified risks without a mitigation remain open and are tracked in the issue tracking
+system <a class="reference internal" href="../change_management/change_management_workproducts.html#wp__issue_track_system" title="wp__issue_track_system"><em class="xref need">Issue tracking system (wp__issue_track_system)</em></a> until they are resolved.
+Resolving includes acceptance of the risk or avoidance.
+Further a new security control may be needed to reduce the risk.
+Finally also the risk may shared, if applicable.</p>
+</section>
+<section id="what-analysis-shall-be-done-in-which-level">
+<h3>What analysis shall be done in which level?<a class="headerlink" href="#what-analysis-shall-be-done-in-which-level" title="Link to this heading">#</a></h3>
+<p>The Security Analysis shall consider the architectural elements on different levels.</p>
+<ol class="arabic simple">
+<li><p><strong>Platform Level</strong>: The Security Analysis shall be performed once at platform level
+to analyze the attack surfaces between the features of the platform.</p></li>
+<li><p><strong>Feature Level</strong>: This level involves a more detailed analysis of individual
+components within the feature. The analysis shall consider the internal structure of
+components and their interactions with other components in the feature.</p></li>
+<li><p><strong>Component Level</strong>: If a component consists of multiple sub-components, the analysis
+shall be extended to these sub-components. This level of detail is necessary to
+identify specific threat models that may not be apparent at higher levels.</p></li>
+</ol>
 </section>
 </section>
 </section>
@@ -728,6 +766,8 @@ the evidence of the cybersecurity of the functions.</p>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#stakeholders-for-the-security-analysis">Stakeholders for the Security Analysis</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#standard-requirements">Standard Requirements</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-analyze">How to analyze?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-mitigate">How to mitigate?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-analysis-shall-be-done-in-which-level">What analysis shall be done in which level?</a></li>
 </ul>
 </li>
 </ul>
