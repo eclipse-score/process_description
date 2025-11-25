@@ -111,7 +111,7 @@ Project Development roles
    :id: rl__security_team
    :status: valid
    :tags: verification, security_analysis
-   :contains: rl__committer
+   :contains: rl__committer, rl__security_engineer
 
    (Eclipse) Open Source Role, person(s) who is(are) responsible for coordinating the resolution of Vulnerabilities within the Project.
    By default, the project Security Team includes all Committers. However, the Project may choose a different arrangement and establish specific criteria for team nominations.
