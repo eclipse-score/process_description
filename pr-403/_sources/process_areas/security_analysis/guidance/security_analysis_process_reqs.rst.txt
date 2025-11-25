@@ -19,7 +19,7 @@
 Security Analysis Process Requirements
 ======================================
 
-.. note:: Security analysis is used as an umbrella term.
+.. note:: Security Analysis is used as an umbrella term.
 
 .. gd_req:: Security Analysis Structure
    :id: gd_req__sec_structure
@@ -50,9 +50,9 @@ Process Security Analysis Attributes
 
    Each Security Analysis shall have a unique ID. It shall be in a format which is also human readable and consists of
 
-      * type of Security Analysis
-      * name of analyzed structural element (e.g. Persistency, FEO, etc.)
-      * element descriptor (e.g. KVS__Open KVS or KVS__GetKeyValue)
+      * Type of Security Analysis
+      * Name of analyzed structural element (e.g. Persistency, FEO, etc.)
+      * Element descriptor (e.g. KVS__Open KVS or KVS__GetKeyValue)
 
    The naming convention shall be defined in the project and shall be used consistently.
 
@@ -72,7 +72,7 @@ Process Security Analysis Attributes
    :satisfies: wf__analyse_sec_platform_featarch, wf__analyse_sec_featarch, wf__analyse_sec_comparch
    :complies:
 
-   Each threat shall have an associated treatment (e.g. acceptance or mitigation) or AoU.
+   Each threat shall have an associated treatment (accept, avoid, reduce, share) or AoU.
    If mitigation has not yet been implemented, do not use this option.
    If status == valid then mitigated_by is mandatory.
 
@@ -83,7 +83,7 @@ Process Security Analysis Attributes
    :satisfies: wf__analyse_sec_platform_featarch, wf__analyse_sec_featarch, wf__analyse_sec_comparch
    :complies:
 
-   If a new mitigation (e.g. security control) is needed link to the issue and keep status invalid until mitigation is sufficient.
+   If a new mitigation is needed link to the issue and keep status invalid until mitigation is sufficient.
 
 .. gd_req:: Security Analysis attribute: sufficient
    :id: gd_req__sec_attr_sufficient
@@ -112,7 +112,8 @@ Process Security Analysis Attributes
    :satisfies: wf__analyse_sec_platform_featarch, wf__analyse_sec_featarch, wf__analyse_sec_comparch
    :complies:
 
-   Each security analysis shall have the status invalid until the analysis is finished. The status shall be set to valid if the analysis is finished and all issues are closed.
+   Each Security Analysis shall have the status invalid until the analysis is finished.
+   The status shall be set to valid if the analysis is finished and all issues are closed.
 
 .. gd_req:: Security Analysis attribute: threat impact
    :id: gd_req__sec_attr_teffect
@@ -121,7 +122,8 @@ Process Security Analysis Attributes
    :satisfies: wf__analyse_sec_platform_featarch, wf__analyse_sec_featarch, wf__analyse_sec_comparch
    :complies:
 
-   Every Security Analysis shall have a short description of the threat impact (e.g. threat leads to unauthorized access of the analyzed element)
+   Every Security Analysis shall have a short description of the threat impact
+   (e.g. threat leads to unauthorized access of the analyzed element)
 
 .. _process_requirements_security_analysis_linkage:
 
@@ -135,7 +137,8 @@ Security Analysis Linkage
    :satisfies: wf__analyse_sec_platform_featarch, wf__analyse_sec_featarch, wf__analyse_sec_comparch
    :complies:
 
-   Security Analysis shall be linked to the architecture view on the corresponding level via the attribute violates.
+   Security Analysis shall be linked to the architecture view on the corresponding level
+   via the attribute violates.
 
 .. gd_req:: Security Analysis Linkage
    :id: gd_req__sec_linkage
@@ -144,7 +147,8 @@ Security Analysis Linkage
    :satisfies: wf__analyse_sec_platform_featarch, wf__analyse_sec_featarch, wf__analyse_sec_comparch
    :complies:
 
-   Each Security Analysis shall be automatically linked (inverse direction) to the corresponding architecture view via the "violates by" linkage.
+   Each Security Analysis shall be automatically linked (inverse direction) to the
+   corresponding architecture view via the "violates by" linkage.
 
 .. gd_req:: Security Analysis attribute: check Requirements linkage
    :id: gd_req__sec_attr_requirements_check
@@ -153,7 +157,8 @@ Security Analysis Linkage
    :satisfies: wf__analyse_sec_platform_featarch, wf__analyse_sec_featarch, wf__analyse_sec_comparch
    :complies:
 
-   Security Analysis shall be linked to a requirement on the corresponding level via the attribute "mitigated by".
+   Security Analysis shall be linked to a requirement on the corresponding level via
+   the attribute "mitigated by".
 
 .. gd_req:: Security Analysis attribute: Requirements linkage
    :id: gd_req__sec_attr_requirements
@@ -162,7 +167,8 @@ Security Analysis Linkage
    :satisfies: wf__analyse_sec_platform_featarch, wf__analyse_sec_featarch, wf__analyse_sec_comparch
    :complies:
 
-   Each Security Analysis shall be automatically linked to the corresponding Security Requirement via the mitigates linkage.
+   Each Security Analysis shall be automatically linked to the corresponding Security
+   Requirement via the mitigates linkage.
 
 .. gd_req:: Security Analysis attribute: link to Aou
    :id: gd_req__sec_attr_aou
@@ -171,7 +177,7 @@ Security Analysis Linkage
    :satisfies: wf__analyse_sec_platform_featarch, wf__analyse_sec_featarch, wf__analyse_sec_comparch
    :complies:
 
-   It shall be possible to link Aou.
+   It shall be possible to link AoU.
 
 .. gd_req:: Security Analysis attribute: versioning
    :id: gd_req__sec_attr_ver
@@ -180,7 +186,8 @@ Security Analysis Linkage
    :satisfies: wf__analyse_sec_platform_featarch, wf__analyse_sec_featarch, wf__analyse_sec_comparch
    :complies:
 
-   It shall be possible to detect any differences in mandatory attributes compared to the versioning: :need:`gd_req__sec_attr_mandatory`
+   It shall be possible to detect any differences in mandatory attributes compared to
+   the versioning: :need:`gd_req__sec_attr_mandatory`.
 
 .. gd_req:: Security Analysis Linkage status check
    :id: gd_req__sec_linkage_status_check
@@ -189,7 +196,9 @@ Security Analysis Linkage
    :satisfies: wf__analyse_sec_platform_featarch, wf__analyse_sec_featarch, wf__analyse_sec_comparch
    :complies:
 
-   It shall be checked that security analysis can only be linked against valid security elements (architecture view, requirement, AoU). A valid security element has the attribute 'status == valid' and is security-relevant.
+   It shall be checked that the Security Analysis can only be linked against valid
+   security elements (architecture view, requirement, AoU). A valid security element
+   has the attribute 'status == valid' and is security-relevant.
 
 .. _process_requirements_security_analysis_checks:
 
@@ -203,7 +212,8 @@ Security Analysis Checks
    :satisfies: wf__analyse_sec_platform_featarch, wf__analyse_sec_featarch, wf__analyse_sec_comparch
    :complies:
 
-   It shall be checked if all mandatory attributes for each Security Analysis are provided by the user. For all Security Analysis following attributes shall be mandatory:
+   It shall be checked if all mandatory attributes for each Security Analysis are
+   provided by the user. For all Security Analysis following attributes shall be mandatory:
 
    .. needtable:: Overview mandatory Security Analysis attributes
       :filter: "mandatory" in tags and "attribute" in tags and "security_analysis" in tags and type == "gd_req"
@@ -220,8 +230,8 @@ Security Analysis Checks
    :complies:
 
    It shall be checked that Security Analysis can only be linked via mitigate_by against
-   <Feature | Component | AoU> Requirements with at least one Requirement with the security identifier set
-   that is analyzed and linked via violates.
+   <Feature | Component | AoU> Requirements with at least one Requirement with the
+   security identifier set that is analyzed and linked via violates.
 
 
 .. gd_req:: Security Analysis finalization check
@@ -243,8 +253,10 @@ Threat Scenario Security Process Requirements
    :satisfies: wf__analyse_sec_platform_featarch, wf__analyse_sec_featarch, wf__analyse_sec_comparch
    :complies:
 
-   Each threat scenario used for the Security Analysis shall have a threat scenario ID. The threat scenario ID is used to identify the related threat <:need:`gd_guidl__sec_ana_threat_scenarios`>.
-   The threat scenario ID links to the corresponding threat scenario which describes how a potential attack can occur.
+   Each threat scenario used for the Security Analysis shall have a threat scenario ID.
+   The threat scenario ID is used to identify the related threat <:need:`gd_guidl__sec_ana_threat_scenarios`>.
+   The threat scenario ID links to the corresponding threat scenario which describes
+   how a potential attack can occur.
 
 
 Threat Models Process Requirements
@@ -257,8 +269,10 @@ Threat Models Process Requirements
    :satisfies: wf__analyse_sec_featarch, wf__analyse_sec_comparch
    :complies:
 
-   Each threat used for Security Analysis shall have a threat ID. The threat ID is used to identify the related threat <:need:`gd_guidl__threat_models_stride`>.
-   The threat ID links to the corresponding threat which describes how a potential attack can occur.
+   Each threat used for Security Analysis shall have a threat ID. The threat ID is used
+   to identify the related threat <:need:`gd_guidl__threat_models_stride`>.
+   The threat ID links to the corresponding threat which describes how a potential
+   attack can occur.
 
 
 .. needextend:: docname is not None and "process_areas/security_analysis" in docname

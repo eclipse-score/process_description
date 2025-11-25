@@ -107,9 +107,9 @@ The attributes of the template are described in :ref:`process_requirements_secur
 Examples for Security Analysis at feature level
 ===============================================
 
-TBD
+future PR (https://github.com/eclipse-score/process_description/issues/409).
 
 Examples for Security Analysis at component level
 =================================================
 
-TBD
+future PR (https://github.com/eclipse-score/process_description/issues/409).

@@ -23,7 +23,8 @@ Security Analysis Checklist
    :tags: security_analysis
 
    **Purpose**
-   The purpose of this security analysis checklist template is to collect the topics to be checked during verification of the security analysis.
+   The purpose of this Security Analysis checklist template is to collect the topics to
+   be checked during verification of the Security Analysis.
 
    **Checklist**
 
@@ -39,7 +40,7 @@ Security Analysis Checklist
         - Issue link
       * - REQ_01_01
         - Is / are the attribute sufficient set correctly?
-        - The mitigations shall have a direct influence on the threat by prevention, detection or mitigation to reduce the risk to an acceptable level.
+        - The mitigations shall have a direct influence on the threat by (accept, avoid, reduce, share) to mitigate the risk.
         - The mitigations are sufficient.
         - <yes|no>
         -
@@ -68,14 +69,14 @@ Security Analysis Checklist
         - <yes|no>
         -
       * - REQ_01_07
-        - Is the sufficiency of the "mitigated by" (prevention, detection or mitigation) described or can it be recognized easily?
+        - Is the sufficiency of the "mitigated by" (accept, avoid, reduce, share) described or can it be recognized easily?
         - The sufficiency of the "mitigated by" is described in the content of the document. It can be recognized easily.
-        - The "mitigated by" shows clearly that a threat can be mitigated by the linked requirement by prevention, detection or mitigation. It shall be described in the content.
+        - The "mitigated by" shows clearly that a threat can be mitigated by the linked requirement by (accept, avoid, reduce, share). It shall be described in the content.
         - <yes|no>
         -
       * - REQ_01_08
-        - Is the overall result of the security analysis described in the report?
-        - It shall be shown in the report if the security analysis is finished and if all artifacts are "valid" and "sufficient".
-        - The results of the security analysis are described in the report. The report is available :need:`wp__verification_platform_ver_report`.
+        - Is the overall result of the Security Analysis described in the report?
+        - It shall be shown in the report if the Security Analysis is finished and if all artifacts are "valid" and "sufficient".
+        - The results of the Security Analysis are described in the report. The report is available :need:`wp__verification_platform_ver_report`.
         - <yes|no>
         -

@@ -26,6 +26,8 @@ Security Analysis Threat Scenario Templates
 
    For the content see here: (tbd)need:`doc__platform_security_analysis`
 
+   Future PR (https://github.com/eclipse-score/process_description/issues/409).
+
 
 .. gd_temp:: Feature Security Analysis Templates
    :id: gd_temp__feat_threat_scenario
@@ -34,6 +36,7 @@ Security Analysis Threat Scenario Templates
 
    For the content see here: (tbd)need:`doc__feature_name_security_analysis`
 
+   Future PR (https://github.com/eclipse-score/process_description/issues/409).
 
 .. gd_temp:: Component Security Analysis Templates
    :id: gd_temp__comp_threat_scenario
@@ -41,3 +44,5 @@ Security Analysis Threat Scenario Templates
    :complies:
 
    For the content see here: (tbd)need:`doc__component_name_security_analysis`
+
+   Future PR (https://github.com/eclipse-score/process_description/issues/409).

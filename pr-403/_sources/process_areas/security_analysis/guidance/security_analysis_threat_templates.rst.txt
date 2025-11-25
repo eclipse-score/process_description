@@ -26,6 +26,7 @@ Security Analysis Threat Templates
 
       For the content see here: (tbd)need:`doc__feature_name_threat`
 
+      Future PR (https://github.com/eclipse-score/process_description/issues/409).
 
 .. gd_temp:: Component Threat Template
    :id: gd_temp__comp_sec_ana_threat
@@ -33,3 +34,5 @@ Security Analysis Threat Templates
    :complies:
 
       For the content see here: (tbd)need:`doc__component_name_threat`
+
+      Future PR (https://github.com/eclipse-score/process_description/issues/409).

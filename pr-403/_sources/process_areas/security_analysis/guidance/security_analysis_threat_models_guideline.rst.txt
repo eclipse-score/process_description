@@ -24,10 +24,14 @@ Security Analysis Threat Models
 
   | Threat Model for sequence diagrams using STRIDE methodology
 
-.. note:: Use the applicable threat models to ensure a structured analysis. If there are additional threat models needed, please enlarge the list of threat models.
+.. note::
+  Use the applicable threat models to ensure a structured analysis. If there are
+  additional threat models needed, please enlarge the list of threat models.
 
 
-.. note:: A security-relevant message shall be protected against spoofing, tampering, information disclosure, repudiation, denial of service, and elevation of privilege.
+.. note::
+  A security-relevant message shall be protected against spoofing, tampering,
+  information disclosure, repudiation, denial of service, and elevation of privilege.
 
 
 Threat Models for sequence diagrams

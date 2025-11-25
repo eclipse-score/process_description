@@ -91,7 +91,9 @@ Security analysis is used as an umbrella term.
    :contains: gd_guidl__sec_ana_threat_scenarios, gd_temp__feat_threat_scenario, gd_temp__comp_threat_scenario, gd_guidl__threat_models_stride, gd_temp__feat_sec_ana_threat, gd_temp__comp_sec_ana_threat, gd_chklst__security_analysis
    :has: doc_concept__security_analysis, doc_getstrt__security_analysis
 
-   | The Security Analyses are verified. The verification criteria is that it can be proven that the security requirements for functions and the corresponding security monitoring are not violated.
+   | The Security Analyses are verified. The verification criteria is that it can be
+   | proven that the security requirements for functions and the corresponding security
+   | monitoring are not violated.
 
 
 RAS(IC) for Security Analysis
