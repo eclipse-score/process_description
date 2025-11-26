@@ -35,3 +35,11 @@ If you are appointed as a :need:`Safety Manager <rl__safety_manager>` by the :ne
 * **Explore Supporting Processes**
   - Read the development and supporting process descriptions in :ref:`process_description`.
   - Check relevant sections of :need:`wp__platform_mgmt`.
+
+* **This is a test**
+  - This is teste: :need:`rl__external_auditor:content`
+
+Show me:
+.. needextract::
+   :filter: id == 'rl__process_community'
+   :layout: clean

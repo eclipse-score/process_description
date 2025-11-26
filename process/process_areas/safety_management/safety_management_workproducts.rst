@@ -12,8 +12,8 @@
    # SPDX-License-Identifier: Apache-2.0
    # *******************************************************************************
 
-Workproducts Safety Management
-------------------------------
+Work Products Safety Management
+-------------------------------
 
 .. workproduct:: Platform Safety Plan
    :id: wp__platform_safety_plan

@@ -56,14 +56,6 @@ Stakeholders
    * Verifies compliance with defined safety processes and standards.
    * Reports audit results and decides on pass/fail status.
 
-
-#. "Distributor" (external role)
-
-   * use the platform in a safe way
-   * integrate the platform in his product (distribution) and safety pacakge
-   * plan this integration (also in time)
-   * qualify the SW platform as part of his product
-
 Safety Plans
 ^^^^^^^^^^^^
 
@@ -88,8 +80,3 @@ For the safety planning and safety manual a “Docs-as-Code” approach is used 
 For the activities planning (who, when) we use a task tracking stystem to create and manage issues, and monitor progress through a project managemnet dashboard.
 
 For the reporting (e.g. displaying the status of the work products) additional tooling is created.
-
-Guidance
-^^^^^^^^
-
-The safety management guideline can be found in the guidance section.

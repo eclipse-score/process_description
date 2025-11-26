@@ -22,6 +22,10 @@ Roles
    :contains: rl__committer
 
    The safety manager is responsible for making sure that ISO26262 is complied to in the project. He/She shall lead and monitor the safety relevant activities of the project.
+   This role is assigned through a transparent, meritocratic election process similar to committer elections.
+   Only existing committers are eligible. Nominations must include evidence of relevant contributions and safety expertise.
+   The election must be public, archived, and follow Eclipse Foundation principles of openness and neutrality.
+   The criteria for nomination and election must be documented and published on the project’s website.
 
    Required skills
 
@@ -76,7 +80,7 @@ Roles
    Responsibility
 
    * Performing and reporting of safety audit
-   * Performing of formal document reviews on safety plans, safety pacakge and safety analysis (incl. DFA)
+   * Performing of formal document reviews on safety plans, safety package and safety analysis (incl. DFA)
 
    Authority
 
