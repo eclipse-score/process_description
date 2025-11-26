@@ -488,6 +488,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../requirements_engineering/index.html">Requirements Engineering</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../safety_analysis/index.html">Safety Analysis</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../safety_management/index.html">Safety Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../security_analysis/index.html">Security Analysis</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../security_management/index.html">Security Management</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../tool_management/index.html">Tool Management</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../verification/index.html">Verification</a></li>
@@ -560,7 +561,7 @@
                   
   <section id="architecture-guideline">
 <span id="arch-design-guideline"></span><h1>Architecture Guideline<a class="headerlink" href="#architecture-guideline" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-6c115c6e">
+<div class="need_container docutils container" id="SNCB-b51fbb81">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_guidl table" id="gd_guidl__arch_design">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -773,15 +774,8 @@
 </div>
 <section id="create-feature-architecture-concept">
 <span id="create-feature-architecture"></span><h3>Create feature architecture (Concept)<a class="headerlink" href="#create-feature-architecture-concept" title="Link to this heading">#</a></h3>
-<p>The feature architecture (= high level architecture) shall be created in the feature tree of the platform repository.
-As a starting point a <a class="reference internal" href="feature_architecture_template.html#gd_temp__arch_feature" title="gd_temp__arch_feature"><em class="xref need">template (gd_temp__arch_feature)</em></a> is available.</p>
-<p>Based on this template the feature architecture shall describe the concept of the feature including supporting figures and drawings.</p>
-<p>For this step following guidances are available:</p>
-<ul class="simple">
-<li><p><cite>Branch Naming Conventions &lt;REPLACE_doc__naming_conventions&gt;</cite></p></li>
-<li><p><cite>Git Guidelines &lt;REPLACE_doc__git_coding_guidelines&gt;</cite></p></li>
-<li><p><a class="reference internal" href="feature_architecture_template.html#gd_temp__arch_feature" title="gd_temp__arch_feature"><em class="xref need">Feature Architecture Templates Feature Architecture</em></a></p></li>
-</ul>
+<p>The feature architecture (= high level architecture) shall be created in the feature tree of the platform repository.</p>
+<p>For this step the following guidance is available: <a class="reference internal" href="feature_architecture_template.html#gd_temp__arch_feature" title="gd_temp__arch_feature"><em class="xref need">Feature Architecture Template (gd_temp__arch_feature)</em></a>. Based on this template the feature architecture shall describe the concept of the feature including supporting figures and drawings. Additionally you should consult your project’s specific guidelines, e.g. for using the version management tooling or architecture element naming conventions which should be defined (or linked) in the <a class="reference internal" href="../../implementation/implementation_workproducts.html#wp__sw_development_plan" title="wp__sw_development_plan"><em class="xref need">Project SW development Plan (wp__sw_development_plan)</em></a>.</p>
 </section>
 <section id="model-feature-architecture">
 <span id="id1"></span><h3>Model feature architecture<a class="headerlink" href="#model-feature-architecture" title="Link to this heading">#</a></h3>
@@ -837,19 +831,14 @@ and merged into the main branch of the score repository.</p>
 <ul class="simple">
 <li><p><a class="reference internal" href="../../safety_management/roles.html#rl__safety_manager" title="rl__safety_manager"><em class="xref need">Safety Manager</em></a></p></li>
 <li><p><a class="reference internal" href="../../security_management/security_management_roles.html#rl__security_manager" title="rl__security_manager"><em class="xref need">Security Manager</em></a></p></li>
-<li><p><a class="reference internal" href="../../platform_management/platform_management_roles.html#rl__technical_lead" title="rl__technical_lead"><em class="xref need">Technical Lead</em></a></p></li>
+<li><p><a class="reference internal" href="../../../roles/index.html#rl__project_lead" title="rl__project_lead"><em class="xref need">Project Lead</em></a></p></li>
 <li><p><a class="reference internal" href="../../../roles/index.html#rl__committer" title="rl__committer"><em class="xref need">Committer</em></a></p></li>
 </ul>
 </section>
 <section id="create-component-architecture-concept">
 <span id="create-component-architecture"></span><h3>Create component architecture (Concept)<a class="headerlink" href="#create-component-architecture-concept" title="Link to this heading">#</a></h3>
 <p>Based on the <em>feature architecture</em> the concept for the <em>component architecture</em> shall be created in the SW module. It shall describe which components need to be created and how they correlate with each other in order to provide the required functionality. As a starting point a <a class="reference internal" href="component_architecture_template.html#gd_temp__arch_comp" title="gd_temp__arch_comp"><em class="xref need">template (gd_temp__arch_comp)</em></a> is provided.</p>
-<p>For this step following guidances are available:</p>
-<ul class="simple">
-<li><p><cite>Branch Naming Conventions &lt;REPLACE_doc__naming_conventions&gt;</cite></p></li>
-<li><p><cite>Git Guidelines &lt;REPLACE_doc__git_coding_guidelines&gt;</cite></p></li>
-<li><p><a class="reference internal" href="component_architecture_template.html#gd_temp__arch_comp" title="gd_temp__arch_comp"><em class="xref need">Component Architecture Temp...</em></a></p></li>
-</ul>
+<p>For this step the following guidance is available: <a class="reference internal" href="feature_architecture_template.html#gd_temp__arch_feature" title="gd_temp__arch_feature"><em class="xref need">Feature Architecture Template (gd_temp__arch_feature)</em></a>. Additionally you should consult your project’s specific guidelines, e.g. for using the version management tooling or architecture element naming conventions which should be defined (or linked) in the <a class="reference internal" href="../../implementation/implementation_workproducts.html#wp__sw_development_plan" title="wp__sw_development_plan"><em class="xref need">Project SW development Plan (wp__sw_development_plan)</em></a>.</p>
 </section>
 <section id="allocate-component-requirements-to-architectural-elements">
 <span id="allocate-component-requirements"></span><h3>Allocate component requirements to architectural elements<a class="headerlink" href="#allocate-component-requirements-to-architectural-elements" title="Link to this heading">#</a></h3>

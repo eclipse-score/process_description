@@ -62,4 +62,4 @@ Workflow Implementation
 
    The Implementation Verification of the Detailed Design and Code consists of the following topics
      - Detailed Design and Code Inspection
-     - Static and Dynamic Code Analysis performed by a tool
+     - Static and Dynamic Code Analysis performed by a tool. Acceptance criteria are defined in the Verification Plan :need:`gd_temp__verification_plan`.

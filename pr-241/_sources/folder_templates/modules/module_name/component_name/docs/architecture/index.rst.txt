@@ -21,6 +21,7 @@ Component Architecture
    :id: doc__component_name_architecture
    :status: draft
    :safety: ASIL_B
+   :security: NO
    :realizes: wp__component_arch
    :tags: template
 
