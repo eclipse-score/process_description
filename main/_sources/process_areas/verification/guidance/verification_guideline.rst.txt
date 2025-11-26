@@ -21,7 +21,7 @@ Guideline
 
    This guideline outlines the responsibilities and procedures for developers performing
    verification activities (testcase creation, inspection, and review) for documentation,
-   Rust and C/C++ elements of the platform and its tooling.
+   code (like Rust and C/C++) elements of the project/platform and its tooling.
 
    Note that rust, python and gTest are used for test case creation.
 
@@ -71,7 +71,7 @@ Simplified in a nutshell:
 #. Implement test case
 #. Link test case to requirements and specify metatags
 #. Confirm requirement test coverage by creating linkage document
-#. Set requirement attribute [testcovered=YES] during Sphinx build
+#. Set requirement attribute [testcovered=YES] during software build
 
 More information on the concept of requirements verification can be found in :ref:`requirement_verification_workflow`
 

@@ -142,16 +142,8 @@ Following aspect should be considered when developing test cases:
   Consider not mocking away libraries the unit uses, as long as you can obtain sufficient
   structural coverage from the unit testing with included/integrated libraries,
   as this reduces effort on integration testing.
-
-  Use the following frameworks for unit testing:
-
-  * **Rust:** Utilize the built-in testing framework with ``#[test]`` attributes and the ``cargo test`` command.
-  * **Python:** Use ``pytest`` frameworks.
-  * **C++:** Use Google Test frameworks.
 * **Integration Testing:** Verify the interaction between different components or modules.
-    For integration testing, the ITF (Integration Test Framework) is used.
-
-    For more information, see ``[TODO: Link to ITF documentation once available. Related feature request is #599]``.
+  Depending on the implementation this can be on component, module or feature level.
 * **Platform Integration Testing:** Test the platform with configured features as a whole.
 * **Regression Testing:** Ensure that changes do not introduce new defects.
   Automate regression tests where possible as they will get executed as part of the CI.
@@ -204,7 +196,7 @@ generated including:
 So if the content of the requirement is altered also the hash will change making it necessary to
 revisit the linkage of all test cases to the requirement again.
 
-If the status of the linked test case and the linkage document is valid the attribute *testcovered* shall be set to *YES* during the Sphinx Build.
+If the status of the linked test case and the linkage document is valid the attribute *testcovered* shall be set to *YES* during the SW Build.
 Further information can also be depicted from the :ref:`requirements_engineering` process.
 
 Software Component Qualification

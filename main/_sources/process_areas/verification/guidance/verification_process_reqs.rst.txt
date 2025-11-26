@@ -47,7 +47,7 @@ Process Requirements
 
 
     More information can be found in the :need:`gd_guidl__verification_guide`, :need:`doc_concept__verification_process`,
-    and :need:`gd_guidl__verification_specification`.
+    and :need:`gd_guidl__verification_specification` .
 
 .. gd_req:: Linking Requirements to Tests (C++)
     :id: gd_req__verification_link_tests_cpp
@@ -57,30 +57,12 @@ Process Requirements
     :complies: std_req__iso26262__support_6432
 
 
-    For linking C++ test suites to requirements **record properties** shall be used. Attributes
+    For linking C++ tests to requirements **record properties** shall be used. Attributes
     which are common for all test cases can be specified in the Setup Function (SetUp()), the other
     attributes which are specific for each test case need to be specified within the test case:
 
-    .. code-block:: cpp
+    A more detailed description of how to link code to requirements looks like is available in the :ref:`verification_template_cpp`
 
-      class TestSuite : public ::testing::Test{
-         public:
-            void SetUp() override
-            {
-               RecordProperty("TestType", "<TestType>");
-               RecordProperty("DerivationTechnique", "<DerivationTechnique>");
-               ...
-            }
-      };
-
-      TEST_F(TestSuite, <Test Case>)
-      {
-         RecordProperty("PartiallyVerifies", "ID_2, ID_3, ...");
-         RecordProperty("FullyVerifies", "ID_4, ID_5, ...");
-         RecordProperty("Description", "<Description>");
-
-         ASSERT ...
-      }
 
 .. gd_req:: Linking Requirements to Tests (Python)
     :id: gd_req__verification_link_tests_python
@@ -101,17 +83,8 @@ Process Requirements
     For allowed values for test_type & derivation_technique please check :need:`gd_req__verification_link_tests`
     Further more, this decorator will also check if your test has a `docstring` which should act as the description of the test.
 
+    A more detailed description of how to link code to requirements looks like is available in the :ref:`verification_template_python`
 
-    .. code-block:: python
-
-         @add_test_properties(
-             partially_verifies=["tool_req__docs_dd_link_source_code_link"],
-             test_type="requirements-based",
-             derivation_technique="requirements-analysis",
-         )
-         def test_group_by_need_empty_list():
-             """Test grouping empty list of needlinks."""
-             ...
 
 .. gd_req:: Linking Requirements to Tests (Rust)
     :id: gd_req__verification_link_tests_rust
@@ -122,19 +95,7 @@ Process Requirements
 
     For linking Rust tests to requirements **#[record_property]** shall be used:
 
-    .. code-block:: rust
-
-        use test_properties::record_property;
-
-        #[record_property("PartiallyVerifies", "ID_2, ID_3, ...")]
-        #[record_property("FullyVerifies", "ID_4, ID_5, ...")]
-        #[record_property("Description", "<Description>")]
-        #[record_property("TestType", "<TestType>")]
-        #[record_property("DerivationTechnique", "<DerivationTechnique>")]
-        #[test]
-        fn test_case_function() {
-            ...
-        }
+    A more detailed description of how to link code to requirements looks like is available in the :ref:`verification_template_rust`
 
 .. gd_req:: Independence
     :id: gd_req__verification_independence
@@ -153,7 +114,7 @@ Process Requirements
     :complies:
 
     The tool automation shall automatically generate the Verification reports.
-    These may be independent documents (i.e. not integrated into sphinx documentation).
+    These may be independent documents (i.e. not integrated into docs-as-code based repositories).
     The content of the reports is specified in :need:`gd_temp__platform_ver_report` and :need:`gd_temp__mod_ver_report`.
 
 .. gd_req:: Verification Report Archiving
