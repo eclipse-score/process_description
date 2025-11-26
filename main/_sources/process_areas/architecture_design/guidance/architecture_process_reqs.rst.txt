@@ -260,11 +260,3 @@ Checks for Architectural Design
    :satisfies: wf__cr_mt_featarch, wf__cr_mt_comparch
 
    It shall be checked if all SW components which are mentioned in the dynamic architecture are defined in the static architecture.
-
-.. gd_req:: Building Blocks Dynamic Architecture
-   :id: gd_req__arch_build_blocks_dynamic
-   :status: valid
-   :tags: done_automation
-   :satisfies: wf__cr_mt_featarch, wf__cr_mt_comparch
-
-   It shall be possible to provide the required architectural building blocks inside the dynamic architecture.
