@@ -102,6 +102,9 @@ Module
      :need:`wp__verification_feat_int_test`, and :need:`wp__verification_comp_int_test`
      with status passed/failed/not_run
 
+   It also serves as SW Component Qualification Verification Report for pre-existing Open Source
+   Projects developed and maintained outside of the project to which this process is applied to.
+
 Component
 *********
 

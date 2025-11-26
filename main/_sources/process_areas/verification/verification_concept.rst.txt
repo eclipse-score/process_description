@@ -206,3 +206,17 @@ revisit the linkage of all test cases to the requirement again.
 
 If the status of the linked test case and the linkage document is valid the attribute *testcovered* shall be set to *YES* during the Sphinx Build.
 Further information can also be depicted from the :ref:`requirements_engineering` process.
+
+Software Component Qualification
+================================
+
+The qualification of pre-existing software (e.g. Open Source project) developed and maintained outside of the project scope,
+requires various verification efforts to guarantee the quality matches the expectations of the project.
+
+Existing requirements, specifications and documentation can be used to fill traceability gaps.
+Existing test cases can be re-used and need to be linked against :need:`wp__requirements_comp` maintained within this project.
+
+Also, details in :ref:`external_tsf` to collect evidence required for component qualification can be referred to rate the maturity
+of the externally provided component.
+Eclipse projects are further supposed to align with the Eclipse Functional Safety Process which is documented
+in the `Eclipse Foundation Functional Safety Process GitLab <https://gitlab.eclipse.org/eclipsefdn/emo-team/policies/functional-safety-process>`_.
