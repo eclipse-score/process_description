@@ -550,7 +550,7 @@
                   
   <section id="concept-description">
 <h1>Concept Description<a class="headerlink" href="#concept-description" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-e6e60c47">
+<div class="need_container docutils container" id="SNCB-540a7899">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_doc_concept table" id="doc_concept__safety_analysis">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -683,7 +683,7 @@ the evidence of the functional safety of the functions.</p>
 </figcaption>
 </figure>
 <p>With the diagrams the dependencies and signal flows are shown. The analysis is done by applying the fault models <a class="reference internal" href="guidance/fault_models_guideline.html#gd_guidl__fault_models" title="gd_guidl__fault_models"><em class="xref need">FMEA Fault Models (gd_guidl__fault_models)</em></a> in the above example’s dynamic view the “flow component 1” to the user realizes a safety requirement. If we apply the fault model we may find the possible failure: “the message is not sent which leads to the user not being able to …” - this could be mitigated by telling the user in an AoU: “the feature can not guarantee that the message is sent”
-DFA: Here we see in the static view that component 1 uses component 2. If we apply the failure initiators we may find the possible failure: “Component 2 is using up all execution time available to Component 1” which could be avoided by a OS which is reserving time for every component or by running these Components on different processors.
+DFA: Here we see in the static view that component 1 uses component 2. If we apply the failure initiators we may find the possible failure: “Component 2 is using up all execution time available to Component 1” which could be avoided by a OS which is reserving time for every component or by running these components on different processors.
 for FMEA and the failure initiators <a class="reference internal" href="guidance/dfa_failure_initiators.html#gd_guidl__dfa_failure_initiators" title="gd_guidl__dfa_failure_initiators"><em class="xref need">DFA failure initiators (gd_guidl__dfa_failure_initiators)</em></a> for DFA. Some fault models and failure initiators may not be applicable
 for one safety function. In this case the reason shall be documented in the FMEA/DFA documents. So it can be shown that the analysis is completely done.</p>
 <p>A step-by-step-approach is described in <a class="reference internal" href="guidance/safety_analysis_guideline.html#gd_guidl__safety_analysis" title="gd_guidl__safety_analysis"><em class="xref need">Safety Analysis (DFA and FM... (gd_guidl__safety_analysis)</em></a>. There are also examples for FMEA and DFA are given in <a class="reference internal" href="guidance/safety_analysis_guideline.html#examples-fmea-dfa"><span class="std std-ref">Examples for FMEA and DFA at feature level</span></a> to show how to use the templates, failure initiators and fault models.</p>

@@ -22,7 +22,7 @@ Architecture Guideline
    :status: valid
    :complies: std_req__isopas8926__44411, std_req__isopas8926__44412
 
-The guideline focuses on the steps which need to be performed in order to create the architectural design. The concept behind those steps is described in the :need:`[[title]] <doc_concept__arch_process>`
+The guideline focuses on the steps which need to be performed in order to create the architectural design. The concept behind those steps is described in the :need:`[[title]] <doc_concept__arch_process>`.
 
 General Hints
 =============
@@ -127,12 +127,12 @@ Based on the concept description a model of the feature architecture should be d
      - logic_arc_int_op
      - logic_arc_int_op_t
 
-The relations of the static elements are described in :numref:`metamodel_architectural_design`.
+The relations of the static elements are described in :ref:`metamodel_architectural_design`.
 
 .. note::
    For the modeling of the architecture a sphinx extension is available: :ref:`arch_gen_sphinx`
 
-   An example for modeling the architecture can be found :ref:`here <definition_architectural_design>`
+   An example for modeling the architecture can be found :ref:`here <definition_architectural_design>`.
 
 .. _allocate_feature_requirements:
 
@@ -143,7 +143,7 @@ In the next step the already derived feature requirements shall be allocated to 
 
 If needed also additional feature requirements, which may arise due to architectural decisions, should be created and allocated to the feature architecture itself.
 
-Those links shall be established from architectural elements to feature requirements via the attribute *fulfils*
+Those links shall be established from architectural elements to feature requirements via the attribute *fulfils*.
 
 .. _review_architectural_design:
 
@@ -183,7 +183,7 @@ In this step the component requirements shall be derived (see :need:`[[title]] <
 Model component architecture
 ----------------------------
 
-According to the architecture design description the model for the component architecture shall be created. It shall consist of components, real interfaces and real interface operations. Depending on the size of the component it can also be split into multiple (sub) components.
+According to the architecture design description the model for the component architecture shall be created. It shall consist of components, real interfaces and real interface operations. Depending on the size of the component, it can also be split into multiple (lower level) components.
 
 .. list-table:: Architectural Elements of the Component Architecture
    :header-rows: 1
@@ -202,7 +202,7 @@ According to the architecture design description the model for the component arc
      - real_arc_int_op
      - real_arc_int_op_t
 
-The relations of the static elements are described in :numref:`metamodel_architectural_design`
+The relations of the static elements are described in :ref:`metamodel_architectural_design`.
 
 .. _review_component_architecture:
 
@@ -220,6 +220,8 @@ Following roles should be included in the review:
 For the review process a checklist template is available:
 
 :need:`[[title]] <gd_chklst__arch_inspection_checklist>`
+
+.. _uml_diagram_selection:
 
 UML diagram selection
 =====================
@@ -245,4 +247,4 @@ Generally dynamic views are expected in the feature view and the component view 
 - In case of safety related calls/communication also the error cases shall be displayed (see the "alt" boxes in the examples).
 - If there would be only small difference between the feature and the component view, one can be omitted, preferrably the feature view.
 - If the described feature or components support multiple use cases (e.g. in different life cycle phases).
-  these should be described also in multiple dynamic views.
+  These should be described also in multiple dynamic views.

@@ -59,7 +59,8 @@ Design Constraints
 
 Rationale Behind Architecture Decomposition
 *******************************************
-mandatory: a motivation for the decomposition or reason for not further splitting it into sub components.
+
+Mandatory: a motivation for the decomposition or reason for not further splitting it into lower level components.
 
 .. note:: Common decisions across components / cross cutting concepts is at the higher level.
 

@@ -561,7 +561,7 @@
                   
   <section id="architecture-guideline">
 <span id="arch-design-guideline"></span><h1>Architecture Guideline<a class="headerlink" href="#architecture-guideline" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-215ca6c0">
+<div class="need_container docutils container" id="SNCB-713ae8dc">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_guidl table" id="gd_guidl__arch_design">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -605,7 +605,7 @@
 </table>
 </div>
 </div>
-<p>The guideline focuses on the steps which need to be performed in order to create the architectural design. The concept behind those steps is described in the <a class="reference internal" href="../architecture_concept.html#doc_concept__arch_process" title="doc_concept__arch_process"><em class="xref need">Architecture Process</em></a></p>
+<p>The guideline focuses on the steps which need to be performed in order to create the architectural design. The concept behind those steps is described in the <a class="reference internal" href="../architecture_concept.html#doc_concept__arch_process" title="doc_concept__arch_process"><em class="xref need">Architecture Process</em></a>.</p>
 <section id="general-hints">
 <h2>General Hints<a class="headerlink" href="#general-hints" title="Link to this heading">#</a></h2>
 <section id="attributes">
@@ -688,8 +688,8 @@
 <h2>Workflow for creating an architectural design<a class="headerlink" href="#workflow-for-creating-an-architectural-design" title="Link to this heading">#</a></h2>
 <p>This chapter describes the general guideline for architectural design within the project. In general the workflow for creating an architectural design is shown in <a class="reference internal" href="../architecture_getstrt.html#architecture-workflow-fig"><span class="std std-ref">Architecture Design Workflow</span></a></p>
 <p>Those steps are:</p>
-<div class="pst-scrollable-table-container"><table class="table" id="id5">
-<caption><span class="caption-number">Table 8 </span><span class="caption-text">Definition of the static architectural elements</span><a class="headerlink" href="#id5" title="Link to this table">#</a></caption>
+<div class="pst-scrollable-table-container"><table class="table" id="id6">
+<caption><span class="caption-number">Table 8 </span><span class="caption-text">Definition of the static architectural elements</span><a class="headerlink" href="#id6" title="Link to this table">#</a></caption>
 <colgroup>
 <col style="width: 10.0%" />
 <col style="width: 60.0%" />
@@ -780,8 +780,8 @@
 <section id="model-feature-architecture">
 <span id="id1"></span><h3>Model feature architecture<a class="headerlink" href="#model-feature-architecture" title="Link to this heading">#</a></h3>
 <p>Based on the concept description a model of the feature architecture should be designed. It shall consist of the logical interfaces which the user of the feature can access including also the modules which provide the interfaces. Therefore following elements shall be used:</p>
-<div class="pst-scrollable-table-container"><table class="table" id="id6">
-<caption><span class="caption-number">Table 9 </span><span class="caption-text">Architectural Elements of the Feature Architecture</span><a class="headerlink" href="#id6" title="Link to this table">#</a></caption>
+<div class="pst-scrollable-table-container"><table class="table" id="id7">
+<caption><span class="caption-number">Table 9 </span><span class="caption-text">Architectural Elements of the Feature Architecture</span><a class="headerlink" href="#id7" title="Link to this table">#</a></caption>
 <colgroup>
 <col style="width: 14.3%" />
 <col style="width: 42.9%" />
@@ -809,18 +809,18 @@
 </tbody>
 </table>
 </div>
-<p>The relations of the static elements are described in <a class="reference internal" href="../architecture_concept.html#metamodel-architectural-design"><span class="std std-numref">Fig. 15</span></a>.</p>
+<p>The relations of the static elements are described in <a class="reference internal" href="../architecture_concept.html#metamodel-architectural-design"><span class="std std-ref">Definition of the Metamodel for Architectural Design</span></a>.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>For the modeling of the architecture a sphinx extension is available: <a class="reference internal" href="../architecture_getstrt.html#arch-gen-sphinx"><span class="std std-ref">Architecture Generation for Sphinx-Needs</span></a></p>
-<p>An example for modeling the architecture can be found <a class="reference internal" href="../_assets/architecture_modeling_example.html#definition-architectural-design"><span class="std std-ref">here</span></a></p>
+<p>An example for modeling the architecture can be found <a class="reference internal" href="../_assets/architecture_modeling_example.html#definition-architectural-design"><span class="std std-ref">here</span></a>.</p>
 </div>
 </section>
 <section id="allocate-feature-requirements-to-architectural-elements">
 <span id="allocate-feature-requirements"></span><h3>Allocate feature requirements to architectural elements<a class="headerlink" href="#allocate-feature-requirements-to-architectural-elements" title="Link to this heading">#</a></h3>
 <p>In the next step the already derived feature requirements shall be allocated to the architectural elements depending on the content of the requirement. Functional Requirement may either be allocated to static or dynamic architecture. Interface requirements shall only be allocated to the interface architecture.</p>
 <p>If needed also additional feature requirements, which may arise due to architectural decisions, should be created and allocated to the feature architecture itself.</p>
-<p>Those links shall be established from architectural elements to feature requirements via the attribute <em>fulfils</em></p>
+<p>Those links shall be established from architectural elements to feature requirements via the attribute <em>fulfils</em>.</p>
 </section>
 <section id="review-architectural-design">
 <span id="id2"></span><h3>Review architectural design<a class="headerlink" href="#review-architectural-design" title="Link to this heading">#</a></h3>
@@ -846,9 +846,9 @@ and merged into the main branch of the score repository.</p>
 </section>
 <section id="model-component-architecture">
 <span id="id3"></span><h3>Model component architecture<a class="headerlink" href="#model-component-architecture" title="Link to this heading">#</a></h3>
-<p>According to the architecture design description the model for the component architecture shall be created. It shall consist of components, real interfaces and real interface operations. Depending on the size of the component it can also be split into multiple (sub) components.</p>
-<div class="pst-scrollable-table-container"><table class="table" id="id7">
-<caption><span class="caption-number">Table 10 </span><span class="caption-text">Architectural Elements of the Component Architecture</span><a class="headerlink" href="#id7" title="Link to this table">#</a></caption>
+<p>According to the architecture design description the model for the component architecture shall be created. It shall consist of components, real interfaces and real interface operations. Depending on the size of the component, it can also be split into multiple (lower level) components.</p>
+<div class="pst-scrollable-table-container"><table class="table" id="id8">
+<caption><span class="caption-number">Table 10 </span><span class="caption-text">Architectural Elements of the Component Architecture</span><a class="headerlink" href="#id8" title="Link to this table">#</a></caption>
 <colgroup>
 <col style="width: 14.3%" />
 <col style="width: 42.9%" />
@@ -876,7 +876,7 @@ and merged into the main branch of the score repository.</p>
 </tbody>
 </table>
 </div>
-<p>The relations of the static elements are described in <a class="reference internal" href="../architecture_concept.html#metamodel-architectural-design"><span class="std std-numref">Fig. 15</span></a></p>
+<p>The relations of the static elements are described in <a class="reference internal" href="../architecture_concept.html#metamodel-architectural-design"><span class="std std-ref">Definition of the Metamodel for Architectural Design</span></a>.</p>
 </section>
 <section id="review-component-architecture">
 <span id="id4"></span><h3>Review component architecture<a class="headerlink" href="#review-component-architecture" title="Link to this heading">#</a></h3>
@@ -892,7 +892,7 @@ and merged into the main branch of the score repository.</p>
 </section>
 </section>
 <section id="uml-diagram-selection">
-<h2>UML diagram selection<a class="headerlink" href="#uml-diagram-selection" title="Link to this heading">#</a></h2>
+<span id="id5"></span><h2>UML diagram selection<a class="headerlink" href="#uml-diagram-selection" title="Link to this heading">#</a></h2>
 <section id="static-architecture">
 <h3>Static architecture<a class="headerlink" href="#static-architecture" title="Link to this heading">#</a></h3>
 <p>As can be seen from the examples presented in <a class="reference internal" href="../architecture_concept.html#feat_arc_sta__example_feature__feature_1" title="feat_arc_sta__example_feature__feature_1"><em class="xref need">Feature 1 (feat_arc_sta__example_feature__feature_1)</em></a> and <a class="reference internal" href="../architecture_concept.html#comp_arc_sta__example_feature__archdes_component_2" title="comp_arc_sta__example_feature__archdes_component_2"><em class="xref need">Component 2 (comp_arc_sta__example_feature__archdes_component_2)</em></a>
@@ -913,7 +913,7 @@ architecture description.</p>
 <li><p>In case of safety related calls/communication also the error cases shall be displayed (see the “alt” boxes in the examples).</p></li>
 <li><p>If there would be only small difference between the feature and the component view, one can be omitted, preferrably the feature view.</p></li>
 <li><p>If the described feature or components support multiple use cases (e.g. in different life cycle phases).
-these should be described also in multiple dynamic views.</p></li>
+These should be described also in multiple dynamic views.</p></li>
 </ul>
 </section>
 </section>

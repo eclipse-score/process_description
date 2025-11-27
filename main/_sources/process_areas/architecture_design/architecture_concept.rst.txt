@@ -40,26 +40,26 @@ Use Cases which require architectural information
 
    * *Dependent Failure Analysis*
 
-      * the interaction of the components with each other
+     * the interaction of the components with each other
 
    * *Qualitative safety analysis*
 
-      * decomposition of the architectural element under analysis
-      * interfaces within the architectural element under analysis (including their AoUs)
-      * usage of the components (interface of the component under analysis itself)
-      * allocate safety requirements to architectural elements
+     * decomposition of the architectural element under analysis
+     * interfaces within the architectural element under analysis (including their AoUs)
+     * usage of the components (interface of the component under analysis itself)
+     * allocate safety requirements to architectural elements
 
 #. **Security Analysis**
 
-   * TBD
+   * The architecture created to fulfill the requirements does not introduce possible vulnerabilities
 
 #. **Safety Planning**
 
    * Decomposition into modules and components for the safety planning
 
-#. **Security Planing**
+#. **Security Planning**
 
-   * TBD
+   * The architecture serves as the foundational framework for cybersecurity planning by enabling systematic asset identification, threat analysis, attack path modeling, and the structured derivation of cybersecurity goals and requirements
 
 #. **Platform SW Development**
 
@@ -94,9 +94,9 @@ Requirements based on standards
 
 Additionally also standards specify requirements towards the architectural design:
 
-* ISO26262
-* ASPICE
-* ISO21434
+* :ref:`ISO 26262<standard_iso26262>`
+* :ref:`ASPICE<standard_aspice_pam4>`
+* :ref:`ISO 21434<standard_isosae21434>`
 
 Their requirements are linked via the guidances.
 
@@ -137,12 +137,12 @@ The first viewpoint is named as *feature architecture*. It displays the SW modul
 
       {{ draw_feature(need(), needs) }}
 
-In all views the Components which are marked as ASIL_B related are drawn in blue color.
+In all views, the components which are marked as ASIL_B related are drawn with red borders.
 
 Dynamic View
 ------------
 
-The next chart shows the dynamic behavior of the feature including the interaction of its modules with the user. Following scenarios should be included:
+The next chart shows the *dynamic behavior* of the feature including the interaction of its modules with the user. Following scenarios should be included:
 
 *  important use cases or features: how do components execute them?
 *  interactions at critical external interfaces: how do components cooperate with users and neighboring components?
@@ -213,11 +213,20 @@ The second viewpoint is named as *component architecture* and describes the impl
       {{ draw_component(need(), needs) }}
 
 The *lower level components* are optional and rely on the complexity of the component. Thus there is no graphic representation required for it.
+In all views the components which are marked as ASIL_B related are drawn in red color.
 
 Dynamic View
 ------------
 
-The dynamic view of the component architecture shows the order of the interactions between the respective components. It is displayed via relations to the interface operations which are provided or used by each component.
+The *dynamic view* of the component architecture shows the order of the interactions between the respective lower level components. It is displayed via relations to the interface operations which are provided or used by each component.
+
+Following scenarios should be included:
+
+*  important use cases: how do lower level components execute them?
+*  interactions at critical interfaces: how do lower level components cooperate with users and neighboring lower level components?
+*  operation and administration: launch, start-up, stop
+*  successful use cases
+*  error and exception use cases
 
 .. uml:: _assets/component_architecture_dynamic.puml
    :align: center
@@ -257,7 +266,7 @@ Specification of the architectural design
 *****************************************
 
 The architectural design shall be modeled with the help of static, dynamic and interfaces at each defined level.
-For the description a natural language, diagrams or a semi-formal language *(UML)* shall be used.
+For the description a natural language, diagrams or a semi-formal language (*UML*, see :ref:`uml_diagram_selection`) shall be used.
 
 The architectural elements itself including their correlations shall be modeled in a database like approach. Therefore following architectural elements shall be used:
 
@@ -298,7 +307,7 @@ Dynamic view
 
 The *dynamic view* describes the concrete behavior and interactions of the *building blocks* in form of use cases which were described above.
 
-The dynamic view shall be modeled partly in Sphinx Needs and PlantUML. The components itself shall be generated from the sphinx needs model into the PlantUML diagram. The dynamic relations between the component and the interfaces shall be modeled in PlantUML as it would be a huge effort to model the dynamic behavior in sphinx needs and would not provide any additional benefit.
+The dynamic view shall be modeled partly in Sphinx Needs and PlantUML. The components itself shall be used from the sphinx needs model in the PlantUML diagram. The dynamic relations between the component and the interfaces shall be modeled in PlantUML as it would be a huge effort to model the dynamic behavior in sphinx needs and would not provide any additional benefit.
 
 .. list-table:: Definition of the dynamic architectural elements
    :header-rows: 1

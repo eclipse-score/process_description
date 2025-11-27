@@ -26,12 +26,12 @@ including the requirements of the different stakeholders for the Change Manageme
 
 Key concept
 ***********
-A Change Request is the **ONLY** way to contribute new features or to modify the scope
+A *Change Request* is the **ONLY** way to contribute new features or to modify the scope
 of existing features in the project.
-As features are built-up by Components a Change Request is also needed to add new
-Components or to modify the scope of existing Components.
-As a Software Module is defined as the top-level Component, all statements here for
-Components are also valid for Software Modules.
+As features are built-up by components a Change Request is also needed to add new
+components or to modify the scope of existing components.
+As a *Software Module* is defined as the top-level component, all statements here for
+components are also valid for Software Modules.
 
 Inputs
 ******

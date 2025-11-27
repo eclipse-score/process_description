@@ -56,7 +56,7 @@ may mitigated by updating the Component Requirements or by the **Component Assum
 as well as the Integration of multiple Units to a Component.
 
 As mentioned above a Software Module is defined as a Component or a set of components realizing a
-Feature of the platform. Features consists of Components and are defined by **Feature Requirements**
+Feature of the platform. Features consists of components and are defined by **Feature Requirements**
 (yellow box, middle, 3rd column) and the **Feature Architecture** (yellow box, middle, 4th column).
 A **Feature Safety/Security Analysis** (yellow box, middle, 6th column) is required to verify the Feature
 Architecture, whereby violations of safety/security requirements must be documented. Potential

@@ -110,7 +110,7 @@ The analysis were applied at static and dynamic architecture diagrams. The follo
    Feature Architecture
 
 With the diagrams the dependencies and signal flows are shown. The analysis is done by applying the fault models :need:`gd_guidl__fault_models` in the above example's dynamic view the "flow component 1" to the user realizes a safety requirement. If we apply the fault model we may find the possible failure: "the message is not sent which leads to the user not being able to ..." - this could be mitigated by telling the user in an AoU: "the feature can not guarantee that the message is sent"
-DFA: Here we see in the static view that component 1 uses component 2. If we apply the failure initiators we may find the possible failure: "Component 2 is using up all execution time available to Component 1" which could be avoided by a OS which is reserving time for every component or by running these Components on different processors.
+DFA: Here we see in the static view that component 1 uses component 2. If we apply the failure initiators we may find the possible failure: "Component 2 is using up all execution time available to Component 1" which could be avoided by a OS which is reserving time for every component or by running these components on different processors.
 for FMEA and the failure initiators :need:`gd_guidl__dfa_failure_initiators` for DFA. Some fault models and failure initiators may not be applicable
 for one safety function. In this case the reason shall be documented in the FMEA/DFA documents. So it can be shown that the analysis is completely done.
 

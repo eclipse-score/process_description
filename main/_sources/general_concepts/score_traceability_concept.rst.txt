@@ -64,7 +64,7 @@ of use. For convenience also the traceability to upper and lower lever requireme
 The next figures sets the focus on the component level and adds the traceability from the
 Component Requirements to the Component Architecture, Component Safety/Security Analysis
 and the Component Assumption of use. Further the traceability to Component Assumptions of use
-from external Components is included.
+from external components is included.
 
 
 .. figure:: _assets/score_traceability_model_cmp_overview_1.drawio.svg
