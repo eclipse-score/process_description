@@ -12,6 +12,9 @@
    # SPDX-License-Identifier: Apache-2.0
    # *******************************************************************************
 
+.. _workflow_implementation:
+
+
 Workflow Implementation
 #######################
 
@@ -26,10 +29,10 @@ Workflow Implementation
    :contains: gd_temp__software_development_plan
    :has: doc_concept__imp_concept, doc_getstrt__imp_getstrt
 
-   The Software Development Plan shall descirbe
-     - methods
-     - Guidelines
-     - development environment
+   The Software Development Plan shall describe
+     - Design and programming language selection
+     - Guidelines for design and coding
+     - Development tools
 
 .. workflow:: Create/Maintain Implementation
    :id: wf__sw_detailed_design
@@ -59,4 +62,4 @@ Workflow Implementation
 
    The Implementation Verification of the Detailed Design and Code consists of the following topics
      - Detailed Design and Code Inspection
-     - Static and Dynamic Code Analysis performed by a tool
+     - Static and Dynamic Code Analysis performed by a tool. Acceptance criteria are defined in the Verification Plan :need:`gd_temp__verification_plan`.
