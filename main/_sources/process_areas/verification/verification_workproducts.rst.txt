@@ -95,15 +95,16 @@ Module
    - Formal evidence about the performed DFA
    - Formal evidence about the performed Safety Analyses
    - Software component qualification verification report
-   - Test result per test case from :need:`wp__verification_sw_unit_test`,
-     :need:`wp__verification_feat_int_test`, and :need:`wp__verification_comp_int_test`
+   - Test result per test case from
+     :need:`wp__verification_sw_unit_test` and :need:`wp__verification_comp_int_test`
      with status passed/failed/not_run
-   - Test log per test case from :need:`wp__verification_sw_unit_test`,
-     :need:`wp__verification_feat_int_test`, and :need:`wp__verification_comp_int_test`
+   - Test log per test case from
+     :need:`wp__verification_sw_unit_test` and :need:`wp__verification_comp_int_test`
      with status passed/failed/not_run
 
    It also serves as SW Component Qualification Verification Report for pre-existing Open Source
    Projects developed and maintained outside of the project to which this process is applied to.
+   It is also described in the :need:`gd_temp__mod_ver_report` as a dedicated section.
 
 Component
 *********
