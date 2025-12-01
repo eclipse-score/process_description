@@ -12,7 +12,7 @@
    # SPDX-License-Identifier: Apache-2.0
    # *******************************************************************************
 
-Work Products Release Management
+Release Management Work Products
 ################################
 
 .. workproduct:: Platform Release Notes

@@ -12,7 +12,7 @@
    # SPDX-License-Identifier: Apache-2.0
    # *******************************************************************************
 
-Work Products Change Management
+Change Management Work Products
 ###############################
 
 .. workproduct:: Platform Change Management Plan

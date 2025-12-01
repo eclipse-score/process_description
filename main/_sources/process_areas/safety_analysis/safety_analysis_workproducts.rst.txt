@@ -12,8 +12,8 @@
    # SPDX-License-Identifier: Apache-2.0
    # *******************************************************************************
 
-Workproducts Safety Analysis
-############################
+Safety Analysis Work Products
+#############################
 
 .. workproduct:: Platform DFA
    :id: wp__platform_dfa

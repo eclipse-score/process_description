@@ -14,9 +14,10 @@
 
 .. _workflow_implementation:
 
+Implementation Workflows
+########################
 
-Workflow Implementation
-#######################
+For a detailed explanation of workflows and their role within the process model, please refer to the :ref:`processes_introduction`.
 
 .. workflow:: Create/Maintain Software Development Plan
    :id: wf__sw_development_plan

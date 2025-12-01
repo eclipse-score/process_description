@@ -464,8 +464,8 @@
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">Concept Description</a></li>
 <li class="toctree-l2"><a class="reference internal" href="guidance/index.html">Guidances</a></li>
 <li class="toctree-l2"><a class="reference internal" href="architecture_roles.html">Roles</a></li>
-<li class="toctree-l2"><a class="reference internal" href="architecture_workflow.html">Architecture Workflow</a></li>
-<li class="toctree-l2"><a class="reference internal" href="architecture_workproducts.html">Architecture Workproducts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="architecture_workflow.html">Architecture Workflows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="architecture_workproducts.html">Architecture Work Products</a></li>
 <li class="toctree-l2"><a class="reference internal" href="_assets/architecture_modeling_example.html">Example model of architectural design</a></li>
 </ul>
 </details></li>
@@ -551,7 +551,7 @@
                   
   <section id="concept-description">
 <h1>Concept Description<a class="headerlink" href="#concept-description" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-5b68447e">
+<div class="need_container docutils container" id="SNCB-3d55c296">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_doc_concept table" id="doc_concept__arch_process">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -703,7 +703,7 @@
 <section id="static-view">
 <h4>Static View<a class="headerlink" href="#static-view" title="Link to this heading">#</a></h4>
 <p>The first viewpoint is named as <em>feature architecture</em>. It displays the SW modules (= top level SW components) which are required to realize the feature including their interactions. Also the <em>logical interfaces</em> and the interaction between the feature and the user are included in this view. On this architectural level the feature requirements shall be allocated. An example for the static architecture is shown here:</p>
-<div class="need_container docutils container" id="SNCB-a323b835">
+<div class="need_container docutils container" id="SNCB-49ae92f7">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_feat_arc_sta table" id="feat_arc_sta__example_feature__feature_1">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -732,7 +732,7 @@
 <td class="meta" colspan="3"></td>
 </tr>
 <tr class="content row-odd"><td class="content" colspan="6"><p class="plantuml" id="needarch-process_areas/architecture_design/architecture_concept-0">
-<object data="../../_images/plantuml-5d5802a59a0f05ce648e638c210fe5546ca1f418.svg" type="image/svg+xml" style="width:405px;height:726px;background:#FFFFFF;"></object></p>
+<object data="../../_images/plantuml-c61738bb2487e2c206ba4e71045b405eb04a7f75.svg" type="image/svg+xml" style="width:405px;height:726px;background:#FFFFFF;"></object></p>
 </td>
 </tr>
 <tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
@@ -772,7 +772,7 @@
 <section id="interface-view">
 <h4>Interface View<a class="headerlink" href="#interface-view" title="Link to this heading">#</a></h4>
 <p>On the feature level only <em>logical interfaces</em> shall be displayed. This means that only logical names shall be provided for both the interface and the operations within. Those <em>logical interfaces</em> shall be connected to component interfaces on the module view.</p>
-<div class="need_container docutils container" id="SNCB-f64bac1e">
+<div class="need_container docutils container" id="SNCB-59b6489d">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_logic_arc_int table" id="logic_arc_int__example_feature__archdes_logical_interface_1">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -826,7 +826,7 @@
 <h3>SW Module View<a class="headerlink" href="#sw-module-view" title="Link to this heading">#</a></h3>
 <p>A SW Module represents a outcome of an component or a set of components realizing a feature and all belonging parts of CI build tool. It serves only as a container (or package) which can include components. It is not meant to be an architectural element which includes that no requirements can be allocated to it.</p>
 <p>On this level also a view shall be defined which is called <em>Module View</em>. It represents the allocation of components into modules and displays the dependencies between the single modules. In this view also cyclic dependencies between modules can be identified.</p>
-<div class="need_container docutils container" id="SNCB-920e952a">
+<div class="need_container docutils container" id="SNCB-67550589">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_mod_view_sta table" id="mod_view_sta__example_feature__archdes_3">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -854,7 +854,7 @@
 <td class="meta" colspan="3"></td>
 </tr>
 <tr class="content row-odd"><td class="content" colspan="6"><p class="plantuml" id="needarch-process_areas/architecture_design/architecture_concept-2">
-<object data="../../_images/plantuml-c545bd0c8734c054353d352df24dcd5550476778.svg" type="image/svg+xml" style="width:405px;height:575px;background:#FFFFFF;"></object></p>
+<object data="../../_images/plantuml-d2fe4810042b63714b2c40f81f3be7cb28547955.svg" type="image/svg+xml" style="width:405px;height:575px;background:#FFFFFF;"></object></p>
 </td>
 </tr>
 <tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
@@ -877,7 +877,7 @@
 <section id="id2">
 <h4>Static View<a class="headerlink" href="#id2" title="Link to this heading">#</a></h4>
 <p>The second viewpoint is named as <em>component architecture</em> and describes the implementation of the functionalities in a white-box view of the platform. It describes the structural decomposition of the <em>SW components</em> into <em>lower level</em> SW components. In the projects this viewpoint provides more detailed information concerning the respective interfaces of a component. If a SW component interacts with a different component it is also included via a <em>use</em> relationship in the diagram. An example of the <em>component architecture</em> is displayed here:</p>
-<div class="need_container docutils container" id="SNCB-f0f4a51b">
+<div class="need_container docutils container" id="SNCB-53f99aea">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_comp_arc_sta table" id="comp_arc_sta__example_feature__archdes_component_2">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -906,7 +906,7 @@
 <td class="meta" colspan="3"></td>
 </tr>
 <tr class="content row-odd"><td class="content" colspan="6"><p class="plantuml" id="needarch-process_areas/architecture_design/architecture_concept-3">
-<object data="../../_images/plantuml-15bf557e328c17307563e3230176d9e60487f8af.svg" type="image/svg+xml" style="width:783px;height:278px;background:#FFFFFF;"></object></p>
+<object data="../../_images/plantuml-76d68f1161925db466f2cda93d8772beafd63f19.svg" type="image/svg+xml" style="width:783px;height:278px;background:#FFFFFF;"></object></p>
 </td>
 </tr>
 <tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
@@ -948,7 +948,7 @@ In all views the components which are marked as ASIL_B related are drawn in red 
 <section id="id4">
 <h4>Interface View<a class="headerlink" href="#id4" title="Link to this heading">#</a></h4>
 <p>The component interface view shows the actual interfaces of the component. Also links to their corresponding logical interfaces are displayed in this view:</p>
-<div class="need_container docutils container" id="SNCB-6493e26b">
+<div class="need_container docutils container" id="SNCB-626fdf8e">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_real_arc_int table" id="real_arc_int__example_feature__archdes_component_interface_1">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
