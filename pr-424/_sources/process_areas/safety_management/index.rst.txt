@@ -17,6 +17,21 @@
 Safety Management
 =================
 
+Getting started
+---------------
+
+.. doc_getstrt:: Safety Management Get Started
+   :id: doc_getstrt__safety_management_process
+   :status: valid
+
+
+In case you are appointed as a :need:`Safety Manager <rl__safety_manager>` by the :need:`rl__project_lead` in the <Project> project:
+
+* Contact the :need:`Project Lead <rl__project_lead>` for your SEooC to establish planning and reporting (the TL should already have established a Github project for planning)
+* Create your safety plan according to :need:`wf__cr_mt_safety_plan`
+* Make familiar with your role description and the other workflows of safety management (see below)
+* Make familiar with the development and supporting process descriptions in :ref:`process_description` plus the relevant sections of the :need:`Platform Management Plan <wp__platform_mgmt>`
+
 Concept
 -------
 
@@ -83,21 +98,6 @@ For the safety planning and safety manual, sphinx-needs will be used for referen
 For the activities planning (who, when) we use github issues and monitor these in github projects.
 
 For the reporting (e.g. displaying the status of the work products) additional tooling is created (see :doc:`guidance/process_req`)
-
-Getting started
----------------
-
-.. doc_getstrt:: Safety Management Get Started
-   :id: doc_getstrt__safety_management_process
-   :status: valid
-
-
-In case you are appointed as a :need:`Safety Manager <rl__safety_manager>` by the :need:`rl__project_lead` in the <Project> project:
-
-* Contact the :need:`Project Lead <rl__project_lead>` for your SEooC to establish planning and reporting (the TL should already have established a Github project for planning)
-* Create your safety plan according to :need:`wf__cr_mt_safety_plan`
-* Make familiar with your role description and the other workflows of safety management (see below)
-* Make familiar with the development and supporting process descriptions in :ref:`process_description` plus the relevant sections of the :need:`Platform Management Plan <wp__platform_mgmt>`
 
 Guidance
 --------
