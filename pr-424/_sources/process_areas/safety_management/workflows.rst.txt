@@ -12,10 +12,8 @@
    # SPDX-License-Identifier: Apache-2.0
    # *******************************************************************************
 
-Safety Management Workflows
-###############################
-
-For a detailed explanation of workflows and their role within the process model, please refer to the :ref:`processes_introduction`.
+Workflows
+---------
 
 .. workflow:: Create/Maintain Safety Plan
    :id: wf__cr_mt_safety_plan
