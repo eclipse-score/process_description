@@ -17,7 +17,7 @@
 Work products
 =============
 
-An work product (according to the term definition of the Eclipse Foundation) is an items needed as input or created as output of one or more tasks that are the responsibility of a :ref:`single role<roles>`.
+An work product is an items needed as input or created as output of one or more tasks that are the responsibility of a :ref:`single role<roles>`.
 
 The project development work product traceability model overview can be found here: :ref:`general_concepts_traceability`.
 
