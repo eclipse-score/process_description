@@ -94,7 +94,7 @@ The general workflows that are not part of any process area and workflow overvie
 Standards
 ---------
 
-The standard references the project's processes are derived from can be found here:
+The standard references the project's processes are derived from and the coverage of the requirements and the work products from the standards can be found here:
 
 .. toctree::
    :maxdepth: 1
