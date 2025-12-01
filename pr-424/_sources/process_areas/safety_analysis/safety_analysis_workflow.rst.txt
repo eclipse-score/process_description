@@ -16,7 +16,7 @@
 .. _workflow_safety_analysis:
 
 Safety Analysis Workflows
-#############################
+#########################
 
 For a detailed explanation of workflows and their role within the process model, please refer to the :ref:`processes_introduction`.
 
