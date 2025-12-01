@@ -12,8 +12,8 @@
    # SPDX-License-Identifier: Apache-2.0
    # *******************************************************************************
 
-Implementation Workproducts
-###########################
+Implementation Work Products
+############################
 
 .. workproduct:: Implementation
    :id: wp__sw_implementation
