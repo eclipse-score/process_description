@@ -54,7 +54,7 @@ Project Management Roles
    * Ultimate decisions on escalated topics
    * Decide on addition/removal of modules repositories or split-off of projects
 
-Project Process roles
+Project Process Roles
 ---------------------
 
 .. role:: Process Community Member
@@ -66,7 +66,7 @@ Project Process roles
    The process community members are responsible for the definition of the process architecture of the project integrated management system and how they processes interact.
    The approval and release of the process is done by the safety, quality and security managers and the project leads (for the parts which affect them).
 
-Project Development roles
+Project Development Roles
 -------------------------
 
 .. role:: Infrastructure Tooling Community Member
@@ -118,7 +118,7 @@ Project Development roles
    (Eclipse) Open Source Role, person(s) who is(are) responsible for coordinating the resolution of Vulnerabilities within the Project.
    By default, the project Security Team includes all Committers. However, the Project may choose a different arrangement and establish specific criteria for team nominations.
 
-Project Feature teams
+Project Feature Teams
 ---------------------
 
 .. role:: Platform Team
@@ -137,7 +137,7 @@ Project Feature teams
 
    The module team is responsible for all artifacts within the module SEooCs. Each module has only one responsible team but a team may also be responsible for several (small) modules.
 
-Project Roles list
+Project Roles List
 ------------------
 
 .. needtable::
