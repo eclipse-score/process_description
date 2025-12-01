@@ -64,7 +64,7 @@ The process description for the project (e.g. requirements, architecture, safety
 Process Role definition
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-The general roles that are not part of any process area can be found here:
+The general roles that are not part of any process area and the project roles list can be found here:
 
 .. toctree::
    :maxdepth: 1
