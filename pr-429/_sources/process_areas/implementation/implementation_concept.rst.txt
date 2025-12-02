@@ -147,10 +147,12 @@ for rust -
 
 Interface View
 ``````````````
-For every unit, it should show the interface provided by that unit. For each unit and corresponding
-interface, there shall be an implementation and documentation which is generated for the implementation
-will have the units description and the interface. According the template the attributes shall be
-filled and corresponding element is shown in the documentation generated form the implementation.
+For every unit, the Interface View should display the interfaces provided by that unit.
+For each unit and its corresponding interfaces, an implementation and documentation must
+be created. Since keeping both in sync can be challenging, it is recommended to generate
+the documentation from the implementation using appropriate tools.
+
+The following section provides templates for defining needs within the source code:
 
 For cpp using doxygen comments-
 
