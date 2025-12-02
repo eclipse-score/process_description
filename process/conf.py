@@ -33,6 +33,6 @@ extensions = [
 ]
 
 html_context = {
-    "doc_path": "docs",
+    "doc_path": "process"
 }
 
