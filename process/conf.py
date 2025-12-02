@@ -31,3 +31,8 @@ extensions = [
     "sphinxcontrib.plantuml",
     "score_sphinx_bundle",
 ]
+
+html_context = {
+    "doc_path": "docs",
+}
+
