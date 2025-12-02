@@ -134,7 +134,7 @@ Component
    Unit testing verifies detailed design (traced to).
    Respective tooling is defined in :need:`wp__platform_mgmt`, :need:`wp__verification_plan` and integrated in CI/Build.
    Unit testing is in responsible of the :need:`rl__contributor` providing the :need:`wp__sw_implementation`.
-   Unit testing is done in the "target environment" meaning on the actual source code compiled for the component or reference integration.
+   Unit testing is done in the "target environment" meaning it runs against the actual source code compiled for the component or reference integration.
 
 Inspection
 **********
