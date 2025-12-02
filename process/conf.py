@@ -52,5 +52,9 @@ exclude_patterns = [
 
 templates_path = ["templates"]
 
+html_context = {
+    "doc_path": "docs",
+}
+
 # Enable numref
 numfig = True
