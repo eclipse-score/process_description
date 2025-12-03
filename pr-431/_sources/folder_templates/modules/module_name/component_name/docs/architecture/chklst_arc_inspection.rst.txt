@@ -74,7 +74,7 @@ Checklist
     * - ARC_01_03
       - Is the architectural element traceable to the lower level artifacts as defined by the workproduct traceability?
       - automated
-      - Will be removed from checklist once requirement (:need:`Correlations of the architectural building blocks <gd_req__arch_build_blocks_corr>`) is implemented by automated tool check. See `Tool Requirements <https://eclipse-score.github.io/docs-as-code/main/internals/requirements/requirements.html>`_.
+      - Will be removed from checklist the once requirement (:need:`Correlations of the architectural building blocks <gd_req__arch_build_blocks_corr>`) is implemented by automated tool check. See `Tool Requirements <https://eclipse-score.github.io/docs-as-code/main/internals/requirements/requirements.html>`_.
         Details of possible linking can be depicted from :ref:`traceability concept <general_concepts_traceability>`.
       -
       -
