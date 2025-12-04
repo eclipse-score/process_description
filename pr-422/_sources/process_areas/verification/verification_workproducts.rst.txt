@@ -14,7 +14,7 @@
 
 .. _verification_work_products:
 
-Work Products Verification
+Verification Work Products
 ##########################
 
 Platform

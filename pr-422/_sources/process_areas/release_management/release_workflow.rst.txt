@@ -14,8 +14,10 @@
 
 .. _release_workflows:
 
-Workflow Release Management
-###########################
+Release Management Workflows
+############################
+
+For a detailed explanation of workflows and their role within the process model, please refer to the :ref:`processes_introduction`.
 
 .. workflow:: Create/Maintain Module Release Note
    :id: wf__rel_mod_rel_note

@@ -12,10 +12,14 @@
    # SPDX-License-Identifier: Apache-2.0
    # *******************************************************************************
 
+.. _work_products:
+
 Work products
 =============
 
-Project development work product traceability model overview: :ref:`general_concepts_traceability`
+An work product is an items needed as input or created as output of one or more tasks that are the responsibility of a :ref:`single role<roles>`.
+
+The project development work product traceability model overview can be found here: :ref:`general_concepts_traceability`.
 
 
 Platform management

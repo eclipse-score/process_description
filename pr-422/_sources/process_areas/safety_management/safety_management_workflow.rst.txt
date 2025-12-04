@@ -12,8 +12,10 @@
    # SPDX-License-Identifier: Apache-2.0
    # *******************************************************************************
 
-Workflows
----------
+.. _workflow_safety_management:
+
+Safety Management Workflows
+###########################
 
 .. workflow:: Create/Maintain Safety Plan
    :id: wf__cr_mt_safety_plan
@@ -51,7 +53,7 @@ Workflows
    :contains: gd_guidl__saf_package, gd_temp__feature_safety_wp, gd_temp__module_safety_plan
    :has: doc_concept__safety_management_process, doc_getstrt__safety_management_process
 
-   | The Safety Manager in S-CORE is NOT responsible to provide the argument for the achievement of functional safety.
+   | The Safety Manager in the project is NOT responsible to provide the argument for the achievement of functional safety.
    | But the Safety Manager creates and maintains the safety package in the sense of a collection of safety related work products.
    | The generation and the maintainance of this draft safety package shall be automtated as much as possible.
    | It does not contain the final argumentation of the safety of the product.
@@ -81,7 +83,7 @@ Workflows
    :contains: gd_guidl__saf_plan_definitions, gd_chklst__safety_plan, gd_chklst__safety_package
    :has: doc_concept__safety_management_process, doc_getstrt__safety_management_process
 
-   | The external auditor is responsible to perform the formal reviews on Safety plan and Safety Analysis.
+   | The external auditor is responsible to perform the formal reviews on safety plan, safety package and safety analysis.
    | The Safety Manager shall support the external auditor during the reviews.
    | The Project Manager and and the Safety Manager shall approve the formal reviews.
    | Therefore a checklists exist to guide the creator of the relevant safety documents.
@@ -113,3 +115,22 @@ Workflows
    | The Safety Manager is responsible for the monitoring of the safety activities against the safety plan.
    | The Safety Manager is responsible to verify, that the preconditions for the release, which are  part of the release notes, are fulfilled.
    | The Safety Manager is responsible to verify the correctness, completeness and consistency of the release notes.
+
+.. workflow:: Impact Analysis of Change Request
+   :id: wf__impact_analysis_change_request
+   :status: valid
+   :responsible: rl__safety_manager
+   :approved_by: rl__project_lead
+   :input: wp__platform_mgmt, wp__issue_track_system, wp__sw_component_class, wp__tailoring
+   :output: wp__issue_track_system
+   :contains: gd_temp__change_component_request, gd_temp__change_decision_record, gd_temp__change_impact_analysis
+   :has: doc_concept__safety_management_process
+
+   | In accordance with ISO 26262-2:2018 section 5.2.2.3 d/e (Impact Analysis), the project implements a dedicated workflow for analyzing change requests.
+   | The Safety Manager is responsible for ensuring that each change request is analyzed for its impact on safety, as required by ISO 26262-2:2018.
+   | Impact analysis is performed at the element level (e.g., module or component) rather than the item (system) level, reflecting the modular architecture of the platform. This tailoring is documented in the safety plan and justified by the project structure and scope.
+   | The analysis includes:
+   |   - Reviewing the change request and its context
+   |   - Assessing the impact on affected elements, safety requirements, and work products
+   |   - Documenting the rationale for decisions regarding acceptance, implementation, or rejection of the change
+   | The outcome is a change impact analysis report and a documented decision, which are reviewed and approved as part of the Safety Management process.
