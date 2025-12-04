@@ -131,7 +131,7 @@ Requirement Inspection Checklist
         -
       * - REQ_07_02
         - Is the attribute *security* set correctly?
-        - For feature/component requirements this checklist item is supported by automated check: "Every requirement which satisfies a stakeholder requirement with security attribute set to YES inherits this". But the feature requirements/architecture may additionally also be subject to a :ref:`Software Security Analysis <security_analysis>`.
+        - For feature requirements this checklist item is supported by automated check: "Every requirement which satisfies a stakeholder requirement with security attribute set to YES inherits this". But the feature requirements/architecture may additionally also be subject to a :ref:`Software Security Analysis <security_analysis>`.
         -
         -
         -
