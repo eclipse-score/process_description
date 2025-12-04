@@ -35,8 +35,8 @@ Safety Management Guideline
    ASPICE standard is selected for quality management. Processes will always link to the :ref:`standard_iso26262` standard and to the :ref:`ASPICE PAM4 <standard_aspice_pam4>` standard.
 
    **Competence management:**
-
-   The :need:`rl__safety_manager` on SW platform level is responsible to define a competence management for the whole platform.
+   
+   The :need:`rl__project_lead` on SW platform level is responsible to define a competence management for the whole platform.
    Expectation is that the safety competence of the persons nominated for the roles is already given and only has to be checked.
    The exception from this are the committers, for these no safety competence needs to be enforced.
    So the module safety managers shall consult the :need:`module safety plan <wp__module_safety_plan>` and perform accordingly in their module project.
