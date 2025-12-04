@@ -131,7 +131,7 @@ Requirement Inspection Checklist
         -
       * - REQ_07_02
         - Is the attribute *security* set correctly?
-        - Stakeholder requirements security attribute should be set based on Threat Analysis and Risk Assessment (TARA) (process is TBD). For feature/component requirements this checklist item is supported by automated check: "Every requirement which satisfies a requirement with security attribute set to YES inherits this". But the feature/component requirements/architecture may additionally also be subject to a Software Security Criticality Analysis (process is TBD).
+        - For feature/component requirements this checklist item is supported by automated check: "Every requirement which satisfies a stakeholder requirement with security attribute set to YES inherits this". But the feature/component requirements/architecture may additionally also be subject to a :ref:`Software Security Analysis <security_analysis>`.
         -
         -
         -
