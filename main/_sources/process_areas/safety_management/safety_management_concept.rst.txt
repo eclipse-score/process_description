@@ -40,15 +40,20 @@ Inputs
 Stakeholders
 ^^^^^^^^^^^^
 
-#. :need:`Project Lead <rl__project_lead>`
-
-   * planning of development for module and for platform projects
-
 #. :need:`Safety Manager <rl__safety_manager>`
 
    * main responsible to ensure ISO 26262 compliance in the project
    * role definition in :doc:`/process_areas/safety_management/safety_management_roles`
    * status reporting of safety activities
+
+#. :need:`Project Lead <rl__project_lead>`
+
+   * planning of development for platform projects
+
+#. :need:`Committer <rl__committer>`
+
+   * planning of development for module projects (as a Module Project Lead)
+   * performing safety related development
 
 #. :need:`External Auditor <rl__external_auditor>`
 
