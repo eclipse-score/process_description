@@ -142,8 +142,8 @@ Requirement Inspection Checklist
         -
         -
       * - REQ_09_01
-        - For stakeholder requirements: Do those cover assumed safety mechanisms needed by the hardware and system?
-        - Note that stakeholder requirements covering safety mechanisms come from rationales, whereas feature/component requirements are covering safety mechanisms coming from :need:`gd_chklst__safety_analysis`
+        - Note that stakeholder requirements covering safety mechanisms come from rationales, whereas component requirements are covering safety mechanisms coming from :need:`gd_chklst__safety_analysis`
+        -
         -
         -
         -
