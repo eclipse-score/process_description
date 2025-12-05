@@ -18,6 +18,7 @@ Platform Management Work Products
 .. workproduct:: Platform Management Plan
    :id: wp__platform_mgmt
    :status: valid
+   :tags: doc_lifecycle_model_2
    :complies:
 
    The Platform Management Plan shall include the plans as defined by the
@@ -33,6 +34,7 @@ Platform Management Work Products
 .. workproduct:: Project Management Plan
    :id: wp__project_mgt
    :status: valid
+   :tags: doc_lifecycle_model_2
    :complies: std_req__aspice_40__iic-08-53, std_req__aspice_40__iic-14-10, std_req__aspice_40__iic-13-52, std_req__aspice_40__iic-18-52, std_req__aspice_40__iic-08-56, std_req__aspice_40__iic-14-50
 
    Project Management Plan (Part of the Platform Management Plan)
@@ -46,6 +48,3 @@ Platform Management Work Products
    Defines the schedule of the project.
 
    Defines escalation path.
-
-.. needextend:: docname is not None and "process_areas/platform_management" in docname
-   :+tags: platform_management

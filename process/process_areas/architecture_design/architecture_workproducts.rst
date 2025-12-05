@@ -20,7 +20,8 @@ Architecture Work Products
 .. workproduct:: Feature Architecture
    :id: wp__feature_arch
    :status: valid
-   :complies: std_wp__iso26262__software_751, std_wp__isosae21434__development_1051
+   :complies: std_wp__iso26262__software_751
+   :tags: doc_lifecycle_model_3
 
    Feature Architecture linked to Feature Requirements, i.e. interaction of components
 
@@ -33,7 +34,8 @@ Architecture Work Products
 .. workproduct:: Component Architecture
    :id: wp__component_arch
    :status: valid
-   :complies: std_wp__iso26262__software_751, std_wp__isopas8926__4523, std_wp__isosae21434__development_1051
+   :complies: std_wp__iso26262__software_751, std_wp__isopas8926__4523
+   :tags: doc_lifecycle_model_3
 
    Component Architecture linked to Component Requirements
 
@@ -47,6 +49,7 @@ Architecture Work Products
    :id: wp__sw_arch_verification
    :status: valid
    :complies: std_wp__iso26262__software_754
+   :tags: doc_lifecycle_model_2
 
    Depends on architecture guideline and tooling.
    May include several methods like inspection, modelling ... Which are selected in SW Verification Plan.

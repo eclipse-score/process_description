@@ -20,9 +20,12 @@ Safety Analysis
 .. toctree::
    :maxdepth: 1
 
-   safety_analysis_getstrt  
-   safety_analysis_concept 
+   safety_analysis_getstrt
+   safety_analysis_concept
    guidance/index
    safety_analysis_roles
    safety_analysis_workflow
    safety_analysis_workproducts
+
+.. needextend:: docname is not None and "process_areas/safety_analysis" in docname
+   :+tags: safety_analysis

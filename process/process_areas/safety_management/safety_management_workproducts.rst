@@ -18,6 +18,7 @@ Safety Management Work Products
 .. workproduct:: Platform Safety Plan
    :id: wp__platform_safety_plan
    :status: valid
+   :tags: doc_lifecycle_model_2
    :complies: std_wp__iso26262__management_551, std_wp__iso26262__management_552, std_wp__iso26262__management_653, std_wp__iso26262__support_853
 
    Plan to manage and guide the execution of the safety activities of a project including dates, milestones, tasks, deliverables, responsibilities (including the Safety Manager appointment)  and resources.
@@ -33,6 +34,7 @@ Safety Management Work Products
 .. workproduct:: Module Safety Plan
    :id: wp__module_safety_plan
    :status: valid
+   :tags: doc_lifecycle_model_2
    :complies: std_wp__iso26262__management_552, std_wp__iso26262__management_653, std_wp__iso26262__support_853, std_wp__iso26262__support_1251, std_wp__iso26262__support_1252, std_wp__isopas8926__4512
 
    Plan to manage and guide the execution of the safety activities of a project including dates, milestones, tasks, deliverables, responsibilities (including the Safety Manager appointment) and resources.
@@ -46,6 +48,7 @@ Safety Management Work Products
 .. workproduct:: Platform Safety Package
    :id: wp__platform_safety_package
    :status: valid
+   :tags: doc_lifecycle_model_2
    :complies: std_wp__iso26262__management_654
 
    Compiled Safety Relevant Work Products. For Platform SEooC.
@@ -55,6 +58,7 @@ Safety Management Work Products
 .. workproduct:: Module Safety Package
    :id: wp__module_safety_package
    :status: valid
+   :tags: doc_lifecycle_model_2
    :complies: std_wp__iso26262__management_654
 
    Compiled Safety Relevant Work Products. For Module SEooC.
@@ -64,6 +68,7 @@ Safety Management Work Products
 .. workproduct:: Formal Document Review Reports
    :id: wp__fdr_reports
    :status: valid
+   :tags: doc_lifecycle_model_2
    :complies: std_wp__iso26262__management_655
 
    Review that a work product provides sufficient and convincing evidence of their contribution to the achievement of functional safety considering the corresponding objectives and requirements of ISO 26262.
@@ -73,6 +78,7 @@ Safety Management Work Products
 .. workproduct:: Process Safety Audit Report
    :id: wp__audit_report
    :status: valid
+   :tags: doc_lifecycle_model_2
    :complies: std_wp__iso26262__management_655
 
    Examination of an implemented process with regard to the process objectives and that those match the ISO 26262.
@@ -80,6 +86,7 @@ Safety Management Work Products
 .. workproduct:: Platform Safety Manual
    :id: wp__platform_safety_manual
    :status: valid
+   :tags: doc_lifecycle_model_2
    :complies: std_wp__iso26262__software_651, std_wp__iso26262__system_651
 
    The safety manual describes:
@@ -96,6 +103,7 @@ Safety Management Work Products
 .. workproduct:: Module Safety Manual
    :id: wp__module_safety_manual
    :status: valid
+   :tags: doc_lifecycle_model_2
    :complies: std_wp__iso26262__software_651, std_wp__iso26262__system_651, std_wp__iso26262__support_1251
 
    The safety manual describes:
@@ -112,6 +120,7 @@ Safety Management Work Products
 .. workproduct:: Software component classification
    :id: wp__sw_component_class
    :status: valid
+   :tags: doc_lifecycle_model_2
    :complies: std_wp__iso26262__support_1251, std_wp__isopas8926__4511
 
    The classification shall include:
@@ -125,6 +134,7 @@ Safety Management Work Products
 .. workproduct:: Tailoring Documents
    :id: wp__safety_tailoring
    :status: valid
+   :tags: doc_lifecycle_model_2
    :complies: std_wp__iso26262__management_653
 
    This work product argues why some safety work products are not needed in the project.
@@ -135,7 +145,3 @@ Safety Management Work Products
    * Feature/Component
 
    It belongs to the Safety Plan.
-
-
-.. needextend:: docname is not None and "process_areas/safety_management" in docname
-   :+tags: safety_management

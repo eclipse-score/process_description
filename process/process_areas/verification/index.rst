@@ -28,4 +28,4 @@ Verification
    verification_workproducts
 
 .. needextend:: docname is not None and "process_areas/verification" in docname
-   :+tags: verification_process
+   :+tags: verification
