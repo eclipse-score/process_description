@@ -19,19 +19,31 @@ Getting Started
    :id: doc_getstrt__safety_management_process
    :status: valid
 
-If you are elected as a :need:`Safety Manager <rl__safety_manager>` by the committers in the project:
+This document describes the steps which need to be done to ensure Functional Safety according to ISO 26262 as used standard in the project.
 
-* **Establish Planning and Reporting**
-  - Contact the :need:`Project Lead <rl__project_lead>` for your SEooC.
-  - Confirm that an Issue Tracking system is in place for planning and reporting.
+Therefore guidelines :need:`gd_guidl__saf_plan_definitions`, :need:`gd_guidl__saf_man`, :need:`gd_guidl__saf_package`, :need:`gd_guidl__component_classification`
+and a :need:`doc_concept__safety_management_process` are available.
 
-* **Create Your Safety Plan**
-  - Follow the workflow described in :need:`wf__cr_mt_safety_plan`.
+General Workflow
+****************
 
-* **Understand Your Role and Responsibilities**
-  - Review your role description in :need:`rl__safety_manager`.
-  - Familiarize yourself with the Safety Management workflows in :ref:`workflow_safety_management`.
+One goal of the Safety Management Process is to ensure that the project is following the defined processes and
+that the evidence of Functional Safety can be shown according to the requirements. The Safety Management process
+follows an continuous approach.
 
-* **Explore Supporting Processes**
-  - Read the development and supporting process descriptions in :ref:`process_description`.
-  - Check relevant sections of :need:`wp__platform_mgmt`.
+The workflows are defined in the :ref:`workflow_safety_management` section. The following workflows shall be executed continuously:
+
+* Create/Maintain Safety Plan
+* Create/Maintain Safety Package
+* Create/Maintain Safety Manual
+* Monitor/Verify Safety
+
+Additional to the continuous workflows the following workflows shall be executed according to the project needs:
+
+* Create Component Classification
+* Perform Safety Audit
+* Perform Formal Reviews
+* Impact Analysis of Change Request
+
+For open issues the issue tracking system is used to track the issues and to ensure that they are resolved in time.
+The issue tracking system is defined in the :need:`wp__issue_track_system`.
