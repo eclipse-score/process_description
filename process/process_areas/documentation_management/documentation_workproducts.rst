@@ -18,6 +18,7 @@ Documentation Management Work Products
 .. workproduct:: Documentation Management Plan
    :id: wp__document_mgt_plan
    :status: valid
+   :tags: doc_lifecycle_model_2
    :complies: std_wp__iso26262__support_1051, std_wp__iso26262__support_1052, std_req__aspice_40__iic-01-52
 
    Document Management Plan (Part of the Platform Management Plan)

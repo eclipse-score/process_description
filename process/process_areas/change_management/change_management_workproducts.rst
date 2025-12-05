@@ -18,7 +18,7 @@ Change Management Work Products
 .. workproduct:: Platform Change Management Plan
    :id: wp__chm_plan
    :status: valid
-   :tags: change_management
+   :tags: doc_lifecycle_model_2
    :complies: std_wp__iso26262__support_851
 
    Change Management Plan (Part of the Platform Management Plan)
@@ -26,9 +26,8 @@ Change Management Work Products
 .. workproduct:: Issue tracking system
    :id: wp__issue_track_system
    :status: valid
-   :tags: change_management
-   :complies: std_wp__iso26262__management_554, std_wp__iso26262__management_652, std_wp__iso26262__support_852, std_wp__iso26262__support_853, std_wp__iso26262__support_854, std_wp__isopas8926__4527, std_req__aspice_40__iic-13-16, std_req__aspice_40__iic-13-07, std_req__aspice_40__iic-15-55, std_req__aspice_40__iic-15-12,
-              std_wp__isosae21434__continual_8333, std_wp__isosae21434__continual_8431, std_wp__isosae21434__continual_8531, std_wp__isosae21434__continual_8631
+   :tags: doc_lifecycle_model_1
+   :complies: std_wp__iso26262__management_554, std_wp__iso26262__management_652, std_wp__iso26262__support_852, std_wp__iso26262__support_853, std_wp__iso26262__support_854, std_wp__isopas8926__4527, std_req__aspice_40__iic-13-16, std_req__aspice_40__iic-13-07, std_req__aspice_40__iic-15-55, std_req__aspice_40__iic-15-12
 
    | - Change request
    | - Change request plan
@@ -44,7 +43,7 @@ Change Management Work Products
 .. workproduct:: Feature Request
    :id: wp__feat_request
    :status: valid
-   :tags: change_management
+   :tags: doc_lifecycle_model_2
    :complies: std_wp__iso26262__support_852, std_wp__iso26262__support_853, std_req__aspice_40__iic-13-16
 
    | - Feature request for a new feature or a feature modification
@@ -55,7 +54,7 @@ Change Management Work Products
 .. workproduct:: Component Request
    :id: wp__cmpt_request
    :status: valid
-   :tags: change_management
+   :tags: doc_lifecycle_model_2
    :complies: std_wp__iso26262__support_852, std_wp__iso26262__support_853, std_req__aspice_40__iic-13-16
 
    | - Component request for a new component or a component modification
@@ -63,6 +62,3 @@ Change Management Work Products
    | Change Request for a new component or a modification of an existing component,
    | which changes the scope of the component.
    | Software Modules are also components (top-level component).
-
-.. needextend:: docname is not None and "process_areas/change_management" in docname
-   :+tags: change_management

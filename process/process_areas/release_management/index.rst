@@ -28,4 +28,4 @@ Release Management
    release_workproducts
 
 .. needextend:: docname is not None and "process_areas/release_management" in docname
-   :+tags: release_mgt
+   :+tags: release_management

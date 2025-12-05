@@ -26,3 +26,6 @@ Configuration Management
    configuration_roles
    configuration_workflow
    configuration_workproducts
+
+.. needextend:: docname is not None and "process_areas/configuration_management" in docname
+   :+tags: configuration_management

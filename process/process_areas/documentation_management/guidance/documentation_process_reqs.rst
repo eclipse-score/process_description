@@ -68,6 +68,21 @@ Document Management Process Requirements
 
    Compare also  :need:`gd_temp__documentation`
 
+.. gd_req:: Document attribute: status
+   :id: gd_req__doc_attr_status
+   :status: valid
+   :tags: manual_prio_1, attribute, mandatory
+   :satisfies: wf__platform_cr_mt_platform_mgmt_plan
+   :complies: std_req__iso26262__support_1044
+
+   Each document, shall have a status depending on the document lifecycle models below:
+
+     * Model 1: VALID (e.g. for simple reports)
+     * Model 2: DRAFT -> VALID (e.g. for plans)
+     * Model 3: DRAFT-> VALID -> VALID(inspected) (e.g. for stakeholder requirements)
+
+   Compare :need:`gd_guidl__documentation`
+
 .. gd_req:: Document Author
    :id: gd_req__doc_reviewer
    :status: valid
