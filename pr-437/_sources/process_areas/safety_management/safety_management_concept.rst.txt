@@ -81,8 +81,7 @@ Stakeholders
 Safety Plans
 ^^^^^^^^^^^^
 
-The SW platform project defines different levels of planning: platform, feature and module. There will be one safety plan on platform level and
-several safety plans on feature and module level (one for each feature / module).
+The SW platform project defines two levels of planning: platform and module. There will be one safety plan on platform level and several safety plans on module level (one for each module).
 This safety planning follows how development teams and repositories are organized in the project. Each of these safety plans "creates" one SEooC.
 The :need:`Platform Safety Plan <wp__platform_safety_plan>` exists only once and is part of the :need:`Platform Management Plan <wp__platform_mgmt>`.
 
