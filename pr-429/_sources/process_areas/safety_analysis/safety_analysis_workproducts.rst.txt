@@ -45,7 +45,7 @@ Safety Analysis Work Products
 .. workproduct:: Component FMEA
    :id: wp__sw_component_fmea
    :status: valid
-   :complies: std_wp__iso26262__analysis_751, std_wp__iso26262__analysis_851, std_wp__isopas8926__4524
+   :complies: std_wp__iso26262__analysis_751, std_wp__iso26262__analysis_851, std_wp__isopas8926__4524, std_wp__iso26262__software_752
 
    FMEA, verifies the component architecture (as part of SW Safety Concept)
 
@@ -54,7 +54,7 @@ Safety Analysis Work Products
 .. workproduct:: Component DFA
    :id: wp__sw_component_dfa
    :status: valid
-   :complies: std_wp__iso26262__analysis_751, std_wp__iso26262__software_753, std_wp__isopas8926__4524
+   :complies: std_wp__iso26262__analysis_751, std_wp__iso26262__software_753, std_wp__isopas8926__4524, std_wp__iso26262__software_752
 
    Dependent Failure Analysis on component/module level.
 
