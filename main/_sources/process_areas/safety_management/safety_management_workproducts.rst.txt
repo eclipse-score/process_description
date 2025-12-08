@@ -22,7 +22,7 @@ Safety Management Work Products
 
    Plan to manage and guide the execution of the safety activities of a project including dates, milestones, tasks, deliverables, responsibilities (including the Safety Manager appointment)  and resources.
 
-   This platform safety plan also takes into accout the eclipse organization's rules relevant for safety development.
+   This platform safety plan also takes into account the eclipse organization's rules relevant for safety development.
 
    Guidelines on how an change impact analysis shall be concluded on each item or element involved together with it's connected items or elements.
 
