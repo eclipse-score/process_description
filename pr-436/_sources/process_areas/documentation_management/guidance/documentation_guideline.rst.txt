@@ -75,6 +75,14 @@ for content, structure and formal aspects.
 Due to updates, findings, other issues or change request, the document status may set
 back from "VALID" to "DRAFT". This triggers a new review cycle.
 
+
+.. figure:: _assets/review_workflow.drawio.svg
+  :width: 100%
+  :align: center
+  :alt: Overview review life cycle model 2
+
+  Overview review life cycle model 2
+
 **The document types below require life cycle model 3:**
 
 Compare :ref:`review_concept`.
