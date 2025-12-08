@@ -133,9 +133,10 @@ Project Feature Teams
    :id: rl__module_team
    :status: valid
    :tags: cross_functional
-   :contains: rl__project_lead, rl__safety_manager, rl__quality_manager, rl__security_manager, rl__contributor, rl__committer
+   :contains: rl__safety_manager, rl__quality_manager, rl__security_manager, rl__contributor, rl__committer
 
    The module team is responsible for all artifacts within the module SEooCs. Each module has only one responsible team but a team may also be responsible for several (small) modules.
+   One of the committers in the team acts as the "Module Project Manager" and is responsible for planning and reporting.
 
 Project Roles List
 ------------------

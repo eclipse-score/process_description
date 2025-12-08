@@ -38,6 +38,7 @@ Change Management Work Products
    | Safety anomaly: Conditions that deviate from expectations and that can lead to harm.
    | The documentation of a change request shall contain the list of changed work products,
    | the details of the change and the planned date of deployment of the change.
+   | In case a anomaly cannot be closed it shall be escalated to the :need:`Project Lead <rl__project_lead>`.
 
 .. workproduct:: Feature Request
    :id: wp__feat_request

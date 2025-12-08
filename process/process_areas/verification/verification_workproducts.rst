@@ -72,7 +72,7 @@ Feature
 
    - all interfaces from Static view and
    - all flows from Dynamic View and
-   - performance: i.e. RAM and processor usage
+   - performance and resource consumption: i.e. RAM and processor usage
      on reference HW
 
 Module
