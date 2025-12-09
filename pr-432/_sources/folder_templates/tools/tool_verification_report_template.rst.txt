@@ -42,7 +42,7 @@ Tool Verification Report Template
 
 .. note::
    An example of a Tool Verification Report can be found here:
-   `Example Tool Verification Report <https://eclipse-score.github.io/score/main/score_tools/doc_as_code.html#doc_tool__doc_as_code>`_
+   `Example Tool Verification Report <https://eclipse-score.github.io/score/main/score_tools/gtest.html#doc_tool__gtest>`_
 
 
 [Your Tool Name] Verification Report
@@ -99,18 +99,18 @@ Installation
 [Describe here how to install the tool]
 
 .. tip::
-   May add where is the tool located?
+   May add where is the tool located
 
-   May add how the tool is configured in order to be used in safe/secure way?
+   May add how the tool is configured in order to be used in safe/secure way
 
-   May add access/usage protection required?, execution authority required?
+   May add access/usage protection required, execution authority required
 
 Integration
 ~~~~~~~~~~~
 [Describe here how to integrate the tool in existing toolchain]
 
 .. tip::
-   May add how the tool works together with other tools?
+   May add how the tool works together with other tools
 
 Environment
 ~~~~~~~~~~~
@@ -124,21 +124,20 @@ Safety evaluation
 .. tip::
    Determine the use case for the tool in the project and for each use case
 
-   Determine the malfunctions/threats
+   Determine the malfunctions
 
-   Determine the tool impact based on the malfunctions/threats
+   Determine the tool impact based on the malfunctions
 
-   Determine the available safety/security measures
+   Determine the available safety measures
 
-   Determine if the impact detection based on safety/security measures are sufficient and
+   Determine if the impact detection based on safety measures are sufficient and
    add additional ones, if required
 
    Determine the tool confidence based on tool impact and tool impact detection
 
-   Use the table below to document all uses cases and their evaluation. The table has an
-   example included.
+   Use the table below to document all uses cases and their evaluation, the example table provided below
 
-   The final Confidence shall be judged on the maximum confidence level of each use case.
+   The final confidence shall be judged on the maximum confidence level of each use case
 
 
 .. list-table:: [Your tool name] evaluation
@@ -198,13 +197,12 @@ Security evaluation
 
    Determine the available security measures
 
-   Determine if the impact detection based on s security measures are sufficient and
+   Determine if the impact detection based on security measures are sufficient and
    add additional ones, if required
 
-   Use the table below to document all uses cases and their security evaluation.
-   The table has an example included.
+   Use the table below to document all uses cases and their security evaluation, the example table provided below
 
-   The final Confidence shall be judged on the maximum confidence level of each use case.
+   The final confidence shall be judged on the maximum confidence level of each use case
 
 .. list-table:: [Your tool name] security evaluation
    :header-rows: 1
@@ -248,8 +246,14 @@ Security evaluation
 
 Result
 ~~~~~~
-Add here final statement, if tool qualification is required or not.
+.. tip::
+   Add here final statement, if tool qualification is required or not.
 
+[Your tool name] requires qualification for use in safety-related software development according to ISO 26262.
+
+or
+
+[Your tool name] does not require qualification for use in safety-related software development according to ISO 26262.
 
 **Optional Section for Tool Qualification**
 -------------------------------------------
@@ -261,11 +265,11 @@ Requirements and testing aspects
 [Describe here requirements and their tests from user point of view]
 
 .. tip::
-   Where are tool requirements defined?
+   Where are tool requirements defined
 
-   Where are the test cases for the requirements defined?
+   Where are the test cases for the requirements defined
 
-   Where are the requirements coverage documented?
+   Where are the requirements coverage documented
 
 
 Analysis perspective
@@ -275,8 +279,8 @@ Analysis perspective
 .. tip::
    Optional:
 
-   Where is the architectural design of the tool defined?
+   Where is the architectural design of the tool defined
 
-   Where is the safety analysis for the tool defined?
+   Where is the safety analysis for the tool defined
 
-   Where is the security analysis for the tool defined?
+   Where is the security analysis for the tool defined
