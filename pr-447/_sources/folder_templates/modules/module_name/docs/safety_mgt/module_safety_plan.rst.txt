@@ -179,7 +179,7 @@ Component <name> Work products List
         * - :need:`wp__sw_implementation`
           - :need:`gd_guidl__implementation`
           - :ndf:`copy('status', need_id='gd_guidl__implementation')`
-          - <Link to WP>
+          - :need:`doc__component_name_detailed_design` & <Link to code>
 
         * - :need:`wp__verification_sw_unit_test`
           - :need:`gd_guidl__verification_guide`
