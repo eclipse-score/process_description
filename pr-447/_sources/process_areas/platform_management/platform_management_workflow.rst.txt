@@ -27,7 +27,7 @@ For a detailed explanation of workflows and their role within the process model,
    :approved_by: rl__process_community
    :supported_by: rl__safety_manager, rl__security_manager, rl__quality_manager
    :input: wp__policies, wp__issue_track_system
-   :output: wp__platform_mgmt, wp__project_mgt, wp__document_mgt_plan, wp__config_mgt_plan, wp__prm_plan, wp__tlm_plan
+   :output: wp__platform_mgmt, wp__project_mgt, wp__document_mgt_plan, wp__config_mgt_plan, wp__prm_plan, wp__tlm_plan, wp__chm_plan
    :contains: gd_temp__platform_mgmt_plan, gd_guidl__platform_mgmt_plan, gd_guidl__documentation, gd_chklst__documentation_review, gd_temp__documentation
    :has: doc_concept__platform_process, doc_getstrt__platform_process
 
