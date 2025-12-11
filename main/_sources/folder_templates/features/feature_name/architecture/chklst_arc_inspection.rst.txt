@@ -168,7 +168,7 @@ Checklist
         Note: see ISO 26262-6, 7.4.9 and Annex D for partitioning
       - manual
       -
-        a) the usage of shared resources (cpu time, shared memory, ...) are checked in a wao that freedom from interference between the processes is ensured,
+        a) the usage of shared resources (cpu time, shared memory, ...) are checked in a way that freedom from interference between the processes is ensured,
         b) check if the operating system supports freedom from interference between the processes
       -
       -
