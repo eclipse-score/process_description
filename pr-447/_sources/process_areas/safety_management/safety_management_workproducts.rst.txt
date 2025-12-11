@@ -146,3 +146,6 @@ Safety Management Work Products
    for your project (documented in the PMP), to be able to demonstrate completeness as described in :need:`gd_guidl__saf_package`.
    It is not really a work product definition,
    but this is the best way to link to the tailored out standard work products.
+
+.. needextend:: docname is not None and "process_areas/safety_management" in docname
+   :+tags: safety_management
