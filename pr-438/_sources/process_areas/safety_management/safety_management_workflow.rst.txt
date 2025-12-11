@@ -55,7 +55,7 @@ Safety Management Workflows
 
    | The Safety Manager in the project is NOT responsible to provide the argument for the achievement of functional safety.
    | But the Safety Manager creates and maintains the safety package in the sense of a collection of safety related work products.
-   | The generation and the maintainance of this draft safety package shall be automtated as much as possible.
+   | The generation and the maintenance of this draft safety package shall be automated as much as possible.
    | It does not contain the final argumentation of the safety of the product.
    | As the safety package is only a collection of work products, the safety plan (template) can be used for documentation.
 

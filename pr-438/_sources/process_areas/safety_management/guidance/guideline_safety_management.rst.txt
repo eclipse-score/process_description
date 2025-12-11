@@ -43,7 +43,7 @@ Safety Management Guideline
 
    **Communication:**
 
-   Development teams are interdisciplinary, so the regular (sprint) planning and review meetings enable communication (as defined in in the project specific :need:`project management plan <wp__project_mgt>`). Another main communication means are the Pull Request reviews.
+   Development teams are interdisciplinary, so the regular planning and review meetings enable communication (as defined in in the project specific :need:`project management plan <wp__project_mgt>`). Another main communication means are the Pull Request reviews.
    Also the standard Eclipse Foundation communication strategies are used (e.g. mailing lists)
 
    **Safety anomalies:**

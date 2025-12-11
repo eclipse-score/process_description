@@ -14,8 +14,8 @@
 
 .. _feature_safety_wp_template:
 
-Safety Planning
-###############
+Feature Safety Work Products List
+#################################
 
 .. document:: [Your Feature Name] Safety WPs
    :id: doc__feature_name_safety_wp
@@ -52,78 +52,71 @@ Safety Work products List
     * - Work product Id
       - Link to process
       - Process status
-      - Link to issue
       - Link to WP
-      - WP/doc status
 
     * - :need:`wp__feat_request`
       - :need:`gd_temp__change_feature_request`
       - :ndf:`copy('status', need_id='gd_temp__change_feature_request')`
-      - <link to issue>
       - :need:`doc__feature_name`
-      - :ndf:`copy('status', need_id='doc__feature_name')`
 
     * - :need:`wp__requirements_feat`
       - :need:`gd_temp__req_feat_req`
       - :ndf:`copy('status', need_id='gd_temp__req_feat_req')`
-      - <link to issue>
       - :need:`doc__feature_name_requirements`
-      - doc :ndf:`copy('status', need_id='doc__feature_name_requirements')` & WP below
 
     * - :need:`wp__requirements_feat_aou`
       - :need:`gd_temp__req_aou_req`
       - :ndf:`copy('status', need_id='gd_temp__req_aou_req')`
-      - <link to issue>
       - :need:`doc__feature_name_requirements`
-      - doc :ndf:`copy('status', need_id='doc__feature_name_requirements')` & WP below
 
     * - :need:`wp__feature_arch`
       - :need:`gd_temp__arch_feature`
       - :ndf:`copy('status', need_id='gd_temp__arch_feature')`
-      - <link to issue>
       - :need:`doc__feature_name_architecture`
-      - doc :ndf:`copy('status', need_id='doc__feature_name_architecture')` & WP below
 
     * - :need:`wp__feature_fmea`
       - :need:`gd_temp__feat_saf_fmea`
       - :ndf:`copy('status', need_id='gd_temp__feat_saf_fmea')`
-      - <link to issue>
       - :need:`doc__feature_name_fmea`
-      - doc :ndf:`copy('status', need_id='doc__feature_name_fmea')` & WP below
 
     * - :need:`wp__feature_dfa`
       - :need:`gd_temp__feat_saf_dfa`
       - :ndf:`copy('status', need_id='gd_temp__feat_saf_dfa')`
-      - <Link to issue>
       - :need:`doc__feature_name_dfa`
-      - doc :ndf:`copy('status', need_id='doc__feature_name_dfa')` & WP below
 
     * - :need:`wp__requirements_inspect`
       - :need:`gd_chklst__req_inspection`
       - :ndf:`copy('status', need_id='gd_chklst__req_inspection')`
-      - <link to issue>
       - :need:`doc__feature_name_req_inspection`
-      - :ndf:`copy('status', need_id='doc__feature_name_req_inspection')`
 
     * - :need:`wp__sw_arch_verification`
       - :need:`gd_chklst__arch_inspection_checklist`
       - :ndf:`copy('status', need_id='gd_chklst__arch_inspection_checklist')`
-      - <link to issue>
       - :need:`doc__feature_name_arc_inspection`
-      - :ndf:`copy('status', need_id='doc__feature_name_arc_inspection')`
 
     * - :need:`wp__verification_feat_int_test`
       - :need:`gd_guidl__verification_guide`
       - :ndf:`copy('status', need_id='gd_guidl__verification_guide')`
-      - <link to issue>
       - <Link to WP>
-      - <automated>
 
 .. attention::
     The above table must be updated according to your feature safety planning.
 
-    - Create and link the issues to plan the work products (according to :need:`gd_guidl__saf_plan_definitions`)
-    - Fill the work producs links and add their status (also possible below) to create the safety package (according to :need:`gd_guidl__saf_package`)
+    - Fill the work producs links
+
+Feature Safety Package
+======================
+
+To create the safety package (according to :need:`gd_guidl__saf_package`) the following
+documents and work products status have to go to "valid" (after the relevant verification were performed).
+
+Feature Documents Status
+------------------------
+
+For all the work product documents the status can be seen by following the "Link to WP".
+A summary of the status is also documented in the project's documentation management plan.
+
+See <add here the section reference to the documentation management plan>
 
 Feature Requirements Status
 ---------------------------
@@ -153,7 +146,7 @@ Feature Architecture Status
 ---------------------------
 
 .. needtable::
-   :filter: "feature_name" in docname and "requirements" in docname and docname is not None
+   :filter: "feature_name" in docname and "architecture" in docname and docname is not None
    :style: table
    :types: feat_arc_sta; feat_arc_dyn
    :tags: feature_name

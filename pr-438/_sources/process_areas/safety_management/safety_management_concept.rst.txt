@@ -32,7 +32,6 @@ Inputs
 ^^^^^^
 
 #. Stakeholders for the Safety Management work products?
-#. Who needs which information?
 #. Which safety plans do we have?
 #. Which other work products of Safety Management are important?
 #. What tooling do we need?
@@ -40,19 +39,42 @@ Inputs
 Stakeholders
 ^^^^^^^^^^^^
 
-#. :need:`Project Lead <rl__project_lead>`
-
-   * planning of development for module and for platform projects
-
 #. :need:`Safety Manager <rl__safety_manager>`
 
-   * main responsible to ensure ISO 26262 compliance in the project
-   * role definition in :doc:`/process_areas/safety_management/safety_management_roles`
-   * status reporting of safety activities
+   * Main responsible to ensure ISO 26262 compliance in the project
+   * Create/Maintain Safety Plan
+   * Approve Component Classification
+   * Approve Safety Package
+   * Approve Safety Audit
+   * Approve Formal Reviews
+   * Approve Safety Manual
+   * Monitor/Verify Safety
+   * Impact Analysis of Change Request
+   * Status reporting of safety activities
+
+#. :need:`Safety Engineer <rl__safety_engineer>`
+
+   * Supporting the Safety Manager
+   * Create/Maintain Safety Package
+   * Create/Maintain Safety Manual
+
+#. :need:`Project Lead <rl__project_lead>`
+
+   * Planning of development for platform projects
+   * Approve Safety Plan
+   * Approve Safety Release Notes
+   * Approve Impact Analysis of Change Request
+
+#. :need:`Committer <rl__committer>`
+
+   * Planning of development for module projects (as a Module Project Lead)
+   * Performing safety related development
+   * Create Component Classification
 
 #. :need:`External Auditor <rl__external_auditor>`
 
-   * Performs independent safety audits and formal document reviews (e.g., safety plans, safety packages, safety analyses).
+   * Perform Safety Audit as independent safety audits
+   * Perform Formal Reviews (e.g., safety plans, safety packages, safety analyses).
    * Verifies compliance with defined safety processes and standards.
    * Reports audit results and decides on pass/fail status.
 
@@ -77,6 +99,6 @@ Safety Management Tooling
 
 For the safety planning and safety manual a “Docs-as-Code” approach is used and within that approach Id will be used for referencing.
 
-For the activities planning (who, when) we use a Issue Tracking System to create and manage issues, and monitor progress through a project managemnet dashboard.
+For the activities planning (who, when) we use a Issue Tracking System to create and manage issues, and monitor progress through a project management dashboard.
 
 For the reporting (e.g. displaying the status of the work products) additional tooling is created.
