@@ -106,8 +106,8 @@ Module Work products List
           - :need:`doc__module_name_safety_package_fdr`
 
         * - :need:`wp__fdr_reports` (module's Safety Analyses & DFA)
-          - Safety Analysis FDR tbd
-          - <automated>
+          - :need:`gd_chklst__safety_analysis`
+          - :ndf:`copy('status', need_id='gd_chklst__safety_analysis')`
           - <Link to WP>
 
         * - :need:`wp__audit_report`
