@@ -162,3 +162,23 @@ Checklist
       -
       -
       -
+    * - ARC_04_01
+      - If software partitioning (different operating system processes) is used to implement freedom from interference between the processes with different rating (QM/ASIL), is effectiveness evidence generated during integration and verification tests?
+
+        Note: see ISO 26262-6, 7.4.9 and Annex D for partitioning
+      - manual
+      -
+        a) the usage of shared resources (cpu time, shared memory, ...) are checked in a wao that freedom from interference between the processes is ensured,
+        b) check if the operating system supports freedom from interference between the processes
+      -
+      -
+      -
+    * - ARC_04_02
+      - Is an upper estimation of the required resources (RAM, ROM, non volatile memory, communication) available and documented?
+
+        Note: see ISO 26262-6, 7.4.11
+      - manual
+      -
+      -
+      -
+      -

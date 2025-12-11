@@ -94,12 +94,6 @@ Requirement Inspection Checklist
         -
         -
       * - REQ_03_01
-        - For stakeholder requirements: Is the *rationale* correct?
-        - Rationales explain why the top level requirements were created. Do those cover the requirement?
-        -
-        -
-        -
-      * - REQ_03_02
         - Is the *linkage to the parent requirement* correct?
         - Linkage to correct levels and ASIL attributes is checked automatically, but it needs checking if the child requirement implements (at least) a part of the parent requirement.
         -
@@ -130,7 +124,7 @@ Requirement Inspection Checklist
         -
         -
       * - REQ_07_02
-        - Is the attribute *security* set correctly?
+        - Is the *security* attribute set correctly?
         - For feature requirements this checklist item is supported by automated check: "Every requirement which satisfies a stakeholder requirement with security attribute set to YES inherits this". But the feature requirements/architecture may additionally also be subject to a :ref:`Software Security Analysis <security_analysis>`.
         -
         -
@@ -142,12 +136,6 @@ Requirement Inspection Checklist
         -
         -
       * - REQ_09_01
-        - For stakeholder requirements: Do those cover assumed safety mechanisms needed by the hardware and system?
-        - Note that stakeholder requirements covering safety mechanisms come from rationales, whereas feature requirements are covering safety mechanisms coming from :need:`gd_chklst__safety_analysis`
-        -
-        -
-        -
-      * - REQ_09_02
         - Do the feature requirements defining a safety mechanism contain the error reaction leading to a safe state?
         - Alternatively to the safe state there could also be "repair" mechanisms. Also do not forget to consider REQ_05_01 for these.
         -

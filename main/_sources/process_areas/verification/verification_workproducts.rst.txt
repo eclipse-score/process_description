@@ -40,6 +40,10 @@ Platform
    Depending on the nature of the project, respective tailoring (e.g. for reduced requirements
    coverage) has to be reflected in the :need:`wp__verification_plan` and :need:`wp__platform_safety_plan`.
 
+   If software partitioning (operating system processes) is used to implement freedom from interference
+   effectiveness evidence shall be generated during integration and verification tests
+
+
 .. workproduct:: Platform Verification Report
    :id: wp__verification_platform_ver_report
    :status: valid
@@ -74,6 +78,9 @@ Feature
    - all flows from Dynamic View and
    - performance and resource consumption: i.e. RAM and processor usage
      on reference HW
+   - If software partitioning (operating system processes) is used to implement freedom from interference
+     effectiveness evidence shall be generated during integration and verification tests
+
 
 Module
 ******

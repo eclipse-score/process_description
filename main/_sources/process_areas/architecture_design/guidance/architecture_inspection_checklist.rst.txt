@@ -21,7 +21,7 @@ Inspection Checklist Template
     :id: gd_chklst__arch_inspection_checklist
     :status: valid
     :tags: architecture_design
-    :complies: std_req__iso26262__software_647
+    :complies: std_req__iso26262__software_647, std_req__iso26262__software_749, std_req__iso26262__software_7413
 
     For the content see here:
 

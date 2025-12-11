@@ -20,7 +20,7 @@ Implementation Inspection Checklist
     :id: gd_chklst__impl_inspection_checklist
     :status: valid
     :tags: implementation
-    :complies: std_req__iso26262__software_942
+    :complies: std_req__iso26262__software_942, std_req__iso26262__software_748
 
 Purpose
 -------
