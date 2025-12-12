@@ -54,19 +54,24 @@ The goal is to ensure that the decomposition supports **reusability** , **mainta
 The detailed design and implementation should follow an **iterative approach**, allowing for
 continuous improvements in quality through multiple cycles of refinement.
 
-Specification of Detailed Design
---------------------------------
+Definition of a Unit
+--------------------
 
 A **unit** is a **granular, independent entity** of a component that can be **tested separately**
 during the unit testing phase. Each unit represents a **self-contained functionality** and is
 derived from the decomposition of a component.
 
-**Draft: Characteristics of a Unit**
+**Characteristics of a Unit**
 
 - **Independent** – Can be tested in isolation.
 - **Granular** – Represents a small, well-defined part of the system.
 - **Relational** – Has associations with other units, defined using **UML 2.0 notations** such as
   aggregation, composition, and generalization.
+
+**Examples:**
+The definition of a unit depends on the used programming language. Examples for a unit are
+a source file, a definition file (e.g. c++ header), classes, structs, and functions.
+This list is not complete or exclusive.
 
 **Units in UML Diagrams**
 
@@ -124,7 +129,7 @@ For cpp using doxygen style comments-
    /**
       * @rst
       * .. sw_unit:: cpp unit
-      *    :id: sw_unit__<Feature>__<title>
+      *    :id: sw_unit__<Component>__<title>
       *
       *    This implements the ....
       * @endrst
@@ -135,17 +140,19 @@ for rust -
 .. code-block:: rust
 
    //! .. sw_unit:: rust unit
-   //!     :id: sw_unit__<Feature>__<title>
+   //!     :id: sw_unit__<Component>__<title>
    //!
    //!     This implements the ....
 
 
 Interface View
 ``````````````
-For every unit, it should show the interface provided by that unit. For each unit and corresponding
-interface, there shall be an implementation and documentation which is generated for the implementation
-will have the units description and the interface. According the template the attributes shall be
-filled and corresponding element is shown in the documentation generated form the implementation.
+For every unit, the Interface View should display the interfaces provided by that unit.
+For each unit and its corresponding interfaces, an implementation and documentation must
+be created. Since keeping both in sync can be challenging, it is recommended to generate
+the documentation from the implementation using appropriate tools.
+
+The following section provides templates for defining needs within the source code:
 
 For cpp using doxygen comments-
 
@@ -154,7 +161,7 @@ For cpp using doxygen comments-
    /**
       * @rst
       * .. sw_unit_int:: cpp unit
-      *    :id: sw_unit_int__<Feature>__<title>
+      *    :id: sw_unit_int__<Component>__<title>
       *
       *    This implements the ....
       * @endrst
@@ -165,6 +172,6 @@ For rust -
 .. code-block:: rust
 
    //! .. sw_unit_int:: rust unit
-   //!     :id: sw_unit_int__<Feature>__<title>
+   //!     :id: sw_unit_int__<Component>__<title>
    //!
    //!     This implements the ....
