@@ -142,6 +142,8 @@ Component
    Unit testing verifies detailed design (traced to).
    Respective tooling is defined in :need:`wp__platform_mgmt`, :need:`wp__verification_plan` and integrated in CI/Build.
    Unit testing is in responsible of the :need:`rl__contributor` providing the :need:`wp__sw_implementation`.
+   The compiled tests run against the actual source code compiled for the component or reference integration and their
+   targeted HW architecture (e.g. arm64 or x86).
 
 Inspection
 **********

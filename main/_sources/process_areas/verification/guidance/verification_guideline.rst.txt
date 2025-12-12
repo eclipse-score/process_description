@@ -134,3 +134,26 @@ Verification types and methods are described in the :need:`gd_meth__verification
 derivation techniques in :need:`gd_meth__verification_derivation`. The detailed method guideline
 helps to get an understanding what the different methods and derivation techniques mean and how to
 create test cases using the same.
+
+Tailoring
+=========
+
+.. gd_guidl:: Verification Requirements Tailored
+   :id: gd_guidl__verification_req_tailored
+   :status: valid
+   :complies: std_req__iso26262__software_945,
+              std_req__iso26262__software_1045, std_req__iso26262__software_1046, std_req__iso26262__software_1047,
+              std_req__iso26262__software_1141, std_req__iso26262__software_1142, std_req__iso26262__software_1143, std_req__iso26262__software_1144
+
+   This part of the guideline links to all the requirements which are not fulfilled by the
+   verification process. Make sure these are tailored out in the safety/security/quality plans
+   for your project (documented in the PMP). Reasoning given below must be confirmed there.
+
+   The reasoning is:
+
+   - For SW requirement 945 & 1047 tests are executed in target environment regarding code and hardware architecture.
+     An integrator of the software can re-execute them on source or unmodified binary in the product environnment.
+   - For SW requirement 1045 "Function and call coverage" are not considered explicitly due to lower target safety integrity level (ASIL_B).
+   - For SW requirement 1046 the software is not a production release, but work for the system integrator or distributor with a production release.
+   - For SW requirement 1141, 1143, 1144 the SW only points to AoUs, but will not be executed on the final product environment as part of the project scope.
+   - For SW requirement 1142 there will be :need:`wp__verification_platform_int_test` available for re-use, but they are not supposed to deliver full coverage.
