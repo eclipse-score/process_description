@@ -43,10 +43,11 @@ Stakeholders
 
    * Main responsible to ensure ISO 26262 compliance in the project
    * Create/Maintain Safety Plan
+   * Perform Formal Reviews (for safety work products not in his resposibility area)
    * Approve Component Classification
    * Approve Safety Package
    * Approve Safety Audit
-   * Approve Formal Reviews
+   * Approve Formal Reviews (for safety work products in his resposibility area)
    * Approve Safety Manual
    * Monitor/Verify Safety
    * Impact Analysis of Change Request
@@ -74,7 +75,6 @@ Stakeholders
 #. :need:`External Auditor <rl__external_auditor>`
 
    * Perform Safety Audit as independent safety audits
-   * Perform Formal Reviews (e.g., safety plans, safety packages, safety analyses).
    * Verifies compliance with defined safety processes and standards.
    * Reports audit results and decides on pass/fail status.
 

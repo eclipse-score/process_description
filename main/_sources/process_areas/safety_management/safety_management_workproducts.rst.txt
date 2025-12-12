@@ -123,11 +123,11 @@ Safety Management Work Products
    * finally a SW component classification as input for the safety planning (which is to cover the determined gaps, if any, by additional verification measures).
 
 .. workproduct:: Tailoring Documents
-   :id: wp__tailoring
+   :id: wp__safety_tailoring
    :status: valid
    :complies: std_wp__iso26262__management_653
 
-   This work product argues why some work products are not needed in the project.
+   This work product argues why some safety work products are not needed in the project.
 
    It may have several levels:
 
@@ -136,13 +136,6 @@ Safety Management Work Products
 
    It belongs to the Safety Plan.
 
-.. workproduct:: Tailoring Document Work Products
-   :id: wp__tailoring_work_products
-   :status: valid
-   :complies: std_wp__iso26262__management_651, std_wp__iso26262__management_751, std_wp__iso26262__system_652, std_wp__iso26262__system_653, std_wp__iso26262__system_654, std_wp__iso26262__system_655, std_wp__iso26262__system_656, std_wp__iso26262__system_657, std_wp__iso26262__system_751, std_wp__iso26262__system_752, std_wp__iso26262__system_851, std_wp__iso26262__system_852, std_wp__iso26262__software_652, std_wp__iso26262__software_1151, std_wp__iso26262__software_1152, std_wp__iso26262__software_app_c_52, std_wp__iso26262__software_app_c_54, std_wp__iso26262__software_app_c_57, std_wp__iso26262__support_551, std_wp__iso26262__support_552, std_wp__iso26262__support_553, std_wp__iso26262__support_554, std_wp__iso26262__support_555, std_wp__iso26262__support_1351, std_wp__iso26262__support_1352, std_wp__iso26262__support_1353, std_wp__iso26262__support_1451, std_wp__iso26262__support_1452, std_wp__iso26262__support_1551, std_wp__iso26262__support_1651, std_wp__iso26262__analysis_551, std_wp__iso26262__analysis_552, std_wp__isopas8926__4522
 
-   This work product "definition" links to all the work products which are not covered by the
-   processes work products documented. Make sure these are tailored out in the safety plan
-   for your project (documented in the PMP), to be able to demonstrate completeness as described in :need:`gd_guidl__saf_package`.
-   It is not really a work product definition,
-   but this is the best way to link to the tailored out standard work products.
+.. needextend:: docname is not None and "process_areas/safety_management" in docname
+   :+tags: safety_management

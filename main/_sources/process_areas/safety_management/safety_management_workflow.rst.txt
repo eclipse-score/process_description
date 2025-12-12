@@ -22,8 +22,8 @@ Safety Management Workflows
    :status: valid
    :responsible: rl__safety_manager
    :approved_by: rl__project_lead
-   :input: wp__platform_mgmt, wp__issue_track_system, wp__sw_component_class, wp__tailoring
-   :output: wp__module_safety_plan, wp__platform_safety_plan
+   :input: wp__platform_mgmt, wp__issue_track_system, wp__sw_component_class, wp__tailoring_work_products
+   :output: wp__module_safety_plan, wp__platform_safety_plan, wp__safety_tailoring
    :contains: gd_guidl__saf_plan_definitions, gd_temp__feature_safety_wp, gd_temp__module_safety_plan
    :has: doc_concept__safety_management_process, doc_getstrt__safety_management_process
 
@@ -48,7 +48,7 @@ Safety Management Workflows
    :status: valid
    :responsible: rl__safety_engineer
    :approved_by: rl__safety_manager
-   :input: wp__module_safety_plan, wp__platform_safety_plan, wp__issue_track_system
+   :input: wp__module_safety_plan, wp__platform_safety_plan, wp__issue_track_system, wp__safety_tailoring
    :output: wp__module_safety_package, wp__platform_safety_package
    :contains: gd_guidl__saf_package, gd_temp__feature_safety_wp, gd_temp__module_safety_plan
    :has: doc_concept__safety_management_process, doc_getstrt__safety_management_process
@@ -76,17 +76,18 @@ Safety Management Workflows
 .. workflow:: Perform Formal Reviews
    :id: wf__p_formal_rv
    :status: valid
-   :responsible: rl__external_auditor
+   :responsible: rl__safety_manager
    :approved_by: rl__safety_manager
    :input: wp__module_safety_plan, wp__platform_safety_plan, wp__module_safety_package, wp__platform_safety_package
    :output: wp__fdr_reports
    :contains: gd_guidl__saf_plan_definitions, gd_chklst__safety_plan, gd_chklst__safety_package
    :has: doc_concept__safety_management_process, doc_getstrt__safety_management_process
 
-   | The external auditor is responsible to perform the formal reviews on safety plan, safety package and safety analysis.
-   | The Safety Manager shall support the external auditor during the reviews.
-   | The Project Manager and and the Safety Manager shall approve the formal reviews.
-   | Therefore a checklists exist to guide the creator of the relevant safety documents.
+   | A "external" safety manager is responsible the formal reviews on safety plan, safety package and safety analysis.
+   | "External" means here that the person is not the Safety Manager of the platform/module (i.e. created or approved the respective work product).
+   | The Safety Manager (of the platform/module) shall support the "external" safety manager during the reviews.
+   | The Safety Manager (of the platform/module) shall approve the formal reviews.
+   | A checklists exist to guide the creator of the relevant safety documents.
 
 .. workflow:: Create/Maintain Safety Manual
    :id: wf__cr_mt_safety_manual
@@ -121,7 +122,7 @@ Safety Management Workflows
    :status: valid
    :responsible: rl__safety_manager
    :approved_by: rl__project_lead
-   :input: wp__platform_mgmt, wp__issue_track_system, wp__sw_component_class, wp__tailoring
+   :input: wp__platform_mgmt, wp__issue_track_system, wp__sw_component_class, wp__safety_tailoring
    :output: wp__issue_track_system
    :contains: gd_temp__change_component_request, gd_temp__change_decision_record, gd_temp__change_impact_analysis
    :has: doc_concept__safety_management_process

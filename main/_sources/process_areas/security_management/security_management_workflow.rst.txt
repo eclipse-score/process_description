@@ -24,7 +24,7 @@ For a detailed explanation of workflows and their role within the process model,
    :responsible: rl__security_manager
    :approved_by: rl__project_lead
    :supported_by: rl__safety_manager
-   :input: wp__platform_mgmt, wp__issue_track_system, wp__tailoring
+   :input: wp__platform_mgmt, wp__issue_track_system, wp__tailoring_work_products
    :output: wp__module_security_plan, wp__platform_security_plan
    :contains: gd_guidl__security_plan_definitions, gd_temp__feature_security_wp, gd_temp__module_security_plan
    :has: doc_concept__security_management_process, doc_getstrt__security_management_process

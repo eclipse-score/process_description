@@ -12,8 +12,8 @@
    # SPDX-License-Identifier: Apache-2.0
    # *******************************************************************************
 
-Safety Plan Templates
-=====================
+Safety Planning Templates
+=========================
 
 .. gd_temp:: Feature Safety Work Products Template
    :id: gd_temp__feature_safety_wp
