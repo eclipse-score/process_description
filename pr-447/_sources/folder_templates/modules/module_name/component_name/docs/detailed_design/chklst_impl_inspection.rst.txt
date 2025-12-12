@@ -76,7 +76,7 @@ Checklist
    * - IMPL_01_04
      - Are all external libraries used by the component specified in the detailed design?
      - Check the automated dependency analysis.
-       Also make sure ASIL rated units also only use ASIL or FFI rated libraries.
+       Also make sure ASIL rated units also only use ASIL rated libraries.
      -
      -
      -
@@ -88,14 +88,14 @@ Checklist
      -
    * - IMPL_02_02
      - Do manual checks, that are derived from the coding guideline, find no safety critical error?
-     - Check this list for C++ <link> and this list for Rust <link>
+     - Check this for the programming language used (e.g. C++ <link_to_checks_list>, Rust <link_to_checks_list>)
      -
      -
      -
    * - IMPL_02_03
      - Are detailed design and source code consistent?
-     - Check if the static and dynamic design descriptions match the code (e..g. naming of elements)
-       and that the respective traceability is established (doxygen style comments)
+     - Check if the static and dynamic design descriptions match the code (e.g. naming of elements)
+       and that the respective traceability is established
      -
      -
      -
