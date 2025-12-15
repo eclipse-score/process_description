@@ -137,6 +137,7 @@ it does not require a dynamic diagram at all (similar to the rules depicted in :
       :implements: <link to component requirement id>
       :satisfies: <link to component architecture id>
       :belongs_to: <link to component id>
+      :includes: <link to sw_unit id>
 
       .. needarch:: or .. image:: <link to drawio image>
 
