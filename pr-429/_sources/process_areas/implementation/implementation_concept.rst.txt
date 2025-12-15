@@ -98,6 +98,20 @@ Note that the detailed design may not be complete in the way that it covers ever
 These not covered parts may contain implementation detail and should not be needed to understand the
 the detailed design.
 
+.. code-block:: rst
+
+   .. dd_sta:: <Title>
+      :id: dd_sta__<Component>__<Title>
+      :security: <YES|NO>
+      :safety: <QM|ASIL_B>
+      :status: <valid|invalid>
+      :implements: <link to component requirement id>
+      :satisfies: <link to component architecture id>
+      :belongs_to: <link to component id>
+      :includes: <link to sw_unit id>
+
+      .. needarch:: or .. image:: <link to drawio image>
+
 Dynamic View
 ````````````
 The **dynamic view** illustrates how the **units** interact with each other to fulfill a specific
@@ -112,6 +126,19 @@ It is represented using **UML behavioral diagrams**, including:
 These diagrams are essential for understanding the **dynamic behavior** of the component and how
 units collaborate to perform tasks. But this also means that if the dynamic behaviour is simple
 it does not require a dynamic diagram at all (similar to the rules depicted in :need:`gd_guidl__arch_design`).
+
+.. code-block:: rst
+
+   .. dd_dyn:: <Title>
+      :id: dd_dyn__<Component>__<Title>
+      :security: <YES|NO>
+      :safety: <QM|ASIL_B>
+      :status: <valid|invalid>
+      :implements: <link to component requirement id>
+      :satisfies: <link to component architecture id>
+      :belongs_to: <link to component id>
+
+      .. needarch:: or .. image:: <link to drawio image>
 
 Units within the Component
 --------------------------
@@ -133,6 +160,7 @@ We link the unit id to the comments in the code like:
 
       .. sw_unit:: cpp unit
          :id: sw_unit__<Component>__<title>
+         :belongs_to: <link to component id>
 
          This implements the ....
 
@@ -154,6 +182,7 @@ We link the unit id to the comments in the code like:
          * @rst
          * .. sw_unit:: cpp unit
          *    :id: sw_unit__<Component>__<title>
+         *    :belongs_to: <link to component id>
          *
          *    This implements the ....
          * @endrst
@@ -165,6 +194,7 @@ We link the unit id to the comments in the code like:
 
       //! .. sw_unit:: rust unit
       //!     :id: sw_unit__<Component>__<title>
+      //!     :belongs_to: <link to component id>
       //!
       //!     This implements the ....
 
@@ -188,6 +218,7 @@ The following section provides templates for defining needs within the source co
 
       .. sw_unit_int:: <here InterfaceDemo - change it>
          :id: sw_unit_int__<Component>__<title>
+         :belongs_to: <link to sw_unit id>
 
          This implements the ....
 
@@ -211,6 +242,7 @@ The following section provides templates for defining needs within the source co
          * @rst
          * .. sw_unit_int:: cpp unit
          *    :id: sw_unit_int__<Component>__<title>
+         *    :belongs_to: <link to sw_unit id>
          *
          *    This implements the ....
          * @endrst
@@ -222,5 +254,6 @@ The following section provides templates for defining needs within the source co
 
       //! .. sw_unit_int:: rust unit
       //!     :id: sw_unit_int__<Component>__<title>
+      //!     :belongs_to: <link to sw_unit id>
       //!
       //!     This implements the ....
