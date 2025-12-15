@@ -18,6 +18,7 @@ Guideline
 .. gd_guidl:: Implementation Guideline
    :id: gd_guidl__implementation
    :status: valid
+   :complies: std_req__iso26262__software_744
 
 This document describes the general guidances for implementation based on the concept which is defined :need:`[[title]]<doc_concept__imp_concept>`.
 In the concept is a example of a Detailed Design included.

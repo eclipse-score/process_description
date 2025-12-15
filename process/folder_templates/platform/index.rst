@@ -21,3 +21,6 @@ Platform
    :hidden:
 
    safety_analysis/platform_dfa.rst
+   requirements/stakeholder/chklst_req_inspection.rst
+   safety_planning/index.rst
+   safety_planning/platform_safety_analysis_fdr.rst

@@ -35,7 +35,7 @@ Safety Management Guideline
    ASPICE standard is selected for quality management. Processes will always link to the :ref:`standard_iso26262` standard and to the :ref:`ASPICE PAM4 <standard_aspice_pam4>` standard.
 
    **Competence management:**
-   
+
    The :need:`rl__project_lead` on SW platform level is responsible to define a competence management for the whole platform.
    Expectation is that the safety competence of the persons nominated for the roles is already given and only has to be checked.
    The exception from this are the committers, for these no safety competence needs to be enforced.
@@ -115,14 +115,14 @@ Safety Management Guideline
    Verification planning is documented in :need:`wp__verification_plan`
    Any unspecified functions, such as code for debugging or instrumentation, must either be deactivated or removed prior to release, unless their presence does not affect safety compliance.
 
-   **Scheduling of formal document reviews, audit and assessment:**
+   **Scheduling of formal document reviews and safety audit:**
 
    Scheduling is done in the same way as for all work products definition by issues. The respective work products are :need:`wp__fdr_reports` and  :need:`wp__audit_report`
    A person responsible for carrying out the functional safety audit shall be appointed as part of the scheduling process. This person has to have the required skillset and knowledge.
    The functional safety auditor may appoint one or more assistants to support the audit.
    These assistants may not be fully independent from the developers of the relevant item, elements, or work products, but must possess at least a basic level of independence.
-   The assessor is responsible for appraising the input from any assistants to ensure that the assessment remains objective and that an unbiased opinion is provided.
-   The planning and follow-up of the audit or assessment shall also take into account the type of report to be issued—whether it is an acceptance, conditional acceptance (with required corrective actions and conditions for acceptance), or a rejection.
+   The auditor is responsible for appraising the input from any assistants to ensure that the audit remains objective and that an unbiased opinion is provided.
+   The planning and follow-up of the audit shall also take into account the type of report to be issued—whether it is an acceptance, conditional acceptance (with required corrective actions and conditions for acceptance), or a rejection.
    Any conditions or corrective actions identified in the report must be addressed and tracked to completion as part of the Safety Management process.
 
    **Planning of dependent failures and safety analyses:**

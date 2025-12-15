@@ -13,8 +13,8 @@
    # *******************************************************************************
 
 
-.. document:: [Your Component Name] Requirements Inspection Checklist
-   :id: doc__component_name_req_inspection
+.. document:: [Your Stakeholder Name] Requirements Inspection Checklist
+   :id: doc__stakeholder_name_req_inspection
    :status: draft
    :safety: ASIL_B
    :security: YES
@@ -22,15 +22,15 @@
    :tags: template
 
 .. attention::
-    The above directive must be updated according to your Component.
+    The above directive must be updated according to your Stakeholder.
 
-    - Modify ``Your Component Name`` to be your Component Name
-    - Modify ``id`` to be your Component Name in lower snake case preceded by ``doc__`` and followed by ``_req_inspection``
+    - Modify ``Your Stakeholder Name`` to be your Stakeholder Name
+    - Modify ``id`` to be your Stakeholder Name in lower snake case preceded by ``doc__`` and followed by ``_req_inspection``
     - Adjust ``status`` to be ``valid``
     - Adjust ``safety``, ``security`` and ``tags`` according to your needs
 
-Requirement Inspection Checklist
-================================
+Stakeholder Requirement Inspection Checklist
+============================================
 
    **Purpose**
 
@@ -47,7 +47,7 @@ Requirement Inspection Checklist
 
    **Checklist**
 
-   .. list-table:: Component Requirement Inspection Checklist
+   .. list-table:: Stakeholder Requirement Inspection Checklist
       :header-rows: 1
       :widths: 10,30,50,6,6,8
 
@@ -94,14 +94,20 @@ Requirement Inspection Checklist
         -
         -
       * - REQ_03_01
-        - Is the *linkage to the parent feature/component requirement* correct?
+        - Is the *rationale* correct?
+        - Rationales explain why the top level requirements were created. Do those cover the requirement?
+        -
+        -
+        -
+      * - REQ_03_02
+        - Is the *linkage to the parent requirement* correct?
         - Linkage to correct levels and ASIL attributes is checked automatically, but it needs checking if the child requirement implements (at least) a part of the parent requirement.
         -
         -
         -
       * - REQ_04_01
         - Is the requirement *internally and externally consistent*?
-        - Does the requirement contradict other requirements within the same or higher levels? One may restrict the search to the feature for component requirements, for features to other features using same components.
+        - Does the requirement contradict other requirements within the same or higher levels?
         -
         -
         -
@@ -113,19 +119,19 @@ Requirement Inspection Checklist
         -
       * - REQ_06_01
         - Does the requirement consider *external interfaces*?
-        - The SW platform's external interfaces (to the user) are defined in the Feature Architecture, so the Feature and Component Requirements should determine the input data use and setting of output data for these interfaces. Are all output values defined?
+        - The SW platform's external interfaces (to the user and external systems) are defined, so the Feature and Component Requirements should determine the input data use and setting of output data for these interfaces. Are all output values defined?
         -
         -
         -
       * - REQ_07_01
         - Is the *safety* attribute set correctly?
-        - Derived requirements are checked automatically, see :need:`gd_req__req_linkage_safety`. But for the top level requirements (and also all AoU) this needs to be checked manually for correctness.
+        - For the top level requirements (and also all AoU) this needs to be checked manually for correctness.
         -
         -
         -
       * - REQ_07_02
-        - Is the attribute *security* set correctly?
-        - For component requirements this checklist item is supported by automated check: "Every requirement which satisfies a feature requirement with security attribute set to YES inherits this". But the component requirements/architecture may additionally also be subject to a :ref:`Software Security Analysis <security_analysis>`..
+        - Is the *security* attribute set correctly?
+        - For the top level requirements (and also all AoU) this needs to be checked manually for correctness.
         -
         -
         -
@@ -136,25 +142,21 @@ Requirement Inspection Checklist
         -
         -
       * - REQ_09_01
-        - Do the requirements that define a safety mechanism specify the error reaction leading to a safe state?
-        - Alternatively to the safe state there could also be "repair" mechanisms. Also do not forget to consider REQ_05_01 for these.
+        - Do those requirements cover assumed safety mechanisms needed by the hardware and system?
+        - Note that stakeholder requirements covering safety mechanisms come from rationales.
         -
         -
         -
-
-
-.. attention::
-    The above checklist entries must be filled according to your component requirements in scope.
 
 Note: If a Review ID is not applicable for your requirement, then state ""n/a" in status and comment accordingly in remarks. For example "no stakeholder requirement (no rationale needed)"
 
 The following requirements in "valid" state and with "inspected" tag set are in the scope of this inspection:
 
 .. needtable::
-   :filter: "component_name" in docname and "requirements" in docname and docname is not None and status == "valid"
+   :filter: "stakeholder_name" in docname and "requirements" in docname and docname is not None and status == "valid"
    :style: table
-   :types: comp_req
-   :tags: component_name
+   :types: stkh_req
+   :tags: stakeholder_name
    :columns: id;status;tags
    :colwidths: 25,25,25
    :sort: title
@@ -162,15 +164,15 @@ The following requirements in "valid" state and with "inspected" tag set are in 
 And also the following AoUs in "valid" state and with "inspected" tag set (for these please answer the questions above as if the AoUs are requirements, except questions REQ_03_01 and REQ_03_02):
 
 .. needtable::
-   :filter: "component_name" in docname and "requirements" in docname and docname is not None and status == "valid"
+   :filter: "stakeholder_name" in docname and "requirements" in docname and docname is not None and status == "valid"
    :style: table
    :types: aou_req
-   :tags: component_name
+   :tags: stakeholder_name
    :columns: id;status;tags
    :colwidths: 25,25,25
    :sort: title
 
 .. attention::
-    The above tables filtering must be updated according to your Component.
+    The above tables filtering must be updated according to your Stakeholder.
 
-    - Modify ``component_name`` to be your Component Name in lower snake case
+    - Modify ``stakeholder_name`` to be your Stakeholder Name in lower snake case

@@ -26,6 +26,7 @@ Methods
 .. gd_method:: Verification Methods
    :id: gd_meth__verification_methods
    :status: valid
+   :complies: std_req__iso26262__software_942, std_req__iso26262__software_944
 
    Following methods are explained
 
@@ -139,6 +140,7 @@ Derivation Techniques
 .. gd_method:: Verification Derivation Technique
    :id: gd_meth__verification_derivation
    :status: valid
+   :complies: std_req__iso26262__software_943, std_req__iso26262__software_1043
 
    Following derivation techniques are explained
 

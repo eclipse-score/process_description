@@ -106,9 +106,9 @@ Attributes of Architectural Elements
 
    Each architectural element shall have a unique ID. It shall be in a format which is also human readable and consists of
 
-      * type of architectural element
-      * structural element (e.g. some part of the feature tree, component acronym)
-      * keyword describing the content of the architectural element
+   * type of architectural element
+   * structural element (e.g. some part of the feature tree, component acronym)
+   * keyword describing the content of the architectural element
 
    Check your project's naming conventions (should be called "doc__naming_conventions")
 
@@ -120,8 +120,8 @@ Attributes of Architectural Elements
 
    Each architectural element shall have a security relevance identifier:
 
-      * Yes
-      * No
+   * Yes
+   * No
 
 .. gd_req:: Architecture attribute: safety
    :id: gd_req__arch_attr_safety
@@ -132,8 +132,8 @@ Attributes of Architectural Elements
 
    Each architectural element shall have a automotive safety integrity level (ASIL) identifier:
 
-      * QM
-      * ASIL_B
+   * QM
+   * ASIL_B
 
 .. gd_req:: Architecture attribute: status
    :id: gd_req__arch_attr_status
@@ -144,8 +144,8 @@ Attributes of Architectural Elements
 
    Each architectural element shall have a status:
 
-      * valid
-      * invalid
+   * valid
+   * invalid
 
 Traceability to Requirements
 ----------------------------
@@ -206,6 +206,7 @@ Checks for Architectural Design
    :status: valid
    :tags: prio_1_automation, attribute, check
    :satisfies: wf__cr_mt_featarch, wf__cr_mt_comparch
+   :complies: std_req__iso26262__software_746, std_req__iso26262__software_748
 
    It shall be checked that valid safety architectural elements (Safety != QM) can only be linked against valid safety architectural elements.
 
