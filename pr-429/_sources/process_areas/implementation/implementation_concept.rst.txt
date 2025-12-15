@@ -26,10 +26,10 @@ both the requirements of ISO26262 Part-6 Chapter 8+9 and ASPICE SWE 3+4.
 Inputs
 ******
 
-#. ISO 26262 Part-6 Chapter 8+9
-#. ASPICE SWE 3+4
-#. Component Requirements :need:`wp__requirements_comp` and Architecture :need:`wp__component_arch`
-#. Software Development Plan :need:`gd_temp__software_development_plan`
+#.  ISO 26262 Part-6 Chapter 8+9
+#.  ASPICE SWE 3+4
+#.  Component Requirements :need:`wp__requirements_comp` and Architecture :need:`wp__component_arch`
+#.  Software Development Plan :need:`gd_temp__software_development_plan`
 
 Outputs
 *******
@@ -44,9 +44,9 @@ Following the **Detailed Design Template** :need:`gd_temp__detailed_design`, we 
 **design decisions** and **constraints** that guide the decomposition of the component into multiple
 units. These decisions should be made based on the following ideas:
 
-- **Design principles**
-- **Design patterns**
-- **Testability strategies**
+-  **Design principles**
+-  **Design patterns**
+-  **Testability strategies**
 
 The goal is to ensure that the decomposition supports **reusability** , **maintainability**,
 **scalability**, **extensibility** and **ease of testing**.
@@ -63,10 +63,10 @@ derived from the decomposition of a component.
 
 **Characteristics of a Unit**
 
-- **Independent** – Can be tested in isolation.
-- **Granular** – Represents a small, well-defined part of the system.
-- **Relational** – Has associations with other units, defined using **UML 2.0 notations** such as
-  aggregation, composition, and generalization.
+-  **Independent** – Can be tested in isolation.
+-  **Granular** – Represents a small, well-defined part of the system.
+-  **Relational** – Has associations with other units, defined using **UML 2.0 notations** such as
+   aggregation, composition, and generalization.
 
 **Examples:**
 The definition of a unit depends on the used programming language. Examples for a unit are
@@ -75,9 +75,9 @@ This list is not complete or exclusive.
 
 **Units in UML Diagrams**
 
-- For **Rust development**, a **unit** is modeled using a **combination of `struct` and `trait`**,
-  as Rust does not have traditional classes.
-
+-  **C++ development** Each **class** can be considered a **unit** in the design.
+-  For **Rust development**, a **unit** is modeled using a **combination of `struct` and `trait`**,
+   as Rust does not have traditional classes.
 
 Static View
 ```````````
@@ -85,10 +85,10 @@ The **static view** represents the **units** and their relationships using **UML
 such as **aggregation, composition, and generalization**. This is depicted through
 **UML structural diagrams**, including:
 
-- **Class Diagrams** – Define **classes, attributes, methods, and relationships** (e.g., inheritance, associations, dependencies).
-  Each **class** can be considered a **unit** in the design.
-- **Rust Development Approach** – Instead of traditional classes, **Rust uses `struct` and `trait`
-  combinations** to represent **units** in UML diagrams.
+-  **Class Diagrams** – Define **classes, attributes, methods, and relationships** (e.g., inheritance, associations, dependencies).
+   Each **class** can be considered a **unit** in the design.
+-  **Rust Development Approach** – Instead of traditional classes, **Rust uses `struct` and `trait`
+   combinations** to represent **units** in UML diagrams.
 
 This view focuses **only on units and their relationships**.
 Details such as **attributes and interfaces** are documented under the **Units within the Component section**
@@ -120,58 +120,107 @@ For each unit it will have a id and the interfaces are shown in the interface vi
 The description of unit and its attributes can be seen in the code documentation.
 For this we use the tracing to the documentation generated from the code comments.
 
-We link the unit id to the comments in the code like -
+We link the unit id to the comments in the code like:
 
-For cpp using doxygen style comments-
+-  Maintain your units in rst files and link them to the source code
 
-.. code-block:: cpp
+   Use `score_source_code_linker` from `docs-as-code` repo with
+   `user docu <https://eclipse-score.github.io/docs-as-code/main/how-to/source_to_doc_links.html>`__.
 
-   /**
-      * @rst
-      * .. sw_unit:: cpp unit
-      *    :id: sw_unit__<Component>__<title>
-      *
-      *    This implements the ....
-      * @endrst
-   */
+   In your rst file:
 
-for rust -
+   .. code-block:: rst
 
-.. code-block:: rust
+      .. sw_unit:: cpp unit
+         :id: sw_unit__<Component>__<title>
 
-   //! .. sw_unit:: rust unit
-   //!     :id: sw_unit__<Component>__<title>
-   //!
-   //!     This implements the ....
+         This implements the ....
+
+   In your cpp:
+
+   .. code-block:: cpp
+
+      # need-Id: sw_unit__<Component>__<title>
+      class <class name> {
+         public:
+
+      };
+
+-  For cpp using doxygen style comments
+
+   .. code-block:: cpp
+
+      /**
+         * @rst
+         * .. sw_unit:: cpp unit
+         *    :id: sw_unit__<Component>__<title>
+         *
+         *    This implements the ....
+         * @endrst
+      */
+
+- for rust
+
+   .. code-block:: rust
+
+      //! .. sw_unit:: rust unit
+      //!     :id: sw_unit__<Component>__<title>
+      //!
+      //!     This implements the ....
 
 
 Interface View
 ``````````````
 For every unit, the Interface View should display the interfaces provided by that unit.
 For each unit and its corresponding interfaces, an implementation and documentation must
-be created. Since keeping both in sync can be challenging, it is recommended to generate
-the documentation from the implementation using appropriate tools.
+be created.
 
 The following section provides templates for defining needs within the source code:
 
-For cpp using doxygen comments-
+-  Maintain your units in rst files and link them to the source code
 
-.. code-block:: cpp
+   Use `score_source_code_linker` from `docs-as-code` repo with
+   `user docu <https://eclipse-score.github.io/docs-as-code/main/how-to/source_to_doc_links.html>`__.
 
-   /**
-      * @rst
-      * .. sw_unit_int:: cpp unit
-      *    :id: sw_unit_int__<Component>__<title>
-      *
-      *    This implements the ....
-      * @endrst
-   */
+   In your rst file:
 
-For rust -
+   .. code-block:: rst
 
-.. code-block:: rust
+      .. sw_unit_int:: <here InterfaceDemo - change it>
+         :id: sw_unit_int__<Component>__<title>
 
-   //! .. sw_unit_int:: rust unit
-   //!     :id: sw_unit_int__<Component>__<title>
-   //!
-   //!     This implements the ....
+         This implements the ....
+
+   In your cpp:
+
+   .. code-block:: cpp
+
+      # need-Id: sw_unit__<Component>__<title>
+      class InterfaceDemo
+      {
+         public:
+            virtual ~InterfaceDemo() {}
+            virtual void OverrideMe() = 0;
+      };
+
+-  For cpp using doxygen comments
+
+   .. code-block:: cpp
+
+      /**
+         * @rst
+         * .. sw_unit_int:: cpp unit
+         *    :id: sw_unit_int__<Component>__<title>
+         *
+         *    This implements the ....
+         * @endrst
+      */
+
+-  For rust
+
+   .. code-block:: rust
+
+      //! .. sw_unit_int:: rust unit
+      //!     :id: sw_unit_int__<Component>__<title>
+      //!
+      //!     This implements the ....

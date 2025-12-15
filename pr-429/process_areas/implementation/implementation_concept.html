@@ -551,7 +551,7 @@
                   
   <section id="concept-description">
 <h1>Concept Description<a class="headerlink" href="#concept-description" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-e7d55203">
+<div class="need_container docutils container" id="SNCB-7800b6bd">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_doc_concept table" id="doc_concept__imp_concept">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -641,6 +641,7 @@ a source file, a definition file (e.g. c++ header), classes, structs, and functi
 This list is not complete or exclusive.</p>
 <p><strong>Units in UML Diagrams</strong></p>
 <ul class="simple">
+<li><p><strong>C++ development</strong> Each <strong>class</strong> can be considered a <strong>unit</strong> in the design.</p></li>
 <li><p>For <strong>Rust development</strong>, a <strong>unit</strong> is modeled using a <strong>combination of `struct` and `trait`</strong>,
 as Rust does not have traditional classes.</p></li>
 </ul>
@@ -683,8 +684,28 @@ it does not require a dynamic diagram at all (similar to the rules depicted in <
 <p>For each unit it will have a id and the interfaces are shown in the interface view per unit.
 The description of unit and its attributes can be seen in the code documentation.
 For this we use the tracing to the documentation generated from the code comments.</p>
-<p>We link the unit id to the comments in the code like -</p>
-<p>For cpp using doxygen style comments-</p>
+<p>We link the unit id to the comments in the code like:</p>
+<ul>
+<li><p>Maintain your units in rst files and link them to the source code</p>
+<p>Use <cite>score_source_code_linker</cite> from <cite>docs-as-code</cite> repo with
+<a class="reference external" href="https://eclipse-score.github.io/docs-as-code/main/how-to/source_to_doc_links.html">user docu</a>.</p>
+<p>In your rst file:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">sw_unit</span><span class="p">::</span> cpp unit
+   <span class="nc">:id:</span> sw_unit__&lt;Component&gt;__&lt;title&gt;
+
+   This implements the ....
+</pre></div>
+</div>
+<p>In your cpp:</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp"># need-Id: sw_unit__&lt;Component&gt;__&lt;title&gt;</span>
+<span class="k">class</span><span class="w"> </span><span class="o">&lt;</span><span class="k">class</span><span class="w"> </span><span class="nc">name</span><span class="o">&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">   </span><span class="k">public</span><span class="o">:</span>
+
+<span class="p">};</span>
+</pre></div>
+</div>
+</li>
+<li><p>For cpp using doxygen style comments</p>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cm">/**</span>
 <span class="cm">   * @rst</span>
 <span class="cm">   * .. sw_unit:: cpp unit</span>
@@ -695,21 +716,47 @@ For this we use the tracing to the documentation generated from the code comment
 <span class="cm">*/</span>
 </pre></div>
 </div>
-<p>for rust -</p>
-<div class="highlight-rust notranslate"><div class="highlight"><pre><span></span><span class="sd">//! .. sw_unit:: rust unit</span>
+</li>
+<li><p>for rust</p>
+<blockquote>
+<div><div class="highlight-rust notranslate"><div class="highlight"><pre><span></span><span class="sd">//! .. sw_unit:: rust unit</span>
 <span class="sd">//!     :id: sw_unit__&lt;Component&gt;__&lt;title&gt;</span>
 <span class="sd">//!</span>
 <span class="sd">//!     This implements the ....</span>
 </pre></div>
 </div>
+</div></blockquote>
+</li>
+</ul>
 <section id="interface-view">
 <h5>Interface View<a class="headerlink" href="#interface-view" title="Link to this heading">#</a></h5>
 <p>For every unit, the Interface View should display the interfaces provided by that unit.
 For each unit and its corresponding interfaces, an implementation and documentation must
-be created. Since keeping both in sync can be challenging, it is recommended to generate
-the documentation from the implementation using appropriate tools.</p>
+be created.</p>
 <p>The following section provides templates for defining needs within the source code:</p>
-<p>For cpp using doxygen comments-</p>
+<ul>
+<li><p>Maintain your units in rst files and link them to the source code</p>
+<p>Use <cite>score_source_code_linker</cite> from <cite>docs-as-code</cite> repo with
+<a class="reference external" href="https://eclipse-score.github.io/docs-as-code/main/how-to/source_to_doc_links.html">user docu</a>.</p>
+<p>In your rst file:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">sw_unit_int</span><span class="p">::</span> <span class="nt">&lt;here InterfaceDemo - change it&gt;</span>
+   <span class="nc">:id:</span> sw_unit_int__&lt;Component&gt;__&lt;title&gt;
+
+   This implements the ....
+</pre></div>
+</div>
+<p>In your cpp:</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp"># need-Id: sw_unit__&lt;Component&gt;__&lt;title&gt;</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">InterfaceDemo</span>
+<span class="p">{</span>
+<span class="w">   </span><span class="k">public</span><span class="o">:</span>
+<span class="w">      </span><span class="k">virtual</span><span class="w"> </span><span class="o">~</span><span class="n">InterfaceDemo</span><span class="p">()</span><span class="w"> </span><span class="p">{}</span>
+<span class="w">      </span><span class="k">virtual</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="n">OverrideMe</span><span class="p">()</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="p">};</span>
+</pre></div>
+</div>
+</li>
+<li><p>For cpp using doxygen comments</p>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cm">/**</span>
 <span class="cm">   * @rst</span>
 <span class="cm">   * .. sw_unit_int:: cpp unit</span>
@@ -720,13 +767,16 @@ the documentation from the implementation using appropriate tools.</p>
 <span class="cm">*/</span>
 </pre></div>
 </div>
-<p>For rust -</p>
+</li>
+<li><p>For rust</p>
 <div class="highlight-rust notranslate"><div class="highlight"><pre><span></span><span class="sd">//! .. sw_unit_int:: rust unit</span>
 <span class="sd">//!     :id: sw_unit_int__&lt;Component&gt;__&lt;title&gt;</span>
 <span class="sd">//!</span>
 <span class="sd">//!     This implements the ....</span>
 </pre></div>
 </div>
+</li>
+</ul>
 </section>
 </section>
 </section>
