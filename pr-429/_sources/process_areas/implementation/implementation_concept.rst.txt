@@ -136,7 +136,7 @@ We link the unit id to the comments in the code like:
 
          This implements the ....
 
-   In your cpp:
+   In your source file, any porgramming language, here with C++:
 
    .. code-block:: cpp
 
@@ -191,7 +191,7 @@ The following section provides templates for defining needs within the source co
 
          This implements the ....
 
-   In your cpp:
+   In your source file, any porgramming language, here with C++:
 
    .. code-block:: cpp
 
