@@ -90,7 +90,7 @@ such as **aggregation, composition, and generalization**. This is depicted throu
 -  **Rust Development Approach** – Instead of traditional classes, **Rust uses `struct` and `trait`
    combinations** to represent **units** in UML diagrams.
 
-This view focuses **only on units and their relationships**.
+This view focuses **units, the interfaces and their relationships**.
 Details such as **attributes and interfaces** are documented under the **Units within the Component section**
 (refer to the template for details).
 
@@ -108,13 +108,13 @@ the detailed design.
       :implements: <link to component requirement id>
       :satisfies: <link to component architecture id>
       :belongs_to: <link to component id>
-      :includes: <link to sw_unit id>
+      :includes: <link to sw_unit id>, <link to sw_unit interface id>
 
       .. needarch:: or .. image:: <link to drawio image>
 
 Dynamic View
 ````````````
-The **dynamic view** illustrates how the **units** interact with each other to fulfill a specific
+The **dynamic view** illustrates how the **units** interact with each other over **interfaces** to fulfill a specific
 **use case** or **functionality**. This view captures the **behavioral aspects** of the component as it executes.
 It is represented using **UML behavioral diagrams**, including:
 
@@ -137,7 +137,7 @@ it does not require a dynamic diagram at all (similar to the rules depicted in :
       :implements: <link to component requirement id>
       :satisfies: <link to component architecture id>
       :belongs_to: <link to component id>
-      :includes: <link to sw_unit id>
+      :includes: <link to sw_unit id>, <link to sw_unit interface id>
 
       .. needarch:: or .. image:: <link to drawio image>
 
@@ -165,7 +165,7 @@ We link the unit id to the comments in the code like:
 
          This implements the ....
 
-   In your source file, any porgramming language, here with C++:
+   In your source file, any programming language, here with C++:
 
    .. code-block:: cpp
 
@@ -220,10 +220,11 @@ The following section provides templates for defining needs within the source co
       .. sw_unit_int:: <here InterfaceDemo - change it>
          :id: sw_unit_int__<Component>__<title>
          :belongs_to: <link to sw_unit id>
+         :implements: <real_arc_int, real_arc_int_op>
 
          This implements the ....
 
-   In your source file, any porgramming language, here with C++:
+   In your source file, any programming language, here with C++:
 
    .. code-block:: cpp
 
@@ -244,6 +245,7 @@ The following section provides templates for defining needs within the source co
          * .. sw_unit_int:: cpp unit
          *    :id: sw_unit_int__<Component>__<title>
          *    :belongs_to: <link to sw_unit id>
+         *    :implements: <real_arc_int, real_arc_int_op>
          *
          *    This implements the ....
          * @endrst
@@ -256,5 +258,7 @@ The following section provides templates for defining needs within the source co
       //! .. sw_unit_int:: rust unit
       //!     :id: sw_unit_int__<Component>__<title>
       //!     :belongs_to: <link to sw_unit id>
+      //!     :implements: <real_arc_int, real_arc_int_op>
       //!
       //!     This implements the ....
+

@@ -551,7 +551,7 @@
                   
   <section id="concept-description">
 <h1>Concept Description<a class="headerlink" href="#concept-description" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-08dd90ef">
+<div class="need_container docutils container" id="SNCB-00455190">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_doc_concept table" id="doc_concept__imp_concept">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -656,7 +656,7 @@ Each <strong>class</strong> can be considered a <strong>unit</strong> in the des
 <li><p><strong>Rust Development Approach</strong> – Instead of traditional classes, <strong>Rust uses `struct` and `trait`
 combinations</strong> to represent <strong>units</strong> in UML diagrams.</p></li>
 </ul>
-<p>This view focuses <strong>only on units and their relationships</strong>.
+<p>This view focuses <strong>units, the interfaces and their relationships</strong>.
 Details such as <strong>attributes and interfaces</strong> are documented under the <strong>Units within the Component section</strong>
 (refer to the template for details).</p>
 <p>Note that the detailed design may not be complete in the way that it covers every class which is coded.
@@ -670,7 +670,7 @@ the detailed design.</p>
    <span class="nc">:implements:</span> <span class="nt">&lt;link to component requirement id&gt;</span>
    <span class="nc">:satisfies:</span> <span class="nt">&lt;link to component architecture id&gt;</span>
    <span class="nc">:belongs_to:</span> <span class="nt">&lt;link to component id&gt;</span>
-   <span class="nc">:includes:</span> <span class="nt">&lt;link to sw_unit id&gt;</span>
+   <span class="nc">:includes:</span> <span class="nt">&lt;link to sw_unit id&gt;</span>, &lt;link to sw_unit interface id&gt;
 
 <span class="p">   ..</span> <span class="ow">needarch</span><span class="p">::</span> or .. image:: &lt;link to drawio image&gt;
 </pre></div>
@@ -678,7 +678,7 @@ the detailed design.</p>
 </section>
 <section id="dynamic-view">
 <h5>Dynamic View<a class="headerlink" href="#dynamic-view" title="Link to this heading">#</a></h5>
-<p>The <strong>dynamic view</strong> illustrates how the <strong>units</strong> interact with each other to fulfill a specific
+<p>The <strong>dynamic view</strong> illustrates how the <strong>units</strong> interact with each other over <strong>interfaces</strong> to fulfill a specific
 <strong>use case</strong> or <strong>functionality</strong>. This view captures the <strong>behavioral aspects</strong> of the component as it executes.
 It is represented using <strong>UML behavioral diagrams</strong>, including:</p>
 <ul class="simple">
@@ -698,7 +698,7 @@ it does not require a dynamic diagram at all (similar to the rules depicted in <
    <span class="nc">:implements:</span> <span class="nt">&lt;link to component requirement id&gt;</span>
    <span class="nc">:satisfies:</span> <span class="nt">&lt;link to component architecture id&gt;</span>
    <span class="nc">:belongs_to:</span> <span class="nt">&lt;link to component id&gt;</span>
-   <span class="nc">:includes:</span> <span class="nt">&lt;link to sw_unit id&gt;</span>
+   <span class="nc">:includes:</span> <span class="nt">&lt;link to sw_unit id&gt;</span>, &lt;link to sw_unit interface id&gt;
 
 <span class="p">   ..</span> <span class="ow">needarch</span><span class="p">::</span> or .. image:: &lt;link to drawio image&gt;
 </pre></div>
@@ -723,7 +723,7 @@ For this we use the tracing to the documentation generated from the code comment
    This implements the ....
 </pre></div>
 </div>
-<p>In your source file, any porgramming language, here with C++:</p>
+<p>In your source file, any programming language, here with C++:</p>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp"># need-Id: sw_unit__&lt;Component&gt;__&lt;title&gt;</span>
 <span class="k">class</span><span class="w"> </span><span class="o">&lt;</span><span class="k">class</span><span class="w"> </span><span class="nc">name</span><span class="o">&gt;</span><span class="w"> </span><span class="p">{</span>
 <span class="w">   </span><span class="k">public</span><span class="o">:</span>
@@ -771,11 +771,12 @@ be created.</p>
 <div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">sw_unit_int</span><span class="p">::</span> <span class="nt">&lt;here InterfaceDemo - change it&gt;</span>
    <span class="nc">:id:</span> sw_unit_int__&lt;Component&gt;__&lt;title&gt;
    <span class="nc">:belongs_to:</span> <span class="nt">&lt;link to sw_unit id&gt;</span>
+   <span class="nc">:implements:</span> <span class="nt">&lt;real_arc_int, real_arc_int_op&gt;</span>
 
    This implements the ....
 </pre></div>
 </div>
-<p>In your source file, any porgramming language, here with C++:</p>
+<p>In your source file, any programming language, here with C++:</p>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp"># need-Id: sw_unit__&lt;Component&gt;__&lt;title&gt;</span>
 <span class="k">class</span><span class="w"> </span><span class="nc">InterfaceDemo</span>
 <span class="p">{</span>
@@ -792,6 +793,7 @@ be created.</p>
 <span class="cm">   * .. sw_unit_int:: cpp unit</span>
 <span class="cm">   *    :id: sw_unit_int__&lt;Component&gt;__&lt;title&gt;</span>
 <span class="cm">   *    :belongs_to: &lt;link to sw_unit id&gt;</span>
+<span class="cm">   *    :implements: &lt;real_arc_int, real_arc_int_op&gt;</span>
 <span class="cm">   *</span>
 <span class="cm">   *    This implements the ....</span>
 <span class="cm">   * @endrst</span>
@@ -803,6 +805,7 @@ be created.</p>
 <div class="highlight-rust notranslate"><div class="highlight"><pre><span></span><span class="sd">//! .. sw_unit_int:: rust unit</span>
 <span class="sd">//!     :id: sw_unit_int__&lt;Component&gt;__&lt;title&gt;</span>
 <span class="sd">//!     :belongs_to: &lt;link to sw_unit id&gt;</span>
+<span class="sd">//!     :implements: &lt;real_arc_int, real_arc_int_op&gt;</span>
 <span class="sd">//!</span>
 <span class="sd">//!     This implements the ....</span>
 </pre></div>
