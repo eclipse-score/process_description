@@ -19,6 +19,6 @@ Component Architecture Template
     :id: gd_temp__arch_comp
     :status: valid
     :tags: architecture_design
-    :complies: std_req__iso26262__software_741, std_req__iso26262__software_742, std_req__iso26262__software_743
+    :complies: std_req__iso26262__software_741, std_req__iso26262__software_742, std_req__iso26262__software_743, std_req__iso26262__software_744
 
     For the content see here: :ref:`component_architecture_template`

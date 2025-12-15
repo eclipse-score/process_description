@@ -549,7 +549,7 @@
                   
   <section id="concept-description">
 <h1>Concept Description<a class="headerlink" href="#concept-description" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-bda6bb1e">
+<div class="need_container docutils container" id="SNCB-545853bb">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_doc_concept table" id="doc_concept__safety_management_process">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -568,7 +568,8 @@
 </td>
 </tr>
 <tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
-<div class="line"><span><span></span></span></div>
+<div class="line"><span><span><div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">safety_management</span></span></span></div>
+</span></span></div>
 <div class="line"><span><div class="line">relates to: <span class="has"><span><a class="reference internal" href="safety_management_workflow.html#wf__cr_mt_safety_plan" title="doc_concept__safety_management_process">wf__cr_mt_safety_plan</a>, <a class="reference internal" href="safety_management_workflow.html#wf__cr_comp_class" title="doc_concept__safety_management_process">wf__cr_comp_class</a>, <a class="reference internal" href="safety_management_workflow.html#wf__cr_mt_safety_package" title="doc_concept__safety_management_process">wf__cr_mt_safety_package</a>, <a class="reference internal" href="safety_management_workflow.html#wf__p_fs_audit" title="doc_concept__safety_management_process">wf__p_fs_audit</a>, <a class="reference internal" href="safety_management_workflow.html#wf__p_formal_rv" title="doc_concept__safety_management_process">wf__p_formal_rv</a>, <a class="reference internal" href="safety_management_workflow.html#wf__cr_mt_safety_manual" title="doc_concept__safety_management_process">wf__cr_mt_safety_manual</a>, <a class="reference internal" href="safety_management_workflow.html#wf__mr_vy_safety" title="doc_concept__safety_management_process">wf__mr_vy_safety</a>, <a class="reference internal" href="safety_management_workflow.html#wf__impact_analysis_change_request" title="doc_concept__safety_management_process">wf__impact_analysis_change_request</a></span></span></div>
 </span></div>
 </div>
@@ -603,7 +604,6 @@ This approach supports risk mitigation, regulatory compliance, and continuous im
 <h2>Inputs<a class="headerlink" href="#inputs" title="Link to this heading">#</a></h2>
 <ol class="arabic simple">
 <li><p>Stakeholders for the Safety Management work products?</p></li>
-<li><p>Who needs which information?</p></li>
 <li><p>Which safety plans do we have?</p></li>
 <li><p>Which other work products of Safety Management are important?</p></li>
 <li><p>What tooling do we need?</p></li>
@@ -614,25 +614,44 @@ This approach supports risk mitigation, regulatory compliance, and continuous im
 <ol class="arabic simple">
 <li><p><a class="reference internal" href="safety_management_roles.html#rl__safety_manager" title="rl__safety_manager"><em class="xref need">Safety Manager (rl__safety_manager)</em></a></p>
 <ul class="simple">
-<li><p>main responsible to ensure ISO 26262 compliance in the project</p></li>
-<li><p>role definition in <a class="reference internal" href="safety_management_roles.html"><span class="doc">Roles</span></a></p></li>
-<li><p>status reporting of safety activities</p></li>
+<li><p>Main responsible to ensure ISO 26262 compliance in the project</p></li>
+<li><p>Create/Maintain Safety Plan</p></li>
+<li><p>Perform Formal Reviews (for safety work products not in his resposibility area)</p></li>
+<li><p>Approve Component Classification</p></li>
+<li><p>Approve Safety Package</p></li>
+<li><p>Approve Safety Audit</p></li>
+<li><p>Approve Formal Reviews (for safety work products in his resposibility area)</p></li>
+<li><p>Approve Safety Manual</p></li>
+<li><p>Monitor/Verify Safety</p></li>
+<li><p>Impact Analysis of Change Request</p></li>
+<li><p>Status reporting of safety activities</p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="../safety_analysis/safety_analysis_roles.html#rl__safety_engineer" title="rl__safety_engineer"><em class="xref need">Safety Engineer (rl__safety_engineer)</em></a></p>
+<ul class="simple">
+<li><p>Supporting the Safety Manager</p></li>
+<li><p>Create/Maintain Safety Package</p></li>
+<li><p>Create/Maintain Safety Manual</p></li>
 </ul>
 </li>
 <li><p><a class="reference internal" href="../../roles/index.html#rl__project_lead" title="rl__project_lead"><em class="xref need">Project Lead (rl__project_lead)</em></a></p>
 <ul class="simple">
-<li><p>planning of development for platform projects</p></li>
+<li><p>Planning of development for platform projects</p></li>
+<li><p>Approve Safety Plan</p></li>
+<li><p>Approve Safety Release Notes</p></li>
+<li><p>Approve Impact Analysis of Change Request</p></li>
 </ul>
 </li>
 <li><p><a class="reference internal" href="../../roles/index.html#rl__committer" title="rl__committer"><em class="xref need">Committer (rl__committer)</em></a></p>
 <ul class="simple">
-<li><p>planning of development for module projects (as a Module Project Lead)</p></li>
-<li><p>performing safety related development</p></li>
+<li><p>Planning of development for module projects (as a Module Project Lead)</p></li>
+<li><p>Performing safety related development</p></li>
+<li><p>Create Component Classification</p></li>
 </ul>
 </li>
 <li><p><a class="reference internal" href="safety_management_roles.html#rl__external_auditor" title="rl__external_auditor"><em class="xref need">External Auditor (rl__external_auditor)</em></a></p>
 <ul class="simple">
-<li><p>Performs independent safety audits and formal document reviews (e.g., safety plans, safety packages, safety analyses).</p></li>
+<li><p>Perform Safety Audit as independent safety audits</p></li>
 <li><p>Verifies compliance with defined safety processes and standards.</p></li>
 <li><p>Reports audit results and decides on pass/fail status.</p></li>
 </ul>
@@ -657,7 +676,7 @@ The <a class="reference internal" href="safety_management_workproducts.html#wp__
 <section id="safety-management-tooling">
 <h2>Safety Management Tooling<a class="headerlink" href="#safety-management-tooling" title="Link to this heading">#</a></h2>
 <p>For the safety planning and safety manual a “Docs-as-Code” approach is used and within that approach Id will be used for referencing.</p>
-<p>For the activities planning (who, when) we use a Issue Tracking System to create and manage issues, and monitor progress through a project managemnet dashboard.</p>
+<p>For the activities planning (who, when) we use a Issue Tracking System to create and manage issues, and monitor progress through a project management dashboard.</p>
 <p>For the reporting (e.g. displaying the status of the work products) additional tooling is created.</p>
 </section>
 </section>

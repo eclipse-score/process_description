@@ -39,7 +39,7 @@ For a detailed explanation of workflows and their role within the process model,
    :approved_by: rl__process_community
    :supported_by: rl__external_auditor, rl__project_lead
    :input: wp__process_strategy, wp__issue_track_system
-   :output: wp__process_description
+   :output: wp__process_description, wp__tailoring_work_products
    :contains: gd_guidl__process_management, gd_temp__process_workflow
    :has: doc_concept__process_management, doc_getstrt__process_management
 

@@ -549,7 +549,7 @@
                   
   <section id="getting-started">
 <h1>Getting Started<a class="headerlink" href="#getting-started" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-35a83514">
+<div class="need_container docutils container" id="SNCB-363276de">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_doc_getstrt table" id="doc_getstrt__safety_management_process">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -568,7 +568,8 @@
 </td>
 </tr>
 <tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
-<div class="line"><span><span></span></span></div>
+<div class="line"><span><span><div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">safety_management</span></span></span></div>
+</span></span></div>
 <div class="line"><span><div class="line">relates to: <span class="has"><span><a class="reference internal" href="safety_management_workflow.html#wf__cr_mt_safety_plan" title="doc_getstrt__safety_management_process">wf__cr_mt_safety_plan</a>, <a class="reference internal" href="safety_management_workflow.html#wf__cr_comp_class" title="doc_getstrt__safety_management_process">wf__cr_comp_class</a>, <a class="reference internal" href="safety_management_workflow.html#wf__cr_mt_safety_package" title="doc_getstrt__safety_management_process">wf__cr_mt_safety_package</a>, <a class="reference internal" href="safety_management_workflow.html#wf__p_fs_audit" title="doc_getstrt__safety_management_process">wf__p_fs_audit</a>, <a class="reference internal" href="safety_management_workflow.html#wf__p_formal_rv" title="doc_getstrt__safety_management_process">wf__p_formal_rv</a>, <a class="reference internal" href="safety_management_workflow.html#wf__cr_mt_safety_manual" title="doc_getstrt__safety_management_process">wf__cr_mt_safety_manual</a>, <a class="reference internal" href="safety_management_workflow.html#wf__mr_vy_safety" title="doc_getstrt__safety_management_process">wf__mr_vy_safety</a></span></span></div>
 </span></div>
 </div>
@@ -591,20 +592,31 @@
 </table>
 </div>
 </div>
-<p>If you are elected as a <a class="reference internal" href="safety_management_roles.html#rl__safety_manager" title="rl__safety_manager"><em class="xref need">Safety Manager (rl__safety_manager)</em></a> by the committers in the project:</p>
+<p>This document describes the steps which need to be done to ensure Functional Safety according to ISO 26262 as used standard in the project.</p>
+<p>Therefore guidelines <a class="reference internal" href="guidance/guideline_safety_management.html#gd_guidl__saf_plan_definitions" title="gd_guidl__saf_plan_definitions"><em class="xref need">Safety plan definitions (gd_guidl__saf_plan_definitions)</em></a>, <a class="reference internal" href="guidance/guideline_safety_management.html#gd_guidl__saf_man" title="gd_guidl__saf_man"><em class="xref need">Safety manual generation (gd_guidl__saf_man)</em></a>, <a class="reference internal" href="guidance/guideline_safety_management.html#gd_guidl__saf_package" title="gd_guidl__saf_package"><em class="xref need">Safety package automated ge... (gd_guidl__saf_package)</em></a>, <a class="reference internal" href="guidance/guideline_component_classification.html#gd_guidl__component_classification" title="gd_guidl__component_classification"><em class="xref need">Classification of a component (gd_guidl__component_classification)</em></a>
+and a <a class="reference internal" href="safety_management_concept.html#doc_concept__safety_management_process" title="doc_concept__safety_management_process"><em class="xref need">Safety Management Concept (doc_concept__safety_management_process)</em></a> are available.</p>
+<section id="general-workflow">
+<h2>General Workflow<a class="headerlink" href="#general-workflow" title="Link to this heading">#</a></h2>
+<p>One goal of the Safety Management Process is to ensure that the project is following the defined processes and
+that the evidence of Functional Safety can be shown according to the requirements. The Safety Management process
+follows an continuous approach.</p>
+<p>The workflows are defined in the <a class="reference internal" href="safety_management_workflow.html#workflow-safety-management"><span class="std std-ref">Safety Management Workflows</span></a> section. The following workflows shall be executed continuously:</p>
 <ul class="simple">
-<li><p><strong>Establish Planning and Reporting</strong>
-- Contact the <a class="reference internal" href="../../roles/index.html#rl__project_lead" title="rl__project_lead"><em class="xref need">Project Lead (rl__project_lead)</em></a> for your SEooC.
-- Confirm that an Issue Tracking system is in place for planning and reporting.</p></li>
-<li><p><strong>Create Your Safety Plan</strong>
-- Follow the workflow described in <a class="reference internal" href="safety_management_workflow.html#wf__cr_mt_safety_plan" title="wf__cr_mt_safety_plan"><em class="xref need">Create/Maintain Safety Plan (wf__cr_mt_safety_plan)</em></a>.</p></li>
-<li><p><strong>Understand Your Role and Responsibilities</strong>
-- Review your role description in <a class="reference internal" href="safety_management_roles.html#rl__safety_manager" title="rl__safety_manager"><em class="xref need">Safety Manager (rl__safety_manager)</em></a>.
-- Familiarize yourself with the Safety Management workflows in <a class="reference internal" href="safety_management_workflow.html#workflow-safety-management"><span class="std std-ref">Safety Management Workflows</span></a>.</p></li>
-<li><p><strong>Explore Supporting Processes</strong>
-- Read the development and supporting process descriptions in <a class="reference internal" href="../../index.html#process-description"><span class="std std-ref">Process description</span></a>.
-- Check relevant sections of <a class="reference internal" href="../platform_management/platform_management_workproducts.html#wp__platform_mgmt" title="wp__platform_mgmt"><em class="xref need">Platform Management Plan (wp__platform_mgmt)</em></a>.</p></li>
+<li><p>Create/Maintain Safety Plan</p></li>
+<li><p>Create/Maintain Safety Package</p></li>
+<li><p>Create/Maintain Safety Manual</p></li>
+<li><p>Monitor/Verify Safety</p></li>
 </ul>
+<p>Additional to the continuous workflows the following workflows shall be executed according to the project needs:</p>
+<ul class="simple">
+<li><p>Create Component Classification</p></li>
+<li><p>Perform Safety Audit</p></li>
+<li><p>Perform Formal Reviews</p></li>
+<li><p>Impact Analysis of Change Request</p></li>
+</ul>
+<p>For open issues the issue tracking system is used to track the issues and to ensure that they are resolved in time.
+The issue tracking system is defined in the <a class="reference internal" href="../change_management/change_management_workproducts.html#wp__issue_track_system" title="wp__issue_track_system"><em class="xref need">Issue tracking system (wp__issue_track_system)</em></a>.</p>
+</section>
 </section>
 
 
@@ -645,6 +657,18 @@
                 <dialog id="pst-secondary-sidebar-modal"></dialog>
                 <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#general-workflow">General Workflow</a></li>
+</ul>
+  </nav></div>
 
   <div class="sidebar-secondary-item">
 

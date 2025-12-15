@@ -22,6 +22,8 @@ Processes are the basis to describe the way of working within a project.
 Introduction
 ------------
 
+The introduction page outlines the code-centric, workflow-driven process model which ensures compliance with ASPICE and ISO standards, establishes end-to-end traceability from the start, and leverages tool automation for verification. It shows and explains the model's key concepts, their parts and interactions.
+
 .. toctree::
    :maxdepth: 1
    :glob:
@@ -32,7 +34,7 @@ Introduction
 Process Model
 -------------
 The project process model is described by workflows, executed by roles and is creating work products.
-Workflow activities are supported by guidances.
+Workflow activities are supported by guidances. For further details (like motivation, objectives and approach) please refer to the :ref:`introduction page<processes_introduction>` and the respective sections below.
 
 .. figure:: _assets/score_process_area_overview.drawio.svg
   :width: 100%

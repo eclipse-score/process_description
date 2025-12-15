@@ -42,7 +42,7 @@ Roles
 
    Experience
 
-   * 2 years of experience in the management of safety topics
+   * 3 years of experience in the management of safety topics
    * Experience in managing projects
    * Experience in managing safety anomalies
 
@@ -56,7 +56,9 @@ Roles
    * Coaching the project team w.r.t all questions related to functional safety
    * Planning of safety audit
    * Approval of OSS component classification and safety analyses (incl. DFA)
+   * Approval of the Safety Package
    * Creating the safety manuals on platform and module level
+   * Performing/approval of formal document reviews on safety plans, safety package and safety analysis (incl. DFA)
    * Checking that every person in his team has sufficient safety skills for his role
 
    Authority
@@ -80,7 +82,6 @@ Roles
    Responsibility
 
    * Performing and reporting of safety audit
-   * Performing of formal document reviews on safety plans, safety package and safety analysis (incl. DFA)
 
    Authority
 

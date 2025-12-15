@@ -178,6 +178,7 @@ Footnotes
    architecture/chklst_arc_inspection.rst
    component_classification.rst
    detailed_design/index.rst
+   detailed_design/chklst_impl_inspection.rst
    requirements/index.rst
    requirements/chklst_req_inspection.rst
    safety_analysis/fmea.rst
