@@ -167,7 +167,7 @@ stakeholder requirements as stakeholder requirements describe the platform behav
 
 Note that all the above tests shall only link to requirements of type "Functional" and "Interface".
 The verification of requirements of types "Process" and "Non-Functional" will be done via Analysis,
-which is a verification method still to be defined. ``[TODO: Link to Analysis process once available. See ticket #577]``
+which is a verification method described in :need:`wf__verification_req_analysis`.
 
 Requirements always include Assumptions Of Use.
 

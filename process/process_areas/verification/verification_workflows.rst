@@ -111,6 +111,35 @@ For a detailed explanation of workflows and their role within the process model,
    The tests are automatically executed as part of the CI after PR merge.
    In case of changes at inputs, the workflow need to be executed again as part of maintenance.
 
+.. workflow:: Perform/Maintain Requirements Analysis
+   :id: wf__verification_req_analysis
+   :status: valid
+   :tags: verification
+   :responsible: rl__contributor
+   :approved_by: rl__committer, rl__testing_community
+   :supported_by: rl__safety_manager, rl__testing_community
+   :input: wp__feature_arch, wp__requirements_feat, wp__requirements_feat_aou,
+           wp__component_arch, wp__requirements_comp, wp__requirements_comp_aou,
+           wp__sw_implementation, wp__verification_plan
+   :output: wp__verification_req_analysis
+   :contains: gd_req__verification_link_tests, gd_req__verification_independence, gd_guidl__verification_specification
+   :has: doc_concept__verification_process, doc_getstrt__verification_process
+
+   This only applies in the special case that some requirements cannot be feasibly tested.
+
+   In such cases – and only such cases – it is acceptable to indicate in the Requirements Analysis Report
+   that not a test but a review shall verify the correct implementation of the related requirement.
+   To signal this special situation to the test engineers (who do not need to specify a test case for the related requirement then),
+   one or both of the following fixed texts shall be entered in the Requirements Analysis Report:
+
+     Tag: **Covered-by-design-review.**
+     The fulfillment of this requirement shall be verified as part of feature/component design reviews
+     (for feature/component requirements) respective software architectural design or software detailed design reviews.
+
+     Tag: **Covered-by-code-review.**
+     The fulfillment of this requirement shall be verified as part of code reviews.
+
+
 .. workflow:: Create Verification Plan
    :id: wf__verification_plan
    :status: valid
