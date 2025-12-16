@@ -18,7 +18,7 @@ Security Management Work Products
 .. workproduct:: Platform Security Plan
    :id: wp__platform_security_plan
    :status: valid
-   :complies: std_wp__isosae21434__prj_management_651, std_wp__isosae21434__maintenance_13331, std_wp__isosae21434__continual_8331, std_wp__isosae21434__continual_8332
+   :complies: std_wp__isosae21434__prj_management_651, std_wp__isosae21434__maintenance_13331, std_wp__isosae21434__continual_8331, std_wp__isosae21434__continual_8332, std_wp__isosae21434__prj_management_653
 
    Plan to manage and guide the execution of the security activities of a project including dates, milestones, tasks, deliverables, responsibilities (including the Security Manager appointment)  and resources.
 
