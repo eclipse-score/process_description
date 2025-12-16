@@ -70,6 +70,13 @@ Static Architecture
 The components are designed to cover the expectations from the feature architecture
 (i.e. if already exists a definition it should be taken over and enriched).
 
+.. comp:: Component Name
+   :id: comp__component_name
+   :security: YES
+   :safety: ASIL_B
+   :status: invalid
+   :implements: logic_arc_int__feature_name__interface_name
+
 .. comp_arc_sta:: Component Name (Static View)
    :id: comp_arc_sta__component_name__static_view
    :security: YES

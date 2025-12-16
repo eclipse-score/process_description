@@ -562,7 +562,7 @@
 <span id="arch-process-requirements"></span><h1>Process Requirements<a class="headerlink" href="#process-requirements" title="Link to this heading">#</a></h1>
 <section id="architectural-model">
 <h2>Architectural Model<a class="headerlink" href="#architectural-model" title="Link to this heading">#</a></h2>
-<div class="need_container docutils container" id="SNCB-d953d640">
+<div class="need_container docutils container" id="SNCB-d27315d7">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__arch_model">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -606,7 +606,7 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-532f4eaf">
+<div class="need_container docutils container" id="SNCB-d1c399d3">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__arch_hierarchical_structure">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -655,7 +655,7 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-be134e0b">
+<div class="need_container docutils container" id="SNCB-c98c1eaf">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__arch_build_blocks">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -687,18 +687,24 @@
 <ul class="simple">
 <li><p>Logical Level</p>
 <ul>
+<li><p>Feature (feat)</p></li>
 <li><p>Feature (feature_arc_sta)</p></li>
+<li><p>Feature (feature_arc_dyn)</p></li>
 <li><p>Logical Interface (logic_arc_int)</p></li>
 <li><p>Logical Interface Operation (logic_arc_int_op)</p></li>
 </ul>
 </li>
 <li><p>Component Level</p>
 <ul>
+<li><p>Component (comp)</p></li>
 <li><p>Component (comp_arc_sta)</p></li>
+<li><p>Component (comp_arc_dyn)</p></li>
 <li><p>Interface (real_arc_int)</p></li>
 <li><p>Interface Operation (real_arc_int_op)</p></li>
 </ul>
 </li>
+<li><p>Module
+* SW Module (mod)</p></li>
 </ul>
 </td>
 </tr>
@@ -716,7 +722,7 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-227338a8">
+<div class="need_container docutils container" id="SNCB-324af9ff">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__arch_build_blocks_corr">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -768,7 +774,7 @@
 </section>
 <section id="architectural-views">
 <h2>Architectural Views<a class="headerlink" href="#architectural-views" title="Link to this heading">#</a></h2>
-<div class="need_container docutils container" id="SNCB-bbf34ca0">
+<div class="need_container docutils container" id="SNCB-4b8b7522">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__arch_viewpoints">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -822,7 +828,7 @@
 </section>
 <section id="attributes-of-architectural-elements">
 <h2>Attributes of Architectural Elements<a class="headerlink" href="#attributes-of-architectural-elements" title="Link to this heading">#</a></h2>
-<div class="need_container docutils container" id="SNCB-97df63cf">
+<div class="need_container docutils container" id="SNCB-3521320c">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__arch_attribute_uid">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -873,7 +879,7 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-fd4dafb8">
+<div class="need_container docutils container" id="SNCB-87fe1760">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__arch_attr_security">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -921,7 +927,7 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-6cd54bbb">
+<div class="need_container docutils container" id="SNCB-8567f6b9">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__arch_attr_safety">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -970,7 +976,7 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-fc942f01">
+<div class="need_container docutils container" id="SNCB-4e02c60e">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__arch_attr_status">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1022,7 +1028,7 @@
 </section>
 <section id="traceability-to-requirements">
 <h2>Traceability to Requirements<a class="headerlink" href="#traceability-to-requirements" title="Link to this heading">#</a></h2>
-<div class="need_container docutils container" id="SNCB-b758995a">
+<div class="need_container docutils container" id="SNCB-3f3a967a">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__arch_attr_fulfils">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1066,7 +1072,7 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-d01f9a85">
+<div class="need_container docutils container" id="SNCB-b1798bd4">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__arch_traceability">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1123,7 +1129,7 @@
 </section>
 <section id="checks-for-architectural-design">
 <h2>Checks for Architectural Design<a class="headerlink" href="#checks-for-architectural-design" title="Link to this heading">#</a></h2>
-<div class="need_container docutils container" id="SNCB-a7154bbb">
+<div class="need_container docutils container" id="SNCB-9ce716e9">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__arch_attr_mandatory">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1192,7 +1198,7 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-fa3c19d3">
+<div class="need_container docutils container" id="SNCB-fb601470">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__arch_linkage_safety">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1235,7 +1241,7 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-d2f78b6a">
+<div class="need_container docutils container" id="SNCB-a03e2ae9">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__arch_linkage_safety_trace">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1279,7 +1285,7 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-86f417d3">
+<div class="need_container docutils container" id="SNCB-c175777a">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__arch_linkage_security_trace">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1322,7 +1328,7 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-4ba029a0">
+<div class="need_container docutils container" id="SNCB-70ffc220">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__arch_linkage_requirement">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1366,7 +1372,7 @@ It shall be checked that architectural elements with safety=QM are not linked ag
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-6f25f8c4">
+<div class="need_container docutils container" id="SNCB-f8857c95">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__arch_linkage_requirement_type">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1414,7 +1420,7 @@ It shall be checked that architectural elements with safety=QM are not linked ag
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-6ab942fa">
+<div class="need_container docutils container" id="SNCB-1894a207">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__arch_consistency_model">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1457,7 +1463,7 @@ It shall be checked that architectural elements with safety=QM are not linked ag
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-821d075b">
+<div class="need_container docutils container" id="SNCB-05e9fc44">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__arch_consistency_interf">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1500,7 +1506,7 @@ It shall be checked that architectural elements with safety=QM are not linked ag
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-8ff01e7e">
+<div class="need_container docutils container" id="SNCB-e6095fe9">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__arch_consistency_dynamic">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">

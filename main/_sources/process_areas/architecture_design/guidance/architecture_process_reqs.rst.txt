@@ -52,15 +52,23 @@ Architectural Model
 
    * Logical Level
 
+     * Feature (feat)
      * Feature (feature_arc_sta)
+     * Feature (feature_arc_dyn)
      * Logical Interface (logic_arc_int)
      * Logical Interface Operation (logic_arc_int_op)
 
    * Component Level
 
+     * Component (comp)
      * Component (comp_arc_sta)
+     * Component (comp_arc_dyn)
      * Interface (real_arc_int)
      * Interface Operation (real_arc_int_op)
+
+   * Module
+     * SW Module (mod)
+
 
 .. gd_req:: Correlations of the architectural building blocks
    :id: gd_req__arch_build_blocks_corr
@@ -75,6 +83,8 @@ Architectural Model
       :width: 100%
       :align: center
       :alt: Definition of the Metamodel for Architectural Design
+
+
 
 Architectural Views
 -------------------
