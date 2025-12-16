@@ -53,12 +53,16 @@ Architectural Model
    * Logical Level
 
      * Feature (feat)
+     * Feature (feature_arc_sta)
+     * Feature (feature_arc_dyn)
      * Logical Interface (logic_arc_int)
      * Logical Interface Operation (logic_arc_int_op)
 
    * Component Level
 
      * Component (comp)
+     * Component (comp_arc_sta)
+     * Component (comp_arc_dyn)
      * Interface (real_arc_int)
      * Interface Operation (real_arc_int_op)
 
