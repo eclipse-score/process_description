@@ -18,6 +18,7 @@ Guidance
 .. toctree::
    :maxdepth: 1
 
+   tool_management_guideline
    tool_management_checklist
    tool_management_template
    tool_management_reqs
