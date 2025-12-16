@@ -20,8 +20,8 @@ Guideline
    :status: valid
    :complies: std_req__iso26262__software_744
 
-This document describes the general guidances for implementation based on the concept which is defined :need:`[[title]]<doc_concept__imp_concept>`.
-In the concept is a example of a Detailed Design included.
+This document describes the general guidance for implementation based on the concept which is defined :need:`[[title]]<doc_concept__imp_concept>`.
+The concept includes an example of a Detailed Design.
 
 Workflow for Implementation
 ===========================
@@ -37,7 +37,7 @@ Detailed description which steps are need for implementation.
 #. Implement the source code, by using the coding guidelines given within the project specific :need:`SW development Plan <wp__sw_development_plan>` for the programming languages in your project.
 #. Create a pull request for your change.
 #. Detail Design and Code Inspection is done to review the code of the software and detect errors in it.
-#. Check the results of the static and dynamic code analysis (this inlcludes compiler warnings). Acceptance criteria are defined in the Verification Plan :need:`gd_temp__verification_plan`.
+#. Check the results of the static and dynamic code analysis (this includes compiler warnings). Acceptance criteria are defined in the Verification Plan :need:`gd_temp__verification_plan`.
 #. Fix or justify the errors.
 #. Merge the pull request.
 #. Create a follow up ticket if not all findings could be fixed.

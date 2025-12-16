@@ -22,20 +22,20 @@ Getting Started
 
 This document describes the steps which need to be done to document detailed design and implement the code.
 
-Therefore a detailed guideline :need:`gd_guidl__implementation` and a :need:`[[title]] <doc_concept__imp_concept>` is available.
+Therefore a detailed guideline :need:`gd_guidl__implementation` and a :need:`doc_concept__imp_concept` are available.
 
 
 General Workflow
 ################
 
-Overview of the implemenation workflow.
+Overview of the implementation workflow.
 
 .. figure:: _assets/implementation_workflow.drawio.svg
    :align: center
    :width: 80%
    :name: implementation_workflow_fig
 
-The details of what needs to be done in each steps are described in the :need:`gd_guidl__implementation`.
+The details of what needs to be done in each step are described in the :need:`gd_guidl__implementation`.
 
 
 Relevant Documents
@@ -47,12 +47,12 @@ Implementation Guideline: :need:`gd_guidl__implementation` Details on the implem
 
 SW Development Plan: :need:`gd_temp__software_development_plan` Process description of SW development including
 
-  - selection of design and programming language
-  - design guideline
-  - coding guideline (e.g. MISRA, can also include style guide or naming convention)
+  - Selection of design and programming language
+  - Design guideline
+  - Coding guideline (e.g. MISRA, can also include style guide or naming convention)
   - SW configuration guideline
   - Method selection (e.g. for Architecture Verification)
-  - development tools
+  - Development tools
 
 .. _developer_experience:
 

@@ -48,7 +48,8 @@ For a detailed explanation of workflows and their role within the process model,
 
    The implementation is created, consisting of
      - Detailed Design
-     - Source Code
+     - Unit
+     - Interface
 
 .. workflow:: Verify Implementation
    :id: wf__sw_verify_implementation
