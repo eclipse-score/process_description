@@ -18,7 +18,7 @@ Guideline
 .. gd_guidl:: Problem Resolution Guideline
    :id: gd_guidl__problem_problem
    :status: valid
-   :complies: std_req__aspice_40__SUP-9-BP1, std_req__aspice_40__SUP-9-BP5, std_req__aspice_40__SUP-9-BP6, std_req__aspice_40__SUP-9-BP7
+   :complies: std_req__iso26262__management_5431, std_req__iso26262__management_5433, std_req__iso26262__management_5434, std_req__iso26262__management_5435, std_req__aspice_40__SUP-9-BP1, std_req__aspice_40__SUP-9-BP5, std_req__aspice_40__SUP-9-BP6, std_req__aspice_40__SUP-9-BP7
 
 This document describes the general guidances for Problem Resolution based on the concept which is defined :need:`[[title]]<doc_concept__problem_process>`.
 
