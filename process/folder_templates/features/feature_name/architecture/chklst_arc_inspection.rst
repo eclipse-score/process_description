@@ -151,7 +151,7 @@ Checklist
         allocated to single design element, number of interfaces and operations in an interface,
         function parameters, global variables, complex types, limited comprehensibility.
 
-        Note: If the "number" above exceeds "3" a design rationale is mandatory (for all types)
+        Note: If the "number" above exceeds "3" a design rationale is mandatory (for all types).
       -
       -
       -
@@ -177,6 +177,15 @@ Checklist
       - Is an upper estimation of the required resources (RAM, ROM, non volatile memory, communication) available and documented?
 
         Note: see ISO 26262-6, 7.4.11
+      - manual
+      -
+      -
+      -
+      -
+    * - ARC_04_03
+      - Are the the scheduling properties for the component defined and documented?
+
+        Note: see ISO 26262-6, 7.4.3
       - manual
       -
       -

@@ -152,6 +152,8 @@ Checklist
         function parameters, global variables, complex types, limited comprehensibility.
 
         Note: If the "number" above exceeds "3" a design rationale is mandatory (for all types)
+
+        Note: See also if component classification :need:`gd_temp__component_classification` as measure is present.
       -
       -
       -
