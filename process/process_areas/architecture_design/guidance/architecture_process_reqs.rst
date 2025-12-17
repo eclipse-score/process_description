@@ -271,11 +271,3 @@ Checks for Architectural Design
    :satisfies: wf__cr_mt_featarch, wf__cr_mt_comparch
 
    It shall be checked if all SW components which are mentioned in the dynamic architecture are defined in the static architecture.
-
-.. gd_req:: Architecture complexity analysis
-   :id: gd_req__arch_complexity_analysis
-   :status: valid
-   :tags: prio_3_automation, model, check
-   :complies: std_req__iso26262__software_743
-
-   If a component is assigned to (safety!=QM) a complexity analysis for the components shall be performed. It shall consider appropriate code metrics like lines of code, cyclomatic complexity, number of public interfaces, number of parameters and so on. The results of the analysis shall be documented in the component classification document. The project specific limits for the complexity measures shall be defined in the project guidelines.
