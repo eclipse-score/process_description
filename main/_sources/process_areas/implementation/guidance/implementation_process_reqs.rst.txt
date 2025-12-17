@@ -20,7 +20,7 @@ Process Requirements
    :status: valid
    :tags: manual_prio_1, mandatory
    :satisfies: wf__sw_detailed_design
-   :complies: std_req__iso26262__software_843, std_req__aspice_40__SWE-3-BP1
+   :complies: std_req__iso26262__software_843, std_req__iso26262__software_844, std_req__iso26262__software_845, std_req__aspice_40__SWE-3-BP1
 
    The static diagram shall represent the unit and their relationships using UML notations.
 
@@ -32,7 +32,7 @@ Diagram Attributes
    :status: valid
    :tags: manual_prio_1, attribute, mandatory
    :satisfies: wf__sw_detailed_design
-   :complies: std_req__iso26262__software_843, std_req__aspice_40__SWE-3-BP1
+   :complies: std_req__iso26262__software_843, std_req__iso26262__software_844, std_req__iso26262__software_845, std_req__aspice_40__SWE-3-BP2
 
    Each diagram shall have a unique ID. It shall consist of three parts:
 
@@ -47,7 +47,7 @@ Diagram Attributes
    :status: valid
    :tags: manual_prio_1 attribute, mandatory
    :satisfies: wf__sw_detailed_design
-   :complies: std_req__iso26262__software_843, std_req__aspice_40__SWE-3-BP1
+   :complies: std_req__iso26262__software_843, std_req__iso26262__software_844, std_req__iso26262__software_845, std_req__aspice_40__SWE-3-BP3, std_req__aspice_40__SWE-3-BP4
 
    The title of the diagram shall provide a short summary of the description, but is not an "additional" requirement.
 
