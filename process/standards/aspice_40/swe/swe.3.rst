@@ -110,7 +110,7 @@ Base practices
 
       Examples for coding principles at capability level 1 are not to use implicit type conversions,
       only one entry and one exit point in subroutines, and range checks (design-by-contract, defensive
-      programming). Further examples see e.g, ISO 26262-6 clause 8.4.5 together with table 6.
+      programming). Further examples see e.g, :need:`std_req__iso26262__software_845` together with table 6.
 
 
 .. std_req:: SWE.3.BP4: Ensure consistency and establish bidirectional traceability
@@ -150,5 +150,5 @@ Base practices
    affected parties.
 
 
-.. needextend:: "c.this_doc()" 
+.. needextend:: "c.this_doc()"
    :+tags: aspice40_swe3
