@@ -135,6 +135,12 @@ Requirement Inspection Checklist
         -
         -
         -
+      * - REQ_08_02
+        - Is the requirement verifiable by design or code review in case it is not feasibly testable?
+        - In very rare cases a requirement may not be verifiable by test cases, for example a specific non-functional requirement. In this case a requirement analysis verifies the requirement by design/code review. If such a requirement is in scope of this inspection, please check this here and link to the respective review record. A test expert is invited to the inspection to confirm their opinion that the requirement is not testable.
+        -
+        -
+        -
       * - REQ_09_01
         - Do the requirements that define a safety mechanism specify the error reaction leading to a safe state?
         - Alternatively to the safe state there could also be "repair" mechanisms. Also do not forget to consider REQ_05_01 for these.

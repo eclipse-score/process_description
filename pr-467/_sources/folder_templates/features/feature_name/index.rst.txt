@@ -194,4 +194,3 @@ Footnotes
    safety_analysis/fmea.rst
    safety_analysis/dfa.rst
    safety_planning/index.rst
-   verification/req_analysis.rst
