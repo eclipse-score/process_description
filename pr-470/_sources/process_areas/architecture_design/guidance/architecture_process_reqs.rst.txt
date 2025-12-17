@@ -279,11 +279,3 @@ Checks for Architectural Design
    :complies: std_req__iso26262__software_743
 
    If a component is assigned to (safety!=QM) a complexity analysis for the components shall be performed. It shall consider appropriate code metrics like lines of code, cyclomatic complexity, number of public interfaces, number of parameters and so on. The results of the analysis shall be documented in the component classification document. The project specific limits for the complexity measures shall be defined in the project guidelines.
-
-.. gd_req:: Architecture scheduling properties
-   :id: gd_req__arch_scheduling_properties
-   :status: valid
-   :tags: manual
-   :complies: std_req__iso26262__software_743
-
-   For each component the scheduling properties shall be defined.
