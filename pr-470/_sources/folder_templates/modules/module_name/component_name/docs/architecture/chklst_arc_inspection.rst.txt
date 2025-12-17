@@ -150,7 +150,7 @@ Checklist
       - Indicators for complexity are: number of use cases (corresponding to dynamic diagrams)
         allocated to single design element, number of interfaces and operations in an interface,
         function parameters, global variables, complex types, limited comprehensibility.
-        The belonging code metrics should be checked. See :need:`gd_req__arch_complexity_analysis` for more details.
+        The belonging code metrics should be checked.
 
         Notes:
 
