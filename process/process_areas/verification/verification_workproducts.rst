@@ -145,21 +145,6 @@ Component
    The compiled tests run against the actual source code compiled for the component or reference integration and their
    targeted HW architecture (e.g. arm64 or x86).
 
-.. workproduct:: Requirement Analysis
-   :id: wp__verification_req_analysis
-   :status: valid
-   :complies: std_wp__iso26262__software_951
-
-   Requirement Analysis is performed for non-functional requirements (NFRs) which cannot be (feasibly) tested.
-   As example performance requirements may not be functional requirements, but they still can be tested.
-   Though, some requirements cannot be feasibly tested in such cases – and only such cases – it is acceptable
-   to perform a requirements analysis.
-
-   This work product provides the evidence about the NFR for the project.
-
-   Note, that there is also the DerivationTechnique named "requirements-analysis" which can be used for "requirements-based" TestTypes.
-   It is described in :ref:`verification_concept_types_methods`.
-
 Inspection
 **********
 
