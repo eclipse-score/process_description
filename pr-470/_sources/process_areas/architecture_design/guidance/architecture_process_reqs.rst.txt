@@ -39,7 +39,7 @@ Architectural Model
    The architectural elements shall be hierarchically structured on two levels:
 
    * Feature Level (=Logical Level)
-   * Component Level (allows also recusrsive decomposition on lower levels)
+   * Component Level (allows also recursive decomposition on lower levels)
 
 .. gd_req:: Structuring of the architectural elements
    :id: gd_req__arch_build_blocks
