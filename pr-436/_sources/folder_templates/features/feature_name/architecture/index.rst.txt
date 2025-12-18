@@ -67,6 +67,15 @@ mandatory: a motivation for the decomposition
 Static Architecture
 -------------------
 
+.. feat:: Feature Name
+   :id: feat__feature_name
+   :security: YES
+   :safety: ASIL_B
+   :status: invalid
+   :includes: logic_arc_int__feature_name__interface_name
+   :consists_of: comp__component_name
+
+
 .. feat_arc_sta:: Static View
    :id: feat_arc_sta__feature_name__static_view
    :security: YES

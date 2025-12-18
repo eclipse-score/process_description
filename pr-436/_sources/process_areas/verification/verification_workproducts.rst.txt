@@ -40,6 +40,10 @@ Platform
    Depending on the nature of the project, respective tailoring (e.g. for reduced requirements
    coverage) has to be reflected in the :need:`wp__verification_plan` and :need:`wp__platform_safety_plan`.
 
+   If software partitioning (operating system processes) is used to implement freedom from interference
+   effectiveness evidence shall be generated during integration and verification tests
+
+
 .. workproduct:: Platform Verification Report
    :id: wp__verification_platform_ver_report
    :status: valid
@@ -74,6 +78,9 @@ Feature
    - all flows from Dynamic View and
    - performance and resource consumption: i.e. RAM and processor usage
      on reference HW
+   - If software partitioning (operating system processes) is used to implement freedom from interference
+     effectiveness evidence shall be generated during integration and verification tests
+
 
 Module
 ******
@@ -135,6 +142,8 @@ Component
    Unit testing verifies detailed design (traced to).
    Respective tooling is defined in :need:`wp__platform_mgmt`, :need:`wp__verification_plan` and integrated in CI/Build.
    Unit testing is in responsible of the :need:`rl__contributor` providing the :need:`wp__sw_implementation`.
+   The compiled tests run against the actual source code compiled for the component or reference integration and their
+   targeted HW architecture (e.g. arm64 or x86).
 
 Inspection
 **********

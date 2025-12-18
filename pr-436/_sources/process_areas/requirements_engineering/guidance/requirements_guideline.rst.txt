@@ -18,7 +18,8 @@ Guideline
 .. gd_guidl:: Requirements Guideline
    :id: gd_guidl__req_engineering
    :status: valid
-   :complies: std_req__isopas8926__44421, std_req__isopas8926__44422, std_req__isopas8926__44423
+   :complies: std_req__isopas8926__44421, std_req__isopas8926__44422, std_req__isopas8926__44423,
+              std_req__iso26262__software_app_c_41, std_req__iso26262__software_app_c_43
 
 This document describes the general guidances for requirements based on the concept which is defined in :need:`[[title]]<doc_concept__req_process>`.
 
@@ -264,7 +265,8 @@ Tailoring
 .. gd_guidl:: Requirements Tailored
    :id: gd_guidl__req_tailored
    :status: valid
-   :complies: std_req__iso26262__system_6423, std_req__iso26262__system_6424, std_req__iso26262__system_6425, std_req__iso26262__software_643, std_req__iso26262__software_644, std_req__iso26262__software_646
+   :complies: std_req__iso26262__system_6423, std_req__iso26262__system_6424, std_req__iso26262__system_6425, std_req__iso26262__software_643, std_req__iso26262__software_644, std_req__iso26262__software_646,
+              std_req__iso26262__analysis_641, std_req__iso26262__analysis_642, std_req__iso26262__analysis_643, std_req__iso26262__analysis_644
 
    This part of the guideline links to all the requirements which are not fulfilled by the
    requirements engineering process. Make sure these are tailored out in the safety/security/quality plans
@@ -274,3 +276,4 @@ Tailoring
 
    - for "system" standard requirements: see platform safety plan in PMP
    - for "software" standard requirements: 644, 646: because they refer to (PMP) tailored work product, 643: because this refers to (PMP) tailored activity
+   - for "analysis" standard requirements: see platform safety plan in PMP

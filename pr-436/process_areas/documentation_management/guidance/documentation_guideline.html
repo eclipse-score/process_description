@@ -558,7 +558,7 @@
                   
   <section id="guideline">
 <h1>Guideline<a class="headerlink" href="#guideline" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-bd9acd66">
+<div class="need_container docutils container" id="SNCB-71cc4565">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_guidl table" id="gd_guidl__documentation">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -611,32 +611,39 @@ as well as additional artifacts as defined in <a class="reference internal" href
 process description.</p>
 <section id="document-life-cycle-models">
 <h2>Document life cycle models<a class="headerlink" href="#document-life-cycle-models" title="Link to this heading">#</a></h2>
-<p>Each official document shall have the status: “VALID”.</p>
-<p>Depending on the document type (report, checklist, plan, etc.) the document can
-either reach this state directly, or some prior states are required.</p>
-<p>Thus different document life cycle models exists:</p>
+<p>Each released document shall have the status: “VALID”.</p>
+<p>Depending on the document assigned life cycle Model, as defined here
+<a class="reference internal" href="../../../workproducts/index.html#work-products-overview-list"><span class="std std-ref">Project Work product list</span></a>, the document can either reach this state directly,
+or some prior states are required.</p>
+<p>Thus different document life cycle models exists (as defined in
+<a class="reference internal" href="documentation_process_reqs.html#gd_req__doc_attr_status" title="gd_req__doc_attr_status"><em class="xref need">Document attribute: status (gd_req__doc_attr_status)</em></a>):</p>
 <ul class="simple">
 <li><p>Model1: “VALID”</p></li>
 <li><p>Model2: “DRAFT” -&gt; “VALID”</p></li>
 <li><p>Model3: “DRAFT” -&gt; “VALID” -&gt; “VALID(INSPECTED)”</p></li>
 </ul>
-<p><strong>The document types below require life cycle model 1:</strong></p>
-<p>Report</p>
-<p>Guidance:</p>
-<p>The document has the state “VALID”, if the
-Author has successfully done a self verification for the three aspects of content,
-valid structure and formal aspects.</p>
-<p><strong>The document types below require life cycle model 2:</strong></p>
-<p>Compare <a class="reference internal" href="../../process_management/guidance/process_management_reqs.html#gd_req__process_management_build_blocks" title="gd_req__process_management_build_blocks"><em class="xref need">Process Model Building Blocks (gd_req__process_management_build_blocks)</em></a>, except their are part of the
-life cycle model 3, thus the need inspection.</p>
-<p>Guidance:</p>
-<p>The document has the state “DRAFT”, if the
-Document is created, may have no mature structure, content or formal aspects considered.
-Author writes the document, creates content, creates a valid structure and considers
-formal aspects.</p>
-<p>The document has the state “VALID”, if the
-Document is reviewed. In this state the reviewer has successfully checked the document
-for content, structure and formal aspects.</p>
+<p><strong>Guidance for life cycle model 1:</strong></p>
+<p>Example: <a class="reference internal" href="../../change_management/change_management_workproducts.html#wp__issue_track_system" title="wp__issue_track_system"><em class="xref need">Issue tracking system (wp__issue_track_system)</em></a></p>
+<p>The document has the state “VALID” after creation.</p>
+<p>Recommendation: Author should do a self verification for the correctness and completeness
+of the content and th fulfillment of required formal aspects.</p>
+<p>Example: <a class="reference internal" href="../../change_management/change_management_workproducts.html#wp__feat_request" title="wp__feat_request"><em class="xref need">Feature Request (wp__feat_request)</em></a></p>
+<p>The document has the state “VALID” after creation and a reviewer as confirmed
+the correctness and completeness of the content and th fulfillment of required formal
+aspects.</p>
+<p>The figure below shows an overview of the review workflow for life cycle model 2 (Simple
+Workflow).</p>
+<p>Nevertheless, it is still recommended for author to do a self verification for the
+correctness and completeness of the content and the fulfillment of required formal
+aspects before asking for a review.</p>
+<p>In case of any discussions are needed between author and reviewer, or still some ambiguities
+exists, the document can also be published first with the status “DRAFT”.</p>
+<p>This indicates, that the document is created, may have no mature structure yet, content
+is not complete and correct or formal aspects are not considered.</p>
+<p>The figure below shows an overview of the review workflow for life cycle model 2
+(Extended Workflow).</p>
+<p>After some iterations between author and reviewer, the document can be set to status
+“VALID”, when all issues are resolved.</p>
 <p>Due to updates, findings, other issues or change request, the document status may set
 back from “VALID” to “DRAFT”. This triggers a new review cycle.</p>
 <figure class="align-center" id="id1">
@@ -646,9 +653,7 @@ back from “VALID” to “DRAFT”. This triggers a new review cycle.</p>
 <p><span class="caption-number">Fig. 16 </span><span class="caption-text">Overview review life cycle model 2</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
-<p><strong>The document types below require life cycle model 3:</strong></p>
-<p>Compare <a class="reference internal" href="../../../general_concepts/score_review_concept.html#review-concept"><span class="std std-ref">Review and Inspection Concept</span></a>.</p>
-<p>Guidance:</p>
+<p><strong>Guidance for life cycle model 3:</strong></p>
 <p>In principle same as life cycle model 2, but an additional inspection step is required,
 as described here: <a class="reference internal" href="../../../general_concepts/score_review_concept.html#review-concept"><span class="std std-ref">Review and Inspection Concept</span></a>.</p>
 </section>
@@ -709,7 +714,7 @@ as described here: <a class="reference internal" href="../../../general_concepts
 
   
   <div class="tocsection editthispage">
-    <a href="https://github.com/eclipse-score/process_description/edit/main/docs/process_areas/documentation_management/guidance/documentation_guideline.rst">
+    <a href="https://github.com/eclipse-score/process_description/edit/main/'process'/process_areas/documentation_management/guidance/documentation_guideline.rst">
       <i class="fa-solid fa-pencil"></i>
       
       

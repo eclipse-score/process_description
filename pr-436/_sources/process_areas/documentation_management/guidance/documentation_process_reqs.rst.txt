@@ -73,7 +73,7 @@ Document Management Process Requirements
    :status: valid
    :tags: manual_prio_1, attribute, mandatory
    :satisfies: wf__platform_cr_mt_platform_mgmt_plan
-   :complies: std_req__iso26262__support_1043
+   :complies: std_req__iso26262__support_1044
 
    Each document, shall have a status depending on the document life cycle models below:
 

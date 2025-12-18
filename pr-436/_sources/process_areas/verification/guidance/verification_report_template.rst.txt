@@ -20,7 +20,8 @@ Verification Report Templates
 .. gd_temp:: Module Verification Report Template
     :id: gd_temp__mod_ver_report
     :status: valid
-    :complies: std_req__iso26262__software_942, std_req__iso26262__software_1042, std_req__iso26262__software_1043,
+    :complies: std_req__iso26262__software_942, std_req__iso26262__software_943, std_req__iso26262__software_944,
+      std_req__iso26262__software_1042, std_req__iso26262__software_1043,
       std_req__iso26262__support_9431, std_req__iso26262__support_9432, std_req__iso26262__support_9433, std_req__iso26262__support_9434,
       std_req__iso26262__support_12422, std_req__iso26262__support_12423, std_req__iso26262__support_12424, std_req__iso26262__support_12425,
       std_req__iso26262__support_1243,
@@ -96,7 +97,7 @@ Verification Report Templates
 .. gd_temp:: Platform Verification Report Template
     :id: gd_temp__platform_ver_report
     :status: valid
-    :complies: std_req__iso26262__software_1042,
+    :complies: std_req__iso26262__software_1042, std_req__iso26262__software_1044,
       std_req__iso26262__support_9431, std_req__iso26262__support_9432, std_req__iso26262__support_9433, std_req__iso26262__support_9434,
       std_req__iso26262__analysis_749, std_req__iso26262__analysis_848
 

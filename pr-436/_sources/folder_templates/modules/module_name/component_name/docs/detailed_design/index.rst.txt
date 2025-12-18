@@ -55,25 +55,104 @@ Static Diagrams for Unit Interactions
 .. code-block:: rst
 
    .. dd_sta:: <Title>
-      :id: dd_sta__<Feature>__<Title>
+      :id: dd_sta__<Component>__<Title>
       :security: <YES|NO>
       :safety: <QM|ASIL_B>
       :status: <valid|invalid>
       :implements: <link to component requirement id>
       :satisfies: <link to component architecture id>
+      :belongs_to: <link to component id>
+      :includes: <link to sw_unit id>, <link to sw_unit interface id>
 
-        .. image:: <link to drawio image> or .. uml:: <link to plantuml>
+      .. needarch:: or .. image:: <link to drawio image>
 
 Dynamic Diagrams for Unit Interactions
 --------------------------------------
 .. code-block:: rst
 
    .. dd_dyn:: <Title>
-      :id: dd_dyn__<Feature>__<Title>
+      :id: dd_dyn__<Component>__<Title>
       :security: <YES|NO>
       :safety: <QM|ASIL_B>
       :status: <valid|invalid>
       :implements: <link to component requirement id>
       :satisfies: <link to component architecture id>
+      :belongs_to: <link to component id>
+      :includes: <link to sw_unit id>, <link to sw_unit interface id>
 
-        .. image:: <link to drawio image> or .. uml:: <link to plantuml>
+      .. needarch:: or .. image:: <link to drawio image>
+
+Units within the Component
+--------------------------
+
+In your rst file:
+
+.. code-block:: rst
+
+   .. sw_unit:: cpp unit
+      :id: sw_unit__<Component>__<title>
+      :belongs_to: <link to component id>
+
+      This implements the ....
+
+In your source file, any programming language, here with C++:
+
+.. code-block:: cpp
+
+   # need-Id: sw_unit__<Component>__<title>
+   class <class name> {
+      public:
+
+   };
+
+Interface View
+--------------
+
+In your rst file:
+
+.. code-block:: rst
+
+   .. sw_unit_int:: <here InterfaceDemo - change it>
+      :id: sw_unit_int__<Component>__<title>
+      :belongs_to: <link to sw_unit id>
+      :implements: <real_arc_int, real_arc_int_op>
+
+      This implements the ....
+
+In your source file, any programming language, here with C++:
+
+.. code-block:: cpp
+
+   # need-Id: sw_unit__<Component>__<title>
+   class InterfaceDemo
+   {
+      public:
+         virtual ~InterfaceDemo() {}
+         virtual void OverrideMe() = 0;
+   };
+
+-  For cpp using doxygen comments
+
+.. code-block:: cpp
+
+   /**
+      * @rst
+      * .. sw_unit_int:: cpp unit
+      *    :id: sw_unit_int__<Component>__<title>
+      *    :belongs_to: <link to sw_unit id>
+      *    :implements: <real_arc_int, real_arc_int_op>
+      *
+      *    This implements the ....
+      * @endrst
+   */
+
+-  For rust
+
+.. code-block:: rust
+
+   //! .. sw_unit_int:: rust unit
+   //!     :id: sw_unit_int__<Component>__<title>
+   //!     :belongs_to: <link to sw_unit id>
+   //!     :implements: <real_arc_int, real_arc_int_op>
+   //!
+   //!     This implements the ....
