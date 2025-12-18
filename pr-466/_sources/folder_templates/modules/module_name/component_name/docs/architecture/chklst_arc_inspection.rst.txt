@@ -145,13 +145,19 @@ Checklist
       -
       -
     * - ARC_03_03
-      - Are simplicity and avoidance of unnecessary complexity present in the software architecture?
+      - Are simplicity and avoidance of unnecessary complexity present in the software architecture and the component?
       - manual
       - Indicators for complexity are: number of use cases (corresponding to dynamic diagrams)
         allocated to single design element, number of interfaces and operations in an interface,
         function parameters, global variables, complex types, limited comprehensibility.
+        The belonging code metrics should be checked.
 
-        Note: If the "number" above exceeds "3" a design rationale is mandatory (for all types)
+        Notes:
+
+        If the "number" above exceeds "3" a design rationale is mandatory (for all types)
+
+        See also if component classification :need:`gd_temp__component_classification` as measure is present.
+
       -
       -
       -
