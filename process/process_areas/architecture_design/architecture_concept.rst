@@ -123,7 +123,7 @@ Static View
 
 The first viewpoint is named as *feature architecture*. It displays the SW modules (= top level SW components) which are required to realize the feature including their interactions. Also the *logical interfaces* and the interaction between the feature and the user are included in this view. On this architectural level the feature requirements shall be allocated. An example for the static architecture is shown here:
 
-.. feat_arc_sta:: Feature 1
+.. feat_arc_sta:: Feature 1 Architecture
    :id: feat_arc_sta__example_feature__feature_1
    :security: YES
    :safety: QM
