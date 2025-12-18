@@ -26,11 +26,12 @@ For a detailed explanation of workflows and their role within the process model,
    :approved_by: rl__process_community
    :supported_by: rl__external_auditor, rl__project_lead
    :input: wp__policies, wp__issue_track_system
-   :output: wp__process_strategy
+   :output: wp__process_strategy, wp__policies
    :contains: gd_guidl__process_management, gd_temp__process_workflow
    :has: doc_concept__process_management, doc_getstrt__process_management
 
-   The process management strategy is created and maintained.
+   The process management strategy is created and maintained. Policies are
+   reviewed and updated, if required.
 
 .. workflow:: Define/Approve Process Description
    :id: wf__def_app_process_description

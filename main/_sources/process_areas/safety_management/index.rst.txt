@@ -26,3 +26,6 @@ Safety Management
    safety_management_roles
    safety_management_workflow
    safety_management_workproducts
+
+.. needextend:: docname is not None and "process_areas/safety_management" in docname
+   :+tags: safety_management

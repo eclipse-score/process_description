@@ -20,9 +20,12 @@ Quality Management
 .. toctree::
    :maxdepth: 1
 
-   quality_getstrt 
+   quality_getstrt
    quality_concept
    guidance/index
    quality_roles
    quality_workflow
    quality_workproducts
+
+.. needextend:: docname is not None and "process_areas/quality_management" in docname
+   :+tags: quality_management

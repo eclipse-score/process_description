@@ -28,3 +28,6 @@ Security Analysis
    security_analysis_roles
    security_analysis_workflow
    security_analysis_workproducts
+
+.. needextend:: docname is not None and "process_areas/security_analysis" in docname
+   :+tags: security_analysis

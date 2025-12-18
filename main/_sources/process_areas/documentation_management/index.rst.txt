@@ -28,4 +28,4 @@ Documentation Management
    documentation_workproducts
 
 .. needextend:: docname is not None and "process_areas/documentation_management" in docname
-   :+tags: doc_mgt
+   :+tags: documentation_management

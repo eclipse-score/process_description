@@ -18,7 +18,7 @@ Quality Management Work Products
 .. workproduct:: Quality Management Plan
    :id: wp__qms_plan
    :status: valid
-   :tags: quality_management
+   :tags: doc_lifecycle_model_2
    :complies: std_wp__iso26262__management_553, std_req__aspice_40__iic-18-07, std_req__aspice_40__iic-18-52
 
    | Quality Management Plan to define the quality aspects like:
@@ -33,7 +33,7 @@ Quality Management Work Products
 .. workproduct:: Quality report
    :id: wp__qms_report
    :status: valid
-   :tags: quality_management
+   :tags: doc_lifecycle_model_2
    :complies: std_req__aspice_40__iic-13-19
 
    | The quality report summarizes the results of the quality related activities
@@ -41,7 +41,7 @@ Quality Management Work Products
 .. workproduct:: Process Improvement Report
    :id: wp__process_impr_report
    :status: valid
-   :tags: quality_management
+   :tags: doc_lifecycle_model_2
    :complies: std_req__aspice_40__iic-07-04, std_req__aspice_40__iic-15-13
 
    | Process Improvement Report that describes the improvement with description of:
@@ -56,7 +56,7 @@ Quality Management Work Products
 .. workproduct:: Training path
    :id: wp__training_path
    :status: valid
-   :tags: quality_management
+   :tags: doc_lifecycle_model_2
    :complies: std_wp__iso26262__management_552, std_req__aspice_40__iic-06-04, std_req__aspice_40__iic-10-51
 
    | Trainings shall give dedicated information how to apply the processes and work products in the project.

@@ -21,38 +21,6 @@ An work product is an items needed as input or created as output of one or more 
 
 The project development work product traceability model overview can be found here: :ref:`general_concepts_traceability`.
 
-
-Here only project specific work products are listed, which are generic for the platform.
-
-.. workproduct:: Policies
-   :id: wp__policies
-   :status: draft
-   :tags: requirements_management
-   :complies: std_wp__iso26262__management_551
-
-   In general the project follows the Eclipse Foundation Development Process (EDP,
-   `Eclipse Foundation Development Process <https://www.eclipse.org/projects/dev_process/>`_).
-   The EDP defines important concepts, including the Open Source Rules of Engagement,
-   the organizational framework for open source projects and teams, releases, reviews,
-   and more.
-
-   Further the Eclipse Foundation Security Policy
-   (`Eclipse Foundation Security Policy <https://www.eclipse.org/security/policy/>`_)
-   applies.
-
-   The Eclipse Foundation Functional Safety Process (EFFSP, currently in DRAFT
-   `Eclipse Foundation Functional Safety Process <https://gitlab.eclipse.org/eclipsefdn/emo-team/policies/functional-safety-process/-/blob/main/source/fsp.adoc?ref_type=heads>`_)
-   applies.
-
-   Concerning the use of Generative Artificial Intelligence
-   `Usage Guidelines <https://www.eclipse.org/projects/guidelines/genai/>`_ applies.
-
-   Project specific Policies for functional safety and cybersecurity may extend the
-   ones from ECLIPSE.
-
-
-
-
 Project Work product Linkage
 ----------------------------
 
@@ -61,6 +29,9 @@ Project Work product Linkage
    :legend:
    :colors: red, green, blue
    :filter-func: score_metamodel.checks.standards.my_pie_workproducts_contained_in_exactly_one_workflow
+
+
+.. _work_products_overview_list:
 
 Project Work product list
 -------------------------
