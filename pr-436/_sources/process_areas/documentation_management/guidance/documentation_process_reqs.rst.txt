@@ -75,7 +75,7 @@ Document Management Process Requirements
    :satisfies: wf__platform_cr_mt_platform_mgmt_plan
    :complies: std_req__iso26262__support_1044
 
-   Each document, shall have a status depending on the document life cycle models below:
+   Each document, shall have a status depending on the document lifecycle models below:
 
       * Model 1: VALID (e.g. for simple reports)
       * Model 2: DRAFT -> VALID (e.g. for plans)
