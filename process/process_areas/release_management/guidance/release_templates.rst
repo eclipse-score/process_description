@@ -18,7 +18,7 @@ Templates
 .. gd_temp:: Platform Release Note Template
    :id: gd_temp__rel_plat_rel_note
    :status: valid
-   :complies: std_req__iso26262__management_64134, std_req__iso26262__management_64135, std_req__aspice_40__SUP-8-BP7
+   :complies: std_req__iso26262__software_1041, std_req__iso26262__management_64134, std_req__iso26262__management_64135, std_req__aspice_40__SUP-8-BP7
 
    |  Platform Release Notes
    |  ======================
@@ -97,7 +97,7 @@ Templates
 .. gd_temp:: Module Release Note Template
    :id: gd_temp__rel_mod_rel_note
    :status: valid
-   :complies: std_req__iso26262__management_64134, std_req__iso26262__management_64135
+   :complies: std_req__iso26262__software_1041, std_req__iso26262__management_64134, std_req__iso26262__management_64135
 
    For the content see here: :need:`doc__module_name_release_note`
 

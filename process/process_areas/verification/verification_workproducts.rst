@@ -88,7 +88,7 @@ Module
 .. workproduct:: Module Verification Report
    :id: wp__verification_module_ver_report
    :status: valid
-   :complies: std_wp__iso26262__software_952, std_wp__iso26262__software_1053, std_wp__iso26262__support_953, std_wp__iso26262__support_1253, std_wp__iso26262__analysis_752, std_wp__iso26262__analysis_852, std_wp__iso26262__support_1252, std_wp__isopas8926__4526, std_wp__iso26262__software_app_c_56
+   :complies: std_wp__iso26262__software_952, std_req__iso26262__software_1041, std_wp__iso26262__software_1053, std_wp__iso26262__support_953, std_wp__iso26262__support_1253, std_wp__iso26262__analysis_752, std_wp__iso26262__analysis_852, std_wp__iso26262__support_1252, std_wp__isopas8926__4526, std_wp__iso26262__software_app_c_56
 
    Verification Report contains:
 
