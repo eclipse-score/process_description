@@ -22,7 +22,7 @@ Security Analysis threat scenarios
 .. gd_guidl:: Security Analysis threat scenarios
   :id: gd_guidl__sec_ana_threat_scenarios
   :status: valid
-  :complies: std_wp__isosae21434__assessment_15332, std_wp__isosae21434__assessment_15431
+  :complies:
 
 .. note::
   Use all applicable threat scenarios to ensure a structured analysis. If there are

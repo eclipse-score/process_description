@@ -20,7 +20,7 @@ Security Analysis Threat Models
 .. gd_guidl:: STRIDE Threat Model
   :id: gd_guidl__threat_models_stride
   :status: valid
-  :complies: std_wp__isosae21434__assessment_15332, std_wp__isosae21434__assessment_15431
+  :complies:
 
   | Threat Model for sequence diagrams using STRIDE methodology
 
