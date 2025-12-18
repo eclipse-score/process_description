@@ -27,3 +27,6 @@ Implementation
    implementation_workflow
    implementation_workproducts
    _assets/detailed_design_example.rst
+
+.. needextend:: docname is not None and "process_areas/implementation" in docname
+   :+tags: implementation

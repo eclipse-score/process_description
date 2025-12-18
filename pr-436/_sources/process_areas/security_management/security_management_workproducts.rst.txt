@@ -18,6 +18,7 @@ Security Management Work Products
 .. workproduct:: Platform Security Plan
    :id: wp__platform_security_plan
    :status: valid
+   :tags: doc_lifecycle_model_2
    :complies: std_wp__isosae21434__prj_management_651, std_wp__isosae21434__maintenance_13331, std_wp__isosae21434__continual_8331, std_wp__isosae21434__continual_8332
 
    Plan to manage and guide the execution of the security activities of a project including dates, milestones, tasks, deliverables, responsibilities (including the Security Manager appointment)  and resources.
@@ -33,6 +34,7 @@ Security Management Work Products
 .. workproduct:: Module Security Plan
    :id: wp__module_security_plan
    :status: valid
+   :tags: doc_lifecycle_model_2
    :complies: std_wp__isosae21434__prj_management_651
 
    Plan to manage and guide the execution of the security activities of a project including dates, milestones, tasks, deliverables, responsibilities (including the Security Manager appointment) and resources.
@@ -46,6 +48,7 @@ Security Management Work Products
 .. workproduct:: Platform Security Package
    :id: wp__platform_security_package
    :status: valid
+   :tags: doc_lifecycle_model_2
    :complies: std_wp__isosae21434__prj_management_652
 
    Compiled Security Relevant Work Products. For Platform OoC.
@@ -55,6 +58,7 @@ Security Management Work Products
 .. workproduct:: Module Security Package
    :id: wp__module_security_package
    :status: valid
+   :tags: doc_lifecycle_model_2
    :complies:
 
    Compiled Security Relevant Work Products. For Module OoC.
@@ -64,6 +68,7 @@ Security Management Work Products
 .. workproduct:: Formal Document Review Reports
    :id: wp__fdr_reports_security
    :status: valid
+   :tags: doc_lifecycle_model_2
    :complies: std_wp__isosae21434__prj_management_654
 
    Review that a work product provides sufficient and convincing evidence of their contribution to the achievement of security considering the corresponding objectives and requirements of ISO SAE 21434.
@@ -73,6 +78,7 @@ Security Management Work Products
 .. workproduct:: Process Security Audit Report
    :id: wp__audit_report_security
    :status: valid
+   :tags: doc_lifecycle_model_2
    :complies: std_wp__isosae21434__org_management_555
 
    Examination of an implemented process with regard to the process objectives and that those match the ISO SAE 21434.
@@ -81,6 +87,7 @@ Security Management Work Products
 .. workproduct:: Platform Security Manual
    :id: wp__platform_security_manual
    :status: valid
+   :tags: doc_lifecycle_model_2
    :complies: std_wp__isosae21434__prj_management_654
 
    The security manual describes:
@@ -97,6 +104,7 @@ Security Management Work Products
 .. workproduct:: Module Security Manual
    :id: wp__module_security_manual
    :status: valid
+   :tags: doc_lifecycle_model_2
    :complies: std_wp__isosae21434__prj_management_654
 
    The security manual describes:
@@ -113,6 +121,7 @@ Security Management Work Products
 .. workproduct:: Platform Software Bill of Material (SBOM)
    :id: wp__sw_platform_sbom
    :status: draft
+   :tags: doc_lifecycle_model_2
    :complies:
 
    Platform Software Bill of Material
@@ -121,10 +130,8 @@ Security Management Work Products
 .. workproduct:: Module Software Bill of Material (SBOM)
    :id: wp__sw_module_sbom
    :status: draft
+   :tags: doc_lifecycle_model_2
    :complies:
 
    Module Software Bill of Material
    - comprehensive inventory of software components to ensure security, integrity, and compliance.
-
-.. needextend:: docname is not None and "process_areas/security_management" in docname
-   :+tags: security_management

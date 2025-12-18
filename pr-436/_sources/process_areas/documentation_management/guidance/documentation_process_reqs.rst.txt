@@ -77,9 +77,9 @@ Document Management Process Requirements
 
    Each document, shall have a status depending on the document lifecycle models below:
 
-      * Model 1: VALID (e.g. for simple reports)
-      * Model 2: DRAFT -> VALID (e.g. for plans)
-      * Model 3: DRAFT-> VALID -> VALID(inspected) (e.g. for stakeholder requirements)
+     * Model 1: VALID (e.g. for simple reports)
+     * Model 2: DRAFT -> VALID (e.g. for plans)
+     * Model 3: DRAFT-> VALID -> VALID(inspected) (e.g. for stakeholder requirements)
 
    Compare :need:`gd_guidl__documentation`
 

@@ -20,6 +20,7 @@ Security Analysis Work Products
 .. workproduct:: Platform Security Analysis
    :id: wp__platform_security_analysis
    :status: valid
+   :tags: doc_lifecycle_model_2
    :complies:
 
    Analyze the attack surfaces between features that references all platform feature
@@ -28,6 +29,7 @@ Security Analysis Work Products
 .. workproduct:: Feature Security Analysis
    :id: wp__feature_security_analysis
    :status: draft
+   :tags: doc_lifecycle_model_2
    :complies: std_wp__isosae21434__development_1055, std_wp__isosae21434__assessment_15631, std_wp__isosae21434__assessment_15731, std_wp__isosae21434__assessment_15831, std_wp__isosae21434__assessment_15931
 
    Bottom-Up Security Analysis with defined methods, verifies the feature architecture (as part of SW Security Concept)
@@ -44,6 +46,7 @@ Security Analysis Work Products
 .. workproduct:: Component Security Analysis
    :id: wp__sw_component_security_analysis
    :status: draft
+   :tags: doc_lifecycle_model_2
    :complies: std_wp__isosae21434__development_1055, std_wp__isosae21434__assessment_15631, std_wp__isosae21434__assessment_15731, std_wp__isosae21434__assessment_15831, std_wp__isosae21434__assessment_15931
 
    Bottom-Up Security Analysis with defined methods, verifies the component architecture (as part of SW Security Concept)

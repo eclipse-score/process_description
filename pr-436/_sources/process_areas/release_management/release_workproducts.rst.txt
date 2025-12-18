@@ -18,6 +18,7 @@ Release Management Work Products
 .. workproduct:: Platform Release Notes
    :id: wp__platform_sw_release_note
    :status: valid
+   :tags: doc_lifecycle_model_2
    :complies: std_wp__iso26262__management_656
 
    The platform release note provides clarity what is included in the current version of the platform
@@ -35,6 +36,7 @@ Release Management Work Products
 .. workproduct:: Module Release Notes
    :id: wp__module_sw_release_note
    :status: valid
+   :tags: doc_lifecycle_model_2
    :complies: std_wp__iso26262__management_656
 
    The module release note provides clarity what is included in the current version of the software
@@ -50,6 +52,7 @@ Release Management Work Products
 
 .. workproduct:: Platform Release Plan
    :id: wp__platform_sw_release_plan
+   :tags: doc_lifecycle_model_2
    :status: valid
 
    The platform release plan is a high-level document that outlines which software modules
@@ -60,6 +63,7 @@ Release Management Work Products
 
 .. workproduct:: Module Release Plan
    :id: wp__module_sw_release_plan
+   :tags: doc_lifecycle_model_2
    :status: valid
 
    The module release plan is a strategic document that outlines the features planned for upcoming
@@ -69,6 +73,7 @@ Release Management Work Products
 
 .. workproduct:: Platform Handbook
    :id: wp__platform_handbook
+   :tags: doc_lifecycle_model_2
    :status: valid
 
    The platform handbook is a tutorial to explain how the project works from a technical

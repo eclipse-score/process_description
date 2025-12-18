@@ -18,10 +18,7 @@ Problem Resolution Work Products
 .. workproduct:: Platform Problem Resolution Plan
    :id: wp__prm_plan
    :status: valid
-   :tags: problem_resolution
+   :tags: doc_lifecycle_model_2
    :complies: std_wp__iso26262__support_851
 
    Problem Resolution Plan (Part of the Platform Management Plan)
-
-.. needextend:: docname is not None and "process_areas/problem_resolution" in docname
-   :+tags: problem_resolution
