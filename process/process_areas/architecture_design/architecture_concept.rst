@@ -277,30 +277,25 @@ The *static view* shows the *building blocks* of the architecture. It shall be c
 
 .. list-table:: Definition of the static architectural elements
    :header-rows: 1
-   :widths: 15,35,35
+   :widths: 15,35
 
    * - Element
      - Sphinx Needs Directive
-     - Code Template
    * - Feature Architecture
      - feat_arc_sta
-     - feat_arc_sta_t
    * - Component Architecture
      - comp_arc_sta
-     - comp_arc_sta_t
 
 To represent the CI build tool module (for example a `Bazel Modules <https://bazel.build/external/module>`_) an additional container (or package) is introduced. It can only contain components:
 
 .. list-table:: Definition of the static module view
    :header-rows: 1
-   :widths: 15,35,35
+   :widths: 15,35
 
    * - Element
      - Sphinx Needs Directive
-     - Code Template
    * - Module View
      - mod_view_sta
-     - mod_view_sta_t
 
 Dynamic view
 ============
@@ -311,17 +306,14 @@ The dynamic view shall be modeled partly in Sphinx Needs and PlantUML. The compo
 
 .. list-table:: Definition of the dynamic architectural elements
    :header-rows: 1
-   :widths: 15,35,35
+   :widths: 15,35
 
    * - Element
      - Sphinx Needs Directive
-     - Code Template
    * - Dynamic Feature Architecture
      - feat_arc_dyn
-     - feat_arc_sta_t
    * - Dynamic Component Architecture
      - comp_arc_dyn
-     - comp_arc_dyn_t
 
 Interface view
 ==============
@@ -330,20 +322,16 @@ The *interface view* focuses on the interfaces of the components and shows the o
 
 .. list-table:: Definition of the architectural elements
    :header-rows: 1
-   :widths: 15,35,35
+   :widths: 15,35
 
    * - (Logical) Interface
      - logic_arc_int
-     - logic_arc_int_t
    * - (Logical) Interface Operation
      - logic_arc_int_op
-     - logic_arc_int_op_t
    * - (Real) Interface
      - real_arc_int
-     - real_arc_int_t
    * - (Real) Interface Operation
      - real_arc_int_op
-     - real_arc_int_op_t
 
 Relations between the architectural elements
 ============================================

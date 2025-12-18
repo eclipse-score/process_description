@@ -102,7 +102,7 @@ Dynamic Architecture
    :status: invalid
    :fulfils: comp_req__component_name__some_title
 
-   put here a sequence diagram
+   Put here a sequence diagram
 
 
 Interfaces
@@ -128,7 +128,7 @@ Lower Level Components
    :fulfils: comp_req__component_name__some_title
    :implements: logic_arc_int__feature_name__interface_name
 
-   no architecture but detailed design
+   No architecture but detailed design
 
 .. note::
    Architecture can be split into multiple files. At component level the public interfaces to be used by the user and tester to be shown.

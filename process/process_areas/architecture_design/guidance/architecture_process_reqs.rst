@@ -67,6 +67,7 @@ Architectural Model
      * Interface Operation (real_arc_int_op)
 
    * Module
+
      * SW Module (mod)
 
 

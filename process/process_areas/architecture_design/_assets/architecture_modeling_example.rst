@@ -22,7 +22,17 @@ This chapter only serves as an example how an architecture could be modeled in *
 Feature Architecture File
 =========================
 
-.. feat_arc_sta:: Feature 1
+.. feat:: Feature 1
+   :id: feat__example_feature
+   :security: YES
+   :safety: QM
+   :status: valid
+   :includes: logic_arc_int__example_feature__archdes_logical_interface_1, logic_arc_int__example_feature__archdes_logical_interface_2
+   :consists_of: comp__component_example1
+
+   This is the example feature.
+
+.. feat_arc_sta:: Feature 1 Static View
    :id: feat_arc_sta__example_feature__archdes_static
    :security: YES
    :safety: QM
@@ -145,7 +155,16 @@ Module Viewpoint
 Component Architecure File(s)
 =============================
 
-.. comp_arc_sta:: Component 1
+.. comp:: Component 1
+   :id: comp__component_example1
+   :security: YES
+   :safety: ASIL_B
+   :status: invalid
+   :implements: logic_arc_int__feature_name__interface_name
+
+   Example Component 1 description.
+
+.. comp_arc_sta:: Component 1 Static View
    :id: comp_arc_sta__example_feature__archdes_component_1
    :status: valid
    :safety: ASIL_B
@@ -161,7 +180,7 @@ Component Architecure File(s)
 
       {{ draw_component(need(), needs) }}
 
-.. comp_arc_sta:: Component 3
+.. comp_arc_sta:: Component 3 Static View
    :id: comp_arc_sta__example_feature__archdes_component_3
    :status: valid
    :safety: QM

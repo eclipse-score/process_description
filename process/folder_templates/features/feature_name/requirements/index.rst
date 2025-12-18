@@ -55,7 +55,7 @@ Requirements
    :satisfies: stkh_req__requirements__template
    :status: invalid
 
-   The Feature shall do xyz to the user to bring him to this condition at this time
+   The Feature shall do xyz to the user to bring him to this condition at this time.
 
    Note: (optional, not to be verified)
 
@@ -66,7 +66,7 @@ Requirements
    :safety: ASIL_B
    :status: invalid
 
-   The Feature User shall do xyz to use the feature safely
+   The Feature User shall do xyz to use the feature safely.
 
 .. attention::
     The above directives must be updated according to your feature requirements.

@@ -62,6 +62,17 @@ Requirements
 
    The Component User shall do xyz to use the component safely
 
+.. aou_req:: Another Title
+   :id: aou_req__component_name__another_title
+   :reqtype: Process
+   :security: YES
+   :safety: ASIL_B
+   :status: invalid
+   :tags: environment
+
+   The Component shall only be used in a xyz environment to ensure its proper functioning.
+
+
 .. attention::
     The above directives must be updated according to your feature requirements.
 

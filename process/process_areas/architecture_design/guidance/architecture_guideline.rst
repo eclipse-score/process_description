@@ -112,20 +112,16 @@ Based on the concept description a model of the feature architecture should be d
 
 .. list-table:: Architectural Elements of the Feature Architecture
    :header-rows: 1
-   :widths: 10,30,30
+   :widths: 10,30
 
    * - Element
      - Sphinx directive
-     - VS Code Template
    * - Feature Architecture
-     - feat_arc_sta, feat_arc_dyn
-     - feat_arc_sta_t, feat_arc_dyn_t
+     - feat, feat_arc_sta, feat_arc_dyn
    * - Logical Interface
      - logic_arc_int
-     - logic_arc_int_t
    * - Logical Interface Operation
      - logic_arc_int_op
-     - logic_arc_int_op_t
 
 The relations of the static elements are described in :ref:`metamodel_architectural_design`.
 
@@ -187,20 +183,16 @@ According to the architecture design description the model for the component arc
 
 .. list-table:: Architectural Elements of the Component Architecture
    :header-rows: 1
-   :widths: 10,30,30
+   :widths: 10,30
 
    * - Element
      - Sphinx directive
-     - VS Code Template
    * - Component Architecture
-     - comp_arc_sta, comp_arc_dyn
-     - comp_arc_sta_t, comp_arc_dyn_t
+     - comp, comp_arc_sta, comp_arc_dyn
    * - (Real) Interface
      - real_arc_int
-     - real_arc_int_t
    * - (Real) Interface Operation
      - real_arc_int_op
-     - real_arc_int_op_t
 
 The relations of the static elements are described in :ref:`metamodel_architectural_design`.
 

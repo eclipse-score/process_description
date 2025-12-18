@@ -50,7 +50,7 @@ Failure Mode List
        :sufficient: <yes|no>
        :status: <valid|invalid>
 
- .. note::   argument is inside the 'content'. Therefore content is mandatory
+ .. note::   Argument is inside the 'content'. Therefore content is mandatory.
 
 .. attention::
     The above directive must be updated according to your feature FMEA.
