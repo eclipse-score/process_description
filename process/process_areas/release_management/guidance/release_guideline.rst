@@ -110,14 +110,13 @@ Tracking and Communication
    * Hold periodic meetings to discuss progress, issues, and dependencies within the project lead circle.
    * meeting definition and schedule is defined in the projects's platform management plan, as defined in :need:`gd_guidl__platform_mgmt_plan`.
 
+Release Handbook
+----------------
 
 .. gd_guidl:: Release Handbook
    :id: gd_guidl__rel_handbook
    :status: valid
    :complies: std_req__iso26262__software_1041
-
-   Release Handbook
-   ----------------
 
    The release handbook incorporates an overview including a tutorial to explain the usage of the released software.
    It extends as a decent documentation for users and contributors beyond the pure release notes created according to the template :need:`gd_temp__rel_plat_rel_note`.
