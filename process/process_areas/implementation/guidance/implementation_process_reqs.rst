@@ -338,4 +338,4 @@ Complexity Analyses
    :tags: prio_3_automation, model, check
    :complies: std_req__iso26262__software_743, std_req__aspice_40__SWE-3-BP3
 
-   A complexity analysis for the components shall be performed. It shall consider appropriate code metrics like lines of code, cyclomatic complexity, number of public interfaces, number of parameters and so on. The results of the analysis shall be documented in the component classification document. The project specific limits for the complexity measures shall be defined in the project guidelines.
+   A complexity analysis for the components shall be performed. It shall consider appropriate code metrics like lines of code, cyclomatic complexity, number of public interfaces, number of parameters and so on. The results of the analysis shall be documented in the SW Verification Report. The project specific limits for the complexity measures shall be defined in the project guidelines.
