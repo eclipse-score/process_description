@@ -142,7 +142,7 @@ Tailoring
    :id: gd_guidl__verification_req_tailored
    :status: valid
    :complies: std_req__iso26262__software_945,
-              std_req__iso26262__software_1041, std_req__iso26262__software_1045, std_req__iso26262__software_1046, std_req__iso26262__software_1047,
+              std_req__iso26262__software_1045, std_req__iso26262__software_1046, std_req__iso26262__software_1047,
               std_req__iso26262__software_1141, std_req__iso26262__software_1142, std_req__iso26262__software_1143, std_req__iso26262__software_1144
 
    This part of the guideline links to all the requirements which are not fulfilled by the

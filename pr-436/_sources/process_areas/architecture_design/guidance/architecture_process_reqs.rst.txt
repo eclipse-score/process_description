@@ -33,13 +33,13 @@ Architectural Model
    :id: gd_req__arch_hierarchical_structure
    :status: valid
    :tags: done_automation
-   :complies: std_req__iso26262__support_6431, std_req__iso26262__support_6432
+   :complies: std_req__iso26262__support_6431, std_req__iso26262__support_6432, std_req__iso26262__software_743
    :satisfies: wf__cr_mt_featarch, wf__cr_mt_comparch
 
    The architectural elements shall be hierarchically structured on two levels:
 
    * Feature Level (=Logical Level)
-   * Component Level
+   * Component Level (allows also recursive decomposition on lower levels)
 
 .. gd_req:: Structuring of the architectural elements
    :id: gd_req__arch_build_blocks
@@ -218,7 +218,7 @@ Checks for Architectural Design
    :satisfies: wf__cr_mt_featarch, wf__cr_mt_comparch
    :complies: std_req__iso26262__software_746, std_req__iso26262__software_748
 
-   It shall be checked that valid safety architectural elements (Safety != QM) can only be linked against valid safety architectural elements.
+   It shall be checked that valid safety architectural elements (Safety!=QM) can only be linked against valid safety architectural elements.
 
 .. gd_req:: Architecture linkage security
    :id: gd_req__arch_linkage_security_trace
@@ -226,7 +226,7 @@ Checks for Architectural Design
    :tags: prio_2_automation, attribute, check
    :satisfies: wf__cr_mt_featarch, wf__cr_mt_comparch
 
-   It shall be checked that security relevant architectural elements (Security == YES) can only be linked against security relevant architectural elements.
+   It shall be checked that security relevant architectural elements (Security==YES) can only be linked against security relevant architectural elements.
 
 .. gd_req:: Architecture linkage requirement
    :id: gd_req__arch_linkage_requirement
