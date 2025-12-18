@@ -77,7 +77,7 @@ For a detailed explanation of workflows and their role within the process model,
    :approved_by: rl__project_lead
    :input: wp__platform_safety_package, wp__platform_sw_release_plan, wp__verification_platform_ver_report
    :output: wp__platform_handbook
-   :contains:
+   :contains: gd_guidl__rel_handbook
    :has: doc_concept__rel_process, doc_getstrt__release_process
 
    The platform handbook is prepared and approved by the project lead circle.

@@ -85,6 +85,7 @@ Platform Release
    * Prepare platform release notes summarizing the updates from all integrated software modules.
    * Check if all planned configuration items are in correct state (i.e. work products are valid, external libraries/tools are used in the correct released version).
    * Ensure the relevant safety packages are available and complete.
+   * Create/Maintain Platform Handbook for the release.
    * Tag the platform release in the repository.
 
 5. **Release Execution**:
@@ -110,10 +111,34 @@ Tracking and Communication
    * meeting definition and schedule is defined in the projects's platform management plan, as defined in :need:`gd_guidl__platform_mgmt_plan`.
 
 
+.. gd_guidl:: Release Handbook
+   :id: gd_guidl__rel_handbook
+   :status: valid
+   :complies: std_req__iso26262__software_1041
+
+   Release Handbook
+   ----------------
+
+   The release handbook incorporates an overview including a tutorial to explain the usage of the released software.
+   It extends as a decent documentation for users and contributors beyond the pure release notes created according to the template :need:`gd_temp__rel_plat_rel_note`.
+
+   It is intended to contain:
+
+   * Overview of the technologies used within the project
+   * Software architecture overview
+   * Module structure overview
+   * Integration process
+   * Getting started guide
+   * Contribution guide
+
+   By this the software integration approach becomes clear and reflects the dependencies and functional unit integration of the various modules.
+   It also describes how to build and run the software for the various target systems such as simulation, hardware architectures, and operating system(s).
+
+
 Templates
 =========
 
-For the release note a template has been created for module level and for platform level
+For the release note a template has been created for module level and for platform level.
 
 .. list-table:: Overview
    :header-rows: 1
