@@ -473,7 +473,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../architecture_roles.html">Roles</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../architecture_workflow.html">Architecture Workflows</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../architecture_workproducts.html">Architecture Work Products</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../_assets/architecture_modeling_example.html">Example model of architectural design</a></li>
+<li class="toctree-l2"><a class="reference internal" href="architecture_modeling_example.html">Example model of architectural design</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1"><a class="reference internal" href="../../change_management/index.html">Change Management</a></li>
@@ -560,7 +560,7 @@
                   
   <section id="architecture-guideline">
 <span id="arch-design-guideline"></span><h1>Architecture Guideline<a class="headerlink" href="#architecture-guideline" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-6421cb36">
+<div class="need_container docutils container" id="SNCB-a4c469ae">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_guidl table" id="gd_guidl__arch_design">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -782,28 +782,23 @@
 <div class="pst-scrollable-table-container"><table class="table" id="id7">
 <caption><span class="caption-number">Table 9 </span><span class="caption-text">Architectural Elements of the Feature Architecture</span><a class="headerlink" href="#id7" title="Link to this table">#</a></caption>
 <colgroup>
-<col style="width: 14.3%" />
-<col style="width: 42.9%" />
-<col style="width: 42.9%" />
+<col style="width: 25.0%" />
+<col style="width: 75.0%" />
 </colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Element</p></th>
 <th class="head"><p>Sphinx directive</p></th>
-<th class="head"><p>VS Code Template</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="row-even"><td><p>Feature Architecture</p></td>
-<td><p>feat_arc_sta, feat_arc_dyn</p></td>
-<td><p>feat_arc_sta_t, feat_arc_dyn_t</p></td>
+<td><p>feat, feat_arc_sta, feat_arc_dyn</p></td>
 </tr>
 <tr class="row-odd"><td><p>Logical Interface</p></td>
 <td><p>logic_arc_int</p></td>
-<td><p>logic_arc_int_t</p></td>
 </tr>
 <tr class="row-even"><td><p>Logical Interface Operation</p></td>
 <td><p>logic_arc_int_op</p></td>
-<td><p>logic_arc_int_op_t</p></td>
 </tr>
 </tbody>
 </table>
@@ -812,7 +807,7 @@
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>For the modeling of the architecture a sphinx extension is available: <a class="reference internal" href="../architecture_getstrt.html#arch-gen-sphinx"><span class="std std-ref">Architecture Generation for Sphinx-Needs</span></a></p>
-<p>An example for modeling the architecture can be found <a class="reference internal" href="../_assets/architecture_modeling_example.html#definition-architectural-design"><span class="std std-ref">here</span></a>.</p>
+<p>An example for modeling the architecture can be found <a class="reference internal" href="architecture_modeling_example.html#definition-architectural-design"><span class="std std-ref">here</span></a>.</p>
 </div>
 </section>
 <section id="allocate-feature-requirements-to-architectural-elements">
@@ -849,28 +844,23 @@ and merged into the main branch of the score repository.</p>
 <div class="pst-scrollable-table-container"><table class="table" id="id8">
 <caption><span class="caption-number">Table 10 </span><span class="caption-text">Architectural Elements of the Component Architecture</span><a class="headerlink" href="#id8" title="Link to this table">#</a></caption>
 <colgroup>
-<col style="width: 14.3%" />
-<col style="width: 42.9%" />
-<col style="width: 42.9%" />
+<col style="width: 25.0%" />
+<col style="width: 75.0%" />
 </colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Element</p></th>
 <th class="head"><p>Sphinx directive</p></th>
-<th class="head"><p>VS Code Template</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="row-even"><td><p>Component Architecture</p></td>
-<td><p>comp_arc_sta, comp_arc_dyn</p></td>
-<td><p>comp_arc_sta_t, comp_arc_dyn_t</p></td>
+<td><p>comp, comp_arc_sta, comp_arc_dyn</p></td>
 </tr>
 <tr class="row-odd"><td><p>(Real) Interface</p></td>
 <td><p>real_arc_int</p></td>
-<td><p>real_arc_int_t</p></td>
 </tr>
 <tr class="row-even"><td><p>(Real) Interface Operation</p></td>
 <td><p>real_arc_int_op</p></td>
-<td><p>real_arc_int_op_t</p></td>
 </tr>
 </tbody>
 </table>
@@ -894,7 +884,7 @@ and merged into the main branch of the score repository.</p>
 <span id="id5"></span><h2>UML diagram selection<a class="headerlink" href="#uml-diagram-selection" title="Link to this heading">#</a></h2>
 <section id="static-architecture">
 <h3>Static architecture<a class="headerlink" href="#static-architecture" title="Link to this heading">#</a></h3>
-<p>As can be seen from the examples presented in <a class="reference internal" href="../architecture_concept.html#feat_arc_sta__example_feature__feature_1" title="feat_arc_sta__example_feature__feature_1"><em class="xref need">Feature 1 (feat_arc_sta__example_feature__feature_1)</em></a> and <a class="reference internal" href="../architecture_concept.html#comp_arc_sta__example_feature__archdes_component_2" title="comp_arc_sta__example_feature__archdes_component_2"><em class="xref need">Component 2 (comp_arc_sta__example_feature__archdes_component_2)</em></a>
+<p>As can be seen from the examples presented in <a class="reference internal" href="../architecture_concept.html#feat_arc_sta__example_feature__feature_1" title="feat_arc_sta__example_feature__feature_1"><em class="xref need">Feature 1 Architecture (feat_arc_sta__example_feature__feature_1)</em></a> and <a class="reference internal" href="../architecture_concept.html#comp_arc_sta__example_feature__archdes_component_2" title="comp_arc_sta__example_feature__archdes_component_2"><em class="xref need">Component 2 (comp_arc_sta__example_feature__archdes_component_2)</em></a>
 for the static architecture a UML component diagram is expected (and supported by the tooling).</p>
 </section>
 <section id="dynamic-architecture">

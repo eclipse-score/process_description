@@ -75,6 +75,7 @@ Static Architecture
    :includes: logic_arc_int__feature_name__interface_name
    :consists_of: comp__component_name
 
+   General Feature Description
 
 .. feat_arc_sta:: Static View
    :id: feat_arc_sta__feature_name__static_view
@@ -100,7 +101,7 @@ Dynamic Architecture
    :status: invalid
    :fulfils: feat_req__feature_name__some_title
 
-   put here a sequence diagram
+   Put here a sequence diagram
 
 Logical Interfaces
 ------------------
@@ -110,6 +111,8 @@ Logical Interfaces
    :security: YES
    :safety: ASIL_B
    :status: invalid
+
+   General Interface Description
 
    .. needarch::
       :scale: 50
@@ -123,6 +126,8 @@ Logical Interfaces
    :safety: ASIL_B
    :status: invalid
    :included_by: logic_arc_int__feature_name__interface_name
+
+   General Operation Description
 
 Module Viewpoint
 ----------------
@@ -155,7 +160,7 @@ They will be replaced by linking the proper SW component definitions in the used
    :implements: logic_arc_int__feature_name__interface_name
 
 .. note::
-   Architecture can be split into multiple files, it is an High level architecture_design
+   Architecture can be split into multiple files, it is an high level architecture design
    which can be shown without actual c++/rust interfaces and data types
    and there will be link to lower level architecture till code to get actual api descriptions.
 

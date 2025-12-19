@@ -43,10 +43,12 @@ Tooling support
 Templates
 =========
 
-For creating the architectural design, snippets in vs code are available:
+For creating the architectural design, snippets in RestructuredText (rst) are available:
 
-* feat_arc_<sta|dyn|int|int_op>_t
-* comp_arc_<sta|dyn|int|int_op>_t
+* feat
+* feat_arc_<sta|dyn>
+* comp
+* comp_arc_<sta|dyn>
 
 The needs itself which are the basis for the template are defined in the :ref:`Architectural Design <architectural_design>`.
 
@@ -58,7 +60,7 @@ Architecture Generation for Sphinx-Needs
 Overview
 --------
 
-The system provides utilities to generate `PlantUML <https://plantuml.com/en/>`_ diagrams from requirement specifications. It supports various architectural elements types including:
+The system provides utilities to generate diagrams (like `PlantUML <https://plantuml.com/en/>`_) diagrams from requirement specifications. It supports various architectural elements types including:
 
 * Features
 * Logical Interfaces
@@ -112,7 +114,15 @@ Feature Architecture
 
 The following section is an example, how an `Feature <https://eclipse-score.github.io/score/main/features/index.html>`_ looks like and how the architecture of an Feature is described. Please note that components with an "ASIL_B" safety rating are highlighted with red borders in the diagram (e.g., "Component 1").
 
-.. feat_arc_sta:: Feature Getting Started
+.. feat:: Feature Name
+   :id: feat__feature_name_example
+   :security: YES
+   :safety: ASIL_B
+   :status: invalid
+   :includes: logic_arc_int__feature_name__interface_name
+   :consists_of: comp__component_name
+
+.. feat_arc_sta:: Feature Static Architecture - Getting Started Example
       :id: feat_arc_sta__example_feature__archdes_getstrt
       :security: YES
       :safety: QM
@@ -128,7 +138,15 @@ The following section is an example, how an `Feature <https://eclipse-score.gith
 
 .. code-block:: rst
 
-   .. feat_arc_sta:: Feature Getting Started
+   .. feat:: Feature Name
+      :id: feat__feature_name
+      :security: YES
+      :safety: ASIL_B
+      :status: invalid
+      :includes: logic_arc_int__feature_name__interface_name
+      :consists_of: comp__component_name
+
+   .. feat_arc_sta:: Feature Static Architecture View Getting Started
       :id: feat_arc_sta__example_feature__archdes_getstrt
       :security: YES
       :safety: QM
@@ -144,6 +162,10 @@ The following section is an example, how an `Feature <https://eclipse-score.gith
 
 Component Architecture
 ^^^^^^^^^^^^^^^^^^^^^^
+
+The following section is an example, how an component looks like and how the detail design of an component is described. Please note that components with an "ASIL_B" safety rating are highlighted with red borders in the diagram (e.g., "Component 1").
+
+
 .. comp_arc_sta:: Component 1
    :id: comp_arc_sta__example_feature__component_getstrt
    :status: valid
@@ -161,7 +183,14 @@ Component Architecture
 
 .. code-block:: rst
 
-   .. comp_arc_sta:: Component 1
+   .. comp:: Component 1
+      :id: comp__component_name
+      :security: YES
+      :safety: ASIL_B
+      :status: invalid
+      :implements: logic_arc_int__feature_name__interface_name
+
+   .. comp_arc_sta:: Static View - Component 1
       :id: comp_arc_sta__example_feature__component_getstrt
       :status: valid
       :safety: ASIL_B
@@ -225,7 +254,7 @@ To make *needuml* work we have to replace the *need()* call with a different fun
          }
          CM -> LI1: EXTRA_LINKAGE_MANUALLY_ADDED
 
-.. comp_arc_sta:: Component Get Started Manually Edited
+.. comp_arc_sta:: Component Static View - Get Started Manually Edited
    :id: comp_arc_sta__example_feature__component_manual_getstrt
    :status: valid
    :safety: ASIL_B

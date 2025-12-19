@@ -51,7 +51,7 @@ Dependent Failure Initiators
        :mitigation_issue: <ID from Issue Tracker>
        :sufficient: <yes|no>
        :status: <valid|invalid>
-.. note::   argument is inside the 'content'. Therefore content is mandatory
+.. note::   Argument is inside the 'content'. Therefore content is mandatory.
 
 .. attention::
     The above directive must be updated according to the platform DFA.

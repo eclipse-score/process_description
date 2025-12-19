@@ -123,7 +123,7 @@ Static View
 
 The first viewpoint is named as *feature architecture*. It displays the SW modules (= top level SW components) which are required to realize the feature including their interactions. Also the *logical interfaces* and the interaction between the feature and the user are included in this view. On this architectural level the feature requirements shall be allocated. An example for the static architecture is shown here:
 
-.. feat_arc_sta:: Feature 1
+.. feat_arc_sta:: Feature 1 Architecture
    :id: feat_arc_sta__example_feature__feature_1
    :security: YES
    :safety: QM
@@ -265,7 +265,7 @@ Although it is required to create a *DFA* on platform level no additional view i
 Specification of the architectural design
 *****************************************
 
-The architectural design shall be modeled with the help of static, dynamic and interfaces at each defined level.
+The architectural design shall be modeled according to the :ref:`building blocks meta model <general_concepts_building_blocks>` with the help of static, dynamic and interfaces at each defined level.
 For the description a natural language, diagrams or a semi-formal language (*UML*, see :ref:`uml_diagram_selection`) shall be used.
 
 The architectural elements itself including their correlations shall be modeled in a database like approach. Therefore following architectural elements shall be used:
@@ -277,30 +277,25 @@ The *static view* shows the *building blocks* of the architecture. It shall be c
 
 .. list-table:: Definition of the static architectural elements
    :header-rows: 1
-   :widths: 15,35,35
+   :widths: 15,35
 
    * - Element
      - Sphinx Needs Directive
-     - Code Template
    * - Feature Architecture
      - feat_arc_sta
-     - feat_arc_sta_t
    * - Component Architecture
      - comp_arc_sta
-     - comp_arc_sta_t
 
 To represent the CI build tool module (for example a `Bazel Modules <https://bazel.build/external/module>`_) an additional container (or package) is introduced. It can only contain components:
 
 .. list-table:: Definition of the static module view
    :header-rows: 1
-   :widths: 15,35,35
+   :widths: 15,35
 
    * - Element
      - Sphinx Needs Directive
-     - Code Template
    * - Module View
      - mod_view_sta
-     - mod_view_sta_t
 
 Dynamic view
 ============
@@ -311,17 +306,14 @@ The dynamic view shall be modeled partly in Sphinx Needs and PlantUML. The compo
 
 .. list-table:: Definition of the dynamic architectural elements
    :header-rows: 1
-   :widths: 15,35,35
+   :widths: 15,35
 
    * - Element
      - Sphinx Needs Directive
-     - Code Template
    * - Dynamic Feature Architecture
      - feat_arc_dyn
-     - feat_arc_sta_t
    * - Dynamic Component Architecture
      - comp_arc_dyn
-     - comp_arc_dyn_t
 
 Interface view
 ==============
@@ -330,25 +322,27 @@ The *interface view* focuses on the interfaces of the components and shows the o
 
 .. list-table:: Definition of the architectural elements
    :header-rows: 1
-   :widths: 15,35,35
+   :widths: 15,35
 
    * - (Logical) Interface
      - logic_arc_int
-     - logic_arc_int_t
    * - (Logical) Interface Operation
      - logic_arc_int_op
-     - logic_arc_int_op_t
    * - (Real) Interface
      - real_arc_int
-     - real_arc_int_t
    * - (Real) Interface Operation
      - real_arc_int_op
-     - real_arc_int_op_t
 
 Relations between the architectural elements
 ============================================
 
 The traceability between the architectural elements itself shall be established by modeling the elements in the *docs-as-code* tool. Here a "clickable" architecture can be generated which allows an easy tracing through the element tree. The previously introduced architectural components shall be connected by using following relations:
+
+   .. note::
+      The current state only considers logic_arc_int, others will be addressed later in the model and is work in progress.
+
+The following picture shows the metamodel for the architectural design including the defined elements and their relations.
+It serves as a guidance for modeling the architecture.
 
 .. figure:: _assets/metamodel_architectural_design.drawio.svg
    :width: 90%
