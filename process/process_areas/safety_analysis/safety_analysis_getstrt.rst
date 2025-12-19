@@ -21,7 +21,7 @@ Getting Started
    :tags: safety_analysis
 
 
-This document outlines the steps for performing, monitoring, and verifying Safety Analysis. Safety Analysis is used as a umbrella term for the methods
+This document outlines the steps for performing, monitoring, and verifying Safety Analysis. Safety Analysis is used as a Umbrella Term for the methods
 DFA (Dependent Failure Analysis) and FMEA (Failure Mode and Effects Analysis).
 The concept of performing Safety Analysis is described in :need:`doc_concept__safety_analysis`. The verification of the architecture is described
 in :need:`doc_concept__arch_process`.
