@@ -34,6 +34,9 @@ Requirements
 <Headlines (for the list of requirements if structuring is needed)>
 ===================================================================
 
+Component Requirements
+----------------------
+
 .. comp_req:: Some Title
    :id: comp_req__component_name__some_title
    :reqtype: Process
@@ -53,6 +56,9 @@ Requirements
     - Set the status to valid and start the review/merge process
     - Add other needed requirements for your component
 
+Assumption of Use Requirements
+------------------------------
+
 .. aou_req:: Next Title
    :id: aou_req__component_name__next_title
    :reqtype: Process
@@ -61,6 +67,9 @@ Requirements
    :status: invalid
 
    The Component User shall do xyz to use the component safely
+
+Environmental Requirements
+--------------------------
 
 .. aou_req:: Another Title
    :id: aou_req__component_name__another_title
@@ -72,6 +81,8 @@ Requirements
 
    The Component shall only be used in a xyz environment to ensure its proper functioning.
 
+Hints
+-----
 
 .. attention::
     The above directives must be updated according to your feature requirements.

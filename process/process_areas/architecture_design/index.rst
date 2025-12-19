@@ -27,7 +27,7 @@ Architecture Design
    architecture_roles
    architecture_workflow
    architecture_workproducts
-   _assets/architecture_modeling_example
+   guidance/architecture_modeling_example
 
 
 .. needextend:: docname is not None and "process_areas/architecture_design" in docname
