@@ -96,9 +96,18 @@ In order to check the test results for the impact of a change or addition, it is
 execute affected test cases locally upfront using the execution framework of the build tooling
 following basically the steps the CI does locally.
 
+Automated tests can also be executed locally, as the sources and binaries are available for re-execution.
+Failing test cases during re-execution can be reported following the guide :need:`gd_temp__problem_template`.
+
+
+Execution of manual test cases
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 There may be the need for limited number of manually executed test cases.
 These manually executed test cases are execution script driven, where a script guides through the
 test cases and reports the result in the same logging format as automated tests do.
+This enables parsable execution logs which can be used in automated test result collection.
+Failing test cases during manual execution are reported by following the guide :need:`gd_temp__problem_template`.
 
 Reporting of failing test cases
 -------------------------------

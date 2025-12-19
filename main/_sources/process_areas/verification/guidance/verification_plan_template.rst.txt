@@ -150,6 +150,12 @@ Verification Plan Template
          This section describes how tests will be executed and the procedures for analyzing the results.
          It should outline the tools and processes used for test execution and reporting.
 
+         Manual test execution
+         ^^^^^^^^^^^^^^^^^^^^^
+
+         The automation rate for test case execution is expected to be above 99%.
+         For manual test execution it should be described how to re-execute tests manually and how to report potential issues.
+
          Test Selection and Regression Testing
          -------------------------------------
 
