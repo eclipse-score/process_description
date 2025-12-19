@@ -124,7 +124,7 @@ Also their execution may differ whether it is a QM or ASIL rated test case.
 The rigor is described in the implementation of :need:`wp__verification_plan`.
 
 
-Automated test cases should contain further information about which methods have been applied.
+Automated test cases (as well as manual, where applicable) should contain further information about which methods have been applied.
 The corresponding guidance is given here: :need:`gd_guidl__verification_guide`.
 The identifier of the respective method is to be used as meta data (*TestType* and *DerivationTechnique*).
 
