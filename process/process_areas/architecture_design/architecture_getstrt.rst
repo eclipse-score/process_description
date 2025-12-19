@@ -60,7 +60,7 @@ Architecture Generation for Sphinx-Needs
 Overview
 --------
 
-The system provides utilities to generate `PlantUML <https://plantuml.com/en/>`_ diagrams from requirement specifications. It supports various architectural elements types including:
+The system provides utilities to generate diagrams (like `PlantUML <https://plantuml.com/en/>`_) diagrams from requirement specifications. It supports various architectural elements types including:
 
 * Features
 * Logical Interfaces

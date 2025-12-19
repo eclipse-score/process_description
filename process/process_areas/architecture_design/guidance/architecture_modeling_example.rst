@@ -28,7 +28,7 @@ Feature Architecture File
    :safety: QM
    :status: valid
    :includes: logic_arc_int__example_feature__archdes_logical_interface_1, logic_arc_int__example_feature__archdes_logical_interface_2
-   :consists_of: comp__component_example1
+   :consists_of: comp__component_example_1
 
    This is the example feature.
 
@@ -156,15 +156,16 @@ Component Architecure File(s)
 =============================
 
 .. comp:: Component 1
-   :id: comp__component_example1
+   :id: comp__component_example_1
    :security: YES
    :safety: ASIL_B
    :status: invalid
-   :implements: logic_arc_int__feature_name__interface_name
+   :implements: logic_arc_int__example_feature__archdes_logical_interface_1, logic_arc_int__example_feature__archdes_logical_interface_2
+   :uses: logic_arc_int__example_feature__archdes_logical_interface_3
 
    Example Component 1 description.
 
-.. comp_arc_sta:: Component 1 Static View
+.. comp_arc_sta:: Component 1
    :id: comp_arc_sta__example_feature__archdes_component_1
    :status: valid
    :safety: ASIL_B
