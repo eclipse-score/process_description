@@ -338,6 +338,12 @@ Relations between the architectural elements
 
 The traceability between the architectural elements itself shall be established by modeling the elements in the *docs-as-code* tool. Here a "clickable" architecture can be generated which allows an easy tracing through the element tree. The previously introduced architectural components shall be connected by using following relations:
 
+   .. note::
+      The current state only considers logic_arc_int, others will be addressed later in the model and is work in progress.
+
+The following picture shows the metamodel for the architectural design including the defined elements and their relations.
+It serves as a guidance for modeling the architecture.
+
 .. figure:: _assets/metamodel_architectural_design.drawio.svg
    :width: 90%
    :align: center

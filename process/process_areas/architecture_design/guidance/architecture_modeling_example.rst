@@ -132,6 +132,15 @@ Feature Architecture File
 Module Viewpoint
 ================
 
+.. mod:: Module 1
+   :id: mod__example_feature_archdes_module_1
+   :security: YES
+   :safety: ASIL_B
+   :status: valid
+   :includes: comp__component_example_1
+
+   This is Module 1.
+
 .. mod_view_sta:: Module 1
    :id: mod_view_sta__example_feature__archdes_1
    :includes: comp_arc_sta__example_feature__archdes_component_1
