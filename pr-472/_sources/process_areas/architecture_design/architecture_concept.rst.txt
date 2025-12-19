@@ -265,7 +265,7 @@ Although it is required to create a *DFA* on platform level no additional view i
 Specification of the architectural design
 *****************************************
 
-The architectural design shall be modeled with the help of static, dynamic and interfaces at each defined level.
+The architectural design shall be modeled according to the :ref:`building blocks meta model <general_concepts_building_blocks>` with the help of static, dynamic and interfaces at each defined level.
 For the description a natural language, diagrams or a semi-formal language (*UML*, see :ref:`uml_diagram_selection`) shall be used.
 
 The architectural elements itself including their correlations shall be modeled in a database like approach. Therefore following architectural elements shall be used:
