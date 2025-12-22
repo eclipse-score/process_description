@@ -168,7 +168,8 @@
          - entry and exit criteria of the ML training
          - approaches for hyperparameter tuning / optimization to be used in the training
          - approach for data set creation and modification
-         - training environment, including required training hardware (e.g., GPU, or supercomputer to be used) - interface adapter for provision of input data and storage of output data
+         - training environment, including required training hardware (e.g., GPU, or supercomputer to be used)
+         - interface adapter for provision of input data and storage of output data
          - if required, actions to organize the data set and training environment
    - The ML training and validation approach may additionally include robustification methods like random dropout
 

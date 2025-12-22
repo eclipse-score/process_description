@@ -35,7 +35,7 @@
    :status: valid
 
    - The ML data quality approach
-   - Defines Quality criteria (see 18-07) e.g., the relevant data sources, reliability and consistency of labelling, completeness against ML data requirementsv
+   - Defines Quality criteria (see 18-07) e.g., the relevant data sources, reliability and consistency of labelling, completeness against ML data requirements
    - Describes analysis activities of the data
    - Describes activities to ensure the quality of the data to avoid issues e.g., data bias, bad labeling
 

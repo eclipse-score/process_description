@@ -75,8 +75,8 @@
    :id: std_req__aspice_40__iic-11-50
    :status: valid
 
-    -  It is derived from the trained ML model (see 01-53) and is to be integrated into the target system.
-    - It may differ from the trained ML model which often requires powerful hardware and uses interpretative languages.
+   -  It is derived from the trained ML model (see 01-53) and is to be integrated into the target system.
+   - It may differ from the trained ML model which often requires powerful hardware and uses interpretative languages.
 
 .. needextend:: "c.this_doc()"
    :+tags: aspice40_iic11

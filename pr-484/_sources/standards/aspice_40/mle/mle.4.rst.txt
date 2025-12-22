@@ -93,7 +93,7 @@ Base practices
 .. std_req:: MLE.4.BP4: Derive deployed ML model
    :id: std_req__aspice_40__MLE-4-BP4
    :status: valid
-   :links: std_req__aspice_40__iic-11-50
+   :links: std_req__aspice_40__iic-11-50, std_req__aspice_40__iic-13-50
 
    Derive the deployed ML model from the trained ML model according to the ML architecture. The deployed ML model shall be used for testing and delivery to software integration.
 
@@ -104,7 +104,7 @@ Base practices
 .. std_req:: MLE.4.BP5: Test deployed ML model
    :id: std_req__aspice_40__MLE-4-BP5
    :status: valid
-   :links: std_req__aspice_40__iic-13-50
+   :links: std_req__aspice_40__iic-11-50, std_req__aspice_40__iic-13-50
 
    Test the deployed ML model according to the ML test approach using the created ML test data set. Record and evaluate the ML test results.
 

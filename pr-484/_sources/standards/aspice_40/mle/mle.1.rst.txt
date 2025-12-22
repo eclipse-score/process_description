@@ -55,7 +55,7 @@ Base practices
 .. std_req:: MLE.1.BP2: Structure ML requirements
    :id: std_req__aspice_40__MLE-1-BP2
    :status: valid
-   :links: std_req__aspice_40__iic-17-54
+   :links: std_req__aspice_40__iic-17-00, std_req__aspice_40__iic-17-54
 
    Structure and prioritize the ML requirements.
 

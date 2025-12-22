@@ -36,7 +36,7 @@ Base practices
 .. std_req:: MLE.2.BP1: Develop ML architecture
    :id: std_req__aspice_40__MLE-2-BP1
    :status: valid
-   :links: std_req__aspice_40__iic-04-51
+   :links: std_req__aspice_40__iic-04-51, std_req__aspice_40__iic-01-54, std_req__aspice_40__iic-15-51
 
    Develop and document the ML architecture that specifies ML architectural elements including details of the ML model, pre- and postprocessing, and hyperparameters which are required to create, train, test, and deploy the ML model.
 
