@@ -131,6 +131,36 @@ Verification Plan Template
          These criteria might include code coverage metrics, defect density, or other relevant measures.
          The criteria should be defined with quantifiable goals for different ASIL levels.
 
+         The strategy on how to achieve the defined coverage goals is described in the below sub-sections.
+
+         Coverage of detailed design
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+         Beside :need:`wp__verification_comp_int_test` and :need:`wp__verification_sw_unit_test` the
+         following aspects define the coverage of detailed design.
+
+         - Statement/Branch/Path coverage as defined by their specific thresholds
+         - Static analysis and Linting
+         - :need:`wp__sw_implementation_inspection` for safety-critical implementation
+
+         Coverage of architectural design
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+         Beside :need:`wp__verification_comp_int_test` and :need:`wp__verification_feat_int_test` the
+         following aspects define the coverage of the architectural design.
+
+         - :need:`wp__sw_arch_verification` - done by walkthrough (QM) or inspection (safety-critical parts)
+         - :need:`wp__sw_component_fmea` and :need:`wp__sw_component_dfa` for safety-critical parts
+         - :need:`wp__feature_fmea` and :need:`wp__feature_dfa` for safety-critical parts
+
+         Each architectural element has at least one test case linked with attribute `FullyVerified` or
+         multiple test cases with attribute `PartiallyVerified`.
+
+         Coverage of software requirements specifications
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+         For a release all `valid` requirements need to have a complete test coverage of linked test cases.
+
          Test Development
          ----------------
 
@@ -179,6 +209,15 @@ Verification Plan Template
          This section defines the roles and responsibilities of individuals involved in the
          verification process. It can refer and should be based on the definition in the
          verification process :ref:`verification_roles`.
+
+         Independence of verification
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+         As there are no separated roles for a software developer and test developer with :need:`rl__contributor` and
+         :need:`rl__committer` it is important to achieve independence. This is done by having different
+         people responsible for the test implementation and the actual code which gets tested.
+
+         This section describes how independence is achieved in the project.
 
          Tools
          -----
