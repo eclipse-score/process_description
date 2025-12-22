@@ -24,7 +24,7 @@ Platform
    :id: wp__verification_plan
    :status: valid
    :tags: doc_lifecycle_model_2
-   :complies: std_wp__iso26262__support_951, std_wp__iso26262__support_952, std_wp__iso26262__support_1252
+   :complies: std_wp__iso26262__support_951, std_wp__iso26262__support_952, std_wp__iso26262__support_1252, std_wp__isosae21434__development_1056
 
    Verification planning for each phase of the safety lifecycle must detail the work products,
    objectives, methods, criteria, environments, equipment, resources, actions for anomalies, and
@@ -36,7 +36,7 @@ Platform
    :id: wp__verification_platform_int_test
    :status: valid
    :tags: doc_lifecycle_model_2
-   :complies: std_wp__iso26262__support_952
+   :complies: std_wp__iso26262__support_952, std_wp__isosae21434__development_1057
 
    Platform Integration Testing verifies Stakeholder Requirements performed on reference HW.
    Depending on the nature of the project, respective tailoring (e.g. for reduced requirements
@@ -50,7 +50,7 @@ Platform
    :id: wp__verification_platform_ver_report
    :status: valid
    :tags: doc_lifecycle_model_2
-   :complies: std_wp__iso26262__software_1053, std_wp__iso26262__support_953, std_wp__iso26262__analysis_752, std_wp__iso26262__analysis_852
+   :complies: std_wp__iso26262__software_1053, std_wp__iso26262__support_953, std_wp__iso26262__analysis_752, std_wp__iso26262__analysis_852, std_wp__isosae21434__development_1054, std_wp__isosae21434__development_1057
 
    Verification Report contains:
 

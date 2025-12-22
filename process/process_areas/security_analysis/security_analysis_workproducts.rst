@@ -21,7 +21,7 @@ Security Analysis Work Products
    :id: wp__platform_security_analysis
    :status: valid
    :tags: doc_lifecycle_model_2
-   :complies:
+   :complies: std_wp__isosae21434__development_1055, std_wp__isosae21434__assessment_15332, std_wp__isosae21434__assessment_15431
 
    Analyze the attack surfaces between features that references all platform feature
    static architecture diagrams, highlighting potential shared attack vectors.
@@ -30,7 +30,7 @@ Security Analysis Work Products
    :id: wp__feature_security_analysis
    :status: draft
    :tags: doc_lifecycle_model_2
-   :complies: std_wp__isosae21434__development_1055, std_wp__isosae21434__assessment_15631, std_wp__isosae21434__assessment_15731, std_wp__isosae21434__assessment_15831, std_wp__isosae21434__assessment_15931
+   :complies: std_wp__isosae21434__development_1055, std_wp__isosae21434__assessment_15332, std_wp__isosae21434__assessment_15431, std_wp__isosae21434__assessment_15631, std_wp__isosae21434__assessment_15731, std_wp__isosae21434__assessment_15831, std_wp__isosae21434__assessment_15931
 
    Bottom-Up Security Analysis with defined methods, verifies the feature architecture (as part of SW Security Concept)
    - Mitigations linked to Software Feature Requirements or Assumptions of Use
@@ -47,7 +47,7 @@ Security Analysis Work Products
    :id: wp__sw_component_security_analysis
    :status: draft
    :tags: doc_lifecycle_model_2
-   :complies: std_wp__isosae21434__development_1055, std_wp__isosae21434__assessment_15631, std_wp__isosae21434__assessment_15731, std_wp__isosae21434__assessment_15831, std_wp__isosae21434__assessment_15931
+   :complies: std_wp__isosae21434__development_1055, std_wp__isosae21434__assessment_15332, std_wp__isosae21434__assessment_15431, std_wp__isosae21434__assessment_15631, std_wp__isosae21434__assessment_15731, std_wp__isosae21434__assessment_15831, std_wp__isosae21434__assessment_15931
 
    Bottom-Up Security Analysis with defined methods, verifies the component architecture (as part of SW Security Concept)
    - Mitigations linked to Software Component Requirements or Assumptions of Use
