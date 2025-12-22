@@ -59,5 +59,22 @@
       - reviews such as optical inspections à findings record
       - analyses: values
 
-.. needextend:: "c.this_doc()" 
+.. std_req:: 03-51 ML data set
+   :id: std_req__aspice_40__iic-03-51
+   :status: valid
+
+   - Selection of ML Data for e.g., ML model training (ML Training and Validation Data Set) or test of the trained and deployed ML model (ML Test Data Set).
+
+.. std_req:: 03-53 ML data
+   :id: std_req__aspice_40__iic-03-53
+   :status: valid
+
+   - Datum to be used for Machine Learning. The datum has to be attributed by metadata, e.g., unique ID and data characteristics. Examples:
+      - Visual data like a photo or videos (but a video could also be considered as sequence of photos depending on the intended use)
+      - Audio recording
+      - Sensor data
+      - Data created by an algorithm
+      - Data might be processed to create additional data. E.g., processing could add noise, change colors or merge pictures.
+
+.. needextend:: "c.this_doc()"
    :+tags: aspice40_iic03

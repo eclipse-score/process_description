@@ -30,6 +30,14 @@
        - disciplines (e.g., different configuration management approaches for software and hardware, or combined approaches)
        - options due to socio-cultural differences
 
+.. std_req:: 19-50 ML data quality approach
+   :id: std_req__aspice_40__iic-19-50
+   :status: valid
 
-.. needextend:: "c.this_doc()" 
+   - The ML data quality approach
+   - Defines Quality criteria (see 18-07) e.g., the relevant data sources, reliability and consistency of labelling, completeness against ML data requirements
+   - Describes analysis activities of the data
+   - Describes activities to ensure the quality of the data to avoid issues e.g., data bias, bad labeling
+
+.. needextend:: "c.this_doc()"
    :+tags: aspice40_iic19
