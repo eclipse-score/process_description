@@ -166,6 +166,17 @@
    - Information about the verification execution (date, “object-under-verification”, etc.)
    - Abstraction or summary of verification results
 
+.. std_req:: 13-50 ML test results
+   :id: std_req__aspice_40__iic-13-50
+   :status: valid
+
+   - Test data and logs
+   - Test data with correct results
+   - Test data with incorrect results
+   - Test data not executed, and a rationale
+   - Information about the test execution (date, participants, model version etc.)
+   - Abstraction or summary of ML test results
+
 .. std_req:: 13-51 Consistency Evidence
    :id: std_req__aspice_40__iic-13-51
    :status: valid
@@ -234,5 +245,5 @@
    - for non-standard and critical resources and infrastructure.
 
 
-.. needextend:: "c.this_doc()" 
+.. needextend:: "c.this_doc()"
    :+tags: aspice40_iic13

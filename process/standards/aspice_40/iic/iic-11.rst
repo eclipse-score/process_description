@@ -71,6 +71,12 @@
      commented source code, auto-code, an object file, a library, an
      executable, or an executable model as input to verification
 
+.. std_req:: 11-50 Deployed ML model
+   :id: std_req__aspice_40__iic-11-50
+   :status: valid
 
-.. needextend:: "c.this_doc()" 
+   -  It is derived from the trained ML model (see 01-53) and is to be integrated into the target system.
+   - It may differ from the trained ML model which often requires powerful hardware and uses interpretative languages.
+
+.. needextend:: "c.this_doc()"
    :+tags: aspice40_iic11

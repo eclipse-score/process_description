@@ -68,6 +68,7 @@ Tailoring
 
    man/index
    swe/index
+   mle/index
    sup/index
    spl/index
    reu/index
@@ -418,7 +419,7 @@ Generic practices
 
       For guidance on how to perform process improvements see the Process Improvement process (PIM.3).
 
-.. needextend:: "c.this_doc()" 
+.. needextend:: "c.this_doc()"
    :+tags: aspice40_gp3
 
 Appendix

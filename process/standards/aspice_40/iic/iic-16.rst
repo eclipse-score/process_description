@@ -57,6 +57,14 @@
    - Disciplinary reporting line
    - Organizational units and sub-units, if applicable
 
+.. std_req:: 16-52 ML data management system
+   :id: std_req__aspice_40__iic-16-52
+   :status: valid
 
-.. needextend:: "c.this_doc()" 
+   - The ML data management system is part of the configuration management system (see 16-03) and
+   - Supports data management activities like data collection, description, ingestion, exploration, profiling, labeling/annotation, selection, structuring and cleansing
+   - Provides the data for different purposes, e.g., training, testing
+   - Supports the relevant sources of ML data
+
+.. needextend:: "c.this_doc()"
    :+tags: aspice40_iic16

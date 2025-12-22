@@ -76,6 +76,19 @@
      - semi-formal languages (e.g, UML, SysML)
      - formal languages (e.g, model-based approach)
 
+.. std_req:: 04-51 ML architecture
+   :id: std_req__aspice_40__iic-04-51
+   :status: valid
 
-.. needextend:: "c.this_doc()" 
+   - An ML architecture is basically a special part of a software architecture (see 04-04). Additionally
+
+     - ML architecture describes the overall structure of the ML-based software element
+     - ML architecture specifies ML architectural elements including an ML model and other ML architectural elements, provided to train, deploy, and test the ML model.
+     - describes interfaces within the ML-based software element and to other software elements
+     - ML architecture describes details of the ML model like used layers, activation functions, loss function, and backpropagation
+     - ML architecture contains defined hyperparameter ranges and initial values for training start
+     - resource consumption objectives are defined
+     - ML architecture contains allocated ML requirements
+
+.. needextend:: "c.this_doc()"
    :+tags: aspice40_iic04
