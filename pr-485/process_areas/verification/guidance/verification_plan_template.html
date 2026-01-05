@@ -562,7 +562,7 @@
                   
   <section id="verification-plan-template">
 <span id="id1"></span><h1>Verification Plan Template<a class="headerlink" href="#verification-plan-template" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-a24e6f9a">
+<div class="need_container docutils container" id="SNCB-5a776bf4">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_temp table" id="gd_temp__verification_plan">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -700,30 +700,38 @@ The strategy on how to achieve the defined coverage goals is described in the be
 <span class="gh">Coverage of detailed design</span>
 <span class="gh">^^^^^^^^^^^^^^^^^^^^^^^^^^^</span>
 
-Beside <span class="na">:need:</span><span class="nv">`wp__verification_comp_int_test`</span> and <span class="na">:need:</span><span class="nv">`wp__verification_sw_unit_test`</span> the
-following aspects define the coverage of detailed design.
+This section defines how coverage of the detailed design is measured and achieved.
 
-<span class="m">-</span> Statement/Branch/Path coverage as defined by their specific thresholds
-<span class="m">-</span> Static analysis and Linting
-<span class="m">-</span> <span class="na">:need:</span><span class="nv">`wp__sw_implementation_inspection`</span> for safety-critical implementation
+Coverage metrics with defined thresholds should be e.g. based on:
+<span class="m">-</span> Structural code coverage (e.g. by statement, branch, path coverage)
+<span class="m">-</span> Code quality metrics (e.g. by linting and static analysis)
+<span class="m">-</span> Traceability coverage (e.g. by a 100% requirements coverage by test cases)
+
+The section further documents the selected verification methods appropriate to achieve the defined
+coverage goals (e.g. by <span class="na">:need:</span><span class="nv">`wp__verification_sw_unit_test`</span>, <span class="na">:need:</span><span class="nv">`wp__verification_comp_int_test`</span>, and
+<span class="na">:need:</span><span class="nv">`wp__sw_implementation_inspection`</span>).
 
 <span class="gh">Coverage of architectural design</span>
 <span class="gh">^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</span>
 
-Beside <span class="na">:need:</span><span class="nv">`wp__verification_comp_int_test`</span> and <span class="na">:need:</span><span class="nv">`wp__verification_feat_int_test`</span> the
-following aspects define the coverage of the architectural design.
+This section defines how coverage of the architectural design is measured and achieved.
+It describes the metrics used to ensure completeness and quality of the architecture
+and the verification methods applied to achieve the defined coverage goals
+(e.g. by <span class="na">:need:</span><span class="nv">`wp__verification_comp_int_test`</span>, <span class="na">:need:</span><span class="nv">`wp__verification_feat_int_test`</span>, and
+<span class="na">:need:</span><span class="nv">`wp__sw_arch_verification`</span>).
 
-<span class="m">-</span> <span class="na">:need:</span><span class="nv">`wp__sw_arch_verification`</span> - done by walkthrough (QM) or inspection (safety-critical parts)
-<span class="m">-</span> <span class="na">:need:</span><span class="nv">`wp__sw_component_fmea`</span> and <span class="na">:need:</span><span class="nv">`wp__sw_component_dfa`</span> for safety-critical parts
-<span class="m">-</span> <span class="na">:need:</span><span class="nv">`wp__feature_fmea`</span> and <span class="na">:need:</span><span class="nv">`wp__feature_dfa`</span> for safety-critical parts
+Each valid traceable element shall have at least one test case linked with attribute <span class="nv">`FullyVerified`</span> or
+multiple test cases with attribute <span class="nv">`PartiallyVerified`</span> to achieve a 100% requirement coverage metric.
 
-Each architectural element has at least one test case linked with attribute <span class="nv">`FullyVerified`</span> or
-multiple test cases with attribute <span class="nv">`PartiallyVerified`</span>.
+The confirmation or any deviation of the coverage percentage value is documented in this section.
 
 <span class="gh">Coverage of software requirements specifications</span>
 <span class="gh">^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</span>
 
-For a release all <span class="nv">`valid`</span> requirements need to have a complete test coverage of linked test cases.
+For a release all <span class="nv">`valid`</span> requirements need to have a complete test coverage of linked test cases
+leading to a 100% requirement coverage.
+
+The confirmation or any deviation of the coverage percentage value is documented in this section.
 
 <span class="gh">Test Development</span>
 <span class="gh">----------------</span>
@@ -777,11 +785,11 @@ verification process <span class="na">:ref:</span><span class="nv">`verification
 <span class="gh">Independence of verification</span>
 <span class="gh">^^^^^^^^^^^^^^^^^^^^^^^^^^^^</span>
 
+This section describes how independence is achieved in the project.
+
 As there are no separated roles for a software developer and test developer with <span class="na">:need:</span><span class="nv">`rl__contributor`</span> and
 <span class="na">:need:</span><span class="nv">`rl__committer`</span> it is important to achieve independence. This is done by having different
 people responsible for the test implementation and the actual code which gets tested.
-
-This section describes how independence is achieved in the project.
 
 <span class="gh">Tools</span>
 <span class="gh">-----</span>

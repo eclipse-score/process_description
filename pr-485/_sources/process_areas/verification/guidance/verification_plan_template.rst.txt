@@ -136,30 +136,38 @@ Verification Plan Template
          Coverage of detailed design
          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-         Beside :need:`wp__verification_comp_int_test` and :need:`wp__verification_sw_unit_test` the
-         following aspects define the coverage of detailed design.
+         This section defines how coverage of the detailed design is measured and achieved.
 
-         - Statement/Branch/Path coverage as defined by their specific thresholds
-         - Static analysis and Linting
-         - :need:`wp__sw_implementation_inspection` for safety-critical implementation
+         Coverage metrics with defined thresholds should be e.g. based on:
+         - Structural code coverage (e.g. by statement, branch, path coverage)
+         - Code quality metrics (e.g. by linting and static analysis)
+         - Traceability coverage (e.g. by a 100% requirements coverage by test cases)
+
+         The section further documents the selected verification methods appropriate to achieve the defined
+         coverage goals (e.g. by :need:`wp__verification_sw_unit_test`, :need:`wp__verification_comp_int_test`, and
+         :need:`wp__sw_implementation_inspection`).
 
          Coverage of architectural design
          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-         Beside :need:`wp__verification_comp_int_test` and :need:`wp__verification_feat_int_test` the
-         following aspects define the coverage of the architectural design.
+         This section defines how coverage of the architectural design is measured and achieved.
+         It describes the metrics used to ensure completeness and quality of the architecture
+         and the verification methods applied to achieve the defined coverage goals
+         (e.g. by :need:`wp__verification_comp_int_test`, :need:`wp__verification_feat_int_test`, and
+         :need:`wp__sw_arch_verification`).
 
-         - :need:`wp__sw_arch_verification` - done by walkthrough (QM) or inspection (safety-critical parts)
-         - :need:`wp__sw_component_fmea` and :need:`wp__sw_component_dfa` for safety-critical parts
-         - :need:`wp__feature_fmea` and :need:`wp__feature_dfa` for safety-critical parts
+         Each valid traceable element shall have at least one test case linked with attribute `FullyVerified` or
+         multiple test cases with attribute `PartiallyVerified` to achieve a 100% requirement coverage metric.
 
-         Each architectural element has at least one test case linked with attribute `FullyVerified` or
-         multiple test cases with attribute `PartiallyVerified`.
+         The confirmation or any deviation of the coverage percentage value is documented in this section.
 
          Coverage of software requirements specifications
          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-         For a release all `valid` requirements need to have a complete test coverage of linked test cases.
+         For a release all `valid` requirements need to have a complete test coverage of linked test cases
+         leading to a 100% requirement coverage.
+
+         The confirmation or any deviation of the coverage percentage value is documented in this section.
 
          Test Development
          ----------------
@@ -213,11 +221,11 @@ Verification Plan Template
          Independence of verification
          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+         This section describes how independence is achieved in the project.
+
          As there are no separated roles for a software developer and test developer with :need:`rl__contributor` and
          :need:`rl__committer` it is important to achieve independence. This is done by having different
          people responsible for the test implementation and the actual code which gets tested.
-
-         This section describes how independence is achieved in the project.
 
          Tools
          -----
