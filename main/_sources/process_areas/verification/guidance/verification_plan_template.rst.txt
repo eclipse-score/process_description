@@ -131,6 +131,44 @@ Verification Plan Template
          These criteria might include code coverage metrics, defect density, or other relevant measures.
          The criteria should be defined with quantifiable goals for different ASIL levels.
 
+         The strategy on how to achieve the defined coverage goals is described in the below sub-sections.
+
+         Coverage of detailed design
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+         This section defines how coverage of the detailed design is measured and achieved.
+
+         Coverage metrics with defined thresholds should be e.g. based on:
+         - Structural code coverage (e.g. by statement, branch, path coverage)
+         - Code quality metrics (e.g. by linting and static analysis)
+         - Traceability coverage (e.g. by a 100% requirements coverage by test cases)
+
+         The section further documents the selected verification methods appropriate to achieve the defined
+         coverage goals (e.g. by :need:`wp__verification_sw_unit_test`, :need:`wp__verification_comp_int_test`, and
+         :need:`wp__sw_implementation_inspection`).
+
+         Coverage of architectural design
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+         This section defines how coverage of the architectural design is measured and achieved.
+         It describes the metrics used to ensure completeness and quality of the architecture
+         and the verification methods applied to achieve the defined coverage goals
+         (e.g. by :need:`wp__verification_comp_int_test`, :need:`wp__verification_feat_int_test`, and
+         :need:`wp__sw_arch_verification`).
+
+         Each valid traceable element shall have at least one test case linked with attribute `FullyVerified` or
+         multiple test cases with attribute `PartiallyVerified` to achieve a 100% requirement coverage metric.
+
+         The confirmation or any deviation of the coverage percentage value is documented in this section.
+
+         Coverage of software requirements specifications
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+         For a release all `valid` requirements need to have a complete test coverage of linked test cases
+         leading to a 100% requirement coverage.
+
+         The confirmation or any deviation of the coverage percentage value is documented in this section.
+
          Test Development
          ----------------
 
@@ -179,6 +217,15 @@ Verification Plan Template
          This section defines the roles and responsibilities of individuals involved in the
          verification process. It can refer and should be based on the definition in the
          verification process :ref:`verification_roles`.
+
+         Independence of verification
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+         This section describes how independence is achieved in the project.
+
+         As there are no separated roles for a software developer and test developer with :need:`rl__contributor` and
+         :need:`rl__committer` it is important to achieve independence. This is done by having different
+         people responsible for the test implementation and the actual code which gets tested.
 
          Tools
          -----

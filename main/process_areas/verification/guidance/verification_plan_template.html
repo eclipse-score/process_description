@@ -562,7 +562,7 @@
                   
   <section id="verification-plan-template">
 <span id="id1"></span><h1>Verification Plan Template<a class="headerlink" href="#verification-plan-template" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-ead10969">
+<div class="need_container docutils container" id="SNCB-44adebe1">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_temp table" id="gd_temp__verification_plan">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -695,6 +695,44 @@ This section specifies the quality criteria that must be met for successful veri
 These criteria might include code coverage metrics, defect density, or other relevant measures.
 The criteria should be defined with quantifiable goals for different ASIL levels.
 
+The strategy on how to achieve the defined coverage goals is described in the below sub-sections.
+
+<span class="gh">Coverage of detailed design</span>
+<span class="gh">^^^^^^^^^^^^^^^^^^^^^^^^^^^</span>
+
+This section defines how coverage of the detailed design is measured and achieved.
+
+Coverage metrics with defined thresholds should be e.g. based on:
+<span class="m">-</span> Structural code coverage (e.g. by statement, branch, path coverage)
+<span class="m">-</span> Code quality metrics (e.g. by linting and static analysis)
+<span class="m">-</span> Traceability coverage (e.g. by a 100% requirements coverage by test cases)
+
+The section further documents the selected verification methods appropriate to achieve the defined
+coverage goals (e.g. by <span class="na">:need:</span><span class="nv">`wp__verification_sw_unit_test`</span>, <span class="na">:need:</span><span class="nv">`wp__verification_comp_int_test`</span>, and
+<span class="na">:need:</span><span class="nv">`wp__sw_implementation_inspection`</span>).
+
+<span class="gh">Coverage of architectural design</span>
+<span class="gh">^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</span>
+
+This section defines how coverage of the architectural design is measured and achieved.
+It describes the metrics used to ensure completeness and quality of the architecture
+and the verification methods applied to achieve the defined coverage goals
+(e.g. by <span class="na">:need:</span><span class="nv">`wp__verification_comp_int_test`</span>, <span class="na">:need:</span><span class="nv">`wp__verification_feat_int_test`</span>, and
+<span class="na">:need:</span><span class="nv">`wp__sw_arch_verification`</span>).
+
+Each valid traceable element shall have at least one test case linked with attribute <span class="nv">`FullyVerified`</span> or
+multiple test cases with attribute <span class="nv">`PartiallyVerified`</span> to achieve a 100% requirement coverage metric.
+
+The confirmation or any deviation of the coverage percentage value is documented in this section.
+
+<span class="gh">Coverage of software requirements specifications</span>
+<span class="gh">^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</span>
+
+For a release all <span class="nv">`valid`</span> requirements need to have a complete test coverage of linked test cases
+leading to a 100% requirement coverage.
+
+The confirmation or any deviation of the coverage percentage value is documented in this section.
+
 <span class="gh">Test Development</span>
 <span class="gh">----------------</span>
 
@@ -743,6 +781,15 @@ cases is maintained.
 This section defines the roles and responsibilities of individuals involved in the
 verification process. It can refer and should be based on the definition in the
 verification process <span class="na">:ref:</span><span class="nv">`verification_roles`</span>.
+
+<span class="gh">Independence of verification</span>
+<span class="gh">^^^^^^^^^^^^^^^^^^^^^^^^^^^^</span>
+
+This section describes how independence is achieved in the project.
+
+As there are no separated roles for a software developer and test developer with <span class="na">:need:</span><span class="nv">`rl__contributor`</span> and
+<span class="na">:need:</span><span class="nv">`rl__committer`</span> it is important to achieve independence. This is done by having different
+people responsible for the test implementation and the actual code which gets tested.
 
 <span class="gh">Tools</span>
 <span class="gh">-----</span>
