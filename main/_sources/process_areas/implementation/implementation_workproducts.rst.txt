@@ -36,7 +36,7 @@ Implementation Work Products
    :id: wp__sw_development_plan
    :status: valid
    :tags: doc_lifecycle_model_2
-   :complies: std_wp__iso26262__software_551, std_wp__iso26262__software_app_c_58
+   :complies: std_wp__iso26262__software_551, std_wp__iso26262__software_app_c_58, std_wp__isosae21434__development_1053
 
    Process description of SW development including
    - selection of design and programming language
