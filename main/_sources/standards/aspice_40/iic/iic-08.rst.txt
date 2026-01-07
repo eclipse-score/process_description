@@ -146,6 +146,33 @@
    - Measures including criteria for monitoring effectiveness, suitability, and adequacy of the standard process
    - Method for collecting and analyzing the monitoring measures
 
+.. std_req:: 08-64 ML test approach
+   :id: std_req__aspice_40__iic-08-64
+   :status: valid
+
+   - The ML test approach describes
+        - ML test scenarios with distribution of data characteristics (e.g., gender, weather conditions, street conditions within the ODD) defined by ML requirements
+        - quantity of each ML test scenario inside the test data set
+        - expected test result per test datum
+        - pass/fail criteria for the ML testing
+        - entry and exit criteria for the ML testing
+        - the required ML testing infrastructure and environment configuration
+
+.. std_req:: 08-65 ML training and validation approach
+   :id: std_req__aspice_40__iic-08-65
+   :status: valid
+
+   Process Monitoring Method may have the following characteristics:
+
+   - ML Training and Validation approach describes at least:
+         - entry and exit criteria of the ML training
+         - approaches for hyperparameter tuning / optimization to be used in the training
+         - approach for data set creation and modification
+         - training environment, including required training hardware (e.g., GPU, or supercomputer to be used)
+         - interface adapter for provision of input data and storage of output data
+         - if required, actions to organize the data set and training environment
+   - The ML training and validation approach may additionally include robustification methods like random dropout
+
 .. std_req:: 08-66 Measures against deviations in quantitative process analysis
    :id: std_req__aspice_40__iic-08-66
    :status: valid
@@ -157,5 +184,5 @@
    - Effective implementation of these counter measures
 
 
-.. needextend:: "c.this_doc()" 
+.. needextend:: "c.this_doc()"
    :+tags: aspice40_iic08

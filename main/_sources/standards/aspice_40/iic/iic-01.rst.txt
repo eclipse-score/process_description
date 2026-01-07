@@ -49,5 +49,25 @@
    - The name of work products and an associated reference (to file, to tool artifact)
    - Configuration item attributes and properties
 
-.. needextend:: "c.this_doc()" 
+.. std_req:: 01-53 Trained ML model
+   :id: std_req__aspice_40__iic-01-53
+   :status: valid
+
+   - The trained ML model is the output of the training process. It consists of the software representing the ML architecture, the set of weights which were optimized during the training, and the final set of hyperparameters.
+
+.. std_req:: 01-54 Hyperparameter
+   :id: std_req__aspice_40__iic-01-54
+   :status: valid
+
+
+   - Hyperparameters are used to control the ML model which has to be trained, e.g.:
+        - Learn rate of training
+        - Scaling of network (number of layers or neurons per layer)
+        - Loss function
+   - Minimum characteristics:
+        - Description
+        - Initial value
+        - Final value upon communicating the results of the ML training
+
+.. needextend:: "c.this_doc()"
    :+tags: aspice40_iic01
