@@ -2,17 +2,5 @@
   {
     "version": "main",
     "url": "https://eclipse-score.github.io/process_description/main/"
-  },
-  {
-    "version": "pr-486",
-    "url": "https://eclipse-score.github.io/process_description/pr-486/"
-  },
-  {
-    "version": "pr-487",
-    "url": "https://eclipse-score.github.io/process_description/pr-487/"
-  },
-  {
-    "version": "pr-488",
-    "url": "https://eclipse-score.github.io/process_description/pr-488/"
   }
 ]
