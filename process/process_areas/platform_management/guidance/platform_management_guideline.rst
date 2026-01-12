@@ -115,3 +115,22 @@ the plan must be adjusted. Deviations may include estimates, resources, schedule
 interfaces, etc. as defined in the scope of work.
 
 The status of the project is regularly reported.
+
+
+Tailoring
+=========
+
+.. gd_guidl:: Platform Management Plan Requirements Tailored
+   :id: gd_guidl__platform_mgmt_plan_req_tailored
+   :status: valid
+   :complies: std_req__aspice_40__MAN-5-BP1, std_req__aspice_40__MAN-5-BP2, std_req__aspice_40__MAN-5-BP3, std_req__aspice_40__MAN-5-BP4, std_req__aspice_40__MAN-5-BP5, std_req__aspice_40__MAN-5-BP6, std_req__aspice_40__MAN-5-BP7,
+              std_req__aspice_40__iic-15-09, std_req__aspice_40__iic-15-51, std_req__aspice_40__iic-08-55
+
+   This part of the guideline links to all the requirements which are not fulfilled by the
+   platform management plan process. Make sure these are tailored out in the corresponding sub-plans
+   e.g. project management plan, etc. for your project (documented in the PMP).
+   Reasoning given below must be confirmed there.
+
+   The reasoning is:
+
+   - Main deliveries are source code, which is not a product, thus product risk management and process risk is not applicable (for safety and security related risk separate processes as safety/security analysis exists).
