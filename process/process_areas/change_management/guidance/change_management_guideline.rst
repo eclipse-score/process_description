@@ -274,3 +274,19 @@ sets the status to "closed" manually, if not done automatically.
 
 :need:`[[title]] <rl__committer>` has the freedom to reject it at any time by setting the status
 to "reject".
+
+Tailoring
+=========
+
+.. gd_guidl:: Change Management Requirements Tailored
+   :id: gd_guidl__change_req_tailored
+   :status: valid
+   :complies: std_req__isopas8926__44441, std_req__isopas8926__44442, std_req__isopas8926__44443
+
+   This part of the guideline links to all the requirements which are not fulfilled by the
+   change management process. Make sure these are tailored out in the change management plan
+   for your project (documented in the PMP). Reasoning given below must be confirmed there.
+
+   The reasoning is:
+
+   - Trustable Software Framework is planned for evaluation of existing OSS, thus the requirements for evaluation are not applicable.
