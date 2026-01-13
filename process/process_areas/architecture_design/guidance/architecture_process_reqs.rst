@@ -94,7 +94,7 @@ Architectural Views
    :id: gd_req__arch_viewpoints
    :status: valid
    :tags: manual_prio_1
-   :complies: std_req__iso26262__support_6432, std_req__iso26262__software_742
+   :complies: std_req__iso26262__support_6432, std_req__iso26262__software_742, std_req__aspice_40__SWE-2-BP1, std_req__aspice_40__SWE-2-BP2
    :satisfies: wf__cr_mt_featarch, wf__cr_mt_comparch
 
    The architecture shall be shown on following views on each architectural level:
@@ -165,7 +165,7 @@ Traceability to Requirements
    :id: gd_req__arch_attr_fulfils
    :status: valid
    :tags: manual_prio_1, attribute, mandatory
-   :complies: std_req__iso26262__support_6425
+   :complies: std_req__iso26262__support_6425, std_req__aspice_40__SWE-2-BP4
    :satisfies: wf__cr_mt_featarch, wf__cr_mt_comparch
 
    Each architectural element shall be linked to a requirement.
@@ -174,7 +174,7 @@ Traceability to Requirements
    :id: gd_req__arch_traceability
    :status: valid
    :tags: manual_prio_2
-   :complies: std_req__iso26262__support_6432
+   :complies: std_req__iso26262__support_6432, std_req__aspice_40__SWE-2-BP4
    :satisfies: wf__cr_mt_featarch, wf__cr_mt_comparch
 
    Requirements shall be fulfilled by an architectural element on the corresponding level.
@@ -209,6 +209,7 @@ Checks for Architectural Design
    :status: valid
    :tags: prio_1_automation, attribute, check
    :satisfies: wf__cr_mt_featarch, wf__cr_mt_comparch
+   :complies: std_req__aspice_40__SWE-2-BP4
 
    It shall be checked that every valid safety architectural element is linked according to the defined model :need:`gd_req__arch_build_blocks_corr`.
 

@@ -21,7 +21,7 @@ Architecture Inspection Checklist Template
     :id: gd_chklst__arch_inspection_checklist
     :status: valid
     :tags: architecture_design
-    :complies: std_req__iso26262__software_647, std_req__iso26262__software_743, std_req__iso26262__software_749, std_req__iso26262__software_7413
+    :complies: std_req__iso26262__software_647, std_req__iso26262__software_743, std_req__iso26262__software_749, std_req__iso26262__software_7413, std_req__aspice_40__iic-15-51, std_req__aspice_40__SWE-2-BP4, std_req__aspice_40__iic-13-51, std_req__aspice_40__SWE-2-BP5
 
     For the content see here:
 
