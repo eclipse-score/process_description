@@ -88,6 +88,7 @@ Process Requirement Attributes
    :status: valid
    :tags: manual_prio_2, attribute, mandatory
    :satisfies: wf__req_stkh_req, wf__req_feat_req, wf__req_comp_req, wf__req_feat_aou, wf__req_comp_aou
+   :complies: std_req__aspice_40__iic-17-00
 
    Each requirement, apart from process and tool requirements, shall have a type of one of following options:
 
@@ -145,6 +146,7 @@ Process Requirement Attributes
    :status: valid
    :tags: manual_prio_2, attribute
    :satisfies: wf__req_stkh_req, wf__req_feat_req
+   :complies: std_req__aspice_40__SWE-1-BP2, std_req__aspice_40__iic-17-54
 
    Stakeholder and feature requirements can have a validity attribute that tells
    from which milestone onwards the requirement is part of a feature.
@@ -160,6 +162,7 @@ Process Requirement Attributes
    :status: valid
    :tags: manual_prio_2, attribute
    :satisfies: wf__req_stkh_req, wf__req_feat_req
+   :complies: std_req__aspice_40__SWE-1-BP2, std_req__aspice_40__iic-17-54
 
    Stakeholder and feature requirements can have a validity attribute that tells
    until which milestone the requirement is part of a feature.
@@ -179,7 +182,7 @@ Process Requirement Linkage
    :id: gd_req__req_linkage
    :status: valid
    :tags: manual_prio_1, attribute
-   :complies: std_req__iso26262__support_6432
+   :complies: std_req__iso26262__support_6432, std_req__aspice_40__SWE-1-BP5
    :satisfies: wf__req_stkh_req, wf__req_feat_req, wf__req_comp_req, wf__req_proc_tool
 
    Requirements shall be linked to its adjacent level via the attribute satisfies.
@@ -193,7 +196,7 @@ Process Requirement Linkage
    :id: gd_req__req_traceability
    :status: valid
    :tags: done_automation, attribute
-   :complies: std_req__iso26262__support_6432
+   :complies: std_req__iso26262__support_6432, std_req__aspice_40__SWE-1-BP5
    :satisfies: wf__req_stkh_req, wf__req_feat_req, wf__req_comp_req, wf__req_proc_tool
 
    Bi-directional traceability shall be provided by adding a "back-link" via attribute satisfied by (i.e. make a <-> out of the <- in :need:`gd_req__req_linkage`).
@@ -202,7 +205,7 @@ Process Requirement Linkage
    :id: gd_req__req_attr_req_cov
    :status: valid
    :tags: manual_prio_1, attribute
-   :complies: std_req__iso26262__support_6423
+   :complies: std_req__iso26262__support_6423, std_req__aspice_40__iic-13-51
    :satisfies: wf__req_stkh_req, wf__req_feat_req
 
    It shall be possible to specify the requirement coverage, meaning the requirement is covered fully by its linked children.
@@ -232,7 +235,7 @@ Process Requirement Linkage
    :status: valid
    :tags: manual_prio_1, attribute
    :satisfies: wf__req_feat_req, wf__req_comp_req
-   :complies: std_req__iso26262__support_6433, std_req__iso26262__software_944
+   :complies: std_req__iso26262__support_6433, std_req__iso26262__software_944, std_req__aspice_40__iic-13-51
 
    It shall be possible to specify if requirements are completely covered by the linked test cases.
 
@@ -258,7 +261,7 @@ Process Requirements Checks
    :status: valid
    :tags: prio_2_automation, check
    :satisfies: wf__req_stkh_req, wf__req_feat_req, wf__req_comp_req
-   :complies: std_req__iso26262__support_6425, std_req__iso26262__support_6434
+   :complies: std_req__iso26262__support_6425, std_req__iso26262__support_6434, std_req__aspice_40__iic-13-51
 
    Based on the requirement versioning it shall be checked if a parent requirement was updated but not the linked child requirements (or tests).
    In case an update was detected, the attribute requirement (or test) covered shall be set to "No"
@@ -301,7 +304,7 @@ Process Requirements Checks
    :id: gd_req__req_linkage_fulfill
    :status: valid
    :tags: done_automation, check
-   :complies: std_req__iso26262__support_6432
+   :complies: std_req__iso26262__support_6432, std_req__aspice_40__iic-13-51
    :satisfies: wf__req_stkh_req, wf__req_feat_req, wf__req_comp_req
 
    Every feature- and component requirement shall be linked to at least one parent requirement according to the defined traceability scheme:

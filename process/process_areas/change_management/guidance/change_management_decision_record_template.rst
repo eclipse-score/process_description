@@ -20,7 +20,7 @@ Decision Record Template
 .. gd_temp:: Decision Record Template
    :id: gd_temp__change_decision_record
    :status: valid
-   :complies: std_req__aspice_40__SWE-2-BP3
+   :complies: std_req__aspice_40__SWE-2-BP3, std_req__aspice_40__iic-17-00
 
 This template is used to create new Decision Records (DRs) in the project.
 
