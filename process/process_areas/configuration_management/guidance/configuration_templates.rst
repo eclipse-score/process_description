@@ -20,7 +20,9 @@ Template Configuration Management Plan
 .. gd_temp:: Configuration Management Plan Template
    :id: gd_temp__config_mgt_plan
    :status: valid
-   :complies: std_req__iso26262__support_741, std_req__iso26262__support_742, std_req__iso26262__support_743, std_req__iso26262__support_744, std_req__iso26262__support_745, std_req__aspice_40__SUP-8-BP1, std_req__aspice_40__SUP-8-BP2, std_req__aspice_40__SUP-8-BP3, std_req__aspice_40__SUP-8-BP4, std_req__aspice_40__SUP-8-BP5, std_req__aspice_40__SUP-8-BP8, std_req__aspice_40__iic-13-08
+   :complies: std_req__iso26262__support_741, std_req__iso26262__support_742, std_req__iso26262__support_743, std_req__iso26262__support_744, std_req__iso26262__support_745,
+              std_req__aspice_40__SUP-8-BP1, std_req__aspice_40__SUP-8-BP2, std_req__aspice_40__SUP-8-BP3, std_req__aspice_40__SUP-8-BP4, std_req__aspice_40__SUP-8-BP5, std_req__aspice_40__SUP-8-BP6, std_req__aspice_40__SUP-8-BP8,
+              std_req__aspice_40__iic-13-08, std_req__aspice_40__iic-18-53, std_req__aspice_40__iic-01-52, std_req__aspice_40__iic-16-03, std_req__aspice_40__iic-14-01, std_req__aspice_40__iic-15-56, std_req__aspice_40__iic-06-52
 
 Purpose
 +++++++
