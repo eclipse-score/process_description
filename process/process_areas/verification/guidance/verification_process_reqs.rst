@@ -54,7 +54,7 @@ Process Requirements
     :status: valid
     :tags: prio_1_automation, verification
     :satisfies: wf__verification_unit_test, wf__verification_comp_int_test, wf__verification_feat_int_test, wf__verification_platform_int_test
-    :complies: std_req__iso26262__support_6432
+    :complies: std_req__iso26262__support_6432, std_req__aspice_40__SWE-4-BP4, std_req__aspice_40__SWE-5-BP6, std_req__aspice_40__SWE-6-BP4
 
 
     For linking C++ tests to requirements **record properties** shall be used. Attributes
@@ -69,7 +69,7 @@ Process Requirements
     :status: valid
     :tags: prio_1_automation, verification
     :satisfies: wf__verification_unit_test, wf__verification_comp_int_test, wf__verification_feat_int_test, wf__verification_platform_int_test
-    :complies: std_req__iso26262__support_6432
+    :complies: std_req__iso26262__support_6432, std_req__aspice_40__SWE-4-BP4, std_req__aspice_40__SWE-5-BP6, std_req__aspice_40__SWE-6-BP4
 
 
     For linking python tests to requirements **metadata** shall be used.
@@ -91,7 +91,7 @@ Process Requirements
     :status: valid
     :tags: prio_1_automation, verification
     :satisfies: wf__verification_unit_test, wf__verification_comp_int_test, wf__verification_feat_int_test, wf__verification_platform_int_test
-    :complies: std_req__iso26262__support_6432
+    :complies: std_req__iso26262__support_6432, std_req__aspice_40__SWE-4-BP4, std_req__aspice_40__SWE-5-BP6, std_req__aspice_40__SWE-6-BP4
 
     For linking Rust tests to requirements **#[record_property]** shall be used:
 
@@ -102,7 +102,7 @@ Process Requirements
     :status: valid
     :tags: done_automation, verification
     :satisfies: wf__verification_unit_test, wf__verification_comp_int_test, wf__verification_feat_int_test, wf__verification_platform_int_test
-    :complies:
+    :complies: std_req__aspice_40__SWE-4-BP4, std_req__aspice_40__SWE-5-BP6, std_req__aspice_40__SWE-6-BP4
 
     The approver of a pull request shall differ from the author(s) of the pull request in all pull requests.
 

@@ -25,7 +25,9 @@ Verification Report Templates
       std_req__iso26262__support_9431, std_req__iso26262__support_9432, std_req__iso26262__support_9433, std_req__iso26262__support_9434,
       std_req__iso26262__support_12422, std_req__iso26262__support_12423, std_req__iso26262__support_12424, std_req__iso26262__support_12425,
       std_req__iso26262__support_1243,
-      std_req__iso26262__analysis_749, std_req__iso26262__analysis_848
+      std_req__iso26262__analysis_749, std_req__iso26262__analysis_848,
+      std_req__aspice_40__SWE-4-BP3, std_req__aspice_40__SWE-5-BP4, std_req__aspice_40__SWE-5-BP5, std_req__aspice_40__SWE-6-BP3, std_req__aspice_40__iic-03-50, std_req__aspice_40__iic-15-52,
+      std_req__aspice_40__SWE-4-BP5, std_req__aspice_40__SWE-5-BP7, std_req__aspice_40__SWE-6-BP5, std_req__aspice_40__iic-13-51, std_req__aspice_40__iic-13-52
 
     This document implements :need:`wp__verification_module_ver_report`.
 

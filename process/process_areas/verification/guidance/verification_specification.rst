@@ -21,7 +21,8 @@ Test Specification Guideline
    :complies: std_req__iso26262__software_941, std_req__iso26262__software_942, std_req__iso26262__software_943,
               std_req__iso26262__support_9421, std_req__iso26262__support_9422,
               std_req__iso26262__support_9423, std_req__iso26262__support_9424,
-              std_req__iso26262__software_app_c_42, std_req__iso26262__software_app_c_44, std_req__iso26262__software_app_c_45
+              std_req__iso26262__software_app_c_42, std_req__iso26262__software_app_c_44, std_req__iso26262__software_app_c_45,
+              std_req__aspice_40__iic-08-60
 
 Test specification
 ------------------

@@ -45,7 +45,7 @@ Architectural Model
    :id: gd_req__arch_build_blocks
    :status: valid
    :tags: done_automation
-   :complies: std_req__iso26262__support_6431, std_req__iso26262__support_6432
+   :complies: std_req__iso26262__support_6431, std_req__iso26262__support_6432, std_req__aspice_40__iic-01-03, std_req__aspice_40__iic-01-50
    :satisfies: wf__cr_mt_featarch, wf__cr_mt_comparch
 
    Following architectural elements shall be defined on the respective hierarchical level:

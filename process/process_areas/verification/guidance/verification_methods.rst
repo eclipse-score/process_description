@@ -26,7 +26,7 @@ Methods
 .. gd_method:: Verification Methods
    :id: gd_meth__verification_methods
    :status: valid
-   :complies: std_req__iso26262__software_942, std_req__iso26262__software_944
+   :complies: std_req__iso26262__software_942, std_req__iso26262__software_944, std_req__aspice_40__iic-08-58
 
    Following methods are explained
 
