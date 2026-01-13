@@ -106,7 +106,7 @@ Diagram Linkage
    :id: gd_req__impl_diagram_check_req
    :status: valid
    :tags: prio_2_automation, attribute, automated
-   :complies: std_req__iso26262__support_6421, std_req__iso26262__support_6425
+   :complies: std_req__iso26262__support_6421, std_req__iso26262__support_6425, std_req__aspice_40__iic-13-51
    :satisfies: wf__sw_detailed_design
 
    Each diagram shall be linked to the corresponding component requirement via the attribute implements.
@@ -124,7 +124,7 @@ Diagram Linkage
    :id: gd_req__impl_diagram_check_arch
    :status: valid
    :tags: prio_2_automation, attribute, automated
-   :complies: std_req__iso26262__support_6421, std_req__iso26262__support_6425
+   :complies: std_req__iso26262__support_6421, std_req__iso26262__support_6425, std_req__aspice_40__iic-13-51
    :satisfies: wf__sw_detailed_design
 
    Each diagram shall be linked to the corresponding component architecture via the attribute satisfies.
