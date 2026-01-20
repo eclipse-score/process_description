@@ -101,6 +101,7 @@ Dynamic Architecture
    :safety: ASIL_B
    :status: invalid
    :fulfils: comp_req__component_name__some_title
+   :belongs_to: comp__component_name_template
 
    Put here a sequence diagram
 
