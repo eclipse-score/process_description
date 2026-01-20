@@ -82,7 +82,6 @@ The components are designed to cover the expectations from the feature architect
    :security: YES
    :safety: ASIL_B
    :status: invalid
-   :implements: logic_arc_int__feature_name__interface_name1
    :fulfils: comp_req__component_name__some_title
    :includes: comp_arc_sta__component_name__2
 
@@ -126,7 +125,6 @@ Internal Components
    :safety: ASIL_B
    :security: YES
    :fulfils: comp_req__component_name__some_title
-   :implements: logic_arc_int__feature_name__interface_name1
 
    No architecture but detailed design
 
