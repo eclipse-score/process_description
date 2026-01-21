@@ -18,7 +18,7 @@ Templates
 .. gd_temp:: Platform Release Note Template
    :id: gd_temp__rel_plat_rel_note
    :status: valid
-   :complies: std_req__iso26262__management_64134, std_req__iso26262__management_64135, std_req__aspice_40__SUP-8-BP7
+   :complies: std_req__iso26262__management_64134, std_req__iso26262__management_64135, std_req__aspice_40__SUP-8-BP7, std_req__aspice_40__SPL-2-BP1, std_req__aspice_40__iic-11-03, std_req__aspice_40__iic-18-06, std_req__aspice_40__SPL-2-BP2, std_req__aspice_40__SPL-2-BP3, std_req__aspice_40__iic-11-04, std_req__aspice_40__SPL-2-BP4, std_req__aspice_40__SPL-2-BP6
 
    |  Platform Release Notes
    |  ======================
@@ -97,7 +97,7 @@ Templates
 .. gd_temp:: Module Release Note Template
    :id: gd_temp__rel_mod_rel_note
    :status: valid
-   :complies: std_req__iso26262__management_64134, std_req__iso26262__management_64135
+   :complies: std_req__iso26262__management_64134, std_req__iso26262__management_64135, std_req__aspice_40__SPL-2-BP1, std_req__aspice_40__iic-11-03, std_req__aspice_40__iic-18-06, std_req__aspice_40__SPL-2-BP2, std_req__aspice_40__SPL-2-BP3, std_req__aspice_40__iic-11-04, std_req__aspice_40__SPL-2-BP4, std_req__aspice_40__SPL-2-BP6
 
    For the content see here: :need:`doc__module_name_release_note`
 
@@ -105,7 +105,7 @@ Templates
 .. gd_temp:: Release Issue Template
    :id: gd_temp__rel_issue
    :status: valid
-   :complies: std_req__iso26262__management_64131, std_req__iso26262__management_64132, std_req__iso26262__management_64133
+   :complies: std_req__iso26262__management_64131, std_req__iso26262__management_64132, std_req__iso26262__management_64133, std_req__aspice_40__SPL-2-BP5, std_req__aspice_40__SPL-2-BP8
 
    | Copy the below steps into the release ticket:
    |

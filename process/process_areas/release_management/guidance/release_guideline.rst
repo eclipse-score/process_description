@@ -18,7 +18,7 @@ Guideline
 .. gd_guidl:: Release Management Guideline
    :id: gd_guidl__rel_management
    :status: valid
-   :complies: std_req__iso26262__software_1041, std_req__iso26262__management_64131, std_req__iso26262__management_64132, std_req__iso26262__management_64133, std_req__iso26262__management_64134, std_req__iso26262__management_64135
+   :complies: std_req__iso26262__software_1041, std_req__iso26262__management_64131, std_req__iso26262__management_64132, std_req__iso26262__management_64133, std_req__iso26262__management_64134, std_req__iso26262__management_64135, std_req__aspice_40__SPL-2-BP7
 
 .. _workflow_release:
 
