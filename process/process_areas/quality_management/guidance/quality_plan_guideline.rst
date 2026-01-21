@@ -20,7 +20,7 @@ Guideline Quality Management Plan
 .. gd_guidl:: Quality Management Plan Definitions Guideline
    :id: gd_guidl__qlm_plan_definitions
    :status: valid
-   :complies: std_req__iso26262__management_5423, std_req__aspice_40__SUP-1-BP1, std_req__aspice_40__SUP-1-BP2, std_req__aspice_40__SUP-1-BP3, std_req__aspice_40__SUP-1-BP4, std_req__aspice_40__SUP-1-BP7, std_req__aspice_40__PIM-3-BP1, std_req__aspice_40__PIM-3-BP2, std_req__aspice_40__PIM-3-BP3, std_req__aspice_40__PIM-3-BP4, std_req__aspice_40__PIM-3-BP5, std_req__aspice_40__PIM-3-BP6, std_req__aspice_40__PIM-3-BP7, std_req__aspice_40__SUP-1-BP5, std_req__aspice_40__SUP-1-BP6, std_req__aspice_40__PIM-3-BP8, std_req__iso26262__management_5451
+   :complies: std_req__iso26262__management_5423, std_req__aspice_40__SUP-1-BP1, std_req__aspice_40__SUP-1-BP2, std_req__aspice_40__SUP-1-BP3, std_req__aspice_40__SUP-1-BP4, std_req__aspice_40__SUP-1-BP7, std_req__aspice_40__PIM-3-BP1, std_req__aspice_40__PIM-3-BP2, std_req__aspice_40__PIM-3-BP3, std_req__aspice_40__PIM-3-BP4, std_req__aspice_40__PIM-3-BP5, std_req__aspice_40__PIM-3-BP6, std_req__aspice_40__PIM-3-BP7, std_req__aspice_40__SUP-1-BP5, std_req__aspice_40__SUP-1-BP6, std_req__aspice_40__PIM-3-BP8, std_req__iso26262__management_5451, std_req__aspice_40__iic-06-04, std_req__aspice_40__iic-10-51, std_req__aspice_40__iic-15-13, std_req__aspice_40__iic-15-16, std_req__aspice_40__iic-18-07, std_req__aspice_40__iic-18-52
 
    | **Overall quality management:**
    |

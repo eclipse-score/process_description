@@ -21,7 +21,7 @@ Templates
    :id: gd_temp__process_workflow
    :status: valid
    :tags: process_management
-   :complies: std_req__iso26262__management_5421, std_req__iso26262__management_5422, std_req__aspice_40__gp-311
+   :complies: std_req__iso26262__management_5421, std_req__iso26262__management_5422, std_req__aspice_40__gp-311, std_req__aspice_40__iic-10-00, std_req__aspice_40__iic-10-50, std_req__aspice_40__iic-14-53
 
    .. code-block:: rst
 

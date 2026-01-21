@@ -18,6 +18,6 @@ Feature Architecture Template
 .. gd_temp:: Feature Architecture Templates
     :id: gd_temp__arch_feature
     :status: valid
-    :complies: std_req__iso26262__software_741, std_req__iso26262__software_742, std_req__iso26262__software_743
+    :complies: std_req__iso26262__software_741, std_req__iso26262__software_742, std_req__iso26262__software_743, std_req__aspice_40__iic-04-04
 
     For the content see here: :ref:`feature_architecture_template`

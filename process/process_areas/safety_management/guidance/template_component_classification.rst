@@ -18,7 +18,7 @@ Component Classification Template
 .. gd_temp:: Component Classification Template
    :id: gd_temp__component_classification
    :status: valid
-   :complies: std_req__isopas8926__441, std_req__isopas8926__4421, std_req__isopas8926__4422, std_req__isopas8926__4423, std_req__isopas8926__4424, std_req__isopas8926__4425, std_req__isopas8926__4426, std_req__isopas8926__4427, std_req__isopas8926__4428, std_req__isopas8926__4429, std_req__isopas8926__44210, std_req__iso26262__software_743
+   :complies: std_req__isopas8926__441, std_req__isopas8926__4421, std_req__isopas8926__4422, std_req__isopas8926__4423, std_req__isopas8926__4424, std_req__isopas8926__4425, std_req__isopas8926__4426, std_req__isopas8926__4427, std_req__isopas8926__4428, std_req__isopas8926__4429, std_req__isopas8926__44210, std_req__iso26262__software_743, std_req__aspice_40__iic-12-03, std_req__aspice_40__iic-15-07
 
 
 | Classification of <component>

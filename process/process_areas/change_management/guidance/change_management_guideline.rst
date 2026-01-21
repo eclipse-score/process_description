@@ -19,7 +19,7 @@ Guideline
    :id: gd_guidl__change_change_request
    :status: valid
    :tags: change_management
-   :complies: std_req__iso26262__support_8414, std_req__iso26262__support_8432, std_req__iso26262__support_8442, std_req__iso26262__support_8451
+   :complies: std_req__iso26262__support_8414, std_req__iso26262__support_8432, std_req__iso26262__support_8442, std_req__iso26262__support_8451, std_req__aspice_40__iic-13-07
 
 
 This document describes the general guidances for Change Management based on the concept which is defined :need:`[[title]]<doc_concept__change_process>`.

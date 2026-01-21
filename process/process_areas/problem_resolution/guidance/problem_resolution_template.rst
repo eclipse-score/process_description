@@ -20,7 +20,7 @@ Problem Report Template
 .. gd_temp:: Problem Template
    :id: gd_temp__problem_template
    :status: draft
-   :complies: std_req__aspice_40__SUP-9-BP1, std_req__aspice_40__SUP-9-BP2, std_req__aspice_40__SUP-9-BP3, std_req__aspice_40__SUP-9-BP4,
+   :complies: std_req__aspice_40__SUP-9-BP1, std_req__aspice_40__SUP-9-BP2, std_req__aspice_40__SUP-9-BP3, std_req__aspice_40__SUP-9-BP4, std_req__aspice_40__iic-15-12, std_req__aspice_40__iic-15-55
 
 This template defines the content to be implemented in the selected Issue Tracking System
 of the project.
