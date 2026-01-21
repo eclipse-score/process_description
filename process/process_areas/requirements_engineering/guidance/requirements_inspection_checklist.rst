@@ -29,7 +29,6 @@ Requirement Inspection Checklist
 
    - :need:`doc__component_name_req_inspection`
    - :need:`doc__feature_name_req_inspection`
+   - :need:`doc__stakeholder_req_inspection`
 
    These have the same questions, but different scope and document naming.
-
-   If stakeholder requirements inspection is required use one of the above templates and modify scope/naming accordingly.

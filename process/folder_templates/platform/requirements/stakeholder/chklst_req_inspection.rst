@@ -13,8 +13,8 @@
    # *******************************************************************************
 
 
-.. document:: [Your Stakeholder Name] Requirements Inspection Checklist
-   :id: doc__stakeholder_name_req_inspection
+.. document:: Stakeholder Requirements Inspection Checklist
+   :id: doc__stakeholder_req_inspection
    :status: draft
    :safety: ASIL_B
    :security: YES
@@ -22,10 +22,8 @@
    :tags: template
 
 .. attention::
-    The above directive must be updated according to your Stakeholder.
+    The above directive must be updated according to your Stakeholder requirements.
 
-    - Modify ``Your Stakeholder Name`` to be your Stakeholder Name
-    - Modify ``id`` to be your Stakeholder Name in lower snake case preceded by ``doc__`` and followed by ``_req_inspection``
     - Adjust ``status`` to be ``valid``
     - Adjust ``safety``, ``security`` and ``tags`` according to your needs
 
@@ -40,14 +38,14 @@ Stakeholder Requirement Inspection Checklist
 
    As described in the concept :need:`doc_concept__wp_inspections` the following "inspection roles" are expected to be filled:
 
-   - author: <contributor/committer(s) explicitly named here, who is/are the content responsible(s)>
-   - reviewer: these are all persons committing into this inspection document or giving a pull request verdict on it (can be derived from version mgt tool)
-   - moderator: only needed for conflict resolution between author and reviewers, is the safety manager, security manager or quality manager called in as a reviewer (can be derived from version mgt tool)
+   - content responsible (author): <contributor/committer explicitly named here, who is the main author, as can be seen in config mgt tooling>
+   - reviewer: <contributor/committer explicitly named here, who is the main content reviewer, must be different from content responsible>
+   - moderator: <contributor/committer explicitly named here, who is is the safety manager, security manager or quality manager initiating the inspection>
    - test expert: <one of the reviewers explicitly named here, to cover REQ_08_01 as described>
 
    **Checklist**
 
-   See also :ref:`review_concept` for further information about reviews in general and inspection in particular.
+   See also :need:`doc_concept__wp_inspections` for further information about reviews in general and inspection in particular.
 
    .. list-table:: Stakeholder Requirement Inspection Checklist
       :header-rows: 1
@@ -97,13 +95,7 @@ Stakeholder Requirement Inspection Checklist
         -
       * - REQ_03_01
         - Is the *rationale* correct?
-        - Rationales explain why the top level requirements were created. Do those cover the requirement?
-        -
-        -
-        -
-      * - REQ_03_02
-        - Is the *linkage to the parent requirement* correct?
-        - Linkage to correct levels and ASIL attributes is checked automatically, but it needs checking if the child requirement implements (at least) a part of the parent requirement.
+        - Rationales explain why the stakeholder level requirements were created. Do those cover the requirement?
         -
         -
         -
@@ -150,31 +142,27 @@ Stakeholder Requirement Inspection Checklist
         -
         -
 
-Note: If a Review ID is not applicable for your requirement, then state ""n/a" in status and comment accordingly in remarks. For example "no stakeholder requirement (no rationale needed)"
+Note: If a Review ID is not applicable for your requirement, then state ""n/a" in status and comment accordingly in remarks.
 
 The following requirements in "valid" state and with "inspected" tag set are in the scope of this inspection:
 
 .. needtable::
-   :filter: "stakeholder_name" in docname and "requirements" in docname and docname is not None and status == "valid"
+   :filter: "stakeholder" in docname and "requirements" in docname and docname is not None and status == "valid"
    :style: table
    :types: stkh_req
-   :tags: stakeholder_name
    :columns: id;status;tags
    :colwidths: 25,25,25
    :sort: title
 
-And also the following AoUs in "valid" state and with "inspected" tag set (for these please answer the questions above as if the AoUs are requirements, except questions REQ_03_01 and REQ_03_02):
+And also the following AoUs in "valid" state and with "inspected" tag set (for these please answer the questions above as if the AoUs are requirements, except question REQ_03_01):
 
 .. needtable::
-   :filter: "stakeholder_name" in docname and "requirements" in docname and docname is not None and status == "valid"
+   :filter: "platform" in docname and "assumptions" in docname and docname is not None and status == "valid"
    :style: table
    :types: aou_req
-   :tags: stakeholder_name
    :columns: id;status;tags
    :colwidths: 25,25,25
    :sort: title
 
 .. attention::
-    The above tables filtering must be updated according to your Stakeholder.
-
-    - Modify ``stakeholder_name`` to be your Stakeholder Name in lower snake case
+    The above tables filtering must be updated according to your Stakeholder requirements document names.

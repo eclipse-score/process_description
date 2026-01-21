@@ -40,14 +40,14 @@ Requirement Inspection Checklist
 
    As described in the concept :need:`doc_concept__wp_inspections` the following "inspection roles" are expected to be filled:
 
-   - author: <contributor/committer(s) explicitly named here, who is/are the content responsible(s)>
-   - reviewer: these are all persons committing into this inspection document or giving a pull request verdict on it (can be derived from version mgt tool)
-   - moderator: only needed for conflict resolution between author and reviewers, is the safety manager, security manager or quality manager called in as a reviewer (can be derived from version mgt tool)
+   - content responsible (author): <contributor/committer explicitly named here, who is the main author, as can be seen in config mgt tooling>
+   - reviewer: <contributor/committer explicitly named here, who is the main content reviewer, must be different from content responsible>
+   - moderator: <contributor/committer explicitly named here, who is is the safety manager, security manager or quality manager initiating the inspection>
    - test expert: <one of the reviewers explicitly named here, to cover REQ_08_01 as described>
 
    **Checklist**
 
-   See also :ref:`review_concept` for further information about reviews in general and inspection in particular.
+   See also :need:`doc_concept__wp_inspections` for further information about reviews in general and inspection in particular.
 
    .. list-table:: Feature Requirement Inspection Checklist
       :header-rows: 1
@@ -127,7 +127,7 @@ Requirement Inspection Checklist
         -
       * - REQ_07_02
         - Is the *security* attribute set correctly?
-        - For feature requirements this checklist item is supported by automated check: "Every requirement which satisfies a stakeholder requirement with security attribute set to YES inherits this". But the feature requirements/architecture may additionally also be subject to a :ref:`Software Security Analysis <security_analysis>`.
+        - For feature requirements this checklist item is supported by automated check: "Every requirement which satisfies a stakeholder requirement with security attribute set to YES inherits this". But the feature requirements/architecture may additionally also be subject to a :need:`wp__feature_security_analysis`
         -
         -
         -
@@ -153,8 +153,9 @@ Requirement Inspection Checklist
 
 .. attention::
     The above checklist entries must be filled according to your component requirements in scope.
+    It is mandatory to fill remarks also for checklist entries which are passed, to be able to understand the verdict.
 
-Note: If a Review ID is not applicable for your requirement, then state ""n/a" in status and comment accordingly in remarks. For example "no stakeholder requirement (no rationale needed)"
+Note: If a Review ID is not applicable for your requirement, then state ""n/a" in status and comment accordingly in remarks.
 
 The following requirements in "valid" state and with "inspected" tag set are in the scope of this inspection:
 
@@ -167,7 +168,7 @@ The following requirements in "valid" state and with "inspected" tag set are in 
    :colwidths: 25,25,25
    :sort: title
 
-And also the following AoUs in "valid" state and with "inspected" tag set (for these please answer the questions above as if the AoUs are requirements, except questions REQ_03_01 and REQ_03_02):
+And also the following AoUs in "valid" state and with "inspected" tag set (for these please answer the questions above as if the AoUs are requirements, except question REQ_03_01):
 
 .. needtable::
    :filter: "feature_name" in docname and "requirements" in docname and docname is not None and status == "valid"
