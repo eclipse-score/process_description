@@ -42,6 +42,9 @@ In this project there are inspections on the following work products, which are 
         * - :need:`wp__requirements_comp`
           - :need:`gd_chklst__req_inspection`
 
+        * - :need:`wp__requirements_sw_platform_aou`
+          - :need:`gd_chklst__req_inspection`
+
         * - :need:`wp__requirements_feat_aou`
           - :need:`gd_chklst__req_inspection`
 
@@ -69,40 +72,59 @@ Inspection Conduct
 Inspections are conducted by using version management tooling mechanisms and files based on inspection templates.
 We expect that the requirement and architecture work products need to mature during implementation and testing
 and that the inspection checklists also contain questions which can not be answered already at creation of the work product,
-because also other work products content also has to be taken into account (which is not available at the beginning,
+because also other work products content also has to be taken into account (which is not available at the beginning),
 therefore we use a two-step approach for the review and inspection for these.
 
 The detailed design and coding inspection is also done in this two-step approach, at least for the
 initial development of a feature/component. This is also to have a unified approach for the inspections
 and reduce initial tooling support effort.
 
-The initial step for review and inspection is the (informal) version management tooling review on every Pull-Request
+The initial activity for review and inspection is the (informal) version management tooling review on every Pull-Request
 (resp. Change Request, see :need:`gd_guidl__change_change_request`)
 which creates or modifies one of these work products (subject to inspection).
 After this review the work products are in status "valid", which means they can be used
 for further development and verification steps (note that merged code is always "valid").
-In this review the checklist entries shall be considered which are tagged as "incremental".
 
-The last step is initiated by the safety manager, security manager or quality manager:
-He asks the main work product author to set the work product's status to "valid(inspected)" and start a Pull-Request (PR).
+The next activity is the formal inspection, which follows the following workflow (see illustration below):
+
+.. figure:: _assets/score_inspection_workflow.drawio.svg
+    :width: 80%
+    :align: center
+    :alt: Inspections Workflow
+
+    Inspections Workflow
+
+1. Inspection initiation
+
+The inspection is initiated by the safety manager, security manager or quality manager who will be the moderator for the inspection.
+He sets the work product's status to "valid(inspected)" and starts a Pull-Request (PR).
 This marks the scope of the inspection but also the work product's version.
-For documentation of the review either the PR comments are used (based on inspection templates),
-or the author creates/updates an inspection documentation file based on the respective templates in the same PR
-containing the same information (scope/version of work products under inspection, author/reviewer/moderator, findings).
+For documentation of the review either the PR comments are used (based on latest inspection templates),
+or the safety manager creates/updates an inspection documentation file based on the latest respective templates in the same PR
+containing the same information (role assignment = author/reviewer(s)/moderator and checklist items).
 The latter option is not preferred but needs to be used in case the PR data can/could not be stored.
 When opening the PR, Version management tooling will automatically ask for a review by the defined one or more reviewer
 implemented by the codeowner mechanism of the work product.
 In the PR (resp. inspection documentation file) the inspection result will be documented for each checklist item
 (pass/fail - with link to a ticket for the corrections).
-The reviewers will fill out the checklist and add their findings on the work product in the PR.
+
+2. Inspection review
+
+The reviewers will fill out the checklist and add their findings on the work product in the PR (by adding an own commit into the PR).
 They close their review activity by documenting their verdict as "Approve" or "Request Changes".
-Any one "Request Changes" will block the PR from being merged. Note that the PR author cannot "Approve" or "Request Changes".
-After all requested reviews were done, the author answers the findings and/or performs corrections of the work products
+Any "Request Changes" will block the PR from being merged. Note that the PR author cannot "Approve" or "Request Changes" (his own PR).
+
+3. Inspection corrections
+
+After all requested reviewers are done, the author answers the findings and/or performs corrections of the work products
 - either directly or by creating a Bug ticket to resolve.
-Then the reviewer(s) re-review and adapt their verdict accordingly.
+
+4. Inspection approval
+
+The reviewer(s) re-review and adapt their verdict accordingly (to "Approve").
 In case the author or the reviewer(s) cannot agree on a solution, the safety/security/quality manger
-who initiated the inspection will be asked to moderate this by requesting also his review.
-After all the required reviewers approved, the PR is merged.
+who initiated the inspection will be asked to moderate this.
+After all the required reviewers approved including the CODEOWNER of the work product, the PR is merged.
 
 In future the project will try to establish (also) incremental inspections based on version management tooling only,
 i.e. the inspection template, findings documentation and storage will be part of this tooling.
@@ -111,12 +133,12 @@ But this is currently not implemented.
 The following picture shall illustrate how a status lifecycle of a requirement work product will look like.
 The lifecycle for other work product should be similar.
 
-.. figure:: _assets/inspection_workflow.drawio.svg
+.. figure:: _assets/score_req_review_workflow.drawio.svg
     :width: 80%
     :align: center
-    :alt: Inspections Workflow
+    :alt: Req Review Workflow
 
-    Review Inspections Workflow - Requirement Example
+    Review Workflow - Requirement Example
 
 #. Create requirement
 #. (Informal) Pull-Request Review
