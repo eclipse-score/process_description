@@ -26,7 +26,8 @@ Safety Planning Templates
 .. gd_temp:: Module Safety Plan Template
    :id: gd_temp__module_safety_plan
    :status: valid
-   :complies: std_req__iso26262__management_5425, std_req__iso26262__management_5424, std_req__iso26262__management_6465, std_req__iso26262__management_6466, std_req__iso26262__management_6467, std_req__iso26262__management_6468, std_req__iso26262__management_6469, std_req__isopas8926__44341, std_req__isopas8926__44342, std_req__isopas8926__44611, std_req__isopas8926__4463, std_req__iso26262__management_5427, std_req__iso26262__management_6421
+   :complies: std_req__iso26262__management_5425, std_req__iso26262__management_5424, std_req__iso26262__management_6465, std_req__iso26262__management_6466, std_req__iso26262__management_6467, std_req__iso26262__management_6468, std_req__iso26262__management_6469, std_req__isopas8926__44341, std_req__isopas8926__44342, std_req__isopas8926__44611, std_req__isopas8926__4463, std_req__iso26262__management_5427, std_req__iso26262__management_6421,
+              std_req__aspice_40__REU-2-BP4, std_req__aspice_40__REU-2-BP5
 
    For the content see here: :need:`doc__module_name_safety_plan`
 

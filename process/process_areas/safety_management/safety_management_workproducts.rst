@@ -104,7 +104,7 @@ Safety Management Work Products
    :id: wp__module_safety_manual
    :status: valid
    :tags: doc_lifecycle_model_2
-   :complies: std_wp__iso26262__software_651, std_wp__iso26262__system_651, std_wp__iso26262__support_1251
+   :complies: std_wp__iso26262__software_651, std_wp__iso26262__system_651, std_wp__iso26262__support_1251, std_req__aspice_40__iic-13-53
 
    The safety manual describes:
 
@@ -121,7 +121,7 @@ Safety Management Work Products
    :id: wp__sw_component_class
    :status: valid
    :tags: doc_lifecycle_model_2
-   :complies: std_wp__iso26262__support_1251, std_wp__isopas8926__4511
+   :complies: std_wp__iso26262__support_1251, std_wp__isopas8926__4511, std_req__aspice_40__iic-12-03, std_req__aspice_40__iic-15-07
 
    The classification shall include:
 

@@ -18,6 +18,7 @@ Component Classification Guideline
 .. gd_guidl:: Classification of a component
    :id: gd_guidl__component_classification
    :status: valid
-   :complies: std_req__isopas8926__441, std_req__isopas8926__4421, std_req__isopas8926__4422, std_req__isopas8926__4423, std_req__isopas8926__4424, std_req__isopas8926__4425, std_req__isopas8926__4426, std_req__isopas8926__4427, std_req__isopas8926__4428, std_req__isopas8926__4429, std_req__isopas8926__44210, std_req__isopas8926__44321, std_req__isopas8926__44322, std_req__isopas8926__4433
+   :complies: std_req__isopas8926__441, std_req__isopas8926__4421, std_req__isopas8926__4422, std_req__isopas8926__4423, std_req__isopas8926__4424, std_req__isopas8926__4425, std_req__isopas8926__4426, std_req__isopas8926__4427, std_req__isopas8926__4428, std_req__isopas8926__4429, std_req__isopas8926__44210, std_req__isopas8926__44321, std_req__isopas8926__44322, std_req__isopas8926__4433,
+              std_req__aspice_40__REU-2-BP1, std_req__aspice_40__REU-2-BP2, std_req__aspice_40__REU-2-BP3
 
    For the content see here: :need:`doc__component_name_comp_class`
