@@ -550,7 +550,7 @@
                   
   <section id="concept-description">
 <h1>Concept Description<a class="headerlink" href="#concept-description" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-42760881">
+<div class="need_container docutils container" id="SNCB-f9959074">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_doc_concept table" id="doc_concept__arch_process">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -703,7 +703,7 @@
 <section id="static-view">
 <h4>Static View<a class="headerlink" href="#static-view" title="Link to this heading">#</a></h4>
 <p>The first viewpoint is named as <em>feature architecture</em>. It displays the SW Components within the SW modules (= top level SW components) which are required to realize the feature including their interactions. Also the <em>logical interfaces</em> and the interaction between the feature and the user are included in this view. On this architectural level the feature requirements shall be allocated. An example for the static architecture is shown here:</p>
-<div class="need_container docutils container" id="SNCB-49a7302d">
+<div class="need_container docutils container" id="SNCB-403227c2">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_feat_arc_sta table" id="feat_arc_sta__example_feature__feature_1">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -724,7 +724,8 @@
 <tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
 <div class="line"><span><span><div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">architecture_design</span></span></span></div>
 </span></span></div>
-<div class="line"><span><div class="line">fulfils: <span class="fulfils"><span><a class="reference internal" href="guidance/architecture_modeling_example.html#feat_req__example_feature__archdes_example_req" title="feat_arc_sta__example_feature__feature_1">feat_req__example_feature__archdes_example_req</a></span></span></div>
+<div class="line"><span><div class="line">belongs to: <span class="belongs_to"><span><a class="reference internal" href="guidance/architecture_modeling_example.html#feat__example_feature" title="feat_arc_sta__example_feature__feature_1">feat__example_feature</a></span></span></div>
+<div class="line">fulfils: <span class="fulfils"><span><a class="reference internal" href="guidance/architecture_modeling_example.html#feat_req__example_feature__archdes_example_req" title="feat_arc_sta__example_feature__feature_1">feat_req__example_feature__archdes_example_req</a></span></span></div>
 <div class="line">includes: <span class="includes"><span><a class="reference internal" href="guidance/architecture_modeling_example.html#logic_arc_int__example_feature__archex_logical_interface_1" title="feat_arc_sta__example_feature__feature_1">logic_arc_int__example_feature__archex_logical_interface_1</a>, <a class="reference internal" href="guidance/architecture_modeling_example.html#logic_arc_int__example_feature__archex_logical_interface_2" title="feat_arc_sta__example_feature__feature_1">logic_arc_int__example_feature__archex_logical_interface_2</a></span></span></div>
 </span></div>
 </div>
@@ -732,7 +733,7 @@
 <td class="meta" colspan="3"></td>
 </tr>
 <tr class="content row-odd"><td class="content" colspan="6"><p class="plantuml" id="needarch-process_areas/architecture_design/architecture_concept-0">
-<object data="../../_images/plantuml-0507d7f460835c72877ababf425b2b40991917d4.svg" type="image/svg+xml" style="width:405px;height:398px;background:#FFFFFF;"></object></p>
+<object data="../../_images/plantuml-269e36c82f3eb66c346b0a914346a0ca4e5a84c7.svg" type="image/svg+xml" style="width:405px;height:398px;background:#FFFFFF;"></object></p>
 </td>
 </tr>
 <tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
@@ -774,7 +775,7 @@
 <section id="interface-view">
 <h4>Interface View<a class="headerlink" href="#interface-view" title="Link to this heading">#</a></h4>
 <p>On the feature level only <em>logical interfaces</em> shall be displayed. This means that only logical names shall be provided for both the interface and the operations within. Those <em>logical interfaces</em> shall be connected to component interfaces on the module view.</p>
-<div class="need_container docutils container" id="SNCB-51f14393">
+<div class="need_container docutils container" id="SNCB-ade4d335">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_logic_arc_int table" id="logic_arc_int__example_feature__archcon_logical_interface_1">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -825,7 +826,7 @@
 <h3>SW Module View<a class="headerlink" href="#sw-module-view" title="Link to this heading">#</a></h3>
 <p>A SW Module represents a outcome of an component or a set of components realizing a feature and all belonging parts of CI build tool. It serves only as a container (or package) which can include components. It is not meant to be an architectural element which includes that no requirements can be allocated to it.</p>
 <p>On this level also a view shall be defined which is called <em>Module View</em>. It represents the allocation of components into modules and displays the dependencies between the single modules. In this view also cyclic dependencies between modules can be identified.</p>
-<div class="need_container docutils container" id="SNCB-baabc414">
+<div class="need_container docutils container" id="SNCB-e187062f">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_mod_view_sta table" id="mod_view_sta__example_feature__archcon_1">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -877,7 +878,7 @@
 <section id="id1">
 <h4>Static View<a class="headerlink" href="#id1" title="Link to this heading">#</a></h4>
 <p>The <em>component architecture</em> describes the implementation of the functionalities in a white-box view. It describes the internal structure of SW components and their decomposition. It provides a more detailed information concerning the respective interfaces of a component. If a SW component interacts with a different component it is also included via a <em>use</em> relationship in the diagram. An example of the <em>component architecture</em> is displayed here:</p>
-<div class="need_container docutils container" id="SNCB-73541795">
+<div class="need_container docutils container" id="SNCB-e30b9e01">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_comp_arc_sta table" id="comp_arc_sta__example_feature__archdes_component_concept_1">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -948,7 +949,7 @@ In all views the components which are marked as ASIL_B related are drawn in red 
 <section id="id3">
 <h4>Interface View<a class="headerlink" href="#id3" title="Link to this heading">#</a></h4>
 <p>The component interface view shows the actual interfaces of the component. Also links to their corresponding logical interfaces are displayed in this view:</p>
-<div class="need_container docutils container" id="SNCB-4eb5f2f4">
+<div class="need_container docutils container" id="SNCB-2260ebc0">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_real_arc_int table" id="real_arc_int__example_feature__archdes_component_interface_1">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1240,7 +1241,7 @@ It serves as a guidance for modeling the architecture.</p>
 <section id="feature-architecture">
 <h5>Feature Architecture<a class="headerlink" href="#feature-architecture" title="Link to this heading">#</a></h5>
 <p>The following section is an example, how an <a class="reference external" href="https://eclipse-score.github.io/score/main/features/index.html">Feature</a> looks like and how the architecture of an Feature is described. Please note that components with an “ASIL_B” safety rating are highlighted with red borders in the diagram (e.g., “Component 1”).</p>
-<div class="need_container docutils container" id="SNCB-2ee6c36c">
+<div class="need_container docutils container" id="SNCB-7026ad73">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_feat table" id="feat__feature_name_example">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1284,7 +1285,7 @@ It serves as a guidance for modeling the architecture.</p>
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-1031bc13">
+<div class="need_container docutils container" id="SNCB-e14d6cd8">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_feat_arc_sta table" id="feat_arc_sta__example_feature__archdes_getstrt">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1305,7 +1306,8 @@ It serves as a guidance for modeling the architecture.</p>
 <tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
 <div class="line"><span><span><div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">architecture_design</span></span></span></div>
 </span></span></div>
-<div class="line"><span><div class="line">fulfils: <span class="fulfils"><span><a class="reference internal" href="guidance/architecture_modeling_example.html#feat_req__example_feature__archdes_example_req" title="feat_arc_sta__example_feature__archdes_getstrt">feat_req__example_feature__archdes_example_req</a></span></span></div>
+<div class="line"><span><div class="line">belongs to: <span class="belongs_to"><span><a class="reference internal" href="guidance/architecture_modeling_example.html#feat__example_feature" title="feat_arc_sta__example_feature__archdes_getstrt">feat__example_feature</a></span></span></div>
+<div class="line">fulfils: <span class="fulfils"><span><a class="reference internal" href="guidance/architecture_modeling_example.html#feat_req__example_feature__archdes_example_req" title="feat_arc_sta__example_feature__archdes_getstrt">feat_req__example_feature__archdes_example_req</a></span></span></div>
 <div class="line">includes: <span class="includes"><span><a class="reference internal" href="guidance/architecture_modeling_example.html#logic_arc_int__example_feature__archex_logical_interface_1" title="feat_arc_sta__example_feature__archdes_getstrt">logic_arc_int__example_feature__archex_logical_interface_1</a>, <a class="reference internal" href="guidance/architecture_modeling_example.html#logic_arc_int__example_feature__archex_logical_interface_2" title="feat_arc_sta__example_feature__archdes_getstrt">logic_arc_int__example_feature__archex_logical_interface_2</a></span></span></div>
 </span></div>
 </div>
@@ -1313,7 +1315,7 @@ It serves as a guidance for modeling the architecture.</p>
 <td class="meta" colspan="3"></td>
 </tr>
 <tr class="content row-odd"><td class="content" colspan="6"><p class="plantuml" id="needarch-process_areas/architecture_design/architecture_concept-5">
-<object data="../../_images/plantuml-0507d7f460835c72877ababf425b2b40991917d4.svg" type="image/svg+xml" style="width:405px;height:398px;background:#FFFFFF;"></object></p>
+<object data="../../_images/plantuml-269e36c82f3eb66c346b0a914346a0ca4e5a84c7.svg" type="image/svg+xml" style="width:405px;height:398px;background:#FFFFFF;"></object></p>
 </td>
 </tr>
 <tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
@@ -1345,6 +1347,7 @@ It serves as a guidance for modeling the architecture.</p>
    <span class="nc">:status:</span> valid
    <span class="nc">:includes:</span> logic_arc_int__example_feature__archex_logical_interface_1, logic_arc_int__example_feature__archex_logical_interface_2
    <span class="nc">:fulfils:</span> feat_req__example_feature__archdes_example_req
+   <span class="nc">:belongs_to:</span> feat__example_feature
 
 <span class="p">   ..</span> <span class="ow">needarch</span><span class="p">::</span>
       <span class="nc">:scale:</span> 50
@@ -1357,7 +1360,7 @@ It serves as a guidance for modeling the architecture.</p>
 <section id="component-architecture">
 <h5>Component Architecture<a class="headerlink" href="#component-architecture" title="Link to this heading">#</a></h5>
 <p>The following section is an example, how an component looks like and how the detail design of an component is described. Please note that components with an “ASIL_B” safety rating are highlighted with red borders in the diagram (e.g., “Component 1”).</p>
-<div class="need_container docutils container" id="SNCB-46d40278">
+<div class="need_container docutils container" id="SNCB-be93bc25">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_comp_arc_sta table" id="comp_arc_sta__example_feature__component_getstrt">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1445,7 +1448,7 @@ Therefore the <em>needarch</em> directive needs to be extended with the attribut
 </pre></div>
 </div>
 <p>Debug example for component architecture:</p>
-<div class="need_container docutils container" id="SNCB-2974ba2e">
+<div class="need_container docutils container" id="SNCB-3474e83f">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_comp_arc_sta table" id="comp_arc_sta__example_feature__component_getstrt_debug">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1531,7 +1534,7 @@ To make <em>needuml</em> work we have to replace the <em>need()</em> call with a
       CM -&gt; LI1: EXTRA_LINKAGE_MANUALLY_ADDED
 </pre></div>
 </div>
-<div class="need_container docutils container" id="SNCB-c2588c56">
+<div class="need_container docutils container" id="SNCB-a3b13b89">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_comp_arc_sta table" id="comp_arc_sta__example_feature__component_manual_getstrt">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
