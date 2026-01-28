@@ -44,6 +44,7 @@ Component Requirements
    :safety: ASIL_B
    :satisfies: feat_req__feature_name__some_title
    :status: invalid
+   :belongs_to: comp__component_name_template
 
    The Component shall do xyz to another component to bring it to this condition at this time
 

@@ -51,3 +51,8 @@ bazel_dep(name = "buildifier_prebuilt", version = "8.2.0.2")
 bazel_dep(name = "aspect_rules_lint", version = "1.5.3")
 bazel_dep(name = "score_tooling", version = "1.0.2")
 bazel_dep(name = "score_docs_as_code", version = "2.3.3")
+git_override(
+    module_name = "score_docs_as_code",
+    commit = "f784d4370240cc0eafce779e5c317f6bf8988fb2",
+    remote = "https://github.com/eclipse-score/docs-as-code.git",
+)

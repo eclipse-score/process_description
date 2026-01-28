@@ -54,6 +54,7 @@ Requirements
    :safety: ASIL_B
    :satisfies: stkh_req__requirements__template
    :status: invalid
+   :belongs_to: feat__feature_name
 
    The Feature shall do xyz to the user to bring him to this condition at this time.
 

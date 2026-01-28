@@ -39,6 +39,7 @@ Feature Architecture File
    :status: valid
    :includes: logic_arc_int__example_feature__archex_logical_interface_1, logic_arc_int__example_feature__archex_logical_interface_2, logic_arc_int__example_feature__archex_logical_interface_3
    :fulfils: feat_req__example_feature__archdes_example_req
+   :belongs_to: feat__example_feature
 
    .. needarch::
       :scale: 50
@@ -220,8 +221,7 @@ Component Architecure File(s)
    :status: valid
    :safety: ASIL_B
    :security: NO
-   :includes: comp__archex_sub_component_1, comp__archex_sub_component_2, comp__archex_sub_component_3
-   :fulfils: comp_req__example_feature__archex_example_req
+   :belongs_to: comp__component_example_1
 
    .. needarch::
       :scale: 50
@@ -275,6 +275,7 @@ Requierements for the Example
    :safety: ASIL_B
    :satisfies: stkh_req__example_feature__archdes_example_req
    :status: valid
+   :belongs_to: feat__example_feature
 
    The feature shall provide the functionality to ....
 
@@ -285,5 +286,6 @@ Requierements for the Example
    :safety: ASIL_B
    :satisfies: feat_req__example_feature__archdes_example_req
    :status: valid
+   :belongs_to: comp__component_example_2
 
    The component shall provide the Logical Operation 4 to get the ..

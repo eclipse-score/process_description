@@ -132,6 +132,7 @@ The first viewpoint is named as *feature architecture*. It displays the SW Compo
    :status: valid
    :includes: logic_arc_int__example_feature__archex_logical_interface_1, logic_arc_int__example_feature__archex_logical_interface_2
    :fulfils: feat_req__example_feature__archdes_example_req
+   :belongs_to: feat__example_feature
 
    .. needarch::
       :scale: 50
@@ -211,8 +212,8 @@ The *component architecture* describes the implementation of the functionalities
    :status: valid
    :safety: ASIL_B
    :security: NO
-   :includes: comp__archex_sub_component_1, comp__archex_sub_component_2, comp__archex_sub_component_3
    :fulfils: comp_req__example_feature__archex_example_req
+   :belongs_to: comp__component_example_1
 
    .. needarch::
       :scale: 50
@@ -497,6 +498,7 @@ The following section is an example, how an `Feature <https://eclipse-score.gith
       :status: valid
       :includes: logic_arc_int__example_feature__archex_logical_interface_1, logic_arc_int__example_feature__archex_logical_interface_2
       :fulfils: feat_req__example_feature__archdes_example_req
+      :belongs_to: feat__example_feature
 
       .. needarch::
          :scale: 50
@@ -521,6 +523,7 @@ The following section is an example, how an `Feature <https://eclipse-score.gith
       :status: valid
       :includes: logic_arc_int__example_feature__archex_logical_interface_1, logic_arc_int__example_feature__archex_logical_interface_2
       :fulfils: feat_req__example_feature__archdes_example_req
+      :belongs_to: feat__example_feature
 
       .. needarch::
          :scale: 50
@@ -538,8 +541,8 @@ The following section is an example, how an component looks like and how the det
    :status: valid
    :safety: ASIL_B
    :security: NO
-   :includes: comp__archex_sub_component_1, comp__archex_sub_component_2, comp__archex_sub_component_3
    :fulfils: comp_req__example_feature__archex_example_req
+   :belongs_to: comp__component_example_1
 
    .. needarch::
       :scale: 50
@@ -554,8 +557,8 @@ The following section is an example, how an component looks like and how the det
       :status: valid
       :safety: ASIL_B
       :security: NO
-      :includes: logic_arc_int__example_feature__archex_logical_interface_1, comp__archex_sub_component_1, comp__archex_sub_component_2, comp__archex_sub_component_3
       :fulfils: comp_req__example_feature__archex_example_req
+      :belongs_to: comp__component_component_getstrt
 
       .. needarch::
          :scale: 50
@@ -601,8 +604,8 @@ Debug example for component architecture:
    :status: valid
    :safety: ASIL_B
    :security: NO
-   :includes:
    :fulfils: comp_req__example_feature__archex_example_req
+   :belongs_to: comp__component_example_1
 
    .. needarch::
       :scale: 50
@@ -629,6 +632,7 @@ To make *needuml* work we have to replace the *need()* call with a different fun
       :security: NO
       :uses: logic_arc_int__example_feature__archex_logical_interface_1
       :fulfils: comp_req__example_feature__archex_example_req
+      :belongs_to: comp__component_component_manual_getstrt
 
       .. needuml::
 
@@ -644,6 +648,7 @@ To make *needuml* work we have to replace the *need()* call with a different fun
    :security: NO
    :uses: logic_arc_int__example_feature__archex_logical_interface_1
    :fulfils: comp_req__example_feature__archex_example_req
+   :belongs_to: comp__component_example_1
 
    .. needarch::
 

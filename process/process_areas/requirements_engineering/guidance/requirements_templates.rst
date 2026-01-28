@@ -50,6 +50,7 @@ Templates
         :valid_from: <milestone version>
         :valid_until: <milestone version>
         :status: <valid|invalid>
+        :belongs_to: <link to feature id>
 
 .. gd_temp:: Component Requirements Template
    :id: gd_temp__req_comp_req
@@ -65,6 +66,7 @@ Templates
          :safety: <QM|ASIL_B>
          :satisfies: <link to feature requirement id>
          :status: <valid|invalid>
+         :belongs_to: <link to component id>
 
 .. gd_temp:: AoU Requirement Template
    :id: gd_temp__req_aou_req

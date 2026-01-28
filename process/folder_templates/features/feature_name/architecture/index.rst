@@ -92,6 +92,7 @@ Static Architecture
    :status: invalid
    :fulfils: feat_req__feature_name__some_title
    :includes: logic_arc_int__feature_name__interface_name1
+   :belongs_to: feat__feature_name
 
    .. needarch::
       :scale: 50
@@ -108,6 +109,7 @@ Dynamic Architecture
    :safety: ASIL_B
    :status: invalid
    :fulfils: feat_req__feature_name__some_title
+   :belongs_to: feat__feature_name
 
    Put here a sequence diagram
 
