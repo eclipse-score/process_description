@@ -43,7 +43,7 @@ Platform
    coverage) has to be reflected in the :need:`wp__verification_plan` and :need:`wp__platform_safety_plan`.
 
    If software partitioning (operating system processes) is used to implement freedom from interference
-   effectiveness evidence shall be generated during integration and verification tests
+   effectiveness evidence shall be generated during integration tests.
 
 
 .. workproduct:: Platform Verification Report
@@ -83,7 +83,7 @@ Feature
    - performance and resource consumption: i.e. RAM and processor usage
      on reference HW
    - If software partitioning (operating system processes) is used to implement freedom from interference
-     effectiveness evidence shall be generated during integration and verification tests
+     effectiveness evidence shall be generated during integration tests.
 
 
 Module

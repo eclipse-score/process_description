@@ -170,3 +170,12 @@ Please note that it is mandatory to fill in the "passed" column with "yes" or "n
       -
       -
       -
+    * - ARC_04_03
+      - If your software architectural design of the component includes processes and tasks, are their scheduling policies and priorities (at least the needed relation one to another) defined to ensure that timing requirements are met? Please note, that the particular priorities or priority ranges will be probably defined by the project handbook or the software development plan.
+
+        Note: see :need:`std_req__iso26262__software_743`
+      - manual
+      - Give a reason for these scheduling policies and priorities or explain why not needed.
+      -
+      -
+      -
