@@ -1,6 +1,6 @@
 ..
    # *******************************************************************************
-   # Copyright (c) 2025 Contributors to the Eclipse Foundation
+   # Copyright (c) 2026 Contributors to the Eclipse Foundation
    #
    # See the NOTICE file(s) distributed with this work for additional
    # information regarding copyright ownership.
@@ -12,18 +12,26 @@
    # SPDX-License-Identifier: Apache-2.0
    # *******************************************************************************
 
-Security Manual Template
-=========================
+Module Security Manual
+======================
 
-.. gd_temp:: Security Manual Template
-   :id: gd_temp__security_manual
-   :status: valid
-   :complies:
+.. note:: Document header
 
-   Will be moved to Folder Templates (tbd https://github.com/eclipse-score/process_description/issues/109)
-   For the content see here: need:`doc__module_name_security_manual`
-   Will also adapted to the latest Safety ManualTemplate
+.. document:: [Your Module Name] Security Manual
+   :id: doc__module_name_security_manual
+   :status: draft
+   :safety: ASIL_B
+   :security: YES
+   :realizes: wp__module_security_manual
+   :tags: template
 
+.. attention::
+    The above directive must be updated according to your Module.
+
+    - Modify ``Your Module Name`` to be your Module Name
+    - Modify ``id`` to be your Module Name in upper snake case preceded by ``doc__`` and succeeded by ``security_manual``
+    - Adjust ``status`` to be ``valid``
+    - Adjust ``security`` and ``tags`` according to your needs
 
 Introduction/Scope
 ------------------
