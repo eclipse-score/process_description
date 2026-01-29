@@ -69,7 +69,6 @@ Roles
    * Refusing the approval of work products as defined in the workflows
    * Refusing the approval of his team's role nomination (i.e. requesting that the role will be withdrawn)
 
-
 .. role:: External Auditor
    :id: rl__external_auditor
    :status: valid

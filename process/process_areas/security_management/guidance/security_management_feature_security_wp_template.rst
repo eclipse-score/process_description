@@ -12,6 +12,8 @@
    # SPDX-License-Identifier: Apache-2.0
    # *******************************************************************************
 
+.. It is still unclear if Security analysis at Feature level is needed or not (and how will it be different when compared to Module level analysis?). This checklit is kept as it is for now. but it will be more clear when we actually pilot one.
+
 Feature Security Work Products Template
 =======================================
 

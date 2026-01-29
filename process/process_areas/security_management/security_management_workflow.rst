@@ -12,6 +12,7 @@
    # SPDX-License-Identifier: Apache-2.0
    # *******************************************************************************
 
+.. _workflow_security_management:
 
 Security Management Workflows
 #############################
@@ -53,7 +54,7 @@ For a detailed explanation of workflows and their role within the process model,
 .. workflow:: Perform Security Audit
    :id: wf__p_fs_audit_security
    :status: valid
-   :responsible: rl__external_auditor
+   :responsible: rl__security_external_auditor
    :approved_by: rl__project_lead
    :supported_by: rl__security_manager, rl__security_engineer
    :input: wp__module_security_plan, wp__platform_security_plan, wp__module_security_package, wp__platform_security_package
@@ -70,12 +71,12 @@ For a detailed explanation of workflows and their role within the process model,
 .. workflow:: Perform Formal Security Reviews
    :id: wf__p_formal_security_rv
    :status: valid
-   :responsible: rl__external_auditor
+   :responsible: rl__security_external_auditor
    :approved_by: rl__project_lead
    :supported_by: rl__security_manager, rl__security_engineer
    :input: wp__module_security_plan, wp__platform_security_plan, wp__module_security_package, wp__platform_security_package
    :output: wp__fdr_reports_security
-   :contains: gd_guidl__security_plan_definitions, gd_chklst__security_plan, gd_chklst__security_package
+   :contains: gd_guidl__security_plan_definitions, gd_chklst__platform_security_plan, gd_chklst__platform_security_package, gd_chklst__module_security_plan, gd_chklst__module_security_package
    :has: doc_concept__security_management_process, doc_getstrt__security_management_process
 
    | The external auditor is responsible to perform the formal reviews on Security plan and Security Analysis.
@@ -93,7 +94,7 @@ For a detailed explanation of workflows and their role within the process model,
    :supported_by: rl__committer
    :input: wp__requirements_feat_aou, wp__requirements_feat, wp__feature_arch, wp__feature_fmea, wp__feature_dfa, wp__requirements_comp_aou, wp__requirements_comp, wp__component_arch, wp__sw_component_fmea, wp__sw_component_dfa
    :output: wp__platform_security_manual, wp__module_security_manual
-   :contains: gd_guidl__security_manual, gd_temp__security_manual, gd_guidl__security_plan_definitions
+   :contains: gd_guidl__security_manual, gd_temp__platform_security_manual, gd_temp__module_security_manual, gd_guidl__security_plan_definitions
    :has: doc_concept__security_management_process, doc_getstrt__security_management_process
 
    | The Security Engineer collects the necessary input for the security manuals on

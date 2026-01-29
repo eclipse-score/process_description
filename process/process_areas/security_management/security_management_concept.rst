@@ -25,9 +25,6 @@ Concept Description
 In this section a concept for the Security Management will be discussed. Inputs for this concepts
 are mainly the requirements of ISO SAE 21434 Clause 5, 6 and 8.
 
-The term security is used here synonymously for the term cybersecurity as defined in ISO SAE 21434.
-
-
 Inputs
 ******
 
@@ -43,12 +40,15 @@ Stakeholders for the Security Management
 
 #. :need:`Project Lead <rl__project_lead>`
 
-   * approving security audit
-   * planning of development for platform/nodule projects
-   * status reporting of security activities
-   * approving security plan, security package
+   * is overall approver for security management activities.
+   * For more details refer the role definition in :need:`Project Lead <rl__project_lead>`.
 
 #. :need:`Security Manager <rl__security_manager>`
+
+   * is the main responsible for the security management work products (as in :doc:`security_management_workproducts`).
+     See also role definition in :doc:`security_management_roles`.
+
+#. :need:`Security Engineer <rl__security_engineer>`
 
    * is the main responsible for the security management work products (as in :doc:`security_management_workproducts`).
      See also role definition in :doc:`security_management_roles`.
@@ -62,16 +62,17 @@ Stakeholders for the Security Management
 
    * reports weaknesses and vulnerabilities
 
-#. :need:`External Auditor <rl__external_auditor>`
+#. :need:`External Security Auditor <rl__security_external_auditor>`
 
    * understand activities planning, processes definition and execution (needs review, if we consider that)
 
 #. "Distributor" (external role)
 
-   * use the platform in a safe and secure way
-   * integrate the platform in their product (distribution) and security package
-   * plan this integration (also in time)
-   * qualify the SW platform as part of his product
+   * Use the platform in a safe and secure way.
+   * Integrate the platform in their product (distribution) and security package
+   * Plan this integration (also in time)
+   * Qualify the SW platform as part of his product
+   * Ensures that all Assumptions of use are analyzed for the project. It is recommended that these assumptions of use shall be treated as “requirements” by the the distributors and/or project system integrators.
 
 #. :need:`Safety Manager <rl__safety_manager>`
 
@@ -81,22 +82,8 @@ Stakeholders for the Security Management
 
    * Supports the creation and maintenance of the SBOM
 
-#. :need:`Quality Manager <rl__quality_manager>`
-
-   * Supports training activities
-
-
-Standard Requirements
-=====================
-
-Also requirements of standards need to be taken into consideration:
-
-* ISO 26262
-* ASPICE
-* ISO SAE 21434
-
-Security Management Plans
-*************************
+Security Plans
+**************
 
 This SW platform project defines two levels of planning: platform and module. There will be one security plan on platform level and several security plans on module level (one for each module).
 This is how we organize our development teams and repositories. Each of these security plan "creates" one component OoC.
@@ -114,8 +101,8 @@ Apart from the security plans the main work products of security management are 
 Security Management Tooling
 ***************************
 
-For the security planning and security manual, "re-structured text" will be used for referencing.
+For the security planning and security manual a “Docs-as-Code” approach is used and within that approach Id will be used for referencing.
 
-For the activities planning and monitoring (who, when) we use :need:`wp__issue_track_system`.
+For the activities planning (who, when) we use :need:`wp__issue_track_system` to create and manage issues, and monitor progress through a project management dashboard.
 
 For the reporting (e.g. displaying the status of the work products) additional tooling is created (see :doc:`guidance/security_management_process_reqs`).

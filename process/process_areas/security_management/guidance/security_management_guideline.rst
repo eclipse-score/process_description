@@ -23,9 +23,7 @@ Security Management Guideline
    :complies: std_req__isosae21434__org_management_5421, std_req__isosae21434__org_management_5422, std_req__isosae21434__org_management_5423, std_req__isosae21434__org_management_5443, std_req__isosae21434__org_management_5451, std_req__isosae21434__org_management_5461, std_req__isosae21434__continual_8321, std_req__isosae21434__continual_8322,
               std_req__aspice_40__iic-14-55
 
-   **Overall security management:**
-
-   Security culture:
+   **Security culture:**
 
    Security culture is planned to grow in the SW platform.
    This shall be fostered by doing a lessons learned after each feature development completion,
@@ -36,12 +34,12 @@ Security Management Guideline
    are defined with experience of several companies already performing successful safe and secure
    SW development. This also improves independence of reviews for the process definitions.
 
-   Quality Management:
+   **Quality Management:**
 
    ASPICE standard is selected for quality management. Processes will always link to the
    :ref:`standard_isosae21434` standard and to the :ref:`standard_aspice_pam4` standard.
 
-   Competence management:
+   **Competence management:**
 
    The :need:`rl__security_manager` on SW platform level is responsible to define a competence
    management for the whole platform. Expectation is that the security competence of the persons
@@ -50,14 +48,14 @@ Security Management Guideline
    So the module security managers shall consult the :need:`wp__platform_security_plan` and
    perform accordingly in their module project.
 
-   Communication:
+   **Communication:**
 
    Development teams are interdisciplinary, so the regular (sprint) planning and review meetings
    enable communication (as defined in :need:`wp__platform_mgmt`). Another main communication
    means are the Pull Request reviews. Also the standard Eclipse Foundation communication strategies
    are used (e.g. mailing lists)
 
-   Security Weaknesses, Vulnerabilities:
+   **Security Weaknesses, Vulnerabilities:**
 
    As the SW platform organization does not have own vehicles in the field, it relies on feedback
    from OEMs and Distributors on bugs discovered in the field. The need for this feedback is part
@@ -72,7 +70,7 @@ Security Management Guideline
    via the :need:`wp__issue_track_system` (which is also Open Source).
 
 
-   **Tailoring security activities:**
+   **Tailoring Security activities:**
 
    Main tailoring driver is that the SW platform is pure SW development and is provided as "(component) OoC" -
    this explains mainly the generic, platform wide tailoring.
@@ -83,7 +81,7 @@ Security Management Guideline
    existing components is the main tailoring driver.
 
 
-   **Planning security activities:**
+   **Planning Security activities:**
 
    In the security plan the nomination of the security manager and the project lead is documented.
    The planning of security activities is done using issues in the :need:`wp__issue_track_system`
@@ -140,6 +138,7 @@ Security Management Guideline
 
    See the respective work products:
 
+   * platform level: :need:`wp__platform_security_analysis`
    * feature level: :need:`wp__feature_security_analysis`
    * component level: :need:`wp__sw_component_security_analysis`
 
@@ -178,7 +177,7 @@ Security Management Guideline
    instruct the user of a OoC (in this project on platform and module level) to securely use it
    in the context of the user's OoC and requirements for post-development.
    Its main content is described in :need:`wp__platform_security_manual` and :need:`wp__module_security_manual`.
-   A template exists to guide the definition of the security manual on platform and module level (:need:`gd_temp__security_manual`).
+   A template exists to guide the definition of the security manual on platform and module level (:need:`doc__module_name_security_manual`).
 
 .. gd_guidl:: Security package automated generation
    :id: gd_guidl__security_package

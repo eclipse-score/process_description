@@ -12,18 +12,26 @@
    # SPDX-License-Identifier: Apache-2.0
    # *******************************************************************************
 
-Module Security Plan Template
-=============================
+Module Security Plan
+====================
 
-.. gd_temp:: Module Security Plan Template
-   :id: gd_temp__module_security_plan
-   :status: valid
-   :complies:
+.. note:: Document header
 
-   Will be moved to Folder Templates (tbd https://github.com/eclipse-score/process_description/issues/109)
-   For the content see here: need:`doc__module_name_security_plan`
-   Will also adapted to the latest Safety Plan Template
+.. document:: [Your Module Name] Security Plan
+   :id: doc__module_name_security_plan
+   :status: draft
+   :safety: ASIL_B
+   :security: YES
+   :realizes: wp__module_security_plan
+   :tags: template
 
+.. attention::
+    The above directive must be updated according to your Module.
+
+    - Modify ``Your Module Name`` to be your Module Name
+    - Modify ``id`` to be your Module Name in upper snake case preceded by ``doc_`` and succeeded by ``security_plan``
+    - Adjust ``status`` to be ``valid``
+    - Adjust ``safety`` and ``tags`` according to your needs
 
 
    | **1. Security Management Context**
@@ -75,14 +83,14 @@ Module Security Plan Template
           - <automated>
 
         * - :need:`wp__fdr_reports` (module Security Plan)
-          - :need:`gd_chklst__security_plan`
+          - :need:`gd_chklst__module_security_plan`
           - <automated>
           - <Link to issue>
           - <Link to WP>
           - <automated>
 
         * - :need:`wp__fdr_reports` (module Security Package)
-          - :need:`Security Package Formal Review Checklist <gd_chklst__security_package>`
+          - :need:`Security Package Formal Review Checklist <gd_chklst__module_security_package>`
           - <automated>
           - <Link to issue>
           - <Link to WP>
@@ -110,7 +118,7 @@ Module Security Plan Template
           - <automated>
 
         * - :need:`wp__module_security_manual`
-          - :need:`gd_temp__security_manual`
+          - :need:`gd_temp__module_security_manual`
           - <automated>
           - <Link to issue>
           - <Link to WP>

@@ -19,3 +19,4 @@ Manuals
    :titlesonly:
 
    safety_manual
+   security_manual

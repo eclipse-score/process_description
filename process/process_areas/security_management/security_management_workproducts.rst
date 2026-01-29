@@ -14,7 +14,6 @@
 
 Security Management Work Products
 #################################
-
 .. workproduct:: Platform Security Plan
    :id: wp__platform_security_plan
    :status: valid
@@ -26,6 +25,8 @@ Security Management Work Products
    This platform security plan also takes into account the eclipse organization's rules relevant for security development.
 
    Guidelines on how an change impact analysis shall be concluded on each item or element involved together with it's connected items or elements.
+
+   For the template see here: :need:`doc__platform_security_manual`
 
    This is on following level:
 
@@ -40,6 +41,8 @@ Security Management Work Products
    Plan to manage and guide the execution of the security activities of a project including dates, milestones, tasks, deliverables, responsibilities (including the Security Manager appointment) and resources.
 
    Guidelines on how an impact analysis shall be concluded on each item or element involved together with it's connected items or elements.
+
+   For the template see here: :need:`doc__module_name_security_manual`
 
    This is on following level:
 
@@ -59,7 +62,7 @@ Security Management Work Products
    :id: wp__module_security_package
    :status: valid
    :tags: doc_lifecycle_model_2
-   :complies:
+   :complies: std_wp__isosae21434__prj_management_652
 
    Compiled Security Relevant Work Products. For Module OoC.
 
@@ -74,6 +77,10 @@ Security Management Work Products
    Review that a work product provides sufficient and convincing evidence of their contribution to the achievement of security considering the corresponding objectives and requirements of ISO SAE 21434.
 
    Will contain formal review report for Security Plan, Security Package, Security Analyses.
+
+   For the different review checklist see here:
+     - Review checklist for Security plans: :need:`doc__platform_name_security_plan_fdr` and :need:`doc__module_name_security_plan_fdr`
+     - Review checklist for Security packages: :need:`doc__platform_name_security_package_fdr` and :need:`doc__module_name_security_package_fdr`
 
 .. workproduct:: Process Security Audit Report
    :id: wp__audit_report_security
@@ -101,6 +108,8 @@ Security Management Work Products
 
    This is on platform level. Only one manual for the entire platform.
 
+   For template see here: :need:`doc__platform_security_manual`
+
 .. workproduct:: Module Security Manual
    :id: wp__module_security_manual
    :status: valid
@@ -118,11 +127,13 @@ Security Management Work Products
 
    This is on module level. One manual per each module.
 
+   For template see here: :need:`doc__module_name_security_manual`
+
 .. workproduct:: Platform Software Bill of Material (SBOM)
    :id: wp__sw_platform_sbom
    :status: draft
    :tags: doc_lifecycle_model_2
-   :complies:
+   :complies: std_wp__isosae21434__continual_8631
 
    Platform Software Bill of Material
    - comprehensive inventory of software components to ensure security, integrity, and compliance.
@@ -131,7 +142,7 @@ Security Management Work Products
    :id: wp__sw_module_sbom
    :status: draft
    :tags: doc_lifecycle_model_2
-   :complies:
+   :complies: std_wp__isosae21434__continual_8631
 
    Module Software Bill of Material
    - comprehensive inventory of software components to ensure security, integrity, and compliance.
