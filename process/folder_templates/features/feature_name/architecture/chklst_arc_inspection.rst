@@ -42,17 +42,27 @@ practices.
 The checklist guides evaluation of the architecture design, identifies potential problems, and aids in
 communication and documentation of architectural decisions to stakeholders.
 
+Conduct
+-------
+
+As described in the concept :need:`doc_concept__wp_inspections` the following "inspection roles" are expected to be filled:
+
+- content responsible (author): <contributor/committer explicitly named here, who is the main author, as can be seen in config mgt tooling>
+- reviewer: <contributor/committer explicitly named here, who is the main content reviewer, must be different from content responsible>
+- moderator: <contributor/committer explicitly named here, who is is the safety manager, security manager or quality manager initiating the inspection>
+
 Checklist
 ---------
 
-Please note that it is mandatory to fill in the "passed" column with "yes" or "no" for each checklist item and additional to add in the remarks why it is passed or not passed. In case of "no" an issue link to the issue tracking system has to be added in the last column. See also :ref:`review_concept` for further information about reviews in general and inspection in particular.
+It is mandatory to fill in the "passed" column with "yes" or "no" for each checklist item and additionally to add in the remarks why it is passed or not passed.
+In case of "no" an issue link to the issue tracking system has to be added in the last column (if not solved in the same issue).
+See also :need:`doc_concept__wp_inspections` for further information about reviews in general and inspection in particular.
 
 .. list-table:: Architecture Design Review Checklist
     :header-rows: 1
 
     * - Review Id
       - Acceptance criteria
-      - Type
       - Guidance
       - passed
       - Remarks
@@ -60,7 +70,6 @@ Please note that it is mandatory to fill in the "passed" column with "yes" or "n
     * - ARC_01_01
       - Is the traceability from software architectural elements to requirements, and other level architectural
         elements (e.g. component to interface) established according to the "Relations between the architectural elements" as described in :need:`doc_concept__arch_process`?
-      - automated
       - Trace should be checked automatically by tool support in the future. It will be removed from the checklist once the requirement (:need:`Correlations of the architectural building blocks <gd_req__arch_build_blocks_corr>`) is implemented. Refer to `Tool Requirements <https://eclipse-score.github.io/docs-as-code/main/internals/requirements/requirements.html>`_ for the current status.
       -
       -
@@ -68,14 +77,12 @@ Please note that it is mandatory to fill in the "passed" column with "yes" or "n
     * - ARC_01_02
       - If the architectural element is related to any supplier manuals (incl. safety and security)
         are the relevant parts covered?
-      - manual
       - If the architecture makes use of supplied elements, their manuals (like safety) have to be considered (i.e. its provided functionality matches the expectation and assumptions are fulfilled). Note that in case of safety component this means that assumed Technical Safety Requirements and AoUs of the safety manual are covered.
       -
       -
       -
     * - ARC_01_03
       - Is the architectural element traceable to the lower level artifacts as defined by the workproduct traceability?
-      - automated
       - Will be removed from checklist once the requirement (:need:`Correlations of the architectural building blocks <gd_req__arch_build_blocks_corr>`) is implemented by automated tool check. See `Tool Requirements <https://eclipse-score.github.io/docs-as-code/main/internals/requirements/requirements.html>`_.
         Details of possible linking can be depicted from :ref:`traceability concept <general_concepts_traceability>`.
       -
@@ -83,21 +90,18 @@ Please note that it is mandatory to fill in the "passed" column with "yes" or "n
       -
     * - ARC_02_01
       - Is the software architecture design compliant with the (overall) feature architecture?
-      - manual
       - On component level check against the feature architecture, on feature level check other features with common components used.
       -
       -
       -
     * - ARC_02_02
       - Is appropriate and comprehensible operation/interface naming present in the architectural design?
-      - manual
       - Check :need:`gd_guidl__arch_design`
       -
       -
       -
     * - ARC_02_03
       - Are correctness of data flow and control flow within the architectural elements considered?
-      - manual
       - E.g. examine definitions, transformations, integrity, and interaction of data; check error handling, data
         exchange between elements, correct response to inputs and documented decision making.
         Note: consistency is ensured by the process/tooling, by defining each interface only once.
@@ -106,7 +110,6 @@ Please note that it is mandatory to fill in the "passed" column with "yes" or "n
       -
     * - ARC_02_04
       - Are the interfaces between the software architectural element and other architectural elements well-defined?
-      - manual
       - Check if the interface reacts on non-defined behavior or errors; can established protocols be used; are the
         interfaces for inputs, outputs, error codes documented; is loose coupling considered and only limited exposure;
         can unit or integration test be written against the interface; data amount transferred; no sensitive data
@@ -116,7 +119,6 @@ Please note that it is mandatory to fill in the "passed" column with "yes" or "n
       -
     * - ARC_02_05
       - Does the software architectural element consider the timing constraints (from the parent requirement)?
-      - manual
       - If there are hard requirements on the timing a programming time estimation should be performed and also
         deadline supervision considered.
       -
@@ -125,7 +127,6 @@ Please note that it is mandatory to fill in the "passed" column with "yes" or "n
     * - ARC_02_06
       - Is the documentation of the software architectural element, including textual and graphical descriptions
         (e.g., UML diagrams), comprehensible and complete?
-      - manual
       - Use of semi-formal notation is expected for architectural elements with an allocated ASIL level.
         Is the architecture template correctly filled?
       -
@@ -133,14 +134,12 @@ Please note that it is mandatory to fill in the "passed" column with "yes" or "n
       -
     * - ARC_03_01
       - Is the architectural element modular and encapsulated?
-      - manual
       - Check e.g. that only minimal interfaces are used. Design should be object oriented. Interfaces and interactions are clearly defined. Usage of access types (private, protected) properly set. Limited global variables.
       -
       -
       -
     * - ARC_03_02
       - Is the suitability of the software architecture for future modifications and maintainability considered?
-      - manual
       - Check for e.g. loose coupling, separation of concerns, high cohesion, versioning strategy for interfaces,
         decision records, use of established design patterns.
       -
@@ -148,7 +147,6 @@ Please note that it is mandatory to fill in the "passed" column with "yes" or "n
       -
     * - ARC_03_03
       - Are simplicity and avoidance of unnecessary complexity present in the software architecture?
-      - manual
       - Indicators for complexity are: number of use cases (corresponding to dynamic diagrams)
         allocated to single design element, number of interfaces and operations in an interface,
         function parameters, global variables, complex types, limited comprehensibility.
@@ -159,7 +157,6 @@ Please note that it is mandatory to fill in the "passed" column with "yes" or "n
       -
     * - ARC_03_04
       - Is the software architecture design following best practices and design principles?
-      - manual
       - Refer to architectural guidelines and recommendations within the project documentation.
       -
       -
@@ -168,7 +165,6 @@ Please note that it is mandatory to fill in the "passed" column with "yes" or "n
       - If software partitioning (different operating system processes) is used to implement freedom from interference between the processes with different rating (QM/ASIL), is effectiveness evidence generated during integration and verification tests?
 
         Note: see :need:`std_req__iso26262__software_749` and Annex D for partitioning
-      - manual
       -
         a) the usage of shared resources (cpu time, shared memory, ...) are checked in a way that freedom from interference between the processes is ensured,
         b) check if the operating system supports freedom from interference between the processes
@@ -179,7 +175,6 @@ Please note that it is mandatory to fill in the "passed" column with "yes" or "n
       - Is an upper estimation of the required resources (RAM, ROM, non volatile memory, communication) available and documented?
 
         Note: see :need:`std_req__iso26262__software_7411`
-      - manual
       -
       -
       -
@@ -188,8 +183,40 @@ Please note that it is mandatory to fill in the "passed" column with "yes" or "n
       - Are the the scheduling properties for the component defined and documented?
 
         Note: see :need:`std_req__iso26262__software_743`
-      - manual
       -
       -
       -
       -
+
+
+.. attention::
+    The above checklist entries must be filled according to your feature architecture in scope.
+
+Note: If a Review ID is not applicable for your architecture, then state ""n/a" in status and comment accordingly in remarks.
+
+The following static views in "valid" state and with "inspected" tag set are in the scope of this inspection:
+
+.. needtable::
+   :filter: "feature_name" in docname and "architecture" in docname and docname is not None and status == "valid"
+   :style: table
+   :types: feat_arc_sta
+   :tags: feature_name
+   :columns: id;status;tags
+   :colwidths: 25,25,25
+   :sort: title
+
+and the following dynamic views:
+
+.. needtable::
+   :filter: "feature_name" in docname and "architecture" in docname and docname is not None and status == "valid"
+   :style: table
+   :types: feat_arc_dyn
+   :tags: feature_name
+   :columns: id;status;tags
+   :colwidths: 25,25,25
+   :sort: title
+
+.. attention::
+    The above tables filtering must be updated according to your Feature.
+
+    - Modify ``feature_name`` to be your Feature Name in lower snake case
