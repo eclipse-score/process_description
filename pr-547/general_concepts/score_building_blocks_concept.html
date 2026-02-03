@@ -526,7 +526,7 @@
                   
   <section id="building-blocks-concept">
 <span id="general-concepts-building-blocks"></span><h1>Building blocks concept<a class="headerlink" href="#building-blocks-concept" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-1f418558">
+<div class="need_container docutils container" id="SNCB-ebcfaa9a">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_doc_concept table" id="doc_concept__general_building_blocks">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -572,40 +572,51 @@
 <h2>Building blocks meta model<a class="headerlink" href="#building-blocks-meta-model" title="Link to this heading">#</a></h2>
 <p>The following figure gives an overview about the building blocks of the project <strong>Platform</strong>
 (blue box, top, 2nd column). The objectives of the project platform include
-enabling of feature integration for different use cases and domains. This includes safety-critical
-applications. Thus the intention is, that the platform can be developed as a Safety
-Element out of Context (<strong>SEooC</strong>) (green box, top, 1st column). The objectives of the platform are
-expressed as concrete <strong>Stakeholder Requirements</strong> (blue box, top, 2nd column), which can be tested
-by provided <strong>Platform Integration Tests</strong> (blue box, top, 5th column) for reference hardware platforms. The
-platform consists of <strong>Features</strong> (yellow box, middle, 2nd column).</p>
-<p>Further the project provides <strong>Software Modules</strong> (red box, middle, 1st column), which can also be
-developed as a SEooC. A Software Module is defined as a <strong>Component</strong> (green box, middle, 2nd column)
-or a set of components realizing a Feature of the platform. In this sense a Software Module is the
-highest level component in our model. A Software Module represents e.g. executable code or a library.</p>
+enabling of feature integration for different use cases and domains. This includes
+safety-critical applications. Thus the intention is, that the platform can be developed
+as a Safety Element out of Context (<strong>SEooC</strong>) and it can be delivered as part of a
+Delivery Container (green box, top, 1st column). The objectives of the platform are
+expressed as concrete <strong>Stakeholder Requirements</strong> (blue box, top, 2nd column), which
+can be tested by provided <strong>Platform Integration Tests</strong> (blue box, top, 6th column)
+for reference hardware platforms. A <strong>Platform Safety/Security Analysis</strong>
+(blue box, top, 6th column) is required to verify the Feature Architectures, whereby
+violations of safety/security requirements must be documented. Potential faults
+may mitigated by updating the Stakeholder Requirements or by the <strong>SW-platform
+Assumptions of Use</strong> (blue box, top, 7nd column).</p>
+<p>The platform consists of <strong>Features</strong> (yellow box, middle, 2nd column).</p>
+<p>Further the project provides <strong>Dependable Elements</strong> (red box, middle, 1st column),
+which can also be developed as a SEooC and it can be delivered as part of a Delivery
+Container. A Dependable Element is consists of <strong>Components</strong> (green box, middle, 2nd column)
+or a set of components realizing a Feature of the platform. In this sense a Dependable
+Element is the highest abstraction level in our model. A Dependable Element,
+delivered in a Delivery Container represents e.g. executable code or a library.
+The <strong>Dependable Element View</strong> (red box, middle, 1st column) documents the mapping of
+components to a Dependable Element.</p>
 <p>Components are the major building blocks of the platform. Components consists of <strong>Units</strong>
 (grey box, bottom, 2nd column), the lowest level in our model. The represent the source code,
-which implements the Unit. Units has a <strong>Detailed Design</strong> (grey box, middle, 3rd column), which is
-also implemented by the <strong>Source Code</strong> (grey box, bottom, 3rd column). The Detailed Design is
-verified by <strong>Unit Tests</strong> (grey box, middle, 5th column).</p>
-<p>Components are defined by <strong>Component Requirements</strong> (green box, middle, 3rd column) and the
-<strong>Component Architecture</strong> (green box, middle, 4th column). A <strong>Component Safety/Security Analysis</strong>
-(green box, middle, 6th column) is required to verify the Component Architecture, whereby
-violations of safety/security requirements must be documented. Potential faults
-may mitigated by updating the Component Requirements or by the <strong>Component Assumptions of Use</strong>
-(green box, middle, 8nd column). The latter one must be considered by the user of the Component.
-<strong>Component Tests</strong> (green box, middle, 5th column) verify the Component requirements, and
-<strong>Component Integration Tests</strong> (green box, middle, 7th column) verify the Component Architecture
-as well as the Integration of multiple Units to a Component.</p>
-<p>As mentioned above a Software Module is defined as a Component or a set of components realizing a
-Feature of the platform. Features consists of components and are defined by <strong>Feature Requirements</strong>
+which implements the Unit. Units has a <strong>Detailed Design</strong> (grey box, middle, 3rd column),
+which is also implemented by the <strong>Source Code</strong> (grey box, bottom, 3rd column).
+The Detailed Design is verified by <strong>Unit Tests</strong> (grey box, middle, 5th column).</p>
+<p>Components are defined by <strong>Component Requirements</strong> (green box, middle, 3rd column) and
+the <strong>Component Architecture</strong> (green box, middle, 4th column).
+A <strong>Component Safety/Security Analysis</strong> (green box, middle, 6th column) is required to
+verify the Component Architecture, whereby violations of safety/security requirements
+must be documented. Potential faults may mitigated by updating the Component Requirements
+or by the <strong>Component Assumptions of Use</strong> (green box, middle, 8nd column). The latter
+one must be considered by the user of the Component. <strong>Component Integration Tests</strong>
+(green box, middle, 5th column) verify the Component  requirements, and the Component
+Architecture as well as the Integration of multiple Units to a Component.</p>
+<p>Features consists of components and are defined by <strong>Feature Requirements</strong>
 (yellow box, middle, 3rd column) and the <strong>Feature Architecture</strong> (yellow box, middle, 4th column).
-A <strong>Feature Safety/Security Analysis</strong> (yellow box, middle, 6th column) is required to verify the Feature
-Architecture, whereby violations of safety/security requirements must be documented. Potential
-faults may mitigated by updating the Feature Requirements or by the
-<strong>Feature Assumptions of Use</strong> (yellow box, middle, 8nd column). The latter one must be considered
-by the user of the Feature. <strong>Feature Integration Tests</strong> (yellow box, middle, 5th column) verify
-the Feature Requirements and the Feature Architecture as well as the Integration of multiple Units
-to a Component.</p>
+A <strong>Feature Safety/Security Analysis</strong> (yellow box, middle, 6th column) is required to
+verify the Feature Architecture, whereby violations of safety/security requirements must
+be documented. Potential faults may mitigated by updating the Feature Requirements or by
+the <strong>Feature Assumptions of Use</strong> (yellow box, middle, 8nd column). The latter one must
+be considered by the user of the Feature. <strong>Feature Integration Tests</strong>
+(yellow box, middle, 5th column) verify the Feature Requirements and the Feature
+Architecture.
+Feature has <strong>Logical Architecture Interfaces</strong> (green box, middle, 3th column), which
+are implemented by the components.</p>
 <figure class="align-center" id="id1">
 <a class="reference internal image-reference" href="../_images/score_building_blocks_meta_model.drawio.svg"><img alt="Building blocks overview for project platform" src="../_images/score_building_blocks_meta_model.drawio.svg" style="width: 100%;" />
 </a>
@@ -614,11 +625,11 @@ to a Component.</p>
 </figcaption>
 </figure>
 </section>
-<section id="building-blocks-example">
-<h2>Building blocks example<a class="headerlink" href="#building-blocks-example" title="Link to this heading">#</a></h2>
-<p>The following figure is an example to explain the elements from the meta model. The user of the
-project platform wants to use the feature key-value-store. For that the user must integrate
-the software module “kvstorage”. As this modules dependence on another module, the user must also
+<section id="building-blocks-example-to-be-reworked">
+<h2>Building blocks example (to be reworked)<a class="headerlink" href="#building-blocks-example-to-be-reworked" title="Link to this heading">#</a></h2>
+<p>The following figure is an example to explain the elements from the meta model.
+The user of the project platform wants to use the feature key-value-store. For that the
+user must integrate the software module “kvstorage”. As this modules dependence on another module, the user must also
 integrate the software module “json_al”. The module “kvstorage” is built-up by the
 components “kvs” and “fs”, where the module “json_al” contains only one component “json_al”.
 The latter example is more or less a corner case.
@@ -682,7 +693,7 @@ as safety element out of context (SEooC).</p>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#building-blocks-meta-model">Building blocks meta model</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#building-blocks-example">Building blocks example</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#building-blocks-example-to-be-reworked">Building blocks example (to be reworked)</a></li>
 </ul>
   </nav></div>
 
