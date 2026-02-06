@@ -48,6 +48,7 @@ Project Management Roles
    * High-level project control and coordination between multiple software modules
    * Escalation instance
    * Planning and Approval the releases of the <Project>
+   * Approves security related artifcats likes security audit, security plan, security package including status reporting of security activities
 
    Authority
 

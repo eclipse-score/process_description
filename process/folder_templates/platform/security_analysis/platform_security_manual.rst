@@ -12,26 +12,27 @@
    # SPDX-License-Identifier: Apache-2.0
    # *******************************************************************************
 
-Security Manual Template
-=========================
+Platform Security Manual
+========================
 
-.. gd_temp:: Security Manual Template
-   :id: gd_temp__security_manual
-   :status: valid
-   :complies:
+.. note:: Document header
 
-   Will be moved to Folder Templates (tbd https://github.com/eclipse-score/process_description/issues/109)
-   For the content see here: need:`doc__module_name_security_manual`
-   Will also adapted to the latest Safety ManualTemplate
-
+.. document:: Platform Security Manual
+   :id: doc__platform_security_manual
+   :status: draft
+   :safety: ASIL_B
+   :security: YES
+   :realizes: wp__platform_security_manual
+   :tags: template
 
 Introduction/Scope
 ------------------
-| <Describe here which module (or the platform) is covered by this manual.>
+.. note:: The platform Security Manual is only performed once at platform level to analyse the dependencies between the features of the platform.
+          The results shall be used as an input for the safety analysis so that general safety mechanisms are only defined once and not in every single safety analysis.
 
 Assumed Platform Security Requirements
 --------------------------------------
-| For the <Project platform / module name> the following security related stakeholder requirements are assumed to define the top level functionality (purpose) of the <Project platform / module name>. I.e. from these all the feature and component requirements implemented are derived.
+| For the <Project platform> the following security related stakeholder requirements are assumed to define the top level functionality (purpose) of the <Project platform / module name>. i.e. from these all the feature and component requirements implemented are derived.
 | <List here all the stakeholder requirements, with security relevance, the module's components requirements are derived from.>
 
 Assumptions of Use

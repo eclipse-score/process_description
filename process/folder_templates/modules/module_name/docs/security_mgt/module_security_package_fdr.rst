@@ -12,13 +12,27 @@
    # SPDX-License-Identifier: Apache-2.0
    # *******************************************************************************
 
-Security Package Formal Review Checklist
-========================================
+Security Package Formal Review Report
+=====================================
 
-.. gd_chklst:: Security Package Formal Review Checklist
-   :id: gd_chklst__security_package
-   :status: valid
-   :complies: std_req__isosae21434__prj_management_6471, std_req__isosae21434__prj_management_6491, std_req__isosae21434__prj_management_6492
+.. note:: Document header
+
+.. document:: [Your Module Name] Security Package Formal Review
+   :id: doc__module_name_security_package_fdr
+   :status: draft
+   :safety: ASIL_B
+   :security: YES
+   :realizes: wp__fdr_reports
+   :tags: template
+
+.. attention::
+    The above directive must be updated according to your Module.
+
+    - Modify ``Your Module Name`` to be your Module Name
+    - Modify ``id`` to be your Module Name in upper snake case preceded by ``doc_`` and succeeded by ``safety_package_fdr``
+    - Adjust ``status`` to be ``valid``
+    - Adjust ``safety`` and ``tags`` according to your needs
+
 
 **1. Purpose**
 

@@ -12,16 +12,18 @@
    # SPDX-License-Identifier: Apache-2.0
    # *******************************************************************************
 
-Guidance
-########
+Security Manual Templates
+=========================
+.. gd_temp:: Platform Security Manual Template
+   :id: gd_temp__platform_security_manual
+   :status: valid
+   :complies: std_req__isosae21434__development_10421, std_req__isosae21434__development_10422
 
-.. toctree::
-   :maxdepth: 1
+   For the content see here: :need:`doc__platform_security_manual`
 
-   security_management_guideline
-   security_plan_templates
-   security_manual_templates
-   security_management_feature_security_wp_template
-   checklist_security_package
-   checklist_security_plan
-   security_management_process_reqs
+.. gd_temp:: Module Security Manual Template
+   :id: gd_temp__module_security_manual
+   :status: valid
+   :complies: std_req__isosae21434__development_10421, std_req__isosae21434__development_10422
+
+   For the content see here: :need:`doc__module_name_security_manual`

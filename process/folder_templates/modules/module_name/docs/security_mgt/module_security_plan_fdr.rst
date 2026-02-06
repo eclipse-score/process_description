@@ -12,17 +12,31 @@
    # SPDX-License-Identifier: Apache-2.0
    # *******************************************************************************
 
-Security Plan Review Checklist
-==============================
+Module Security Plan Formal Review Report
+=========================================
 
-.. gd_chklst:: Security Plan Review Checklist
-   :id: gd_chklst__security_plan
-   :status: valid
-   :complies: std_req__isosae21434__prj_management_6411, std_req__isosae21434__prj_management_6421, std_req__isosae21434__prj_management_6422, std_req__isosae21434__prj_management_6423, std_req__isosae21434__prj_management_6424, std_req__isosae21434__prj_management_6425, std_req__isosae21434__prj_management_6426, std_req__isosae21434__prj_management_6427, std_req__isosae21434__prj_management_6428, std_req__isosae21434__prj_management_6429, std_req__isosae21434__prj_management_64210, std_req__isosae21434__prj_management_64211, std_req__isosae21434__prj_management_6431, std_req__isosae21434__prj_management_6432, std_req__isosae21434__prj_management_6441, std_req__isosae21434__prj_management_6442, std_req__isosae21434__prj_management_6443, std_req__isosae21434__prj_management_6451, std_req__isosae21434__prj_management_6452, std_req__isosae21434__prj_management_6453, std_req__isosae21434__prj_management_6461, std_req__isosae21434__prj_management_6462
+.. note:: Document header
+
+.. document:: [Your Module Name] Security Plan Formal Review
+   :id: doc__module_name_security_plan_fdr
+   :status: draft
+   :safety: ASIL_B
+   :security: YES
+   :realizes: wp__fdr_reports
+   :tags: template
+
+.. attention::
+    The above directive must be updated according to your Module.
+
+    - Modify ``Your Module Name`` to be your Module Name
+    - Modify ``id`` to be your Module Name in upper snake case preceded by ``doc_`` and succeeded by ``_security_plan_fdr``
+    - Adjust ``status`` to be ``valid``
+    - Adjust ``safety`` and ``tags`` according to your needs
 
 **1. Purpose**
 
-The purpose of this security plan review checklist is to report status of the review for the security plan.
+The purpose of this review checklist is to provide a guidence for reviewing the security plans for each module.
+Each module security plan shall one checklist filled.
 
 **2. Checklist**
 

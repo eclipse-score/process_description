@@ -173,7 +173,7 @@ Security Management plan review checklist template
         * - Review Id
           - Link to checklist
         * - SecMP_00_01
-          - :need:`gd_chklst__security_plan`
+          - :need:`gd_chklst__module_security_plan`
 
 
 Quality Management plan review checklist template
