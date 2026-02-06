@@ -131,3 +131,16 @@ and they include the available templates for the work products already in the ri
    :maxdepth: 1
 
    folder_templates/index.rst
+
+
+Glossary
+--------
+
+This glossary defines key terms used throughout the process description workspace.
+These terms are fundamental to understanding the different process areas including
+their workflows, work products, roles and guidances.
+
+.. toctree::
+   :maxdepth: 1
+
+   glossary/index.rst

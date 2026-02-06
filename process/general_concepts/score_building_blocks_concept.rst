@@ -22,6 +22,12 @@ Building blocks concept
    :status: valid
    :tags: process_management
 
+.. attention::
+   The meta model is not intended to be complete.
+   The meta model is intended to give an overview about the building blocks of the
+   platform and their relationships. It is not intended to give a detailed description
+   of the building blocks and their relationships.
+
 Building blocks meta model
 ++++++++++++++++++++++++++
 
@@ -49,6 +55,10 @@ Element is the highest abstraction level in our model. A Dependable Element,
 delivered in a Delivery Container represents e.g. executable code or a library.
 The **Dependable Element View** (red box, middle, 1st column) documents the mapping of
 components to a Dependable Element.
+
+.. attention::
+   Throughout the process description workspace, the term "Module" or "SW  Module" is
+   used for convenience reason as a synonym for "Dependable Element".
 
 Components are the major building blocks of the platform. Components consists of **Units**
 (grey box, bottom, 2nd column), the lowest level in our model. The represent the source code,

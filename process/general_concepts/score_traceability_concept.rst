@@ -22,6 +22,11 @@ Traceability concept
    :status: valid
    :tags: process_management
 
+.. attention::
+   The traceability concept is not intended to be complete.
+   The traceability concept is intended to give an overview about the traceability
+   requirements in the platform.
+
 Traceability is the key to ensure consistency between work products.
 Furthermore, traceability supports impact analysis, dependency analysis, coverage determination
 for requirements and verification, and tracking of implementation status.
