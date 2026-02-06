@@ -70,7 +70,7 @@ Problem Attributes
    problem.
 
 .. gd_req:: Problem attribute: analysis results
-   :id: gd_req__problem_attr_anaylsis_results
+   :id: gd_req__problem_attr_analysis_results
    :status: valid
    :tags: manual_prio_1, problem_resolution, attribute, mandatory
    :satisfies: wf__problem_create_pr, wf__problem_analyze_pr, wf__problem_initiate_monitor_pr, wf__problem_close_pr

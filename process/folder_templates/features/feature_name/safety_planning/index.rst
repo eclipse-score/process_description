@@ -102,7 +102,7 @@ Safety Work products List
 .. attention::
     The above table must be updated according to your feature safety planning.
 
-    - Fill the work producs links
+    - Fill the work products links
 
 Feature Safety Package
 ======================

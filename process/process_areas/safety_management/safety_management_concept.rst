@@ -43,11 +43,11 @@ Stakeholders
 
    * Main responsible to ensure ISO 26262 compliance in the project
    * Create/Maintain Safety Plan
-   * Perform Formal Reviews (for safety work products not in his resposibility area)
+   * Perform Formal Reviews (for safety work products not in his responsibility area)
    * Approve Component Classification
    * Approve Safety Package
    * Approve Safety Audit
-   * Approve Formal Reviews (for safety work products in his resposibility area)
+   * Approve Formal Reviews (for safety work products in his responsibility area)
    * Approve Safety Manual
    * Monitor/Verify Safety
    * Impact Analysis of Change Request

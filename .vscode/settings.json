@@ -32,5 +32,14 @@
   "python.testing.unittestEnabled": false,
   "python.testing.pytestEnabled": true,
   "bazel.lsp.command": "bazel",
-  "bazel.lsp.args": ["run", "//:starpls_server"]
+  "bazel.lsp.args": [
+    "run",
+    "//:starpls_server"
+  ],
+  "cSpell.words": [
+    "docname",
+    "needarch",
+    "toctree",
+    "workproduct"
+  ]
 }

@@ -226,8 +226,8 @@ for the static architecture a UML component diagram is expected (and supported b
 Dynamic architecture
 --------------------
 The :need:`doc_concept__arch_process` shows the usage of UML sequence diagrams to describe dynamic
-behaviour. This is also the expected default diagram. Alternatively, state machine diagrams can be used
-to describe stateful behaviour. Other types like the activity diagram are not encouraged to use,
+behavior. This is also the expected default diagram. Alternatively, state machine diagrams can be used
+to describe stateful behavior. Other types like the activity diagram are not encouraged to use,
 if an activity diagram is used instead of a sequence diagram, this has to be argued as part of the
 architecture description.
 

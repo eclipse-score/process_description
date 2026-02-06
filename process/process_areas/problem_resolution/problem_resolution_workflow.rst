@@ -70,11 +70,11 @@ For a detailed explanation of workflows and their role within the process model,
 
    The Problem Resolution is implemented and monitored.
 
-   This may require Change Requests or other activities, inlcuding creating ISSUEs and PRs.
+   This may require Change Requests or other activities, including creating ISSUEs and PRs.
    These are linked to the Problem and monitored until closure.
 
    The Problem Resolution is done, if all linked activities has been closed and confirmed.
-   Before closing the Problem Resoultion, :need:`Committer <rl__committer>` must check the
+   Before closing the Problem Resolution, :need:`Committer <rl__committer>` must check the
    correctness.
 
    The :need:`Committer <rl__committer>` may still reject it, thus the status is set to "rejected".
