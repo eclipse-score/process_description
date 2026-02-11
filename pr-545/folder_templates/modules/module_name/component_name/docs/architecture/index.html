@@ -221,6 +221,13 @@
   </a>
 </li>
 
+
+<li class=" ">
+  <a class="nav-link dropdown-item nav-internal" href="../../../../../../glossary/index.html">
+    Glossary
+  </a>
+</li>
+
                 </ul>
             </li>
             
@@ -395,6 +402,13 @@
   </a>
 </li>
 
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../../../../glossary/index.html">
+    Glossary
+  </a>
+</li>
+
   </ul>
 </nav></div>
           
@@ -546,7 +560,7 @@
                   
   <section id="component-architecture">
 <span id="component-architecture-template"></span><h1>Component Architecture<a class="headerlink" href="#component-architecture" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-febe7136">
+<div class="need_container docutils container" id="SNCB-a68a137d">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_document table" id="doc__component_name_architecture">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -601,7 +615,7 @@
 </div>
 <section id="overview">
 <h2>Overview<a class="headerlink" href="#overview" title="Link to this heading">#</a></h2>
-<p>Brief summary</p>
+<p>&lt;Brief summary&gt;</p>
 </section>
 <section id="requirements-linked-to-component-architecture">
 <h2>Requirements Linked to Component Architecture<a class="headerlink" href="#requirements-linked-to-component-architecture" title="Link to this heading">#</a></h2>
@@ -615,12 +629,12 @@
 </section>
 <section id="description">
 <h2>Description<a class="headerlink" href="#description" title="Link to this heading">#</a></h2>
-<p>General Description</p>
-<p>Design Decisions - For the documentation of the decision the <a class="reference internal" href="../../../../../../process_areas/change_management/guidance/change_management_decision_record_template.html#gd_temp__change_decision_record" title="gd_temp__change_decision_record"><em class="xref need">Decision Record Template (gd_temp__change_decision_record)</em></a> can be used.</p>
-<p>Design Constraints</p>
+<p>&lt;General Description&gt;</p>
+<p>&lt;Design Decisions - For the documentation of the decision the <a class="reference internal" href="../../../../../../process_areas/change_management/guidance/change_management_decision_record_template.html#gd_temp__change_decision_record" title="gd_temp__change_decision_record"><em class="xref need">Decision Record Template (gd_temp__change_decision_record)</em></a> can be used.&gt;</p>
+<p>&lt;Design Constraints&gt;</p>
 <section id="rationale-behind-architecture-decomposition">
 <h3>Rationale Behind Architecture Decomposition<a class="headerlink" href="#rationale-behind-architecture-decomposition" title="Link to this heading">#</a></h3>
-<p>Mandatory: a motivation for the decomposition or reason for not further splitting it into lower level components.</p>
+<p>Mandatory: A motivation for the decomposition or reason for not further splitting it into internal components.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Common decisions across components / cross cutting concepts is at the higher level.</p>
@@ -631,8 +645,9 @@
 <h2>Static Architecture<a class="headerlink" href="#static-architecture" title="Link to this heading">#</a></h2>
 <p>The components are designed to cover the expectations from the feature architecture
 (i.e. if already exists a definition it should be taken over and enriched).</p>
-<div class="need_container docutils container" id="SNCB-21d2db11">
-<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_comp table" id="comp__component_name">
+<p>A component can optional also consist of subcomponents to further structure the architecture. The component and its static views can also optionally use interfaces provided by other components.</p>
+<div class="need_container docutils container" id="SNCB-cea7fa7c">
+<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_comp table" id="comp__component_name_template">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
 <div class="line"><span><span class="needs_title"><span class="needs_data">Component Name</span></span></span></div>
@@ -652,8 +667,11 @@
 <tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
 <div class="line"><span><span><div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">component_name</span></span></span></div>
 </span></span></div>
-<div class="line"><span><div class="line">forms part of: <span class="consists_of"><span><a class="reference internal" href="../../../../../features/feature_name/architecture/index.html#feat__feature_name" title="comp__component_name">feat__feature_name</a>, <a class="reference internal" href="../../../../../../process_areas/architecture_design/architecture_concept.html#feat__feature_name_example" title="comp__component_name">feat__feature_name_example</a></span></span></div>
-<div class="line">implements: <span class="implements"><span><a class="reference internal" href="../../../../../features/feature_name/architecture/index.html#logic_arc_int__feature_name__interface_name" title="comp__component_name">logic_arc_int__feature_name__interface_name</a></span></span></div>
+<div class="line"><span><div class="line">consists of: <span class="consists_of"><span><a class="reference internal" href="../../../../../../process_areas/architecture_design/guidance/architecture_modeling_example.html#comp__archex_sub_component_1" title="comp__component_name_template">comp__archex_sub_component_1</a>, <a class="reference internal" href="../../../../../../process_areas/architecture_design/guidance/architecture_modeling_example.html#comp__archex_sub_component_2" title="comp__component_name_template">comp__archex_sub_component_2</a>, <a class="reference internal" href="../../../../../../process_areas/architecture_design/guidance/architecture_modeling_example.html#comp__archex_sub_component_3" title="comp__component_name_template">comp__archex_sub_component_3</a></span></span></div>
+<div class="line">forms part of: <span class="consists_of"><span><a class="reference internal" href="../../../../../features/feature_name/architecture/index.html#feat__feature_name" title="comp__component_name_template">feat__feature_name</a></span></span></div>
+<div class="line">has: <span class="belongs_to"><span><a class="reference internal" href="#comp_arc_sta__component_name__static_view" title="comp__component_name_template">comp_arc_sta__component_name__static_view</a>, <a class="reference internal" href="#comp_arc_dyn__component_name__dynamic_view" title="comp__component_name_template">comp_arc_dyn__component_name__dynamic_view</a>, <a class="reference internal" href="../requirements/index.html#comp_req__component_name__some_title" title="comp__component_name_template">comp_req__component_name__some_title</a></span></span></div>
+<div class="line">implements: <span class="implements"><span><a class="reference internal" href="../../../../../features/feature_name/architecture/index.html#logic_arc_int__feature_name__interface_name1" title="comp__component_name_template">logic_arc_int__feature_name__interface_name1</a></span></span></div>
+<div class="line">included by: <span class="includes"><span><a class="reference internal" href="../../../../../features/feature_name/architecture/index.html#mod__module_name" title="comp__component_name_template">mod__module_name</a>, <a class="reference internal" href="../../../../../features/feature_name/architecture/index.html#mod_view_sta__feature_name__module_name" title="comp__component_name_template">mod_view_sta__feature_name__module_name</a></span></span></div>
 </span></div>
 </div>
 </td>
@@ -662,7 +680,7 @@
 <tr class="content row-odd"><td class="content" colspan="6"></td>
 </tr>
 <tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
-<div class="line"><span><span class="needs-id"><a class="reference internal" href="#comp__component_name" title="comp__component_name">comp__component_name</a></span></span></div>
+<div class="line"><span><span class="needs-id"><a class="reference internal" href="#comp__component_name_template" title="comp__component_name_template">comp__component_name_template</a></span></span></div>
 </div>
 </td>
 <td class="footer" colspan="2"><div class="needs_footer line-block">
@@ -675,7 +693,7 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-92ddba21">
+<div class="need_container docutils container" id="SNCB-d956d57f">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_comp_arc_sta table" id="comp_arc_sta__component_name__static_view">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -696,16 +714,16 @@
 <tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
 <div class="line"><span><span><div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">component_name</span></span></span></div>
 </span></span></div>
-<div class="line"><span><div class="line">fulfils: <span class="fulfils"><span><a class="reference internal" href="../requirements/index.html#comp_req__component_name__some_title" title="comp_arc_sta__component_name__static_view">comp_req__component_name__some_title</a></span></span></div>
-<div class="line">implements: <span class="implements"><span><a class="reference internal" href="../../../../../features/feature_name/architecture/index.html#logic_arc_int__feature_name__interface_name" title="comp_arc_sta__component_name__static_view">logic_arc_int__feature_name__interface_name</a></span></span></div>
-<div class="line">includes: <span class="includes"><span><a class="reference internal" href="#comp_arc_sta__component_name__2" title="comp_arc_sta__component_name__static_view">comp_arc_sta__component_name__2</a></span></span></div>
+<div class="line"><span><div class="line">belongs to: <span class="belongs_to"><span><a class="reference internal" href="#comp__component_name_template" title="comp_arc_sta__component_name__static_view">comp__component_name_template</a></span></span></div>
+<div class="line">fulfils: <span class="fulfils"><span><a class="reference internal" href="../requirements/index.html#comp_req__component_name__some_title" title="comp_arc_sta__component_name__static_view">comp_req__component_name__some_title</a></span></span></div>
+<div class="line">uses: <span class="uses"><span><a class="reference internal" href="../../../../../features/feature_name/architecture/index.html#logic_arc_int__feature_name__interface_name1" title="comp_arc_sta__component_name__static_view">logic_arc_int__feature_name__interface_name1</a></span></span></div>
 </span></div>
 </div>
 </td>
 <td class="meta" colspan="3"></td>
 </tr>
 <tr class="content row-odd"><td class="content" colspan="6"><p class="plantuml" id="needarch-folder_templates/modules/module_name/component_name/docs/architecture/index-0">
-<object data="../../../../../../_images/plantuml-61e5fcb567e9cb22f90d374af3c9cacd03360968.svg" type="image/svg+xml" style="width:273px;height:192px;background:#FFFFFF;"></object></p>
+<object data="../../../../../../_images/plantuml-68ed81e9d7b17de2452323877a9978b18e19be25.svg" type="image/svg+xml" style="width:273px;height:59px;background:#FFFFFF;"></object></p>
 </td>
 </tr>
 <tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
@@ -725,7 +743,7 @@
 </section>
 <section id="dynamic-architecture">
 <h2>Dynamic Architecture<a class="headerlink" href="#dynamic-architecture" title="Link to this heading">#</a></h2>
-<div class="need_container docutils container" id="SNCB-e1021d98">
+<div class="need_container docutils container" id="SNCB-0cd24615">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_comp_arc_dyn table" id="comp_arc_dyn__component_name__dynamic_view">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -746,7 +764,8 @@
 <tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
 <div class="line"><span><span><div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">component_name</span></span></span></div>
 </span></span></div>
-<div class="line"><span><div class="line">fulfils: <span class="fulfils"><span><a class="reference internal" href="../requirements/index.html#comp_req__component_name__some_title" title="comp_arc_dyn__component_name__dynamic_view">comp_req__component_name__some_title</a></span></span></div>
+<div class="line"><span><div class="line">belongs to: <span class="belongs_to"><span><a class="reference internal" href="#comp__component_name_template" title="comp_arc_dyn__component_name__dynamic_view">comp__component_name_template</a></span></span></div>
+<div class="line">fulfils: <span class="fulfils"><span><a class="reference internal" href="../requirements/index.html#comp_req__component_name__some_title" title="comp_arc_dyn__component_name__dynamic_view">comp_req__component_name__some_title</a></span></span></div>
 </span></div>
 </div>
 </td>
@@ -780,13 +799,13 @@
 </pre></div>
 </div>
 </section>
-<section id="lower-level-components">
-<h2>Lower Level Components<a class="headerlink" href="#lower-level-components" title="Link to this heading">#</a></h2>
-<div class="need_container docutils container" id="SNCB-6544b2ec">
+<section id="internal-components">
+<h2>Internal Components<a class="headerlink" href="#internal-components" title="Link to this heading">#</a></h2>
+<div class="need_container docutils container" id="SNCB-85be2056">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_comp_arc_sta table" id="comp_arc_sta__component_name__2">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
-<div class="line"><span><span class="needs_title"><span class="needs_data">Component Name 2</span></span></span></div>
+<div class="line"><span><span class="needs_title"><span class="needs_data">Component Name Static View</span></span></span></div>
 </div>
 </td>
 <td class="head_center" colspan="2"><div class="needs_head line-block">
@@ -803,9 +822,8 @@
 <tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
 <div class="line"><span><span><div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">component_name</span></span></span></div>
 </span></span></div>
-<div class="line"><span><div class="line">fulfils: <span class="fulfils"><span><a class="reference internal" href="../requirements/index.html#comp_req__component_name__some_title" title="comp_arc_sta__component_name__2">comp_req__component_name__some_title</a></span></span></div>
-<div class="line">implements: <span class="implements"><span><a class="reference internal" href="../../../../../features/feature_name/architecture/index.html#logic_arc_int__feature_name__interface_name" title="comp_arc_sta__component_name__2">logic_arc_int__feature_name__interface_name</a></span></span></div>
-<div class="line">included by: <span class="includes"><span><a class="reference internal" href="#comp_arc_sta__component_name__static_view" title="comp_arc_sta__component_name__2">comp_arc_sta__component_name__static_view</a></span></span></div>
+<div class="line"><span><div class="line">belongs to: <span class="belongs_to"><span><a class="reference internal" href="../../../../../../process_areas/architecture_design/guidance/architecture_modeling_example.html#comp__component_example_2" title="comp_arc_sta__component_name__2">comp__component_example_2</a></span></span></div>
+<div class="line">fulfils: <span class="fulfils"><span><a class="reference internal" href="../requirements/index.html#comp_req__component_name__some_title" title="comp_arc_sta__component_name__2">comp_req__component_name__some_title</a></span></span></div>
 </span></div>
 </div>
 </td>
@@ -898,7 +916,7 @@
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#static-architecture">Static Architecture</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dynamic-architecture">Dynamic Architecture</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#interfaces">Interfaces</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lower-level-components">Lower Level Components</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#internal-components">Internal Components</a></li>
 </ul>
   </nav></div>
 
@@ -906,7 +924,7 @@
 
   
   <div class="tocsection editthispage">
-    <a href="https://github.com/eclipse-score/process_description/edit/main/'process'/folder_templates/modules/module_name/component_name/docs/architecture/index.rst">
+    <a href="https://github.com/eclipse-score/process_description/edit/main/process/folder_templates/modules/module_name/component_name/docs/architecture/index.rst">
       <i class="fa-solid fa-pencil"></i>
       
       

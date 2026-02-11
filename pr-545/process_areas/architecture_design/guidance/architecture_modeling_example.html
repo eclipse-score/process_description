@@ -221,6 +221,13 @@
   </a>
 </li>
 
+
+<li class=" ">
+  <a class="nav-link dropdown-item nav-internal" href="../../../glossary/index.html">
+    Glossary
+  </a>
+</li>
+
                 </ul>
             </li>
             
@@ -395,6 +402,13 @@
   </a>
 </li>
 
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../glossary/index.html">
+    Glossary
+  </a>
+</li>
+
   </ul>
 </nav></div>
           
@@ -553,7 +567,7 @@
 <p>This chapter only serves as an example how an architecture could be modeled in <em>Sphinx Needs</em>. All the needs are required to print the views which are displayed in the Static- and Interface Views. In the actual process this files would be split into multiple different files:</p>
 <section id="feature-architecture-file">
 <h2>Feature Architecture File<a class="headerlink" href="#feature-architecture-file" title="Link to this heading">#</a></h2>
-<div class="need_container docutils container" id="SNCB-c6cba899">
+<div class="need_container docutils container" id="SNCB-8cec808f">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_feat table" id="feat__example_feature">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -575,6 +589,7 @@
 <div class="line"><span><span><div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">architecture_design</span></span></span></div>
 </span></span></div>
 <div class="line"><span><div class="line">consists of: <span class="consists_of"><span><a class="reference internal" href="#comp__component_example_1" title="feat__example_feature">comp__component_example_1</a></span></span></div>
+<div class="line">has: <span class="belongs_to"><span><a class="reference internal" href="../architecture_concept.html#feat_arc_sta__example_feature__feature_1" title="feat__example_feature">feat_arc_sta__example_feature__feature_1</a>, <a class="reference internal" href="../architecture_concept.html#feat_arc_sta__example_feature__archdes_getstrt" title="feat__example_feature">feat_arc_sta__example_feature__archdes_getstrt</a>, <a class="reference internal" href="#feat_arc_sta__example_feature__archdes_static" title="feat__example_feature">feat_arc_sta__example_feature__archdes_static</a>, <a class="reference internal" href="#feat_req__example_feature__archdes_example_req" title="feat__example_feature">feat_req__example_feature__archdes_example_req</a></span></span></div>
 <div class="line">includes: <span class="includes"><span><a class="reference internal" href="#logic_arc_int__example_feature__archex_logical_interface_1" title="feat__example_feature">logic_arc_int__example_feature__archex_logical_interface_1</a>, <a class="reference internal" href="#logic_arc_int__example_feature__archex_logical_interface_2" title="feat__example_feature">logic_arc_int__example_feature__archex_logical_interface_2</a>, <a class="reference internal" href="#logic_arc_int__example_feature__archex_logical_interface_3" title="feat__example_feature">logic_arc_int__example_feature__archex_logical_interface_3</a></span></span></div>
 </span></div>
 </div>
@@ -597,7 +612,7 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-a6e51129">
+<div class="need_container docutils container" id="SNCB-27f3a945">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_feat_arc_sta table" id="feat_arc_sta__example_feature__archdes_static">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -618,7 +633,8 @@
 <tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
 <div class="line"><span><span><div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">architecture_design</span></span></span></div>
 </span></span></div>
-<div class="line"><span><div class="line">fulfils: <span class="fulfils"><span><a class="reference internal" href="#feat_req__example_feature__archdes_example_req" title="feat_arc_sta__example_feature__archdes_static">feat_req__example_feature__archdes_example_req</a></span></span></div>
+<div class="line"><span><div class="line">belongs to: <span class="belongs_to"><span><a class="reference internal" href="#feat__example_feature" title="feat_arc_sta__example_feature__archdes_static">feat__example_feature</a></span></span></div>
+<div class="line">fulfils: <span class="fulfils"><span><a class="reference internal" href="#feat_req__example_feature__archdes_example_req" title="feat_arc_sta__example_feature__archdes_static">feat_req__example_feature__archdes_example_req</a></span></span></div>
 <div class="line">includes: <span class="includes"><span><a class="reference internal" href="#logic_arc_int__example_feature__archex_logical_interface_1" title="feat_arc_sta__example_feature__archdes_static">logic_arc_int__example_feature__archex_logical_interface_1</a>, <a class="reference internal" href="#logic_arc_int__example_feature__archex_logical_interface_2" title="feat_arc_sta__example_feature__archdes_static">logic_arc_int__example_feature__archex_logical_interface_2</a>, <a class="reference internal" href="#logic_arc_int__example_feature__archex_logical_interface_3" title="feat_arc_sta__example_feature__archdes_static">logic_arc_int__example_feature__archex_logical_interface_3</a></span></span></div>
 </span></div>
 </div>
@@ -626,7 +642,7 @@
 <td class="meta" colspan="3"></td>
 </tr>
 <tr class="content row-odd"><td class="content" colspan="6"><p class="plantuml" id="needarch-process_areas/architecture_design/guidance/architecture_modeling_example-0">
-<object data="../../../_images/plantuml-cb06f5dcf47d3427492ae4ba135b0cffcff283f5.svg" type="image/svg+xml" style="width:618px;height:430px;background:#FFFFFF;"></object></p>
+<object data="../../../_images/plantuml-06a0246e696042d9138fde5cbd3897f9adee352c.svg" type="image/svg+xml" style="width:618px;height:430px;background:#FFFFFF;"></object></p>
 </td>
 </tr>
 <tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
@@ -643,7 +659,7 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-d9d0e6a9">
+<div class="need_container docutils container" id="SNCB-00578d21">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_logic_arc_int table" id="logic_arc_int__example_feature__archex_logical_interface_1">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -667,7 +683,7 @@
 <div class="line"><span><div class="line">fulfils: <span class="fulfils"><span><a class="reference internal" href="#feat_req__example_feature__archdes_example_req" title="logic_arc_int__example_feature__archex_logical_interface_1">feat_req__example_feature__archdes_example_req</a></span></span></div>
 <div class="line">implemented by: <span class="implements"><span><a class="reference internal" href="#comp__component_example_1" title="logic_arc_int__example_feature__archex_logical_interface_1">comp__component_example_1</a>, <a class="reference internal" href="#comp__archex_sub_component_1" title="logic_arc_int__example_feature__archex_logical_interface_1">comp__archex_sub_component_1</a></span></span></div>
 <div class="line">used by: <span class="uses"><span><a class="reference internal" href="../architecture_concept.html#comp_arc_sta__example_feature__component_manual_getstrt" title="logic_arc_int__example_feature__archex_logical_interface_1">comp_arc_sta__example_feature__component_manual_getstrt</a></span></span></div>
-<div class="line">included by: <span class="includes"><span><a class="reference internal" href="../architecture_concept.html#feat_arc_sta__example_feature__feature_1" title="logic_arc_int__example_feature__archex_logical_interface_1">feat_arc_sta__example_feature__feature_1</a>, <a class="reference internal" href="../architecture_concept.html#feat_arc_sta__example_feature__archdes_getstrt" title="logic_arc_int__example_feature__archex_logical_interface_1">feat_arc_sta__example_feature__archdes_getstrt</a>, <a class="reference internal" href="#feat__example_feature" title="logic_arc_int__example_feature__archex_logical_interface_1">feat__example_feature</a>, <a class="reference internal" href="#feat_arc_sta__example_feature__archdes_static" title="logic_arc_int__example_feature__archex_logical_interface_1">feat_arc_sta__example_feature__archdes_static</a></span></span></div>
+<div class="line">included by: <span class="includes"><span><a class="reference internal" href="../architecture_concept.html#feat_arc_sta__example_feature__feature_1" title="logic_arc_int__example_feature__archex_logical_interface_1">feat_arc_sta__example_feature__feature_1</a>, <a class="reference internal" href="../architecture_concept.html#feat__feature_name_example" title="logic_arc_int__example_feature__archex_logical_interface_1">feat__feature_name_example</a>, <a class="reference internal" href="../architecture_concept.html#feat_arc_sta__example_feature__archdes_getstrt" title="logic_arc_int__example_feature__archex_logical_interface_1">feat_arc_sta__example_feature__archdes_getstrt</a>, <a class="reference internal" href="#feat__example_feature" title="logic_arc_int__example_feature__archex_logical_interface_1">feat__example_feature</a>, <a class="reference internal" href="#feat_arc_sta__example_feature__archdes_static" title="logic_arc_int__example_feature__archex_logical_interface_1">feat_arc_sta__example_feature__archdes_static</a></span></span></div>
 <div class="line">includes: <span class="included_by"><span><a class="reference internal" href="#logic_arc_int_op__example_feature__archex_logical_operation_1" title="logic_arc_int__example_feature__archex_logical_interface_1">logic_arc_int_op__example_feature__archex_logical_operation_1</a>, <a class="reference internal" href="#logic_arc_int_op__example_feature__archex_logical_operation_2" title="logic_arc_int__example_feature__archex_logical_interface_1">logic_arc_int_op__example_feature__archex_logical_operation_2</a></span></span></div>
 </span></div>
 </div>
@@ -692,7 +708,7 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-4b7603b5">
+<div class="need_container docutils container" id="SNCB-dec9288f">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_logic_arc_int table" id="logic_arc_int__example_feature__archex_logical_interface_2">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -741,7 +757,7 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-974a68ec">
+<div class="need_container docutils container" id="SNCB-3329f333">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_logic_arc_int table" id="logic_arc_int__example_feature__archex_logical_interface_3">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -787,7 +803,7 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-17a94f7f">
+<div class="need_container docutils container" id="SNCB-cb8a2fd2">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_logic_arc_int_op table" id="logic_arc_int_op__example_feature__archex_logical_operation_1">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -830,7 +846,7 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-b1d96b07">
+<div class="need_container docutils container" id="SNCB-69a9ca9c">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_logic_arc_int_op table" id="logic_arc_int_op__example_feature__archex_logical_operation_2">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -873,7 +889,7 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-8461773b">
+<div class="need_container docutils container" id="SNCB-7f5ea9d1">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_logic_arc_int_op table" id="logic_arc_int_op__example_feature__archex_logical_operation_3">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -916,7 +932,7 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-c447809f">
+<div class="need_container docutils container" id="SNCB-56d095c2">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_logic_arc_int_op table" id="logic_arc_int_op__example_feature__archex_logical_operation_4">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -959,7 +975,7 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-7eb9b9de">
+<div class="need_container docutils container" id="SNCB-f4115947">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_logic_arc_int_op table" id="logic_arc_int_op__example_feature__archex_logical_operation_5">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1002,7 +1018,7 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-eac65c4c">
+<div class="need_container docutils container" id="SNCB-12017bbf">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_logic_arc_int_op table" id="logic_arc_int_op__example_feature__archex_logical_operation_6">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1045,7 +1061,7 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-8a892160">
+<div class="need_container docutils container" id="SNCB-3b93638f">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_logic_arc_int_op table" id="logic_arc_int_op__example_feature__archex_logical_operation_7">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1088,7 +1104,7 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-206c0e3e">
+<div class="need_container docutils container" id="SNCB-a665ca01">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_logic_arc_int_op table" id="logic_arc_int_op__example_feature__archex_logical_operation_8">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1134,7 +1150,7 @@
 </section>
 <section id="module-viewpoint">
 <h2>Module Viewpoint<a class="headerlink" href="#module-viewpoint" title="Link to this heading">#</a></h2>
-<div class="need_container docutils container" id="SNCB-58832dc4">
+<div class="need_container docutils container" id="SNCB-9a3b738c">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_mod table" id="mod__example_feature_archex_module_1">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1177,7 +1193,7 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-35064661">
+<div class="need_container docutils container" id="SNCB-c659fccd">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_mod_view_sta table" id="mod_view_sta__example_feature__archex_1">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1205,7 +1221,7 @@
 <td class="meta" colspan="3"></td>
 </tr>
 <tr class="content row-odd"><td class="content" colspan="6"><p class="plantuml" id="needarch-process_areas/architecture_design/guidance/architecture_modeling_example-3">
-<object data="../../../_images/plantuml-8599e156aea6f161b2ff76f31b2a1bcb04df9e29.svg" type="image/svg+xml" style="width:405px;height:247px;background:#FFFFFF;"></object></p>
+<object data="../../../_images/plantuml-1ab9d4fd3006cc0a8ae04dd9f9312606aa138041.svg" type="image/svg+xml" style="width:405px;height:247px;background:#FFFFFF;"></object></p>
 </td>
 </tr>
 <tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
@@ -1222,7 +1238,7 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-5d00c44d">
+<div class="need_container docutils container" id="SNCB-d01b26cf">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_mod table" id="mod__example_feature_archex_module_2">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1265,7 +1281,7 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-41b4c94b">
+<div class="need_container docutils container" id="SNCB-04bcfde5">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_mod_view_sta table" id="mod_view_sta__example_feature__archex_2">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1293,7 +1309,7 @@
 <td class="meta" colspan="3"></td>
 </tr>
 <tr class="content row-odd"><td class="content" colspan="6"><p class="plantuml" id="needarch-process_areas/architecture_design/guidance/architecture_modeling_example-4">
-<object data="../../../_images/plantuml-4b1c43508f2de1933aea9915e46bb826902c4c38.svg" type="image/svg+xml" style="width:195px;height:279px;background:#FFFFFF;"></object></p>
+<object data="../../../_images/plantuml-0921b8e310bdbb4f47b42047a114b60e82cabf57.svg" type="image/svg+xml" style="width:195px;height:279px;background:#FFFFFF;"></object></p>
 </td>
 </tr>
 <tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
@@ -1313,7 +1329,7 @@
 </section>
 <section id="component-architecture-file-s">
 <h2>Component Architecture File(s)<a class="headerlink" href="#component-architecture-file-s" title="Link to this heading">#</a></h2>
-<div class="need_container docutils container" id="SNCB-275a16bb">
+<div class="need_container docutils container" id="SNCB-3aac736b">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_comp table" id="comp__component_example_1">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1335,7 +1351,8 @@
 <div class="line"><span><span><div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">architecture_design</span></span></span></div>
 </span></span></div>
 <div class="line"><span><div class="line">consists of: <span class="consists_of"><span><a class="reference internal" href="#comp__archex_sub_component_1" title="comp__component_example_1">comp__archex_sub_component_1</a>, <a class="reference internal" href="#comp__archex_sub_component_2" title="comp__component_example_1">comp__archex_sub_component_2</a>, <a class="reference internal" href="#comp__archex_sub_component_3" title="comp__component_example_1">comp__archex_sub_component_3</a></span></span></div>
-<div class="line">forms part of: <span class="consists_of"><span><a class="reference internal" href="#feat__example_feature" title="comp__component_example_1">feat__example_feature</a></span></span></div>
+<div class="line">forms part of: <span class="consists_of"><span><a class="reference internal" href="../architecture_concept.html#feat__feature_name_example" title="comp__component_example_1">feat__feature_name_example</a>, <a class="reference internal" href="#feat__example_feature" title="comp__component_example_1">feat__example_feature</a></span></span></div>
+<div class="line">has: <span class="belongs_to"><span><a class="reference internal" href="../architecture_concept.html#comp_arc_sta__example_feature__archdes_component_concept_1" title="comp__component_example_1">comp_arc_sta__example_feature__archdes_component_concept_1</a>, <a class="reference internal" href="../architecture_concept.html#comp_arc_sta__example_feature__component_getstrt" title="comp__component_example_1">comp_arc_sta__example_feature__component_getstrt</a>, <a class="reference internal" href="../architecture_concept.html#comp_arc_sta__example_feature__component_getstrt_debug" title="comp__component_example_1">comp_arc_sta__example_feature__component_getstrt_debug</a>, <a class="reference internal" href="../architecture_concept.html#comp_arc_sta__example_feature__component_manual_getstrt" title="comp__component_example_1">comp_arc_sta__example_feature__component_manual_getstrt</a>, <a class="reference internal" href="#comp_arc_sta__example_feature__archdes_component_1" title="comp__component_example_1">comp_arc_sta__example_feature__archdes_component_1</a></span></span></div>
 <div class="line">implements: <span class="implements"><span><a class="reference internal" href="#logic_arc_int__example_feature__archex_logical_interface_1" title="comp__component_example_1">logic_arc_int__example_feature__archex_logical_interface_1</a></span></span></div>
 <div class="line">included by: <span class="includes"><span><a class="reference internal" href="../architecture_concept.html#mod_view_sta__example_feature__archcon_1" title="comp__component_example_1">mod_view_sta__example_feature__archcon_1</a>, <a class="reference internal" href="#mod__example_feature_archex_module_1" title="comp__component_example_1">mod__example_feature_archex_module_1</a>, <a class="reference internal" href="#mod_view_sta__example_feature__archex_1" title="comp__component_example_1">mod_view_sta__example_feature__archex_1</a></span></span></div>
 </span></div>
@@ -1359,7 +1376,7 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-608b8dd5">
+<div class="need_container docutils container" id="SNCB-404678d9">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_comp table" id="comp__component_example_2">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1380,7 +1397,8 @@
 <tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
 <div class="line"><span><span><div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">architecture_design</span></span></span></div>
 </span></span></div>
-<div class="line"><span><div class="line">implements: <span class="implements"><span><a class="reference internal" href="#logic_arc_int__example_feature__archex_logical_interface_2" title="comp__component_example_2">logic_arc_int__example_feature__archex_logical_interface_2</a></span></span></div>
+<div class="line"><span><div class="line">has: <span class="belongs_to"><span><a class="reference internal" href="../../../folder_templates/modules/module_name/component_name/docs/architecture/index.html#comp_arc_sta__component_name__2" title="comp__component_example_2">comp_arc_sta__component_name__2</a>, <a class="reference internal" href="#comp_req__example_feature__archex_example_req" title="comp__component_example_2">comp_req__example_feature__archex_example_req</a></span></span></div>
+<div class="line">implements: <span class="implements"><span><a class="reference internal" href="#logic_arc_int__example_feature__archex_logical_interface_2" title="comp__component_example_2">logic_arc_int__example_feature__archex_logical_interface_2</a></span></span></div>
 <div class="line">included by: <span class="includes"><span><a class="reference internal" href="#mod__example_feature_archex_module_1" title="comp__component_example_2">mod__example_feature_archex_module_1</a>, <a class="reference internal" href="#mod_view_sta__example_feature__archex_1" title="comp__component_example_2">mod_view_sta__example_feature__archex_1</a></span></span></div>
 </span></div>
 </div>
@@ -1403,7 +1421,7 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-bda13f7c">
+<div class="need_container docutils container" id="SNCB-c9b0dfef">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_comp table" id="comp__component_example_3">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1413,7 +1431,7 @@
 <td class="head_center" colspan="2"><div class="needs_head line-block">
 <div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">invalid</span></span></span></div>
 <div class="line"><span><span class="needs_security"><span class="needs_label">security: </span><span class="needs_data">YES</span></span></span></div>
-<div class="line"><span><span class="needs_safety"><span class="needs_label">safety: </span><span class="needs_data">ASIL_B</span></span></span></div>
+<div class="line"><span><span class="needs_safety"><span class="needs_label">safety: </span><span class="needs_data">QM</span></span></span></div>
 </div>
 </td>
 <td class="head_right" colspan="2"><div class="needs_head_right line-block">
@@ -1447,7 +1465,7 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-a933694b">
+<div class="need_container docutils container" id="SNCB-1729b3ef">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_comp_arc_sta table" id="comp_arc_sta__example_feature__archdes_component_1">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1469,15 +1487,15 @@
 <div class="line"><span><span><div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">architecture_design</span></span></span></div>
 </span></span></div>
 <div class="line"><span><div class="line">satisfied by: <span class="satisfies"><span><a class="reference internal" href="../../implementation/_assets/detailed_design_example.html#dd_sta__example_feature__doc_approver" title="comp_arc_sta__example_feature__archdes_component_1">dd_sta__example_feature__doc_approver</a>, <a class="reference internal" href="../../implementation/_assets/detailed_design_example.html#dd_dyn__example_feature__dd_example_dynamic" title="comp_arc_sta__example_feature__archdes_component_1">dd_dyn__example_feature__dd_example_dynamic</a></span></span></div>
+<div class="line">belongs to: <span class="belongs_to"><span><a class="reference internal" href="#comp__component_example_1" title="comp_arc_sta__example_feature__archdes_component_1">comp__component_example_1</a></span></span></div>
 <div class="line">fulfils: <span class="fulfils"><span><a class="reference internal" href="#comp_req__example_feature__archex_example_req" title="comp_arc_sta__example_feature__archdes_component_1">comp_req__example_feature__archex_example_req</a></span></span></div>
-<div class="line">includes: <span class="includes"><span><a class="reference internal" href="#comp__archex_sub_component_1" title="comp_arc_sta__example_feature__archdes_component_1">comp__archex_sub_component_1</a>, <a class="reference internal" href="#comp__archex_sub_component_2" title="comp_arc_sta__example_feature__archdes_component_1">comp__archex_sub_component_2</a>, <a class="reference internal" href="#comp__archex_sub_component_3" title="comp_arc_sta__example_feature__archdes_component_1">comp__archex_sub_component_3</a></span></span></div>
 </span></div>
 </div>
 </td>
 <td class="meta" colspan="3"></td>
 </tr>
 <tr class="content row-odd"><td class="content" colspan="6"><p class="plantuml" id="needarch-process_areas/architecture_design/guidance/architecture_modeling_example-5">
-<object data="../../../_images/plantuml-78e16b4d8e3878302dbe00a28e2e172f93dec572.svg" type="image/svg+xml" style="width:783px;height:246px;background:#FFFFFF;"></object></p>
+<object data="../../../_images/plantuml-6f400c6392794947a45063d6c3a3cfceea54b124.svg" type="image/svg+xml" style="width:230px;height:59px;background:#FFFFFF;"></object></p>
 </td>
 </tr>
 <tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
@@ -1494,11 +1512,11 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-16e1d055">
+<div class="need_container docutils container" id="SNCB-6278f600">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_comp table" id="comp__archex_sub_component_1">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
-<div class="line"><span><span class="needs_title"><span class="needs_data">Lower Level Component 1</span></span></span></div>
+<div class="line"><span><span class="needs_title"><span class="needs_data">Component 1_1</span></span></span></div>
 </div>
 </td>
 <td class="head_center" colspan="2"><div class="needs_head line-block">
@@ -1515,10 +1533,9 @@
 <tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
 <div class="line"><span><span><div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">architecture_design</span></span></span></div>
 </span></span></div>
-<div class="line"><span><div class="line">forms part of: <span class="consists_of"><span><a class="reference internal" href="#comp__component_example_1" title="comp__archex_sub_component_1">comp__component_example_1</a></span></span></div>
+<div class="line"><span><div class="line">forms part of: <span class="consists_of"><span><a class="reference internal" href="../../../folder_templates/modules/module_name/component_name/docs/architecture/index.html#comp__component_name_template" title="comp__archex_sub_component_1">comp__component_name_template</a>, <a class="reference internal" href="#comp__component_example_1" title="comp__archex_sub_component_1">comp__component_example_1</a></span></span></div>
 <div class="line">implements: <span class="implements"><span><a class="reference internal" href="#logic_arc_int__example_feature__archex_logical_interface_1" title="comp__archex_sub_component_1">logic_arc_int__example_feature__archex_logical_interface_1</a></span></span></div>
 <div class="line">uses: <span class="uses"><span><a class="reference internal" href="#logic_arc_int__example_feature__archex_logical_interface_2" title="comp__archex_sub_component_1">logic_arc_int__example_feature__archex_logical_interface_2</a></span></span></div>
-<div class="line">included by: <span class="includes"><span><a class="reference internal" href="../architecture_concept.html#comp_arc_sta__example_feature__archdes_component_concept_1" title="comp__archex_sub_component_1">comp_arc_sta__example_feature__archdes_component_concept_1</a>, <a class="reference internal" href="../architecture_concept.html#comp_arc_sta__example_feature__component_getstrt" title="comp__archex_sub_component_1">comp_arc_sta__example_feature__component_getstrt</a>, <a class="reference internal" href="#comp_arc_sta__example_feature__archdes_component_1" title="comp__archex_sub_component_1">comp_arc_sta__example_feature__archdes_component_1</a></span></span></div>
 </span></div>
 </div>
 </td>
@@ -1540,11 +1557,11 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-c4584b4a">
+<div class="need_container docutils container" id="SNCB-5bfd716c">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_comp table" id="comp__archex_sub_component_2">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
-<div class="line"><span><span class="needs_title"><span class="needs_data">Lower Level Component 2</span></span></span></div>
+<div class="line"><span><span class="needs_title"><span class="needs_data">Component 1_2</span></span></span></div>
 </div>
 </td>
 <td class="head_center" colspan="2"><div class="needs_head line-block">
@@ -1561,10 +1578,9 @@
 <tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
 <div class="line"><span><span><div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">architecture_design</span></span></span></div>
 </span></span></div>
-<div class="line"><span><div class="line">forms part of: <span class="consists_of"><span><a class="reference internal" href="#comp__component_example_1" title="comp__archex_sub_component_2">comp__component_example_1</a></span></span></div>
+<div class="line"><span><div class="line">forms part of: <span class="consists_of"><span><a class="reference internal" href="../../../folder_templates/modules/module_name/component_name/docs/architecture/index.html#comp__component_name_template" title="comp__archex_sub_component_2">comp__component_name_template</a>, <a class="reference internal" href="#comp__component_example_1" title="comp__archex_sub_component_2">comp__component_example_1</a></span></span></div>
 <div class="line">implements: <span class="implements"><span><a class="reference internal" href="#logic_arc_int__example_feature__archex_logical_interface_2" title="comp__archex_sub_component_2">logic_arc_int__example_feature__archex_logical_interface_2</a></span></span></div>
 <div class="line">uses: <span class="uses"><span><a class="reference internal" href="#logic_arc_int__example_feature__archex_logical_interface_2" title="comp__archex_sub_component_2">logic_arc_int__example_feature__archex_logical_interface_2</a></span></span></div>
-<div class="line">included by: <span class="includes"><span><a class="reference internal" href="../architecture_concept.html#comp_arc_sta__example_feature__archdes_component_concept_1" title="comp__archex_sub_component_2">comp_arc_sta__example_feature__archdes_component_concept_1</a>, <a class="reference internal" href="../architecture_concept.html#comp_arc_sta__example_feature__component_getstrt" title="comp__archex_sub_component_2">comp_arc_sta__example_feature__component_getstrt</a>, <a class="reference internal" href="#comp_arc_sta__example_feature__archdes_component_1" title="comp__archex_sub_component_2">comp_arc_sta__example_feature__archdes_component_1</a></span></span></div>
 </span></div>
 </div>
 </td>
@@ -1586,17 +1602,17 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-a97ac3fd">
+<div class="need_container docutils container" id="SNCB-dae7594a">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_comp table" id="comp__archex_sub_component_3">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
-<div class="line"><span><span class="needs_title"><span class="needs_data">Lower Level Component 3</span></span></span></div>
+<div class="line"><span><span class="needs_title"><span class="needs_data">Component 1_3</span></span></span></div>
 </div>
 </td>
 <td class="head_center" colspan="2"><div class="needs_head line-block">
 <div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></span></div>
 <div class="line"><span><span class="needs_security"><span class="needs_label">security: </span><span class="needs_data">NO</span></span></span></div>
-<div class="line"><span><span class="needs_safety"><span class="needs_label">safety: </span><span class="needs_data">QM</span></span></span></div>
+<div class="line"><span><span class="needs_safety"><span class="needs_label">safety: </span><span class="needs_data">ASIL_B</span></span></span></div>
 </div>
 </td>
 <td class="head_right" colspan="2"><div class="needs_head_right line-block">
@@ -1607,8 +1623,7 @@
 <tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
 <div class="line"><span><span><div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">architecture_design</span></span></span></div>
 </span></span></div>
-<div class="line"><span><div class="line">forms part of: <span class="consists_of"><span><a class="reference internal" href="#comp__component_example_1" title="comp__archex_sub_component_3">comp__component_example_1</a></span></span></div>
-<div class="line">included by: <span class="includes"><span><a class="reference internal" href="../architecture_concept.html#comp_arc_sta__example_feature__archdes_component_concept_1" title="comp__archex_sub_component_3">comp_arc_sta__example_feature__archdes_component_concept_1</a>, <a class="reference internal" href="../architecture_concept.html#comp_arc_sta__example_feature__component_getstrt" title="comp__archex_sub_component_3">comp_arc_sta__example_feature__component_getstrt</a>, <a class="reference internal" href="#comp_arc_sta__example_feature__archdes_component_1" title="comp__archex_sub_component_3">comp_arc_sta__example_feature__archdes_component_1</a></span></span></div>
+<div class="line"><span><div class="line">forms part of: <span class="consists_of"><span><a class="reference internal" href="../../../folder_templates/modules/module_name/component_name/docs/architecture/index.html#comp__component_name_template" title="comp__archex_sub_component_3">comp__component_name_template</a>, <a class="reference internal" href="#comp__component_example_1" title="comp__archex_sub_component_3">comp__component_example_1</a></span></span></div>
 </span></div>
 </div>
 </td>
@@ -1633,7 +1648,7 @@
 </section>
 <section id="requirements-for-the-example">
 <h2>Requirements for the Example<a class="headerlink" href="#requirements-for-the-example" title="Link to this heading">#</a></h2>
-<div class="need_container docutils container" id="SNCB-fb06e4f0">
+<div class="need_container docutils container" id="SNCB-9c3e4959">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_stkh_req table" id="stkh_req__example_feature__archdes_example_req">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1678,7 +1693,7 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-33edc7a6">
+<div class="need_container docutils container" id="SNCB-786ceb67">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_feat_req table" id="feat_req__example_feature__archdes_example_req">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1702,6 +1717,7 @@
 </span></span></div>
 <div class="line"><span><div class="line">satisfies: <span class="satisfies"><span><a class="reference internal" href="#stkh_req__example_feature__archdes_example_req" title="feat_req__example_feature__archdes_example_req">stkh_req__example_feature__archdes_example_req</a></span></span></div>
 <div class="line">satisfied by: <span class="satisfies"><span><a class="reference internal" href="#comp_req__example_feature__archex_example_req" title="feat_req__example_feature__archdes_example_req">comp_req__example_feature__archex_example_req</a></span></span></div>
+<div class="line">belongs to: <span class="belongs_to"><span><a class="reference internal" href="#feat__example_feature" title="feat_req__example_feature__archdes_example_req">feat__example_feature</a></span></span></div>
 <div class="line">fulfilled by: <span class="fulfils"><span><a class="reference internal" href="../architecture_concept.html#feat_arc_sta__example_feature__feature_1" title="feat_req__example_feature__archdes_example_req">feat_arc_sta__example_feature__feature_1</a>, <a class="reference internal" href="../architecture_concept.html#logic_arc_int__example_feature__archcon_logical_interface_1" title="feat_req__example_feature__archdes_example_req">logic_arc_int__example_feature__archcon_logical_interface_1</a>, <a class="reference internal" href="../architecture_concept.html#feat_arc_sta__example_feature__archdes_getstrt" title="feat_req__example_feature__archdes_example_req">feat_arc_sta__example_feature__archdes_getstrt</a>, <a class="reference internal" href="#feat_arc_sta__example_feature__archdes_static" title="feat_req__example_feature__archdes_example_req">feat_arc_sta__example_feature__archdes_static</a>, <a class="reference internal" href="#logic_arc_int__example_feature__archex_logical_interface_1" title="feat_req__example_feature__archdes_example_req">logic_arc_int__example_feature__archex_logical_interface_1</a>, <a class="reference internal" href="#logic_arc_int__example_feature__archex_logical_interface_2" title="feat_req__example_feature__archdes_example_req">logic_arc_int__example_feature__archex_logical_interface_2</a>, <a class="reference internal" href="#logic_arc_int__example_feature__archex_logical_interface_3" title="feat_req__example_feature__archdes_example_req">logic_arc_int__example_feature__archex_logical_interface_3</a></span></span></div>
 </span></div>
 </div>
@@ -1724,7 +1740,7 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-d692eb38">
+<div class="need_container docutils container" id="SNCB-9c51d518">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_comp_req table" id="comp_req__example_feature__archex_example_req">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1747,6 +1763,7 @@
 <div class="line"><span class="needs_reqtype"><span class="needs_label">reqtype: </span><span class="needs_data">Functional</span></span></div>
 </span></span></div>
 <div class="line"><span><div class="line">satisfies: <span class="satisfies"><span><a class="reference internal" href="#feat_req__example_feature__archdes_example_req" title="comp_req__example_feature__archex_example_req">feat_req__example_feature__archdes_example_req</a></span></span></div>
+<div class="line">belongs to: <span class="belongs_to"><span><a class="reference internal" href="#comp__component_example_2" title="comp_req__example_feature__archex_example_req">comp__component_example_2</a></span></span></div>
 <div class="line">fulfilled by: <span class="fulfils"><span><a class="reference internal" href="../architecture_concept.html#comp_arc_sta__example_feature__archdes_component_concept_1" title="comp_req__example_feature__archex_example_req">comp_arc_sta__example_feature__archdes_component_concept_1</a>, <a class="reference internal" href="../architecture_concept.html#real_arc_int__example_feature__archdes_component_interface_1" title="comp_req__example_feature__archex_example_req">real_arc_int__example_feature__archdes_component_interface_1</a>, <a class="reference internal" href="../architecture_concept.html#comp_arc_sta__example_feature__component_getstrt" title="comp_req__example_feature__archex_example_req">comp_arc_sta__example_feature__component_getstrt</a>, <a class="reference internal" href="../architecture_concept.html#comp_arc_sta__example_feature__component_getstrt_debug" title="comp_req__example_feature__archex_example_req">comp_arc_sta__example_feature__component_getstrt_debug</a>, <a class="reference internal" href="../architecture_concept.html#comp_arc_sta__example_feature__component_manual_getstrt" title="comp_req__example_feature__archex_example_req">comp_arc_sta__example_feature__component_manual_getstrt</a>, <a class="reference internal" href="#comp_arc_sta__example_feature__archdes_component_1" title="comp_req__example_feature__archex_example_req">comp_arc_sta__example_feature__archdes_component_1</a></span></span></div>
 <div class="line">implemented by: <span class="implements"><span><a class="reference internal" href="../../implementation/_assets/detailed_design_example.html#dd_sta__example_feature__doc_approver" title="comp_req__example_feature__archex_example_req">dd_sta__example_feature__doc_approver</a>, <a class="reference internal" href="../../implementation/_assets/detailed_design_example.html#dd_dyn__example_feature__dd_example_dynamic" title="comp_req__example_feature__archex_example_req">dd_dyn__example_feature__dd_example_dynamic</a></span></span></div>
 </span></div>
@@ -1831,7 +1848,7 @@
 
   
   <div class="tocsection editthispage">
-    <a href="https://github.com/eclipse-score/process_description/edit/main/'process'/process_areas/architecture_design/guidance/architecture_modeling_example.rst">
+    <a href="https://github.com/eclipse-score/process_description/edit/main/process/process_areas/architecture_design/guidance/architecture_modeling_example.rst">
       <i class="fa-solid fa-pencil"></i>
       
       
