@@ -34,9 +34,8 @@ Platform Security Package Checklist
 
 
 **Purpose**
-The purpose of this Platform Security package checklist template is to collect the topics to be checked during verification of the Platform Security package.
+The purpose of this Platform Security Package Checklist template is to collect the topics to be checked during verification of the Platform Security Package.
 
 **Checklist**
-.. Question: Create a task for this.
 
-To be filled.
+To be filled as part of https://github.com/eclipse-score/process_description/issues/452.

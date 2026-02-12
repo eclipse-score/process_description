@@ -12,8 +12,8 @@
    # SPDX-License-Identifier: Apache-2.0
    # *******************************************************************************
 
-Module Safety Plan
-******************
+Safety Plan
+***********
 
 .. note:: Document header
 

@@ -14,8 +14,8 @@
 
 .. _platform_security_plan_template:
 
-Security Planning
-#################
+Platform Security Planning
+##########################
 
 .. document:: Platform Security Plan
    :id: doc__platform_security_plan
@@ -32,16 +32,16 @@ Security Planning
     - Adjust ``safety``, ``security`` and ``tags`` according to your needs
 
 
-:note: The Security Management Plan shall be continuously maintained during the project. Deviations to the platform plan should be documented here.
+:note: The Security Management Plan shall be continuously maintained during the project. Deviations to the Platform Plan should be documented here.
 
 
-Security management / Platform Security Plan
+Security Management / Platform Security Plan
 --------------------------------------------
 
 Purpose
 +++++++
 
-Description of the purpose of the Security Management Plan.
+Description of the purpose of the security management plan.
 
 Objectives and Scope
 ++++++++++++++++++++
@@ -49,12 +49,12 @@ Objectives and Scope
 Security Management Goals
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Description of the Security Management goals.
+Description of the security management goals.
 
 Security Management Scope
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Description of the Security Management scope.
+Description of the security management scope.
 
 Tailoring
 ^^^^^^^^^
@@ -72,79 +72,79 @@ Description of the security culture in the project.
 Security Management Organization
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Description of the organization of the Security Management in the project.
+Description of the organization of the security management in the project.
 
 *Eclipse Roles*
 
-Description of the Eclipse foundation roles relevant for Security Management.
+Description of the Eclipse foundation roles relevant for security management.
 
 *Project Roles*
 
-Description of the project roles relevant for Security Management.
+Description of the project roles relevant for security management.
 
 *Critical dependencies*
 
-Description of critical dependencies relevant for Security Management.
+Description of critical dependencies relevant for security management.
 
 *Risk*
 
-Description of risks relevant for Security Management.
+Description of risks relevant for security management.
 
 *Skills*
 
-Description of skills relevant for Security Management.
+Description of skills relevant for security management.
 
 Security Resources
 ^^^^^^^^^^^^^^^^^^
 
-Description of the resources relevant for Security Management.
+Description of the resources relevant for security management.
 
 Security Management Communication
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Description of the communication relevant for Security Management.
+Description of the communication relevant for security management.
 
 *Reporting*
 
-Description of reporting used for Security Management.
+Description of reporting used for security management.
 
 *Escalation*
 
-Description of escalation path used for Security Management.
+Description of escalation path used for security management.
 
 Security Management Life Cycle
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Description of the Security management life cycle.
+Description of the security management life cycle.
 
 Security Requirements
 ^^^^^^^^^^^^^^^^^^^^^
 
-Description of Security requirements.
+Description of security requirements.
 
 Security Schedule
 ^^^^^^^^^^^^^^^^^
-Description of the Security schedule.
+Description of the security schedule.
 
 Security SW Development
 ^^^^^^^^^^^^^^^^^^^^^^^
-Description of the Security development.
+Description of the security development.
 
 Security Verification
 ^^^^^^^^^^^^^^^^^^^^^
-Description of the Security verification.
+Description of the security verification.
 
 Security Tool Management
 ^^^^^^^^^^^^^^^^^^^^^^^^
-Description of the Security tool management.
+Description of the security tool management.
 
 Security Work Products
 ^^^^^^^^^^^^^^^^^^^^^^
-Description of the Security work products.
+Description of the security work products.
 
 Security Quality Criteria
 ^^^^^^^^^^^^^^^^^^^^^^^^^
-Description of the Security quality criteria.
+Description of the security quality criteria.
 
 Platform Security Plan
 ++++++++++++++++++++++
@@ -152,9 +152,9 @@ Platform Security Plan
 Security Specific SW Platform Work Products
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-List of all relevant Security Management work products for the platform project.
+List of all relevant security management work products for the platform project.
 
 Security Management Feature Specific Work Products
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-List of all relevant Security Management work products at feature level.
+List of all relevant security management work products at feature level.

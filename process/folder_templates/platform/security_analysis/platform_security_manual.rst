@@ -27,8 +27,8 @@ Platform Security Manual
 
 Introduction/Scope
 ------------------
-.. note:: The platform Security Manual is only performed once at platform level to analyse the dependencies between the features of the platform.
-          The results shall be used as an input for the safety analysis so that general safety mechanisms are only defined once and not in every single safety analysis.
+.. note:: The Platform Security Manual is only performed once at platform level to analyse the dependencies between the features of the platform.
+          The results shall be used as an input for the security analysis so that general security mechanisms are only defined once and not in every single security analysis.
 
 Assumed Platform Security Requirements
 --------------------------------------
@@ -40,7 +40,9 @@ Assumptions of Use
 
 Assumptions on the Environment
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-| Generally the assumption of the Project platform OoC is that it is integrated in a secure system, i.e. the POSIX OS it runs on is qualified and also the HW related failures are taken into account by the system integrator, if not otherwise stated in the module's security concept.
+| The platform and its components are developed as Out of Context (OoC) with assumptions on the environment.
+  It is assumed that the platform/components are integrated in a secure system, i.e. qualified POSIX OS.
+  Also the HW related failures are taken into account by the system integrator, if not otherwise stated in the module's security concept.
 | <List here all the OS calls the Project platform expects to be secure.>
 
 List of AoUs expected from the environment the platform / module runs on:
@@ -59,12 +61,12 @@ List of AoUs expected from the environment the platform / module runs on:
 
 Assumptions on the User
 ^^^^^^^^^^^^^^^^^^^^^^^
-| As there is no assumption on which specific OS and HW is used, the integration testing of the stakeholder and feature requirements is expected to be performed by the user of the platform EooC. Tests covering all stakeholder and feature requirements performed on a reference platform (tbd link to reference platform specification), reviewed and passed are included in the platform EooC security package.
+| As there is no assumption on which specific OS and HW is used, the integration testing of the stakeholder and feature requirements is expected to be performed by the user of the platform OoC. Tests covering all stakeholder and feature requirements performed on a reference platform (tbd link to reference platform specification), reviewed and passed are included in the platform OoC security package.
 | Additionally the components of the platform may have additional specific assumptions how they are used. These are part of every module documentation: <link to add>. Assumptions from components to their users can be fulfilled in two ways:
 | 1. There are assumption which need to be fulfilled by all SW components, e.g. "every user of an IPC mechanism needs to make sure that he provides correct data (e.g. including appropriate security (access) control)" - in this case the AoU is marked as "platform".
-| 2. There are assumption which can be fulfilled by a security control realized by some other Project platform component and are therefore not relevant for an user who uses the whole platform. But those are relevant if you chose to use the module EooC stand-alone - in this case the AoU is marked as "module". An example would be the "JSON read" which requires "The user shall provide a string as input which is not corrupted due to HW or QM SW errors." - which is covered when using together with safe <Project> platform persistency feature.
+| 2. There are assumption which can be fulfilled by a security control realized by some other Project platform component and are therefore not relevant for an user who uses the whole platform. But those are relevant if you chose to use the module OoC stand-alone - in this case the AoU is marked as "module". An example would be the "JSON read" which requires "The user shall provide a string as input which is not corrupted due to HW or QM SW errors." - which is covered when using together with safe <Project> platform persistency feature.
 
-List of AoUs on the user of the platform features or the module of this security manual:
+List of AoUs on the user of the platform features or the module of this Security Manual:
 
 .. needtable::
    :style: table
@@ -84,7 +86,7 @@ Security concept of the OoC
 
 Security Weaknesses, Vulnerabilities
 ------------------------------------
-| Weaknesses, Vulnerabilities (bugs in security relevant SW, detected by testing or by users, which could not be fixed) known before release are documented in the platform/module release notes <add link to release note>.
+| Weaknesses, vulnerabilities (bugs in security relevant SW, detected by testing or by users, which could not be fixed) known before release are documented in the platform/module release notes <add link to release note>.
 
 References
 ----------

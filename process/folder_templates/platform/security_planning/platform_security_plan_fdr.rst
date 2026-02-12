@@ -34,7 +34,7 @@ Platform Security Plan Formal Review Report
 
 
 **Purpose**
-The purpose of this Security Plan checklist template is to collect the topics to be checked during verification of the Platform Security Plan.
+The purpose of this Security Plan Checklist template is to collect the topics to be checked during verification of the Platform Security Plan.
 
 **Checklist**
 

@@ -12,8 +12,8 @@
    # SPDX-License-Identifier: Apache-2.0
    # *******************************************************************************
 
-Module Security Plan
-====================
+Security Plan
+=============
 
 .. note:: Document header
 
@@ -39,7 +39,7 @@ Module Security Plan
    |
    | **2. Security Management Scope**
    | This Security Plan's scope is a SW module of the SW platform <link to module documentation in platform/modules/<modulename>/index.rst>.
-   | The module consists of one or more SW components and will be qualified as a EooC.
+   | The module consists of one or more SW components and will be qualified as a OoC.
    |
    | **3. Security Management Roles**
 
@@ -82,21 +82,21 @@ Module Security Plan
           - <Link to WP>
           - <automated>
 
-        * - :need:`wp__fdr_reports` (module Security Plan)
-          - :need:`gd_chklst__module_security_plan`
+        * - :need:`wp__fdr_reports` (Module Security Plan)
+          - :need:`gd_chklst__security_plan`
           - <automated>
           - <Link to issue>
           - <Link to WP>
           - <automated>
 
-        * - :need:`wp__fdr_reports` (module Security Package)
-          - :need:`Security Package Formal Review Checklist <gd_chklst__module_security_package>`
+        * - :need:`wp__fdr_reports` (Module Security Package)
+          - :need:`Security Package Formal Review Checklist <gd_chklst__security_package>`
           - <automated>
           - <Link to issue>
           - <Link to WP>
           - <automated>
 
-        * - :need:`wp__fdr_reports` (module's Security Analyses)
+        * - :need:`wp__fdr_reports` (Module's Security Analyses)
           - Security Analysis FDR tbd
           - <automated>
           - <Link to issue>

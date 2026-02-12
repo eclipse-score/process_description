@@ -15,15 +15,8 @@
 Security Package Formal Review Checklist
 ========================================
 
-.. gd_chklst:: Platform Security Package Formal Review Checklist
-   :id: gd_chklst__platform_security_package
-   :status: valid
-   :complies: std_req__isosae21434__prj_management_6471, std_req__isosae21434__prj_management_6491, std_req__isosae21434__prj_management_6492
-
-   For the content see here: :need:`doc__platform_name_security_package_fdr`
-
-.. gd_chklst:: Module Security Package Formal Review Checklist
-   :id: gd_chklst__module_security_package
+.. gd_chklst:: Security Package Formal Review Checklist
+   :id: gd_chklst__security_package
    :status: valid
    :complies: std_req__isosae21434__prj_management_6471, std_req__isosae21434__prj_management_6491, std_req__isosae21434__prj_management_6492
 
