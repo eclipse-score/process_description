@@ -38,11 +38,11 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-data-viewer/jsonview.bundle.css?v=f6ef2277" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/libs/html/datatables.min.css?v=4b4fd840" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/need_toggle.css?v=5c6620df" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/needstable.css?v=5e1b6797" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/need_core.css?v=f5b60a78" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/need_links.css?v=2150a916" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/need_style.css?v=92936fa5" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/needstable.css?v=5e1b6797" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/need_toggle.css?v=5c6620df" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/need_core.css?v=f5b60a78" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/modern.css?v=803738c0" />
   
   <!-- So that users can add custom icons -->
@@ -72,8 +72,8 @@
         </script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="Security Analysis Checklist" href="platform_security_analysis_fdr.html" />
-    <link rel="prev" title="Safety Analysis Checklist" href="../safety_planning/platform_safety_analysis_fdr.html" />
+    <link rel="next" title="Platform Security Analysis Checklist" href="platform_security_analysis_fdr.html" />
+    <link rel="prev" title="Platform Safety Analysis Checklist" href="../safety_planning/platform_safety_analysis_fdr.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="0.1" />
@@ -465,12 +465,12 @@
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../index.html">Platform</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../safety_analysis/platform_dfa.html">Platform DFA (Dependent Failure Analysis)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../requirements/stakeholder/chklst_req_inspection.html">Stakeholder Requirement Inspection Checklist</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../safety_planning/platform_safety_plan.html">Safety Planning</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../safety_planning/platform_safety_analysis_fdr.html">Safety Analysis Checklist</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../safety_planning/platform_safety_plan.html">Platform Safety Planning</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../safety_planning/platform_safety_analysis_fdr.html">Platform Safety Analysis Checklist</a></li>
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">Platform Security Manual</a></li>
-<li class="toctree-l2"><a class="reference internal" href="platform_security_analysis_fdr.html">Security Analysis Checklist</a></li>
+<li class="toctree-l2"><a class="reference internal" href="platform_security_analysis_fdr.html">Platform Security Analysis Checklist</a></li>
 <li class="toctree-l2"><a class="reference internal" href="platform_security_package_fdr.html">Platform Security Package Checklist</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../security_planning/platform_security_plan.html">Security Planning</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../security_planning/platform_security_plan.html">Platform Security Planning</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../security_planning/platform_security_plan_fdr.html">Platform Security Plan Formal Review Report</a></li>
 </ul>
 </details></li>
@@ -543,7 +543,7 @@
 <p class="admonition-title">Note</p>
 <p>Document header</p>
 </div>
-<div class="need_container docutils container" id="SNCB-9bdda541">
+<div class="need_container docutils container" id="SNCB-e39ad2a5">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_document table" id="doc__platform_security_manual">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -590,8 +590,8 @@
 <h2>Introduction/Scope<a class="headerlink" href="#introduction-scope" title="Link to this heading">#</a></h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>The platform Security Manual is only performed once at platform level to analyse the dependencies between the features of the platform.
-The results shall be used as an input for the safety analysis so that general safety mechanisms are only defined once and not in every single safety analysis.</p>
+<p>The Platform Security Manual is only performed once at platform level to analyse the dependencies between the features of the platform.
+The results shall be used as an input for the security analysis so that general security mechanisms are only defined once and not in every single security analysis.</p>
 </div>
 </section>
 <section id="assumed-platform-security-requirements">
@@ -606,7 +606,9 @@ The results shall be used as an input for the safety analysis so that general sa
 <section id="assumptions-on-the-environment">
 <h3>Assumptions on the Environment<a class="headerlink" href="#assumptions-on-the-environment" title="Link to this heading">#</a></h3>
 <div class="line-block">
-<div class="line">Generally the assumption of the Project platform OoC is that it is integrated in a secure system, i.e. the POSIX OS it runs on is qualified and also the HW related failures are taken into account by the system integrator, if not otherwise stated in the module’s security concept.</div>
+<div class="line">The platform and its components are developed as Out of Context (OoC) with assumptions on the environment.
+It is assumed that the platform/components are integrated in a secure system, i.e. qualified POSIX OS.
+Also the HW related failures are taken into account by the system integrator, if not otherwise stated in the module’s security concept.</div>
 <div class="line">&lt;List here all the OS calls the Project platform expects to be secure.&gt;</div>
 </div>
 <p>List of AoUs expected from the environment the platform / module runs on:</p>
@@ -636,12 +638,12 @@ The results shall be used as an input for the safety analysis so that general sa
 <section id="assumptions-on-the-user">
 <h3>Assumptions on the User<a class="headerlink" href="#assumptions-on-the-user" title="Link to this heading">#</a></h3>
 <div class="line-block">
-<div class="line">As there is no assumption on which specific OS and HW is used, the integration testing of the stakeholder and feature requirements is expected to be performed by the user of the platform EooC. Tests covering all stakeholder and feature requirements performed on a reference platform (tbd link to reference platform specification), reviewed and passed are included in the platform EooC security package.</div>
+<div class="line">As there is no assumption on which specific OS and HW is used, the integration testing of the stakeholder and feature requirements is expected to be performed by the user of the platform OoC. Tests covering all stakeholder and feature requirements performed on a reference platform (tbd link to reference platform specification), reviewed and passed are included in the platform OoC security package.</div>
 <div class="line">Additionally the components of the platform may have additional specific assumptions how they are used. These are part of every module documentation: &lt;link to add&gt;. Assumptions from components to their users can be fulfilled in two ways:</div>
 <div class="line">1. There are assumption which need to be fulfilled by all SW components, e.g. “every user of an IPC mechanism needs to make sure that he provides correct data (e.g. including appropriate security (access) control)” - in this case the AoU is marked as “platform”.</div>
-<div class="line">2. There are assumption which can be fulfilled by a security control realized by some other Project platform component and are therefore not relevant for an user who uses the whole platform. But those are relevant if you chose to use the module EooC stand-alone - in this case the AoU is marked as “module”. An example would be the “JSON read” which requires “The user shall provide a string as input which is not corrupted due to HW or QM SW errors.” - which is covered when using together with safe &lt;Project&gt; platform persistency feature.</div>
+<div class="line">2. There are assumption which can be fulfilled by a security control realized by some other Project platform component and are therefore not relevant for an user who uses the whole platform. But those are relevant if you chose to use the module OoC stand-alone - in this case the AoU is marked as “module”. An example would be the “JSON read” which requires “The user shall provide a string as input which is not corrupted due to HW or QM SW errors.” - which is covered when using together with safe &lt;Project&gt; platform persistency feature.</div>
 </div>
-<p>List of AoUs on the user of the platform features or the module of this security manual:</p>
+<p>List of AoUs on the user of the platform features or the module of this Security Manual:</p>
 <div class="needstable_wrapper docutils container" id="needtable-folder_templates/platform/security_analysis/platform_security_manual-1">
 <div class="pst-scrollable-table-container"><table class="NEEDS_TABLE table" id="needtable-folder_templates/platform/security_analysis/platform_security_manual-1-table_node">
 <colgroup>
@@ -679,7 +681,7 @@ The results shall be used as an input for the safety analysis so that general sa
 <section id="security-weaknesses-vulnerabilities">
 <h2>Security Weaknesses, Vulnerabilities<a class="headerlink" href="#security-weaknesses-vulnerabilities" title="Link to this heading">#</a></h2>
 <div class="line-block">
-<div class="line">Weaknesses, Vulnerabilities (bugs in security relevant SW, detected by testing or by users, which could not be fixed) known before release are documented in the platform/module release notes &lt;add link to release note&gt;.</div>
+<div class="line">Weaknesses, vulnerabilities (bugs in security relevant SW, detected by testing or by users, which could not be fixed) known before release are documented in the platform/module release notes &lt;add link to release note&gt;.</div>
 </div>
 </section>
 <section id="references">
@@ -707,7 +709,7 @@ The results shall be used as an input for the safety analysis so that general sa
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Safety Analysis Checklist</p>
+        <p class="prev-next-title">Platform Safety Analysis Checklist</p>
       </div>
     </a>
     <a class="right-next"
@@ -715,7 +717,7 @@ The results shall be used as an input for the safety analysis so that general sa
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Security Analysis Checklist</p>
+        <p class="prev-next-title">Platform Security Analysis Checklist</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>

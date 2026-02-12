@@ -38,11 +38,11 @@
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-data-viewer/jsonview.bundle.css?v=f6ef2277" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/libs/html/datatables.min.css?v=4b4fd840" />
-    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/common_css/need_toggle.css?v=5c6620df" />
-    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/common_css/needstable.css?v=5e1b6797" />
-    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/common_css/need_core.css?v=f5b60a78" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/common_css/need_links.css?v=2150a916" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/common_css/need_style.css?v=92936fa5" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/common_css/needstable.css?v=5e1b6797" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/common_css/need_toggle.css?v=5c6620df" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/common_css/need_core.css?v=f5b60a78" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/modern.css?v=803738c0" />
   
   <!-- So that users can add custom icons -->
@@ -549,7 +549,7 @@
                   
   <section id="concept-description">
 <span id="process-security-management"></span><h1>Concept Description<a class="headerlink" href="#concept-description" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-8abaa0f8">
+<div class="need_container docutils container" id="SNCB-ba4f9e05">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_doc_concept table" id="doc_concept__security_management_process">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -592,13 +592,18 @@
 </table>
 </div>
 </div>
-<p>In this section a concept for the Security Management will be discussed. Inputs for this concepts
+<p>In this section a concept for the security management will be discussed. Inputs for this concepts
 are mainly the requirements of ISO SAE 21434 Clause 5, 6 and 8.</p>
+<section id="key-concept">
+<h2>Key concept<a class="headerlink" href="#key-concept" title="Link to this heading">#</a></h2>
+<p>The Security Management Plan establishes a comprehensive strategy for managing all identified security activities throughout the entire project life cycle.
+It ensures that these activities are executed in a systematic, effective, and repeatable manner, providing clear guidance on responsibilities, processes, and control measures.
+This approach supports risk mitigation, regulatory compliance, and continuous improvement, enabling the project team to maintain secrity standards consistently from initiation to completion.</p>
+</section>
 <section id="inputs">
 <h2>Inputs<a class="headerlink" href="#inputs" title="Link to this heading">#</a></h2>
 <ol class="arabic simple">
-<li><p>Stakeholders for the Security Management work products?</p></li>
-<li><p>Who needs which information?</p></li>
+<li><p>Stakeholders for the security management work products?</p></li>
 <li><p>Which security plans do we have?</p></li>
 <li><p>Which other work products of security management are important?</p></li>
 <li><p>What tooling do we need?</p></li>
@@ -607,12 +612,6 @@ are mainly the requirements of ISO SAE 21434 Clause 5, 6 and 8.</p>
 <section id="stakeholders-for-the-security-management">
 <h2>Stakeholders for the Security Management<a class="headerlink" href="#stakeholders-for-the-security-management" title="Link to this heading">#</a></h2>
 <ol class="arabic simple">
-<li><p><a class="reference internal" href="../../roles/index.html#rl__project_lead" title="rl__project_lead"><em class="xref need">Project Lead (rl__project_lead)</em></a></p>
-<ul class="simple">
-<li><p>is overall approver for security management activities.</p></li>
-<li><p>For more details refer the role definition in <a class="reference internal" href="../../roles/index.html#rl__project_lead" title="rl__project_lead"><em class="xref need">Project Lead (rl__project_lead)</em></a>.</p></li>
-</ul>
-</li>
 <li><p><a class="reference internal" href="security_management_roles.html#rl__security_manager" title="rl__security_manager"><em class="xref need">Security Manager (rl__security_manager)</em></a></p>
 <ul class="simple">
 <li><p>is the main responsible for the security management work products (as in <a class="reference internal" href="security_management_workproducts.html"><span class="doc">Security Management Work Products</span></a>).
@@ -621,8 +620,14 @@ See also role definition in <a class="reference internal" href="security_managem
 </li>
 <li><p><a class="reference internal" href="../security_analysis/security_analysis_roles.html#rl__security_engineer" title="rl__security_engineer"><em class="xref need">Security Engineer (rl__security_engineer)</em></a></p>
 <ul class="simple">
-<li><p>is the main responsible for the security management work products (as in <a class="reference internal" href="security_management_workproducts.html"><span class="doc">Security Management Work Products</span></a>).
-See also role definition in <a class="reference internal" href="security_management_roles.html"><span class="doc">Roles</span></a>.</p></li>
+<li><p>is the main responsible for the security engineering work products (as in <a class="reference internal" href="../security_analysis/security_analysis_workproducts.html"><span class="doc">Security Analysis Work Products</span></a>).
+See also role definition in <a class="reference internal" href="../security_analysis/security_analysis_roles.html#rl__security_engineer" title="rl__security_engineer"><em class="xref need">Security Engineer (rl__security_engineer)</em></a>.</p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="../../roles/index.html#rl__project_lead" title="rl__project_lead"><em class="xref need">Project Lead (rl__project_lead)</em></a></p>
+<ul class="simple">
+<li><p>is overall approver for security management activities.</p></li>
+<li><p>For more details refer the role definition in <a class="reference internal" href="../../roles/index.html#rl__project_lead" title="rl__project_lead"><em class="xref need">Project Lead (rl__project_lead)</em></a>.</p></li>
 </ul>
 </li>
 <li><p><a class="reference internal" href="../../roles/index.html#rl__committer" title="rl__committer"><em class="xref need">Committer (rl__committer)</em></a></p>
@@ -641,15 +646,6 @@ See also role definition in <a class="reference internal" href="security_managem
 <li><p>understand activities planning, processes definition and execution (needs review, if we consider that)</p></li>
 </ul>
 </li>
-<li><p>“Distributor” (external role)</p>
-<ul class="simple">
-<li><p>Use the platform in a safe and secure way.</p></li>
-<li><p>Integrate the platform in their product (distribution) and security package</p></li>
-<li><p>Plan this integration (also in time)</p></li>
-<li><p>Qualify the SW platform as part of his product</p></li>
-<li><p>Ensures that all Assumptions of use are analyzed for the project. It is recommended that these assumptions of use shall be treated as “requirements” by the the distributors and/or project system integrators.</p></li>
-</ul>
-</li>
 <li><p><a class="reference internal" href="../safety_management/safety_management_roles.html#rl__safety_manager" title="rl__safety_manager"><em class="xref need">Safety Manager (rl__safety_manager)</em></a></p>
 <ul class="simple">
 <li><p>Supports activities</p></li>
@@ -664,23 +660,24 @@ See also role definition in <a class="reference internal" href="security_managem
 </section>
 <section id="security-plans">
 <h2>Security Plans<a class="headerlink" href="#security-plans" title="Link to this heading">#</a></h2>
-<p>This SW platform project defines two levels of planning: platform and module. There will be one security plan on platform level and several security plans on module level (one for each module).
-This is how we organize our development teams and repositories. Each of these security plan “creates” one component OoC.
+<p>This SW platform project defines two levels of planning: platform and module. There will be one Security Plan on platform level and several Security Plans on module level (one for each module).
+This is how we organize our development teams and repositories. Each of these Security Plan “creates” one component OoC.
 The <a class="reference internal" href="security_management_workproducts.html#wp__platform_security_plan" title="wp__platform_security_plan"><em class="xref need">Platform Security Plan (wp__platform_security_plan)</em></a> exists only once and is part of the <a class="reference internal" href="../platform_management/platform_management_workproducts.html#wp__platform_mgmt" title="wp__platform_mgmt"><em class="xref need">Platform Management Plan (wp__platform_mgmt)</em></a> of the development project.</p>
 </section>
 <section id="security-management-work-products">
 <h2>Security Management Work Products<a class="headerlink" href="#security-management-work-products" title="Link to this heading">#</a></h2>
 <p>Apart from the security plans the main work products of security management are (see also the link to workflows below):</p>
 <ul class="simple">
-<li><p><a class="reference internal" href="security_management_workproducts.html#wp__platform_security_manual" title="wp__platform_security_manual"><em class="xref need">Security Manual (wp__platform_security_manual)</em></a> - the security manual defines the requirements for safe and secure usage or integration of the SW platform (or its individual modules)</p></li>
-<li><p><a class="reference internal" href="security_management_workproducts.html#wp__fdr_reports_security" title="wp__fdr_reports_security"><em class="xref need">Reviews (wp__fdr_reports_security)</em></a> - on security plan, security package and security analyses, according to ISO SAE 21434 requirements</p></li>
-<li><p><a class="reference internal" href="security_management_workproducts.html#wp__platform_security_package" title="wp__platform_security_package"><em class="xref need">Security Package (wp__platform_security_package)</em></a> - the security package does not contain the security argumentation. By this the development project ensures it does not take over liability for the SW platform (or its individual modules). But it enables the distributors to integrate the SW platform (or its individual modules) in their security package.</p></li>
+<li><p><a class="reference internal" href="security_management_workproducts.html#wp__platform_security_manual" title="wp__platform_security_manual"><em class="xref need">Security Manual (wp__platform_security_manual)</em></a> - the Security Manual defines the requirements for safe and secure usage or integration of the SW platform (or its individual modules)</p></li>
+<li><p><a class="reference internal" href="security_management_workproducts.html#wp__fdr_reports_security" title="wp__fdr_reports_security"><em class="xref need">Reviews (wp__fdr_reports_security)</em></a> - on Security Plan, Security Package and Security Analyses, according to ISO SAE 21434 requirements</p></li>
+<li><p><a class="reference internal" href="security_management_workproducts.html#wp__platform_security_package" title="wp__platform_security_package"><em class="xref need">Security Package (wp__platform_security_package)</em></a> - the Security Package does not contain the security argumentation. By this the development project ensures it does not take over liability for the SW platform (or its individual modules). But it enables the distributors to integrate the SW platform (or its individual modules) in their Security Package.</p></li>
 </ul>
 </section>
 <section id="security-management-tooling">
 <h2>Security Management Tooling<a class="headerlink" href="#security-management-tooling" title="Link to this heading">#</a></h2>
-<p>For the security planning and security manual a “Docs-as-Code” approach is used and within that approach Id will be used for referencing.</p>
+<p>For the security planning and security manual a “docs-as-code” approach is used and within that approach Id will be used for referencing.</p>
 <p>For the activities planning (who, when) we use <a class="reference internal" href="../change_management/change_management_workproducts.html#wp__issue_track_system" title="wp__issue_track_system"><em class="xref need">Issue tracking system (wp__issue_track_system)</em></a> to create and manage issues, and monitor progress through a project management dashboard.</p>
+<p>Also, refer <a class="reference internal" href="../security_analysis/security_analysis_workflow.html#wf__mr_sec_analyses" title="wf__mr_sec_analyses"><em class="xref need">Monitor Security Analysis (wf__mr_sec_analyses)</em></a> for the monitoring of security analyses.</p>
 <p>For the reporting (e.g. displaying the status of the work products) additional tooling is created (see <a class="reference internal" href="guidance/security_management_process_reqs.html"><span class="doc">Security Management Process Requirements</span></a>).</p>
 </section>
 </section>
@@ -732,6 +729,7 @@ The <a class="reference internal" href="security_management_workproducts.html#wp
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-concept">Key concept</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#inputs">Inputs</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#stakeholders-for-the-security-management">Stakeholders for the Security Management</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#security-plans">Security Plans</a></li>
