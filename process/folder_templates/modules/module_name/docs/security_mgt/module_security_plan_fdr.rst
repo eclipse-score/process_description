@@ -12,8 +12,8 @@
    # SPDX-License-Identifier: Apache-2.0
    # *******************************************************************************
 
-Module Security Plan Formal Review Report
-=========================================
+Security Plan Formal Review Report
+==================================
 
 .. note:: Document header
 
@@ -35,8 +35,8 @@ Module Security Plan Formal Review Report
 
 **1. Purpose**
 
-The purpose of this review checklist is to provide a guidence for reviewing the security plans for each module.
-Each module security plan shall one checklist filled.
+The purpose of this review checklist is to provide a guidence for reviewing the Security Plans for each module.
+Each Module Security Plan shall have one checklist filled.
 
 **2. Checklist**
 
@@ -46,12 +46,12 @@ See also :ref:`review_concept` for further information about reviews in general 
         :header-rows: 1
 
         * - Id
-          - Security plan activity
+          - Security Plan activity
           - Compliant to ISO SAE 21434?
           - Comment
 
         * - 1
-          - Is the rationale for the security work products tailoring included?
+          - Is the rationale for the Security Work Products tailoring included?
           - [YES | NO ]
           - <Rationale for result>
 
@@ -61,47 +61,47 @@ See also :ref:`review_concept` for further information about reviews in general 
           - <Rationale for result>
 
         * - 3
-          - Does the security plan define all needed activities for security management (incl. Review and Security Audit)?
+          - Does the Security Plan define all needed activities for security management (including review and security audit)?
           - [YES | NO ]
           - <Rationale for result>
 
         * - 4
-          - Does the security plan define all needed activities for SW development, integration and verification?
+          - Does the Security Plan define all needed activities for SW development, integration and verification?
           - [YES | NO ]
           - <Rationale for result>
 
         * - 5
-          - Does the security plan define all needed activities for security analysis?
+          - Does the Security Plan define all needed activities for security analysis?
           - [YES | NO ]
           - <Rationale for result>
 
         * - 6
-          - Does the security plan define all needed activities for supporting processes (incl. tool mgt)?
+          - Does the Security Plan define all needed activities for supporting processes (incl. tool mgt)?
           - [YES | NO ]
           - <Rationale for result>
 
         * - 7
-          - Does the security plan document a responsible for all activities?
+          - Does the Security Plan document a responsible for all activities?
           - [YES | NO ]
           - <Rationale for result>
 
         * - 8
-          - If Off-the-shelf (e.g. existing OSS) software components is used, is it planned to be analysed?
+          - If OSS software components is used, is it planned to be qualified?
           - [YES | NO ]
           - <Rationale for result>
 
         * - 9
-          - Is a security manager and a project lead appointed for the project?
+          - Is a Security Manager and a Project Lead appointed for the project?
           - [YES | NO ]
           - <Rationale for result>
 
         * - 10
-          - Is security plan sufficiently linked to the project plan?
+          - Is Security Plan sufficiently linked to the Project Plan?
           - [YES | NO ]
           - <Rationale for result>
 
         * - 11
-          - Is security plan updated iteratively to show the progress?
+          - Is Security Plan updated iteratively to show the progress?
           - [YES | NO ]
           - <Rationale for result>
 
@@ -111,14 +111,14 @@ See also :ref:`review_concept` for further information about reviews in general 
           - <Rationale for result>
 
         * - 13
-          - Does the security plan define all needed activities for SBOM generation?
+          - Does the Security Plan define all needed activities for SBOM generation?
           - [YES | NO ]
           - <Rationale for result>
 
         * - 14
-          - Does the security plan define regular vulnerability scans for the generated SBOM?
+          - Does the Security Plan define regular vulnerability scans for the generated SBOM?
           - [YES | NO ]
           - <Rationale for result>
 
 .. note::
-    Off-the-shelf means existing software which may used w/o modification, e.g. existing OSS
+    Off-the-shelf means existing software which may used without modification, e.g. existing OSS

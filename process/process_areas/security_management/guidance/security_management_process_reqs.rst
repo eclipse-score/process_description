@@ -23,7 +23,7 @@ Security Management Process Requirements
    :satisfies: wf__cr_mt_security_plan
    :complies: std_req__isosae21434__prj_management_6429
 
-   Security plans shall contain documents references where the status is derived automatically.
+   Security Plans shall contain documents references where the status is derived automatically.
 
    Note: This can be done by defining the document as a sphinx-need and using sphinx mechanisms.
 
@@ -34,7 +34,7 @@ Security Management Process Requirements
    :satisfies: wf__cr_mt_security_plan
    :complies: std_req__isosae21434__prj_management_6429
 
-   Security plans shall contain work product references where the accumulated status is derived automatically.
+   Security Plans shall contain work product references where the accumulated status is derived automatically.
 
    Note: This can be done as for documents if the work product is a single sphinx-need.
    For work products collections (e.g. all requirements of a component) an accumulated status is needed (e.g. like "% valid state")

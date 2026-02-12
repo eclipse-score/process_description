@@ -20,25 +20,28 @@ Getting Started
    :status: valid
    :tags: security_management
 
-This document and sub chapters describes the steps needed to be done to ensure compliance to Security according to ISO SAE 21434 (secrity standard used in the project).
-This document serves as the entry point or the first document to be read for the Security related processes in this project.
+This document and sub chapters outlines the required steps to ensure that project complies with ISO SAE 21434 security standard.
+Begin with this document to understand the project's security-related processes and procedures.
 All other sub processes are linked here and in sub chapters.
 
 General Workflow
 ****************
-Some workflows/activities have to be done once (or when there is a significant change in project scope) and some have to be executed continuously.
-Some workflows have to be done centrally once in the project and some for each modules / sub teams.
+One goal of the security management process is to ensure that the project is following the defined processes and that the evidence of security can be shown according to the requirements.
+The Security Management process follows an continuous approach.
 All these workflows are defined in the :ref:`workflow_security_management` section.
 
-Following workflows shall be done centrally or according to the project needs:
-
+The following workflows shall be executed continuously:
 * Create/Maintain Security Plan
 * Create/Maintain Security Package
 * Create/Maintain Security Manual
 * Create/Maintain SBOM
 * Monitor/Verify Security
 
-Some of the workflows are currently either tailored out or not in scope of this project (due to Out-of-Context development).
+Additional to the continuous workflows the following workflows shall be executed according to the project needs:
+* Perform Security Audit (to be discussed, currently not in scope)
+* Perform Formal Reviews
+
+Some of the workproducts are currently either tailored out or not in scope of this project (due to Out-of-Context development).
 Refer :need:`wp__tailoring_work_products` section for the details about tailoring.
 
 .. note:: The term security is used here synonymously for the term cybersecurity as defined in ISO SAE 21434.

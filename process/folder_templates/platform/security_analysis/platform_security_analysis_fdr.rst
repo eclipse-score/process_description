@@ -13,8 +13,8 @@
    # *******************************************************************************
 
 
-Security Analysis Checklist
-===========================
+Platform Security Analysis Checklist
+====================================
 
 .. document:: [Your Platform Name] Security Analysis Checklist
    :id: doc__platform_name_security_analysis_fdr
@@ -34,7 +34,7 @@ Security Analysis Checklist
 
 
 **Purpose**
-The purpose of this Security Analysis checklist template is to collect the topics to be checked during verification of the Security Analysis.
+The purpose of this Security Analysis Checklist template is to collect the topics to be checked during verification of the Security Analysis.
 
 **Checklist**
 
