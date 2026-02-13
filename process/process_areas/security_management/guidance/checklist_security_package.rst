@@ -12,16 +12,12 @@
    # SPDX-License-Identifier: Apache-2.0
    # *******************************************************************************
 
-Guidance
-########
+Security Package Formal Review Checklist
+========================================
 
-.. toctree::
-   :maxdepth: 1
+.. gd_chklst:: Security Package Formal Review Checklist
+   :id: gd_chklst__security_package
+   :status: valid
+   :complies: std_req__isosae21434__prj_management_6471, std_req__isosae21434__prj_management_6491, std_req__isosae21434__prj_management_6492
 
-   security_management_guideline
-   security_plan_templates
-   security_manual_templates
-   security_management_feature_security_wp_template
-   checklist_security_package
-   checklist_security_plan
-   security_management_process_reqs
+   For the content see here: :need:`doc__module_name_security_package_fdr`

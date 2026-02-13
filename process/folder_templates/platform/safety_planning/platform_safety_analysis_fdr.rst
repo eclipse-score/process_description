@@ -13,8 +13,8 @@
    # *******************************************************************************
 
 
-Safety Analysis Checklist
-=========================
+Platform Safety Analysis Checklist
+==================================
 
 .. document:: [Your Platform Name] Safety Analysis Checklist
    :id: doc__platform_name_safety_analysis_fdr

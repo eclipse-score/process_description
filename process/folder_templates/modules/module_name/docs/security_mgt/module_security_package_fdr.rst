@@ -12,17 +12,31 @@
    # SPDX-License-Identifier: Apache-2.0
    # *******************************************************************************
 
-Security Package Formal Review Checklist
-========================================
+Security Package Formal Review Report
+=====================================
 
-.. gd_chklst:: Security Package Formal Review Checklist
-   :id: gd_chklst__security_package
-   :status: valid
-   :complies: std_req__isosae21434__prj_management_6471, std_req__isosae21434__prj_management_6491, std_req__isosae21434__prj_management_6492
+.. note:: Document header
+
+.. document:: [Your Module Name] Security Package Formal Review
+   :id: doc__module_name_security_package_fdr
+   :status: draft
+   :safety: ASIL_B
+   :security: YES
+   :realizes: wp__fdr_reports
+   :tags: template
+
+.. attention::
+    The above directive must be updated according to your Module.
+
+    - Modify ``Your Module Name`` to be your Module Name
+    - Modify ``id`` to be your Module Name in upper snake case preceded by ``doc_`` and succeeded by ``safety_package_fdr``
+    - Adjust ``status`` to be ``valid``
+    - Adjust ``safety`` and ``tags`` according to your needs
+
 
 **1. Purpose**
 
-The purpose of this review checklist is to report status of the formal review for the security package.
+The purpose of this review checklist is to report status of the formal review for the Security Package.
 
 **2. Checklist**
 
@@ -32,17 +46,17 @@ See also :ref:`review_concept` for further information about reviews in general 
         :header-rows: 1
 
         * - Id
-          - Security package activity
+          - Security Package activity
           - Compliant to ISO SAE 21434?
           - Comment
 
         * - 1
-          - Is a security package provided which matches the security plan (i.e. all planned work products referenced)?
+          - Is a Security Package provided which matches the Security Plan (i.e. all planned work products referenced)?
           - [YES | NO ]
           - <Rationale for result>
 
         * - 2
-          - Is the argument how security is achieved, provided in the security package, plausible and sufficient?
+          - Is the argument how security is achieved, provided in the Security Package, plausible and sufficient?
           - NO
           - The argument is intentionally not provided by the Project.
 
@@ -52,9 +66,9 @@ See also :ref:`review_concept` for further information about reviews in general 
           - <Rationale for result>
 
         * - 4
-          - Are the referenced work products in released state, including the process security audit?
+          - Are the referenced work products in released state, including the Process Security Audit?
           - NO
-          - Security audit is currently not planned, tailored out.
+          - Security Audit is currently not planned, tailored out.
 
         * - 5
           - If security related deviations from the process or security concept are documented, are these argued understandably?

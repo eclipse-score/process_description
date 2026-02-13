@@ -12,6 +12,7 @@
    # SPDX-License-Identifier: Apache-2.0
    # *******************************************************************************
 
+
 Feature Security Work Products Template
 =======================================
 
@@ -21,4 +22,3 @@ Feature Security Work Products Template
    :complies:
 
    For the content see here: (tbd https://github.com/eclipse-score/process_description/issues/109)
-   ref:`feature_security_wp_template`
