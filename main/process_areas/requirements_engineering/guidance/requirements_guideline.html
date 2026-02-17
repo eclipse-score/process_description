@@ -572,7 +572,7 @@
                   
   <section id="guideline">
 <h1>Guideline<a class="headerlink" href="#guideline" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-828107ab">
+<div class="need_container docutils container" id="SNCB-99e9a189">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_guidl table" id="gd_guidl__req_engineering">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -855,18 +855,21 @@ To ease verification a link to these (“process” type) requirements can be es
 </section>
 <section id="workflow-for-creating-and-linking-assumption-of-use-aou">
 <span id="aou-workflow"></span><h2>Workflow for Creating and Linking Assumption of Use (AoU)<a class="headerlink" href="#workflow-for-creating-and-linking-assumption-of-use-aou" title="Link to this heading">#</a></h2>
-<p>An AoU is a category of requirement which originates from a safety concept of an architectural element (and thus it is confirmed by a safety analysis).
-This is different for AoU created on SW-platform level, these are also coming from the scope of the project (i.e. the knowledge which safety activities are not part of a project).
-As it can not be fulfilled by the architecture element (e.g. component) itself, it needs to be fulfilled by the user of the element.
-In Safety Elements out of Context (SEooC) the AoUs will normally be part of the safety manual.
-In this process description (as it describes SEooC development) these AoUs are created both internally and externally - the latter if existing SEooCs are integrated into the platform (e.g. a qualified Operating System).
-For AoU which arise internally (i.e. from project specific architecture) the template is almost identical to the one for feature/component requirements. The only difference is that it is defined such that the attribute “satisfies” is replaced with the attribute “mitigates” (see picture below).
-For externally provided AoUs of course the sentence template cannot be taken into account, as these are only imported from an external safety manual. It is also not possible to link it to other development artifacts via the attribute “mitigates”.</p>
+<p>An AoU is a category of requirement which is part of a safety concept of an architectural element (and thus it is confirmed by a safety analysis).
+As an AoU can not be fulfilled by the architecture element (e.g. component) itself, it needs to be fulfilled by the user of the element.
+AoU created on SW-platform level are also coming from the scope of the project (i.e. the knowledge which safety activities are not part of a project)
+or are defining general assumptions every user and/or every module in the platform has to fulfill.</p>
+<p>In Safety Elements out of Context (SEooC) the AoUs are part of the safety manual.</p>
+<p>In this workflow (as it describes SEooC development) these AoUs are created both project internal and project external</p>
+<ul class="simple">
+<li><p>internal:  For AoU which arise internally (i.e. from project specific architecture), the template is almost identical to the one for feature/component requirements. The only difference is that it is defined such that the attribute “satisfies” is replaced with the attribute “mitigates” (see picture below).</p></li>
+<li><p>external:  if externally provided SEooCs are integrated into the platform (e.g. a qualified Operating System). For these AoUs the sentence template cannot be taken into account, as these may be imported from an external safety manual. It is also not possible to link those to other platform development artifacts via the attribute “mitigates”.</p></li>
+</ul>
 <p>AoUs can be of different class and shall be handled by tracing those</p>
 <ul class="simple">
-<li><p>to Feature/Component Architecture (via satisfies), if those are on Component Level and can be fulfilled there</p></li>
+<li><p>to Feature/Component (via satisfies), if those are on (external) Component Level and can be fulfilled by (internal) Feature/Component</p></li>
 <li><p>to Stakeholder Requirements (via satisfies), if AoU are of general nature and can be fulfilled by platform</p></li>
-<li><p>or by containing those in Platform Safety Manual, if AoU cannot be fulfilled by platform but need to be satisfied by the user of the platform</p></li>
+<li><p>or by containing those in Platform(s) Safety Manual(s), if AoU cannot be fulfilled by platform or its components (alone) but need to be satisfied by the user of the platform</p></li>
 </ul>
 <figure class="align-center" id="aou-traceability">
 <a class="reference internal image-reference" href="../../../_images/aou_traceability.drawio.svg"><img alt="../../../_images/aou_traceability.drawio.svg" src="../../../_images/aou_traceability.drawio.svg" style="width: 100%;" />
@@ -875,7 +878,15 @@ For externally provided AoUs of course the sentence template cannot be taken int
 <p><span class="caption-number">Fig. 19 </span><span class="caption-text">AoU Traceability</span><a class="headerlink" href="#aou-traceability" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
-<p><a class="reference internal" href="#aou-traceability"><span class="std std-numref">Fig. 19</span></a> is an extension of the workproduct traceability to show the handling of (external) AoU. Note that the component level displayed in green shows two components - on the right the one exporting AoU to be fulfilled by others, left the component which fulfills and exports AoU (but without the traceability shown on the right to reduce complexity).</p>
+<p><a class="reference internal" href="#aou-traceability"><span class="std std-numref">Fig. 19</span></a> is an extension of the workproduct traceability to show the handling of AoU.
+Note that the component level displayed in green shows two components - on the right (dark green) the one which is exporting AoU to be fulfilled by others,
+on the left (light green) the component which fulfills and exports AoU.
+Internal component’s AoU can also be fulfilled (and linked) by other internal components, this is not depicted here, but would be quite the same with one exception:
+External component’s AoUs which cannot be fulfilled by the platform alone are contained in the platform Safety Manual, whereas the internal component’s AoUs
+are part of the Module Safety Manual.</p>
+<p>Like other requirements also an AoU needs to be verified - but by the user of the feature/component.
+To improve the usability of a feature/component, its responsible team should already provide
+integration tests the user has to run to prove the fulfillment of the AoU(s).</p>
 </section>
 <section id="special-cases">
 <h2>Special cases<a class="headerlink" href="#special-cases" title="Link to this heading">#</a></h2>
@@ -902,7 +913,7 @@ new function is planned and the requirement with the new specification is valid_
 </section>
 <section id="tailoring">
 <h2>Tailoring<a class="headerlink" href="#tailoring" title="Link to this heading">#</a></h2>
-<div class="need_container docutils container" id="SNCB-de12e2d6">
+<div class="need_container docutils container" id="SNCB-08a75a8d">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_guidl table" id="gd_guidl__req_tailored">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
