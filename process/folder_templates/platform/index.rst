@@ -1,6 +1,6 @@
 ..
    # *******************************************************************************
-   # Copyright (c) 2024 Contributors to the Eclipse Foundation
+   # Copyright (c) 2026 Contributors to the Eclipse Foundation
    #
    # See the NOTICE file(s) distributed with this work for additional
    # information regarding copyright ownership.
@@ -24,3 +24,5 @@ Platform
    requirements/stakeholder/chklst_req_inspection.rst
    safety_planning/index.rst
    safety_planning/platform_safety_analysis_fdr.rst
+   safety_mgt/index.rst
+   verification/platform_verification_report.rst

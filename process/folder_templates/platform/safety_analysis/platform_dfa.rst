@@ -29,13 +29,6 @@ Platform DFA (Dependent Failure Analysis)
 
 .. note:: Use the content of the document to describe e.g. why a fault model is not applicable for the diagram.
 
-.. attention::
-    The above directive must be updated according to your Feature.
-
-    - Modify ``Your Feature Name`` to be your Feature Name
-    - Modify ``id`` to be your Feature Name in upper snake case preceded by ``doc__`` and succeeded by ``_dfa``
-    - Adjust ``status`` to be ``valid``
-    - Adjust ``safety`` and ``tags`` according to your needs
 
 Dependent Failure Initiators
 ----------------------------
@@ -44,10 +37,10 @@ Dependent Failure Initiators
 
     .. plat_saf_dfa:: <Title>
        :violates: <Feature architecture>
-       :id: plat_saf_DFA__<Feature>__<Element descriptor>
+       :id: plat_saf_DFA__Platform__<Element descriptor>
        :failure_id: <ID from DFA failure initiators :need:`gd_guidl__dfa_failure_initiators`>
        :failure_effect: "description of failure effect of the failure initiator on the element"
-       :mitigated_by: <ID from Feature Requirement | ID from AoU Feature Requirement>
+       :mitigated_by: <ID from Stakeholder Requirement | ID from AoU Feature Requirement>
        :mitigation_issue: <ID from Issue Tracker>
        :sufficient: <yes|no>
        :status: <valid|invalid>
