@@ -53,7 +53,7 @@
 
     <script src="../../../../../../_static/jquery.js?v=5d32c60e"></script>
     <script src="../../../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-    <script src="../../../../../../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../../../../../../_static/documentation_options.js?v=7f41d439"></script>
     <script src="../../../../../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../../../../../_static/design-tabs.js?v=f930bc37"></script>
@@ -168,7 +168,7 @@
 
 <li class="nav-item ">
   <a class="nav-link nav-internal" href="../../../../../../process_areas/index.html">
-    Process Areas
+    Process areas
   </a>
 </li>
 
@@ -203,14 +203,14 @@
 
 <li class=" ">
   <a class="nav-link dropdown-item nav-internal" href="../../../../../../standards/index.html">
-    Standards
+    Standards & Requirements
   </a>
 </li>
 
 
 <li class=" ">
   <a class="nav-link dropdown-item nav-internal" href="../../../../../../trustable/index.html">
-    Trustable
+    Trustable Software Framework
   </a>
 </li>
 
@@ -218,6 +218,13 @@
 <li class=" current active">
   <a class="nav-link dropdown-item nav-internal" href="../../../../../index.html">
     Folder Templates
+  </a>
+</li>
+
+
+<li class=" ">
+  <a class="nav-link dropdown-item nav-internal" href="../../../../../../glossary/index.html">
+    Glossary
   </a>
 </li>
 
@@ -349,7 +356,7 @@
 
 <li class="nav-item ">
   <a class="nav-link nav-internal" href="../../../../../../process_areas/index.html">
-    Process Areas
+    Process areas
   </a>
 </li>
 
@@ -377,14 +384,14 @@
 
 <li class="nav-item ">
   <a class="nav-link nav-internal" href="../../../../../../standards/index.html">
-    Standards
+    Standards & Requirements
   </a>
 </li>
 
 
 <li class="nav-item ">
   <a class="nav-link nav-internal" href="../../../../../../trustable/index.html">
-    Trustable
+    Trustable Software Framework
   </a>
 </li>
 
@@ -392,6 +399,13 @@
 <li class="nav-item current active">
   <a class="nav-link nav-internal" href="../../../../../index.html">
     Folder Templates
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../../../../glossary/index.html">
+    Glossary
   </a>
 </li>
 
@@ -467,6 +481,7 @@
 <li class="toctree-l3 current active"><a class="current reference internal" href="#">Architecture Inspection Checklist</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../component_classification.html">Component Classification</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../detailed_design/index.html">Detailed Design</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../detailed_design/chklst_impl_inspection.html">Implementation Inspection Checklist</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../requirements/index.html">Requirements</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../requirements/chklst_req_inspection.html">Requirement Inspection Checklist</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../safety_analysis/fmea.html">FMEA (Failure Modes and Effects Analysis)</a></li>
@@ -543,7 +558,7 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <div class="need_container docutils container" id="SNCB-0eab5924">
+  <div class="need_container docutils container" id="SNCB-19d93c1e">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_document table" id="doc__component_name_arc_inspection">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -609,8 +624,9 @@ communication and documentation of architectural decisions to stakeholders.</p>
 </section>
 <section id="checklist">
 <h2>Checklist<a class="headerlink" href="#checklist" title="Link to this heading">#</a></h2>
-<div class="pst-scrollable-table-container"><table class="table" id="id1">
-<caption><span class="caption-number">Table 70 </span><span class="caption-text">Architecture Design Review Checklist</span><a class="headerlink" href="#id1" title="Link to this table">#</a></caption>
+<p>Please note that it is mandatory to fill in the “passed” column with “yes” or “no” for each checklist item and additional to add in the remarks why it is passed or not passed. In case of “no” an issue link to the issue tracking system has to be added in the last column. See also <a class="reference internal" href="../../../../../../general_concepts/score_review_concept.html#review-concept"><span class="std std-ref">Review and Inspection Concept</span></a> for further information about reviews in general and inspection in particular.</p>
+<div class="pst-scrollable-table-container"><table class="table" id="id2">
+<caption><span class="caption-number">Table 69 </span><span class="caption-text">Architecture Design Review Checklist</span><a class="headerlink" href="#id2" title="Link to this table">#</a></caption>
 <thead>
 <tr class="row-odd"><th class="head"><p>Review Id</p></th>
 <th class="head"><p>Acceptance criteria</p></th>
@@ -626,7 +642,7 @@ communication and documentation of architectural decisions to stakeholders.</p>
 <td><p>Is the traceability from software architectural elements to requirements, and other level architectural
 elements (e.g. component to interface) established according to the “Relations between the architectural elements” as described in <a class="reference internal" href="../../../../../../process_areas/architecture_design/architecture_concept.html#doc_concept__arch_process" title="doc_concept__arch_process"><em class="xref need">Architecture Process (doc_concept__arch_process)</em></a>?</p></td>
 <td><p>automated</p></td>
-<td><p>Trace should be checked by Sphinx. Will be removed from checklist once requirement is implemented.</p></td>
+<td><p>Trace should be checked automatically by tool support in the future. Will be removed from the checklist once the requirement (<a class="reference internal" href="../../../../../../process_areas/architecture_design/guidance/architecture_process_reqs.html#gd_req__arch_build_blocks_corr" title="gd_req__arch_build_blocks_corr"><em class="xref need">Correlations of the architectural building blocks (gd_req__arch_build_blocks_corr)</em></a>) is implemented. Refer to <a class="reference external" href="https://eclipse-score.github.io/docs-as-code/main/internals/requirements/requirements.html">Tool Requirements</a> for the current status.</p></td>
 <td></td>
 <td></td>
 <td></td>
@@ -643,8 +659,8 @@ are the relevant parts covered?</p></td>
 <tr class="row-even"><td><p>ARC_01_03</p></td>
 <td><p>Is the architectural element traceable to the lower level artifacts as defined by the workproduct traceability?</p></td>
 <td><p>automated</p></td>
-<td><p>Will be removed from checklist once requirement is implemented by automated tool check.
-Details of possible linking can be depicted from <a class="reference external" href="https://eclipse-score.github.io/process_description/main/general_concepts/score_traceability_concept.html">traceability concept</a></p></td>
+<td><p>Will be removed from checklist once the requirement (<a class="reference internal" href="../../../../../../process_areas/architecture_design/guidance/architecture_process_reqs.html#gd_req__arch_build_blocks_corr" title="gd_req__arch_build_blocks_corr"><em class="xref need">Correlations of the architectural building blocks (gd_req__arch_build_blocks_corr)</em></a>) is implemented by automated tool check. See <a class="reference external" href="https://eclipse-score.github.io/docs-as-code/main/internals/requirements/requirements.html">Tool Requirements</a>.
+Details of possible linking can be depicted from <a class="reference internal" href="../../../../../../general_concepts/score_traceability_concept.html#general-concepts-traceability"><span class="std std-ref">traceability concept</span></a>.</p></td>
 <td></td>
 <td></td>
 <td></td>
@@ -660,7 +676,7 @@ Details of possible linking can be depicted from <a class="reference external" h
 <tr class="row-even"><td><p>ARC_02_02</p></td>
 <td><p>Is appropriate and comprehensible operation/interface naming present in the architectural design?</p></td>
 <td><p>manual</p></td>
-<td><p>Check <a class="reference internal" href="../../../../../../process_areas/architecture_design/guidance/architecture_guideline.html#gd_guidl__arch_design" title="gd_guidl__arch_design"><em class="xref need">Architectural Design (gd_guidl__arch_design)</em></a></p></td>
+<td><p>Check <a class="reference internal" href="../../../../../../process_areas/architecture_design/guidance/architecture_guideline.html#gd_guidl__arch_design" title="gd_guidl__arch_design"><em class="xref need">Architectural Design Guideline (gd_guidl__arch_design)</em></a></p></td>
 <td></td>
 <td></td>
 <td></td>
@@ -678,7 +694,7 @@ Note: consistency is ensured by the process/tooling, by defining each interface 
 <tr class="row-even"><td><p>ARC_02_04</p></td>
 <td><p>Are the interfaces between the software architectural element and other architectural elements well-defined?</p></td>
 <td><p>manual</p></td>
-<td><p>Check if the interface reacts on non-defined behavior or errors; can established protocols be used; are the
+<td><p>Check if the interface reacts on non-defined behaviour or errors; can established protocols be used; are the
 interfaces for inputs, outputs, error codes documented; is loose coupling considered and only limited exposure;
 can unit or integration test be written against the interface; data amount transferred; no sensitive data
 exposure;</p></td>
@@ -723,12 +739,15 @@ decision records, use of established design patterns.</p></td>
 <td></td>
 </tr>
 <tr class="row-odd"><td><p>ARC_03_03</p></td>
-<td><p>Are simplicity and avoidance of unnecessary complexity present in the software architecture?</p></td>
+<td><p>Are simplicity and avoidance of unnecessary complexity present in the software architecture and the component?</p></td>
 <td><p>manual</p></td>
 <td><p>Indicators for complexity are: number of use cases (corresponding to dynamic diagrams)
 allocated to single design element, number of interfaces and operations in an interface,
-function parameters, global variables, complex types, limited comprehensibility.</p>
-<p>Note: If the “number” above exceeds “3” a design rationale is mandatory (for all types)</p>
+function parameters, global variables, complex types, limited comprehensibility.
+The belonging code metrics should be checked.</p>
+<p>Notes:</p>
+<p>If the “number” above exceeds “3” a design rationale is mandatory (for all types)</p>
+<p>See also if component classification <a class="reference internal" href="../../../../../../process_areas/safety_management/guidance/template_component_classification.html#gd_temp__component_classification" title="gd_temp__component_classification"><em class="xref need">Component Classification Te... (gd_temp__component_classification)</em></a> as measure is present.</p>
 </td>
 <td></td>
 <td></td>
@@ -738,6 +757,16 @@ function parameters, global variables, complex types, limited comprehensibility.
 <td><p>Is the software architecture design following best practices and design principles?</p></td>
 <td><p>manual</p></td>
 <td><p>Refer to architectural guidelines and recommendations within the project documentation.</p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>ARC_04_03</p></td>
+<td><p>If your software architectural design of the component includes processes and tasks, are their scheduling policies and priorities (at least the needed relation one to another) defined to ensure that timing requirements are met? Please note, that the particular priorities or priority ranges will be probably defined by the project handbook or the software development plan.</p>
+<p>Note: see <a class="reference internal" href="../../../../../../standards/iso26262/iso26262.html#std_req__iso26262__software_743" title="std_req__iso26262__software_743"><em class="xref need">software_743 (std_req__iso26262__software_743)</em></a></p>
+</td>
+<td><p>manual</p></td>
+<td><p>Give a reason for these scheduling policies and priorities or explain why not needed.</p></td>
 <td></td>
 <td></td>
 <td></td>
@@ -804,7 +833,7 @@ function parameters, global variables, complex types, limited comprehensibility.
 
   
   <div class="tocsection editthispage">
-    <a href="https://github.com/eclipse-score/process_description/edit/main/docs/folder_templates/modules/module_name/component_name/docs/architecture/chklst_arc_inspection.rst">
+    <a href="https://github.com/eclipse-score/process_description/edit/main/process/folder_templates/modules/module_name/component_name/docs/architecture/chklst_arc_inspection.rst">
       <i class="fa-solid fa-pencil"></i>
       
       
@@ -815,15 +844,6 @@ function parameters, global variables, complex types, limited comprehensibility.
     </a>
   </div>
 </div>
-
-  <div class="sidebar-secondary-item">
-  <div role="note" aria-label="source link">
-    <h3>This Page</h3>
-    <ul class="this-page-menu">
-      <li><a href="../../../../../../_sources/folder_templates/modules/module_name/component_name/docs/architecture/chklst_arc_inspection.rst.txt"
-            rel="nofollow">Show Source</a></li>
-    </ul>
-   </div></div>
 
 </div></div>
               
