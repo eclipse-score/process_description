@@ -12,8 +12,8 @@
    # SPDX-License-Identifier: Apache-2.0
    # *******************************************************************************
 
-Safety Package Formal Review Report
-===================================
+Platform Safety Package Formal Review Report
+============================================
 
 .. note:: Document header
 
