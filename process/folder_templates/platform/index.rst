@@ -25,4 +25,4 @@ Platform
    safety_planning/index.rst
    safety_planning/platform_safety_analysis_fdr.rst
    docs/safety_mgt/index.rst
-   docs/verification/platform_verification_report.rst
+   docs/verification/platform_verification_report.rst 
