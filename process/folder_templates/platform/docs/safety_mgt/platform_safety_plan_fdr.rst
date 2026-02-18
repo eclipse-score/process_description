@@ -12,12 +12,12 @@
    # SPDX-License-Identifier: Apache-2.0
    # *******************************************************************************
 
-Safety Plan Formal Review Report
-================================
+Platform Safety Plan Formal Review Report
+=========================================
 
 .. note:: Document header
 
-.. document:: PlatformSafety Plan Formal Review
+.. document:: Platform Safety Plan Formal Review
    :id: doc__platform_safety_plan_fdr
    :status: draft
    :safety: ASIL_B

@@ -12,12 +12,12 @@
    # SPDX-License-Identifier: Apache-2.0
    # *******************************************************************************
 
-Verification Report
-===================
+Platform Verification Report
+============================
 
 .. note:: Document header
 
-.. document:: platform Verification Report
+.. document:: Platform Verification Report
    :id: doc__platform_verification_report
    :status: draft
    :safety: ASIL_B
