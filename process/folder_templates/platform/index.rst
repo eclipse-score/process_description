@@ -25,4 +25,5 @@ Platform
    safety_planning/index.rst
    safety_planning/platform_safety_analysis_fdr.rst
    safety_mgt/index.rst
-   verification/platform_verification_report.rst
+   docs/safety_mgt/index.rst
+   docs/verification/platform_verification_report.rst
