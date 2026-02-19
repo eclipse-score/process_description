@@ -18,6 +18,8 @@ Safety Management
 .. toctree::
    :titlesonly:
 
+   platform_dfa
    platform_safety_plan_fdr
    platform_safety_package_fdr
    platform_safety_analysis_fdr
+   platform_safety_plan

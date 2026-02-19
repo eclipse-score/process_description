@@ -26,11 +26,16 @@ Platform Safety Plan Formal Review Report
    :tags: template
 
 
-**1. Purpose**
+**Purpose**
 
 The purpose of this safety plan formal review checklist is to report status of the review for the platform safety plan.
 
-**2. Checklist**
+**Conduct**
+As described in :need:`wf__p_formal_rv`, the formal document review is performed by an "external" safety manager:
+
+- reviewer: <committer with safety manager skills explicitly named here>
+
+**Checklist**
 
 .. list-table:: Safety Plan Checklist
         :header-rows: 1
