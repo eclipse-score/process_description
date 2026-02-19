@@ -17,7 +17,7 @@ Platform Safety Analysis Checklist
 ==================================
 
 .. document:: Platform Safety Analysis Checklist
-   :id: doc__platform_safety_analysis_fdr
+   :id: doc__platform_safety_analysis_fdr 
    :status: draft
    :safety: ASIL_B
    :security: YES
