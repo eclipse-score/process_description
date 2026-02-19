@@ -22,8 +22,7 @@ Platform
 
    safety_analysis/platform_dfa.rst
    requirements/stakeholder/chklst_req_inspection.rst
-   safety_planning/platform_safety_plan.rst
-   safety_planning/platform_safety_analysis_fdr.rst
+   safety_planning/index.rst
    docs/safety_mgt/index.rst
    docs/verification/platform_verification_report.rst
    security_analysis/platform_security_manual.rst
