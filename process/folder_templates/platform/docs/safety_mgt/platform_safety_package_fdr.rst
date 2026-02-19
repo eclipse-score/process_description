@@ -26,11 +26,16 @@ Platform Safety Package Formal Review Report
    :tags: template
 
 
-**1. Purpose**
+**Purpose**
 
 The purpose of this review checklist is to report status of the formal review for the platform safety package.
 
-**2. Checklist**
+**Conduct**
+As described in :need:`wf__p_formal_rv`, the formal document review is performed by an "external" safety manager:
+
+- reviewer: <committer with safety manager skills explicitly named here>
+
+**Checklist**
 
 .. list-table:: Safety Package Checklist
         :header-rows: 1
