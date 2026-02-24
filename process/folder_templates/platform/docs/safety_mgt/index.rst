@@ -19,6 +19,7 @@ Safety Management
    :titlesonly:
 
    platform_dfa
+   platform_safety_manual
    platform_safety_plan_fdr
    platform_safety_package_fdr
    platform_safety_analysis_fdr
