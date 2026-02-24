@@ -16,7 +16,7 @@ Platform Release Note Template
 ==============================
 
 .. gd_temp:: Platform Release Note Template
-   :id: gd_temp__rel_plat_rel_note
+   :id: doc__platform_release_note
    :status: draft
    :complies: std_req__iso26262__management_64134, std_req__iso26262__management_64135, std_req__aspice_40__SUP-8-BP7, std_req__aspice_40__SPL-2-BP1, std_req__aspice_40__iic-11-03, std_req__aspice_40__iic-18-06, std_req__aspice_40__SPL-2-BP2, std_req__aspice_40__SPL-2-BP3, std_req__aspice_40__iic-11-04, std_req__aspice_40__SPL-2-BP4, std_req__aspice_40__SPL-2-BP6
    :tags: template
