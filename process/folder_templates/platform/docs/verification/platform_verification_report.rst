@@ -34,17 +34,17 @@ Platform Verification Report
      - This is split in a list of QM features tested and a separate list of tests for ASIL rated features.
      - List of feature architecture tags (ASIL rated) linked to inspection checklist and verdict (derived from PR export)
 
-     - The lists may also contain other verification methods  
+     - The lists may also contain other verification methods
 
     **2. Safety Analyses Report**
      - List of the performed Platform and Feature Safety Analyses, pass/fail with open mitigations
 
     **3. Test results**
      - Test result per test case with status passed/failed/not_run for :need:`wp__verification_platform_int_test` and :need:`wp__verification_feat_int_test`
-     
+
     **4. Test logs**
      - Test log per test case with status passed/failed/not_run for :need:`wp__verification_platform_int_test` and :need:`wp__verification_feat_int_test`
-     with status passed/failed/not_run
+       with status passed/failed/not_run
 
     **Note1:** The verification report is valid for the platform version tagged together with the report
 
