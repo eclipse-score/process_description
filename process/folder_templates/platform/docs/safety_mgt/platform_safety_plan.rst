@@ -14,8 +14,8 @@
 
 .. _platform_safety_plan_template:
 
-Safety Planning
-###############
+Platform Safety Planning
+########################
 
 .. document:: Platform Safety Plan
    :id: doc__platform_safety_plan
