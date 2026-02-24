@@ -20,7 +20,8 @@ Platform
 .. toctree::
    :hidden:
 
-   requirements/stakeholder/chklst_req_inspection.rst 
+   requirements/stakeholder/chklst_req_inspection.rst
+   release/release_note.rst
    docs/safety_mgt/index.rst
    docs/verification/platform_verification_report.rst
    security_analysis/platform_security_manual.rst
