@@ -4,7 +4,7 @@ Platform Verification Report
 .. note:: Document header
 
 .. document:: Platform Verification Report
-   :id: doc__platform_verification_report
+   :id: gd_temp__platform_ver_report
    :status: draft
    :safety: ASIL_B
    :security: YES
