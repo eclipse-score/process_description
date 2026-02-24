@@ -18,7 +18,7 @@ Verification Report
 .. note:: Document header
 
 .. document:: [Your Module Name] Verification Report
-   :id: gd_temp__mod_ver_report
+   :id: doc__module_name_verification_report
    :status: draft
    :safety: ASIL_B
    :security: NO
