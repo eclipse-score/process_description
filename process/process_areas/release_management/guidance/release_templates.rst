@@ -15,4 +15,4 @@
 Templates
 =========
 
-See :ref:`gd_temp__rel_plat_rel_note`
+See :need:`gd_temp__rel_plat_rel_note`
