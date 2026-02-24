@@ -36,16 +36,13 @@ Platform Verification Report
 
      - The lists may also contain other verification methods like "Analysis" - process tbd
 
-    **2. DFA Report**
-     - List of the performed Feature DFA, pass/fail with open mitigations
+    **2. Safety Analyses Report**
+     - List of the performed Feature Safety Analyses, pass/fail with open mitigations
 
-    **3. Safety Analysis Report**
-     - List of the performed Feature Safety Analysis, pass/fail with open mitigations
-
-    **4. Test results**
+    **3. Test results**
      - Test result per test case with status passed/failed/not_run
 
-    **5. Test logs**
+    **4. Test logs**
      - Test log per test case with status passed/failed/not_run
 
     **Note1:** The verification report is valid for the platform version tagged together with the report
