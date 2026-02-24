@@ -18,7 +18,7 @@ Platform Release Note Template
 .. note:: Document header
 
 .. document:: Platform Release Note
-   :id: gd_temp__rel_mod_rel_note
+   :id: doc__platform_release_note
    :status: draft
    :safety: ASIL_B
    :security: NO
