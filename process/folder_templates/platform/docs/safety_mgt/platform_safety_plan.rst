@@ -26,7 +26,7 @@ Safety Planning
    :tags: template
 
 .. attention::
-    The above directive must be updated according to your Platform.
+    The above directive must be updated.
 
     - Adjust ``status`` to be ``valid``
     - Adjust ``safety``, ``security`` and ``tags`` according to your needs

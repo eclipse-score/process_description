@@ -13,11 +13,11 @@
    # *******************************************************************************
 
 
-Platform Safety Analysis Checklist
-==================================
+Platform Safety Analysis Formal Review Report
+=============================================
 
-.. document:: Platform Safety Analysis Checklist
-   :id: doc__platform_safety_analysis_fdr 
+.. document:: Platform Safety Analysis Formal Review Report
+   :id: doc__platform_safety_analysis_fdr
    :status: draft
    :safety: ASIL_B
    :security: YES
@@ -27,12 +27,12 @@ Platform Safety Analysis Checklist
 
 
 **Purpose**
-The purpose of this Safety Analysis (DFA and FMEA) checklist template is to collect the topics to be checked during verification of the Platform Safety Analysis.
+The purpose of this Safety Analysis (DFA and FMEA) formal review report template is to collect the topics to be checked during verification of the Platform Safety Analysis.
 
 **Conduct**
 As described in :need:`wf__p_formal_rv`, the formal document review is performed by an "external" safety manager:
 
-- reviewer: <committer with safety manager skills explicitly named here>
+- reviewer: **<committer with safety manager skills explicitly named here>**
 
 **Checklist**
 
