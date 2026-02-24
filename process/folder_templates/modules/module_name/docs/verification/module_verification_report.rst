@@ -18,7 +18,7 @@ Verification Report
 .. note:: Document header
 
 .. document:: [Your Module Name] Verification Report
-   :id: doc__module_name_verification_report
+   :id: gd_temp__mod_ver_report
    :status: draft
    :safety: ASIL_B
    :security: NO
@@ -32,7 +32,6 @@ Verification Report
     - Modify ``id`` to be your Module Name in upper snake case preceded by ``doc_`` and succeeded by ``verification_report``
     - Adjust ``status`` to be ``valid``
     - Adjust ``safety`` and ``tags`` according to your needs
-
 
 This verification report is based on the :need:`gd_temp__verification_plan`.
 It covers all the components of the above stated module.
