@@ -62,7 +62,7 @@ Safety Management Workflows
 .. workflow:: Perform Safety Audit
    :id: wf__p_fs_audit
    :status: valid
-   :responsible: rl__external_auditor
+   :responsible: rl__safety_external_auditor
    :approved_by: rl__safety_manager
    :input: wp__module_safety_plan, wp__platform_safety_plan, wp__module_safety_package, wp__platform_safety_package
    :output: wp__audit_report

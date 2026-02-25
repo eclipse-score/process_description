@@ -27,7 +27,7 @@ For a detailed explanation of workflows and their role within the process model,
    :supported_by: rl__safety_manager
    :input: wp__platform_mgmt, wp__issue_track_system, wp__tailoring_work_products
    :output: wp__module_security_plan, wp__platform_security_plan
-   :contains: gd_guidl__security_plan_definitions, gd_temp__feature_security_wp, gd_temp__module_security_plan
+   :contains: gd_guidl__security_plan_definitions, gd_temp__module_security_plan
    :has: doc_concept__security_management_process, doc_getstrt__security_management_process
 
    | The Security Manager is responsible for the planning and coordination of the security activities for the platform/module.
@@ -42,7 +42,7 @@ For a detailed explanation of workflows and their role within the process model,
    :supported_by: rl__committer
    :input: wp__module_security_plan, wp__platform_security_plan, wp__issue_track_system
    :output: wp__module_security_package, wp__platform_security_package
-   :contains: gd_guidl__security_package, gd_temp__feature_security_wp, gd_temp__module_security_plan, gd_guidl__security_plan_definitions
+   :contains: gd_guidl__security_package, gd_temp__module_security_plan, gd_guidl__security_plan_definitions
    :has: doc_concept__security_management_process, doc_getstrt__security_management_process
 
    | The Security Manager is NOT responsible to provide the argument for the achievement of security.

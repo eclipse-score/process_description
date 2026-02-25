@@ -21,7 +21,6 @@ Guidance
    security_management_guideline
    security_plan_templates
    security_manual_templates
-   security_management_feature_security_wp_template
    checklist_security_package
    checklist_security_plan
    security_management_process_reqs

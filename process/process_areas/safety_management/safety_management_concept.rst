@@ -76,7 +76,7 @@ Stakeholders
 
    * Supports activities
 
-#. :need:`External Auditor <rl__external_auditor>`
+#. :need:`Safety External Auditor <rl__safety_external_auditor>`
 
    * Perform Safety Audit as independent safety audits
    * Verifies compliance with defined safety processes and standards.

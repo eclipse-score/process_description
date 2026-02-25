@@ -21,7 +21,8 @@ Contributing Roles:
 
    * :need:`Contributor <rl__contributor>`
    * :need:`Process Community <rl__process_community>`
-   * :need:`External Auditor <rl__external_auditor>`
+   * :need:`Safety External Auditor <rl__safety_external_auditor>`
+   * :need:`Security External Auditor <rl__security_external_auditor>`
    * :need:`Project Lead <rl__project_lead>`
 
 A detailed overview of the responsibility for the steps of the requirement process is listed here:
