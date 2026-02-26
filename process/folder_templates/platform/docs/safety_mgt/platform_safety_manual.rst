@@ -22,7 +22,7 @@ Platform Safety Manual
    :status: draft
    :safety: ASIL_B
    :security: NO
-   :realizes: wp__module_safety_manual
+   :realizes: wp__platform_safety_manual
    :tags: template
 
 .. attention::
@@ -33,18 +33,19 @@ Platform Safety Manual
 
 Introduction/Scope
 ------------------
+| **<Put here explanatory text introducing origin, scope, rationale, main functionalities, overall description (with special regard on safety); e.g. link to platform architecture picture>**
 
 Assumed Platform Safety Requirements
 ------------------------------------
 | For the Platform the following safety related stakeholder requirements are assumed to define the top level functionality (purpose) of the Platform. I.e. from these all the feature and component requirements implemented are derived.
-| **<List here all the stakeholder requirements, with safety not equal to QM, the module's components requirements are derived from. For the platform all are relevant.>**
+| **<List here all the stakeholder requirements, with safety not equal to QM. For the platform all are relevant.>**
 
 Assumptions of Use
 ------------------
 
 Assumptions on the Environment
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-| Generally the assumption of the project platform SEooC is that it is integrated in a safe system, i.e. the POSIX OS it runs on is qualified and also the HW related failures are taken into account by the system integrator, if not otherwise stated in the module's safety concept.
+| Generally the assumption of the project platform SEooC is that it is integrated in a safe system, i.e. the POSIX OS it runs on is qualified and also the HW related failures are taken into account by the system integrator, if not otherwise stated in the platform safety concept.
 | **<List here all the OS calls the project platform expects to be safe.>**
 
 List of AoUs expected from the environment the platform runs on:
@@ -86,11 +87,11 @@ Assumptions on the User
 
 Safety concept of the SEooC
 ---------------------------
-| **<Describe here the safety concept incl. which faults are taken care of, reactions of the implemented functions under anomalous operating conditions ... if this is not already documented sufficiently in the feature documentation "safety impact" section of all the features the module is used in.>**
+| **<Describe here the safety concept incl. which faults are taken care of, reactions of the implemented functions under anomalous operating conditions>**
 
 Safety Anomalies
 ----------------
-| Anomalies (bugs in ASIL SW, detected by testing or by users, which could not be fixed) known before release are documented in the platform/module release notes **<add link to release note>**.
+| Anomalies (bugs in ASIL SW, detected by testing or by users, which could not be fixed) known before release are documented in the platform release notes **<add link to release note>**.
 
 References
 ----------

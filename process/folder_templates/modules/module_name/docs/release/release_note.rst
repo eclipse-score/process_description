@@ -91,7 +91,7 @@ Release Note
 |  Performed Verification
 |  ----------------------
 |  This release note is based on the verification as documented in module verification report
-|  :need:`gd_temp__mod_ver_report`.
+|  :need:`doc__module_name_verification_report`.
 |
 | Known Issues
 | ------------
