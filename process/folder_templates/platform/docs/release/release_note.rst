@@ -31,8 +31,8 @@ Platform Release Note
      - Adjust ``status`` to be ``valid``
      - Adjust ``safety`` and ``tags`` according to your needs
 
-   Platform Release Notes
-   ======================
+
+
    Release Tag: vX.Y.Z
    Origin Release Tag: vU.V.W
    Release Commit Hash: a1b2c3d4e5f6g7h8i9j0
