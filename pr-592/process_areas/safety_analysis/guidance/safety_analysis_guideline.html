@@ -578,7 +578,7 @@
                   
   <section id="safety-analysis-guidelines">
 <h1>Safety Analysis Guidelines<a class="headerlink" href="#safety-analysis-guidelines" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-6e3a830e">
+<div class="need_container docutils container" id="SNCB-998b7f5e">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_guidl table" id="gd_guidl__safety_analysis">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -643,7 +643,7 @@ content of the document, so it can be recognized.</p>
 <li><p>Replace the placeholders in the “id” attribute with the name of the feature or component and a short description of the element so that it can be easily identified.</p></li>
 <li><p>Document the fault ID from the fault model <a class="reference internal" href="fault_models_guideline.html#gd_guidl__fault_models" title="gd_guidl__fault_models"><em class="xref need">FMEA Fault Models (gd_guidl__fault_models)</em></a> that applies to the element in the “fault_id” attribute.</p></li>
 <li><p>Describe the failure effect of the fault model on the element in the “failure_effect” attribute. Use the failure mode description and enlarge the if it’s applicable to the considered element.</p></li>
-<li><p>Document the safety mitigation. This can be a detection, prevention or mitigation of the fault.</p></li>
+<li><p>Document the safety mitigation. This can be a detection, prevention or mitigation of the fault. If only testability is defined as mitigation measure, complexity requirements shall be allocated to the feature/component.</p></li>
 <li><p>If there is no mitigation or existing mitigation is not sufficient a mitigation issue has to be created in the Issue Tracking system and linked in the “mitigation_issue” attribute.</p></li>
 <li><p>The analysis is finished, if for each identified fault a sufficient mitigation exists.</p></li>
 <li><p>Unless the attribute sufficient is yes, mitigation and argument attribute can be still empty.</p></li>
@@ -671,7 +671,7 @@ can be recognized.</p>
 <li><p>Replace the placeholders in the “id” attribute with the name of the feature or component and a short description of the element so that it can be easily identified.</p></li>
 <li><p>Document the failure ID from the failure initiator <a class="reference internal" href="dfa_failure_initiators.html#gd_guidl__dfa_failure_initiators" title="gd_guidl__dfa_failure_initiators"><em class="xref need">DFA failure initiators (gd_guidl__dfa_failure_initiators)</em></a> that applies to the element in the “failure_id” attribute.</p></li>
 <li><p>Describe the failure effect of the failure initiator on the element in the “failure_effect” attribute. Use the violation cause description and enlarge the if it’s applicable to the considered element.</p></li>
-<li><p>Document the safety mitigation. This can be a detection, prevention or mitigation of the fault.</p></li>
+<li><p>Document the safety mitigation. This can be a detection, prevention or mitigation of the fault. If only testability is defined as mitigation measure, complexity requirements shall be allocated to the feature/component.</p></li>
 <li><p>If there is no mitigation or the mitigation is not sufficient a mitigation issue has to be created in the Issue Tracking system and linked in the “mitigation_issue” attribute.</p></li>
 <li><p>The analysis is finished, if for each identified fault a sufficient mitigation exists.</p></li>
 <li><p>Unless the attribute sufficient is yes, mitigation and argument attribute can be still empty.</p></li>
@@ -762,7 +762,7 @@ Additionally in the static view we see Component 4 is a library used by Componen
 </section>
 <section id="tailoring">
 <h2>Tailoring<a class="headerlink" href="#tailoring" title="Link to this heading">#</a></h2>
-<div class="need_container docutils container" id="SNCB-02f46e4e">
+<div class="need_container docutils container" id="SNCB-2931b0a4">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_guidl table" id="gd_guidl__analysis_tailored">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
