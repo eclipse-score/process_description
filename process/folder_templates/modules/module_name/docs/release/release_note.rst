@@ -122,9 +122,6 @@ Release Note
 | Contributor 1
 | Contributor 2
 |
-
----
-
 | Contact Information
 | -------------------
 |
