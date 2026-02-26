@@ -76,7 +76,7 @@ Platform Release Note
    - **Module 3**: Version and brief description of the module. Link to Software module release note.
 
    Performed Verification
-   ---------------------
+   ----------------------
    This release note is based on the verification as documented in platform verification report
    **<add link here>** (report derived from template :need:`gd_temp__platform_ver_report`).
 
