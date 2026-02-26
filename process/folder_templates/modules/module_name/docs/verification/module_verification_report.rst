@@ -85,6 +85,12 @@ Verification Report contains:
 **5. Software component qualification verification report**
        - Contains the needed verification results if for some components a qualification of pre-developed SW is performed.
 
+**6. Test results**
+       - Test result per test case with status passed/failed/not_run
+
+**7. Test logs**
+       - Test log per test case with status passed/failed/not_run
+
 **Note1:** The verification report is valid for the module version tagged together with the report
 
 **Note2:** All the above lists are generated automatically
