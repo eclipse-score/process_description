@@ -221,6 +221,13 @@
   </a>
 </li>
 
+
+<li class=" ">
+  <a class="nav-link dropdown-item nav-internal" href="../../../../../glossary/index.html">
+    Glossary
+  </a>
+</li>
+
                 </ul>
             </li>
             
@@ -395,6 +402,13 @@
   </a>
 </li>
 
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../../../glossary/index.html">
+    Glossary
+  </a>
+</li>
+
   </ul>
 </nav></div>
           
@@ -555,7 +569,7 @@
 <p class="admonition-title">Note</p>
 <p>Document header</p>
 </div>
-<div class="need_container docutils container" id="SNCB-ce76fa0b">
+<div class="need_container docutils container" id="SNCB-81a37c70">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_document table" id="doc__module_name_safety_plan">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -608,6 +622,12 @@
 <li><p>Adjust <code class="docutils literal notranslate"><span class="pre">safety</span></code> and <code class="docutils literal notranslate"><span class="pre">tags</span></code> according to your needs</p></li>
 </ul>
 </div>
+<dl class="field-list simple">
+<dt class="field-odd">note<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The module safety plan shall be continuously maintained during the project.
+Deviations to the module safety plan should be documented <a class="reference internal" href="#module-name-safety-package-deviations"><span class="std std-ref">here</span></a></p>
+</dd>
+</dl>
 <section id="functional-safety-management-context">
 <h2>Functional Safety Management Context<a class="headerlink" href="#functional-safety-management-context" title="Link to this heading">#</a></h2>
 <p>This Safety Plan adds to the project’s <a class="reference internal" href="../../../../../process_areas/safety_management/safety_management_workproducts.html#wp__platform_safety_plan" title="wp__platform_safety_plan"><em class="xref need">Platform Safety Plan (wp__platform_safety_plan)</em></a> all the module development relevant work products needed for ISO 26262 conformity.</p>
@@ -805,41 +825,53 @@ In case an OSS element is used in the module, part 6 has to be filled out.</p>
 <caption><span class="caption-number">Table 62 </span><span class="caption-text">OSS (sub-)component &lt;name&gt; Work products</span><a class="headerlink" href="#id4" title="Link to this table">#</a></caption>
 <thead>
 <tr class="row-odd"><th class="head"><p>Work product Id</p></th>
+<th class="head"><p>Link to process</p></th>
 <th class="head"><p>Reasoning for tailoring</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="row-even"><td><p><a class="reference internal" href="../../../../../process_areas/requirements_engineering/requirements_workproducts.html#wp__requirements_comp" title="wp__requirements_comp"><em class="xref need">Component Requirements (wp__requirements_comp)</em></a></p></td>
+<td><p><a class="reference internal" href="../../../../../process_areas/requirements_engineering/guidance/requirements_templates.html#gd_temp__req_comp_req" title="gd_temp__req_comp_req"><em class="xref need">Component Requirements Temp... (gd_temp__req_comp_req)</em></a></p></td>
 <td><p>Always needed (for Q and QR classification) and also improves process Id 2</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../../../../../process_areas/requirements_engineering/requirements_workproducts.html#wp__requirements_comp_aou" title="wp__requirements_comp_aou"><em class="xref need">Component Assumptions of Use (wp__requirements_comp_aou)</em></a></p></td>
+<td><p><a class="reference internal" href="../../../../../process_areas/requirements_engineering/guidance/requirements_templates.html#gd_temp__req_aou_req" title="gd_temp__req_aou_req"><em class="xref need">AoU Requirement Template (gd_temp__req_aou_req)</em></a></p></td>
 <td><p>Always needed (for Q and QR classification) and also improves process Id 5</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../../../../../process_areas/requirements_engineering/requirements_workproducts.html#wp__requirements_inspect" title="wp__requirements_inspect"><em class="xref need">Requirements Inspection (wp__requirements_inspect)</em></a></p></td>
+<td><p><a class="reference internal" href="../../../../../process_areas/requirements_engineering/guidance/requirements_inspection_checklist.html#gd_chklst__req_inspection" title="gd_chklst__req_inspection"><em class="xref need">Requirements Inspection Che... (gd_chklst__req_inspection)</em></a></p></td>
 <td><p>&lt;Reasoning for tailoring&gt;</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../../../../../process_areas/architecture_design/architecture_workflow.html#wf__cr_mt_comparch" title="wf__cr_mt_comparch"><em class="xref need">Create/Maintain Components ... (wf__cr_mt_comparch)</em></a></p></td>
+<td><p><a class="reference internal" href="../../../../../process_areas/architecture_design/guidance/component_architecture_template.html#gd_temp__arch_comp" title="gd_temp__arch_comp"><em class="xref need">Component Architecture Temp... (gd_temp__arch_comp)</em></a></p></td>
 <td><p>&lt;Reasoning for tailoring, needed for example in case of deficits in process Id 3&amp;4 and complexity Ids 1&amp;4&gt;</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../../../../../process_areas/safety_analysis/safety_analysis_workproducts.html#wp__sw_component_fmea" title="wp__sw_component_fmea"><em class="xref need">Component FMEA (wp__sw_component_fmea)</em></a></p></td>
+<td><p><a class="reference internal" href="../../../../../process_areas/safety_analysis/guidance/fmea_templates.html#gd_temp__comp_saf_fmea" title="gd_temp__comp_saf_fmea"><em class="xref need">Component FMEA Template (gd_temp__comp_saf_fmea)</em></a></p></td>
 <td><p>&lt;Reasoning for tailoring, could help arguing too high cyclomatic complexity covered by safety mechanisms&gt;</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../../../../../process_areas/architecture_design/architecture_workproducts.html#wp__sw_arch_verification" title="wp__sw_arch_verification"><em class="xref need">Architecture Verification (wp__sw_arch_verification)</em></a></p></td>
+<td><p><a class="reference internal" href="../../../../../process_areas/architecture_design/guidance/architecture_inspection_checklist.html#gd_chklst__arch_inspection_checklist" title="gd_chklst__arch_inspection_checklist"><em class="xref need">Architecture Inspection Che... (gd_chklst__arch_inspection_checklist)</em></a></p></td>
 <td><p>&lt;Reasoning for tailoring, needed if also wf__cr_mt_comparch is required&gt;</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../../../../../process_areas/implementation/implementation_workproducts.html#wp__sw_implementation" title="wp__sw_implementation"><em class="xref need">Implementation (wp__sw_implementation)</em></a></p></td>
+<td><p>n/a</p></td>
 <td><p>Tailored - If source code is modified, this is not a OSS qualification any more.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../../../../../process_areas/verification/verification_workproducts.html#wp__verification_sw_unit_test" title="wp__verification_sw_unit_test"><em class="xref need">Unit test (wp__verification_sw_unit_test)</em></a></p></td>
+<td><p><a class="reference internal" href="../../../../../process_areas/verification/guidance/verification_guideline.html#gd_guidl__verification_guide" title="gd_guidl__verification_guide"><em class="xref need">Verification Guideline (gd_guidl__verification_guide)</em></a></p></td>
 <td><p>&lt;Reasoning for tailoring, can improve deficits in process Id 6 and complexity Id 3&gt;</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../../../../../process_areas/implementation/implementation_workproducts.html#wp__sw_implementation_inspection" title="wp__sw_implementation_inspection"><em class="xref need">Implementation Inspection (wp__sw_implementation_inspection)</em></a></p></td>
+<td><p><a class="reference internal" href="../../../../../process_areas/implementation/guidance/implementation_checklist.html#gd_chklst__impl_inspection_checklist" title="gd_chklst__impl_inspection_checklist"><em class="xref need">Implementation Inspection C... (gd_chklst__impl_inspection_checklist)</em></a></p></td>
 <td><p>&lt;Reasoning for tailoring, can improve deficits in process Id 6 and complexity Id 2&gt;</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../../../../../process_areas/verification/verification_workproducts.html#wp__verification_comp_int_test" title="wp__verification_comp_int_test"><em class="xref need">Component Integration test (wp__verification_comp_int_test)</em></a></p></td>
+<td><p><a class="reference internal" href="../../../../../process_areas/verification/guidance/verification_guideline.html#gd_guidl__verification_guide" title="gd_guidl__verification_guide"><em class="xref need">Verification Guideline (gd_guidl__verification_guide)</em></a></p></td>
 <td><p>Always needed (for Q and QR classification)</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../../../../../process_areas/safety_management/safety_management_workproducts.html#wp__sw_component_class" title="wp__sw_component_class"><em class="xref need">Software component classifi... (wp__sw_component_class)</em></a></p></td>
+<td><p><a class="reference internal" href="../../../../../process_areas/safety_management/guidance/guideline_component_classification.html#gd_guidl__component_classification" title="gd_guidl__component_classification"><em class="xref need">Classification of a component (gd_guidl__component_classification)</em></a></p></td>
 <td><p>Always needed as basis for tailoring.</p></td>
 </tr>
 </tbody>
@@ -949,6 +981,14 @@ A summary of the status is also documented in the project’s documentation mana
 </div>
 </div>
 </section>
+<section id="deviations-from-module-safety-plan">
+<span id="module-name-safety-package-deviations"></span><h3>Deviations from Module Safety Plan<a class="headerlink" href="#deviations-from-module-safety-plan" title="Link to this heading">#</a></h3>
+<p>The following deviations from the module safety plan are present in the module safety package.
+These are deviations from planned processes execution and/or workproduct results,
+safety anomalies in the sense of known bugs in the software are reported in the release notes.</p>
+<p>&lt;Describe here the deviations, whether they have an impact on module’s safety functions,
+how these can be mitigated or argued and if and when a resolution is planned.&gt;</p>
+</section>
 </section>
 </section>
 
@@ -1015,6 +1055,7 @@ A summary of the status is also documented in the project’s documentation mana
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#component-requirements-status">Component Requirements Status</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#component-aou-status">Component AoU Status</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#component-architecture-status">Component Architecture Status</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#deviations-from-module-safety-plan">Deviations from Module Safety Plan</a></li>
 </ul>
 </li>
 </ul>
@@ -1024,7 +1065,7 @@ A summary of the status is also documented in the project’s documentation mana
 
   
   <div class="tocsection editthispage">
-    <a href="https://github.com/eclipse-score/process_description/edit/main/'process'/folder_templates/modules/module_name/docs/safety_mgt/module_safety_plan.rst">
+    <a href="https://github.com/eclipse-score/process_description/edit/main/process/folder_templates/modules/module_name/docs/safety_mgt/module_safety_plan.rst">
       <i class="fa-solid fa-pencil"></i>
       
       
