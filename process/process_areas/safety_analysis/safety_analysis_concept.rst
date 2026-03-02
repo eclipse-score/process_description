@@ -114,7 +114,7 @@ With the diagrams the dependencies and signal flows are shown. The analysis is d
 Some fault models and failure initiators may not be applicable for one safety function. In this case the reason shall
 be documented in the FMEA/DFA documents. So it can be shown that the analysis is completely done.
 
-in the above example's dynamic view the "flow component 1" to the user realizes a safety requirement.
+FMEA: In the above example's dynamic view the "flow component 1" to the user realizes a safety requirement.
 If we apply the fault model we may find the possible failure: "the message is not sent which leads to the user not being able to ..." - this
 could be mitigated by telling the user in an AoU: "the feature can not guarantee that the message is sent"
 
