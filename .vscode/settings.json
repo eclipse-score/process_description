@@ -37,8 +37,12 @@
     "//:starpls_server"
   ],
   "cSpell.words": [
+    "comparch",
     "docname",
+    "featarch",
+    "isopas",
     "needarch",
+    "prio",
     "toctree",
     "workproduct"
   ]

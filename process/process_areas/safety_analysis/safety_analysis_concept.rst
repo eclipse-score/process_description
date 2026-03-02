@@ -33,7 +33,7 @@ To have a structured DFA the failure initiators have to be applied :need:`gd_gui
  | - Unintended impact: Unintended impacts to function due to various failures like deadlocks or memory depletion.
  | - Development failure initiators: Failures that occur during the development process, potentially leading to safety issues.
 
-The objective of the **FMEA** is to show that the architecture created to fulfill the requirements does not introduce possible errors which would
+The objective of the **FMEA** is to show that the architecture created to fulfil the requirements does not introduce possible errors which would
 break the safety requirements. Or rather that the possibility of these errors is reduced to an acceptable level. This can be done by detection, prevention or mitigation.
 The FMEA is used to find possible failures and their effects. The possible failures are systematically identified by applying fault models :need:`gd_guidl__fault_models`.
 
@@ -109,12 +109,21 @@ The analysis were applied at static and dynamic architecture diagrams. The follo
 
    Feature Architecture
 
-With the diagrams the dependencies and signal flows are shown. The analysis is done by applying the fault models :need:`gd_guidl__fault_models` in the above example's dynamic view the "flow component 1" to the user realizes a safety requirement. If we apply the fault model we may find the possible failure: "the message is not sent which leads to the user not being able to ..." - this could be mitigated by telling the user in an AoU: "the feature can not guarantee that the message is sent"
-DFA: Here we see in the static view that component 1 uses component 2. If we apply the failure initiators we may find the possible failure: "Component 2 is using up all execution time available to Component 1" which could be avoided by a OS which is reserving time for every component or by running these components on different processors.
-for FMEA and the failure initiators :need:`gd_guidl__dfa_failure_initiators` for DFA. Some fault models and failure initiators may not be applicable
-for one safety function. In this case the reason shall be documented in the FMEA/DFA documents. So it can be shown that the analysis is completely done.
+With the diagrams the dependencies and signal flows are shown. The analysis is done by applying the fault models
+:need:`gd_guidl__fault_models` for FMEA and the failure initiators :need:`gd_guidl__dfa_failure_initiators` for DFA.
+Some fault models and failure initiators may not be applicable for one safety function. In this case the reason shall
+be documented in the FMEA/DFA documents. So it can be shown that the analysis is completely done.
 
-A step-by-step-approach is described in :need:`gd_guidl__safety_analysis`. There are also examples for FMEA and DFA are given in :ref:`examples_fmea_dfa` to show how to use the templates, failure initiators and fault models.
+FMEA: In the above example's dynamic view the "flow component 1" to the user realizes a safety requirement.
+If we apply the fault model we may find the possible failure: "the message is not sent which leads to the user not being able to ..." - this
+could be mitigated by telling the user in an AoU: "the feature can not guarantee that the message is sent"
+
+DFA: Here we see in the static view that component 1 uses component 2. If we apply the failure initiators we may find the possible failure:
+"Component 2 is using up all execution time available to Component 1" which could be avoided by a OS which is reserving time for every component
+or by running these components on different processors.
+
+A step-by-step-approach is described in :need:`gd_guidl__safety_analysis`. There are also examples for FMEA and DFA are given
+in :ref:`examples_fmea_dfa` to show how to use the templates, failure initiators and fault models.
 
 .. figure:: _assets/safety_analysis_component.drawio.svg
    :align: center
