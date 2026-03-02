@@ -27,7 +27,7 @@ Use the Platform DFA as an input so that general Safety Mechanisms are only defi
 Workflow for Safety Analysis
 ============================
 
-The workflow of the Safety Analysis are described in :ref:`workflow_safety_analysis`. The single steps in these workflows are described in detail in the following sections.
+The workflows of the Safety Analysis are described in :ref:`workflow_safety_analysis`. The single steps in these workflows are described in detail in the following sections.
 
 
 Step-by-Step-approach FMEA:
@@ -152,7 +152,7 @@ For the examples the architectural diagrams :ref:`safety_analysis_feature_exampl
 
 **FMEA:**
 
-There is no need to do a FMEA on component 3 as it offers the same as component 1 (which we already analyzed in the feature analysis). So we can skip this component.
+There is no need to do a FMEA on component 3 as it offers the same as component 1 (which we already analysed in the feature analysis). So we can skip this component.
 But please note it in the content of the document.
 
 It has to be considered if a FMEA has to be done on component 4 or if it's covered by the DFA.
