@@ -12,15 +12,12 @@
    # SPDX-License-Identifier: Apache-2.0
    # *******************************************************************************
 
-Guidance
-########
+Security Management
+###################
 
 .. toctree::
-   :maxdepth: 1
+   :titlesonly:
 
-   security_management_guideline
-   security_plan_templates
-   security_manual_templates
-   checklist_security_package
-   checklist_security_plan
-   security_management_process_reqs
+   module_security_plan
+   module_security_plan_fdr
+   module_security_package_fdr

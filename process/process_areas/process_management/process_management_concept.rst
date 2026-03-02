@@ -62,9 +62,13 @@ Stakeholders for the Process Management
 
    * Supports all activities
 
-#. :need:`External Auditor <rl__external_auditor>`
+#. :need:`Safety External Auditor <rl__safety_external_auditor>`
 
-   * Supports all activities, especially during iterative audits
+   * Supports all safety activities, especially during iterative audits
+
+#. :need:`Security External Auditor <rl__security_external_auditor>`
+
+   * Supports all security activities, especially during iterative audits
 
 Standard Requirements
 =====================
@@ -121,7 +125,7 @@ using standard pull requests.
 
 Process Description are approved by the :need:`rl__process_community`.
 
-Regular audits supported by :need:`rl__external_auditor` ensure compliance with
+Regular audits supported by :need:`rl__safety_external_auditor` and :need:`rl__security_external_auditor` ensure compliance with
 existing standards.
 
 .. _pm_mc_process:

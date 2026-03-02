@@ -62,7 +62,7 @@ Safety Management Workflows
 .. workflow:: Perform Safety Audit
    :id: wf__p_fs_audit
    :status: valid
-   :responsible: rl__external_auditor
+   :responsible: rl__safety_external_auditor
    :approved_by: rl__safety_manager
    :input: wp__module_safety_plan, wp__platform_safety_plan, wp__module_safety_package, wp__platform_safety_package
    :output: wp__audit_report
@@ -125,7 +125,7 @@ Safety Management Workflows
    :input: wp__platform_mgmt, wp__issue_track_system, wp__sw_component_class, wp__safety_tailoring
    :output: wp__issue_track_system
    :contains: gd_temp__change_component_request, gd_temp__change_decision_record, gd_temp__change_impact_analysis
-   :has: doc_concept__safety_management_process
+   :has: doc_concept__safety_management_process, doc_getstrt__safety_management_process
 
    | In accordance with ISO 26262-2:2018 section 5.2.2.3 d/e (Impact Analysis), the project implements a dedicated workflow for analyzing change requests.
    | The Safety Manager is responsible for ensuring that each change request is analyzed for its impact on safety, as required by ISO 26262-2:2018.

@@ -24,7 +24,7 @@ For a detailed explanation of workflows and their role within the process model,
    :status: valid
    :responsible: rl__contributor
    :approved_by: rl__process_community
-   :supported_by: rl__external_auditor, rl__project_lead
+   :supported_by: rl__safety_external_auditor, rl__security_external_auditor, rl__project_lead
    :input: wp__policies, wp__issue_track_system
    :output: wp__process_strategy, wp__policies
    :contains: gd_guidl__process_management, gd_temp__process_workflow
@@ -38,7 +38,7 @@ For a detailed explanation of workflows and their role within the process model,
    :status: valid
    :responsible: rl__contributor
    :approved_by: rl__process_community
-   :supported_by: rl__external_auditor, rl__project_lead
+   :supported_by: rl__safety_external_auditor, rl__security_external_auditor, rl__project_lead
    :input: wp__process_strategy, wp__issue_track_system
    :output: wp__process_description, wp__tailoring_work_products
    :contains: gd_guidl__process_management, gd_temp__process_workflow
@@ -51,7 +51,7 @@ For a detailed explanation of workflows and their role within the process model,
    :status: valid
    :responsible: rl__contributor
    :approved_by: rl__process_community
-   :supported_by: rl__external_auditor, rl__project_lead
+   :supported_by: rl__safety_external_auditor, rl__security_external_auditor, rl__project_lead
    :input: wp__process_description
    :output: wp__process_impr_report, wp__issue_track_system
    :contains: gd_guidl__process_management, gd_temp__process_workflow

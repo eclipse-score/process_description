@@ -12,6 +12,7 @@
    # SPDX-License-Identifier: Apache-2.0
    # *******************************************************************************
 
+.. _workflow_security_management:
 
 Security Management Workflows
 #############################
@@ -26,12 +27,12 @@ For a detailed explanation of workflows and their role within the process model,
    :supported_by: rl__safety_manager
    :input: wp__platform_mgmt, wp__issue_track_system, wp__tailoring_work_products
    :output: wp__module_security_plan, wp__platform_security_plan
-   :contains: gd_guidl__security_plan_definitions, gd_temp__feature_security_wp, gd_temp__module_security_plan
+   :contains: gd_guidl__security_plan_definitions, gd_temp__module_security_plan
    :has: doc_concept__security_management_process, doc_getstrt__security_management_process
 
    | The Security Manager is responsible for the planning and coordination of the security activities for the platform/module.
-   | The Security Manager creates and maintains the security plan.
-   | For this a template exists to guide the creator of the security plan.
+   | The Security Manager creates and maintains the Security Plan.
+   | For this a template exists to guide the creator of the Security Plan.
 
 .. workflow:: Create/Maintain Security Package
    :id: wf__cr_mt_security_package
@@ -41,19 +42,19 @@ For a detailed explanation of workflows and their role within the process model,
    :supported_by: rl__committer
    :input: wp__module_security_plan, wp__platform_security_plan, wp__issue_track_system
    :output: wp__module_security_package, wp__platform_security_package
-   :contains: gd_guidl__security_package, gd_temp__feature_security_wp, gd_temp__module_security_plan, gd_guidl__security_plan_definitions
+   :contains: gd_guidl__security_package, gd_temp__module_security_plan, gd_guidl__security_plan_definitions
    :has: doc_concept__security_management_process, doc_getstrt__security_management_process
 
    | The Security Manager is NOT responsible to provide the argument for the achievement of security.
-   | But the Security Manager creates and maintains the security package in the sense of a collection of security related work products.
-   | The generation and the maintenance of this draft security package shall be automated as much as possible.
+   | But the Security Manager creates and maintains the Security Package in the sense of a collection of security related work products.
+   | The generation and the maintenance of this draft Security Package shall be automated as much as possible.
    | It does not contain the final argumentation of the security of the product.
-   | As the security package is only a collection of work products, the security plan (template) can be used for documentation.
+   | As the Security Package is only a collection of work products, the Security Plan (template) can be used for documentation.
 
 .. workflow:: Perform Security Audit
    :id: wf__p_fs_audit_security
    :status: valid
-   :responsible: rl__external_auditor
+   :responsible: rl__security_external_auditor
    :approved_by: rl__project_lead
    :supported_by: rl__security_manager, rl__security_engineer
    :input: wp__module_security_plan, wp__platform_security_plan, wp__module_security_package, wp__platform_security_package
@@ -70,7 +71,7 @@ For a detailed explanation of workflows and their role within the process model,
 .. workflow:: Perform Formal Security Reviews
    :id: wf__p_formal_security_rv
    :status: valid
-   :responsible: rl__external_auditor
+   :responsible: rl__security_external_auditor
    :approved_by: rl__project_lead
    :supported_by: rl__security_manager, rl__security_engineer
    :input: wp__module_security_plan, wp__platform_security_plan, wp__module_security_package, wp__platform_security_package
@@ -93,13 +94,13 @@ For a detailed explanation of workflows and their role within the process model,
    :supported_by: rl__committer
    :input: wp__requirements_feat_aou, wp__requirements_feat, wp__feature_arch, wp__feature_fmea, wp__feature_dfa, wp__requirements_comp_aou, wp__requirements_comp, wp__component_arch, wp__sw_component_fmea, wp__sw_component_dfa
    :output: wp__platform_security_manual, wp__module_security_manual
-   :contains: gd_guidl__security_manual, gd_temp__security_manual, gd_guidl__security_plan_definitions
+   :contains: gd_guidl__security_manual, gd_temp__platform_security_manual, gd_temp__module_security_manual, gd_guidl__security_plan_definitions
    :has: doc_concept__security_management_process, doc_getstrt__security_management_process
 
-   | The Security Engineer collects the necessary input for the security manuals on
+   | The Security Engineer collects the necessary input for the Security Manuals on
    | platform and module level and documents it.
-   | He makes sure all items are in valid state for a release of the security manual.
-   | Also for the security manual a template exists as a guidance.
+   | He makes sure all items are in valid state for a release of the Security Manual.
+   | Also for the Security Manual a template exists as a guidance.
 
 .. workflow:: Create/Maintain SBOM
    :id: wf__cr_mt_security_sbom
@@ -126,10 +127,10 @@ For a detailed explanation of workflows and their role within the process model,
    :contains: gd_guidl__security_plan_definitions
    :has: doc_concept__security_management_process, doc_getstrt__security_management_process
 
-   | The Security Manager is responsible for the monitoring of the security activities against the security plan.
+   | The Security Manager is responsible for the monitoring of the security activities against the Security Plan.
    | The Security Manager is responsible to verify, that the preconditions for the "release for production", which are  part of the release notes, are fulfilled.
    | The Security Manager is responsible to verify the correctness, completeness and consistency of the release notes.
-   | The Security Manager is responsible for the monitoring of security information as defined in the security plan.
+   | The Security Manager is responsible for the monitoring of security information as defined in the Security Plan.
    | The Security Manager is responsible to identify weaknesses and vulnerabilities based on received information, and to analyse and manage the vulnerabilities until closure.
    | Beside reporting vulnerabilities in the :need:`wp__issue_track_system`, also `Eclipse general vulnerability tracker <https://gitlab.eclipse.org/security>`_ may be used.
 
@@ -144,7 +145,7 @@ For a detailed explanation of workflows and their role within the process model,
    :contains: gd_temp__module_security_plan
    :has: doc_concept__security_management_process, doc_getstrt__security_management_process
 
-   | The security manager :need:`rl__security_manager` consults all project/platform stakeholder as defined in :need:`doc_concept__security_management_process` for security topics and executes regularly security trainings.
+   | The Security Manager :need:`rl__security_manager` consults all project/platform stakeholder as defined in :need:`doc_concept__security_management_process` for security topics and executes regularly security trainings.
 
 
 .. needextend:: docname is not None and "process_areas/security_management" in docname

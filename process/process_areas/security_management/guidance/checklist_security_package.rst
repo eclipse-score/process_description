@@ -12,13 +12,12 @@
    # SPDX-License-Identifier: Apache-2.0
    # *******************************************************************************
 
-Feature Security Work Products Template
-=======================================
+Security Package Formal Review Checklist
+========================================
 
-.. gd_temp:: Feature Security Work Products Template
-   :id: gd_temp__feature_security_wp
+.. gd_chklst:: Security Package Formal Review Checklist
+   :id: gd_chklst__security_package
    :status: valid
-   :complies:
+   :complies: std_req__isosae21434__prj_management_6471, std_req__isosae21434__prj_management_6491, std_req__isosae21434__prj_management_6492
 
-   For the content see here: (tbd https://github.com/eclipse-score/process_description/issues/109)
-   ref:`feature_security_wp_template`
+   For the content see here: :need:`doc__module_name_security_package_fdr`

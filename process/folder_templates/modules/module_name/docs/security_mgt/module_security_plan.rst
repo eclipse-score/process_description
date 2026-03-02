@@ -12,18 +12,26 @@
    # SPDX-License-Identifier: Apache-2.0
    # *******************************************************************************
 
-Module Security Plan Template
-=============================
+Security Plan
+=============
 
-.. gd_temp:: Module Security Plan Template
-   :id: gd_temp__module_security_plan
-   :status: valid
-   :complies:
+.. note:: Document header
 
-   Will be moved to Folder Templates (tbd https://github.com/eclipse-score/process_description/issues/109)
-   For the content see here: need:`doc__module_name_security_plan`
-   Will also adapted to the latest Safety Plan Template
+.. document:: [Your Module Name] Security Plan
+   :id: doc__module_name_security_plan
+   :status: draft
+   :safety: ASIL_B
+   :security: YES
+   :realizes: wp__module_security_plan
+   :tags: template
 
+.. attention::
+    The above directive must be updated according to your Module.
+
+    - Modify ``Your Module Name`` to be your Module Name
+    - Modify ``id`` to be your Module Name in upper snake case preceded by ``doc_`` and succeeded by ``security_plan``
+    - Adjust ``status`` to be ``valid``
+    - Adjust ``safety`` and ``tags`` according to your needs
 
 
    | **1. Security Management Context**
@@ -31,7 +39,7 @@ Module Security Plan Template
    |
    | **2. Security Management Scope**
    | This Security Plan's scope is a SW module of the SW platform <link to module documentation in platform/modules/<modulename>/index.rst>.
-   | The module consists of one or more SW components and will be qualified as a EooC.
+   | The module consists of one or more SW components and will be qualified as a OoC.
    |
    | **3. Security Management Roles**
 
@@ -74,21 +82,21 @@ Module Security Plan Template
           - <Link to WP>
           - <automated>
 
-        * - :need:`wp__fdr_reports` (module Security Plan)
+        * - :need:`wp__fdr_reports` (Module Security Plan)
           - :need:`gd_chklst__security_plan`
           - <automated>
           - <Link to issue>
           - <Link to WP>
           - <automated>
 
-        * - :need:`wp__fdr_reports` (module Security Package)
+        * - :need:`wp__fdr_reports` (Module Security Package)
           - :need:`Security Package Formal Review Checklist <gd_chklst__security_package>`
           - <automated>
           - <Link to issue>
           - <Link to WP>
           - <automated>
 
-        * - :need:`wp__fdr_reports` (module's Security Analyses)
+        * - :need:`wp__fdr_reports` (Module's Security Analyses)
           - Security Analysis FDR tbd
           - <automated>
           - <Link to issue>
@@ -110,7 +118,7 @@ Module Security Plan Template
           - <automated>
 
         * - :need:`wp__module_security_manual`
-          - :need:`gd_temp__security_manual`
+          - :need:`gd_temp__module_security_manual`
           - <automated>
           - <Link to issue>
           - <Link to WP>

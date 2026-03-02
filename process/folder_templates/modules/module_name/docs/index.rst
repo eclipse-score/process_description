@@ -21,5 +21,6 @@ Module Documents
 
    manual/index.rst
    safety_mgt/index.rst
+   security_mgt/index.rst
    verification/module_verification_report.rst
    release/release_note.rst

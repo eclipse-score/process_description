@@ -72,7 +72,11 @@ Stakeholders
    * Performing safety related development
    * Create Component Classification
 
-#. :need:`External Auditor <rl__external_auditor>`
+#. :need:`Security Manager <rl__security_manager>`
+
+   * Supports activities
+
+#. :need:`Safety External Auditor <rl__safety_external_auditor>`
 
    * Perform Safety Audit as independent safety audits
    * Verifies compliance with defined safety processes and standards.
@@ -100,6 +104,6 @@ Safety Management Tooling
 
 For the safety planning and safety manual a “Docs-as-Code” approach is used and within that approach Id will be used for referencing.
 
-For the activities planning (who, when) we use a Issue Tracking System to create and manage issues, and monitor progress through a project management dashboard.
+For the activities planning (who, when) we use :need:`wp__issue_track_system` to create and manage issues, and monitor progress through a project management dashboard.
 
 For the reporting (e.g. displaying the status of the work products) additional tooling is created.

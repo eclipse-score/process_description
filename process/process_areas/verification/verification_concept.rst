@@ -78,9 +78,9 @@ Stakeholder
 
    * Supports the verification activities for safety-critical work products.
 
-#. :need:`External Auditor <rl__external_auditor>`
+#. :need:`Safety External Auditor <rl__safety_external_auditor>`
 
-   * Understand activities, planning, processes definition, and execution reports for verification activities
+   * Understand safety activities, planning, processes definition, and execution reports for verification activities
 
 #. "Distributor" (external role)
 
