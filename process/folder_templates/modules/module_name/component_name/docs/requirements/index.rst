@@ -18,8 +18,8 @@ Requirements
 .. document:: [Your Component Name] Requirements
    :id: doc__component_name_requirements
    :status: draft
-   :safety: <QM|ASIL_B>
-   :security: <YES|NO>
+   :safety: ASIL_B
+   :security: NO
    :realizes: wp__requirements_comp
    :tags: template
 
@@ -29,7 +29,7 @@ Requirements
     - Modify ``Your Component Name`` to be your Component Name
     - Modify ``id`` to be your Component Name in upper snake case preceded by ``doc__`` and followed by ``_requirements``
     - Adjust ``status`` to be ``valid``
-    - Adjust ``safety``m ``security`` and ``tags`` according to your needs
+    - Adjust ``safety``, ``security`` and ``tags`` according to your needs
 
 <Headlines (for the list of requirements if structuring is needed)>
 ===================================================================
