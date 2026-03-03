@@ -18,3 +18,8 @@ Security Management
 .. toctree::
    :titlesonly:
 
+   platform_security_manual.rst
+   platform_security_analysis_fdr.rst
+   platform_security_package_fdr.rst
+   platform_security_plan.rst
+   platform_security_plan_fdr.rst

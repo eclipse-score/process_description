@@ -26,8 +26,3 @@ Platform
    docs/safety_mgt/index.rst
    docs/security_mgt/index.rst
    docs/verification/platform_verification_report.rst
-   security_analysis/platform_security_manual.rst
-   security_analysis/platform_security_analysis_fdr.rst
-   security_analysis/platform_security_package_fdr.rst
-   security_planning/platform_security_plan.rst
-   security_planning/platform_security_plan_fdr.rst
