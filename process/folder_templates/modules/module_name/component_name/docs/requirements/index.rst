@@ -39,9 +39,9 @@ Component Requirements
 
 .. comp_req:: Some Title
    :id: comp_req__component_name__some_title
-   :reqtype: <Functional|Interface|Process|Non-Functional>
-   :security: <QM|ASIL_B>
-   :safety: <YES|NO>
+   :reqtype: Process
+   :security: ASIL_B
+   :safety: NO
    :satisfies: feat_req__feature_name__some_title
    :status: invalid
    :belongs_to: comp__component_name_template
@@ -65,10 +65,9 @@ Assumption of Use Requirements
 
 .. aou_req:: Next Title
    :id: aou_req__component_name__next_title
-   :reqtype: <Functional|Interface|Process|Non-Functional>
-   :security: <QM|ASIL_B>
-   :safety: <YES|NO>
-   :mitigates: <link to safety analysis>
+   :reqtype: Process
+   :security: ASIL_B
+   :safety: NO
    :status: invalid
 
    The Component User shall do xyz to use the component safely/securely
@@ -78,9 +77,9 @@ Environmental Requirements
 
 .. aou_req:: Another Title
    :id: aou_req__component_name__another_title
-   :reqtype: <Functional|Interface|Process|Non-Functional>
-   :security: <YES|NO>
-   :safety: <QM|ASIL_B>
+   :reqtype: Process
+   :security: NO
+   :safety: QM
    :status: invalid
    :tags: environment
 
@@ -93,7 +92,8 @@ Hints
     The above directives must be updated according to your feature requirements.
 
     - Replace the example content by the real content for your first requirement (according to :need:`gd_guidl__req_engineering`)
-    - Set ``safety`` and ``security`` to the right value
+    - Set ``safety`` and ``security`` to the right value (ASIL B/QM; YES/NO)
+    - Set ``reqtype`` with a link to the right value (<Functional|Interface|Process|Non-Functional>)
     - Add other needed requirements for your feature
     - Set ``status`` to ``valid`` and start the review/merge process
 

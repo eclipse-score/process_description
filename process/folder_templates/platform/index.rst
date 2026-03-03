@@ -21,8 +21,10 @@ Platform
    :hidden:
 
    requirements/stakeholder/chklst_req_inspection.rst
+   requirements/stakeholder/index.rst
    docs/release/release_note.rst
    docs/safety_mgt/index.rst
+   docs/security_mgt/index.rst
    docs/verification/platform_verification_report.rst
    security_analysis/platform_security_manual.rst
    security_analysis/platform_security_analysis_fdr.rst

@@ -18,8 +18,8 @@ Feature Requirements
 .. document:: [Your Feature Name] Requirements
    :id: doc__feature_name_requirements
    :status: draft
-   :safety: <QM|ASIL_B>
-   :security: <YES|NO>
+   :safety: ASIL_B
+   :security: NO
    :realizes: wp__requirements_feat
    :tags: template
 
@@ -36,12 +36,12 @@ Feature Requirements
 
 .. feat_req:: Some Title
    :id: feat_req__feature_name__some_title
-   :reqtype: <Functional|Interface|Process|Non-Functional>
-   :security: <YES|NO>
-   :safety: <QM|ASIL_B>
+   :reqtype: Process
+   :security: NO
+   :safety: ASIL_B
    :satisfies: stkh_req__requirements__template
-   :valid_from: <milestone version>
-   :valid_until: <milestone version>
+   :valid_from: v0.0.1
+   :valid_until: v1.0.1
    :status: invalid
    :belongs_to: feat__feature_name
 
@@ -51,10 +51,9 @@ Feature Requirements
 
 .. aou_req:: Some Other Title
    :id: aou_req__feature_name__some_other_title
-   :reqtype: <Functional|Interface|Process|Non-Functional>
-   :security: <YES|NO>
-   :safety: <QM|ASIL_B>
-   :mitigates: <link to safety analysis>
+   :reqtype: Process
+   :security: NO
+   :safety: ASIL_B
    :status: invalid
 
    The Feature User shall do xyz to use the feature safely.
@@ -64,9 +63,11 @@ Feature Requirements
 
     - Replace the example content by the real content for your first requirement (according to :need:`gd_guidl__req_engineering`)
     - Set ``belongs_to`` with a link to feature ID
+    - Set ``reqtype`` with a link to the right value (<Functional|Interface|Process|Non-Functional>)
     - Set ``satisfies`` with a link to the right stakeholder requirement
-    - Adjust ``safety`` and ``security`` to the right value
+    - Adjust ``safety`` and ``security`` to the right value (ASIL B/QM; YES/NO)
     - Add other needed requirements for your feature
+    - Adjust ``valid_from`` and ``valid_until`` to the right version numbers
     - Set ``status`` to ``valid`` and start the review/merge process
 
 .. needextend:: docname is not None and "feature_name" in id
