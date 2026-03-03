@@ -22,66 +22,28 @@ Templates
    :status: valid
    :complies: std_req__iso26262__system_6411, std_req__iso26262__system_6413, std_req__iso26262__support_641, std_req__iso26262__support_6421, std_req__iso26262__support_6425, std_req__aspice_40__SWE-1-BP1
 
-   .. code-block:: rst
-
-      .. stkh_req:: <Title>
-         :id: stkh_req__<Title>
-         :reqtype: <Functional|Interface|Process|Non-Functional>
-         :security: <YES|NO>
-         :safety: <QM|ASIL_B>
-         :rational: <The rationale provides the reason that the requirement is needed.>
-         :valid_from: <milestone version>
-         :valid_until: <milestone version>
-         :status: <valid|invalid>
+   See :need:`stkh_req__requirements__template`
 
 .. gd_temp:: Feature Requirements Template
    :id: gd_temp__req_feat_req
    :status: valid
    :complies: std_req__iso26262__support_641, std_req__iso26262__support_6421, std_req__iso26262__support_6425, std_req__aspice_40__SWE-1-BP1
 
-   .. code-block:: rst
-
-      .. feat_req:: <Title>
-        :id: feat_req__<Feature>__<Title>
-        :reqtype: <Functional|Interface|Process|Non-Functional>
-        :security: <YES|NO>
-        :safety: <QM|ASIL_B>
-        :satisfies: <link to stakeholder requirement id>
-        :valid_from: <milestone version>
-        :valid_until: <milestone version>
-        :status: <valid|invalid>
-        :belongs_to: <link to feature id>
+   See :need:`feat_req__feature_name__some_title`
 
 .. gd_temp:: Component Requirements Template
    :id: gd_temp__req_comp_req
    :status: valid
    :complies: std_req__iso26262__support_641, std_req__iso26262__support_6421, std_req__iso26262__support_6425, std_req__iso26262__support_12425, std_req__aspice_40__SWE-1-BP1
 
-   .. code-block:: rst
-
-      .. comp_req:: <Title>
-         :id: comp_req__<platform|Feature|Component>__<Title>
-         :reqtype: <Functional|Interface|Process|Non-Functional>
-         :security: <YES|NO>
-         :safety: <QM|ASIL_B>
-         :satisfies: <link to feature requirement id>
-         :status: <valid|invalid>
-         :belongs_to: <link to component id>
+   See :need:`comp_req__component_name__some_title`
 
 .. gd_temp:: AoU Requirement Template
    :id: gd_temp__req_aou_req
    :status: valid
    :complies: std_req__iso26262__support_641, std_req__iso26262__support_6421, std_req__iso26262__support_6425, std_req__aspice_40__SWE-1-BP1
 
-   .. code-block:: rst
-
-      .. aou_req:: <Title>
-         :id: aou_req__<Component>__<Title>
-         :reqtype: <Functional|Interface|Process|Non-Functional>
-         :security: <YES|NO>
-         :safety: <QM|ASIL_B>
-         :status: <valid|invalid>
-         :mitigates: <link to safety analysis>
+   See :need:`aou_req__platform__some_other_title`, :need:`aou_req__feature_name__some_other_title`, :need:`aou_req__component_name__another_title`
 
 .. gd_temp:: Process Requirements Template
    :id: gd_temp__req_process_req
