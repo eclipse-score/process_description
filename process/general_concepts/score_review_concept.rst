@@ -62,7 +62,7 @@ In this project there are inspections on the following work products, which are 
 
 Note that for test cases also a review checklist is provided for guidance, but no formal inspection is required.
 The same is true for Safety Analysis and DFA.
-The independence of testing respectively of test case review is covered by the use of version managment tool also for the review of test cases.
+The independence of testing respectively of test case review is covered by the use of version management tool also for the review of test cases.
 Which means that at least the test case definition or the test case review is performed by
 another person as the author of the verified work product (see :need:`gd_req__verification_independence`).
 
