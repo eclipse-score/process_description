@@ -18,8 +18,8 @@ Requirements
 .. document:: [Your Component Name] Requirements
    :id: doc__component_name_requirements
    :status: draft
-   :safety: ASIL_B
-   :security: NO
+   :safety: <QM|ASIL_B>
+   :security: <YES|NO>
    :realizes: wp__requirements_comp
    :tags: template
 
@@ -29,7 +29,7 @@ Requirements
     - Modify ``Your Component Name`` to be your Component Name
     - Modify ``id`` to be your Component Name in upper snake case preceded by ``doc__`` and followed by ``_requirements``
     - Adjust ``status`` to be ``valid``
-    - Adjust ``safety`` and ``tags`` according to your needs
+    - Adjust ``safety``m ``security`` and ``tags`` according to your needs
 
 <Headlines (for the list of requirements if structuring is needed)>
 ===================================================================
@@ -39,9 +39,9 @@ Component Requirements
 
 .. comp_req:: Some Title
    :id: comp_req__component_name__some_title
-   :reqtype: Process
-   :security: YES
-   :safety: ASIL_B
+   :reqtype: <Functional|Interface|Process|Non-Functional>
+   :security: <QM|ASIL_B>
+   :safety: <YES|NO>
    :satisfies: feat_req__feature_name__some_title
    :status: invalid
    :belongs_to: comp__component_name_template
@@ -54,6 +54,9 @@ Component Requirements
     The above directive must be updated according to your component requirements.
 
     - Replace the example content by the real content for your first requirement
+    - Set ``satistifes`` with links to Feature requirements
+    - Set ``belongs_to`` with a link to the right Component id
+    - Set ``safety`` and ``security`` to the right value
     - Set the status to valid and start the review/merge process
     - Add other needed requirements for your component
 
@@ -62,21 +65,22 @@ Assumption of Use Requirements
 
 .. aou_req:: Next Title
    :id: aou_req__component_name__next_title
-   :reqtype: Process
-   :security: YES
-   :safety: ASIL_B
+   :reqtype: <Functional|Interface|Process|Non-Functional>
+   :security: <QM|ASIL_B>
+   :safety: <YES|NO>
+   :mitigates: <link to safety analysis>
    :status: invalid
 
-   The Component User shall do xyz to use the component safely
+   The Component User shall do xyz to use the component safely/securely
 
 Environmental Requirements
 --------------------------
 
 .. aou_req:: Another Title
    :id: aou_req__component_name__another_title
-   :reqtype: Process
-   :security: YES
-   :safety: ASIL_B
+   :reqtype: <Functional|Interface|Process|Non-Functional>
+   :security: <YES|NO>
+   :safety: <QM|ASIL_B>
    :status: invalid
    :tags: environment
 
@@ -89,8 +93,9 @@ Hints
     The above directives must be updated according to your feature requirements.
 
     - Replace the example content by the real content for your first requirement (according to :need:`gd_guidl__req_engineering`)
-    - Set the status to valid and start the review/merge process
+    - Set ``safety`` and ``security`` to the right value
     - Add other needed requirements for your feature
+    - Set ``status`` to ``valid`` and start the review/merge process
 
 .. needextend:: "component_name" in id
    :+tags: component_name
