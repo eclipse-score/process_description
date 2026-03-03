@@ -19,7 +19,7 @@ Stakeholder Requirements
    :id: doc__platform_name_requirements
    :status: draft
    :safety: ASIL_B
-   :security: <YES|NO>
+   :security: NO
    :realizes: wp__requirements_feat
    :tags: template
 
@@ -38,8 +38,8 @@ Stakeholder Requirements
    :safety: QM
    :security: YES
    :rationale: <The rationale provides the reason that the requirement is needed.>
-   :valid_from: v.0.0.1
-   :valid_until: v.1.0.1
+   :valid_from: v0.0.1
+   :valid_until: v1.0.1
    :status: invalid
 
    The platform shall ...

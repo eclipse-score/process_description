@@ -40,8 +40,8 @@ Component Requirements
 .. comp_req:: Some Title
    :id: comp_req__component_name__some_title
    :reqtype: Process
-   :security: ASIL_B
-   :safety: NO
+   :security: NO
+   :safety: ASIL_B
    :satisfies: feat_req__feature_name__some_title
    :status: invalid
    :belongs_to: comp__component_name_template
@@ -66,8 +66,8 @@ Assumption of Use Requirements
 .. aou_req:: Next Title
    :id: aou_req__component_name__next_title
    :reqtype: Process
-   :security: ASIL_B
-   :safety: NO
+   :security: NO
+   :safety: ASIL_B
    :status: invalid
 
    The Component User shall do xyz to use the component safely/securely
