@@ -17,3 +17,7 @@ Security Management
 
 .. toctree::
    :titlesonly:
+
+   module_security_plan
+   module_security_plan_fdr
+   module_security_package_fdr
