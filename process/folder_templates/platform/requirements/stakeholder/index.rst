@@ -19,7 +19,7 @@ Stakeholder Requirements
    :id: doc__platform_name_requirements
    :status: draft
    :safety: ASIL_B
-   :security: NO
+   :security: YES
    :realizes: wp__requirements_feat
    :tags: template
 
@@ -35,7 +35,7 @@ Stakeholder Requirements
 .. stkh_req:: Template
    :id: stkh_req__requirements__template
    :reqtype: Functional
-   :safety: QM
+   :safety: ASIL_B
    :security: YES
    :rationale: <The rationale provides the reason that the requirement is needed.>
    :valid_from: v0.0.1
@@ -47,7 +47,7 @@ Stakeholder Requirements
 .. aou_req:: Some Other Title
    :id: aou_req__platform__some_other_title
    :reqtype: Interface
-   :security: NO
+   :security: YES
    :safety: ASIL_B
    :status: invalid
 

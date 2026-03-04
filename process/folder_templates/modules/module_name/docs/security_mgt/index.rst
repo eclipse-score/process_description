@@ -1,6 +1,6 @@
 ..
    # *******************************************************************************
-   # Copyright (c) 2025 Contributors to the Eclipse Foundation
+   # Copyright (c) 2026 Contributors to the Eclipse Foundation
    #
    # See the NOTICE file(s) distributed with this work for additional
    # information regarding copyright ownership.
@@ -17,7 +17,3 @@ Security Management
 
 .. toctree::
    :titlesonly:
-
-   module_security_plan
-   module_security_plan_fdr
-   module_security_package_fdr

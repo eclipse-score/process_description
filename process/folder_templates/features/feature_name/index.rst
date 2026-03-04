@@ -23,7 +23,7 @@
    :id: doc__feature_name
    :status: draft
    :safety: ASIL_B
-   :security: NO
+   :security: YES
    :realizes: wp__feat_request
    :tags: template
 
@@ -33,7 +33,7 @@
     - Modify ``document`` to be your Feature Name
     - Modify ``id`` to be your Feature Name in upper snake case preceded by ``doc__``
     - Adjust ``status`` to be ``valid``
-    - Adjust ``safety`` and ``tags`` according to your needs
+    - Adjust ``safety``, ``security`` and ``tags`` according to your needs
 
 Feature flag
 ============

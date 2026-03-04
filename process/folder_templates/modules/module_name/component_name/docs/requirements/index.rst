@@ -19,7 +19,7 @@ Requirements
    :id: doc__component_name_requirements
    :status: draft
    :safety: ASIL_B
-   :security: NO
+   :security: YES
    :realizes: wp__requirements_comp
    :tags: template
 
@@ -40,7 +40,7 @@ Component Requirements
 .. comp_req:: Some Title
    :id: comp_req__component_name__some_title
    :reqtype: Process
-   :security: NO
+   :security: YES
    :safety: ASIL_B
    :satisfies: feat_req__feature_name__some_title
    :status: invalid
@@ -66,7 +66,7 @@ Assumption of Use Requirements
 .. aou_req:: Next Title
    :id: aou_req__component_name__next_title
    :reqtype: Process
-   :security: NO
+   :security: YES
    :safety: ASIL_B
    :status: invalid
 
@@ -78,8 +78,8 @@ Environmental Requirements
 .. aou_req:: Another Title
    :id: aou_req__component_name__another_title
    :reqtype: Process
-   :security: NO
-   :safety: QM
+   :security: YES
+   :safety: ASIL_B
    :status: invalid
    :tags: environment
 
