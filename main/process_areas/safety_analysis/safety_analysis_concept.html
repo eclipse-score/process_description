@@ -563,7 +563,7 @@
                   
   <section id="concept-description">
 <h1>Concept Description<a class="headerlink" href="#concept-description" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-4af56359">
+<div class="need_container docutils container" id="SNCB-e0ff003f">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_doc_concept table" id="doc_concept__safety_analysis">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -609,8 +609,8 @@
 <p>This section discusses a concept for Safety Analysis. As methods for Safety Analysis are used DFA (Dependent Failure Analysis)
 and FMEA (Failure Mode and Effects Analysis). Inputs for this concept are the requirements of ISO26262 Part 6 Chapter 7 and Part 9 Chapter 7 and 8.</p>
 <p>The objective of the <strong>DFA</strong> is to show the absence of dependent failures. Dependent failures are split into common cause failures and cascading failures.
-How to perform a Safety Analysis is described in <a class="reference internal" href="guidance/safety_analysis_guideline.html#gd_guidl__safety_analysis" title="gd_guidl__safety_analysis"><em class="xref need">Safety Analysis (DFA and FM... (gd_guidl__safety_analysis)</em></a>.
-To have a structured DFA the failure initiators have to be applied <a class="reference internal" href="guidance/dfa_failure_initiators.html#gd_guidl__dfa_failure_initiators" title="gd_guidl__dfa_failure_initiators"><em class="xref need">DFA failure initiators (gd_guidl__dfa_failure_initiators)</em></a>. These are separated into the following categories:</p>
+How to perform a Safety Analysis is described in <a class="reference internal" href="guidance/safety_analysis_guideline.html#gd_guidl__safety_analysis" title="gd_guidl__safety_analysis"><em class="xref need">Safety Analysis (DFA and FM...</em></a>.
+To have a structured DFA the failure initiators have to be applied <a class="reference internal" href="guidance/dfa_failure_initiators.html#gd_guidl__dfa_failure_initiators" title="gd_guidl__dfa_failure_initiators"><em class="xref need">DFA failure initiators</em></a>. These are separated into the following categories:</p>
 <blockquote>
 <div><div class="line-block">
 <div class="line">- Shared resources: Shared resources are resources that are used by two or more elements. If one element fails, it could lead to a failure in another element.</div>
@@ -622,7 +622,7 @@ To have a structured DFA the failure initiators have to be applied <a class="ref
 </div></blockquote>
 <p>The objective of the <strong>FMEA</strong> is to show that the architecture created to fulfil the requirements does not introduce possible errors which would
 break the safety requirements. Or rather that the possibility of these errors is reduced to an acceptable level. This can be done by detection, prevention or mitigation.
-The FMEA is used to find possible failures and their effects. The possible failures are systematically identified by applying fault models <a class="reference internal" href="guidance/fault_models_guideline.html#gd_guidl__fault_models" title="gd_guidl__fault_models"><em class="xref need">FMEA Fault Models (gd_guidl__fault_models)</em></a>.</p>
+The FMEA is used to find possible failures and their effects. The possible failures are systematically identified by applying fault models <a class="reference internal" href="guidance/fault_models_guideline.html#gd_guidl__fault_models" title="gd_guidl__fault_models"><em class="xref need">FMEA Fault Models</em></a>.</p>
 <p>The DFA shall be performed once at platform level to analyse the dependencies between the features of the platform.
 Typically the FMEA and DFA shall be performed at feature level and component level.
 If a component have no sub-components, the results of the analysis are the same as at feature level. So no additional consideration is needed.
@@ -640,7 +640,7 @@ In this case please document this in the content of the document.</p>
 <section id="stakeholders-for-the-safety-analysis-dfa-and-fmea">
 <h3>Stakeholders for the Safety Analysis (DFA and FMEA)<a class="headerlink" href="#stakeholders-for-the-safety-analysis-dfa-and-fmea" title="Link to this heading">#</a></h3>
 <ol class="arabic simple">
-<li><p><a class="reference internal" href="safety_analysis_roles.html#rl__safety_engineer" title="rl__safety_engineer"><em class="xref need">Safety Engineer (rl__safety_engineer)</em></a></p>
+<li><p><a class="reference internal" href="safety_analysis_roles.html#rl__safety_engineer" title="rl__safety_engineer"><em class="xref need">Safety Engineer</em></a></p>
 <ul class="simple">
 <li><p>Analyse all the feature architectures together with a Platform DFA</p></li>
 <li><p>Analyse the feature architecture with a Feature FMEA and Feature DFA</p></li>
@@ -648,25 +648,25 @@ In this case please document this in the content of the document.</p>
 <li><p>Monitor/verify the FMEA and DFA</p></li>
 </ul>
 </li>
-<li><p><a class="reference internal" href="../safety_management/safety_management_roles.html#rl__safety_manager" title="rl__safety_manager"><em class="xref need">Safety Manager (rl__safety_manager)</em></a></p>
+<li><p><a class="reference internal" href="../safety_management/safety_management_roles.html#rl__safety_manager" title="rl__safety_manager"><em class="xref need">Safety Manager</em></a></p>
 <ul class="simple">
 <li><p>Approve the FMEA and DFA</p></li>
 <li><p>Approve the verification of the FMEA and DFA</p></li>
 </ul>
 </li>
-<li><p><a class="reference internal" href="../../roles/index.html#rl__contributor" title="rl__contributor"><em class="xref need">Contributor (rl__contributor)</em></a></p>
+<li><p><a class="reference internal" href="../../roles/index.html#rl__contributor" title="rl__contributor"><em class="xref need">Contributor</em></a></p>
 <ul class="simple">
 <li><p>Support the FMEA and DFA</p></li>
 <li><p>Support the monitoring and verifying of the FMEA and DFA</p></li>
 </ul>
 </li>
-<li><p><a class="reference internal" href="../../roles/index.html#rl__committer" title="rl__committer"><em class="xref need">Committer (rl__committer)</em></a></p>
+<li><p><a class="reference internal" href="../../roles/index.html#rl__committer" title="rl__committer"><em class="xref need">Committer</em></a></p>
 <ul class="simple">
 <li><p>Support the FMEA and DFA</p></li>
 <li><p>Support the monitoring and verifying of the FMEA and DFA</p></li>
 </ul>
 </li>
-<li><p><a class="reference internal" href="../security_management/security_management_roles.html#rl__security_manager" title="rl__security_manager"><em class="xref need">Security Manager (rl__security_manager)</em></a></p>
+<li><p><a class="reference internal" href="../security_management/security_management_roles.html#rl__security_manager" title="rl__security_manager"><em class="xref need">Security Manager</em></a></p>
 <ul class="simple">
 <li><p>Support the FMEA and DFA</p></li>
 <li><p>Support the monitoring and verifying of FMEA and DFA</p></li>
@@ -696,7 +696,7 @@ the evidence of the functional safety of the functions.</p>
 </figcaption>
 </figure>
 <p>With the diagrams the dependencies and signal flows are shown. The analysis is done by applying the fault models
-<a class="reference internal" href="guidance/fault_models_guideline.html#gd_guidl__fault_models" title="gd_guidl__fault_models"><em class="xref need">FMEA Fault Models (gd_guidl__fault_models)</em></a> for FMEA and the failure initiators <a class="reference internal" href="guidance/dfa_failure_initiators.html#gd_guidl__dfa_failure_initiators" title="gd_guidl__dfa_failure_initiators"><em class="xref need">DFA failure initiators (gd_guidl__dfa_failure_initiators)</em></a> for DFA.
+<a class="reference internal" href="guidance/fault_models_guideline.html#gd_guidl__fault_models" title="gd_guidl__fault_models"><em class="xref need">FMEA Fault Models</em></a> for FMEA and the failure initiators <a class="reference internal" href="guidance/dfa_failure_initiators.html#gd_guidl__dfa_failure_initiators" title="gd_guidl__dfa_failure_initiators"><em class="xref need">DFA failure initiators</em></a> for DFA.
 Some fault models and failure initiators may not be applicable for one safety function. In this case the reason shall
 be documented in the FMEA/DFA documents. So it can be shown that the analysis is completely done.</p>
 <p>FMEA: In the above example’s dynamic view the “flow component 1” to the user realizes a safety requirement.
@@ -705,7 +705,7 @@ could be mitigated by telling the user in an AoU: “the feature can not guarant
 <p>DFA: Here we see in the static view that component 1 uses component 2. If we apply the failure initiators we may find the possible failure:
 “Component 2 is using up all execution time available to Component 1” which could be avoided by a OS which is reserving time for every component
 or by running these components on different processors.</p>
-<p>A step-by-step-approach is described in <a class="reference internal" href="guidance/safety_analysis_guideline.html#gd_guidl__safety_analysis" title="gd_guidl__safety_analysis"><em class="xref need">Safety Analysis (DFA and FM... (gd_guidl__safety_analysis)</em></a>. There are also examples for FMEA and DFA are given
+<p>A step-by-step-approach is described in <a class="reference internal" href="guidance/safety_analysis_guideline.html#gd_guidl__safety_analysis" title="gd_guidl__safety_analysis"><em class="xref need">Safety Analysis (DFA and FM...</em></a>. There are also examples for FMEA and DFA are given
 in <a class="reference internal" href="guidance/safety_analysis_guideline.html#examples-fmea-dfa"><span class="std std-ref">Examples for FMEA and DFA at feature level</span></a> to show how to use the templates, failure initiators and fault models.</p>
 <figure class="align-center" id="safety-analysis-component-fig">
 <a class="reference internal image-reference" href="../../_images/safety_analysis_component.drawio.svg"><img alt="../../_images/safety_analysis_component.drawio.svg" src="../../_images/safety_analysis_component.drawio.svg" style="width: 80%;" />
@@ -717,11 +717,11 @@ in <a class="reference internal" href="guidance/safety_analysis_guideline.html#e
 <p>At component level you can see inside of the component when the component consists of two or more sub-components. If a component has no sub-components
 there results of the analysis are the same as at feature level. So no additional consideration is needed. This should be also documented in the content of the document.
 In the example the component “Component 1” consists of two sub-components, “Component 3” and “Component 4”.</p>
-<p>A step-by-step-approach is described in <a class="reference internal" href="guidance/safety_analysis_guideline.html#gd_guidl__safety_analysis" title="gd_guidl__safety_analysis"><em class="xref need">Safety Analysis (DFA and FM... (gd_guidl__safety_analysis)</em></a>. There are also examples for FMEA and DFA are given in <a class="reference internal" href="guidance/safety_analysis_guideline.html#examples-fmea-dfa"><span class="std std-ref">Examples for FMEA and DFA at feature level</span></a> to show how to use the templates, failure initiators and fault models.</p>
+<p>A step-by-step-approach is described in <a class="reference internal" href="guidance/safety_analysis_guideline.html#gd_guidl__safety_analysis" title="gd_guidl__safety_analysis"><em class="xref need">Safety Analysis (DFA and FM...</em></a>. There are also examples for FMEA and DFA are given in <a class="reference internal" href="guidance/safety_analysis_guideline.html#examples-fmea-dfa"><span class="std std-ref">Examples for FMEA and DFA at feature level</span></a> to show how to use the templates, failure initiators and fault models.</p>
 </section>
 <section id="how-to-add-new-safety-mitigations">
 <h3>How to add new safety mitigations?<a class="headerlink" href="#how-to-add-new-safety-mitigations" title="Link to this heading">#</a></h3>
-<p>Identified faults without a mitigation remain open and are tracked in the issue tracking system <a class="reference internal" href="../change_management/change_management_workproducts.html#wp__issue_track_system" title="wp__issue_track_system"><em class="xref need">Issue tracking system (wp__issue_track_system)</em></a> until they are resolved.
+<p>Identified faults without a mitigation remain open and are tracked in the issue tracking system <a class="reference internal" href="../change_management/change_management_workproducts.html#wp__issue_track_system" title="wp__issue_track_system"><em class="xref need">Issue tracking system</em></a> until they are resolved.
 A new safety mitigation could be needed e.g. if it can’t be shown that the feature or component is completely deterministic and testable. In this case an
 additional safety mitigation is needed.</p>
 </section>

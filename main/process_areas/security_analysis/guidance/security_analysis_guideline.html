@@ -578,7 +578,7 @@
                   
   <section id="security-analysis-guidelines">
 <h1>Security Analysis Guidelines<a class="headerlink" href="#security-analysis-guidelines" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-32b61a30">
+<div class="need_container docutils container" id="SNCB-9ca8e580">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_guidl table" id="gd_guidl__security_analysis">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -621,7 +621,7 @@
 </div>
 </div>
 <p>This document describes the general guidance for Security Analysis based on the concept
-which is defined <a class="reference internal" href="../security_analysis_concept.html#doc_concept__security_analysis" title="doc_concept__security_analysis"><em class="xref need">Security Analysis Concept (doc_concept__security_analysis)</em></a>.
+which is defined <a class="reference internal" href="../security_analysis_concept.html#doc_concept__security_analysis" title="doc_concept__security_analysis"><em class="xref need">Security Analysis Concept</em></a>.
 Use the platform Security Analysis as an input so that general security controls are
 only defined once and not in every single Security Analysis.</p>
 <section id="workflow-for-security-analysis">
@@ -632,42 +632,42 @@ The single steps in these workflows are described in detail in the following sec
 <h3>Step-by-Step-approach Security Analysis Feature/Component:<a class="headerlink" href="#step-by-step-approach-security-analysis-feature-component" title="Link to this heading">#</a></h3>
 <p>The analysis is done by using the template <a class="reference internal" href="security_analysis_threat_templates.html#security-analysis-threat-templates"><span class="std std-ref">Security Analysis Threat Templates</span></a> on
 the feature or component architectural diagrams. By using the threat models
-&lt;<a class="reference internal" href="security_analysis_threat_models_guideline.html#gd_guidl__threat_models_stride" title="gd_guidl__threat_models_stride"><em class="xref need">STRIDE Threat Model (gd_guidl__threat_models_stride)</em></a>&gt; it can be ensured that the analysis is done in
+&lt;<a class="reference internal" href="security_analysis_threat_models_guideline.html#gd_guidl__threat_models_stride" title="gd_guidl__threat_models_stride"><em class="xref need">STRIDE Threat Model</em></a>&gt; it can be ensured that the analysis is done in
 a structured way. Apply the threat model to the diagram and document the results in the
-template. Use the content of the document <a class="reference internal" href="security_analysis_threat_templates.html#gd_temp__feat_sec_ana_threat" title="gd_temp__feat_sec_ana_threat"><em class="xref need">Feature Threat Template (gd_temp__feat_sec_ana_threat)</em></a>,
-<a class="reference internal" href="security_analysis_threat_templates.html#gd_temp__comp_sec_ana_threat" title="gd_temp__comp_sec_ana_threat"><em class="xref need">Component Threat Template (gd_temp__comp_sec_ana_threat)</em></a> to describe e.g. why a threat model is not
+template. Use the content of the document <a class="reference internal" href="security_analysis_threat_templates.html#gd_temp__feat_sec_ana_threat" title="gd_temp__feat_sec_ana_threat"><em class="xref need">Feature Threat Template</em></a>,
+<a class="reference internal" href="security_analysis_threat_templates.html#gd_temp__comp_sec_ana_threat" title="gd_temp__comp_sec_ana_threat"><em class="xref need">Component Threat Template</em></a> to describe e.g. why a threat model is not
 applicable for the diagram. If a treat can’t be applied, the reason has to be documented
 in the content of the document, so it can be recognized.</p>
 <p>The attributes of the template are described in <a class="reference internal" href="security_analysis_process_reqs.html#process-requirements-security-analysis-attributes"><span class="std std-ref">Process Security Analysis Attributes</span></a>.</p>
 <p><strong>Steps:</strong></p>
 <ol class="arabic simple">
-<li><p>For each of the security functions realized by an architecture element check if a threat from the threat model <a class="reference internal" href="security_analysis_threat_models_guideline.html#gd_guidl__threat_models_stride" title="gd_guidl__threat_models_stride"><em class="xref need">STRIDE Threat Model (gd_guidl__threat_models_stride)</em></a> applies.</p></li>
-<li><p>If a threat model applies, use the template <a class="reference internal" href="security_analysis_threat_templates.html#gd_temp__feat_sec_ana_threat" title="gd_temp__feat_sec_ana_threat"><em class="xref need">Feature Threat Template (gd_temp__feat_sec_ana_threat)</em></a> or <a class="reference internal" href="security_analysis_threat_templates.html#gd_temp__comp_sec_ana_threat" title="gd_temp__comp_sec_ana_threat"><em class="xref need">Component Threat Template (gd_temp__comp_sec_ana_threat)</em></a> to perform the analysis.</p></li>
+<li><p>For each of the security functions realized by an architecture element check if a threat from the threat model <a class="reference internal" href="security_analysis_threat_models_guideline.html#gd_guidl__threat_models_stride" title="gd_guidl__threat_models_stride"><em class="xref need">STRIDE Threat Model</em></a> applies.</p></li>
+<li><p>If a threat model applies, use the template <a class="reference internal" href="security_analysis_threat_templates.html#gd_temp__feat_sec_ana_threat" title="gd_temp__feat_sec_ana_threat"><em class="xref need">Feature Threat Template</em></a> or <a class="reference internal" href="security_analysis_threat_templates.html#gd_temp__comp_sec_ana_threat" title="gd_temp__comp_sec_ana_threat"><em class="xref need">Component Threat Template</em></a> to perform the analysis.</p></li>
 <li><p>The title of the analysis should be easily recognizable e.g. “Component xy unauthorized access”.</p></li>
 <li><p>Link the violated architecture with the “violates” attribute.</p></li>
 <li><p>Replace the placeholders in the “id” attribute with the name of the feature or component and a short description of the element so that it can be easily identified.</p></li>
-<li><p>Document the threat ID from the threat model <a class="reference internal" href="security_analysis_threat_models_guideline.html#gd_guidl__threat_models_stride" title="gd_guidl__threat_models_stride"><em class="xref need">STRIDE Threat Model (gd_guidl__threat_models_stride)</em></a> that applies to the element in the “threat_id” attribute.</p></li>
+<li><p>Document the threat ID from the threat model <a class="reference internal" href="security_analysis_threat_models_guideline.html#gd_guidl__threat_models_stride" title="gd_guidl__threat_models_stride"><em class="xref need">STRIDE Threat Model</em></a> that applies to the element in the “threat_id” attribute.</p></li>
 <li><p>Describe the threat effect of the threat model on the element in the “threat_effect” attribute. Use the threat description and enlarge it if it’s applicable to the considered element.</p></li>
 <li><p>Document the mitigation. This can be (accept, avoid, reduce, share) of the threat.</p></li>
 <li><p>If there is no mitigation or existing mitigation is not sufficient, a mitigation issue has to be created in the Issue Tracking system and linked in the “mitigation_issue” attribute.</p></li>
 <li><p>The analysis is finished if for each identified threat a sufficient mitigation exists.</p></li>
 <li><p>Unless the attribute sufficient is yes, mitigation and argument attributes can be still empty.</p></li>
 <li><p>Continue the analysis until all applicable threat models are checked.</p></li>
-<li><p>The verification is done by applying the checklist <a class="reference internal" href="security_analysis_checklist.html#gd_chklst__security_analysis" title="gd_chklst__security_analysis"><em class="xref need">Security Analysis Checklist... (gd_chklst__security_analysis)</em></a>.</p></li>
+<li><p>The verification is done by applying the checklist <a class="reference internal" href="security_analysis_checklist.html#gd_chklst__security_analysis" title="gd_chklst__security_analysis"><em class="xref need">Security Analysis Checklist...</em></a>.</p></li>
 </ol>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>If there are changes they have to be analyzed with an impact analysis
-<a class="reference internal" href="../../change_management/guidance/change_management_impact_analysis_template.html#gd_temp__change_impact_analysis" title="gd_temp__change_impact_analysis"><em class="xref need">Impact Analysis Template (gd_temp__change_impact_analysis)</em></a>. If needed the Security Analysis has to be
+<a class="reference internal" href="../../change_management/guidance/change_management_impact_analysis_template.html#gd_temp__change_impact_analysis" title="gd_temp__change_impact_analysis"><em class="xref need">Impact Analysis Template</em></a>. If needed the Security Analysis has to be
 updated accordingly. Therefore all necessary steps have to be repeated.</p>
 </div>
 </section>
 <section id="step-by-step-approach-security-analysis-platform">
 <h3>Step-by-Step-approach Security Analysis Platform:<a class="headerlink" href="#step-by-step-approach-security-analysis-platform" title="Link to this heading">#</a></h3>
 <p>The analysis is done by using the template <a class="reference internal" href="security_analysis_threat_scenario_templates.html#security-analysis-templates"><span class="std std-ref">Security Analysis Threat Scenario Templates</span></a> on the
-platform diagrams using a list of threat scenarios &lt;<a class="reference internal" href="security_analysis_threat_scenarios_guideline.html#gd_guidl__sec_ana_threat_scenarios" title="gd_guidl__sec_ana_threat_scenarios"><em class="xref need">Security Analysis threat sc... (gd_guidl__sec_ana_threat_scenarios)</em></a>&gt;.
-Use the content of the document <a class="reference internal" href="security_analysis_threat_scenario_templates.html#gd_temp__plat_threat_scenario" title="gd_temp__plat_threat_scenario"><em class="xref need">Platform Security Analysis ... (gd_temp__plat_threat_scenario)</em></a>,
-<a class="reference internal" href="security_analysis_threat_templates.html#gd_temp__feat_sec_ana_threat" title="gd_temp__feat_sec_ana_threat"><em class="xref need">Feature Threat Template (gd_temp__feat_sec_ana_threat)</em></a> or <a class="reference internal" href="security_analysis_threat_templates.html#gd_temp__comp_sec_ana_threat" title="gd_temp__comp_sec_ana_threat"><em class="xref need">Component Threat Template (gd_temp__comp_sec_ana_threat)</em></a> to describe
+platform diagrams using a list of threat scenarios &lt;<a class="reference internal" href="security_analysis_threat_scenarios_guideline.html#gd_guidl__sec_ana_threat_scenarios" title="gd_guidl__sec_ana_threat_scenarios"><em class="xref need">Security Analysis threat sc...</em></a>&gt;.
+Use the content of the document <a class="reference internal" href="security_analysis_threat_scenario_templates.html#gd_temp__plat_threat_scenario" title="gd_temp__plat_threat_scenario"><em class="xref need">Platform Security Analysis ...</em></a>,
+<a class="reference internal" href="security_analysis_threat_templates.html#gd_temp__feat_sec_ana_threat" title="gd_temp__feat_sec_ana_threat"><em class="xref need">Feature Threat Template</em></a> or <a class="reference internal" href="security_analysis_threat_templates.html#gd_temp__comp_sec_ana_threat" title="gd_temp__comp_sec_ana_threat"><em class="xref need">Component Threat Template</em></a> to describe
 e.g. why a threat scenario is not applicable for the diagram. If a threat scenario can’t
 be applied, the reason has to be documented in the content of the document, so it
 can be recognized.</p>
@@ -722,7 +722,7 @@ can be recognized.</p>
 </li>
 <li><p>For each attack surface, identify the potential threats that can be used by an attacker to compromise the asset. The potential threats can be identified using the following sources as input:</p>
 <ul class="simple">
-<li><p><a class="reference internal" href="security_analysis_threat_scenarios_guideline.html#gd_guidl__sec_ana_threat_scenarios" title="gd_guidl__sec_ana_threat_scenarios"><em class="xref need">Security Analysis threat sc... (gd_guidl__sec_ana_threat_scenarios)</em></a>.</p></li>
+<li><p><a class="reference internal" href="security_analysis_threat_scenarios_guideline.html#gd_guidl__sec_ana_threat_scenarios" title="gd_guidl__sec_ana_threat_scenarios"><em class="xref need">Security Analysis threat sc...</em></a>.</p></li>
 <li><p><a class="reference external" href="https://www.google.com/url?sa=t&amp;source=web&amp;rct=j&amp;opi=89978449&amp;url=https://wiki.unece.org/download/attachments/179700184/TFCS-23-05%2520%2528OICA%252C%2520CLEPA%2529%2520R155%2520Annex5%2520table%2520C3%2520deletion.pdf%3Fapi%3Dv2&amp;ved=2ahUKEwie0--t6IWTAxXXR_EDHbXrKDgQFnoECAQQAQ&amp;usg=AOvVaw1XygSpmzqxlOxJ4Fb59a9w">UN R155 Annex 5</a></p></li>
 <li><p><a class="reference external" href="https://atm.automotiveisac.com/home">Auto ISAC Threat Catalog</a></p></li>
 <li><p><a class="reference external" href="https://capec.mitre.org/data/index.html">Capec Catalog of Attack Patterns</a></p></li>
@@ -730,18 +730,18 @@ can be recognized.</p>
 <li><p>Other relevant sources such as security advisories, research papers, etc.</p></li>
 </ul>
 </li>
-<li><p>If a threat scenario applies, use the template <a class="reference internal" href="security_analysis_threat_scenario_templates.html#gd_temp__plat_threat_scenario" title="gd_temp__plat_threat_scenario"><em class="xref need">Platform Security Analysis ... (gd_temp__plat_threat_scenario)</em></a> to perform the analysis.</p></li>
+<li><p>If a threat scenario applies, use the template <a class="reference internal" href="security_analysis_threat_scenario_templates.html#gd_temp__plat_threat_scenario" title="gd_temp__plat_threat_scenario"><em class="xref need">Platform Security Analysis ...</em></a> to perform the analysis.</p></li>
 <li><p>For each identified potential threat, identify and document the potential mitigations. The potential mitigations are security requirements that then serve as the stakeholder requirements for features.</p></li>
 <li><p>Document the Security assumptions derived from this process.</p></li>
 <li><p>Risk treatment can be done by using the following options: accept, avoid, reduce, share. The chosen risk treatment shall be documented.</p></li>
 <li><p>If there is no mitigation or the mitigation is not sufficient, a mitigation issue has to be created in the Issue Tracking system and linked in the “mitigation_issue” attribute.</p></li>
 <li><p>Continue the analysis until all applicable threat scenarios for each attack surface of each asset are checked.</p></li>
-<li><p>The verification is done by applying the checklist <a class="reference internal" href="security_analysis_checklist.html#gd_chklst__security_analysis" title="gd_chklst__security_analysis"><em class="xref need">Security Analysis Checklist... (gd_chklst__security_analysis)</em></a>.</p></li>
+<li><p>The verification is done by applying the checklist <a class="reference internal" href="security_analysis_checklist.html#gd_chklst__security_analysis" title="gd_chklst__security_analysis"><em class="xref need">Security Analysis Checklist...</em></a>.</p></li>
 </ol>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>If there are changes they have to be analyzed with an impact analysis
-<a class="reference internal" href="../../change_management/guidance/change_management_impact_analysis_template.html#gd_temp__change_impact_analysis" title="gd_temp__change_impact_analysis"><em class="xref need">Impact Analysis Template (gd_temp__change_impact_analysis)</em></a>. If needed the Security Analysis has to be
+<a class="reference internal" href="../../change_management/guidance/change_management_impact_analysis_template.html#gd_temp__change_impact_analysis" title="gd_temp__change_impact_analysis"><em class="xref need">Impact Analysis Template</em></a>. If needed the Security Analysis has to be
 updated accordingly. Therefore all necessary steps have to be repeated.</p>
 </div>
 </section>
