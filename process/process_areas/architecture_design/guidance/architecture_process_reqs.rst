@@ -158,8 +158,8 @@ Attributes of Architectural Elements
    * valid
    * invalid
 
-Traceability to Requirements
-----------------------------
+Traceability to Requirements and AoU
+------------------------------------
 
 .. gd_req:: Architecture attribute: fulfils
    :id: gd_req__arch_attr_fulfils
@@ -169,6 +169,15 @@ Traceability to Requirements
    :satisfies: wf__cr_mt_featarch, wf__cr_mt_comparch
 
    Each architectural element shall be linked to a requirement.
+
+.. gd_req:: Architecture attribute: fulfils (AoU)
+   :id: gd_req__arch_attr_fulfils_aou
+   :status: valid
+   :tags: manual_prio_1, attribute, mandatory
+   :complies: std_req__iso26262__support_6425, std_req__aspice_40__SWE-2-BP4
+   :satisfies: wf__cr_mt_featarch, wf__cr_mt_comparch
+
+   Each architectural element shall be linked to AoUs if it fulfills these.
 
 .. gd_req:: Architecture traceability
    :id: gd_req__arch_traceability
@@ -249,6 +258,15 @@ Checks for Architectural Design
 
    * Functional requirements <-> static / dynamic architectural elements (feat_arc_sta, feat_arc_dyn)
    * Interface requirements <-> interface architectural elements (logic_arc_int, logic_arc_int_op)
+
+.. gd_req:: Check of Architecture linkage to AoU
+   :id: gd_req__arch_linkage_aou
+   :status: valid
+   :tags: prio_2_automation, attribute, check
+   :satisfies: wf__cr_mt_featarch, wf__cr_mt_comparch
+
+   It shall be checked that architecture elements are not linked to its own AoU
+   ("own" means the AoU linked as "mitigated_by" to the Safety/Security Analysis linked via "violates" to the element)
 
 .. gd_req:: Check of Architecture consistency Components in modules
    :id: gd_req__arch_consistency_model

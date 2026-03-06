@@ -192,6 +192,21 @@ Process Requirement Linkage
       * workflow or stakeholder requirements <- process requirements
       * process requirements or stakeholder requirements <- tool requirements
 
+.. gd_req:: Requirement Linkage to AoU
+   :id: gd_req__req_linkage_aou
+   :status: valid
+   :tags: manual_prio_1, attribute
+   :complies: std_req__iso26262__support_6432, std_req__aspice_40__SWE-1-BP5
+   :satisfies: wf__req_feat_req, wf__req_comp_req
+
+   Requirements shall be linked to AoU via the attribute satisfies, if they already satisfy these.
+
+      * AoU <- feature requirements
+      * AoU <- component requirements
+
+   Note: "Already" illustrates the understanding that AoU come from used (external) components
+   which appear later in the development (after deciding an architecture).
+
 .. gd_req:: Requirement Traceability
    :id: gd_req__req_traceability
    :status: valid
