@@ -197,7 +197,7 @@ Templates
    :id: gd_temp__process_standard_wp
    :status: valid
    :tags: process_management
-   :complies: std_req__iso26262__management_5421, std_req__iso26262__management_5422, std_req__aspice_40__gp-311
+   :complies: std_req__iso26262__management_5421, std_req__iso26262__management_5422, std_req__aspice_40__gp-311, std_req__aspice_40__gp-221, std_req__aspice_40__gp-222, std_req__aspice_40__gp-223
 
    .. code-block:: rst
 
@@ -211,7 +211,7 @@ Templates
    :id: gd_temp__process_document
    :status: valid
    :tags: process_management
-   :complies: std_req__iso26262__management_5421, std_req__iso26262__management_5422, std_req__aspice_40__gp-311
+   :complies: std_req__iso26262__management_5421, std_req__iso26262__management_5422, std_req__aspice_40__gp-311, std_req__aspice_40__gp-221, std_req__aspice_40__gp-222, std_req__aspice_40__gp-223
 
    .. code-block:: rst
 

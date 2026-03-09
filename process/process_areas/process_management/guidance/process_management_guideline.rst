@@ -20,7 +20,9 @@ Guideline
    :id: gd_guidl__process_management
    :status: valid
    :tags: process_management
-   :complies: std_req__iso26262__management_5421, std_req__iso26262__management_5422, std_req__iso26262__management_5426, std_req__aspice_40__gp-311, std_req__aspice_40__iic-10-00, std_req__aspice_40__iic-15-54
+   :complies: std_req__iso26262__management_5421, std_req__iso26262__management_5422, std_req__iso26262__management_5426, std_req__aspice_40__gp-311, std_req__aspice_40__iic-10-00, std_req__aspice_40__iic-15-54,
+              std_req__aspice_40__gp-211, std_req__aspice_40__gp-212, std_req__aspice_40__gp-213, std_req__aspice_40__gp-214, std_req__aspice_40__gp-215, std_req__aspice_40__gp-216, std_req__aspice_40__gp-224,
+              std_req__aspice_40__gp-312, std_req__aspice_40__gp-313, std_req__aspice_40__gp-314, std_req__aspice_40__gp-321, std_req__aspice_40__gp-322, std_req__aspice_40__gp-323, std_req__aspice_40__gp-324
 
 This document describes the general guidances for Process Management based on the concept which is defined :need:`[[title]]<doc_concept__process_management>`.
 

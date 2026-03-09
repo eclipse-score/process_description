@@ -60,6 +60,7 @@ Tailoring
 |   - MAN: MAN.6 - Measurements (not applicable for now)
 |   - VAL: Validation process group (pure SW with no (automobile) user interaction)
 |   - ACQ: Acquisition process group (because there is no contracted supplier of the project)
+|   - Process capability level 4 and 5 (GP4 and GP5)
 
 
 .. toctree::
@@ -420,7 +421,7 @@ Generic practices
       For guidance on how to perform process improvements see the Process Improvement process (PIM.3).
 
 .. needextend:: "c.this_doc()"
-   :+tags: aspice40_gp3
+   :+tags: aspice40_gp2_gp3
 
 Appendix
 --------
