@@ -578,7 +578,7 @@
                   
   <section id="security-analysis-guidelines">
 <h1>Security Analysis Guidelines<a class="headerlink" href="#security-analysis-guidelines" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-83c66427">
+<div class="need_container docutils container" id="SNCB-bee4014c">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_guidl table" id="gd_guidl__security_analysis">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -672,20 +672,70 @@ e.g. why a threat scenario is not applicable for the diagram. If a threat scenar
 be applied, the reason has to be documented in the content of the document, so it
 can be recognized.</p>
 <p>The attributes of the template are described in <a class="reference internal" href="security_analysis_process_reqs.html#process-requirements-security-analysis-attributes"><span class="std std-ref">Process Security Analysis Attributes</span></a>.</p>
+<p>The analysis is done by as described in the flowchart <a class="reference internal" href="../security_analysis_concept.html#id1"><span class="std std-ref">Platform Architecture</span></a>.</p>
 <p><strong>Steps:</strong></p>
 <ol class="arabic simple">
-<li><p>For each architectural element check if a threat from the threat scenarios <a class="reference internal" href="security_analysis_threat_scenarios_guideline.html#gd_guidl__sec_ana_threat_scenarios" title="gd_guidl__sec_ana_threat_scenarios"><em class="xref need">Security Analysis threat sc...</em></a> applies.</p></li>
-<li><p>If a threat scenario applies, use the template <a class="reference internal" href="security_analysis_threat_scenario_templates.html#gd_temp__plat_threat_scenario" title="gd_temp__plat_threat_scenario"><em class="xref need">Platform Security Analysis ...</em></a>, <a class="reference internal" href="security_analysis_threat_templates.html#gd_temp__feat_sec_ana_threat" title="gd_temp__feat_sec_ana_threat"><em class="xref need">Feature Threat Template</em></a> or <a class="reference internal" href="security_analysis_threat_templates.html#gd_temp__comp_sec_ana_threat" title="gd_temp__comp_sec_ana_threat"><em class="xref need">Component Threat Template</em></a> to perform the analysis.</p></li>
-<li><p>The title of the analysis should be easily recognizable e.g. “Component xy unauthorized access”.</p></li>
-<li><p>Link the violated architecture with the <code class="docutils literal notranslate"><span class="pre">violates</span></code> attribute.</p></li>
-<li><p>Replace the placeholders in the <code class="docutils literal notranslate"><span class="pre">id</span></code> attribute with the name of the feature or component and a short description of the element so that it can be easily identified.</p></li>
-<li><p>Document the threat ID from the threat scenario <a class="reference internal" href="security_analysis_threat_scenarios_guideline.html#gd_guidl__sec_ana_threat_scenarios" title="gd_guidl__sec_ana_threat_scenarios"><em class="xref need">Security Analysis threat sc...</em></a> that applies to the element in the <code class="docutils literal notranslate"><span class="pre">threat_id</span></code> attribute.</p></li>
-<li><p>Describe the threat effect of the threat scenario on the element in the <code class="docutils literal notranslate"><span class="pre">threat_effect</span></code> attribute. Use the violation cause description and expand it wherever applicable to the considered element.</p></li>
-<li><p>Document the mitigation. This can be (accept, avoid, reduce, share) of the threat.</p></li>
-<li><p>If there is no mitigation or the mitigation is not sufficient, a mitigation issue has to be created in the Issue Tracking system and linked in the <code class="docutils literal notranslate"><span class="pre">mitigation_issue</span></code> attribute.</p></li>
-<li><p>The analysis is complete when a sufficient mitigation exists for each identified threat.</p></li>
-<li><p>Unless the attribute sufficient is set to <code class="docutils literal notranslate"><span class="pre">yes</span></code>, the mitigation and argument attributes are permitted to remain empty.</p></li>
-<li><p>Continue the analysis until all applicable threat scenarios are checked.</p></li>
+<li><p>Define the trust boundary model for the platform under analysis. An example trust boundary definition is given in <a class="reference internal" href="../security_analysis_concept.html#trust-boundary-example"><span class="std std-ref">Trust Boundary</span></a>. The trust boundary model should be defined in a way that it can be easily recognized which architectural elements are located in which trust boundary. The trust boundary model should be defined before starting the analysis and should be used as an input for the analysis. The trust boundary model should be updated if there are changes in the platform architecture or if there are changes in the threat scenarios.</p></li>
+<li><p>Identify the assets of the platform. The assets are the elements of the platform that have to be protected. The assets can be identified by using the trust boundary model and the platform architecture. The assets can be identified using the following questions:</p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>What are the critical</dt><dd><ul>
+<li><p>features, interfaces, components (HW and SW), data of the platform?</p></li>
+<li><p>communication paths and interfaces of the platform?</p></li>
+<li><p>configurations of the platform?</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p>What critical information is shared between the components?</p></li>
+<li><p>Compromise of which assets can have an impact on security properties such as confidentiality, integrity, availability, authenticity, accountability, non-repudiation?</p></li>
+<li><p>What are the process assets such as development, production, maintenance processes that could be exploited by attackers?</p></li>
+</ul>
+</li>
+<li><p>Identify how each asset flows through the features in the platform. The asset flow can be identified by using the platform architecture and the trust boundary model. The asset flow can be identified by using the following questions:</p>
+<ul class="simple">
+<li><p>How critical functions of the platform interact with each other?</p></li>
+<li><p>How critical data of the platform flow through the platform?</p></li>
+<li><p>How critical components of the platform interact with each other?</p></li>
+<li><p>How critical interfaces and communication paths are used in the platform?</p></li>
+<li><p>How critical information is shared between the functions/components of the platform?</p></li>
+</ul>
+</li>
+<li><p>For each identified assets, identify the attack surfaces. The attack surfaces can be any interface or entry point that could be exploited by an attacker. Some examples are as follows:</p>
+<ul class="simple">
+<li><p>External communication interfaces
+- Wireless: cellular, Wi‑Fi, Bluetooth, GNSS, V2X, keyless entry, NFC
+- Wired: OBD-II, USB, Ethernet ports, charging connectors, dealer tools, external storage</p></li>
+<li><p>In-vehicle networks and internal interfaces
+- CAN, LIN, FlexRay, Automotive Ethernet segments, gateway connections, debug ports
+- API/IPC boundaries between SW components, service interfaces between ECUs</p></li>
+<li><p>User and physical interfaces
+- HMI (touchscreen, buttons, voice), infotainment, smartphone apps, mobile keys
+- Physical access to ECUs, sensors, actuators, wiring harness, debug/programming pins</p></li>
+<li><p>Backend, cloud and off-board systems
+- Backend services for OTA, fleet management, mobile apps, web portals
+- Data centers, PKI/signing services, identity and access management, APIs</p></li>
+<li><p>Development, production and service infrastructure
+- Build servers, version control, CI/CD, signing infrastructure
+- Manufacturing/test equipment, configuration tools, dealer/service tools, update media</p></li>
+</ul>
+</li>
+<li><p>For each attack surface, identify the potential threats that can be used by an attacker to compromise the asset. The potential threats can be identified using the following sources as input:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="security_analysis_threat_scenarios_guideline.html#gd_guidl__sec_ana_threat_scenarios" title="gd_guidl__sec_ana_threat_scenarios"><em class="xref need">Security Analysis threat sc...</em></a>.</p></li>
+<li><p><a class="reference external" href="https://www.google.com/url?sa=t&amp;source=web&amp;rct=j&amp;opi=89978449&amp;url=https://wiki.unece.org/download/attachments/179700184/TFCS-23-05%2520%2528OICA%252C%2520CLEPA%2529%2520R155%2520Annex5%2520table%2520C3%2520deletion.pdf%3Fapi%3Dv2&amp;ved=2ahUKEwie0--t6IWTAxXXR_EDHbXrKDgQFnoECAQQAQ&amp;usg=AOvVaw1XygSpmzqxlOxJ4Fb59a9w">UN R155 Annex 5</a></p></li>
+<li><p><a class="reference external" href="https://atm.automotiveisac.com/home">Auto ISAC Threat Catalog</a></p></li>
+<li><p><a class="reference external" href="https://capec.mitre.org/data/index.html">Capec Catalog of Attack Patterns</a></p></li>
+<li><p><a class="reference external" href="https://cwe.mitre.org/data/index.html/">CWE Common Weakness Enumeration</a></p></li>
+<li><p>Other relevant sources such as security advisories, research papers, etc.</p></li>
+</ul>
+</li>
+<li><p>If a threat scenario applies, use the template <a class="reference internal" href="security_analysis_threat_scenario_templates.html#gd_temp__plat_threat_scenario" title="gd_temp__plat_threat_scenario"><em class="xref need">Platform Security Analysis ...</em></a> to perform the analysis.</p></li>
+<li><p>For each identified potential threat, identify and document the potential mitigations. The potential mitigations are security requirements, which then serve as the stakeholder requirements for features.</p></li>
+<li><p>Document the Security assumptions derived from this process.</p></li>
+<li><p>Risk treatment can be done by using the following options: accept, avoid, reduce, share. The chosen risk treatment shall be documented.</p></li>
+<li><p>If there is no mitigation or the mitigation is not sufficient, a mitigation issue has to be created in the Issue Tracking system and linked in the “mitigation_issue” attribute.</p></li>
+<li><p>The analysis shall continue until all applicable threat scenarios for each attack surface of each asset has been evaluated.</p></li>
 <li><p>The verification is done by applying the checklist <a class="reference internal" href="security_analysis_checklist.html#gd_chklst__security_analysis" title="gd_chklst__security_analysis"><em class="xref need">Security Analysis Checklist...</em></a>.</p></li>
 </ol>
 <div class="admonition note">
