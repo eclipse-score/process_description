@@ -578,7 +578,7 @@
                   
   <section id="security-analysis-guidelines">
 <h1>Security Analysis Guidelines<a class="headerlink" href="#security-analysis-guidelines" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-655a27b2">
+<div class="need_container docutils container" id="SNCB-8c548fa3">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_guidl table" id="gd_guidl__security_analysis">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -636,8 +636,8 @@ the feature or component architectural diagrams. By using the threat models
 a structured way. Apply the threat model to the diagram and document the results in the
 template. Use the content of the document <a class="reference internal" href="security_analysis_threat_templates.html#gd_temp__feat_sec_ana_threat" title="gd_temp__feat_sec_ana_threat"><em class="xref need">Feature Threat Template</em></a>,
 <a class="reference internal" href="security_analysis_threat_templates.html#gd_temp__comp_sec_ana_threat" title="gd_temp__comp_sec_ana_threat"><em class="xref need">Component Threat Template</em></a> to describe e.g. why a threat model is not
-applicable for the diagram. If a treat can’t be applied, the reason has to be documented
-in the content of the document, so it can be recognized.</p>
+applicable for the diagram. If a threat model can’t be applied or diagram address the threats , the reason has to be documented
+in the analysis, so it can be recognized.</p>
 <p>The attributes of the template are described in <a class="reference internal" href="security_analysis_process_reqs.html#process-requirements-security-analysis-attributes"><span class="std std-ref">Process Security Analysis Attributes</span></a>.</p>
 <p><strong>Steps:</strong></p>
 <ol class="arabic simple">
@@ -731,11 +731,11 @@ can be recognized.</p>
 </ul>
 </li>
 <li><p>If a threat scenario applies, use the template <a class="reference internal" href="security_analysis_threat_scenario_templates.html#gd_temp__plat_threat_scenario" title="gd_temp__plat_threat_scenario"><em class="xref need">Platform Security Analysis ...</em></a> to perform the analysis.</p></li>
-<li><p>For each identified potential threat, identify and document the potential mitigations. The potential mitigations are security requirements that then serve as the stakeholder requirements for features.</p></li>
+<li><p>For each identified potential threat, identify and document the potential mitigations. The potential mitigations are security requirements, which then serve as the stakeholder requirements for features.</p></li>
 <li><p>Document the Security assumptions derived from this process.</p></li>
 <li><p>Risk treatment can be done by using the following options: accept, avoid, reduce, share. The chosen risk treatment shall be documented.</p></li>
 <li><p>If there is no mitigation or the mitigation is not sufficient, a mitigation issue has to be created in the Issue Tracking system and linked in the “mitigation_issue” attribute.</p></li>
-<li><p>Continue the analysis until all applicable threat scenarios for each attack surface of each asset are checked.</p></li>
+<li><p>The analysis shall continue until all applicable threat scenarios for each attack surface of each asset has been evaluated.</p></li>
 <li><p>The verification is done by applying the checklist <a class="reference internal" href="security_analysis_checklist.html#gd_chklst__security_analysis" title="gd_chklst__security_analysis"><em class="xref need">Security Analysis Checklist...</em></a>.</p></li>
 </ol>
 <div class="admonition note">
