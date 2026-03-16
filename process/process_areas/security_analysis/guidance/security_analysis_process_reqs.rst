@@ -83,7 +83,7 @@ Process Security Analysis Attributes
    :satisfies: wf__analyse_sec_platform_featarch, wf__analyse_sec_featarch, wf__analyse_sec_comparch
    :complies:
 
-   If a new mitigation is needed, link to the issue and keep status invalid until mitigation is sufficient.
+   If a new security mitigation (avoid, reduce, or share) is needed, link to the issue and keep status invalid until the mitigation is sufficient.
 
 .. gd_req:: Security Analysis attribute: sufficient
    :id: gd_req__sec_attr_sufficient
