@@ -126,3 +126,26 @@ developed as safety element out of context (SEooC).
   :alt: Building blocks example
 
   Building blocks example
+
+
+Deployment example
+++++++++++++++++++
+
+The following figure is an example how the meta model may deployed on several repositories.
+The project main repository has the information about the platform and the features.
+These include stakeholder requirements, platform architecture, safety/security analysis
+and platform assumptions of use. Further the features, their requirements and their
+logical interfaces.
+
+The project dependable element repository has the remaining feature artifacts and
+the components and units. There may several repositories of them.
+
+The project reference_integration repository includes only the platform integrations
+tests.
+
+.. figure:: _assets/score_building_blocks_meta_model_deployment_example.drawio.svg
+  :width: 100%
+  :align: center
+  :alt: Building blocks deployment example
+
+  Building blocks deployment example
