@@ -81,7 +81,6 @@ Static Architecture
    :safety: ASIL_B
    :status: invalid
    :includes: logic_arc_int__feature_name__interface_name1
-   :consists_of: comp__component_name_template
 
    General Feature Description
 

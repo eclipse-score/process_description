@@ -489,7 +489,6 @@ The following section is an example, how an `Feature <https://eclipse-score.gith
    :safety: ASIL_B
    :status: invalid
    :includes: logic_arc_int__example_feature__archex_logical_interface_1
-   :consists_of: comp__component_example_1
 
 .. feat_arc_sta:: Feature Static Architecture View - Rendered Example
       :id: feat_arc_sta__example_feature__archdes_getstrt

@@ -79,6 +79,7 @@ A component can optional also consist of subcomponents to further structure the 
    :status: invalid
    :implements: logic_arc_int__feature_name__interface_name1
    :consists_of: comp__archex_sub_component_1, comp__archex_sub_component_2, comp__archex_sub_component_3
+   :belongs_to: feat__feature_name
 
 .. comp_arc_sta:: Component Name (Static View)
    :id: comp_arc_sta__component_name__static_view
