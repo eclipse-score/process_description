@@ -108,6 +108,28 @@ Project Development Roles
    The testing community members are responsible for the test case development from component to
    platform level. They shall be included in any requirements reviews. They can also improve
    independence argumentation when involved in the development of unit testing on safety critical
+   units. In this way the testing community takes a supportive role for unit testing.
+
+.. role:: Architecture Community Member
+   :id: rl__architecture_community
+   :status: valid
+   :tags: architecture_design
+   :contains: rl__committer
+
+   The architecture community members are responsible for the features and components of
+   the platform. Feature and Components requests, which add new ones or modifications, are
+   in their responsibility. They are aligned with the Project Leads.
+
+About Features
+
+Feature Request issue template
+
+Component Request
+
+A Component Request represents an independent work package used to describe modifications inside a Feature, either adding new components or modifying existing ones. Component Request work packages can be linked to other work packages, but they must not be treated as parent work packages. They shall be discussed with Architecture Community and the issues are owned by a Team and are part of the Team`s main repository..
+
+   They shall be included in any requirements reviews. They can also improve
+   independence argumentation when involved in the development of unit testing on safety critical
    units. In this way the testing community takes a supportive role for unit testing
 
 .. role:: Project Security Team
@@ -126,9 +148,12 @@ Project Teams
    :id: rl__platform_team
    :status: valid
    :tags: cross_functional
-   :contains: rl__project_lead, rl__safety_manager, rl__quality_manager, rl__security_manager, rl__contributor, rl__committer, rl__infrastructure_tooling_community, rl__process_community
+   :contains: rl__project_lead, rl__safety_manager, rl__quality_manager, rl__security_manager, rl__contributor, rl__committer, rl__infrastructure_tooling_community, rl__process_community, rl__architecture_community
 
-   The platform team is responsible for all artifacts within the platform SEooC. Additionally it is also responsible for the overall process including its support by tooling.
+   The platform team is responsible for all artifacts within the platform SEooC.
+   Additionally it is also responsible for the overall process including its support
+   by tooling.
+   Depending on the platform artifacts, some of them are assigned as codeowner.
 
 .. role:: Delivery Team
    :id: rl__delivery_team
@@ -136,8 +161,12 @@ Project Teams
    :tags: cross_functional
    :contains: rl__safety_manager, rl__quality_manager, rl__security_manager, rl__contributor, rl__committer
 
-   The delivery team is responsible for all artifacts within the Delivery Container SEooCs containing the Dependable Elements. Each Delivery Container has only one responsible team.
-   One of the committers in the team acts as the "Project Manager" and is responsible for planning and reporting.
+   The delivery team is responsible for all artifacts within the Delivery Container
+   SEooCs containing the Dependable Elements. Each Delivery Container has only one
+   responsible team.
+   One of the committers in the team acts as the "Project Manager" and is responsible
+   for planning and reporting.
+   Depending on the delivery container artifacts, some of them are assigned as codeowner.
 
 .. role:: Release Team
    :id: rl__release_team
