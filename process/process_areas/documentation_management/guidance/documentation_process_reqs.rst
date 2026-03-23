@@ -21,7 +21,7 @@ Document Management Process Requirements
    :id: gd_req__doc_types
    :status: valid
    :tags: done_automation
-   :satisfies: wf__platform_cr_mt_platform_mgmt_plan
+   :derived_from: wf__platform_cr_mt_platform_mgmt_plan
    :complies: std_req__iso26262__support_1043
 
    There are the following document types:
@@ -53,7 +53,7 @@ Document Management Process Requirements
    :id: gd_req__doc_attributes_manual
    :status: valid
    :tags: manual_prio_1
-   :satisfies: wf__platform_cr_mt_platform_mgmt_plan
+   :derived_from: wf__platform_cr_mt_platform_mgmt_plan
    :complies: std_req__iso26262__support_1043
 
    Generic documents shall have the following mandatory manual attributes:
@@ -72,7 +72,7 @@ Document Management Process Requirements
    :id: gd_req__doc_attr_status
    :status: valid
    :tags: manual_prio_1, attribute, mandatory
-   :satisfies: wf__platform_cr_mt_platform_mgmt_plan
+   :derived_from: wf__platform_cr_mt_platform_mgmt_plan
    :complies: std_req__iso26262__support_1044
 
    Each document, shall have a status depending on the document lifecycle models below:
@@ -87,7 +87,7 @@ Document Management Process Requirements
    :id: gd_req__doc_author
    :status: valid
    :tags: prio_1_automation
-   :satisfies: wf__platform_cr_mt_platform_mgmt_plan
+   :derived_from: wf__platform_cr_mt_platform_mgmt_plan
    :complies: std_req__iso26262__support_1045
 
    The version management tool shall document and report (be able to show) the authorship of a document.
@@ -97,7 +97,7 @@ Document Management Process Requirements
    :id: gd_req__doc_reviewer
    :status: valid
    :tags: prio_1_automation
-   :satisfies: wf__platform_cr_mt_platform_mgmt_plan
+   :derived_from: wf__platform_cr_mt_platform_mgmt_plan
    :complies: std_req__iso26262__support_1043
 
    The version management tool shall document and report (be able to show) the reviewers of a document.
@@ -107,7 +107,7 @@ Document Management Process Requirements
    :id: gd_req__doc_approver
    :status: valid
    :tags: prio_1_automation
-   :satisfies: wf__platform_cr_mt_platform_mgmt_plan
+   :derived_from: wf__platform_cr_mt_platform_mgmt_plan
    :complies: std_req__iso26262__support_1045
 
    The version management tool shall document and report (be able to show) the approver of a document.

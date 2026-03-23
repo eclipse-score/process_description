@@ -53,6 +53,7 @@ bazel_dep(name = "score_tooling", version = "1.2.0")
 bazel_dep(name = "score_docs_as_code", version = "3.0.1")
 git_override(
     module_name = "score_docs_as_code",
-    commit = "21640ab325b3aae147ba4e3e8b5e7ab89fc2e8f5",
-    remote = "https://github.com/etas-contrib/score_docs-as-code.git",
+    # TODO: revert to main once https://github.com/RSingh1511/docs-as-code/pull/new/rs/rename-relations-codebeamer is merged
+    commit = "dcbf9c99f592159f49aa8231a053d673e9d2dcde",
+    remote = "https://github.com/RSingh1511/docs-as-code.git",
 )
