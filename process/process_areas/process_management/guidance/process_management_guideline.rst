@@ -117,7 +117,7 @@ Monitor/Improve Process
 
 If potential improvements are detected, the :need:`[[title]] <rl__contributor>` triggers
 an ISSUE for improvement by using the
-`Issue Template Improvement <https://github.com/eclipse-score/process_description/blob/main/.github/ISSUE_TEMPLATE/2-improvement.yml>`_.
+`Issue Template Improvement <https://github.com/eclipse-score/.github/blob/main/.github/ISSUE_TEMPLATE/4_Task.yml>`_.
 
 The potential improvement is discussed during the public Process Community Meetings
 and if decided to implement, a pull request to follow :ref:`pm_create_maintain_strategy`

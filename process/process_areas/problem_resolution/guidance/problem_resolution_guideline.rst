@@ -36,7 +36,7 @@ in project's selected Issue Tracking System: :need:`[[title]]<gd_temp__problem_t
 .. note::
   An example template for the Issue Tracking System in GitHub (`GitHub Issues <https://github.com/features/issues>`_)
   can be found here:
-  `Issue Template Bugfix <https://github.com/eclipse-score/process_description/blob/main/.github/ISSUE_TEMPLATE/1-bugfix.yml>`_
+  `Issue Template Bugfix <https://github.com/eclipse-score/.github/blob/main/.github/ISSUE_TEMPLATE/5_Bug.yml>`_
 
 Attributes
 ----------
@@ -102,7 +102,7 @@ from the different users.
 .. note::
   For the Issue Tracking System in GitHub, there is a template created, which can be
   be found here:
-  `Issue Template Bugfix <https://github.com/eclipse-score/process_description/blob/main/.github/ISSUE_TEMPLATE/1-bugfix.yml>`_
+  `Issue Template Bugfix <https://github.com/eclipse-score/.github/blob/main/.github/ISSUE_TEMPLATE/5_Bug.yml>`_
 
 .. note::
   A Problem Report Example based on that template is here:
