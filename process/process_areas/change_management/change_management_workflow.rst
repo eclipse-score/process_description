@@ -80,11 +80,19 @@ For a detailed explanation of workflows and their role within the process model,
 
    The Change Request is done, if all linked activities has been closed and confirmed,
    which is done by the approval of the selected codeowners.
-   Before closing the Change Request, :need:`Delivery Team <rl__delivery_team>` must check the
-   correctness.
 
-   The :need:`Delivery Team <rl__delivery_team>` may still reject it, thus the status
-   is set to "rejected".
+   Depending on the type of the Change Request (Feature or Component), different Teams
+   are responsibly for this workflow.
+
+   For feature:
+   Before closing the Change Request, :need:`Platform Team <rl__platform_team>` must
+   check the correctness.
+
+   For component:
+   Before closing the Change Request, :need:`Delivery Team <rl__delivery_team>` must
+   check the correctness.
+
+   The responsible team may still reject it, thus the status is set to "rejected".
 
 .. workflow:: Close Change Request
    :id: wf__change_close_cr
@@ -100,11 +108,20 @@ For a detailed explanation of workflows and their role within the process model,
 
    The Change Request is closed.
 
+   Depending on the type of the Change Request (Feature or Component), different Teams
+   are responsibly for this workflow.
+
+   For feature:
+   The Change Request is closed only, if the implementation is sufficient. That is verified
+   by the :need:`Platform Team <rl__platform_team>` finally, especially the selected
+   codeowners of the team must approve.
+
+   For component:
    The Change Request is closed only, if the implementation is sufficient. That is verified
    by the :need:`Delivery Team <rl__delivery_team>` finally, especially the selected
    codeowners of the team must approve.
 
-   Otherwise the :need:`Delivery Team <rl__delivery_team>` keeps the status "in implementation".
+   Otherwise the responsible teams keeps the status "in implementation".
 
 .. needextend:: docname is not None and "process_areas/change_management" in docname
    :+tags: change_management
