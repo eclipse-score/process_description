@@ -45,7 +45,7 @@ Requirements Linked to Component Architecture
    .. needtable:: Overview of Component Requirements
       :style: table
       :columns: title;id
-      :filter: search("comp_arch_sta__archdes$", "fulfils_back")
+      :filter: search("comp_arch_sta__archdes$", "satisfies_back")
       :colwidths: 70,30
 
 Description
@@ -93,7 +93,7 @@ The live component architecture template is maintained in the
       :status: invalid
       :belongs_to: comp__component_name_template
       :uses: logic_arc_int__feature_name__interface_name1
-      :fulfils: comp_req__component_name__some_title
+      :satisfies: comp_req__component_name__some_title
 
       .. needarch::
          :scale: 50
@@ -112,7 +112,7 @@ Dynamic Architecture
       :safety: ASIL_B
       :status: invalid
       :belongs_to: comp__component_name_template
-      :fulfils: comp_req__component_name__some_title
+      :satisfies: comp_req__component_name__some_title
 
       Put here a sequence diagram
 
@@ -126,7 +126,7 @@ Interfaces
       :id: real_arc_int__<component>__<Title>
       :security: <YES|NO>
       :safety: <QM|ASIL_B>
-      :fulfils: <link to component requirement id>
+      :satisfies: <link to component requirement id>
       :language: cpp
 
 Internal Components
@@ -139,7 +139,7 @@ Internal Components
       :status: invalid
       :safety: ASIL_B
       :security: YES
-      :fulfils: comp_req__component_name__some_title
+      :satisfies: comp_req__component_name__some_title
       :belongs_to: comp__component_name_template
 
       No architecture but detailed design

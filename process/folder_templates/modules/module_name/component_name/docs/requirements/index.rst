@@ -44,7 +44,7 @@ Component Requirements
       :reqtype: Process
       :security: YES
       :safety: ASIL_B
-      :satisfies: feat_req__feature_name__some_title
+      :derived_from: feat_req__feature_name__some_title
       :status: invalid
       :belongs_to: comp__component_name_template
 

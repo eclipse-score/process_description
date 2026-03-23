@@ -175,7 +175,7 @@ Templates
          :id: gd_req__<process area or abbreviation>_<...>
          :status: <draft|valid>
          :tags: <process area or abbreviation>
-         :satisfies: <defined workflow:wf__<...>>, ..., <defined workflow:wf__<...>>
+         :derived_from: <defined workflow:wf__<...>>, ..., <defined workflow:wf__<...>>
          :complies: <standard requirement:std_req__<...>>, ..., <standard requirement:std_req__<...>>
 
 

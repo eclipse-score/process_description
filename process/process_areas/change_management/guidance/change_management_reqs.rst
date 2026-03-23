@@ -24,7 +24,7 @@ Change Request Attributes
    :id: gd_req__change_attr_uid
    :status: valid
    :tags: done_automation, attribute, mandatory
-   :satisfies: wf__change_create_cr, wf__change_analyze_cr, wf__change_implement_monitor_cr, wf__change_close_cr
+   :derived_from: wf__change_create_cr, wf__change_analyze_cr, wf__change_implement_monitor_cr, wf__change_close_cr
    :complies: std_req__aspice_40__SUP-10-BP1, std_req__iso26262__support_8411, std_req__iso26262__support_8421, std_req__iso26262__support_8432, std_req__iso26262__support_8453
 
    Each Change Request shall have a unique ID. It shall be in an integer number.
@@ -33,7 +33,7 @@ Change Request Attributes
    :id: gd_req__change_attr_status
    :status: valid
    :tags: done_automation, attribute, mandatory
-   :satisfies: wf__change_create_cr, wf__change_analyze_cr, wf__change_implement_monitor_cr, wf__change_close_cr
+   :derived_from: wf__change_create_cr, wf__change_analyze_cr, wf__change_implement_monitor_cr, wf__change_close_cr
    :complies: std_req__aspice_40__SUP-10-BP3, std_req__aspice_40__SUP-10-BP5, std_req__aspice_40__SUP-10-BP6, std_req__iso26262__support_8411, std_req__iso26262__support_8422, std_req__iso26262__support_8432, std_req__iso26262__support_8442
 
    Each Change Request shall have a status:
@@ -48,7 +48,7 @@ Change Request Attributes
    :id: gd_req__change_attr_title
    :status: valid
    :tags: manual_prio_1, attribute, mandatory
-   :satisfies: wf__change_create_cr, wf__change_analyze_cr, wf__change_implement_monitor_cr, wf__change_close_cr
+   :derived_from: wf__change_create_cr, wf__change_analyze_cr, wf__change_implement_monitor_cr, wf__change_close_cr
    :complies: std_req__aspice_40__SUP-10-BP1, std_req__iso26262__support_8411, std_req__iso26262__support_8422
 
    Reason for the Change Request
@@ -57,7 +57,7 @@ Change Request Attributes
    :id: gd_req__change_attr_impact_description
    :status: valid
    :tags: manual_prio_1, attribute, mandatory
-   :satisfies: wf__change_create_cr, wf__change_analyze_cr, wf__change_implement_monitor_cr, wf__change_close_cr
+   :derived_from: wf__change_create_cr, wf__change_analyze_cr, wf__change_implement_monitor_cr, wf__change_close_cr
    :complies: std_req__aspice_40__SUP-10-BP2, std_req__iso26262__support_8411, std_req__iso26262__support_8422, std_req__iso26262__support_8431, std_req__iso26262__support_8432, std_req__iso26262__support_8452, std_req__iso26262__support_8453
 
    Exact description of the Change Request, including impact analysis on functional safety,
@@ -67,7 +67,7 @@ Change Request Attributes
    :id: gd_req__change_attr_impact_safety
    :status: valid
    :tags: prio_1_automation, attribute, mandatory
-   :satisfies: wf__change_create_cr, wf__change_analyze_cr, wf__change_implement_monitor_cr, wf__change_close_cr
+   :derived_from: wf__change_create_cr, wf__change_analyze_cr, wf__change_implement_monitor_cr, wf__change_close_cr
    :complies: std_req__aspice_40__SUP-10-BP2, std_req__iso26262__support_8422
 
    Each Change Request shall have a automotive safety integrity level (ASIL) identifier:
@@ -79,7 +79,7 @@ Change Request Attributes
    :id: gd_req__change_attr_impact_security
    :status: valid
    :tags: prio_2_automation, attribute, mandatory
-   :satisfies: wf__change_create_cr, wf__change_analyze_cr, wf__change_implement_monitor_cr, wf__change_close_cr
+   :derived_from: wf__change_create_cr, wf__change_analyze_cr, wf__change_implement_monitor_cr, wf__change_close_cr
    :complies: std_req__aspice_40__SUP-10-BP2, std_req__iso26262__support_8422
 
    Each Change Request shall have a security relevance identifier:
@@ -91,7 +91,7 @@ Change Request Attributes
    :id: gd_req__change_attr_types
    :status: valid
    :tags: prio_1_automation, attribute, mandatory
-   :satisfies: wf__change_create_cr, wf__change_analyze_cr, wf__change_implement_monitor_cr, wf__change_close_cr
+   :derived_from: wf__change_create_cr, wf__change_analyze_cr, wf__change_implement_monitor_cr, wf__change_close_cr
    :complies: std_req__aspice_40__SUP-10-BP1
 
       * Feature
@@ -120,7 +120,7 @@ Change Request Attributes
    :id: gd_req__change_attr_affected_wp
    :status: draft
    :tags: attribute, mandatory
-   :satisfies: wf__change_create_cr, wf__change_analyze_cr, wf__change_implement_monitor_cr, wf__change_close_cr
+   :derived_from: wf__change_create_cr, wf__change_analyze_cr, wf__change_implement_monitor_cr, wf__change_close_cr
    :complies: std_req__aspice_40__SUP-10-BP4, std_req__iso26262__support_8412, std_req__iso26262__support_8422, std_req__iso26262__support_8452, std_req__iso26262__support_8453
 
    Links to the work products affected by the Change Request
@@ -129,7 +129,7 @@ Change Request Attributes
    :id: gd_req__change_attr_milestone
    :status: valid
    :tags: done_automation, attribute, mandatory
-   :satisfies: wf__change_create_cr, wf__change_analyze_cr, wf__change_implement_monitor_cr, wf__change_close_cr
+   :derived_from: wf__change_create_cr, wf__change_analyze_cr, wf__change_implement_monitor_cr, wf__change_close_cr
    :complies: std_req__aspice_40__SUP-10-BP6, std_req__iso26262__support_8413
 
    Milestone until the Change Request must be implemented (used for prioritization)
@@ -144,7 +144,7 @@ Change Request Checks
    :id: gd_req__change_attr_mandatory
    :status: valid
    :tags: prio_2_automation, attribute, check
-   :satisfies: wf__change_create_cr, wf__change_analyze_cr, wf__change_implement_monitor_cr, wf__change_close_cr
+   :derived_from: wf__change_create_cr, wf__change_analyze_cr, wf__change_implement_monitor_cr, wf__change_close_cr
    :complies: std_req__aspice_40__iic-13-51
 
    It shall be checked if all mandatory attributes for each Change Request
@@ -166,7 +166,7 @@ Change Request Traceability Impact Analysis Tool
    :id: gd_req__change_tool_impact_analysis
    :status: valid
    :tags: prio_3_automation, check, tool
-   :satisfies: wf__change_create_cr, wf__change_analyze_cr, wf__change_implement_monitor_cr, wf__change_close_cr
+   :derived_from: wf__change_create_cr, wf__change_analyze_cr, wf__change_implement_monitor_cr, wf__change_close_cr
    :complies: std_req__aspice_40__iic-13-51
 
    It shall be reported, which work products and elements are affected by adding a new

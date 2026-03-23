@@ -54,14 +54,14 @@ Requirements
    .. needtable:: Overview of Feature Requirements
       :style: table
       :columns: title;id
-      :filter: search("feat_arch_sta__archdes$", "fulfils_back")
+      :filter: search("feat_arch_sta__archdes$", "satisfies_back")
       :colwidths: 70,30
 
 
 .. needtable:: Overview of Feature Requirements
    :style: table
    :columns: title;id
-   :filter: search("feat_arch_sta__archdes$", "fulfils_back")
+   :filter: search("feat_arch_sta__archdes$", "satisfies_back")
    :colwidths: 70,30
 
 
@@ -80,23 +80,16 @@ The live feature architecture template snippets are maintained in the
 
 .. code-block:: rst
 
-   .. feat:: Feature Name
-      :id: feat__feature_name
-      :security: YES
-      :safety: ASIL_B
-      :status: invalid
-      :includes: logic_arc_int__feature_name__interface_name1
-
-      General Feature Description
-
    .. feat_arc_sta:: Feature Static View
       :id: feat_arc_sta__feature_name__static_view
       :security: YES
       :safety: ASIL_B
       :status: invalid
-      :fulfils: feat_req__feature_name__some_title
+      :satisfies: feat_req__feature_name__some_title
       :includes: logic_arc_int__feature_name__interface_name1
       :belongs_to: feat__feature_name
+
+      General Feature Description
 
       .. needarch::
          :scale: 50
@@ -114,7 +107,7 @@ Dynamic Architecture
       :security: YES
       :safety: ASIL_B
       :status: invalid
-      :fulfils: feat_req__feature_name__some_title
+      :satisfies: feat_req__feature_name__some_title
       :belongs_to: feat__feature_name
 
       Put here a sequence diagram
@@ -129,7 +122,7 @@ Logical Interfaces
       :security: YES
       :safety: ASIL_B
       :status: invalid
-      :fulfils: feat_req__feature_name__some_title
+      :satisfies: feat_req__feature_name__some_title
 
       General Interface Description
 
