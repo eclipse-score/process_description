@@ -50,377 +50,452 @@ Part 2: Management of functional safety
     .. std_req:: management_5421
        :id: std_req__iso26262__management_5421
        :status: valid
+       :tags: ok
 
 
     .. std_req:: management_5422
        :id: std_req__iso26262__management_5422
        :status: valid
+       :tags: ok
 
 
     .. std_req:: management_5423
        :id: std_req__iso26262__management_5423
        :status: valid
+       :tags: ok
 
 
     .. std_req:: management_5424
        :id: std_req__iso26262__management_5424
        :status: valid
+       :tags: n/a
 
 
     .. std_req:: management_5425
        :id: std_req__iso26262__management_5425
        :status: valid
+       :tags: open
 
 
     .. std_req:: management_5426
        :id: std_req__iso26262__management_5426
        :status: valid
+       :tags: open
 
 
     .. std_req:: management_5427
        :id: std_req__iso26262__management_5427
        :status: valid
+       :tags: open
 
 
     .. std_req:: management_5431
        :id: std_req__iso26262__management_5431
        :status: valid
+       :tags: action
 
 
     .. std_req:: management_5432
        :id: std_req__iso26262__management_5432
        :status: valid
+       :tags: action
 
 
     .. std_req:: management_5433
        :id: std_req__iso26262__management_5433
        :status: valid
+       :tags: open
 
 
     .. std_req:: management_5434
        :id: std_req__iso26262__management_5434
        :status: valid
+       :tags: open
 
 
     .. std_req:: management_5435
        :id: std_req__iso26262__management_5435
        :status: valid
+       :tags: ok
 
 
     .. std_req:: management_5441
        :id: std_req__iso26262__management_5441
        :status: valid
+       :tags: action
 
 
     .. std_req:: management_5451
        :id: std_req__iso26262__management_5451
        :status: valid
+       :tags: action
 
 
     .. std_req:: management_5461
        :id: std_req__iso26262__management_5461
        :status: valid
+       :tags: n/a
 
 
     .. std_req:: management_6421
        :id: std_req__iso26262__management_6421
        :status: valid
+       :tags: ok
 
 
     .. std_req:: management_6422
        :id: std_req__iso26262__management_6422
        :status: valid
+       :tags: open
 
 
     .. std_req:: management_6423
        :id: std_req__iso26262__management_6423
        :status: valid
+       :tags: ok
 
 
     .. std_req:: management_6424
        :id: std_req__iso26262__management_6424
        :status: valid
+       :tags: open
 
 
     .. std_req:: management_6431
        :id: std_req__iso26262__management_6431
        :status: valid
+       :tags: n/a
 
 
     .. std_req:: management_6432
        :id: std_req__iso26262__management_6432
        :status: valid
+       :tags: n/a
 
 
     .. std_req:: management_6433
        :id: std_req__iso26262__management_6433
        :status: valid
+       :tags: n/a
 
 
     .. std_req:: management_644
        :id: std_req__iso26262__management_644
        :status: valid
+       :tags: n/a
 
 
     .. std_req:: management_6451
        :id: std_req__iso26262__management_6451
        :status: valid
+       :tags: ok
 
 
     .. std_req:: management_6452
        :id: std_req__iso26262__management_6452
        :status: valid
+       :tags: n/a
 
 
     .. std_req:: management_6453
        :id: std_req__iso26262__management_6453
        :status: valid
+       :tags: n/a
 
 
     .. std_req:: management_6454
        :id: std_req__iso26262__management_6454
        :status: valid
+       :tags: n/a
 
 
     .. std_req:: management_6455
        :id: std_req__iso26262__management_6455
        :status: valid
+       :tags: n/a
 
 
     .. std_req:: management_6456
        :id: std_req__iso26262__management_6456
        :status: valid
+       :tags: n/a
 
 
     .. std_req:: management_6457
        :id: std_req__iso26262__management_6457
        :status: valid
+       :tags: ok
 
 
     .. std_req:: management_6461
        :id: std_req__iso26262__management_6461
        :status: valid
+       :tags: ok
 
 
     .. std_req:: management_6462
        :id: std_req__iso26262__management_6462
        :status: valid
+       :tags: ok
 
 
     .. std_req:: management_6463
        :id: std_req__iso26262__management_6463
        :status: valid
+       :tags: ok
 
 
     .. std_req:: management_6464
        :id: std_req__iso26262__management_6464
        :status: valid
+       :tags: action
 
 
     .. std_req:: management_6465
        :id: std_req__iso26262__management_6465
        :status: valid
+       :tags: ok
 
 
     .. std_req:: management_6466
        :id: std_req__iso26262__management_6466
        :status: valid
+       :tags: ok
 
 
     .. std_req:: management_6467
        :id: std_req__iso26262__management_6467
        :status: valid
+       :tags: ok
 
 
     .. std_req:: management_6468
        :id: std_req__iso26262__management_6468
        :status: valid
+       :tags: ok
 
 
     .. std_req:: management_6469
        :id: std_req__iso26262__management_6469
        :status: valid
+       :tags: deviation
 
 
     .. std_req:: management_64610
        :id: std_req__iso26262__management_64610
        :status: valid
+       :tags: n/a
 
 
     .. std_req:: management_6471
        :id: std_req__iso26262__management_6471
        :status: valid
+       :tags: ok
 
 
     .. std_req:: management_6472
        :id: std_req__iso26262__management_6472
        :status: valid
+       :tags: ok
 
 
     .. std_req:: management_6481
        :id: std_req__iso26262__management_6481
        :status: valid
+       :tags: ok
 
 
     .. std_req:: management_6482
        :id: std_req__iso26262__management_6482
        :status: valid
+       :tags: open
 
 
     .. std_req:: management_6491
        :id: std_req__iso26262__management_6491
        :status: valid
+       :tags: action
 
 
     .. std_req:: management_6492
        :id: std_req__iso26262__management_6492
        :status: valid
+       :tags: ok
 
 
     .. std_req:: management_6493
        :id: std_req__iso26262__management_6493
        :status: valid
+       :tags: open
 
 
     .. std_req:: management_64101
        :id: std_req__iso26262__management_64101
        :status: valid
+       :tags: open
 
 
     .. std_req:: management_64102
        :id: std_req__iso26262__management_64102
        :status: valid
+       :tags: open
 
 
     .. std_req:: management_64103
        :id: std_req__iso26262__management_64103
        :status: valid
+       :tags: open
 
 
     .. std_req:: management_64104
        :id: std_req__iso26262__management_64104
        :status: valid
+       :tags: open
 
 
     .. std_req:: management_64105
        :id: std_req__iso26262__management_64105
        :status: valid
+       :tags: open
 
 
     .. std_req:: management_64111
        :id: std_req__iso26262__management_64111
        :status: valid
+       :tags: ok
 
 
     .. std_req:: management_64112
        :id: std_req__iso26262__management_64112
        :status: valid
+       :tags: n/a
 
 
     .. std_req:: management_64113
        :id: std_req__iso26262__management_64113
        :status: valid
+       :tags: n/a
 
 
     .. std_req:: management_64114
        :id: std_req__iso26262__management_64114
        :status: valid
+       :tags: n/a
 
 
     .. std_req:: management_64121
        :id: std_req__iso26262__management_64121
        :status: valid
+       :tags: n/a
 
 
     .. std_req:: management_64122
        :id: std_req__iso26262__management_64122
        :status: valid
+       :tags: n/a
 
 
     .. std_req:: management_64123
        :id: std_req__iso26262__management_64123
        :status: valid
+       :tags: n/a
 
 
     .. std_req:: management_64124
        :id: std_req__iso26262__management_64124
        :status: valid
+       :tags: n/a
 
 
     .. std_req:: management_64125
        :id: std_req__iso26262__management_64125
        :status: valid
+       :tags: n/a
 
 
     .. std_req:: management_64126
        :id: std_req__iso26262__management_64126
        :status: valid
+       :tags: n/a
 
 
     .. std_req:: management_64127
        :id: std_req__iso26262__management_64127
        :status: valid
+       :tags: n/a
 
 
     .. std_req:: management_64128
        :id: std_req__iso26262__management_64128
        :status: valid
+       :tags: n/a
 
 
     .. std_req:: management_64129
        :id: std_req__iso26262__management_64129
        :status: valid
+       :tags: n/a
 
 
     .. std_req:: management_641210
        :id: std_req__iso26262__management_641210
        :status: valid
+       :tags: n/a
 
 
     .. std_req:: management_641211
        :id: std_req__iso26262__management_641211
        :status: valid
+       :tags: n/a
 
 
     .. std_req:: management_641212
        :id: std_req__iso26262__management_641212
        :status: valid
+       :tags: n/a
 
 
     .. std_req:: management_641213
        :id: std_req__iso26262__management_641213
        :status: valid
+       :tags: n/a
 
 
     .. std_req:: management_64131
        :id: std_req__iso26262__management_64131
        :status: valid
+       :tags: ok
 
 
     .. std_req:: management_64132
        :id: std_req__iso26262__management_64132
        :status: valid
+       :tags: open
 
 
     .. std_req:: management_64133
        :id: std_req__iso26262__management_64133
        :status: valid
+       :tags: ok
 
 
     .. std_req:: management_64134
        :id: std_req__iso26262__management_64134
        :status: valid
+       :tags: ok
 
 
     .. std_req:: management_64135
        :id: std_req__iso26262__management_64135
        :status: valid
+       :tags: open
 
 
 * Workproducts
     .. std_wp:: management_551
        :id: std_wp__iso26262__management_551
        :status: valid
+       :tags: open
 
 
     .. std_wp:: management_552
@@ -480,46 +555,55 @@ Part 4: Product development at the system level
      .. std_req:: system_6411
        :id: std_req__iso26262__system_6411
        :status: valid
+       :tags: ok
 
 
      .. std_req:: system_6412
        :id: std_req__iso26262__system_6412
        :status: valid
+       :tags: open
 
 
      .. std_req:: system_6413
        :id: std_req__iso26262__system_6413
        :status: valid
+       :tags: open
 
 
      .. std_req:: system_6414
        :id: std_req__iso26262__system_6414
        :status: valid
+       :tags: open
 
 
      .. std_req:: system_6421
        :id: std_req__iso26262__system_6421
        :status: valid
+       :tags: action
 
 
      .. std_req:: system_6422
        :id: std_req__iso26262__system_6422
        :status: valid
+       :tags: open
 
 
      .. std_req:: system_6423
        :id: std_req__iso26262__system_6423
        :status: valid
+       :tags: n/a
 
 
      .. std_req:: system_6424
        :id: std_req__iso26262__system_6424
        :status: valid
+       :tags: n/a
 
 
      .. std_req:: system_6425
        :id: std_req__iso26262__system_6425
        :status: valid
+       :tags: n/a
 
 
 * Workproducts
@@ -587,226 +671,271 @@ Part 6: Product development at the software level
      .. std_req:: software_541
        :id: std_req__iso26262__software_541
        :status: valid
+       :tags: action
 
 
      .. std_req:: software_542
        :id: std_req__iso26262__software_542
        :status: valid
+       :tags: open
 
 
      .. std_req:: software_543
        :id: std_req__iso26262__software_543
        :status: valid
+       :tags: open
 
 
      .. std_req:: software_641
        :id: std_req__iso26262__software_641
        :status: valid
+       :tags: ok
 
 
      .. std_req:: software_642
        :id: std_req__iso26262__software_642
        :status: valid
+       :tags: ok
 
 
      .. std_req:: software_643
        :id: std_req__iso26262__software_643
        :status: valid
+       :tags: n/a
 
 
      .. std_req:: software_644
        :id: std_req__iso26262__software_644
        :status: valid
+       :tags: ok
 
 
      .. std_req:: software_645
        :id: std_req__iso26262__software_645
        :status: valid
+       :tags: ok
 
 
      .. std_req:: software_646
        :id: std_req__iso26262__software_646
        :status: valid
+       :tags: ok
 
 
      .. std_req:: software_647
        :id: std_req__iso26262__software_647
        :status: valid
+       :tags: ok
 
 
      .. std_req:: software_741
        :id: std_req__iso26262__software_741
        :status: valid
+       :tags: ok
 
 
      .. std_req:: software_742
        :id: std_req__iso26262__software_742
        :status: valid
+       :tags: ok
 
 
      .. std_req:: software_743
        :id: std_req__iso26262__software_743
        :status: valid
+       :tags: action
 
 
      .. std_req:: software_744
        :id: std_req__iso26262__software_744
        :status: valid
+       :tags: ok
 
 
      .. std_req:: software_745
        :id: std_req__iso26262__software_745
        :status: valid
+       :tags: ok
 
 
      .. std_req:: software_746
        :id: std_req__iso26262__software_746
        :status: valid
+       :tags: ok
 
 
      .. std_req:: software_747
        :id: std_req__iso26262__software_747
        :status: valid
+       :tags: ok
 
 
      .. std_req:: software_748
        :id: std_req__iso26262__software_748
        :status: valid
+       :tags: ok
 
 
      .. std_req:: software_749
        :id: std_req__iso26262__software_749
        :status: valid
+       :tags: n/a
 
 
      .. std_req:: software_7410
        :id: std_req__iso26262__software_7410
        :status: valid
+       :tags: open
 
 
      .. std_req:: software_7411
        :id: std_req__iso26262__software_7411
        :status: valid
+       :tags: open
 
 
      .. std_req:: software_7412
        :id: std_req__iso26262__software_7412
        :status: valid
+       :tags: open
 
 
      .. std_req:: software_7413
        :id: std_req__iso26262__software_7413
        :status: valid
+       :tags: n/a
 
 
      .. std_req:: software_7414
        :id: std_req__iso26262__software_7414
        :status: valid
+       :tags: action
 
 
      .. std_req:: software_841
        :id: std_req__iso26262__software_841
        :status: valid
+       :tags: ok
 
 
      .. std_req:: software_842
        :id: std_req__iso26262__software_842
        :status: valid
+       :tags: ok
 
 
      .. std_req:: software_843
        :id: std_req__iso26262__software_843
        :status: valid
+       :tags: ok
 
 
      .. std_req:: software_844
        :id: std_req__iso26262__software_844
        :status: valid
+       :tags: ok
 
 
      .. std_req:: software_845
        :id: std_req__iso26262__software_845
        :status: valid
+       :tags: action
 
 
      .. std_req:: software_941
        :id: std_req__iso26262__software_941
        :status: valid
+       :tags: ok
 
 
      .. std_req:: software_942
        :id: std_req__iso26262__software_942
        :status: valid
+       :tags: ok
 
 
      .. std_req:: software_943
        :id: std_req__iso26262__software_943
        :status: valid
+       :tags: open
 
 
      .. std_req:: software_944
        :id: std_req__iso26262__software_944
        :status: valid
+       :tags: open
 
 
      .. std_req:: software_945
        :id: std_req__iso26262__software_945
        :status: valid
+       :tags: open
 
 
      .. std_req:: software_1041
        :id: std_req__iso26262__software_1041
        :status: valid
+       :tags: ok
 
 
      .. std_req:: software_1042
        :id: std_req__iso26262__software_1042
        :status: valid
+       :tags: open
 
 
      .. std_req:: software_1043
        :id: std_req__iso26262__software_1043
        :status: valid
+       :tags: open
 
 
      .. std_req:: software_1044
        :id: std_req__iso26262__software_1044
        :status: valid
+       :tags: open
 
 
      .. std_req:: software_1045
        :id: std_req__iso26262__software_1045
        :status: valid
+       :tags: open
 
 
      .. std_req:: software_1046
        :id: std_req__iso26262__software_1046
        :status: valid
+       :tags: open
 
 
      .. std_req:: software_1047
        :id: std_req__iso26262__software_1047
        :status: valid
+       :tags: open
 
 
      .. std_req:: software_1141
        :id: std_req__iso26262__software_1141
        :status: valid
+       :tags: action
 
 
      .. std_req:: software_1142
        :id: std_req__iso26262__software_1142
        :status: valid
+       :tags: n/a
 
 
      .. std_req:: software_1143
        :id: std_req__iso26262__software_1143
        :status: valid
+       :tags: n/a
 
 
      .. std_req:: software_1144
        :id: std_req__iso26262__software_1144
        :status: valid
+       :tags: n/a
 
 
      .. std_req:: software_app_c_41
@@ -968,351 +1097,421 @@ Part 8: Supporting processes
     .. std_req:: support_641
        :id: std_req__iso26262__support_641
        :status: valid
+       :tags: ok
 
 
     .. std_req:: support_6421
        :id: std_req__iso26262__support_6421
        :status: valid
+       :tags: ok
 
 
     .. std_req:: support_6422
        :id: std_req__iso26262__support_6422
        :status: valid
+       :tags: recommendation
 
 
     .. std_req:: support_6423
        :id: std_req__iso26262__support_6423
        :status: valid
+       :tags: n/a
 
 
     .. std_req:: support_6424
        :id: std_req__iso26262__support_6424
        :status: valid
+       :tags: ok
 
 
     .. std_req:: support_6425
        :id: std_req__iso26262__support_6425
        :status: valid
+       :tags: ok
 
 
     .. std_req:: support_6431
        :id: std_req__iso26262__support_6431
        :status: valid
+       :tags: ok
 
 
     .. std_req:: support_6432
        :id: std_req__iso26262__support_6432
        :status: valid
+       :tags: ok
 
 
     .. std_req:: support_6433
        :id: std_req__iso26262__support_6433
        :status: valid
+       :tags: deviation
 
 
     .. std_req:: support_6434
        :id: std_req__iso26262__support_6434
        :status: valid
+       :tags: ok
 
 
     .. std_req:: support_741
        :id: std_req__iso26262__support_741
        :status: valid
+       :tags: ok
 
 
     .. std_req:: support_742
        :id: std_req__iso26262__support_742
        :status: valid
+       :tags: ok
 
 
     .. std_req:: support_743
        :id: std_req__iso26262__support_743
        :status: valid
+       :tags: ok
 
 
     .. std_req:: support_744
        :id: std_req__iso26262__support_744
        :status: valid
+       :tags: ok
 
 
     .. std_req:: support_745
        :id: std_req__iso26262__support_745
        :status: valid
+       :tags: ok
 
 
     .. std_req:: support_8411
        :id: std_req__iso26262__support_8411
        :status: valid
+       :tags: ok
 
 
     .. std_req:: support_8412
        :id: std_req__iso26262__support_8412
        :status: valid
+       :tags: open
 
 
     .. std_req:: support_8413
        :id: std_req__iso26262__support_8413
        :status: valid
+       :tags: open
 
 
     .. std_req:: support_8414
        :id: std_req__iso26262__support_8414
        :status: valid
+       :tags: deviation
 
 
     .. std_req:: support_8421
        :id: std_req__iso26262__support_8421
        :status: valid
+       :tags: ok
 
 
     .. std_req:: support_8422
        :id: std_req__iso26262__support_8422
        :status: valid
+       :tags: ok
 
 
     .. std_req:: support_8431
        :id: std_req__iso26262__support_8431
        :status: valid
+       :tags: open
 
 
     .. std_req:: support_8432
        :id: std_req__iso26262__support_8432
        :status: valid
+       :tags: open
 
 
     .. std_req:: support_8441
        :id: std_req__iso26262__support_8441
        :status: valid
+       :tags: action
 
 
     .. std_req:: support_8442
        :id: std_req__iso26262__support_8442
        :status: valid
+       :tags: open
 
 
     .. std_req:: support_8451
        :id: std_req__iso26262__support_8451
        :status: valid
+       :tags: open
 
 
     .. std_req:: support_8452
        :id: std_req__iso26262__support_8452
        :status: valid
+       :tags: open
 
 
     .. std_req:: support_8453
        :id: std_req__iso26262__support_8453
        :status: valid
+       :tags: open
 
 
     .. std_req:: support_9411
        :id: std_req__iso26262__support_9411
        :status: valid
+       :tags: action
 
 
     .. std_req:: support_9412
        :id: std_req__iso26262__support_9412
        :status: valid
+       :tags: action
 
 
     .. std_req:: support_9421
        :id: std_req__iso26262__support_9421
        :status: valid
+       :tags: ok
 
 
     .. std_req:: support_9422
        :id: std_req__iso26262__support_9422
        :status: valid
+       :tags: open
 
 
     .. std_req:: support_9423
        :id: std_req__iso26262__support_9423
        :status: valid
+       :tags: open
 
 
     .. std_req:: support_9424
        :id: std_req__iso26262__support_9424
        :status: valid
+       :tags: open
 
 
     .. std_req:: support_9431
        :id: std_req__iso26262__support_9431
        :status: valid
+       :tags: ok
 
 
     .. std_req:: support_9432
        :id: std_req__iso26262__support_9432
        :status: valid
+       :tags: open
 
 
     .. std_req:: support_9433
        :id: std_req__iso26262__support_9433
        :status: valid
+       :tags: open
 
 
     .. std_req:: support_9434
        :id: std_req__iso26262__support_9434
        :status: valid
+       :tags: ok
 
 
     .. std_req:: support_1041
        :id: std_req__iso26262__support_1041
        :status: valid
+       :tags: ok
 
 
     .. std_req:: support_1042
        :id: std_req__iso26262__support_1042
        :status: valid
+       :tags: ok
 
 
     .. std_req:: support_1043
        :id: std_req__iso26262__support_1043
        :status: valid
+       :tags: ok
 
 
     .. std_req:: support_1044
        :id: std_req__iso26262__support_1044
        :status: valid
+       :tags: ok
 
 
     .. std_req:: support_1045
        :id: std_req__iso26262__support_1045
        :status: valid
+       :tags: ok
 
 
     .. std_req:: support_1046
        :id: std_req__iso26262__support_1046
        :status: valid
+       :tags: ok
 
 
     .. std_req:: support_1141
        :id: std_req__iso26262__support_1141
        :status: valid
+       :tags: action
 
 
     .. std_req:: support_1142
        :id: std_req__iso26262__support_1142
        :status: valid
+       :tags: open
 
 
     .. std_req:: support_1143
        :id: std_req__iso26262__support_1143
        :status: valid
+       :tags: open
 
 
     .. std_req:: support_11441
        :id: std_req__iso26262__support_11441
        :status: valid
+       :tags: action
 
 
     .. std_req:: support_11442
        :id: std_req__iso26262__support_11442
        :status: valid
+       :tags: open
 
 
     .. std_req:: support_11451
        :id: std_req__iso26262__support_11451
        :status: valid
+       :tags: open
 
 
     .. std_req:: support_11452
        :id: std_req__iso26262__support_11452
        :status: valid
+       :tags: open
 
 
     .. std_req:: support_11453
        :id: std_req__iso26262__support_11453
        :status: valid
+       :tags: open
 
 
     .. std_req:: support_11454
        :id: std_req__iso26262__support_11454
        :status: valid
+       :tags: open
 
 
     .. std_req:: support_11461
        :id: std_req__iso26262__support_11461
        :status: valid
+       :tags: open
 
 
     .. std_req:: support_11462
        :id: std_req__iso26262__support_11462
        :status: valid
+       :tags: open
 
 
     .. std_req:: support_11471
        :id: std_req__iso26262__support_11471
        :status: valid
+       :tags: n/a
 
 
     .. std_req:: support_11472
        :id: std_req__iso26262__support_11472
        :status: valid
+       :tags: n/a
 
 
     .. std_req:: support_11473
        :id: std_req__iso26262__support_11473
        :status: valid
+       :tags: n/a
 
 
     .. std_req:: support_11474
        :id: std_req__iso26262__support_11474
        :status: valid
+       :tags: n/a
 
 
     .. std_req:: support_11481
        :id: std_req__iso26262__support_11481
        :status: valid
+       :tags: open
 
 
     .. std_req:: support_11482
        :id: std_req__iso26262__support_11482
        :status: valid
+       :tags: open
 
 
     .. std_req:: support_11483
        :id: std_req__iso26262__support_11483
        :status: valid
+       :tags: open
 
 
     .. std_req:: support_11491
        :id: std_req__iso26262__support_11491
        :status: valid
+       :tags: open
 
 
     .. std_req:: support_11492
        :id: std_req__iso26262__support_11492
        :status: valid
+       :tags: open
 
 
     .. std_req:: support_12421
        :id: std_req__iso26262__support_12421
        :status: valid
+       :tags: action
 
 
     .. std_req:: support_12422
        :id: std_req__iso26262__support_12422
        :status: valid
+       :tags: open
 
 
     .. std_req:: support_12423
        :id: std_req__iso26262__support_12423
        :status: valid
+       :tags: open
 
 
     .. std_req:: support_12424
        :id: std_req__iso26262__support_12424
        :status: valid
+       :tags: open
 
 
     .. std_req:: support_12425
        :id: std_req__iso26262__support_12425
        :status: valid
+       :tags: open
 
 
     .. std_req:: support_1243
        :id: std_req__iso26262__support_1243
        :status: valid
+       :tags: open
 
 
 * Workproducts
@@ -1614,6 +1813,54 @@ Part 9: Automotive safety integrity level (ASIL)-oriented and safety-oriented an
 
    All workproducts of the relevant parts are included in the list to enable the documentation of the project wide tailoring,
    but the related requirements are not included as these are not needed to be covered.
+
+Exida Audit Status of Iso Requirements
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. needpie:: Audit Status - Software
+   :labels: deviation, action, open, ok, recommendation, not applicable
+   :colors: red, orange, grey, green, green, green
+
+   type == 'std_req' and "__software" in id and 'deviation' in tags
+   type == 'std_req' and "__software" in id and 'action' in tags
+   type == 'std_req' and "__software" in id and 'open' in tags
+   type == 'std_req' and "__software" in id and 'ok' in tags
+   type == 'std_req' and "__software" in id and 'recommendation' in tags
+   type == 'std_req' and "__software" in id and 'n/a' in tags
+
+.. needpie:: Audit Status - System
+   :labels: deviation, action, open, ok, recommendation, not applicable
+   :colors: red, orange, grey, green, green, green
+
+   type == 'std_req' and "__system" in id and 'deviation' in tags
+   type == 'std_req' and "__system" in id and 'action' in tags
+   type == 'std_req' and "__system" in id and 'open' in tags
+   type == 'std_req' and "__system" in id and 'ok' in tags
+   type == 'std_req' and "__system" in id and 'recommendation' in tags
+   type == 'std_req' and "__system" in id and 'n/a' in tags
+
+.. needpie:: Audit Status - Management
+   :labels: deviation, action, open, ok, recommendation, not applicable
+   :colors: red, orange, grey, green, green, green
+
+   type == 'std_req' and "__management" in id and 'deviation' in tags
+   type == 'std_req' and "__management" in id and 'action' in tags
+   type == 'std_req' and "__management" in id and 'open' in tags
+   type == 'std_req' and "__management" in id and 'ok' in tags
+   type == 'std_req' and "__management" in id and 'recommendation' in tags
+   type == 'std_req' and "__management" in id and 'n/a' in tags
+
+.. needpie:: Audit Status - Support
+   :labels: deviation, action, open, ok, recommendation, not applicable
+   :colors: red, orange, grey, green, green, green
+
+   type == 'std_req' and "__support" in id and 'deviation' in tags
+   type == 'std_req' and "__support" in id and 'action' in tags
+   type == 'std_req' and "__support" in id and 'open' in tags
+   type == 'std_req' and "__support" in id and 'ok' in tags
+   type == 'std_req' and "__support" in id and 'recommendation' in tags
+   type == 'std_req' and "__support" in id and 'n/a' in tags
+
 
 .. needextend:: docname is not None and "process/standards/iso26262" in docname
    :+tags: iso26262
