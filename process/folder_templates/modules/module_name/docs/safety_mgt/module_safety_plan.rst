@@ -207,7 +207,7 @@ Note: In case the component is a new development, :need:`wp__sw_component_class`
 In case an OSS element is used in the module, part 6 has to be filled out.
 
 OSS (sub-)component qualification plan
-======================================
+--------------------------------------
 
 For the selected OSS component the following work products will be implemented (and why):
 
@@ -265,6 +265,11 @@ If the OSS element is classified as
         * - :need:`wp__sw_component_class`
           - :need:`gd_guidl__component_classification`
           - Always needed as basis for tailoring.
+
+Link to project planning
+------------------------
+
+<add here a link to your module's planning for the above work products, e.g. a link to a ticket.>
 
 Module Safety Package
 =====================

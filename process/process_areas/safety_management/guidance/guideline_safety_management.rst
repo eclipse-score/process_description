@@ -82,8 +82,8 @@ Safety Management Guideline
    **Planning safety activities:**
 
    In the safety plan the nomination of the safety manager and the project manager is documented.
-   The planning of safety activities is done using issues in the :need:`wp__issue_track_system` as specified in the :need:`wp__platform_mgmt`
-   It contains for each issue:
+   The planning of safety activities is done as for the project defined in the :need:`wp__project_mgt` by using issues in the :need:`wp__issue_track_system`.
+   It should contain for each issue:
 
    * objective - as part of the issue description
    * dependencies on other activities or information - by links to the respective issues
@@ -97,7 +97,21 @@ Safety Management Guideline
    * platform SEooC planning, dealing with all work products needed only once for the platform. This is included in :need:`wp__platform_safety_plan`
    * module SEooC planning, dealing with all work products needed for each module development (initiated by a change request), included in :need:`wp__module_safety_plan`. This module safety planning also includes the planning of OSS component qualification based on :need:`gd_guidl__component_classification`.
 
-   A template exists to guide this: :need:`gd_temp__module_safety_plan`.
+   Templates exists to guide this: :need:`gd_temp__platform_safety_plan`, :need:`gd_temp__module_safety_plan`.
+   These include linkage to the project planning according to the defined issue structuring schema.
+
+   **Reporting safety activities:**
+
+   Reporting is based on work products and documents status and supported by the safety plan templates and document management.
+   A safety plan is completed and the safety package can be released when all planned work products and documents are in status "valid".
+
+   **Planning safety activities for subsequent releases**
+
+   After the first release of the platform or a module with full safety coverage (i.e. all work products are in "valid" state) there will be further development.
+   This further development is initiated by creating a feature/component change request including a change impact analysis (see :need:`doc_concept__change_process`).
+   As part of the "implementation and monitoring of the change request", the documents affected by the change will be set back to "draft"
+   and the implementation (change of work products) planned by issues, as appropriate to the size of the change. At least the change request issue will be linked
+   to the updated safety plan. Note that there may be more than one change request for a module per release cycle.
 
    **Planning supporting processes:**
 

@@ -163,6 +163,8 @@ Functional Safety Specific SW Platform Work Products
 List of all relevant work products for the platform project relevant for Functional Safety.
 Including their status (which makes it cover also the "safety package").
 
+Link to project planning: <add here a link to your project's planning for these work products, e.g. a link to a ticket.>
+
 Platform Safety Plan - Feature Work Product Lists
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
