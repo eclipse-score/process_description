@@ -51,7 +51,7 @@ Use Cases which require architectural information
 
 #. **Security Analysis**
 
-   * The architecture created to fulfill the requirements does not introduce possible vulnerabilities
+   * The architecture created to fulfil the requirements does not introduce possible vulnerabilities
 
 #. **Safety Planning**
 
@@ -337,7 +337,7 @@ For creating architectural elements also templates for each level are available:
 Establish traceability between requirements and architectural elements
 **********************************************************************
 
-During the architectural design process all feature and component requirements shall be allocated to a single architecture element at the corresponding level via the attribute **fulfils**.
+During the architectural design process all feature and component requirements shall be allocated to a single architecture element at the corresponding level via the attribute **satisfies**.
 
 .. _reviews of the architecture:
 
@@ -525,7 +525,8 @@ To make *needuml* work we have to replace the *need()* call with a different fun
       :status: valid
       :safety: ASIL_B
       :security: NO
-      :uses: logic_arc_int__example_feature__archcon_logical_interface_1
+      :uses: logic_arc_int__example_feature__archex_logical_interface_1
+      :fulfils: comp_req__example_feature__archex_example_req
       :belongs_to: comp__component_component_manual_getstrt
 
       .. needuml::

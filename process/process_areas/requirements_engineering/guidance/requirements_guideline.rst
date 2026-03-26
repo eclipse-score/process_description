@@ -50,9 +50,6 @@ Templates
    * - AoU Requirements
      - :need:`[[title]] <gd_temp__req_aou_req>`
      - ``aou_req__``
-   * - Process Requirements
-     - :need:`[[title]] <gd_temp__req_process_req>`
-     - ``gd_req__``
    * - Tool Requirements
      - :need:`[[title]] <gd_temp__req_tool_req>`
      - ``tool_req__``
@@ -170,7 +167,7 @@ For this the following templates are available:
 
 Note: For non-functional (and process) type requirements no children need to be derived (on lower requirement levels),
 these can mostly be directly fulfilled and verified.
-To ease verification a link to these ("process" type) requirements can be established from :need:`gd_temp__req_process_req`.
+To ease verification a link to these ("process" type) requirements can be established from :need:`gd_temp__process_requirement`.
 
 .. _review_child_requirement:
 
@@ -227,9 +224,9 @@ In this workflow (as it describes SEooC development) these AoUs are created both
 
 AoUs can be of different class and shall be handled by tracing those
 
-* to Feature/Component (architecture) (via fulfills), if those are on (external) Component Level and can be fulfilled by (internal) Feature/Component
+* to Feature/Component (architecture) (via fulfils), if those are on (external) Component Level and can be fulfilled by (internal) Feature/Component
 * to Stakeholder Requirements (via covers), if AoU are of general nature and can be fulfilled by platform
-* or by containing those in Platform(s) Safety Manual(s), if AoU cannot be fulfilled by platform or its components (alone) but need to be satisfied by the user of the platform
+* or by containing those in Platform(s) Safety Manual(s), if AoU cannot be fulfilled by platform or its components (alone) but need to be fulfilled by the user of the platform
 
 
 .. figure:: ../_assets/aou_traceability.drawio.svg
@@ -245,6 +242,9 @@ on the left (light green) the component which fulfills and exports AoU.
 Internal component's AoU can also be fulfilled (and linked) by other internal components, this is not depicted here, but would be quite the same with one exception:
 External component's AoUs which cannot be fulfilled by the platform alone are contained in the platform safety manual, whereas the internal component's AoUs
 are part of the module safety manual.
+
+Note that it is not mandatory to have component architecture (in case the component has no "sub" components).
+Therefore the "component" architecture element is depicted, which is used to link external Component Assumption of Use.
 
 Like other requirements also an AoU needs to be verified - but by the user of the feature/component.
 To improve the usability of a feature/component, its responsible team should already provide

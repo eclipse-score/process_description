@@ -89,8 +89,8 @@ For a detailed explanation of workflows and their role within the process model,
 
    Based on the safety concept on component level, component AoUs can be derived. See also :ref:`aou_workflow`
 
-.. workflow:: Create/Maintain Process and Tool Requirements
-   :id: wf__req_proc_tool
+.. workflow:: Create/Maintain Tool Requirements
+   :id: wf__req_tool
    :status: valid
    :tags: requirements_engineering
    :responsible: rl__contributor
@@ -98,10 +98,10 @@ For a detailed explanation of workflows and their role within the process model,
    :supported_by: rl__safety_manager, rl__security_manager
    :input: wp__process_description
    :output: wp__requirements_proc_tool
-   :contains: gd_temp__req_process_req, gd_temp__req_tool_req, gd_temp__req_formulation
+   :contains: gd_temp__req_tool_req, gd_temp__req_formulation
    :has: doc_concept__req_process, doc_getstrt__req_process
 
-   Based on the process descriptions (which comply to standards) and/or stakeholder/feature/component requirements process and tool requirements are derived.
+   Based on the process descriptions (which comply to standards) and/or stakeholder/feature/component requirements tool requirements are derived.
 
 .. workflow:: Monitor/Verify Requirements
    :id: wf__monitor_verify_requirements
