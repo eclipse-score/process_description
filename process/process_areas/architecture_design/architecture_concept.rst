@@ -635,7 +635,7 @@ To make *needuml* work we have to replace the *need()* call with a different fun
 
       .. needuml::
 
-         {{ draw_component( needs.__getitem__('comp__component_example_1'), needs ) }}
+         {{ draw_component( needs.get('comp__component_example_1'), needs ) }}
          component "Component Manual" as CM {
          }
          CM -> LI1: EXTRA_LINKAGE_MANUALLY_ADDED
@@ -651,7 +651,7 @@ To make *needuml* work we have to replace the *need()* call with a different fun
 
    .. needarch::
 
-         {{ draw_component( needs.__getitem__('comp__component_example_1'), needs ) }}
+         {{ draw_component( needs.get('comp__component_example_1'), needs ) }}
 
          component "Component Manual" as CM {
          }
@@ -672,13 +672,13 @@ To achieve this the *need()* call needs to be replaced with the following, as *n
 
    .. code-block:: none
 
-      # need() => needs.__getitem__('ID OF THE REQUIREMENT YOU ARE IN')
+      # need() => needs.get('ID OF THE REQUIREMENT YOU ARE IN')
 
       # For example, drawing the requirement:
       `COMP_ARC_STA__component_manual_1`
 
       would then look as such
-      {{ draw_component( needs.__getitem__('COMP_ARC_STA__component_manual_1'), needs ) }}
+      {{ draw_component( needs.get('COMP_ARC_STA__component_manual_1'), needs ) }}
 
 
 Limitations
