@@ -563,7 +563,7 @@
                   
   <section id="concept-description">
 <h1>Concept Description<a class="headerlink" href="#concept-description" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-7f28b741">
+<div class="need_container docutils container" id="SNCB-ca3f9a72">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_doc_concept table" id="doc_concept__req_process">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -636,7 +636,7 @@
 </li>
 <li><p><a class="reference internal" href="../../roles/index.html#rl__committer" title="rl__committer"><em class="xref need">Tester</em></a></p>
 <ul class="simple">
-<li><p>Verify that the specification is fulfilled by the elements under test</p></li>
+<li><p>Verify that the specification is satisfied by the elements under test</p></li>
 <li><p>Consider AoUs for test case specification</p></li>
 </ul>
 </li>
@@ -720,14 +720,14 @@ i.e. the assumption on what content is needed, which shall be matched by the use
 </section>
 <section id="component-requirements">
 <h3>Component Requirements<a class="headerlink" href="#component-requirements" title="Link to this heading">#</a></h3>
-<p>The lowest abstraction level is represented by the <em>component requirements</em>. They are derived from <em>feature requirements</em> and describe component specific implementation details. It is described which behaviour a component itself needs to fulfil in the context of the feature, for example:</p>
+<p>The lowest abstraction level is represented by the <em>component requirements</em>. They are derived from <em>feature requirements</em> and describe component specific implementation details. It is described which behaviour a component itself needs to satisfy in the context of the feature, for example:</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>The component shall provide API calls to read and interpret every field of a JSON body in C++.
 </pre></div>
 </div>
 </section>
 <section id="assumption-of-use-requirements">
 <h3>Assumption of Use Requirements<a class="headerlink" href="#assumption-of-use-requirements" title="Link to this heading">#</a></h3>
-<p>Last but not least a requirement type is needed which describes e.g. the boundary conditions which need to be fulfilled when using a software element. Those requirements are called <em>Assumption of Use</em> (AoUs) and can be defined on every level (stakeholder/SW-platform, feature, component). Example:</p>
+<p>Last but not least a requirement type is needed which describes e.g. the boundary conditions which need to be satisfied when using a software element. Those requirements are called <em>Assumption of Use</em> (AoUs) and can be defined on every level (stakeholder/SW-platform, feature, component). Example:</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>The user shall provide a string as input which is not corrupted due to HW or QM SW errors.
 </pre></div>
 </div>
@@ -808,15 +808,15 @@ For any other requirement the reasoning can be deduced from the top level requir
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>Satisfied by</p></td>
-<td><p>This attribute is automatically generated into the parent requirement based on the attribute satisfies of the current requirement</p></td>
+<tr class="row-even"><td><p>Derives</p></td>
+<td><p>This attribute is automatically generated into the parent requirement based on the attribute derived_from of the current requirement</p></td>
 <td><p>Docs-as-Code</p></td>
 </tr>
 <tr class="row-odd"><td><p>Hash</p></td>
 <td><p>This attribute contains a hash value which is calculated over all mandatory requirement attributes. However this script needs to be executed manually, as this information is required to be present in the rst file.</p></td>
 <td><p>Script</p></td>
 </tr>
-<tr class="row-even"><td><p>Satisfies Hash</p></td>
+<tr class="row-even"><td><p>Derived Hash</p></td>
 <td><p>It contains the hash of the parent requirement. If the parent requirement is changed the hash will also change and the linkage has to be revisited again. A more detailed description is provided here: <a class="reference internal" href="guidance/requirements_process_reqs.html#gd_req__req_attr_version" title="gd_req__req_attr_version"><em class="xref need">Requirement attribute: vers...</em></a></p></td>
 <td><p>Script</p></td>
 </tr>
@@ -888,7 +888,7 @@ For any other requirement the reasoning can be deduced from the top level requir
 </section>
 <section id="linking-child-requirements-including-hashes">
 <h4>Linking child requirements including hashes<a class="headerlink" href="#linking-child-requirements-including-hashes" title="Link to this heading">#</a></h4>
-<p>If a requirement is linked to a top level requirement also the hash of the target requirement shall be part of the link. It shall automatically be written into the attribute <em>satisfies hash</em>. Upon docs build it shall be checked if the attribute <em>satisfies hash</em> matches the calculated hash of the requirement which is linked via <em>satisfies</em>.</p>
+<p>If a requirement is linked to a top level requirement also the hash of the target requirement shall be part of the link. It shall automatically be written into the attribute <em>derived hash</em>. Upon docs build it shall be checked if the attribute <em>derived hash</em> matches the calculated hash of the requirement which is linked via <em>derived_from</em>.</p>
 <p>As this check is included in the docs build as a warning it can be guaranteed that a change of a parent requirement can only be merged if the <cite>linkhashes</cite> in the requirements are also updated in a <cite>Depends-On</cite> PR.</p>
 <figure class="align-center" id="id7">
 <a class="reference internal image-reference" href="../../_images/requirements_versioning.drawio.svg"><img alt="Requirements Versioning" src="../../_images/requirements_versioning.drawio.svg" style="width: 50%;" />
