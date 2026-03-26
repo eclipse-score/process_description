@@ -55,7 +55,7 @@ the static and the dynamic view for unit interactions is described.
    :width: 30%
    :name: static_view_fig
 
-The static diagram statisfies the architecture and implements the requirements of the related component. The static diagram includes Unit1+2.
+The static diagram satisfies the architecture and implements the requirements of the related component. The static diagram includes Unit1+2.
 
 
 .. figure:: _assets/dynamic_view.drawio.svg

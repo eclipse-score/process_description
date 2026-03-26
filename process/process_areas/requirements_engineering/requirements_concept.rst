@@ -49,7 +49,7 @@ Stakeholders for the requirements
 
 #. :need:`Tester <rl__committer>`
 
-   * Verify that the specification is fulfilled by the elements under test
+   * Verify that the specification is satisfied by the elements under test
    * Consider AoUs for test case specification
 
 #. :need:`Safety Architect <rl__safety_engineer>`
@@ -133,7 +133,7 @@ However the detailed interaction of the underlying components itself which is re
 Component Requirements
 ======================
 
-The lowest abstraction level is represented by the *component requirements*. They are derived from *feature requirements* and describe component specific implementation details. It is described which behaviour a component itself needs to fulfil in the context of the feature, for example:
+The lowest abstraction level is represented by the *component requirements*. They are derived from *feature requirements* and describe component specific implementation details. It is described which behaviour a component itself needs to satisfy in the context of the feature, for example:
 
 .. code-block:: text
 
@@ -142,7 +142,7 @@ The lowest abstraction level is represented by the *component requirements*. The
 Assumption of Use Requirements
 ==============================
 
-Last but not least a requirement type is needed which describes e.g. the boundary conditions which need to be fulfilled when using a software element. Those requirements are called *Assumption of Use* (AoUs) and can be defined on every level (stakeholder/SW-platform, feature, component). Example:
+Last but not least a requirement type is needed which describes e.g. the boundary conditions which need to be satisfied when using a software element. Those requirements are called *Assumption of Use* (AoUs) and can be defined on every level (stakeholder/SW-platform, feature, component). Example:
 
 .. code-block:: text
 
@@ -207,13 +207,13 @@ Following attributes are automatically generated:
    * - Attribute
      - Description
      - Tool
-   * - Satisfied by
-     - This attribute is automatically generated into the parent requirement based on the attribute satisfies of the current requirement
+   * - Derives
+     - This attribute is automatically generated into the parent requirement based on the attribute derived_from of the current requirement
      - Docs-as-Code
    * - Hash
      - This attribute contains a hash value which is calculated over all mandatory requirement attributes. However this script needs to be executed manually, as this information is required to be present in the rst file.
      - Script
-   * - Satisfies Hash
+   * - Derived Hash
      - It contains the hash of the parent requirement. If the parent requirement is changed the hash will also change and the linkage has to be revisited again. A more detailed description is provided here: :need:`gd_req__req_attr_version`
      - Script
    * - Implemented by
@@ -258,7 +258,7 @@ During docs build it shall be checked if the attribute hash matches the actual h
 Linking child requirements including hashes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-If a requirement is linked to a top level requirement also the hash of the target requirement shall be part of the link. It shall automatically be written into the attribute *satisfies hash*. Upon docs build it shall be checked if the attribute *satisfies hash* matches the calculated hash of the requirement which is linked via *satisfies*.
+If a requirement is linked to a top level requirement also the hash of the target requirement shall be part of the link. It shall automatically be written into the attribute *derived hash*. Upon docs build it shall be checked if the attribute *derived hash* matches the calculated hash of the requirement which is linked via *derived_from*.
 
 As this check is included in the docs build as a warning it can be guaranteed that a change of a parent requirement can only be merged if the `linkhashes` in the requirements are also updated in a `Depends-On` PR.
 
