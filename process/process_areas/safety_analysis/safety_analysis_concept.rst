@@ -33,7 +33,7 @@ To have a structured DFA the failure initiators have to be applied :need:`gd_gui
  | - Unintended impact: Unintended impacts to function due to various failures like deadlocks or memory depletion.
  | - Development failure initiators: Failures that occur during the development process, potentially leading to safety issues.
 
-The objective of the **FMEA** is to show that the architecture created to fulfil the requirements does not introduce possible errors which would
+The objective of the **FMEA** is to show that the architecture created to satisfy the requirements does not introduce possible errors which would
 break the safety requirements. Or rather that the possibility of these errors is reduced to an acceptable level. This can be done by detection, prevention or mitigation.
 The FMEA is used to find possible failures and their effects. The possible failures are systematically identified by applying fault models :need:`gd_guidl__fault_models`.
 

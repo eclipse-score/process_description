@@ -82,7 +82,7 @@ See also :need:`doc_concept__wp_inspections` for further information about revie
     * - ARC_01_03
       - If the architectural element is related to any supplier manuals (incl. safety and security)
         are the relevant parts covered?
-      - If the architecture makes use of supplied elements, their manuals (like safety) have to be considered (i.e. its provided functionality matches the expectation and assumptions are fulfilled). Note that in case of safety component this means that assumed Technical Safety Requirements and AoUs of the safety manual are covered.
+      - If the architecture makes use of supplied elements, their manuals (like safety) have to be considered (i.e. its provided functionality matches the expectation and assumptions are satisfied). Note that in case of safety component this means that assumed Technical Safety Requirements and AoUs of the safety manual are covered.
       -
       -
       -

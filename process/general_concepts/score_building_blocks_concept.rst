@@ -92,11 +92,11 @@ Features have **Logical Architecture Interfaces** (green box, middle, 3rd column
 are implemented (and can be used) by the components.
 
 **Assumptions of Use** are not specific for a level as it is not fixed where they will be
-fulfilled and verified, so they are depicted "white". In the picture one can also see two
+satisfied and verified, so they are depicted "white". In the picture one can also see two
 variants of Assumptions of Use: "own" AoU required by the own element towards other elements and
-the "other" AoU asked from other element towards the own element and fulfilled by it.
+the "other" AoU asked from other element towards the own element and satisfied by it.
 Generally the metamodel refers only within own architecture element (=component/feature), but
-AoUs need the fulfills link own -> other.
+AoUs need the satisfies link own -> other.
 
 .. figure:: _assets/score_building_blocks_meta_model.drawio.svg
   :width: 100%

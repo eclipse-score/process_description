@@ -51,7 +51,7 @@ Use Cases which require architectural information
 
 #. **Security Analysis**
 
-   * The architecture created to fulfill the requirements does not introduce possible vulnerabilities
+   * The architecture created to satisfy the requirements does not introduce possible vulnerabilities
 
 #. **Safety Planning**
 
@@ -384,7 +384,7 @@ Following attributes need to be filled manually for each requirement:
      - This attribute describes the impact of the architectural element on functional safety. Currently only following values are defined [QM, ASIL_B]. Other values are not required at the moment as *ASIL decomposition* is not used so far.
    * - Security
      - This attribute describes if the architectural element has any impact on the security of the platform. [YES,NO]
-   * - Fulfils
+   * - Satisfies
      - With this attribute the relations to the corresponding requirements shall be described
 
 For creating architectural elements also templates for each level are available:
@@ -397,7 +397,7 @@ For creating architectural elements also templates for each level are available:
 Establish traceability between requirements and architectural elements
 **********************************************************************
 
-During the architectural design process all feature and component requirements shall be allocated to a single architecture element at the corresponding level via the attribute **fulfils**.
+During the architectural design process all feature and component requirements shall be allocated to a single architecture element at the corresponding level via the attribute **satisfies**.
 
 .. _reviews of the architecture:
 
@@ -556,7 +556,7 @@ The following section is an example, how an component looks like and how the det
       :status: valid
       :safety: ASIL_B
       :security: NO
-      :fulfils: comp_req__example_feature__archex_example_req
+      :satisfies: comp_req__example_feature__archex_example_req
       :belongs_to: comp__component_component_getstrt
 
       .. needarch::
@@ -630,7 +630,7 @@ To make *needuml* work we have to replace the *need()* call with a different fun
       :safety: ASIL_B
       :security: NO
       :uses: logic_arc_int__example_feature__archex_logical_interface_1
-      :fulfils: comp_req__example_feature__archex_example_req
+      :satisfies: comp_req__example_feature__archex_example_req
       :belongs_to: comp__component_component_manual_getstrt
 
       .. needuml::

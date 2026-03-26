@@ -141,7 +141,7 @@ In the next step, the already derived feature requirements shall be allocated to
 
 If needed, additional feature requirements, which may arise due to architectural decisions, should be created and allocated to the feature architecture itself.
 
-These links shall be established from architectural elements to feature requirements via the attribute *fulfils*.
+These links shall be established from architectural elements to feature requirements via the attribute *satisfies*.
 
 .. _review_architectural_design:
 
@@ -174,7 +174,7 @@ For this step, the following guidance is available: :need:`Feature Architecture 
 Allocate component requirements to architectural elements
 ---------------------------------------------------------
 
-In this step, the component requirements shall be derived (see :need:`[[title]] <gd_guidl__req_engineering>`) and allocated to the architectural elements via the attribute *fulfils*.
+In this step, the component requirements shall be derived (see :need:`[[title]] <gd_guidl__req_engineering>`) and allocated to the architectural elements via the attribute *satisfies*.
 
 .. _model_component_architecture:
 
@@ -233,7 +233,7 @@ architecture description.
 
 Generally dynamic views are expected in the feature view and the component view based on the following considerations:
 
-- Do not use dynamic views, if the fulfillment of the requirements by the architecture is already understandable with the static view.
+- Do not use dynamic views, if the satisfying of the requirements by the architecture is already understandable with the static view.
 - Simple caller/callee relation is not expected to be modelled (this would mean that the examples would be too simple for modelling).
 - There should be more than two components involved.
 - In case of safety-related calls/communication, the error cases shall also be displayed (see the "alt" boxes in the examples).

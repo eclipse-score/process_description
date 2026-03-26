@@ -132,7 +132,7 @@ See also :need:`doc_concept__wp_inspections` for further information about revie
       -
     * - REQ_07_02
       - Is the attribute *security* set correctly?
-      - For component requirements this checklist item is supported by automated check: "Every requirement which satisfies a feature requirement with security attribute set to YES inherits this". But the component requirements/architecture may additionally also be subject to a :need:`wp__sw_component_security_analysis`.
+      - For component requirements this checklist item is supported by automated check: "Every requirement which derives from a feature requirement with security attribute set to YES inherits this". But the component requirements/architecture may additionally also be subject to a :need:`wp__sw_component_security_analysis`.
       -
       -
       -
