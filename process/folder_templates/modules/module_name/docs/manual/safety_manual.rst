@@ -64,6 +64,9 @@ List of AoUs expected from the environment the platform / module runs on:
       if need and "environment" in need["tags"]:
                 results.append(need)
 
+.. attention::
+    Make sure these AoU are here for a safety reason, i.e. every one "mitigates" a safety analysis entry.
+
 Assumptions on the User
 ^^^^^^^^^^^^^^^^^^^^^^^
 | As there is no assumption on which specific OS and HW is used, the integration testing of the stakeholder and feature requirements is expected to be performed by the user of the platform SEooC. Tests covering all stakeholder and feature requirements performed on a reference platform (tbd link to reference platform specification), reviewed and passed are included in the platform SEooC safety package.
@@ -88,6 +91,9 @@ This means for every feature the user selects, the platform safety manual and th
    for need in needs.filter_types(["aou_req"]):
       if need and "environment" not in need["tags"]:
                 results.append(need)
+
+.. attention::
+    Make sure these AoU are here for a safety reason, i.e. every one "mitigates" a safety analysis entry.
 
 Safety concept of the SEooC
 ---------------------------

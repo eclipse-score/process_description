@@ -207,6 +207,13 @@ Workflow for Creating and Linking Assumption of Use (AoU)
 =========================================================
 
 An AoU is a category of requirement which is part of a safety concept of an architectural element (and thus it is confirmed by a safety analysis).
+As such a part of a safety concept it is aimed to avoid or detect safety relevant failures of the components.
+The need for an AoU can arise in every development step, starting from requirements creation, but the main trigger for these is informal and formal safety analysis,
+see :need:`doc_concept__safety_analysis`.
+AoU handling is described in the requirements process mainly because AoU have very similar content and are treated almost like requirements,
+i.e. they are inspected, fulfilled by architecture, mitigate failure modes from safety analysis and are verified by test.
+Do not mistake AoUs to be more formal "user manuals", describing the proper use of a component's API so as to avoid error returns.
+Error returns are perfectly ok from a safety point of view, if this does not mean that a safety requirement is violated.
 As an AoU can not be fulfilled by the architecture element (e.g. component) itself, it needs to be fulfilled by the user of the element.
 AoU created on SW-platform level are also coming from the scope of the project (i.e. the knowledge which safety activities are not part of a project)
 or are defining general assumptions every user and/or every module in the platform has to fulfill.
@@ -215,13 +222,13 @@ In Safety Elements out of Context (SEooC) the AoUs are part of the safety manual
 
 In this workflow (as it describes SEooC development) these AoUs are created both project internal and project external
 
-- internal:  For AoU which arise internally (i.e. from project specific architecture), the template is almost identical to the one for feature/component requirements. The only difference is that it is defined such that the attribute "satisfies" is replaced with the attribute "mitigates" (see picture below).
+- internal:  For AoU which arise internally (i.e. from project specific architecture), the template is similar to the one for feature/component requirements. The main difference is that it is defined such that a requirement "satisfies" a parent requirement, but an AoU is not. Safety Analysis results must be "mitigated_by" an AoU or requirement (see picture below).
 - external:  If externally provided SEooCs are integrated into the platform (e.g. a qualified Operating System). For these AoUs the sentence template cannot be taken into account, as these may be imported from an external safety manual. It is also not possible to link those to other platform development artifacts via the attribute "mitigates".
 
 AoUs can be of different class and shall be handled by tracing those
 
-* to Feature/Component (via satisfies), if those are on (external) Component Level and can be fulfilled by (internal) Feature/Component
-* to Stakeholder Requirements (via satisfies), if AoU are of general nature and can be fulfilled by platform
+* to Feature/Component (architecture) (via fulfills), if those are on (external) Component Level and can be fulfilled by (internal) Feature/Component
+* to Stakeholder Requirements (via covers), if AoU are of general nature and can be fulfilled by platform
 * or by containing those in Platform(s) Safety Manual(s), if AoU cannot be fulfilled by platform or its components (alone) but need to be satisfied by the user of the platform
 
 
@@ -236,8 +243,8 @@ AoUs can be of different class and shall be handled by tracing those
 Note that the component level displayed in green shows two components - on the right (dark green) the one which is exporting AoU to be fulfilled by others,
 on the left (light green) the component which fulfills and exports AoU.
 Internal component's AoU can also be fulfilled (and linked) by other internal components, this is not depicted here, but would be quite the same with one exception:
-External component's AoUs which cannot be fulfilled by the platform alone are contained in the platform Safety Manual, whereas the internal component's AoUs
-are part of the Module Safety Manual.
+External component's AoUs which cannot be fulfilled by the platform alone are contained in the platform safety manual, whereas the internal component's AoUs
+are part of the module safety manual.
 
 Like other requirements also an AoU needs to be verified - but by the user of the feature/component.
 To improve the usability of a feature/component, its responsible team should already provide

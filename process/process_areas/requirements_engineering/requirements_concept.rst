@@ -57,10 +57,12 @@ Stakeholders for the requirements
    * *Dependent Failure Analysis*
 
      * Requires inputs towards independence and interference of the element under investigation
+     * Initiates additional requirements and AoU to cover failures
 
    * *Qualitative safety analysis* (e.g. FMEA)
 
      * Detailed element description to identify systematic errors within the element under investigation
+     * Initiates additional requirements and AoU to cover failures
 
 #. :need:`Security Architect <rl__security_engineer>`
 
