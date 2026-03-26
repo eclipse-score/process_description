@@ -20,11 +20,10 @@ For change management no additional roles need to be defined.
 Contributing Roles:
 
    * :need:`Contributor <rl__contributor>`
-   * :need:`Committer <rl__committer>`
+   * :need:`Architecture Team <rl__architecture_community>`
+   * :need:`Platform Team <rl__platform_team>`
    * :need:`Project Lead <rl__project_lead>`
-   * :need:`Safety Manager <rl__safety_manager>`
-   * :need:`Security Manager <rl__security_manager>`
-   * :need:`Quality Manager <rl__quality_manager>`
+   * :need:`Delivery Team <rl__delivery_team>`
 
 A detailed overview of the responsibility for the steps of the requirement process is listed here:
 
