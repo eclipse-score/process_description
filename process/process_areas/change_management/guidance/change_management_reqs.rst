@@ -182,7 +182,7 @@ Change Request Traceability Impact Analysis Tool
    The picture is derived from the building blocks metamodel containing all the work products
    (:ref:`general_concepts_building_blocks`). Its arrows show how every work product is
    linked (manually) to other work products (e.g. feature requirements are linked to
-   stakeholder requirements via "satisfies"). The color code describes which of these Links
+   stakeholder requirements via "derived_from"). The color code describes which of these Links
    need to be followed for the impact analysis (so for the example this means: if a stakeholder
    requirement is changed, the feature requirements linked are affected, but not the other way round).
    "Black" links do not need to be followed, these are the "verifies" links. And these are

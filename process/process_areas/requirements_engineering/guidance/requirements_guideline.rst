@@ -220,9 +220,9 @@ In this workflow (as it describes SEooC development) these AoUs are created both
 
 AoUs can be of different class and shall be handled by tracing those
 
-* to Feature/Component (via satisfies), if those are on (external) Component Level and can be fulfilled by (internal) Feature/Component
-* to Stakeholder Requirements (via satisfies), if AoU are of general nature and can be fulfilled by platform
-* or by containing those in Platform(s) Safety Manual(s), if AoU cannot be fulfilled by platform or its components (alone) but need to be satisfied by the user of the platform
+* to Feature/Component (architecture) (via satisfies), if those are on (external) Component Level and can be fulfilled by (internal) Feature/Component
+* to Stakeholder Requirements (via covers), if AoU are of general nature and can be fulfilled by platform
+* or by containing those in Platform(s) Safety Manual(s), if AoU cannot be satisfied by platform or its components (alone) but need to be satisfied by the user of the platform
 
 
 .. figure:: ../_assets/aou_traceability.drawio.svg

@@ -185,7 +185,7 @@ Process Requirement Linkage
    :complies: std_req__iso26262__support_6432, std_req__aspice_40__SWE-1-BP5
    :satisfies: wf__req_stkh_req, wf__req_feat_req, wf__req_comp_req, wf__req_proc_tool
 
-   Requirements shall be linked to its adjacent level via the attribute satisfies.
+   Requirements shall be linked to its adjacent level via the attribute derived_from.
 
       * stakeholder requirements <- feature requirements
       * feature requirements <- component requirements
@@ -214,7 +214,7 @@ Process Requirement Linkage
    :complies: std_req__iso26262__support_6432, std_req__aspice_40__SWE-1-BP5
    :satisfies: wf__req_stkh_req, wf__req_feat_req, wf__req_comp_req, wf__req_proc_tool
 
-   Bi-directional traceability shall be provided by adding a "back-link" via attribute satisfied by (i.e. make a <-> out of the <- in :need:`gd_req__req_linkage`).
+   Bi-directional traceability shall be provided by adding a "back-link" via attribute derives (i.e. make a <-> out of the <- in :need:`gd_req__req_linkage`).
 
 .. gd_req:: Requirement attribute: requirement covered
    :id: gd_req__req_attr_req_cov
