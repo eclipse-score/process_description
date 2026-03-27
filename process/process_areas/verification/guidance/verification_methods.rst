@@ -74,12 +74,21 @@ Interface testing is a type of software testing that focuses on verifying the pr
 and data exchange between different software components or features. It's about ensuring that the
 interfaces (the points where different parts of the system connect and interact) are working
 correctly and reliably. This includes validating data formats, protocols, error handling, and
-overall communication integrity.
+overall communication integrity incl. the respective consumed and exchanged data.
 
 It can be distinguished between internal and external interfaces. Internal interfaces are best covered
 on unit level. External interfaces work best on component integration and feature level.
 
+It is important that the interface tests include the testing of the actual intended functionality
+which the interface provides. The related requirements, architectural design, but also the descriptive
+interface name indicate the functional purpose of the interface.
+
 Types of ``interface-test`` are:
+
+- **Functional Tests**
+
+  Verify that the functionality the interface intends to provide is correct.
+  Requirements and architectural design describe the functionality provided via the interface.
 
 - **Parameter Passing Tests**
 
