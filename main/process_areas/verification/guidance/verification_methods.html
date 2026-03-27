@@ -580,7 +580,7 @@
 and how to create test cases using the same.</p>
 <section id="methods">
 <h2>Methods<a class="headerlink" href="#methods" title="Link to this heading">#</a></h2>
-<div class="need_container docutils container" id="SNCB-cda756ae">
+<div class="need_container docutils container" id="SNCB-3f15fb61">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_method table" id="gd_meth__verification_methods">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -660,11 +660,18 @@ This is especially useful if the components use a standardized error handling me
 and data exchange between different software components or features. It’s about ensuring that the
 interfaces (the points where different parts of the system connect and interact) are working
 correctly and reliably. This includes validating data formats, protocols, error handling, and
-overall communication integrity.</p>
+overall communication integrity incl. the respective consumed and exchanged data.</p>
 <p>It can be distinguished between internal and external interfaces. Internal interfaces are best covered
 on unit level. External interfaces work best on component integration and feature level.</p>
+<p>It is important that the interface tests include the testing of the actual intended functionality
+which the interface provides. The related requirements, architectural design, but also the descriptive
+interface name indicate the functional purpose of the interface.</p>
 <p>Types of <code class="docutils literal notranslate"><span class="pre">interface-test</span></code> are:</p>
 <ul>
+<li><p><strong>Functional Tests</strong></p>
+<p>Verify that the functionality the interface intends to provide is correct.
+Requirements and architectural design describe the functionality provided via the interface.</p>
+</li>
 <li><p><strong>Parameter Passing Tests</strong></p>
 <p>Verify that parameters are passed correctly between components (data types, ranges, units).</p>
 </li>
@@ -709,7 +716,7 @@ What is sufficient and how to determine the coverage is defined in the <a class=
 </section>
 <section id="derivation-techniques">
 <h2>Derivation Techniques<a class="headerlink" href="#derivation-techniques" title="Link to this heading">#</a></h2>
-<div class="need_container docutils container" id="SNCB-7a590215">
+<div class="need_container docutils container" id="SNCB-fef348bd">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_method table" id="gd_meth__verification_derivation">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
