@@ -38,11 +38,11 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-data-viewer/jsonview.bundle.css?v=f6ef2277" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/libs/html/datatables.min.css?v=4b4fd840" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/need_links.css?v=2150a916" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/need_style.css?v=92936fa5" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/needstable.css?v=5e1b6797" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/need_toggle.css?v=5c6620df" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/need_core.css?v=f5b60a78" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/need_links.css?v=2150a916" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/needstable.css?v=5e1b6797" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/modern.css?v=803738c0" />
   
   <!-- So that users can add custom icons -->
@@ -572,7 +572,7 @@
                   
   <section id="guideline">
 <h1>Guideline<a class="headerlink" href="#guideline" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-764893ad">
+<div class="need_container docutils container" id="SNCB-5e81bbb1">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_guidl table" id="gd_guidl__problem_problem">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -791,6 +791,25 @@ consistency.</p>
 should be closed, shall be defined. Optionally, the corresponding milestone can be set.</p>
 <p>If applicable, the features affected should be identified too.</p>
 <p>The description shall reflect the result of the analysis.</p>
+<p>Topics to checked (critical topics are marked with x):</p>
+<ul class="simple">
+<li><p>[x] Is the problem description clear and detailed enough to understand the problem and its impact?</p></li>
+<li><p>[x] Is the problem root cause clearly described?</p></li>
+<li><p>[x] Is the problem impact clearly described?</p></li>
+<li><p>[ ] Is notification of affected parties required? If yes, are the affected parties notified?</p></li>
+<li><p>[ ] Are there any proposed solutions provided?</p></li>
+<li><p>[ ] Are there any further linked issues or pull requests provided?</p></li>
+<li><p>[x] Is the error occurrence rate provided? If yes, is it high enough to accept the problem?</p></li>
+<li><p>[x] Is the problem reproducible?</p></li>
+<li><p>[ ] Are there any further supporting information provided?</p></li>
+<li><p>[x] Is the problem classification correct?</p></li>
+<li><p>[x] Is information for the affected version of the release provided? If yes, is it correct?</p></li>
+<li><p>[ ] Is the information for the expected closure version provided? If yes, is it correct?</p></li>
+<li><p>[x] Is the problem affecting safety or security? If yes, is the classification correct?</p></li>
+</ul>
+<p>The analysis phase can not be closed, until all critical topics are
+clarified and provided in the description. If not, the problem report should be rejected
+and closed with the reason “Closed as not planned”.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <div class="line-block">
