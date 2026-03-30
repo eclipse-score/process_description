@@ -38,11 +38,11 @@
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-data-viewer/jsonview.bundle.css?v=f6ef2277" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-needs/libs/html/datatables.min.css?v=4b4fd840" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-needs/common_css/need_links.css?v=2150a916" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-needs/common_css/need_style.css?v=92936fa5" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-needs/common_css/needstable.css?v=5e1b6797" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-needs/common_css/need_toggle.css?v=5c6620df" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-needs/common_css/need_core.css?v=f5b60a78" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-needs/common_css/need_links.css?v=2150a916" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-needs/common_css/needstable.css?v=5e1b6797" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-needs/modern.css?v=803738c0" />
   
   <!-- So that users can add custom icons -->
@@ -596,41 +596,49 @@ development phases, roles, work products, and other relevant concepts.</p>
 <td><p>A packaging mechanism for delivering Dependable Elements (e.g., executable code or libraries) to users or integrators of the platform.</p></td>
 <td><p><a class="reference internal" href="../general_concepts/score_building_blocks_concept.html#general-concepts-building-blocks"><span class="std std-ref">Building blocks concept</span></a></p></td>
 </tr>
-<tr class="row-odd"><td><p><strong>Dependable Element</strong></p></td>
+<tr class="row-odd"><td><p><strong>Delivery Team</strong></p></td>
+<td><p>Cross-functional team responsible for all artifacts within a Module, including development, quality, safety, and security activities.</p></td>
+<td><p><a class="reference internal" href="../roles/index.html#roles"><span class="std std-ref">Roles</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Dependable Element</strong></p></td>
 <td><p>The highest abstraction level in the building blocks model. A Dependable Element consists of one or more Components and can be developed as a Safety Element out of Context (SEooC). It is delivered in a Delivery Container.</p></td>
 <td><p><a class="reference internal" href="../general_concepts/score_building_blocks_concept.html#general-concepts-building-blocks"><span class="std std-ref">Building blocks concept</span></a></p></td>
 </tr>
-<tr class="row-even"><td><p><strong>Dependable Element View</strong></p></td>
+<tr class="row-odd"><td><p><strong>Dependable Element View</strong></p></td>
 <td><p>Documentation that maps components to Dependable Elements, showing how components are grouped for delivery.</p></td>
 <td><p><a class="reference internal" href="../general_concepts/score_building_blocks_concept.html#general-concepts-building-blocks"><span class="std std-ref">Building blocks concept</span></a></p></td>
 </tr>
-<tr class="row-odd"><td><p><strong>Detailed Design</strong></p></td>
+<tr class="row-even"><td><p><strong>Detailed Design</strong></p></td>
 <td><p>The comprehensive design specification for a Unit, including implementation details and algorithms. Verified through Unit Tests.</p></td>
 <td><p><a class="reference internal" href="../general_concepts/score_building_blocks_concept.html#general-concepts-building-blocks"><span class="std std-ref">Building blocks concept</span></a></p></td>
 </tr>
-<tr class="row-even"><td><p><strong>Development Phase</strong></p></td>
+<tr class="row-odd"><td><p><strong>Development Phase</strong></p></td>
 <td><p>The phase where accepted features or components are planned, implemented, and verified according to defined project processes. May include iterative implementation cycles.</p></td>
 <td><p><a class="reference internal" href="../general_concepts/score_lifecycle_concept.html#general-concepts-lifecycle"><span class="std std-ref">Lifecycle concept</span></a></p></td>
 </tr>
-<tr class="row-odd"><td><p><strong>Feature</strong></p></td>
+<tr class="row-even"><td><p><strong>Feature</strong></p></td>
 <td><p>A collection of related components that provide a specific capability to the platform. Features are defined by Feature Requirements and Feature Architecture.</p></td>
 <td><p><a class="reference internal" href="../general_concepts/score_building_blocks_concept.html#general-concepts-building-blocks"><span class="std std-ref">Building blocks concept</span></a></p></td>
 </tr>
-<tr class="row-even"><td><p><strong>Feature Architecture</strong></p></td>
+<tr class="row-odd"><td><p><strong>Feature Architecture</strong></p></td>
 <td><p>The design specification that defines how a feature is structured, including its components, interfaces, and logical architecture interfaces.</p></td>
 <td><p><a class="reference internal" href="../general_concepts/score_building_blocks_concept.html#general-concepts-building-blocks"><span class="std std-ref">Building blocks concept</span></a></p></td>
 </tr>
-<tr class="row-odd"><td><p><strong>Feature Integration Tests</strong></p></td>
+<tr class="row-even"><td><p><strong>Feature Integration Tests</strong></p></td>
 <td><p>Verification tests that verifies feature requirements and architecture, ensuring proper integration of multiple components within the feature.</p></td>
 <td><p><a class="reference internal" href="../general_concepts/score_building_blocks_concept.html#general-concepts-building-blocks"><span class="std std-ref">Building blocks concept</span></a></p></td>
 </tr>
-<tr class="row-even"><td><p><strong>Feature Requirements</strong></p></td>
+<tr class="row-odd"><td><p><strong>Feature Requirements</strong></p></td>
 <td><p>Specifications defining what a feature must accomplish, derived from higher-level stakeholder requirements and allocated to components.</p></td>
 <td><p><a class="reference internal" href="../general_concepts/score_building_blocks_concept.html#general-concepts-building-blocks"><span class="std std-ref">Building blocks concept</span></a></p></td>
 </tr>
-<tr class="row-odd"><td><p><strong>Feature Safety/Security Analysis</strong></p></td>
+<tr class="row-even"><td><p><strong>Feature Safety/Security Analysis</strong></p></td>
 <td><p>Systematic analysis performed on feature architecture to verify compliance with safety and security requirements at the feature level, documenting any violations or potential faults.</p></td>
 <td><p>:<a class="reference internal" href="../general_concepts/score_building_blocks_concept.html#general-concepts-building-blocks"><span class="std std-ref">Building blocks concept</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Feature Team</strong></p></td>
+<td><p>An synonym term for Delivery Team.</p></td>
+<td><p><a class="reference internal" href="../roles/index.html#roles"><span class="std std-ref">Roles</span></a></p></td>
 </tr>
 <tr class="row-even"><td><p><strong>Impact Analysis</strong></p></td>
 <td><p>The process of evaluating the effects and consequences of proposed changes on work products.</p></td>
@@ -652,83 +660,79 @@ development phases, roles, work products, and other relevant concepts.</p>
 <td><p>An synonym term for Dependable Element</p></td>
 <td><p><a class="reference internal" href="../general_concepts/score_building_blocks_concept.html#general-concepts-building-blocks"><span class="std std-ref">Building blocks concept</span></a></p></td>
 </tr>
-<tr class="row-odd"><td><p><strong>Module Team</strong></p></td>
-<td><p>Cross-functional team responsible for all artifacts within a Module, including development, quality, safety, and security activities.</p></td>
-<td><p><a class="reference internal" href="../roles/index.html#roles"><span class="std std-ref">Roles</span></a></p></td>
-</tr>
-<tr class="row-even"><td><p><strong>Platform</strong></p></td>
+<tr class="row-odd"><td><p><strong>Platform</strong></p></td>
 <td><p>The complete software platform consisting of features, components, and supporting infrastructure.</p></td>
 <td><p><a class="reference internal" href="../general_concepts/score_building_blocks_concept.html#general-concepts-building-blocks"><span class="std std-ref">Building blocks concept</span></a></p></td>
 </tr>
-<tr class="row-odd"><td><p><strong>Platform Integration Tests</strong></p></td>
+<tr class="row-even"><td><p><strong>Platform Integration Tests</strong></p></td>
 <td><p>Verification tests performed on reference hardware platforms to test stakeholder requirements and overall platform functionality.</p></td>
 <td><p><a class="reference internal" href="../general_concepts/score_building_blocks_concept.html#general-concepts-building-blocks"><span class="std std-ref">Building blocks concept</span></a></p></td>
 </tr>
-<tr class="row-even"><td><p><strong>Platform Safety/Security Analysis</strong></p></td>
+<tr class="row-odd"><td><p><strong>Platform Safety/Security Analysis</strong></p></td>
 <td><p>Systematic analysis of the complete platform architecture to verify compliance with stakeholder-level safety and security requirements, documenting any violations or potential faults.</p></td>
 <td><p>:<a class="reference internal" href="../general_concepts/score_building_blocks_concept.html#general-concepts-building-blocks"><span class="std std-ref">Building blocks concept</span></a></p></td>
 </tr>
-<tr class="row-odd"><td><p><strong>Problem Report</strong></p></td>
+<tr class="row-even"><td><p><strong>Problem Report</strong></p></td>
 <td><p>A report documenting issues found in released features or components, including bugs, quality issues, or safety/security anomalies. Initiates the Maintenance Phase.</p></td>
 <td><p><a class="reference internal" href="../workflows/index.html#workflows"><span class="std std-ref">Workflows</span></a></p></td>
 </tr>
-<tr class="row-even"><td><p><strong>Project Lead</strong></p></td>
+<tr class="row-odd"><td><p><strong>Project Lead</strong></p></td>
 <td><p>Executive role responsible for strategic decisions, approving feature requests, performing project management, and high-level coordination between software modules.</p></td>
 <td><p><a class="reference internal" href="../roles/index.html#roles"><span class="std std-ref">Roles</span></a></p></td>
 </tr>
-<tr class="row-odd"><td><p><strong>Quality Manager</strong></p></td>
+<tr class="row-even"><td><p><strong>Quality Manager</strong></p></td>
 <td><p>Role responsible for quality assurance, process compliance, work product reviews, quality audits, and continuous process improvement.</p></td>
 <td><p><a class="reference internal" href="../process_areas/quality_management/index.html#quality-management"><span class="std std-ref">Process quality management</span></a></p></td>
 </tr>
-<tr class="row-even"><td><p><strong>Role</strong></p></td>
+<tr class="row-odd"><td><p><strong>Role</strong></p></td>
 <td><p>A defined position within the project with specific responsibilities, authorities, and required competencies. Examples include Project Lead, Developer, Tester, Safety Manager.</p></td>
 <td><p><a class="reference internal" href="../roles/index.html#roles"><span class="std std-ref">Roles</span></a></p></td>
 </tr>
-<tr class="row-odd"><td><p><strong>Safety Element out of Context (SEooC)</strong></p></td>
+<tr class="row-even"><td><p><strong>Safety Element out of Context (SEooC)</strong></p></td>
 <td><p>A software element developed and analyzed independently but intended to be integrated into specific applications, as defined by functional safety standards.</p></td>
 <td><p><a class="reference internal" href="../general_concepts/score_building_blocks_concept.html#general-concepts-building-blocks"><span class="std std-ref">Building blocks concept</span></a></p></td>
 </tr>
-<tr class="row-even"><td><p><strong>Safety Manager</strong></p></td>
+<tr class="row-odd"><td><p><strong>Safety Manager</strong></p></td>
 <td><p>Role responsible for ensuring functional safety compliance (e.g., ISO 26262), conducting safety analyses, approving safety work products, and providing safety guidance.</p></td>
 <td><p><a class="reference internal" href="../process_areas/safety_management/index.html#process-safety-management"><span class="std std-ref">Process safety management</span></a></p></td>
 </tr>
-<tr class="row-odd"><td><p><strong>Security Manager</strong></p></td>
+<tr class="row-even"><td><p><strong>Security Manager</strong></p></td>
 <td><p>Role responsible for security management, vulnerability handling, cybersecurity compliance (e.g., ISO SAE 21434), and security analysis approvals.</p></td>
 <td><p><a class="reference internal" href="../process_areas/security_management/index.html#security-management"><span class="std std-ref">Process security management</span></a></p></td>
 </tr>
-<tr class="row-even"><td><p><strong>Source Code</strong></p></td>
+<tr class="row-odd"><td><p><strong>Source Code</strong></p></td>
 <td><p>The actual implementation of a Unit, typically written in a programming language and version-controlled in the repository.</p></td>
 <td><p><a class="reference internal" href="../general_concepts/score_building_blocks_concept.html#general-concepts-building-blocks"><span class="std std-ref">Building blocks concept</span></a></p></td>
 </tr>
-<tr class="row-odd"><td><p><strong>Stakeholder Requirements</strong></p></td>
+<tr class="row-even"><td><p><strong>Stakeholder Requirements</strong></p></td>
 <td><p>High-level requirements specified at the platform level that define what the platform must accomplish for its intended users.</p></td>
 <td><p><a class="reference internal" href="../general_concepts/score_building_blocks_concept.html#general-concepts-building-blocks"><span class="std std-ref">Building blocks concept</span></a></p></td>
 </tr>
-<tr class="row-even"><td><p><strong>SW Platform Assumptions of Use</strong></p></td>
+<tr class="row-odd"><td><p><strong>SW Platform Assumptions of Use</strong></p></td>
 <td><p>Constraints and conditions defined at the platform level that must be considered by users integrating the platform into their applications.</p></td>
 <td><p><a class="reference internal" href="../general_concepts/score_building_blocks_concept.html#general-concepts-building-blocks"><span class="std std-ref">Building blocks concept</span></a></p></td>
 </tr>
-<tr class="row-odd"><td><p><strong>Traceability</strong></p></td>
+<tr class="row-even"><td><p><strong>Traceability</strong></p></td>
 <td><p>The documented relationship between work products at different levels (requirements, architecture, design, code, tests) enabling impact analysis and coverage determination.</p></td>
 <td><p><a class="reference internal" href="../general_concepts/score_traceability_concept.html#general-concepts-traceability"><span class="std std-ref">Traceability concept</span></a></p></td>
 </tr>
-<tr class="row-even"><td><p><strong>Unit</strong></p></td>
+<tr class="row-odd"><td><p><strong>Unit</strong></p></td>
 <td><p>The lowest level in the building blocks model, representing source code that implements a specific function or feature. Units are verified through Unit Tests.</p></td>
 <td><p><a class="reference internal" href="../process_areas/implementation/index.html#implementation"><span class="std std-ref">Implementation process</span></a></p></td>
 </tr>
-<tr class="row-odd"><td><p><strong>Unit Tests</strong></p></td>
+<tr class="row-even"><td><p><strong>Unit Tests</strong></p></td>
 <td><p>Verification tests that verifies the detailed design and implementation of individual Units.</p></td>
 <td><p><a class="reference internal" href="../process_areas/verification/index.html#process-verification"><span class="std std-ref">Verification process</span></a></p></td>
 </tr>
-<tr class="row-even"><td><p><strong>Verification</strong></p></td>
+<tr class="row-odd"><td><p><strong>Verification</strong></p></td>
 <td><p>The process of confirming that work products (requirements, architecture, design, code) correctly implement and satisfy higher-level specifications through testing and analysis.</p></td>
 <td><p><a class="reference internal" href="../process_areas/verification/index.html#process-verification"><span class="std std-ref">Verification process</span></a></p></td>
 </tr>
-<tr class="row-odd"><td><p><strong>Work Product</strong></p></td>
+<tr class="row-even"><td><p><strong>Work Product</strong></p></td>
 <td><p>Any tangible output produced during development, including requirements, architecture documents, design specifications, source code, test cases, and analysis reports.</p></td>
 <td><p><a class="reference internal" href="../workproducts/index.html#work-products"><span class="std std-ref">Work products</span></a></p></td>
 </tr>
-<tr class="row-even"><td><p><strong>Workflow</strong></p></td>
+<tr class="row-odd"><td><p><strong>Workflow</strong></p></td>
 <td><p>A defined sequence of activities with inputs, outputs, responsible roles, and supporting guidance. Workflows form the central building blocks of the process description.</p></td>
 <td><p><a class="reference internal" href="../workflows/index.html#workflows"><span class="std std-ref">Workflows</span></a></p></td>
 </tr>
