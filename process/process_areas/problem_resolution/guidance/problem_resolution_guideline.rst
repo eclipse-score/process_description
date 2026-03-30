@@ -177,6 +177,26 @@ If applicable, the features affected should be identified too.
 
 The description shall reflect the result of the analysis.
 
+Topics to checked (critical topics are marked with *):
+
+- [*] Is the problem description clear and detailed enough to understand the problem and its impact?
+- [*] Is the problem root cause clearly described?
+- [*] Is the problem impact clearly described?
+- [ ] Is notification of affected parties required? If yes, are the affected parties notified?
+- [ ] Are there any proposed solutions provided?
+- [ ] Are there any further linked issues or pull requests provided?
+- [*] Is the error occurrence rate provided? If yes, is it high enough to accept the problem?
+- [*] Is the problem reproducible?
+- [ ] Are there any further supporting information provided?
+- [*] Is the problem classification correct?
+- [*] Is information for the affected version of the release provided? If yes, is it correct?
+- [ ] Is the information for the expected closure version provided? If yes, is it correct?
+- [*] Is the problem affecting safety or security? If yes, is the classification correct?
+
+The analysis phase can not be closed, until all critical topics are
+clarified and provided in the description. If not, the problem report should be rejected
+and closed with the reason "Closed as not planned".
+
 .. note::
   | For the Problem Report Example:
   | * The descriptions has a section for the analysis results: **Accepted**
