@@ -80,13 +80,17 @@ Problem Checklist
         -
 
       * - 11
-        - Does the Problem report has a expected closure date as specified?
+        - Does the Problem report has the affected release versions as specified?
         -
 
       * - 12
-        - Does the Problem report has the solution measures specified, verified and reported?
+        - Does the Problem report has a expected closure date as specified?
         -
 
       * - 13
+        - Does the Problem report has the solution measures specified, verified and reported?
+        -
+
+      * - 14
         - If the Problem report is not closed and pending solution measures are open, escalated to the :need:`rl__safety_manager` or :need:`rl__security_manager`?
         -
