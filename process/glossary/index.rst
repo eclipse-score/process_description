@@ -84,7 +84,7 @@ Terms
    * - **Delivery Team**
      - Cross-functional team responsible for all artifacts within a Module, including development, quality, safety, and security activities.
      - :ref:`Roles<roles>`
-     -
+
    * - **Dependable Element**
      - The highest abstraction level in the building blocks model. A Dependable Element consists of one or more Components and can be developed as a Safety Element out of Context (SEooC). It is delivered in a Delivery Container.
      - :ref:`Building blocks concept<general_concepts_building_blocks>`
