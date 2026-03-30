@@ -81,6 +81,10 @@ Terms
      - A packaging mechanism for delivering Dependable Elements (e.g., executable code or libraries) to users or integrators of the platform.
      - :ref:`Building blocks concept<general_concepts_building_blocks>`
 
+   * - **Delivery Team**
+     - Cross-functional team responsible for all artifacts within a Module, including development, quality, safety, and security activities.
+     - :ref:`Roles<roles>`
+     -
    * - **Dependable Element**
      - The highest abstraction level in the building blocks model. A Dependable Element consists of one or more Components and can be developed as a Safety Element out of Context (SEooC). It is delivered in a Delivery Container.
      - :ref:`Building blocks concept<general_concepts_building_blocks>`
@@ -117,6 +121,10 @@ Terms
      - Systematic analysis performed on feature architecture to verify compliance with safety and security requirements at the feature level, documenting any violations or potential faults.
      - ::ref:`Building blocks concept<general_concepts_building_blocks>`
 
+   * - **Feature Team**
+     - An synonym term for Delivery Team.
+     - :ref:`Roles<roles>`
+
    * - **Impact Analysis**
      - The process of evaluating the effects and consequences of proposed changes on work products.
      - :ref:`Process change management<change_management>`
@@ -136,10 +144,6 @@ Terms
    * - **Module**
      - An synonym term for Dependable Element
      - :ref:`Building blocks concept<general_concepts_building_blocks>`
-
-   * - **Module Team**
-     - Cross-functional team responsible for all artifacts within a Module, including development, quality, safety, and security activities.
-     - :ref:`Roles<roles>`
 
    * - **Platform**
      - The complete software platform consisting of features, components, and supporting infrastructure.

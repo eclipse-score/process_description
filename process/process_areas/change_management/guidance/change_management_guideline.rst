@@ -43,7 +43,9 @@ to provide e.g. a change request issue template.
 .. note::
   An example template for the Issue Tracking System in GitHub (`GitHub Issues <https://github.com/features/issues>`_)
   can be found here:
-  `Issue Template Change Request <https://github.com/eclipse-score/.github/blob/main/.github/ISSUE_TEMPLATE/1a_FeatureRequest.yml>`_
+  `Issue Template Change (Feature) Request <https://github.com/eclipse-score/.github/blob/main/.github/ISSUE_TEMPLATE/1a_FeatureRequest.yml>`_
+  or
+  `Issue Template Change (Component) Request <https://github.com/eclipse-score/.github/blob/main/.github/ISSUE_TEMPLATE/1b_ComponentenRequest.yml>`_
 
 Improvements including Process Improvements are not Change Requests.
 The project's selected Issue Tracking System may also provide a template for improvements,
@@ -128,7 +130,9 @@ automatically included or copied by the different users.
 .. note::
   For the Issue Tracking System in GitHub, there is a template created, which can be
   be found here:
-  `Issue Template Change <https://github.com/eclipse-score/.github/blob/main/.github/ISSUE_TEMPLATE/1a_FeatureRequest.yml>`_
+  `Issue Template Change (Feature) Request <https://github.com/eclipse-score/.github/blob/main/.github/ISSUE_TEMPLATE/1a_FeatureRequest.yml>`_
+  or
+  `Issue Template Change (Component) Request <https://github.com/eclipse-score/.github/blob/main/.github/ISSUE_TEMPLATE/1b_ComponentenRequest.yml>`_
 
 .. note::
   A Change Request Example based on that template is here:
