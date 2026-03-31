@@ -42,13 +42,14 @@ For a detailed explanation of workflows and their role within the process model,
    :responsible: rl__contributor
    :approved_by: rl__committer, rl__safety_manager, rl__security_manager
    :supported_by: rl__infrastructure_tooling_community
-   :input: wp__tool_verification_report
+   :input: wp__tool_verification_report, wp__requirements_stkh, wp__requirements_feat, wp__requirements_comp, wp__requirements_proc_tool
    :output: wp__tool_verification_report
    :contains: gd_temp__tool_management_verif_rpt_template, gd_chklst__tool_cr_review
    :has: doc_concept__tool_process, doc_getstrt__tool_process
 
    Each identified tool is evaluated. During evaluation the Tool Verification Report
-   is updated accordingly.
+   is updated accordingly. Stakeholder, feature, component, and process/tool
+   requirements may be used as input for the tool evaluation and verification.
    After successful evaluation the status of the Tool Verification Report
    is set to evaluated.
 

@@ -101,7 +101,7 @@ For a detailed explanation of workflows and their role within the process model,
    :contains: gd_temp__req_process_req, gd_temp__req_tool_req, gd_temp__req_formulation
    :has: doc_concept__req_process, doc_getstrt__req_process
 
-   Based on the process descriptions (which comply to standards) and/or stakeholder requirements process and tool requirements are derived.
+   Based on the process descriptions (which comply to standards) and/or stakeholder/feature/component requirements process and tool requirements are derived.
 
 .. workflow:: Monitor/Verify Requirements
    :id: wf__monitor_verify_requirements

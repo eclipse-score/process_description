@@ -395,9 +395,9 @@ Software Verification plan review checklist template
           - Check if the software quality criteria are clearly defined and understood by all relevant parties. Have a look on the reports to verify if the criteria are fulfilled.
           -
         * - SWV_00_05
-          - Are all used tools described?
+          - Are all used tools described and included in the project's tool list?
           -
-          - Check if all tools used for software verification are clearly described and used as defined. Are additional tools used that are not described?
+          - Check if all tools used for software verification are clearly described, listed in the project's tool list, and used as defined. Are additional tools used that are not described or missing from the project's tool list?
           -
         * - SWV_00_06
           - Are verification setups and variants described, documented and up to date?
@@ -452,7 +452,7 @@ Software Development Plan review checklist template
           - Check if the software configuration guideline is followed and if deviations have an approved argumentation by the CODEOWNER.
           -
         * - SDP_00_05
-          - Are all SW development tools described?
+          - Are all SW development tools described and included in the project's tool list?
           -
-          - Check if all tools used for software development are clearly described. If possible check if they are used as defined.
+          - Check if all tools used for software development are clearly described and listed in the project's tool list. If possible check if they are used as defined.
           -
