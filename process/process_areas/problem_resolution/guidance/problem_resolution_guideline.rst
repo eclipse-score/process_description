@@ -106,10 +106,10 @@ from the different users.
 
 .. note::
   A Problem Report Example based on that template is here:
-  `Example Problem Report <https://github.com/eclipse-score/process_description/issues/124>`_
+  `Example Problem Report <https://github.com/eclipse-score/process_description/issues/631>`_
 
 .. note::
-  A Problem Report Example 2 based on that template is here:
+  A Problem Report Example 2 based on and older version template is here:
   `Example Problem Report 2 <https://github.com/eclipse-score/process_description/issues/126>`_
 
 It is expected, that the UID will be provided automatically by the Issue Tracking System.

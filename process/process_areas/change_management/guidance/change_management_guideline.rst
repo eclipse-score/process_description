@@ -136,7 +136,7 @@ automatically included or copied by the different users.
 
 .. note::
   A Change Request Example based on that template is here:
-  `Example Change Request <https://github.com/eclipse-score/process_description/issues/168>`_
+  `Example Change Request <https://github.com/eclipse-score/process_description/issues/629>`_
 
 It is expected, that
 
