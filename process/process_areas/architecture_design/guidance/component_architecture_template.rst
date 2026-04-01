@@ -16,9 +16,10 @@ Component Architecture Template
 ###############################
 
 .. gd_temp:: Component Architecture Templates
-    :id: gd_temp__arch_comp
-    :status: valid
-    :tags: architecture_design
-    :complies: std_req__iso26262__software_741, std_req__iso26262__software_742, std_req__iso26262__software_743, std_req__iso26262__software_744, std_req__aspice_40__iic-04-04
+   :id: gd_temp__arch_comp
+   :status: valid
+   :tags: architecture_design
+   :complies: std_req__iso26262__software_741, std_req__iso26262__software_742, std_req__iso26262__software_743, std_req__iso26262__software_744, std_req__aspice_40__iic-04-04
 
-    For the content see here: :ref:`component_architecture_template`
+   For the content see the
+   `module template documentation <https://eclipse-score.github.io/module_template/component_architecture_template.html>`__.

@@ -21,7 +21,8 @@ Guideline
    :complies: std_req__iso26262__software_744, std_req__iso26262__software_841, std_req__iso26262__software_842, std_req__aspice_40__iic-11-05
 
 This document describes the general guidance for implementation based on the concept which is defined :need:`[[title]]<doc_concept__imp_concept>`.
-The concept includes an example of a Detailed Design.
+An example of a Detailed Design is maintained in the
+`module template documentation <https://eclipse-score.github.io/module_template/detailed_design_example.html>`_.
 
 Workflow for Implementation
 ===========================

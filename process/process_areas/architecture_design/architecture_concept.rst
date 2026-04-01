@@ -123,22 +123,8 @@ The feature architecture contain the following views:
 Static View
 -----------
 
-The first viewpoint is named as *feature architecture*. It displays the SW Components within the SW modules (= dependable elements) which are required to realize the feature including their interactions. Also the *logical interfaces* and the interaction between the feature and the user are included in this view. On this architectural level the feature requirements shall be allocated. An example for the static architecture is shown here:
-
-.. feat_arc_sta:: Feature 1 Architecture
-   :id: feat_arc_sta__example_feature__feature_1
-   :security: YES
-   :safety: QM
-   :status: valid
-   :includes: logic_arc_int__example_feature__archex_logical_interface_1, logic_arc_int__example_feature__archex_logical_interface_2
-   :fulfils: feat_req__example_feature__archdes_example_req
-   :belongs_to: feat__example_feature
-
-   .. needarch::
-      :scale: 50
-      :align: center
-
-      {{ draw_feature(need(), needs) }}
+The first viewpoint is named as *feature architecture*. It displays the SW Components within the SW modules (= dependable elements) which are required to realize the feature including their interactions. Also the *logical interfaces* and the interaction between the feature and the user are included in this view. On this architectural level the feature requirements shall be allocated. A full rendered example for the static architecture is maintained in the
+`module template documentation <https://eclipse-score.github.io/module_template/architecture_modeling_example.html>`__.
 
 In all views, the components which are marked as ASIL_B related are drawn with red borders.
 
@@ -164,38 +150,16 @@ See :ref:`uml_diagram_selection` in guideline for further information about the 
 Interface View
 --------------
 
-On the feature level only *logical interfaces* shall be displayed. This means that only logical names shall be provided for both the interface and the operations within. Those *logical interfaces* shall be connected to component interfaces on the module view.
-
-.. logic_arc_int:: Logical Interface 1
-   :id: logic_arc_int__example_feature__archcon_logical_interface_1
-   :security: YES
-   :safety:  ASIL_B
-   :status: valid
-   :fulfils: feat_req__example_feature__archdes_example_req
-
-   .. needarch::
-      :scale: 50
-      :align: center
-
-      {{ draw_interface(need(), needs) }}
+On the feature level only *logical interfaces* shall be displayed. This means that only logical names shall be provided for both the interface and the operations within. Those *logical interfaces* shall be connected to component interfaces on the module view. A rendered logical-interface example is maintained in the
+`module template documentation <https://eclipse-score.github.io/module_template/architecture_modeling_example.html>`__.
 
 SW Module View
 ==============
 
 A SW Module (=dependable element) is packaging a component or a set of components which is developed, documented and released together. It is not meant to be an architectural element which means that no requirements can be allocated to it.
 
-On this level also a view shall be defined which is called *Module View*. It represents the allocation of components into modules and displays the dependencies between the single modules. In this view also cyclic dependencies between modules can be identified.
-
-.. mod_view_sta:: Module 1 Static View concept
-   :id: mod_view_sta__example_feature__archcon_1
-   :includes: comp__component_example_1
-
-   .. needarch::
-      :scale: 50
-      :align: center
-
-
-      {{ draw_module(need(), needs) }}
+On this level also a view shall be defined which is called *Module View*. It represents the allocation of components into modules and displays the dependencies between the single modules. In this view also cyclic dependencies between modules can be identified. A rendered module-view example is maintained in the
+`module template documentation <https://eclipse-score.github.io/module_template/architecture_modeling_example.html>`__.
 
 Component View
 ==============
@@ -207,19 +171,8 @@ Static View
 
 The *component architecture* describes the implementation of the functionalities in a white-box view. It describes the internal structure of SW components and their decomposition. It provides a more detailed information concerning the respective interfaces of a component. If a SW component interacts with a different component it is also included via a *use* relationship in the diagram. An example of the *component architecture* is displayed here:
 
-.. comp_arc_sta:: Component 1 Static View
-   :id: comp_arc_sta__example_feature__archdes_component_concept_1
-   :status: valid
-   :safety: ASIL_B
-   :security: NO
-   :fulfils: comp_req__example_feature__archex_example_req
-   :belongs_to: comp__component_example_1
-
-   .. needarch::
-      :scale: 50
-      :align: center
-
-      {{ draw_component(need(), needs) }}
+A full rendered component-architecture example is maintained in the
+`module template documentation <https://eclipse-score.github.io/module_template/component_architecture_template.html>`__.
 
 The decomposition is optional and relies on the complexity of the component. Thus there is no graphic representation required for it.
 In all views the components which are marked as ASIL_B related are drawn in red color.
@@ -244,21 +197,8 @@ Following scenarios should be included:
 Interface View
 --------------
 
-The component interface view shows the actual interfaces of the component. Also links to their corresponding logical interfaces are displayed in this view:
-
-.. real_arc_int:: Component Interface 1
-   :id: real_arc_int__example_feature__archdes_component_interface_1
-   :status: valid
-   :safety: ASIL_B
-   :security: NO
-   :fulfils: comp_req__example_feature__archex_example_req
-   :language: cpp
-
-   .. needarch::
-      :scale: 50
-      :align: center
-
-      {{ draw_interface(need(), needs)}}
+The component interface view shows the actual interfaces of the component. Also links to their corresponding logical interfaces are displayed in this view. A rendered component-interface example is maintained in the
+`module template documentation <https://eclipse-score.github.io/module_template/component_architecture_template.html>`__.
 
 Platform View
 =============
@@ -481,29 +421,8 @@ Here are some excerpts of UML diagrams made from the requirements of that file.
 Feature Architecture
 ^^^^^^^^^^^^^^^^^^^^
 
-The following section is an example, how an `Feature <https://eclipse-score.github.io/score/main/features/index.html>`_ looks like and how the architecture of an Feature is described. Please note that components with an "ASIL_B" safety rating are highlighted with red borders in the diagram (e.g., "Component 1").
-
-.. feat:: Feature Name
-   :id: feat__feature_name_example
-   :security: YES
-   :safety: ASIL_B
-   :status: invalid
-   :includes: logic_arc_int__example_feature__archex_logical_interface_1
-
-.. feat_arc_sta:: Feature Static Architecture View - Rendered Example
-      :id: feat_arc_sta__example_feature__archdes_getstrt
-      :security: YES
-      :safety: QM
-      :status: valid
-      :includes: logic_arc_int__example_feature__archex_logical_interface_1, logic_arc_int__example_feature__archex_logical_interface_2
-      :fulfils: feat_req__example_feature__archdes_example_req
-      :belongs_to: feat__example_feature
-
-      .. needarch::
-         :scale: 50
-         :align: center
-
-         {{ draw_feature(need(), needs) }}
+The following section links to the rendered feature example that is now maintained in the
+`module template documentation <https://eclipse-score.github.io/module_template/architecture_modeling_example.html>`__.
 
 .. code-block:: rst
 
@@ -535,19 +454,8 @@ Component Architecture
 
 The following section is an example, how an component looks like and how the detail design of an component is described. Please note that components with an "ASIL_B" safety rating are highlighted with red borders in the diagram (e.g., "Component 1").
 
-.. comp_arc_sta:: Component Static View - Rendered Example
-   :id: comp_arc_sta__example_feature__component_getstrt
-   :status: valid
-   :safety: ASIL_B
-   :security: NO
-   :fulfils: comp_req__example_feature__archex_example_req
-   :belongs_to: comp__component_example_1
-
-   .. needarch::
-      :scale: 50
-      :align: center
-
-      {{ draw_component( need(), needs ) }}
+The rendered component examples are maintained in the
+`module template documentation <https://eclipse-score.github.io/module_template/component_architecture_template.html>`__.
 
 .. code-block:: rst
 
@@ -598,20 +506,8 @@ Besides storing the output it is also possible to display the generated PlantUML
 
 Debug example for component architecture:
 
-.. comp_arc_sta:: Component Static View - Rendered Debug Example
-   :id: comp_arc_sta__example_feature__component_getstrt_debug
-   :status: valid
-   :safety: ASIL_B
-   :security: NO
-   :fulfils: comp_req__example_feature__archex_example_req
-   :belongs_to: comp__component_example_1
-
-   .. needarch::
-      :scale: 50
-      :align: center
-      :debug:
-
-      {{ draw_component( need(), needs ) }}
+See the rendered debug example in the
+`module template documentation <https://eclipse-score.github.io/module_template/component_architecture_template.html>`__.
 
 .. _manual_addition_uml:
 
@@ -629,33 +525,18 @@ To make *needuml* work we have to replace the *need()* call with a different fun
       :status: valid
       :safety: ASIL_B
       :security: NO
-      :uses: logic_arc_int__example_feature__archex_logical_interface_1
-      :fulfils: comp_req__example_feature__archex_example_req
+      :uses: logic_arc_int__example_feature__archcon_logical_interface_1
       :belongs_to: comp__component_component_manual_getstrt
 
       .. needuml::
 
-         {{ draw_component( needs.get('comp__component_example_1'), needs ) }}
+         {{ draw_component( needs.get('comp__component_name_template'), needs ) }}
          component "Component Manual" as CM {
          }
          CM -> LI1: EXTRA_LINKAGE_MANUALLY_ADDED
 
-.. comp_arc_sta:: Component Architecture Static View - Rendered Example Manually Edited
-   :id: comp_arc_sta__example_feature__component_manual_getstrt
-   :status: valid
-   :safety: ASIL_B
-   :security: NO
-   :uses: logic_arc_int__example_feature__archex_logical_interface_1
-   :fulfils: comp_req__example_feature__archex_example_req
-   :belongs_to: comp__component_example_1
-
-   .. needarch::
-
-         {{ draw_component( needs.get('comp__component_example_1'), needs ) }}
-
-         component "Component Manual" as CM {
-         }
-         CM -> logic_arc_int__example_feature__archex_logical_interface_1: EXTRA_LINKAGE_MANUALLY_ADDED
+See the rendered manual-edit example in the
+`module template documentation <https://eclipse-score.github.io/module_template/component_architecture_template.html>`__.
 
 You can add any layout or additional configuration you want before you call the *draw_xyz*.
 

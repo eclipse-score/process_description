@@ -75,69 +75,78 @@ Mandatory: A motivation for the decomposition
 Static Architecture
 -------------------
 
-.. feat:: Feature Name
-   :id: feat__feature_name
-   :security: YES
-   :safety: ASIL_B
-   :status: invalid
-   :includes: logic_arc_int__feature_name__interface_name1
+The live feature architecture template snippets are maintained in the
+`module template documentation <https://eclipse-score.github.io/module_template/architecture_modeling_example.html>`__.
 
-   General Feature Description
+.. code-block:: rst
 
-.. feat_arc_sta:: Feature Static View
-   :id: feat_arc_sta__feature_name__static_view
-   :security: YES
-   :safety: ASIL_B
-   :status: invalid
-   :fulfils: feat_req__feature_name__some_title
-   :includes: logic_arc_int__feature_name__interface_name1
-   :belongs_to: feat__feature_name
+   .. feat:: Feature Name
+      :id: feat__feature_name
+      :security: YES
+      :safety: ASIL_B
+      :status: invalid
+      :includes: logic_arc_int__feature_name__interface_name1
 
-   .. needarch::
-      :scale: 50
-      :align: center
+      General Feature Description
 
-      {{ draw_feature(need(), needs) }}
+   .. feat_arc_sta:: Feature Static View
+      :id: feat_arc_sta__feature_name__static_view
+      :security: YES
+      :safety: ASIL_B
+      :status: invalid
+      :fulfils: feat_req__feature_name__some_title
+      :includes: logic_arc_int__feature_name__interface_name1
+      :belongs_to: feat__feature_name
+
+      .. needarch::
+         :scale: 50
+         :align: center
+
+         {{ draw_feature(need(), needs) }}
 
 Dynamic Architecture
 --------------------
 
-.. feat_arc_dyn:: Dynamic View
-   :id: feat_arc_dyn__feature_name__dynamic_view
-   :security: YES
-   :safety: ASIL_B
-   :status: invalid
-   :fulfils: feat_req__feature_name__some_title
-   :belongs_to: feat__feature_name
+.. code-block:: rst
 
-   Put here a sequence diagram
+   .. feat_arc_dyn:: Dynamic View
+      :id: feat_arc_dyn__feature_name__dynamic_view
+      :security: YES
+      :safety: ASIL_B
+      :status: invalid
+      :fulfils: feat_req__feature_name__some_title
+      :belongs_to: feat__feature_name
+
+      Put here a sequence diagram
 
 Logical Interfaces
 ------------------
 
-.. logic_arc_int:: Interface Name
-   :id: logic_arc_int__feature_name__interface_name1
-   :security: YES
-   :safety: ASIL_B
-   :status: invalid
-   :fulfils: feat_req__feature_name__some_title
+.. code-block:: rst
 
-   General Interface Description
+   .. logic_arc_int:: Interface Name
+      :id: logic_arc_int__feature_name__interface_name1
+      :security: YES
+      :safety: ASIL_B
+      :status: invalid
+      :fulfils: feat_req__feature_name__some_title
 
-   .. needarch::
-      :scale: 50
-      :align: center
+      General Interface Description
 
-      {{ draw_interface(need(), needs) }}
+      .. needarch::
+         :scale: 50
+         :align: center
 
-.. logic_arc_int_op:: Operation
-   :id: logic_arc_int_op__feature_name__operation
-   :security: YES
-   :safety: ASIL_B
-   :status: invalid
-   :included_by: logic_arc_int__feature_name__interface_name1
+         {{ draw_interface(need(), needs) }}
 
-   General Operation Description
+   .. logic_arc_int_op:: Operation
+      :id: logic_arc_int_op__feature_name__operation
+      :security: YES
+      :safety: ASIL_B
+      :status: invalid
+      :included_by: logic_arc_int__feature_name__interface_name1
+
+      General Operation Description
 
 Module Viewpoint
 ----------------
@@ -145,20 +154,25 @@ Module Viewpoint
 The following modules are needed to be defined to be able to draw the static feature view.
 They will be replaced by linking the proper module definitions in the used module's repositories as soon as those exist.
 
-.. mod:: Module Name
-   :id: mod__module_name
-   :includes: comp__component_name_template
+The rendered module and used-component examples are maintained in the
+`module template documentation <https://eclipse-score.github.io/module_template/architecture_modeling_example.html>`_.
+
+.. code-block:: rst
+
+   .. mod:: Module Name
+      :id: mod__module_name
+      :includes: comp__component_name_template
 
 
-.. mod_view_sta:: Module Name Static View
-   :id: mod_view_sta__feature_name__module_name
-   :includes: comp__component_name_template
+   .. mod_view_sta:: Module Name Static View
+      :id: mod_view_sta__feature_name__module_name
+      :includes: comp__component_name_template
 
-   .. needarch::
-      :scale: 50
-      :align: center
+      .. needarch::
+         :scale: 50
+         :align: center
 
-      {{ draw_module(need(), needs) }}
+         {{ draw_module(need(), needs) }}
 
 Used Components
 ---------------

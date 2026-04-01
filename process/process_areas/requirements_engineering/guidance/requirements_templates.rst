@@ -22,28 +22,32 @@ Templates
    :status: valid
    :complies: std_req__iso26262__system_6411, std_req__iso26262__system_6413, std_req__iso26262__support_641, std_req__iso26262__support_6421, std_req__iso26262__support_6425, std_req__aspice_40__SWE-1-BP1
 
-   See :need:`stkh_req__requirements__template`
+   See the stakeholder requirements template in the
+   `module template documentation <https://eclipse-score.github.io/module_template/stakeholder_requirements_template.html>`__.
 
 .. gd_temp:: Feature Requirements Template
    :id: gd_temp__req_feat_req
    :status: valid
    :complies: std_req__iso26262__support_641, std_req__iso26262__support_6421, std_req__iso26262__support_6425, std_req__aspice_40__SWE-1-BP1
 
-   See :need:`feat_req__feature_name__some_title`
+   See the feature requirements template in
+   :doc:`../../../folder_templates/features/feature_name/requirements/index`
 
 .. gd_temp:: Component Requirements Template
    :id: gd_temp__req_comp_req
    :status: valid
    :complies: std_req__iso26262__support_641, std_req__iso26262__support_6421, std_req__iso26262__support_6425, std_req__iso26262__support_12425, std_req__aspice_40__SWE-1-BP1
 
-   See :need:`comp_req__component_name__some_title`
+   See the component requirements template in
+   :doc:`../../../folder_templates/modules/module_name/component_name/docs/requirements/index`
 
 .. gd_temp:: AoU Requirement Template
    :id: gd_temp__req_aou_req
    :status: valid
    :complies: std_req__iso26262__support_641, std_req__iso26262__support_6421, std_req__iso26262__support_6425, std_req__aspice_40__SWE-1-BP1
 
-   See :need:`aou_req__platform__some_other_title`, :need:`aou_req__feature_name__some_other_title`, :need:`aou_req__component_name__another_title`
+   See the Assumption of Use requirement snippets in the
+   `module template documentation <https://eclipse-score.github.io/module_template/aou_requirements_template.html>`__.
 
 .. gd_temp:: Process Requirements Template
    :id: gd_temp__req_process_req

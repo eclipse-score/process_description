@@ -72,42 +72,49 @@ The components are designed to cover the expectations from the feature architect
 
 A component can optional also consist of subcomponents to further structure the architecture. The component and its static views can also optionally use interfaces provided by other components.
 
-.. comp:: Component Name
-   :id: comp__component_name_template
-   :security: YES
-   :safety: ASIL_B
-   :status: invalid
-   :implements: logic_arc_int__feature_name__interface_name1
-   :consists_of: comp__archex_sub_component_1, comp__archex_sub_component_2, comp__archex_sub_component_3
-   :belongs_to: feat__feature_name
+The live component architecture template is maintained in the
+`module template documentation <https://eclipse-score.github.io/module_template/component_architecture_template.html>`_.
 
-.. comp_arc_sta:: Component Name (Static View)
-   :id: comp_arc_sta__component_name__static_view
-   :security: YES
-   :safety: ASIL_B
-   :status: invalid
-   :belongs_to: comp__component_name_template
-   :uses: logic_arc_int__feature_name__interface_name1
-   :fulfils: comp_req__component_name__some_title
+.. code-block:: rst
 
-   .. needarch::
-      :scale: 50
-      :align: center
+   .. comp:: Component Name
+      :id: comp__component_name_template
+      :security: YES
+      :safety: ASIL_B
+      :status: invalid
+      :implements: logic_arc_int__feature_name__interface_name1
+      :consists_of: comp__component_name_internal_1, comp__component_name_internal_2, comp__component_name_internal_3
+      :belongs_to: feat__feature_name
 
-      {{ draw_component(need(), needs) }}
+   .. comp_arc_sta:: Component Name (Static View)
+      :id: comp_arc_sta__component_name__static_view
+      :security: YES
+      :safety: ASIL_B
+      :status: invalid
+      :belongs_to: comp__component_name_template
+      :uses: logic_arc_int__feature_name__interface_name1
+      :fulfils: comp_req__component_name__some_title
+
+      .. needarch::
+         :scale: 50
+         :align: center
+
+         {{ draw_component(need(), needs) }}
 
 Dynamic Architecture
 --------------------
 
-.. comp_arc_dyn:: Dynamic View
-   :id: comp_arc_dyn__component_name__dynamic_view
-   :security: YES
-   :safety: ASIL_B
-   :status: invalid
-   :belongs_to: comp__component_name_template
-   :fulfils: comp_req__component_name__some_title
+.. code-block:: rst
 
-   Put here a sequence diagram
+   .. comp_arc_dyn:: Dynamic View
+      :id: comp_arc_dyn__component_name__dynamic_view
+      :security: YES
+      :safety: ASIL_B
+      :status: invalid
+      :belongs_to: comp__component_name_template
+      :fulfils: comp_req__component_name__some_title
+
+      Put here a sequence diagram
 
 
 Interfaces
@@ -125,15 +132,38 @@ Interfaces
 Internal Components
 -------------------
 
-.. comp_arc_sta:: Component Name Static View
-   :id: comp_arc_sta__component_name__2
-   :status: invalid
-   :safety: ASIL_B
-   :security: YES
-   :fulfils: comp_req__component_name__some_title
-   :belongs_to: comp__component_example_2
+.. code-block:: rst
 
-   No architecture but detailed design
+   .. comp_arc_sta:: Component Name Static View
+      :id: comp_arc_sta__component_name__2
+      :status: invalid
+      :safety: ASIL_B
+      :security: YES
+      :fulfils: comp_req__component_name__some_title
+      :belongs_to: comp__component_name_template
+
+      No architecture but detailed design
+
+   .. comp:: Internal Component 1
+      :id: comp__component_name_internal_1
+      :status: invalid
+      :safety: ASIL_B
+      :security: YES
+      :belongs_to: feat__feature_name
+
+   .. comp:: Internal Component 2
+      :id: comp__component_name_internal_2
+      :status: invalid
+      :safety: ASIL_B
+      :security: YES
+      :belongs_to: feat__feature_name
+
+   .. comp:: Internal Component 3
+      :id: comp__component_name_internal_3
+      :status: invalid
+      :safety: ASIL_B
+      :security: YES
+      :belongs_to: feat__feature_name
 
 .. note::
    Architecture can be split into multiple files. At component level the public interfaces to be used by the user and tester to be shown.

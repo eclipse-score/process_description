@@ -37,18 +37,20 @@ Requirements
 Component Requirements
 ----------------------
 
-.. comp_req:: Some Title
-   :id: comp_req__component_name__some_title
-   :reqtype: Process
-   :security: YES
-   :safety: ASIL_B
-   :satisfies: feat_req__feature_name__some_title
-   :status: invalid
-   :belongs_to: comp__component_name_template
+.. code-block:: rst
 
-   The Component shall do xyz to another component to bring it to this condition at this time
+   .. comp_req:: Some Title
+      :id: comp_req__component_name__some_title
+      :reqtype: Process
+      :security: YES
+      :safety: ASIL_B
+      :satisfies: feat_req__feature_name__some_title
+      :status: invalid
+      :belongs_to: comp__component_name_template
 
-   Note: (optional, not to be verified)
+      The Component shall do xyz to another component to bring it to this condition at this time
+
+      Note: (optional, not to be verified)
 
 .. attention::
     The above directive must be updated according to your component requirements.
@@ -63,27 +65,31 @@ Component Requirements
 Assumption of Use Requirements
 ------------------------------
 
-.. aou_req:: Next Title
-   :id: aou_req__component_name__next_title
-   :reqtype: Process
-   :security: YES
-   :safety: ASIL_B
-   :status: invalid
+.. code-block:: rst
 
-   The Component User shall do xyz to use the component safely/securely
+   .. aou_req:: Next Title
+      :id: aou_req__component_name__next_title
+      :reqtype: Process
+      :security: YES
+      :safety: ASIL_B
+      :status: invalid
+
+      The Component User shall do xyz to use the component safely/securely
 
 Environmental Requirements
 --------------------------
 
-.. aou_req:: Another Title
-   :id: aou_req__component_name__another_title
-   :reqtype: Process
-   :security: YES
-   :safety: ASIL_B
-   :status: invalid
-   :tags: environment
+.. code-block:: rst
 
-   The Component shall only be used in a xyz environment to ensure its proper functioning.
+   .. aou_req:: Another Title
+      :id: aou_req__component_name__another_title
+      :reqtype: Process
+      :security: YES
+      :safety: ASIL_B
+      :status: invalid
+      :tags: environment
+
+      The Component shall only be used in a xyz environment to ensure its proper functioning.
 
 Hints
 -----
