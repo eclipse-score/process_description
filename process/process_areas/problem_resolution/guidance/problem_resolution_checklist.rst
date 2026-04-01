@@ -48,47 +48,47 @@ Problem Checklist
         -
 
       * - 3
-        - Does the Problem report has a UID as specified?
+        - Does the Problem report have a UID as specified?
         -
 
       * - 4
-        - Does the Problem report has a title as specified?
+        - Does the Problem report have a title as specified?
         -
 
       * - 5
-        - Does the Problem report has a status as specified?
+        - Does the Problem report have a status as specified?
         -
 
       * - 6
-        - Does the Problem report has a submitter as specified?
+        - Does the Problem report have a submitter as specified?
         -
 
       * - 7
-        - Does the Problem report has a description as specified?
+        - Does the Problem report have a description as specified?
         -
 
       * - 8
-        - Does the Problem report has stakeholder as specified?
+        - Does the Problem report have a stakeholder as specified?
         -
 
       * - 9
-        - Does the Problem report has a category as specified?
+        - Does the Problem report have a category as specified?
         -
 
       * - 10
-        - Does the Problem report has a classification as specified?
+        - Does the Problem report have a classification as specified?
         -
 
       * - 11
-        - Does the Problem report has the affected release versions as specified?
+        - Does the Problem report have the affected release versions as specified?
         -
 
       * - 12
-        - Does the Problem report has a expected closure date as specified?
+        - Does the Problem report have an expected closure date as specified?
         -
 
       * - 13
-        - Does the Problem report has the solution measures specified, verified and reported?
+        - Does the Problem report have the solution measures specified, verified and reported?
         -
 
       * - 14

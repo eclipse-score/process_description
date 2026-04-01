@@ -109,7 +109,7 @@ from the different users.
   `Example Problem Report <https://github.com/eclipse-score/process_description/issues/631>`_
 
 .. note::
-  A Problem Report Example 2 based on and older version template is here:
+  A Problem Report Example 2 based on an older version template is here:
   `Example Problem Report 2 <https://github.com/eclipse-score/process_description/issues/126>`_
 
 It is expected, that the UID will be provided automatically by the Issue Tracking System.
@@ -134,11 +134,12 @@ If safety is affected, the ASIL classification should be added, if applicable.
 
 The problem should be classified according minor, major, critical or blocker.
 
-The affected version of the release should be documented, where the problem was detected.
+The affected versions of the release should be documented. Document the first version
+where the problem was detected and the last affected version.
 
 .. note::
   | For the Problem Report Example:
-  | * The UID is provided by the Issue Tracking System as: **#124**
+  | * The UID is provided by the Issue Tracking System as: **#631**
   | * The status of the issue is provided by the Issue Tracking System as: **Open**
   | * The submitter is provided by the Issue Tracking System as: **masc2023**
   | * The title contains the main root cause, missing safety/security attribute
@@ -147,7 +148,8 @@ The affected version of the release should be documented, where the problem was 
   | * Further supporting information is added as the link to the official feature request template which makes it reproducible
   | * Checkboxes are selected to highlight, that Safety and Security is affected, no further classification, as the project is defined as ASIL B
   | * The problem classification is provided as minor
-  | * The affected version is provided: *pre-0.5*
+  | * The first affected version is provided: *pre-0.5*
+  | * The last affected version is provided: *pre-0.5*
 
 When ready to review and to analyze, the author sets the status to "in review" manually.
 
@@ -201,8 +203,8 @@ and closed with the reason "Closed as not planned".
   | For the Problem Report Example:
   | * The descriptions has a section for the analysis results: **Accepted**
   | * The stakeholder are provided using Assignees field: **masc2023**
-  | * The expected closure version is provided: *0.5*
-  | * The "Milestone" is provided: **Release 2.0.0 - Maturity Level 2**
+  | * The expected fix version is provided: *0.6*
+  | * The "Milestone" is provided: **Release v0.6 - Maturity Level 2**
   | * Feature identification is not applicable for this example, so no label is set, beside **bug**
 
 If accepted, :need:`[[title]] <rl__contributor>` can start with the initiation of the
