@@ -134,8 +134,9 @@ If safety is affected, the ASIL classification should be added, if applicable.
 
 The problem should be classified according minor, major, critical or blocker.
 
-The affected versions of the release should be documented. Document the first version
-where the problem was detected and the last affected version.
+The affected versions of the release should be documented. After detection of the
+problem, checking the affected versions is critical to understand the impact of the
+problem. Thus document the first affected version and the last affected version.
 
 .. note::
   | For the Problem Report Example:
