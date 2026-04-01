@@ -40,6 +40,7 @@ Dependent Failure Initiators
        :id: plat_saf_DFA__Platform__<Element descriptor>
        :failure_id: <ID from DFA failure initiators :need:`gd_guidl__dfa_failure_initiators`>
        :failure_effect: "description of failure effect of the failure initiator on the element"
+       :safety_relevant: <yes|no>
        :mitigated_by: <ID from Stakeholder Requirement | ID from AoU Feature Requirement>
        :mitigation_issue: <ID from Issue Tracker>
        :sufficient: <yes|no>
