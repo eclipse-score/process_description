@@ -193,6 +193,7 @@ For all identified applicable failure initiators, the DFA is performed in the fo
        :id: comp_saf_dfa__<Component>__<Element descriptor>
        :failure_id: <ID from DFA failure initiators :need:`gd_guidl__dfa_failure_initiators`>
        :failure_effect: "description of failure effect of the failure initiator on the element"
+       :safety_relevant: <yes|no>
        :mitigated_by: <ID from Component Requirement | ID from AoU Component Requirement>
        :mitigation_issue: <ID from Issue Tracker>
        :sufficient: <yes|no>
