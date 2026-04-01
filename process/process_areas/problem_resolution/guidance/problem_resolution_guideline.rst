@@ -150,7 +150,7 @@ problem. Thus document the first affected version and the last affected version.
   | * Checkboxes are selected to highlight, that Safety and Security is affected, no further classification, as the project is defined as ASIL B
   | * The problem classification is provided as minor
   | * The first affected version is provided: *pre-0.5*
-  | * The last affected version is provided: *pre-0.5*
+  | * The last affected version is provided: *0.5*
 
 When ready to review and to analyze, the author sets the status to "in review" manually.
 
