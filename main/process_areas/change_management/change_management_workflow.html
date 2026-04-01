@@ -564,7 +564,7 @@
   <section id="change-management-workflows">
 <span id="chm-change-workflows"></span><h1>Change Management Workflows<a class="headerlink" href="#change-management-workflows" title="Link to this heading">#</a></h1>
 <p>For a detailed explanation of workflows and their role within the process model, please refer to the <a class="reference internal" href="../../introduction/index.html#processes-introduction"><span class="std std-ref">Introduction</span></a>.</p>
-<div class="need_container docutils container" id="SNCB-8206248e">
+<div class="need_container docutils container" id="SNCB-e951d3c1">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workflow table" id="wf__change_create_cr">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -618,7 +618,7 @@ templates: <a class="reference internal" href="change_management_getstrt.html#do
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-10d05a0c">
+<div class="need_container docutils container" id="SNCB-a0dfd55b">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workflow table" id="wf__change_analyze_cr">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -675,7 +675,7 @@ cancel it, thus the status is set to “rejected” too.</p>
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-826024f7">
+<div class="need_container docutils container" id="SNCB-ce88f466">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workflow table" id="wf__change_implement_monitor_cr">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -713,11 +713,16 @@ cancel it, thus the status is set to “rejected” too.</p>
 <p>This may require additional activities, including creating ISSUEs and PRs.
 These are linked to the Change Request and monitored until closure.</p>
 <p>The Change Request is done, if all linked activities has been closed and confirmed,
-which is done by the approval of the selected codeowners.
-Before closing the Change Request, <a class="reference internal" href="../../roles/index.html#rl__delivery_team" title="rl__delivery_team"><em class="xref need">Delivery Team</em></a> must check the
-correctness.</p>
-<p>The <a class="reference internal" href="../../roles/index.html#rl__delivery_team" title="rl__delivery_team"><em class="xref need">Delivery Team</em></a> may still reject it, thus the status
-is set to “rejected”.</p>
+which is done by the approval of the selected codeowners.</p>
+<p>Depending on the type of the Change Request (Feature or Component), different Teams
+are responsibly for this workflow.</p>
+<p>For feature:
+Before closing the Change Request, <a class="reference internal" href="../../roles/index.html#rl__platform_team" title="rl__platform_team"><em class="xref need">Platform Team</em></a> must
+check the correctness.</p>
+<p>For component:
+Before closing the Change Request, <a class="reference internal" href="../../roles/index.html#rl__delivery_team" title="rl__delivery_team"><em class="xref need">Delivery Team</em></a> must
+check the correctness.</p>
+<p>The responsible team may still reject it, thus the status is set to “rejected”.</p>
 </td>
 </tr>
 <tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
@@ -734,7 +739,7 @@ is set to “rejected”.</p>
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-0bbef810">
+<div class="need_container docutils container" id="SNCB-daa60081">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workflow table" id="wf__change_close_cr">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -769,10 +774,17 @@ is set to “rejected”.</p>
 <td class="meta" colspan="3"></td>
 </tr>
 <tr class="content row-odd"><td class="content" colspan="6"><p>The Change Request is closed.</p>
-<p>The Change Request is closed only, if the implementation is sufficient. That is verified
+<p>Depending on the type of the Change Request (Feature or Component), different Teams
+are responsibly for this workflow.</p>
+<p>For feature:
+The Change Request is closed only, if the implementation is sufficient. That is verified
+by the <a class="reference internal" href="../../roles/index.html#rl__platform_team" title="rl__platform_team"><em class="xref need">Platform Team</em></a> finally, especially the selected
+codeowners of the team must approve.</p>
+<p>For component:
+The Change Request is closed only, if the implementation is sufficient. That is verified
 by the <a class="reference internal" href="../../roles/index.html#rl__delivery_team" title="rl__delivery_team"><em class="xref need">Delivery Team</em></a> finally, especially the selected
 codeowners of the team must approve.</p>
-<p>Otherwise the <a class="reference internal" href="../../roles/index.html#rl__delivery_team" title="rl__delivery_team"><em class="xref need">Delivery Team</em></a> keeps the status “in implementation”.</p>
+<p>Otherwise the responsible teams keeps the status “in implementation”.</p>
 </td>
 </tr>
 <tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
