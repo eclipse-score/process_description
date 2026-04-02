@@ -34,3 +34,29 @@ extensions = [
 
 # :need:`{title}` is used in the needs templates to display the title of the need
 needs_role_need_template = "{title}"
+
+
+def setup(app):
+    # Register the FMEA Fault Model need type.
+    # This type is used for fault models listed in the FMEA fault models guideline
+    # so they can be linked to from FMEA analyses instead of using plain IDs.
+    fmea_fault_model_type = {
+        "directive": "fmea_fault_model",
+        "title": "FMEA Fault Model",
+        "prefix": "fmea_fault_model__",
+        "tags": [],
+        "parts": 2,
+        "mandatory_options": {
+            "id": "^fmea_fault_model__[0-9a-z_]+$",
+            "status": "^(valid|draft)$",
+            "element": "^.*$",
+            "importance": "^(High|Medium|Low)$",
+        },
+        "optional_options": {},
+        "mandatory_links": {},
+        "optional_links": {},
+    }
+    app.config.needs_types.append(fmea_fault_model_type)
+    for opt in ("element", "importance"):
+        if opt not in app.config.needs_extra_options:
+            app.config.needs_extra_options.append(opt)

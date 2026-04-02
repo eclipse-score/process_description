@@ -29,71 +29,139 @@ FMEA Fault Models
 
 
 Fault Models for sequence diagrams
-  .. list-table:: Fault Models for sequence diagrams
-     :header-rows: 1
-     :widths: 15,15,45,15
+------------------------------------
 
-    * - Element
-      - ID
-      - Failure Mode
-      - Importance (can be used for prioritization)
-    * - message
-      - MF_01_01
-      - message is not received (is a subset/more precise description of MF_01_05)
-      - High
-    * - message
-      - MF_01_02
-      - message received too late (only relevant if delay is a realistic fault)
-      - Medium
-    * - message
-      - MF_01_03
-      - message received too early (usually not a problem)
-      - Low
-    * - message
-      - MF_01_04
-      - message not received correctly by all recipients (different messages or messages partly lost). Only relevant if the same message goes to multiple recipients.
-      - High
-    * - message
-      - MF_01_05
-      - message is corrupted
-      - High
-    * - message
-      - MF_01_06
-      - message is not sent
-      - High
-    * - message
-      - MF_01_07
-      - message is unintended sent
-      - High
-    * - duration/time constraint
-      - CO_01_01
-      - minimum constraint boundary is violated
-      - Medium
-    * - duration/time constraint
-      - CO_01_02
-      - maximum constraint boundary is violated
-      - High
-    * - execution
-      - EX_01_01
-      - Process calculates wrong result(s) (is a subset/more precise description of MF_01_05 or MF_01_04). This failure mode is related to the analysis if e.g. internal safety mechanisms are required (level 2 function, plausibility check of the output, …) because of the size / complexity of the feature.
-      - High
-    * - execution
-      - EX_01_02
-      - processing too slow (only relevant if timing is considered)
-      - Medium
-    * - execution
-      - EX_01_03
-      - processing too fast (only relevant if timing is considered)
-      - Medium
-    * - execution
-      - EX_01_04
-      - loss of execution
-      - High
-    * - execution
-      - EX_01_05
-      - processing changes to arbitrary process
-      - Medium
-    * - execution
-      - EX_01_06
-      - processing is not complete (infinite loop)
-      - High
+.. fmea_fault_model:: message is not received
+   :id: fmea_fault_model__mf_01_01
+   :status: valid
+   :element: message
+   :importance: High
+   :hide:
+
+   Is a subset/more precise description of :need:`fmea_fault_model__mf_01_05`.
+
+.. fmea_fault_model:: message received too late
+   :id: fmea_fault_model__mf_01_02
+   :status: valid
+   :element: message
+   :importance: Medium
+   :hide:
+
+   Only relevant if delay is a realistic fault.
+
+.. fmea_fault_model:: message received too early
+   :id: fmea_fault_model__mf_01_03
+   :status: valid
+   :element: message
+   :importance: Low
+   :hide:
+
+   Usually not a problem.
+
+.. fmea_fault_model:: message not received correctly by all recipients
+   :id: fmea_fault_model__mf_01_04
+   :status: valid
+   :element: message
+   :importance: High
+   :hide:
+
+   Different messages or messages partly lost. Only relevant if the same message goes to multiple recipients.
+
+.. fmea_fault_model:: message is corrupted
+   :id: fmea_fault_model__mf_01_05
+   :status: valid
+   :element: message
+   :importance: High
+   :hide:
+
+.. fmea_fault_model:: message is not sent
+   :id: fmea_fault_model__mf_01_06
+   :status: valid
+   :element: message
+   :importance: High
+   :hide:
+
+.. fmea_fault_model:: message is unintended sent
+   :id: fmea_fault_model__mf_01_07
+   :status: valid
+   :element: message
+   :importance: High
+   :hide:
+
+.. fmea_fault_model:: minimum constraint boundary is violated
+   :id: fmea_fault_model__co_01_01
+   :status: valid
+   :element: duration/time constraint
+   :importance: Medium
+   :hide:
+
+.. fmea_fault_model:: maximum constraint boundary is violated
+   :id: fmea_fault_model__co_01_02
+   :status: valid
+   :element: duration/time constraint
+   :importance: High
+   :hide:
+
+.. fmea_fault_model:: process calculates wrong results
+   :id: fmea_fault_model__ex_01_01
+   :status: valid
+   :element: execution
+   :importance: High
+   :hide:
+
+   Is a subset/more precise description of :need:`fmea_fault_model__mf_01_05` or
+   :need:`fmea_fault_model__mf_01_04`. This failure mode is relevant to the analysis
+   if e.g. internal safety mechanisms are required (level 2 function, plausibility
+   check of the output, …) because of the size/complexity of the feature.
+
+.. fmea_fault_model:: processing too slow
+   :id: fmea_fault_model__ex_01_02
+   :status: valid
+   :element: execution
+   :importance: Medium
+   :hide:
+
+   Only relevant if timing is considered.
+
+.. fmea_fault_model:: processing too fast
+   :id: fmea_fault_model__ex_01_03
+   :status: valid
+   :element: execution
+   :importance: Medium
+   :hide:
+
+   Only relevant if timing is considered.
+
+.. fmea_fault_model:: loss of execution
+   :id: fmea_fault_model__ex_01_04
+   :status: valid
+   :element: execution
+   :importance: High
+   :hide:
+
+.. fmea_fault_model:: processing changes to arbitrary process
+   :id: fmea_fault_model__ex_01_05
+   :status: valid
+   :element: execution
+   :importance: Medium
+   :hide:
+
+.. fmea_fault_model:: processing is not complete
+   :id: fmea_fault_model__ex_01_06
+   :status: valid
+   :element: execution
+   :importance: High
+   :hide:
+
+   Infinite loop.
+
+.. needtable::
+   :style: table
+   :columns: element;id;title;importance
+   :colwidths: 15,20,50,15
+
+   results = []
+
+   for need in needs.filter_types(["fmea_fault_model"]):
+      if need['is_external'] == False:
+         results.append(need)
