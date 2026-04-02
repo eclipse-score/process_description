@@ -76,7 +76,7 @@ Static Architecture
 -------------------
 
 The live feature architecture template snippets are maintained in the
-`module template documentation <https://eclipse-score.github.io/module_template/architecture_modeling_example.html>`__.
+`module template documentation <https://eclipse-score.github.io/module_template/main/>`__.
 
 .. code-block:: rst
 
@@ -155,7 +155,7 @@ The following modules are needed to be defined to be able to draw the static fea
 They will be replaced by linking the proper module definitions in the used module's repositories as soon as those exist.
 
 The rendered module and used-component examples are maintained in the
-`module template documentation <https://eclipse-score.github.io/module_template/architecture_modeling_example.html>`_.
+`module template documentation <https://eclipse-score.github.io/module_template/main/>`_.
 
 .. code-block:: rst
 
