@@ -563,7 +563,7 @@
                   
   <section id="concept-description">
 <h1>Concept Description<a class="headerlink" href="#concept-description" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-9131da49">
+<div class="need_container docutils container" id="SNCB-3ea08bf9">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_doc_concept table" id="doc_concept__arch_process">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -716,7 +716,7 @@
 <section id="static-view">
 <h4>Static View<a class="headerlink" href="#static-view" title="Link to this heading">#</a></h4>
 <p>The first viewpoint is named as <em>feature architecture</em>. It displays the SW Components within the SW modules (= dependable elements) which are required to realize the feature including their interactions. Also the <em>logical interfaces</em> and the interaction between the feature and the user are included in this view. On this architectural level the feature requirements shall be allocated. A full rendered example for the static architecture is maintained in the
-<a class="reference external" href="https://eclipse-score.github.io/module_template/architecture_modeling_example.html">module template documentation</a>.</p>
+<a class="reference external" href="https://eclipse-score.github.io/module_template/main/">module template documentation</a>.</p>
 <p>In all views, the components which are marked as ASIL_B related are drawn with red borders.</p>
 <p>See <a class="reference internal" href="guidance/architecture_guideline.html#uml-diagram-selection"><span class="std std-ref">UML diagram selection</span></a> in guideline for further information about the UML diagram selection for static architecture.</p>
 </section>
@@ -742,14 +742,14 @@
 <section id="interface-view">
 <h4>Interface View<a class="headerlink" href="#interface-view" title="Link to this heading">#</a></h4>
 <p>On the feature level only <em>logical interfaces</em> shall be displayed. This means that only logical names shall be provided for both the interface and the operations within. Those <em>logical interfaces</em> shall be connected to component interfaces on the module view. A rendered logical-interface example is maintained in the
-<a class="reference external" href="https://eclipse-score.github.io/module_template/architecture_modeling_example.html">module template documentation</a>.</p>
+<a class="reference external" href="https://eclipse-score.github.io/module_template/main/">module template documentation</a>.</p>
 </section>
 </section>
 <section id="sw-module-view">
 <h3>SW Module View<a class="headerlink" href="#sw-module-view" title="Link to this heading">#</a></h3>
 <p>A SW Module (=dependable element) is packaging a component or a set of components which is developed, documented and released together. It is not meant to be an architectural element which means that no requirements can be allocated to it.</p>
 <p>On this level also a view shall be defined which is called <em>Module View</em>. It represents the allocation of components into modules and displays the dependencies between the single modules. In this view also cyclic dependencies between modules can be identified. A rendered module-view example is maintained in the
-<a class="reference external" href="https://eclipse-score.github.io/module_template/architecture_modeling_example.html">module template documentation</a>.</p>
+<a class="reference external" href="https://eclipse-score.github.io/module_template/main/">module template documentation</a>.</p>
 </section>
 <section id="component-view">
 <h3>Component View<a class="headerlink" href="#component-view" title="Link to this heading">#</a></h3>
@@ -758,7 +758,7 @@
 <h4>Static View<a class="headerlink" href="#id1" title="Link to this heading">#</a></h4>
 <p>The <em>component architecture</em> describes the implementation of the functionalities in a white-box view. It describes the internal structure of SW components and their decomposition. It provides a more detailed information concerning the respective interfaces of a component. If a SW component interacts with a different component it is also included via a <em>use</em> relationship in the diagram. An example of the <em>component architecture</em> is displayed here:</p>
 <p>A full rendered component-architecture example is maintained in the
-<a class="reference external" href="https://eclipse-score.github.io/module_template/component_architecture_template.html">module template documentation</a>.</p>
+<a class="reference external" href="https://eclipse-score.github.io/module_template/main/">module template documentation</a>.</p>
 <p>The decomposition is optional and relies on the complexity of the component. Thus there is no graphic representation required for it.
 In all views the components which are marked as ASIL_B related are drawn in red color.</p>
 </section>
@@ -784,7 +784,7 @@ In all views the components which are marked as ASIL_B related are drawn in red 
 <section id="id3">
 <h4>Interface View<a class="headerlink" href="#id3" title="Link to this heading">#</a></h4>
 <p>The component interface view shows the actual interfaces of the component. Also links to their corresponding logical interfaces are displayed in this view. A rendered component-interface example is maintained in the
-<a class="reference external" href="https://eclipse-score.github.io/module_template/component_architecture_template.html">module template documentation</a>.</p>
+<a class="reference external" href="https://eclipse-score.github.io/module_template/main/">module template documentation</a>.</p>
 </section>
 </section>
 <section id="platform-view">
@@ -1031,7 +1031,7 @@ It serves as a guidance for modeling the architecture.</p>
 <section id="feature-architecture">
 <h5>Feature Architecture<a class="headerlink" href="#feature-architecture" title="Link to this heading">#</a></h5>
 <p>The following section links to the rendered feature example that is now maintained in the
-<a class="reference external" href="https://eclipse-score.github.io/module_template/architecture_modeling_example.html">module template documentation</a>.</p>
+<a class="reference external" href="https://eclipse-score.github.io/module_template/main/">module template documentation</a>.</p>
 <div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">feat</span><span class="p">::</span> Feature Name
    <span class="nc">:id:</span> feat__feature_name
    <span class="nc">:security:</span> YES
@@ -1061,7 +1061,7 @@ It serves as a guidance for modeling the architecture.</p>
 <h5>Component Architecture<a class="headerlink" href="#component-architecture" title="Link to this heading">#</a></h5>
 <p>The following section is an example, how an component looks like and how the detail design of an component is described. Please note that components with an “ASIL_B” safety rating are highlighted with red borders in the diagram (e.g., “Component 1”).</p>
 <p>The rendered component examples are maintained in the
-<a class="reference external" href="https://eclipse-score.github.io/module_template/component_architecture_template.html">module template documentation</a>.</p>
+<a class="reference external" href="https://eclipse-score.github.io/module_template/main/">module template documentation</a>.</p>
 <div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">comp_arc_sta</span><span class="p">::</span> Static View - Rendered Example
    <span class="nc">:id:</span> comp_arc_sta__example_feature__component_getstrt
    <span class="nc">:status:</span> valid
@@ -1105,7 +1105,7 @@ Therefore the <em>needarch</em> directive needs to be extended with the attribut
 </div>
 <p>Debug example for component architecture:</p>
 <p>See the rendered debug example in the
-<a class="reference external" href="https://eclipse-score.github.io/module_template/component_architecture_template.html">module template documentation</a>.</p>
+<a class="reference external" href="https://eclipse-score.github.io/module_template/main/">module template documentation</a>.</p>
 </section>
 <section id="manual-addition-to-the-uml">
 <span id="manual-addition-uml"></span><h4>Manual Addition to the UML<a class="headerlink" href="#manual-addition-to-the-uml" title="Link to this heading">#</a></h4>
@@ -1128,7 +1128,7 @@ To make <em>needuml</em> work we have to replace the <em>need()</em> call with a
 </pre></div>
 </div>
 <p>See the rendered manual-edit example in the
-<a class="reference external" href="https://eclipse-score.github.io/module_template/component_architecture_template.html">module template documentation</a>.</p>
+<a class="reference external" href="https://eclipse-score.github.io/module_template/main/">module template documentation</a>.</p>
 <p>You can add any layout or additional configuration you want before you call the <em>draw_xyz</em>.</p>
 </section>
 <section id="facing-build-issues">
