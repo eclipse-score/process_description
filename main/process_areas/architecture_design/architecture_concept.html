@@ -480,7 +480,6 @@
 <li class="toctree-l2"><a class="reference internal" href="architecture_roles.html">Roles</a></li>
 <li class="toctree-l2"><a class="reference internal" href="architecture_workflow.html">Architecture Workflows</a></li>
 <li class="toctree-l2"><a class="reference internal" href="architecture_workproducts.html">Architecture Work Products</a></li>
-<li class="toctree-l2"><a class="reference internal" href="guidance/architecture_modeling_example.html">Example model of architectural design</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1"><a class="reference internal" href="../change_management/index.html">Change Management</a></li>
@@ -564,7 +563,7 @@
                   
   <section id="concept-description">
 <h1>Concept Description<a class="headerlink" href="#concept-description" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-72f7d6ac">
+<div class="need_container docutils container" id="SNCB-4836bce5">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_doc_concept table" id="doc_concept__arch_process">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -716,54 +715,8 @@
 <p>The feature architecture contain the following views:</p>
 <section id="static-view">
 <h4>Static View<a class="headerlink" href="#static-view" title="Link to this heading">#</a></h4>
-<p>The first viewpoint is named as <em>feature architecture</em>. It displays the SW Components within the SW modules (= dependable elements) which are required to realize the feature including their interactions. Also the <em>logical interfaces</em> and the interaction between the feature and the user are included in this view. On this architectural level the feature requirements shall be allocated. An example for the static architecture is shown here:</p>
-<div class="need_container docutils container" id="SNCB-60243dbc">
-<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_feat_arc_sta table" id="feat_arc_sta__example_feature__feature_1">
-<tbody>
-<tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
-<div class="line"><span><span class="needs_title"><span class="needs_data">Feature 1 Architecture</span></span></span></div>
-</div>
-</td>
-<td class="head_center" colspan="2"><div class="needs_head line-block">
-<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></span></div>
-<div class="line"><span><span class="needs_security"><span class="needs_label">security: </span><span class="needs_data">YES</span></span></span></div>
-<div class="line"><span><span class="needs_safety"><span class="needs_label">safety: </span><span class="needs_data">QM</span></span></span></div>
-</div>
-</td>
-<td class="head_right" colspan="2"><div class="needs_head_right line-block">
-<div class="line"><span><span class="needs needs_collapse" id="target__show__meta"><span class="needs collapsed"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg></span><span class="needs visible collapse_is_hidden"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg></span></span></span></div>
-</div>
-</td>
-</tr>
-<tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
-<div class="line"><span><span><div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">architecture_design</span></span></span></div>
-</span></span></div>
-<div class="line"><span><div class="line">belongs to: <span class="belongs_to"><span><a class="reference internal" href="guidance/architecture_modeling_example.html#feat__example_feature" title="feat_arc_sta__example_feature__feature_1">feat__example_feature</a></span></span></div>
-<div class="line">fulfils: <span class="fulfils"><span><a class="reference internal" href="guidance/architecture_modeling_example.html#feat_req__example_feature__archdes_example_req" title="feat_arc_sta__example_feature__feature_1">feat_req__example_feature__archdes_example_req</a></span></span></div>
-<div class="line">includes: <span class="includes"><span><a class="reference internal" href="guidance/architecture_modeling_example.html#logic_arc_int__example_feature__archex_logical_interface_1" title="feat_arc_sta__example_feature__feature_1">logic_arc_int__example_feature__archex_logical_interface_1</a>, <a class="reference internal" href="guidance/architecture_modeling_example.html#logic_arc_int__example_feature__archex_logical_interface_2" title="feat_arc_sta__example_feature__feature_1">logic_arc_int__example_feature__archex_logical_interface_2</a></span></span></div>
-</span></div>
-</div>
-</td>
-<td class="meta" colspan="3"></td>
-</tr>
-<tr class="content row-odd"><td class="content" colspan="6"><p class="plantuml" id="needarch-process_areas/architecture_design/architecture_concept-0">
-<object data="../../_images/plantuml-c2af0924a5d1203e2125cebb6d5474ba4a068666.svg" type="image/svg+xml" style="width:405px;height:398px;background:#FFFFFF;"></object></p>
-</td>
-</tr>
-<tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
-<div class="line"><span><span class="needs-id"><a class="reference internal" href="#feat_arc_sta__example_feature__feature_1" title="feat_arc_sta__example_feature__feature_1">feat_arc_sta__example_feature__feature_1</a></span></span></div>
-</div>
-</td>
-<td class="footer" colspan="2"><div class="needs_footer line-block">
-<div class="line"><span><span class="needs_type_name"><span class="needs_data">Feature &amp; Feature Package Diagram</span></span></span></div>
-</div>
-</td>
-<td class="footer_right" colspan="2"></td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
+<p>The first viewpoint is named as <em>feature architecture</em>. It displays the SW Components within the SW modules (= dependable elements) which are required to realize the feature including their interactions. Also the <em>logical interfaces</em> and the interaction between the feature and the user are included in this view. On this architectural level the feature requirements shall be allocated. A full rendered example for the static architecture is maintained in the
+<a class="reference external" href="https://eclipse-score.github.io/module_template/main/">module template documentation</a>.</p>
 <p>In all views, the components which are marked as ASIL_B related are drawn with red borders.</p>
 <p>See <a class="reference internal" href="guidance/architecture_guideline.html#uml-diagram-selection"><span class="std std-ref">UML diagram selection</span></a> in guideline for further information about the UML diagram selection for static architecture.</p>
 </section>
@@ -788,103 +741,15 @@
 </section>
 <section id="interface-view">
 <h4>Interface View<a class="headerlink" href="#interface-view" title="Link to this heading">#</a></h4>
-<p>On the feature level only <em>logical interfaces</em> shall be displayed. This means that only logical names shall be provided for both the interface and the operations within. Those <em>logical interfaces</em> shall be connected to component interfaces on the module view.</p>
-<div class="need_container docutils container" id="SNCB-31190fdc">
-<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_logic_arc_int table" id="logic_arc_int__example_feature__archcon_logical_interface_1">
-<tbody>
-<tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
-<div class="line"><span><span class="needs_title"><span class="needs_data">Logical Interface 1</span></span></span></div>
-</div>
-</td>
-<td class="head_center" colspan="2"><div class="needs_head line-block">
-<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></span></div>
-<div class="line"><span><span class="needs_security"><span class="needs_label">security: </span><span class="needs_data">YES</span></span></span></div>
-<div class="line"><span><span class="needs_safety"><span class="needs_label">safety: </span><span class="needs_data">ASIL_B</span></span></span></div>
-</div>
-</td>
-<td class="head_right" colspan="2"><div class="needs_head_right line-block">
-<div class="line"><span><span class="needs needs_collapse" id="target__show__meta"><span class="needs collapsed"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg></span><span class="needs visible collapse_is_hidden"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg></span></span></span></div>
-</div>
-</td>
-</tr>
-<tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
-<div class="line"><span><span><div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">architecture_design</span></span></span></div>
-</span></span></div>
-<div class="line"><span><div class="line">fulfils: <span class="fulfils"><span><a class="reference internal" href="guidance/architecture_modeling_example.html#feat_req__example_feature__archdes_example_req" title="logic_arc_int__example_feature__archcon_logical_interface_1">feat_req__example_feature__archdes_example_req</a></span></span></div>
-</span></div>
-</div>
-</td>
-<td class="meta" colspan="3"></td>
-</tr>
-<tr class="content row-odd"><td class="content" colspan="6"><p class="plantuml" id="needarch-process_areas/architecture_design/architecture_concept-1">
-<object data="../../_images/plantuml-5e83c2b2574965e8b32a90125ecf216fba9233c2.svg" type="image/svg+xml" style="width:182px;height:69px;background:#FFFFFF;"></object></p>
-</td>
-</tr>
-<tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
-<div class="line"><span><span class="needs-id"><a class="reference internal" href="#logic_arc_int__example_feature__archcon_logical_interface_1" title="logic_arc_int__example_feature__archcon_logical_interface_1">logic_arc_int__example_feature__archcon_logical_interface_1</a></span></span></div>
-</div>
-</td>
-<td class="footer" colspan="2"><div class="needs_footer line-block">
-<div class="line"><span><span class="needs_type_name"><span class="needs_data">Logical Interface &amp; Feature Interface View</span></span></span></div>
-</div>
-</td>
-<td class="footer_right" colspan="2"></td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
+<p>On the feature level only <em>logical interfaces</em> shall be displayed. This means that only logical names shall be provided for both the interface and the operations within. Those <em>logical interfaces</em> shall be connected to component interfaces on the module view. A rendered logical-interface example is maintained in the
+<a class="reference external" href="https://eclipse-score.github.io/module_template/main/">module template documentation</a>.</p>
 </section>
 </section>
 <section id="sw-module-view">
 <h3>SW Module View<a class="headerlink" href="#sw-module-view" title="Link to this heading">#</a></h3>
 <p>A SW Module (=dependable element) is packaging a component or a set of components which is developed, documented and released together. It is not meant to be an architectural element which means that no requirements can be allocated to it.</p>
-<p>On this level also a view shall be defined which is called <em>Module View</em>. It represents the allocation of components into modules and displays the dependencies between the single modules. In this view also cyclic dependencies between modules can be identified.</p>
-<div class="need_container docutils container" id="SNCB-bca4a43a">
-<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_mod_view_sta table" id="mod_view_sta__example_feature__archcon_1">
-<tbody>
-<tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
-<div class="line"><span><span class="needs_title"><span class="needs_data">Module 1 Static View concept</span></span></span></div>
-</div>
-</td>
-<td class="head_center" colspan="2"><div class="needs_head line-block">
-<div class="line"><span></span></div>
-<div class="line"><span></span></div>
-<div class="line"><span></span></div>
-</div>
-</td>
-<td class="head_right" colspan="2"><div class="needs_head_right line-block">
-<div class="line"><span><span class="needs needs_collapse" id="target__show__meta"><span class="needs collapsed"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg></span><span class="needs visible collapse_is_hidden"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg></span></span></span></div>
-</div>
-</td>
-</tr>
-<tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
-<div class="line"><span><span><div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">architecture_design</span></span></span></div>
-</span></span></div>
-<div class="line"><span><div class="line">includes: <span class="includes"><span><a class="reference internal" href="guidance/architecture_modeling_example.html#comp__component_example_1" title="mod_view_sta__example_feature__archcon_1">comp__component_example_1</a></span></span></div>
-</span></div>
-</div>
-</td>
-<td class="meta" colspan="3"></td>
-</tr>
-<tr class="content row-odd"><td class="content" colspan="6"><p class="plantuml" id="needarch-process_areas/architecture_design/architecture_concept-2">
-<object data="../../_images/plantuml-31693e21e4039d594736ac397815c1c6a895614e.svg" type="image/svg+xml" style="width:262px;height:247px;background:#FFFFFF;"></object></p>
-</td>
-</tr>
-<tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
-<div class="line"><span><span class="needs-id"><a class="reference internal" href="#mod_view_sta__example_feature__archcon_1" title="mod_view_sta__example_feature__archcon_1">mod_view_sta__example_feature__archcon_1</a></span></span></div>
-</div>
-</td>
-<td class="footer" colspan="2"><div class="needs_footer line-block">
-<div class="line"><span><span class="needs_type_name"><span class="needs_data">Module Architecture Static View</span></span></span></div>
-</div>
-</td>
-<td class="footer_right" colspan="2"></td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
+<p>On this level also a view shall be defined which is called <em>Module View</em>. It represents the allocation of components into modules and displays the dependencies between the single modules. In this view also cyclic dependencies between modules can be identified. A rendered module-view example is maintained in the
+<a class="reference external" href="https://eclipse-score.github.io/module_template/main/">module template documentation</a>.</p>
 </section>
 <section id="component-view">
 <h3>Component View<a class="headerlink" href="#component-view" title="Link to this heading">#</a></h3>
@@ -892,52 +757,8 @@
 <section id="id1">
 <h4>Static View<a class="headerlink" href="#id1" title="Link to this heading">#</a></h4>
 <p>The <em>component architecture</em> describes the implementation of the functionalities in a white-box view. It describes the internal structure of SW components and their decomposition. It provides a more detailed information concerning the respective interfaces of a component. If a SW component interacts with a different component it is also included via a <em>use</em> relationship in the diagram. An example of the <em>component architecture</em> is displayed here:</p>
-<div class="need_container docutils container" id="SNCB-cde7996d">
-<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_comp_arc_sta table" id="comp_arc_sta__example_feature__archdes_component_concept_1">
-<tbody>
-<tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
-<div class="line"><span><span class="needs_title"><span class="needs_data">Component 1 Static View</span></span></span></div>
-</div>
-</td>
-<td class="head_center" colspan="2"><div class="needs_head line-block">
-<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></span></div>
-<div class="line"><span><span class="needs_security"><span class="needs_label">security: </span><span class="needs_data">NO</span></span></span></div>
-<div class="line"><span><span class="needs_safety"><span class="needs_label">safety: </span><span class="needs_data">ASIL_B</span></span></span></div>
-</div>
-</td>
-<td class="head_right" colspan="2"><div class="needs_head_right line-block">
-<div class="line"><span><span class="needs needs_collapse" id="target__show__meta"><span class="needs collapsed"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg></span><span class="needs visible collapse_is_hidden"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg></span></span></span></div>
-</div>
-</td>
-</tr>
-<tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
-<div class="line"><span><span><div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">architecture_design</span></span></span></div>
-</span></span></div>
-<div class="line"><span><div class="line">belongs to: <span class="belongs_to"><span><a class="reference internal" href="guidance/architecture_modeling_example.html#comp__component_example_1" title="comp_arc_sta__example_feature__archdes_component_concept_1">comp__component_example_1</a></span></span></div>
-<div class="line">fulfils: <span class="fulfils"><span><a class="reference internal" href="guidance/architecture_modeling_example.html#comp_req__example_feature__archex_example_req" title="comp_arc_sta__example_feature__archdes_component_concept_1">comp_req__example_feature__archex_example_req</a></span></span></div>
-</span></div>
-</div>
-</td>
-<td class="meta" colspan="3"></td>
-</tr>
-<tr class="content row-odd"><td class="content" colspan="6"><p class="plantuml" id="needarch-process_areas/architecture_design/architecture_concept-3">
-<object data="../../_images/plantuml-c8f039c7708bc36eb3f88e93486870be1e31a0f6.svg" type="image/svg+xml" style="width:230px;height:59px;background:#FFFFFF;"></object></p>
-</td>
-</tr>
-<tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
-<div class="line"><span><span class="needs-id"><a class="reference internal" href="#comp_arc_sta__example_feature__archdes_component_concept_1" title="comp_arc_sta__example_feature__archdes_component_concept_1">comp_arc_sta__example_feature__archdes_component_concept_1</a></span></span></div>
-</div>
-</td>
-<td class="footer" colspan="2"><div class="needs_footer line-block">
-<div class="line"><span><span class="needs_type_name"><span class="needs_data">Component Package Diagram</span></span></span></div>
-</div>
-</td>
-<td class="footer_right" colspan="2"></td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
+<p>A full rendered component-architecture example is maintained in the
+<a class="reference external" href="https://eclipse-score.github.io/module_template/main/">module template documentation</a>.</p>
 <p>The decomposition is optional and relies on the complexity of the component. Thus there is no graphic representation required for it.
 In all views the components which are marked as ASIL_B related are drawn in red color.</p>
 </section>
@@ -962,53 +783,8 @@ In all views the components which are marked as ASIL_B related are drawn in red 
 </section>
 <section id="id3">
 <h4>Interface View<a class="headerlink" href="#id3" title="Link to this heading">#</a></h4>
-<p>The component interface view shows the actual interfaces of the component. Also links to their corresponding logical interfaces are displayed in this view:</p>
-<div class="need_container docutils container" id="SNCB-b74b3e2f">
-<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_real_arc_int table" id="real_arc_int__example_feature__archdes_component_interface_1">
-<tbody>
-<tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
-<div class="line"><span><span class="needs_title"><span class="needs_data">Component Interface 1</span></span></span></div>
-</div>
-</td>
-<td class="head_center" colspan="2"><div class="needs_head line-block">
-<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></span></div>
-<div class="line"><span><span class="needs_security"><span class="needs_label">security: </span><span class="needs_data">NO</span></span></span></div>
-<div class="line"><span><span class="needs_safety"><span class="needs_label">safety: </span><span class="needs_data">ASIL_B</span></span></span></div>
-</div>
-</td>
-<td class="head_right" colspan="2"><div class="needs_head_right line-block">
-<div class="line"><span><span class="needs needs_collapse" id="target__show__meta"><span class="needs collapsed"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg></span><span class="needs visible collapse_is_hidden"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg></span></span></span></div>
-</div>
-</td>
-</tr>
-<tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
-<div class="line"><span><span><div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">architecture_design</span></span></span></div>
-<div class="line"><span class="needs_language"><span class="needs_label">language: </span><span class="needs_data">cpp</span></span></div>
-</span></span></div>
-<div class="line"><span><div class="line">fulfils: <span class="fulfils"><span><a class="reference internal" href="guidance/architecture_modeling_example.html#comp_req__example_feature__archex_example_req" title="real_arc_int__example_feature__archdes_component_interface_1">comp_req__example_feature__archex_example_req</a></span></span></div>
-</span></div>
-</div>
-</td>
-<td class="meta" colspan="3"></td>
-</tr>
-<tr class="content row-odd"><td class="content" colspan="6"><p class="plantuml" id="needarch-process_areas/architecture_design/architecture_concept-4">
-<object data="../../_images/plantuml-341bfa7d7a92cebaca8de51ac2944359c085405a.svg" type="image/svg+xml" style="width:247px;height:69px;background:#FFFFFF;"></object></p>
-</td>
-</tr>
-<tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
-<div class="line"><span><span class="needs-id"><a class="reference internal" href="#real_arc_int__example_feature__archdes_component_interface_1" title="real_arc_int__example_feature__archdes_component_interface_1">real_arc_int__example_feature__archdes_component_interface_1</a></span></span></div>
-</div>
-</td>
-<td class="footer" colspan="2"><div class="needs_footer line-block">
-<div class="line"><span><span class="needs_type_name"><span class="needs_data">Interface &amp; Component Interface</span></span></span></div>
-</div>
-</td>
-<td class="footer_right" colspan="2"></td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
+<p>The component interface view shows the actual interfaces of the component. Also links to their corresponding logical interfaces are displayed in this view. A rendered component-interface example is maintained in the
+<a class="reference external" href="https://eclipse-score.github.io/module_template/main/">module template documentation</a>.</p>
 </section>
 </section>
 <section id="platform-view">
@@ -1254,97 +1030,8 @@ It serves as a guidance for modeling the architecture.</p>
 <p>Here are some excerpts of UML diagrams made from the requirements of that file.</p>
 <section id="feature-architecture">
 <h5>Feature Architecture<a class="headerlink" href="#feature-architecture" title="Link to this heading">#</a></h5>
-<p>The following section is an example, how an <a class="reference external" href="https://eclipse-score.github.io/score/main/features/index.html">Feature</a> looks like and how the architecture of an Feature is described. Please note that components with an “ASIL_B” safety rating are highlighted with red borders in the diagram (e.g., “Component 1”).</p>
-<div class="need_container docutils container" id="SNCB-ad90aa90">
-<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_feat table" id="feat__feature_name_example">
-<tbody>
-<tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
-<div class="line"><span><span class="needs_title"><span class="needs_data">Feature Name</span></span></span></div>
-</div>
-</td>
-<td class="head_center" colspan="2"><div class="needs_head line-block">
-<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">invalid</span></span></span></div>
-<div class="line"><span><span class="needs_security"><span class="needs_label">security: </span><span class="needs_data">YES</span></span></span></div>
-<div class="line"><span><span class="needs_safety"><span class="needs_label">safety: </span><span class="needs_data">ASIL_B</span></span></span></div>
-</div>
-</td>
-<td class="head_right" colspan="2"><div class="needs_head_right line-block">
-<div class="line"><span><span class="needs needs_collapse" id="target__show__meta"><span class="needs collapsed"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg></span><span class="needs visible collapse_is_hidden"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg></span></span></span></div>
-</div>
-</td>
-</tr>
-<tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
-<div class="line"><span><span><div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">feature_name</span><span class="needs_spacer">, </span><span class="needs_data">architecture_design</span></span></span></div>
-</span></span></div>
-<div class="line"><span><div class="line">includes: <span class="includes"><span><a class="reference internal" href="guidance/architecture_modeling_example.html#logic_arc_int__example_feature__archex_logical_interface_1" title="feat__feature_name_example">logic_arc_int__example_feature__archex_logical_interface_1</a></span></span></div>
-</span></div>
-</div>
-</td>
-<td class="meta" colspan="3"></td>
-</tr>
-<tr class="content row-odd"><td class="content" colspan="6"></td>
-</tr>
-<tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
-<div class="line"><span><span class="needs-id"><a class="reference internal" href="#feat__feature_name_example" title="feat__feature_name_example">feat__feature_name_example</a></span></span></div>
-</div>
-</td>
-<td class="footer" colspan="2"><div class="needs_footer line-block">
-<div class="line"><span><span class="needs_type_name"><span class="needs_data">Feature</span></span></span></div>
-</div>
-</td>
-<td class="footer_right" colspan="2"></td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<div class="need_container docutils container" id="SNCB-1aa0b3db">
-<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_feat_arc_sta table" id="feat_arc_sta__example_feature__archdes_getstrt">
-<tbody>
-<tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
-<div class="line"><span><span class="needs_title"><span class="needs_data">Feature Static Architecture View - Rendered Example</span></span></span></div>
-</div>
-</td>
-<td class="head_center" colspan="2"><div class="needs_head line-block">
-<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></span></div>
-<div class="line"><span><span class="needs_security"><span class="needs_label">security: </span><span class="needs_data">YES</span></span></span></div>
-<div class="line"><span><span class="needs_safety"><span class="needs_label">safety: </span><span class="needs_data">QM</span></span></span></div>
-</div>
-</td>
-<td class="head_right" colspan="2"><div class="needs_head_right line-block">
-<div class="line"><span><span class="needs needs_collapse" id="target__show__meta"><span class="needs collapsed"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg></span><span class="needs visible collapse_is_hidden"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg></span></span></span></div>
-</div>
-</td>
-</tr>
-<tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
-<div class="line"><span><span><div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">architecture_design</span></span></span></div>
-</span></span></div>
-<div class="line"><span><div class="line">belongs to: <span class="belongs_to"><span><a class="reference internal" href="guidance/architecture_modeling_example.html#feat__example_feature" title="feat_arc_sta__example_feature__archdes_getstrt">feat__example_feature</a></span></span></div>
-<div class="line">fulfils: <span class="fulfils"><span><a class="reference internal" href="guidance/architecture_modeling_example.html#feat_req__example_feature__archdes_example_req" title="feat_arc_sta__example_feature__archdes_getstrt">feat_req__example_feature__archdes_example_req</a></span></span></div>
-<div class="line">includes: <span class="includes"><span><a class="reference internal" href="guidance/architecture_modeling_example.html#logic_arc_int__example_feature__archex_logical_interface_1" title="feat_arc_sta__example_feature__archdes_getstrt">logic_arc_int__example_feature__archex_logical_interface_1</a>, <a class="reference internal" href="guidance/architecture_modeling_example.html#logic_arc_int__example_feature__archex_logical_interface_2" title="feat_arc_sta__example_feature__archdes_getstrt">logic_arc_int__example_feature__archex_logical_interface_2</a></span></span></div>
-</span></div>
-</div>
-</td>
-<td class="meta" colspan="3"></td>
-</tr>
-<tr class="content row-odd"><td class="content" colspan="6"><p class="plantuml" id="needarch-process_areas/architecture_design/architecture_concept-5">
-<object data="../../_images/plantuml-c2af0924a5d1203e2125cebb6d5474ba4a068666.svg" type="image/svg+xml" style="width:405px;height:398px;background:#FFFFFF;"></object></p>
-</td>
-</tr>
-<tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
-<div class="line"><span><span class="needs-id"><a class="reference internal" href="#feat_arc_sta__example_feature__archdes_getstrt" title="feat_arc_sta__example_feature__archdes_getstrt">feat_arc_sta__example_feature__archdes_getstrt</a></span></span></div>
-</div>
-</td>
-<td class="footer" colspan="2"><div class="needs_footer line-block">
-<div class="line"><span><span class="needs_type_name"><span class="needs_data">Feature &amp; Feature Package Diagram</span></span></span></div>
-</div>
-</td>
-<td class="footer_right" colspan="2"></td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
+<p>The following section links to the rendered feature example that is now maintained in the
+<a class="reference external" href="https://eclipse-score.github.io/module_template/main/">module template documentation</a>.</p>
 <div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">feat</span><span class="p">::</span> Feature Name
    <span class="nc">:id:</span> feat__feature_name
    <span class="nc">:security:</span> YES
@@ -1373,52 +1060,8 @@ It serves as a guidance for modeling the architecture.</p>
 <section id="component-architecture">
 <h5>Component Architecture<a class="headerlink" href="#component-architecture" title="Link to this heading">#</a></h5>
 <p>The following section is an example, how an component looks like and how the detail design of an component is described. Please note that components with an “ASIL_B” safety rating are highlighted with red borders in the diagram (e.g., “Component 1”).</p>
-<div class="need_container docutils container" id="SNCB-8b950ab9">
-<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_comp_arc_sta table" id="comp_arc_sta__example_feature__component_getstrt">
-<tbody>
-<tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
-<div class="line"><span><span class="needs_title"><span class="needs_data">Component Static View - Rendered Example</span></span></span></div>
-</div>
-</td>
-<td class="head_center" colspan="2"><div class="needs_head line-block">
-<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></span></div>
-<div class="line"><span><span class="needs_security"><span class="needs_label">security: </span><span class="needs_data">NO</span></span></span></div>
-<div class="line"><span><span class="needs_safety"><span class="needs_label">safety: </span><span class="needs_data">ASIL_B</span></span></span></div>
-</div>
-</td>
-<td class="head_right" colspan="2"><div class="needs_head_right line-block">
-<div class="line"><span><span class="needs needs_collapse" id="target__show__meta"><span class="needs collapsed"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg></span><span class="needs visible collapse_is_hidden"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg></span></span></span></div>
-</div>
-</td>
-</tr>
-<tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
-<div class="line"><span><span><div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">architecture_design</span></span></span></div>
-</span></span></div>
-<div class="line"><span><div class="line">belongs to: <span class="belongs_to"><span><a class="reference internal" href="guidance/architecture_modeling_example.html#comp__component_example_1" title="comp_arc_sta__example_feature__component_getstrt">comp__component_example_1</a></span></span></div>
-<div class="line">fulfils: <span class="fulfils"><span><a class="reference internal" href="guidance/architecture_modeling_example.html#comp_req__example_feature__archex_example_req" title="comp_arc_sta__example_feature__component_getstrt">comp_req__example_feature__archex_example_req</a></span></span></div>
-</span></div>
-</div>
-</td>
-<td class="meta" colspan="3"></td>
-</tr>
-<tr class="content row-odd"><td class="content" colspan="6"><p class="plantuml" id="needarch-process_areas/architecture_design/architecture_concept-6">
-<object data="../../_images/plantuml-4dc43f396e69370b20be7a06c53310cbbcb65f3d.svg" type="image/svg+xml" style="width:363px;height:59px;background:#FFFFFF;"></object></p>
-</td>
-</tr>
-<tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
-<div class="line"><span><span class="needs-id"><a class="reference internal" href="#comp_arc_sta__example_feature__component_getstrt" title="comp_arc_sta__example_feature__component_getstrt">comp_arc_sta__example_feature__component_getstrt</a></span></span></div>
-</div>
-</td>
-<td class="footer" colspan="2"><div class="needs_footer line-block">
-<div class="line"><span><span class="needs_type_name"><span class="needs_data">Component Package Diagram</span></span></span></div>
-</div>
-</td>
-<td class="footer_right" colspan="2"></td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
+<p>The rendered component examples are maintained in the
+<a class="reference external" href="https://eclipse-score.github.io/module_template/main/">module template documentation</a>.</p>
 <div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">comp_arc_sta</span><span class="p">::</span> Static View - Rendered Example
    <span class="nc">:id:</span> comp_arc_sta__example_feature__component_getstrt
    <span class="nc">:status:</span> valid
@@ -1461,70 +1104,8 @@ Therefore the <em>needarch</em> directive needs to be extended with the attribut
 </pre></div>
 </div>
 <p>Debug example for component architecture:</p>
-<div class="need_container docutils container" id="SNCB-c1eed52d">
-<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_comp_arc_sta table" id="comp_arc_sta__example_feature__component_getstrt_debug">
-<tbody>
-<tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
-<div class="line"><span><span class="needs_title"><span class="needs_data">Component Static View - Rendered Debug Example</span></span></span></div>
-</div>
-</td>
-<td class="head_center" colspan="2"><div class="needs_head line-block">
-<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></span></div>
-<div class="line"><span><span class="needs_security"><span class="needs_label">security: </span><span class="needs_data">NO</span></span></span></div>
-<div class="line"><span><span class="needs_safety"><span class="needs_label">safety: </span><span class="needs_data">ASIL_B</span></span></span></div>
-</div>
-</td>
-<td class="head_right" colspan="2"><div class="needs_head_right line-block">
-<div class="line"><span><span class="needs needs_collapse" id="target__show__meta"><span class="needs collapsed"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg></span><span class="needs visible collapse_is_hidden"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg></span></span></span></div>
-</div>
-</td>
-</tr>
-<tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
-<div class="line"><span><span><div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">architecture_design</span></span></span></div>
-</span></span></div>
-<div class="line"><span><div class="line">belongs to: <span class="belongs_to"><span><a class="reference internal" href="guidance/architecture_modeling_example.html#comp__component_example_1" title="comp_arc_sta__example_feature__component_getstrt_debug">comp__component_example_1</a></span></span></div>
-<div class="line">fulfils: <span class="fulfils"><span><a class="reference internal" href="guidance/architecture_modeling_example.html#comp_req__example_feature__archex_example_req" title="comp_arc_sta__example_feature__component_getstrt_debug">comp_req__example_feature__archex_example_req</a></span></span></div>
-</span></div>
-</div>
-</td>
-<td class="meta" colspan="3"></td>
-</tr>
-<tr class="content row-odd"><td class="content" colspan="6"><p class="plantuml" id="needarch-process_areas/architecture_design/architecture_concept-7">
-<object data="../../_images/plantuml-9f09e9db91061639176866cc88de52b7a203a452.svg" type="image/svg+xml" style="width:414px;height:59px;background:#FFFFFF;"></object></p>
-<pre>@startuml
-
-allow_mixing
-top to bottom direction
-hide stereotype
-hide empty attributes
-&lt;style&gt;
-.asilb {
-LineColor red
-LineThickness 2.0
-}
-&lt;/style&gt;
-
-component &quot;Component Static View - Rendered Debug Example&quot; as comp_arc_sta__example_feature__component_getstrt_debug &lt;&lt;asilb&gt;&gt; [[../process_areas/architecture_design/architecture_concept.html#comp_arc_sta__example_feature__component_getstrt_debug]]  {
-} /&#x27; Component Static View - Rendered Debug Example &#x27;/ 
-
-
-@enduml
-</pre></td>
-</tr>
-<tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
-<div class="line"><span><span class="needs-id"><a class="reference internal" href="#comp_arc_sta__example_feature__component_getstrt_debug" title="comp_arc_sta__example_feature__component_getstrt_debug">comp_arc_sta__example_feature__component_getstrt_debug</a></span></span></div>
-</div>
-</td>
-<td class="footer" colspan="2"><div class="needs_footer line-block">
-<div class="line"><span><span class="needs_type_name"><span class="needs_data">Component Package Diagram</span></span></span></div>
-</div>
-</td>
-<td class="footer_right" colspan="2"></td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
+<p>See the rendered debug example in the
+<a class="reference external" href="https://eclipse-score.github.io/module_template/main/">module template documentation</a>.</p>
 </section>
 <section id="manual-addition-to-the-uml">
 <span id="manual-addition-uml"></span><h4>Manual Addition to the UML<a class="headerlink" href="#manual-addition-to-the-uml" title="Link to this heading">#</a></h4>
@@ -1535,65 +1116,19 @@ To make <em>needuml</em> work we have to replace the <em>need()</em> call with a
    <span class="nc">:status:</span> valid
    <span class="nc">:safety:</span> ASIL_B
    <span class="nc">:security:</span> NO
-   <span class="nc">:uses:</span> logic_arc_int__example_feature__archex_logical_interface_1
-   <span class="nc">:fulfils:</span> comp_req__example_feature__archex_example_req
+   <span class="nc">:uses:</span> logic_arc_int__example_feature__archcon_logical_interface_1
    <span class="nc">:belongs_to:</span> comp__component_component_manual_getstrt
 
 <span class="p">   ..</span> <span class="ow">needuml</span><span class="p">::</span>
 
-      {{ draw_component( needs.get(&#39;comp__component_example_1&#39;), needs ) }}
+      {{ draw_component( needs.get(&#39;comp__component_name_template&#39;), needs ) }}
       component &quot;Component Manual&quot; as CM {
       }
       CM -&gt; LI1: EXTRA_LINKAGE_MANUALLY_ADDED
 </pre></div>
 </div>
-<div class="need_container docutils container" id="SNCB-15a848a5">
-<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_comp_arc_sta table" id="comp_arc_sta__example_feature__component_manual_getstrt">
-<tbody>
-<tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
-<div class="line"><span><span class="needs_title"><span class="needs_data">Component Architecture Static View - Rendered Example Manually Edited</span></span></span></div>
-</div>
-</td>
-<td class="head_center" colspan="2"><div class="needs_head line-block">
-<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></span></div>
-<div class="line"><span><span class="needs_security"><span class="needs_label">security: </span><span class="needs_data">NO</span></span></span></div>
-<div class="line"><span><span class="needs_safety"><span class="needs_label">safety: </span><span class="needs_data">ASIL_B</span></span></span></div>
-</div>
-</td>
-<td class="head_right" colspan="2"><div class="needs_head_right line-block">
-<div class="line"><span><span class="needs needs_collapse" id="target__show__meta"><span class="needs collapsed"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg></span><span class="needs visible collapse_is_hidden"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg></span></span></span></div>
-</div>
-</td>
-</tr>
-<tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
-<div class="line"><span><span><div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">architecture_design</span></span></span></div>
-</span></span></div>
-<div class="line"><span><div class="line">belongs to: <span class="belongs_to"><span><a class="reference internal" href="guidance/architecture_modeling_example.html#comp__component_example_1" title="comp_arc_sta__example_feature__component_manual_getstrt">comp__component_example_1</a></span></span></div>
-<div class="line">fulfils: <span class="fulfils"><span><a class="reference internal" href="guidance/architecture_modeling_example.html#comp_req__example_feature__archex_example_req" title="comp_arc_sta__example_feature__component_manual_getstrt">comp_req__example_feature__archex_example_req</a></span></span></div>
-<div class="line">uses: <span class="uses"><span><a class="reference internal" href="guidance/architecture_modeling_example.html#logic_arc_int__example_feature__archex_logical_interface_1" title="comp_arc_sta__example_feature__component_manual_getstrt">logic_arc_int__example_feature__archex_logical_interface_1</a></span></span></div>
-</span></div>
-</div>
-</td>
-<td class="meta" colspan="3"></td>
-</tr>
-<tr class="content row-odd"><td class="content" colspan="6"><p class="plantuml" id="needarch-process_areas/architecture_design/architecture_concept-8">
-<object data="../../_images/plantuml-191d3b2a362809976fe9674036062564343167da.svg" type="image/svg+xml" style="width:1127px;height:246px;background:#FFFFFF;"></object></p>
-</td>
-</tr>
-<tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
-<div class="line"><span><span class="needs-id"><a class="reference internal" href="#comp_arc_sta__example_feature__component_manual_getstrt" title="comp_arc_sta__example_feature__component_manual_getstrt">comp_arc_sta__example_feature__component_manual_getstrt</a></span></span></div>
-</div>
-</td>
-<td class="footer" colspan="2"><div class="needs_footer line-block">
-<div class="line"><span><span class="needs_type_name"><span class="needs_data">Component Package Diagram</span></span></span></div>
-</div>
-</td>
-<td class="footer_right" colspan="2"></td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
+<p>See the rendered manual-edit example in the
+<a class="reference external" href="https://eclipse-score.github.io/module_template/main/">module template documentation</a>.</p>
 <p>You can add any layout or additional configuration you want before you call the <em>draw_xyz</em>.</p>
 </section>
 <section id="facing-build-issues">

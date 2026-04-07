@@ -560,7 +560,7 @@
                   
   <section id="component-architecture">
 <span id="component-architecture-template"></span><h1>Component Architecture<a class="headerlink" href="#component-architecture" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-673c9965">
+<div class="need_container docutils container" id="SNCB-6ebbc290">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_document table" id="doc__component_name_architecture">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -646,146 +646,46 @@
 <p>The components are designed to cover the expectations from the feature architecture
 (i.e. if already exists a definition it should be taken over and enriched).</p>
 <p>A component can optional also consist of subcomponents to further structure the architecture. The component and its static views can also optionally use interfaces provided by other components.</p>
-<div class="need_container docutils container" id="SNCB-7fed5e03">
-<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_comp table" id="comp__component_name_template">
-<tbody>
-<tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
-<div class="line"><span><span class="needs_title"><span class="needs_data">Component Name</span></span></span></div>
-</div>
-</td>
-<td class="head_center" colspan="2"><div class="needs_head line-block">
-<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">invalid</span></span></span></div>
-<div class="line"><span><span class="needs_security"><span class="needs_label">security: </span><span class="needs_data">YES</span></span></span></div>
-<div class="line"><span><span class="needs_safety"><span class="needs_label">safety: </span><span class="needs_data">ASIL_B</span></span></span></div>
-</div>
-</td>
-<td class="head_right" colspan="2"><div class="needs_head_right line-block">
-<div class="line"><span><span class="needs needs_collapse" id="target__show__meta"><span class="needs collapsed"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg></span><span class="needs visible collapse_is_hidden"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg></span></span></span></div>
-</div>
-</td>
-</tr>
-<tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
-<div class="line"><span><span><div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">component_name</span></span></span></div>
-</span></span></div>
-<div class="line"><span><div class="line">consists of: <span class="consists_of"><span><a class="reference internal" href="../../../../../../process_areas/architecture_design/guidance/architecture_modeling_example.html#comp__archex_sub_component_1" title="comp__component_name_template">comp__archex_sub_component_1</a>, <a class="reference internal" href="../../../../../../process_areas/architecture_design/guidance/architecture_modeling_example.html#comp__archex_sub_component_2" title="comp__component_name_template">comp__archex_sub_component_2</a>, <a class="reference internal" href="../../../../../../process_areas/architecture_design/guidance/architecture_modeling_example.html#comp__archex_sub_component_3" title="comp__component_name_template">comp__archex_sub_component_3</a></span></span></div>
-<div class="line">belongs to: <span class="belongs_to"><span><a class="reference internal" href="../../../../../features/feature_name/architecture/index.html#feat__feature_name" title="comp__component_name_template">feat__feature_name</a></span></span></div>
-<div class="line">has: <span class="belongs_to"><span><a class="reference internal" href="#comp_arc_sta__component_name__static_view" title="comp__component_name_template">comp_arc_sta__component_name__static_view</a>, <a class="reference internal" href="#comp_arc_dyn__component_name__dynamic_view" title="comp__component_name_template">comp_arc_dyn__component_name__dynamic_view</a>, <a class="reference internal" href="../requirements/index.html#comp_req__component_name__some_title" title="comp__component_name_template">comp_req__component_name__some_title</a></span></span></div>
-<div class="line">implements: <span class="implements"><span><a class="reference internal" href="../../../../../features/feature_name/architecture/index.html#logic_arc_int__feature_name__interface_name1" title="comp__component_name_template">logic_arc_int__feature_name__interface_name1</a></span></span></div>
-<div class="line">included by: <span class="includes"><span><a class="reference internal" href="../../../../../features/feature_name/architecture/index.html#mod__module_name" title="comp__component_name_template">mod__module_name</a>, <a class="reference internal" href="../../../../../features/feature_name/architecture/index.html#mod_view_sta__feature_name__module_name" title="comp__component_name_template">mod_view_sta__feature_name__module_name</a></span></span></div>
-</span></div>
-</div>
-</td>
-<td class="meta" colspan="3"></td>
-</tr>
-<tr class="content row-odd"><td class="content" colspan="6"></td>
-</tr>
-<tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
-<div class="line"><span><span class="needs-id"><a class="reference internal" href="#comp__component_name_template" title="comp__component_name_template">comp__component_name_template</a></span></span></div>
-</div>
-</td>
-<td class="footer" colspan="2"><div class="needs_footer line-block">
-<div class="line"><span><span class="needs_type_name"><span class="needs_data">Component</span></span></span></div>
-</div>
-</td>
-<td class="footer_right" colspan="2"></td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<div class="need_container docutils container" id="SNCB-15d2b3c3">
-<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_comp_arc_sta table" id="comp_arc_sta__component_name__static_view">
-<tbody>
-<tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
-<div class="line"><span><span class="needs_title"><span class="needs_data">Component Name (Static View)</span></span></span></div>
-</div>
-</td>
-<td class="head_center" colspan="2"><div class="needs_head line-block">
-<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">invalid</span></span></span></div>
-<div class="line"><span><span class="needs_security"><span class="needs_label">security: </span><span class="needs_data">YES</span></span></span></div>
-<div class="line"><span><span class="needs_safety"><span class="needs_label">safety: </span><span class="needs_data">ASIL_B</span></span></span></div>
-</div>
-</td>
-<td class="head_right" colspan="2"><div class="needs_head_right line-block">
-<div class="line"><span><span class="needs needs_collapse" id="target__show__meta"><span class="needs collapsed"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg></span><span class="needs visible collapse_is_hidden"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg></span></span></span></div>
-</div>
-</td>
-</tr>
-<tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
-<div class="line"><span><span><div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">component_name</span></span></span></div>
-</span></span></div>
-<div class="line"><span><div class="line">belongs to: <span class="belongs_to"><span><a class="reference internal" href="#comp__component_name_template" title="comp_arc_sta__component_name__static_view">comp__component_name_template</a></span></span></div>
-<div class="line">fulfils: <span class="fulfils"><span><a class="reference internal" href="../requirements/index.html#comp_req__component_name__some_title" title="comp_arc_sta__component_name__static_view">comp_req__component_name__some_title</a></span></span></div>
-<div class="line">uses: <span class="uses"><span><a class="reference internal" href="../../../../../features/feature_name/architecture/index.html#logic_arc_int__feature_name__interface_name1" title="comp_arc_sta__component_name__static_view">logic_arc_int__feature_name__interface_name1</a></span></span></div>
-</span></div>
-</div>
-</td>
-<td class="meta" colspan="3"></td>
-</tr>
-<tr class="content row-odd"><td class="content" colspan="6"><p class="plantuml" id="needarch-folder_templates/modules/module_name/component_name/docs/architecture/index-0">
-<object data="../../../../../../_images/plantuml-68ed81e9d7b17de2452323877a9978b18e19be25.svg" type="image/svg+xml" style="width:273px;height:59px;background:#FFFFFF;"></object></p>
-</td>
-</tr>
-<tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
-<div class="line"><span><span class="needs-id"><a class="reference internal" href="#comp_arc_sta__component_name__static_view" title="comp_arc_sta__component_name__static_view">comp_arc_sta__component_name__static_view</a></span></span></div>
-</div>
-</td>
-<td class="footer" colspan="2"><div class="needs_footer line-block">
-<div class="line"><span><span class="needs_type_name"><span class="needs_data">Component Package Diagram</span></span></span></div>
-</div>
-</td>
-<td class="footer_right" colspan="2"></td>
-</tr>
-</tbody>
-</table>
-</div>
+<p>The live component architecture template is maintained in the
+<a class="reference external" href="https://eclipse-score.github.io/module_template/component_architecture_template.html">module template documentation</a>.</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">comp</span><span class="p">::</span> Component Name
+   <span class="nc">:id:</span> comp__component_name_template
+   <span class="nc">:security:</span> YES
+   <span class="nc">:safety:</span> ASIL_B
+   <span class="nc">:status:</span> invalid
+   <span class="nc">:implements:</span> logic_arc_int__feature_name__interface_name1
+   <span class="nc">:consists_of:</span> comp__component_name_internal_1, comp__component_name_internal_2, comp__component_name_internal_3
+   <span class="nc">:belongs_to:</span> feat__feature_name
+
+<span class="p">..</span> <span class="ow">comp_arc_sta</span><span class="p">::</span> Component Name (Static View)
+   <span class="nc">:id:</span> comp_arc_sta__component_name__static_view
+   <span class="nc">:security:</span> YES
+   <span class="nc">:safety:</span> ASIL_B
+   <span class="nc">:status:</span> invalid
+   <span class="nc">:belongs_to:</span> comp__component_name_template
+   <span class="nc">:uses:</span> logic_arc_int__feature_name__interface_name1
+   <span class="nc">:fulfils:</span> comp_req__component_name__some_title
+
+<span class="p">   ..</span> <span class="ow">needarch</span><span class="p">::</span>
+      <span class="nc">:scale:</span> 50
+      <span class="nc">:align:</span> center
+
+      {{ draw_component(need(), needs) }}
+</pre></div>
 </div>
 </section>
 <section id="dynamic-architecture">
 <h2>Dynamic Architecture<a class="headerlink" href="#dynamic-architecture" title="Link to this heading">#</a></h2>
-<div class="need_container docutils container" id="SNCB-0a68ef46">
-<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_comp_arc_dyn table" id="comp_arc_dyn__component_name__dynamic_view">
-<tbody>
-<tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
-<div class="line"><span><span class="needs_title"><span class="needs_data">Dynamic View</span></span></span></div>
-</div>
-</td>
-<td class="head_center" colspan="2"><div class="needs_head line-block">
-<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">invalid</span></span></span></div>
-<div class="line"><span><span class="needs_security"><span class="needs_label">security: </span><span class="needs_data">YES</span></span></span></div>
-<div class="line"><span><span class="needs_safety"><span class="needs_label">safety: </span><span class="needs_data">ASIL_B</span></span></span></div>
-</div>
-</td>
-<td class="head_right" colspan="2"><div class="needs_head_right line-block">
-<div class="line"><span><span class="needs needs_collapse" id="target__show__meta"><span class="needs collapsed"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg></span><span class="needs visible collapse_is_hidden"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg></span></span></span></div>
-</div>
-</td>
-</tr>
-<tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
-<div class="line"><span><span><div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">component_name</span></span></span></div>
-</span></span></div>
-<div class="line"><span><div class="line">belongs to: <span class="belongs_to"><span><a class="reference internal" href="#comp__component_name_template" title="comp_arc_dyn__component_name__dynamic_view">comp__component_name_template</a></span></span></div>
-<div class="line">fulfils: <span class="fulfils"><span><a class="reference internal" href="../requirements/index.html#comp_req__component_name__some_title" title="comp_arc_dyn__component_name__dynamic_view">comp_req__component_name__some_title</a></span></span></div>
-</span></div>
-</div>
-</td>
-<td class="meta" colspan="3"></td>
-</tr>
-<tr class="content row-odd"><td class="content" colspan="6"><p>Put here a sequence diagram</p></td>
-</tr>
-<tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
-<div class="line"><span><span class="needs-id"><a class="reference internal" href="#comp_arc_dyn__component_name__dynamic_view" title="comp_arc_dyn__component_name__dynamic_view">comp_arc_dyn__component_name__dynamic_view</a></span></span></div>
-</div>
-</td>
-<td class="footer" colspan="2"><div class="needs_footer line-block">
-<div class="line"><span><span class="needs_type_name"><span class="needs_data">Component Sequence Diagram</span></span></span></div>
-</div>
-</td>
-<td class="footer_right" colspan="2"></td>
-</tr>
-</tbody>
-</table>
-</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">comp_arc_dyn</span><span class="p">::</span> Dynamic View
+   <span class="nc">:id:</span> comp_arc_dyn__component_name__dynamic_view
+   <span class="nc">:security:</span> YES
+   <span class="nc">:safety:</span> ASIL_B
+   <span class="nc">:status:</span> invalid
+   <span class="nc">:belongs_to:</span> comp__component_name_template
+   <span class="nc">:fulfils:</span> comp_req__component_name__some_title
+
+   Put here a sequence diagram
+</pre></div>
 </div>
 </section>
 <section id="interfaces">
@@ -801,49 +701,37 @@
 </section>
 <section id="internal-components">
 <h2>Internal Components<a class="headerlink" href="#internal-components" title="Link to this heading">#</a></h2>
-<div class="need_container docutils container" id="SNCB-9ba52a5b">
-<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_comp_arc_sta table" id="comp_arc_sta__component_name__2">
-<tbody>
-<tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
-<div class="line"><span><span class="needs_title"><span class="needs_data">Component Name Static View</span></span></span></div>
-</div>
-</td>
-<td class="head_center" colspan="2"><div class="needs_head line-block">
-<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">invalid</span></span></span></div>
-<div class="line"><span><span class="needs_security"><span class="needs_label">security: </span><span class="needs_data">YES</span></span></span></div>
-<div class="line"><span><span class="needs_safety"><span class="needs_label">safety: </span><span class="needs_data">ASIL_B</span></span></span></div>
-</div>
-</td>
-<td class="head_right" colspan="2"><div class="needs_head_right line-block">
-<div class="line"><span><span class="needs needs_collapse" id="target__show__meta"><span class="needs collapsed"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg></span><span class="needs visible collapse_is_hidden"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg></span></span></span></div>
-</div>
-</td>
-</tr>
-<tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
-<div class="line"><span><span><div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">component_name</span></span></span></div>
-</span></span></div>
-<div class="line"><span><div class="line">belongs to: <span class="belongs_to"><span><a class="reference internal" href="../../../../../../process_areas/architecture_design/guidance/architecture_modeling_example.html#comp__component_example_2" title="comp_arc_sta__component_name__2">comp__component_example_2</a></span></span></div>
-<div class="line">fulfils: <span class="fulfils"><span><a class="reference internal" href="../requirements/index.html#comp_req__component_name__some_title" title="comp_arc_sta__component_name__2">comp_req__component_name__some_title</a></span></span></div>
-</span></div>
-</div>
-</td>
-<td class="meta" colspan="3"></td>
-</tr>
-<tr class="content row-odd"><td class="content" colspan="6"><p>No architecture but detailed design</p></td>
-</tr>
-<tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
-<div class="line"><span><span class="needs-id"><a class="reference internal" href="#comp_arc_sta__component_name__2" title="comp_arc_sta__component_name__2">comp_arc_sta__component_name__2</a></span></span></div>
-</div>
-</td>
-<td class="footer" colspan="2"><div class="needs_footer line-block">
-<div class="line"><span><span class="needs_type_name"><span class="needs_data">Component Package Diagram</span></span></span></div>
-</div>
-</td>
-<td class="footer_right" colspan="2"></td>
-</tr>
-</tbody>
-</table>
-</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">comp_arc_sta</span><span class="p">::</span> Component Name Static View
+   <span class="nc">:id:</span> comp_arc_sta__component_name__2
+   <span class="nc">:status:</span> invalid
+   <span class="nc">:safety:</span> ASIL_B
+   <span class="nc">:security:</span> YES
+   <span class="nc">:fulfils:</span> comp_req__component_name__some_title
+   <span class="nc">:belongs_to:</span> comp__component_name_template
+
+   No architecture but detailed design
+
+<span class="p">..</span> <span class="ow">comp</span><span class="p">::</span> Internal Component 1
+   <span class="nc">:id:</span> comp__component_name_internal_1
+   <span class="nc">:status:</span> invalid
+   <span class="nc">:safety:</span> ASIL_B
+   <span class="nc">:security:</span> YES
+   <span class="nc">:belongs_to:</span> feat__feature_name
+
+<span class="p">..</span> <span class="ow">comp</span><span class="p">::</span> Internal Component 2
+   <span class="nc">:id:</span> comp__component_name_internal_2
+   <span class="nc">:status:</span> invalid
+   <span class="nc">:safety:</span> ASIL_B
+   <span class="nc">:security:</span> YES
+   <span class="nc">:belongs_to:</span> feat__feature_name
+
+<span class="p">..</span> <span class="ow">comp</span><span class="p">::</span> Internal Component 3
+   <span class="nc">:id:</span> comp__component_name_internal_3
+   <span class="nc">:status:</span> invalid
+   <span class="nc">:safety:</span> ASIL_B
+   <span class="nc">:security:</span> YES
+   <span class="nc">:belongs_to:</span> feat__feature_name
+</pre></div>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
