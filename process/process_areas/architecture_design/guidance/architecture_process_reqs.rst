@@ -103,7 +103,7 @@ Architectural Views
    * Sequence Diagram (feat_arc_dyn, comp_arc_dyn)
    * Interface View (logic_arc_int, real_arc_int)
 
-   Only an additional view  shall be created on module level.
+   At the module level, only one additional static view (mod_view_sta) shall be created.
 
 Attributes of Architectural Elements
 ------------------------------------
