@@ -19,6 +19,20 @@ Architecture Workflows
 
 For a detailed explanation of workflows and their role within the process model, please refer to the :ref:`processes_introduction`.
 
+.. workflow:: Create/Maintain Platform architecture
+   :id: wf__cr_mt_platarch
+   :status: valid
+   :tags: architecture_design
+   :responsible: rl__contributor
+   :approved_by: rl__committer
+   :supported_by: rl__safety_manager, rl__security_manager
+   :input: wp__requirements_stkh, wp__issue_track_system
+   :output: wp__platform_arch
+   :contains: gd_guidl__arch_design
+   :has: doc_concept__arch_process, doc_getstrt__arch_process
+
+   The platform architecture is created and maintained.
+
 .. workflow:: Create/Maintain Feature architecture
    :id: wf__cr_mt_featarch
    :status: valid

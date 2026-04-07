@@ -66,33 +66,107 @@ Those steps are:
      - Description
      - Responsible
    * - 1.
-     - :ref:`Create feature architecture (Concept) <create_feature_architecture>`
+     - :ref:`Create platform architecture (Concept) <create_platform_architecture>`
      - :need:`[[title]] <rl__contributor>`
    * - 2.
-     - :ref:`Model feature architecture <model_feature_architecture>`
+     - :ref:`Model platform architecture <model_platform_architecture>`
      - :need:`[[title]] <rl__contributor>`
    * - 3.
-     - :ref:`Allocate feature requirements to architectural elements <allocate_feature_requirements>`
+     - :ref:`Allocate stakeholder requirements to architectural elements <allocate_stakeholder_requirements>`
      - :need:`[[title]] <rl__contributor>`
    * - 4.
-     - :ref:`Review architectural design <review_architectural_design>`
+     - :ref:`Review platform architecture <review_platform_architecture>`
      - :need:`[[title]] <rl__committer>`
    * - 5.
-     - Merge architectural design into score delivery container
+     - Merge platform architecture into score delivery container
      - :need:`[[title]] <rl__committer>`
    * - 6.
+     - :ref:`Create feature architecture (Concept) <create_feature_architecture>`
+     - :need:`[[title]] <rl__contributor>`
+   * - 7.
+     - :ref:`Model feature architecture <model_feature_architecture>`
+     - :need:`[[title]] <rl__contributor>`
+   * - 8.
+     - :ref:`Allocate feature requirements to architectural elements <allocate_feature_requirements>`
+     - :need:`[[title]] <rl__contributor>`
+   * - 9.
+     - :ref:`Review feature architecture <review_architectural_design>`
+     - :need:`[[title]] <rl__committer>`
+   * - 10.
+     - Merge feature architecture into score delivery container
+     - :need:`[[title]] <rl__committer>`
+   * - 11.
      - | :ref:`Create component architecture (Concept) <create_component_architecture>`
        | :ref:`Allocate component requirements to architectural elements <allocate_component_requirements>`
      - :need:`[[title]] <rl__contributor>`
-   * - 7.
+   * - 12.
      - :ref:`Model component architecture <model_component_architecture>`
      - :need:`[[title]] <rl__contributor>`
-   * - 8.
+   * - 13.
      - :ref:`Review component architecture <review_component_architecture>`
      - :need:`[[title]] <rl__committer>`
-   * - 9.
+   * - 14.
      - Merge component architectural design into module's delivery container
      - :need:`[[title]]  <rl__committer>`
+
+.. _create_platform_architecture:
+
+Create platform architecture (Concept)
+----------------------------------------
+
+The platform architecture (= top-level architecture) shall be created in the platform delivery container. It provides the overall decomposition of the platform into features and defines the logical interfaces at the platform boundary.
+
+The platform architecture shall describe the concept of the platform, including supporting figures and drawings. If multiple solutions are possible, these should be documented here with the rationale for the final decision. A design decision template is provided in :need:`Decision Record Template <gd_temp__change_decision_record>`.
+
+Additionally, you should consult your project's specific guidelines, e.g., for using the version management tooling or architecture element naming conventions, which should be defined (or linked) in the :need:`Project SW development Plan <wp__sw_development_plan>`.
+
+.. _model_platform_architecture:
+
+Model platform architecture
+---------------------------
+
+Based on the concept description, a model of the platform architecture shall be designed. It shall provide an overview of the features within the platform and their logical interfaces at the platform boundary. Therefore, the following elements shall be used:
+
+.. list-table:: Architectural Elements of the Platform Architecture
+   :header-rows: 1
+   :widths: 10,30
+
+   * - Element
+     - Sphinx directive
+   * - Feature
+     - feat
+   * - Logical Interface
+     - logic_arc_int
+   * - Logical Interface Operation
+     - logic_arc_int_op
+
+The relations of the static elements are described in :ref:`metamodel_architectural_design`.
+
+.. _allocate_stakeholder_requirements:
+
+Allocate stakeholder requirements to architectural elements
+-----------------------------------------------------------
+
+In this step, the stakeholder requirements shall be allocated to the platform architectural elements depending on their content. These links shall be established from architectural elements to stakeholder requirements via the attribute *fulfils*.
+
+If needed, additional feature requirements derived from architectural decisions should be created and allocated to the respective feature.
+
+.. _review_platform_architecture:
+
+Review platform architecture
+-----------------------------
+
+As soon as the design is in a mature state, it can be reviewed according to :need:`doc_concept__wp_inspections`
+and merged into the main branch of the platform delivery container. See also the document life-cycle guideline :need:`gd_guidl__documentation` for more information about the documentation for the platform architecture :need:`wp__platform_arch`.
+
+For the review process, a checklist template is available: :need:`Architecture Inspection Checklist Template <gd_chklst__arch_inspection_checklist>`.
+
+The following roles should be included in the review:
+
+* :need:`[[title]] <rl__safety_manager>`
+* :need:`[[title]] <rl__security_manager>`
+* :need:`[[title]] <rl__project_lead>`
+* :need:`[[title]] <rl__committer>`
 
 .. _create_feature_architecture:
 

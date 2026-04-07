@@ -17,6 +17,16 @@
 Architecture Work Products
 ##########################
 
+.. workproduct:: Platform Architecture
+   :id: wp__platform_arch
+   :status: valid
+   :complies: std_wp__iso26262__software_751, std_wp__isosae21434__development_1051, std_req__aspice_40__iic-04-04
+   :tags: doc_lifecycle_model_3
+
+   Platform Architecture describes the overall software structure with the belonging features, modules and their logical interfaces, i.e. top-level decomposition of the platform into features and their interactions
+
+   * Static view - Overview of features, SW modules and their relationships within the platform
+
 .. workproduct:: Feature Architecture
    :id: wp__feature_arch
    :status: valid
