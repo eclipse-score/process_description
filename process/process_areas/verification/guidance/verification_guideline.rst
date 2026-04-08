@@ -84,6 +84,8 @@ For multiple test cases having a "partial coverage" a review has to be conducted
 that a requirement is fully covered. The pull request description should indicate which requirements
 are fully covered by the PR commits and which test cases are needed to fully cover the test case.
 This is important, as multiple PRs may be needed to fully verify a single requirement.
+This information is later on used to set the requirement attribute to `yes` as mentioned by :need:`gd_req__req_attr_test_covered`
+which shows that the set of partially covering test cases in sum fully satisfy the requirement.
 
 
 Test case execution

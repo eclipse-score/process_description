@@ -245,14 +245,14 @@ Process Requirement Linkage
 
    It shall be possible to link requirements to tests and automatically include a link to the test case in the attribute testlink.
 
-.. gd_req:: Requirement attribute: test covered
+.. gd_req:: Requirement attribute: complete test coverage
    :id: gd_req__req_attr_test_covered
    :status: valid
    :tags: manual_prio_1, attribute
    :satisfies: wf__req_feat_req, wf__req_comp_req
    :complies: std_req__iso26262__support_6433, std_req__iso26262__software_944, std_req__aspice_40__iic-13-51
 
-   It shall be possible to specify if requirements are completely covered by the linked test cases.
+   It shall be possible to specify if a requirement is completely satisfied by the linked test case(s).
 
       * Yes
       * No
@@ -279,7 +279,7 @@ Process Requirements Checks
    :complies: std_req__iso26262__support_6425, std_req__iso26262__support_6434, std_req__aspice_40__iic-13-51
 
    Based on the requirement versioning it shall be checked if a parent requirement was updated but not the linked child requirements (or tests).
-   In case an update was detected, the attribute requirement (or test) covered shall be set to "No"
+   In case an update was detected, the attribute `requirement covered` (or `complete test coverage`) shall be set to "No"
 
    Note: This refers to :need:`gd_req__req_attr_req_cov` and :need:`gd_req__req_attr_test_covered`
 

@@ -150,6 +150,28 @@ For a detailed explanation of workflows and their role within the process model,
    Note that during the initial creation of the verification plan in :need:`wf__verification_plan`
    not every input down to component level may be available.
 
+.. workflow:: Set Requirement Test Coverage
+   :id: wf__verification_req_test_coverage
+   :status: valid
+   :tags: verification
+   :responsible: rl__committer, rl__testing_community
+   :approved_by: rl__project_lead
+   :supported_by: rl__safety_manager, rl__infrastructure_tooling_community
+   :input: wp__requirements_stkh, wp__requirements_feat, wp__requirements_feat_aou,
+           wp__requirements_comp, wp__requirements_comp_aou,
+           wp__verification_plan, wp__verification_sw_unit_test,
+           wp__verification_comp_int_test, wp__verification_feat_int_test, wp__verification_platform_int_test
+   :output: wp__requirements_stkh, wp__requirements_feat, wp__requirements_feat_aou,
+            wp__requirements_comp, wp__requirements_comp_aou
+   :contains: gd_req__req_attr_test_covered, gd_req__req_suspicious, gd_guidl__verification_guide
+   :has: doc_concept__verification_process, doc_getstrt__verification_process
+
+   The requirement attribute `complete test coverage` is set to `yes` by a :need:`rl__committer` when it is verified
+   that the requirement is fully covered by test cases. This means the linked test cases in sum fully satisfy the requirement.
+
+   A fully covered requirement will be set to `no` automatically via the implementation of the check described in :need:`gd_req__req_suspicious`.
+   A recheck is needed in this case to get the status back to `yes`.
+
 .. workflow:: Create Module Verification Report
    :id: wf__verification_mod_ver_report
    :status: valid
