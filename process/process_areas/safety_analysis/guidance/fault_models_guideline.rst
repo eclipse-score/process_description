@@ -35,42 +35,53 @@ Fault Models for sequence diagrams
    :id: fmea_fault_model__mf_01_01
    :status: valid
    :element: message
+   :failure_mode: message is not received,Is a subset/more precise description of fmea_fault_model__mf_01_05.
    :importance: High
    :hide:
 
-   Is a subset/more precise description of :need:`fmea_fault_model__mf_01_05`.
+
+
 
 .. fmea_fault_model:: message received too late
    :id: fmea_fault_model__mf_01_02
    :status: valid
    :element: message
+   :failure_mode: message received too late ,Only relevant if delay is a realistic fault
    :importance: Medium
    :hide:
 
-   Only relevant if delay is a realistic fault.
+
+
+
 
 .. fmea_fault_model:: message received too early
    :id: fmea_fault_model__mf_01_03
    :status: valid
    :element: message
+   :failure_mode: message received too early,Usually not a problem
    :importance: Low
    :hide:
 
-   Usually not a problem.
+
+
+
 
 .. fmea_fault_model:: message not received correctly by all recipients
    :id: fmea_fault_model__mf_01_04
    :status: valid
    :element: message
+   :failure_mode: message not received correctly by all recipients,Different messages or messages partly lost. Only relevant if the same message goes to multiple recipients.
    :importance: High
    :hide:
 
-   Different messages or messages partly lost. Only relevant if the same message goes to multiple recipients.
+
+
 
 .. fmea_fault_model:: message is corrupted
    :id: fmea_fault_model__mf_01_05
    :status: valid
    :element: message
+   :failure_mode: message is corrupted
    :importance: High
    :hide:
 
@@ -78,6 +89,7 @@ Fault Models for sequence diagrams
    :id: fmea_fault_model__mf_01_06
    :status: valid
    :element: message
+   :failure_mode: message is not sent
    :importance: High
    :hide:
 
@@ -85,6 +97,7 @@ Fault Models for sequence diagrams
    :id: fmea_fault_model__mf_01_07
    :status: valid
    :element: message
+   :failure_mode: message is unintended sent
    :importance: High
    :hide:
 
@@ -92,6 +105,7 @@ Fault Models for sequence diagrams
    :id: fmea_fault_model__co_01_01
    :status: valid
    :element: duration/time constraint
+   :failure_mode: minimum constraint boundary is violated
    :importance: Medium
    :hide:
 
@@ -99,6 +113,7 @@ Fault Models for sequence diagrams
    :id: fmea_fault_model__co_01_02
    :status: valid
    :element: duration/time constraint
+   :failure_mode: maximum constraint boundary is violated
    :importance: High
    :hide:
 
@@ -106,36 +121,43 @@ Fault Models for sequence diagrams
    :id: fmea_fault_model__ex_01_01
    :status: valid
    :element: execution
+   :failure_mode: process calculates wrong results,   Is a subset/more precise description of fmea_fault_model__mf_01_05 or fmea_fault_model__mf_01_04. This failure mode is relevant to the analysis if e.g. internal safety mechanisms are required (level 2 function, plausibility check of the output, …) because of the size/complexity of the feature.
    :importance: High
    :hide:
 
-   Is a subset/more precise description of :need:`fmea_fault_model__mf_01_05` or
-   :need:`fmea_fault_model__mf_01_04`. This failure mode is relevant to the analysis
-   if e.g. internal safety mechanisms are required (level 2 function, plausibility
-   check of the output, …) because of the size/complexity of the feature.
+
+
+
 
 .. fmea_fault_model:: processing too slow
    :id: fmea_fault_model__ex_01_02
    :status: valid
    :element: execution
+   :failure_mode: processing too slow,Only relevant if timing is considered
    :importance: Medium
    :hide:
 
-   Only relevant if timing is considered.
+
+
+
 
 .. fmea_fault_model:: processing too fast
    :id: fmea_fault_model__ex_01_03
    :status: valid
    :element: execution
+   :failure_mode: processing too fast,Only relevant if timing is considered
    :importance: Medium
    :hide:
 
-   Only relevant if timing is considered.
+
+
+
 
 .. fmea_fault_model:: loss of execution
    :id: fmea_fault_model__ex_01_04
    :status: valid
    :element: execution
+   :failure_mode: loss of execution
    :importance: High
    :hide:
 
@@ -143,6 +165,7 @@ Fault Models for sequence diagrams
    :id: fmea_fault_model__ex_01_05
    :status: valid
    :element: execution
+   :failure_mode: processing changes to arbitrary process
    :importance: Medium
    :hide:
 
@@ -150,15 +173,18 @@ Fault Models for sequence diagrams
    :id: fmea_fault_model__ex_01_06
    :status: valid
    :element: execution
+   :failure_mode: processing is not complete
    :importance: High
    :hide:
 
    Infinite loop.
 
+
+
 .. needtable::
    :style: table
-   :columns: element;id;title;importance
-   :colwidths: 15,20,50,15
+   :columns: element;id;failure_mode;importance
+   :colwidths: 10,15,35,10
 
    results = []
 
