@@ -156,7 +156,7 @@ For a detailed explanation of workflows and their role within the process model,
    :tags: verification
    :responsible: rl__committer, rl__testing_community
    :approved_by: rl__project_lead
-   :supported_by: rl__safety_manager, rl__infrastructure_tooling_community
+   :supported_by: rl__safety_manager, rl__security_manager,
    :input: wp__requirements_stkh, wp__requirements_feat, wp__requirements_feat_aou,
            wp__requirements_comp, wp__requirements_comp_aou,
            wp__verification_plan, wp__verification_sw_unit_test,
