@@ -26,7 +26,7 @@ Security Analysis Process Requirements
    :status: valid
    :tags: done_automation, security_analysis
    :satisfies: wf__analyse_sec_platform_featarch, wf__analyse_sec_featarch, wf__analyse_sec_comparch
-   :complies:
+   :complies: std_req__isosae21434__continual_8321, std_req__isosae21434__continual_8621, std_req__isosae21434__assessment_15621, std_req__isosae21434__assessment_15622, std_req__isosae21434__assessment_15722, std_req__isosae21434__assessment_15723, std_req__isosae21434__assessment_15724, std_req__isosae21434__assessment_15725, std_req__isosae21434__assessment_15821, std_req__isosae21434__assessment_15822, std_req__isosae21434__assessment_15921
 
    Security Analysis shall be hierarchically grouped into different levels.
 
@@ -46,7 +46,7 @@ Process Security Analysis Attributes
    :status: valid
    :tags: done_automation, attribute, mandatory
    :satisfies: wf__analyse_sec_platform_featarch, wf__analyse_sec_featarch, wf__analyse_sec_comparch
-   :complies:
+   :complies: std_req__isosae21434__continual_8321
 
    Each Security Analysis shall have a unique ID. It shall be in a format which is also human readable and consists of
 
@@ -61,7 +61,7 @@ Process Security Analysis Attributes
    :status: valid
    :tags: manual_prio_1, attribute, mandatory
    :satisfies: wf__analyse_sec_platform_featarch, wf__analyse_sec_featarch, wf__analyse_sec_comparch
-   :complies:
+   :complies: std_req__isosae21434__continual_8321
 
    The title of the Security Analysis shall provide a short summary of the description
 
@@ -70,7 +70,7 @@ Process Security Analysis Attributes
    :status: valid
    :tags: prio_1_automation, attribute, optional
    :satisfies: wf__analyse_sec_platform_featarch, wf__analyse_sec_featarch, wf__analyse_sec_comparch
-   :complies:
+   :complies: std_req__isosae21434__continual_8621, std_req__isosae21434__continual_8622, std_req__isosae21434__assessment_15621, std_req__isosae21434__assessment_15622, std_req__isosae21434__assessment_15721, std_req__isosae21434__assessment_15722, std_req__isosae21434__assessment_15723, std_req__isosae21434__assessment_15724, std_req__isosae21434__assessment_15725, std_req__isosae21434__assessment_15821, std_req__isosae21434__assessment_15822, std_req__isosae21434__assessment_15921
 
    Each threat shall have an associated treatment (accept, avoid, reduce, share) or AoU.
    If mitigation has not yet been implemented, do not use this option.
@@ -81,7 +81,7 @@ Process Security Analysis Attributes
    :status: valid
    :tags: prio_1_automation, attribute, optional
    :satisfies: wf__analyse_sec_platform_featarch, wf__analyse_sec_featarch, wf__analyse_sec_comparch
-   :complies:
+   :complies: std_req__isosae21434__continual_8322, std_req__isosae21434__continual_8323, std_req__isosae21434__continual_8621, std_req__isosae21434__continual_8622, std_req__isosae21434__assessment_15921
 
    If a new security mitigation (avoid, reduce, or share) is needed, link to the issue and keep status invalid until the mitigation is sufficient.
 
@@ -90,7 +90,7 @@ Process Security Analysis Attributes
    :status: valid
    :tags: prio_1_automation, attribute, mandatory
    :satisfies: wf__analyse_sec_platform_featarch, wf__analyse_sec_featarch, wf__analyse_sec_comparch
-   :complies:
+   :complies: std_req__isosae21434__continual_8621, std_req__isosae21434__continual_8622, std_req__isosae21434__assessment_15721, std_req__isosae21434__assessment_15722, std_req__isosae21434__assessment_15723, std_req__isosae21434__assessment_15724, std_req__isosae21434__assessment_15725, std_req__isosae21434__assessment_15821, std_req__isosae21434__assessment_15822, std_req__isosae21434__assessment_15921
 
    The mitigation(s) shall be rated as sufficient with <yes> or <no>.
    A mitigation can only be sufficient if a mitigation is linked via the attribute mitigation.
@@ -100,7 +100,7 @@ Process Security Analysis Attributes
    :status: valid
    :tags: prio_1_automation, attribute, mandatory
    :satisfies: wf__analyse_sec_platform_featarch, wf__analyse_sec_featarch, wf__analyse_sec_comparch
-   :complies:
+   :complies: std_req__isosae21434__continual_8421, std_req__isosae21434__continual_8521, std_req__isosae21434__continual_8522, std_req__isosae21434__continual_8621, std_req__isosae21434__continual_8622, std_req__isosae21434__assessment_15621, std_req__isosae21434__assessment_15622, std_req__isosae21434__assessment_15721, std_req__isosae21434__assessment_15722, std_req__isosae21434__assessment_15723, std_req__isosae21434__assessment_15724, std_req__isosae21434__assessment_15725, std_req__isosae21434__assessment_15821, std_req__isosae21434__assessment_15822, std_req__isosae21434__assessment_15921
 
    The argument shall describe why the mitigation is sufficient or not. If it is not sufficient, the argument shall describe how the mitigation
    can be improved to achieve sufficiency. The argument shall be written in the content.
@@ -110,7 +110,7 @@ Process Security Analysis Attributes
    :status: valid
    :tags: prio_1_automation, attribute, mandatory
    :satisfies: wf__analyse_sec_platform_featarch, wf__analyse_sec_featarch, wf__analyse_sec_comparch
-   :complies:
+   :complies: std_req__isosae21434__continual_8322, std_req__isosae21434__continual_8621, std_req__isosae21434__continual_8622, std_req__isosae21434__assessment_15921
 
    Each Security Analysis shall have the status invalid until the analysis is finished.
    The status shall be set to valid if the analysis is finished and all issues are closed.
@@ -120,7 +120,7 @@ Process Security Analysis Attributes
    :status: valid
    :tags: prio_1_automation, attribute, mandatory
    :satisfies: wf__analyse_sec_platform_featarch, wf__analyse_sec_featarch, wf__analyse_sec_comparch
-   :complies:
+   :complies: std_req__isosae21434__continual_8321, std_req__isosae21434__assessment_15621, std_req__isosae21434__assessment_15622, std_req__isosae21434__assessment_15721, std_req__isosae21434__assessment_15722, std_req__isosae21434__assessment_15723, std_req__isosae21434__assessment_15724, std_req__isosae21434__assessment_15725, std_req__isosae21434__assessment_15822, std_req__isosae21434__assessment_15921
 
    Every Security Analysis shall have a short description of the threat impact
    (e.g. threat leads to unauthorized access of the analyzed element)
@@ -210,7 +210,7 @@ Security Analysis Checks
    :status: valid
    :tags: prio_1_automation, attribute, check
    :satisfies: wf__analyse_sec_platform_featarch, wf__analyse_sec_featarch, wf__analyse_sec_comparch
-   :complies:
+   :complies: std_req__isosae21434__continual_8621,
 
    It shall be checked if all mandatory attributes for each Security Analysis are
    provided by the user. For all Security Analysis following attributes shall be mandatory:
@@ -251,7 +251,7 @@ Threat Scenario Security Process Requirements
    :status: valid
    :tags: prio_1_automation, attribute, mandatory
    :satisfies: wf__analyse_sec_platform_featarch, wf__analyse_sec_featarch, wf__analyse_sec_comparch
-   :complies:
+   :complies: std_req__isosae21434__assessment_15621, std_req__isosae21434__assessment_15622, std_req__isosae21434__assessment_15723, std_req__isosae21434__assessment_15724, std_req__isosae21434__assessment_15725, std_req__isosae21434__assessment_15821, std_req__isosae21434__assessment_15822, std_req__isosae21434__assessment_15921
 
    Each threat scenario used for the Security Analysis shall have a threat scenario ID.
    The threat scenario ID is used to identify the related threat <:need:`gd_guidl__sec_ana_threat_scenarios`>.
@@ -267,7 +267,7 @@ Threat Models Process Requirements
    :status: valid
    :tags: prio_1_automation, attribute, mandatory
    :satisfies: wf__analyse_sec_featarch, wf__analyse_sec_comparch
-   :complies:
+   :complies: std_req__isosae21434__assessment_15621, std_req__isosae21434__assessment_15622, std_req__isosae21434__assessment_15723, std_req__isosae21434__assessment_15724, std_req__isosae21434__assessment_15725, std_req__isosae21434__assessment_15821, std_req__isosae21434__assessment_15822, std_req__isosae21434__assessment_15921
 
    Each threat used for Security Analysis shall have a threat ID. The threat ID is used
    to identify the related threat <:need:`gd_guidl__threat_models_stride`>.
