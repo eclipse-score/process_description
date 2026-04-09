@@ -34,12 +34,12 @@ To have a structured DFA the failure initiators have to be applied :need:`gd_gui
  | - Development failure initiators: Failures that occur during the development process, potentially leading to safety issues.
 
 The objective of the **FMEA** is to show that the architecture created to fulfil the requirements does not introduce possible errors which would
-break the safety requirements. Or rather that the possibility of these errors is reduced to an acceptable level. This can be done by detection, prevention or mitigation.
+break the safety requirements. Or rather that the possibility of these errors is reduced to an acceptable level. This can be achieved through detection, prevention or mitigation measures.
 The FMEA is used to find possible failures and their effects. The possible failures are systematically identified by applying fault models :need:`gd_guidl__fault_models`.
 
 The DFA shall be performed once at platform level to analyse the dependencies between the features of the platform.
-Typically the FMEA and DFA shall be performed at feature level and component level.
-If a component have no sub-components, the results of the analysis are the same as at feature level. So no additional consideration is needed.
+Typically, the FMEA and DFA are performed at feature level and component level.
+If a component has no sub-components, the results of the analysis are the same as at feature level. So no additional consideration is needed.
 In this case please document this in the content of the document.
 
 Inputs
@@ -109,8 +109,8 @@ The analysis were applied at static and dynamic architecture diagrams. The follo
 
    Feature Architecture
 
-With the diagrams the dependencies and signal flows are shown. The analysis is done by applying the fault models
-:need:`gd_guidl__fault_models` for FMEA and the failure initiators :need:`gd_guidl__dfa_failure_initiators` for DFA.
+With the diagrams the dependencies and signal flows are shown. The analysis is performed by applying FMEA fault models
+:need:`gd_guidl__fault_models` and DFA failure initiators :need:`gd_guidl__dfa_failure_initiators` for DFA.
 Some fault models and failure initiators may not be applicable for one safety function. In this case the reason shall
 be documented in the FMEA/DFA documents. So it can be shown that the analysis is completely done.
 
@@ -119,7 +119,7 @@ If we apply the fault model we may find the possible failure: "the message is no
 could be mitigated by telling the user in an AoU: "the feature can not guarantee that the message is sent"
 
 DFA: Here we see in the static view that component 1 uses component 2. If we apply the failure initiators we may find the possible failure:
-"Component 2 is using up all execution time available to Component 1" which could be avoided by a OS which is reserving time for every component
+"Component 2 is using up all execution time available to Component 1" which could be avoided by an OS which reserves time for every component
 or by running these components on different processors.
 
 A step-by-step-approach is described in :need:`gd_guidl__safety_analysis`. There are also examples for FMEA and DFA are given
@@ -132,8 +132,8 @@ in :ref:`examples_fmea_dfa` to show how to use the templates, failure initiators
 
    Component Architecture
 
-At component level you can see inside of the component when the component consists of two or more sub-components. If a component has no sub-components
-there results of the analysis are the same as at feature level. So no additional consideration is needed. This should be also documented in the content of the document.
+At component level you can see inside of the component when the component consists of two or more sub-components. If a component has no sub-components,
+the analysis results are the same as at feature level. So no additional consideration is needed. This should be also documented in the content of the document.
 In the example the component "Component 1" consists of two sub-components, "Component 3" and "Component 4".
 
 A step-by-step-approach is described in :need:`gd_guidl__safety_analysis`. There are also examples for FMEA and DFA are given in :ref:`examples_fmea_dfa` to show how to use the templates, failure initiators and fault models.
@@ -158,7 +158,7 @@ The Safety Analysis (DFA and FMEA) shall consider the architectural elements on 
 2. **Feature Level**: This level involves a more detailed analysis of individual components within the feature. The analysis shall consider the internal structure of components and their interactions with other components in the feature.
 
     | **Example DFA:** A dependent failure could be if two or more components share a common resource or if they are dependent on the same signal. If one component fails, it could lead to a failure in another component.
-    | **Example FMEA:** The FMEA shall used to analyse if the safety requirements of a feature can be violated. This might be a unintended sent of a message between two components.
+    | **Example FMEA:** The FMEA shall be used to analyse if the safety requirements of a feature can be violated. This might be an unintended sending of a message between two components.
 
 3. **Component Level**: If a component consists of multiple sub-components, the analysis shall be extended to these sub-components. This level of detail is necessary to identify specific fault models that may not be apparent at higher levels.
 
