@@ -151,9 +151,9 @@ The analysis is done by as described in the flowchart :ref:`platform_security_an
 Examples for Security Analysis at feature level
 ===============================================
 
-future PR (https://github.com/eclipse-score/process_description/issues/409).
+The security analysis shall be used to analyze whether the security goals of a feature can be compromised. This could be an unauthorized tranimission of a control message between two components of feature, for example due to missing authentication or insufficient access control.
 
 Examples for Security Analysis at component level
 =================================================
 
-future PR (https://github.com/eclipse-score/process_description/issues/409).
+The security analysis shall be used to analyze whether the vulnerabilities within the component can be exploited. This could be unintended privilege escalation between two sub-components, allowing unauthorized access to senstive data or security-critical functions.  
