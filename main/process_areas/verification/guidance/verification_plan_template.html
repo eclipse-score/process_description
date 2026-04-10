@@ -576,7 +576,7 @@
                   
   <section id="verification-plan-template">
 <span id="id1"></span><h1>Verification Plan Template<a class="headerlink" href="#verification-plan-template" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-c064e91f">
+<div class="need_container docutils container" id="SNCB-dc5891cb">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_temp table" id="gd_temp__verification_plan">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -711,19 +711,33 @@ The criteria should be defined with quantifiable goals for different ASIL levels
 
 The strategy on how to achieve the defined coverage goals is described in the below sub-sections.
 
+<span class="gh">Structural coverage</span>
+<span class="gh">^^^^^^^^^^^^^^^^^^^</span>
+
+This section defines how structural coverage is measured and achieved.
+It should describe the specific coverage metrics used (e.g., statement, branch, path coverage)
+and the tools and processes used to achieve these metrics.
+
+The confirmation or any deviation of the coverage percentage value is documented in this section.
+
 <span class="gh">Coverage of detailed design</span>
 <span class="gh">^^^^^^^^^^^^^^^^^^^^^^^^^^^</span>
 
 This section defines how coverage of the detailed design is measured and achieved.
 
-Coverage metrics with defined thresholds should be e.g. based on:
+Coverage metrics with defined thresholds should be e.g. based on Implementation inspections.
+
+Evidence of the inspection is given e.g. by the respective work product and its review.
+The inspection needs to cover the implementation of the detailed design to be complete.
+
+Additionally, other measures can be taken to support the coverage of the detailed design like:
+
+<span class="m">-</span> Structural coverage as defined by their specific thresholds
+<span class="m">-</span> Static analysis and Linting
+
 <span class="m">-</span> Structural code coverage (e.g. by statement, branch, path coverage)
 <span class="m">-</span> Code quality metrics (e.g. by linting and static analysis)
 <span class="m">-</span> Traceability coverage (e.g. by a 100% requirements coverage by test cases)
-
-The section further documents the selected verification methods appropriate to achieve the defined
-coverage goals (e.g. by <span class="na">:need:</span><span class="nv">`wp__verification_sw_unit_test`</span>, <span class="na">:need:</span><span class="nv">`wp__verification_comp_int_test`</span>, and
-<span class="na">:need:</span><span class="nv">`wp__sw_implementation_inspection`</span>).
 
 The confirmation or any deviation of the coverage percentage value is documented in this section.
 
@@ -733,21 +747,39 @@ The confirmation or any deviation of the coverage percentage value is documented
 This section defines how coverage of the architectural design is measured and achieved.
 It describes the metrics used to ensure completeness and quality of the architecture
 and the verification methods applied to achieve the defined coverage goals
-(e.g. by <span class="na">:need:</span><span class="nv">`wp__verification_comp_int_test`</span>, <span class="na">:need:</span><span class="nv">`wp__verification_feat_int_test`</span>, and
-<span class="na">:need:</span><span class="nv">`wp__sw_arch_verification`</span>).
 
-Each valid traceable element shall have at least one test case linked with attribute <span class="nv">`FullyVerified`</span> or
-multiple test cases with attribute <span class="nv">`PartiallyVerified`</span> to achieve a 100% requirement coverage metric.
+Examples are:
+<span class="m">-</span> <span class="na">:need:</span><span class="nv">`wp__sw_arch_verification`</span> - done by walkthrough (QM) or inspection (safety-critical parts)
+<span class="m">-</span> <span class="na">:need:</span><span class="nv">`wp__sw_component_fmea`</span> and <span class="na">:need:</span><span class="nv">`wp__sw_component_dfa`</span> for safety-critical parts
+<span class="m">-</span> <span class="na">:need:</span><span class="nv">`wp__feature_fmea`</span> and <span class="na">:need:</span><span class="nv">`wp__feature_dfa`</span> for safety-critical parts
+
+Each architectural element has to be reviewed against the availability of the above artifacts.
 
 The confirmation or any deviation of the coverage percentage value is documented in this section.
 
 <span class="gh">Coverage of software requirements specifications</span>
 <span class="gh">^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</span>
 
-For a release all <span class="nv">`valid`</span> requirements need to have a complete test coverage of linked test cases
-leading to a 100% requirement coverage.
+For a release the <span class="s">``valid``</span> requirements need to have a complete test coverage of linked test cases.
+
+Tests which are suitable for the coverage are:
+
+<span class="m">-</span> <span class="na">:need:</span><span class="nv">`wp__verification_comp_int_test`</span>
+<span class="m">-</span> <span class="na">:need:</span><span class="nv">`wp__verification_feat_int_test`</span>
+<span class="m">-</span> <span class="na">:need:</span><span class="nv">`wp__verification_platform_int_test`</span>
+<span class="m">-</span> <span class="na">:need:</span><span class="nv">`wp__verification_sw_unit_test`</span>
 
 The confirmation or any deviation of the coverage percentage value is documented in this section.
+
+<span class="gh">Static code analysis</span>
+<span class="gh">^^^^^^^^^^^^^^^^^^^^</span>
+Static code analysis is performed to ensure compliance with coding standards and to identify potential issues early in the development process.
+
+Static analysis requires tool support. Rule sets need to be defined and configured in the respective tools.
+The rule sets should include relevant rulesets (like MISRA‑C++) enabling a programming language to be usable in safety critical development.
+Additionally, project‑specific rules that address architectural constraints and coding practices need to be defined and enforced.
+
+Static analysis tool perform e.g. a semantic analysis of the codebase to detect deeper correctness and potential security/safety issues.
 
 <span class="gh">Test Development</span>
 <span class="gh">----------------</span>
