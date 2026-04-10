@@ -1,0 +1,6 @@
+{
+    "name": "eclipse-s-core",
+    "build": {
+        "dockerfile": "Dockerfile"
+    }
+}
