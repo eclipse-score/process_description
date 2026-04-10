@@ -136,19 +136,33 @@ Verification Plan Template
 
          The strategy on how to achieve the defined coverage goals is described in the below sub-sections.
 
+         Structural coverage
+         ^^^^^^^^^^^^^^^^^^^
+
+         This section defines how structural coverage is measured and achieved.
+         It should describe the specific coverage metrics used (e.g., statement, branch, path coverage)
+         and the tools and processes used to achieve these metrics.
+
+         The confirmation or any deviation of the coverage percentage value is documented in this section.
+
          Coverage of detailed design
          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
          This section defines how coverage of the detailed design is measured and achieved.
 
-         Coverage metrics with defined thresholds should be e.g. based on:
+         Coverage metrics with defined thresholds should be e.g. based on Implementation inspections.
+
+         Evidence of the inspection is given e.g. by the respective work product and its review.
+         The inspection needs to cover the implementation of the detailed design to be complete.
+
+         Additionally, other measures can be taken to support the coverage of the detailed design like:
+
+         - Structural coverage as defined by their specific thresholds
+         - Static analysis and Linting
+
          - Structural code coverage (e.g. by statement, branch, path coverage)
          - Code quality metrics (e.g. by linting and static analysis)
          - Traceability coverage (e.g. by a 100% requirements coverage by test cases)
-
-         The section further documents the selected verification methods appropriate to achieve the defined
-         coverage goals (e.g. by :need:`wp__verification_sw_unit_test`, :need:`wp__verification_comp_int_test`, and
-         :need:`wp__sw_implementation_inspection`).
 
          The confirmation or any deviation of the coverage percentage value is documented in this section.
 
@@ -158,21 +172,39 @@ Verification Plan Template
          This section defines how coverage of the architectural design is measured and achieved.
          It describes the metrics used to ensure completeness and quality of the architecture
          and the verification methods applied to achieve the defined coverage goals
-         (e.g. by :need:`wp__verification_comp_int_test`, :need:`wp__verification_feat_int_test`, and
-         :need:`wp__sw_arch_verification`).
 
-         Each valid traceable element shall have at least one test case linked with attribute `FullyVerified` or
-         multiple test cases with attribute `PartiallyVerified` to achieve a 100% requirement coverage metric.
+         Examples are:
+         - :need:`wp__sw_arch_verification` - done by walkthrough (QM) or inspection (safety-critical parts)
+         - :need:`wp__sw_component_fmea` and :need:`wp__sw_component_dfa` for safety-critical parts
+         - :need:`wp__feature_fmea` and :need:`wp__feature_dfa` for safety-critical parts
+
+         Each architectural element has to be reviewed against the availability of the above artifacts.
 
          The confirmation or any deviation of the coverage percentage value is documented in this section.
 
          Coverage of software requirements specifications
          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-         For a release all `valid` requirements need to have a complete test coverage of linked test cases
-         leading to a 100% requirement coverage.
+         For a release the ``valid`` requirements need to have a complete test coverage of linked test cases.
+
+         Tests which are suitable for the coverage are:
+
+         - :need:`wp__verification_comp_int_test`
+         - :need:`wp__verification_feat_int_test`
+         - :need:`wp__verification_platform_int_test`
+         - :need:`wp__verification_sw_unit_test`
 
          The confirmation or any deviation of the coverage percentage value is documented in this section.
+
+         Static code analysis
+         ^^^^^^^^^^^^^^^^^^^^
+         Static code analysis is performed to ensure compliance with coding standards and to identify potential issues early in the development process.
+
+         Static analysis requires tool support. Rule sets need to be defined and configured in the respective tools.
+         The rule sets should include relevant rulesets (like MISRA‑C++) enabling a programming language to be usable in safety critical development.
+         Additionally, project‑specific rules that address architectural constraints and coding practices need to be defined and enforced.
+
+         Static analysis tool perform e.g. a semantic analysis of the codebase to detect deeper correctness and potential security/safety issues.
 
          Test Development
          ----------------
