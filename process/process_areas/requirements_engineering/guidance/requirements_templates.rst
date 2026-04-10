@@ -58,7 +58,7 @@ Templates
 
       .. gd_req:: <Title>
          :id: gd_req__<process>__<Title>
-         :derived_from: <link to guidance id>
+         :satisfies: <link to guidance id>
          :complies: <link to standard requirement>
          :status: <valid|invalid>
 
@@ -73,7 +73,7 @@ Templates
          :id: tool_req__<tool>__<Title>
          :security: <YES|NO>
          :safety: <QM|ASIL_B>
-         :derived_from: <link to process req id>
+         :satisfies: <link to process req id>
          :status: <valid|invalid>
          :implemented: <YES|PARTIAL|NO>
 
