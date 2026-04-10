@@ -580,7 +580,7 @@
 and how to create test cases using the same.</p>
 <section id="methods">
 <h2>Methods<a class="headerlink" href="#methods" title="Link to this heading">#</a></h2>
-<div class="need_container docutils container" id="SNCB-4bab6d7f">
+<div class="need_container docutils container" id="SNCB-09b162d4">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_method table" id="gd_meth__verification_methods">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -713,10 +713,23 @@ been executed. It focuses on the overall boolean result of a decision point (if,
 <p>If a sufficient structural coverage is not reached then additional test cases are added.
 What is sufficient and how to determine the coverage is defined in the <a class="reference internal" href="../verification_workproducts.html#wp__verification_plan" title="wp__verification_plan"><em class="xref need">Verification Plan</em></a> of the project.</p>
 </section>
+<section id="static-code-analysis">
+<span id="ver-sta"></span><h3>Static Code Analysis<a class="headerlink" href="#static-code-analysis" title="Link to this heading">#</a></h3>
+<p>Static code analysis (SCA) is a verification method that inspects source code without executing it
+to identify potential defects, rule violations, and deviations from intended design early in the development process.
+MISRA‑like checks are treated as a prerequisite for SCA to enable safe use of the programming language and to prevent common pitfalls.
+This supports systematic defect detection beyond what can be achieved by dynamic testing alone.</p>
+<p>Semantic analysis of the SCA is used to identify potential runtime defects, unsafe data or control flows,
+incorrect API usage, dead code, and violations of architectural constraints. These checks are defined in rule sets.</p>
+<p>SCA further requires tool support processing the defined rule sets and project specific constraints.
+The configuration utilizing the rule sets and the evaluation of the results are described in the project’s <a class="reference internal" href="../verification_workproducts.html#wp__verification_plan" title="wp__verification_plan"><em class="xref need">Verification Plan</em></a> and <a class="reference internal" href="../../implementation/implementation_workproducts.html#wp__sw_development_plan" title="wp__sw_development_plan"><em class="xref need">Software Development Plan</em></a>.</p>
+<p>Findings from static code analysis are reviewed, classified, and addressed according to their relevance for safety, security, and quality.
+Systematic resolution or justified handling of findings contributes to the overall verification evidence as defined in the project’s <a class="reference internal" href="../verification_workproducts.html#wp__verification_plan" title="wp__verification_plan"><em class="xref need">Verification Plan</em></a>.</p>
+</section>
 </section>
 <section id="derivation-techniques">
 <h2>Derivation Techniques<a class="headerlink" href="#derivation-techniques" title="Link to this heading">#</a></h2>
-<div class="need_container docutils container" id="SNCB-d8be7249">
+<div class="need_container docutils container" id="SNCB-69a47baa">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_method table" id="gd_meth__verification_derivation">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -998,6 +1011,7 @@ and fix the underlying issue in the code.</p>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fault-injection">Fault Injection</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#interface-test">Interface Test</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#structural-coverage">Structural Coverage</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#static-code-analysis">Static Code Analysis</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#derivation-techniques">Derivation Techniques</a><ul class="nav section-nav flex-column">
