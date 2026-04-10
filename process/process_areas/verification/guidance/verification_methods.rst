@@ -142,6 +142,25 @@ S-CORE evaluates this coverage using the compiler selected for the target refere
 If a sufficient structural coverage is not reached then additional test cases are added.
 What is sufficient and how to determine the coverage is defined in the :need:`wp__verification_plan` of the project.
 
+.. _ver_sta:
+
+Static Code Analysis
+""""""""""""""""""""
+
+Static code analysis (SCA) is a verification method that inspects source code without executing it
+to identify potential defects, rule violations, and deviations from intended design early in the development process.
+MISRA‑like checks are treated as a prerequisite for SCA to enable safe use of the programming language and to prevent common pitfalls.
+This supports systematic defect detection beyond what can be achieved by dynamic testing alone.
+
+Semantic analysis of the SCA is used to identify potential runtime defects, unsafe data or control flows,
+incorrect API usage, dead code, and violations of architectural constraints. These checks are defined in rule sets.
+
+SCA further requires tool support processing the defined rule sets and project specific constraints.
+The configuration utilizing the rule sets and the evaluation of the results are described in the project’s :need:`wp__verification_plan` and :need:`wp__sw_development_plan`.
+
+Findings from static code analysis are reviewed, classified, and addressed according to their relevance for safety, security, and quality.
+Systematic resolution or justified handling of findings contributes to the overall verification evidence as defined in the project’s :need:`wp__verification_plan`.
+
 
 Derivation Techniques
 ^^^^^^^^^^^^^^^^^^^^^
