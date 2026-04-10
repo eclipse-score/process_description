@@ -166,4 +166,34 @@ Process Requirements
 
     Note1: These external components AoU need to be checked generally for the complete platform, so we create a process automation requirement for this.
 
-    Note2: One example would be the checking if safety components are unly using "safe" functions of the operating system.
+    Note2: One example would be the checking if safety components are only using "safe" functions of the operating system.
+
+.. gd_req:: Static Code Analysis Classification
+    :id: gd_req__verification_sca_classification
+    :status: valid
+    :tags: prio_2_automation, verification
+    :satisfies: wf__verification_unit_test, wf__verification_comp_int_test, wf__verification_feat_int_test, wf__verification_platform_int_test
+    :complies:
+
+    Static code analysis findings shall be classified according to the following categories:
+
+    - Critical
+    - High
+    - Medium
+    - Low
+
+    The actual classification shall be either provided by the tool as a suggestion or defined manually by :need:`rl__quality_manager` together with :need:`rl__committer`.
+
+    Alternative rating like class A, B, C, D or 1, 2, 3, 4 can be used as well, but the principle mapping to the above categories shall be preserved and documented.
+
+.. gd_req:: CI reference integration execution
+    :id: gd_req__verification_ci_reference_execution
+    :status: valid
+    :tags: prio_2_automation, verification
+    :satisfies: wf__verification_unit_test, wf__verification_comp_int_test, wf__verification_feat_int_test, wf__verification_platform_int_test
+    :complies:
+
+    The CI reference integration execution shall be triggered on regular basis to guarantee the inter-operation of all integrated components
+    when a new component is added to the system or an existing component is updated via a PR.
+
+    **TODO: Align this to the ongoing work in https://github.com/eclipse-score/reference_integration/pull/190 which reworks the CI reference integration execution.**
