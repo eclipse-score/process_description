@@ -187,7 +187,7 @@ Process Requirements
    :status: valid
    :tags: prio_1_automation, general
    :complies: std_req__iso26262__support_6433, std_req__iso26262__software_7414
-   :satisfies: wf__monitor_verify_requirements
+   :derived_from: wf__monitor_verify_requirements
 
    The version of a requirement shall not change by an inspection.
 
@@ -200,7 +200,7 @@ Process Requirements
    :status: draft
    :tags: general
    :complies: std_req__iso26262__support_6433, std_req__iso26262__software_7414
-   :satisfies: wf__mr_vy_arch
+   :derived_from: wf__mr_vy_arch
 
    The version of architecture element shall not change by an inspection.
 
@@ -215,7 +215,7 @@ Process Requirements
    :status: valid
    :tags: prio_2_automation, general
    :complies: std_req__iso26262__support_6433, std_req__iso26262__software_7414, std_req__iso26262__software_942
-   :satisfies: wf__monitor_verify_requirements, wf__mr_vy_arch
+   :derived_from: wf__monitor_verify_requirements, wf__mr_vy_arch
 
    For every pull request that modifies a work product subject to inspection,
    a pull‑request template containing the applicable inspection checklist items shall be provided.
@@ -227,7 +227,7 @@ Process Requirements
    :status: valid
    :tags: prio_2_automation, general
    :complies: std_req__iso26262__support_6433, std_req__iso26262__software_7414
-   :satisfies: wf__monitor_verify_requirements, wf__mr_vy_arch
+   :derived_from: wf__monitor_verify_requirements, wf__mr_vy_arch
 
    It shall be checked that only a PR with the inspection checklist filled out can set a status to valid(inspected).
 
@@ -236,6 +236,6 @@ Process Requirements
    :status: valid
    :tags: prio_2_automation, general
    :complies: std_req__iso26262__support_6433, std_req__iso26262__software_7414
-   :satisfies: wf__monitor_verify_requirements, wf__mr_vy_arch
+   :derived_from: wf__monitor_verify_requirements, wf__mr_vy_arch
 
    It shall be checked that the status is reset to valid whenever a requirement is modified (changes version).
