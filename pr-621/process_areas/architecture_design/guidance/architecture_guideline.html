@@ -38,11 +38,11 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-data-viewer/jsonview.bundle.css?v=f6ef2277" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/libs/html/datatables.min.css?v=4b4fd840" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/need_core.css?v=f5b60a78" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/need_toggle.css?v=5c6620df" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/needstable.css?v=5e1b6797" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/need_links.css?v=2150a916" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/need_style.css?v=92936fa5" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/needstable.css?v=5e1b6797" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/need_toggle.css?v=5c6620df" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/need_core.css?v=f5b60a78" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/modern.css?v=803738c0" />
   
   <!-- So that users can add custom icons -->
@@ -487,7 +487,6 @@
 <li class="toctree-l2"><a class="reference internal" href="../architecture_roles.html">Roles</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../architecture_workflow.html">Architecture Workflows</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../architecture_workproducts.html">Architecture Work Products</a></li>
-<li class="toctree-l2"><a class="reference internal" href="architecture_modeling_example.html">Example model of architectural design</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1"><a class="reference internal" href="../../change_management/index.html">Change Management</a></li>
@@ -574,7 +573,7 @@
                   
   <section id="architecture-guideline">
 <span id="arch-design-guideline"></span><h1>Architecture Guideline<a class="headerlink" href="#architecture-guideline" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-d6906bbb">
+<div class="need_container docutils container" id="SNCB-40625671">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_guidl table" id="gd_guidl__arch_design">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -595,7 +594,7 @@
 <tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
 <div class="line"><span><span><div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">architecture_design</span></span></span></div>
 </span></span></div>
-<div class="line"><span><div class="line">contained by: <span class="contains"><span><a class="reference internal" href="../architecture_workflow.html#wf__cr_mt_featarch" title="gd_guidl__arch_design">wf__cr_mt_featarch</a>, <a class="reference internal" href="../architecture_workflow.html#wf__cr_mt_comparch" title="gd_guidl__arch_design">wf__cr_mt_comparch</a>, <a class="reference internal" href="../architecture_workflow.html#wf__mr_vy_arch" title="gd_guidl__arch_design">wf__mr_vy_arch</a></span></span></div>
+<div class="line"><span><div class="line">contained by: <span class="contains"><span><a class="reference internal" href="../architecture_workflow.html#wf__cr_mt_platarch" title="gd_guidl__arch_design">wf__cr_mt_platarch</a>, <a class="reference internal" href="../architecture_workflow.html#wf__cr_mt_featarch" title="gd_guidl__arch_design">wf__cr_mt_featarch</a>, <a class="reference internal" href="../architecture_workflow.html#wf__cr_mt_comparch" title="gd_guidl__arch_design">wf__cr_mt_comparch</a>, <a class="reference internal" href="../architecture_workflow.html#wf__mr_vy_arch" title="gd_guidl__arch_design">wf__mr_vy_arch</a></span></span></div>
 <div class="line">complies: <span class="complies"><span><a class="reference internal" href="../../../standards/isopas8926/isopas8926.html#std_req__isopas8926__44411" title="gd_guidl__arch_design">std_req__isopas8926__44411</a>, <a class="reference internal" href="../../../standards/isopas8926/isopas8926.html#std_req__isopas8926__44412" title="gd_guidl__arch_design">std_req__isopas8926__44412</a>, <a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_req__iso26262__software_743" title="gd_guidl__arch_design">std_req__iso26262__software_743</a>, <a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_req__iso26262__software_744" title="gd_guidl__arch_design">std_req__iso26262__software_744</a>, <a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_req__iso26262__software_745" title="gd_guidl__arch_design">std_req__iso26262__software_745</a></span></span></div>
 </span></div>
 </div>
@@ -707,8 +706,8 @@
 <h2>Workflow for creating an architectural design<a class="headerlink" href="#workflow-for-creating-an-architectural-design" title="Link to this heading">#</a></h2>
 <p>This chapter describes the general guideline for architectural design within the project. In general, the workflow for creating an architectural design is shown in <a class="reference internal" href="../architecture_getstrt.html#architecture-workflow-fig"><span class="std std-ref">Architecture Design Workflow</span></a>.</p>
 <p>Those steps are:</p>
-<div class="pst-scrollable-table-container"><table class="table" id="id6">
-<caption><span class="caption-number">Table 8 </span><span class="caption-text">Definition of the static architectural elements</span><a class="headerlink" href="#id6" title="Link to this table">#</a></caption>
+<div class="pst-scrollable-table-container"><table class="table" id="id8">
+<caption><span class="caption-number">Table 8 </span><span class="caption-text">Definition of the static architectural elements</span><a class="headerlink" href="#id8" title="Link to this table">#</a></caption>
 <colgroup>
 <col style="width: 10.0%" />
 <col style="width: 60.0%" />
@@ -725,38 +724,73 @@
 <li></li>
 </ol>
 </td>
-<td><p><a class="reference internal" href="#create-feature-architecture"><span class="std std-ref">Create feature architecture (Concept)</span></a></p></td>
+<td><p><a class="reference internal" href="#create-platform-architecture"><span class="std std-ref">Create platform architecture (Concept)</span></a></p></td>
 <td><p><a class="reference internal" href="../../../roles/index.html#rl__contributor" title="rl__contributor"><em class="xref need">Contributor</em></a></p></td>
 </tr>
 <tr class="row-odd"><td><ol class="arabic simple" start="2">
 <li></li>
 </ol>
 </td>
-<td><p><a class="reference internal" href="#model-feature-architecture"><span class="std std-ref">Model feature architecture</span></a></p></td>
+<td><p><a class="reference internal" href="#model-platform-architecture"><span class="std std-ref">Model platform architecture</span></a></p></td>
 <td><p><a class="reference internal" href="../../../roles/index.html#rl__contributor" title="rl__contributor"><em class="xref need">Contributor</em></a></p></td>
 </tr>
 <tr class="row-even"><td><ol class="arabic simple" start="3">
 <li></li>
 </ol>
 </td>
-<td><p><a class="reference internal" href="#allocate-feature-requirements"><span class="std std-ref">Allocate feature requirements to architectural elements</span></a></p></td>
+<td><p><a class="reference internal" href="#allocate-stakeholder-requirements"><span class="std std-ref">Allocate stakeholder requirements to architectural elements</span></a></p></td>
 <td><p><a class="reference internal" href="../../../roles/index.html#rl__contributor" title="rl__contributor"><em class="xref need">Contributor</em></a></p></td>
 </tr>
 <tr class="row-odd"><td><ol class="arabic simple" start="4">
 <li></li>
 </ol>
 </td>
-<td><p><a class="reference internal" href="#review-architectural-design"><span class="std std-ref">Review architectural design</span></a></p></td>
+<td><p><a class="reference internal" href="#review-platform-architecture"><span class="std std-ref">Review platform architecture</span></a></p></td>
 <td><p><a class="reference internal" href="../../../roles/index.html#rl__committer" title="rl__committer"><em class="xref need">Committer</em></a></p></td>
 </tr>
 <tr class="row-even"><td><ol class="arabic simple" start="5">
 <li></li>
 </ol>
 </td>
-<td><p>Merge architectural design into score delivery container</p></td>
+<td><p>Merge platform architecture into score delivery container</p></td>
 <td><p><a class="reference internal" href="../../../roles/index.html#rl__committer" title="rl__committer"><em class="xref need">Committer</em></a></p></td>
 </tr>
 <tr class="row-odd"><td><ol class="arabic simple" start="6">
+<li></li>
+</ol>
+</td>
+<td><p><a class="reference internal" href="#create-feature-architecture"><span class="std std-ref">Create feature architecture (Concept)</span></a></p></td>
+<td><p><a class="reference internal" href="../../../roles/index.html#rl__contributor" title="rl__contributor"><em class="xref need">Contributor</em></a></p></td>
+</tr>
+<tr class="row-even"><td><ol class="arabic simple" start="7">
+<li></li>
+</ol>
+</td>
+<td><p><a class="reference internal" href="#model-feature-architecture"><span class="std std-ref">Model feature architecture</span></a></p></td>
+<td><p><a class="reference internal" href="../../../roles/index.html#rl__contributor" title="rl__contributor"><em class="xref need">Contributor</em></a></p></td>
+</tr>
+<tr class="row-odd"><td><ol class="arabic simple" start="8">
+<li></li>
+</ol>
+</td>
+<td><p><a class="reference internal" href="#allocate-feature-requirements"><span class="std std-ref">Allocate feature requirements to architectural elements</span></a></p></td>
+<td><p><a class="reference internal" href="../../../roles/index.html#rl__contributor" title="rl__contributor"><em class="xref need">Contributor</em></a></p></td>
+</tr>
+<tr class="row-even"><td><ol class="arabic simple" start="9">
+<li></li>
+</ol>
+</td>
+<td><p><a class="reference internal" href="#review-architectural-design"><span class="std std-ref">Review feature architecture</span></a></p></td>
+<td><p><a class="reference internal" href="../../../roles/index.html#rl__committer" title="rl__committer"><em class="xref need">Committer</em></a></p></td>
+</tr>
+<tr class="row-odd"><td><ol class="arabic simple" start="10">
+<li></li>
+</ol>
+</td>
+<td><p>Merge feature architecture into score delivery container</p></td>
+<td><p><a class="reference internal" href="../../../roles/index.html#rl__committer" title="rl__committer"><em class="xref need">Committer</em></a></p></td>
+</tr>
+<tr class="row-even"><td><ol class="arabic simple" start="11">
 <li></li>
 </ol>
 </td>
@@ -767,21 +801,21 @@
 </td>
 <td><p><a class="reference internal" href="../../../roles/index.html#rl__contributor" title="rl__contributor"><em class="xref need">Contributor</em></a></p></td>
 </tr>
-<tr class="row-even"><td><ol class="arabic simple" start="7">
+<tr class="row-odd"><td><ol class="arabic simple" start="12">
 <li></li>
 </ol>
 </td>
 <td><p><a class="reference internal" href="#model-component-architecture"><span class="std std-ref">Model component architecture</span></a></p></td>
 <td><p><a class="reference internal" href="../../../roles/index.html#rl__contributor" title="rl__contributor"><em class="xref need">Contributor</em></a></p></td>
 </tr>
-<tr class="row-odd"><td><ol class="arabic simple" start="8">
+<tr class="row-even"><td><ol class="arabic simple" start="13">
 <li></li>
 </ol>
 </td>
 <td><p><a class="reference internal" href="#review-component-architecture"><span class="std std-ref">Review component architecture</span></a></p></td>
 <td><p><a class="reference internal" href="../../../roles/index.html#rl__committer" title="rl__committer"><em class="xref need">Committer</em></a></p></td>
 </tr>
-<tr class="row-even"><td><ol class="arabic simple" start="9">
+<tr class="row-odd"><td><ol class="arabic simple" start="14">
 <li></li>
 </ol>
 </td>
@@ -791,6 +825,59 @@
 </tbody>
 </table>
 </div>
+<section id="create-platform-architecture-concept">
+<span id="create-platform-architecture"></span><h3>Create platform architecture (Concept)<a class="headerlink" href="#create-platform-architecture-concept" title="Link to this heading">#</a></h3>
+<p>The platform architecture (= top-level architecture) shall be created in the platform delivery container. It provides the overall decomposition of the platform into features and defines the logical interfaces at the platform boundary.</p>
+<p>The platform architecture shall describe the concept of the platform, including supporting figures and drawings. If multiple solutions are possible, these should be documented here with the rationale for the final decision. A design decision template is provided in <a class="reference internal" href="../../change_management/guidance/change_management_decision_record_template.html#gd_temp__change_decision_record" title="gd_temp__change_decision_record"><em class="xref need">Decision Record Template</em></a>.</p>
+<p>Additionally, you should consult your project’s specific guidelines, e.g., for using the version management tooling or architecture element naming conventions, which should be defined (or linked) in the <a class="reference internal" href="../../implementation/implementation_workproducts.html#wp__sw_development_plan" title="wp__sw_development_plan"><em class="xref need">Project SW development Plan</em></a>.</p>
+</section>
+<section id="model-platform-architecture">
+<span id="id1"></span><h3>Model platform architecture<a class="headerlink" href="#model-platform-architecture" title="Link to this heading">#</a></h3>
+<p>Based on the concept description, a model of the platform architecture shall be designed. It shall provide an overview of the features within the platform and their logical interfaces at the platform boundary. Therefore, the following elements shall be used:</p>
+<div class="pst-scrollable-table-container"><table class="table" id="id9">
+<caption><span class="caption-number">Table 9 </span><span class="caption-text">Architectural Elements of the Platform Architecture</span><a class="headerlink" href="#id9" title="Link to this table">#</a></caption>
+<colgroup>
+<col style="width: 25.0%" />
+<col style="width: 75.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Element</p></th>
+<th class="head"><p>Sphinx directive</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Feature</p></td>
+<td><p>feat</p></td>
+</tr>
+<tr class="row-odd"><td><p>Logical Interface</p></td>
+<td><p>logic_arc_int</p></td>
+</tr>
+<tr class="row-even"><td><p>Logical Interface Operation</p></td>
+<td><p>logic_arc_int_op</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>The relations of the static elements are described in <a class="reference internal" href="../architecture_concept.html#metamodel-architectural-design"><span class="std std-ref">Definition of the Metamodel for Architectural Design</span></a>.</p>
+</section>
+<section id="allocate-stakeholder-requirements-to-architectural-elements">
+<span id="allocate-stakeholder-requirements"></span><h3>Allocate stakeholder requirements to architectural elements<a class="headerlink" href="#allocate-stakeholder-requirements-to-architectural-elements" title="Link to this heading">#</a></h3>
+<p>In this step, the stakeholder requirements shall be allocated to the platform architectural elements depending on their content. These links shall be established from architectural elements to stakeholder requirements via the attribute <em>fulfils</em>.</p>
+<p>If needed, additional feature requirements derived from architectural decisions should be created and allocated to the respective feature.</p>
+</section>
+<section id="review-platform-architecture">
+<span id="id2"></span><h3>Review platform architecture<a class="headerlink" href="#review-platform-architecture" title="Link to this heading">#</a></h3>
+<p>As soon as the design is in a mature state, it can be reviewed according to <a class="reference internal" href="../../../general_concepts/score_review_concept.html#doc_concept__wp_inspections" title="doc_concept__wp_inspections"><em class="xref need">Work product Inspections Co...</em></a>
+and merged into the main branch of the platform delivery container. See also the document life-cycle guideline <a class="reference internal" href="../../documentation_management/guidance/documentation_guideline.html#gd_guidl__documentation" title="gd_guidl__documentation"><em class="xref need">Documentation</em></a> for more information about the documentation for the platform architecture <a class="reference internal" href="../architecture_workproducts.html#wp__platform_arch" title="wp__platform_arch"><em class="xref need">Platform Architecture</em></a>.</p>
+<p>For the review process, a checklist template is available: <a class="reference internal" href="architecture_inspection_checklist.html#gd_chklst__arch_inspection_checklist" title="gd_chklst__arch_inspection_checklist"><em class="xref need">Architecture Inspection Checklist Template</em></a>.</p>
+<p>The following roles should be included in the review:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="../../safety_management/safety_management_roles.html#rl__safety_manager" title="rl__safety_manager"><em class="xref need">Safety Manager</em></a></p></li>
+<li><p><a class="reference internal" href="../../security_management/security_management_roles.html#rl__security_manager" title="rl__security_manager"><em class="xref need">Security Manager</em></a></p></li>
+<li><p><a class="reference internal" href="../../../roles/index.html#rl__project_lead" title="rl__project_lead"><em class="xref need">Project Lead</em></a></p></li>
+<li><p><a class="reference internal" href="../../../roles/index.html#rl__committer" title="rl__committer"><em class="xref need">Committer</em></a></p></li>
+</ul>
+</section>
 <section id="create-feature-architecture-concept">
 <span id="create-feature-architecture"></span><h3>Create feature architecture (Concept)<a class="headerlink" href="#create-feature-architecture-concept" title="Link to this heading">#</a></h3>
 <p>The feature architecture (= high-level architecture) shall be created in the feature tree of the platform delivery container.</p>
@@ -798,10 +885,10 @@
 <p>Additionally, you should consult your project’s specific guidelines, e.g., for using the version management tooling or architecture element naming conventions, which should be defined (or linked) in the <a class="reference internal" href="../../implementation/implementation_workproducts.html#wp__sw_development_plan" title="wp__sw_development_plan"><em class="xref need">Project SW development Plan</em></a>.</p>
 </section>
 <section id="model-feature-architecture">
-<span id="id1"></span><h3>Model feature architecture<a class="headerlink" href="#model-feature-architecture" title="Link to this heading">#</a></h3>
+<span id="id3"></span><h3>Model feature architecture<a class="headerlink" href="#model-feature-architecture" title="Link to this heading">#</a></h3>
 <p>Based on the concept description, a model of the feature architecture shall be designed. It shall consist of the logical interfaces which the user of the feature can access, including the modules which provide the interfaces. Therefore, the following elements shall be used:</p>
-<div class="pst-scrollable-table-container"><table class="table" id="id7">
-<caption><span class="caption-number">Table 9 </span><span class="caption-text">Architectural Elements of the Feature Architecture</span><a class="headerlink" href="#id7" title="Link to this table">#</a></caption>
+<div class="pst-scrollable-table-container"><table class="table" id="id10">
+<caption><span class="caption-number">Table 10 </span><span class="caption-text">Architectural Elements of the Feature Architecture</span><a class="headerlink" href="#id10" title="Link to this table">#</a></caption>
 <colgroup>
 <col style="width: 25.0%" />
 <col style="width: 75.0%" />
@@ -828,7 +915,8 @@
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>For the modelling of the architecture a sphinx extension is available: <a class="reference internal" href="../architecture_concept.html#arch-gen-sphinx"><span class="std std-ref">Architecture Generation for Sphinx-Needs</span></a></p>
-<p>An example of modelling the architecture can be found <a class="reference internal" href="architecture_modeling_example.html#definition-architectural-design"><span class="std std-ref">here</span></a>.</p>
+<p>An example of modelling the architecture can be found in the
+<a class="reference external" href="https://eclipse-score.github.io/module_template/main/">module template documentation</a>.</p>
 </div>
 </section>
 <section id="allocate-feature-requirements-to-architectural-elements">
@@ -838,7 +926,7 @@
 <p>These links shall be established from architectural elements to feature requirements via the attribute <em>satisfies</em>.</p>
 </section>
 <section id="review-architectural-design">
-<span id="id2"></span><h3>Review architectural design<a class="headerlink" href="#review-architectural-design" title="Link to this heading">#</a></h3>
+<span id="id4"></span><h3>Review architectural design<a class="headerlink" href="#review-architectural-design" title="Link to this heading">#</a></h3>
 <p>As soon as the design is in a mature state, it can be reviewed according to <a class="reference internal" href="../../../general_concepts/score_review_concept.html#doc_concept__wp_inspections" title="doc_concept__wp_inspections"><em class="xref need">Work product Inspections Co...</em></a>
 and merged into the main branch of the platform delivery container. See also the document life-cycle guideline <a class="reference internal" href="../../documentation_management/guidance/documentation_guideline.html#gd_guidl__documentation" title="gd_guidl__documentation"><em class="xref need">Documentation</em></a> for more information about the documentation for the feature architecture <a class="reference internal" href="../architecture_workproducts.html#wp__feature_arch" title="wp__feature_arch"><em class="xref need">Feature Architecture</em></a>.</p>
 <p>For the review process, a checklist template is available: <a class="reference internal" href="architecture_inspection_checklist.html#gd_chklst__arch_inspection_checklist" title="gd_chklst__arch_inspection_checklist"><em class="xref need">Architecture Inspection Checklist Template</em></a>.</p>
@@ -860,10 +948,10 @@ and merged into the main branch of the platform delivery container. See also the
 <p>In this step, the component requirements shall be derived (see <a class="reference internal" href="../../requirements_engineering/guidance/requirements_guideline.html#gd_guidl__req_engineering" title="gd_guidl__req_engineering"><em class="xref need">Requirements Guideline</em></a>) and allocated to the architectural elements via the attribute <em>satisfies</em>.</p>
 </section>
 <section id="model-component-architecture">
-<span id="id3"></span><h3>Model component architecture<a class="headerlink" href="#model-component-architecture" title="Link to this heading">#</a></h3>
+<span id="id5"></span><h3>Model component architecture<a class="headerlink" href="#model-component-architecture" title="Link to this heading">#</a></h3>
 <p>According to the architecture design description, the model for the component architecture shall be created. It shall consist of components, real interfaces and real interface operations. Depending on the size of the component, it can also be split into multiple (lower-level) components.</p>
-<div class="pst-scrollable-table-container"><table class="table" id="id8">
-<caption><span class="caption-number">Table 10 </span><span class="caption-text">Architectural Elements of the Component Architecture</span><a class="headerlink" href="#id8" title="Link to this table">#</a></caption>
+<div class="pst-scrollable-table-container"><table class="table" id="id11">
+<caption><span class="caption-number">Table 11 </span><span class="caption-text">Architectural Elements of the Component Architecture</span><a class="headerlink" href="#id11" title="Link to this table">#</a></caption>
 <colgroup>
 <col style="width: 25.0%" />
 <col style="width: 75.0%" />
@@ -889,7 +977,7 @@ and merged into the main branch of the platform delivery container. See also the
 <p>The relations of the static elements are described in <a class="reference internal" href="../architecture_concept.html#metamodel-architectural-design"><span class="std std-ref">Definition of the Metamodel for Architectural Design</span></a>.</p>
 </section>
 <section id="review-component-architecture">
-<span id="id4"></span><h3>Review component architecture<a class="headerlink" href="#review-component-architecture" title="Link to this heading">#</a></h3>
+<span id="id6"></span><h3>Review component architecture<a class="headerlink" href="#review-component-architecture" title="Link to this heading">#</a></h3>
 <p>As soon as the design is in a mature state, it can be <a class="reference internal" href="../../../general_concepts/score_review_concept.html#review-concept"><span class="std std-ref">reviewed</span></a> and merged into the main branch of the module’s delivery container. See also the document life-cycle guideline <a class="reference internal" href="../../documentation_management/guidance/documentation_guideline.html#gd_guidl__documentation" title="gd_guidl__documentation"><em class="xref need">Documentation</em></a> for more information about the documentation for the component architecture <a class="reference internal" href="../architecture_workproducts.html#wp__component_arch" title="wp__component_arch"><em class="xref need">Component Architecture</em></a>.</p>
 <p>Following roles should be included in the review:</p>
 <ul class="simple">
@@ -901,11 +989,12 @@ and merged into the main branch of the platform delivery container. See also the
 </section>
 </section>
 <section id="uml-diagram-selection">
-<span id="id5"></span><h2>UML diagram selection<a class="headerlink" href="#uml-diagram-selection" title="Link to this heading">#</a></h2>
+<span id="id7"></span><h2>UML diagram selection<a class="headerlink" href="#uml-diagram-selection" title="Link to this heading">#</a></h2>
 <section id="static-architecture">
 <h3>Static architecture<a class="headerlink" href="#static-architecture" title="Link to this heading">#</a></h3>
-<p>As can be seen from the examples presented in <a class="reference internal" href="../architecture_concept.html#feat_arc_sta__example_feature__feature_1" title="feat_arc_sta__example_feature__feature_1"><em class="xref need">Feature 1 Architecture</em></a> and <a class="reference internal" href="../architecture_concept.html#comp_arc_sta__example_feature__archdes_component_concept_1" title="comp_arc_sta__example_feature__archdes_component_concept_1"><em class="xref need">Component 1 Static View</em></a>
-for the static architecture a UML component diagram is expected (and supported by the tooling).</p>
+<p>As can be seen from the rendered feature and the component example in the
+<a class="reference external" href="https://eclipse-score.github.io/module_template/main/">module template documentation</a>,
+for the static architecture a UML component diagram is expected (and supported  by the tooling).</p>
 </section>
 <section id="dynamic-architecture">
 <h3>Dynamic architecture<a class="headerlink" href="#dynamic-architecture" title="Link to this heading">#</a></h3>
@@ -980,6 +1069,10 @@ architecture description.</p>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#workflow-for-creating-an-architectural-design">Workflow for creating an architectural design</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#create-platform-architecture-concept">Create platform architecture (Concept)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#model-platform-architecture">Model platform architecture</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#allocate-stakeholder-requirements-to-architectural-elements">Allocate stakeholder requirements to architectural elements</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#review-platform-architecture">Review platform architecture</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#create-feature-architecture-concept">Create feature architecture (Concept)</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#model-feature-architecture">Model feature architecture</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#allocate-feature-requirements-to-architectural-elements">Allocate feature requirements to architectural elements</a></li>

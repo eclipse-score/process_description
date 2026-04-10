@@ -38,11 +38,11 @@
     <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-data-viewer/jsonview.bundle.css?v=f6ef2277" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/libs/html/datatables.min.css?v=4b4fd840" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/common_css/need_core.css?v=f5b60a78" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/common_css/need_toggle.css?v=5c6620df" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/common_css/needstable.css?v=5e1b6797" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/common_css/need_links.css?v=2150a916" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/common_css/need_style.css?v=92936fa5" />
-    <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/common_css/needstable.css?v=5e1b6797" />
-    <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/common_css/need_toggle.css?v=5c6620df" />
-    <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/common_css/need_core.css?v=f5b60a78" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/modern.css?v=803738c0" />
   
   <!-- So that users can add custom icons -->
@@ -481,6 +481,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../requirements/chklst_req_inspection.html">Requirement Inspection Checklist</a></li>
 <li class="toctree-l3 current active"><a class="current reference internal" href="#">FMEA (Failure Modes and Effects Analysis)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="dfa.html">DFA (Dependent Failure Analysis)</a></li>
+
 <li class="toctree-l3"><a class="reference internal" href="../safety_planning/index.html">Feature Safety Work Products List</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../security_planning/index.html">Feature Security Work Products List</a></li>
 </ul>
@@ -558,7 +559,7 @@
                   
   <section id="fmea-failure-modes-and-effects-analysis">
 <h1>FMEA (Failure Modes and Effects Analysis)<a class="headerlink" href="#fmea-failure-modes-and-effects-analysis" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-2c826767">
+<div class="need_container docutils container" id="SNCB-5d7a2de1">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_document table" id="doc__feature_name_fmea">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -615,8 +616,105 @@
 <li><p>Adjust <code class="docutils literal notranslate"><span class="pre">safety</span></code> and <code class="docutils literal notranslate"><span class="pre">tags</span></code> according to your needs</p></li>
 </ul>
 </div>
+<p>The FMEA for the feature [Your Feature Name] is performed. To show evidence that all failure initiators are considered, the applicability has to be filled out in the
+following tables. For all applicable failure initiators, the FMEA has to be performed.</p>
 <section id="failure-mode-list">
 <h2>Failure Mode List<a class="headerlink" href="#failure-mode-list" title="Link to this heading">#</a></h2>
+<dl>
+<dt>Fault Models for sequence diagrams</dt><dd><div class="pst-scrollable-table-container"><table class="table" id="id1">
+<caption><span class="caption-number">Table 58 </span><span class="caption-text">Fault Models for sequence diagrams
+ :header-rows: 1
+ :widths: 10,20,10,20</span><a class="headerlink" href="#id1" title="Link to this table">#</a></caption>
+<tbody>
+<tr class="row-odd"><td><p>ID</p></td>
+<td><p>Failure Mode</p></td>
+<td><p>Applicability</p></td>
+<td><p>Rationale</p></td>
+</tr>
+<tr class="row-even"><td><p>MF_01_01</p></td>
+<td><p>message is not received (is a subset/more precise description of MF_01_05)</p></td>
+<td><p>&lt;yes | no&gt;</p></td>
+<td><p>&lt;Rationale if not applicable, otherwise link to filled out FMEA&gt;</p></td>
+</tr>
+<tr class="row-odd"><td><p>MF_01_02</p></td>
+<td><p>message received too late (only relevant if delay is a realistic fault)</p></td>
+<td><p>&lt;yes | no&gt;</p></td>
+<td><p>&lt;Rationale if not applicable, otherwise link to filled out FMEA&gt;</p></td>
+</tr>
+<tr class="row-even"><td><p>MF_01_03</p></td>
+<td><p>message received too early (usually not a problem)</p></td>
+<td><p>&lt;yes | no&gt;</p></td>
+<td><p>&lt;Rationale if not applicable, otherwise link to filled out FMEA&gt;</p></td>
+</tr>
+<tr class="row-odd"><td><p>MF_01_04</p></td>
+<td><p>message not received correctly by all recipients (different messages or messages partly lost). Only relevant if the same message goes to multiple recipients.</p></td>
+<td><p>&lt;yes | no&gt;</p></td>
+<td><p>&lt;Rationale if not applicable, otherwise link to filled out FMEA&gt;</p></td>
+</tr>
+<tr class="row-even"><td><p>MF_01_05</p></td>
+<td><p>message is corrupted</p></td>
+<td><p>&lt;yes | no&gt;</p></td>
+<td><p>&lt;Rationale if not applicable, otherwise link to filled out FMEA&gt;</p></td>
+</tr>
+<tr class="row-odd"><td><p>MF_01_06</p></td>
+<td><p>message is not sent</p></td>
+<td><p>&lt;yes | no&gt;</p></td>
+<td><p>&lt;Rationale if not applicable, otherwise link to filled out FMEA&gt;</p></td>
+</tr>
+<tr class="row-even"><td><p>MF_01_07</p></td>
+<td><p>message is unintended sent</p></td>
+<td><p>&lt;yes | no&gt;</p></td>
+<td><p>&lt;Rationale if not applicable, otherwise link to filled out FMEA&gt;</p></td>
+</tr>
+<tr class="row-odd"><td><p>CO_01_01</p></td>
+<td><p>minimum constraint boundary is violated</p></td>
+<td><p>&lt;yes | no&gt;</p></td>
+<td><p>&lt;Rationale if not applicable, otherwise link to filled out FMEA&gt;</p></td>
+</tr>
+<tr class="row-even"><td><p>CO_01_02</p></td>
+<td><p>maximum constraint boundary is violated</p></td>
+<td><p>&lt;yes | no&gt;</p></td>
+<td><p>&lt;Rationale if not applicable, otherwise link to filled out FMEA&gt;</p></td>
+</tr>
+<tr class="row-odd"><td><p>EX_01_01</p></td>
+<td><p>Process calculates wrong result(s) (is a subset/more precise description of MF_01_05 or MF_01_04). This failure mode is related to the analysis if e.g. internal safety mechanisms are required (level 2 function, plausibility check of the output, …) because of the size / complexity of the feature.</p></td>
+<td><p>&lt;yes | no&gt;</p></td>
+<td><p>&lt;Rationale if not applicable, otherwise link to filled out FMEA&gt;</p></td>
+</tr>
+<tr class="row-even"><td><p>EX_01_02</p></td>
+<td><p>processing too slow (only relevant if timing is considered)</p></td>
+<td><p>&lt;yes | no&gt;</p></td>
+<td><p>&lt;Rationale if not applicable, otherwise link to filled out FMEA&gt;</p></td>
+</tr>
+<tr class="row-odd"><td><p>EX_01_03</p></td>
+<td><p>processing too fast (only relevant if timing is considered)</p></td>
+<td><p>&lt;yes | no&gt;</p></td>
+<td><p>&lt;Rationale if not applicable, otherwise link to filled out FMEA&gt;</p></td>
+</tr>
+<tr class="row-even"><td><p>EX_01_04</p></td>
+<td><p>loss of execution</p></td>
+<td><p>&lt;yes | no&gt;</p></td>
+<td><p>&lt;Rationale if not applicable, otherwise link to filled out FMEA&gt;</p></td>
+</tr>
+<tr class="row-odd"><td><p>EX_01_05</p></td>
+<td><p>processing changes to arbitrary process</p></td>
+<td><p>&lt;yes | no&gt;</p></td>
+<td><p>&lt;Rationale if not applicable, otherwise link to filled out FMEA&gt;</p></td>
+</tr>
+<tr class="row-even"><td><p>EX_01_06</p></td>
+<td><p>processing is not complete (infinite loop)</p></td>
+<td><p>&lt;yes | no&gt;</p></td>
+<td><p>&lt;Rationale if not applicable, otherwise link to filled out FMEA&gt;</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</dd>
+</dl>
+</section>
+<section id="fmea">
+<h2>FMEA<a class="headerlink" href="#fmea" title="Link to this heading">#</a></h2>
+<p>For all identified applicable failure initiators, the FMEA is performed in the following section.</p>
 <div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">   ..</span> <span class="ow">feat_saf_fmea</span><span class="p">::</span> <span class="nt">&lt;Title&gt;</span>
       <span class="nc">:violates:</span> <span class="nt">&lt;Feature architecture&gt;</span>
       <span class="nc">:id:</span> feat_saf_fmea__&lt;Feature&gt;__&lt;Element descriptor&gt;
@@ -689,6 +787,7 @@
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#failure-mode-list">Failure Mode List</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fmea">FMEA</a></li>
 </ul>
   </nav></div>
 
