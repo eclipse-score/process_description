@@ -19,6 +19,7 @@ Process areas
 
 .. toctree::
    :maxdepth: 1
+   :hidden:
    :glob:
 
    architecture_design/index.rst
@@ -38,3 +39,146 @@ Process areas
    security_management/index.rst
    tool_management/index.rst
    verification/index.rst
+
+Management
+**********
+
+.. grid:: 1 1 3 3
+   :class-container: score-grid
+
+   .. grid-item-card::
+      :class-card: card-management
+      
+      :ref:`Platform Management <platform_management>`
+      ^^^
+      Manage the common platform, its modules and integration.
+
+   .. grid-item-card::
+      :class-card: card-management
+
+      :ref:`Safety Management <process_safety_management>`
+      ^^^
+      Plan and oversee safety activities across the project lifecycle.
+
+   .. grid-item-card::
+      :class-card: card-management
+
+
+      :ref:`Security Management <security_management>`
+      ^^^
+      Plan and oversee cybersecurity activities across the project lifecycle.
+
+   .. grid-item-card::
+      :class-card: card-management
+
+
+      :ref:`Quality Management <quality_management>`
+      ^^^
+      Define and monitor quality objectives, measures and improvements.
+
+   .. grid-item-card::
+      :class-card: card-management
+
+
+      :ref:`Change Management <change_management>`
+      ^^^
+      Control and track changes to work products and configurations.
+
+   .. grid-item-card::
+      :class-card: card-management
+
+
+      :ref:`Problem Resolution <problem_resolution>`
+      ^^^
+      Identify, analyse and resolve problems found during development.
+
+   .. grid-item-card::
+      :class-card: card-management
+
+
+      :ref:`Release Management <release_management>`
+      ^^^
+      Plan, prepare and control the release of deliverables.
+
+   .. grid-item-card::
+      :class-card: card-management
+
+
+      :ref:`Process Management <process_management>`
+      ^^^
+      Define, deploy and improve the organisational process.
+
+Development
+***********
+
+.. grid:: 1 1 3 3
+   :class-container: score-grid
+
+   .. grid-item-card::
+      :class-card: card-development
+
+      :ref:`Requirements Engineering <requirements_engineering>`
+      ^^^
+      Elicit, specify and manage stakeholder and system requirements.
+
+   .. grid-item-card::
+      :class-card: card-development
+
+      :ref:`Architecture Design <arch_design_process>`
+      ^^^
+      Define and document the system and software architecture.
+
+   .. grid-item-card::
+      :class-card: card-development
+
+      :ref:`Implementation <implementation>`
+      ^^^
+      Develop and unit-test software units according to the design.
+
+   .. grid-item-card::
+      :class-card: card-development
+
+      :ref:`Verification <process_verification>`
+      ^^^
+      Verify that work products fulfil their specified requirements.
+
+   .. grid-item-card::
+      :class-card: card-development
+
+      :ref:`Safety Analysis <safety_analysis>`
+      ^^^
+      Identify and assess safety hazards and derive mitigation measures.
+
+   .. grid-item-card::
+      :class-card: card-development
+
+      :ref:`Security Analysis <security_analysis>`
+      ^^^
+      Identify and assess security threats and derive mitigation measures.
+
+Support
+*******
+
+.. grid:: 1 1 3 3
+   :class-container: score-grid
+
+   .. grid-item-card::
+      :class-card: card-support
+
+      :ref:`Configuration Management <process_configuration_management>`
+      ^^^
+      Control versions and baselines of all project artefacts.
+
+   .. grid-item-card::
+      :class-card: card-support
+
+      :ref:`Tool Management <tool_management>`
+      ^^^
+      Qualify and manage tools used in the development process.
+
+   .. grid-item-card::
+      :class-card: card-support
+
+      :ref:`Documentation Management <process_documentation_management>`
+      ^^^
+      Plan, create and maintain project and product documentation.

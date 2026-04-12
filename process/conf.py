@@ -32,5 +32,8 @@ extensions = [
     "score_sphinx_bundle",
 ]
 
+html_static_path = ["_assets"]
+html_css_files = ["custom.css"]
+
 # :need:`{title}` is used in the needs templates to display the title of the need
 needs_role_need_template = "{title}"
