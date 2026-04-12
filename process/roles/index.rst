@@ -120,18 +120,6 @@ Project Development Roles
    the platform. Feature and Components requests, which add new ones or modifications, are
    in their responsibility. They are aligned with the Project Leads.
 
-About Features
-
-Feature Request issue template
-
-Component Request
-
-A Component Request represents an independent work package used to describe modifications inside a Feature, either adding new components or modifying existing ones. Component Request work packages can be linked to other work packages, but they must not be treated as parent work packages. They shall be discussed with Architecture Community and the issues are owned by a Team and are part of the Team`s main repository..
-
-   They shall be included in any requirements reviews. They can also improve
-   independence argumentation when involved in the development of unit testing on safety critical
-   units. In this way the testing community takes a supportive role for unit testing
-
 .. role:: Project Security Team
    :id: rl__security_team
    :status: valid
