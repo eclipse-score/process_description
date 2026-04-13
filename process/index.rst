@@ -285,3 +285,13 @@ their workflows, work products, roles and guidances.
    :maxdepth: 1
 
    glossary/index.rst
+
+Release Notes
+-------------
+
+Release notes collection.
+
+.. toctree::
+   :maxdepth: 1
+
+   release_notes/index.rst
