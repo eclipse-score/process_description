@@ -12,10 +12,10 @@
    # SPDX-License-Identifier: Apache-2.0
    # *******************************************************************************
 
-Release Note v1.5.2
+Release Note v1.5.3
 ===================
 
-.. document:: Process description Release Note v1.5.2
+.. document:: Process description Release Note v1.5.3
    :id: doc__process_description_release_note_v152
    :status: valid
    :safety: ASIL_B
@@ -24,7 +24,7 @@ Release Note v1.5.2
    :tags:
 
 | **Module Name:** Process description
-| **Release Tag:** v1.5.2
+| **Release Tag:** v1.5.3
 | **Origin Release Tag:** v1.4.4
 | **Release Date:** 2026-04-13
 
@@ -106,6 +106,8 @@ Other changes by Label
 - Add functional testing to interface tests by @pahmann in #626
 - Remove issue templates by @masc2023 in #619
 - add tool requirements from feat/comp to tool man process by @RolandJentschETAS in #630
+- Update to latest docs_as_code 4.0.0 by @a-zw in #653
+- Enhance one tailored verification clause by @pahmann in #655
 
 Compatibility
 ^^^^^^^^^^^^^

@@ -21,4 +21,4 @@ Release notes
    :maxdepth: 1
    :caption: Content
 
-   release_note_v_1_5_2.rst
+   release_note_v_1_5_3.rst
