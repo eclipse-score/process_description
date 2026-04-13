@@ -68,7 +68,7 @@ of use. For convenience also the traceability to upper and lower lever requireme
 
 The next figures sets the focus on the component level and adds the traceability from the
 Component Requirements to the Component Architecture, Component Safety/Security Analysis
-and the Component Assumption of use. Further the traceability to Component Assumptions of use
+and the Component Assumption of use. Further the traceability to Assumptions of use
 from external components is included.
 
 
@@ -89,8 +89,8 @@ addition also needed to their architectures.
 
   High level traceability overview for project component work products including sub-components
 
-Or less complex components may not require a Component Architecture, the traceability is not
-required as the architecture can be skipped.
+Or less complex components may not require a Component Architecture (and the derived work products
+Component Safety/Security Analysis and AoUs). Then the traceability is not required for these.
 
 .. figure:: _assets/score_traceability_model_cmp_overview_3.drawio.svg
   :width: 100%
