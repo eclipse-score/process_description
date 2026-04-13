@@ -25,7 +25,7 @@ Architectural Model
    :status: valid
    :tags: manual_prio_1
    :complies: std_req__iso26262__support_6431, std_req__iso26262__support_6432
-   :satisfies: wf__cr_mt_featarch, wf__cr_mt_comparch
+   :derived_from: wf__cr_mt_featarch, wf__cr_mt_comparch
 
    For architecture design a model based approach should be used. The model shall consist of different architectural elements.
 
@@ -34,7 +34,7 @@ Architectural Model
    :status: valid
    :tags: done_automation
    :complies: std_req__iso26262__support_6431, std_req__iso26262__support_6432, std_req__iso26262__software_743
-   :satisfies: wf__cr_mt_featarch, wf__cr_mt_comparch
+   :derived_from: wf__cr_mt_featarch, wf__cr_mt_comparch
 
    The architectural elements shall be hierarchically structured on two levels:
 
@@ -46,7 +46,7 @@ Architectural Model
    :status: valid
    :tags: done_automation
    :complies: std_req__iso26262__support_6431, std_req__iso26262__support_6432, std_req__aspice_40__iic-01-03, std_req__aspice_40__iic-01-50
-   :satisfies: wf__cr_mt_featarch, wf__cr_mt_comparch
+   :derived_from: wf__cr_mt_featarch, wf__cr_mt_comparch
 
    Following architectural elements shall be defined on the respective hierarchical level:
 
@@ -76,7 +76,7 @@ Architectural Model
    :status: valid
    :tags: done_automation
    :complies: std_req__iso26262__support_6431, std_req__iso26262__support_6432
-   :satisfies: wf__cr_mt_featarch, wf__cr_mt_comparch
+   :derived_from: wf__cr_mt_featarch, wf__cr_mt_comparch
 
    For modeling the viewpoints following relations shall be used:
 
@@ -95,7 +95,7 @@ Architectural Views
    :status: valid
    :tags: manual_prio_1
    :complies: std_req__iso26262__support_6432, std_req__iso26262__software_742, std_req__aspice_40__SWE-2-BP1, std_req__aspice_40__SWE-2-BP2
-   :satisfies: wf__cr_mt_featarch, wf__cr_mt_comparch
+   :derived_from: wf__cr_mt_featarch, wf__cr_mt_comparch
 
    The architecture shall be shown on following views on each architectural level:
 
@@ -113,7 +113,7 @@ Attributes of Architectural Elements
    :status: valid
    :tags: manual_prio_1, attribute, mandatory
    :complies: std_req__iso26262__support_6425, std_req__iso26262__support_6432
-   :satisfies: wf__cr_mt_featarch, wf__cr_mt_comparch
+   :derived_from: wf__cr_mt_featarch, wf__cr_mt_comparch
 
    Each architectural element shall have a unique ID. It shall be in a format which is also human readable and consists of
 
@@ -127,7 +127,7 @@ Attributes of Architectural Elements
    :id: gd_req__arch_attr_security
    :status: valid
    :tags: manual_prio_1, attribute, mandatory
-   :satisfies: wf__cr_mt_featarch, wf__cr_mt_comparch
+   :derived_from: wf__cr_mt_featarch, wf__cr_mt_comparch
 
    Each architectural element shall have a security relevance identifier:
 
@@ -139,7 +139,7 @@ Attributes of Architectural Elements
    :status: valid
    :tags: manual_prio_1, attribute, mandatory
    :complies: std_req__iso26262__support_6421, std_req__iso26262__support_6425, std_req__iso26262__software_746
-   :satisfies: wf__cr_mt_featarch, wf__cr_mt_comparch
+   :derived_from: wf__cr_mt_featarch, wf__cr_mt_comparch
 
    Each architectural element shall have a automotive safety integrity level (ASIL) identifier:
 
@@ -151,7 +151,7 @@ Attributes of Architectural Elements
    :status: valid
    :tags: manual_prio_1, attribute, mandatory
    :complies: std_req__iso26262__support_6425
-   :satisfies: wf__cr_mt_featarch, wf__cr_mt_comparch
+   :derived_from: wf__cr_mt_featarch, wf__cr_mt_comparch
 
    Each architectural element shall have a status:
 
@@ -166,7 +166,7 @@ Traceability to Requirements and AoU
    :status: valid
    :tags: manual_prio_1, attribute, mandatory
    :complies: std_req__iso26262__support_6425, std_req__aspice_40__SWE-2-BP4
-   :satisfies: wf__cr_mt_featarch, wf__cr_mt_comparch
+   :derived_from: wf__cr_mt_featarch, wf__cr_mt_comparch
 
    Each architectural view (feature/comp_arc_sta, feature/comp_arc_dyn) and interface (logic/real_arc_int) shall be linked to a requirement.
 
@@ -175,7 +175,7 @@ Traceability to Requirements and AoU
    :status: valid
    :tags: manual_prio_1, attribute, mandatory
    :complies: std_req__iso26262__support_6425, std_req__aspice_40__SWE-2-BP4
-   :satisfies: wf__cr_mt_featarch, wf__cr_mt_comparch
+   :derived_from: wf__cr_mt_featarch, wf__cr_mt_comparch
 
    Each architectural static view (feature/comp_arc_sta) shall be linked to AoUs if the element (feature/comp) fulfills these.
 
@@ -184,7 +184,7 @@ Traceability to Requirements and AoU
    :status: valid
    :tags: manual_prio_2
    :complies: std_req__iso26262__support_6432, std_req__aspice_40__SWE-2-BP4
-   :satisfies: wf__cr_mt_featarch, wf__cr_mt_comparch
+   :derived_from: wf__cr_mt_featarch, wf__cr_mt_comparch
 
    Requirements shall be fulfilled by an architectural element on the corresponding level.
 
@@ -203,7 +203,7 @@ Checks for Architectural Design
    :id: gd_req__arch_attr_mandatory
    :status: valid
    :tags: prio_1_automation, attribute, check
-   :satisfies: wf__cr_mt_featarch, wf__cr_mt_comparch
+   :derived_from: wf__cr_mt_featarch, wf__cr_mt_comparch
 
    It shall be checked if all mandatory attributes for each architectural element are provided by the user. For all elements following attributes shall be mandatory:
 
@@ -217,7 +217,7 @@ Checks for Architectural Design
    :id: gd_req__arch_linkage_safety
    :status: valid
    :tags: prio_1_automation, attribute, check
-   :satisfies: wf__cr_mt_featarch, wf__cr_mt_comparch
+   :derived_from: wf__cr_mt_featarch, wf__cr_mt_comparch
    :complies: std_req__aspice_40__SWE-2-BP4
 
    It shall be checked that every valid safety architectural element is linked according to the defined model :need:`gd_req__arch_build_blocks_corr`.
@@ -226,7 +226,7 @@ Checks for Architectural Design
    :id: gd_req__arch_linkage_safety_trace
    :status: valid
    :tags: prio_1_automation, attribute, check
-   :satisfies: wf__cr_mt_featarch, wf__cr_mt_comparch
+   :derived_from: wf__cr_mt_featarch, wf__cr_mt_comparch
    :complies: std_req__iso26262__software_746, std_req__iso26262__software_748
 
    It shall be checked that valid safety architectural elements (Safety!=QM) can only be linked against valid safety architectural elements.
@@ -235,7 +235,7 @@ Checks for Architectural Design
    :id: gd_req__arch_linkage_security_trace
    :status: valid
    :tags: prio_2_automation, attribute, check
-   :satisfies: wf__cr_mt_featarch, wf__cr_mt_comparch
+   :derived_from: wf__cr_mt_featarch, wf__cr_mt_comparch
 
    It shall be checked that security relevant architectural elements (Security==YES) can only be linked against security relevant architectural elements.
 
@@ -243,7 +243,7 @@ Checks for Architectural Design
    :id: gd_req__arch_linkage_requirement
    :status: valid
    :tags: prio_1_automation, attribute, check
-   :satisfies: wf__cr_mt_featarch, wf__cr_mt_comparch
+   :derived_from: wf__cr_mt_featarch, wf__cr_mt_comparch
 
    It shall be checked that each architectural element (safety!=QM) is linked against at least one safety requirement (safety!=QM).
    It shall be checked that architectural elements with safety=QM are not linked against safety requirements (safety!=QM).
@@ -252,7 +252,7 @@ Checks for Architectural Design
    :id: gd_req__arch_linkage_requirement_type
    :status: valid
    :tags: prio_3_automation, attribute, check
-   :satisfies: wf__cr_mt_featarch, wf__cr_mt_comparch
+   :derived_from: wf__cr_mt_featarch, wf__cr_mt_comparch
 
    It shall be checked that requirements of a respective type can only be linked to architectural elements according to following traceability:
 
@@ -263,7 +263,7 @@ Checks for Architectural Design
    :id: gd_req__arch_linkage_aou
    :status: valid
    :tags: prio_2_automation, attribute, check
-   :satisfies: wf__cr_mt_featarch, wf__cr_mt_comparch
+   :derived_from: wf__cr_mt_featarch, wf__cr_mt_comparch
 
    It shall be checked that architectural static view (feature/comp_arc_sta) are not linked to its own AoU
    ("own" means the AoU linked as "mitigated_by" to the Safety/Security Analysis linked via "violates" to the element,
@@ -273,7 +273,7 @@ Checks for Architectural Design
    :id: gd_req__arch_consistency_interf
    :status: valid
    :tags: prio_2_automation, model, check
-   :satisfies: wf__cr_mt_featarch, wf__cr_mt_comparch
+   :derived_from: wf__cr_mt_featarch, wf__cr_mt_comparch
 
    It shall be checked if any interface referred by the features (link from Feature to Logical Arc. Interfaces must be defined and exists) is matched by an "implements" link in the Module (from component to Logical Arc. Interface). Additionally it shall be checked if the feature architecture are linked against at least one logical architectural interface.
 
@@ -281,6 +281,6 @@ Checks for Architectural Design
    :id: gd_req__arch_consistency_dynamic
    :status: valid
    :tags: prio_3_automation, model, check
-   :satisfies: wf__cr_mt_featarch, wf__cr_mt_comparch
+   :derived_from: wf__cr_mt_featarch, wf__cr_mt_comparch
 
    It shall be checked if all SW components which are mentioned in the dynamic architecture views are defined in the static architecture.

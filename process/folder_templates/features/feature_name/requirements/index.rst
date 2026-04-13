@@ -41,7 +41,7 @@ Feature Requirements
       :reqtype: Process
       :security: NO
       :safety: ASIL_B
-      :satisfies: stkh_req__requirements__template
+      :derived_from: stkh_req__requirements__template
       :valid_from: v0.0.1
       :valid_until: v1.0.1
       :status: invalid

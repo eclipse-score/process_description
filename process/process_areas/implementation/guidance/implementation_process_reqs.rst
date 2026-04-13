@@ -19,7 +19,7 @@ Process Requirements
    :id: gd_req__impl_static_diagram
    :status: valid
    :tags: manual_prio_1, mandatory
-   :satisfies: wf__sw_detailed_design
+   :derived_from: wf__sw_detailed_design
    :complies: std_req__iso26262__software_843, std_req__iso26262__software_844, std_req__iso26262__software_845, std_req__aspice_40__SWE-3-BP1
 
    The static diagram shall represent the unit and their relationships using UML notations.
@@ -31,7 +31,7 @@ Diagram Attributes
    :id: gd_req__impl_diagram_uid
    :status: valid
    :tags: manual_prio_1, attribute, mandatory
-   :satisfies: wf__sw_detailed_design
+   :derived_from: wf__sw_detailed_design
    :complies: std_req__iso26262__software_843, std_req__iso26262__software_844, std_req__iso26262__software_845, std_req__aspice_40__SWE-3-BP2
 
    Each diagram shall have a unique ID. It shall consist of three parts:
@@ -46,7 +46,7 @@ Diagram Attributes
    :id: gd_req__impl_diagram_title
    :status: valid
    :tags: manual_prio_1 attribute, mandatory
-   :satisfies: wf__sw_detailed_design
+   :derived_from: wf__sw_detailed_design
    :complies: std_req__iso26262__software_843, std_req__iso26262__software_844, std_req__iso26262__software_845, std_req__aspice_40__SWE-3-BP3, std_req__aspice_40__SWE-3-BP4
 
    The title of the diagram shall provide a short summary of the description, but is not an "additional" requirement.
@@ -57,7 +57,7 @@ Diagram Attributes
    :id: gd_req__impl_diagram_security
    :status: valid
    :tags: manual_prio_2, attribute, mandatory
-   :satisfies: wf__sw_detailed_design
+   :derived_from: wf__sw_detailed_design
 
    Each diagram shall have a security relevance identifier:
 
@@ -69,7 +69,7 @@ Diagram Attributes
    :status: valid
    :tags: manual_prio_1, attribute, mandatory
    :complies: std_req__iso26262__support_6421, std_req__iso26262__support_6425
-   :satisfies: wf__sw_detailed_design
+   :derived_from: wf__sw_detailed_design
 
    Each diagram shall have a automotive safety integrity level (ASIL) identifier:
 
@@ -81,7 +81,7 @@ Diagram Attributes
    :status: valid
    :tags: manual_prio_1, attribute, mandatory
    :complies: std_req__iso26262__support_6421, std_req__iso26262__support_6425
-   :satisfies: wf__sw_detailed_design
+   :derived_from: wf__sw_detailed_design
 
    Each diagram shall have a status:
 
@@ -93,7 +93,7 @@ Diagram Attributes
    :status: valid
    :tags: manual_prio_1, attribute, mandatory
    :complies: std_req__iso26262__support_6421, std_req__iso26262__support_6425
-   :satisfies: wf__sw_detailed_design
+   :derived_from: wf__sw_detailed_design
 
    Each diagram shall have a description. The description shall provide a needarch or image of the diagram.
 
@@ -107,7 +107,7 @@ Diagram Linkage
    :status: valid
    :tags: prio_2_automation, attribute, automated
    :complies: std_req__iso26262__support_6421, std_req__iso26262__support_6425, std_req__aspice_40__iic-13-51
-   :satisfies: wf__sw_detailed_design
+   :derived_from: wf__sw_detailed_design
 
    Each diagram shall be linked to the corresponding component requirement via the attribute implements.
 
@@ -116,7 +116,7 @@ Diagram Linkage
    :status: valid
    :tags: prio_2_automation, attribute, automated
    :complies: std_req__iso26262__support_6421, std_req__iso26262__support_6425
-   :satisfies: wf__sw_detailed_design
+   :derived_from: wf__sw_detailed_design
 
    Each diagram shall be automatically linked (inverse direction) to the corresponding component requirement via the "implemented by" linkage.
 
@@ -125,7 +125,7 @@ Diagram Linkage
    :status: valid
    :tags: prio_2_automation, attribute, automated
    :complies: std_req__iso26262__support_6421, std_req__iso26262__support_6425, std_req__aspice_40__iic-13-51
-   :satisfies: wf__sw_detailed_design
+   :derived_from: wf__sw_detailed_design
 
    Each diagram shall be linked to the corresponding component architecture via the attribute satisfies.
 
@@ -134,7 +134,7 @@ Diagram Linkage
    :status: valid
    :tags: prio_2_automation, attribute, automated
    :complies: std_req__iso26262__support_6421, std_req__iso26262__support_6425
-   :satisfies: wf__sw_detailed_design
+   :derived_from: wf__sw_detailed_design
 
    Each diagram shall be automatically linked (inverse direction) to the corresponding component architecture via the "satisfied by" linkage.
 
@@ -143,7 +143,7 @@ Diagram Linkage
    :status: valid
    :tags: prio_2_automation, attribute, automated
    :complies: std_req__iso26262__support_6421, std_req__iso26262__support_6425
-   :satisfies: wf__sw_detailed_design
+   :derived_from: wf__sw_detailed_design
 
    Each diagram shall be linked to the corresponding component id via the attribute belongs_to.
 
@@ -152,7 +152,7 @@ Diagram Linkage
    :status: valid
    :tags: prio_2_automation, attribute, automated
    :complies: std_req__iso26262__support_6421, std_req__iso26262__support_6425
-   :satisfies: wf__sw_detailed_design
+   :derived_from: wf__sw_detailed_design
 
    Each diagram shall be automatically linked (inverse direction) to the corresponding component id via the "belongs by" linkage.
 
@@ -161,7 +161,7 @@ Diagram Linkage
    :status: valid
    :tags: prio_2_automation, attribute, automated
    :complies: std_req__iso26262__support_6421, std_req__iso26262__support_6425
-   :satisfies: wf__sw_detailed_design
+   :derived_from: wf__sw_detailed_design
 
    Each diagram shall be linked to the corresponding
    - SW Unit
@@ -173,7 +173,7 @@ Diagram Linkage
    :status: valid
    :tags: prio_2_automation, attribute, automated
    :complies: std_req__iso26262__support_6421, std_req__iso26262__support_6425
-   :satisfies: wf__sw_detailed_design
+   :derived_from: wf__sw_detailed_design
 
    Each diagram shall be automatically linked (inverse direction) to the corresponding
    - SW Unit
@@ -188,7 +188,7 @@ Diagram Checks
    :status: valid
    :tags: prio_2_automation, attribute, check
    :complies: std_req__iso26262__support_6421, std_req__iso26262__support_6425
-   :satisfies: wf__sw_detailed_design
+   :derived_from: wf__sw_detailed_design
 
    It shall be checked if all mandatory attributes for each diagram are provided by the user. For all diagrams following attributes shall be mandatory:
 
@@ -205,7 +205,7 @@ Unit Attributes
    :id: gd_req__impl_unit_uid
    :status: valid
    :tags: manual_prio_1, attribute, mandatory
-   :satisfies: wf__sw_detailed_design
+   :derived_from: wf__sw_detailed_design
    :complies: std_req__iso26262__software_843, std_req__aspice_40__SWE-3-BP1
 
    Each unit shall have a unique ID. It shall consist of three parts:
@@ -221,7 +221,7 @@ Unit Attributes
    :status: valid
    :tags: manual_prio_1, attribute, mandatory
    :complies: std_req__iso26262__support_6421, std_req__iso26262__support_6425
-   :satisfies: wf__sw_detailed_design
+   :derived_from: wf__sw_detailed_design
 
    Each unit shall have a description.
 
@@ -233,7 +233,7 @@ Unit Linkage
    :status: valid
    :tags: prio_2_automation, attribute, automated
    :complies: std_req__iso26262__support_6421, std_req__iso26262__support_6425
-   :satisfies: wf__sw_detailed_design
+   :derived_from: wf__sw_detailed_design
 
    Each unit shall be linked to the corresponding component id via the attribute belongs_to.
 
@@ -242,7 +242,7 @@ Unit Linkage
    :status: valid
    :tags: prio_2_automation, attribute, automated
    :complies: std_req__iso26262__support_6421, std_req__iso26262__support_6425
-   :satisfies: wf__sw_detailed_design
+   :derived_from: wf__sw_detailed_design
 
    Each unit shall be automatically linked (inverse direction) to the corresponding component id via the "belongs by" linkage.
 
@@ -253,7 +253,7 @@ Interface Attributes
    :id: gd_req__impl_interface_uid
    :status: valid
    :tags: manual_prio_1, attribute, mandatory
-   :satisfies: wf__sw_detailed_design
+   :derived_from: wf__sw_detailed_design
    :complies: std_req__iso26262__software_843, std_req__aspice_40__SWE-3-BP1
 
    Each interface shall have a unique ID. It shall consist of three parts:
@@ -269,7 +269,7 @@ Interface Attributes
    :status: valid
    :tags: manual_prio_1, attribute, mandatory
    :complies: std_req__iso26262__support_6421, std_req__iso26262__support_6425
-   :satisfies: wf__sw_detailed_design
+   :derived_from: wf__sw_detailed_design
 
    Each interface shall have a description.
 
@@ -281,7 +281,7 @@ Interface Linkage
    :status: valid
    :tags: prio_2_automation, attribute, automated
    :complies: std_req__iso26262__support_6421, std_req__iso26262__support_6425
-   :satisfies: wf__sw_detailed_design
+   :derived_from: wf__sw_detailed_design
 
    Each interface shall be linked to the corresponding SW Unit id via the attribute belongs_to.
 
@@ -290,7 +290,7 @@ Interface Linkage
    :status: valid
    :tags: prio_2_automation, attribute, automated
    :complies: std_req__iso26262__support_6421, std_req__iso26262__support_6425
-   :satisfies: wf__sw_detailed_design
+   :derived_from: wf__sw_detailed_design
 
    Each interface shall be automatically linked (inverse direction) to the corresponding SW Unit id via the "belongs by" linkage.
 
@@ -299,7 +299,7 @@ Interface Linkage
    :status: valid
    :tags: prio_2_automation, attribute, automated
    :complies: std_req__iso26262__support_6421, std_req__iso26262__support_6425
-   :satisfies: wf__sw_detailed_design
+   :derived_from: wf__sw_detailed_design
 
    Each interface shall be linked to the corresponding architecture via the attribute implements.
 
@@ -308,7 +308,7 @@ Interface Linkage
    :status: valid
    :tags: prio_2_automation, attribute, automated
    :complies: std_req__iso26262__support_6421, std_req__iso26262__support_6425
-   :satisfies: wf__sw_detailed_design
+   :derived_from: wf__sw_detailed_design
 
    Each interface shall be automatically linked (inverse direction) to the corresponding architecture via the "implemented by" linkage.
 
@@ -319,7 +319,7 @@ Dependency Analysis
    :id: gd_req__impl_dependency_analysis
    :status: valid
    :tags: prio_2_automation
-   :satisfies: wf__sw_verify_implementation
+   :derived_from: wf__sw_verify_implementation
    :complies: std_req__iso26262__software_942
 
    For each component a dependency tree view shall be created to support design inspection and Safety Analysis.

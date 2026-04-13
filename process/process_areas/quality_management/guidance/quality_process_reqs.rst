@@ -19,7 +19,7 @@ Process Requirements
    :id: gd_req__quality_report
    :status: valid
    :tags: prio_3_automation, quality_management
-   :satisfies: wf__mr_imp_qlm_plan_processes
+   :derived_from: wf__mr_imp_qlm_plan_processes
    :complies: std_req__iso26262__management_5423, std_req__aspice_40__SUP-1-BP5, std_req__aspice_40__SUP-1-BP6
 
    | The quality report shall be generated progressively and automatically compiling the work products.
