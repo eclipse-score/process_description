@@ -181,7 +181,7 @@ Deviations from Platform Safety Plan
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The following deviations from the platform safety plan are present in the platform safety package.
-These are deviations from planned processes execution and/or workproduct results,
+These are deviations from planned processes execution and/or work product results,
 safety anomalies in the sense of known bugs in the software are reported in the release notes (of the platform's modules).
 
 <Describe here the deviations, whether they have an impact on platform safety functions,
