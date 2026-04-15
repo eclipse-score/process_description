@@ -26,4 +26,5 @@ Safety Analysis Checklist
     For the content see here:
 
     - :need:`doc__platform_safety_analysis_fdr` (platform)
+    - :need:`doc__feature_name_safety_analysis_fdr` (feature)
     - :need:`doc__module_name_safety_analysis_fdr` (module)
