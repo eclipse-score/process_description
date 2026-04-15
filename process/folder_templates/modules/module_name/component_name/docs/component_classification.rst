@@ -167,17 +167,29 @@ Step 3: Determine (CLAS_OUT): the classification outcome
 
 | Select CLAS_OUT depending on the determined values of (C) and (P)
 
-+-------+-----------------------+
-| ( C ) | ( P )                 |
-+-------+-------+-------+-------+
-|       |  1    |  2    |  3    |
-+=======+=======+=======+=======+
-| 1     |  Q    |  Q    | QR    |
-+-------+-------+-------+-------+
-| 2     |  QR   | QR    | QR    |
-+-------+-------+-------+-------+
-| 3     |  QR   | QR    | NQ    |
-+-------+-------+-------+-------+
+.. list-table::
+   :header-rows: 1
+   :widths: 20 20 20 20
+
+   * -
+     - P=1
+     - P=2
+     - P=3
+
+   * - C=1
+     - Q
+     - Q
+     - QR
+
+   * - C=2
+     - QR
+     - QR
+     - QR
+
+   * - C=3
+     - QR
+     - QR
+     - NQ
 
 <component name> is classified as CLAS_OUT=<Q|QR|NQ>
 
@@ -193,4 +205,4 @@ Step 5: Based on (CLAS_OUT) select the activities
 | As soon as the change request containing this is in status "Accepted", the module safety plan for the component development is adapted based on the following: (select according to above result)
 | - Q: Follow the processes for qualification of software components in a safety context.
 | - QR: Follow the process for pre-existing software architectural elements
-| - NQ: Do no use this element in safety context
+| - NQ: Do not use this element in safety context
