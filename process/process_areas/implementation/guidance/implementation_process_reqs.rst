@@ -328,6 +328,7 @@ Dependency Analysis
 .. needextend:: docname is not None and "process_areas/implementation" in docname
    :+tags: implementation
 
+.. _impl_process_requirements_complexity:
 
 Complexity Analyses
 '''''''''''''''''''
@@ -340,11 +341,15 @@ Complexity Analyses
 
    A complexity analysis for the components shall be performed by automated tool support. It shall consider appropriate code metrics like lines of code, cyclomatic complexity, number of public interfaces, number of parameters and so on. The results of the analysis shall be documented in the SW Verification Report. As default an exceeds of the following limits shall be reported for the complexity measures (ASIL B / QM):
 
-   Lines of Code per function: 100 / 200
-   Lines of Code per file : 2000 / 4000
-   Cyclomatic complexity per function: 10 / 20
-   Number of parameters per function: 5 / 7
-   Number of public interfaces per component: 3 / 10
+   * Lines of Code per function: 100 / 200
+
+   * Lines of Code per file : 2000 / 4000
+
+   * Cyclomatic complexity per function: 10 / 20
+
+   * Number of parameters per function: 5 / 7
+
+   * Number of public interfaces per component: 3 / 10
 
    The project may specify own limits for the complexity measures in the project guidelines, if there is a rationale for deviating from the default limits.
    Therefore the tooling shall support configuration of the limits globally for the project and per component, if the component wants to use own lower (more strict) limits.

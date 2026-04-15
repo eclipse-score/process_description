@@ -155,7 +155,7 @@ See also :need:`doc_concept__wp_inspections` for further information about revie
       - Indicators for complexity are: number of use cases (corresponding to dynamic diagrams)
         allocated to single design element, number of interfaces and operations in an interface,
         function parameters, global variables, complex types, limited comprehensibility.
-        The belonging code metrics should be checked.
+        The belonging code metrics (see :ref:`implementation requirements page<impl_process_requirements_complexity>`) should be checked.
 
         Notes:
 
