@@ -90,21 +90,7 @@ Now run the live_preview commands
 bazel run //:live_preview
 ```
 
-#### Format your documentation with:
-
-```bash
-bazel test //:format.test
-bazel run //:format.fix
-```
-
 Now server should be available with a preview on the link that is given (normally 127.0.0.1:8000) and the documentation can be previewed there.
-
-#### Find & fix missing copyright
-
-```bash
-bazel test //:copyright.test
-bazel run //:copyright.fix
-```
 
 #### Explore more functions with
 bazel query //...

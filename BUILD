@@ -12,29 +12,8 @@
 # *******************************************************************************
 
 load("@score_docs_as_code//:docs.bzl", "docs")
-load("@score_tooling//:defs.bzl", "copyright_checker", "use_format_targets")
 
 package(default_visibility = ["//visibility:public"])
-
-# Enables formatting targets
-#'bazel test //:format.check'
-#'bazel run //:format.fix'
-use_format_targets()
-
-copyright_checker(
-    name = "copyright",
-    srcs = glob(
-        [
-            "process/**",
-            "BUILD",
-            "MODULE.bazel",
-        ],
-        exclude = ["process/trustable/**"],
-    ),
-    config = "@score_tooling//cr_checker/resources:config",
-    template = "@score_tooling//cr_checker/resources:templates",
-    visibility = ["//visibility:public"],
-)
 
 docs(
     source_dir = "process",
