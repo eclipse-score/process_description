@@ -43,7 +43,7 @@ use_repo(python)
 
 ###############################################################################
 #
-# Generic linting and formatting rules
+# Documentation tooling
 #
 ###############################################################################
 bazel_dep(name = "score_docs_as_code", version = "4.0.1")
