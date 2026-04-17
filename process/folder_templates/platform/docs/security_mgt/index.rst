@@ -19,6 +19,7 @@ Security Management
    :titlesonly:
 
    platform_security_manual.rst
+   platform_security_analysis.rst
    platform_security_analysis_fdr.rst
    platform_security_package_fdr.rst
    platform_security_plan.rst
