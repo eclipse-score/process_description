@@ -39,13 +39,12 @@ as a Safety Element out of Context (**SEooC**) and it can be delivered as part o
 Delivery Container (green box, top, 1st column). The objectives of the platform are
 expressed as concrete **Stakeholder Requirements** (blue box, top, 4th column), which
 can be tested by provided **Platform Integration Tests** (blue box, top, 6th column)
-for reference hardware platforms. A **Platform Safety/Security Analysis**
-(blue box, top, 7th column) is required to verify the Feature Architectures, whereby
-violations of safety/security requirements must be documented. Potential faults
-may mitigated by updating the Stakeholder Requirements or by **Assumptions of Use**
-(white box, 8th column).
+for reference hardware platforms.  A **Platform Safety/Security Analysis**
+(blue box, top, 7th column) is required to verify **Platform Architecture** (including feature dependencies),
+whereby violations of safety/security requirements must be documented. Potential faults
+may be  mitigated by updating the Stakeholder Requirements or by **Assumptions of Use** (white box, 8th column).
 
-The platform consists of **Features** (yellow box, middle, 2nd column).
+The platform consists of **Features** (yellow box, middle, 2nd column) defining a **Platform Architecture**.
 
 Further the project provides **Dependable Elements** (red box, middle, 1st column),
 which can also be developed as a SEooC and are delivered as part of a **Delivery
