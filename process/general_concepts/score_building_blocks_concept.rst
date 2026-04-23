@@ -148,3 +148,16 @@ tests.
   :alt: Building blocks deployment example
 
   Building blocks deployment example
+
+
+Minimum example
++++++++++++++++
+
+The following figure shows the minimal required elements and their linkage.
+
+.. figure:: _assets/score_building_blocks_meta_model_simplified.drawio.svg
+  :width: 100%
+  :align: center
+  :alt: Building blocks minimum example
+
+  Building blocks minimum example
