@@ -35,5 +35,20 @@ extensions = [
 html_static_path = ["_assets"]
 html_css_files = ["custom.css"]
 
+# Hide the "On this page" secondary sidebar for wide-content pages
+html_theme_options = {
+    "secondary_sidebar_items": {
+        "**": ["page-toc"],
+        "standards/process_reqs_list/process_area_status_summary": [],
+        "standards/process_reqs_list/process_status_overview": [],
+    }
+}
+
 # :need:`{title}` is used in the needs templates to display the title of the need
 needs_role_need_template = "{title}"
+
+# Make the process/ directory importable so that filter functions
+# referenced via :filter-func: in sphinx-needs directives can be found.
+import sys as _sys
+import os as _os
+_sys.path.insert(0, _os.path.dirname(_os.path.abspath(__file__)))
