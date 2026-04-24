@@ -75,7 +75,7 @@ The attributes of the template are described in :ref:`process_requirements_secur
 Step-by-Step-approach Security Analysis Platform:
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The analysis is done by using the template :need:`doc__platform_name_security_analysis` on the
+The analysis is done by using the template :need:`doc__platform_security_analysis` on the
 platform diagrams using a list of threat scenarios <:need:`gd_guidl__sec_ana_threat_scenarios`>.
 Use the content of the document :need:`gd_temp__plat_threat_scenario`,
 :need:`gd_temp__feat_sec_ana_threat` or :need:`gd_temp__comp_sec_ana_threat` to describe

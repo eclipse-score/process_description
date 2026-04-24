@@ -13,11 +13,11 @@
    # *******************************************************************************
 
 
-Platform Security Analysis Template
-====================================
+Platform Security Analysis
+==========================
 
-.. document:: [Your Platform Name] Security Analysis Template
-   :id: doc__platform_name_security_analysis
+.. document:: Platform Security Analysis
+   :id: doc__platform_security_analysis
    :status: draft
    :safety: ASIL_B
    :security: YES
@@ -36,7 +36,7 @@ Platform Security Analysis Template
 
 Purpose
 ------------------
-The purpose of this Security Analysis template is to document the results of the platform security analysis.
+The purpose of this Security Analysis is to document the results of the platform security analysis.
 
 
 
@@ -50,6 +50,9 @@ The following deliverables are the outcome of a security analysis on the platfor
 
 Threat and Risk Identification Template
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. ..  attention::
+..     Add the actual threats and mitigations as examples from the platform security analysis of the middleware.
+
 .. list-table:: Threat and Risk Identification Template
         :header-rows: 1
 
@@ -59,18 +62,18 @@ Threat and Risk Identification Template
           - Comment/Remark
 
         * - 1
-          - Eg: A backend attacker performs MiTM between the OEM cloud and the platform component
-          - Eg: End to end TLS between the platform component and the OEM cloud service mitigates the MiTM attacks
+          - Eg: A backend attacker performs MiTM between the OEM cloud and the platform component.
+          - Eg: End to end TLS between the platform component and the OEM cloud service mitigates the MiTM attacks.
           - <Rationale for mitigation>
 
         * - 2
-          - Eg: Unauthorized access to the onboard diagnostic stack from external interfaces
-          - Eg: Authentication and authorization mechanisms such as usage of tokens prevents such unauthorized access
+          - Eg: Unauthorized access to the onboard diagnostic stack from external interfaces.
+          - Eg: Authentication and authorization mechanisms such as usage of tokens prevents such unauthorized access.
           - <Rationale for result>
 
         * - 3
-          - Eg: Static configuration files are manipulated by an inside attacker
-          - Eg: OS specific access control mechanisms and least privilege principle prevents such unauthorized manipulation
+          - Eg: Static configuration files are manipulated by an inside attacker.
+          - Eg: OS specific access control mechanisms and least privilege principle prevents such unauthorized manipulation.
           - <Rationale for result>
 
 
@@ -99,8 +102,3 @@ Stakeholder Security Requirements Template
 Security Assumptions
 ~~~~~~~~~~~~~~~~~~~~
 The assumptions of use shall be documented under :need:`wp__platform_security_manual`.
-
-.. To be filled as part of https://github.com/eclipse-score/process_description/issues/452.
-
-
-.. To be filled as part of https://github.com/eclipse-score/process_description/issues/452.
