@@ -40,20 +40,20 @@ The purpose of this Security Analysis is to document the results of the platform
 
 
 
-Platform Security Analysis Template
------------------------------------
+Platform Security Analysis
+--------------------------
 The following deliverables are the outcome of a security analysis on the platform.
 
 #. Identification of threats and mitigations
 #. Stakeholder security requirements definition
 #. Security assumptions definition
 
-Threat and Risk Identification Template
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Threat and Risk Identification
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 .. ..  attention::
 ..     Add the actual threats and mitigations as examples from the platform security analysis of the middleware.
 
-.. list-table:: Threat and Risk Identification Template
+.. list-table:: Threat and Risk Identification
         :header-rows: 1
 
         * - Id
@@ -78,9 +78,9 @@ Threat and Risk Identification Template
 
 
 
-Stakeholder Security Requirements Template
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. list-table:: Stakeholder Security Requirements Template
+Stakeholder Security Requirements
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. list-table:: Stakeholder Security Requirements
         :header-rows: 1
 
         * - Id
