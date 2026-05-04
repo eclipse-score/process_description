@@ -12,7 +12,7 @@
    # SPDX-License-Identifier: Apache-2.0
    # *******************************************************************************
 
-.. _general_concepts_building_blocks:
+.. _`general_concepts_building_blocks`:
 
 Building blocks concept
 -----------------------
@@ -23,10 +23,13 @@ Building blocks concept
    :tags: process_management
 
 .. attention::
+
    The meta model is not intended to be complete.
    The meta model is intended to give an overview about the building blocks of the
    platform and their relationships. It is not intended to give a detailed description
    of the building blocks and their relationships.
+   The meta model may used as basis for a tool based implementation, e.g. as done In
+   `Docs-As-Code`.
 
 Building blocks meta model
 ++++++++++++++++++++++++++
@@ -59,6 +62,7 @@ components to a Dependable Element. Note that the term "Dependable" hints that t
 element can have safety and/or security relevance (but also none of these).
 
 .. attention::
+
    Throughout the process description workspace, the term "Module" or "SW  Module" is
    used for convenience reason as a synonym for "Dependable Element".
 
@@ -98,11 +102,11 @@ Generally the metamodel refers only within own architecture element (=component/
 AoUs need the fulfills link own -> other.
 
 .. figure:: _assets/score_building_blocks_meta_model.drawio.svg
-  :width: 100%
-  :align: center
-  :alt: Building blocks overview for project platform
+   :width: 100%
+   :align: center
+   :alt: Building blocks overview for project platform
 
-  Building blocks overview for the project platform
+   Building blocks overview for the project platform
 
 Building blocks example
 +++++++++++++++++++++++
@@ -120,12 +124,11 @@ by other components. Delivery container may also contain dependable elements, wh
 developed as safety element out of context (SEooC).
 
 .. figure:: _assets/score_building_blocks_example.drawio.svg
-  :width: 100%
-  :align: center
-  :alt: Building blocks example
+   :width: 100%
+   :align: center
+   :alt: Building blocks example
 
-  Building blocks example
-
+   Building blocks example
 
 Deployment example
 ++++++++++++++++++
@@ -143,8 +146,27 @@ The project reference_integration repository includes only the platform integrat
 tests.
 
 .. figure:: _assets/score_building_blocks_meta_model_deployment_example.drawio.svg
-  :width: 100%
-  :align: center
-  :alt: Building blocks deployment example
+   :width: 100%
+   :align: center
+   :alt: Building blocks deployment example
 
-  Building blocks deployment example
+   Building blocks deployment example
+
+Hint for Tool Implementation
+++++++++++++++++++++++++++++
+
+The following figure shows the mandatory required relationships according
+to the meta model.
+
+.. figure:: _assets/score_building_blocks_meta_model_simplified.drawio.svg
+   :width: 100%
+   :align: center
+   :alt: Building blocks with minimal required relationships
+
+   Building blocks with mandatory required relationships
+
+.. attention::
+
+   This mandatory required relationships is not what is finally expected from a compliance
+   perspective point of you. For the compliance perspective, compare the images here:
+   :ref:`general_concepts_traceability`.
