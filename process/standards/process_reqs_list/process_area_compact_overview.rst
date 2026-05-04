@@ -18,8 +18,8 @@ Process Area Status Overview (Compact)
 #######################################
 
 The table below shows process requirement status, ISO 26262 std_req compliance
-status, and requirement verification status per process area — one row per area,
-without further splitting by work product.
+status, requirement verification status, and tooling per process area — one row
+per area, without further splitting by work product.
 
 .. raw:: html
 
@@ -50,15 +50,22 @@ without further splitting by work product.
      </div>
    </div>
 
+.. raw:: html
+
+   <div class="compact-overview-wrapper">
+
 .. list-table:: Process area status overview (compact)
    :header-rows: 1
-   :widths: 20 27 27 26
+   :class: compact-overview-table
+   :widths: 13 20 20 20 15 12
 
    * - Process area
      - Process req. status
      - ISO 26262 std_req status
      - Req. verification status
-   * - Requirements Engineering
+     - Tools
+     - Tooling available
+   * - `Requirements Engineering <process_status_overview.html#requirements-engineering>`_
      -
 
        .. needpie::
@@ -81,8 +88,10 @@ without further splitting by work product.
           :labels: Automated, Waiting for automation, Inspection list, Other
           :colors: LimeGreen, Gold, LightBlue, LightGray
           :filter-func: needs_filters.area_verification_status(requirements_engineering)
+     - sphinx-needs
+     - 100%
 
-   * - Architecture Design
+   * - `Architecture Design <process_status_overview.html#architecture-design>`_
      -
 
        .. needpie::
@@ -105,8 +114,10 @@ without further splitting by work product.
           :labels: Automated, Waiting for automation, Inspection list, Other
           :colors: LimeGreen, Gold, LightBlue, LightGray
           :filter-func: needs_filters.area_verification_status(architecture_design)
+     - sphinx-needs, PlantUML
+     - 75%
 
-   * - Implementation
+   * - `Implementation <process_status_overview.html#implementation>`_
      -
 
        .. needpie::
@@ -129,8 +140,10 @@ without further splitting by work product.
           :labels: Automated, Waiting for automation, Inspection list, Other
           :colors: LimeGreen, Gold, LightBlue, LightGray
           :filter-func: needs_filters.area_verification_status(implementation)
+     - sphinx-needs, C++/RUST toolchain
+     - 67%
 
-   * - Verification
+   * - `Verification <process_status_overview.html#verification>`_
      -
 
        .. needpie::
@@ -153,3 +166,9 @@ without further splitting by work product.
           :labels: Automated, Waiting for automation, Inspection list, Other
           :colors: LimeGreen, Gold, LightBlue, LightGray
           :filter-func: needs_filters.area_verification_status(verification)
+     - sphinx-needs, ITF, gtest
+     - 57%
+
+.. raw:: html
+
+   </div>

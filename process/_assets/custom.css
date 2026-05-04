@@ -197,6 +197,75 @@ td:has(img[id^="needpie-standards/process_reqs_list/process_area_status_summary-
 	width: 150px !important;
 }
 
+/* Compact process area overview charts */
+.compact-overview-wrapper {
+	overflow-x: auto;
+}
+
+.compact-overview-table td:nth-child(1),
+.compact-overview-table th:nth-child(1),
+.compact-overview-table td:nth-child(5),
+.compact-overview-table th:nth-child(5),
+.compact-overview-table td:nth-child(6),
+.compact-overview-table th:nth-child(6) {
+	text-align: center;
+	vertical-align: middle;
+}
+
+.compact-overview-table td:has(img[id^="needpie-"]) {
+	min-width: 240px;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.compact-overview-table td:has(img[id^="needpie-"]) img {
+	width: 240px;
+	max-width: none;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+}
+
+/* Harvey balls in module status tables (functional completeness column) */
+.module-status-table td:nth-child(2) {
+	text-align: center;
+	vertical-align: middle;
+}
+
+/* Harvey ball legend items (small inline versions) */
+.harvey-legend {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	border: 2px solid #333;
+	box-sizing: border-box;
+	vertical-align: middle;
+	flex-shrink: 0;
+}
+.harvey-legend-0   { background: white; }
+.harvey-legend-25  { background: conic-gradient(#333 0deg 90deg,  white 90deg  360deg); }
+.harvey-legend-50  { background: conic-gradient(#333 0deg 180deg, white 180deg 360deg); }
+.harvey-legend-75  { background: conic-gradient(#333 0deg 270deg, white 270deg 360deg); }
+.harvey-legend-100 { background: #333; }
+
+/* Module compact overview - center Harvey balls in cells */
+.module-compact-table td,
+.module-compact-table th {
+	text-align: center;
+	vertical-align: middle;
+}
+
+.module-compact-table td:first-child,
+.module-compact-table th:first-child {
+	text-align: left;
+}
+
+.module-compact-table td img {
+	display: inline;
+	margin: 1px;
+}
+
 .combined-status-table td,
 .combined-status-table th {
 	border: 1px solid #ccc !important;

@@ -37,7 +37,12 @@ see:
 
    process_area_status_summary
    process_area_compact_overview
+   module_compact_overview
    process_status_overview
+   process_area_overview_table
+   tooling_table
+   wp_status_table
+
 
 .. needtable::
    :style: table

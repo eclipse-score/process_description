@@ -13,6 +13,7 @@
    # *******************************************************************************
 
 .. include:: tooling_definitions.rst
+.. include:: functional_completeness_definitions.rst
 
 .. _process_status_overview:
 
@@ -586,6 +587,7 @@ subsequent rows carry only the work product and its completion badge.
        if (cells.length > 0 && hasContent(cells[0])) {
          if (!firstGroup) { row.classList.add('group-start'); }
          firstGroup = false;
+         cells[0].id = cells[0].textContent.trim().toLowerCase().replace(/\s+/g, '-');
        }
      });
      [2, 1, 0].forEach(function(colIdx) {
@@ -641,7 +643,7 @@ Baselibs
      -
      -
    * - :need:`wp__requirements_stkh`
-     -
+     - |fc_baselibs_wp__requirements_stkh|
      -
 
        .. rst-class:: small-pie-cell
@@ -651,7 +653,7 @@ Baselibs
           :colors: LimeGreen, LightGray
           :filter-func: needs_filters.wp_done_automation_status(wf__req_stkh_req)
    * - :need:`wp__requirements_sw_platform_aou`
-     -
+     - |fc_baselibs_wp__requirements_sw_platform_aou|
      -
 
        .. rst-class:: small-pie-cell
@@ -661,7 +663,7 @@ Baselibs
           :colors: LimeGreen, LightGray
           :filter-func: needs_filters.wp_done_automation_status(wf__req_stkh_req)
    * - :need:`wp__requirements_feat`
-     -
+     - |fc_baselibs_wp__requirements_feat|
      -
 
        .. rst-class:: small-pie-cell
@@ -671,7 +673,7 @@ Baselibs
           :colors: LimeGreen, LightGray
           :filter-func: needs_filters.wp_done_automation_status(wf__req_feat_req)
    * - :need:`wp__requirements_feat_aou`
-     -
+     - |fc_baselibs_wp__requirements_feat_aou|
      -
 
        .. rst-class:: small-pie-cell
@@ -681,7 +683,7 @@ Baselibs
           :colors: LimeGreen, LightGray
           :filter-func: needs_filters.wp_done_automation_status(wf__req_feat_aou)
    * - :need:`wp__requirements_comp`
-     -
+     - |fc_baselibs_wp__requirements_comp|
      -
 
        .. rst-class:: small-pie-cell
@@ -691,7 +693,7 @@ Baselibs
           :colors: LimeGreen, LightGray
           :filter-func: needs_filters.wp_done_automation_status(wf__req_comp_req)
    * - :need:`wp__requirements_comp_aou`
-     -
+     - |fc_baselibs_wp__requirements_comp_aou|
      -
 
        .. rst-class:: small-pie-cell
@@ -701,7 +703,7 @@ Baselibs
           :colors: LimeGreen, LightGray
           :filter-func: needs_filters.wp_done_automation_status(wf__req_comp_aou)
    * - :need:`wp__requirements_proc_tool`
-     -
+     - |fc_baselibs_wp__requirements_proc_tool|
      -
 
        .. rst-class:: small-pie-cell
@@ -711,7 +713,7 @@ Baselibs
           :colors: LimeGreen, LightGray
           :filter-func: needs_filters.wp_done_automation_status(wf__req_proc_tool)
    * - :need:`wp__requirements_inspect`
-     -
+     - |fc_baselibs_wp__requirements_inspect|
      -
 
        .. rst-class:: small-pie-cell
@@ -724,7 +726,7 @@ Baselibs
      -
      -
    * - :need:`wp__platform_arch`
-     -
+     - |fc_baselibs_wp__platform_arch|
      -
 
        .. rst-class:: small-pie-cell
@@ -734,7 +736,7 @@ Baselibs
           :colors: LimeGreen, LightGray
           :filter-func: needs_filters.wp_done_automation_status(wf__cr_mt_platarch)
    * - :need:`wp__feature_arch`
-     -
+     - |fc_baselibs_wp__feature_arch|
      -
 
        .. rst-class:: small-pie-cell
@@ -744,7 +746,7 @@ Baselibs
           :colors: LimeGreen, LightGray
           :filter-func: needs_filters.wp_done_automation_status(wf__cr_mt_featarch)
    * - :need:`wp__component_arch`
-     -
+     - |fc_baselibs_wp__component_arch|
      -
 
        .. rst-class:: small-pie-cell
@@ -754,7 +756,7 @@ Baselibs
           :colors: LimeGreen, LightGray
           :filter-func: needs_filters.wp_done_automation_status(wf__cr_mt_comparch)
    * - :need:`wp__sw_arch_verification`
-     -
+     - |fc_baselibs_wp__sw_arch_verification|
      -
 
        .. rst-class:: small-pie-cell
@@ -767,7 +769,7 @@ Baselibs
      -
      -
    * - :need:`wp__sw_development_plan`
-     -
+     - |fc_baselibs_wp__sw_development_plan|
      -
 
        .. rst-class:: small-pie-cell
@@ -777,7 +779,7 @@ Baselibs
           :colors: LimeGreen, LightGray
           :filter-func: needs_filters.wp_done_automation_status(wf__sw_development_plan)
    * - :need:`wp__sw_implementation`
-     -
+     - |fc_baselibs_wp__sw_implementation|
      -
 
        .. rst-class:: small-pie-cell
@@ -787,7 +789,7 @@ Baselibs
           :colors: LimeGreen, LightGray
           :filter-func: needs_filters.wp_done_automation_status(wf__sw_detailed_design)
    * - :need:`wp__sw_implementation_inspection`
-     -
+     - |fc_baselibs_wp__sw_implementation_inspection|
      -
 
        .. rst-class:: small-pie-cell
@@ -800,7 +802,7 @@ Baselibs
      -
      -
    * - :need:`wp__verification_plan`
-     -
+     - |fc_baselibs_wp__verification_plan|
      -
 
        .. rst-class:: small-pie-cell
@@ -810,7 +812,7 @@ Baselibs
           :colors: LimeGreen, LightGray
           :filter-func: needs_filters.wp_done_automation_status(wf__verification_plan|wf__verification_plan_maintain)
    * - :need:`wp__verification_platform_int_test`
-     -
+     - |fc_baselibs_wp__verification_platform_int_test|
      -
 
        .. rst-class:: small-pie-cell
@@ -820,7 +822,7 @@ Baselibs
           :colors: LimeGreen, LightGray
           :filter-func: needs_filters.wp_done_automation_status(wf__verification_platform_int_test)
    * - :need:`wp__verification_platform_ver_report`
-     -
+     - |fc_baselibs_wp__verification_platform_ver_report|
      -
 
        .. rst-class:: small-pie-cell
@@ -830,7 +832,7 @@ Baselibs
           :colors: LimeGreen, LightGray
           :filter-func: needs_filters.wp_done_automation_status(wf__verification_platform_ver_report)
    * - :need:`wp__verification_feat_int_test`
-     -
+     - |fc_baselibs_wp__verification_feat_int_test|
      -
 
        .. rst-class:: small-pie-cell
@@ -840,7 +842,7 @@ Baselibs
           :colors: LimeGreen, LightGray
           :filter-func: needs_filters.wp_done_automation_status(wf__verification_feat_int_test)
    * - :need:`wp__verification_module_ver_report`
-     -
+     - |fc_baselibs_wp__verification_module_ver_report|
      -
 
        .. rst-class:: small-pie-cell
@@ -850,7 +852,7 @@ Baselibs
           :colors: LimeGreen, LightGray
           :filter-func: needs_filters.wp_done_automation_status(wf__verification_mod_ver_report)
    * - :need:`wp__verification_comp_int_test`
-     -
+     - |fc_baselibs_wp__verification_comp_int_test|
      -
 
        .. rst-class:: small-pie-cell
@@ -860,7 +862,7 @@ Baselibs
           :colors: LimeGreen, LightGray
           :filter-func: needs_filters.wp_done_automation_status(wf__verification_comp_int_test)
    * - :need:`wp__verification_sw_unit_test`
-     -
+     - |fc_baselibs_wp__verification_sw_unit_test|
      -
 
        .. rst-class:: small-pie-cell
@@ -885,7 +887,7 @@ Communication
      -
      -
    * - :need:`wp__requirements_stkh`
-     -
+     - |fc_communication_wp__requirements_stkh|
      -
 
        .. rst-class:: small-pie-cell
@@ -895,7 +897,7 @@ Communication
           :colors: LimeGreen, LightGray
           :filter-func: needs_filters.wp_done_automation_status(wf__req_stkh_req)
    * - :need:`wp__requirements_sw_platform_aou`
-     -
+     - |fc_communication_wp__requirements_sw_platform_aou|
      -
 
        .. rst-class:: small-pie-cell
@@ -905,7 +907,7 @@ Communication
           :colors: LimeGreen, LightGray
           :filter-func: needs_filters.wp_done_automation_status(wf__req_stkh_req)
    * - :need:`wp__requirements_feat`
-     -
+     - |fc_communication_wp__requirements_feat|
      -
 
        .. rst-class:: small-pie-cell
@@ -915,7 +917,7 @@ Communication
           :colors: LimeGreen, LightGray
           :filter-func: needs_filters.wp_done_automation_status(wf__req_feat_req)
    * - :need:`wp__requirements_feat_aou`
-     -
+     - |fc_communication_wp__requirements_feat_aou|
      -
 
        .. rst-class:: small-pie-cell
@@ -925,7 +927,7 @@ Communication
           :colors: LimeGreen, LightGray
           :filter-func: needs_filters.wp_done_automation_status(wf__req_feat_aou)
    * - :need:`wp__requirements_comp`
-     -
+     - |fc_communication_wp__requirements_comp|
      -
 
        .. rst-class:: small-pie-cell
@@ -935,7 +937,7 @@ Communication
           :colors: LimeGreen, LightGray
           :filter-func: needs_filters.wp_done_automation_status(wf__req_comp_req)
    * - :need:`wp__requirements_comp_aou`
-     -
+     - |fc_communication_wp__requirements_comp_aou|
      -
 
        .. rst-class:: small-pie-cell
@@ -945,7 +947,7 @@ Communication
           :colors: LimeGreen, LightGray
           :filter-func: needs_filters.wp_done_automation_status(wf__req_comp_aou)
    * - :need:`wp__requirements_proc_tool`
-     -
+     - |fc_communication_wp__requirements_proc_tool|
      -
 
        .. rst-class:: small-pie-cell
@@ -955,7 +957,7 @@ Communication
           :colors: LimeGreen, LightGray
           :filter-func: needs_filters.wp_done_automation_status(wf__req_proc_tool)
    * - :need:`wp__requirements_inspect`
-     -
+     - |fc_communication_wp__requirements_inspect|
      -
 
        .. rst-class:: small-pie-cell
@@ -968,7 +970,7 @@ Communication
      -
      -
    * - :need:`wp__platform_arch`
-     -
+     - |fc_communication_wp__platform_arch|
      -
 
        .. rst-class:: small-pie-cell
@@ -978,7 +980,7 @@ Communication
           :colors: LimeGreen, LightGray
           :filter-func: needs_filters.wp_done_automation_status(wf__cr_mt_platarch)
    * - :need:`wp__feature_arch`
-     -
+     - |fc_communication_wp__feature_arch|
      -
 
        .. rst-class:: small-pie-cell
@@ -988,7 +990,7 @@ Communication
           :colors: LimeGreen, LightGray
           :filter-func: needs_filters.wp_done_automation_status(wf__cr_mt_featarch)
    * - :need:`wp__component_arch`
-     -
+     - |fc_communication_wp__component_arch|
      -
 
        .. rst-class:: small-pie-cell
@@ -998,7 +1000,7 @@ Communication
           :colors: LimeGreen, LightGray
           :filter-func: needs_filters.wp_done_automation_status(wf__cr_mt_comparch)
    * - :need:`wp__sw_arch_verification`
-     -
+     - |fc_communication_wp__sw_arch_verification|
      -
 
        .. rst-class:: small-pie-cell
@@ -1011,7 +1013,7 @@ Communication
      -
      -
    * - :need:`wp__sw_development_plan`
-     -
+     - |fc_communication_wp__sw_development_plan|
      -
 
        .. rst-class:: small-pie-cell
@@ -1021,7 +1023,7 @@ Communication
           :colors: LimeGreen, LightGray
           :filter-func: needs_filters.wp_done_automation_status(wf__sw_development_plan)
    * - :need:`wp__sw_implementation`
-     -
+     - |fc_communication_wp__sw_implementation|
      -
 
        .. rst-class:: small-pie-cell
@@ -1031,7 +1033,7 @@ Communication
           :colors: LimeGreen, LightGray
           :filter-func: needs_filters.wp_done_automation_status(wf__sw_detailed_design)
    * - :need:`wp__sw_implementation_inspection`
-     -
+     - |fc_communication_wp__sw_implementation_inspection|
      -
 
        .. rst-class:: small-pie-cell
@@ -1044,7 +1046,7 @@ Communication
      -
      -
    * - :need:`wp__verification_plan`
-     -
+     - |fc_communication_wp__verification_plan|
      -
 
        .. rst-class:: small-pie-cell
@@ -1054,7 +1056,7 @@ Communication
           :colors: LimeGreen, LightGray
           :filter-func: needs_filters.wp_done_automation_status(wf__verification_plan|wf__verification_plan_maintain)
    * - :need:`wp__verification_platform_int_test`
-     -
+     - |fc_communication_wp__verification_platform_int_test|
      -
 
        .. rst-class:: small-pie-cell
@@ -1064,7 +1066,7 @@ Communication
           :colors: LimeGreen, LightGray
           :filter-func: needs_filters.wp_done_automation_status(wf__verification_platform_int_test)
    * - :need:`wp__verification_platform_ver_report`
-     -
+     - |fc_communication_wp__verification_platform_ver_report|
      -
 
        .. rst-class:: small-pie-cell
@@ -1074,7 +1076,7 @@ Communication
           :colors: LimeGreen, LightGray
           :filter-func: needs_filters.wp_done_automation_status(wf__verification_platform_ver_report)
    * - :need:`wp__verification_feat_int_test`
-     -
+     - |fc_communication_wp__verification_feat_int_test|
      -
 
        .. rst-class:: small-pie-cell
@@ -1084,7 +1086,7 @@ Communication
           :colors: LimeGreen, LightGray
           :filter-func: needs_filters.wp_done_automation_status(wf__verification_feat_int_test)
    * - :need:`wp__verification_module_ver_report`
-     -
+     - |fc_communication_wp__verification_module_ver_report|
      -
 
        .. rst-class:: small-pie-cell
@@ -1094,7 +1096,7 @@ Communication
           :colors: LimeGreen, LightGray
           :filter-func: needs_filters.wp_done_automation_status(wf__verification_mod_ver_report)
    * - :need:`wp__verification_comp_int_test`
-     -
+     - |fc_communication_wp__verification_comp_int_test|
      -
 
        .. rst-class:: small-pie-cell
@@ -1104,7 +1106,7 @@ Communication
           :colors: LimeGreen, LightGray
           :filter-func: needs_filters.wp_done_automation_status(wf__verification_comp_int_test)
    * - :need:`wp__verification_sw_unit_test`
-     -
+     - |fc_communication_wp__verification_sw_unit_test|
      -
 
        .. rst-class:: small-pie-cell
@@ -1129,7 +1131,7 @@ Logging
      -
      -
    * - :need:`wp__requirements_stkh`
-     -
+     - |fc_logging_wp__requirements_stkh|
      -
 
        .. rst-class:: small-pie-cell
@@ -1139,7 +1141,7 @@ Logging
           :colors: LimeGreen, LightGray
           :filter-func: needs_filters.wp_done_automation_status(wf__req_stkh_req)
    * - :need:`wp__requirements_sw_platform_aou`
-     -
+     - |fc_logging_wp__requirements_sw_platform_aou|
      -
 
        .. rst-class:: small-pie-cell
@@ -1149,7 +1151,7 @@ Logging
           :colors: LimeGreen, LightGray
           :filter-func: needs_filters.wp_done_automation_status(wf__req_stkh_req)
    * - :need:`wp__requirements_feat`
-     -
+     - |fc_logging_wp__requirements_feat|
      -
 
        .. rst-class:: small-pie-cell
@@ -1159,7 +1161,7 @@ Logging
           :colors: LimeGreen, LightGray
           :filter-func: needs_filters.wp_done_automation_status(wf__req_feat_req)
    * - :need:`wp__requirements_feat_aou`
-     -
+     - |fc_logging_wp__requirements_feat_aou|
      -
 
        .. rst-class:: small-pie-cell
@@ -1169,7 +1171,7 @@ Logging
           :colors: LimeGreen, LightGray
           :filter-func: needs_filters.wp_done_automation_status(wf__req_feat_aou)
    * - :need:`wp__requirements_comp`
-     -
+     - |fc_logging_wp__requirements_comp|
      -
 
        .. rst-class:: small-pie-cell
@@ -1179,7 +1181,7 @@ Logging
           :colors: LimeGreen, LightGray
           :filter-func: needs_filters.wp_done_automation_status(wf__req_comp_req)
    * - :need:`wp__requirements_comp_aou`
-     -
+     - |fc_logging_wp__requirements_comp_aou|
      -
 
        .. rst-class:: small-pie-cell
@@ -1189,7 +1191,7 @@ Logging
           :colors: LimeGreen, LightGray
           :filter-func: needs_filters.wp_done_automation_status(wf__req_comp_aou)
    * - :need:`wp__requirements_proc_tool`
-     -
+     - |fc_logging_wp__requirements_proc_tool|
      -
 
        .. rst-class:: small-pie-cell
@@ -1199,7 +1201,7 @@ Logging
           :colors: LimeGreen, LightGray
           :filter-func: needs_filters.wp_done_automation_status(wf__req_proc_tool)
    * - :need:`wp__requirements_inspect`
-     -
+     - |fc_logging_wp__requirements_inspect|
      -
 
        .. rst-class:: small-pie-cell
@@ -1212,7 +1214,7 @@ Logging
      -
      -
    * - :need:`wp__platform_arch`
-     -
+     - |fc_logging_wp__platform_arch|
      -
 
        .. rst-class:: small-pie-cell
@@ -1222,7 +1224,7 @@ Logging
           :colors: LimeGreen, LightGray
           :filter-func: needs_filters.wp_done_automation_status(wf__cr_mt_platarch)
    * - :need:`wp__feature_arch`
-     -
+     - |fc_logging_wp__feature_arch|
      -
 
        .. rst-class:: small-pie-cell
@@ -1232,7 +1234,7 @@ Logging
           :colors: LimeGreen, LightGray
           :filter-func: needs_filters.wp_done_automation_status(wf__cr_mt_featarch)
    * - :need:`wp__component_arch`
-     -
+     - |fc_logging_wp__component_arch|
      -
 
        .. rst-class:: small-pie-cell
@@ -1242,7 +1244,7 @@ Logging
           :colors: LimeGreen, LightGray
           :filter-func: needs_filters.wp_done_automation_status(wf__cr_mt_comparch)
    * - :need:`wp__sw_arch_verification`
-     -
+     - |fc_logging_wp__sw_arch_verification|
      -
 
        .. rst-class:: small-pie-cell
@@ -1255,7 +1257,7 @@ Logging
      -
      -
    * - :need:`wp__sw_development_plan`
-     -
+     - |fc_logging_wp__sw_development_plan|
      -
 
        .. rst-class:: small-pie-cell
@@ -1265,7 +1267,7 @@ Logging
           :colors: LimeGreen, LightGray
           :filter-func: needs_filters.wp_done_automation_status(wf__sw_development_plan)
    * - :need:`wp__sw_implementation`
-     -
+     - |fc_logging_wp__sw_implementation|
      -
 
        .. rst-class:: small-pie-cell
@@ -1275,7 +1277,7 @@ Logging
           :colors: LimeGreen, LightGray
           :filter-func: needs_filters.wp_done_automation_status(wf__sw_detailed_design)
    * - :need:`wp__sw_implementation_inspection`
-     -
+     - |fc_logging_wp__sw_implementation_inspection|
      -
 
        .. rst-class:: small-pie-cell
@@ -1288,7 +1290,7 @@ Logging
      -
      -
    * - :need:`wp__verification_plan`
-     -
+     - |fc_logging_wp__verification_plan|
      -
 
        .. rst-class:: small-pie-cell
@@ -1298,7 +1300,7 @@ Logging
           :colors: LimeGreen, LightGray
           :filter-func: needs_filters.wp_done_automation_status(wf__verification_plan|wf__verification_plan_maintain)
    * - :need:`wp__verification_platform_int_test`
-     -
+     - |fc_logging_wp__verification_platform_int_test|
      -
 
        .. rst-class:: small-pie-cell
@@ -1308,7 +1310,7 @@ Logging
           :colors: LimeGreen, LightGray
           :filter-func: needs_filters.wp_done_automation_status(wf__verification_platform_int_test)
    * - :need:`wp__verification_platform_ver_report`
-     -
+     - |fc_logging_wp__verification_platform_ver_report|
      -
 
        .. rst-class:: small-pie-cell
@@ -1318,7 +1320,7 @@ Logging
           :colors: LimeGreen, LightGray
           :filter-func: needs_filters.wp_done_automation_status(wf__verification_platform_ver_report)
    * - :need:`wp__verification_feat_int_test`
-     -
+     - |fc_logging_wp__verification_feat_int_test|
      -
 
        .. rst-class:: small-pie-cell
@@ -1328,7 +1330,7 @@ Logging
           :colors: LimeGreen, LightGray
           :filter-func: needs_filters.wp_done_automation_status(wf__verification_feat_int_test)
    * - :need:`wp__verification_module_ver_report`
-     -
+     - |fc_logging_wp__verification_module_ver_report|
      -
 
        .. rst-class:: small-pie-cell
@@ -1338,7 +1340,7 @@ Logging
           :colors: LimeGreen, LightGray
           :filter-func: needs_filters.wp_done_automation_status(wf__verification_mod_ver_report)
    * - :need:`wp__verification_comp_int_test`
-     -
+     - |fc_logging_wp__verification_comp_int_test|
      -
 
        .. rst-class:: small-pie-cell
@@ -1348,7 +1350,7 @@ Logging
           :colors: LimeGreen, LightGray
           :filter-func: needs_filters.wp_done_automation_status(wf__verification_comp_int_test)
    * - :need:`wp__verification_sw_unit_test`
-     -
+     - |fc_logging_wp__verification_sw_unit_test|
      -
 
        .. rst-class:: small-pie-cell

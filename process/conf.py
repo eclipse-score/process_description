@@ -30,6 +30,7 @@ extensions = [
     # is updated with new sphinx-needs version
     "sphinxcontrib.plantuml",
     "score_sphinx_bundle",
+    "harvey_balls",
 ]
 
 html_static_path = ["_assets"]
