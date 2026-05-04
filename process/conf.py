@@ -52,3 +52,47 @@ needs_role_need_template = "{title}"
 import sys as _sys
 import os as _os
 _sys.path.insert(0, _os.path.dirname(_os.path.abspath(__file__)))
+
+
+def _patch_needpie_suppress_legend() -> None:
+    """Suppress all in-chart legends in sphinx-needs needpie charts.
+
+    needpie auto-adds a legend whenever a slice is <5% or zero, even without
+    the :legend: option. Since a static legend is displayed above the table,
+    we replace axes.legend() with a no-op so no legend appears inside the charts.
+
+    We also patch save_matplotlib_figure to always overwrite existing SVG files,
+    bypassing the sphinx-needs env.images cache which would otherwise skip
+    regenerating images when the Sphinx environment pickle exists from a prior build.
+    """
+    try:
+        import matplotlib.axes
+        matplotlib.axes.Axes.legend = lambda self, *args, **kwargs: None
+    except Exception:
+        pass
+
+    try:
+        import sphinx_needs.utils as _sn_utils
+        import sphinx_needs.directives.needpie as _needpie_mod
+        import os
+
+        _orig_save = _sn_utils.save_matplotlib_figure
+
+        def _save_always(app, figure, basename, fromdocname):  # type: ignore[no-untyped-def]
+            # Remove cached entry so figure.savefig() is always called
+            builder = app.builder
+            for ext in ("svg", "png", "pdf"):
+                path = os.path.join(builder.outdir, builder.imagedir, f"{basename}.{ext}")
+                try:
+                    del app.env.images[path]  # type: ignore[attr-defined]
+                except (KeyError, TypeError, AttributeError):
+                    pass
+            return _orig_save(app, figure, basename, fromdocname)
+
+        _sn_utils.save_matplotlib_figure = _save_always
+        _needpie_mod.save_matplotlib_figure = _save_always
+    except Exception:
+        pass
+
+
+_patch_needpie_suppress_legend()

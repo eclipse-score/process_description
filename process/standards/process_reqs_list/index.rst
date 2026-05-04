@@ -36,6 +36,7 @@ see:
    :maxdepth: 1
 
    process_area_status_summary
+   process_area_compact_overview
    process_status_overview
 
 .. needtable::

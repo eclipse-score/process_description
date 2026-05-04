@@ -29,87 +29,87 @@ Edit this table to define the tooling used per work product and its current stat
      - :need:`wp__requirements_stkh`
      - sphinx-needs
      - available
-   * - 
+   * -
      - :need:`wp__requirements_sw_platform_aou`
      - sphinx-needs
      - available
-   * - 
+   * -
      - :need:`wp__requirements_feat`
-     - TBDsklgjlksgj
-     - ttttt
-   * - 
+     - sphinx-needs
+     - available
+   * -
      - :need:`wp__requirements_feat_aou`
-     - TBD
-     - TBD
-   * - 
+     - sphinx-needs
+     - available
+   * -
      - :need:`wp__requirements_comp`
-     - TBD
-     - TBD
-   * - 
+     - sphinx-needs
+     - available
+   * -
      - :need:`wp__requirements_comp_aou`
-     - TBD
-     - TBD
-   * - 
+     - sphinx-needs
+     - available
+   * -
      - :need:`wp__requirements_proc_tool`
-     - TBD
-     - TBD
-   * - 
+     - sphinx-needs
+     - available
+   * -
      - :need:`wp__requirements_inspect`
-     - TBD
-     - TBD
+     - sphinx-needs
+     - available
    * - Architecture Design
      - :need:`wp__platform_arch`
-     - TBD
-     - TBD
-   * - 
+     - sphinx-needs, PlantUML
+     - available
+   * -
      - :need:`wp__feature_arch`
-     - TBD
-     - TBD
-   * - 
+     - sphinx-needs, PlantUML
+     - available
+   * -
      - :need:`wp__component_arch`
-     - TBD
-     - TBD
-   * - 
+     - sphinx-needs, PlantUML
+     - available
+   * -
      - :need:`wp__sw_arch_verification`
-     - TBD
-     - TBD
+     - sphinx-needs, PlantUML
+     - available
    * - Implementation
      - :need:`wp__sw_development_plan`
-     - TBD
-     - TBD
-   * - 
+     - n/a
+     - n/a
+   * -
      - :need:`wp__sw_implementation`
-     - TBD
-     - TBD
-   * - 
+     - C++, RUST toolchains
+     - available
+   * -
      - :need:`wp__sw_implementation_inspection`
-     - TBD
-     - TBD
+     - sphinx-needs
+     - available
    * - Verification
      - :need:`wp__verification_plan`
-     - TBD
-     - TBD
-   * - 
+     - n/a
+     - n/a
+   * -
      - :need:`wp__verification_platform_int_test`
-     - TBD
-     - TBD
-   * - 
+     - ITF
+     - available
+   * -
      - :need:`wp__verification_platform_ver_report`
-     - TBD
-     - TBD
-   * - 
+     - sphinx-needs
+     - not available
+   * -
      - :need:`wp__verification_feat_int_test`
-     - TBD
-     - TBD
-   * - 
+     - ITF
+     - available
+   * -
      - :need:`wp__verification_module_ver_report`
-     - TBD
-     - TBD
-   * - 
+     - sphinx-needs
+     - not available
+   * -
      - :need:`wp__verification_comp_int_test`
-     - TBD
-     - TBD
-   * - 
+     - ITF
+     - available
+   * -
      - :need:`wp__verification_sw_unit_test`
-     - TBD
-     - TBD
+     - gtest
+     - available
