@@ -50,6 +50,8 @@ The attributes of the template are described in :ref:`process_requirements_safet
 #. Replace the placeholders in the "id" attribute with the name of the feature or component and a short description of the element so that it can be easily identified.
 #. Document the fault ID from the fault model :need:`gd_guidl__fault_models` that applies to the element in the "fault_id" attribute.
 #. Describe the failure effect of the fault model on the element in the "failure_effect" attribute. Use the failure mode description and enlarge the if it's applicable to the considered element.
+#. Document the root cause of the failure in the "failure_root_cause" attribute.
+#. Indicate whether the analysed failure is safety relevant using the "safety_relevant" attribute (<yes> or <no>).
 #. Document the safety mitigation. This can be a detection, prevention or mitigation of the fault. If only testability is defined as mitigation measure, complexity requirements shall be allocated to the feature/component.
 #. If there is no mitigation or existing mitigation is not sufficient a mitigation issue has to be created in the Issue Tracking system and linked in the "mitigation_issue" attribute.
 #. The analysis is finished, if for each identified fault a sufficient mitigation exists.
@@ -79,6 +81,7 @@ The attributes of the template are described in :ref:`process_requirements_safet
 #. Replace the placeholders in the "id" attribute with the name of the feature or component and a short description of the element so that it can be easily identified.
 #. Document the failure ID from the failure initiator :need:`gd_guidl__dfa_failure_initiators` that applies to the element in the "failure_id" attribute.
 #. Describe the failure effect of the failure initiator on the element in the "failure_effect" attribute. Use the violation cause description and enlarge the if it's applicable to the considered element.
+#. Indicate whether the analysed failure is safety relevant using the "safety_relevant" attribute (<yes> or <no>).
 #. Document the safety mitigation. This can be a detection, prevention or mitigation of the fault. If only testability is defined as mitigation measure, complexity requirements shall be allocated to the feature/component.
 #. If there is no mitigation or the mitigation is not sufficient a mitigation issue has to be created in the Issue Tracking system and linked in the "mitigation_issue" attribute.
 #. The analysis is finished, if for each identified fault a sufficient mitigation exists.
@@ -107,6 +110,8 @@ find possible failures. Therefore we need a mitigation.
       :id: feat_saf_fmea__mab__comp1_call_nreceived
       :fault_id: MF_01_01
       :failure_effect: Message is not received. This leads to a unavailability of a safety related functionality of the feature.
+      :failure_root_cause: The message is lost due to a communication error.
+      :safety_relevant: yes
       :mitigated_by: aou_req__mab__call_not_received
       :mitigation_issue:
       :sufficient: yes
@@ -132,6 +137,7 @@ In the static view of the example could be seen that component 1 uses component 
       :id: feat_saf_dfa__mab__data_corruption
       :failure_id: CO_01_02
       :failure_effect: Data or message corruption will lead to a corruption of the data or message that could violate a safety functionality.
+      :safety_relevant: yes
       :mitigated_by: feat_req__mab_integritiy_check
       :mitigation_issue:
       :sufficient: yes
@@ -171,6 +177,7 @@ Additionally in the static view we see Component 4 is a library used by Componen
       :id: comp_saf_dfa__component4__allocated_memory
       :failure_id: SR_01_10
       :failure_effect: Component 4 is using allocated memory of Component 3
+      :safety_relevant: yes
       :mitigated_by: comp_req__memory_management
       :mitigation_issue:
       :sufficient: yes
