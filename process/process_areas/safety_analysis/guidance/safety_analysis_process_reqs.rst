@@ -110,7 +110,7 @@ Process Safety Analysis Attributes
    :satisfies: wf__analyse_platform_featarch, wf__analyse_featarch, wf__analyse_comparch
    :complies: std_req__iso26262__analysis_848, std_req__iso26262__analysis_749, std_req__isopas8926__44431, std_req__isopas8926__44432
 
-   Each Safety Analysis shall have a status which can be either "valid" or "invalid". 
+   Each Safety Analysis shall have a status which can be either "valid" or "invalid".
 
 .. gd_req:: Safety Analysis attribute: failure effect
    :id: gd_req__saf_attr_feffect
@@ -138,7 +138,7 @@ Safety Analysis Linkage
 .. gd_req:: Safety Analysis Linkage
    :id: gd_req__saf_linkage
    :status: valid
-   :tags: prio_2_automation, attribute, automated
+   :tags: done_automation, attribute, automated
    :satisfies: wf__analyse_platform_featarch, wf__analyse_featarch, wf__analyse_comparch
    :complies: std_req__iso26262__analysis_842, std_req__iso26262__software_7410, std_req__iso26262__software_7411
 
@@ -156,7 +156,7 @@ Safety Analysis Linkage
 .. gd_req:: Safety Analysis attribute: Requirements linkage
    :id: gd_req__saf_attr_requirements
    :status: valid
-   :tags: prio_2_automation, attribute, automated
+   :tags: done_automation, attribute, automated
    :satisfies: wf__analyse_platform_featarch, wf__analyse_featarch, wf__analyse_comparch
    :complies: std_req__iso26262__analysis_842, std_req__iso26262__software_7410, std_req__iso26262__software_7411
 
@@ -183,7 +183,7 @@ Safety Analysis Linkage
 .. gd_req:: Safety Analysis Linkage status check
    :id: gd_req__saf_linkage_status_check
    :status: valid
-   :tags: prio_3_automation, attribute, automated
+   :tags: done_automation, attribute, automated
    :satisfies: wf__analyse_platform_featarch, wf__analyse_featarch, wf__analyse_comparch
    :complies: std_req__iso26262__analysis_842, std_req__iso26262__software_7410, std_req__iso26262__software_7411
 
@@ -213,7 +213,7 @@ Safety Analysis Checks
 .. gd_req:: Safety Analysis linkage safety
    :id: gd_req__saf_linkage_safety
    :status: valid
-   :tags: prio_2_automation, attribute, check
+   :tags: done_automation, attribute, check
    :satisfies: wf__analyse_platform_featarch, wf__analyse_featarch, wf__analyse_comparch
    :complies: std_req__iso26262__analysis_848, std_req__iso26262__analysis_749
 
