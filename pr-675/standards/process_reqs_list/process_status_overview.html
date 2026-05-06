@@ -1,0 +1,1440 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Process Status Overview &#8212; Process Description  documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=7f76b32a3354e82990f2" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=7f76b32a3354e82990f2" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=4ae1632d" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/score.css?v=6e51530f" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/score_needs.css?v=1f5dae2a" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/score_design.css?v=d9fd870c" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-data-viewer/jsonview.bundle.css?v=f6ef2277" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/libs/html/datatables.min.css?v=4b4fd840" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/common_css/need_core.css?v=f5b60a78" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/common_css/need_toggle.css?v=5c6620df" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/common_css/needstable.css?v=5e1b6797" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/common_css/need_links.css?v=2150a916" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/common_css/need_style.css?v=92936fa5" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/modern.css?v=803738c0" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=be9cac1b" />
+  
+  <!-- So that users can add custom icons -->
+  <script defer src="../../_static/scripts/fontawesome.js?digest=7f76b32a3354e82990f2"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=7f76b32a3354e82990f2" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=7f76b32a3354e82990f2" />
+
+    <script src="../../_static/jquery.js?v=5d32c60e"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+    <script src="../../_static/documentation_options.js?v=7f41d439"></script>
+    <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script src="../../_static/sphinx-data-viewer/jsonview.bundle.js?v=18cd53c5"></script>
+    <script src="../../_static/sphinx-data-viewer/jsonview_loader.js?v=f7ff7e7d"></script>
+    <script src="../../_static/sphinx-needs/libs/html/datatables.min.js?v=8a4aee21"></script>
+    <script src="../../_static/sphinx-needs/libs/html/datatables_loader.js?v=a2cae175"></script>
+    <script src="../../_static/sphinx-needs/libs/html/sphinx_needs_collapse.js?v=dca66431"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'standards/process_reqs_list/process_status_overview';</script>
+    <script>
+        DOCUMENTATION_OPTIONS.theme_version = '0.17.0';
+        DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://eclipse-score.github.io/process_description/versions.json';
+        DOCUMENTATION_OPTIONS.theme_switcher_version_match = '';
+        DOCUMENTATION_OPTIONS.show_version_warning_banner =
+            false;
+        </script>
+    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Process Area Overview" href="process_area_overview_table.html" />
+    <link rel="prev" title="Module Status Overview (Compact)" href="module_compact_overview.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="0.1" />
+  
+    
+    <script src="../../_static/searchtools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <script src="../../searchindex.js"></script>
+  
+  </head>
+  <body data-default-mode="">
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-3 navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../index.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">Eclipse S-CORE</p>
+  
+</a></div>
+    
+  </div>
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../introduction/index.html">
+    Introduction
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../general_concepts/index.html">
+    General concepts
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../process_areas/index.html">
+    Process areas
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../roles/index.html">
+    Roles
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../workproducts/index.html">
+    Work products
+  </a>
+</li>
+
+            <li class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button"
+                data-bs-toggle="dropdown" aria-expanded="false"
+                aria-controls="pst-nav-more-links">
+                    More
+                </button>
+                <ul id="pst-nav-more-links" class="dropdown-menu">
+                    
+<li class=" ">
+  <a class="nav-link dropdown-item nav-internal" href="../../workflows/index.html">
+    Workflows
+  </a>
+</li>
+
+
+<li class=" current active">
+  <a class="nav-link dropdown-item nav-internal" href="../index.html">
+    Standards & Requirements
+  </a>
+</li>
+
+
+<li class=" ">
+  <a class="nav-link dropdown-item nav-internal" href="../../trustable/index.html">
+    Trustable Software Framework
+  </a>
+</li>
+
+
+<li class=" ">
+  <a class="nav-link dropdown-item nav-internal" href="../../folder_templates/index.html">
+    Folder Templates
+  </a>
+</li>
+
+
+<li class=" ">
+  <a class="nav-link dropdown-item nav-internal" href="../../glossary/index.html">
+    Glossary
+  </a>
+</li>
+
+
+<li class=" ">
+  <a class="nav-link dropdown-item nav-internal" href="../../release_notes/index.html">
+    Release notes
+  </a>
+</li>
+
+                </ul>
+            </li>
+            
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+        <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+      
+        <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/eclipse-score" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+</ul></div>
+      
+        <div class="navbar-item">
+<div class="version-switcher__container dropdown pst-js-only">
+  <button id="pst-version-switcher-button-2"
+    type="button"
+    class="version-switcher__button btn btn-sm dropdown-toggle"
+    data-bs-toggle="dropdown"
+    aria-haspopup="listbox"
+    aria-controls="pst-version-switcher-list-2"
+    aria-label="Version switcher list"
+  >
+    Choose version  <!-- this text may get changed later by javascript -->
+    <span class="caret"></span>
+  </button>
+  <div id="pst-version-switcher-list-2"
+    class="version-switcher__menu dropdown-menu list-group-flush py-0"
+    role="listbox" aria-labelledby="pst-version-switcher-button-2">
+    <!-- dropdown will be populated by javascript on page load -->
+  </div>
+</div></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          
+          
+            <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../introduction/index.html">
+    Introduction
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../general_concepts/index.html">
+    General concepts
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../process_areas/index.html">
+    Process areas
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../roles/index.html">
+    Roles
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../workproducts/index.html">
+    Work products
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../workflows/index.html">
+    Workflows
+  </a>
+</li>
+
+
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="../index.html">
+    Standards & Requirements
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../trustable/index.html">
+    Trustable Software Framework
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../folder_templates/index.html">
+    Folder Templates
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../glossary/index.html">
+    Glossary
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../release_notes/index.html">
+    Release notes
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+          
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+        
+          <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/eclipse-score" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+</ul></div>
+        
+          <div class="navbar-item">
+<div class="version-switcher__container dropdown pst-js-only">
+  <button id="pst-version-switcher-button-3"
+    type="button"
+    class="version-switcher__button btn btn-sm dropdown-toggle"
+    data-bs-toggle="dropdown"
+    aria-haspopup="listbox"
+    aria-controls="pst-version-switcher-list-3"
+    aria-label="Version switcher list"
+  >
+    Choose version  <!-- this text may get changed later by javascript -->
+    <span class="caret"></span>
+  </button>
+  <div id="pst-version-switcher-list-3"
+    class="version-switcher__menu dropdown-menu list-group-flush py-0"
+    role="listbox" aria-labelledby="pst-version-switcher-button-3">
+    <!-- dropdown will be populated by javascript on page load -->
+  </div>
+</div></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item pst-sidebar-collapse"><button id="pst-collapse-sidebar-button" aria-expanded="true" aria-controls="pst-primary-sidebar"><svg class="pst-icon svg-inline--fa" role="img" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+    <path fill="currentColor" d="M3 15.5C2.36232 15.5 1.74874 15.2564 1.28478 14.8189C0.820828 14.3815 0.541576 13.7832 0.504167 13.1467L0.5 13L0.5 3C0.499965 2.36232 0.743605 1.74874 1.18107 1.28478C1.61854 0.820828 2.21676 0.541576 2.85333 0.504167L3 0.5L13 0.5C13.6377 0.499965 14.2513 0.743605 14.7152 1.18107C15.1792 1.61854 15.4584 2.21676 15.4958 2.85333L15.5 3L15.5 13C15.5 13.6377 15.2564 14.2513 14.8189 14.7152C14.3815 15.1792 13.7832 15.4584 13.1467 15.4958L13 15.5L3 15.5ZM3 13.8333L10.5 13.8333L10.5 2.16667L3 2.16667C2.79589 2.16669 2.59889 2.24163 2.44636 2.37726C2.29383 2.5129 2.19638 2.69979 2.1725 2.9025L2.16667 3L2.16667 13C2.16669 13.2041 2.24163 13.4011 2.37726 13.5536C2.5129 13.7062 2.69979 13.8036 2.9025 13.8275L3 13.8333ZM6.65583 10.325L6.5775 10.2558L4.91083 8.58917C4.76735 8.44567 4.68116 8.25476 4.66843 8.05223C4.65569 7.84971 4.71729 7.6495 4.84167 7.48917L4.91083 7.41083L6.5775 5.74417C6.72747 5.59471 6.9287 5.50794 7.14032 5.50148C7.35194 5.49502 7.55809 5.56935 7.7169 5.70937C7.8757 5.8494 7.97525 6.04463 7.99533 6.25539C8.01541 6.46616 7.95451 6.67667 7.825 6.84417L7.75583 6.9225L6.67917 8L7.75583 9.0775C7.89931 9.22099 7.98551 9.41191 7.99824 9.61443C8.01097 9.81695 7.94938 10.0172 7.825 10.1775L7.75583 10.2558C7.61234 10.3993 7.42142 10.4855 7.2189 10.4982C7.01638 10.511 6.81617 10.4494 6.65583 10.325Z"/>
+  </svg>
+  <span class="pst-collapse-sidebar-label">Collapse Sidebar</span>
+  <span class="pst-expand-sidebar-label">Expand Sidebar</span>
+</button></div>
+        <div class="sidebar-primary-item">
+
+<nav class="bd-docs-nav bd-links"
+     aria-label="Section Navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
+  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../iso26262/iso26262.html">ISO 26262</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../isopas8926/isopas8926.html">ISO PAS 8926</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../aspice_40/aspice.html">ASPICE 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../isosae21434/isosae21434.html">ISO/SAE 21434:2021(E)</a></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">Process Requirements List</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="process_area_status_summary.html">Process Requirement Status by Process Area</a></li>
+<li class="toctree-l2"><a class="reference internal" href="process_area_compact_overview.html">Process Area Status Overview (Compact)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="module_compact_overview.html">Module Status Overview (Compact)</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Process Status Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="process_area_overview_table.html">Process Area Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tooling_table.html">Tooling Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="wp_status_table.html">Work Product Process Overview</a></li>
+</ul>
+</details></li>
+</ul>
+</div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+<nav aria-label="Breadcrumb" class="d-print-none">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    
+    <li class="breadcrumb-item"><a href="../index.html" class="nav-link">Standards &amp; Requirements</a></li>
+    
+    
+    <li class="breadcrumb-item"><a href="index.html" class="nav-link">Process Requirements List</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Process Status Overview</span></li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="process-status-overview">
+<span id="id1"></span><h1>Process Status Overview<a class="headerlink" href="#process-status-overview" title="Link to this heading">#</a></h1>
+<section id="combined-process-area-and-work-product-status-overview">
+<h2>Combined Process Area and Work Product Status Overview<a class="headerlink" href="#combined-process-area-and-work-product-status-overview" title="Link to this heading">#</a></h2>
+<p>The table below combines process requirement status, ISO 26262 std_req
+compliance status, work product completion status, and tooling in a single overview.
+For each process area the pie charts appear on the first work product row;
+subsequent rows carry only the work product and its completion badge.</p>
+<div class="chart-legend-block">
+  <div class="chart-legend-group">
+    <strong>Process req. status</strong>
+    <span class="chart-legend-item"><span class="chart-legend-dot" style="background:#32CD32"></span>Valid</span>
+    <span class="chart-legend-item"><span class="chart-legend-dot" style="background:#FFD700"></span>Draft</span>
+    <span class="chart-legend-item"><span class="chart-legend-dot" style="background:#F08080"></span>Invalid</span>
+    <span class="chart-legend-item"><span class="chart-legend-dot" style="background:#D3D3D3"></span>Other</span>
+  </div>
+  <div class="chart-legend-group">
+    <strong>ISO 26262 std_req status</strong>
+    <span class="chart-legend-item"><span class="chart-legend-dot" style="background:#32CD32"></span>Ok</span>
+    <span class="chart-legend-item"><span class="chart-legend-dot" style="background:#ADD8E6"></span>Recommendation</span>
+    <span class="chart-legend-item"><span class="chart-legend-dot" style="background:#FFD700"></span>Open</span>
+    <span class="chart-legend-item"><span class="chart-legend-dot" style="background:#FFA500"></span>Action</span>
+    <span class="chart-legend-item"><span class="chart-legend-dot" style="background:#F08080"></span>Deviation</span>
+    <span class="chart-legend-item"><span class="chart-legend-dot" style="background:#D3D3D3"></span>N/A</span>
+    <span class="chart-legend-item"><span class="chart-legend-dot" style="background:#C0C0C0"></span>Other</span>
+  </div>
+  <div class="chart-legend-group">
+    <strong>Req. verification status</strong>
+    <span class="chart-legend-item"><span class="chart-legend-dot" style="background:#32CD32"></span>Automated</span>
+    <span class="chart-legend-item"><span class="chart-legend-dot" style="background:#FFD700"></span>Waiting for automation</span>
+    <span class="chart-legend-item"><span class="chart-legend-dot" style="background:#ADD8E6"></span>Inspection list</span>
+    <span class="chart-legend-item"><span class="chart-legend-dot" style="background:#D3D3D3"></span>Other</span>
+  </div>
+</div><div class="pst-scrollable-table-container"><table class="combined-status-table table" id="id5">
+<caption><span class="caption-number">Table 60 </span><span class="caption-text">Combined process area and work product status overview</span><a class="headerlink" href="#id5" title="Link to this table">#</a></caption>
+<colgroup>
+<col style="width: 10.0%" />
+<col style="width: 13.0%" />
+<col style="width: 13.0%" />
+<col style="width: 20.0%" />
+<col style="width: 7.0%" />
+<col style="width: 15.0%" />
+<col style="width: 11.0%" />
+<col style="width: 11.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Process area</p></th>
+<th class="head"><p>Process req. status</p></th>
+<th class="head"><p>ISO 26262 std_req status</p></th>
+<th class="head"><p>Work product</p></th>
+<th class="head"><p>WP status</p></th>
+<th class="head"><p>Req. verification status</p></th>
+<th class="head"><p>Tooling</p></th>
+<th class="head"><p>Tooling Status</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Requirements Engineering</p></td>
+<td><img alt="../../_images/need_pie_4ce55.svg" class="small-pie-cell" id="needpie-standards/process_reqs_list/process_status_overview-0" src="../../_images/need_pie_4ce55.svg" />
+</td>
+<td><img alt="../../_images/need_pie_4d719.svg" class="small-pie-cell" id="needpie-standards/process_reqs_list/process_status_overview-1" src="../../_images/need_pie_4d719.svg" />
+</td>
+<td><p><a class="reference internal" href="../../process_areas/requirements_engineering/requirements_workproducts.html#wp__requirements_stkh" title="wp__requirements_stkh"><em class="xref need">Stakeholder Requirements</em></a></p></td>
+<td><p class="wp-status-cell">20 / 20</p></td>
+<td><img alt="../../_images/need_pie_daf62.svg" class="small-pie-cell" id="needpie-standards/process_reqs_list/process_status_overview-2" src="../../_images/need_pie_daf62.svg" />
+</td>
+<td><p>sphinx-needs</p></td>
+<td><p>available</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="../../process_areas/requirements_engineering/requirements_workproducts.html#wp__requirements_sw_platform_aou" title="wp__requirements_sw_platform_aou"><em class="xref need">SW-Platform Assumptions of Use</em></a></p></td>
+<td><p class="wp-status-cell">20 / 20</p></td>
+<td><img alt="../../_images/need_pie_e7802.svg" class="small-pie-cell" id="needpie-standards/process_reqs_list/process_status_overview-3" src="../../_images/need_pie_e7802.svg" />
+</td>
+<td><p>sphinx-needs</p></td>
+<td><p>available</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="../../process_areas/requirements_engineering/requirements_workproducts.html#wp__requirements_feat" title="wp__requirements_feat"><em class="xref need">Feature Requirements</em></a></p></td>
+<td><p class="wp-status-cell">26 / 26</p></td>
+<td><img alt="../../_images/need_pie_378b9.svg" class="small-pie-cell" id="needpie-standards/process_reqs_list/process_status_overview-4" src="../../_images/need_pie_378b9.svg" />
+</td>
+<td><p>sphinx-needs</p></td>
+<td><p>available</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="../../process_areas/requirements_engineering/requirements_workproducts.html#wp__requirements_feat_aou" title="wp__requirements_feat_aou"><em class="xref need">Feature Assumptions of Use</em></a></p></td>
+<td><p class="wp-status-cell">10 / 10</p></td>
+<td><img alt="../../_images/need_pie_edf62.svg" class="small-pie-cell" id="needpie-standards/process_reqs_list/process_status_overview-5" src="../../_images/need_pie_edf62.svg" />
+</td>
+<td><p>sphinx-needs</p></td>
+<td><p>available</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="../../process_areas/requirements_engineering/requirements_workproducts.html#wp__requirements_comp" title="wp__requirements_comp"><em class="xref need">Component Requirements</em></a></p></td>
+<td><p class="wp-status-cell">22 / 22</p></td>
+<td><img alt="../../_images/need_pie_45981.svg" class="small-pie-cell" id="needpie-standards/process_reqs_list/process_status_overview-6" src="../../_images/need_pie_45981.svg" />
+</td>
+<td><p>sphinx-needs</p></td>
+<td><p>available</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="../../process_areas/requirements_engineering/requirements_workproducts.html#wp__requirements_comp_aou" title="wp__requirements_comp_aou"><em class="xref need">Component Assumptions of Use</em></a></p></td>
+<td><p class="wp-status-cell">10 / 10</p></td>
+<td><img alt="../../_images/need_pie_56736.svg" class="small-pie-cell" id="needpie-standards/process_reqs_list/process_status_overview-7" src="../../_images/need_pie_56736.svg" />
+</td>
+<td><p>sphinx-needs</p></td>
+<td><p>available</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="../../process_areas/requirements_engineering/requirements_workproducts.html#wp__requirements_proc_tool" title="wp__requirements_proc_tool"><em class="xref need">Process/Tool Requirements</em></a></p></td>
+<td><p class="wp-status-cell">8 / 8</p></td>
+<td><img alt="../../_images/need_pie_05fd5.svg" class="small-pie-cell" id="needpie-standards/process_reqs_list/process_status_overview-8" src="../../_images/need_pie_05fd5.svg" />
+</td>
+<td><p>sphinx-needs</p></td>
+<td><p>available</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="../../process_areas/requirements_engineering/requirements_workproducts.html#wp__requirements_inspect" title="wp__requirements_inspect"><em class="xref need">Requirements Inspection</em></a></p></td>
+<td><p class="wp-status-cell">6 / 6</p></td>
+<td><img alt="../../_images/need_pie_d07cd.svg" class="small-pie-cell" id="needpie-standards/process_reqs_list/process_status_overview-9" src="../../_images/need_pie_d07cd.svg" />
+</td>
+<td><p>sphinx-needs</p></td>
+<td><p>available</p></td>
+</tr>
+<tr class="row-even"><td><p>Architecture Design</p></td>
+<td><img alt="../../_images/need_pie_c5d50.svg" class="small-pie-cell" id="needpie-standards/process_reqs_list/process_status_overview-10" src="../../_images/need_pie_c5d50.svg" />
+</td>
+<td><img alt="../../_images/need_pie_efce2.svg" class="small-pie-cell" id="needpie-standards/process_reqs_list/process_status_overview-11" src="../../_images/need_pie_efce2.svg" />
+</td>
+<td><p><a class="reference internal" href="../../process_areas/architecture_design/architecture_workproducts.html#wp__platform_arch" title="wp__platform_arch"><em class="xref need">Platform Architecture</em></a></p></td>
+<td><p class="wp-status-cell">0 / 0</p></td>
+<td><p class="needs_filter_warning small-pie-cell" id="needpie-standards/process_reqs_list/process_status_overview-12">No needs passed the filters</p>
+</td>
+<td><p>sphinx-needs, PlantUML</p></td>
+<td><p>available</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="../../process_areas/architecture_design/architecture_workproducts.html#wp__feature_arch" title="wp__feature_arch"><em class="xref need">Feature Architecture</em></a></p></td>
+<td><p class="wp-status-cell">21 / 21</p></td>
+<td><img alt="../../_images/need_pie_8c415.svg" class="small-pie-cell" id="needpie-standards/process_reqs_list/process_status_overview-13" src="../../_images/need_pie_8c415.svg" />
+</td>
+<td><p>sphinx-needs, PlantUML</p></td>
+<td><p>available</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="../../process_areas/architecture_design/architecture_workproducts.html#wp__component_arch" title="wp__component_arch"><em class="xref need">Component Architecture</em></a></p></td>
+<td><p class="wp-status-cell">21 / 21</p></td>
+<td><img alt="../../_images/need_pie_6ab83.svg" class="small-pie-cell" id="needpie-standards/process_reqs_list/process_status_overview-14" src="../../_images/need_pie_6ab83.svg" />
+</td>
+<td><p>sphinx-needs, PlantUML</p></td>
+<td><p>available</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="../../process_areas/architecture_design/architecture_workproducts.html#wp__sw_arch_verification" title="wp__sw_arch_verification"><em class="xref need">Architecture Verification</em></a></p></td>
+<td><p class="wp-status-cell">5 / 6</p></td>
+<td><img alt="../../_images/need_pie_cf6ad.svg" class="small-pie-cell" id="needpie-standards/process_reqs_list/process_status_overview-15" src="../../_images/need_pie_cf6ad.svg" />
+</td>
+<td><p>sphinx-needs</p></td>
+<td><p>not available</p></td>
+</tr>
+<tr class="row-even"><td><p>Implementation</p></td>
+<td><img alt="../../_images/need_pie_ab212.svg" class="small-pie-cell" id="needpie-standards/process_reqs_list/process_status_overview-16" src="../../_images/need_pie_ab212.svg" />
+</td>
+<td><img alt="../../_images/need_pie_4ac91.svg" class="small-pie-cell" id="needpie-standards/process_reqs_list/process_status_overview-17" src="../../_images/need_pie_4ac91.svg" />
+</td>
+<td><p><a class="reference internal" href="../../process_areas/implementation/implementation_workproducts.html#wp__sw_development_plan" title="wp__sw_development_plan"><em class="xref need">Software Development Plan</em></a></p></td>
+<td><p class="wp-status-cell">0 / 0</p></td>
+<td><p class="needs_filter_warning small-pie-cell" id="needpie-standards/process_reqs_list/process_status_overview-18">No needs passed the filters</p>
+</td>
+<td><p>sphinx-needs</p></td>
+<td><p>not available</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="../../process_areas/implementation/implementation_workproducts.html#wp__sw_implementation" title="wp__sw_implementation"><em class="xref need">Implementation</em></a></p></td>
+<td><p class="wp-status-cell">26 / 26</p></td>
+<td><img alt="../../_images/need_pie_6d29c.svg" class="small-pie-cell" id="needpie-standards/process_reqs_list/process_status_overview-19" src="../../_images/need_pie_6d29c.svg" />
+</td>
+<td><p>C++/RUST toolchain</p></td>
+<td><p>available</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="../../process_areas/implementation/implementation_workproducts.html#wp__sw_implementation_inspection" title="wp__sw_implementation_inspection"><em class="xref need">Implementation Inspection</em></a></p></td>
+<td><p class="wp-status-cell">1 / 1</p></td>
+<td><img alt="../../_images/need_pie_0dbce.svg" class="small-pie-cell" id="needpie-standards/process_reqs_list/process_status_overview-20" src="../../_images/need_pie_0dbce.svg" />
+</td>
+<td><p>sphinx-needs</p></td>
+<td><p>available</p></td>
+</tr>
+<tr class="row-odd"><td><p>Verification</p></td>
+<td><img alt="../../_images/need_pie_fc05f.svg" class="small-pie-cell" id="needpie-standards/process_reqs_list/process_status_overview-21" src="../../_images/need_pie_fc05f.svg" />
+</td>
+<td><img alt="../../_images/need_pie_62317.svg" class="small-pie-cell" id="needpie-standards/process_reqs_list/process_status_overview-22" src="../../_images/need_pie_62317.svg" />
+</td>
+<td><p><a class="reference internal" href="../../process_areas/verification/verification_workproducts.html#wp__verification_plan" title="wp__verification_plan"><em class="xref need">Verification Plan</em></a></p></td>
+<td><p class="wp-status-cell">0 / 0</p></td>
+<td><p class="needs_filter_warning small-pie-cell" id="needpie-standards/process_reqs_list/process_status_overview-23">No needs passed the filters</p>
+</td>
+<td><p>sphinx-needs</p></td>
+<td><p>not available</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="../../process_areas/verification/verification_workproducts.html#wp__verification_platform_int_test" title="wp__verification_platform_int_test"><em class="xref need">Platform Integration Test</em></a></p></td>
+<td><p class="wp-status-cell">8 / 9</p></td>
+<td><img alt="../../_images/need_pie_a3575.svg" class="small-pie-cell" id="needpie-standards/process_reqs_list/process_status_overview-24" src="../../_images/need_pie_a3575.svg" />
+</td>
+<td><p>ITF</p></td>
+<td><p>available</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="../../process_areas/verification/verification_workproducts.html#wp__verification_platform_ver_report" title="wp__verification_platform_ver_report"><em class="xref need">Platform Verification Report</em></a></p></td>
+<td><p class="wp-status-cell">0 / 0</p></td>
+<td><p class="needs_filter_warning small-pie-cell" id="needpie-standards/process_reqs_list/process_status_overview-25">No needs passed the filters</p>
+</td>
+<td><p>sphinx-needs</p></td>
+<td><p>not available</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="../../process_areas/verification/verification_workproducts.html#wp__verification_feat_int_test" title="wp__verification_feat_int_test"><em class="xref need">Feature Integration test</em></a></p></td>
+<td><p class="wp-status-cell">9 / 10</p></td>
+<td><img alt="../../_images/need_pie_2ba1f.svg" class="small-pie-cell" id="needpie-standards/process_reqs_list/process_status_overview-26" src="../../_images/need_pie_2ba1f.svg" />
+</td>
+<td><p>ITF</p></td>
+<td><p>available</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="../../process_areas/verification/verification_workproducts.html#wp__verification_module_ver_report" title="wp__verification_module_ver_report"><em class="xref need">Module Verification Report</em></a></p></td>
+<td><p class="wp-status-cell">2 / 2</p></td>
+<td><img alt="../../_images/need_pie_383ff.svg" class="small-pie-cell" id="needpie-standards/process_reqs_list/process_status_overview-27" src="../../_images/need_pie_383ff.svg" />
+</td>
+<td><p>sphinx-needs</p></td>
+<td><p>not available</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="../../process_areas/verification/verification_workproducts.html#wp__verification_comp_int_test" title="wp__verification_comp_int_test"><em class="xref need">Component Integration test</em></a></p></td>
+<td><p class="wp-status-cell">9 / 10</p></td>
+<td><img alt="../../_images/need_pie_6bf5b.svg" class="small-pie-cell" id="needpie-standards/process_reqs_list/process_status_overview-28" src="../../_images/need_pie_6bf5b.svg" />
+</td>
+<td><p>ITF</p></td>
+<td><p>available</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="../../process_areas/verification/verification_workproducts.html#wp__verification_sw_unit_test" title="wp__verification_sw_unit_test"><em class="xref need">Unit test</em></a></p></td>
+<td><p class="wp-status-cell">8 / 9</p></td>
+<td><img alt="../../_images/need_pie_3ee17.svg" class="small-pie-cell" id="needpie-standards/process_reqs_list/process_status_overview-29" src="../../_images/need_pie_3ee17.svg" />
+</td>
+<td><p>gtest</p></td>
+<td><p>available</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var combinedTable = null;
+  document.querySelectorAll('table').forEach(function(t) {
+    var cap = t.querySelector('caption');
+    if (cap && cap.textContent.trim().toLowerCase().includes('combined process area')) {
+      combinedTable = t;
+    }
+  });
+  if (!combinedTable) return;
+  var rows = Array.from(combinedTable.querySelectorAll('tbody tr'));
+  function hasContent(cell) {
+    return cell.querySelector('img') !== null || cell.textContent.trim() !== '';
+  }
+  var firstGroup = true;
+  rows.forEach(function(row) {
+    var cells = row.querySelectorAll('td');
+    if (cells.length > 0 && hasContent(cells[0])) {
+      if (!firstGroup) { row.classList.add('group-start'); }
+      firstGroup = false;
+      cells[0].id = cells[0].textContent.trim().toLowerCase().replace(/\s+/g, '-');
+    }
+  });
+  [2, 1, 0].forEach(function(colIdx) {
+    var anchorCell = null;
+    var span = 1;
+    rows.forEach(function(row) {
+      var cells = row.querySelectorAll('td');
+      if (cells.length <= colIdx) return;
+      var cell = cells[colIdx];
+      if (hasContent(cell)) {
+        anchorCell = cell;
+        span = 1;
+        cell.style.verticalAlign = 'middle';
+        cell.style.textAlign = 'center';
+      } else if (anchorCell) {
+        span += 1;
+        anchorCell.rowSpan = span;
+        cell.parentNode.removeChild(cell);
+      }
+    });
+  });
+});
+</script></section>
+<section id="module-status-by-work-product">
+<h2>Module Status by Work Product<a class="headerlink" href="#module-status-by-work-product" title="Link to this heading">#</a></h2>
+<p>The following tables provide module-specific placeholders for manual status tracking.
+Rows are grouped by process area and list the related work products.</p>
+<div class="chart-legend-block">
+  <div class="chart-legend-group">
+    <strong>Done automation status</strong>
+    <span class="chart-legend-item"><span class="chart-legend-dot" style="background:#32CD32"></span>done_automation</span>
+    <span class="chart-legend-item"><span class="chart-legend-dot" style="background:#D3D3D3"></span>rest</span>
+  </div>
+</div><section id="baselibs">
+<h3>Baselibs<a class="headerlink" href="#baselibs" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="module-status-table table" id="id6">
+<caption><span class="caption-number">Table 61 </span><span class="caption-text">Baselibs module status</span><a class="headerlink" href="#id6" title="Link to this table">#</a></caption>
+<colgroup>
+<col style="width: 50.0%" />
+<col style="width: 25.0%" />
+<col style="width: 25.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><a class="reference external" href="https://github.com/eclipse-score/baselibs">Baselibs</a></p></th>
+<th class="head"><p>Functional complete</p></th>
+<th class="head"><p>Done automation / rest</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Requirements Engineering</strong></p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../process_areas/requirements_engineering/requirements_workproducts.html#wp__requirements_stkh" title="wp__requirements_stkh"><em class="xref need">Stakeholder Requirements</em></a></p></td>
+<td><p><a class="reference internal" href="../../_images/harvey-75.svg"><img alt="75%" src="../../_images/harvey-75.svg" style="width: 64px; height: 64px;" /></a></p></td>
+<td><img alt="../../_images/need_pie_a87aa.svg" class="small-pie-cell" id="needpie-standards/process_reqs_list/process_status_overview-30" src="../../_images/need_pie_a87aa.svg" />
+</td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../process_areas/requirements_engineering/requirements_workproducts.html#wp__requirements_sw_platform_aou" title="wp__requirements_sw_platform_aou"><em class="xref need">SW-Platform Assumptions of Use</em></a></p></td>
+<td><p><a class="reference internal" href="../../_images/harvey-75.svg"><img alt="75%" src="../../_images/harvey-75.svg" style="width: 64px; height: 64px;" /></a></p></td>
+<td><img alt="../../_images/need_pie_d1f28.svg" class="small-pie-cell" id="needpie-standards/process_reqs_list/process_status_overview-31" src="../../_images/need_pie_d1f28.svg" />
+</td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../process_areas/requirements_engineering/requirements_workproducts.html#wp__requirements_feat" title="wp__requirements_feat"><em class="xref need">Feature Requirements</em></a></p></td>
+<td><p><a class="reference internal" href="../../_images/harvey-75.svg"><img alt="75%" src="../../_images/harvey-75.svg" style="width: 64px; height: 64px;" /></a></p></td>
+<td><img alt="../../_images/need_pie_31b24.svg" class="small-pie-cell" id="needpie-standards/process_reqs_list/process_status_overview-32" src="../../_images/need_pie_31b24.svg" />
+</td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../process_areas/requirements_engineering/requirements_workproducts.html#wp__requirements_feat_aou" title="wp__requirements_feat_aou"><em class="xref need">Feature Assumptions of Use</em></a></p></td>
+<td><p><a class="reference internal" href="../../_images/harvey-75.svg"><img alt="75%" src="../../_images/harvey-75.svg" style="width: 64px; height: 64px;" /></a></p></td>
+<td><img alt="../../_images/need_pie_de537.svg" class="small-pie-cell" id="needpie-standards/process_reqs_list/process_status_overview-33" src="../../_images/need_pie_de537.svg" />
+</td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../process_areas/requirements_engineering/requirements_workproducts.html#wp__requirements_comp" title="wp__requirements_comp"><em class="xref need">Component Requirements</em></a></p></td>
+<td><p><a class="reference internal" href="../../_images/harvey-75.svg"><img alt="75%" src="../../_images/harvey-75.svg" style="width: 64px; height: 64px;" /></a></p></td>
+<td><img alt="../../_images/need_pie_8a49f.svg" class="small-pie-cell" id="needpie-standards/process_reqs_list/process_status_overview-34" src="../../_images/need_pie_8a49f.svg" />
+</td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../process_areas/requirements_engineering/requirements_workproducts.html#wp__requirements_comp_aou" title="wp__requirements_comp_aou"><em class="xref need">Component Assumptions of Use</em></a></p></td>
+<td><p><a class="reference internal" href="../../_images/harvey-75.svg"><img alt="75%" src="../../_images/harvey-75.svg" style="width: 64px; height: 64px;" /></a></p></td>
+<td><img alt="../../_images/need_pie_b279d.svg" class="small-pie-cell" id="needpie-standards/process_reqs_list/process_status_overview-35" src="../../_images/need_pie_b279d.svg" />
+</td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../process_areas/requirements_engineering/requirements_workproducts.html#wp__requirements_proc_tool" title="wp__requirements_proc_tool"><em class="xref need">Process/Tool Requirements</em></a></p></td>
+<td><p><a class="reference internal" href="../../_images/harvey-75.svg"><img alt="75%" src="../../_images/harvey-75.svg" style="width: 64px; height: 64px;" /></a></p></td>
+<td><img alt="../../_images/need_pie_ed390.svg" class="small-pie-cell" id="needpie-standards/process_reqs_list/process_status_overview-36" src="../../_images/need_pie_ed390.svg" />
+</td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../process_areas/requirements_engineering/requirements_workproducts.html#wp__requirements_inspect" title="wp__requirements_inspect"><em class="xref need">Requirements Inspection</em></a></p></td>
+<td><p><a class="reference internal" href="../../_images/harvey-75.svg"><img alt="75%" src="../../_images/harvey-75.svg" style="width: 64px; height: 64px;" /></a></p></td>
+<td><img alt="../../_images/need_pie_78f65.svg" class="small-pie-cell" id="needpie-standards/process_reqs_list/process_status_overview-37" src="../../_images/need_pie_78f65.svg" />
+</td>
+</tr>
+<tr class="row-odd"><td><p><strong>Architecture Design</strong></p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../process_areas/architecture_design/architecture_workproducts.html#wp__platform_arch" title="wp__platform_arch"><em class="xref need">Platform Architecture</em></a></p></td>
+<td><p><a class="reference internal" href="../../_images/harvey-75.svg"><img alt="75%" src="../../_images/harvey-75.svg" style="width: 64px; height: 64px;" /></a></p></td>
+<td><p class="needs_filter_warning small-pie-cell" id="needpie-standards/process_reqs_list/process_status_overview-38">No needs passed the filters</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../process_areas/architecture_design/architecture_workproducts.html#wp__feature_arch" title="wp__feature_arch"><em class="xref need">Feature Architecture</em></a></p></td>
+<td><p><a class="reference internal" href="../../_images/harvey-75.svg"><img alt="75%" src="../../_images/harvey-75.svg" style="width: 64px; height: 64px;" /></a></p></td>
+<td><img alt="../../_images/need_pie_5bd5b.svg" class="small-pie-cell" id="needpie-standards/process_reqs_list/process_status_overview-39" src="../../_images/need_pie_5bd5b.svg" />
+</td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../process_areas/architecture_design/architecture_workproducts.html#wp__component_arch" title="wp__component_arch"><em class="xref need">Component Architecture</em></a></p></td>
+<td><p><a class="reference internal" href="../../_images/harvey-75.svg"><img alt="75%" src="../../_images/harvey-75.svg" style="width: 64px; height: 64px;" /></a></p></td>
+<td><img alt="../../_images/need_pie_63454.svg" class="small-pie-cell" id="needpie-standards/process_reqs_list/process_status_overview-40" src="../../_images/need_pie_63454.svg" />
+</td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../process_areas/architecture_design/architecture_workproducts.html#wp__sw_arch_verification" title="wp__sw_arch_verification"><em class="xref need">Architecture Verification</em></a></p></td>
+<td><p><a class="reference internal" href="../../_images/harvey-75.svg"><img alt="75%" src="../../_images/harvey-75.svg" style="width: 64px; height: 64px;" /></a></p></td>
+<td><img alt="../../_images/need_pie_e50a2.svg" class="small-pie-cell" id="needpie-standards/process_reqs_list/process_status_overview-41" src="../../_images/need_pie_e50a2.svg" />
+</td>
+</tr>
+<tr class="row-even"><td><p><strong>Implementation</strong></p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../process_areas/implementation/implementation_workproducts.html#wp__sw_development_plan" title="wp__sw_development_plan"><em class="xref need">Software Development Plan</em></a></p></td>
+<td><p><a class="reference internal" href="../../_images/harvey-100.svg"><img alt="100%" src="../../_images/harvey-100.svg" style="width: 64px; height: 64px;" /></a></p></td>
+<td><p class="needs_filter_warning small-pie-cell" id="needpie-standards/process_reqs_list/process_status_overview-42">No needs passed the filters</p>
+</td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../process_areas/implementation/implementation_workproducts.html#wp__sw_implementation" title="wp__sw_implementation"><em class="xref need">Implementation</em></a></p></td>
+<td><p><a class="reference internal" href="../../_images/harvey-100.svg"><img alt="100%" src="../../_images/harvey-100.svg" style="width: 64px; height: 64px;" /></a></p></td>
+<td><img alt="../../_images/need_pie_7d88a.svg" class="small-pie-cell" id="needpie-standards/process_reqs_list/process_status_overview-43" src="../../_images/need_pie_7d88a.svg" />
+</td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../process_areas/implementation/implementation_workproducts.html#wp__sw_implementation_inspection" title="wp__sw_implementation_inspection"><em class="xref need">Implementation Inspection</em></a></p></td>
+<td><p><a class="reference internal" href="../../_images/harvey-100.svg"><img alt="100%" src="../../_images/harvey-100.svg" style="width: 64px; height: 64px;" /></a></p></td>
+<td><img alt="../../_images/need_pie_992fe.svg" class="small-pie-cell" id="needpie-standards/process_reqs_list/process_status_overview-44" src="../../_images/need_pie_992fe.svg" />
+</td>
+</tr>
+<tr class="row-even"><td><p><strong>Verification</strong></p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../process_areas/verification/verification_workproducts.html#wp__verification_plan" title="wp__verification_plan"><em class="xref need">Verification Plan</em></a></p></td>
+<td><p><a class="reference internal" href="../../_images/harvey-0.svg"><img alt="0%" src="../../_images/harvey-0.svg" style="width: 64px; height: 64px;" /></a></p></td>
+<td><p class="needs_filter_warning small-pie-cell" id="needpie-standards/process_reqs_list/process_status_overview-45">No needs passed the filters</p>
+</td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../process_areas/verification/verification_workproducts.html#wp__verification_platform_int_test" title="wp__verification_platform_int_test"><em class="xref need">Platform Integration Test</em></a></p></td>
+<td><p><a class="reference internal" href="../../_images/harvey-100.svg"><img alt="100%" src="../../_images/harvey-100.svg" style="width: 64px; height: 64px;" /></a></p></td>
+<td><img alt="../../_images/need_pie_16634.svg" class="small-pie-cell" id="needpie-standards/process_reqs_list/process_status_overview-46" src="../../_images/need_pie_16634.svg" />
+</td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../process_areas/verification/verification_workproducts.html#wp__verification_platform_ver_report" title="wp__verification_platform_ver_report"><em class="xref need">Platform Verification Report</em></a></p></td>
+<td><p><a class="reference internal" href="../../_images/harvey-100.svg"><img alt="100%" src="../../_images/harvey-100.svg" style="width: 64px; height: 64px;" /></a></p></td>
+<td><p class="needs_filter_warning small-pie-cell" id="needpie-standards/process_reqs_list/process_status_overview-47">No needs passed the filters</p>
+</td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../process_areas/verification/verification_workproducts.html#wp__verification_feat_int_test" title="wp__verification_feat_int_test"><em class="xref need">Feature Integration test</em></a></p></td>
+<td><p><a class="reference internal" href="../../_images/harvey-100.svg"><img alt="100%" src="../../_images/harvey-100.svg" style="width: 64px; height: 64px;" /></a></p></td>
+<td><img alt="../../_images/need_pie_29065.svg" class="small-pie-cell" id="needpie-standards/process_reqs_list/process_status_overview-48" src="../../_images/need_pie_29065.svg" />
+</td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../process_areas/verification/verification_workproducts.html#wp__verification_module_ver_report" title="wp__verification_module_ver_report"><em class="xref need">Module Verification Report</em></a></p></td>
+<td><p><a class="reference internal" href="../../_images/harvey-0.svg"><img alt="0%" src="../../_images/harvey-0.svg" style="width: 64px; height: 64px;" /></a></p></td>
+<td><img alt="../../_images/need_pie_d6733.svg" class="small-pie-cell" id="needpie-standards/process_reqs_list/process_status_overview-49" src="../../_images/need_pie_d6733.svg" />
+</td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../process_areas/verification/verification_workproducts.html#wp__verification_comp_int_test" title="wp__verification_comp_int_test"><em class="xref need">Component Integration test</em></a></p></td>
+<td><p><a class="reference internal" href="../../_images/harvey-100.svg"><img alt="100%" src="../../_images/harvey-100.svg" style="width: 64px; height: 64px;" /></a></p></td>
+<td><img alt="../../_images/need_pie_1fbb0.svg" class="small-pie-cell" id="needpie-standards/process_reqs_list/process_status_overview-50" src="../../_images/need_pie_1fbb0.svg" />
+</td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../process_areas/verification/verification_workproducts.html#wp__verification_sw_unit_test" title="wp__verification_sw_unit_test"><em class="xref need">Unit test</em></a></p></td>
+<td><p><a class="reference internal" href="../../_images/harvey-100.svg"><img alt="100%" src="../../_images/harvey-100.svg" style="width: 64px; height: 64px;" /></a></p></td>
+<td><img alt="../../_images/need_pie_25c6e.svg" class="small-pie-cell" id="needpie-standards/process_reqs_list/process_status_overview-51" src="../../_images/need_pie_25c6e.svg" />
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="communication">
+<h3>Communication<a class="headerlink" href="#communication" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="module-status-table table" id="id7">
+<caption><span class="caption-number">Table 62 </span><span class="caption-text">Communication module status</span><a class="headerlink" href="#id7" title="Link to this table">#</a></caption>
+<colgroup>
+<col style="width: 50.0%" />
+<col style="width: 25.0%" />
+<col style="width: 25.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><a class="reference external" href="https://github.com/eclipse-score/communication">Communication</a></p></th>
+<th class="head"><p>Functional complete</p></th>
+<th class="head"><p>Done automation / rest</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Requirements Engineering</strong></p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../process_areas/requirements_engineering/requirements_workproducts.html#wp__requirements_stkh" title="wp__requirements_stkh"><em class="xref need">Stakeholder Requirements</em></a></p></td>
+<td><p><a class="reference internal" href="../../_images/harvey-100.svg"><img alt="100%" src="../../_images/harvey-100.svg" style="width: 64px; height: 64px;" /></a></p></td>
+<td><img alt="../../_images/need_pie_3b3e0.svg" class="small-pie-cell" id="needpie-standards/process_reqs_list/process_status_overview-52" src="../../_images/need_pie_3b3e0.svg" />
+</td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../process_areas/requirements_engineering/requirements_workproducts.html#wp__requirements_sw_platform_aou" title="wp__requirements_sw_platform_aou"><em class="xref need">SW-Platform Assumptions of Use</em></a></p></td>
+<td><p><a class="reference internal" href="../../_images/harvey-100.svg"><img alt="100%" src="../../_images/harvey-100.svg" style="width: 64px; height: 64px;" /></a></p></td>
+<td><img alt="../../_images/need_pie_f2586.svg" class="small-pie-cell" id="needpie-standards/process_reqs_list/process_status_overview-53" src="../../_images/need_pie_f2586.svg" />
+</td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../process_areas/requirements_engineering/requirements_workproducts.html#wp__requirements_feat" title="wp__requirements_feat"><em class="xref need">Feature Requirements</em></a></p></td>
+<td><p><a class="reference internal" href="../../_images/harvey-100.svg"><img alt="100%" src="../../_images/harvey-100.svg" style="width: 64px; height: 64px;" /></a></p></td>
+<td><img alt="../../_images/need_pie_08f27.svg" class="small-pie-cell" id="needpie-standards/process_reqs_list/process_status_overview-54" src="../../_images/need_pie_08f27.svg" />
+</td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../process_areas/requirements_engineering/requirements_workproducts.html#wp__requirements_feat_aou" title="wp__requirements_feat_aou"><em class="xref need">Feature Assumptions of Use</em></a></p></td>
+<td><p><a class="reference internal" href="../../_images/harvey-100.svg"><img alt="100%" src="../../_images/harvey-100.svg" style="width: 64px; height: 64px;" /></a></p></td>
+<td><img alt="../../_images/need_pie_89257.svg" class="small-pie-cell" id="needpie-standards/process_reqs_list/process_status_overview-55" src="../../_images/need_pie_89257.svg" />
+</td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../process_areas/requirements_engineering/requirements_workproducts.html#wp__requirements_comp" title="wp__requirements_comp"><em class="xref need">Component Requirements</em></a></p></td>
+<td><p><a class="reference internal" href="../../_images/harvey-100.svg"><img alt="100%" src="../../_images/harvey-100.svg" style="width: 64px; height: 64px;" /></a></p></td>
+<td><img alt="../../_images/need_pie_b9a5a.svg" class="small-pie-cell" id="needpie-standards/process_reqs_list/process_status_overview-56" src="../../_images/need_pie_b9a5a.svg" />
+</td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../process_areas/requirements_engineering/requirements_workproducts.html#wp__requirements_comp_aou" title="wp__requirements_comp_aou"><em class="xref need">Component Assumptions of Use</em></a></p></td>
+<td><p><a class="reference internal" href="../../_images/harvey-100.svg"><img alt="100%" src="../../_images/harvey-100.svg" style="width: 64px; height: 64px;" /></a></p></td>
+<td><img alt="../../_images/need_pie_bef4f.svg" class="small-pie-cell" id="needpie-standards/process_reqs_list/process_status_overview-57" src="../../_images/need_pie_bef4f.svg" />
+</td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../process_areas/requirements_engineering/requirements_workproducts.html#wp__requirements_proc_tool" title="wp__requirements_proc_tool"><em class="xref need">Process/Tool Requirements</em></a></p></td>
+<td><p><a class="reference internal" href="../../_images/harvey-100.svg"><img alt="100%" src="../../_images/harvey-100.svg" style="width: 64px; height: 64px;" /></a></p></td>
+<td><img alt="../../_images/need_pie_00be5.svg" class="small-pie-cell" id="needpie-standards/process_reqs_list/process_status_overview-58" src="../../_images/need_pie_00be5.svg" />
+</td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../process_areas/requirements_engineering/requirements_workproducts.html#wp__requirements_inspect" title="wp__requirements_inspect"><em class="xref need">Requirements Inspection</em></a></p></td>
+<td><p><a class="reference internal" href="../../_images/harvey-100.svg"><img alt="100%" src="../../_images/harvey-100.svg" style="width: 64px; height: 64px;" /></a></p></td>
+<td><img alt="../../_images/need_pie_96776.svg" class="small-pie-cell" id="needpie-standards/process_reqs_list/process_status_overview-59" src="../../_images/need_pie_96776.svg" />
+</td>
+</tr>
+<tr class="row-odd"><td><p><strong>Architecture Design</strong></p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../process_areas/architecture_design/architecture_workproducts.html#wp__platform_arch" title="wp__platform_arch"><em class="xref need">Platform Architecture</em></a></p></td>
+<td><p><a class="reference internal" href="../../_images/harvey-100.svg"><img alt="100%" src="../../_images/harvey-100.svg" style="width: 64px; height: 64px;" /></a></p></td>
+<td><p class="needs_filter_warning small-pie-cell" id="needpie-standards/process_reqs_list/process_status_overview-60">No needs passed the filters</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../process_areas/architecture_design/architecture_workproducts.html#wp__feature_arch" title="wp__feature_arch"><em class="xref need">Feature Architecture</em></a></p></td>
+<td><p><a class="reference internal" href="../../_images/harvey-100.svg"><img alt="100%" src="../../_images/harvey-100.svg" style="width: 64px; height: 64px;" /></a></p></td>
+<td><img alt="../../_images/need_pie_ec5db.svg" class="small-pie-cell" id="needpie-standards/process_reqs_list/process_status_overview-61" src="../../_images/need_pie_ec5db.svg" />
+</td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../process_areas/architecture_design/architecture_workproducts.html#wp__component_arch" title="wp__component_arch"><em class="xref need">Component Architecture</em></a></p></td>
+<td><p><a class="reference internal" href="../../_images/harvey-100.svg"><img alt="100%" src="../../_images/harvey-100.svg" style="width: 64px; height: 64px;" /></a></p></td>
+<td><img alt="../../_images/need_pie_10ce7.svg" class="small-pie-cell" id="needpie-standards/process_reqs_list/process_status_overview-62" src="../../_images/need_pie_10ce7.svg" />
+</td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../process_areas/architecture_design/architecture_workproducts.html#wp__sw_arch_verification" title="wp__sw_arch_verification"><em class="xref need">Architecture Verification</em></a></p></td>
+<td><p><a class="reference internal" href="../../_images/harvey-100.svg"><img alt="100%" src="../../_images/harvey-100.svg" style="width: 64px; height: 64px;" /></a></p></td>
+<td><img alt="../../_images/need_pie_455b3.svg" class="small-pie-cell" id="needpie-standards/process_reqs_list/process_status_overview-63" src="../../_images/need_pie_455b3.svg" />
+</td>
+</tr>
+<tr class="row-even"><td><p><strong>Implementation</strong></p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../process_areas/implementation/implementation_workproducts.html#wp__sw_development_plan" title="wp__sw_development_plan"><em class="xref need">Software Development Plan</em></a></p></td>
+<td><p><a class="reference internal" href="../../_images/harvey-100.svg"><img alt="100%" src="../../_images/harvey-100.svg" style="width: 64px; height: 64px;" /></a></p></td>
+<td><p class="needs_filter_warning small-pie-cell" id="needpie-standards/process_reqs_list/process_status_overview-64">No needs passed the filters</p>
+</td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../process_areas/implementation/implementation_workproducts.html#wp__sw_implementation" title="wp__sw_implementation"><em class="xref need">Implementation</em></a></p></td>
+<td><p><a class="reference internal" href="../../_images/harvey-100.svg"><img alt="100%" src="../../_images/harvey-100.svg" style="width: 64px; height: 64px;" /></a></p></td>
+<td><img alt="../../_images/need_pie_e5fbd.svg" class="small-pie-cell" id="needpie-standards/process_reqs_list/process_status_overview-65" src="../../_images/need_pie_e5fbd.svg" />
+</td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../process_areas/implementation/implementation_workproducts.html#wp__sw_implementation_inspection" title="wp__sw_implementation_inspection"><em class="xref need">Implementation Inspection</em></a></p></td>
+<td><p><a class="reference internal" href="../../_images/harvey-100.svg"><img alt="100%" src="../../_images/harvey-100.svg" style="width: 64px; height: 64px;" /></a></p></td>
+<td><img alt="../../_images/need_pie_245f5.svg" class="small-pie-cell" id="needpie-standards/process_reqs_list/process_status_overview-66" src="../../_images/need_pie_245f5.svg" />
+</td>
+</tr>
+<tr class="row-even"><td><p><strong>Verification</strong></p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../process_areas/verification/verification_workproducts.html#wp__verification_plan" title="wp__verification_plan"><em class="xref need">Verification Plan</em></a></p></td>
+<td><p><a class="reference internal" href="../../_images/harvey-100.svg"><img alt="100%" src="../../_images/harvey-100.svg" style="width: 64px; height: 64px;" /></a></p></td>
+<td><p class="needs_filter_warning small-pie-cell" id="needpie-standards/process_reqs_list/process_status_overview-67">No needs passed the filters</p>
+</td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../process_areas/verification/verification_workproducts.html#wp__verification_platform_int_test" title="wp__verification_platform_int_test"><em class="xref need">Platform Integration Test</em></a></p></td>
+<td><p><a class="reference internal" href="../../_images/harvey-100.svg"><img alt="100%" src="../../_images/harvey-100.svg" style="width: 64px; height: 64px;" /></a></p></td>
+<td><img alt="../../_images/need_pie_99b58.svg" class="small-pie-cell" id="needpie-standards/process_reqs_list/process_status_overview-68" src="../../_images/need_pie_99b58.svg" />
+</td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../process_areas/verification/verification_workproducts.html#wp__verification_platform_ver_report" title="wp__verification_platform_ver_report"><em class="xref need">Platform Verification Report</em></a></p></td>
+<td><p><a class="reference internal" href="../../_images/harvey-100.svg"><img alt="100%" src="../../_images/harvey-100.svg" style="width: 64px; height: 64px;" /></a></p></td>
+<td><p class="needs_filter_warning small-pie-cell" id="needpie-standards/process_reqs_list/process_status_overview-69">No needs passed the filters</p>
+</td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../process_areas/verification/verification_workproducts.html#wp__verification_feat_int_test" title="wp__verification_feat_int_test"><em class="xref need">Feature Integration test</em></a></p></td>
+<td><p><a class="reference internal" href="../../_images/harvey-100.svg"><img alt="100%" src="../../_images/harvey-100.svg" style="width: 64px; height: 64px;" /></a></p></td>
+<td><img alt="../../_images/need_pie_03773.svg" class="small-pie-cell" id="needpie-standards/process_reqs_list/process_status_overview-70" src="../../_images/need_pie_03773.svg" />
+</td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../process_areas/verification/verification_workproducts.html#wp__verification_module_ver_report" title="wp__verification_module_ver_report"><em class="xref need">Module Verification Report</em></a></p></td>
+<td><p><a class="reference internal" href="../../_images/harvey-100.svg"><img alt="100%" src="../../_images/harvey-100.svg" style="width: 64px; height: 64px;" /></a></p></td>
+<td><img alt="../../_images/need_pie_45462.svg" class="small-pie-cell" id="needpie-standards/process_reqs_list/process_status_overview-71" src="../../_images/need_pie_45462.svg" />
+</td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../process_areas/verification/verification_workproducts.html#wp__verification_comp_int_test" title="wp__verification_comp_int_test"><em class="xref need">Component Integration test</em></a></p></td>
+<td><p><a class="reference internal" href="../../_images/harvey-100.svg"><img alt="100%" src="../../_images/harvey-100.svg" style="width: 64px; height: 64px;" /></a></p></td>
+<td><img alt="../../_images/need_pie_e65f6.svg" class="small-pie-cell" id="needpie-standards/process_reqs_list/process_status_overview-72" src="../../_images/need_pie_e65f6.svg" />
+</td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../process_areas/verification/verification_workproducts.html#wp__verification_sw_unit_test" title="wp__verification_sw_unit_test"><em class="xref need">Unit test</em></a></p></td>
+<td><p><a class="reference internal" href="../../_images/harvey-100.svg"><img alt="100%" src="../../_images/harvey-100.svg" style="width: 64px; height: 64px;" /></a></p></td>
+<td><img alt="../../_images/need_pie_4a571.svg" class="small-pie-cell" id="needpie-standards/process_reqs_list/process_status_overview-73" src="../../_images/need_pie_4a571.svg" />
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="logging">
+<h3>Logging<a class="headerlink" href="#logging" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="module-status-table table" id="id8">
+<caption><span class="caption-number">Table 63 </span><span class="caption-text">Logging module status</span><a class="headerlink" href="#id8" title="Link to this table">#</a></caption>
+<colgroup>
+<col style="width: 50.0%" />
+<col style="width: 25.0%" />
+<col style="width: 25.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><a class="reference external" href="https://github.com/eclipse-score/logging">Logging</a></p></th>
+<th class="head"><p>Functional complete</p></th>
+<th class="head"><p>Done automation / rest</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Requirements Engineering</strong></p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../process_areas/requirements_engineering/requirements_workproducts.html#wp__requirements_stkh" title="wp__requirements_stkh"><em class="xref need">Stakeholder Requirements</em></a></p></td>
+<td><p><a class="reference internal" href="../../_images/harvey-50.svg"><img alt="50%" src="../../_images/harvey-50.svg" style="width: 64px; height: 64px;" /></a></p></td>
+<td><img alt="../../_images/need_pie_c3e89.svg" class="small-pie-cell" id="needpie-standards/process_reqs_list/process_status_overview-74" src="../../_images/need_pie_c3e89.svg" />
+</td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../process_areas/requirements_engineering/requirements_workproducts.html#wp__requirements_sw_platform_aou" title="wp__requirements_sw_platform_aou"><em class="xref need">SW-Platform Assumptions of Use</em></a></p></td>
+<td><p><a class="reference internal" href="../../_images/harvey-50.svg"><img alt="50%" src="../../_images/harvey-50.svg" style="width: 64px; height: 64px;" /></a></p></td>
+<td><img alt="../../_images/need_pie_752ce.svg" class="small-pie-cell" id="needpie-standards/process_reqs_list/process_status_overview-75" src="../../_images/need_pie_752ce.svg" />
+</td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../process_areas/requirements_engineering/requirements_workproducts.html#wp__requirements_feat" title="wp__requirements_feat"><em class="xref need">Feature Requirements</em></a></p></td>
+<td><p><a class="reference internal" href="../../_images/harvey-50.svg"><img alt="50%" src="../../_images/harvey-50.svg" style="width: 64px; height: 64px;" /></a></p></td>
+<td><img alt="../../_images/need_pie_87073.svg" class="small-pie-cell" id="needpie-standards/process_reqs_list/process_status_overview-76" src="../../_images/need_pie_87073.svg" />
+</td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../process_areas/requirements_engineering/requirements_workproducts.html#wp__requirements_feat_aou" title="wp__requirements_feat_aou"><em class="xref need">Feature Assumptions of Use</em></a></p></td>
+<td><p><a class="reference internal" href="../../_images/harvey-50.svg"><img alt="50%" src="../../_images/harvey-50.svg" style="width: 64px; height: 64px;" /></a></p></td>
+<td><img alt="../../_images/need_pie_5b1ee.svg" class="small-pie-cell" id="needpie-standards/process_reqs_list/process_status_overview-77" src="../../_images/need_pie_5b1ee.svg" />
+</td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../process_areas/requirements_engineering/requirements_workproducts.html#wp__requirements_comp" title="wp__requirements_comp"><em class="xref need">Component Requirements</em></a></p></td>
+<td><p><a class="reference internal" href="../../_images/harvey-50.svg"><img alt="50%" src="../../_images/harvey-50.svg" style="width: 64px; height: 64px;" /></a></p></td>
+<td><img alt="../../_images/need_pie_8e267.svg" class="small-pie-cell" id="needpie-standards/process_reqs_list/process_status_overview-78" src="../../_images/need_pie_8e267.svg" />
+</td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../process_areas/requirements_engineering/requirements_workproducts.html#wp__requirements_comp_aou" title="wp__requirements_comp_aou"><em class="xref need">Component Assumptions of Use</em></a></p></td>
+<td><p><a class="reference internal" href="../../_images/harvey-50.svg"><img alt="50%" src="../../_images/harvey-50.svg" style="width: 64px; height: 64px;" /></a></p></td>
+<td><img alt="../../_images/need_pie_2c2ea.svg" class="small-pie-cell" id="needpie-standards/process_reqs_list/process_status_overview-79" src="../../_images/need_pie_2c2ea.svg" />
+</td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../process_areas/requirements_engineering/requirements_workproducts.html#wp__requirements_proc_tool" title="wp__requirements_proc_tool"><em class="xref need">Process/Tool Requirements</em></a></p></td>
+<td><p><a class="reference internal" href="../../_images/harvey-50.svg"><img alt="50%" src="../../_images/harvey-50.svg" style="width: 64px; height: 64px;" /></a></p></td>
+<td><img alt="../../_images/need_pie_dc59c.svg" class="small-pie-cell" id="needpie-standards/process_reqs_list/process_status_overview-80" src="../../_images/need_pie_dc59c.svg" />
+</td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../process_areas/requirements_engineering/requirements_workproducts.html#wp__requirements_inspect" title="wp__requirements_inspect"><em class="xref need">Requirements Inspection</em></a></p></td>
+<td><p><a class="reference internal" href="../../_images/harvey-50.svg"><img alt="50%" src="../../_images/harvey-50.svg" style="width: 64px; height: 64px;" /></a></p></td>
+<td><img alt="../../_images/need_pie_721b8.svg" class="small-pie-cell" id="needpie-standards/process_reqs_list/process_status_overview-81" src="../../_images/need_pie_721b8.svg" />
+</td>
+</tr>
+<tr class="row-odd"><td><p><strong>Architecture Design</strong></p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../process_areas/architecture_design/architecture_workproducts.html#wp__platform_arch" title="wp__platform_arch"><em class="xref need">Platform Architecture</em></a></p></td>
+<td><p><a class="reference internal" href="../../_images/harvey-50.svg"><img alt="50%" src="../../_images/harvey-50.svg" style="width: 64px; height: 64px;" /></a></p></td>
+<td><p class="needs_filter_warning small-pie-cell" id="needpie-standards/process_reqs_list/process_status_overview-82">No needs passed the filters</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../process_areas/architecture_design/architecture_workproducts.html#wp__feature_arch" title="wp__feature_arch"><em class="xref need">Feature Architecture</em></a></p></td>
+<td><p><a class="reference internal" href="../../_images/harvey-50.svg"><img alt="50%" src="../../_images/harvey-50.svg" style="width: 64px; height: 64px;" /></a></p></td>
+<td><img alt="../../_images/need_pie_c9e73.svg" class="small-pie-cell" id="needpie-standards/process_reqs_list/process_status_overview-83" src="../../_images/need_pie_c9e73.svg" />
+</td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../process_areas/architecture_design/architecture_workproducts.html#wp__component_arch" title="wp__component_arch"><em class="xref need">Component Architecture</em></a></p></td>
+<td><p><a class="reference internal" href="../../_images/harvey-50.svg"><img alt="50%" src="../../_images/harvey-50.svg" style="width: 64px; height: 64px;" /></a></p></td>
+<td><img alt="../../_images/need_pie_f2b16.svg" class="small-pie-cell" id="needpie-standards/process_reqs_list/process_status_overview-84" src="../../_images/need_pie_f2b16.svg" />
+</td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../process_areas/architecture_design/architecture_workproducts.html#wp__sw_arch_verification" title="wp__sw_arch_verification"><em class="xref need">Architecture Verification</em></a></p></td>
+<td><p><a class="reference internal" href="../../_images/harvey-50.svg"><img alt="50%" src="../../_images/harvey-50.svg" style="width: 64px; height: 64px;" /></a></p></td>
+<td><img alt="../../_images/need_pie_e5653.svg" class="small-pie-cell" id="needpie-standards/process_reqs_list/process_status_overview-85" src="../../_images/need_pie_e5653.svg" />
+</td>
+</tr>
+<tr class="row-even"><td><p><strong>Implementation</strong></p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../process_areas/implementation/implementation_workproducts.html#wp__sw_development_plan" title="wp__sw_development_plan"><em class="xref need">Software Development Plan</em></a></p></td>
+<td><p><a class="reference internal" href="../../_images/harvey-100.svg"><img alt="100%" src="../../_images/harvey-100.svg" style="width: 64px; height: 64px;" /></a></p></td>
+<td><p class="needs_filter_warning small-pie-cell" id="needpie-standards/process_reqs_list/process_status_overview-86">No needs passed the filters</p>
+</td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../process_areas/implementation/implementation_workproducts.html#wp__sw_implementation" title="wp__sw_implementation"><em class="xref need">Implementation</em></a></p></td>
+<td><p><a class="reference internal" href="../../_images/harvey-100.svg"><img alt="100%" src="../../_images/harvey-100.svg" style="width: 64px; height: 64px;" /></a></p></td>
+<td><img alt="../../_images/need_pie_2e3ff.svg" class="small-pie-cell" id="needpie-standards/process_reqs_list/process_status_overview-87" src="../../_images/need_pie_2e3ff.svg" />
+</td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../process_areas/implementation/implementation_workproducts.html#wp__sw_implementation_inspection" title="wp__sw_implementation_inspection"><em class="xref need">Implementation Inspection</em></a></p></td>
+<td><p><a class="reference internal" href="../../_images/harvey-100.svg"><img alt="100%" src="../../_images/harvey-100.svg" style="width: 64px; height: 64px;" /></a></p></td>
+<td><img alt="../../_images/need_pie_002dc.svg" class="small-pie-cell" id="needpie-standards/process_reqs_list/process_status_overview-88" src="../../_images/need_pie_002dc.svg" />
+</td>
+</tr>
+<tr class="row-even"><td><p><strong>Verification</strong></p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../process_areas/verification/verification_workproducts.html#wp__verification_plan" title="wp__verification_plan"><em class="xref need">Verification Plan</em></a></p></td>
+<td><p><a class="reference internal" href="../../_images/harvey-0.svg"><img alt="0%" src="../../_images/harvey-0.svg" style="width: 64px; height: 64px;" /></a></p></td>
+<td><p class="needs_filter_warning small-pie-cell" id="needpie-standards/process_reqs_list/process_status_overview-89">No needs passed the filters</p>
+</td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../process_areas/verification/verification_workproducts.html#wp__verification_platform_int_test" title="wp__verification_platform_int_test"><em class="xref need">Platform Integration Test</em></a></p></td>
+<td><p><a class="reference internal" href="../../_images/harvey-25.svg"><img alt="25%" src="../../_images/harvey-25.svg" style="width: 64px; height: 64px;" /></a></p></td>
+<td><img alt="../../_images/need_pie_2d407.svg" class="small-pie-cell" id="needpie-standards/process_reqs_list/process_status_overview-90" src="../../_images/need_pie_2d407.svg" />
+</td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../process_areas/verification/verification_workproducts.html#wp__verification_platform_ver_report" title="wp__verification_platform_ver_report"><em class="xref need">Platform Verification Report</em></a></p></td>
+<td><p><a class="reference internal" href="../../_images/harvey-0.svg"><img alt="0%" src="../../_images/harvey-0.svg" style="width: 64px; height: 64px;" /></a></p></td>
+<td><p class="needs_filter_warning small-pie-cell" id="needpie-standards/process_reqs_list/process_status_overview-91">No needs passed the filters</p>
+</td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../process_areas/verification/verification_workproducts.html#wp__verification_feat_int_test" title="wp__verification_feat_int_test"><em class="xref need">Feature Integration test</em></a></p></td>
+<td><p><a class="reference internal" href="../../_images/harvey-25.svg"><img alt="25%" src="../../_images/harvey-25.svg" style="width: 64px; height: 64px;" /></a></p></td>
+<td><img alt="../../_images/need_pie_1ad27.svg" class="small-pie-cell" id="needpie-standards/process_reqs_list/process_status_overview-92" src="../../_images/need_pie_1ad27.svg" />
+</td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../process_areas/verification/verification_workproducts.html#wp__verification_module_ver_report" title="wp__verification_module_ver_report"><em class="xref need">Module Verification Report</em></a></p></td>
+<td><p><a class="reference internal" href="../../_images/harvey-0.svg"><img alt="0%" src="../../_images/harvey-0.svg" style="width: 64px; height: 64px;" /></a></p></td>
+<td><img alt="../../_images/need_pie_7dc8f.svg" class="small-pie-cell" id="needpie-standards/process_reqs_list/process_status_overview-93" src="../../_images/need_pie_7dc8f.svg" />
+</td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../process_areas/verification/verification_workproducts.html#wp__verification_comp_int_test" title="wp__verification_comp_int_test"><em class="xref need">Component Integration test</em></a></p></td>
+<td><p><a class="reference internal" href="../../_images/harvey-0.svg"><img alt="0%" src="../../_images/harvey-0.svg" style="width: 64px; height: 64px;" /></a></p></td>
+<td><img alt="../../_images/need_pie_2df0c.svg" class="small-pie-cell" id="needpie-standards/process_reqs_list/process_status_overview-94" src="../../_images/need_pie_2df0c.svg" />
+</td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../process_areas/verification/verification_workproducts.html#wp__verification_sw_unit_test" title="wp__verification_sw_unit_test"><em class="xref need">Unit test</em></a></p></td>
+<td><p><a class="reference internal" href="../../_images/harvey-0.svg"><img alt="0%" src="../../_images/harvey-0.svg" style="width: 64px; height: 64px;" /></a></p></td>
+<td><img alt="../../_images/need_pie_e82ff.svg" class="small-pie-cell" id="needpie-standards/process_reqs_list/process_status_overview-95" src="../../_images/need_pie_e82ff.svg" />
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+</section>
+
+
+                </article>
+              
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="module_compact_overview.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Module Status Overview (Compact)</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="process_area_overview_table.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Process Area Overview</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../../_static/scripts/bootstrap.js?digest=7f76b32a3354e82990f2"></script>
+<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=7f76b32a3354e82990f2"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+
+  <p class="sphinx-version">
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 9.1.0.
+    <br/>
+  </p>
+</div>
+      
+    </div>
+  
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item">
+<p class="theme-version">
+  <!-- # L10n: Setting the PST URL as an argument as this does not need to be localized -->
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.17.0.
+</p></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>

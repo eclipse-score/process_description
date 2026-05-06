@@ -1,0 +1,1362 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Process Requirement Status by Process Area &#8212; Process Description  documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=7f76b32a3354e82990f2" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=7f76b32a3354e82990f2" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=4ae1632d" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/score.css?v=6e51530f" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/score_needs.css?v=1f5dae2a" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/score_design.css?v=d9fd870c" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-data-viewer/jsonview.bundle.css?v=f6ef2277" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/libs/html/datatables.min.css?v=4b4fd840" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/common_css/need_core.css?v=f5b60a78" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/common_css/need_toggle.css?v=5c6620df" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/common_css/needstable.css?v=5e1b6797" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/common_css/need_links.css?v=2150a916" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/common_css/need_style.css?v=92936fa5" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/modern.css?v=803738c0" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=be9cac1b" />
+  
+  <!-- So that users can add custom icons -->
+  <script defer src="../../_static/scripts/fontawesome.js?digest=7f76b32a3354e82990f2"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=7f76b32a3354e82990f2" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=7f76b32a3354e82990f2" />
+
+    <script src="../../_static/jquery.js?v=5d32c60e"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+    <script src="../../_static/documentation_options.js?v=7f41d439"></script>
+    <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script src="../../_static/sphinx-data-viewer/jsonview.bundle.js?v=18cd53c5"></script>
+    <script src="../../_static/sphinx-data-viewer/jsonview_loader.js?v=f7ff7e7d"></script>
+    <script src="../../_static/sphinx-needs/libs/html/datatables.min.js?v=8a4aee21"></script>
+    <script src="../../_static/sphinx-needs/libs/html/datatables_loader.js?v=a2cae175"></script>
+    <script src="../../_static/sphinx-needs/libs/html/sphinx_needs_collapse.js?v=dca66431"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'standards/process_reqs_list/process_area_status_summary';</script>
+    <script>
+        DOCUMENTATION_OPTIONS.theme_version = '0.17.0';
+        DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://eclipse-score.github.io/process_description/versions.json';
+        DOCUMENTATION_OPTIONS.theme_switcher_version_match = '';
+        DOCUMENTATION_OPTIONS.show_version_warning_banner =
+            false;
+        </script>
+    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Process Area Status Overview (Compact)" href="process_area_compact_overview.html" />
+    <link rel="prev" title="Process Requirements List" href="index.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="0.1" />
+  
+    
+    <script src="../../_static/searchtools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <script src="../../searchindex.js"></script>
+  
+  </head>
+  <body data-default-mode="">
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-3 navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../index.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">Eclipse S-CORE</p>
+  
+</a></div>
+    
+  </div>
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../introduction/index.html">
+    Introduction
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../general_concepts/index.html">
+    General concepts
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../process_areas/index.html">
+    Process areas
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../roles/index.html">
+    Roles
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../workproducts/index.html">
+    Work products
+  </a>
+</li>
+
+            <li class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button"
+                data-bs-toggle="dropdown" aria-expanded="false"
+                aria-controls="pst-nav-more-links">
+                    More
+                </button>
+                <ul id="pst-nav-more-links" class="dropdown-menu">
+                    
+<li class=" ">
+  <a class="nav-link dropdown-item nav-internal" href="../../workflows/index.html">
+    Workflows
+  </a>
+</li>
+
+
+<li class=" current active">
+  <a class="nav-link dropdown-item nav-internal" href="../index.html">
+    Standards & Requirements
+  </a>
+</li>
+
+
+<li class=" ">
+  <a class="nav-link dropdown-item nav-internal" href="../../trustable/index.html">
+    Trustable Software Framework
+  </a>
+</li>
+
+
+<li class=" ">
+  <a class="nav-link dropdown-item nav-internal" href="../../folder_templates/index.html">
+    Folder Templates
+  </a>
+</li>
+
+
+<li class=" ">
+  <a class="nav-link dropdown-item nav-internal" href="../../glossary/index.html">
+    Glossary
+  </a>
+</li>
+
+
+<li class=" ">
+  <a class="nav-link dropdown-item nav-internal" href="../../release_notes/index.html">
+    Release notes
+  </a>
+</li>
+
+                </ul>
+            </li>
+            
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+        <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+      
+        <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/eclipse-score" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+</ul></div>
+      
+        <div class="navbar-item">
+<div class="version-switcher__container dropdown pst-js-only">
+  <button id="pst-version-switcher-button-2"
+    type="button"
+    class="version-switcher__button btn btn-sm dropdown-toggle"
+    data-bs-toggle="dropdown"
+    aria-haspopup="listbox"
+    aria-controls="pst-version-switcher-list-2"
+    aria-label="Version switcher list"
+  >
+    Choose version  <!-- this text may get changed later by javascript -->
+    <span class="caret"></span>
+  </button>
+  <div id="pst-version-switcher-list-2"
+    class="version-switcher__menu dropdown-menu list-group-flush py-0"
+    role="listbox" aria-labelledby="pst-version-switcher-button-2">
+    <!-- dropdown will be populated by javascript on page load -->
+  </div>
+</div></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          
+          
+            <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../introduction/index.html">
+    Introduction
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../general_concepts/index.html">
+    General concepts
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../process_areas/index.html">
+    Process areas
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../roles/index.html">
+    Roles
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../workproducts/index.html">
+    Work products
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../workflows/index.html">
+    Workflows
+  </a>
+</li>
+
+
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="../index.html">
+    Standards & Requirements
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../trustable/index.html">
+    Trustable Software Framework
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../folder_templates/index.html">
+    Folder Templates
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../glossary/index.html">
+    Glossary
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../release_notes/index.html">
+    Release notes
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+          
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+        
+          <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/eclipse-score" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+</ul></div>
+        
+          <div class="navbar-item">
+<div class="version-switcher__container dropdown pst-js-only">
+  <button id="pst-version-switcher-button-3"
+    type="button"
+    class="version-switcher__button btn btn-sm dropdown-toggle"
+    data-bs-toggle="dropdown"
+    aria-haspopup="listbox"
+    aria-controls="pst-version-switcher-list-3"
+    aria-label="Version switcher list"
+  >
+    Choose version  <!-- this text may get changed later by javascript -->
+    <span class="caret"></span>
+  </button>
+  <div id="pst-version-switcher-list-3"
+    class="version-switcher__menu dropdown-menu list-group-flush py-0"
+    role="listbox" aria-labelledby="pst-version-switcher-button-3">
+    <!-- dropdown will be populated by javascript on page load -->
+  </div>
+</div></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item pst-sidebar-collapse"><button id="pst-collapse-sidebar-button" aria-expanded="true" aria-controls="pst-primary-sidebar"><svg class="pst-icon svg-inline--fa" role="img" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+    <path fill="currentColor" d="M3 15.5C2.36232 15.5 1.74874 15.2564 1.28478 14.8189C0.820828 14.3815 0.541576 13.7832 0.504167 13.1467L0.5 13L0.5 3C0.499965 2.36232 0.743605 1.74874 1.18107 1.28478C1.61854 0.820828 2.21676 0.541576 2.85333 0.504167L3 0.5L13 0.5C13.6377 0.499965 14.2513 0.743605 14.7152 1.18107C15.1792 1.61854 15.4584 2.21676 15.4958 2.85333L15.5 3L15.5 13C15.5 13.6377 15.2564 14.2513 14.8189 14.7152C14.3815 15.1792 13.7832 15.4584 13.1467 15.4958L13 15.5L3 15.5ZM3 13.8333L10.5 13.8333L10.5 2.16667L3 2.16667C2.79589 2.16669 2.59889 2.24163 2.44636 2.37726C2.29383 2.5129 2.19638 2.69979 2.1725 2.9025L2.16667 3L2.16667 13C2.16669 13.2041 2.24163 13.4011 2.37726 13.5536C2.5129 13.7062 2.69979 13.8036 2.9025 13.8275L3 13.8333ZM6.65583 10.325L6.5775 10.2558L4.91083 8.58917C4.76735 8.44567 4.68116 8.25476 4.66843 8.05223C4.65569 7.84971 4.71729 7.6495 4.84167 7.48917L4.91083 7.41083L6.5775 5.74417C6.72747 5.59471 6.9287 5.50794 7.14032 5.50148C7.35194 5.49502 7.55809 5.56935 7.7169 5.70937C7.8757 5.8494 7.97525 6.04463 7.99533 6.25539C8.01541 6.46616 7.95451 6.67667 7.825 6.84417L7.75583 6.9225L6.67917 8L7.75583 9.0775C7.89931 9.22099 7.98551 9.41191 7.99824 9.61443C8.01097 9.81695 7.94938 10.0172 7.825 10.1775L7.75583 10.2558C7.61234 10.3993 7.42142 10.4855 7.2189 10.4982C7.01638 10.511 6.81617 10.4494 6.65583 10.325Z"/>
+  </svg>
+  <span class="pst-collapse-sidebar-label">Collapse Sidebar</span>
+  <span class="pst-expand-sidebar-label">Expand Sidebar</span>
+</button></div>
+        <div class="sidebar-primary-item">
+
+<nav class="bd-docs-nav bd-links"
+     aria-label="Section Navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
+  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../iso26262/iso26262.html">ISO 26262</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../isopas8926/isopas8926.html">ISO PAS 8926</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../aspice_40/aspice.html">ASPICE 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../isosae21434/isosae21434.html">ISO/SAE 21434:2021(E)</a></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">Process Requirements List</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Process Requirement Status by Process Area</a></li>
+<li class="toctree-l2"><a class="reference internal" href="process_area_compact_overview.html">Process Area Status Overview (Compact)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="module_compact_overview.html">Module Status Overview (Compact)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="process_status_overview.html">Process Status Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="process_area_overview_table.html">Process Area Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tooling_table.html">Tooling Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="wp_status_table.html">Work Product Process Overview</a></li>
+</ul>
+</details></li>
+</ul>
+</div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+<nav aria-label="Breadcrumb" class="d-print-none">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    
+    <li class="breadcrumb-item"><a href="../index.html" class="nav-link">Standards &amp; Requirements</a></li>
+    
+    
+    <li class="breadcrumb-item"><a href="index.html" class="nav-link">Process Requirements List</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Process Requirement Status by Process Area</span></li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="process-requirement-status-by-process-area">
+<span id="process-req-area-status-summary"></span><h1>Process Requirement Status by Process Area<a class="headerlink" href="#process-requirement-status-by-process-area" title="Link to this heading">#</a></h1>
+<p>The table below summarizes all internal <code class="docutils literal notranslate"><span class="pre">gd_req</span></code> needs found in each process area.
+The charts are calculated dynamically during the Sphinx build via sphinx-needs
+filters.</p>
+<p>Color mapping:</p>
+<ul class="simple">
+<li><p>Green: valid</p></li>
+<li><p>Gold: draft</p></li>
+<li><p>Red: invalid</p></li>
+<li><p>Gray: other</p></li>
+</ul>
+<div class="pst-scrollable-table-container"><table class="table" id="id1">
+<caption><span class="caption-number">Table 54 </span><span class="caption-text">Process requirement status overview</span><a class="headerlink" href="#id1" title="Link to this table">#</a></caption>
+<colgroup>
+<col style="width: 20.0%" />
+<col style="width: 40.0%" />
+<col style="width: 40.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Process area</p></th>
+<th class="head"><p>Process req. status</p></th>
+<th class="head"><p>Referenced std_req status</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Requirements Engineering</p></td>
+<td><img alt="../../_images/need_pie_d9c58.svg" id="needpie-standards/process_reqs_list/process_area_status_summary-0" src="../../_images/need_pie_d9c58.svg" />
+</td>
+<td><img alt="../../_images/need_pie_ef1fe.svg" id="needpie-standards/process_reqs_list/process_area_status_summary-1" src="../../_images/need_pie_ef1fe.svg" />
+</td>
+</tr>
+<tr class="row-odd"><td><p>Architecture Design</p></td>
+<td><img alt="../../_images/need_pie_8ca1c.svg" id="needpie-standards/process_reqs_list/process_area_status_summary-2" src="../../_images/need_pie_8ca1c.svg" />
+</td>
+<td><img alt="../../_images/need_pie_a2031.svg" id="needpie-standards/process_reqs_list/process_area_status_summary-3" src="../../_images/need_pie_a2031.svg" />
+</td>
+</tr>
+<tr class="row-even"><td><p>Implementation</p></td>
+<td><img alt="../../_images/need_pie_02968.svg" id="needpie-standards/process_reqs_list/process_area_status_summary-4" src="../../_images/need_pie_02968.svg" />
+</td>
+<td><img alt="../../_images/need_pie_cec71.svg" id="needpie-standards/process_reqs_list/process_area_status_summary-5" src="../../_images/need_pie_cec71.svg" />
+</td>
+</tr>
+<tr class="row-odd"><td><p>Verification</p></td>
+<td><img alt="../../_images/need_pie_03bbb.svg" id="needpie-standards/process_reqs_list/process_area_status_summary-6" src="../../_images/need_pie_03bbb.svg" />
+</td>
+<td><img alt="../../_images/need_pie_a2403.svg" id="needpie-standards/process_reqs_list/process_area_status_summary-7" src="../../_images/need_pie_a2403.svg" />
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<section id="referenced-std-req-needs-in-other-category">
+<h2>Referenced std_req Needs in “Other” Category<a class="headerlink" href="#referenced-std-req-needs-in-other-category" title="Link to this heading">#</a></h2>
+<p>The following <code class="docutils literal notranslate"><span class="pre">std_req</span></code> needs are referenced via <code class="docutils literal notranslate"><span class="pre">complies</span></code> from process
+requirements but carry none of the recognized tags (<code class="docutils literal notranslate"><span class="pre">ok</span></code>, <code class="docutils literal notranslate"><span class="pre">recommendation</span></code>,
+<code class="docutils literal notranslate"><span class="pre">open</span></code>, <code class="docutils literal notranslate"><span class="pre">action</span></code>, <code class="docutils literal notranslate"><span class="pre">deviation</span></code>, <code class="docutils literal notranslate"><span class="pre">n/a</span></code>).
+The actual tags of each need are shown in brackets.</p>
+<div class="line-block" id="needlist-standards/process_reqs_list/process_area_status_summary-0">
+<div class="line"><a class="reference external" href="../iso26262/iso26262.html#std_req__iso26262__analysis_742">std_req__iso26262__analysis_742: analysis_742</a></div>
+<div class="line"><a class="reference external" href="../iso26262/iso26262.html#std_req__iso26262__analysis_746">std_req__iso26262__analysis_746: analysis_746</a></div>
+<div class="line"><a class="reference external" href="../iso26262/iso26262.html#std_req__iso26262__analysis_747">std_req__iso26262__analysis_747: analysis_747</a></div>
+<div class="line"><a class="reference external" href="../iso26262/iso26262.html#std_req__iso26262__analysis_749">std_req__iso26262__analysis_749: analysis_749</a></div>
+<div class="line"><a class="reference external" href="../iso26262/iso26262.html#std_req__iso26262__analysis_842">std_req__iso26262__analysis_842: analysis_842</a></div>
+<div class="line"><a class="reference external" href="../iso26262/iso26262.html#std_req__iso26262__analysis_844">std_req__iso26262__analysis_844: analysis_844</a></div>
+<div class="line"><a class="reference external" href="../iso26262/iso26262.html#std_req__iso26262__analysis_845">std_req__iso26262__analysis_845: analysis_845</a></div>
+<div class="line"><a class="reference external" href="../iso26262/iso26262.html#std_req__iso26262__analysis_848">std_req__iso26262__analysis_848: analysis_848</a></div>
+</div>
+</section>
+<section id="work-products-by-process-area">
+<h2>Work Products by Process Area<a class="headerlink" href="#work-products-by-process-area" title="Link to this heading">#</a></h2>
+<p>The table below lists the official work products defined per process area.</p>
+<div class="pst-scrollable-table-container"><table class="table" id="id2">
+<caption><span class="caption-number">Table 55 </span><span class="caption-text">Work product overview by process area</span><a class="headerlink" href="#id2" title="Link to this table">#</a></caption>
+<colgroup>
+<col style="width: 28.0%" />
+<col style="width: 72.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Process area</p></th>
+<th class="head"><p>Work products</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Requirements Engineering</p></td>
+<td><ul class="simple">
+<li><p><a class="reference internal" href="../../process_areas/requirements_engineering/requirements_workproducts.html#wp__requirements_stkh" title="wp__requirements_stkh"><em class="xref need">Stakeholder Requirements</em></a></p></li>
+<li><p><a class="reference internal" href="../../process_areas/requirements_engineering/requirements_workproducts.html#wp__requirements_sw_platform_aou" title="wp__requirements_sw_platform_aou"><em class="xref need">SW-Platform Assumptions of Use</em></a></p></li>
+<li><p><a class="reference internal" href="../../process_areas/requirements_engineering/requirements_workproducts.html#wp__requirements_feat" title="wp__requirements_feat"><em class="xref need">Feature Requirements</em></a></p></li>
+<li><p><a class="reference internal" href="../../process_areas/requirements_engineering/requirements_workproducts.html#wp__requirements_feat_aou" title="wp__requirements_feat_aou"><em class="xref need">Feature Assumptions of Use</em></a></p></li>
+<li><p><a class="reference internal" href="../../process_areas/requirements_engineering/requirements_workproducts.html#wp__requirements_comp" title="wp__requirements_comp"><em class="xref need">Component Requirements</em></a></p></li>
+<li><p><a class="reference internal" href="../../process_areas/requirements_engineering/requirements_workproducts.html#wp__requirements_comp_aou" title="wp__requirements_comp_aou"><em class="xref need">Component Assumptions of Use</em></a></p></li>
+<li><p><a class="reference internal" href="../../process_areas/requirements_engineering/requirements_workproducts.html#wp__requirements_proc_tool" title="wp__requirements_proc_tool"><em class="xref need">Process/Tool Requirements</em></a></p></li>
+<li><p><a class="reference internal" href="../../process_areas/requirements_engineering/requirements_workproducts.html#wp__requirements_inspect" title="wp__requirements_inspect"><em class="xref need">Requirements Inspection</em></a></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><p>Architecture Design</p></td>
+<td><ul class="simple">
+<li><p><a class="reference internal" href="../../process_areas/architecture_design/architecture_workproducts.html#wp__platform_arch" title="wp__platform_arch"><em class="xref need">Platform Architecture</em></a></p></li>
+<li><p><a class="reference internal" href="../../process_areas/architecture_design/architecture_workproducts.html#wp__feature_arch" title="wp__feature_arch"><em class="xref need">Feature Architecture</em></a></p></li>
+<li><p><a class="reference internal" href="../../process_areas/architecture_design/architecture_workproducts.html#wp__component_arch" title="wp__component_arch"><em class="xref need">Component Architecture</em></a></p></li>
+<li><p><a class="reference internal" href="../../process_areas/architecture_design/architecture_workproducts.html#wp__sw_arch_verification" title="wp__sw_arch_verification"><em class="xref need">Architecture Verification</em></a></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><p>Implementation</p></td>
+<td><ul class="simple">
+<li><p><a class="reference internal" href="../../process_areas/implementation/implementation_workproducts.html#wp__sw_development_plan" title="wp__sw_development_plan"><em class="xref need">Software Development Plan</em></a></p></li>
+<li><p><a class="reference internal" href="../../process_areas/implementation/implementation_workproducts.html#wp__sw_implementation" title="wp__sw_implementation"><em class="xref need">Implementation</em></a></p></li>
+<li><p><a class="reference internal" href="../../process_areas/implementation/implementation_workproducts.html#wp__sw_implementation_inspection" title="wp__sw_implementation_inspection"><em class="xref need">Implementation Inspection</em></a></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><p>Verification</p></td>
+<td><ul class="simple">
+<li><p><a class="reference internal" href="../../process_areas/verification/verification_workproducts.html#wp__verification_plan" title="wp__verification_plan"><em class="xref need">Verification Plan</em></a></p></li>
+<li><p><a class="reference internal" href="../../process_areas/verification/verification_workproducts.html#wp__verification_platform_int_test" title="wp__verification_platform_int_test"><em class="xref need">Platform Integration Test</em></a></p></li>
+<li><p><a class="reference internal" href="../../process_areas/verification/verification_workproducts.html#wp__verification_platform_ver_report" title="wp__verification_platform_ver_report"><em class="xref need">Platform Verification Report</em></a></p></li>
+<li><p><a class="reference internal" href="../../process_areas/verification/verification_workproducts.html#wp__verification_feat_int_test" title="wp__verification_feat_int_test"><em class="xref need">Feature Integration test</em></a></p></li>
+<li><p><a class="reference internal" href="../../process_areas/verification/verification_workproducts.html#wp__verification_module_ver_report" title="wp__verification_module_ver_report"><em class="xref need">Module Verification Report</em></a></p></li>
+<li><p><a class="reference internal" href="../../process_areas/verification/verification_workproducts.html#wp__verification_comp_int_test" title="wp__verification_comp_int_test"><em class="xref need">Component Integration test</em></a></p></li>
+<li><p><a class="reference internal" href="../../process_areas/verification/verification_workproducts.html#wp__verification_sw_unit_test" title="wp__verification_sw_unit_test"><em class="xref need">Unit test</em></a></p></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="relevant-requirements-by-work-product">
+<h2>Relevant Requirements by Work Product<a class="headerlink" href="#relevant-requirements-by-work-product" title="Link to this heading">#</a></h2>
+<p>The table below derives relevant process requirements for each work product.
+The derivation is based on the relation process requirement <code class="docutils literal notranslate"><span class="pre">satisfies</span></code>
+workflow and workflow <code class="docutils literal notranslate"><span class="pre">output</span></code> work product.</p>
+<div class="pst-scrollable-table-container"><table class="table" id="id3">
+<caption><span class="caption-number">Table 56 </span><span class="caption-text">Relevant process requirements by work product</span><a class="headerlink" href="#id3" title="Link to this table">#</a></caption>
+<colgroup>
+<col style="width: 15.0%" />
+<col style="width: 22.0%" />
+<col style="width: 32.0%" />
+<col style="width: 31.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Process area</p></th>
+<th class="head"><p>Work product</p></th>
+<th class="head"><p>Relevant requirements</p></th>
+<th class="head"><p>Status distribution</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Requirements Engineering</p></td>
+<td><p><a class="reference internal" href="../../process_areas/requirements_engineering/requirements_workproducts.html#wp__requirements_stkh" title="wp__requirements_stkh"><em class="xref need">Stakeholder Requirements</em></a></p></td>
+<td><div class="line-block" id="needlist-standards/process_reqs_list/process_area_status_summary-1">
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_structure">gd_req__req_structure: Requirements Structure</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_attr_uid">gd_req__req_attr_uid: Requirement attribute: UID</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_attr_title">gd_req__req_attr_title: Requirement attribute: title</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_attr_description">gd_req__req_attr_description: Requirement attribute: description</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_attr_type">gd_req__req_attr_type: Requirement attribute: type</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_attr_safety">gd_req__req_attr_safety: Requirement attribute: safety</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_attr_status">gd_req__req_attr_status: Requirement attribute: status</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_attr_rationale">gd_req__req_attr_rationale: Requirement attribute: rationale</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_attr_valid_from">gd_req__req_attr_valid_from: Requirement attribute: valid_from</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_attr_valid_until">gd_req__req_attr_valid_until: Requirement attribute: valid_until</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_linkage">gd_req__req_linkage: Requirement Linkage</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_traceability">gd_req__req_traceability: Requirement Traceability</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_attr_req_cov">gd_req__req_attr_req_cov: Requirement attribute: requirement covered</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_attr_version">gd_req__req_attr_version: Requirement attribute: versioning</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_suspicious">gd_req__req_suspicious: Requirement check: suspicious</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_check_mandatory">gd_req__req_check_mandatory: Requirements mandatory attributes provided</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_desc_weak">gd_req__req_desc_weak: Requirements no weak words</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_linkage_fulfill">gd_req__req_linkage_fulfill: Requirements linkage level</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_linkage_safety">gd_req__req_linkage_safety: Requirements linkage safety</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_validity">gd_req__req_validity: Requirements validity</a></div>
+</div>
+</td>
+<td><img alt="../../_images/need_pie_47d31.svg" id="needpie-standards/process_reqs_list/process_area_status_summary-8" src="../../_images/need_pie_47d31.svg" />
+</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p><a class="reference internal" href="../../process_areas/requirements_engineering/requirements_workproducts.html#wp__requirements_sw_platform_aou" title="wp__requirements_sw_platform_aou"><em class="xref need">SW-Platform Assumptions of Use</em></a></p></td>
+<td><div class="line-block" id="needlist-standards/process_reqs_list/process_area_status_summary-2">
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_structure">gd_req__req_structure: Requirements Structure</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_attr_uid">gd_req__req_attr_uid: Requirement attribute: UID</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_attr_title">gd_req__req_attr_title: Requirement attribute: title</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_attr_description">gd_req__req_attr_description: Requirement attribute: description</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_attr_type">gd_req__req_attr_type: Requirement attribute: type</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_attr_safety">gd_req__req_attr_safety: Requirement attribute: safety</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_attr_status">gd_req__req_attr_status: Requirement attribute: status</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_attr_rationale">gd_req__req_attr_rationale: Requirement attribute: rationale</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_attr_valid_from">gd_req__req_attr_valid_from: Requirement attribute: valid_from</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_attr_valid_until">gd_req__req_attr_valid_until: Requirement attribute: valid_until</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_linkage">gd_req__req_linkage: Requirement Linkage</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_traceability">gd_req__req_traceability: Requirement Traceability</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_attr_req_cov">gd_req__req_attr_req_cov: Requirement attribute: requirement covered</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_attr_version">gd_req__req_attr_version: Requirement attribute: versioning</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_suspicious">gd_req__req_suspicious: Requirement check: suspicious</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_check_mandatory">gd_req__req_check_mandatory: Requirements mandatory attributes provided</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_desc_weak">gd_req__req_desc_weak: Requirements no weak words</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_linkage_fulfill">gd_req__req_linkage_fulfill: Requirements linkage level</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_linkage_safety">gd_req__req_linkage_safety: Requirements linkage safety</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_validity">gd_req__req_validity: Requirements validity</a></div>
+</div>
+</td>
+<td><img alt="../../_images/need_pie_f2974.svg" id="needpie-standards/process_reqs_list/process_area_status_summary-9" src="../../_images/need_pie_f2974.svg" />
+</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p><a class="reference internal" href="../../process_areas/requirements_engineering/requirements_workproducts.html#wp__requirements_feat" title="wp__requirements_feat"><em class="xref need">Feature Requirements</em></a></p></td>
+<td><div class="line-block" id="needlist-standards/process_reqs_list/process_area_status_summary-3">
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_structure">gd_req__req_structure: Requirements Structure</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_attr_uid">gd_req__req_attr_uid: Requirement attribute: UID</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_attr_title">gd_req__req_attr_title: Requirement attribute: title</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_attr_description">gd_req__req_attr_description: Requirement attribute: description</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_attr_type">gd_req__req_attr_type: Requirement attribute: type</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_attr_security">gd_req__req_attr_security: Requirements attribute: security</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_attr_safety">gd_req__req_attr_safety: Requirement attribute: safety</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_attr_status">gd_req__req_attr_status: Requirement attribute: status</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_attr_valid_from">gd_req__req_attr_valid_from: Requirement attribute: valid_from</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_attr_valid_until">gd_req__req_attr_valid_until: Requirement attribute: valid_until</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_linkage">gd_req__req_linkage: Requirement Linkage</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_linkage_aou">gd_req__req_linkage_aou: Requirement Linkage to AoU</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_traceability">gd_req__req_traceability: Requirement Traceability</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_attr_req_cov">gd_req__req_attr_req_cov: Requirement attribute: requirement covered</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_attr_impl">gd_req__req_attr_impl: Requirement attribute: link to implementation</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_attr_testlink">gd_req__req_attr_testlink: Requirement attribute: link to test</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_attr_test_covered">gd_req__req_attr_test_covered: Requirement attribute: complete test coverage</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_attr_version">gd_req__req_attr_version: Requirement attribute: versioning</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_suspicious">gd_req__req_suspicious: Requirement check: suspicious</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_check_mandatory">gd_req__req_check_mandatory: Requirements mandatory attributes provided</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_desc_weak">gd_req__req_desc_weak: Requirements no weak words</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_linkage_fulfill">gd_req__req_linkage_fulfill: Requirements linkage level</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_linkage_architecture">gd_req__req_linkage_architecture: Requirements linkage architecture</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_linkage_architecture_switch">gd_req__req_linkage_architecture_switch: Requirements linkage architecture switch</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_linkage_safety">gd_req__req_linkage_safety: Requirements linkage safety</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_validity">gd_req__req_validity: Requirements validity</a></div>
+</div>
+</td>
+<td><img alt="../../_images/need_pie_66503.svg" id="needpie-standards/process_reqs_list/process_area_status_summary-10" src="../../_images/need_pie_66503.svg" />
+</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p><a class="reference internal" href="../../process_areas/requirements_engineering/requirements_workproducts.html#wp__requirements_feat_aou" title="wp__requirements_feat_aou"><em class="xref need">Feature Assumptions of Use</em></a></p></td>
+<td><div class="line-block" id="needlist-standards/process_reqs_list/process_area_status_summary-4">
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_structure">gd_req__req_structure: Requirements Structure</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_attr_uid">gd_req__req_attr_uid: Requirement attribute: UID</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_attr_title">gd_req__req_attr_title: Requirement attribute: title</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_attr_description">gd_req__req_attr_description: Requirement attribute: description</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_attr_type">gd_req__req_attr_type: Requirement attribute: type</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_attr_security">gd_req__req_attr_security: Requirements attribute: security</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_attr_safety">gd_req__req_attr_safety: Requirement attribute: safety</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_attr_status">gd_req__req_attr_status: Requirement attribute: status</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_check_mandatory">gd_req__req_check_mandatory: Requirements mandatory attributes provided</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_desc_weak">gd_req__req_desc_weak: Requirements no weak words</a></div>
+</div>
+</td>
+<td><img alt="../../_images/need_pie_f7399.svg" id="needpie-standards/process_reqs_list/process_area_status_summary-11" src="../../_images/need_pie_f7399.svg" />
+</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p><a class="reference internal" href="../../process_areas/requirements_engineering/requirements_workproducts.html#wp__requirements_comp" title="wp__requirements_comp"><em class="xref need">Component Requirements</em></a></p></td>
+<td><div class="line-block" id="needlist-standards/process_reqs_list/process_area_status_summary-5">
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_structure">gd_req__req_structure: Requirements Structure</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_attr_uid">gd_req__req_attr_uid: Requirement attribute: UID</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_attr_title">gd_req__req_attr_title: Requirement attribute: title</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_attr_description">gd_req__req_attr_description: Requirement attribute: description</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_attr_type">gd_req__req_attr_type: Requirement attribute: type</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_attr_security">gd_req__req_attr_security: Requirements attribute: security</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_attr_safety">gd_req__req_attr_safety: Requirement attribute: safety</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_attr_status">gd_req__req_attr_status: Requirement attribute: status</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_linkage">gd_req__req_linkage: Requirement Linkage</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_linkage_aou">gd_req__req_linkage_aou: Requirement Linkage to AoU</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_traceability">gd_req__req_traceability: Requirement Traceability</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_attr_impl">gd_req__req_attr_impl: Requirement attribute: link to implementation</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_attr_testlink">gd_req__req_attr_testlink: Requirement attribute: link to test</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_attr_test_covered">gd_req__req_attr_test_covered: Requirement attribute: complete test coverage</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_attr_version">gd_req__req_attr_version: Requirement attribute: versioning</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_suspicious">gd_req__req_suspicious: Requirement check: suspicious</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_check_mandatory">gd_req__req_check_mandatory: Requirements mandatory attributes provided</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_desc_weak">gd_req__req_desc_weak: Requirements no weak words</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_linkage_fulfill">gd_req__req_linkage_fulfill: Requirements linkage level</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_linkage_architecture">gd_req__req_linkage_architecture: Requirements linkage architecture</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_linkage_architecture_switch">gd_req__req_linkage_architecture_switch: Requirements linkage architecture switch</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_linkage_safety">gd_req__req_linkage_safety: Requirements linkage safety</a></div>
+</div>
+</td>
+<td><img alt="../../_images/need_pie_6c5a5.svg" id="needpie-standards/process_reqs_list/process_area_status_summary-12" src="../../_images/need_pie_6c5a5.svg" />
+</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p><a class="reference internal" href="../../process_areas/requirements_engineering/requirements_workproducts.html#wp__requirements_comp_aou" title="wp__requirements_comp_aou"><em class="xref need">Component Assumptions of Use</em></a></p></td>
+<td><div class="line-block" id="needlist-standards/process_reqs_list/process_area_status_summary-6">
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_structure">gd_req__req_structure: Requirements Structure</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_attr_uid">gd_req__req_attr_uid: Requirement attribute: UID</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_attr_title">gd_req__req_attr_title: Requirement attribute: title</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_attr_description">gd_req__req_attr_description: Requirement attribute: description</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_attr_type">gd_req__req_attr_type: Requirement attribute: type</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_attr_security">gd_req__req_attr_security: Requirements attribute: security</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_attr_safety">gd_req__req_attr_safety: Requirement attribute: safety</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_attr_status">gd_req__req_attr_status: Requirement attribute: status</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_check_mandatory">gd_req__req_check_mandatory: Requirements mandatory attributes provided</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_desc_weak">gd_req__req_desc_weak: Requirements no weak words</a></div>
+</div>
+</td>
+<td><img alt="../../_images/need_pie_f3742.svg" id="needpie-standards/process_reqs_list/process_area_status_summary-13" src="../../_images/need_pie_f3742.svg" />
+</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p><a class="reference internal" href="../../process_areas/requirements_engineering/requirements_workproducts.html#wp__requirements_proc_tool" title="wp__requirements_proc_tool"><em class="xref need">Process/Tool Requirements</em></a></p></td>
+<td><div class="line-block" id="needlist-standards/process_reqs_list/process_area_status_summary-7">
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_structure">gd_req__req_structure: Requirements Structure</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_attr_uid">gd_req__req_attr_uid: Requirement attribute: UID</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_attr_title">gd_req__req_attr_title: Requirement attribute: title</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_attr_description">gd_req__req_attr_description: Requirement attribute: description</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_linkage">gd_req__req_linkage: Requirement Linkage</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_traceability">gd_req__req_traceability: Requirement Traceability</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_check_mandatory">gd_req__req_check_mandatory: Requirements mandatory attributes provided</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/requirements_engineering/guidance/requirements_process_reqs.html#gd_req__req_desc_weak">gd_req__req_desc_weak: Requirements no weak words</a></div>
+</div>
+</td>
+<td><img alt="../../_images/need_pie_76e80.svg" id="needpie-standards/process_reqs_list/process_area_status_summary-14" src="../../_images/need_pie_76e80.svg" />
+</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p><a class="reference internal" href="../../process_areas/requirements_engineering/requirements_workproducts.html#wp__requirements_inspect" title="wp__requirements_inspect"><em class="xref need">Requirements Inspection</em></a></p></td>
+<td><div class="line-block" id="needlist-standards/process_reqs_list/process_area_status_summary-8">
+<div class="line"><a class="reference external" href="../../process_areas/configuration_management/guidance/configuration_process_req.html#gd_req__configuration_uid">gd_req__configuration_uid: Unique Id</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/configuration_management/guidance/configuration_process_req.html#gd_req__config_pull_request_storage">gd_req__config_pull_request_storage: Storage of pull requests documentation</a></div>
+<div class="line"><a class="reference external" href="../../general_concepts/score_review_concept.html#gd_req__general_requirements_version">gd_req__general_requirements_version: Version for inspected requirements</a></div>
+<div class="line"><a class="reference external" href="../../general_concepts/score_review_concept.html#gd_req__general_checklist_templates">gd_req__general_checklist_templates: Checklist templates in pull requests</a></div>
+<div class="line"><a class="reference external" href="../../general_concepts/score_review_concept.html#gd_req__general_status_set_check">gd_req__general_status_set_check: Status Set Check</a></div>
+<div class="line"><a class="reference external" href="../../general_concepts/score_review_concept.html#gd_req__general_status_reset_check">gd_req__general_status_reset_check: Status Reset Check</a></div>
+</div>
+</td>
+<td><img alt="../../_images/need_pie_5ff15.svg" id="needpie-standards/process_reqs_list/process_area_status_summary-15" src="../../_images/need_pie_5ff15.svg" />
+</td>
+</tr>
+<tr class="row-even"><td><p>Architecture Design</p></td>
+<td><p><a class="reference internal" href="../../process_areas/architecture_design/architecture_workproducts.html#wp__platform_arch" title="wp__platform_arch"><em class="xref need">Platform Architecture</em></a></p></td>
+<td><p class="needs_filter_warning" id="needlist-standards/process_reqs_list/process_area_status_summary-9">No needs passed the filters</p>
+</td>
+<td><p class="needs_filter_warning" id="needpie-standards/process_reqs_list/process_area_status_summary-16">No needs passed the filters</p>
+</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p><a class="reference internal" href="../../process_areas/architecture_design/architecture_workproducts.html#wp__feature_arch" title="wp__feature_arch"><em class="xref need">Feature Architecture</em></a></p></td>
+<td><div class="line-block" id="needlist-standards/process_reqs_list/process_area_status_summary-10">
+<div class="line"><a class="reference external" href="../../process_areas/architecture_design/guidance/architecture_process_reqs.html#gd_req__arch_model">gd_req__arch_model: Architecture Modeling</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/architecture_design/guidance/architecture_process_reqs.html#gd_req__arch_hierarchical_structure">gd_req__arch_hierarchical_structure: Hierarchical structure of architectural elements</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/architecture_design/guidance/architecture_process_reqs.html#gd_req__arch_build_blocks">gd_req__arch_build_blocks: Structuring of the architectural elements</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/architecture_design/guidance/architecture_process_reqs.html#gd_req__arch_build_blocks_corr">gd_req__arch_build_blocks_corr: Correlations of the architectural building blocks</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/architecture_design/guidance/architecture_process_reqs.html#gd_req__arch_viewpoints">gd_req__arch_viewpoints: Architecture Viewpoints</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/architecture_design/guidance/architecture_process_reqs.html#gd_req__arch_attribute_uid">gd_req__arch_attribute_uid: Architecture attribute: UID</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/architecture_design/guidance/architecture_process_reqs.html#gd_req__arch_attr_security">gd_req__arch_attr_security: Architecture attribute: security</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/architecture_design/guidance/architecture_process_reqs.html#gd_req__arch_attr_safety">gd_req__arch_attr_safety: Architecture attribute: safety</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/architecture_design/guidance/architecture_process_reqs.html#gd_req__arch_attr_status">gd_req__arch_attr_status: Architecture attribute: status</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/architecture_design/guidance/architecture_process_reqs.html#gd_req__arch_attr_fulfils">gd_req__arch_attr_fulfils: Architecture attribute: fulfils</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/architecture_design/guidance/architecture_process_reqs.html#gd_req__arch_attr_fulfils_aou">gd_req__arch_attr_fulfils_aou: Architecture attribute: fulfils (AoU)</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/architecture_design/guidance/architecture_process_reqs.html#gd_req__arch_traceability">gd_req__arch_traceability: Architecture traceability</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/architecture_design/guidance/architecture_process_reqs.html#gd_req__arch_attr_mandatory">gd_req__arch_attr_mandatory: Check of Architecture mandatory attributes</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/architecture_design/guidance/architecture_process_reqs.html#gd_req__arch_linkage_safety">gd_req__arch_linkage_safety: Check of Architecture linkage metamodel</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/architecture_design/guidance/architecture_process_reqs.html#gd_req__arch_linkage_safety_trace">gd_req__arch_linkage_safety_trace: Check of Architecture linkage safety</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/architecture_design/guidance/architecture_process_reqs.html#gd_req__arch_linkage_security_trace">gd_req__arch_linkage_security_trace: Check of Architecture linkage security</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/architecture_design/guidance/architecture_process_reqs.html#gd_req__arch_linkage_requirement">gd_req__arch_linkage_requirement: Check of Architecture linkage requirement</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/architecture_design/guidance/architecture_process_reqs.html#gd_req__arch_linkage_requirement_type">gd_req__arch_linkage_requirement_type: Check of Architecture linkage requirement type</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/architecture_design/guidance/architecture_process_reqs.html#gd_req__arch_linkage_aou">gd_req__arch_linkage_aou: Check of Architecture linkage to AoU</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/architecture_design/guidance/architecture_process_reqs.html#gd_req__arch_consistency_interf">gd_req__arch_consistency_interf: Check of Architecture consistency interfaces in modules</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/architecture_design/guidance/architecture_process_reqs.html#gd_req__arch_consistency_dynamic">gd_req__arch_consistency_dynamic: Check of Architecture consistency in dynamic architecture</a></div>
+</div>
+</td>
+<td><img alt="../../_images/need_pie_b912a.svg" id="needpie-standards/process_reqs_list/process_area_status_summary-17" src="../../_images/need_pie_b912a.svg" />
+</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p><a class="reference internal" href="../../process_areas/architecture_design/architecture_workproducts.html#wp__component_arch" title="wp__component_arch"><em class="xref need">Component Architecture</em></a></p></td>
+<td><div class="line-block" id="needlist-standards/process_reqs_list/process_area_status_summary-11">
+<div class="line"><a class="reference external" href="../../process_areas/architecture_design/guidance/architecture_process_reqs.html#gd_req__arch_model">gd_req__arch_model: Architecture Modeling</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/architecture_design/guidance/architecture_process_reqs.html#gd_req__arch_hierarchical_structure">gd_req__arch_hierarchical_structure: Hierarchical structure of architectural elements</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/architecture_design/guidance/architecture_process_reqs.html#gd_req__arch_build_blocks">gd_req__arch_build_blocks: Structuring of the architectural elements</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/architecture_design/guidance/architecture_process_reqs.html#gd_req__arch_build_blocks_corr">gd_req__arch_build_blocks_corr: Correlations of the architectural building blocks</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/architecture_design/guidance/architecture_process_reqs.html#gd_req__arch_viewpoints">gd_req__arch_viewpoints: Architecture Viewpoints</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/architecture_design/guidance/architecture_process_reqs.html#gd_req__arch_attribute_uid">gd_req__arch_attribute_uid: Architecture attribute: UID</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/architecture_design/guidance/architecture_process_reqs.html#gd_req__arch_attr_security">gd_req__arch_attr_security: Architecture attribute: security</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/architecture_design/guidance/architecture_process_reqs.html#gd_req__arch_attr_safety">gd_req__arch_attr_safety: Architecture attribute: safety</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/architecture_design/guidance/architecture_process_reqs.html#gd_req__arch_attr_status">gd_req__arch_attr_status: Architecture attribute: status</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/architecture_design/guidance/architecture_process_reqs.html#gd_req__arch_attr_fulfils">gd_req__arch_attr_fulfils: Architecture attribute: fulfils</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/architecture_design/guidance/architecture_process_reqs.html#gd_req__arch_attr_fulfils_aou">gd_req__arch_attr_fulfils_aou: Architecture attribute: fulfils (AoU)</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/architecture_design/guidance/architecture_process_reqs.html#gd_req__arch_traceability">gd_req__arch_traceability: Architecture traceability</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/architecture_design/guidance/architecture_process_reqs.html#gd_req__arch_attr_mandatory">gd_req__arch_attr_mandatory: Check of Architecture mandatory attributes</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/architecture_design/guidance/architecture_process_reqs.html#gd_req__arch_linkage_safety">gd_req__arch_linkage_safety: Check of Architecture linkage metamodel</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/architecture_design/guidance/architecture_process_reqs.html#gd_req__arch_linkage_safety_trace">gd_req__arch_linkage_safety_trace: Check of Architecture linkage safety</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/architecture_design/guidance/architecture_process_reqs.html#gd_req__arch_linkage_security_trace">gd_req__arch_linkage_security_trace: Check of Architecture linkage security</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/architecture_design/guidance/architecture_process_reqs.html#gd_req__arch_linkage_requirement">gd_req__arch_linkage_requirement: Check of Architecture linkage requirement</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/architecture_design/guidance/architecture_process_reqs.html#gd_req__arch_linkage_requirement_type">gd_req__arch_linkage_requirement_type: Check of Architecture linkage requirement type</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/architecture_design/guidance/architecture_process_reqs.html#gd_req__arch_linkage_aou">gd_req__arch_linkage_aou: Check of Architecture linkage to AoU</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/architecture_design/guidance/architecture_process_reqs.html#gd_req__arch_consistency_interf">gd_req__arch_consistency_interf: Check of Architecture consistency interfaces in modules</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/architecture_design/guidance/architecture_process_reqs.html#gd_req__arch_consistency_dynamic">gd_req__arch_consistency_dynamic: Check of Architecture consistency in dynamic architecture</a></div>
+</div>
+</td>
+<td><img alt="../../_images/need_pie_07982.svg" id="needpie-standards/process_reqs_list/process_area_status_summary-18" src="../../_images/need_pie_07982.svg" />
+</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p><a class="reference internal" href="../../process_areas/architecture_design/architecture_workproducts.html#wp__sw_arch_verification" title="wp__sw_arch_verification"><em class="xref need">Architecture Verification</em></a></p></td>
+<td><div class="line-block" id="needlist-standards/process_reqs_list/process_area_status_summary-12">
+<div class="line"><a class="reference external" href="../../process_areas/configuration_management/guidance/configuration_process_req.html#gd_req__configuration_uid">gd_req__configuration_uid: Unique Id</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/configuration_management/guidance/configuration_process_req.html#gd_req__config_pull_request_storage">gd_req__config_pull_request_storage: Storage of pull requests documentation</a></div>
+<div class="line"><a class="reference external" href="../../general_concepts/score_review_concept.html#gd_req__general_architecture_version">gd_req__general_architecture_version: Version for inspected architecture</a></div>
+<div class="line"><a class="reference external" href="../../general_concepts/score_review_concept.html#gd_req__general_checklist_templates">gd_req__general_checklist_templates: Checklist templates in pull requests</a></div>
+<div class="line"><a class="reference external" href="../../general_concepts/score_review_concept.html#gd_req__general_status_set_check">gd_req__general_status_set_check: Status Set Check</a></div>
+<div class="line"><a class="reference external" href="../../general_concepts/score_review_concept.html#gd_req__general_status_reset_check">gd_req__general_status_reset_check: Status Reset Check</a></div>
+</div>
+</td>
+<td><img alt="../../_images/need_pie_471b1.svg" id="needpie-standards/process_reqs_list/process_area_status_summary-19" src="../../_images/need_pie_471b1.svg" />
+</td>
+</tr>
+<tr class="row-even"><td><p>Implementation</p></td>
+<td><p><a class="reference internal" href="../../process_areas/implementation/implementation_workproducts.html#wp__sw_development_plan" title="wp__sw_development_plan"><em class="xref need">Software Development Plan</em></a></p></td>
+<td><p class="needs_filter_warning" id="needlist-standards/process_reqs_list/process_area_status_summary-13">No needs passed the filters</p>
+</td>
+<td><p class="needs_filter_warning" id="needpie-standards/process_reqs_list/process_area_status_summary-20">No needs passed the filters</p>
+</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p><a class="reference internal" href="../../process_areas/implementation/implementation_workproducts.html#wp__sw_implementation" title="wp__sw_implementation"><em class="xref need">Implementation</em></a></p></td>
+<td><div class="line-block" id="needlist-standards/process_reqs_list/process_area_status_summary-14">
+<div class="line"><a class="reference external" href="../../process_areas/implementation/guidance/implementation_process_reqs.html#gd_req__impl_static_diagram">gd_req__impl_static_diagram: Static Diagram for Unit Interactions</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/implementation/guidance/implementation_process_reqs.html#gd_req__impl_diagram_uid">gd_req__impl_diagram_uid: Diagram attribute: UID</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/implementation/guidance/implementation_process_reqs.html#gd_req__impl_diagram_title">gd_req__impl_diagram_title: Diagram attribute: title</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/implementation/guidance/implementation_process_reqs.html#gd_req__impl_diagram_security">gd_req__impl_diagram_security: Diagram attribute: security</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/implementation/guidance/implementation_process_reqs.html#gd_req__impl_diagram_safety">gd_req__impl_diagram_safety: Diagram attribute: safety</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/implementation/guidance/implementation_process_reqs.html#gd_req__impl_diagram_status">gd_req__impl_diagram_status: Diagram attribute: status</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/implementation/guidance/implementation_process_reqs.html#gd_req__impl_diagram_description">gd_req__impl_diagram_description: Diagram attribute: description</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/implementation/guidance/implementation_process_reqs.html#gd_req__impl_diagram_check_req">gd_req__impl_diagram_check_req: Diagram Linkage check Component Requirement</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/implementation/guidance/implementation_process_reqs.html#gd_req__impl_diagram_linkage_req">gd_req__impl_diagram_linkage_req: Diagram Linkage Component Requirement</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/implementation/guidance/implementation_process_reqs.html#gd_req__impl_diagram_check_arch">gd_req__impl_diagram_check_arch: Diagram Linkage check Component Architecture</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/implementation/guidance/implementation_process_reqs.html#gd_req__impl_diagram_linkage_arch">gd_req__impl_diagram_linkage_arch: Diagram Linkage Component Architecture</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/implementation/guidance/implementation_process_reqs.html#gd_req__impl_diagram_check_id">gd_req__impl_diagram_check_id: Diagram Linkage check Component ID</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/implementation/guidance/implementation_process_reqs.html#gd_req__impl_diagram_linkage_id">gd_req__impl_diagram_linkage_id: Diagram Linkage Component ID</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/implementation/guidance/implementation_process_reqs.html#gd_req__impl_diagram_check_includes">gd_req__impl_diagram_check_includes: Diagram Linkage includes</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/implementation/guidance/implementation_process_reqs.html#gd_req__impl_diagram_linkage_includes">gd_req__impl_diagram_linkage_includes: Diagram Linkage includes</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/implementation/guidance/implementation_process_reqs.html#gd_req__impl_diagram_mandatory">gd_req__impl_diagram_mandatory: Diagram mandatory attributes provided</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/implementation/guidance/implementation_process_reqs.html#gd_req__impl_unit_uid">gd_req__impl_unit_uid: Unit attribute: UID</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/implementation/guidance/implementation_process_reqs.html#gd_req__impl_unit_description">gd_req__impl_unit_description: Unit attribute: description</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/implementation/guidance/implementation_process_reqs.html#gd_req__impl_unit_check_id">gd_req__impl_unit_check_id: Unit Linkage check Component ID</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/implementation/guidance/implementation_process_reqs.html#gd_req__impl_unit_linkage_id">gd_req__impl_unit_linkage_id: Unit Linkage Component ID</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/implementation/guidance/implementation_process_reqs.html#gd_req__impl_interface_uid">gd_req__impl_interface_uid: Interface attribute: UID</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/implementation/guidance/implementation_process_reqs.html#gd_req__impl_interface_description">gd_req__impl_interface_description: Interface attribute: description</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/implementation/guidance/implementation_process_reqs.html#gd_req__impl_interface_check_id">gd_req__impl_interface_check_id: Interface Linkage check SW Unit ID</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/implementation/guidance/implementation_process_reqs.html#gd_req__impl_interface_linkage_id">gd_req__impl_interface_linkage_id: Interface Linkage SW Unit ID</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/implementation/guidance/implementation_process_reqs.html#gd_req__impl_interface_check_req">gd_req__impl_interface_check_req: Interface Linkage check Architecture</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/implementation/guidance/implementation_process_reqs.html#gd_req__impl_interface_linkage_req">gd_req__impl_interface_linkage_req: Interface Linkage Architecture</a></div>
+</div>
+</td>
+<td><img alt="../../_images/need_pie_b95ea.svg" id="needpie-standards/process_reqs_list/process_area_status_summary-21" src="../../_images/need_pie_b95ea.svg" />
+</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p><a class="reference internal" href="../../process_areas/implementation/implementation_workproducts.html#wp__sw_implementation_inspection" title="wp__sw_implementation_inspection"><em class="xref need">Implementation Inspection</em></a></p></td>
+<td><div class="line-block" id="needlist-standards/process_reqs_list/process_area_status_summary-15">
+<div class="line"><a class="reference external" href="../../process_areas/implementation/guidance/implementation_process_reqs.html#gd_req__impl_dependency_analysis">gd_req__impl_dependency_analysis: Dependency Analysis</a></div>
+</div>
+</td>
+<td><img alt="../../_images/need_pie_3240b.svg" id="needpie-standards/process_reqs_list/process_area_status_summary-22" src="../../_images/need_pie_3240b.svg" />
+</td>
+</tr>
+<tr class="row-odd"><td><p>Verification</p></td>
+<td><p><a class="reference internal" href="../../process_areas/verification/verification_workproducts.html#wp__verification_comp_int_test" title="wp__verification_comp_int_test"><em class="xref need">Component Integration test</em></a></p></td>
+<td><div class="line-block" id="needlist-standards/process_reqs_list/process_area_status_summary-16">
+<div class="line"><a class="reference external" href="../../process_areas/verification/guidance/verification_process_reqs.html#gd_req__verification_link_tests">gd_req__verification_link_tests: Linking Requirements to Tests</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/verification/guidance/verification_process_reqs.html#gd_req__verification_link_tests_cpp">gd_req__verification_link_tests_cpp: Linking Requirements to Tests (C++)</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/verification/guidance/verification_process_reqs.html#gd_req__verification_link_tests_python">gd_req__verification_link_tests_python: Linking Requirements to Tests (Python)</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/verification/guidance/verification_process_reqs.html#gd_req__verification_link_tests_rust">gd_req__verification_link_tests_rust: Linking Requirements to Tests (Rust)</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/verification/guidance/verification_process_reqs.html#gd_req__verification_independence">gd_req__verification_independence: Independence</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/verification/guidance/verification_process_reqs.html#gd_req__verification_checks">gd_req__verification_checks: Verification Documentation Checks</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/verification/guidance/verification_process_reqs.html#gd_req__verification_checks_extended">gd_req__verification_checks_extended: Verification Documentation Checks Extended</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/verification/guidance/verification_process_reqs.html#gd_req__verification_external_aou">gd_req__verification_external_aou: Verification of External Components AoUs</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/verification/guidance/verification_process_reqs.html#gd_req__verification_sca_classification">gd_req__verification_sca_classification: Static Code Analysis Classification</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/verification/guidance/verification_process_reqs.html#gd_req__verification_ci_reference_execution">gd_req__verification_ci_reference_execution: CI reference integration execution</a></div>
+</div>
+</td>
+<td><img alt="../../_images/need_pie_4a5b4.svg" id="needpie-standards/process_reqs_list/process_area_status_summary-23" src="../../_images/need_pie_4a5b4.svg" />
+</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p><a class="reference internal" href="../../process_areas/verification/verification_workproducts.html#wp__verification_feat_int_test" title="wp__verification_feat_int_test"><em class="xref need">Feature Integration test</em></a></p></td>
+<td><div class="line-block" id="needlist-standards/process_reqs_list/process_area_status_summary-17">
+<div class="line"><a class="reference external" href="../../process_areas/verification/guidance/verification_process_reqs.html#gd_req__verification_link_tests">gd_req__verification_link_tests: Linking Requirements to Tests</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/verification/guidance/verification_process_reqs.html#gd_req__verification_link_tests_cpp">gd_req__verification_link_tests_cpp: Linking Requirements to Tests (C++)</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/verification/guidance/verification_process_reqs.html#gd_req__verification_link_tests_python">gd_req__verification_link_tests_python: Linking Requirements to Tests (Python)</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/verification/guidance/verification_process_reqs.html#gd_req__verification_link_tests_rust">gd_req__verification_link_tests_rust: Linking Requirements to Tests (Rust)</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/verification/guidance/verification_process_reqs.html#gd_req__verification_independence">gd_req__verification_independence: Independence</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/verification/guidance/verification_process_reqs.html#gd_req__verification_checks">gd_req__verification_checks: Verification Documentation Checks</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/verification/guidance/verification_process_reqs.html#gd_req__verification_checks_extended">gd_req__verification_checks_extended: Verification Documentation Checks Extended</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/verification/guidance/verification_process_reqs.html#gd_req__verification_external_aou">gd_req__verification_external_aou: Verification of External Components AoUs</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/verification/guidance/verification_process_reqs.html#gd_req__verification_sca_classification">gd_req__verification_sca_classification: Static Code Analysis Classification</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/verification/guidance/verification_process_reqs.html#gd_req__verification_ci_reference_execution">gd_req__verification_ci_reference_execution: CI reference integration execution</a></div>
+</div>
+</td>
+<td><img alt="../../_images/need_pie_3cb7b.svg" id="needpie-standards/process_reqs_list/process_area_status_summary-24" src="../../_images/need_pie_3cb7b.svg" />
+</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p><a class="reference internal" href="../../process_areas/verification/verification_workproducts.html#wp__verification_platform_int_test" title="wp__verification_platform_int_test"><em class="xref need">Platform Integration Test</em></a></p></td>
+<td><div class="line-block" id="needlist-standards/process_reqs_list/process_area_status_summary-18">
+<div class="line"><a class="reference external" href="../../process_areas/verification/guidance/verification_process_reqs.html#gd_req__verification_link_tests">gd_req__verification_link_tests: Linking Requirements to Tests</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/verification/guidance/verification_process_reqs.html#gd_req__verification_link_tests_cpp">gd_req__verification_link_tests_cpp: Linking Requirements to Tests (C++)</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/verification/guidance/verification_process_reqs.html#gd_req__verification_link_tests_python">gd_req__verification_link_tests_python: Linking Requirements to Tests (Python)</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/verification/guidance/verification_process_reqs.html#gd_req__verification_link_tests_rust">gd_req__verification_link_tests_rust: Linking Requirements to Tests (Rust)</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/verification/guidance/verification_process_reqs.html#gd_req__verification_independence">gd_req__verification_independence: Independence</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/verification/guidance/verification_process_reqs.html#gd_req__verification_checks">gd_req__verification_checks: Verification Documentation Checks</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/verification/guidance/verification_process_reqs.html#gd_req__verification_checks_extended">gd_req__verification_checks_extended: Verification Documentation Checks Extended</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/verification/guidance/verification_process_reqs.html#gd_req__verification_sca_classification">gd_req__verification_sca_classification: Static Code Analysis Classification</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/verification/guidance/verification_process_reqs.html#gd_req__verification_ci_reference_execution">gd_req__verification_ci_reference_execution: CI reference integration execution</a></div>
+</div>
+</td>
+<td><img alt="../../_images/need_pie_4992c.svg" id="needpie-standards/process_reqs_list/process_area_status_summary-25" src="../../_images/need_pie_4992c.svg" />
+</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p><a class="reference internal" href="../../process_areas/verification/verification_workproducts.html#wp__verification_plan" title="wp__verification_plan"><em class="xref need">Verification Plan</em></a></p></td>
+<td><p class="needs_filter_warning" id="needlist-standards/process_reqs_list/process_area_status_summary-19">No needs passed the filters</p>
+</td>
+<td><p class="needs_filter_warning" id="needpie-standards/process_reqs_list/process_area_status_summary-26">No needs passed the filters</p>
+</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p><a class="reference internal" href="../../process_areas/verification/verification_workproducts.html#wp__verification_module_ver_report" title="wp__verification_module_ver_report"><em class="xref need">Module Verification Report</em></a></p></td>
+<td><div class="line-block" id="needlist-standards/process_reqs_list/process_area_status_summary-20">
+<div class="line"><a class="reference external" href="../../process_areas/verification/guidance/verification_process_reqs.html#gd_req__verification_reporting">gd_req__verification_reporting: Verification Reporting</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/verification/guidance/verification_process_reqs.html#gd_req__verification_report_archiving">gd_req__verification_report_archiving: Verification Report Archiving</a></div>
+</div>
+</td>
+<td><img alt="../../_images/need_pie_59db8.svg" id="needpie-standards/process_reqs_list/process_area_status_summary-27" src="../../_images/need_pie_59db8.svg" />
+</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p><a class="reference internal" href="../../process_areas/verification/verification_workproducts.html#wp__verification_platform_ver_report" title="wp__verification_platform_ver_report"><em class="xref need">Platform Verification Report</em></a></p></td>
+<td><p class="needs_filter_warning" id="needlist-standards/process_reqs_list/process_area_status_summary-21">No needs passed the filters</p>
+</td>
+<td><p class="needs_filter_warning" id="needpie-standards/process_reqs_list/process_area_status_summary-28">No needs passed the filters</p>
+</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p><a class="reference internal" href="../../process_areas/verification/verification_workproducts.html#wp__verification_sw_unit_test" title="wp__verification_sw_unit_test"><em class="xref need">Unit test</em></a></p></td>
+<td><div class="line-block" id="needlist-standards/process_reqs_list/process_area_status_summary-22">
+<div class="line"><a class="reference external" href="../../process_areas/verification/guidance/verification_process_reqs.html#gd_req__verification_link_tests">gd_req__verification_link_tests: Linking Requirements to Tests</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/verification/guidance/verification_process_reqs.html#gd_req__verification_link_tests_cpp">gd_req__verification_link_tests_cpp: Linking Requirements to Tests (C++)</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/verification/guidance/verification_process_reqs.html#gd_req__verification_link_tests_python">gd_req__verification_link_tests_python: Linking Requirements to Tests (Python)</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/verification/guidance/verification_process_reqs.html#gd_req__verification_link_tests_rust">gd_req__verification_link_tests_rust: Linking Requirements to Tests (Rust)</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/verification/guidance/verification_process_reqs.html#gd_req__verification_independence">gd_req__verification_independence: Independence</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/verification/guidance/verification_process_reqs.html#gd_req__verification_checks">gd_req__verification_checks: Verification Documentation Checks</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/verification/guidance/verification_process_reqs.html#gd_req__verification_checks_extended">gd_req__verification_checks_extended: Verification Documentation Checks Extended</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/verification/guidance/verification_process_reqs.html#gd_req__verification_sca_classification">gd_req__verification_sca_classification: Static Code Analysis Classification</a></div>
+<div class="line"><a class="reference external" href="../../process_areas/verification/guidance/verification_process_reqs.html#gd_req__verification_ci_reference_execution">gd_req__verification_ci_reference_execution: CI reference integration execution</a></div>
+</div>
+</td>
+<td><img alt="../../_images/need_pie_8700d.svg" id="needpie-standards/process_reqs_list/process_area_status_summary-29" src="../../_images/need_pie_8700d.svg" />
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="work-product-requirement-completion-status">
+<h2>Work Product Requirement Completion Status<a class="headerlink" href="#work-product-requirement-completion-status" title="Link to this heading">#</a></h2>
+<p>The table below shows for each work product the completion status of its
+relevant process requirements. <strong>Valid</strong> (green) means all requirements are
+valid; <strong>Draft</strong> (yellow) means at least one requirement is not yet valid.
+The number shows valid / total requirements.</p>
+<div class="pst-scrollable-table-container"><table class="table" id="id4">
+<caption><span class="caption-number">Table 57 </span><span class="caption-text">Work product requirement completion status</span><a class="headerlink" href="#id4" title="Link to this table">#</a></caption>
+<colgroup>
+<col style="width: 15.0%" />
+<col style="width: 35.0%" />
+<col style="width: 50.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Process area</p></th>
+<th class="head"><p>Work product</p></th>
+<th class="head"><p>Status</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Requirements Engineering</p></td>
+<td><p><a class="reference internal" href="../../process_areas/requirements_engineering/requirements_workproducts.html#wp__requirements_stkh" title="wp__requirements_stkh"><em class="xref need">Stakeholder Requirements</em></a></p></td>
+<td><p class="wp-status-cell">20 / 20</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p><a class="reference internal" href="../../process_areas/requirements_engineering/requirements_workproducts.html#wp__requirements_sw_platform_aou" title="wp__requirements_sw_platform_aou"><em class="xref need">SW-Platform Assumptions of Use</em></a></p></td>
+<td><p class="wp-status-cell">20 / 20</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p><a class="reference internal" href="../../process_areas/requirements_engineering/requirements_workproducts.html#wp__requirements_feat" title="wp__requirements_feat"><em class="xref need">Feature Requirements</em></a></p></td>
+<td><p class="wp-status-cell">26 / 26</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p><a class="reference internal" href="../../process_areas/requirements_engineering/requirements_workproducts.html#wp__requirements_feat_aou" title="wp__requirements_feat_aou"><em class="xref need">Feature Assumptions of Use</em></a></p></td>
+<td><p class="wp-status-cell">10 / 10</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p><a class="reference internal" href="../../process_areas/requirements_engineering/requirements_workproducts.html#wp__requirements_comp" title="wp__requirements_comp"><em class="xref need">Component Requirements</em></a></p></td>
+<td><p class="wp-status-cell">22 / 22</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p><a class="reference internal" href="../../process_areas/requirements_engineering/requirements_workproducts.html#wp__requirements_comp_aou" title="wp__requirements_comp_aou"><em class="xref need">Component Assumptions of Use</em></a></p></td>
+<td><p class="wp-status-cell">10 / 10</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p><a class="reference internal" href="../../process_areas/requirements_engineering/requirements_workproducts.html#wp__requirements_proc_tool" title="wp__requirements_proc_tool"><em class="xref need">Process/Tool Requirements</em></a></p></td>
+<td><p class="wp-status-cell">8 / 8</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p><a class="reference internal" href="../../process_areas/requirements_engineering/requirements_workproducts.html#wp__requirements_inspect" title="wp__requirements_inspect"><em class="xref need">Requirements Inspection</em></a></p></td>
+<td><p class="wp-status-cell">6 / 6</p></td>
+</tr>
+<tr class="row-even"><td><p>Architecture Design</p></td>
+<td><p><a class="reference internal" href="../../process_areas/architecture_design/architecture_workproducts.html#wp__platform_arch" title="wp__platform_arch"><em class="xref need">Platform Architecture</em></a></p></td>
+<td><p class="wp-status-cell">0 / 0</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p><a class="reference internal" href="../../process_areas/architecture_design/architecture_workproducts.html#wp__feature_arch" title="wp__feature_arch"><em class="xref need">Feature Architecture</em></a></p></td>
+<td><p class="wp-status-cell">21 / 21</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p><a class="reference internal" href="../../process_areas/architecture_design/architecture_workproducts.html#wp__component_arch" title="wp__component_arch"><em class="xref need">Component Architecture</em></a></p></td>
+<td><p class="wp-status-cell">21 / 21</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p><a class="reference internal" href="../../process_areas/architecture_design/architecture_workproducts.html#wp__sw_arch_verification" title="wp__sw_arch_verification"><em class="xref need">Architecture Verification</em></a></p></td>
+<td><p class="wp-status-cell">5 / 6</p></td>
+</tr>
+<tr class="row-even"><td><p>Implementation</p></td>
+<td><p><a class="reference internal" href="../../process_areas/implementation/implementation_workproducts.html#wp__sw_development_plan" title="wp__sw_development_plan"><em class="xref need">Software Development Plan</em></a></p></td>
+<td><p class="wp-status-cell">0 / 0</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p><a class="reference internal" href="../../process_areas/implementation/implementation_workproducts.html#wp__sw_implementation" title="wp__sw_implementation"><em class="xref need">Implementation</em></a></p></td>
+<td><p class="wp-status-cell">26 / 26</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p><a class="reference internal" href="../../process_areas/implementation/implementation_workproducts.html#wp__sw_implementation_inspection" title="wp__sw_implementation_inspection"><em class="xref need">Implementation Inspection</em></a></p></td>
+<td><p class="wp-status-cell">1 / 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>Verification</p></td>
+<td><p><a class="reference internal" href="../../process_areas/verification/verification_workproducts.html#wp__verification_plan" title="wp__verification_plan"><em class="xref need">Verification Plan</em></a></p></td>
+<td><p class="wp-status-cell">0 / 0</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p><a class="reference internal" href="../../process_areas/verification/verification_workproducts.html#wp__verification_platform_int_test" title="wp__verification_platform_int_test"><em class="xref need">Platform Integration Test</em></a></p></td>
+<td><p class="wp-status-cell">8 / 9</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p><a class="reference internal" href="../../process_areas/verification/verification_workproducts.html#wp__verification_platform_ver_report" title="wp__verification_platform_ver_report"><em class="xref need">Platform Verification Report</em></a></p></td>
+<td><p class="wp-status-cell">0 / 0</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p><a class="reference internal" href="../../process_areas/verification/verification_workproducts.html#wp__verification_feat_int_test" title="wp__verification_feat_int_test"><em class="xref need">Feature Integration test</em></a></p></td>
+<td><p class="wp-status-cell">9 / 10</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p><a class="reference internal" href="../../process_areas/verification/verification_workproducts.html#wp__verification_module_ver_report" title="wp__verification_module_ver_report"><em class="xref need">Module Verification Report</em></a></p></td>
+<td><p class="wp-status-cell">2 / 2</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p><a class="reference internal" href="../../process_areas/verification/verification_workproducts.html#wp__verification_comp_int_test" title="wp__verification_comp_int_test"><em class="xref need">Component Integration test</em></a></p></td>
+<td><p class="wp-status-cell">9 / 10</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p><a class="reference internal" href="../../process_areas/verification/verification_workproducts.html#wp__verification_sw_unit_test" title="wp__verification_sw_unit_test"><em class="xref need">Unit test</em></a></p></td>
+<td><p class="wp-status-cell">8 / 9</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('p.wp-status-cell').forEach(function(p) {
+    var match = p.textContent.match(/(\d+)\s*\/\s*(\d+)/);
+    if (match) {
+      var valid = parseInt(match[1], 10);
+      var total = parseInt(match[2], 10);
+      var badge = document.createElement('span');
+      badge.style.fontWeight = 'bold';
+      badge.style.padding = '3px 10px';
+      badge.style.borderRadius = '4px';
+      badge.style.display = 'inline-block';
+      if (total > 0 && valid >= total) {
+        badge.textContent = 'Valid (' + valid + '/' + total + ')';
+        badge.style.backgroundColor = 'LimeGreen';
+        badge.style.color = 'white';
+      } else {
+        badge.textContent = 'Draft (' + valid + '/' + total + ')';
+        badge.style.backgroundColor = 'Gold';
+        badge.style.color = 'black';
+      }
+      p.innerHTML = '';
+      p.appendChild(badge);
+    }
+  });
+});
+</script></section>
+</section>
+
+
+                </article>
+              
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="index.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Process Requirements List</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="process_area_compact_overview.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Process Area Status Overview (Compact)</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../../_static/scripts/bootstrap.js?digest=7f76b32a3354e82990f2"></script>
+<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=7f76b32a3354e82990f2"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+
+  <p class="sphinx-version">
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 9.1.0.
+    <br/>
+  </p>
+</div>
+      
+    </div>
+  
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item">
+<p class="theme-version">
+  <!-- # L10n: Setting the PST URL as an argument as this does not need to be localized -->
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.17.0.
+</p></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>

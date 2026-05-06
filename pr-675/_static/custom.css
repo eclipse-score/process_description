@@ -1,0 +1,333 @@
+/* Process area card color coding */
+.sd-card.card-management {
+	--card-border-color: #000000;
+	--card-divider-color: #000000;
+	--card-background-color: #fcd364;
+	--card-header-text-color: #000000;
+	--card-body-text-color: #000000;
+}
+
+.sd-card.card-development {
+	--card-border-color: #000000;
+	--card-divider-color: #ffffff;
+	--card-background-color: #1e1bf1;
+	--card-header-text-color: #ffffff;
+	--card-body-text-color: #ffffff;
+}
+
+.sd-card.card-support {
+	--card-border-color: #000000;
+	--card-divider-color: #000000;
+	--card-background-color: #7edffc;
+	--card-header-text-color: #000000;
+	--card-body-text-color: #000000;
+}
+
+.sd-card.card-ml0 {
+	--card-border-color: #000000;
+	--card-divider-color: #000000;
+	--card-background-color: #f9fafa;
+	--card-header-text-color: #000000;
+	--card-body-text-color: #000000;
+}
+
+.sd-card.card-ml1 {
+	--card-border-color: #000000;
+	--card-divider-color: #000000;
+	--card-background-color: #fff2cc;
+	--card-header-text-color: #000000;
+	--card-body-text-color: #000000;
+}
+
+.sd-card.card-ml2 {
+	--card-border-color: #000000;
+	--card-divider-color: #000000;
+	--card-background-color: #e1d5e7;
+	--card-header-text-color: #000000;
+	--card-body-text-color: #000000;
+}
+
+.sd-card.card-ml3 {
+	--card-border-color: #000000;
+	--card-divider-color: #000000;
+	--card-background-color: #d5e8d4;
+	--card-header-text-color: #000000;
+	--card-body-text-color: #000000;
+}
+
+.sd-card.card-ml4 {
+	--card-border-color: #000000;
+	--card-divider-color: #000000;
+	--card-background-color: #ffffff;
+	--card-header-text-color: #000000;
+	--card-body-text-color: #000000;
+}
+
+.sd-card.card-management,
+.sd-card.card-development,
+.sd-card.card-support,
+.sd-card.card-ml0,
+.sd-card.card-ml1,
+.sd-card.card-ml2,
+.sd-card.card-ml3,
+.sd-card.card-ml4 {
+	border: 1px solid var(--card-border-color);
+	border-left: 4px solid var(--card-border-color);
+}
+
+.sd-card.card-management,
+.sd-card.card-management .sd-card-body,
+.sd-card.card-management .sd-card-header,
+.sd-card.card-management .sd-card-footer,
+.sd-card.card-development,
+.sd-card.card-development .sd-card-body,
+.sd-card.card-development .sd-card-header,
+.sd-card.card-development .sd-card-footer,
+.sd-card.card-support,
+.sd-card.card-support .sd-card-body,
+.sd-card.card-support .sd-card-header,
+.sd-card.card-support .sd-card-footer,
+.sd-card.card-ml0,
+.sd-card.card-ml0 .sd-card-body,
+.sd-card.card-ml0 .sd-card-header,
+.sd-card.card-ml0 .sd-card-footer,
+.sd-card.card-ml1,
+.sd-card.card-ml1 .sd-card-body,
+.sd-card.card-ml1 .sd-card-header,
+.sd-card.card-ml1 .sd-card-footer,
+.sd-card.card-ml2,
+.sd-card.card-ml2 .sd-card-body,
+.sd-card.card-ml2 .sd-card-header,
+.sd-card.card-ml2 .sd-card-footer,
+.sd-card.card-ml3,
+.sd-card.card-ml3 .sd-card-body,
+.sd-card.card-ml3 .sd-card-header,
+.sd-card.card-ml3 .sd-card-footer,
+.sd-card.card-ml4,
+.sd-card.card-ml4 .sd-card-body,
+.sd-card.card-ml4 .sd-card-header,
+.sd-card.card-ml4 .sd-card-footer {
+	background-color: var(--card-background-color);
+}
+
+.score-grid .sd-card.card-management .sd-card-header,
+.score-grid .sd-card.card-development .sd-card-header,
+.score-grid .sd-card.card-support .sd-card-header,
+.score-grid .sd-card.card-ml0 .sd-card-header,
+.score-grid .sd-card.card-ml1 .sd-card-header,
+.score-grid .sd-card.card-ml2 .sd-card-header,
+.score-grid .sd-card.card-ml3 .sd-card-header,
+.score-grid .sd-card.card-ml4 .sd-card-header {
+	background-color: var(--card-background-color) !important;
+	border-bottom: 1px solid var(--card-divider-color) !important;
+	color: var(--card-header-text-color) !important;
+}
+
+.score-grid .sd-card.card-management .sd-card-footer,
+.score-grid .sd-card.card-development .sd-card-footer,
+.score-grid .sd-card.card-support .sd-card-footer,
+.score-grid .sd-card.card-ml0 .sd-card-footer,
+.score-grid .sd-card.card-ml1 .sd-card-footer,
+.score-grid .sd-card.card-ml2 .sd-card-footer,
+.score-grid .sd-card.card-ml3 .sd-card-footer,
+.score-grid .sd-card.card-ml4 .sd-card-footer {
+	border-top: 1px solid var(--card-divider-color) !important;
+}
+
+.score-grid .sd-card.card-management .sd-card-header a,
+.score-grid .sd-card.card-development .sd-card-header a,
+.score-grid .sd-card.card-support .sd-card-header a,
+.score-grid .sd-card.card-ml0 .sd-card-header a,
+.score-grid .sd-card.card-ml1 .sd-card-header a,
+.score-grid .sd-card.card-ml2 .sd-card-header a,
+.score-grid .sd-card.card-ml3 .sd-card-header a,
+.score-grid .sd-card.card-ml4 .sd-card-header a {
+	color: var(--card-header-text-color) !important;
+}
+
+.score-grid .sd-card.card-management .sd-card-body,
+.score-grid .sd-card.card-development .sd-card-body,
+.score-grid .sd-card.card-support .sd-card-body,
+.score-grid .sd-card.card-ml0 .sd-card-body,
+.score-grid .sd-card.card-ml1 .sd-card-body,
+.score-grid .sd-card.card-ml2 .sd-card-body,
+.score-grid .sd-card.card-ml3 .sd-card-body,
+.score-grid .sd-card.card-ml4 .sd-card-body,
+.score-grid .sd-card.card-management .sd-card-footer,
+.score-grid .sd-card.card-development .sd-card-footer,
+.score-grid .sd-card.card-support .sd-card-footer,
+.score-grid .sd-card.card-ml0 .sd-card-footer,
+.score-grid .sd-card.card-ml1 .sd-card-footer,
+.score-grid .sd-card.card-ml2 .sd-card-footer,
+.score-grid .sd-card.card-ml3 .sd-card-footer,
+.score-grid .sd-card.card-ml4 .sd-card-footer,
+.score-grid .sd-card.card-management .sd-card-body a,
+.score-grid .sd-card.card-development .sd-card-body a,
+.score-grid .sd-card.card-support .sd-card-body a,
+.score-grid .sd-card.card-ml0 .sd-card-body a,
+.score-grid .sd-card.card-ml1 .sd-card-body a,
+.score-grid .sd-card.card-ml2 .sd-card-body a,
+.score-grid .sd-card.card-ml3 .sd-card-body a,
+.score-grid .sd-card.card-ml4 .sd-card-body a,
+.score-grid .sd-card.card-management .sd-card-footer a,
+.score-grid .sd-card.card-development .sd-card-footer a,
+.score-grid .sd-card.card-support .sd-card-footer a,
+.score-grid .sd-card.card-ml0 .sd-card-footer a,
+.score-grid .sd-card.card-ml1 .sd-card-footer a,
+.score-grid .sd-card.card-ml2 .sd-card-footer a,
+.score-grid .sd-card.card-ml3 .sd-card-footer a,
+.score-grid .sd-card.card-ml4 .sd-card-footer a {
+	color: var(--card-body-text-color) !important;
+}
+
+/* Process requirement summary charts */
+img[id^="needpie-standards/process_reqs_list/process_area_status_summary-"] {
+	width: 300px;
+	max-width: none;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+}
+
+td:has(img[id^="needpie-standards/process_reqs_list/process_area_status_summary-"]) {
+	vertical-align: middle;
+}
+
+.small-pie-cell img[id^="needpie-standards/process_reqs_list/process_area_status_summary-"] {
+	width: 150px !important;
+}
+
+/* Compact process area overview charts */
+.compact-overview-wrapper {
+	overflow-x: auto;
+}
+
+.compact-overview-table td:nth-child(1),
+.compact-overview-table th:nth-child(1),
+.compact-overview-table td:nth-child(5),
+.compact-overview-table th:nth-child(5),
+.compact-overview-table td:nth-child(6),
+.compact-overview-table th:nth-child(6) {
+	text-align: center;
+	vertical-align: middle;
+}
+
+.compact-overview-table td:has(img[id^="needpie-"]) {
+	min-width: 240px;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.compact-overview-table td:has(img[id^="needpie-"]) img {
+	width: 240px;
+	max-width: none;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+}
+
+/* Harvey balls in module status tables (functional completeness column) */
+.module-status-table td:nth-child(2) {
+	text-align: center;
+	vertical-align: middle;
+}
+
+/* Harvey ball legend items (small inline versions) */
+.harvey-legend {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	border: 2px solid #333;
+	box-sizing: border-box;
+	vertical-align: middle;
+	flex-shrink: 0;
+}
+.harvey-legend-0   { background: white; }
+.harvey-legend-25  { background: conic-gradient(#333 0deg 90deg,  white 90deg  360deg); }
+.harvey-legend-50  { background: conic-gradient(#333 0deg 180deg, white 180deg 360deg); }
+.harvey-legend-75  { background: conic-gradient(#333 0deg 270deg, white 270deg 360deg); }
+.harvey-legend-100 { background: #333; }
+
+/* Module compact overview - center Harvey balls in cells */
+.module-compact-table td,
+.module-compact-table th {
+	text-align: center;
+	vertical-align: middle;
+}
+
+.module-compact-table td:first-child,
+.module-compact-table th:first-child {
+	text-align: left;
+}
+
+.module-compact-table td img {
+	display: inline;
+	margin: 1px;
+}
+
+.combined-status-table td,
+.combined-status-table th {
+	border: 1px solid #ccc !important;
+}
+
+.combined-status-table tr.group-start td {
+	border-top: 2px solid #888 !important;
+}
+
+/* Static chart legend block above the process status overview table */
+.chart-legend-block {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        margin-bottom: 1rem;
+        padding: 0.75rem 1rem;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        background: #fafafa;
+}
+
+.chart-legend-group {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 0.5rem;
+}
+
+.chart-legend-group strong {
+        margin-right: 0.25rem;
+}
+
+.chart-legend-item {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.25rem;
+        font-size: 0.85em;
+        white-space: nowrap;
+}
+
+.chart-legend-dot {
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        flex-shrink: 0;
+}
+
+.module-status-table td,
+.module-status-table th {
+	border: 1px solid #ccc !important;
+	vertical-align: middle;
+}
+
+.module-status-table .small-pie-cell {
+	text-align: center;
+}
+
+.module-status-table .small-pie-cell img {
+	width: 140px;
+	max-width: none;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+}
