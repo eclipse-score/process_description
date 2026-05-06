@@ -26,6 +26,24 @@ All process requirements should be labelled with the priorization of automation 
 - A label "done_automation" means nothing to do, because it already works. Note that in docs-as-code repository there are tool requirements linking to the process requirements with an "Implemented" attribute.
 - A label "prio_*_automation" means the prio 1, 2, ... labelled requirement shall be implemented in this order. Prio 1 is everything we need for the re-audit, prio 2 could be done manually as a fallback, prio 3 is nice to have ...
 
+Status Summary by Process Area
+******************************
+
+For a dynamic overview of process requirement counts per process area and status,
+see:
+
+.. toctree::
+   :maxdepth: 1
+
+   process_area_status_summary
+   process_area_compact_overview
+   module_compact_overview
+   process_status_overview
+   process_area_overview_table
+   tooling_table
+   wp_status_table
+
+
 .. needtable::
    :style: table
    :types: gd_req

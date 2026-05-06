@@ -30,10 +30,70 @@ extensions = [
     # is updated with new sphinx-needs version
     "sphinxcontrib.plantuml",
     "score_sphinx_bundle",
+    "harvey_balls",
 ]
 
 html_static_path = ["_assets"]
 html_css_files = ["custom.css"]
 
+# Hide the "On this page" secondary sidebar for wide-content pages
+html_theme_options = {
+    "secondary_sidebar_items": {
+        "**": ["page-toc"],
+        "standards/process_reqs_list/process_area_status_summary": [],
+        "standards/process_reqs_list/process_status_overview": [],
+    }
+}
+
 # :need:`{title}` is used in the needs templates to display the title of the need
 needs_role_need_template = "{title}"
+
+# Make the process/ directory importable so that filter functions
+# referenced via :filter-func: in sphinx-needs directives can be found.
+import sys as _sys
+import os as _os
+_sys.path.insert(0, _os.path.dirname(_os.path.abspath(__file__)))
+
+
+def _patch_needpie_suppress_legend() -> None:
+    """Suppress all in-chart legends in sphinx-needs needpie charts.
+
+    needpie auto-adds a legend whenever a slice is <5% or zero, even without
+    the :legend: option. Since a static legend is displayed above the table,
+    we replace axes.legend() with a no-op so no legend appears inside the charts.
+
+    We also patch save_matplotlib_figure to always overwrite existing SVG files,
+    bypassing the sphinx-needs env.images cache which would otherwise skip
+    regenerating images when the Sphinx environment pickle exists from a prior build.
+    """
+    try:
+        import matplotlib.axes
+        matplotlib.axes.Axes.legend = lambda self, *args, **kwargs: None
+    except Exception:
+        pass
+
+    try:
+        import sphinx_needs.utils as _sn_utils
+        import sphinx_needs.directives.needpie as _needpie_mod
+        import os
+
+        _orig_save = _sn_utils.save_matplotlib_figure
+
+        def _save_always(app, figure, basename, fromdocname):  # type: ignore[no-untyped-def]
+            # Remove cached entry so figure.savefig() is always called
+            builder = app.builder
+            for ext in ("svg", "png", "pdf"):
+                path = os.path.join(builder.outdir, builder.imagedir, f"{basename}.{ext}")
+                try:
+                    del app.env.images[path]  # type: ignore[attr-defined]
+                except (KeyError, TypeError, AttributeError):
+                    pass
+            return _orig_save(app, figure, basename, fromdocname)
+
+        _sn_utils.save_matplotlib_figure = _save_always
+        _needpie_mod.save_matplotlib_figure = _save_always
+    except Exception:
+        pass
+
+
+_patch_needpie_suppress_legend()
