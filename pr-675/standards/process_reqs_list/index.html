@@ -74,7 +74,7 @@
     <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Process Requirement Status by Process Area" href="process_area_status_summary.html" />
+    <link rel="next" title="Feature Status Tracker" href="feature_status_tracker.html" />
     <link rel="prev" title="ISO/SAE 21434:2021(E)" href="../isosae21434/isosae21434.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -506,14 +506,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../aspice_40/aspice.html">ASPICE 4.0</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../isosae21434/isosae21434.html">ISO/SAE 21434:2021(E)</a></li>
 <li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">Process Requirements List</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="process_area_status_summary.html">Process Requirement Status by Process Area</a></li>
-<li class="toctree-l2"><a class="reference internal" href="process_area_compact_overview.html">Process Area Status Overview (Compact)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="module_compact_overview.html">Module Status Overview (Compact)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="process_status_overview.html">Process Status Overview</a></li>
-<li class="toctree-l2"><a class="reference internal" href="process_area_overview_table.html">Process Area Overview</a></li>
-<li class="toctree-l2"><a class="reference internal" href="tooling_table.html">Tooling Overview</a></li>
-<li class="toctree-l2"><a class="reference internal" href="wp_status_table.html">Work Product Process Overview</a></li>
-<li class="toctree-l2"><a class="reference internal" href="module_phase_tracker.html">Module Phase Tracker</a></li>
+<li class="toctree-l2"><a class="reference internal" href="feature_status_tracker.html">Feature Status Tracker</a></li>
 </ul>
 </details></li>
 </ul>
@@ -578,29 +571,12 @@
                   
   <section id="process-requirements-list">
 <span id="process-req"></span><h1>Process Requirements List<a class="headerlink" href="#process-requirements-list" title="Link to this heading">#</a></h1>
-<section id="automation-status-via-process-requirement-table">
-<h2>Automation Status via Process Requirement Table<a class="headerlink" href="#automation-status-via-process-requirement-table" title="Link to this heading">#</a></h2>
-<p>All process requirements should be labelled with the priorization of automation implementation:</p>
-<ul class="simple">
-<li><p>A label “manual” means nothing to do, because it must be fulfilled manually (e.g. by filling attributes). It can be added a prio (to denote that this req is a must for v0.5 add “prio_1”)</p></li>
-<li><p>A label “done_automation” means nothing to do, because it already works. Note that in docs-as-code repository there are tool requirements linking to the process requirements with an “Implemented” attribute.</p></li>
-<li><p>A label “prio_*_automation” means the prio 1, 2, … labelled requirement shall be implemented in this order. Prio 1 is everything we need for the re-audit, prio 2 could be done manually as a fallback, prio 3 is nice to have …</p></li>
-</ul>
-</section>
-<section id="status-summary-by-process-area">
-<h2>Status Summary by Process Area<a class="headerlink" href="#status-summary-by-process-area" title="Link to this heading">#</a></h2>
-<p>For a dynamic overview of process requirement counts per process area and status,
-see:</p>
+<section id="feature-status-tracker">
+<h2>Feature Status Tracker<a class="headerlink" href="#feature-status-tracker" title="Link to this heading">#</a></h2>
+<p>For a detailed overview of deliverable status per module and process area, see:</p>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="process_area_status_summary.html">Process Requirement Status by Process Area</a></li>
-<li class="toctree-l1"><a class="reference internal" href="process_area_compact_overview.html">Process Area Status Overview (Compact)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="module_compact_overview.html">Module Status Overview (Compact)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="process_status_overview.html">Process Status Overview</a></li>
-<li class="toctree-l1"><a class="reference internal" href="process_area_overview_table.html">Process Area Overview</a></li>
-<li class="toctree-l1"><a class="reference internal" href="tooling_table.html">Tooling Overview</a></li>
-<li class="toctree-l1"><a class="reference internal" href="wp_status_table.html">Work Product Process Overview</a></li>
-<li class="toctree-l1"><a class="reference internal" href="module_phase_tracker.html">Module Phase Tracker</a></li>
+<li class="toctree-l1"><a class="reference internal" href="feature_status_tracker.html">Feature Status Tracker</a></li>
 </ul>
 </div>
 <div class="needstable_wrapper docutils container" id="needtable-standards/process_reqs_list/index-0">
@@ -1384,11 +1360,11 @@ see:</p>
       </div>
     </a>
     <a class="right-next"
-       href="process_area_status_summary.html"
+       href="feature_status_tracker.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Process Requirement Status by Process Area</p>
+        <p class="prev-next-title">Feature Status Tracker</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -1411,8 +1387,7 @@ see:</p>
   </div>
   <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="pst-show_toc_level nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#automation-status-via-process-requirement-table">Automation Status via Process Requirement Table</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#status-summary-by-process-area">Status Summary by Process Area</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#feature-status-tracker">Feature Status Tracker</a></li>
 </ul>
   </nav></div>
 
