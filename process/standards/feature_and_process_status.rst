@@ -568,19 +568,19 @@ See :ref:`verification_workflows`.
    * - Logging
      - ✅ Available (619 tests)
      - ❌ Open
-     - ❌ Open
+     - ✅ Available (1 test) `reference_integration <https://github.com/eclipse-score/reference_integration>`__ [*]
      - ❌ Open
 
    * - Orchestrator
      - ✅ Available (2 tests)
      - ✅ Available (9 tests)
-     - ❌ Open
+     - ✅ Available (3 tests) `reference_integration <https://github.com/eclipse-score/reference_integration>`__ [*]
      - ❌ Open
 
    * - Persistency
      - ✅ Available (138 tests)
      - ❌ Open
-     - ❌ Open
+     - ✅ Available (6 tests) `reference_integration <https://github.com/eclipse-score/reference_integration>`__ [*]
      - ❌ Open
 
    * - Time
@@ -606,6 +606,9 @@ See :ref:`verification_workflows`.
      - ❌ Open
      - ❌ Open
      - ❌ Open
+
+.. [*] Feature integration tests are cross-module and maintained in `eclipse-score/reference_integration <https://github.com/eclipse-score/reference_integration>`__.
+   Test counts reflect tests covering that module: Logging (test_remote_logging), Orchestrator (test_orchestration_with_persistency, test_showcases, test_ssh), Persistency (test_orchestration_with_persistency, test_multiple_kvs_per_app).
 
 Done Criteria
 *************
