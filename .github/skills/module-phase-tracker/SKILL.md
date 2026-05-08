@@ -72,16 +72,11 @@ See :ref:`<workflow_ref>`.
    :stub-columns: 1
    :class: module-phase-tracker-table
 
-   * - **Deliverable**
-     - **Baselibs**
-     - **Communication**
-     - **Logging**
-     - **Orchestrator**
-     - **Persistency**
-     - **Time**
-     - **Config Mgmt**
+   * - **Module**
+     - **<Deliverable 1>**
+     - **<Deliverable 2>**
 
-   * - <Deliverable name>
+   * - <Module name>
      - <status>
      ...
 ```
@@ -407,26 +402,34 @@ See :ref:`chm_change_workflows`.
    :stub-columns: 1
    :class: module-phase-tracker-table
 
-   * - **Deliverable**
-     - **Baselibs**
-     - **Communication**
-     - **Logging**
-     - **Orchestrator**
-     - **Persistency**
-     - **Time**
-     - **Config Mgmt**
-     - **Lifecycle**
-     - **Security/Crypto**
+   * - **Module**
+     - **CR approved**
 
-   * - CR approved
+   * - Baselibs
      - ✅ Available
+
+   * - Communication
      - ✅ Available
+
+   * - Logging
      - ✅ Available
+
+   * - Orchestrator
      - ✅ Available
+
+   * - Persistency
      - ✅ Available
+
+   * - Time
      - ✅ Available
+
+   * - Config Mgmt
      - ✅ Available
+
+   * - Lifecycle
      - ✅ Available
+
+   * - Security/Crypto
      - ✅ Available
 
 Process Area 2 — Requirements Engineering
@@ -481,40 +484,14 @@ See :ref:`requirements_workflows`.
    :stub-columns: 1
    :class: module-phase-tracker-table
 
-   * - **Deliverable**
-     - **Baselibs**
-     - **Communication**
-     - **Logging**
-     - **Orchestrator**
-     - **Persistency**
-     - **Time**
-     - **Config Mgmt**
-     - **Lifecycle**
-     - **Security/Crypto**
+   * - **Module**
+     - **Feature Requirements**
+     - **Component Requirements**
+     - **Req. Inspection**
 
-   * - Feature Requirements
+   * - Baselibs
      - 🔄 93% (14/15)
-     - ✅ Available (50/50)
-     - ✅ Available (46/46)
-     - 🔄 84% (26/31)
-     - ✅ Available (40/40)
-     - ✅ Available (15/15)
-     - ✅ Available (13/13)
-     - ❌ Open
-     - ✅ Available (42/42)
-
-   * - Component Requirements
      - 🔄 93% (124/134)
-     - 🔄 97% (34/35)
-     - ❌ Open
-     - ❌ Open
-     - 🔄 95% (36/38)
-     - ❌ Open
-     - ❌ Open
-     - ❌ Open
-     - ❌ Open
-
-   * - Req. Inspection
      - 🔄 20% (2/10)
        `bitmanipulation <https://github.com/eclipse-score/score/blob/main/docs/modules/baselibs/bitmanipulation/docs/requirements/chklst_req_inspection.rst>`__,
        `concurrency <https://github.com/eclipse-score/score/blob/main/docs/modules/baselibs/concurrency/docs/requirements/chklst_req_inspection.rst>`__,
@@ -526,16 +503,48 @@ See :ref:`requirements_workflows`.
        `srs <https://github.com/eclipse-score/score/blob/main/docs/modules/baselibs/static_reflection_with_serialization/docs/requirements/chklst_req_inspection.rst>`__,
        `utils <https://github.com/eclipse-score/score/blob/main/docs/modules/baselibs/utils/docs/requirements/chklst_req_inspection.rst>`__,
        `feature-level <https://github.com/eclipse-score/score/blob/main/docs/features/baselibs/docs/requirements/chklst_req_inspection.rst>`__
+
+   * - Communication
+     - ✅ Available (50/50)
+     - 🔄 97% (34/35)
      - ❌ Open
+
+   * - Logging
+     - ✅ Available (46/46)
+     - ❌ Open
+     - ❌ Open
+
+   * - Orchestrator
+     - 🔄 84% (26/31)
      - ❌ Open
      - ❌ Open
        `executor <https://github.com/eclipse-score/score/blob/main/docs/modules/orchestrator/executor/docs/requirements/chklst_req_inspection.rst>`__,
        `orchestrator <https://github.com/eclipse-score/score/blob/main/docs/modules/orchestrator/orchestrator/docs/requirements/chklst_req_inspection.rst>`__
+
+   * - Persistency
+     - ✅ Available (40/40)
+     - 🔄 95% (36/38)
      - ✅ Available (2/2)
        `feature-level <https://github.com/eclipse-score/score/blob/main/docs/features/persistency/requirements/chklst_req_inspection.rst>`__,
        `kvs <https://github.com/eclipse-score/persistency/blob/main/docs/persistency/kvs/requirements/chklst_req_inspection.rst>`__
+
+   * - Time
+     - ✅ Available (15/15)
      - ❌ Open
      - ❌ Open
+
+   * - Config Mgmt
+     - ✅ Available (13/13)
+     - ❌ Open
+     - ❌ Open
+
+   * - Lifecycle
+     - ❌ Open
+     - ❌ Open
+     - ❌ Open
+
+   * - Security/Crypto
+     - ✅ Available (42/42)
      - ❌ Open
      - ❌ Open
 
@@ -591,40 +600,14 @@ See :ref:`arch_workflow`.
    :stub-columns: 1
    :class: module-phase-tracker-table
 
-   * - **Deliverable**
-     - **Baselibs**
-     - **Communication**
-     - **Logging**
-     - **Orchestrator**
-     - **Persistency**
-     - **Time**
-     - **Config Mgmt**
-     - **Lifecycle**
-     - **Security/Crypto**
+   * - **Module**
+     - **Feature Architecture**
+     - **Component Architecture**
+     - **Arch. Inspection**
 
-   * - Feature Architecture
+   * - Baselibs
      - ✅ Available (4/4)
-     - ✅ Available (3/3)
-     - ✅ Available (4/4)
-     - 🔄 66% (4/6)
-     - ✅ Available (12/12)
-     - ❌ Open
-     - ❌ Open
-     - 🔄 94% (30/32)
-     - ❌ Open
-
-   * - Component Architecture
      - 🔄 98% (172/175)
-     - 🔄 94% (17/18)
-     - ✅ Available (3/3)
-     - 🔄 98% (42/43)
-     - 🔄 25% (1/4)
-     - ❌ Open
-     - ❌ Open
-     - 🔄 94% (15/16)
-     - ❌ Open
-
-   * - Arch. Inspection
      - 🔄 80% (8/10)
        `bitmanipulation <https://github.com/eclipse-score/score/blob/main/docs/modules/baselibs/bitmanipulation/docs/architecture/chklst_arc_inspection.rst>`__,
        `concurrency <https://github.com/eclipse-score/score/blob/main/docs/modules/baselibs/concurrency/docs/architecture/chklst_arc_inspection.rst>`__,
@@ -636,15 +619,47 @@ See :ref:`arch_workflow`.
        `srs <https://github.com/eclipse-score/score/blob/main/docs/modules/baselibs/static_reflection_with_serialization/docs/architecture/chklst_arc_inspection.rst>`__,
        `utils <https://github.com/eclipse-score/score/blob/main/docs/modules/baselibs/utils/docs/architecture/chklst_arc_inspection.rst>`__,
        `feature-level <https://github.com/eclipse-score/score/blob/main/docs/features/baselibs/docs/architecture/chklst_arc_inspection.rst>`__
+
+   * - Communication
+     - ✅ Available (3/3)
+     - 🔄 94% (17/18)
      - ❌ Open
+
+   * - Logging
+     - ✅ Available (4/4)
+     - ✅ Available (3/3)
      - ❌ Open
+
+   * - Orchestrator
+     - 🔄 66% (4/6)
+     - 🔄 98% (42/43)
      - ❌ Open
        `executor <https://github.com/eclipse-score/score/blob/main/docs/modules/orchestrator/executor/docs/architecture/chklst_arc_inspection.rst>`__,
        `orchestrator <https://github.com/eclipse-score/score/blob/main/docs/modules/orchestrator/orchestrator/docs/architecture/chklst_arc_inspection.rst>`__
+
+   * - Persistency
+     - ✅ Available (12/12)
+     - 🔄 25% (1/4)
      - ❌ Open
        `feature-level <https://github.com/eclipse-score/score/blob/main/docs/features/persistency/architecture/chklst_arc_inspection.rst>`__,
        `kvs <https://github.com/eclipse-score/persistency/blob/main/docs/persistency/kvs/architecture/chklst_arc_inspection.rst>`__
+
+   * - Time
      - ❌ Open
+     - ❌ Open
+     - ❌ Open
+
+   * - Config Mgmt
+     - ❌ Open
+     - ❌ Open
+     - ❌ Open
+
+   * - Lifecycle
+     - 🔄 94% (30/32)
+     - 🔄 94% (15/16)
+     - ❌ Open
+
+   * - Security/Crypto
      - ❌ Open
      - ❌ Open
      - ❌ Open
@@ -701,51 +716,16 @@ See :ref:`workflow_implementation`.
    :stub-columns: 1
    :class: module-phase-tracker-table
 
-   * - **Deliverable**
-     - **Baselibs**
-     - **Communication**
-     - **Logging**
-     - **Orchestrator**
-     - **Persistency**
-     - **Time**
-     - **Config Mgmt**
-     - **Lifecycle**
-     - **Security/Crypto**
+   * - **Module**
+     - **SW Development Plan**
+     - **Code**
+     - **Detailed Design**
+     - **Impl. Inspection**
 
-   * - SW Development Plan
-     - ✅ Available
-     - ✅ Available
-     - ✅ Available
-     - ✅ Available
-     - ✅ Available
-     - ✅ Available
-     - ✅ Available
-     - ✅ Available
-     - ✅ Available
-
-   * - Code
-     - ✅ Available
-     - ✅ Available
-     - ✅ Available
-     - ✅ Available
-     - ✅ Available
-     - ✅ Available
+   * - Baselibs
      - ✅ Available
      - ✅ Available
      - ❌ Open
-
-   * - Detailed Design
-     - ❌ Open
-     - ❌ Open
-     - ❌ Open
-     - ❌ Open
-     - ❌ Open
-     - ❌ Open
-     - ❌ Open
-     - 🔄 50% (1/2)
-     - ❌ Open
-
-   * - Impl. Inspection
      - ❌ Open
        `bitmanipulation <https://github.com/eclipse-score/score/blob/main/docs/modules/baselibs/bitmanipulation/docs/detailed_design/chklst_impl_inspection.rst>`__,
        `concurrency <https://github.com/eclipse-score/score/blob/main/docs/modules/baselibs/concurrency/docs/detailed_design/chklst_impl_inspection.rst>`__,
@@ -756,12 +736,52 @@ See :ref:`workflow_implementation`.
        `result <https://github.com/eclipse-score/score/blob/main/docs/modules/baselibs/result/docs/detailed_design/chklst_impl_inspection.rst>`__,
        `srs <https://github.com/eclipse-score/score/blob/main/docs/modules/baselibs/static_reflection_with_serialization/docs/detailed_design/chklst_impl_inspection.rst>`__,
        `utils <https://github.com/eclipse-score/score/blob/main/docs/modules/baselibs/utils/docs/detailed_design/chklst_impl_inspection.rst>`__
+
+   * - Communication
+     - ✅ Available
+     - ✅ Available
      - ❌ Open
      - ❌ Open
+
+   * - Logging
+     - ✅ Available
+     - ✅ Available
+     - ❌ Open
+     - ❌ Open
+
+   * - Orchestrator
+     - ✅ Available
+     - ✅ Available
+     - ❌ Open
+     - ❌ Open
+
+   * - Persistency
+     - ✅ Available
+     - ✅ Available
      - ❌ Open
      - ❌ Open
        `kvs <https://github.com/eclipse-score/persistency/blob/main/docs/persistency/kvs/detailed_design/chklst_impl_inspection.rst>`__
+
+   * - Time
+     - ✅ Available
+     - ✅ Available
      - ❌ Open
+     - ❌ Open
+
+   * - Config Mgmt
+     - ✅ Available
+     - ✅ Available
+     - ❌ Open
+     - ❌ Open
+
+   * - Lifecycle
+     - ✅ Available
+     - ✅ Available
+     - 🔄 50% (1/2)
+     - ❌ Open
+
+   * - Security/Crypto
+     - ✅ Available
      - ❌ Open
      - ❌ Open
      - ❌ Open
@@ -818,56 +838,61 @@ See :ref:`verification_workflows`.
    :stub-columns: 1
    :class: module-phase-tracker-table
 
-   * - **Deliverable**
-     - **Baselibs**
-     - **Communication**
-     - **Logging**
-     - **Orchestrator**
-     - **Persistency**
-     - **Time**
-     - **Config Mgmt**
-     - **Lifecycle**
-     - **Security/Crypto**
+   * - **Module**
+     - **Unit Tests**
+     - **Comp. Integration Tests**
+     - **Feature Integration Tests**
+     - **Module Verification Report**
 
-   * - Unit Tests
+   * - Baselibs
      - ✅ Available
      - ✅ Available
-     - ✅ Available
-     - ✅ Available
-     - ✅ Available
-     - ✅ Available
-     - ✅ Available
-     - ✅ Available
+     - ❌ Open
      - ❌ Open
 
-   * - Comp. Integration Tests
+   * - Communication
      - ✅ Available
      - ✅ Available
      - ❌ Open
-     - ✅ Available
-     - ❌ Open
-     - ❌ Open
-     - ❌ Open
-     - ✅ Available
      - ❌ Open
 
-   * - Feature Integration Tests
-     - ❌ Open
-     - ❌ Open
-     - ❌ Open
-     - ❌ Open
-     - ❌ Open
-     - ❌ Open
+   * - Logging
+     - ✅ Available
      - ❌ Open
      - ❌ Open
      - ❌ Open
 
-   * - Module Verification Report
+   * - Orchestrator
+     - ✅ Available
+     - ✅ Available
+     - ❌ Open
+     - ❌ Open
+
+   * - Persistency
+     - ✅ Available
      - ❌ Open
      - ❌ Open
      - ❌ Open
+
+   * - Time
+     - ✅ Available
      - ❌ Open
      - ❌ Open
+     - ❌ Open
+
+   * - Config Mgmt
+     - ✅ Available
+     - ❌ Open
+     - ❌ Open
+     - ❌ Open
+
+   * - Lifecycle
+     - ✅ Available
+     - ✅ Available
+     - ❌ Open
+     - ❌ Open
+
+   * - Security/Crypto
      - ❌ Open
      - ❌ Open
      - ❌ Open
