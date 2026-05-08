@@ -104,7 +104,7 @@ See :ref:`chm_change_workflows`.
           :colors: LimeGreen, Gold, LightBlue, LightGray
           :filter-func: needs_filters.area_verification_status(change_management)
 
-.. rubric:: Implementation status: ✅ Available (7/7 deliverables complete)
+.. rubric:: Implementation status: ✅ Available (9/9 deliverables complete)
 
 .. list-table::
    :header-rows: 1
@@ -119,8 +119,12 @@ See :ref:`chm_change_workflows`.
      - **Persistency**
      - **Time**
      - **Config Mgmt**
+     - **Lifecycle**
+     - **Security/Crypto**
 
    * - CR approved
+     - ✅ Available
+     - ✅ Available
      - ✅ Available
      - ✅ Available
      - ✅ Available
@@ -174,7 +178,7 @@ See :ref:`requirements_workflows`.
           :colors: LimeGreen, Gold, LightBlue, LightGray
           :filter-func: needs_filters.area_verification_status(requirements_engineering)
 
-.. rubric:: Implementation status: 🔄 29% (6/21 deliverables complete)
+.. rubric:: Implementation status: 🔄 26% (7/27 deliverables complete)
 
 .. list-table::
    :header-rows: 1
@@ -189,6 +193,8 @@ See :ref:`requirements_workflows`.
      - **Persistency**
      - **Time**
      - **Config Mgmt**
+     - **Lifecycle**
+     - **Security/Crypto**
 
    * - Feature Requirements
      - 🔄 93% (14/15)
@@ -198,6 +204,8 @@ See :ref:`requirements_workflows`.
      - ✅ Available (40/40)
      - ✅ Available (15/15)
      - ✅ Available (13/13)
+     - ❌ Open
+     - ✅ Available (42/42)
 
    * - Component Requirements
      - 🔄 93% (124/134)
@@ -205,6 +213,8 @@ See :ref:`requirements_workflows`.
      - ❌ Open
      - ❌ Open
      - 🔄 95% (36/38)
+     - ❌ Open
+     - ❌ Open
      - ❌ Open
      - ❌ Open
 
@@ -228,6 +238,8 @@ See :ref:`requirements_workflows`.
      - ✅ Available (2/2)
        `feature-level <https://github.com/eclipse-score/score/blob/main/docs/features/persistency/requirements/chklst_req_inspection.rst>`__,
        `kvs <https://github.com/eclipse-score/persistency/blob/main/docs/persistency/kvs/requirements/chklst_req_inspection.rst>`__
+     - ❌ Open
+     - ❌ Open
      - ❌ Open
      - ❌ Open
 
@@ -276,7 +288,7 @@ See :ref:`arch_workflow`.
           :colors: LimeGreen, Gold, LightBlue, LightGray
           :filter-func: needs_filters.area_verification_status(architecture_design)
 
-.. rubric:: Implementation status: 🔄 24% (5/21 deliverables complete)
+.. rubric:: Implementation status: 🔄 19% (5/27 deliverables complete)
 
 .. list-table::
    :header-rows: 1
@@ -291,6 +303,8 @@ See :ref:`arch_workflow`.
      - **Persistency**
      - **Time**
      - **Config Mgmt**
+     - **Lifecycle**
+     - **Security/Crypto**
 
    * - Feature Architecture
      - ✅ Available (4/4)
@@ -300,6 +314,8 @@ See :ref:`arch_workflow`.
      - ✅ Available (12/12)
      - ❌ Open
      - ❌ Open
+     - 🔄 94% (30/32)
+     - ❌ Open
 
    * - Component Architecture
      - 🔄 98% (172/175)
@@ -308,6 +324,8 @@ See :ref:`arch_workflow`.
      - 🔄 98% (42/43)
      - 🔄 25% (1/4)
      - ❌ Open
+     - ❌ Open
+     - 🔄 94% (15/16)
      - ❌ Open
 
    * - Arch. Inspection
@@ -330,6 +348,8 @@ See :ref:`arch_workflow`.
      - ❌ Open
        `feature-level <https://github.com/eclipse-score/score/blob/main/docs/features/persistency/architecture/chklst_arc_inspection.rst>`__,
        `kvs <https://github.com/eclipse-score/persistency/blob/main/docs/persistency/kvs/architecture/chklst_arc_inspection.rst>`__
+     - ❌ Open
+     - ❌ Open
      - ❌ Open
      - ❌ Open
 
@@ -378,7 +398,7 @@ See :ref:`workflow_implementation`.
           :colors: LimeGreen, Gold, LightBlue, LightGray
           :filter-func: needs_filters.area_verification_status(implementation)
 
-.. rubric:: Implementation status: 🔄 50% (14/28 deliverables complete)
+.. rubric:: Implementation status: 🔄 47% (17/36 deliverables complete)
 
 .. list-table::
    :header-rows: 1
@@ -393,8 +413,12 @@ See :ref:`workflow_implementation`.
      - **Persistency**
      - **Time**
      - **Config Mgmt**
+     - **Lifecycle**
+     - **Security/Crypto**
 
    * - SW Development Plan
+     - ✅ Available
+     - ✅ Available
      - ✅ Available
      - ✅ Available
      - ✅ Available
@@ -411,6 +435,8 @@ See :ref:`workflow_implementation`.
      - ✅ Available
      - ✅ Available
      - ✅ Available
+     - ✅ Available
+     - ❌ Open
 
    * - Detailed Design
      - ❌ Open
@@ -419,6 +445,8 @@ See :ref:`workflow_implementation`.
      - ❌ Open
      - ❌ Open
      - ❌ Open
+     - ❌ Open
+     - 🔄 50% (1/2)
      - ❌ Open
 
    * - Impl. Inspection
@@ -437,6 +465,8 @@ See :ref:`workflow_implementation`.
      - ❌ Open
      - ❌ Open
        `kvs <https://github.com/eclipse-score/persistency/blob/main/docs/persistency/kvs/detailed_design/chklst_impl_inspection.rst>`__
+     - ❌ Open
+     - ❌ Open
      - ❌ Open
      - ❌ Open
 
@@ -485,7 +515,7 @@ See :ref:`verification_workflows`.
           :colors: LimeGreen, Gold, LightBlue, LightGray
           :filter-func: needs_filters.area_verification_status(verification)
 
-.. rubric:: Implementation status: 🔄 36% (10/28 deliverables complete)
+.. rubric:: Implementation status: 🔄 33% (12/36 deliverables complete)
 
 .. list-table::
    :header-rows: 1
@@ -500,6 +530,8 @@ See :ref:`verification_workflows`.
      - **Persistency**
      - **Time**
      - **Config Mgmt**
+     - **Lifecycle**
+     - **Security/Crypto**
 
    * - Unit Tests
      - ✅ Available
@@ -509,6 +541,8 @@ See :ref:`verification_workflows`.
      - ✅ Available
      - ✅ Available
      - ✅ Available
+     - ✅ Available
+     - ❌ Open
 
    * - Comp. Integration Tests
      - ✅ Available
@@ -517,6 +551,8 @@ See :ref:`verification_workflows`.
      - ✅ Available
      - ❌ Open
      - ❌ Open
+     - ❌ Open
+     - ✅ Available
      - ❌ Open
 
    * - Feature Integration Tests
@@ -527,8 +563,12 @@ See :ref:`verification_workflows`.
      - ❌ Open
      - ❌ Open
      - ❌ Open
+     - ❌ Open
+     - ❌ Open
 
    * - Module Verification Report
+     - ❌ Open
+     - ❌ Open
      - ❌ Open
      - ❌ Open
      - ❌ Open
