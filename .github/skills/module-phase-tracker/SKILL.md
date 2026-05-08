@@ -831,7 +831,7 @@ See :ref:`verification_workflows`.
           :colors: LimeGreen, Gold, LightBlue, LightGray
           :filter-func: needs_filters.area_verification_status(verification)
 
-.. rubric:: Implementation status: 🔄 33% (12/36 deliverables complete)
+.. rubric:: Implementation status: 🔄 36% (13/36 deliverables complete)
 
 .. list-table::
    :header-rows: 1
@@ -845,50 +845,50 @@ See :ref:`verification_workflows`.
      - **Module Verification Report**
 
    * - Baselibs
-     - ✅ Available
-     - ✅ Available
+     - ✅ Available (395 test files)
+     - ✅ Available (1 test file)
      - ❌ Open
      - ❌ Open
 
    * - Communication
-     - ✅ Available
-     - ✅ Available
+     - ✅ Available (227 test files)
+     - ✅ Available (44 test files)
      - ❌ Open
      - ❌ Open
 
    * - Logging
-     - ✅ Available
+     - ✅ Available (63 test files)
      - ❌ Open
      - ❌ Open
      - ❌ Open
 
    * - Orchestrator
-     - ✅ Available
-     - ✅ Available
+     - ✅ Available (3 test files)
+     - ✅ Available (7 test files)
      - ❌ Open
      - ❌ Open
 
    * - Persistency
-     - ✅ Available
+     - ✅ Available (14 test files)
      - ❌ Open
      - ❌ Open
      - ❌ Open
 
    * - Time
-     - ✅ Available
-     - ❌ Open
+     - ✅ Available (46 test files)
+     - ✅ Available (3 test files)
      - ❌ Open
      - ❌ Open
 
    * - Config Mgmt
-     - ✅ Available
+     - ✅ Available (19 test files)
      - ❌ Open
      - ❌ Open
      - ❌ Open
 
    * - Lifecycle
-     - ✅ Available
-     - ✅ Available
+     - ✅ Available (3 test files)
+     - ✅ Available (7 test files)
      - ❌ Open
      - ❌ Open
 
