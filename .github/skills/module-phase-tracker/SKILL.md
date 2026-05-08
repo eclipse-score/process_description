@@ -724,7 +724,7 @@ See :ref:`workflow_implementation`.
 
    * - Baselibs
      - ✅ Available
-     - ✅ Available
+     - ✅ Available (~119,400 LOC)
      - ❌ Open
      - ❌ Open
        `bitmanipulation <https://github.com/eclipse-score/score/blob/main/docs/modules/baselibs/bitmanipulation/docs/detailed_design/chklst_impl_inspection.rst>`__,
@@ -739,44 +739,44 @@ See :ref:`workflow_implementation`.
 
    * - Communication
      - ✅ Available
-     - ✅ Available
+     - ✅ Available (~71,300 LOC)
      - ❌ Open
      - ❌ Open
 
    * - Logging
      - ✅ Available
-     - ✅ Available
+     - ✅ Available (~22,900 LOC)
      - ❌ Open
      - ❌ Open
 
    * - Orchestrator
      - ✅ Available
-     - ✅ Available
+     - ✅ Available (~38,300 LOC)
      - ❌ Open
      - ❌ Open
 
    * - Persistency
      - ✅ Available
-     - ✅ Available
+     - ✅ Available (~8,700 LOC)
      - ❌ Open
      - ❌ Open
        `kvs <https://github.com/eclipse-score/persistency/blob/main/docs/persistency/kvs/detailed_design/chklst_impl_inspection.rst>`__
 
    * - Time
      - ✅ Available
-     - ✅ Available
+     - ✅ Available (~11,700 LOC)
      - ❌ Open
      - ❌ Open
 
    * - Config Mgmt
      - ✅ Available
-     - ✅ Available
+     - ✅ Available (~5,400 LOC)
      - ❌ Open
      - ❌ Open
 
    * - Lifecycle
      - ✅ Available
-     - ✅ Available
+     - ✅ Available (~38,300 LOC)
      - 🔄 50% (1/2)
      - ❌ Open
 
