@@ -554,50 +554,50 @@ See :ref:`verification_workflows`.
      - **Module Verification Report**
 
    * - Baselibs
-     - ✅ Available (395 test files)
-     - ✅ Available (1 test file)
+     - ✅ Available (4,663 tests)
+     - ✅ Available (13 tests)
      - ❌ Open
      - ❌ Open
 
    * - Communication
-     - ✅ Available (227 test files)
-     - ✅ Available (44 test files)
+     - ✅ Available (2,374 tests)
+     - ✅ Available (42 tests)
      - ❌ Open
      - ❌ Open
 
    * - Logging
-     - ✅ Available (63 test files)
+     - ✅ Available (619 tests)
      - ❌ Open
      - ❌ Open
      - ❌ Open
 
    * - Orchestrator
-     - ✅ Available (3 test files)
-     - ✅ Available (7 test files)
+     - ✅ Available (2 tests)
+     - ✅ Available (9 tests)
      - ❌ Open
      - ❌ Open
 
    * - Persistency
-     - ✅ Available (14 test files)
+     - ✅ Available (138 tests)
      - ❌ Open
      - ❌ Open
      - ❌ Open
 
    * - Time
-     - ✅ Available (46 test files)
-     - ✅ Available (3 test files)
+     - ✅ Available (296 tests)
+     - ✅ Available (11 tests)
      - ❌ Open
      - ❌ Open
 
    * - Config Mgmt
-     - ✅ Available (19 test files)
+     - ✅ Available (143 tests)
      - ❌ Open
      - ❌ Open
      - ❌ Open
 
    * - Lifecycle
-     - ✅ Available (3 test files)
-     - ✅ Available (7 test files)
+     - ✅ Available (2 tests)
+     - ✅ Available (9 tests)
      - ❌ Open
      - ❌ Open
 
