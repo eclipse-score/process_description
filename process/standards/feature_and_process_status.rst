@@ -433,7 +433,7 @@ See :ref:`workflow_implementation`.
 
    * - Baselibs
      - ✅ Available
-     - ✅ Available (~119,400 LOC)
+     - ✅ Available (~119,400 LOC) `baselibs <https://github.com/eclipse-score/baselibs>`__
      - ❌ Open
      - ❌ Open
        `bitmanipulation <https://github.com/eclipse-score/score/blob/main/docs/modules/baselibs/bitmanipulation/docs/detailed_design/chklst_impl_inspection.rst>`__,
@@ -448,44 +448,44 @@ See :ref:`workflow_implementation`.
 
    * - Communication
      - ✅ Available
-     - ✅ Available (~71,300 LOC)
+     - ✅ Available (~71,300 LOC) `communication <https://github.com/eclipse-score/communication>`__
      - ❌ Open
      - ❌ Open
 
    * - Logging
      - ✅ Available
-     - ✅ Available (~22,900 LOC)
+     - ✅ Available (~22,900 LOC) `logging <https://github.com/eclipse-score/logging>`__
      - ❌ Open
      - ❌ Open
 
    * - Orchestrator
      - ✅ Available
-     - ✅ Available (~38,300 LOC)
+     - ✅ Available (~38,300 LOC) `lifecycle <https://github.com/eclipse-score/lifecycle>`__
      - ❌ Open
      - ❌ Open
 
    * - Persistency
      - ✅ Available
-     - ✅ Available (~8,700 LOC)
+     - ✅ Available (~8,700 LOC) `persistency <https://github.com/eclipse-score/persistency>`__
      - ❌ Open
      - ❌ Open
        `kvs <https://github.com/eclipse-score/persistency/blob/main/docs/persistency/kvs/detailed_design/chklst_impl_inspection.rst>`__
 
    * - Time
      - ✅ Available
-     - ✅ Available (~11,700 LOC)
+     - ✅ Available (~11,700 LOC) `inc_time <https://github.com/eclipse-score/inc_time>`__
      - ❌ Open
      - ❌ Open
 
    * - Config Mgmt
      - ✅ Available
-     - ✅ Available (~5,400 LOC)
+     - ✅ Available (~5,400 LOC) `config_management <https://github.com/eclipse-score/config_management>`__
      - ❌ Open
      - ❌ Open
 
    * - Lifecycle
      - ✅ Available
-     - ✅ Available (~38,300 LOC)
+     - ✅ Available (~38,300 LOC) `lifecycle <https://github.com/eclipse-score/lifecycle>`__
      - 🔄 50% (1/2)
      - ❌ Open
 
