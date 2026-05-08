@@ -540,7 +540,15 @@ See :ref:`verification_workflows`.
           :colors: LimeGreen, Gold, LightBlue, LightGray
           :filter-func: needs_filters.area_verification_status(verification)
 
-.. rubric:: Implementation status: 🔄 36% (13/36 deliverables complete)
+.. note::
+
+   **C0/C1 Coverage** data is sourced from the `reference_integration <https://github.com/eclipse-score/reference_integration>`__
+   CI (``Code Quality & Documentation`` workflow, ``bazel coverage --config=ferrocene-coverage``).
+   C0 = line coverage, C1 = branch coverage. Rust coverage reports line coverage only.
+   Modules not yet integrated into the reference_integration CI (Time, Config Mgmt) or with
+   disabled coverage extraction (Orchestrator) show ❌ Open.
+
+.. rubric:: Implementation status: 🔄 36% (16/45 deliverables complete)
 
 .. list-table::
    :header-rows: 1
@@ -549,42 +557,55 @@ See :ref:`verification_workflows`.
 
    * - **Module**
      - **Unit Tests**
+     - **C0/C1 Coverage**
      - **Comp. Integration Tests**
      - **Feature Integration Tests**
      - **Module Verification Report**
 
    * - Baselibs
      - ✅ Available (4,663 tests)
+     - 🔄 **C0:** 92.4% / **C1:** 60.4% (cpp)
+
+       **Rust line:** 74.4%
      - ✅ Available (13 tests)
      - ❌ Open
      - ❌ Open
 
    * - Communication
      - ✅ Available (2,374 tests)
+     - 🔄 **C0:** 87.9% / **C1:** 58.8% (cpp)
      - ✅ Available (42 tests)
      - ❌ Open
      - ❌ Open
 
    * - Logging
      - ✅ Available (619 tests)
+     - 🔄 **C0:** 79.4% / **C1:** 42.4% (cpp)
+
+       **Rust line:** 39.9%
      - ❌ Open
-     - ✅ Available (1 test) `reference_integration <https://github.com/eclipse-score/reference_integration>`__ [*]
+     - ✅ Available (1 test) `reference_integration <https://github.com/eclipse-score/reference_integration>`__ (cross-module)
      - ❌ Open
 
    * - Orchestrator
      - ✅ Available (2 tests)
+     - ❌ Open
      - ✅ Available (9 tests)
-     - ✅ Available (3 tests) `reference_integration <https://github.com/eclipse-score/reference_integration>`__ [*]
+     - ✅ Available (3 tests) `reference_integration <https://github.com/eclipse-score/reference_integration>`__ (cross-module)
      - ❌ Open
 
    * - Persistency
      - ✅ Available (138 tests)
+     - 🔄 **C0:** 94.7% / **C1:** 63.0% (cpp)
+
+       **Rust line:** 92.7%
      - ❌ Open
-     - ✅ Available (6 tests) `reference_integration <https://github.com/eclipse-score/reference_integration>`__ [*]
+     - ✅ Available (6 tests) `reference_integration <https://github.com/eclipse-score/reference_integration>`__ (cross-module)
      - ❌ Open
 
    * - Time
      - ✅ Available (296 tests)
+     - ❌ Open
      - ✅ Available (11 tests)
      - ❌ Open
      - ❌ Open
@@ -594,9 +615,13 @@ See :ref:`verification_workflows`.
      - ❌ Open
      - ❌ Open
      - ❌ Open
+     - ❌ Open
 
    * - Lifecycle
      - ✅ Available (2 tests)
+     - 🔄 **C0:** 77.2% / **C1:** 45.8% (cpp)
+
+       **Rust line:** 53.8%
      - ✅ Available (9 tests)
      - ❌ Open
      - ❌ Open
@@ -606,9 +631,7 @@ See :ref:`verification_workflows`.
      - ❌ Open
      - ❌ Open
      - ❌ Open
-
-.. [*] Feature integration tests are cross-module and maintained in `eclipse-score/reference_integration <https://github.com/eclipse-score/reference_integration>`__.
-   Test counts reflect tests covering that module: Logging (test_remote_logging), Orchestrator (test_orchestration_with_persistency, test_showcases, test_ssh), Persistency (test_orchestration_with_persistency, test_multiple_kvs_per_app).
+     - ❌ Open
 
 Done Criteria
 *************

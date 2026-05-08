@@ -203,6 +203,51 @@ Known closed CRs: Baselibs (#549), Communication (#69), Logging (#68), Orchestra
 - **✅ Available**: Source repo contains `_test.cpp`, `_test.py`, or `/test(s)/` directories (excluding docs/)
 - **❌ Open**: no test files found
 
+### Process Area 5 — C0/C1 Coverage
+
+Coverage data is sourced from the `reference_integration` CI (`Code Quality & Documentation` workflow, job `test_and_docs`).
+It runs `bazel coverage --config=ferrocene-coverage` per module and extracts C0 (line) and C1 (branch) coverage via `genhtml`/`lcov` for C++ and `cargo llvm-cov` for Rust.
+
+**Status criteria:**
+- **✅ Available**: C0 ≥ 100% AND C1 ≥ 100% (practically never for real modules — use 🔄)
+- **🔄 C0: XX% / C1: YY%**: Coverage data exists (regardless of %)
+- **❌ Open**: Module not in reference_integration CI, or coverage extraction disabled
+
+**How to fetch the latest values:**
+```bash
+# Find the latest successful run of the "Code Quality & Documentation" workflow (ID 234977097):
+gh api "repos/eclipse-score/reference_integration/actions/workflows/234977097/runs?per_page=10" \
+  --jq '.workflow_runs[] | select(.conclusion=="success") | {id: .id, created_at: .created_at}' | head -1
+
+# Get the job ID for test_and_docs from that run:
+RUN_ID=<run_id>
+JOB_ID=$(gh api "repos/eclipse-score/reference_integration/actions/runs/$RUN_ID/jobs" \
+  --jq '.jobs[] | select(.name=="test_and_docs") | .id')
+
+# Extract the coverage summary from the job log:
+gh api "repos/eclipse-score/reference_integration/actions/jobs/$JOB_ID/logs" \
+  | grep -E "COVERAGE ANALYSIS SUMMARY|'score_.*_cpp'|'score_.*_rust'|lines|functions|branches" \
+  | grep -A50 "COVERAGE ANALYSIS SUMMARY"
+```
+
+**Module → CI key mapping:**
+| Tracker Module | CI key (CPP) | CI key (Rust) |
+|---|---|---|
+| Baselibs | `score_baselibs_cpp` | `score_baselibs_rust_rust` |
+| Communication | `score_communication_cpp` | — (disabled) |
+| Logging | `score_logging_cpp` | `score_logging_rust` |
+| Orchestrator | — (disabled) | — (disabled) |
+| Persistency | `score_persistency_cpp` | `score_persistency_rust` |
+| Time | not in CI | — |
+| Config Mgmt | not in CI | — |
+| Lifecycle | `score_lifecycle_health_cpp` | `score_lifecycle_health_rust` |
+| Security/Crypto | not in CI | — |
+
+**Format in table:**
+- CPP + Rust: `🔄 C0: 92.4% / C1: 60.4% (cpp)\n\nRust line: 74.4%`
+- CPP only: `🔄 C0: 87.9% / C1: 58.8% (cpp)`
+- Not available: `❌ Open`
+
 ### Process Area 5 — Comp. Integration Tests
 - **✅ Available**: Source repo contains integration test source files (`.cpp`/`.py` with "integration" in path)
 - **🔄 In Progress**: integration test CI workflow exists but no test source files
@@ -859,19 +904,19 @@ See :ref:`verification_workflows`.
    * - Logging
      - ✅ Available (619 tests)
      - ❌ Open
-     - ✅ Available (1 test) `reference_integration <https://github.com/eclipse-score/reference_integration>`__ [*]
+     - ✅ Available (1 test) `reference_integration <https://github.com/eclipse-score/reference_integration>`__ (cross-module)
      - ❌ Open
 
    * - Orchestrator
      - ✅ Available (2 tests)
      - ✅ Available (9 tests)
-     - ✅ Available (3 tests) `reference_integration <https://github.com/eclipse-score/reference_integration>`__ [*]
+     - ✅ Available (3 tests) `reference_integration <https://github.com/eclipse-score/reference_integration>`__ (cross-module)
      - ❌ Open
 
    * - Persistency
      - ✅ Available (138 tests)
      - ❌ Open
-     - ✅ Available (6 tests) `reference_integration <https://github.com/eclipse-score/reference_integration>`__ [*]
+     - ✅ Available (6 tests) `reference_integration <https://github.com/eclipse-score/reference_integration>`__ (cross-module)
      - ❌ Open
 
    * - Time
@@ -898,8 +943,6 @@ See :ref:`verification_workflows`.
      - ❌ Open
      - ❌ Open
 
-.. [*] Feature integration tests are cross-module and maintained in `eclipse-score/reference_integration <https://github.com/eclipse-score/reference_integration>`__.
-   Test counts reflect tests covering that module: Logging (test_remote_logging), Orchestrator (test_orchestration_with_persistency, test_showcases, test_ssh), Persistency (test_orchestration_with_persistency, test_multiple_kvs_per_app).
 
 Done Criteria
 *************
