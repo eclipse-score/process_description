@@ -260,7 +260,7 @@ Known closed CRs: Baselibs (#549), Communication (#69), Logging (#68), Orchestra
    - Binary rows (Code, SW Dev Plan, Unit Tests, CR): count each module cell as 1 deliverable
    - Do NOT include an Overall row inside the table — the status line is placed as plain text before the `.. list-table::` directive
 
-5. **Adding a new module** — add a row to the Modules and Repos table above, define its `feature_path` and `docs_path`, then add a column to the tracker table.
+5. **Adding a new module** — add a row to the Modules and Repos table above, define its `feature_path` and `docs_path`, then add a row to each tracker table (one `* - <Module name>` block per PA).
 
 ## Interpretation Notes
 
