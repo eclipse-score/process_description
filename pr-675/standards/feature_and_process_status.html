@@ -996,11 +996,20 @@ See <a class="reference internal" href="../process_areas/verification/verificati
 </tbody>
 </table>
 </div>
-<p class="rubric">Implementation status: 🔄 36% (13/36 deliverables complete)</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>C0/C1 Coverage</strong> data is sourced from the <a class="reference external" href="https://github.com/eclipse-score/reference_integration">reference_integration</a>
+CI (<code class="docutils literal notranslate"><span class="pre">Code</span> <span class="pre">Quality</span> <span class="pre">&amp;</span> <span class="pre">Documentation</span></code> workflow, <code class="docutils literal notranslate"><span class="pre">bazel</span> <span class="pre">coverage</span> <span class="pre">--config=ferrocene-coverage</span></code>).
+C0 = line coverage, C1 = branch coverage. Rust coverage reports line coverage only.
+Modules not yet integrated into the reference_integration CI (Time, Config Mgmt) or with
+disabled coverage extraction (Orchestrator) show ❌ Open.</p>
+</div>
+<p class="rubric">Implementation status: 🔄 36% (16/45 deliverables complete)</p>
 <div class="pst-scrollable-table-container"><table class="module-phase-tracker-table table">
 <thead>
 <tr class="row-odd"><th class="head stub"><p><strong>Module</strong></p></th>
 <th class="head"><p><strong>Unit Tests</strong></p></th>
+<th class="head"><p><strong>C0/C1 Coverage</strong></p></th>
 <th class="head"><p><strong>Comp. Integration Tests</strong></p></th>
 <th class="head"><p><strong>Feature Integration Tests</strong></p></th>
 <th class="head"><p><strong>Module Verification Report</strong></p></th>
@@ -1009,36 +1018,48 @@ See <a class="reference internal" href="../process_areas/verification/verificati
 <tbody>
 <tr class="row-even"><th class="stub"><p>Baselibs</p></th>
 <td><p>✅ Available (4,663 tests)</p></td>
+<td><p>🔄 C0: 92.4% / C1: 60.4% (cpp)</p>
+<p>Rust line: 74.4%</p>
+</td>
 <td><p>✅ Available (13 tests)</p></td>
 <td><p>❌ Open</p></td>
 <td><p>❌ Open</p></td>
 </tr>
 <tr class="row-odd"><th class="stub"><p>Communication</p></th>
 <td><p>✅ Available (2,374 tests)</p></td>
+<td><p>🔄 C0: 87.9% / C1: 58.8% (cpp)</p></td>
 <td><p>✅ Available (42 tests)</p></td>
 <td><p>❌ Open</p></td>
 <td><p>❌ Open</p></td>
 </tr>
 <tr class="row-even"><th class="stub"><p>Logging</p></th>
 <td><p>✅ Available (619 tests)</p></td>
+<td><p>🔄 C0: 79.4% / C1: 42.4% (cpp)</p>
+<p>Rust line: 39.9%</p>
+</td>
 <td><p>❌ Open</p></td>
 <td><p>✅ Available (1 test) <a class="reference external" href="https://github.com/eclipse-score/reference_integration">reference_integration</a> (cross-module)</p></td>
 <td><p>❌ Open</p></td>
 </tr>
 <tr class="row-odd"><th class="stub"><p>Orchestrator</p></th>
 <td><p>✅ Available (2 tests)</p></td>
+<td><p>❌ Open</p></td>
 <td><p>✅ Available (9 tests)</p></td>
 <td><p>✅ Available (3 tests) <a class="reference external" href="https://github.com/eclipse-score/reference_integration">reference_integration</a> (cross-module)</p></td>
 <td><p>❌ Open</p></td>
 </tr>
 <tr class="row-even"><th class="stub"><p>Persistency</p></th>
 <td><p>✅ Available (138 tests)</p></td>
+<td><p>🔄 C0: 94.7% / C1: 63.0% (cpp)</p>
+<p>Rust line: 92.7%</p>
+</td>
 <td><p>❌ Open</p></td>
 <td><p>✅ Available (6 tests) <a class="reference external" href="https://github.com/eclipse-score/reference_integration">reference_integration</a> (cross-module)</p></td>
 <td><p>❌ Open</p></td>
 </tr>
 <tr class="row-odd"><th class="stub"><p>Time</p></th>
 <td><p>✅ Available (296 tests)</p></td>
+<td><p>❌ Open</p></td>
 <td><p>✅ Available (11 tests)</p></td>
 <td><p>❌ Open</p></td>
 <td><p>❌ Open</p></td>
@@ -1048,14 +1069,19 @@ See <a class="reference internal" href="../process_areas/verification/verificati
 <td><p>❌ Open</p></td>
 <td><p>❌ Open</p></td>
 <td><p>❌ Open</p></td>
+<td><p>❌ Open</p></td>
 </tr>
 <tr class="row-odd"><th class="stub"><p>Lifecycle</p></th>
 <td><p>✅ Available (2 tests)</p></td>
+<td><p>🔄 C0: 77.2% / C1: 45.8% (cpp)</p>
+<p>Rust line: 53.8%</p>
+</td>
 <td><p>✅ Available (9 tests)</p></td>
 <td><p>❌ Open</p></td>
 <td><p>❌ Open</p></td>
 </tr>
 <tr class="row-even"><th class="stub"><p>Security/Crypto</p></th>
+<td><p>❌ Open</p></td>
 <td><p>❌ Open</p></td>
 <td><p>❌ Open</p></td>
 <td><p>❌ Open</p></td>
