@@ -172,7 +172,7 @@ Derivation Techniques
 
    Following derivation techniques are explained
 
-   * :ref:`Analysis of requirements <ver_req_anal>`
+   * :ref:`Requirements analysis <ver_req_anal>`
    * :ref:`Boundary Values <ver_boundary>`
    * :ref:`Equivalence Classes <ver_equivalence>`
    * :ref:`Fuzzy Testing <ver_fuzzy>`
@@ -193,7 +193,7 @@ injection value x = A and verifying that output y = B. "Negative" testing techni
 be also considered: i.e. testing what happens when input x = B (if not already specified
 in other requirements).
 
-Note that requirement-based testing derivation is typically  covered by other techniques
+Note that requirement-based testing derivation is typically covered by other techniques
 mentioned here, such as Boundary Values, Equivalence Classes, Fuzzy Testing, Interface
 Testing and Fault Injection.
 
