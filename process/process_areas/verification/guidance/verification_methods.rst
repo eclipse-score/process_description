@@ -191,7 +191,9 @@ Requirements should always be tested  against their "nominal" behaviour: i.e. "i
 x = A, the output y of SW component X shall be equal to b". This leads to a test case
 injection value x = A and verifying that output y = B. "Negative" testing technique should
 be also considered: i.e. testing what happens when input x = B (if not already specified
-in other requirements). Note that the latter derivation can be covered by other techniques
+in other requirements).
+
+Note that requirement-based testing derivation is typically  covered by other techniques
 mentioned here, such as Boundary Values, Equivalence Classes, Fuzzy Testing and Fault
 Injection.
 
