@@ -112,9 +112,8 @@ Branching Strategy
 
 Branches:
 
-* master: for implementation and documentation in development phase.
+* main: for implementation and documentation in development phase.
 * release/\*: Branches for distinct releases, named release/<version-number>, no functional changes, only bugfixes, quality and documentation improvements.
-
 
 Workflow:
 
