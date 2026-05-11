@@ -172,9 +172,28 @@ Derivation Techniques
 
    Following derivation techniques are explained
 
+   * :ref:`Analysis of requirements <ver_req_anal>`
    * :ref:`Boundary Values <ver_boundary>`
    * :ref:`Equivalence Classes <ver_equivalence>`
    * :ref:`Fuzzy Testing <ver_fuzzy>`
+
+.. _ver_req_anal:
+
+Requirements analysis
+"""""""""""""""""""""
+
+Requirements analysis is a testing technique where tests are designed based on the
+requirements assigned to the software element under test (component, module, unit etc.).
+If available, the verification method defined for each requirement should be used as
+the basis of the test cases design.
+
+Requirements should always be tested  against their "nominal" behaviour: i.e. "if input
+x = A, the output y of SW component X shall be equal to b". This leads to a test case
+injection value x = A and verifying that output y = B. "Negative" testing technique should
+be also considered: i.e. testing what happens when input x = B (if not already specified
+in other requirements). Note that the latter derivation can be covered by other techniques
+mentioned here, such as Boundary Values, Equivalence Classes, Fuzzy Testing and Fault
+Injection.
 
 .. _ver_boundary:
 
