@@ -194,8 +194,8 @@ be also considered: i.e. testing what happens when input x = B (if not already s
 in other requirements).
 
 Note that requirement-based testing derivation is typically  covered by other techniques
-mentioned here, such as Boundary Values, Equivalence Classes, Fuzzy Testing and Fault
-Injection.
+mentioned here, such as Boundary Values, Equivalence Classes, Fuzzy Testing, Interface
+Testing and Fault Injection.
 
 .. _ver_boundary:
 
