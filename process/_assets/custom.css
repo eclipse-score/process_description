@@ -196,13 +196,13 @@
 }
 
 .compact-overview-table td:has(img[id^="needpie-"]) {
-	min-width: 240px;
+	min-width: 420px;
 	vertical-align: middle;
 	text-align: center;
 }
 
 .compact-overview-table td:has(img[id^="needpie-"]) img {
-	width: 240px;
+	width: 420px;
 	max-width: none;
 	height: auto;
 	display: block;
