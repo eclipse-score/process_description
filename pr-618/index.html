@@ -27,8 +27,8 @@
   </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+  <link href="_static/styles/theme.css?digest=7f76b32a3354e82990f2" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=7f76b32a3354e82990f2" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="_static/graphviz.css?v=4ae1632d" />
@@ -44,18 +44,19 @@
     <link rel="stylesheet" type="text/css" href="_static/sphinx-needs/common_css/need_links.css?v=2150a916" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-needs/common_css/need_style.css?v=92936fa5" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-needs/modern.css?v=803738c0" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=c6286864" />
   
   <!-- So that users can add custom icons -->
-  <script src="_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <script defer src="_static/scripts/fontawesome.js?digest=7f76b32a3354e82990f2"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=7f76b32a3354e82990f2" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=7f76b32a3354e82990f2" />
 
     <script src="_static/jquery.js?v=5d32c60e"></script>
     <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
     <script src="_static/documentation_options.js?v=7f41d439"></script>
-    <script src="_static/doctools.js?v=9bcbadda"></script>
-    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
     <script src="_static/design-tabs.js?v=f930bc37"></script>
     <script src="_static/sphinx-data-viewer/jsonview.bundle.js?v=18cd53c5"></script>
     <script src="_static/sphinx-data-viewer/jsonview_loader.js?v=f7ff7e7d"></script>
@@ -64,26 +65,31 @@
     <script src="_static/sphinx-needs/libs/html/sphinx_needs_collapse.js?v=dca66431"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'index';</script>
     <script>
-        DOCUMENTATION_OPTIONS.theme_version = '0.16.1';
+        DOCUMENTATION_OPTIONS.theme_version = '0.17.0';
         DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://eclipse-score.github.io/process_description/versions.json';
         DOCUMENTATION_OPTIONS.theme_switcher_version_match = '';
         DOCUMENTATION_OPTIONS.show_version_warning_banner =
             false;
         </script>
+    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Introduction" href="introduction/index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="0.1" />
+  
+    
+    <script src="_static/searchtools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="searchindex.js"></script>
+  
   </head>
-  
-  
-  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
-
+  <body data-default-mode="">
   
   
   <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+
   
   <div id="pst-scroll-pixel-helper"></div>
   
@@ -115,7 +121,7 @@
 </div>
 
   
-    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
 <div class="bd-header__inner bd-page-width">
   <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
     <span class="fa-solid fa-bars"></span>
@@ -224,6 +230,13 @@
 <li class=" ">
   <a class="nav-link dropdown-item nav-internal" href="glossary/index.html">
     Glossary
+  </a>
+</li>
+
+
+<li class=" ">
+  <a class="nav-link dropdown-item nav-internal" href="release_notes/index.html">
+    Release notes
   </a>
 </li>
 
@@ -410,6 +423,13 @@
   </a>
 </li>
 
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="release_notes/index.html">
+    Release notes
+  </a>
+</li>
+
   </ul>
 </nav></div>
           
@@ -508,23 +528,8 @@
 </ul>
 </div>
 </section>
-<section id="process-model">
-<h2>Process Model<a class="headerlink" href="#process-model" title="Link to this heading">#</a></h2>
-<p>The project process model is described by workflows, executed by roles and is creating work products.
-Workflow activities are supported by guidances. For further details (like motivation, objectives and approach) please refer to the <a class="reference internal" href="introduction/index.html#processes-introduction"><span class="std std-ref">introduction page</span></a> and the respective sections below.</p>
-<figure class="align-center" id="id2">
-<a class="reference internal image-reference" href="_images/score_process_area_overview.drawio.svg"><img alt="Process area overview for the **Project**" src="_images/score_process_area_overview.drawio.svg" style="width: 0%;" />
-</a>
-<figcaption>
-<p><span class="caption-number">Fig. 2 </span><span class="caption-text">Process area overview for <strong>Project</strong></span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
-<figure>
-  <object data="_images/score_process_area_overview.drawio.svg" type="image/svg+xml"
-          width="100%"></object>
-  <figcaption>Process area overview for Project</figcaption>
-</figure><section id="general-concepts">
-<h3>General Concepts<a class="headerlink" href="#general-concepts" title="Link to this heading">#</a></h3>
+<section id="general-concepts">
+<h2>General Concepts<a class="headerlink" href="#general-concepts" title="Link to this heading">#</a></h2>
 <p>The general concepts like traceability of work products, life cycle model, building blocks can be found here:</p>
 <div class="toctree-wrapper compound">
 <ul>
@@ -532,6 +537,10 @@ Workflow activities are supported by guidances. For further details (like motiva
 </ul>
 </div>
 </section>
+<section id="process-model">
+<h2>Process Model<a class="headerlink" href="#process-model" title="Link to this heading">#</a></h2>
+<p>The project process model is described by workflows, executed by roles and is creating work products.
+Workflow activities are supported by guidances. For further details (like motivation, objectives and approach) please refer to the <a class="reference internal" href="introduction/index.html#processes-introduction"><span class="std std-ref">introduction page</span></a> and the respective sections below.</p>
 <section id="process-areas">
 <h3>Process Areas<a class="headerlink" href="#process-areas" title="Link to this heading">#</a></h3>
 <p>The process description for the project (e.g. requirements, architecture, safety management) can be found here:</p>
@@ -540,6 +549,208 @@ Workflow activities are supported by guidances. For further details (like motiva
 <li class="toctree-l1"><a class="reference internal" href="process_areas/index.html">Process areas</a></li>
 </ul>
 </div>
+<section id="management">
+<h4>Management<a class="headerlink" href="#management" title="Link to this heading">#</a></h4>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 score-grid docutils">
+<div class="sd-row sd-row-cols-1 sd-row-cols-xs-1 sd-row-cols-sm-1 sd-row-cols-md-3 sd-row-cols-lg-3 docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm card-ml2 docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text"><a class="reference internal" href="process_areas/platform_management/index.html#platform-management"><span class="std std-ref">Platform Management</span></a></p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Manage the common platform, its modules and integration.</p>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm card-ml2 docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text"><a class="reference internal" href="process_areas/safety_management/index.html#process-safety-management"><span class="std std-ref">Safety Management</span></a></p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Plan and oversee safety activities across the project lifecycle.</p>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm card-ml1 docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text"><a class="reference internal" href="process_areas/security_management/index.html#security-management"><span class="std std-ref">Security Management</span></a></p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Plan and oversee cybersecurity activities across the project lifecycle.</p>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm card-ml2 docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text"><a class="reference internal" href="process_areas/quality_management/index.html#quality-management"><span class="std std-ref">Quality Management</span></a></p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Define and monitor quality objectives, measures and improvements.</p>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm card-ml2 docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text"><a class="reference internal" href="process_areas/change_management/index.html#change-management"><span class="std std-ref">Change Management</span></a></p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Control and track changes to work products and configurations.</p>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm card-ml2 docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text"><a class="reference internal" href="process_areas/problem_resolution/index.html#problem-resolution"><span class="std std-ref">Problem Resolution</span></a></p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Identify, analyse and resolve problems found during development.</p>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm card-ml2 docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text"><a class="reference internal" href="process_areas/release_management/index.html#release-management"><span class="std std-ref">Release Management</span></a></p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Plan, prepare and control the release of deliverables.</p>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm card-ml2 docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text"><a class="reference internal" href="process_areas/process_management/index.html#process-management"><span class="std std-ref">Process Management</span></a></p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Define, deploy and improve the organisational process.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="development">
+<h4>Development<a class="headerlink" href="#development" title="Link to this heading">#</a></h4>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 score-grid docutils">
+<div class="sd-row sd-row-cols-1 sd-row-cols-xs-1 sd-row-cols-sm-1 sd-row-cols-md-3 sd-row-cols-lg-3 docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm card-ml2 docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text"><a class="reference internal" href="process_areas/requirements_engineering/index.html#requirements-engineering"><span class="std std-ref">Requirements Engineering</span></a></p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Elicit, specify and manage stakeholder and system requirements.</p>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm card-ml2 docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text"><a class="reference internal" href="process_areas/architecture_design/index.html#arch-design-process"><span class="std std-ref">Architecture Design</span></a></p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Define and document the system and software architecture.</p>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm card-ml2 docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text"><a class="reference internal" href="process_areas/implementation/index.html#implementation"><span class="std std-ref">Implementation</span></a></p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Develop and unit-test software units according to the design.</p>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm card-ml1 docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text"><a class="reference internal" href="process_areas/verification/index.html#process-verification"><span class="std std-ref">Verification</span></a></p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Verify that work products fulfil their specified requirements.</p>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm card-ml2 docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text"><a class="reference internal" href="process_areas/safety_analysis/index.html#safety-analysis"><span class="std std-ref">Safety Analysis</span></a></p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Identify and assess safety hazards and derive mitigation measures.</p>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm card-ml1 docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text"><a class="reference internal" href="process_areas/security_analysis/index.html#security-analysis"><span class="std std-ref">Security Analysis</span></a></p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Identify and assess security threats and derive mitigation measures.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="support">
+<h4>Support<a class="headerlink" href="#support" title="Link to this heading">#</a></h4>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 score-grid docutils">
+<div class="sd-row sd-row-cols-1 sd-row-cols-xs-1 sd-row-cols-sm-1 sd-row-cols-md-3 sd-row-cols-lg-3 docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm card-ml2 docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text"><a class="reference internal" href="process_areas/configuration_management/index.html#process-configuration-management"><span class="std std-ref">Configuration Management</span></a></p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Control versions and baselines of all project artefacts.</p>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm card-ml2 docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text"><a class="reference internal" href="process_areas/tool_management/index.html#tool-management"><span class="std std-ref">Tool Management</span></a></p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Qualify and manage tools used in the development process.</p>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm card-ml2 docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text"><a class="reference internal" href="process_areas/documentation_management/index.html#process-documentation-management"><span class="std std-ref">Documentation Management</span></a></p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Plan, create and maintain project and product documentation.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<figure class="align-center" id="id2">
+<a class="reference internal image-reference" href="_images/score_process_area_overview.drawio.svg"><img alt="Process area overview for the **Project**" src="_images/score_process_area_overview.drawio.svg" style="width: 0%;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 27 </span><span class="caption-text">Process area overview for <strong>Project</strong></span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure>
+  <object data="_images/score_process_area_overview.drawio.svg" type="image/svg+xml"
+          width="100%"></object>
+  <figcaption>Process area overview for Project</figcaption>
+</figure></section>
 </section>
 <section id="process-role-definition">
 <h3>Process Role definition<a class="headerlink" href="#process-role-definition" title="Link to this heading">#</a></h3>
@@ -569,8 +780,8 @@ Workflow activities are supported by guidances. For further details (like motiva
 </div>
 </section>
 </section>
-<section id="standards">
-<h2>Standards<a class="headerlink" href="#standards" title="Link to this heading">#</a></h2>
+<section id="standards-requirements">
+<h2>Standards &amp; Requirements<a class="headerlink" href="#standards-requirements" title="Link to this heading">#</a></h2>
 <p>The standard references the project’s processes are derived from and the coverage of the requirements and the work products from the standards can be found here:</p>
 <div class="toctree-wrapper compound">
 <ul>
@@ -578,8 +789,8 @@ Workflow activities are supported by guidances. For further details (like motiva
 </ul>
 </div>
 </section>
-<section id="trustable">
-<h2>Trustable<a class="headerlink" href="#trustable" title="Link to this heading">#</a></h2>
+<section id="trustable-software-framework">
+<h2>Trustable Software Framework<a class="headerlink" href="#trustable-software-framework" title="Link to this heading">#</a></h2>
 <p>The trustable measure based on sphinx-needs for OSS project’s can be found here:</p>
 <div class="toctree-wrapper compound">
 <ul>
@@ -587,8 +798,8 @@ Workflow activities are supported by guidances. For further details (like motiva
 </ul>
 </div>
 </section>
-<section id="templates-for-folders">
-<h2>Templates for Folders<a class="headerlink" href="#templates-for-folders" title="Link to this heading">#</a></h2>
+<section id="folder-templates">
+<h2>Folder Templates<a class="headerlink" href="#folder-templates" title="Link to this heading">#</a></h2>
 <p>These template folders for features, modules and components can be copied to establish the intended structure
 and they include the available templates for the work products already in the right place:</p>
 <div class="toctree-wrapper compound">
@@ -605,6 +816,15 @@ their workflows, work products, roles and guidances.</p>
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="glossary/index.html">Glossary</a></li>
+</ul>
+</div>
+</section>
+<section id="release-notes">
+<h2>Release Notes<a class="headerlink" href="#release-notes" title="Link to this heading">#</a></h2>
+<p>Release notes collection.</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="release_notes/index.html">Release notes</a></li>
 </ul>
 </div>
 </section>
@@ -646,21 +866,27 @@ their workflows, work products, roles and guidances.</p>
     class="page-toc tocsection onthispage">
     <i class="fa-solid fa-list"></i> On this page
   </div>
-  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
-    <ul class="visible nav section-nav flex-column">
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="pst-show_toc_level nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">Introduction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#general-concepts">General Concepts</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#process-model">Process Model</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#general-concepts">General Concepts</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#process-areas">Process Areas</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#process-areas">Process Areas</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#management">Management</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#development">Development</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#support">Support</a></li>
+</ul>
+</li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#process-role-definition">Process Role definition</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#work-products">Work Products</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#workflows">Workflows</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#standards">Standards</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#trustable">Trustable</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#templates-for-folders">Templates for Folders</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#standards-requirements">Standards &amp; Requirements</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#trustable-software-framework">Trustable Software Framework</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#folder-templates">Folder Templates</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#glossary">Glossary</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#release-notes">Release Notes</a></li>
 </ul>
   </nav></div>
 
@@ -693,8 +919,8 @@ their workflows, work products, roles and guidances.</p>
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script defer src="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
-<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+  <script defer src="_static/scripts/bootstrap.js?digest=7f76b32a3354e82990f2"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=7f76b32a3354e82990f2"></script>
 
   <footer class="bd-footer">
 <div class="bd-footer__inner bd-page-width">
@@ -704,7 +930,7 @@ their workflows, work products, roles and guidances.</p>
         <div class="footer-item">
 
   <p class="sphinx-version">
-    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.2.3.
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 9.1.0.
     <br/>
   </p>
 </div>
@@ -718,7 +944,7 @@ their workflows, work products, roles and guidances.</p>
         <div class="footer-item">
 <p class="theme-version">
   <!-- # L10n: Setting the PST URL as an argument as this does not need to be localized -->
-  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.16.1.
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.17.0.
 </p></div>
       
     </div>
