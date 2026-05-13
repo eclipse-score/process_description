@@ -440,7 +440,7 @@ The following section links to the rendered feature example that is now maintain
       :safety: QM
       :status: valid
       :includes: logic_arc_int__example_feature__archex_logical_interface_1, logic_arc_int__example_feature__archex_logical_interface_2
-      :satisfies: feat_req__example_feature__archdes_example_req
+      :fulfils: feat_req__example_feature__archdes_example_req
       :belongs_to: feat__example_feature
 
       .. needarch::
@@ -452,6 +452,8 @@ The following section links to the rendered feature example that is now maintain
 Component Architecture
 ^^^^^^^^^^^^^^^^^^^^^^
 
+The following section is an example, how an component looks like and how the detail design of an component is described. Please note that components with an "ASIL_B" safety rating are highlighted with red borders in the diagram (e.g., "Component 1").
+
 The rendered component examples are maintained in the
 `module template documentation <https://eclipse-score.github.io/module_template/main/>`__.
 
@@ -462,7 +464,7 @@ The rendered component examples are maintained in the
       :status: valid
       :safety: ASIL_B
       :security: NO
-      :satisfies: comp_req__example_feature__archex_example_req
+      :fulfils: comp_req__example_feature__archex_example_req
       :belongs_to: comp__component_component_getstrt
 
       .. needarch::

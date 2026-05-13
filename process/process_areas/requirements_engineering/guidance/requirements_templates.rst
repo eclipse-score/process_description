@@ -49,18 +49,6 @@ Templates
    See the Assumption of Use requirement snippets in the
    `module template documentation <https://eclipse-score.github.io/module_template/aou_requirements_template.html>`__.
 
-.. gd_temp:: Process Requirements Template
-   :id: gd_temp__req_process_req
-   :status: valid
-   :complies: std_req__iso26262__support_641, std_req__iso26262__support_6421, std_req__iso26262__support_6425
-
-   .. code-block:: rst
-
-      .. gd_req:: <Title>
-         :id: gd_req__<process>__<Title>
-         :satisfies: <link to guidance id>
-         :complies: <link to standard requirement>
-         :status: <valid|invalid>
 
 .. gd_temp:: Tool Requirements Template
    :id: gd_temp__req_tool_req
@@ -73,7 +61,7 @@ Templates
          :id: tool_req__<tool>__<Title>
          :security: <YES|NO>
          :safety: <QM|ASIL_B>
-         :satisfies: <link to process req id>
+         :derived_from: <link to process req id>
          :status: <valid|invalid>
          :implemented: <YES|PARTIAL|NO>
 
