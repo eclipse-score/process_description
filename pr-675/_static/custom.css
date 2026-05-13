@@ -208,3 +208,8 @@
 	display: block;
 	margin: 0 auto;
 }
+
+/* Wider content area for pages that opt in via the "wide-content-page" body class */
+body.wide-content-page .bd-content .bd-article-container {
+	max-width: 100%;
+}
