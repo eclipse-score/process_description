@@ -148,13 +148,17 @@ Known closed CRs: Baselibs (#549), Communication (#69), Logging (#68), Orchestra
 
 ### Process Area 2 — Feature Requirements
 - **✅ Available**: 100% of individual needs elements (e.g. `.. feat_req::`) inside the requirements doc have `:status: valid`
-- **🔄 NN%**: elements exist but not all are `valid`; show `valid / total` percentage
-- **❌ Open**: no requirements file or zero needs elements found
+- **🔄 NN%**: elements exist but not all are `valid`; show `valid / total` percentage. **This includes `🔄 0% (0/N)` when N elements exist but ALL are `:status: invalid` — do NOT use `❌ Open` in this case.**
+- **❌ Open**: no requirements file found, OR zero needs elements found (file is empty/missing `feat_req::` directives)
+
+> **Rule applies to ALL modules consistently**: if a requirements file exists and contains `.. feat_req::` directives (even if all are `:status: invalid`), always show `🔄 0% (0/N)` with a link to the file and a note that entries are all invalid. Never collapse to `❌ Open` when elements are present.
 
 ### Process Area 2 — Component Requirements
-- **✅ Available**: 100% of all individual needs elements across all component requirements `.rst` files (not just `index.rst` — search all `.rst` files under `docs/modules/<module>/**/requirements/`) have `:status: valid`
-- **🔄 NN%**: elements exist but not all are `valid`; show `valid / total` percentage
-- **❌ Open**: no component requirement files found
+- **✅ Available**: 100% of all individual needs elements across all component requirements `.rst` files (not just `index.rst` — search all `.rst` files under `docs/modules/<module>/**/requirements/` and the module's own repo under `docs/module/**/requirements/`) have `:status: valid`
+- **🔄 NN%**: elements exist but not all are `valid`; show `valid / total` percentage. **Includes `🔄 0% (0/N)` when ALL elements are `:status: invalid` — template placeholder files count as existing elements.**
+- **❌ Open**: no component requirement files found, OR all found files contain zero `.. comp_req::` directives (pure template stubs without even a dummy directive)
+
+> **Rule applies to ALL modules consistently**: template placeholder comp_req entries with `:status: invalid` still count as existing elements → show `🔄 0% (0/N)`, not `❌ Open`.
 
 ### Process Area 2 — Req. Inspection
 - **✅ Available**: 100% of all `chklst_req_inspection.rst` files (feature + component level) have `:status: valid`
@@ -163,13 +167,13 @@ Known closed CRs: Baselibs (#549), Communication (#69), Logging (#68), Orchestra
 
 ### Process Area 3 — Feature Architecture
 - **✅ Available**: 100% of individual needs elements (e.g. `.. feat_arc::`) inside the architecture doc have `:status: valid`
-- **🔄 NN%**: elements exist but not all are `valid`; show `valid / total` percentage
-- **❌ Open**: no architecture file or zero needs elements found
+- **🔄 NN%**: elements exist but not all are `valid`; show `valid / total` percentage. **Includes `🔄 0% (0/N)` when all are `:status: invalid` — do NOT use `❌ Open` when elements exist.**
+- **❌ Open**: no architecture file found, OR zero `.. feat_arc::` directives found
 
 ### Process Area 3 — Component Architecture
 - **✅ Available**: 100% of all individual needs elements across all component architecture files have `:status: valid`
-- **🔄 NN%**: elements exist but not all are `valid`; show `valid / total` percentage
-- **❌ Open**: no architecture docs found
+- **🔄 NN%**: elements exist but not all are `valid`; show `valid / total` percentage. **Includes `🔄 0% (0/N)` when all are `:status: invalid` — do NOT use `❌ Open` when elements exist.**
+- **❌ Open**: no component architecture docs containing directives found
 
 ### Process Area 3 — Arch. Inspection
 - **✅ Available**: 100% of all architecture checklists (`chklst_arc_inspection.rst` / `chklst_arch_inspection.rst`) have `:status: valid`
@@ -188,8 +192,8 @@ Known closed CRs: Baselibs (#549), Communication (#69), Logging (#68), Orchestra
 
 ### Process Area 4 — Detailed Design
 - **✅ Available**: 100% of formal design doc needs elements (`.. dd_sta::`, `.. dd_dyn::`, `.. comp_dd::` or similar) in `detailed_design/` folders have `:status: valid`
-- **🔄 NN%**: design docs exist and at least one element is `valid` but not all are `valid`; show `valid / total` %
-- **❌ Open**: no RST files with actual design directives found, OR all existing design elements have `:status: draft` (0% valid = same as not started)
+- **🔄 NN%**: design docs exist and at least one element is `valid` but not all are `valid`; show `valid / total` %. **Includes `🔄 0% (0/N)` when all design elements are `:status: invalid` — do NOT use `❌ Open` when actual design directives are present.**
+- **❌ Open**: no RST files with actual design directives found, OR all existing files contain only `:status: draft` wrapper `.. document::` directives (0 actual `dd_sta/dd_dyn` directives)
 - **DO NOT count `chklst_impl_inspection.rst`** — those are inspection checklists, not design documents
 - **DO NOT count bare `.. document::` wrapper files** — these are placeholders, not actual design content
 - **Search both `eclipse-score/score` and the module's own repo** for `detailed_design/` folders
@@ -256,6 +260,32 @@ gh api "repos/eclipse-score/reference_integration/actions/jobs/$JOB_ID/logs" \
 ### Process Area 5 — Feature Integration Tests
 - **🔄 In Progress**: `integration_test_scenarios` or `feature*test*` paths found in source repo
 - **❌ Open**: none found
+
+### Process Area 5 — Static Code Analysis
+
+Static analysis CI exists at two levels:
+1. **Per-module CI workflow** — zero-tolerance enforcement on `main` (clang-tidy for C++, Clippy for Rust). A passing CI implies 0 open findings.
+2. **Central CodeQL** — runs in `eclipse-score/reference_integration` via `codeql-multiple-repo-scan.yml` across all pinned repos. Finding counts require the GitHub Security tab.
+
+**Status criteria:**
+- **`✅ 0 findings`**: A zero-tolerance CI workflow enforcing clang-tidy or Clippy exists in the module's own repo AND it passes on `main`. Link directly to the workflow file.
+- **`🔄 Configured (...) but no CI enforcement workflow yet`**: Static analysis tools are configured in the repo (`.clang-tidy`, `static_analysis.bazelrc`, CodeQL config etc.) but no CI workflow enforces them on every PR/push. NOT `❌ Open` — the infrastructure exists.
+- **`❌ Open`**: No static analysis configuration found at all in the module's own repo.
+
+**Per-module static analysis status** (as of 2026-05):
+| Module | Status | CI / Config link |
+|---|---|---|
+| Baselibs | `✅ 0 findings` | [clang-tidy lint.yml](https://github.com/eclipse-score/baselibs/blob/main/.github/workflows/lint.yml) |
+| Communication | `🔄 Configured` | [static_analysis.bazelrc](https://github.com/eclipse-score/communication/blob/main/quality/static_analysis/static_analysis.bazelrc) + [CodeQL/MISRA](https://github.com/eclipse-score/communication/tree/main/quality/static_analysis) — no CI enforcement yet |
+| Logging | `❌ Open` | — |
+| Orchestrator | `✅ 0 findings` | [Clippy clippy.yml](https://github.com/eclipse-score/orchestrator/blob/main/.github/workflows/clippy.yml) |
+| Persistency | `✅ 0 findings` | [Clippy clippy.yml](https://github.com/eclipse-score/persistency/blob/main/.github/workflows/clippy.yml) |
+| Time | `❌ Open` | — |
+| Config Mgmt | `✅ 0 findings` | [clang-tidy static-analysis.yml](https://github.com/eclipse-score/config_management/blob/main/.github/workflows/static-analysis.yml) |
+| Lifecycle | `✅ 0 findings` | [Clippy lint_clippy.yml](https://github.com/eclipse-score/lifecycle/blob/main/.github/workflows/lint_clippy.yml) |
+| Security/Crypto | `❌ Open` | — |
+
+**Central CodeQL** (all modules): [codeql-multiple-repo-scan.yml](https://github.com/eclipse-score/reference_integration/blob/main/.github/workflows/codeql-multiple-repo-scan.yml) in `reference_integration`. Finding counts require the GitHub Security tab — not tracked per-cell.
 
 ### Process Area 5 — Module Verification Report
 - **✅ Available**: `verification/module_verification_report.rst` exists AND `:status: valid` **AND** the file contains actual verification data (test coverage lists, DFA results, static analysis results etc.) — not just section headings
@@ -325,7 +355,8 @@ gh api "repos/eclipse-score/reference_integration/actions/jobs/$JOB_ID/logs" \
 ## Limitations
 
 - Cannot detect whether requirements have 100% test coverage (needs needs.json analysis)
-- Cannot check if static analysis findings are cleared
+- **Static analysis findings**: Per-module CI enforcement workflows (clang-tidy/Clippy) are zero-tolerance — a passing `main` branch implies 0 findings. For `Communication` (configured but not enforced), finding counts are unknown without manual clang-tidy run.
+- Central CodeQL finding counts require GitHub Security tab access — not available via `gh api` without special permissions.
 - Feature integration tests heuristic is weak — manual verification recommended
 
 ## Complete RST Snapshot

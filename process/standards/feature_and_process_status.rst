@@ -248,8 +248,12 @@ See :ref:`requirements_workflows`.
      - ❌ Open
 
    * - Lifecycle
-     - ❌ Open
-     - ❌ Open
+     - 🔄 0% (0/92)
+       `requirements <https://github.com/eclipse-score/score/blob/main/docs/features/lifecycle/requirements/index.rst>`__
+       (all 92 entries `:status: invalid`)
+     - 🔄 0% (0/1)
+       `health_monitor <https://github.com/eclipse-score/lifecycle/blob/main/docs/module/health_monitor/requirements/index.rst>`__
+       (template placeholder, `:status: invalid`)
      - ❌ Open
 
    * - Security/Crypto
@@ -548,7 +552,16 @@ See :ref:`verification_workflows`.
    Modules not yet integrated into the reference_integration CI (Time, Config Mgmt) or with
    disabled coverage extraction (Orchestrator) show ❌ Open.
 
-.. rubric:: Implementation status: 🔄 36% (16/45 deliverables complete)
+.. note::
+
+   **Static Code Analysis** is tracked per module via dedicated CI workflows (clang-tidy for C++,
+   Rust Clippy for Rust). All listed workflows are zero-tolerance (CI fails on any finding),
+   so a passing ``main`` branch implies **0 open findings**. Additionally,
+   `CodeQL <https://github.com/eclipse-score/reference_integration/blob/main/.github/workflows/codeql-multiple-repo-scan.yml>`__
+   runs centrally across all pinned repositories in ``reference_integration``
+   (finding counts require the GitHub Security tab).
+
+.. rubric:: Implementation status: 🔄 39% (21/54 deliverables complete)
 
 .. list-table::
    :header-rows: 1
@@ -560,6 +573,7 @@ See :ref:`verification_workflows`.
      - **C0/C1 Coverage**
      - **Comp. Integration Tests**
      - **Feature Integration Tests**
+     - **Static Code Analysis**
      - **Module Verification Report**
 
    * - Baselibs
@@ -569,6 +583,7 @@ See :ref:`verification_workflows`.
        **Rust line:** 74.4%
      - ✅ Available (13 tests)
      - ❌ Open
+     - ✅ 0 findings `clang-tidy <https://github.com/eclipse-score/baselibs/blob/main/.github/workflows/lint.yml>`__
      - ❌ Open
 
    * - Communication
@@ -576,6 +591,9 @@ See :ref:`verification_workflows`.
      - 🔄 **C0:** 87.9% / **C1:** 58.8% (cpp)
      - ✅ Available (42 tests)
      - ❌ Open
+     - 🔄 Configured (`clang-tidy <https://github.com/eclipse-score/communication/blob/main/quality/static_analysis/static_analysis.bazelrc>`__,
+       `CodeQL/MISRA <https://github.com/eclipse-score/communication/tree/main/quality/static_analysis>`__)
+       but no CI enforcement workflow yet
      - ❌ Open
 
    * - Logging
@@ -586,12 +604,14 @@ See :ref:`verification_workflows`.
      - ❌ Open
      - ✅ Available (1 test) `reference_integration <https://github.com/eclipse-score/reference_integration>`__ (cross-module)
      - ❌ Open
+     - ❌ Open
 
    * - Orchestrator
      - ✅ Available (2 tests)
      - ❌ Open
      - ✅ Available (9 tests)
      - ✅ Available (3 tests) `reference_integration <https://github.com/eclipse-score/reference_integration>`__ (cross-module)
+     - ✅ 0 findings `Clippy <https://github.com/eclipse-score/orchestrator/blob/main/.github/workflows/clippy.yml>`__
      - ❌ Open
 
    * - Persistency
@@ -601,6 +621,7 @@ See :ref:`verification_workflows`.
        **Rust line:** 92.7%
      - ❌ Open
      - ✅ Available (6 tests) `reference_integration <https://github.com/eclipse-score/reference_integration>`__ (cross-module)
+     - ✅ 0 findings `Clippy <https://github.com/eclipse-score/persistency/blob/main/.github/workflows/clippy.yml>`__
      - ❌ Open
 
    * - Time
@@ -609,12 +630,14 @@ See :ref:`verification_workflows`.
      - ✅ Available (11 tests)
      - ❌ Open
      - ❌ Open
+     - ❌ Open
 
    * - Config Mgmt
      - ✅ Available (143 tests)
      - ❌ Open
      - ❌ Open
      - ❌ Open
+     - ✅ 0 findings `clang-tidy <https://github.com/eclipse-score/config_management/blob/main/.github/workflows/static-analysis.yml>`__
      - ❌ Open
 
    * - Lifecycle
@@ -624,9 +647,11 @@ See :ref:`verification_workflows`.
        **Rust line:** 53.8%
      - ✅ Available (9 tests)
      - ❌ Open
+     - ✅ 0 findings `Clippy <https://github.com/eclipse-score/lifecycle/blob/main/.github/workflows/lint_clippy.yml>`__
      - ❌ Open
 
    * - Security/Crypto
+     - ❌ Open
      - ❌ Open
      - ❌ Open
      - ❌ Open
