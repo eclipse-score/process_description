@@ -12,6 +12,10 @@
    # SPDX-License-Identifier: Apache-2.0
    # *******************************************************************************
 
+.. raw:: html
+
+   <script>document.body.classList.add("wide-content-page");</script>
+
 Feature and Process Status
 ##########################
 
