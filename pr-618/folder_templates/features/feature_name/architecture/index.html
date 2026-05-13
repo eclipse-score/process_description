@@ -586,7 +586,7 @@
                   
   <section id="feature-architecture">
 <span id="feature-architecture-template"></span><h1>Feature Architecture<a class="headerlink" href="#feature-architecture" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-e7383dac">
+<div class="need_container docutils container" id="SNCB-8432ca7c">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_document table" id="doc__feature_name_architecture">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -672,7 +672,16 @@
 <h2>Static Architecture<a class="headerlink" href="#static-architecture" title="Link to this heading">#</a></h2>
 <p>The live feature architecture template snippets are maintained in the
 <a class="reference external" href="https://eclipse-score.github.io/module_template/main/">module template documentation</a>.</p>
-<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">feat_arc_sta</span><span class="p">::</span> Feature Static View
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">feat</span><span class="p">::</span> Feature Name
+   <span class="nc">:id:</span> feat__feature_name
+   <span class="nc">:security:</span> YES
+   <span class="nc">:safety:</span> ASIL_B
+   <span class="nc">:status:</span> invalid
+   <span class="nc">:includes:</span> logic_arc_int__feature_name__interface_name1
+
+   General Feature Description
+
+<span class="p">..</span> <span class="ow">feat_arc_sta</span><span class="p">::</span> Feature Static View
    <span class="nc">:id:</span> feat_arc_sta__feature_name__static_view
    <span class="nc">:security:</span> YES
    <span class="nc">:safety:</span> ASIL_B
@@ -680,8 +689,6 @@
    <span class="nc">:fulfils:</span> feat_req__feature_name__some_title
    <span class="nc">:includes:</span> logic_arc_int__feature_name__interface_name1
    <span class="nc">:belongs_to:</span> feat__feature_name
-
-   General Feature Description
 
 <span class="p">   ..</span> <span class="ow">needarch</span><span class="p">::</span>
       <span class="nc">:scale:</span> 50
