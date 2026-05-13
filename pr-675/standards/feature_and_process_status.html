@@ -1016,8 +1016,11 @@ so a passing <code class="docutils literal notranslate"><span class="pre">main</
 <a class="reference external" href="https://github.com/eclipse-score/reference_integration/blob/main/.github/workflows/codeql-multiple-repo-scan.yml">CodeQL</a>
 runs centrally across all pinned repositories in <code class="docutils literal notranslate"><span class="pre">reference_integration</span></code>
 (finding counts require the GitHub Security tab).</p>
+<p><strong>Dynamic Code Analysis</strong> is tracked via sanitizer CI workflows (ASan/UBSan/LSan via
+<code class="docutils literal notranslate"><span class="pre">--config=asan_ubsan_lsan</span></code>, TSan via <code class="docutils literal notranslate"><span class="pre">--config=tsan</span></code>). All listed workflows are
+zero-tolerance, so a passing <code class="docutils literal notranslate"><span class="pre">main</span></code> branch implies <strong>0 sanitizer findings</strong>.</p>
 </div>
-<p class="rubric">Implementation status: 🔄 39% (21/54 deliverables complete)</p>
+<p class="rubric">Implementation status: 🔄 36% (23/63 deliverables complete)</p>
 <div class="pst-scrollable-table-container"><table class="module-phase-tracker-table table">
 <thead>
 <tr class="row-odd"><th class="head stub"><p><strong>Module</strong></p></th>
@@ -1026,6 +1029,7 @@ runs centrally across all pinned repositories in <code class="docutils literal n
 <th class="head"><p><strong>Comp. Integration Tests</strong></p></th>
 <th class="head"><p><strong>Feature Integration Tests</strong></p></th>
 <th class="head"><p><strong>Static Code Analysis</strong></p></th>
+<th class="head"><p><strong>Dynamic Code Analysis</strong></p></th>
 <th class="head"><p><strong>Module Verification Report</strong></p></th>
 </tr>
 </thead>
@@ -1038,6 +1042,7 @@ runs centrally across all pinned repositories in <code class="docutils literal n
 <td><p>✅ Available (13 tests)</p></td>
 <td><p>❌ Open</p></td>
 <td><p>✅ 0 findings <a class="reference external" href="https://github.com/eclipse-score/baselibs/blob/main/.github/workflows/lint.yml">clang-tidy</a></p></td>
+<td><p>✅ 0 findings <a class="reference external" href="https://github.com/eclipse-score/baselibs/blob/main/.github/workflows/sanitizers_linux.yml">ASan/UBSan/LSan</a></p></td>
 <td><p>❌ Open</p></td>
 </tr>
 <tr class="row-odd"><th class="stub"><p>Communication</p></th>
@@ -1048,6 +1053,8 @@ runs centrally across all pinned repositories in <code class="docutils literal n
 <td><p>🔄 Configured (<a class="reference external" href="https://github.com/eclipse-score/communication/blob/main/quality/static_analysis/static_analysis.bazelrc">clang-tidy</a>,
 <a class="reference external" href="https://github.com/eclipse-score/communication/tree/main/quality/static_analysis">CodeQL/MISRA</a>)
 but no CI enforcement workflow yet</p></td>
+<td><p>✅ 0 findings <a class="reference external" href="https://github.com/eclipse-score/communication/blob/main/.github/workflows/address_undefined_behavior_leak_sanitizer.yml">ASan/UBSan/LSan</a>,
+<a class="reference external" href="https://github.com/eclipse-score/communication/blob/main/.github/workflows/thread_sanitizer.yml">TSan</a></p></td>
 <td><p>❌ Open</p></td>
 </tr>
 <tr class="row-even"><th class="stub"><p>Logging</p></th>
@@ -1059,6 +1066,7 @@ but no CI enforcement workflow yet</p></td>
 <td><p>✅ Available (1 test) <a class="reference external" href="https://github.com/eclipse-score/reference_integration">reference_integration</a> (cross-module)</p></td>
 <td><p>❌ Open</p></td>
 <td><p>❌ Open</p></td>
+<td><p>❌ Open</p></td>
 </tr>
 <tr class="row-odd"><th class="stub"><p>Orchestrator</p></th>
 <td><p>✅ Available (2 tests)</p></td>
@@ -1066,6 +1074,7 @@ but no CI enforcement workflow yet</p></td>
 <td><p>✅ Available (9 tests)</p></td>
 <td><p>✅ Available (3 tests) <a class="reference external" href="https://github.com/eclipse-score/reference_integration">reference_integration</a> (cross-module)</p></td>
 <td><p>✅ 0 findings <a class="reference external" href="https://github.com/eclipse-score/orchestrator/blob/main/.github/workflows/clippy.yml">Clippy</a></p></td>
+<td><p>❌ Open</p></td>
 <td><p>❌ Open</p></td>
 </tr>
 <tr class="row-even"><th class="stub"><p>Persistency</p></th>
@@ -1077,11 +1086,13 @@ but no CI enforcement workflow yet</p></td>
 <td><p>✅ Available (6 tests) <a class="reference external" href="https://github.com/eclipse-score/reference_integration">reference_integration</a> (cross-module)</p></td>
 <td><p>✅ 0 findings <a class="reference external" href="https://github.com/eclipse-score/persistency/blob/main/.github/workflows/clippy.yml">Clippy</a></p></td>
 <td><p>❌ Open</p></td>
+<td><p>❌ Open</p></td>
 </tr>
 <tr class="row-odd"><th class="stub"><p>Time</p></th>
 <td><p>✅ Available (296 tests)</p></td>
 <td><p>❌ Open</p></td>
 <td><p>✅ Available (11 tests)</p></td>
+<td><p>❌ Open</p></td>
 <td><p>❌ Open</p></td>
 <td><p>❌ Open</p></td>
 <td><p>❌ Open</p></td>
@@ -1093,6 +1104,7 @@ but no CI enforcement workflow yet</p></td>
 <td><p>❌ Open</p></td>
 <td><p>✅ 0 findings <a class="reference external" href="https://github.com/eclipse-score/config_management/blob/main/.github/workflows/static-analysis.yml">clang-tidy</a></p></td>
 <td><p>❌ Open</p></td>
+<td><p>❌ Open</p></td>
 </tr>
 <tr class="row-odd"><th class="stub"><p>Lifecycle</p></th>
 <td><p>✅ Available (2 tests)</p></td>
@@ -1103,8 +1115,10 @@ but no CI enforcement workflow yet</p></td>
 <td><p>❌ Open</p></td>
 <td><p>✅ 0 findings <a class="reference external" href="https://github.com/eclipse-score/lifecycle/blob/main/.github/workflows/lint_clippy.yml">Clippy</a></p></td>
 <td><p>❌ Open</p></td>
+<td><p>❌ Open</p></td>
 </tr>
 <tr class="row-even"><th class="stub"><p>Security/Crypto</p></th>
+<td><p>❌ Open</p></td>
 <td><p>❌ Open</p></td>
 <td><p>❌ Open</p></td>
 <td><p>❌ Open</p></td>
