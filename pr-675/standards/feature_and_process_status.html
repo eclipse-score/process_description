@@ -759,8 +759,12 @@ See <a class="reference internal" href="../process_areas/requirements_engineerin
 <td><p>❌ Open</p></td>
 </tr>
 <tr class="row-odd"><th class="stub"><p>Lifecycle</p></th>
-<td><p>❌ Open</p></td>
-<td><p>❌ Open</p></td>
+<td><p>🔄 0% (0/92)
+<a class="reference external" href="https://github.com/eclipse-score/score/blob/main/docs/features/lifecycle/requirements/index.rst">requirements</a>
+(all 92 entries <cite>:status: invalid</cite>)</p></td>
+<td><p>🔄 0% (0/1)
+<a class="reference external" href="https://github.com/eclipse-score/lifecycle/blob/main/docs/module/health_monitor/requirements/index.rst">health_monitor</a>
+(template placeholder, <cite>:status: invalid</cite>)</p></td>
 <td><p>❌ Open</p></td>
 </tr>
 <tr class="row-even"><th class="stub"><p>Security/Crypto</p></th>
@@ -1004,7 +1008,16 @@ C0 = line coverage, C1 = branch coverage. Rust coverage reports line coverage on
 Modules not yet integrated into the reference_integration CI (Time, Config Mgmt) or with
 disabled coverage extraction (Orchestrator) show ❌ Open.</p>
 </div>
-<p class="rubric">Implementation status: 🔄 36% (16/45 deliverables complete)</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Static Code Analysis</strong> is tracked per module via dedicated CI workflows (clang-tidy for C++,
+Rust Clippy for Rust). All listed workflows are zero-tolerance (CI fails on any finding),
+so a passing <code class="docutils literal notranslate"><span class="pre">main</span></code> branch implies <strong>0 open findings</strong>. Additionally,
+<a class="reference external" href="https://github.com/eclipse-score/reference_integration/blob/main/.github/workflows/codeql-multiple-repo-scan.yml">CodeQL</a>
+runs centrally across all pinned repositories in <code class="docutils literal notranslate"><span class="pre">reference_integration</span></code>
+(finding counts require the GitHub Security tab).</p>
+</div>
+<p class="rubric">Implementation status: 🔄 39% (21/54 deliverables complete)</p>
 <div class="pst-scrollable-table-container"><table class="module-phase-tracker-table table">
 <thead>
 <tr class="row-odd"><th class="head stub"><p><strong>Module</strong></p></th>
@@ -1012,6 +1025,7 @@ disabled coverage extraction (Orchestrator) show ❌ Open.</p>
 <th class="head"><p><strong>C0/C1 Coverage</strong></p></th>
 <th class="head"><p><strong>Comp. Integration Tests</strong></p></th>
 <th class="head"><p><strong>Feature Integration Tests</strong></p></th>
+<th class="head"><p><strong>Static Code Analysis</strong></p></th>
 <th class="head"><p><strong>Module Verification Report</strong></p></th>
 </tr>
 </thead>
@@ -1023,6 +1037,7 @@ disabled coverage extraction (Orchestrator) show ❌ Open.</p>
 </td>
 <td><p>✅ Available (13 tests)</p></td>
 <td><p>❌ Open</p></td>
+<td><p>✅ 0 findings <a class="reference external" href="https://github.com/eclipse-score/baselibs/blob/main/.github/workflows/lint.yml">clang-tidy</a></p></td>
 <td><p>❌ Open</p></td>
 </tr>
 <tr class="row-odd"><th class="stub"><p>Communication</p></th>
@@ -1030,6 +1045,9 @@ disabled coverage extraction (Orchestrator) show ❌ Open.</p>
 <td><p>🔄 <strong>C0:</strong> 87.9% / <strong>C1:</strong> 58.8% (cpp)</p></td>
 <td><p>✅ Available (42 tests)</p></td>
 <td><p>❌ Open</p></td>
+<td><p>🔄 Configured (<a class="reference external" href="https://github.com/eclipse-score/communication/blob/main/quality/static_analysis/static_analysis.bazelrc">clang-tidy</a>,
+<a class="reference external" href="https://github.com/eclipse-score/communication/tree/main/quality/static_analysis">CodeQL/MISRA</a>)
+but no CI enforcement workflow yet</p></td>
 <td><p>❌ Open</p></td>
 </tr>
 <tr class="row-even"><th class="stub"><p>Logging</p></th>
@@ -1040,12 +1058,14 @@ disabled coverage extraction (Orchestrator) show ❌ Open.</p>
 <td><p>❌ Open</p></td>
 <td><p>✅ Available (1 test) <a class="reference external" href="https://github.com/eclipse-score/reference_integration">reference_integration</a> (cross-module)</p></td>
 <td><p>❌ Open</p></td>
+<td><p>❌ Open</p></td>
 </tr>
 <tr class="row-odd"><th class="stub"><p>Orchestrator</p></th>
 <td><p>✅ Available (2 tests)</p></td>
 <td><p>❌ Open</p></td>
 <td><p>✅ Available (9 tests)</p></td>
 <td><p>✅ Available (3 tests) <a class="reference external" href="https://github.com/eclipse-score/reference_integration">reference_integration</a> (cross-module)</p></td>
+<td><p>✅ 0 findings <a class="reference external" href="https://github.com/eclipse-score/orchestrator/blob/main/.github/workflows/clippy.yml">Clippy</a></p></td>
 <td><p>❌ Open</p></td>
 </tr>
 <tr class="row-even"><th class="stub"><p>Persistency</p></th>
@@ -1055,6 +1075,7 @@ disabled coverage extraction (Orchestrator) show ❌ Open.</p>
 </td>
 <td><p>❌ Open</p></td>
 <td><p>✅ Available (6 tests) <a class="reference external" href="https://github.com/eclipse-score/reference_integration">reference_integration</a> (cross-module)</p></td>
+<td><p>✅ 0 findings <a class="reference external" href="https://github.com/eclipse-score/persistency/blob/main/.github/workflows/clippy.yml">Clippy</a></p></td>
 <td><p>❌ Open</p></td>
 </tr>
 <tr class="row-odd"><th class="stub"><p>Time</p></th>
@@ -1063,12 +1084,14 @@ disabled coverage extraction (Orchestrator) show ❌ Open.</p>
 <td><p>✅ Available (11 tests)</p></td>
 <td><p>❌ Open</p></td>
 <td><p>❌ Open</p></td>
+<td><p>❌ Open</p></td>
 </tr>
 <tr class="row-even"><th class="stub"><p>Config Mgmt</p></th>
 <td><p>✅ Available (143 tests)</p></td>
 <td><p>❌ Open</p></td>
 <td><p>❌ Open</p></td>
 <td><p>❌ Open</p></td>
+<td><p>✅ 0 findings <a class="reference external" href="https://github.com/eclipse-score/config_management/blob/main/.github/workflows/static-analysis.yml">clang-tidy</a></p></td>
 <td><p>❌ Open</p></td>
 </tr>
 <tr class="row-odd"><th class="stub"><p>Lifecycle</p></th>
@@ -1078,9 +1101,11 @@ disabled coverage extraction (Orchestrator) show ❌ Open.</p>
 </td>
 <td><p>✅ Available (9 tests)</p></td>
 <td><p>❌ Open</p></td>
+<td><p>✅ 0 findings <a class="reference external" href="https://github.com/eclipse-score/lifecycle/blob/main/.github/workflows/lint_clippy.yml">Clippy</a></p></td>
 <td><p>❌ Open</p></td>
 </tr>
 <tr class="row-even"><th class="stub"><p>Security/Crypto</p></th>
+<td><p>❌ Open</p></td>
 <td><p>❌ Open</p></td>
 <td><p>❌ Open</p></td>
 <td><p>❌ Open</p></td>
