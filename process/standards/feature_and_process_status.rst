@@ -561,7 +561,11 @@ See :ref:`verification_workflows`.
    runs centrally across all pinned repositories in ``reference_integration``
    (finding counts require the GitHub Security tab).
 
-.. rubric:: Implementation status: 🔄 39% (21/54 deliverables complete)
+   **Dynamic Code Analysis** is tracked via sanitizer CI workflows (ASan/UBSan/LSan via
+   ``--config=asan_ubsan_lsan``, TSan via ``--config=tsan``). All listed workflows are
+   zero-tolerance, so a passing ``main`` branch implies **0 sanitizer findings**.
+
+.. rubric:: Implementation status: 🔄 36% (23/63 deliverables complete)
 
 .. list-table::
    :header-rows: 1
@@ -574,6 +578,7 @@ See :ref:`verification_workflows`.
      - **Comp. Integration Tests**
      - **Feature Integration Tests**
      - **Static Code Analysis**
+     - **Dynamic Code Analysis**
      - **Module Verification Report**
 
    * - Baselibs
@@ -584,6 +589,7 @@ See :ref:`verification_workflows`.
      - ✅ Available (13 tests)
      - ❌ Open
      - ✅ 0 findings `clang-tidy <https://github.com/eclipse-score/baselibs/blob/main/.github/workflows/lint.yml>`__
+     - ✅ 0 findings `ASan/UBSan/LSan <https://github.com/eclipse-score/baselibs/blob/main/.github/workflows/sanitizers_linux.yml>`__
      - ❌ Open
 
    * - Communication
@@ -594,6 +600,8 @@ See :ref:`verification_workflows`.
      - 🔄 Configured (`clang-tidy <https://github.com/eclipse-score/communication/blob/main/quality/static_analysis/static_analysis.bazelrc>`__,
        `CodeQL/MISRA <https://github.com/eclipse-score/communication/tree/main/quality/static_analysis>`__)
        but no CI enforcement workflow yet
+     - ✅ 0 findings `ASan/UBSan/LSan <https://github.com/eclipse-score/communication/blob/main/.github/workflows/address_undefined_behavior_leak_sanitizer.yml>`__,
+       `TSan <https://github.com/eclipse-score/communication/blob/main/.github/workflows/thread_sanitizer.yml>`__
      - ❌ Open
 
    * - Logging
@@ -605,6 +613,7 @@ See :ref:`verification_workflows`.
      - ✅ Available (1 test) `reference_integration <https://github.com/eclipse-score/reference_integration>`__ (cross-module)
      - ❌ Open
      - ❌ Open
+     - ❌ Open
 
    * - Orchestrator
      - ✅ Available (2 tests)
@@ -612,6 +621,7 @@ See :ref:`verification_workflows`.
      - ✅ Available (9 tests)
      - ✅ Available (3 tests) `reference_integration <https://github.com/eclipse-score/reference_integration>`__ (cross-module)
      - ✅ 0 findings `Clippy <https://github.com/eclipse-score/orchestrator/blob/main/.github/workflows/clippy.yml>`__
+     - ❌ Open
      - ❌ Open
 
    * - Persistency
@@ -623,11 +633,13 @@ See :ref:`verification_workflows`.
      - ✅ Available (6 tests) `reference_integration <https://github.com/eclipse-score/reference_integration>`__ (cross-module)
      - ✅ 0 findings `Clippy <https://github.com/eclipse-score/persistency/blob/main/.github/workflows/clippy.yml>`__
      - ❌ Open
+     - ❌ Open
 
    * - Time
      - ✅ Available (296 tests)
      - ❌ Open
      - ✅ Available (11 tests)
+     - ❌ Open
      - ❌ Open
      - ❌ Open
      - ❌ Open
@@ -639,6 +651,7 @@ See :ref:`verification_workflows`.
      - ❌ Open
      - ✅ 0 findings `clang-tidy <https://github.com/eclipse-score/config_management/blob/main/.github/workflows/static-analysis.yml>`__
      - ❌ Open
+     - ❌ Open
 
    * - Lifecycle
      - ✅ Available (2 tests)
@@ -649,8 +662,10 @@ See :ref:`verification_workflows`.
      - ❌ Open
      - ✅ 0 findings `Clippy <https://github.com/eclipse-score/lifecycle/blob/main/.github/workflows/lint_clippy.yml>`__
      - ❌ Open
+     - ❌ Open
 
    * - Security/Crypto
+     - ❌ Open
      - ❌ Open
      - ❌ Open
      - ❌ Open

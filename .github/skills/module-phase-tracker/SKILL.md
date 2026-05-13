@@ -287,6 +287,31 @@ Static analysis CI exists at two levels:
 
 **Central CodeQL** (all modules): [codeql-multiple-repo-scan.yml](https://github.com/eclipse-score/reference_integration/blob/main/.github/workflows/codeql-multiple-repo-scan.yml) in `reference_integration`. Finding counts require the GitHub Security tab — not tracked per-cell.
 
+### Process Area 5 — Dynamic Code Analysis
+
+Dynamic analysis is performed via sanitizer CI workflows (Bazel `--config=asan_ubsan_lsan` for ASan/UBSan/LSan, `--config=tsan` for TSan). All workflows are zero-tolerance — a passing `main` branch implies 0 sanitizer findings.
+
+**Status criteria:**
+- **`✅ 0 findings`**: A zero-tolerance sanitizer CI workflow exists in the module's own repo AND it passes on `main`. Link directly to the workflow file(s).
+- **`❌ Open`**: No sanitizer CI workflow found in the module's own repo.
+
+> There is NO `🔄 Configured but not enforced` category for dynamic analysis — either a CI workflow runs and enforces sanitizers (✅) or it is absent (❌).
+
+**Per-module dynamic code analysis status** (as of 2026-05):
+| Module | Status | CI link(s) |
+|---|---|---|
+| Baselibs | `✅ 0 findings` | [sanitizers_linux.yml](https://github.com/eclipse-score/baselibs/blob/main/.github/workflows/sanitizers_linux.yml) — ASan+UBSan+LSan |
+| Communication | `✅ 0 findings` | [ASan/UBSan/LSan](https://github.com/eclipse-score/communication/blob/main/.github/workflows/address_undefined_behavior_leak_sanitizer.yml), [TSan](https://github.com/eclipse-score/communication/blob/main/.github/workflows/thread_sanitizer.yml) |
+| Logging | `❌ Open` | — |
+| Orchestrator | `❌ Open` | — |
+| Persistency | `❌ Open` | — |
+| Time | `❌ Open` | — |
+| Config Mgmt | `❌ Open` | — |
+| Lifecycle | `❌ Open` | — |
+| Security/Crypto | `❌ Open` | — |
+
+**How to verify**: Check `.github/workflows/` in each module repo for workflows referencing `asan_ubsan_lsan`, `tsan`, `valgrind`, or similar sanitizer configs. Also check `reference_integration` workflows for cross-module sanitizer runs.
+
 ### Process Area 5 — Module Verification Report
 - **✅ Available**: `verification/module_verification_report.rst` exists AND `:status: valid` **AND** the file contains actual verification data (test coverage lists, DFA results, static analysis results etc.) — not just section headings
 - **🔄 In Progress**: file exists with `:status: draft`
