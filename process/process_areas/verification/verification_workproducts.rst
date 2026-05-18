@@ -63,9 +63,9 @@ Platform
    - Test result per test case from
      :need:`wp__verification_platform_int_test` and :need:`wp__verification_feat_int_test`
      with status passed/failed/not_run
-   - Test log per test case from
+   - Test log per executed test case from
      :need:`wp__verification_platform_int_test` and :need:`wp__verification_feat_int_test`
-     with status passed/failed/not_run
+     with status passed/failed including a link to the matching retained execution log artifacts for the specific release version
 
 Feature
 *******
@@ -112,7 +112,7 @@ Module
      with status passed/failed/not_run
    - Test log per test case from
      :need:`wp__verification_sw_unit_test` and :need:`wp__verification_comp_int_test`
-     with status passed/failed/not_run
+     with status passed/failed/not_run including a link to the matching retained execution log artifacts for the specific release version
 
    It also serves as SW Component Qualification Verification Report for pre-existing Open Source
    Projects developed and maintained outside of the project to which this process is applied to.
