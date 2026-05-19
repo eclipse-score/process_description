@@ -76,8 +76,8 @@ interfaces (the points where different parts of the system connect and interact)
 correctly and reliably. This includes validating data formats, protocols, error handling, and
 overall communication integrity incl. the respective consumed and exchanged data.
 
-It can be distinguished between internal and external interfaces. Internal interfaces are best covered
-on unit level. External interfaces work best on component integration and feature level.
+The method applies to both internal and external interfaces. Internal interfaces are best covered
+on unit level. External interfaces are tested best on component integration and feature level.
 
 It is important that the interface tests include the testing of the actual intended functionality
 which the interface provides. The related requirements, architectural design, but also the descriptive
@@ -113,14 +113,14 @@ Types of ``interface-test`` are:
   Stress the interfaces to see how they behave under heavy load (e.g., sending a large number of
   messages simultaneously).
 
-- **Security Tests:** (Relevant for code interacting with security critical parts)
+- **Security Tests:** (Relevant for code part of, or interacting with, security critical parts)
 
   Verify that the interfaces are protected against unauthorized access and data breaches.
 
 - **Timing and Performance Tests** (Relevant for realtime constraints)
 
-  Measure the latency and throughput of the interfaces. This is mainly on integration level and is
-  hard to have reasonable testing in the reference implementation
+  Measure the latency and throughput of the interfaces. This should be tested mainly on integration level.
+  Conversely, this method could be difficult to apply in the reference implementation
 
 .. _ver_structural:
 
@@ -130,7 +130,7 @@ Structural Coverage
 Structural coverage is a white-box testing technique used to check if the testing is sufficient by
 analyzing if code constructs were called during testing.
 
-In S-CORE we do both:
+Metrics applied are:
 
 * **Statement Coverage:** Measures whether each executable source code statement has been executed.
 
@@ -139,8 +139,8 @@ In S-CORE we do both:
 
 S-CORE evaluates this coverage using the compiler selected for the target reference platform.
 
-If a sufficient structural coverage is not reached then additional test cases are added.
-What is sufficient and how to determine the coverage is defined in the :need:`wp__verification_plan` of the project.
+If a sufficient structural coverage is not reached then additional test cases shall be added.
+The coverage targets and how to determine the coverage is defined in the :need:`wp__verification_plan` of the project.
 
 .. _ver_sta:
 
@@ -172,9 +172,30 @@ Derivation Techniques
 
    Following derivation techniques are explained
 
+   * :ref:`Requirements analysis <ver_req_anal>`
    * :ref:`Boundary Values <ver_boundary>`
    * :ref:`Equivalence Classes <ver_equivalence>`
    * :ref:`Fuzzy Testing <ver_fuzzy>`
+
+.. _ver_req_anal:
+
+Requirements analysis
+"""""""""""""""""""""
+
+Requirements analysis is a test derivation technique where tests are designed based on the
+requirements assigned to the software element under test (unit, component, feature etc.).
+If available, the verification method defined for each requirement should be used as
+the basis of the test cases design.
+
+Requirements should always be tested against their "nominal" behaviour: i.e. "if input
+x = A, the output y of SW component Z shall be equal to B". This leads to a test case
+injection value x = A and verifying that output y = B. "Negative" testing technique should
+be also considered: i.e. testing what happens when input x = C (if not already specified
+in other requirements).
+
+Note that requirement-based derived test case may also cover other techniques and derivation methods
+mentioned here, such as Boundary Values, Equivalence Classes, Fuzzy Testing, Interface
+Testing and Fault Injection.
 
 .. _ver_boundary:
 
@@ -268,11 +289,15 @@ How to perform the analysis:
     input variables simultaneously. This is especially important if there are dependencies
     between the variables.
 
+In case of non-trivial determination of test case inputs, a short explanation of the
+process followed can be given in order to facilitate maintenance and test regression,
+as well as during audits and assessments.
+
 .. _ver_equivalence:
 
 Equivalence Classes
 """""""""""""""""""
-Equivalence Classes or also called Equivalence Partitioning (EP) is a software testing technique
+Equivalence Classes, also called Equivalence Partitioning (EP), is a software testing technique
 that divides the input domain of a program into equivalence classes or partitions. The principle
 is that all values within a single partition are treated equivalently by the software. Therefore,
 only one test case from each partition is needed to achieve adequate test coverage. This reduces
@@ -343,6 +368,10 @@ How to perform the analysis:
 
    Create test cases using the representative values from each equivalence class.
    Aim to cover all classes in your test suite.
+
+In case of non-trivial determination of test case inputs, a short explanation of the
+process followed can be given in order to facilitate maintenance and test regression,
+as well as during audits and assessments.
 
 .. _ver_fuzzy:
 
