@@ -178,7 +178,7 @@ Security Management Guideline
    instruct the user of a OoC (in this project on platform and module level) to securely use it
    in the context of the user's OoC and requirements for post-development.
    Its main content is described in :need:`wp__platform_security_manual` and :need:`wp__module_security_manual`.
-   A template exists to guide the definition of the security manual on platform and module level (:need:`doc__module_name_security_manual`).
+   A template exists to guide the definition of the security manual on platform and module level (`Module Security Manual Template <https://eclipse-score.github.io/module_template/main/docs/manuals/security_manual.html>`__).
 
 .. gd_guidl:: Security Package Automated Generation
    :id: gd_guidl__security_package

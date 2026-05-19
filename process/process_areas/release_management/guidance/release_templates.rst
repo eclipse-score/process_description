@@ -28,7 +28,7 @@ Templates
    :status: valid
    :complies: std_req__iso26262__management_64134, std_req__iso26262__management_64135, std_req__iso26262__support_12425, std_req__aspice_40__SPL-2-BP1, std_req__aspice_40__iic-11-03, std_req__aspice_40__iic-18-06, std_req__aspice_40__SPL-2-BP2, std_req__aspice_40__SPL-2-BP3, std_req__aspice_40__iic-11-04, std_req__aspice_40__SPL-2-BP4, std_req__aspice_40__SPL-2-BP6, std_req__aspice_40__REU-2-BP6
 
-   For the content see here: :need:`doc__module_name_release_note`
+   For the content see here: `Module Release Note Template <https://eclipse-score.github.io/module_template/main/docs/release/release_note.html>`__
 
 
 .. gd_temp:: Release Issue Template

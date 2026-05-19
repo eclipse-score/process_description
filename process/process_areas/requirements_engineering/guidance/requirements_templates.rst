@@ -38,8 +38,8 @@ Templates
    :status: valid
    :complies: std_req__iso26262__support_641, std_req__iso26262__support_6421, std_req__iso26262__support_6425, std_req__iso26262__support_12425, std_req__aspice_40__SWE-1-BP1
 
-   See the component requirements template in
-   :doc:`../../../folder_templates/modules/module_name/component_name/docs/requirements/index`
+   See the component requirements template in the
+   `module template documentation <https://eclipse-score.github.io/module_template/main/score/component_example/docs/requirements/index.html>`__.
 
 .. gd_temp:: AoU Requirement Template
    :id: gd_temp__req_aou_req

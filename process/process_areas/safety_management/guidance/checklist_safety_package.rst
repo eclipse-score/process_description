@@ -20,4 +20,4 @@ Safety Package Formal Review Checklist
    :status: valid
    :complies: std_req__iso26262__management_5425, std_req__iso26262__management_6469, std_req__iso26262__management_6481, std_req__iso26262__management_6482, std_req__iso26262__management_6491, std_req__iso26262__management_6492, std_req__iso26262__management_6493, std_req__iso26262__management_64101, std_req__iso26262__management_64102, std_req__iso26262__management_64103, std_req__iso26262__management_64104, std_req__iso26262__management_64105
 
-   For the content see here: :need:`doc__module_name_safety_package_fdr`
+   For the content see here: `Safety Package Formal Review Checklist <https://eclipse-score.github.io/module_template/main/docs/safety_mgt/module_safety_package_fdr.html>`__

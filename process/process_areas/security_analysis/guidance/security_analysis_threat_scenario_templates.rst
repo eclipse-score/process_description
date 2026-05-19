@@ -43,6 +43,6 @@ Security Analysis Threat Scenario Templates
    :status: draft
    :complies:
 
-   For the content see here: (tbd)need:`doc__component_name_security_analysis`
+   For the content see here: (tbd) `Component Security Analysis Template <https://eclipse-score.github.io/module_template/main/score/component_example/docs/index.html>`__
 
    Future PR (https://github.com/eclipse-score/process_description/issues/409).

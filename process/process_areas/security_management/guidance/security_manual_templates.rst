@@ -26,4 +26,4 @@ Security Manual Templates
    :status: valid
    :complies: std_req__isosae21434__development_10421, std_req__isosae21434__development_10422
 
-   For the content see here: :need:`doc__module_name_security_manual`
+   For the content see here: `Module Security Manual Template <https://eclipse-score.github.io/module_template/main/docs/manuals/security_manual.html>`__

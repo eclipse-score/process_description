@@ -30,4 +30,4 @@ FMEA Templates
    :status: valid
    :complies: std_req__iso26262__software_7410, std_req__iso26262__software_7412, std_req__iso26262__analysis_841, std_req__iso26262__analysis_842, std_req__iso26262__analysis_843, std_req__iso26262__analysis_844, std_req__iso26262__analysis_845, std_req__iso26262__analysis_846, std_req__iso26262__analysis_847, std_req__iso26262__analysis_848, std_req__iso26262__analysis_849, std_req__iso26262__analysis_8410, std_req__isopas8926__44431
 
-      For the content see here: :need:`doc__component_name_fmea`
+      For the content see here: `Component FMEA Template <https://eclipse-score.github.io/module_template/main/score/component_example/docs/safety_analysis/fmea.html>`__

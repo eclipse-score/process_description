@@ -20,4 +20,4 @@ Safety Manual Template
    :status: valid
    :complies: std_req__iso26262__management_5425, std_req__iso26262__system_6411, std_req__iso26262__system_6412, std_req__iso26262__system_6413, std_req__iso26262__system_6414, std_req__iso26262__system_6421, std_req__iso26262__system_6422, std_req__iso26262__software_641, std_req__iso26262__software_642, std_req__iso26262__software_645, std_req__iso26262__support_12421, std_req__aspice_40__iic-13-53
 
-   For the content see here: :need:`doc__module_name_safety_manual`
+   For the content see here: `Safety Manual Template <https://eclipse-score.github.io/module_template/main/docs/manuals/safety_manual.html>`__

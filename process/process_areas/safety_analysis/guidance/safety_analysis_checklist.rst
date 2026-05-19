@@ -26,4 +26,4 @@ Safety Analysis Checklist
     For the content see here:
 
     - :need:`doc__platform_safety_analysis_fdr` (platform)
-    - :need:`doc__module_safety_analysis_fdr` (module)
+    - `Safety Analysis Formal Review Checklist <https://eclipse-score.github.io/module_template/main/docs/safety_mgt/module_safety_analysis_fdr.html>`__ (module)

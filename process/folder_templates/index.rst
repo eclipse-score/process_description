@@ -23,6 +23,5 @@ Folder Templates
    :titlesonly:
 
    features/index.rst
-   modules/index.rst
    tools/index.rst
    platform/index.rst

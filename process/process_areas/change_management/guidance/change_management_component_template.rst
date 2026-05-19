@@ -22,4 +22,4 @@ Component Template
    :status: valid
    :complies: std_req__aspice_40__SUP-10-BP1, std_req__aspice_40__SUP-10-BP2, std_req__aspice_40__SUP-10-BP3, std_req__aspice_40__SUP-10-BP5, std_req__aspice_40__iic-18-57, std_req__iso26262__support_8422, std_req__iso26262__support_8431, std_req__iso26262__support_8432, std_req__aspice_40__iic-13-16, std_req__aspice_40__iic-14-02
 
-   for the content see :need:`doc__component_name`
+   for the content see `Component Request Template <https://eclipse-score.github.io/module_template/main/score/component_example/docs/index.html>`__

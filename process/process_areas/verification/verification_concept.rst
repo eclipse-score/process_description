@@ -167,7 +167,7 @@ stakeholder requirements as stakeholder requirements describe the platform behav
 
 Note that all the above tests shall only link to requirements of type "Functional" and "Interface".
 The verification of requirements of types "Process" and "Non-Functional" will be done via Analysis,
-which is part of the requirement inspection :need:`doc__feature_name_req_inspection` and :need:`doc__component_name_req_inspection`.
+which is part of the requirement inspection :need:`doc__feature_name_req_inspection` and `Component Requirements Inspection Checklist <https://eclipse-score.github.io/module_template/main/score/component_example/docs/requirements/chklst_req_inspection.html>`__.
 Requirements always include Assumptions Of Use.
 
 A more detailed description of how to link code to requirements is available here: :need:`gd_req__verification_link_tests`

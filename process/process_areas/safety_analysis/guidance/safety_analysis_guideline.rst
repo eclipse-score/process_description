@@ -35,7 +35,7 @@ Step-by-Step-approach FMEA:
 
 The analysis is done by using the template :ref:`FMEA_templates` on the feature or component architectural diagrams. By using the fault models <:need:`gd_guidl__fault_models`>
 it can be ensured that the analysis is done in a structured way.
-Apply the fault model to the diagram and document the results in the template. Use the content of the document :need:`doc__feature_name_fmea`, :need:`doc__component_name_fmea`
+Apply the fault model to the diagram and document the results in the template. Use the content of the document :need:`doc__feature_name_fmea`, `Component FMEA Template <https://eclipse-score.github.io/module_template/main/score/component_example/docs/safety_analysis/fmea.html>`__
 to describe e.g. why a fault model is not applicable for the diagram. If a FMEA can't be applied, the reason has to be documented in the
 content of the document, so it can be recognized.
 
@@ -64,7 +64,7 @@ Step-by-Step-approach DFA:
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The analysis is done by using the template :ref:`dfa_templates` on the feature or component architectural diagrams using a list of DFA failure initiators <:need:`gd_guidl__dfa_failure_initiators`>.
-Use the content of the document :need:`doc__feature_name_dfa`, :need:`doc__component_name_dfa` to describe e.g. why
+Use the content of the document :need:`doc__feature_name_dfa`, `Component DFA Template <https://eclipse-score.github.io/module_template/main/score/component_example/docs/safety_analysis/dfa.html>`__ to describe e.g. why
 a failure initiator is not applicable for the diagram. If a DFA can't be applied, the reason has to be documented in the content of the document, so it
 can be recognized.
 
