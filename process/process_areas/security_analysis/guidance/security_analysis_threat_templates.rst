@@ -33,6 +33,6 @@ Security Analysis Threat Templates
    :status: draft
    :complies:
 
-      For the content see here: (tbd)need:`doc__component_name_threat`
+      For the content see here: (tbd) `Component Threat Template <https://eclipse-score.github.io/module_template/main/score/component_example/docs/index.html>`__
 
       Future PR (https://github.com/eclipse-score/process_description/issues/409).

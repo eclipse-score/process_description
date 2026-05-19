@@ -20,4 +20,4 @@ Security Package Formal Review Checklist
    :status: valid
    :complies: std_req__isosae21434__prj_management_6471, std_req__isosae21434__prj_management_6491, std_req__isosae21434__prj_management_6492
 
-   For the content see here: :need:`doc__module_name_security_package_fdr`
+   For the content see here: `Security Package Formal Review Checklist <https://eclipse-score.github.io/module_template/main/docs/security_mgt/module_security_package_fdr.html>`__
