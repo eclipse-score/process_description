@@ -121,6 +121,24 @@ Process Safety Analysis Attributes
 
    Every Safety Analysis shall have a short description of the failure effect (e.g. failure lead to an unintended actuation of the analysed element)
 
+.. gd_req:: Safety Analysis attribute: safety relevant
+   :id: gd_req__saf_attr_safety_relevant
+   :status: valid
+   :tags: done_automation, attribute, optional
+   :satisfies: wf__analyse_platform_featarch, wf__analyse_featarch, wf__analyse_comparch
+   :complies: std_req__iso26262__analysis_742
+
+   Each Safety Analysis may indicate whether the analysed failure is safety relevant. The value shall be either <yes> or <no>.
+
+.. gd_req:: FMEA attribute: failure root cause
+   :id: gd_req__saf_attr_failure_root_cause
+   :status: valid
+   :tags: done_automation, attribute, optional
+   :satisfies: wf__analyse_featarch, wf__analyse_comparch
+   :complies: std_req__iso26262__analysis_742
+
+   Each FMEA may provide a short description of the root cause of the failure.
+
 .. _process_requirements_safety_analysis_linkage:
 
 Safety Analysis Linkage
