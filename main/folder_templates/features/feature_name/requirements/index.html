@@ -586,7 +586,7 @@
                   
   <section id="feature-requirements">
 <h1>Feature Requirements<a class="headerlink" href="#feature-requirements" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-cffe89cf">
+<div class="need_container docutils container" id="SNCB-18dd9f59">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_document table" id="doc__feature_name_requirements">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -646,11 +646,11 @@
    <span class="nc">:reqtype:</span> Process
    <span class="nc">:security:</span> NO
    <span class="nc">:safety:</span> ASIL_B
-   <span class="nc">:satisfies:</span> stkh_req__requirements__template
+   <span class="nc">:derived_from:</span> stkh_req__requirements__template
    <span class="nc">:valid_from:</span> v0.0.1
    <span class="nc">:valid_until:</span> v1.0.1
    <span class="nc">:status:</span> invalid
-   <span class="nc">:belongs_to:</span> feat__feature_name
+   <span class="nc">:satisfied_by:</span> feat__feature_name
 
    The Feature shall do xyz to the user to bring him to this condition at this time.
 
@@ -672,9 +672,9 @@
 <p>The above directives must be updated according to your feature requirements.</p>
 <ul class="simple">
 <li><p>Replace the example content by the real content for your first requirement (according to <a class="reference internal" href="../../../../process_areas/requirements_engineering/guidance/requirements_guideline.html#gd_guidl__req_engineering" title="gd_guidl__req_engineering"><em class="xref need">Requirements Guideline</em></a>)</p></li>
-<li><p>Set <code class="docutils literal notranslate"><span class="pre">belongs_to</span></code> with a link to feature ID</p></li>
+<li><p>Set <code class="docutils literal notranslate"><span class="pre">satisfied_by</span></code> with a link to feature ID</p></li>
 <li><p>Set <code class="docutils literal notranslate"><span class="pre">reqtype</span></code> with a link to the right value (&lt;Functional|Interface|Process|Non-Functional&gt;)</p></li>
-<li><p>Set <code class="docutils literal notranslate"><span class="pre">satisfies</span></code> with a link to the right stakeholder requirement</p></li>
+<li><p>Set <code class="docutils literal notranslate"><span class="pre">derived_from</span></code> with a link to the right stakeholder requirement</p></li>
 <li><p>Adjust <code class="docutils literal notranslate"><span class="pre">safety</span></code> and <code class="docutils literal notranslate"><span class="pre">security</span></code> to the right value (ASIL B/QM; YES/NO)</p></li>
 <li><p>Add other needed requirements for your feature</p></li>
 <li><p>Adjust <code class="docutils literal notranslate"><span class="pre">valid_from</span></code> and <code class="docutils literal notranslate"><span class="pre">valid_until</span></code> to the right version numbers</p></li>
