@@ -38,6 +38,40 @@ It covers all the components of the above stated module.
 
 Verification Report contains:
 
+.. note:: Schema synchronization contract
+
+    The following fields define the canonical section keys and descriptions used for
+    machine-readable verification report schema synchronization.
+
+.. list-table:: Verification report section contract fields
+    :header-rows: 1
+    :widths: 1 2 5
+
+    * - section_index
+      - section_key
+      - section_description
+    * - 1
+      - verification_coverage
+      - Coverage on requirements, architecture, and detailed design including test and inspection results.
+    * - 2
+      - dfa_report
+      - Report of component DFA results including verdict and open mitigations.
+    * - 3
+      - safety_analysis_report
+      - Report of component safety analysis results including verdict and open mitigations.
+    * - 4
+      - unit_verification
+      - Unit-level verification coverage including structural coverage, static analysis, and manual inspection.
+    * - 5
+      - software_component_qualification
+      - Verification results for qualification of pre-developed software components.
+    * - 6
+      - test_results
+      - Per-testcase execution result status.
+    * - 7
+      - test_logs
+      - Per-testcase execution logs with pass/fail/not_run status context.
+
 **1. Verification Coverage**
 
 **1.1. on Requirements**

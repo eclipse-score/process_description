@@ -36,6 +36,31 @@ It covers all the selected features of the SW platform.
 
 Verification Report contains:
 
+.. note:: Schema synchronization contract
+
+    The following fields define the canonical section keys and descriptions used for
+    machine-readable verification report schema synchronization.
+
+.. list-table:: Verification report section contract fields
+    :header-rows: 1
+    :widths: 1 2 5
+
+    * - section_index
+      - section_key
+      - section_description
+    * - 1
+      - verification_coverage
+      - Coverage on requirements and architecture including test and inspection results.
+    * - 2
+      - safety_analysis_report
+      - Report of platform and feature safety analysis results including verdict and open mitigations.
+    * - 3
+      - test_results
+      - Per-testcase execution result status for platform and feature integration tests.
+    * - 4
+      - test_logs
+      - Per-testcase execution logs with pass/fail/not_run status context for integration tests.
+
 **1. Verification Coverage**
 
 **1.1. on Requirements**
