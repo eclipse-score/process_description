@@ -20,7 +20,7 @@ Safety Planning Templates
    :status: valid
    :complies: std_req__iso26262__management_6465, std_req__iso26262__management_6466, std_req__iso26262__management_6467, std_req__iso26262__management_6468, std_req__iso26262__management_6469
 
-   For the content see here: :ref:`feature_safety_wp_template`
+   For the content see here: `Feature Safety Work Products Template <https://eclipse-score.github.io/module_template/main/docs/features/feature_example/safety_planning/index.html>`__
 
 
 .. gd_temp:: Module Safety Plan Template

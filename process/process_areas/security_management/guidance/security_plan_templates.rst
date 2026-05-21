@@ -27,7 +27,7 @@ Security Planning Templates
    :status: valid
    :complies: std_req__isosae21434__prj_management_6411, std_req__isosae21434__prj_management_6421, std_req__isosae21434__prj_management_6422, std_req__isosae21434__prj_management_6423, std_req__isosae21434__prj_management_6424, std_req__isosae21434__prj_management_6425, std_req__isosae21434__prj_management_6426, std_req__isosae21434__prj_management_6427, std_req__isosae21434__prj_management_6428, std_req__isosae21434__prj_management_6429, std_req__isosae21434__prj_management_64210, std_req__isosae21434__prj_management_64211, std_req__isosae21434__prj_management_6431, std_req__isosae21434__prj_management_6432, std_req__isosae21434__prj_management_6441, std_req__isosae21434__prj_management_6442, std_req__isosae21434__prj_management_6443, std_req__isosae21434__prj_management_6451, std_req__isosae21434__prj_management_6452, std_req__isosae21434__prj_management_6453, std_req__isosae21434__prj_management_6461, std_req__isosae21434__prj_management_6462
 
-   For the content see here: :ref:`feature_security_wp_template`
+   For the content see here: `Feature Security Work Products Template <https://eclipse-score.github.io/module_template/main/docs/features/feature_example/security_planning/index.html>`__
 
 .. gd_temp:: Module Security Plan Template
    :id: gd_temp__module_security_plan
