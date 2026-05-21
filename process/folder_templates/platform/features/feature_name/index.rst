@@ -49,8 +49,20 @@ To activate this feature, use the following feature flag:
 Abstract
 ========
 
-[A short (~200 word) description of the contribution being addressed.]
+[Provide the feature and a brief summary of the feature]
 
+.. code-block:: rst
+
+   .. feat:: Feature Name
+      :id: feat__feature_name
+      :security: YES
+      :safety: ASIL_B
+      :status: invalid
+      :includes: logic_arc_int__feature_name__interface_name1
+
+      General Feature Description
+
+[A short (~200 word) description of the contribution being addressed.]
 
 Motivation
 ==========
@@ -67,7 +79,6 @@ Rationale
 =========
 
 [Describe why particular design decisions were made.]
-
 
 .. note::
    The rationale should provide evidence of consensus within the community and discuss important objections or concerns raised during discussion.
@@ -179,10 +190,5 @@ Footnotes
    :hidden:
 
    architecture/index.rst
-   architecture/chklst_arc_inspection.rst
    requirements/index.rst
    requirements/chklst_req_inspection.rst
-   safety_analysis/fmea.rst
-   safety_analysis/dfa.rst
-   safety_planning/index.rst
-   security_planning/index.rst

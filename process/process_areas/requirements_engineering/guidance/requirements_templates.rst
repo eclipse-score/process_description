@@ -31,7 +31,7 @@ Templates
    :complies: std_req__iso26262__support_641, std_req__iso26262__support_6421, std_req__iso26262__support_6425, std_req__aspice_40__SWE-1-BP1
 
    See the feature requirements template in
-   :doc:`../../../folder_templates/features/feature_name/requirements/index`
+   :doc:`../../../folder_templates/platform/features/feature_name/requirements/index`
 
 .. gd_temp:: Component Requirements Template
    :id: gd_temp__req_comp_req

@@ -22,6 +22,5 @@ Folder Templates
    :glob:
    :titlesonly:
 
-   features/index.rst
    tools/index.rst
    platform/index.rst
