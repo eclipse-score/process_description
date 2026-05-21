@@ -2,13 +2,13 @@
 <!DOCTYPE html>
 
 
-<html lang="en" data-content_root="../../../../" >
+<html lang="en" data-content_root="../../../../../" >
 
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Feature Architecture &#8212; Process Description  documentation</title>
+    <title>Feature Requirements &#8212; Process Description  documentation</title>
   
   
   
@@ -27,43 +27,43 @@
   </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../../../_static/styles/theme.css?digest=7f76b32a3354e82990f2" rel="stylesheet" />
-<link href="../../../../_static/styles/pydata-sphinx-theme.css?digest=7f76b32a3354e82990f2" rel="stylesheet" />
+  <link href="../../../../../_static/styles/theme.css?digest=7f76b32a3354e82990f2" rel="stylesheet" />
+<link href="../../../../../_static/styles/pydata-sphinx-theme.css?digest=7f76b32a3354e82990f2" rel="stylesheet" />
 
-    <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=8f2a1f02" />
-    <link rel="stylesheet" type="text/css" href="../../../../_static/graphviz.css?v=4ae1632d" />
-    <link rel="stylesheet" type="text/css" href="../../../../_static/css/score.css?v=6e51530f" />
-    <link rel="stylesheet" type="text/css" href="../../../../_static/css/score_needs.css?v=1f5dae2a" />
-    <link rel="stylesheet" type="text/css" href="../../../../_static/css/score_design.css?v=d9fd870c" />
-    <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-data-viewer/jsonview.bundle.css?v=f6ef2277" />
-    <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/libs/html/datatables.min.css?v=4b4fd840" />
-    <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/common_css/need_core.css?v=f5b60a78" />
-    <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/common_css/need_style.css?v=92936fa5" />
-    <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/common_css/needstable.css?v=5e1b6797" />
-    <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/common_css/need_toggle.css?v=5c6620df" />
-    <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/common_css/need_links.css?v=2150a916" />
-    <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/modern.css?v=803738c0" />
-    <link rel="stylesheet" type="text/css" href="../../../../_static/custom.css?v=c6286864" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/graphviz.css?v=4ae1632d" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/css/score.css?v=6e51530f" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/css/score_needs.css?v=1f5dae2a" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/css/score_design.css?v=d9fd870c" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/sphinx-data-viewer/jsonview.bundle.css?v=f6ef2277" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/sphinx-needs/libs/html/datatables.min.css?v=4b4fd840" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/sphinx-needs/common_css/need_core.css?v=f5b60a78" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/sphinx-needs/common_css/need_style.css?v=92936fa5" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/sphinx-needs/common_css/needstable.css?v=5e1b6797" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/sphinx-needs/common_css/need_toggle.css?v=5c6620df" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/sphinx-needs/common_css/need_links.css?v=2150a916" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/sphinx-needs/modern.css?v=803738c0" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/custom.css?v=c6286864" />
   
   <!-- So that users can add custom icons -->
-  <script defer src="../../../../_static/scripts/fontawesome.js?digest=7f76b32a3354e82990f2"></script>
+  <script defer src="../../../../../_static/scripts/fontawesome.js?digest=7f76b32a3354e82990f2"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../../../_static/scripts/bootstrap.js?digest=7f76b32a3354e82990f2" />
-<link rel="preload" as="script" href="../../../../_static/scripts/pydata-sphinx-theme.js?digest=7f76b32a3354e82990f2" />
+  <link rel="preload" as="script" href="../../../../../_static/scripts/bootstrap.js?digest=7f76b32a3354e82990f2" />
+<link rel="preload" as="script" href="../../../../../_static/scripts/pydata-sphinx-theme.js?digest=7f76b32a3354e82990f2" />
 
-    <script src="../../../../_static/jquery.js?v=5d32c60e"></script>
-    <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-    <script src="../../../../_static/documentation_options.js?v=7f41d439"></script>
-    <script src="../../../../_static/doctools.js?v=fd6eb6e6"></script>
-    <script src="../../../../_static/sphinx_highlight.js?v=6ffebe34"></script>
-    <script src="../../../../_static/design-tabs.js?v=f930bc37"></script>
-    <script src="../../../../_static/sphinx-data-viewer/jsonview.bundle.js?v=18cd53c5"></script>
-    <script src="../../../../_static/sphinx-data-viewer/jsonview_loader.js?v=f7ff7e7d"></script>
-    <script src="../../../../_static/sphinx-needs/libs/html/datatables.min.js?v=8a4aee21"></script>
-    <script src="../../../../_static/sphinx-needs/libs/html/datatables_loader.js?v=a2cae175"></script>
-    <script src="../../../../_static/sphinx-needs/libs/html/sphinx_needs_collapse.js?v=dca66431"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'folder_templates/features/feature_name/architecture/index';</script>
+    <script src="../../../../../_static/jquery.js?v=5d32c60e"></script>
+    <script src="../../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+    <script src="../../../../../_static/documentation_options.js?v=7f41d439"></script>
+    <script src="../../../../../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../../../../../_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="../../../../../_static/design-tabs.js?v=f930bc37"></script>
+    <script src="../../../../../_static/sphinx-data-viewer/jsonview.bundle.js?v=18cd53c5"></script>
+    <script src="../../../../../_static/sphinx-data-viewer/jsonview_loader.js?v=f7ff7e7d"></script>
+    <script src="../../../../../_static/sphinx-needs/libs/html/datatables.min.js?v=8a4aee21"></script>
+    <script src="../../../../../_static/sphinx-needs/libs/html/datatables_loader.js?v=a2cae175"></script>
+    <script src="../../../../../_static/sphinx-needs/libs/html/sphinx_needs_collapse.js?v=dca66431"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'folder_templates/platform/features/feature_name/requirements/index';</script>
     <script>
         DOCUMENTATION_OPTIONS.theme_version = '0.17.0';
         DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://eclipse-score.github.io/process_description/versions.json';
@@ -72,18 +72,18 @@
             false;
         </script>
     <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
-    <link rel="index" title="Index" href="../../../../genindex.html" />
-    <link rel="search" title="Search" href="../../../../search.html" />
-    <link rel="next" title="Architecture Inspection Checklist" href="chklst_arc_inspection.html" />
-    <link rel="prev" title="[Your Feature Name]" href="../index.html" />
+    <link rel="index" title="Index" href="../../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../../search.html" />
+    <link rel="next" title="Requirement Inspection Checklist" href="chklst_req_inspection.html" />
+    <link rel="prev" title="Feature Architecture" href="../architecture/index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="0.1" />
   
     
-    <script src="../../../../_static/searchtools.js"></script>
-    <script src="../../../../_static/language_data.js"></script>
-    <script src="../../../../searchindex.js"></script>
+    <script src="../../../../../_static/searchtools.js"></script>
+    <script src="../../../../../_static/language_data.js"></script>
+    <script src="../../../../../searchindex.js"></script>
   
   </head>
   <body data-default-mode="">
@@ -101,7 +101,7 @@
   <dialog id="pst-search-dialog">
     
 <form class="bd-search d-flex align-items-center"
-      action="../../../../search.html"
+      action="../../../../../search.html"
       method="get">
   <i class="fa-solid fa-magnifying-glass"></i>
   <input type="search"
@@ -137,7 +137,7 @@
     
   
 
-<a class="navbar-brand logo" href="../../../../index.html">
+<a class="navbar-brand logo" href="../../../../../index.html">
   
   
   
@@ -159,35 +159,35 @@
   <ul class="bd-navbar-elements navbar-nav">
     
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="../../../../introduction/index.html">
+  <a class="nav-link nav-internal" href="../../../../../introduction/index.html">
     Introduction
   </a>
 </li>
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="../../../../general_concepts/index.html">
+  <a class="nav-link nav-internal" href="../../../../../general_concepts/index.html">
     General concepts
   </a>
 </li>
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="../../../../process_areas/index.html">
+  <a class="nav-link nav-internal" href="../../../../../process_areas/index.html">
     Process areas
   </a>
 </li>
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="../../../../roles/index.html">
+  <a class="nav-link nav-internal" href="../../../../../roles/index.html">
     Roles
   </a>
 </li>
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="../../../../workproducts/index.html">
+  <a class="nav-link nav-internal" href="../../../../../workproducts/index.html">
     Work products
   </a>
 </li>
@@ -201,42 +201,42 @@
                 <ul id="pst-nav-more-links" class="dropdown-menu">
                     
 <li class=" ">
-  <a class="nav-link dropdown-item nav-internal" href="../../../../workflows/index.html">
+  <a class="nav-link dropdown-item nav-internal" href="../../../../../workflows/index.html">
     Workflows
   </a>
 </li>
 
 
 <li class=" ">
-  <a class="nav-link dropdown-item nav-internal" href="../../../../standards/index.html">
+  <a class="nav-link dropdown-item nav-internal" href="../../../../../standards/index.html">
     Standards & Requirements
   </a>
 </li>
 
 
 <li class=" ">
-  <a class="nav-link dropdown-item nav-internal" href="../../../../trustable/index.html">
+  <a class="nav-link dropdown-item nav-internal" href="../../../../../trustable/index.html">
     Trustable Software Framework
   </a>
 </li>
 
 
 <li class=" current active">
-  <a class="nav-link dropdown-item nav-internal" href="../../../index.html">
+  <a class="nav-link dropdown-item nav-internal" href="../../../../index.html">
     Folder Templates
   </a>
 </li>
 
 
 <li class=" ">
-  <a class="nav-link dropdown-item nav-internal" href="../../../../glossary/index.html">
+  <a class="nav-link dropdown-item nav-internal" href="../../../../../glossary/index.html">
     Glossary
   </a>
 </li>
 
 
 <li class=" ">
-  <a class="nav-link dropdown-item nav-internal" href="../../../../release_notes/index.html">
+  <a class="nav-link dropdown-item nav-internal" href="../../../../../release_notes/index.html">
     Release notes
   </a>
 </li>
@@ -354,77 +354,77 @@
   <ul class="bd-navbar-elements navbar-nav">
     
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="../../../../introduction/index.html">
+  <a class="nav-link nav-internal" href="../../../../../introduction/index.html">
     Introduction
   </a>
 </li>
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="../../../../general_concepts/index.html">
+  <a class="nav-link nav-internal" href="../../../../../general_concepts/index.html">
     General concepts
   </a>
 </li>
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="../../../../process_areas/index.html">
+  <a class="nav-link nav-internal" href="../../../../../process_areas/index.html">
     Process areas
   </a>
 </li>
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="../../../../roles/index.html">
+  <a class="nav-link nav-internal" href="../../../../../roles/index.html">
     Roles
   </a>
 </li>
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="../../../../workproducts/index.html">
+  <a class="nav-link nav-internal" href="../../../../../workproducts/index.html">
     Work products
   </a>
 </li>
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="../../../../workflows/index.html">
+  <a class="nav-link nav-internal" href="../../../../../workflows/index.html">
     Workflows
   </a>
 </li>
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="../../../../standards/index.html">
+  <a class="nav-link nav-internal" href="../../../../../standards/index.html">
     Standards & Requirements
   </a>
 </li>
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="../../../../trustable/index.html">
+  <a class="nav-link nav-internal" href="../../../../../trustable/index.html">
     Trustable Software Framework
   </a>
 </li>
 
 
 <li class="nav-item current active">
-  <a class="nav-link nav-internal" href="../../../index.html">
+  <a class="nav-link nav-internal" href="../../../../index.html">
     Folder Templates
   </a>
 </li>
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="../../../../glossary/index.html">
+  <a class="nav-link nav-internal" href="../../../../../glossary/index.html">
     Glossary
   </a>
 </li>
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="../../../../release_notes/index.html">
+  <a class="nav-link nav-internal" href="../../../../../release_notes/index.html">
     Release notes
   </a>
 </li>
@@ -500,23 +500,25 @@
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
   <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="../../index.html">Features</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
-<li class="toctree-l2 current active has-children"><a class="reference internal" href="../index.html">[Your Feature Name]</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
-<li class="toctree-l3 current active"><a class="current reference internal" href="#">Feature Architecture</a></li>
-<li class="toctree-l3"><a class="reference internal" href="chklst_arc_inspection.html">Architecture Inspection Checklist</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../requirements/index.html">Feature Requirements</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../requirements/chklst_req_inspection.html">Requirement Inspection Checklist</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../safety_analysis/fmea.html">FMEA (Failure Modes and Effects Analysis)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../safety_analysis/dfa.html">DFA (Dependent Failure Analysis)</a></li>
-
-<li class="toctree-l3"><a class="reference internal" href="../safety_planning/index.html">Feature Safety Work Products List</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../security_planning/index.html">Feature Security Work Products List</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../tools/index.html">Tools</a></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../../../index.html">Platform</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2 current active has-children"><a class="reference internal" href="../../index.html">Features</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l3 current active has-children"><a class="reference internal" href="../index.html">[Your Feature Name]</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="../architecture/index.html">Feature Architecture</a></li>
+<li class="toctree-l4 current active"><a class="current reference internal" href="#">Feature Requirements</a></li>
+<li class="toctree-l4"><a class="reference internal" href="chklst_req_inspection.html">Requirement Inspection Checklist</a></li>
 </ul>
 </details></li>
 </ul>
 </details></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../tools/index.html">Tools</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../platform/index.html">Platform</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../requirements/stakeholder/chklst_req_inspection.html">Stakeholder Requirement Inspection Checklist</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../requirements/stakeholder/index.html">Stakeholder Requirements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../docs/release/release_note.html">Platform Release Note</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../docs/safety_mgt/index.html">Safety Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../docs/security_mgt/index.html">Security Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../docs/verification/platform_verification_report.html">Platform Verification Report</a></li>
+</ul>
+</details></li>
 </ul>
 </div>
 </nav></div>
@@ -553,12 +555,15 @@
   <ul class="bd-breadcrumbs">
     
     <li class="breadcrumb-item breadcrumb-home">
-      <a href="../../../../index.html" class="nav-link" aria-label="Home">
+      <a href="../../../../../index.html" class="nav-link" aria-label="Home">
         <i class="fa-solid fa-home"></i>
       </a>
     </li>
     
-    <li class="breadcrumb-item"><a href="../../../index.html" class="nav-link">Folder Templates</a></li>
+    <li class="breadcrumb-item"><a href="../../../../index.html" class="nav-link">Folder Templates</a></li>
+    
+    
+    <li class="breadcrumb-item"><a href="../../../index.html" class="nav-link">Platform</a></li>
     
     
     <li class="breadcrumb-item"><a href="../../index.html" class="nav-link">Features</a></li>
@@ -566,7 +571,7 @@
     
     <li class="breadcrumb-item"><a href="../index.html" class="nav-link">[Your Feature Name]</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Feature Architecture</span></li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Feature Requirements</span></li>
   </ul>
 </nav>
 </div>
@@ -583,13 +588,13 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="feature-architecture">
-<span id="feature-architecture-template"></span><h1>Feature Architecture<a class="headerlink" href="#feature-architecture" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-ad0f3175">
-<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_document table" id="doc__feature_name_architecture">
+  <section id="feature-requirements">
+<h1>Feature Requirements<a class="headerlink" href="#feature-requirements" title="Link to this heading">#</a></h1>
+<div class="need_container docutils container" id="SNCB-45e12d37">
+<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_document table" id="doc__feature_name_requirements">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
-<div class="line"><span><span class="needs_title"><span class="needs_data">[Your Feature Name] Architecture</span></span></span></div>
+<div class="line"><span><span class="needs_title"><span class="needs_data">[Your Feature Name] Requirements</span></span></span></div>
 </div>
 </td>
 <td class="head_center" colspan="2"><div class="needs_head line-block">
@@ -606,7 +611,7 @@
 <tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
 <div class="line"><span><span><div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">template</span><span class="needs_spacer">, </span><span class="needs_data">feature_name</span></span></span></div>
 </span></span></div>
-<div class="line"><span><div class="line">realizes: <span class="realizes"><span><a class="reference internal" href="../../../../process_areas/architecture_design/architecture_workproducts.html#wp__feature_arch" title="doc__feature_name_architecture">wp__feature_arch</a></span></span></div>
+<div class="line"><span><div class="line">realizes: <span class="realizes"><span><a class="reference internal" href="../../../../../process_areas/requirements_engineering/requirements_workproducts.html#wp__requirements_feat" title="doc__feature_name_requirements">wp__requirements_feat</a></span></span></div>
 </span></div>
 </div>
 </td>
@@ -615,7 +620,7 @@
 <tr class="content row-odd"><td class="content" colspan="6"></td>
 </tr>
 <tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
-<div class="line"><span><span class="needs-id"><a class="reference internal" href="#doc__feature_name_architecture" title="doc__feature_name_architecture">doc__feature_name_architecture</a></span></span></div>
+<div class="line"><span><span class="needs-id"><a class="reference internal" href="#doc__feature_name_requirements" title="doc__feature_name_requirements">doc__feature_name_requirements</a></span></span></div>
 </div>
 </td>
 <td class="footer" colspan="2"><div class="needs_footer line-block">
@@ -633,159 +638,51 @@
 <p>The above directive must be updated according to your Feature.</p>
 <ul class="simple">
 <li><p>Modify <code class="docutils literal notranslate"><span class="pre">Your</span> <span class="pre">Feature</span> <span class="pre">Name</span></code> to be your Feature Name</p></li>
-<li><p>Modify <code class="docutils literal notranslate"><span class="pre">id</span></code> to be your Feature Name in upper snake case preceded by <code class="docutils literal notranslate"><span class="pre">doc__</span></code> and followed by <code class="docutils literal notranslate"><span class="pre">_architecture</span></code></p></li>
+<li><p>Modify <code class="docutils literal notranslate"><span class="pre">id</span></code> to be your Feature Name in upper snake case preceded by <code class="docutils literal notranslate"><span class="pre">doc__</span></code> and followed by <code class="docutils literal notranslate"><span class="pre">_requirements</span></code></p></li>
 <li><p>Adjust <code class="docutils literal notranslate"><span class="pre">status</span></code> to be <code class="docutils literal notranslate"><span class="pre">valid</span></code></p></li>
 <li><p>Adjust <code class="docutils literal notranslate"><span class="pre">safety</span></code> and <code class="docutils literal notranslate"><span class="pre">tags</span></code> according to your needs</p></li>
 </ul>
 </div>
-<section id="overview">
-<h2>Overview<a class="headerlink" href="#overview" title="Link to this heading">#</a></h2>
-<p>&lt;Brief summary&gt;</p>
-</section>
-<section id="description">
-<h2>Description<a class="headerlink" href="#description" title="Link to this heading">#</a></h2>
-<p>&lt;General Description&gt;</p>
-<p>&lt;Design Decisions - For the documentation of the decision the <a class="reference internal" href="../../../../process_areas/change_management/guidance/change_management_decision_record_template.html#gd_temp__change_decision_record" title="gd_temp__change_decision_record"><em class="xref need">Decision Record Template</em></a> can be used.&gt;</p>
-<p>&lt;Design Constraints&gt;</p>
-</section>
-<section id="requirements">
-<h2>Requirements<a class="headerlink" href="#requirements" title="Link to this heading">#</a></h2>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>.. needtable:: Overview of Feature Requirements
-   :style: table
-   :columns: title;id
-   :filter: search(&quot;feat_arch_sta__archdes$&quot;, &quot;fulfils_back&quot;)
-   :colwidths: 70,30
+<section id="headlines-for-the-list-of-requirements-if-structuring-is-needed">
+<h2>&lt;Headlines (for the list of requirements if structuring is needed)&gt;<a class="headerlink" href="#headlines-for-the-list-of-requirements-if-structuring-is-needed" title="Link to this heading">#</a></h2>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">feat_req</span><span class="p">::</span> Some Title
+   <span class="nc">:id:</span> feat_req__feature_name__some_title
+   <span class="nc">:reqtype:</span> Process
+   <span class="nc">:security:</span> NO
+   <span class="nc">:safety:</span> ASIL_B
+   <span class="nc">:derived_from:</span> stkh_req__requirements__template
+   <span class="nc">:valid_from:</span> v0.0.1
+   <span class="nc">:valid_until:</span> v1.0.1
+   <span class="nc">:status:</span> invalid
+   <span class="nc">:satisfied_by:</span> feat__feature_name
+
+   The Feature shall do xyz to the user to bring him to this condition at this time.
+
+   Note: (optional, not to be verified)
 </pre></div>
 </div>
-<p class="needs_filter_warning" id="needtable-folder_templates/features/feature_name/architecture/index-0">No needs passed the filters</p>
-<section id="rationale-behind-architecture-decomposition">
-<h3>Rationale Behind Architecture Decomposition<a class="headerlink" href="#rationale-behind-architecture-decomposition" title="Link to this heading">#</a></h3>
-<p>Mandatory: A motivation for the decomposition</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Common decisions across features / cross cutting concepts is at the high level.</p>
-</div>
-</section>
-</section>
-<section id="static-architecture">
-<h2>Static Architecture<a class="headerlink" href="#static-architecture" title="Link to this heading">#</a></h2>
-<p>The live feature architecture template snippets are maintained in the
-<a class="reference external" href="https://eclipse-score.github.io/module_template/main/">module template documentation</a>.</p>
-<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">feat</span><span class="p">::</span> Feature Name
-   <span class="nc">:id:</span> feat__feature_name
-   <span class="nc">:security:</span> YES
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">aou_req</span><span class="p">::</span> Some Other Title
+   <span class="nc">:id:</span> aou_req__feature_name__some_other_title
+   <span class="nc">:reqtype:</span> Process
+   <span class="nc">:security:</span> NO
    <span class="nc">:safety:</span> ASIL_B
    <span class="nc">:status:</span> invalid
-   <span class="nc">:includes:</span> logic_arc_int__feature_name__interface_name1
 
-   General Feature Description
-
-<span class="p">..</span> <span class="ow">feat_arc_sta</span><span class="p">::</span> Feature Static View
-   <span class="nc">:id:</span> feat_arc_sta__feature_name__static_view
-   <span class="nc">:security:</span> YES
-   <span class="nc">:safety:</span> ASIL_B
-   <span class="nc">:status:</span> invalid
-   <span class="nc">:fulfils:</span> feat_req__feature_name__some_title
-   <span class="nc">:includes:</span> logic_arc_int__feature_name__interface_name1
-   <span class="nc">:belongs_to:</span> feat__feature_name
-
-<span class="p">   ..</span> <span class="ow">needarch</span><span class="p">::</span>
-      <span class="nc">:scale:</span> 50
-      <span class="nc">:align:</span> center
-
-      {{ draw_feature(need(), needs) }}
+   The Feature User shall do xyz to use the feature safely.
 </pre></div>
-</div>
-</section>
-<section id="dynamic-architecture">
-<h2>Dynamic Architecture<a class="headerlink" href="#dynamic-architecture" title="Link to this heading">#</a></h2>
-<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">feat_arc_dyn</span><span class="p">::</span> Dynamic View
-   <span class="nc">:id:</span> feat_arc_dyn__feature_name__dynamic_view
-   <span class="nc">:security:</span> YES
-   <span class="nc">:safety:</span> ASIL_B
-   <span class="nc">:status:</span> invalid
-   <span class="nc">:fulfils:</span> feat_req__feature_name__some_title
-   <span class="nc">:belongs_to:</span> feat__feature_name
-
-   Put here a sequence diagram
-</pre></div>
-</div>
-</section>
-<section id="logical-interfaces">
-<h2>Logical Interfaces<a class="headerlink" href="#logical-interfaces" title="Link to this heading">#</a></h2>
-<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">logic_arc_int</span><span class="p">::</span> Interface Name
-   <span class="nc">:id:</span> logic_arc_int__feature_name__interface_name1
-   <span class="nc">:security:</span> YES
-   <span class="nc">:safety:</span> ASIL_B
-   <span class="nc">:status:</span> invalid
-   <span class="nc">:fulfils:</span> feat_req__feature_name__some_title
-
-   General Interface Description
-
-<span class="p">   ..</span> <span class="ow">needarch</span><span class="p">::</span>
-      <span class="nc">:scale:</span> 50
-      <span class="nc">:align:</span> center
-
-      {{ draw_interface(need(), needs) }}
-
-<span class="p">..</span> <span class="ow">logic_arc_int_op</span><span class="p">::</span> Operation
-   <span class="nc">:id:</span> logic_arc_int_op__feature_name__operation
-   <span class="nc">:security:</span> YES
-   <span class="nc">:safety:</span> ASIL_B
-   <span class="nc">:status:</span> invalid
-   <span class="nc">:included_by:</span> logic_arc_int__feature_name__interface_name1
-
-   General Operation Description
-</pre></div>
-</div>
-</section>
-<section id="module-viewpoint">
-<h2>Module Viewpoint<a class="headerlink" href="#module-viewpoint" title="Link to this heading">#</a></h2>
-<p>The following modules are needed to be defined to be able to draw the static feature view.
-They will be replaced by linking the proper module definitions in the used module’s repositories as soon as those exist.</p>
-<p>The rendered module and used-component examples are maintained in the
-<a class="reference external" href="https://eclipse-score.github.io/module_template/main/">module template documentation</a>.</p>
-<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">mod</span><span class="p">::</span> Module Name
-   <span class="nc">:id:</span> mod__module_name
-   <span class="nc">:includes:</span> comp__component_name_template
-
-
-<span class="p">..</span> <span class="ow">mod_view_sta</span><span class="p">::</span> Module Name Static View
-   <span class="nc">:id:</span> mod_view_sta__feature_name__module_name
-   <span class="nc">:includes:</span> comp__component_name_template
-
-<span class="p">   ..</span> <span class="ow">needarch</span><span class="p">::</span>
-      <span class="nc">:scale:</span> 50
-      <span class="nc">:align:</span> center
-
-      {{ draw_module(need(), needs) }}
-</pre></div>
-</div>
-</section>
-<section id="used-components">
-<h2>Used Components<a class="headerlink" href="#used-components" title="Link to this heading">#</a></h2>
-<p>The following components are needed to be defined to be able to draw the static feature view.
-They will be replaced by linking the proper SW component definitions in the used module’s repositories as soon as those exist.</p>
-<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">comp</span><span class="p">::</span> Component Name
-   <span class="nc">:id:</span> comp__component_name_template
-   <span class="nc">:safety:</span> ASIL_B
-   <span class="nc">:security:</span> YES
-   <span class="nc">:status:</span> invalid
-   <span class="nc">:implements:</span> logic_arc_int__feature_name__interface_name1
-</pre></div>
-</div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Architecture can be split into multiple files, it is an high level architecture design
-which can be shown without actual c++/rust interfaces and data types
-and there will be link to internal architecture till code to get actual api descriptions.</p>
 </div>
 <div class="admonition attention">
 <p class="admonition-title">Attention</p>
-<p>The above directives must be updated according to your feature architecture.</p>
+<p>The above directives must be updated according to your feature requirements.</p>
 <ul class="simple">
-<li><p>Replace the example content by the real content (according to <a class="reference internal" href="../../../../process_areas/architecture_design/guidance/architecture_guideline.html#gd_guidl__arch_design" title="gd_guidl__arch_design"><em class="xref need">Architectural Design Guideline</em></a>)</p></li>
-<li><p>Set the status to valid and start the review/merge process</p></li>
+<li><p>Replace the example content by the real content for your first requirement (according to <a class="reference internal" href="../../../../../process_areas/requirements_engineering/guidance/requirements_guideline.html#gd_guidl__req_engineering" title="gd_guidl__req_engineering"><em class="xref need">Requirements Guideline</em></a>)</p></li>
+<li><p>Set <code class="docutils literal notranslate"><span class="pre">satisfied_by</span></code> with a link to feature ID</p></li>
+<li><p>Set <code class="docutils literal notranslate"><span class="pre">reqtype</span></code> with a link to the right value (&lt;Functional|Interface|Process|Non-Functional&gt;)</p></li>
+<li><p>Set <code class="docutils literal notranslate"><span class="pre">derived_from</span></code> with a link to the right stakeholder requirement</p></li>
+<li><p>Adjust <code class="docutils literal notranslate"><span class="pre">safety</span></code> and <code class="docutils literal notranslate"><span class="pre">security</span></code> to the right value (ASIL B/QM; YES/NO)</p></li>
+<li><p>Add other needed requirements for your feature</p></li>
+<li><p>Adjust <code class="docutils literal notranslate"><span class="pre">valid_from</span></code> and <code class="docutils literal notranslate"><span class="pre">valid_until</span></code> to the right version numbers</p></li>
+<li><p>Set <code class="docutils literal notranslate"><span class="pre">status</span></code> to <code class="docutils literal notranslate"><span class="pre">valid</span></code> and start the review/merge process</p></li>
 </ul>
 </div>
 </section>
@@ -802,20 +699,20 @@ and there will be link to internal architecture till code to get actual api desc
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="../index.html"
+       href="../architecture/index.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">[Your Feature Name]</p>
+        <p class="prev-next-title">Feature Architecture</p>
       </div>
     </a>
     <a class="right-next"
-       href="chklst_arc_inspection.html"
+       href="chklst_req_inspection.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Architecture Inspection Checklist</p>
+        <p class="prev-next-title">Requirement Inspection Checklist</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -838,17 +735,7 @@ and there will be link to internal architecture till code to get actual api desc
   </div>
   <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="pst-show_toc_level nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#overview">Overview</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#description">Description</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#requirements">Requirements</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rationale-behind-architecture-decomposition">Rationale Behind Architecture Decomposition</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#static-architecture">Static Architecture</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dynamic-architecture">Dynamic Architecture</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#logical-interfaces">Logical Interfaces</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#module-viewpoint">Module Viewpoint</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#used-components">Used Components</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#headlines-for-the-list-of-requirements-if-structuring-is-needed">&lt;Headlines (for the list of requirements if structuring is needed)&gt;</a></li>
 </ul>
   </nav></div>
 
@@ -856,7 +743,7 @@ and there will be link to internal architecture till code to get actual api desc
 
   
   <div class="tocsection editthispage">
-    <a href="https://github.com/eclipse-score/process_description/edit/main/process/folder_templates/features/feature_name/architecture/index.rst">
+    <a href="https://github.com/eclipse-score/process_description/edit/main/process/folder_templates/platform/features/feature_name/requirements/index.rst">
       <i class="fa-solid fa-pencil"></i>
       
       
@@ -881,8 +768,8 @@ and there will be link to internal architecture till code to get actual api desc
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script defer src="../../../../_static/scripts/bootstrap.js?digest=7f76b32a3354e82990f2"></script>
-<script defer src="../../../../_static/scripts/pydata-sphinx-theme.js?digest=7f76b32a3354e82990f2"></script>
+  <script defer src="../../../../../_static/scripts/bootstrap.js?digest=7f76b32a3354e82990f2"></script>
+<script defer src="../../../../../_static/scripts/pydata-sphinx-theme.js?digest=7f76b32a3354e82990f2"></script>
 
   <footer class="bd-footer">
 <div class="bd-footer__inner bd-page-width">
