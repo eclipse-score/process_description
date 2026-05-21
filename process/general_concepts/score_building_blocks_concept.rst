@@ -133,6 +133,8 @@ developed as safety element out of context (SEooC).
 Deployment example
 ++++++++++++++++++
 
+.. _`deployment_example`:
+
 The following figure is an example how the meta model may deployed on several repositories.
 The project main repository has the information about the platform and the features.
 These include stakeholder requirements, platform architecture, safety/security analysis
