@@ -41,11 +41,11 @@ Feature Requirements
       :reqtype: Process
       :security: NO
       :safety: ASIL_B
-      :satisfies: stkh_req__requirements__template
+      :derived_from: stkh_req__requirements__template
       :valid_from: v0.0.1
       :valid_until: v1.0.1
       :status: invalid
-      :belongs_to: feat__feature_name
+      :satisfied_by: feat__feature_name
 
       The Feature shall do xyz to the user to bring him to this condition at this time.
 
@@ -66,9 +66,9 @@ Feature Requirements
     The above directives must be updated according to your feature requirements.
 
     - Replace the example content by the real content for your first requirement (according to :need:`gd_guidl__req_engineering`)
-    - Set ``belongs_to`` with a link to feature ID
+    - Set ``satisfied_by`` with a link to feature ID
     - Set ``reqtype`` with a link to the right value (<Functional|Interface|Process|Non-Functional>)
-    - Set ``satisfies`` with a link to the right stakeholder requirement
+    - Set ``derived_from`` with a link to the right stakeholder requirement
     - Adjust ``safety`` and ``security`` to the right value (ASIL B/QM; YES/NO)
     - Add other needed requirements for your feature
     - Adjust ``valid_from`` and ``valid_until`` to the right version numbers

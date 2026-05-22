@@ -168,7 +168,13 @@ Traceability to Requirements and AoU
    :complies: std_req__iso26262__support_6425, std_req__aspice_40__SWE-2-BP4
    :satisfies: wf__cr_mt_featarch, wf__cr_mt_comparch
 
-   Architectural views (feature/comp_arc_sta, feature/comp_arc_dyn) and interfaces (logic/real_arc_int) should be linked to a requirement.
+   Architectural views (feature/comp_arc_sta, feature/comp_arc_dyn) and interfaces (logic/real_arc_int)
+   should be linked to a requirement on the corresponding level.
+
+   **Examples:**
+
+   * feat_req <-> feat_arc_(sta|dyn), logic_arc_(int|int_op)
+   * comp_req <-> comp_arc_(sta|dyn), real_arc_(int|int_op)
 
 .. gd_req:: Architecture attribute: fulfils (AoU)
    :id: gd_req__arch_attr_fulfils_aou
@@ -182,16 +188,16 @@ Traceability to Requirements and AoU
 .. gd_req:: Architecture traceability
    :id: gd_req__arch_traceability
    :status: valid
-   :tags: manual_prio_2
+   :tags: manual_prio_1
    :complies: std_req__iso26262__support_6432, std_req__aspice_40__SWE-2-BP4
    :satisfies: wf__cr_mt_featarch, wf__cr_mt_comparch
 
-   Requirements shall be fulfilled by an architectural element on the corresponding level.
+   Requirements shall be satisfied by an architectural element on the corresponding level.
 
    **Examples:**
 
-   * feat_req <-> feat_arc_(sta|dyn), logic_arc_(int|int_op)
-   * comp_req <-> comp_arc_(sta|dyn), real_arc_(int|int_op)
+   * feat_req <-> feat
+   * comp_req <-> comp
 
    .. note::
       In general the traceability is visualized in :ref:`general_concepts_traceability`

@@ -76,3 +76,14 @@ For a detailed explanation of workflows and their role within the process model,
    The architecture designs are monitored and verified.
 
    The inspection shall be implemented as integral part of the review in GitHub.
+
+RAS(IC) for Architecture Design:
+********************************
+
+.. needtable:: RASIC Overview for Architecture Design
+   :tags: architecture_design
+   :filter: "architecture_design" in tags and type == "workflow" and is_external == False
+   :style: table
+   :sort: status
+   :columns: id as "Activity";responsible as "Responsible";approved_by as "Approver";supported_by as "Supporter"
+   :colwidths: 30,30,30,30

@@ -17,6 +17,9 @@
 Feature Architecture
 ====================
 
+.. note::
+   The complete feature architecture template as shown here is intended to document the idea about the architecture of a feature (if needed) when a CR is created. After the CR is granted, it is moved and further detailed / maintained in the module where the feature resides. See `module template documentation <https://eclipse-score.github.io/module_template/main/>`__. Only the logical interfaces remains in the feature architecture platform documentation, as they are relevant for the overall platform architecture. The detailed architecture of the feature is documented in the module documentation, and the logical interfaces are linked from there to the platform documentation. This is to avoid that the platform documentation becomes too detailed and hard to maintain, while still providing the necessary information about the feature architecture in the platform documentation. Depending from the project it might be that in the reference integration of the platform the full feature architecture including the implementation of the features and its components becomes visible in the platform documentation. See :ref:`Deployment example <deployment_example>`.
+
 .. document:: [Your Feature Name] Architecture
    :id: doc__feature_name_architecture
    :status: draft
@@ -35,6 +38,7 @@ Feature Architecture
 
 Overview
 --------
+
 <Brief summary>
 
 Description
@@ -78,46 +82,6 @@ Static Architecture
 The live feature architecture template snippets are maintained in the
 `module template documentation <https://eclipse-score.github.io/module_template/main/>`__.
 
-.. code-block:: rst
-
-   .. feat:: Feature Name
-      :id: feat__feature_name
-      :security: YES
-      :safety: ASIL_B
-      :status: invalid
-      :includes: logic_arc_int__feature_name__interface_name1
-
-      General Feature Description
-
-   .. feat_arc_sta:: Feature Static View
-      :id: feat_arc_sta__feature_name__static_view
-      :security: YES
-      :safety: ASIL_B
-      :status: invalid
-      :fulfils: feat_req__feature_name__some_title
-      :includes: logic_arc_int__feature_name__interface_name1
-      :belongs_to: feat__feature_name
-
-      .. needarch::
-         :scale: 50
-         :align: center
-
-         {{ draw_feature(need(), needs) }}
-
-Dynamic Architecture
---------------------
-
-.. code-block:: rst
-
-   .. feat_arc_dyn:: Dynamic View
-      :id: feat_arc_dyn__feature_name__dynamic_view
-      :security: YES
-      :safety: ASIL_B
-      :status: invalid
-      :fulfils: feat_req__feature_name__some_title
-      :belongs_to: feat__feature_name
-
-      Put here a sequence diagram
 
 Logical Interfaces
 ------------------
@@ -147,55 +111,3 @@ Logical Interfaces
       :included_by: logic_arc_int__feature_name__interface_name1
 
       General Operation Description
-
-Module Viewpoint
-----------------
-
-The following modules are needed to be defined to be able to draw the static feature view.
-They will be replaced by linking the proper module definitions in the used module's repositories as soon as those exist.
-
-The rendered module and used-component examples are maintained in the
-`module template documentation <https://eclipse-score.github.io/module_template/main/>`_.
-
-.. code-block:: rst
-
-   .. mod:: Module Name
-      :id: mod__module_name
-      :includes: comp__component_name_template
-
-
-   .. mod_view_sta:: Module Name Static View
-      :id: mod_view_sta__feature_name__module_name
-      :includes: comp__component_name_template
-
-      .. needarch::
-         :scale: 50
-         :align: center
-
-         {{ draw_module(need(), needs) }}
-
-Used Components
----------------
-
-The following components are needed to be defined to be able to draw the static feature view.
-They will be replaced by linking the proper SW component definitions in the used module's repositories as soon as those exist.
-
-.. code-block:: rst
-
-   .. comp:: Component Name
-      :id: comp__component_name_template
-      :safety: ASIL_B
-      :security: YES
-      :status: invalid
-      :implements: logic_arc_int__feature_name__interface_name1
-
-.. note::
-   Architecture can be split into multiple files, it is an high level architecture design
-   which can be shown without actual c++/rust interfaces and data types
-   and there will be link to internal architecture till code to get actual api descriptions.
-
-.. attention::
-    The above directives must be updated according to your feature architecture.
-
-    - Replace the example content by the real content (according to :need:`gd_guidl__arch_design`)
-    - Set the status to valid and start the review/merge process

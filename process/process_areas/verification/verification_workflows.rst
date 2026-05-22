@@ -230,9 +230,9 @@ For a detailed explanation of workflows and their role within the process model,
 RAS(IC) for Verification:
 *************************
 
-.. needtable:: RASIC Overview for Problem Resolution
-   :tags: verification_process
-   :filter: "verification_process" in tags and type == "workflow" and is_external == False
+.. needtable:: RASIC Overview for Verification
+   :tags: verification
+   :filter: "verification" in tags and type == "workflow" and is_external == False
    :style: table
    :sort: status
    :columns: id as "Activity";responsible as "Responsible";approved_by as "Approver";supported_by as "Supporter"

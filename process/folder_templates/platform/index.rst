@@ -20,6 +20,7 @@ Platform
 .. toctree::
    :hidden:
 
+   features/index.rst
    requirements/stakeholder/chklst_req_inspection.rst
    requirements/stakeholder/index.rst
    docs/release/release_note.rst

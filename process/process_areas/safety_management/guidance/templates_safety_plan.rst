@@ -20,7 +20,7 @@ Safety Planning Templates
    :status: valid
    :complies: std_req__iso26262__management_6465, std_req__iso26262__management_6466, std_req__iso26262__management_6467, std_req__iso26262__management_6468, std_req__iso26262__management_6469
 
-   For the content see here: :ref:`feature_safety_wp_template`
+   For the content see here: `Feature Safety Work Products Template <https://eclipse-score.github.io/module_template/main/docs/features/feature_example/safety_planning/index.html>`__
 
 
 .. gd_temp:: Module Safety Plan Template
@@ -29,7 +29,7 @@ Safety Planning Templates
    :complies: std_req__iso26262__management_5425, std_req__iso26262__management_5424, std_req__iso26262__management_6465, std_req__iso26262__management_6466, std_req__iso26262__management_6467, std_req__iso26262__management_6468, std_req__iso26262__management_6469, std_req__iso26262__support_12424, std_req__iso26262__support_12425, std_req__iso26262__support_1243, std_req__isopas8926__44341, std_req__isopas8926__44342, std_req__isopas8926__44611, std_req__isopas8926__4463, std_req__iso26262__management_5427, std_req__iso26262__management_6421,
               std_req__aspice_40__REU-2-BP4, std_req__aspice_40__REU-2-BP5
 
-   For the content see here: :need:`doc__module_name_safety_plan`
+   For the content see here: `Module Safety Plan Template <https://eclipse-score.github.io/module_template/main/docs/safety_mgt/module_safety_plan.html>`__
 
 
 .. gd_temp:: Platform Safety Plan Template

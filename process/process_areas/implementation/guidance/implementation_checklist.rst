@@ -24,4 +24,4 @@ Implementation Inspection Checklist
 
     For the content see here:
 
-    - :need:`doc__component_name_impl_inspection`
+    - `Component Implementation Inspection Checklist <https://eclipse-score.github.io/module_template/main/score/component_example/docs/detailed_design/chklst_impl_inspection.html>`__

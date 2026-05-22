@@ -216,7 +216,8 @@ In the next step, the already derived feature requirements shall be allocated to
 
 If needed, additional feature requirements, which may arise due to architectural decisions, should be created and allocated to the feature architecture itself.
 
-These links shall be established from architectural elements to feature requirements via the attribute *fulfils*.
+These links may be established from architectural views to feature requirements via the attribute *fulfills*
+but all the feature requirements must be allocated to the feature element via the attribute *satisfied_by*.
 
 .. _review_architectural_design:
 
@@ -249,7 +250,7 @@ For this step, the following guidance is available: :need:`Feature Architecture 
 Allocate component requirements to architectural elements
 ---------------------------------------------------------
 
-In this step, the component requirements shall be derived (see :need:`[[title]] <gd_guidl__req_engineering>`) and allocated to the architectural elements via the attribute *fulfils*.
+In this step, the component requirements shall be derived (see :need:`[[title]] <gd_guidl__req_engineering>`) and allocated to the respective component element via the attribute *satisfied_by*.
 
 .. _model_component_architecture:
 

@@ -54,3 +54,15 @@ For a detailed explanation of workflows and their role within the process model,
 
    The :need:`Project Lead <rl__project_lead>` is responsible to adjust the plan,
    if deviations are detected.
+
+
+RAS(IC) for Platform Management:
+********************************
+
+.. needtable:: RASIC Overview for Platform Management
+   :tags: platform_management
+   :filter: "platform_management" in tags and type == "workflow" and is_external == False
+   :style: table
+   :sort: status
+   :columns: id as "Activity";responsible as "Responsible";approved_by as "Approver";supported_by as "Supporter"
+   :colwidths: 30,30,30,30

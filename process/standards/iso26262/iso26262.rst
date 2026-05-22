@@ -278,7 +278,7 @@ Part 2: Management of functional safety
     .. std_req:: management_6469
        :id: std_req__iso26262__management_6469
        :status: valid
-       :tags: deviation
+       :tags: ok
 
 
     .. std_req:: management_64610
@@ -561,31 +561,31 @@ Part 4: Product development at the system level
      .. std_req:: system_6412
        :id: std_req__iso26262__system_6412
        :status: valid
-       :tags: open
+       :tags: n/a
 
 
      .. std_req:: system_6413
        :id: std_req__iso26262__system_6413
        :status: valid
-       :tags: open
+       :tags: ok
 
 
      .. std_req:: system_6414
        :id: std_req__iso26262__system_6414
        :status: valid
-       :tags: open
+       :tags: ok
 
 
      .. std_req:: system_6421
        :id: std_req__iso26262__system_6421
        :status: valid
-       :tags: action
+       :tags: ok
 
 
      .. std_req:: system_6422
        :id: std_req__iso26262__system_6422
        :status: valid
-       :tags: open
+       :tags: n/a
 
 
      .. std_req:: system_6423
@@ -677,13 +677,13 @@ Part 6: Product development at the software level
      .. std_req:: software_542
        :id: std_req__iso26262__software_542
        :status: valid
-       :tags: open
+       :tags: ok
 
 
      .. std_req:: software_543
        :id: std_req__iso26262__software_543
        :status: valid
-       :tags: open
+       :tags: action
 
 
      .. std_req:: software_641
@@ -707,7 +707,7 @@ Part 6: Product development at the software level
      .. std_req:: software_644
        :id: std_req__iso26262__software_644
        :status: valid
-       :tags: ok
+       :tags: n/a
 
 
      .. std_req:: software_645
@@ -719,7 +719,7 @@ Part 6: Product development at the software level
      .. std_req:: software_646
        :id: std_req__iso26262__software_646
        :status: valid
-       :tags: ok
+       :tags: n/a
 
 
      .. std_req:: software_647
@@ -743,7 +743,7 @@ Part 6: Product development at the software level
      .. std_req:: software_743
        :id: std_req__iso26262__software_743
        :status: valid
-       :tags: action
+       :tags: ok
 
 
      .. std_req:: software_744
@@ -767,7 +767,7 @@ Part 6: Product development at the software level
      .. std_req:: software_747
        :id: std_req__iso26262__software_747
        :status: valid
-       :tags: ok
+       :tags: open
 
 
      .. std_req:: software_748
@@ -785,19 +785,19 @@ Part 6: Product development at the software level
      .. std_req:: software_7410
        :id: std_req__iso26262__software_7410
        :status: valid
-       :tags: open
+       :tags: ok
 
 
      .. std_req:: software_7411
        :id: std_req__iso26262__software_7411
        :status: valid
-       :tags: open
+       :tags: ok
 
 
      .. std_req:: software_7412
        :id: std_req__iso26262__software_7412
        :status: valid
-       :tags: open
+       :tags: ok
 
 
      .. std_req:: software_7413
@@ -809,7 +809,7 @@ Part 6: Product development at the software level
      .. std_req:: software_7414
        :id: std_req__iso26262__software_7414
        :status: valid
-       :tags: action
+       :tags: recommendation
 
 
      .. std_req:: software_841
@@ -857,19 +857,19 @@ Part 6: Product development at the software level
      .. std_req:: software_943
        :id: std_req__iso26262__software_943
        :status: valid
-       :tags: open
+       :tags: ok
 
 
      .. std_req:: software_944
        :id: std_req__iso26262__software_944
        :status: valid
-       :tags: open
+       :tags: ok
 
 
      .. std_req:: software_945
        :id: std_req__iso26262__software_945
        :status: valid
-       :tags: open
+       :tags: ok
 
 
      .. std_req:: software_1041
@@ -881,43 +881,43 @@ Part 6: Product development at the software level
      .. std_req:: software_1042
        :id: std_req__iso26262__software_1042
        :status: valid
-       :tags: open
+       :tags: ok
 
 
      .. std_req:: software_1043
        :id: std_req__iso26262__software_1043
        :status: valid
-       :tags: open
+       :tags: ok
 
 
      .. std_req:: software_1044
        :id: std_req__iso26262__software_1044
        :status: valid
-       :tags: open
+       :tags: ok
 
 
      .. std_req:: software_1045
        :id: std_req__iso26262__software_1045
        :status: valid
-       :tags: open
+       :tags: n/a
 
 
      .. std_req:: software_1046
        :id: std_req__iso26262__software_1046
        :status: valid
-       :tags: open
+       :tags: n/a
 
 
      .. std_req:: software_1047
        :id: std_req__iso26262__software_1047
        :status: valid
-       :tags: open
+       :tags: n/a
 
 
      .. std_req:: software_1141
        :id: std_req__iso26262__software_1141
        :status: valid
-       :tags: action
+       :tags: ok
 
 
      .. std_req:: software_1142
@@ -1145,7 +1145,7 @@ Part 8: Supporting processes
     .. std_req:: support_6433
        :id: std_req__iso26262__support_6433
        :status: valid
-       :tags: deviation
+       :tags: ok
 
 
     .. std_req:: support_6434

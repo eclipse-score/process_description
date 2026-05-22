@@ -135,3 +135,18 @@ Safety Management Workflows
    |   - Assessing the impact on affected elements, safety requirements, and work products
    |   - Documenting the rationale for decisions regarding acceptance, implementation, or rejection of the change
    | The outcome is a change impact analysis report and a documented decision, which are reviewed and approved as part of the Safety Management process.
+
+
+.. needextend:: docname is not None and "process_areas/safety_management" in docname
+   :+tags: safety_management
+
+RAS(IC) for Safety Management:
+******************************
+
+.. needtable:: RASIC Overview for Safety Management
+   :tags: safety_management
+   :filter: "safety_management" in tags and type == "workflow" and is_external == False
+   :style: table
+   :sort: status
+   :columns: id as "Activity";responsible as "Responsible";approved_by as "Approver";supported_by as "Supporter"
+   :colwidths: 30,30,30,30

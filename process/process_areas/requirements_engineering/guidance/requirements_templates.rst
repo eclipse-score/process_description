@@ -31,15 +31,15 @@ Templates
    :complies: std_req__iso26262__support_641, std_req__iso26262__support_6421, std_req__iso26262__support_6425, std_req__aspice_40__SWE-1-BP1
 
    See the feature requirements template in
-   :doc:`../../../folder_templates/features/feature_name/requirements/index`
+   :doc:`../../../folder_templates/platform/features/feature_name/requirements/index`
 
 .. gd_temp:: Component Requirements Template
    :id: gd_temp__req_comp_req
    :status: valid
    :complies: std_req__iso26262__support_641, std_req__iso26262__support_6421, std_req__iso26262__support_6425, std_req__iso26262__support_12425, std_req__aspice_40__SWE-1-BP1
 
-   See the component requirements template in
-   :doc:`../../../folder_templates/modules/module_name/component_name/docs/requirements/index`
+   See the component requirements template in the
+   `module template documentation <https://eclipse-score.github.io/module_template/main/score/component_example/docs/requirements/index.html>`__.
 
 .. gd_temp:: AoU Requirement Template
    :id: gd_temp__req_aou_req
@@ -49,18 +49,6 @@ Templates
    See the Assumption of Use requirement snippets in the
    `module template documentation <https://eclipse-score.github.io/module_template/aou_requirements_template.html>`__.
 
-.. gd_temp:: Process Requirements Template
-   :id: gd_temp__req_process_req
-   :status: valid
-   :complies: std_req__iso26262__support_641, std_req__iso26262__support_6421, std_req__iso26262__support_6425
-
-   .. code-block:: rst
-
-      .. gd_req:: <Title>
-         :id: gd_req__<process>__<Title>
-         :satisfies: <link to guidance id>
-         :complies: <link to standard requirement>
-         :status: <valid|invalid>
 
 .. gd_temp:: Tool Requirements Template
    :id: gd_temp__req_tool_req
@@ -73,7 +61,7 @@ Templates
          :id: tool_req__<tool>__<Title>
          :security: <YES|NO>
          :safety: <QM|ASIL_B>
-         :satisfies: <link to process req id>
+         :derived_from: <link to process req id>
          :status: <valid|invalid>
          :implemented: <YES|PARTIAL|NO>
 

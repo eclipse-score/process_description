@@ -65,3 +65,15 @@ For a detailed explanation of workflows and their role within the process model,
    The Implementation Verification of the Detailed Design and Code consists of the following topics
      - Detailed Design and Code Inspection
      - Static and Dynamic Code Analysis performed by a tool. Acceptance criteria are defined in the Verification Plan :need:`gd_temp__verification_plan`.
+
+
+RAS(IC) for Implementation:
+***************************
+
+.. needtable:: RASIC Overview for Implementation
+   :tags: implementation
+   :filter: "implementation" in tags and type == "workflow" and is_external == False
+   :style: table
+   :sort: status
+   :columns: id as "Activity";responsible as "Responsible";approved_by as "Approver";supported_by as "Supporter"
+   :colwidths: 30,30,30,30

@@ -86,7 +86,7 @@ Document Management Process Requirements
 .. gd_req:: Document Author
    :id: gd_req__doc_author
    :status: valid
-   :tags: prio_1_automation
+   :tags: done_automation
    :satisfies: wf__platform_cr_mt_platform_mgmt_plan
    :complies: std_req__iso26262__support_1045
 
@@ -96,7 +96,7 @@ Document Management Process Requirements
 .. gd_req:: Document Reviewer
    :id: gd_req__doc_reviewer
    :status: valid
-   :tags: prio_1_automation
+   :tags: done_automation
    :satisfies: wf__platform_cr_mt_platform_mgmt_plan
    :complies: std_req__iso26262__support_1043
 
@@ -106,7 +106,7 @@ Document Management Process Requirements
 .. gd_req:: Document Approver
    :id: gd_req__doc_approver
    :status: valid
-   :tags: prio_1_automation
+   :tags: done_automation
    :satisfies: wf__platform_cr_mt_platform_mgmt_plan
    :complies: std_req__iso26262__support_1045
 

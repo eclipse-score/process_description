@@ -21,4 +21,4 @@ Detailed Design Template
    :status: valid
    :complies: std_req__iso26262__software_542, std_req__iso26262__support_641, std_req__iso26262__support_6421, std_req__iso26262__support_6425, std_req__iso26262__software_744, std_req__aspice_40__iic-04-05
 
-   For the content see here: :ref:`component_detailed_design_template`
+   For the content see here: `Detailed Design Template <https://eclipse-score.github.io/module_template/main/score/component_example/docs/detailed_design/index.html>`__
