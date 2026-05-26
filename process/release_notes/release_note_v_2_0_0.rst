@@ -1,0 +1,145 @@
+..
+   # *******************************************************************************
+   # Copyright (c) 2026 Contributors to the Eclipse Foundation
+   #
+   # See the NOTICE file(s) distributed with this work for additional
+   # information regarding copyright ownership.
+   #
+   # This program and the accompanying materials are made available under the
+   # terms of the Apache License Version 2.0 which is available at
+   # https://www.apache.org/licenses/LICENSE-2.0
+   #
+   # SPDX-License-Identifier: Apache-2.0
+   # *******************************************************************************
+
+Release Note v2.0.0
+===================
+
+.. document:: Process description Release Note v2.0.0
+   :id: doc__process_description_release_note_v200
+   :status: valid
+   :safety: ASIL_B
+   :security: YES
+   :realizes: wp__module_sw_release_note
+   :tags:
+
+| **Module Name:** Process description
+| **Release Tag:** v2.0.0
+| **Origin Release Tag:** v1.5.4
+| **Release Date:** 2026-06-28
+
+Overview
+^^^^^^^^
+
+The module process_description provides a process model establishing organization rules
+for developing open source software in the automotive industry, which can be used in
+safety and security context.
+
+The process model provides processes, which conform to state-of the art standards
+
+ASPICE 4.0
+ISO 26262
+ISO 21434
+ISO PAS 8926
+
+Disclaimer
+----------
+
+This release note does not "release for production", as it does not come with a safety
+argumentation and a performed safety assessment.
+The work products compiled in the safety package are created with care according to a
+process satisfying standards, but the project, being a non-profit and open source
+organization, can not take over any liability for its content.
+
+Changes to the Module
+^^^^^^^^^^^^^^^^^^^^^
+
+New Features
+------------
+
+Building blocks meta model was reworked.
+(https://eclipse-score.github.io/process_description/main/index.html).
+Contains now Features, Components as own elements, adapt linkage names, e.g.
+Requirements are now "derived_from" parent requirements, correct some linkages between
+elements
+
+Module Templates removed from Folder Templates and
+(https://eclipse-score.github.io/process_description/main/folder_templates/index.html)
+
+moved now to module_templates folder
+(https://eclipse-score.github.io/module_template/main/)
+
+The process model contains
+
+- General concepts e.g. for Building Blocks and their traceability
+- Process meta model for proper modeling
+- Process areas covering the required standards
+- Roles, Work Products, Workflows defining the process areas
+- Standard overview and coverage information
+- Folder templates for simplifying deployment for users
+- Glossary
+- Release Notes
+
+Improvements
+------------
+
+- Fix trace to external AoU for Components by @aschemmel-tech in https://github.com/eclipse-score/process_description/pull/654
+- Update Safety Analysis  by @PandaeDo in https://github.com/eclipse-score/process_description/pull/659
+- fix meta model example picture by @RolandJentschETAS in https://github.com/eclipse-score/process_description/pull/665
+- Update Safety Analysis templates and process descriptions by @PandaeDo in https://github.com/eclipse-score/process_description/pull/663
+- PR for platform analysis template #455 #454 by @NarasipurRohini in https://github.com/eclipse-score/process_description/pull/662
+- Add release trigger to docs workflow by @Saumya-R in https://github.com/eclipse-score/process_description/pull/667
+- add minimal required elements in meta model as example by @masc2023 in https://github.com/eclipse-score/process_description/pull/666
+- Update safety analysis process requirements by @PandaeDo in https://github.com/eclipse-score/process_description/pull/673
+- Update process req of documentation management by @PandaeDo in https://github.com/eclipse-score/process_description/pull/674
+- Update Safety Analysis FDR by @PandaeDo in https://github.com/eclipse-score/process_description/pull/677
+- Correct branch name by @RolandJentschETAS in https://github.com/eclipse-score/process_description/pull/678
+- Metamodel link renames by @aschemmel-tech in https://github.com/eclipse-score/process_description/pull/621
+- Enhance test log details with execution log links by @pahmann in https://github.com/eclipse-score/process_description/pull/682
+- rename relations for SysML compatibility by @RSingh1511 in https://github.com/eclipse-score/process_description/pull/618
+- Document iso26262 audit 7 status by @aschemmel-tech in https://github.com/eclipse-score/process_description/pull/685
+- upgrade doc-as-code to v4.1.0 by @masc2023 in https://github.com/eclipse-score/process_description/pull/687
+- remove module folder template by @RolandJentschETAS in https://github.com/eclipse-score/process_description/pull/683
+- Update Safety Analysis Template by @ANegm-ETAS in https://github.com/eclipse-score/process_description/pull/669
+
+Bug Fixes
+---------
+
+not applicable
+
+Other changes by Label
+----------------------
+
+not applicable
+
+Compatibility
+^^^^^^^^^^^^^
+
+Doc-as-code, module_template
+
+For a detailed list checkout here: https://github.com/eclipse-score/process_description/blob/main/MODULE.bazel
+
+Performed Verification
+^^^^^^^^^^^^^^^^^^^^^^
+
+Initial Safety Audit by external assessor teams for every process area.
+
+Known Issues
+------------
+
+- Issue 1: Standard requirements and work products are not yet fully mapped to the process model, https://eclipse-score.github.io/process_description//main/standards/index.html
+- Issue 2: Safety package containing external Audit report not available, due to open improvement proposals/recommendation from external assessor team, #652
+- Issue 3: Maturity level 2 no yet completed in total, but deploying is still ongoing also auditing per external auditor to achieve higher maturity levels, #652, https://github.com/eclipse-score/score/issues/2911
+
+Known Vulnerabilities
+---------------------
+
+None
+
+Upgrade Instructions
+^^^^^^^^^^^^^^^^^^^^
+
+As Building Blocks Meta Model is adapted and Templates are removed, consider to use the compatible doc-as-code version and the module templates from the module_template repository.
+
+Contact Information
+For any questions or support, please contact the SW Process Development Community (https://github.com/orgs/eclipse-score/discussions/108) or raise an issue/discussion.
