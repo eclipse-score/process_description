@@ -38,7 +38,9 @@ Detailed Design
 ===============
 
 In this step, the **components** are broken down into smaller, independent **units** that can be
-**tested separately** during the unit testing phase.
+**tested separately** during the unit testing phase. This decomposition shall support the implementation
+and testing of the component's requirements while adhering to the design principles and patterns
+established in the architecture.
 
 Following the **Detailed Design Template** :need:`gd_temp__detailed_design`, we must document the
 **design decisions** and **constraints** that guide the decomposition of the component into multiple
@@ -48,7 +50,7 @@ units. These decisions should be made based on the following ideas:
 -  **Design patterns**
 -  **Testability strategies**
 
-The goal is to ensure that the decomposition supports **reusability** , **maintainability**,
+The goal is to ensure that the decomposition supports **reusability**, **maintainability**,
 **scalability**, **extensibility** and **ease of testing**.
 
 The detailed design and implementation should follow an **iterative approach**, allowing for
@@ -75,189 +77,93 @@ This list is not complete or exclusive.
 
 **Units in UML Diagrams**
 
--  **C++ development** Each **class** can be considered a **unit** in the design.
--  For **Rust development**, a **unit** is modeled using a **combination of `struct` and `trait`**,
+-  **C++ development** – Each **class** can be considered a **unit** in the design.
+-  **Rust development** – A **unit** is modeled using a **combination of `struct` and `trait`**,
    as Rust does not have traditional classes.
-
-Static View
-```````````
-The **static view** represents the **units** and their relationships using **UML 2.0 notations**,
-such as **aggregation, composition, and generalization**. This is depicted through
-**UML structural diagrams**, including:
-
--  **Class Diagrams** – Define **classes, attributes, methods, and relationships** (e.g., inheritance, associations, dependencies).
-   Each **class** can be considered a **unit** in the design.
--  **Rust Development Approach** – Instead of traditional classes, **Rust uses `struct` and `trait`
-   combinations** to represent **units** in UML diagrams.
-
-This view focuses **units, the interfaces and their relationships**.
-Details such as **attributes and interfaces** are documented under the **Units within the Component section**
-(refer to the template for details).
-
-Note that the detailed design may not be complete in the way that it covers every class which is coded.
-These not covered parts may contain implementation detail and should not be needed to understand the
-the detailed design.
-
-.. code-block:: rst
-
-   .. dd_sta:: <Title>
-      :id: dd_sta__<Component>__<Title>
-      :security: <YES|NO>
-      :safety: <QM|ASIL_B>
-      :status: <valid|invalid>
-      :implements: <link to component requirement id>
-      :satisfies: <link to component architecture id>
-      :belongs_to: <link to component id>
-      :includes: <link to sw_unit id>, <link to sw_unit interface id>
-
-      .. needarch:: or .. image:: <link to drawio image>
-
-Dynamic View
-````````````
-The **dynamic view** illustrates how the **units** interact with each other over **interfaces** to fulfill a specific
-**use case** or **functionality**. This view captures the **behavioural aspects** of the component as it executes.
-It is represented using **UML behavioural diagrams**, including:
-
-- **Sequence Diagrams** – Depict the interactions between objects in a **time-ordered sequence**,
-  highlighting how methods are invoked and how control flows between objects over time.
-- **State Machine Diagrams** – Show how the **state of an object changes** in response to events,
-  allowing for the modeling of complex state transitions (if there is stateful behaviour).
-
-These diagrams are essential for understanding the **dynamic behaviour** of the component and how
-units collaborate to perform tasks. But this also means that if the dynamic behaviour is simple
-it does not require a dynamic diagram at all (similar to the rules depicted in :need:`gd_guidl__arch_design`).
-
-.. code-block:: rst
-
-   .. dd_dyn:: <Title>
-      :id: dd_dyn__<Component>__<Title>
-      :security: <YES|NO>
-      :safety: <QM|ASIL_B>
-      :status: <valid|invalid>
-      :implements: <link to component requirement id>
-      :satisfies: <link to component architecture id>
-      :belongs_to: <link to component id>
-      :includes: <link to sw_unit id>, <link to sw_unit interface id>
-
-      .. needarch:: or .. image:: <link to drawio image>
 
 Units within the Component
 --------------------------
 
-For each unit it will have a id and the interfaces are shown in the interface view per unit.
-The description of unit and its attributes can be seen in the code documentation.
-For this we use the tracing to the documentation generated from the code comments.
+The relationship between a unit and its parent component is established implicitly through the
+**file path** — each component has its own directory, and units residing within that directory
+belong to it and therefore inherit the accordance to the architecture. A separate static diagram
+per unit is **not required**; the unit's attributes and behaviour are documented in the source
+code itself as the source code is sufficiently self-explanatory and adheres to the design principles outlined in the development plan.
 
-We link the unit id to the comments in the code like:
+This is sufficient for ASIL B compliance per ISO 26262-6 §8, as the structural decomposition
+is evident from the directory layout and the component-level static view already captures the
+relevant unit relationships.
 
--  Maintain your units in rst files and link them to the source code
+However, for components with complex interactions or a large number of units, a static view can be beneficial for understanding the overall structure and relationships between units. The developer may choose to add a additional unit-level static and dynamic view if they believe it helps to explain the source code better.
 
-   Use `score_source_code_linker` from `docs-as-code` repo with
-   `user docu <https://eclipse-score.github.io/docs-as-code/main/how-to/source_to_doc_links.html>`__.
+Design Principles of the Units
+``````````````````````````````
 
-   In your rst file:
+The unit design shall achieve quality attributes (like simplicity, modularity, and encapsulation) which shall be enforced through coding guidelines and static analysis tooling appropriate for the programming language in use (e.g. MISRA C for C/C++, Clippy lints for Rust) as specified in the project development plan to fulfill the guidelines ISO 26262-6 §8.4.5, Table 6 and ASPICE SWE.3/SWE.4 requirements.
 
-   .. code-block:: rst
+The **source code** itself shall be self-documenting with meaningful naming and structure.
+**Code comments** may be used where the logic is not self-evident and to give an rationale.
+These comments, along with commit messages, and any additional documentation accompanying the
+source code shall use natural language.
 
-      .. sw_unit:: cpp unit
-         :id: sw_unit__<Component>__<title>
-         :belongs_to: <link to component id>
+The interface documentation of a software unit is part of the source code (e.g. public API headers,
+trait definitions, or documented function signatures).
 
-         This implements the ....
+Diagrams
+--------
 
-   In your source file, any programming language, here with C++:
+Developers may add **class diagrams** or **sequence diagrams** at the unit level if they believe
+it helps to explain the source code better. These are optional and serve as supplementary
+documentation — they are not required by the process.
 
-   .. code-block:: cpp
+Static View
+```````````
 
-      # need-Id: sw_unit__<Component>__<title>
-      class <class name> {
-         public:
+If a static view is used it shall provide an overview of the **units** and their
+relationships using **UML 2.0 notations**, such as **aggregation, composition, and
+generalization**. It is depicted through **UML structural diagrams**, including:
 
-      };
+-  **Class Diagrams** – Define classes, attributes, methods, and relationships (e.g.,
+   inheritance, associations, dependencies).
+- **Component Diagrams** – Show the organization and dependencies among software units,
+   which can be used to represent the units within a component.
+-  **Rust** – Uses `struct` and `trait` combinations to represent units in UML diagrams.
 
--  For cpp using doxygen style comments
+The static view need not cover every class or struct in the implementation — it should show
+the units and relationships that are necessary to understand the detailed design.
+The naming of the units and their interfaces in the static view should match the naming
+in the source code to ensure traceability. Implementation  details that are not relevant
+at the design level may be omitted.
 
-   .. code-block:: cpp
+According to the software development plan of the project the developer may use tools
+like PlantUML or DrawIo for such diagrams.
 
-      /**
-         * @rst
-         * .. sw_unit:: cpp unit
-         *    :id: sw_unit__<Component>__<title>
-         *    :belongs_to: <link to component id>
-         *
-         *    This implements the ....
-         * @endrst
-      */
+Dynamic View
+````````````
 
-- for rust
+An optional **dynamic view** illustrates how the **units** within a component interact over their
+**interfaces** to fulfill a specific **use case** or **functionality**. This is a
+**component-level** view — individual per-unit dynamic diagrams are **not required**.
 
-   .. code-block:: rust
+It is represented using **UML behavioural diagrams**, including:
 
-      //! .. sw_unit:: rust unit
-      //!     :id: sw_unit__<Component>__<title>
-      //!     :belongs_to: <link to component id>
-      //!
-      //!     This implements the ....
+-  **Sequence Diagrams** – Depict the interactions between objects in a time-ordered sequence,
+   highlighting how methods are invoked and how control flows between objects over time.
+-  **State Machine Diagrams** – Show how the state of an object changes in response to events,
+   allowing for the modeling of complex state transitions (if there is stateful behaviour).
 
+A dynamic view is **optional** when the component's behaviour is straightforward and can be
+understood from the static view and interface documentation alone (similar to the rules
+depicted in :need:`gd_guidl__arch_design`).
 
-Interface View
-``````````````
-For every unit, the Interface View should display the interfaces provided by that unit.
-For each unit and its corresponding interfaces, an implementation and documentation must
-be created.
+Example using PlantUML:
 
-The following section provides templates for defining needs within the source code:
+.. uml::
 
--  Maintain your units in rst files and link them to the source code
+   @startuml
+   participant UnitA
+   participant UnitB
 
-   Use `score_source_code_linker` from `docs-as-code` repo with
-   `user docu <https://eclipse-score.github.io/docs-as-code/main/how-to/source_to_doc_links.html>`__.
-
-   In your rst file:
-
-   .. code-block:: rst
-
-      .. sw_unit_int:: <here InterfaceDemo - change it>
-         :id: sw_unit_int__<Component>__<title>
-         :belongs_to: <link to sw_unit id>
-         :implements: <real_arc_int, real_arc_int_op>
-
-         This implements the ....
-
-   In your source file, any programming language, here with C++:
-
-   .. code-block:: cpp
-
-      # need-Id: sw_unit__<Component>__<title>
-      class InterfaceDemo
-      {
-         public:
-            virtual ~InterfaceDemo() {}
-            virtual void OverrideMe() = 0;
-      };
-
--  For cpp using doxygen comments
-
-   .. code-block:: cpp
-
-      /**
-         * @rst
-         * .. sw_unit_int:: cpp unit
-         *    :id: sw_unit_int__<Component>__<title>
-         *    :belongs_to: <link to sw_unit id>
-         *    :implements: <real_arc_int, real_arc_int_op>
-         *
-         *    This implements the ....
-         * @endrst
-      */
-
--  For rust
-
-   .. code-block:: rust
-
-      //! .. sw_unit_int:: rust unit
-      //!     :id: sw_unit_int__<Component>__<title>
-      //!     :belongs_to: <link to sw_unit id>
-      //!     :implements: <real_arc_int, real_arc_int_op>
-      //!
-      //!     This implements the ....
+   UnitA -> UnitB : request()
+   UnitB --> UnitA : response()
+   @enduml
