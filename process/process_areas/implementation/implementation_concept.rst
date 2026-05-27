@@ -90,7 +90,7 @@ belong to it and therefore inherit the accordance to the architecture. A separat
 per unit is **not required**; the unit's attributes and behaviour are documented in the source
 code itself as the source code is sufficiently self-explanatory and adheres to the design principles outlined in the development plan.
 
-This is sufficient for ASIL B compliance per ISO 26262-6 §8, as the structural decomposition
+This is sufficient for ASIL B compliance per :need:`ISO 26262-6 §8 <std_req__iso26262__software_841>`, as the structural decomposition
 is evident from the directory layout and the component-level static view already captures the
 relevant unit relationships.
 
@@ -99,7 +99,7 @@ However, for components with complex interactions or a large number of units, a 
 Design Principles of the Units
 ``````````````````````````````
 
-The unit design shall achieve quality attributes (like simplicity, modularity, and encapsulation) which shall be enforced through coding guidelines and static analysis tooling appropriate for the programming language in use (e.g. MISRA C for C/C++, Clippy lints for Rust) as specified in the project development plan to fulfill the guidelines ISO 26262-6 §8.4.5, Table 6 and ASPICE SWE.3/SWE.4 requirements.
+The unit design shall achieve quality attributes (like simplicity, modularity, and encapsulation) which shall be enforced through coding guidelines and static analysis tooling appropriate for the programming language in use (e.g. MISRA C for C/C++, Clippy lints for Rust) as specified in the project development plan to fulfill the guidelines :need:`ISO 26262-6 §8.4.5, Table 6 <std_req__iso26262__software_845>` and :need:`ASPICE SWE.3/SWE.4<std_req__aspice_40__SWE-3-BP3>` requirements.
 
 The **source code** itself shall be self-documenting with meaningful naming and structure.
 **Code comments** may be used where the logic is not self-evident and to give an rationale.
