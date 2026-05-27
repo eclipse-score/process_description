@@ -61,3 +61,25 @@ Configuration Management Process Requirements
    It shall be possible to show the differences between two baselines.
 
    Note: This could be done by showing all the commits which happened between these baselines in one release branch.
+
+.. gd_req::  Document attributes
+   :id: gd_req__config_consistent_attributes
+   :status: valid
+   :tags: prio_2_automation
+   :complies: std_req__aspice_40__SUP-8-BP3, std_req__aspice_40__SUP-8-BP4
+   :satisfies: wf__platform_cr_mt_platform_mgmt_plan
+
+   It shall be prohibited to override any mandatory attribute value of an docs-as-code element.
+
+   Note: This requirement exists because docs-as-code attributes may be globally overridden, which leads to a mismatch of code and the representing generated documentation.
+   Exception only exists for optional tags, which can be used for filtering and reporting purposes.
+
+.. gd_req::  Global tags extension
+   :id: gd_req__config_global_tags
+   :status: valid
+   :tags: prio_3_automation
+   :satisfies: wf__platform_cr_mt_platform_mgmt_plan
+
+   It shall be possible to define global tags with the docs-as-code tool, which can be used for filtering and reporting.
+
+   Note: This requirement exists to enable the use of global tags for filtering and reporting purposes, while still prohibiting the overriding of mandatory attributes or elements globally.
