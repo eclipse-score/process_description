@@ -591,7 +591,7 @@
                   
   <section id="concept-description">
 <h1>Concept Description<a class="headerlink" href="#concept-description" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-f7405ed8">
+<div class="need_container docutils container" id="SNCB-5d163e8f">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_doc_concept table" id="doc_concept__imp_concept">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -695,13 +695,13 @@ as Rust does not have traditional classes.</p></li>
 belong to it and therefore inherit the accordance to the architecture. A separate static diagram
 per unit is <strong>not required</strong>; the unit’s attributes and behaviour are documented in the source
 code itself as the source code is sufficiently self-explanatory and adheres to the design principles outlined in the development plan.</p>
-<p>This is sufficient for ASIL B compliance per ISO 26262-6 §8, as the structural decomposition
+<p>This is sufficient for ASIL B compliance per <a class="reference internal" href="../../standards/iso26262/iso26262.html#std_req__iso26262__software_841" title="std_req__iso26262__software_841"><em class="xref need">ISO 26262-6 §8</em></a>, as the structural decomposition
 is evident from the directory layout and the component-level static view already captures the
 relevant unit relationships.</p>
 <p>However, for components with complex interactions or a large number of units, a static view can be beneficial for understanding the overall structure and relationships between units. The developer may choose to add a additional unit-level static and dynamic view if they believe it helps to explain the source code better.</p>
 <section id="design-principles-of-the-units">
 <h5>Design Principles of the Units<a class="headerlink" href="#design-principles-of-the-units" title="Link to this heading">#</a></h5>
-<p>The unit design shall achieve quality attributes (like simplicity, modularity, and encapsulation) which shall be enforced through coding guidelines and static analysis tooling appropriate for the programming language in use (e.g. MISRA C for C/C++, Clippy lints for Rust) as specified in the project development plan to fulfill the guidelines ISO 26262-6 §8.4.5, Table 6 and ASPICE SWE.3/SWE.4 requirements.</p>
+<p>The unit design shall achieve quality attributes (like simplicity, modularity, and encapsulation) which shall be enforced through coding guidelines and static analysis tooling appropriate for the programming language in use (e.g. MISRA C for C/C++, Clippy lints for Rust) as specified in the project development plan to fulfill the guidelines <a class="reference internal" href="../../standards/iso26262/iso26262.html#std_req__iso26262__software_845" title="std_req__iso26262__software_845"><em class="xref need">ISO 26262-6 §8.4.5, Table 6</em></a> and <a class="reference internal" href="../../standards/aspice_40/swe/swe.3.html#std_req__aspice_40__SWE-3-BP3" title="std_req__aspice_40__SWE-3-BP3"><em class="xref need">ASPICE SWE.3/SWE.4</em></a> requirements.</p>
 <p>The <strong>source code</strong> itself shall be self-documenting with meaningful naming and structure.
 <strong>Code comments</strong> may be used where the logic is not self-evident and to give an rationale.
 These comments, along with commit messages, and any additional documentation accompanying the
