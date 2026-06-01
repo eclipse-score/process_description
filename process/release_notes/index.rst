@@ -12,7 +12,7 @@
    # SPDX-License-Identifier: Apache-2.0
    # *******************************************************************************
 
-.. _process_release_notes:
+.. _`process_release_notes`:
 
 Release notes
 =============
@@ -21,4 +21,5 @@ Release notes
    :maxdepth: 1
    :caption: Content
 
+   release_note_v_2_0_0.rst
    release_note_v_1_5_3.rst
