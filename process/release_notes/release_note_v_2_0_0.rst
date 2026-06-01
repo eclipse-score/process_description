@@ -57,7 +57,7 @@ Changes to the Module
 New Features
 ------------
 
-Building blocks meta model was reworked.
+Building blocks meta model is reworked.
 (https://eclipse-score.github.io/process_description/main/index.html).
 Contains now Features, Components as own elements, adapt linkage names, e.g.
 Requirements are now "derived_from" parent requirements, correct some linkages between
@@ -68,6 +68,8 @@ Module Templates removed from Folder Templates and
 
 moved now to module_templates folder
 (https://eclipse-score.github.io/module_template/main/)
+
+Implementation is now defined.
 
 The process model contains
 
@@ -101,6 +103,10 @@ Improvements
 - upgrade doc-as-code to v4.1.0 by @masc2023 in https://github.com/eclipse-score/process_description/pull/687
 - remove module folder template by @RolandJentschETAS in https://github.com/eclipse-score/process_description/pull/683
 - Update Safety Analysis Template by @ANegm-ETAS in https://github.com/eclipse-score/process_description/pull/669
+- rework implementation by @RolandJentschETAS in https://github.com/eclipse-score/process_description/pull/689
+- Add attribute requirement to config mgm by @pahmann in https://github.com/eclipse-score/process_description/pull/690
+- adopt pictures to new implementation concept by @RolandJentschETAS in https://github.com/eclipse-score/process_description/pull/691
+- increase docs as code version by @RolandJentschETAS in https://github.com/eclipse-score/process_description/pull/692
 
 Bug Fixes
 ---------
