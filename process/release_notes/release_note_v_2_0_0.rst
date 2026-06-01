@@ -107,6 +107,7 @@ Improvements
 - Add attribute requirement to config mgm by @pahmann in https://github.com/eclipse-score/process_description/pull/690
 - adopt pictures to new implementation concept by @RolandJentschETAS in https://github.com/eclipse-score/process_description/pull/691
 - increase docs as code version by @RolandJentschETAS in https://github.com/eclipse-score/process_description/pull/692
+- increase bazel version to 8.6 by @RolandJentschETAS in https://github.com/eclipse-score/process_description/pull/693
 
 Bug Fixes
 ---------
