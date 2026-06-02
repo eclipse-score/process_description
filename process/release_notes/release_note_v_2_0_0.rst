@@ -108,6 +108,7 @@ Improvements
 - adopt pictures to new implementation concept by @RolandJentschETAS in https://github.com/eclipse-score/process_description/pull/691
 - increase docs as code version by @RolandJentschETAS in https://github.com/eclipse-score/process_description/pull/692
 - increase bazel version to 8.6 by @RolandJentschETAS in https://github.com/eclipse-score/process_description/pull/693
+- upgrade doc-as-code version 4.3.0 @masc2023 in https://github.com/eclipse-score/process_description/pull/694
 
 Bug Fixes
 ---------
