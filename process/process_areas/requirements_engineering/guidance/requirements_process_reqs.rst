@@ -337,8 +337,6 @@ Process Requirements Checks
    * feat_req -> feature (feat)
    * comp_req -> component (comp)
 
-   Note that the linking is done from the architecture element to the requirement as described for example in :ref:`allocate_feature_requirements`.
-
 .. gd_req:: Requirements linkage architecture
    :id: gd_req__req_linkage_architecture
    :status: valid
@@ -352,7 +350,7 @@ Process Requirements Checks
    * If the requirement is of type "Functional" it shall be linked to architecture diagram elements.
    * If the requirement is of type "Interface" it shall be linked to architecture interface elements.
 
-   Note that the linking is done from the architecture element to the requirement as described for example in :ref:`allocate_feature_requirements`.
+   Note that the linking done via "fulfils" from the architecture element to the requirement as described for example in :ref:`allocate_feature_requirements`.
 
 .. gd_req:: Requirements linkage architecture switch
    :id: gd_req__req_linkage_architecture_switch
