@@ -325,26 +325,39 @@ Process Requirements Checks
 
    :ref:`traceability concept for requirements`
 
-.. gd_req:: Requirements linkage architecture
-   :id: gd_req__req_linkage_architecture
+.. gd_req:: Requirements mandatory architecture linkage
+   :id: gd_req__req_linkage_architecture_mandatory
    :status: valid
-   :tags: prio_2_automation, check
+   :tags: done_automation, check
    :complies: std_req__iso26262__support_6423
    :satisfies: wf__req_feat_req, wf__req_comp_req
 
-   It shall be checked if every feature- and component requirement is linked at least to one valid architectural element on the same level.
+   Every feature- and component requirement shall be linked via satisfied_by at least to one valid architectural element on the same level.
+
+   * feat_req -> feature (feat)
+   * comp_req -> component (comp)
+
+   Note that the linking is done from the architecture element to the requirement as described for example in :ref:`allocate_feature_requirements`.
+
+.. gd_req:: Requirements linkage architecture
+   :id: gd_req__req_linkage_architecture
+   :status: valid
+   :tags: prio_3_automation, check
+   :complies: std_req__iso26262__support_6423
+   :satisfies: wf__req_feat_req, wf__req_comp_req
+
+   It shall be checked if every feature requirement is linked via fulfilled_by at least to one valid architectural diagram/interface on the same level.
    This should also include requirement type checking:
 
    * If the requirement is of type "Functional" it shall be linked to architecture diagram elements.
-   * If the requirement is of type "Interface" it shall be linked to architecture interface elements. Here the level matching is feature <> logical and component <> real.
-   * If the requirement is of any other type there shall not be a link to architecture elements.
+   * If the requirement is of type "Interface" it shall be linked to architecture interface elements.
 
    Note that the linking is done from the architecture element to the requirement as described for example in :ref:`allocate_feature_requirements`.
 
 .. gd_req:: Requirements linkage architecture switch
    :id: gd_req__req_linkage_architecture_switch
    :status: valid
-   :tags: prio_2_automation, check
+   :tags: prio_3_automation, check
    :complies: std_req__iso26262__support_6423
    :satisfies: wf__req_feat_req, wf__req_comp_req
 
