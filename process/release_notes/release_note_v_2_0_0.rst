@@ -108,8 +108,11 @@ Improvements
 - adopt pictures to new implementation concept by @RolandJentschETAS in https://github.com/eclipse-score/process_description/pull/691
 - increase docs as code version by @RolandJentschETAS in https://github.com/eclipse-score/process_description/pull/692
 - increase bazel version to 8.6 by @RolandJentschETAS in https://github.com/eclipse-score/process_description/pull/693
-- upgrade doc-as-code version 4.3.0 @masc2023 in https://github.com/eclipse-score/process_description/pull/694
-- Update status to valid for merged Requirements and Documents @PandaeDo in https://github.com/eclipse-score/process_description/pull/697
+- upgrade doc-as-code version 4.3.0 by @masc2023 in https://github.com/eclipse-score/process_description/pull/694
+- Update status to valid for merged Requirements and Documents by @PandaeDo in https://github.com/eclipse-score/process_description/pull/697
+- Correct automation tag for process reqs in requirements process by @aschemmel-tech in https://github.com/eclipse-score/process_description/pull/699
+- Update linking check from req to architecture by @aschemmel-tech https://github.com/eclipse-score/process_description/pull/700
+- Clarify tool verification report version attribute by @aschemmel-tech https://github.com/eclipse-score/process_description/pull/701
 
 Bug Fixes
 ---------
