@@ -53,7 +53,7 @@ Tool Verification Report Attributes
    :satisfies: wf__tool_create_tool_verification_report
    :complies: std_req__iso26262__support_1141, std_req__aspice_40__SUP-8-BP1
 
-   Each Tool Verification Report shall have a version:
+   Each Tool Verification Report shall document the tool version it applies to:
 
       * v.X.Y.Z (major, minor, patch)
 
