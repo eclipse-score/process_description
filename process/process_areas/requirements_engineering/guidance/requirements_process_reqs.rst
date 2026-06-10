@@ -230,7 +230,7 @@ Process Requirement Linkage
 .. gd_req:: Requirement attribute: link to implementation
    :id: gd_req__req_attr_impl
    :status: valid
-   :tags: prio_2_automation, attribute
+   :tags: done_automation, attribute
    :satisfies: wf__req_feat_req, wf__req_comp_req
 
    It shall be possible to link requirements to code (to the respective line of code in an attribute of the requirement).
@@ -238,7 +238,7 @@ Process Requirement Linkage
 .. gd_req:: Requirement attribute: link to test
    :id: gd_req__req_attr_testlink
    :status: valid
-   :tags: prio_1_automation, attribute
+   :tags: done_automation, attribute
    :satisfies: wf__req_feat_req, wf__req_comp_req
    :complies: std_req__iso26262__support_6433, std_req__iso26262__software_944
 
