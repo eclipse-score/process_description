@@ -51,6 +51,18 @@ For architectural elements, the following checks are defined:
    :colwidths: 50,70
 
 
+Process Monitoring
+------------------
+
+The following process monitoring activities shall be performed:
+
+.. needtable:: Overview of process monitoring
+   :filter: "process_monitoring" in tags and type == "gd_req" and is_external == False
+   :style: table
+   :columns: title; id
+   :colwidths: 50,70
+
+
 Workflow for creating an architectural design
 =============================================
 

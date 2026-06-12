@@ -298,7 +298,7 @@ Process Monitoring and Improvement
 .. gd_req:: Monitor architecture process performance
    :id: gd_req__arch_process_monitoring
    :status: valid
-   :tags: manual_prio_1
+   :tags: manual_prio_1, process_monitoring
    :complies: std_req__aspice_40__gp-324, std_req__aspice_40__iic-03-06
    :satisfies: wf__cr_mt_featarch, wf__cr_mt_comparch
 
