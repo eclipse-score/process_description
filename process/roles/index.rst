@@ -96,6 +96,19 @@ Project Development Roles
 
    (Eclipse) Open Source Role, person(s) who accept(s) possible contribution(s) as pull request(s) to the main line and maintains the product.
 
+   Required skills and knowledge of standards
+
+   * Experience in reviewing architectural designs for correctness, consistency, and completeness
+   * Knowledge of ASPICE SWE.2 base practices
+   * Understanding of traceability requirements between architecture and requirements
+   * Understanding of software design patterns and principles (e.g., SOLID, separation of concerns)
+   * Knowledge of the platform domain (middleware, OS abstraction, communication)
+   * Ability to work with Sphinx-Needs and PlantUML tooling
+   * Understanding of safety/security attributes and their impact on architecture
+   * Review of existing architecture examples in module template
+   * Knowledge of UML/SysML notation (component diagrams, sequence diagrams)
+
+
    .. note::
       Defines and enforces processes.
 

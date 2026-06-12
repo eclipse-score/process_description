@@ -20,7 +20,7 @@ Architecture Guideline
 .. gd_guidl:: Architectural Design Guideline
    :id: gd_guidl__arch_design
    :status: valid
-   :complies: std_req__isopas8926__44411, std_req__isopas8926__44412, std_req__iso26262__software_743, std_req__iso26262__software_744, std_req__iso26262__software_745
+   :complies: std_req__isopas8926__44411, std_req__isopas8926__44412, std_req__iso26262__software_743, std_req__iso26262__software_744, std_req__iso26262__software_745, std_req__aspice_40__iic-10-50, std_req__aspice_40__iic-10-51, std_req__aspice_40__iic-10-52
 
 The guideline focuses on the steps which need to be performed in order to create the architectural design. The concept behind those steps is described in the :need:`[[title]] <doc_concept__arch_process>`.
 
@@ -245,6 +245,8 @@ Based on the *feature architecture*, the concept for the *component architecture
 
 For this step, the following guidance is available: :need:`Feature Architecture Template <gd_temp__arch_feature>`. Additionally, you should consult your project's specific guidelines, e.g., for using the version management tooling or architecture element naming conventions, which should be defined (or linked) in the :need:`Project SW development Plan <wp__sw_development_plan>`.
 
+**Reuse of Existing Components:** For proven-in-use components, the architecture documentation may reference the existing documentation instead of re-creating it. In such cases, a delta analysis documenting deviations from the original context and any changes in application conditions shall be provided.
+
 .. _allocate_component_requirements:
 
 Allocate component requirements to architectural elements
@@ -257,7 +259,9 @@ In this step, the component requirements shall be derived (see :need:`[[title]] 
 Model component architecture
 ----------------------------
 
-According to the architecture design description, the model for the component architecture shall be created. It shall consist of components, real interfaces and real interface operations. Depending on the size of the component, it can also be split into multiple (lower-level) components.
+According to the architecture design description, the model for the component architecture shall be created. It shall consist of components, real interfaces and real interface operations. Depending on the size and complexity of the component, it can also be split into multiple (lower-level) components.
+
+**Tailoring for Component Complexity:** For simple components with fewer than 3 internal sub-components, the internal component architecture decomposition may be omitted. However, the external interface view is always mandatory and must be documented.
 
 .. list-table:: Architectural Elements of the Component Architecture
    :header-rows: 1
@@ -316,3 +320,20 @@ Generally dynamic views are expected in the feature view and the component view 
 - In case of safety-related calls/communication, the error cases shall also be displayed (see the "alt" boxes in the examples).
 - If there is only a small difference between the feature and the component view, one can be omitted, preferably the feature view.
 - If the described feature or components support multiple use cases (e.g., in different life-cycle phases), these should also be described in multiple dynamic views.
+
+**Tailoring for Safety Classification:** For QM (quality management) components, the dynamic architecture view may be omitted if the static view is sufficient to understand the design. However, safety-relevant components (ASIL B or higher) shall always include both static and dynamic views if they are not trivial.
+
+
+.. _platform_scope_responsibilities:
+
+Scope and Responsibilities
+==========================
+
+Since SCORE provides a middleware platform, the following aspects are explicitly **out of scope** for the platform architecture process and shall be addressed by the user of the middleware:
+
+* System-level architecture integrating the middleware into a target ECU
+* Hardware-Software Interface (HSI) design
+* Application-specific scheduling and task allocation beyond what the platform provides
+* System-level safety architecture (e.g., ASIL decomposition at vehicle level)
+
+Architectural views describing integration aspects at the system level (above platform boundary) are the responsibility of the platform user (system integrator). The platform shall provide Assumptions of Use (AoU) documenting architectural constraints that the platform user must satisfy. These responsibilities shall be communicated to platform users via AoUs associated with the platform and feature architectures.
