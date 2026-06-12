@@ -290,3 +290,20 @@ Checks for Architectural Design
    :satisfies: wf__cr_mt_featarch, wf__cr_mt_comparch
 
    It shall be checked if all SW components which are mentioned in the dynamic architecture views are defined in the static architecture.
+
+
+Process Monitoring and Improvement
+----------------------------------
+
+.. gd_req:: Monitor architecture process performance
+   :id: gd_req__arch_process_monitoring
+   :status: valid
+   :tags: manual_prio_1
+   :complies: std_req__aspice_40__gp-324, std_req__aspice_40__iic-03-06
+   :satisfies: wf__cr_mt_featarch, wf__cr_mt_comparch
+
+   Information about the execution and outcomes of the architecture process shall be collected and analyzed to evaluate the effectiveness and adequacy of the defined process.
+
+   Analysis results shall be made available to affected parties and used to identify and trigger continual improvement actions for the architecture process.
+
+   Improvement actions should be handled according to :ref:`pm_monitor_improve_process`.
