@@ -18,8 +18,13 @@ Guideline
 .. gd_guidl:: Change Request Guideline
    :id: gd_guidl__change_change_request
    :status: valid
+   :version: 1
    :tags: change_management
-   :complies: std_req__iso26262__support_8414, std_req__iso26262__support_8432, std_req__iso26262__support_8442, std_req__iso26262__support_8451, std_req__aspice_40__iic-13-07
+   :complies: std_req__iso26262__support_8414[version==1],
+              std_req__iso26262__support_8432[version==1],
+              std_req__iso26262__support_8442[version==1],
+              std_req__iso26262__support_8451[version==1],
+              std_req__aspice_40__iic-13-07[version==1]
 
 
 This document describes the general guidances for Change Management based on the concept which is defined :need:`[[title]]<doc_concept__change_process>`.
@@ -290,7 +295,8 @@ Tailoring
 .. gd_guidl:: Change Management Requirements Tailored
    :id: gd_guidl__change_req_tailored
    :status: valid
-   :complies: std_req__isopas8926__44441, std_req__isopas8926__44442, std_req__isopas8926__44443
+   :version: 1
+   :complies: std_req__isopas8926__44441[version==1], std_req__isopas8926__44442[version==1], std_req__isopas8926__44443[version==1]
 
    This part of the guideline links to all the requirements which are not fulfilled by the
    change management process. Make sure these are tailored out in the change management plan

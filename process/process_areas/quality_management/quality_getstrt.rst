@@ -18,6 +18,7 @@ Getting started
 .. doc_getstrt:: Getting Started on Quality Management
    :id: doc_getstrt__quality_process
    :status: valid
+   :version: 1
    :tags: quality_management
 
 This document describes the steps which need to be done to ensure Quality according to ASPICE 4.0 as used

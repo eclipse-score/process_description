@@ -18,6 +18,20 @@ Component Classification Template
 .. gd_temp:: Component Classification Template
    :id: gd_temp__component_classification
    :status: valid
-   :complies: std_req__isopas8926__441, std_req__isopas8926__4421, std_req__isopas8926__4422, std_req__isopas8926__4423, std_req__isopas8926__4424, std_req__isopas8926__4425, std_req__isopas8926__4426, std_req__isopas8926__4427, std_req__isopas8926__4428, std_req__isopas8926__4429, std_req__isopas8926__44210, std_req__iso26262__software_743, std_req__aspice_40__iic-12-03, std_req__aspice_40__iic-15-07
+   :version: 1
+   :complies: std_req__isopas8926__441[version==1],
+              std_req__isopas8926__4421[version==1],
+              std_req__isopas8926__4422[version==1],
+              std_req__isopas8926__4423[version==1],
+              std_req__isopas8926__4424[version==1],
+              std_req__isopas8926__4425[version==1],
+              std_req__isopas8926__4426[version==1],
+              std_req__isopas8926__4427[version==1],
+              std_req__isopas8926__4428[version==1],
+              std_req__isopas8926__4429[version==1],
+              std_req__isopas8926__44210[version==1],
+              std_req__iso26262__software_743[version==1],
+              std_req__aspice_40__iic-12-03[version==1],
+              std_req__aspice_40__iic-15-07[version==1]
 
    For the content see here: `Component Classification Template <https://eclipse-score.github.io/module_template/main/score/component_example/docs/component_classification.html>`__

@@ -42,3 +42,8 @@ python.toolchain(
 #
 ###############################################################################
 bazel_dep(name = "score_docs_as_code", version = "4.4.1")
+git_override(
+    module_name = "score_docs_as_code",
+    commit = "4090f017f935899b15ea3d0b2649b359ee6a72d8",
+    remote = "https://github.com/eclipse-score/docs-as-code.git",
+)

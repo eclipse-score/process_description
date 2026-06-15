@@ -20,6 +20,7 @@ Traceability concept
 .. doc_concept:: Traceability Concept
    :id: doc_concept__general_traceability
    :status: valid
+   :version: 1
    :tags: process_management
 
 .. attention::

@@ -19,7 +19,27 @@ Safety Analysis Guidelines
 .. gd_guidl:: Safety Analysis (DFA and FMEA) Guideline
    :id: gd_guidl__safety_analysis
    :status: valid
-   :complies: std_req__iso26262__analysis_741, std_req__iso26262__analysis_742, std_req__iso26262__analysis_743, std_req__iso26262__analysis_745, std_req__iso26262__analysis_746, std_req__iso26262__analysis_747, std_req__iso26262__analysis_748, std_req__iso26262__analysis_749, std_req__iso26262__analysis_841, std_req__iso26262__analysis_842, std_req__iso26262__analysis_843, std_req__iso26262__analysis_844, std_req__iso26262__analysis_845, std_req__iso26262__analysis_846, std_req__iso26262__analysis_847, std_req__iso26262__analysis_848, std_req__iso26262__analysis_849, std_req__iso26262__analysis_8410, std_req__isopas8926__44431, std_req__isopas8926__44432
+   :version: 1
+   :complies: std_req__iso26262__analysis_741[version==1],
+              std_req__iso26262__analysis_742[version==1],
+              std_req__iso26262__analysis_743[version==1],
+              std_req__iso26262__analysis_745[version==1],
+              std_req__iso26262__analysis_746[version==1],
+              std_req__iso26262__analysis_747[version==1],
+              std_req__iso26262__analysis_748[version==1],
+              std_req__iso26262__analysis_749[version==1],
+              std_req__iso26262__analysis_841[version==1],
+              std_req__iso26262__analysis_842[version==1],
+              std_req__iso26262__analysis_843[version==1],
+              std_req__iso26262__analysis_844[version==1],
+              std_req__iso26262__analysis_845[version==1],
+              std_req__iso26262__analysis_846[version==1],
+              std_req__iso26262__analysis_847[version==1],
+              std_req__iso26262__analysis_848[version==1],
+              std_req__iso26262__analysis_849[version==1],
+              std_req__iso26262__analysis_8410[version==1],
+              std_req__isopas8926__44431[version==1],
+              std_req__isopas8926__44432[version==1]
 
 This document describes the general guidances for Safety Analysis (DFA and FMEA) based on the concept which is defined :need:`Safety Analysis Concept<doc_concept__safety_analysis>`.
 Use the Platform DFA as an input so that general Safety Mechanisms are only defined once and not in every single Safety Analysis.
@@ -116,6 +136,7 @@ find possible failures. Therefore we need a mitigation.
       :mitigation_issue:
       :sufficient: yes
       :status: valid
+      :version: 1
 
     If the message is not received by the feature it will be unavailable for the user. This has to be detected by the User because
     the feature can't detect if it's not called. This requirement is addressed by the AoU requirement aou_req__Mab__func_call_not_received.
@@ -142,6 +163,7 @@ In the static view of the example could be seen that component 1 uses component 
       :mitigation_issue:
       :sufficient: yes
       :status: valid
+      :version: 1
 
     The feature shall detect and report data corruption.
 
@@ -182,6 +204,7 @@ Additionally in the static view we see Component 4 is a library used by Componen
       :mitigation_issue:
       :sufficient: yes
       :status: valid
+      :version: 1
 
       The allocation of the memory of Component 4 is managed by the memory management.
 
@@ -197,7 +220,11 @@ Tailoring
 .. gd_guidl:: Analysis Tailored
    :id: gd_guidl__analysis_tailored
    :status: valid
-   :complies: std_req__iso26262__analysis_641, std_req__iso26262__analysis_642, std_req__iso26262__analysis_643, std_req__iso26262__analysis_644
+   :version: 1
+   :complies: std_req__iso26262__analysis_641[version==1],
+              std_req__iso26262__analysis_642[version==1],
+              std_req__iso26262__analysis_643[version==1],
+              std_req__iso26262__analysis_644[version==1]
 
    This part of the guideline links to all the requirements which are not fulfilled by the
    safety analysis process. Make sure these are tailored out in the safety/security/quality plans

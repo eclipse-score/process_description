@@ -20,8 +20,42 @@ Safety Management Guideline
 .. gd_guidl:: Safety plan definitions
    :id: gd_guidl__saf_plan_definitions
    :status: valid
-   :complies: std_req__iso26262__management_5426, std_req__iso26262__management_6465, std_req__iso26262__management_6466, std_req__iso26262__management_6467, std_req__iso26262__management_6468, std_req__iso26262__management_6469, std_req__iso26262__management_6422, std_req__iso26262__management_6423, std_req__iso26262__management_6424, std_req__iso26262__management_6451, std_req__iso26262__management_6452, std_req__iso26262__management_6455, std_req__iso26262__management_6457, std_req__iso26262__management_6461, std_req__iso26262__management_6462, std_req__iso26262__management_6463, std_req__iso26262__management_6472, std_req__iso26262__management_6471, std_req__iso26262__management_64111, std_req__iso26262__management_64112, std_req__iso26262__management_64113, std_req__iso26262__management_64114, std_req__iso26262__management_6431, std_req__iso26262__management_6432, std_req__iso26262__management_6433, std_req__iso26262__software_747, std_req__iso26262__support_8441, std_req__iso26262__management_5424, std_req__iso26262__management_5427, std_req__iso26262__management_5432, std_req__iso26262__management_5441, std_req__iso26262__management_5424, std_req__iso26262__management_5427, std_req__iso26262__management_5461,
-              std_req__aspice_40__REU-2-BP1
+   :version: 1
+   :complies: std_req__iso26262__management_5426[version==1],
+              std_req__iso26262__management_6465[version==1],
+              std_req__iso26262__management_6466[version==1],
+              std_req__iso26262__management_6467[version==1],
+              std_req__iso26262__management_6468[version==1],
+              std_req__iso26262__management_6469[version==1],
+              std_req__iso26262__management_6422[version==1],
+              std_req__iso26262__management_6423[version==1],
+              std_req__iso26262__management_6424[version==1],
+              std_req__iso26262__management_6451[version==1],
+              std_req__iso26262__management_6452[version==1],
+              std_req__iso26262__management_6455[version==1],
+              std_req__iso26262__management_6457[version==1],
+              std_req__iso26262__management_6461[version==1],
+              std_req__iso26262__management_6462[version==1],
+              std_req__iso26262__management_6463[version==1],
+              std_req__iso26262__management_6472[version==1],
+              std_req__iso26262__management_6471[version==1],
+              std_req__iso26262__management_64111[version==1],
+              std_req__iso26262__management_64112[version==1],
+              std_req__iso26262__management_64113[version==1],
+              std_req__iso26262__management_64114[version==1],
+              std_req__iso26262__management_6431[version==1],
+              std_req__iso26262__management_6432[version==1],
+              std_req__iso26262__management_6433[version==1],
+              std_req__iso26262__software_747[version==1],
+              std_req__iso26262__support_8441[version==1],
+              std_req__iso26262__management_5424[version==1],
+              std_req__iso26262__management_5427[version==1],
+              std_req__iso26262__management_5432[version==1],
+              std_req__iso26262__management_5441[version==1],
+              std_req__iso26262__management_5424[version==1],
+              std_req__iso26262__management_5427[version==1],
+              std_req__iso26262__management_5461[version==1],
+              std_req__aspice_40__REU-2-BP1[version==1]
 
    **Safety culture:**
 
@@ -165,7 +199,17 @@ Safety Management Guideline
 .. gd_guidl:: Safety manual generation
    :id: gd_guidl__saf_man
    :status: valid
-   :complies: std_req__iso26262__system_6411, std_req__iso26262__system_6412, std_req__iso26262__system_6413, std_req__iso26262__system_6414, std_req__iso26262__system_6421, std_req__iso26262__system_6422, std_req__iso26262__software_641, std_req__iso26262__software_642, std_req__iso26262__software_645, std_req__iso26262__support_12421
+   :version: 1
+   :complies: std_req__iso26262__system_6411[version==1],
+              std_req__iso26262__system_6412[version==1],
+              std_req__iso26262__system_6413[version==1],
+              std_req__iso26262__system_6414[version==1],
+              std_req__iso26262__system_6421[version==1],
+              std_req__iso26262__system_6422[version==1],
+              std_req__iso26262__software_641[version==1],
+              std_req__iso26262__software_642[version==1],
+              std_req__iso26262__software_645[version==1],
+              std_req__iso26262__support_12421[version==1]
 
    | The safety manual collects several workproducts and adds some additional content mainly to instruct the user of
    | a SEooC (in this project on platform and module level) to safely use it in the context of the user's own safety
@@ -176,7 +220,8 @@ Safety Management Guideline
 .. gd_guidl:: Safety package automated generation
    :id: gd_guidl__saf_package
    :status: valid
-   :complies: std_req__iso26262__management_6481, std_req__iso26262__management_6482
+   :version: 1
+   :complies: std_req__iso26262__management_6481[version==1], std_req__iso26262__management_6482[version==1]
 
    | The safety package shall be generated progressively and automatically compiling the work products.
    | One of the checks to perform on the platform safety package is to check completeness of the
@@ -189,10 +234,25 @@ Tailoring
 .. gd_guidl:: Safety Mgt Tailored
    :id: gd_guidl__saf_tailored
    :status: valid
-   :complies: std_req__iso26262__support_12423, std_req__iso26262__management_6453, std_req__iso26262__management_6454, std_req__iso26262__management_6456, std_req__iso26262__management_64610,
-              std_req__iso26262__management_64121, std_req__iso26262__management_64122, std_req__iso26262__management_64123, std_req__iso26262__management_64124, std_req__iso26262__management_64125,
-              std_req__iso26262__management_64126, std_req__iso26262__management_64127, std_req__iso26262__management_64128, std_req__iso26262__management_64129, std_req__iso26262__management_641210,
-              std_req__iso26262__management_641211, std_req__iso26262__management_641212, std_req__iso26262__management_641213
+   :version: 1
+   :complies: std_req__iso26262__support_12423[version==1],
+              std_req__iso26262__management_6453[version==1],
+              std_req__iso26262__management_6454[version==1],
+              std_req__iso26262__management_6456[version==1],
+              std_req__iso26262__management_64610[version==1],
+              std_req__iso26262__management_64121[version==1],
+              std_req__iso26262__management_64122[version==1],
+              std_req__iso26262__management_64123[version==1],
+              std_req__iso26262__management_64124[version==1],
+              std_req__iso26262__management_64125[version==1],
+              std_req__iso26262__management_64126[version==1],
+              std_req__iso26262__management_64127[version==1],
+              std_req__iso26262__management_64128[version==1],
+              std_req__iso26262__management_64129[version==1],
+              std_req__iso26262__management_641210[version==1],
+              std_req__iso26262__management_641211[version==1],
+              std_req__iso26262__management_641212[version==1],
+              std_req__iso26262__management_641213[version==1]
 
    This part of the guideline links to all the requirements which are not fulfilled by the
    safety management process. Make sure these are tailored out in the safety/security/quality plans

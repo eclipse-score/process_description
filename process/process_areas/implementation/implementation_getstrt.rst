@@ -18,6 +18,7 @@ Getting Started
 .. doc_getstrt:: Getting Started on Implementation
    :id: doc_getstrt__imp_getstrt
    :status: valid
+   :version: 1
    :tags: Implementation
 
 This document describes the steps which need to be done to document detailed design and implement the code.

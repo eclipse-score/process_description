@@ -20,7 +20,13 @@ Templates
 .. gd_temp:: Stakeholder Requirements Template
    :id: gd_temp__req_stkh_req
    :status: valid
-   :complies: std_req__iso26262__system_6411, std_req__iso26262__system_6413, std_req__iso26262__support_641, std_req__iso26262__support_6421, std_req__iso26262__support_6425, std_req__aspice_40__SWE-1-BP1
+   :version: 1
+   :complies: std_req__iso26262__system_6411[version==1],
+              std_req__iso26262__system_6413[version==1],
+              std_req__iso26262__support_641[version==1],
+              std_req__iso26262__support_6421[version==1],
+              std_req__iso26262__support_6425[version==1],
+              std_req__aspice_40__SWE-1-BP1[version==1]
 
    See the stakeholder requirements template in the
    `module template documentation <https://eclipse-score.github.io/module_template/stakeholder_requirements_template.html>`__.
@@ -28,7 +34,11 @@ Templates
 .. gd_temp:: Feature Requirements Template
    :id: gd_temp__req_feat_req
    :status: valid
-   :complies: std_req__iso26262__support_641, std_req__iso26262__support_6421, std_req__iso26262__support_6425, std_req__aspice_40__SWE-1-BP1
+   :version: 1
+   :complies: std_req__iso26262__support_641[version==1],
+              std_req__iso26262__support_6421[version==1],
+              std_req__iso26262__support_6425[version==1],
+              std_req__aspice_40__SWE-1-BP1[version==1]
 
    See the feature requirements template in
    :doc:`../../../folder_templates/platform/features/feature_name/requirements/index`
@@ -36,7 +46,12 @@ Templates
 .. gd_temp:: Component Requirements Template
    :id: gd_temp__req_comp_req
    :status: valid
-   :complies: std_req__iso26262__support_641, std_req__iso26262__support_6421, std_req__iso26262__support_6425, std_req__iso26262__support_12425, std_req__aspice_40__SWE-1-BP1
+   :version: 1
+   :complies: std_req__iso26262__support_641[version==1],
+              std_req__iso26262__support_6421[version==1],
+              std_req__iso26262__support_6425[version==1],
+              std_req__iso26262__support_12425[version==1],
+              std_req__aspice_40__SWE-1-BP1[version==1]
 
    See the component requirements template in the
    `module template documentation <https://eclipse-score.github.io/module_template/main/score/component_example/docs/requirements/index.html>`__.
@@ -44,7 +59,11 @@ Templates
 .. gd_temp:: AoU Requirement Template
    :id: gd_temp__req_aou_req
    :status: valid
-   :complies: std_req__iso26262__support_641, std_req__iso26262__support_6421, std_req__iso26262__support_6425, std_req__aspice_40__SWE-1-BP1
+   :version: 1
+   :complies: std_req__iso26262__support_641[version==1],
+              std_req__iso26262__support_6421[version==1],
+              std_req__iso26262__support_6425[version==1],
+              std_req__aspice_40__SWE-1-BP1[version==1]
 
    See the Assumption of Use requirement snippets in the
    `module template documentation <https://eclipse-score.github.io/module_template/aou_requirements_template.html>`__.
@@ -53,7 +72,8 @@ Templates
 .. gd_temp:: Tool Requirements Template
    :id: gd_temp__req_tool_req
    :status: valid
-   :complies: std_req__iso26262__support_641, std_req__iso26262__support_6421, std_req__iso26262__support_6425
+   :version: 1
+   :complies: std_req__iso26262__support_641[version==1], std_req__iso26262__support_6421[version==1], std_req__iso26262__support_6425[version==1]
 
    .. code-block:: rst
 
@@ -63,12 +83,14 @@ Templates
          :safety: <QM|ASIL_B>
          :derived_from: <link to process req id>
          :status: <valid|invalid>
+         :version: 1
          :implemented: <YES|PARTIAL|NO>
 
 .. gd_temp:: Requirement Formulation Template
    :id: gd_temp__req_formulation
    :status: valid
-   :complies: std_req__iso26262__support_641, std_req__iso26262__support_6421, std_req__iso26262__support_6425
+   :version: 1
+   :complies: std_req__iso26262__support_641[version==1], std_req__iso26262__support_6421[version==1], std_req__iso26262__support_6425[version==1]
 
    Requirements shall be specified according to the following schema:
 

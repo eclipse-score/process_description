@@ -18,6 +18,7 @@
 .. std_req:: 16-00 Repository
    :id: std_req__aspice_40__iic-16-00
    :status: valid
+   :version: 1
 
    Repository may have the following characteristics:
 
@@ -30,6 +31,7 @@
 .. std_req:: 16-03 Configuration management system
    :id: std_req__aspice_40__iic-16-03
    :status: valid
+   :version: 1
 
    Configuration management system may have the following characteristics:
 
@@ -42,6 +44,7 @@
 .. std_req:: 16-06 Process repository
    :id: std_req__aspice_40__iic-16-06
    :status: valid
+   :version: 1
 
    Process repository may have the following characteristics:
 
@@ -51,6 +54,7 @@
 .. std_req:: 16-50 Organizational structure
    :id: std_req__aspice_40__iic-16-50
    :status: valid
+   :version: 1
 
    Organizational structure may have the following characteristics:
 
@@ -60,6 +64,7 @@
 .. std_req:: 16-52 ML data management system
    :id: std_req__aspice_40__iic-16-52
    :status: valid
+   :version: 1
 
    - The ML data management system is part of the configuration management system (see 16-03) and
    - Supports data management activities like data collection, description, ingestion, exploration, profiling, labeling/annotation, selection, structuring and cleansing

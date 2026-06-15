@@ -18,7 +18,8 @@ Roles
 .. role:: Safety Manager
    :id: rl__safety_manager
    :status: valid
-   :contains: rl__committer
+   :version: 1
+   :contains: rl__committer[version==1]
 
    The safety manager is responsible for making sure that ISO26262 is complied to in the project. He/She shall lead and monitor the safety relevant activities of the project.
 
@@ -72,6 +73,7 @@ Roles
 .. role:: Safety External Auditor
    :id: rl__safety_external_auditor 
    :status: valid
+   :version: 1
 
    Required skills, Knowledge of standards, Experience
 

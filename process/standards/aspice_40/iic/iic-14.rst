@@ -18,6 +18,7 @@
 .. std_req:: 14-01 Change history
    :id: std_req__aspice_40__iic-14-01
    :status: valid
+   :version: 1
 
    Change history may have the following characteristics:
 
@@ -31,6 +32,7 @@
 .. std_req:: 14-02 Corrective action
    :id: std_req__aspice_40__iic-14-02
    :status: valid
+   :version: 1
 
    Corrective action may have the following characteristics:
 
@@ -44,6 +46,7 @@
 .. std_req:: 14-10 Work package
    :id: std_req__aspice_40__iic-14-10
    :status: valid
+   :version: 1
 
    Work package may have the following characteristics:
 
@@ -62,6 +65,7 @@
 .. std_req:: 14-50 Stakeholder groups list
    :id: std_req__aspice_40__iic-14-50
    :status: valid
+   :version: 1
 
    Stakeholder groups list may have the following characteristics:
 
@@ -74,6 +78,7 @@
 .. std_req:: 14-53 Role Assignment
    :id: std_req__aspice_40__iic-14-53
    :status: valid
+   :version: 1
 
    Role Assignment may have the following characteristics:
 
@@ -85,6 +90,7 @@
 .. std_req:: 14-55 Software Bill of materials
    :id: std_req__aspice_40__iic-14-55
    :status: valid
+   :version: 1
 
    Software Bill of materials may have the following characteristics:
 

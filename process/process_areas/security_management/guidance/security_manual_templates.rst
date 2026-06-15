@@ -17,13 +17,15 @@ Security Manual Templates
 .. gd_temp:: Platform Security Manual Template
    :id: gd_temp__platform_security_manual
    :status: valid
-   :complies: std_req__isosae21434__development_10421, std_req__isosae21434__development_10422
+   :version: 1
+   :complies: std_req__isosae21434__development_10421[version==1], std_req__isosae21434__development_10422[version==1]
 
    For the content see here: :need:`doc__platform_security_manual`
 
 .. gd_temp:: Module Security Manual Template
    :id: gd_temp__module_security_manual
    :status: valid
-   :complies: std_req__isosae21434__development_10421, std_req__isosae21434__development_10422
+   :version: 1
+   :complies: std_req__isosae21434__development_10421[version==1], std_req__isosae21434__development_10422[version==1]
 
    For the content see here: `Module Security Manual Template <https://eclipse-score.github.io/module_template/main/docs/manuals/security_manual.html>`__

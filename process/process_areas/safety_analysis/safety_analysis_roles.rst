@@ -18,7 +18,8 @@ Roles
 .. role:: Safety Engineer
    :id: rl__safety_engineer
    :status: valid
-   :contains: rl__committer
+   :version: 1
+   :contains: rl__committer[version==1]
 
    The Safety Engineer is responsible for the Safety Analysis (FMEA and DFA) in the project. There might be several analysis
    on different levels (e.g., Platform DFA, Feature and Component FMEA/DFA).

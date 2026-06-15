@@ -18,6 +18,7 @@ Concept Description
 .. doc_concept:: Architecture Process
    :id: doc_concept__arch_process
    :status: valid
+   :version: 1
 
 In this section a concept for the architecture design will be discussed.
 
@@ -431,6 +432,7 @@ The following section links to the rendered feature example that is now maintain
       :security: YES
       :safety: ASIL_B
       :status: invalid
+      :version: 1
       :includes: logic_arc_int__feature_name__interface_name
       :consists_of: comp__component_name
 
@@ -439,6 +441,7 @@ The following section links to the rendered feature example that is now maintain
       :security: YES
       :safety: QM
       :status: valid
+      :version: 1
       :includes: logic_arc_int__example_feature__archex_logical_interface_1, logic_arc_int__example_feature__archex_logical_interface_2
       :fulfils: feat_req__example_feature__archdes_example_req
       :belongs_to: feat__example_feature
@@ -462,6 +465,7 @@ The rendered component examples are maintained in the
    .. comp_arc_sta:: Static View - Rendered Example
       :id: comp_arc_sta__example_feature__component_getstrt
       :status: valid
+      :version: 1
       :safety: ASIL_B
       :security: NO
       :fulfils: comp_req__example_feature__archex_example_req
@@ -523,6 +527,7 @@ To make *needuml* work we have to replace the *need()* call with a different fun
    .. comp_arc_sta:: Component Architecture Static View - Rendered Example Manually Edited
       :id: comp_arc_sta__example_feature__component_manual_getstrt
       :status: valid
+      :version: 1
       :safety: ASIL_B
       :security: NO
       :uses: logic_arc_int__example_feature__archex_logical_interface_1

@@ -19,9 +19,10 @@ Platform Security Analysis
 .. document:: Platform Security Analysis
    :id: doc__platform_security_analysis
    :status: draft
+   :version: 1
    :safety: ASIL_B
    :security: YES
-   :realizes: wp__platform_security_analysis
+   :realizes: wp__platform_security_analysis[version==1]
    :tags: template
 
 

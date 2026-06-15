@@ -18,6 +18,7 @@
 .. std_req:: 06-04 Training material
    :id: std_req__aspice_40__iic-06-04
    :status: valid
+   :version: 1
 
    Training material may have the following characteristics:
 
@@ -28,6 +29,7 @@
 .. std_req:: 06-50 Integration Sequence Instruction
    :id: std_req__aspice_40__iic-06-50
    :status: valid
+   :version: 1
 
    Integration Sequence Instruction may have the following characteristics:
 
@@ -41,6 +43,7 @@
 .. std_req:: 06-51 Tailoring guideline
    :id: std_req__aspice_40__iic-06-51
    :status: valid
+   :version: 1
 
    Tailoring guideline may have the following characteristics:
 
@@ -53,6 +56,7 @@
 .. std_req:: 06-52 Backup and recovery mechanism information
    :id: std_req__aspice_40__iic-06-52
    :status: valid
+   :version: 1
 
    Backup and recovery mechanism information may have the following characteristics:
 

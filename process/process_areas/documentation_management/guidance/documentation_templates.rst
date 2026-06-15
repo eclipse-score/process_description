@@ -20,7 +20,8 @@ Documentation Templates
 .. gd_temp:: Documentation Template
    :id: gd_temp__documentation
    :status: valid
-   :complies: std_req__iso26262__support_1045
+   :version: 1
+   :complies: std_req__iso26262__support_1045[version==1]
 
    | .. document:: <Document Name>
    |    :id: doc__<Document Name>

@@ -22,14 +22,23 @@ For a detailed explanation of workflows and their role within the process model,
 .. workflow:: Create Change Request
    :id: wf__change_create_cr
    :status: valid
+   :version: 1
    :tags: change_management
-   :responsible: rl__contributor
-   :approved_by: rl__architecture_community
-   :supported_by: rl__platform_team
-   :input: wp__policies, wp__issue_track_system, wp__feat_request, wp__cmpt_request
-   :output: wp__issue_track_system, wp__feat_request, wp__cmpt_request
-   :contains: gd_guidl__change_change_request, gd_temp__change_feature_request, gd_temp__change_component_request, gd_temp__change_impact_analysis, gd_temp__component_classification, gd_temp__change_decision_record
-   :has: doc_concept__change_process, doc_getstrt__change_process
+   :responsible: rl__contributor[version==1]
+   :approved_by: rl__architecture_community[version==1]
+   :supported_by: rl__platform_team[version==1]
+   :input: wp__policies[version==1],
+           wp__issue_track_system[version==1],
+           wp__feat_request[version==1],
+           wp__cmpt_request[version==1]
+   :output: wp__issue_track_system[version==1], wp__feat_request[version==1], wp__cmpt_request[version==1]
+   :contains: gd_guidl__change_change_request[version==1],
+              gd_temp__change_feature_request[version==1],
+              gd_temp__change_component_request[version==1],
+              gd_temp__change_impact_analysis[version==1],
+              gd_temp__component_classification[version==1],
+              gd_temp__change_decision_record[version==1]
+   :has: doc_concept__change_process[version==1], doc_getstrt__change_process[version==1]
 
    The Change Request is created.
 
@@ -41,14 +50,23 @@ For a detailed explanation of workflows and their role within the process model,
 .. workflow:: Analyze Change Request
    :id: wf__change_analyze_cr
    :status: valid
+   :version: 1
    :tags: change_management
-   :responsible: rl__architecture_community
-   :approved_by: rl__project_lead
-   :supported_by: rl__platform_team
-   :input: wp__policies, wp__issue_track_system, wp__feat_request, wp__cmpt_request
-   :output: wp__issue_track_system, wp__feat_request, wp__cmpt_request
-   :contains: gd_guidl__change_change_request, gd_temp__change_feature_request, gd_temp__change_component_request, gd_temp__change_impact_analysis, gd_temp__component_classification, gd_temp__change_decision_record
-   :has: doc_concept__change_process, doc_getstrt__change_process
+   :responsible: rl__architecture_community[version==1]
+   :approved_by: rl__project_lead[version==1]
+   :supported_by: rl__platform_team[version==1]
+   :input: wp__policies[version==1],
+           wp__issue_track_system[version==1],
+           wp__feat_request[version==1],
+           wp__cmpt_request[version==1]
+   :output: wp__issue_track_system[version==1], wp__feat_request[version==1], wp__cmpt_request[version==1]
+   :contains: gd_guidl__change_change_request[version==1],
+              gd_temp__change_feature_request[version==1],
+              gd_temp__change_component_request[version==1],
+              gd_temp__change_impact_analysis[version==1],
+              gd_temp__component_classification[version==1],
+              gd_temp__change_decision_record[version==1]
+   :has: doc_concept__change_process[version==1], doc_getstrt__change_process[version==1]
 
    The Change Request is analyzed.
 
@@ -64,14 +82,20 @@ For a detailed explanation of workflows and their role within the process model,
 .. workflow:: Implement and Monitor Change Request
    :id: wf__change_implement_monitor_cr
    :status: valid
+   :version: 1
    :tags: change_management
-   :responsible: rl__delivery_team, rl__platform_team
-   :approved_by:  rl__delivery_team, rl__platform_team
-   :supported_by: rl__project_lead
-   :input: wp__issue_track_system, wp__feat_request, wp__cmpt_request
-   :output: wp__issue_track_system, wp__feat_request, wp__cmpt_request
-   :contains: gd_guidl__change_change_request, gd_temp__change_feature_request, gd_temp__change_component_request, gd_temp__change_impact_analysis, gd_temp__component_classification, gd_temp__change_decision_record
-   :has: doc_concept__change_process, doc_getstrt__change_process
+   :responsible: rl__delivery_team[version==1], rl__platform_team[version==1]
+   :approved_by: rl__delivery_team[version==1], rl__platform_team[version==1]
+   :supported_by: rl__project_lead[version==1]
+   :input: wp__issue_track_system[version==1], wp__feat_request[version==1], wp__cmpt_request[version==1]
+   :output: wp__issue_track_system[version==1], wp__feat_request[version==1], wp__cmpt_request[version==1]
+   :contains: gd_guidl__change_change_request[version==1],
+              gd_temp__change_feature_request[version==1],
+              gd_temp__change_component_request[version==1],
+              gd_temp__change_impact_analysis[version==1],
+              gd_temp__component_classification[version==1],
+              gd_temp__change_decision_record[version==1]
+   :has: doc_concept__change_process[version==1], doc_getstrt__change_process[version==1]
 
    The Change Request is implemented and monitored.
 
@@ -97,14 +121,20 @@ For a detailed explanation of workflows and their role within the process model,
 .. workflow:: Close Change Request
    :id: wf__change_close_cr
    :status: valid
+   :version: 1
    :tags: change_management
-   :responsible: rl__delivery_team, rl__platform_team
-   :approved_by: rl__delivery_team, rl__platform_team
-   :supported_by: rl__project_lead
-   :input: wp__issue_track_system, wp__feat_request, wp__cmpt_request
-   :output: wp__issue_track_system, wp__feat_request, wp__cmpt_request
-   :contains: gd_guidl__change_change_request, gd_temp__change_feature_request, gd_temp__change_component_request, gd_temp__change_impact_analysis, gd_temp__component_classification, gd_temp__change_decision_record
-   :has: doc_concept__change_process, doc_getstrt__change_process
+   :responsible: rl__delivery_team[version==1], rl__platform_team[version==1]
+   :approved_by: rl__delivery_team[version==1], rl__platform_team[version==1]
+   :supported_by: rl__project_lead[version==1]
+   :input: wp__issue_track_system[version==1], wp__feat_request[version==1], wp__cmpt_request[version==1]
+   :output: wp__issue_track_system[version==1], wp__feat_request[version==1], wp__cmpt_request[version==1]
+   :contains: gd_guidl__change_change_request[version==1],
+              gd_temp__change_feature_request[version==1],
+              gd_temp__change_component_request[version==1],
+              gd_temp__change_impact_analysis[version==1],
+              gd_temp__component_classification[version==1],
+              gd_temp__change_decision_record[version==1]
+   :has: doc_concept__change_process[version==1], doc_getstrt__change_process[version==1]
 
    The Change Request is closed.
 

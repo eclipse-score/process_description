@@ -18,6 +18,7 @@ Getting Started
 .. doc_getstrt:: Getting started on Safety Management
    :id: doc_getstrt__safety_management_process
    :status: valid
+   :version: 1
 
 This document describes the steps which need to be done to ensure Functional Safety according to ISO 26262 as used standard in the project.
 

@@ -18,6 +18,7 @@ Concept Description
 .. doc_concept:: Configuration Management Concept
    :id: doc_concept__configuration_process
    :status: valid
+   :version: 1
 
 In this section a concept for the configuration management will be discussed.
 Inputs for this concepts are mainly the requirements of ISO26262 "Part 8: Supporting Processes"

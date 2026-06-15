@@ -20,6 +20,7 @@ Building blocks concept
 .. doc_concept:: Building Block Concept
    :id: doc_concept__general_building_blocks
    :status: valid
+   :version: 1
    :tags: process_management
 
 .. attention::

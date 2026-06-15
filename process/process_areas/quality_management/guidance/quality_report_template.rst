@@ -20,7 +20,20 @@ Template Quality Report
 .. gd_temp:: Quality Report Template
    :id: gd_temp__qlm_report
    :status: valid
-   :complies: std_req__iso26262__management_5423, std_req__aspice_40__SUP-1-BP1, std_req__aspice_40__SUP-1-BP2, std_req__aspice_40__SUP-1-BP3, std_req__aspice_40__SUP-1-BP4, std_req__aspice_40__SUP-1-BP7, std_req__aspice_40__PIM-3-BP1, std_req__aspice_40__PIM-3-BP2, std_req__aspice_40__PIM-3-BP3, std_req__aspice_40__PIM-3-BP4, std_req__aspice_40__PIM-3-BP5, std_req__aspice_40__PIM-3-BP6, std_req__aspice_40__PIM-3-BP7
+   :version: 1
+   :complies: std_req__iso26262__management_5423[version==1],
+              std_req__aspice_40__SUP-1-BP1[version==1],
+              std_req__aspice_40__SUP-1-BP2[version==1],
+              std_req__aspice_40__SUP-1-BP3[version==1],
+              std_req__aspice_40__SUP-1-BP4[version==1],
+              std_req__aspice_40__SUP-1-BP7[version==1],
+              std_req__aspice_40__PIM-3-BP1[version==1],
+              std_req__aspice_40__PIM-3-BP2[version==1],
+              std_req__aspice_40__PIM-3-BP3[version==1],
+              std_req__aspice_40__PIM-3-BP4[version==1],
+              std_req__aspice_40__PIM-3-BP5[version==1],
+              std_req__aspice_40__PIM-3-BP6[version==1],
+              std_req__aspice_40__PIM-3-BP7[version==1]
 
    This document implements :need:`wp__qms_report` and based on the :need:`wp__qms_plan`. It summarizes
    the results of the quality related activities. It shall be referred in the :need:`wp__platform_sw_release_note`

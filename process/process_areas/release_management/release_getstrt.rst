@@ -18,6 +18,7 @@ Getting Started
 .. doc_getstrt:: Getting Started on Release Management
    :id: doc_getstrt__release_process
    :status: valid
+   :version: 1
    :tags: release_mgt
 
 This document describes the steps to create a release of the SW and collaterals (test, documentation).

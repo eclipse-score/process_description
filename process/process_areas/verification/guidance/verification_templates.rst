@@ -20,9 +20,14 @@ Verification Templates
 .. gd_temp:: Verification Specification Template
    :id: gd_temp__verification_specification
    :status: valid
-   :complies: std_req__iso26262__software_942, std_req__iso26262__software_943,
-              std_req__iso26262__software_1042, std_req__iso26262__software_1043, std_req__iso26262__software_1044,
-              std_req__iso26262__support_9421, std_req__iso26262__support_9422
+   :version: 1
+   :complies: std_req__iso26262__software_942[version==1],
+              std_req__iso26262__software_943[version==1],
+              std_req__iso26262__software_1042[version==1],
+              std_req__iso26262__software_1043[version==1],
+              std_req__iso26262__software_1044[version==1],
+              std_req__iso26262__support_9421[version==1],
+              std_req__iso26262__support_9422[version==1]
 
    The sections below are seen as typical ways when writing tests and their specification.
    Their usage differs based on the selected testing framework and the implementation language of the component(s).

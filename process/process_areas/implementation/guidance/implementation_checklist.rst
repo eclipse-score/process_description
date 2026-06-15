@@ -19,8 +19,15 @@ Implementation Inspection Checklist
 .. gd_chklst:: Implementation Inspection Checklist Template
     :id: gd_chklst__impl_inspection_checklist
     :status: valid
+    :version: 1
     :tags: implementation
-    :complies: std_req__iso26262__software_543, std_req__iso26262__software_941, std_req__iso26262__software_942, std_req__iso26262__software_748, std_req__aspice_40__SWE-3-BP5, std_req__aspice_40__iic-13-51, std_req__aspice_40__iic-13-52
+    :complies: std_req__iso26262__software_543[version==1],
+               std_req__iso26262__software_941[version==1],
+               std_req__iso26262__software_942[version==1],
+               std_req__iso26262__software_748[version==1],
+               std_req__aspice_40__SWE-3-BP5[version==1],
+               std_req__aspice_40__iic-13-51[version==1],
+               std_req__aspice_40__iic-13-52[version==1]
 
     For the content see here:
 

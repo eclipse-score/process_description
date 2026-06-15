@@ -35,7 +35,8 @@ Base practices
 .. std_req:: MLE.3.BP1: Specify ML training and validation approach
    :id: std_req__aspice_40__MLE-3-BP1
    :status: valid
-   :links: std_req__aspice_40__iic-08-65
+   :version: 1
+   :links: std_req__aspice_40__iic-08-65[version==1]
 
    Specify an approach which supports the training and validation of the ML model to meet the defined ML requirements. The ML training and validation approach includes
 
@@ -59,7 +60,8 @@ Base practices
 .. std_req:: MLE.3.BP2: Create ML training and validation data set
    :id: std_req__aspice_40__MLE-3-BP2
    :status: valid
-   :links: std_req__aspice_40__iic-03-51
+   :version: 1
+   :links: std_req__aspice_40__iic-03-51[version==1]
 
    Select data from the ML data collection provided by SUP.11 and assign them to the data set for training and validation of the ML model according to the specified ML training and validation approach.
 
@@ -74,14 +76,16 @@ Base practices
 .. std_req:: MLE.3.BP3: Create and optimize ML model
    :id: std_req__aspice_40__MLE-3-BP3
    :status: valid
-   :links: std_req__aspice_40__iic-01-53,std_req__aspice_40__iic-01-54
+   :version: 1
+   :links: std_req__aspice_40__iic-01-53[version==1], std_req__aspice_40__iic-01-54[version==1]
 
    Create the ML model according to the ML architecture and train it, using the identified ML training and validation data set according to the ML training and validation approach to meet the defined ML requirements, and training and validation exit criteria.
 
 .. std_req:: MLE.3.BP4: Ensure consistency and establish bidirectional traceability
    :id: std_req__aspice_40__MLE-3-BP4
    :status: valid
-   :links: std_req__aspice_40__iic-13-51
+   :version: 1
+   :links: std_req__aspice_40__iic-13-51[version==1]
 
    Ensure consistency and establish bidirectional traceability between the ML training and validation data set and the ML data requirements.
 
@@ -92,7 +96,8 @@ Base practices
 .. std_req:: MLE.3.BP5: Summarize and communicate agreed trained ML model
    :id: std_req__aspice_40__MLE-3-BP5
    :status: valid
-   :links: std_req__aspice_40__iic-13-52
+   :version: 1
+   :links: std_req__aspice_40__iic-13-52[version==1]
 
    Summarize the results of the optimization and inform all affected parties about the agreed trained ML model.
 

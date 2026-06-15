@@ -19,6 +19,7 @@ Quality Work Product Review Guideline
 .. gd_guidl:: Quality work product review
    :id: gd_guidl__wp_review
    :status: valid
+   :version: 1
 
 Purpose
 -------

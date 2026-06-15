@@ -56,7 +56,8 @@ Base practices
 .. std_req:: SWE.5.BP1: Specify software integration verification measures
    :id: std_req__aspice_40__SWE-5-BP1
    :status: valid
-   :links: std_req__aspice_40__iic-08-60
+   :version: 1
+   :links: std_req__aspice_40__iic-08-60[version==1]
 
    Specify verification
    measures, based on a defined sequence and preconditions for the integration of software
@@ -82,7 +83,8 @@ Base practices
 .. std_req:: SWE.5.BP2: Specify verification measures for verifying software component behavior
    :id: std_req__aspice_40__SWE-5-BP2
    :status: valid
-   :links: std_req__aspice_40__iic-08-60
+   :version: 1
+   :links: std_req__aspice_40__iic-08-60[version==1]
 
    Specify verification measures for software component verification against the defined software
    components’ behavior and their interfaces in the software architecture, including
@@ -100,7 +102,8 @@ Base practices
 .. std_req:: SWE.5.BP3: Select verification measures
    :id: std_req__aspice_40__SWE-5-BP3
    :status: valid
-   :links: std_req__aspice_40__iic-08-58
+   :version: 1
+   :links: std_req__aspice_40__iic-08-58[version==1]
 
    Document the selection of integration verification
    measures for each integration step considering selection criteria including criteria for regression
@@ -118,7 +121,8 @@ Base practices
 .. std_req:: SWE.5.BP4: Integrate software elements and perform integration verification
    :id: std_req__aspice_40__SWE-5-BP4
    :status: valid
-   :links: std_req__aspice_40__iic-06-50;std_req__aspice_40__iic-01-03;std_req__aspice_40__iic-01-50
+   :version: 1
+   :links: std_req__aspice_40__iic-06-50[version==1], std_req__aspice_40__iic-01-03[version==1], std_req__aspice_40__iic-01-50[version==1]
 
    Integrate the
    software elements until the software is fully integrated according to the specified interfaces and
@@ -146,7 +150,8 @@ Base practices
 .. std_req:: SWE.5.BP5: Perform software component verification
    :id: std_req__aspice_40__SWE-5-BP5
    :status: valid
-   :links: std_req__aspice_40__iic-03-50;std_req__aspice_40__iic-15-52
+   :version: 1
+   :links: std_req__aspice_40__iic-03-50[version==1], std_req__aspice_40__iic-15-52[version==1]
 
    Perform the selected verification
    measures for verifying software component behavior. Record the verification results including
@@ -160,7 +165,8 @@ Base practices
 .. std_req:: SWE.5.BP6: Ensure consistency and establish bidirectional traceability
    :id: std_req__aspice_40__SWE-5-BP6
    :status: valid
-   :links: std_req__aspice_40__iic-13-51
+   :version: 1
+   :links: std_req__aspice_40__iic-13-51[version==1]
 
    Ensure
    consistency and establish bidirectional traceability between verification measures and the static
@@ -177,7 +183,8 @@ Base practices
 .. std_req:: SWE.5.BP7: Summarize and communicate results
    :id: std_req__aspice_40__SWE-5-BP7
    :status: valid
-   :links: std_req__aspice_40__iic-13-52
+   :version: 1
+   :links: std_req__aspice_40__iic-13-52[version==1]
 
    Summarize the software component
    verification and the software integration verification results and communicate them to all affected

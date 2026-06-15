@@ -20,12 +20,16 @@ Safety Management Workflows
 .. workflow:: Create/Maintain Safety Plan
    :id: wf__cr_mt_safety_plan
    :status: valid
-   :responsible: rl__safety_manager
-   :approved_by: rl__project_lead
-   :input: wp__platform_mgmt, wp__issue_track_system, wp__sw_component_class, wp__tailoring_work_products
-   :output: wp__module_safety_plan, wp__platform_safety_plan, wp__safety_tailoring
-   :contains: gd_guidl__saf_plan_definitions, gd_temp__feature_safety_wp, gd_temp__module_safety_plan
-   :has: doc_concept__safety_management_process, doc_getstrt__safety_management_process
+   :version: 1
+   :responsible: rl__safety_manager[version==1]
+   :approved_by: rl__project_lead[version==1]
+   :input: wp__platform_mgmt[version==1],
+           wp__issue_track_system[version==1],
+           wp__sw_component_class[version==1],
+           wp__tailoring_work_products[version==1]
+   :output: wp__module_safety_plan[version==1], wp__platform_safety_plan[version==1], wp__safety_tailoring[version==1]
+   :contains: gd_guidl__saf_plan_definitions[version==1], gd_temp__feature_safety_wp[version==1], gd_temp__module_safety_plan[version==1]
+   :has: doc_concept__safety_management_process[version==1], doc_getstrt__safety_management_process[version==1]
 
    | The Safety Manager is responsible for the planning and coordination of the safety activities for the platform.
    | The Safety Manager creates and maintains the safety plan.
@@ -34,24 +38,29 @@ Safety Management Workflows
 .. workflow:: Create Component Classification
    :id: wf__cr_comp_class
    :status: valid
-   :responsible: rl__committer
-   :approved_by: rl__safety_manager
-   :input: wp__platform_mgmt, wp__issue_track_system
-   :output: wp__sw_component_class
-   :contains: gd_guidl__component_classification, gd_temp__component_classification
-   :has: doc_concept__safety_management_process, doc_getstrt__safety_management_process
+   :version: 1
+   :responsible: rl__committer[version==1]
+   :approved_by: rl__safety_manager[version==1]
+   :input: wp__platform_mgmt[version==1], wp__issue_track_system[version==1]
+   :output: wp__sw_component_class[version==1]
+   :contains: gd_guidl__component_classification[version==1], gd_temp__component_classification[version==1]
+   :has: doc_concept__safety_management_process[version==1], doc_getstrt__safety_management_process[version==1]
 
    | The Safety Manager shall approve the OSS component classification performed by an expert on this component.
 
 .. workflow:: Create/Maintain Safety Package
    :id: wf__cr_mt_safety_package
    :status: valid
-   :responsible: rl__safety_engineer
-   :approved_by: rl__safety_manager
-   :input: wp__module_safety_plan, wp__platform_safety_plan, wp__issue_track_system, wp__safety_tailoring
-   :output: wp__module_safety_package, wp__platform_safety_package
-   :contains: gd_guidl__saf_package, gd_temp__feature_safety_wp, gd_temp__module_safety_plan
-   :has: doc_concept__safety_management_process, doc_getstrt__safety_management_process
+   :version: 1
+   :responsible: rl__safety_engineer[version==1]
+   :approved_by: rl__safety_manager[version==1]
+   :input: wp__module_safety_plan[version==1],
+           wp__platform_safety_plan[version==1],
+           wp__issue_track_system[version==1],
+           wp__safety_tailoring[version==1]
+   :output: wp__module_safety_package[version==1], wp__platform_safety_package[version==1]
+   :contains: gd_guidl__saf_package[version==1], gd_temp__feature_safety_wp[version==1], gd_temp__module_safety_plan[version==1]
+   :has: doc_concept__safety_management_process[version==1], doc_getstrt__safety_management_process[version==1]
 
    | The Safety Manager in the project is NOT responsible to provide the argument for the achievement of functional safety.
    | But the Safety Manager creates and maintains the safety package in the sense of a collection of safety related work products.
@@ -62,12 +71,16 @@ Safety Management Workflows
 .. workflow:: Perform Safety Audit
    :id: wf__p_fs_audit
    :status: valid
-   :responsible: rl__safety_external_auditor
-   :approved_by: rl__safety_manager
-   :input: wp__module_safety_plan, wp__platform_safety_plan, wp__module_safety_package, wp__platform_safety_package
-   :output: wp__audit_report
-   :contains: gd_guidl__saf_plan_definitions
-   :has: doc_concept__safety_management_process, doc_getstrt__safety_management_process
+   :version: 1
+   :responsible: rl__safety_external_auditor[version==1]
+   :approved_by: rl__safety_manager[version==1]
+   :input: wp__module_safety_plan[version==1],
+           wp__platform_safety_plan[version==1],
+           wp__module_safety_package[version==1],
+           wp__platform_safety_package[version==1]
+   :output: wp__audit_report[version==1]
+   :contains: gd_guidl__saf_plan_definitions[version==1]
+   :has: doc_concept__safety_management_process[version==1], doc_getstrt__safety_management_process[version==1]
 
    | The external auditor is responsible to perform a safety audit.
    | The Safety Manager and the process community shall support the external auditor during this.
@@ -76,12 +89,16 @@ Safety Management Workflows
 .. workflow:: Perform Formal Reviews
    :id: wf__p_formal_rv
    :status: valid
-   :responsible: rl__safety_manager
-   :approved_by: rl__safety_manager
-   :input: wp__module_safety_plan, wp__platform_safety_plan, wp__module_safety_package, wp__platform_safety_package
-   :output: wp__fdr_reports
-   :contains: gd_guidl__saf_plan_definitions, gd_chklst__safety_plan, gd_chklst__safety_package
-   :has: doc_concept__safety_management_process, doc_getstrt__safety_management_process
+   :version: 1
+   :responsible: rl__safety_manager[version==1]
+   :approved_by: rl__safety_manager[version==1]
+   :input: wp__module_safety_plan[version==1],
+           wp__platform_safety_plan[version==1],
+           wp__module_safety_package[version==1],
+           wp__platform_safety_package[version==1]
+   :output: wp__fdr_reports[version==1]
+   :contains: gd_guidl__saf_plan_definitions[version==1], gd_chklst__safety_plan[version==1], gd_chklst__safety_package[version==1]
+   :has: doc_concept__safety_management_process[version==1], doc_getstrt__safety_management_process[version==1]
 
    | An "external" safety manager is responsible the formal reviews on safety plan, safety package and safety analysis.
    | In this context "external" means that the person is not the Safety Manager of the platform/module (i.e. created or approved the respective work product).
@@ -92,12 +109,22 @@ Safety Management Workflows
 .. workflow:: Create/Maintain Safety Manual
    :id: wf__cr_mt_safety_manual
    :status: valid
-   :responsible: rl__safety_engineer
-   :approved_by: rl__safety_manager
-   :input: wp__requirements_feat_aou, wp__requirements_feat, wp__feature_arch, wp__feature_fmea, wp__feature_dfa, wp__requirements_comp_aou, wp__requirements_comp, wp__component_arch, wp__sw_component_fmea, wp__sw_component_dfa
-   :output: wp__platform_safety_manual, wp__module_safety_manual
-   :contains: gd_guidl__saf_man, gd_temp__safety_manual
-   :has: doc_concept__safety_management_process, doc_getstrt__safety_management_process
+   :version: 1
+   :responsible: rl__safety_engineer[version==1]
+   :approved_by: rl__safety_manager[version==1]
+   :input: wp__requirements_feat_aou[version==1],
+           wp__requirements_feat[version==1],
+           wp__feature_arch[version==1],
+           wp__feature_fmea[version==1],
+           wp__feature_dfa[version==1],
+           wp__requirements_comp_aou[version==1],
+           wp__requirements_comp[version==1],
+           wp__component_arch[version==1],
+           wp__sw_component_fmea[version==1],
+           wp__sw_component_dfa[version==1]
+   :output: wp__platform_safety_manual[version==1], wp__module_safety_manual[version==1]
+   :contains: gd_guidl__saf_man[version==1], gd_temp__safety_manual[version==1]
+   :has: doc_concept__safety_management_process[version==1], doc_getstrt__safety_management_process[version==1]
 
    | The Safety Engineer collects the necessary input for the safety manuals on platform and module level and documents it.
    | The safety manager makes sure all items are in valid state for a release of the safety manual.
@@ -106,12 +133,18 @@ Safety Management Workflows
 .. workflow:: Monitor/Verify Safety
    :id: wf__mr_vy_safety
    :status: valid
-   :responsible: rl__safety_manager
-   :approved_by: rl__project_lead
-   :input: wp__module_safety_plan, wp__platform_safety_plan, wp__module_safety_package, wp__platform_safety_package, wp__audit_report, wp__fdr_reports
-   :output: wp__issue_track_system, wp__module_sw_release_note, wp__platform_sw_release_note
-   :contains: gd_guidl__saf_plan_definitions
-   :has: doc_concept__safety_management_process, doc_getstrt__safety_management_process
+   :version: 1
+   :responsible: rl__safety_manager[version==1]
+   :approved_by: rl__project_lead[version==1]
+   :input: wp__module_safety_plan[version==1],
+           wp__platform_safety_plan[version==1],
+           wp__module_safety_package[version==1],
+           wp__platform_safety_package[version==1],
+           wp__audit_report[version==1],
+           wp__fdr_reports[version==1]
+   :output: wp__issue_track_system[version==1], wp__module_sw_release_note[version==1], wp__platform_sw_release_note[version==1]
+   :contains: gd_guidl__saf_plan_definitions[version==1]
+   :has: doc_concept__safety_management_process[version==1], doc_getstrt__safety_management_process[version==1]
 
    | The Safety Manager is responsible for the monitoring of the safety activities against the safety plan.
    | The Safety Manager is responsible to verify, that the preconditions for the release, which are  part of the release notes, are fulfilled.
@@ -120,12 +153,16 @@ Safety Management Workflows
 .. workflow:: Impact Analysis of Change Request
    :id: wf__impact_analysis_change_request
    :status: valid
-   :responsible: rl__safety_manager
-   :approved_by: rl__project_lead
-   :input: wp__platform_mgmt, wp__issue_track_system, wp__sw_component_class, wp__safety_tailoring
-   :output: wp__issue_track_system
-   :contains: gd_temp__change_component_request, gd_temp__change_decision_record, gd_temp__change_impact_analysis
-   :has: doc_concept__safety_management_process, doc_getstrt__safety_management_process
+   :version: 1
+   :responsible: rl__safety_manager[version==1]
+   :approved_by: rl__project_lead[version==1]
+   :input: wp__platform_mgmt[version==1],
+           wp__issue_track_system[version==1],
+           wp__sw_component_class[version==1],
+           wp__safety_tailoring[version==1]
+   :output: wp__issue_track_system[version==1]
+   :contains: gd_temp__change_component_request[version==1], gd_temp__change_decision_record[version==1], gd_temp__change_impact_analysis[version==1]
+   :has: doc_concept__safety_management_process[version==1], doc_getstrt__safety_management_process[version==1]
 
    | In accordance with ISO 26262-2:2018 section 5.2.2.3 d/e (Impact Analysis), the project implements a dedicated workflow for analyzing change requests.
    | The Safety Manager is responsible for ensuring that each change request is analyzed for its impact on safety, as required by ISO 26262-2:2018.

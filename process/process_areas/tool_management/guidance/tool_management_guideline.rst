@@ -21,7 +21,8 @@ Tool Qualification
 .. gd_guidl:: Tool Qualification
    :id: gd_guidl__tool_qualification
    :status: valid
-   :complies: std_req__iso26262__support_11491, std_req__iso26262__support_11492
+   :version: 1
+   :complies: std_req__iso26262__support_11491[version==1], std_req__iso26262__support_11492[version==1]
 
    | The tool qualification shall be based on the method validation of the software tool.
 
@@ -31,8 +32,14 @@ Tailoring
 .. gd_guidl:: Tool Requirements Tailored
    :id: gd_guidl__tool_req_tailored
    :status: valid
-   :complies: std_req__iso26262__support_11471, std_req__iso26262__support_11472, std_req__iso26262__support_11473, std_req__iso26262__support_11474,
-              std_req__iso26262__support_11481, std_req__iso26262__support_11482, std_req__iso26262__support_11483
+   :version: 1
+   :complies: std_req__iso26262__support_11471[version==1],
+              std_req__iso26262__support_11472[version==1],
+              std_req__iso26262__support_11473[version==1],
+              std_req__iso26262__support_11474[version==1],
+              std_req__iso26262__support_11481[version==1],
+              std_req__iso26262__support_11482[version==1],
+              std_req__iso26262__support_11483[version==1]
 
 
    This part of the guideline links to all the requirements which are not fulfilled by the

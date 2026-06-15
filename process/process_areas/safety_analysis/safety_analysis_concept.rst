@@ -18,6 +18,7 @@ Concept Description
 .. doc_concept:: Safety Analysis Concept
    :id: doc_concept__safety_analysis
    :status: valid
+   :version: 1
    :tags: safety_analysis
 
 This section discusses a concept for Safety Analysis. As methods for Safety Analysis are used DFA (Dependent Failure Analysis)

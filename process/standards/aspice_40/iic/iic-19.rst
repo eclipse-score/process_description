@@ -18,6 +18,7 @@
 .. std_req:: 19-01 Process performance strategy
    :id: std_req__aspice_40__iic-19-01
    :status: valid
+   :version: 1
 
    Process performance strategy may have the following characteristics:
 
@@ -33,6 +34,7 @@
 .. std_req:: 19-50 ML data quality approach
    :id: std_req__aspice_40__iic-19-50
    :status: valid
+   :version: 1
 
    - The ML data quality approach
    - Defines Quality criteria (see 18-07) e.g., the relevant data sources, reliability and consistency of labelling, completeness against ML data requirements

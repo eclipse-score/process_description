@@ -17,8 +17,13 @@ Security Management Work Products
 .. workproduct:: Platform Security Plan
    :id: wp__platform_security_plan
    :status: valid
+   :version: 1
    :tags: doc_lifecycle_model_2
-   :complies: std_wp__isosae21434__prj_management_651, std_wp__isosae21434__maintenance_13331, std_wp__isosae21434__continual_8331, std_wp__isosae21434__continual_8332, std_wp__isosae21434__prj_management_653
+   :complies: std_wp__isosae21434__prj_management_651[version==1],
+              std_wp__isosae21434__maintenance_13331[version==1],
+              std_wp__isosae21434__continual_8331[version==1],
+              std_wp__isosae21434__continual_8332[version==1],
+              std_wp__isosae21434__prj_management_653[version==1]
 
    Plan to manage and guide the execution of the security activities of a project including dates, milestones, tasks, deliverables, responsibilities (including the Security Manager appointment)  and resources.
 
@@ -35,8 +40,9 @@ Security Management Work Products
 .. workproduct:: Module Security Plan
    :id: wp__module_security_plan
    :status: valid
+   :version: 1
    :tags: doc_lifecycle_model_2
-   :complies: std_wp__isosae21434__prj_management_651
+   :complies: std_wp__isosae21434__prj_management_651[version==1]
 
    Plan to manage and guide the execution of the security activities of a project including dates, milestones, tasks, deliverables, responsibilities (including the Security Manager appointment) and resources.
 
@@ -51,8 +57,9 @@ Security Management Work Products
 .. workproduct:: Platform Security Package
    :id: wp__platform_security_package
    :status: valid
+   :version: 1
    :tags: doc_lifecycle_model_2
-   :complies: std_wp__isosae21434__prj_management_652
+   :complies: std_wp__isosae21434__prj_management_652[version==1]
 
    Compiled security relevant work products. For platform OoC.
 
@@ -61,8 +68,9 @@ Security Management Work Products
 .. workproduct:: Module Security Package
    :id: wp__module_security_package
    :status: valid
+   :version: 1
    :tags: doc_lifecycle_model_2
-   :complies: std_wp__isosae21434__prj_management_652
+   :complies: std_wp__isosae21434__prj_management_652[version==1]
 
    Compiled security relevant work products. For Module OoC.
 
@@ -71,8 +79,9 @@ Security Management Work Products
 .. workproduct:: Formal Document Review Reports
    :id: wp__fdr_reports_security
    :status: valid
+   :version: 1
    :tags: doc_lifecycle_model_2
-   :complies: std_wp__isosae21434__prj_management_654
+   :complies: std_wp__isosae21434__prj_management_654[version==1]
 
    Review that a work product provides sufficient and convincing evidence of their contribution to the achievement of security considering the corresponding objectives and requirements of ISO SAE 21434.
 
@@ -85,8 +94,9 @@ Security Management Work Products
 .. workproduct:: Process Security Audit Report
    :id: wp__audit_report_security
    :status: valid
+   :version: 1
    :tags: doc_lifecycle_model_2
-   :complies: std_wp__isosae21434__org_management_555
+   :complies: std_wp__isosae21434__org_management_555[version==1]
 
    Examination of an implemented process with regard to the process objectives and that those match the ISO SAE 21434.
    (Currently tailored out, needs discussion)
@@ -94,8 +104,9 @@ Security Management Work Products
 .. workproduct:: Platform Security Manual
    :id: wp__platform_security_manual
    :status: valid
+   :version: 1
    :tags: doc_lifecycle_model_2
-   :complies: std_wp__isosae21434__prj_management_654
+   :complies: std_wp__isosae21434__prj_management_654[version==1]
 
    The Security Manual describes:
 
@@ -113,8 +124,9 @@ Security Management Work Products
 .. workproduct:: Module Security Manual
    :id: wp__module_security_manual
    :status: valid
+   :version: 1
    :tags: doc_lifecycle_model_2
-   :complies: std_wp__isosae21434__prj_management_654
+   :complies: std_wp__isosae21434__prj_management_654[version==1]
 
    The Security Manual describes:
 
@@ -132,8 +144,9 @@ Security Management Work Products
 .. workproduct:: Platform Software Bill of Material (SBOM)
    :id: wp__sw_platform_sbom
    :status: valid
+   :version: 1
    :tags: doc_lifecycle_model_2
-   :complies: std_wp__isosae21434__continual_8631
+   :complies: std_wp__isosae21434__continual_8631[version==1]
 
    Platform Software Bill of Material
    - comprehensive inventory of software components to ensure security, integrity, and compliance.
@@ -141,8 +154,9 @@ Security Management Work Products
 .. workproduct:: Module Software Bill of Material (SBOM)
    :id: wp__sw_module_sbom
    :status: valid
+   :version: 1
    :tags: doc_lifecycle_model_2
-   :complies: std_wp__isosae21434__continual_8631
+   :complies: std_wp__isosae21434__continual_8631[version==1]
 
    Module Software Bill of Material
    - comprehensive inventory of software components to ensure security, integrity, and compliance.

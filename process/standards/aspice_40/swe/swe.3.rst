@@ -43,7 +43,8 @@ Base practices
 .. std_req:: SWE.3.BP1: Specify the static aspects of the detailed design
    :id: std_req__aspice_40__SWE-3-BP1
    :status: valid
-   :links: std_req__aspice_40__iic-04-05;std_req__aspice_40__iic-11-05
+   :version: 1
+   :links: std_req__aspice_40__iic-04-05[version==1], std_req__aspice_40__iic-11-05[version==1]
 
    For each software component
    specify the behavior of its software units, their static structure and relationships, their interfaces
@@ -86,7 +87,8 @@ Base practices
 .. std_req:: SWE.3.BP2: Specify dynamic aspects of the detailed design
    :id: std_req__aspice_40__SWE-3-BP2
    :status: valid
-   :links: std_req__aspice_40__iic-04-05;std_req__aspice_40__iic-11-05
+   :version: 1
+   :links: std_req__aspice_40__iic-04-05[version==1], std_req__aspice_40__iic-11-05[version==1]
 
    Specify and document the
    dynamic aspects of the detailed design with respect to the software architecture, including the
@@ -101,7 +103,8 @@ Base practices
 .. std_req:: SWE.3.BP3: Develop software units
    :id: std_req__aspice_40__SWE-3-BP3
    :status: valid
-   :links: std_req__aspice_40__iic-11-05
+   :version: 1
+   :links: std_req__aspice_40__iic-11-05[version==1]
 
    Develop and document the software units consistent
    with the detailed design, and according to coding principles.
@@ -116,7 +119,8 @@ Base practices
 .. std_req:: SWE.3.BP4: Ensure consistency and establish bidirectional traceability
    :id: std_req__aspice_40__SWE-3-BP4
    :status: valid
-   :links: std_req__aspice_40__iic-13-51
+   :version: 1
+   :links: std_req__aspice_40__iic-13-51[version==1]
 
    Ensure
    consistency and establish bidirectional traceability between the software detailed design and the
@@ -144,7 +148,8 @@ Base practices
 .. std_req:: SWE.3.BP5: Communicate agreed software detailed design and developed software units
    :id: std_req__aspice_40__SWE-3-BP5
    :status: valid
-   :links: std_req__aspice_40__iic-13-52
+   :version: 1
+   :links: std_req__aspice_40__iic-13-52[version==1]
 
    Communicate the agreed software detailed design and developed software units to all
    affected parties.

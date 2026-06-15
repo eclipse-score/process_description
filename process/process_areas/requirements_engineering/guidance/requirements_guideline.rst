@@ -18,8 +18,12 @@ Guideline
 .. gd_guidl:: Requirements Guideline
    :id: gd_guidl__req_engineering
    :status: valid
-   :complies: std_req__isopas8926__44421, std_req__isopas8926__44422, std_req__isopas8926__44423,
-              std_req__iso26262__software_app_c_41, std_req__iso26262__software_app_c_43
+   :version: 1
+   :complies: std_req__isopas8926__44421[version==1],
+              std_req__isopas8926__44422[version==1],
+              std_req__isopas8926__44423[version==1],
+              std_req__iso26262__software_app_c_41[version==1],
+              std_req__iso26262__software_app_c_43[version==1]
 
 This document describes the general guidances for requirements based on the concept which is defined in :need:`[[title]]<doc_concept__req_process>`.
 
@@ -285,7 +289,13 @@ Tailoring
 .. gd_guidl:: Requirements Tailored
    :id: gd_guidl__req_tailored
    :status: valid
-   :complies: std_req__iso26262__system_6423, std_req__iso26262__system_6424, std_req__iso26262__system_6425, std_req__iso26262__software_643, std_req__iso26262__software_644, std_req__iso26262__software_646
+   :version: 1
+   :complies: std_req__iso26262__system_6423[version==1],
+              std_req__iso26262__system_6424[version==1],
+              std_req__iso26262__system_6425[version==1],
+              std_req__iso26262__software_643[version==1],
+              std_req__iso26262__software_644[version==1],
+              std_req__iso26262__software_646[version==1]
 
    This part of the guideline links to all the requirements which are not fulfilled by the
    requirements engineering process. Make sure these are tailored out in the safety/security/quality plans

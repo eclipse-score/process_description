@@ -19,8 +19,9 @@ Roles
 .. role:: Security Manager
    :id: rl__security_manager
    :status: valid
+   :version: 1
    :tags: security_management
-   :contains: rl__committer
+   :contains: rl__committer[version==1]
 
    The Security Manager is responsible for making sure that ISO SAE 21434 is complied
    to in the project. The Security Manager shall lead and monitor the security relevant
@@ -69,6 +70,7 @@ Roles
 .. role:: Security External Auditor
    :id: rl__security_external_auditor
    :status: valid
+   :version: 1
 
    Required skills, Knowledge of security standards (ISO 21434), Experience
 

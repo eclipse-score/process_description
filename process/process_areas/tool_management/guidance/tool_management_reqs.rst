@@ -25,18 +25,20 @@ Tool Verification Report Attributes
 .. gd_req:: Tool attribute: UID
    :id: gd_req__tool_attr_uid
    :status: valid
+   :version: 1
    :tags: done_automation, tool_management, attribute, mandatory
-   :satisfies: wf__tool_create_tool_verification_report
-   :complies: std_req__iso26262__support_1141, std_req__aspice_40__SUP-8-BP1
+   :satisfies: wf__tool_create_tool_verification_report[version==1]
+   :complies: std_req__iso26262__support_1141[version==1], std_req__aspice_40__SUP-8-BP1[version==1]
 
    Each Tool Verification Report shall have a unique ID.
 
 .. gd_req:: Tool attribute: status
    :id: gd_req__tool_attr_status
    :status: valid
+   :version: 1
    :tags: prio_1_automation, tool_management, attribute, mandatory
-   :satisfies: wf__tool_create_tool_verification_report
-   :complies: std_req__iso26262__support_1141, std_req__aspice_40__SUP-8-BP1
+   :satisfies: wf__tool_create_tool_verification_report[version==1]
+   :complies: std_req__iso26262__support_1141[version==1], std_req__aspice_40__SUP-8-BP1[version==1]
 
    Each Tool Verification Report shall have a status.
 
@@ -49,9 +51,10 @@ Tool Verification Report Attributes
 .. gd_req:: Tool attribute:: version
    :id: gd_req__tool_attr_version
    :status: valid
+   :version: 1
    :tags: manual_prio_1, tool_management, attribute, mandatory
-   :satisfies: wf__tool_create_tool_verification_report
-   :complies: std_req__iso26262__support_1141, std_req__aspice_40__SUP-8-BP1
+   :satisfies: wf__tool_create_tool_verification_report[version==1]
+   :complies: std_req__iso26262__support_1141[version==1], std_req__aspice_40__SUP-8-BP1[version==1]
 
    Each Tool Verification Report shall document the tool version it applies to:
 
@@ -60,9 +63,10 @@ Tool Verification Report Attributes
 .. gd_req:: Tool attribute:: tcl
    :id: gd_req__tool_attr_tcl
    :status: valid
+   :version: 1
    :tags: manual_prio_1, tool_management, attribute, mandatory
-   :satisfies: wf__tool_create_tool_verification_report
-   :complies: std_req__iso26262__support_1141, std_req__aspice_40__SUP-8-BP1
+   :satisfies: wf__tool_create_tool_verification_report[version==1]
+   :complies: std_req__iso26262__support_1141[version==1], std_req__aspice_40__SUP-8-BP1[version==1]
 
    Each Tool Verification Report shall have a tool confidence level:
 
@@ -72,9 +76,10 @@ Tool Verification Report Attributes
 .. gd_req:: Tool attribute:: safety affected
    :id: gd_req__tool_attr_safety_affected
    :status: valid
+   :version: 1
    :tags: manual_prio_1, tool_management, attribute, mandatory
-   :satisfies: wf__tool_create_tool_verification_report
-   :complies: std_req__iso26262__support_1141, std_req__aspice_40__SUP-8-BP1
+   :satisfies: wf__tool_create_tool_verification_report[version==1]
+   :complies: std_req__iso26262__support_1141[version==1], std_req__aspice_40__SUP-8-BP1[version==1]
 
    Each Tool Verification Report shall have a safety relevance identifier:
 
@@ -84,9 +89,10 @@ Tool Verification Report Attributes
 .. gd_req:: Tool attribute:: security affected
    :id: gd_req__tool_attr_security_affected
    :status: valid
+   :version: 1
    :tags: manual_prio_2, tool_management, attribute, mandatory
-   :satisfies: wf__tool_create_tool_verification_report
-   :complies: std_req__isosae21434__org_management_5451, std_req__aspice_40__SUP-8-BP1
+   :satisfies: wf__tool_create_tool_verification_report[version==1]
+   :complies: std_req__isosae21434__org_management_5451[version==1], std_req__aspice_40__SUP-8-BP1[version==1]
 
    Each Tool Verification Report shall have a security relevance identifier:
 
@@ -100,9 +106,10 @@ Tool Verification Report Checks
 .. gd_req:: Tool Management mandatory attributes provided
    :id: gd_req__tool_check_mandatory
    :status: valid
+   :version: 1
    :tags: prio_1_automation, tool_management, attribute, check
-   :satisfies: wf__tool_create_tool_verification_report
-   :complies: std_req__aspice_40__SUP-8-BP1
+   :satisfies: wf__tool_create_tool_verification_report[version==1]
+   :complies: std_req__aspice_40__SUP-8-BP1[version==1]
 
    It shall be checked if all mandatory attributes for each Tool Verification Report
    is provided by the user. For all requirements following attributes shall be mandatory:

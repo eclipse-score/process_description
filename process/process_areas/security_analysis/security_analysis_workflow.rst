@@ -26,14 +26,15 @@ Security analysis is used as an umbrella term.
 .. workflow:: Analyze Platform
    :id: wf__analyse_sec_platform_featarch
    :status: valid
+   :version: 1
    :tags: security_analysis
-   :responsible: rl__security_engineer
-   :approved_by: rl__security_manager
-   :supported_by: rl__contributor, rl__committer, rl__safety_manager
-   :input: wp__requirements_feat, wp__feature_arch, wp__issue_track_system
-   :output: wp__platform_security_analysis
-   :contains: gd_guidl__sec_ana_threat_scenarios, gd_temp__plat_threat_scenario
-   :has: doc_concept__security_analysis, doc_getstrt__security_analysis
+   :responsible: rl__security_engineer[version==1]
+   :approved_by: rl__security_manager[version==1]
+   :supported_by: rl__contributor[version==1], rl__committer[version==1], rl__safety_manager[version==1]
+   :input: wp__requirements_feat[version==1], wp__feature_arch[version==1], wp__issue_track_system[version==1]
+   :output: wp__platform_security_analysis[version==1]
+   :contains: gd_guidl__sec_ana_threat_scenarios[version==1], gd_temp__plat_threat_scenario[version==1]
+   :has: doc_concept__security_analysis[version==1], doc_getstrt__security_analysis[version==1]
 
    | With a platform Security Analysis the potential attack surfaces of features shall
    | be analyzed. It shall be used as an input for all other analysis.
@@ -42,56 +43,77 @@ Security analysis is used as an umbrella term.
 .. workflow:: Analyse Feature Architecture
    :id: wf__analyse_sec_featarch
    :status: valid
+   :version: 1
    :tags: security_analysis
-   :responsible: rl__security_engineer
-   :approved_by: rl__security_manager
-   :supported_by: rl__contributor, rl__committer, rl__safety_manager
-   :input: wp__requirements_feat, wp__feature_arch, wp__issue_track_system
-   :output: wp__feature_security_analysis
-   :contains: gd_guidl__sec_ana_threat_scenarios, gd_temp__feat_threat_scenario, gd_guidl__threat_models_stride, gd_temp__feat_sec_ana_threat
-   :has: doc_concept__security_analysis, doc_getstrt__security_analysis
+   :responsible: rl__security_engineer[version==1]
+   :approved_by: rl__security_manager[version==1]
+   :supported_by: rl__contributor[version==1], rl__committer[version==1], rl__safety_manager[version==1]
+   :input: wp__requirements_feat[version==1], wp__feature_arch[version==1], wp__issue_track_system[version==1]
+   :output: wp__feature_security_analysis[version==1]
+   :contains: gd_guidl__sec_ana_threat_scenarios[version==1],
+              gd_temp__feat_threat_scenario[version==1],
+              gd_guidl__threat_models_stride[version==1],
+              gd_temp__feat_sec_ana_threat[version==1]
+   :has: doc_concept__security_analysis[version==1], doc_getstrt__security_analysis[version==1]
 
    | The Security Analysis for the feature is executed.
 
 .. workflow:: Analyse Component Architecture
    :id: wf__analyse_sec_comparch
    :status: valid
+   :version: 1
    :tags: security_analysis
-   :responsible: rl__security_engineer
-   :approved_by: rl__security_manager
-   :supported_by: rl__contributor, rl__committer, rl__safety_manager
-   :input:  wp__requirements_comp, wp__component_arch, wp__issue_track_system
-   :output: wp__sw_component_security_analysis
-   :contains: gd_guidl__sec_ana_threat_scenarios, gd_temp__comp_threat_scenario, gd_guidl__threat_models_stride, gd_temp__comp_sec_ana_threat
-   :has: doc_concept__security_analysis, doc_getstrt__security_analysis
+   :responsible: rl__security_engineer[version==1]
+   :approved_by: rl__security_manager[version==1]
+   :supported_by: rl__contributor[version==1], rl__committer[version==1], rl__safety_manager[version==1]
+   :input: wp__requirements_comp[version==1], wp__component_arch[version==1], wp__issue_track_system[version==1]
+   :output: wp__sw_component_security_analysis[version==1]
+   :contains: gd_guidl__sec_ana_threat_scenarios[version==1],
+              gd_temp__comp_threat_scenario[version==1],
+              gd_guidl__threat_models_stride[version==1],
+              gd_temp__comp_sec_ana_threat[version==1]
+   :has: doc_concept__security_analysis[version==1], doc_getstrt__security_analysis[version==1]
 
    | The Security Analysis for the component is executed.
 
 .. workflow:: Monitor Security Analysis
    :id: wf__mr_sec_analyses
    :status: valid
+   :version: 1
    :tags: security_analysis
-   :responsible: rl__security_engineer
-   :approved_by: rl__security_manager
-   :supported_by: rl__contributor, rl__committer, rl__safety_manager
-   :input: wp__platform_security_analysis, wp__feature_security_analysis, wp__sw_component_security_analysis
-   :output: wp__verification_platform_ver_report, wp__issue_track_system, wp__verification_module_ver_report
-   :contains: gd_guidl__sec_ana_threat_scenarios, gd_temp__feat_threat_scenario, gd_temp__comp_threat_scenario, gd_guidl__threat_models_stride, gd_temp__feat_sec_ana_threat, gd_temp__comp_sec_ana_threat
-   :has: doc_concept__security_analysis, doc_getstrt__security_analysis
+   :responsible: rl__security_engineer[version==1]
+   :approved_by: rl__security_manager[version==1]
+   :supported_by: rl__contributor[version==1], rl__committer[version==1], rl__safety_manager[version==1]
+   :input: wp__platform_security_analysis[version==1], wp__feature_security_analysis[version==1], wp__sw_component_security_analysis[version==1]
+   :output: wp__verification_platform_ver_report[version==1], wp__issue_track_system[version==1], wp__verification_module_ver_report[version==1]
+   :contains: gd_guidl__sec_ana_threat_scenarios[version==1],
+              gd_temp__feat_threat_scenario[version==1],
+              gd_temp__comp_threat_scenario[version==1],
+              gd_guidl__threat_models_stride[version==1],
+              gd_temp__feat_sec_ana_threat[version==1],
+              gd_temp__comp_sec_ana_threat[version==1]
+   :has: doc_concept__security_analysis[version==1], doc_getstrt__security_analysis[version==1]
 
    | The Security Analyses are monitored.
 
 .. workflow:: Verify Security Analysis
    :id: wf__vy_sec_analyses
    :status: valid
+   :version: 1
    :tags: security_analysis
-   :responsible: rl__security_engineer
-   :approved_by: rl__security_manager
-   :supported_by: rl__contributor, rl__committer, rl__safety_manager
-   :input: wp__platform_security_analysis, wp__feature_security_analysis, wp__sw_component_security_analysis
-   :output: wp__verification_platform_ver_report, wp__verification_module_ver_report
-   :contains: gd_guidl__sec_ana_threat_scenarios, gd_temp__feat_threat_scenario, gd_temp__comp_threat_scenario, gd_guidl__threat_models_stride, gd_temp__feat_sec_ana_threat, gd_temp__comp_sec_ana_threat, gd_chklst__security_analysis
-   :has: doc_concept__security_analysis, doc_getstrt__security_analysis
+   :responsible: rl__security_engineer[version==1]
+   :approved_by: rl__security_manager[version==1]
+   :supported_by: rl__contributor[version==1], rl__committer[version==1], rl__safety_manager[version==1]
+   :input: wp__platform_security_analysis[version==1], wp__feature_security_analysis[version==1], wp__sw_component_security_analysis[version==1]
+   :output: wp__verification_platform_ver_report[version==1], wp__verification_module_ver_report[version==1]
+   :contains: gd_guidl__sec_ana_threat_scenarios[version==1],
+              gd_temp__feat_threat_scenario[version==1],
+              gd_temp__comp_threat_scenario[version==1],
+              gd_guidl__threat_models_stride[version==1],
+              gd_temp__feat_sec_ana_threat[version==1],
+              gd_temp__comp_sec_ana_threat[version==1],
+              gd_chklst__security_analysis[version==1]
+   :has: doc_concept__security_analysis[version==1], doc_getstrt__security_analysis[version==1]
 
    | The Security Analyses are verified. The verification criteria is that it can be
    | proven that the security requirements for functions and the corresponding security

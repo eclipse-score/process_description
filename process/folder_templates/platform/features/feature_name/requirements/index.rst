@@ -18,9 +18,10 @@ Feature Requirements
 .. document:: [Your Feature Name] Requirements
    :id: doc__feature_name_requirements
    :status: draft
+   :version: 1
    :safety: ASIL_B
    :security: NO
-   :realizes: wp__requirements_feat
+   :realizes: wp__requirements_feat[version==1]
    :tags: template
 
 .. attention::
@@ -45,6 +46,7 @@ Feature Requirements
       :valid_from: v0.0.1
       :valid_until: v1.0.1
       :status: invalid
+      :version: 1
       :satisfied_by: feat__feature_name
 
       The Feature shall do xyz to the user to bring him to this condition at this time.
@@ -59,6 +61,7 @@ Feature Requirements
       :security: NO
       :safety: ASIL_B
       :status: invalid
+      :version: 1
 
       The Feature User shall do xyz to use the feature safely.
 

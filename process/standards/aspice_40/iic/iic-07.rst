@@ -18,6 +18,7 @@
 .. std_req:: 07-04 Process metric
    :id: std_req__aspice_40__iic-07-04
    :status: valid
+   :version: 1
 
    Process metric may have the following characteristics:
 
@@ -32,6 +33,7 @@
 .. std_req:: 07-05 Project metric
    :id: std_req__aspice_40__iic-07-05
    :status: valid
+   :version: 1
 
    Project metric may have the following characteristics:
 
@@ -50,6 +52,7 @@
 .. std_req:: 07-06 Quality metric
    :id: std_req__aspice_40__iic-07-06
    :status: valid
+   :version: 1
 
    Quality metric may have the following characteristics:
 
@@ -69,6 +72,7 @@
 .. std_req:: 07-08 Service level metric
    :id: std_req__aspice_40__iic-07-08
    :status: valid
+   :version: 1
 
    Service level metric may have the following characteristics:
 
@@ -85,6 +89,7 @@
 .. std_req:: 07-51 Measurement result
    :id: std_req__aspice_40__iic-07-51
    :status: valid
+   :version: 1
 
    Measurement result may have the following characteristics:
 
@@ -124,6 +129,7 @@
 .. std_req:: 07-61 Quantitative process metric
    :id: std_req__aspice_40__iic-07-61
    :status: valid
+   :version: 1
 
    Quantitative process metric may have the following characteristics:
 
@@ -136,6 +142,7 @@
 .. std_req:: 07-62 Process analysis technique
    :id: std_req__aspice_40__iic-07-62
    :status: valid
+   :version: 1
 
    Process analysis technique may have the following characteristics:
 
@@ -145,6 +152,7 @@
 .. std_req:: 07-63 Process control limits
    :id: std_req__aspice_40__iic-07-63
    :status: valid
+   :version: 1
 
    Process control limits may have the following characteristics:
 
@@ -153,6 +161,7 @@
 .. std_req:: 07-64 Process measurement data
    :id: std_req__aspice_40__iic-07-64
    :status: valid
+   :version: 1
 
    Process measurement data may have the following characteristics:
 

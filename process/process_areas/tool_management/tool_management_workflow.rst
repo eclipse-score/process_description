@@ -22,13 +22,14 @@ For a detailed explanation of workflows and their role within the process model,
 .. workflow:: Create Tool Verification Report
    :id: wf__tool_create_tool_verification_report
    :status: valid
-   :responsible: rl__contributor
-   :approved_by: rl__committer
-   :supported_by: rl__safety_manager, rl__security_manager, rl__infrastructure_tooling_community
-   :input: wp__issue_track_system, wp__tlm_plan
-   :output: wp__tool_verification_report
-   :contains: gd_temp__tool_management_verif_rpt_template, gd_chklst__tool_cr_review
-   :has: doc_concept__tool_process, doc_getstrt__tool_process
+   :version: 1
+   :responsible: rl__contributor[version==1]
+   :approved_by: rl__committer[version==1]
+   :supported_by: rl__safety_manager[version==1], rl__security_manager[version==1], rl__infrastructure_tooling_community[version==1]
+   :input: wp__issue_track_system[version==1], wp__tlm_plan[version==1]
+   :output: wp__tool_verification_report[version==1]
+   :contains: gd_temp__tool_management_verif_rpt_template[version==1], gd_chklst__tool_cr_review[version==1]
+   :has: doc_concept__tool_process[version==1], doc_getstrt__tool_process[version==1]
 
    The Tool Verification Report is created during identification of a tool in status
    draft.
@@ -39,13 +40,18 @@ For a detailed explanation of workflows and their role within the process model,
 .. workflow:: Evaluate Tool and Update Tool Verification Report
    :id: wf__tool_evaluate_tool
    :status: valid
-   :responsible: rl__contributor
-   :approved_by: rl__committer, rl__safety_manager, rl__security_manager
-   :supported_by: rl__infrastructure_tooling_community
-   :input: wp__tool_verification_report, wp__requirements_stkh, wp__requirements_feat, wp__requirements_comp, wp__requirements_proc_tool
-   :output: wp__tool_verification_report
-   :contains: gd_temp__tool_management_verif_rpt_template, gd_chklst__tool_cr_review
-   :has: doc_concept__tool_process, doc_getstrt__tool_process
+   :version: 1
+   :responsible: rl__contributor[version==1]
+   :approved_by: rl__committer[version==1], rl__safety_manager[version==1], rl__security_manager[version==1]
+   :supported_by: rl__infrastructure_tooling_community[version==1]
+   :input: wp__tool_verification_report[version==1],
+           wp__requirements_stkh[version==1],
+           wp__requirements_feat[version==1],
+           wp__requirements_comp[version==1],
+           wp__requirements_proc_tool[version==1]
+   :output: wp__tool_verification_report[version==1]
+   :contains: gd_temp__tool_management_verif_rpt_template[version==1], gd_chklst__tool_cr_review[version==1]
+   :has: doc_concept__tool_process[version==1], doc_getstrt__tool_process[version==1]
 
    Each identified tool is evaluated. During evaluation the Tool Verification Report
    is updated accordingly. Stakeholder, feature, component, and process/tool
@@ -62,13 +68,14 @@ For a detailed explanation of workflows and their role within the process model,
 .. workflow:: Qualify Tool and Update Tool Verification Report
    :id: wf__tool_qualify_tool
    :status: valid
-   :responsible: rl__contributor
-   :approved_by: rl__committer, rl__safety_manager, rl__security_manager
-   :supported_by: rl__infrastructure_tooling_community
-   :input: wp__tool_verification_report
-   :output: wp__tool_verification_report
-   :contains: gd_temp__tool_management_verif_rpt_template, gd_chklst__tool_cr_review
-   :has: doc_concept__tool_process, doc_getstrt__tool_process
+   :version: 1
+   :responsible: rl__contributor[version==1]
+   :approved_by: rl__committer[version==1], rl__safety_manager[version==1], rl__security_manager[version==1]
+   :supported_by: rl__infrastructure_tooling_community[version==1]
+   :input: wp__tool_verification_report[version==1]
+   :output: wp__tool_verification_report[version==1]
+   :contains: gd_temp__tool_management_verif_rpt_template[version==1], gd_chklst__tool_cr_review[version==1]
+   :has: doc_concept__tool_process[version==1], doc_getstrt__tool_process[version==1]
 
    The identified tool is qualified, if applicable. During qualification the Tool
    Verification Report is updated accordingly.
@@ -78,13 +85,14 @@ For a detailed explanation of workflows and their role within the process model,
 .. workflow:: Approve Tool Verification Report
    :id: wf__tool_approve_tool_verification_report
    :status: valid
-   :responsible: rl__safety_manager, rl__security_manager
-   :approved_by: rl__project_lead
-   :supported_by: rl__infrastructure_tooling_community
-   :input: wp__tool_verification_report
-   :output: wp__tool_verification_report
-   :contains: gd_temp__tool_management_verif_rpt_template, gd_chklst__tool_cr_review
-   :has: doc_concept__tool_process, doc_getstrt__tool_process
+   :version: 1
+   :responsible: rl__safety_manager[version==1], rl__security_manager[version==1]
+   :approved_by: rl__project_lead[version==1]
+   :supported_by: rl__infrastructure_tooling_community[version==1]
+   :input: wp__tool_verification_report[version==1]
+   :output: wp__tool_verification_report[version==1]
+   :contains: gd_temp__tool_management_verif_rpt_template[version==1], gd_chklst__tool_cr_review[version==1]
+   :has: doc_concept__tool_process[version==1], doc_getstrt__tool_process[version==1]
 
    Finally the Tool Verification Report is verified and approved, and thus the status
    is set to released.

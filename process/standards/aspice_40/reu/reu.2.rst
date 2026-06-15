@@ -34,7 +34,8 @@ Base practices
 .. std_req:: REU.2.BP1: Select products for reuse
    :id: std_req__aspice_40__REU-2-BP1
    :status: valid
-   :links: std_req__aspice_40__iic-12-03
+   :version: 1
+   :links: std_req__aspice_40__iic-12-03[version==1]
 
    Select the products to be reused using defined criteria.
 
@@ -45,7 +46,8 @@ Base practices
 .. std_req:: REU.2.BP2: Analyze the reuse capability of the product
    :id: std_req__aspice_40__REU-2-BP2
    :status: valid
-   :links: std_req__aspice_40__iic-04-02,std_req__aspice_40__iic-15-07
+   :version: 1
+   :links: std_req__aspice_40__iic-04-02[version==1], std_req__aspice_40__iic-15-07[version==1]
 
    Analyze the designated target architecture and the product to be reused to determine its
    applicability in the target architecture according to relevant criteria.
@@ -57,7 +59,8 @@ Base practices
 .. std_req:: REU.2.BP3: Define limitations for reuse
    :id: std_req__aspice_40__REU-2-BP3
    :status: valid
-   :links: std_req__aspice_40__iic-04-02,std_req__aspice_40__iic-15-07
+   :version: 1
+   :links: std_req__aspice_40__iic-04-02[version==1], std_req__aspice_40__iic-15-07[version==1]
 
    Define and communicate limitations for the products to be reused.
 
@@ -68,7 +71,8 @@ Base practices
 .. std_req:: REU.2.BP4: Ensure qualification of products for reuse
    :id: std_req__aspice_40__REU-2-BP4
    :status: valid
-   :links: std_req__aspice_40__iic-13-53
+   :version: 1
+   :links: std_req__aspice_40__iic-13-53[version==1]
 
    Provide evidence that the product for reuse is qualified for the intended use of the deliverable.
 
@@ -83,7 +87,8 @@ Base practices
 .. std_req:: REU.2.BP5: Provide products for reuse
    :id: std_req__aspice_40__REU-2-BP5
    :status: valid
-   :links: std_req__aspice_40__iic-12-03
+   :version: 1
+   :links: std_req__aspice_40__iic-12-03[version==1]
 
    Make available the product to be reused to affected parties.
 
@@ -94,7 +99,8 @@ Base practices
 .. std_req:: REU.2.BP6: Communicate information about effectiveness of reuse activities
    :id: std_req__aspice_40__REU-2-BP6
    :status: valid
-   :links: std_req__aspice_40__iic-13-52
+   :version: 1
+   :links: std_req__aspice_40__iic-13-52[version==1]
 
    Establish communication and notification mechanism about experiences and technical outcomes to the provider of reused products.
 

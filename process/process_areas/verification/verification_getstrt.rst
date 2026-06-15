@@ -18,6 +18,7 @@ Getting Started
 .. doc_getstrt:: Verification Get Started
    :id: doc_getstrt__verification_process
    :status: valid
+   :version: 1
    :tags: verification
 
    This document guides you through the initial steps of the software verification process,

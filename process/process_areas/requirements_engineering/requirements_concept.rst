@@ -18,6 +18,7 @@ Concept Description
 .. doc_concept:: Requirements Concept
    :id: doc_concept__req_process
    :status: valid
+   :version: 1
    :tags: requirements_engineering
 
 In this section a concept for the requirements management will be discussed. Inputs for this concepts are both the requirements of ISO26262 Part-8 and ASPICE Requirements from SWE.1 additionally including the requirements of the different stakeholders for the requirement process.

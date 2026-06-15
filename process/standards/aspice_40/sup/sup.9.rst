@@ -33,7 +33,8 @@ Base practices
 .. std_req:: SUP.9.BP1: Identify and record the problem
    :id: std_req__aspice_40__SUP-9-BP1
    :status: valid
-   :links: std_req__aspice_40__iic-13-07
+   :version: 1
+   :links: std_req__aspice_40__iic-13-07[version==1]
 
    Each problem is uniquely identified, described and recorded.
    A status is assigned to each problem to facilitate tracking.
@@ -56,7 +57,8 @@ Base practices
 .. std_req:: SUP.9.BP2: Determine the cause and the impact of the problem
    :id: std_req__aspice_40__SUP-9-BP2
    :status: valid
-   :links: std_req__aspice_40__iic-13-07,std_req__aspice_40__iic-15-55
+   :version: 1
+   :links: std_req__aspice_40__iic-13-07[version==1], std_req__aspice_40__iic-15-55[version==1]
 
    Analyze the problem, determine its cause, including common causes if existing, and impact.
    Involve relevant parties. Categorize the problem.
@@ -68,14 +70,16 @@ Base practices
 .. std_req:: SUP.9.BP3: Authorize urgent resolution action
    :id: std_req__aspice_40__SUP-9-BP3
    :status: valid
-   :links: std_req__aspice_40__iic-13-07
+   :version: 1
+   :links: std_req__aspice_40__iic-13-07[version==1]
 
    Obtain authorization for immediate action if a problem requires an urgent resolution according to the categorization.
 
 .. std_req:: SUP.9.BP4: Raise alert notifications
    :id: std_req__aspice_40__SUP-9-BP4
    :status: valid
-   :links: std_req__aspice_40__iic-13-07
+   :version: 1
+   :links: std_req__aspice_40__iic-13-07[version==1]
 
    If according to the categorization the problem has a high impact on other systems or
    other affected parties, an alert notification needs to be raised accordingly.
@@ -83,7 +87,8 @@ Base practices
 .. std_req:: SUP.9.BP5: Initiate problem resolution
    :id: std_req__aspice_40__SUP-9-BP5
    :status: valid
-   :links: std_req__aspice_40__iic-13-07
+   :version: 1
+   :links: std_req__aspice_40__iic-13-07[version==1]
 
    Initiate appropriate actions according to the categorization to resolve the problem long-term,
    including review of those actions or initiate a change request.
@@ -92,7 +97,8 @@ Base practices
 .. std_req:: SUP.9.BP6: Track problems to closure
    :id: std_req__aspice_40__SUP-9-BP6
    :status: valid
-   :links: std_req__aspice_40__iic-13-07,std_req__aspice_40__iic-15-12
+   :version: 1
+   :links: std_req__aspice_40__iic-13-07[version==1], std_req__aspice_40__iic-15-12[version==1]
 
    Track the status of problems to closure including all related change requests.
    The closure of problems is accepted by relevant stakeholders.
@@ -100,7 +106,8 @@ Base practices
 .. std_req:: SUP.9.BP7: Report the status of problem resolution activities
    :id: std_req__aspice_40__SUP-9-BP7
    :status: valid
-   :links: std_req__aspice_40__iic-15-12
+   :version: 1
+   :links: std_req__aspice_40__iic-15-12[version==1]
 
    Collect and analyze problem resolution management data, identify trends, and initiate related actions.
    Regularly report the results of data analysis, the identified trends and the status of problem resolution

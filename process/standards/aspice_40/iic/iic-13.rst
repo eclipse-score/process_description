@@ -18,6 +18,7 @@
 .. std_req:: 13-06 Delivery evidence
    :id: std_req__aspice_40__iic-13-06
    :status: valid
+   :version: 1
 
    Delivery evidence may have the following characteristics:
 
@@ -31,6 +32,7 @@
 .. std_req:: 13-07 Problem
    :id: std_req__aspice_40__iic-13-07
    :status: valid
+   :version: 1
 
    Problem may have the following characteristics:
 
@@ -46,6 +48,7 @@
 .. std_req:: 13-08 Baseline
    :id: std_req__aspice_40__iic-13-08
    :status: valid
+   :version: 1
 
    Baseline may have the following characteristics:
 
@@ -60,6 +63,7 @@
 .. std_req:: 13-09 Meeting support evidence
    :id: std_req__aspice_40__iic-13-09
    :status: valid
+   :version: 1
 
    Meeting support evidence may have the following characteristics:
 
@@ -76,6 +80,7 @@
 .. std_req:: 13-13 Product release approval
    :id: std_req__aspice_40__iic-13-13
    :status: valid
+   :version: 1
 
    Product release approval support evidence may have the following characteristics:
 
@@ -89,6 +94,7 @@
 .. std_req:: 13-14 Progress status
    :id: std_req__aspice_40__iic-13-14
    :status: valid
+   :version: 1
 
    Progress status may have the following characteristics:
 
@@ -104,6 +110,7 @@
 .. std_req:: 13-16 Change request
    :id: std_req__aspice_40__iic-13-16
    :status: valid
+   :version: 1
 
    Change request may have the following characteristics:
 
@@ -122,6 +129,7 @@
 .. std_req:: 13-18 Quality conformance evidence
    :id: std_req__aspice_40__iic-13-18
    :status: valid
+   :version: 1
 
    Quality conformance evidence may have the following characteristics:
 
@@ -134,6 +142,7 @@
 .. std_req:: 13-19 Review evidence
    :id: std_req__aspice_40__iic-13-19
    :status: valid
+   :version: 1
 
    Review evidence may have the following characteristics:
 
@@ -156,6 +165,7 @@
 .. std_req:: 13-25 Verification results
    :id: std_req__aspice_40__iic-13-25
    :status: valid
+   :version: 1
 
    Verification results may have the following characteristics:
 
@@ -169,6 +179,7 @@
 .. std_req:: 13-50 ML test results
    :id: std_req__aspice_40__iic-13-50
    :status: valid
+   :version: 1
 
    - Test data and logs
    - Test data with correct results
@@ -180,6 +191,7 @@
 .. std_req:: 13-51 Consistency Evidence
    :id: std_req__aspice_40__iic-13-51
    :status: valid
+   :version: 1
 
    Consistency Evidence may have the following characteristics:
 
@@ -208,6 +220,7 @@
 .. std_req:: 13-52 Communication Evidence
    :id: std_req__aspice_40__iic-13-52
    :status: valid
+   :version: 1
 
    Communication Evidence may have the following characteristics:
 
@@ -227,12 +240,14 @@
 .. std_req:: 13-53 Qualification evidence
    :id: std_req__aspice_40__iic-13-53
    :status: valid
+   :version: 1
 
    Definition not available yet in PAM4.0 document.
 
 .. std_req:: 13-55 Process resource and infrastructure documentation
    :id: std_req__aspice_40__iic-13-55
    :status: valid
+   :version: 1
 
    Process resource and infrastructure documentation may have the following characteristics:
 

@@ -22,6 +22,7 @@ Security Analysis threat scenarios
 .. gd_guidl:: Security Analysis threat scenarios
   :id: gd_guidl__sec_ana_threat_scenarios
   :status: valid
+  :version: 1
   :complies:
 
 .. note::

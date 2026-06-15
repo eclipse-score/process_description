@@ -20,9 +20,10 @@ Document Management Process Requirements
 .. gd_req:: Document Types
    :id: gd_req__doc_types
    :status: valid
+   :version: 1
    :tags: done_automation
-   :satisfies: wf__platform_cr_mt_platform_mgmt_plan
-   :complies: std_req__iso26262__support_1043
+   :satisfies: wf__platform_cr_mt_platform_mgmt_plan[version==1]
+   :complies: std_req__iso26262__support_1043[version==1]
 
    There are the following document types:
 
@@ -52,9 +53,10 @@ Document Management Process Requirements
 .. gd_req:: Document attributes
    :id: gd_req__doc_attributes_manual
    :status: valid
+   :version: 1
    :tags: manual_prio_1
-   :satisfies: wf__platform_cr_mt_platform_mgmt_plan
-   :complies: std_req__iso26262__support_1043
+   :satisfies: wf__platform_cr_mt_platform_mgmt_plan[version==1]
+   :complies: std_req__iso26262__support_1043[version==1]
 
    Generic documents shall have the following mandatory manual attributes:
 
@@ -71,9 +73,10 @@ Document Management Process Requirements
 .. gd_req:: Document attribute: status
    :id: gd_req__doc_attr_status
    :status: valid
+   :version: 1
    :tags: manual_prio_1, attribute, mandatory
-   :satisfies: wf__platform_cr_mt_platform_mgmt_plan
-   :complies: std_req__iso26262__support_1044
+   :satisfies: wf__platform_cr_mt_platform_mgmt_plan[version==1]
+   :complies: std_req__iso26262__support_1044[version==1]
 
    Each document, shall have a status depending on the document lifecycle models below:
 
@@ -86,9 +89,10 @@ Document Management Process Requirements
 .. gd_req:: Document Author
    :id: gd_req__doc_author
    :status: valid
+   :version: 1
    :tags: done_automation
-   :satisfies: wf__platform_cr_mt_platform_mgmt_plan
-   :complies: std_req__iso26262__support_1045
+   :satisfies: wf__platform_cr_mt_platform_mgmt_plan[version==1]
+   :complies: std_req__iso26262__support_1045[version==1]
 
    The version management tool shall document and report (be able to show) the authorship of a document.
    I.e. for each change of a document the author of the changes is stored.
@@ -96,9 +100,10 @@ Document Management Process Requirements
 .. gd_req:: Document Reviewer
    :id: gd_req__doc_reviewer
    :status: valid
+   :version: 1
    :tags: done_automation
-   :satisfies: wf__platform_cr_mt_platform_mgmt_plan
-   :complies: std_req__iso26262__support_1043
+   :satisfies: wf__platform_cr_mt_platform_mgmt_plan[version==1]
+   :complies: std_req__iso26262__support_1043[version==1]
 
    The version management tool shall document and report (be able to show) the reviewers of a document.
    I.e. for each change of a document the reviewers of the change are stored.
@@ -106,9 +111,10 @@ Document Management Process Requirements
 .. gd_req:: Document Approver
    :id: gd_req__doc_approver
    :status: valid
+   :version: 1
    :tags: done_automation
-   :satisfies: wf__platform_cr_mt_platform_mgmt_plan
-   :complies: std_req__iso26262__support_1045
+   :satisfies: wf__platform_cr_mt_platform_mgmt_plan[version==1]
+   :complies: std_req__iso26262__support_1045[version==1]
 
    The version management tool shall document and report (be able to show) the approver of a document.
    I.e. for each change of a document the approver of the change is stored,

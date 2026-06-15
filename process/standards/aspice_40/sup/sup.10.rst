@@ -35,7 +35,8 @@ Base practices
 .. std_req:: SUP.10.BP1: Identify and record the change requests
    :id: std_req__aspice_40__SUP-10-BP1
    :status: valid
-   :links: std_req__aspice_40__iic-13-16
+   :version: 1
+   :links: std_req__aspice_40__iic-13-16[version==1]
 
    The scope for application of change requests is identified.
    Each change request is uniquely identified, described, and recorded, including the initiator and reason of the change request.
@@ -56,7 +57,8 @@ Base practices
 .. std_req:: SUP.10.BP2: Analyze and assess change requests
    :id: std_req__aspice_40__SUP-10-BP2
    :status: valid
-   :links: std_req__aspice_40__iic-18-57,std_req__aspice_40__iic-13-16
+   :version: 1
+   :links: std_req__aspice_40__iic-18-57[version==1], std_req__aspice_40__iic-13-16[version==1]
 
    Change requests are analyzed by relevant parties according to analysis criteria.
    Work products affected by the change request and dependencies to other change requests are determined.
@@ -69,7 +71,8 @@ Base practices
 .. std_req:: SUP.10.BP3: Approve change requests before implementation
    :id: std_req__aspice_40__SUP-10-BP3
    :status: valid
-   :links: std_req__aspice_40__iic-13-16
+   :version: 1
+   :links: std_req__aspice_40__iic-13-16[version==1]
 
    Change requests are prioritized and approved for implementation based on analysis results and availability of resources.
 
@@ -84,7 +87,8 @@ Base practices
 .. std_req:: SUP.10.BP4: Establish bidirectional traceability
    :id: std_req__aspice_40__SUP-10-BP4
    :status: valid
-   :links: std_req__aspice_40__iic-13-51
+   :version: 1
+   :links: std_req__aspice_40__iic-13-51[version==1]
 
    Establish bidirectional traceability between change requests and work products affected by the change requests.
    In case that the change request is initiated by a problem, establish bidirectional traceability between change requests
@@ -93,14 +97,16 @@ Base practices
 .. std_req:: SUP.10.BP5: Confirm the implementation of change requests
    :id: std_req__aspice_40__SUP-10-BP5
    :status: valid
-   :links: std_req__aspice_40__iic-13-16
+   :version: 1
+   :links: std_req__aspice_40__iic-13-16[version==1]
 
    The implementation of change requests is confirmed before closure by relevant stakeholders.
 
 .. std_req:: SUP.10.BP6: Track change requests to closure
    :id: std_req__aspice_40__SUP-10-BP6
    :status: valid
-   :links: std_req__aspice_40__iic-13-16
+   :version: 1
+   :links: std_req__aspice_40__iic-13-16[version==1]
 
    Change requests are tracked to closure. The status of change requests is communicated to all affected parties.
 

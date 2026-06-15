@@ -22,6 +22,7 @@ Security Analysis Threat Templates
 .. gd_temp:: Feature Threat Template
    :id: gd_temp__feat_sec_ana_threat
    :status: valid
+   :version: 1
    :complies:
 
       For the content see here: (tbd)need:`doc__feature_name_threat`
@@ -31,6 +32,7 @@ Security Analysis Threat Templates
 .. gd_temp:: Component Threat Template
    :id: gd_temp__comp_sec_ana_threat
    :status: valid
+   :version: 1
    :complies:
 
       For the content see here: (tbd) `Component Threat Template <https://eclipse-score.github.io/module_template/main/score/component_example/docs/index.html>`__

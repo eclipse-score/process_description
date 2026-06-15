@@ -23,18 +23,36 @@ Change Request Attributes
 .. gd_req:: Change Request attribute: UID
    :id: gd_req__change_attr_uid
    :status: valid
+   :version: 1
    :tags: done_automation, attribute, mandatory
-   :satisfies: wf__change_create_cr, wf__change_analyze_cr, wf__change_implement_monitor_cr, wf__change_close_cr
-   :complies: std_req__aspice_40__SUP-10-BP1, std_req__iso26262__support_8411, std_req__iso26262__support_8421, std_req__iso26262__support_8432, std_req__iso26262__support_8453
+   :satisfies: wf__change_create_cr[version==1],
+               wf__change_analyze_cr[version==1],
+               wf__change_implement_monitor_cr[version==1],
+               wf__change_close_cr[version==1]
+   :complies: std_req__aspice_40__SUP-10-BP1[version==1],
+              std_req__iso26262__support_8411[version==1],
+              std_req__iso26262__support_8421[version==1],
+              std_req__iso26262__support_8432[version==1],
+              std_req__iso26262__support_8453[version==1]
 
    Each Change Request shall have a unique ID. It shall be in an integer number.
 
 .. gd_req:: Change Request attribute: status
    :id: gd_req__change_attr_status
    :status: valid
+   :version: 1
    :tags: done_automation, attribute, mandatory
-   :satisfies: wf__change_create_cr, wf__change_analyze_cr, wf__change_implement_monitor_cr, wf__change_close_cr
-   :complies: std_req__aspice_40__SUP-10-BP3, std_req__aspice_40__SUP-10-BP5, std_req__aspice_40__SUP-10-BP6, std_req__iso26262__support_8411, std_req__iso26262__support_8422, std_req__iso26262__support_8432, std_req__iso26262__support_8442
+   :satisfies: wf__change_create_cr[version==1],
+               wf__change_analyze_cr[version==1],
+               wf__change_implement_monitor_cr[version==1],
+               wf__change_close_cr[version==1]
+   :complies: std_req__aspice_40__SUP-10-BP3[version==1],
+              std_req__aspice_40__SUP-10-BP5[version==1],
+              std_req__aspice_40__SUP-10-BP6[version==1],
+              std_req__iso26262__support_8411[version==1],
+              std_req__iso26262__support_8422[version==1],
+              std_req__iso26262__support_8432[version==1],
+              std_req__iso26262__support_8442[version==1]
 
    Each Change Request shall have a status:
 
@@ -47,18 +65,32 @@ Change Request Attributes
 .. gd_req:: Change Request attribute: title
    :id: gd_req__change_attr_title
    :status: valid
+   :version: 1
    :tags: manual_prio_1, attribute, mandatory
-   :satisfies: wf__change_create_cr, wf__change_analyze_cr, wf__change_implement_monitor_cr, wf__change_close_cr
-   :complies: std_req__aspice_40__SUP-10-BP1, std_req__iso26262__support_8411, std_req__iso26262__support_8422
+   :satisfies: wf__change_create_cr[version==1],
+               wf__change_analyze_cr[version==1],
+               wf__change_implement_monitor_cr[version==1],
+               wf__change_close_cr[version==1]
+   :complies: std_req__aspice_40__SUP-10-BP1[version==1], std_req__iso26262__support_8411[version==1], std_req__iso26262__support_8422[version==1]
 
    Reason for the Change Request
 
 .. gd_req:: Change Request attribute: description
    :id: gd_req__change_attr_impact_description
    :status: valid
+   :version: 1
    :tags: manual_prio_1, attribute, mandatory
-   :satisfies: wf__change_create_cr, wf__change_analyze_cr, wf__change_implement_monitor_cr, wf__change_close_cr
-   :complies: std_req__aspice_40__SUP-10-BP2, std_req__iso26262__support_8411, std_req__iso26262__support_8422, std_req__iso26262__support_8431, std_req__iso26262__support_8432, std_req__iso26262__support_8452, std_req__iso26262__support_8453
+   :satisfies: wf__change_create_cr[version==1],
+               wf__change_analyze_cr[version==1],
+               wf__change_implement_monitor_cr[version==1],
+               wf__change_close_cr[version==1]
+   :complies: std_req__aspice_40__SUP-10-BP2[version==1],
+              std_req__iso26262__support_8411[version==1],
+              std_req__iso26262__support_8422[version==1],
+              std_req__iso26262__support_8431[version==1],
+              std_req__iso26262__support_8432[version==1],
+              std_req__iso26262__support_8452[version==1],
+              std_req__iso26262__support_8453[version==1]
 
    Exact description of the Change Request, including impact analysis on functional safety,
    security, implementation (schedule, risks, resources) verification (measures defined).
@@ -66,9 +98,13 @@ Change Request Attributes
 .. gd_req:: Change Request attribute: safety
    :id: gd_req__change_attr_impact_safety
    :status: valid
+   :version: 1
    :tags: prio_1_automation, attribute, mandatory
-   :satisfies: wf__change_create_cr, wf__change_analyze_cr, wf__change_implement_monitor_cr, wf__change_close_cr
-   :complies: std_req__aspice_40__SUP-10-BP2, std_req__iso26262__support_8422
+   :satisfies: wf__change_create_cr[version==1],
+               wf__change_analyze_cr[version==1],
+               wf__change_implement_monitor_cr[version==1],
+               wf__change_close_cr[version==1]
+   :complies: std_req__aspice_40__SUP-10-BP2[version==1], std_req__iso26262__support_8422[version==1]
 
    Each Change Request shall have a automotive safety integrity level (ASIL) identifier:
 
@@ -78,9 +114,13 @@ Change Request Attributes
 .. gd_req:: Change Request attribute: security
    :id: gd_req__change_attr_impact_security
    :status: valid
+   :version: 1
    :tags: prio_2_automation, attribute, mandatory
-   :satisfies: wf__change_create_cr, wf__change_analyze_cr, wf__change_implement_monitor_cr, wf__change_close_cr
-   :complies: std_req__aspice_40__SUP-10-BP2, std_req__iso26262__support_8422
+   :satisfies: wf__change_create_cr[version==1],
+               wf__change_analyze_cr[version==1],
+               wf__change_implement_monitor_cr[version==1],
+               wf__change_close_cr[version==1]
+   :complies: std_req__aspice_40__SUP-10-BP2[version==1], std_req__iso26262__support_8422[version==1]
 
    Each Change Request shall have a security relevance identifier:
 
@@ -90,9 +130,13 @@ Change Request Attributes
 .. gd_req:: Change Request attribute: Types
    :id: gd_req__change_attr_types
    :status: valid
+   :version: 1
    :tags: prio_1_automation, attribute, mandatory
-   :satisfies: wf__change_create_cr, wf__change_analyze_cr, wf__change_implement_monitor_cr, wf__change_close_cr
-   :complies: std_req__aspice_40__SUP-10-BP1
+   :satisfies: wf__change_create_cr[version==1],
+               wf__change_analyze_cr[version==1],
+               wf__change_implement_monitor_cr[version==1],
+               wf__change_close_cr[version==1]
+   :complies: std_req__aspice_40__SUP-10-BP1[version==1]
 
       * Feature
       * Feature Modification
@@ -119,18 +163,30 @@ Change Request Attributes
 .. gd_req:: Change Request attribute: Affected Work Products
    :id: gd_req__change_attr_affected_wp
    :status: valid
+   :version: 1
    :tags: attribute, mandatory
-   :satisfies: wf__change_create_cr, wf__change_analyze_cr, wf__change_implement_monitor_cr, wf__change_close_cr
-   :complies: std_req__aspice_40__SUP-10-BP4, std_req__iso26262__support_8412, std_req__iso26262__support_8422, std_req__iso26262__support_8452, std_req__iso26262__support_8453
+   :satisfies: wf__change_create_cr[version==1],
+               wf__change_analyze_cr[version==1],
+               wf__change_implement_monitor_cr[version==1],
+               wf__change_close_cr[version==1]
+   :complies: std_req__aspice_40__SUP-10-BP4[version==1],
+              std_req__iso26262__support_8412[version==1],
+              std_req__iso26262__support_8422[version==1],
+              std_req__iso26262__support_8452[version==1],
+              std_req__iso26262__support_8453[version==1]
 
    Links to the work products affected by the Change Request
 
 .. gd_req:: Change Request attribute: Milestone
    :id: gd_req__change_attr_milestone
    :status: valid
+   :version: 1
    :tags: done_automation, attribute, mandatory
-   :satisfies: wf__change_create_cr, wf__change_analyze_cr, wf__change_implement_monitor_cr, wf__change_close_cr
-   :complies: std_req__aspice_40__SUP-10-BP6, std_req__iso26262__support_8413
+   :satisfies: wf__change_create_cr[version==1],
+               wf__change_analyze_cr[version==1],
+               wf__change_implement_monitor_cr[version==1],
+               wf__change_close_cr[version==1]
+   :complies: std_req__aspice_40__SUP-10-BP6[version==1], std_req__iso26262__support_8413[version==1]
 
    Milestone until the Change Request must be implemented (used for prioritization)
 
@@ -143,9 +199,13 @@ Change Request Checks
 .. gd_req:: Change Requests mandatory attributes provided
    :id: gd_req__change_attr_mandatory
    :status: valid
+   :version: 1
    :tags: prio_2_automation, attribute, check
-   :satisfies: wf__change_create_cr, wf__change_analyze_cr, wf__change_implement_monitor_cr, wf__change_close_cr
-   :complies: std_req__aspice_40__iic-13-51
+   :satisfies: wf__change_create_cr[version==1],
+               wf__change_analyze_cr[version==1],
+               wf__change_implement_monitor_cr[version==1],
+               wf__change_close_cr[version==1]
+   :complies: std_req__aspice_40__iic-13-51[version==1]
 
    It shall be checked if all mandatory attributes for each Change Request
    is provided by the user. For all requirements following attributes shall be mandatory:
@@ -165,9 +225,13 @@ Change Request Traceability Impact Analysis Tool
 .. gd_req:: Change Requests Impact Analysis Tool
    :id: gd_req__change_tool_impact_analysis
    :status: valid
+   :version: 1
    :tags: prio_3_automation, check, tool
-   :satisfies: wf__change_create_cr, wf__change_analyze_cr, wf__change_implement_monitor_cr, wf__change_close_cr
-   :complies: std_req__aspice_40__iic-13-51
+   :satisfies: wf__change_create_cr[version==1],
+               wf__change_analyze_cr[version==1],
+               wf__change_implement_monitor_cr[version==1],
+               wf__change_close_cr[version==1]
+   :complies: std_req__aspice_40__iic-13-51[version==1]
 
    It shall be reported, which work products and elements are affected by adding a new
    feature or component or by a modification of an existing feature or component.

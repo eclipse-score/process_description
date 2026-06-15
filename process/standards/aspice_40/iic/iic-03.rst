@@ -18,6 +18,7 @@
 .. std_req:: 03-06 Process performance information
    :id: std_req__aspice_40__iic-03-06
    :status: valid
+   :version: 1
 
    Process performance information may have the following characteristics:
 
@@ -46,6 +47,7 @@
 .. std_req:: 03-50 Verification Measure Data
    :id: std_req__aspice_40__iic-03-50
    :status: valid
+   :version: 1
 
    Verification Measure Data may have the following characteristics:
 
@@ -62,12 +64,14 @@
 .. std_req:: 03-51 ML data set
    :id: std_req__aspice_40__iic-03-51
    :status: valid
+   :version: 1
 
    - Selection of ML Data for e.g., ML model training (ML Training and Validation Data Set) or test of the trained and deployed ML model (ML Test Data Set).
 
 .. std_req:: 03-53 ML data
    :id: std_req__aspice_40__iic-03-53
    :status: valid
+   :version: 1
 
    - Datum to be used for Machine Learning. The datum has to be attributed by metadata, e.g., unique ID and data characteristics. Examples:
       - Visual data like a photo or videos (but a video could also be considered as sequence of photos depending on the intended use)

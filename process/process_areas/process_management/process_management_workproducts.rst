@@ -20,8 +20,9 @@ Here only project specific work products are listed, which are generic for the p
 .. workproduct:: Policies
    :id: wp__policies
    :status: valid
+   :version: 1
    :tags: doc_lifecycle_model_2
-   :complies: std_wp__iso26262__management_551
+   :complies: std_wp__iso26262__management_551[version==1]
 
    In general the project follows the Eclipse Foundation Development Process (EDP,
    `Eclipse Foundation Development Process <https://www.eclipse.org/projects/dev_process/>`_).
@@ -47,8 +48,14 @@ Here only project specific work products are listed, which are generic for the p
 .. workproduct:: Process Management Strategy
    :id: wp__process_strategy
    :status: valid
+   :version: 1
    :tags: doc_lifecycle_model_2
-   :complies: std_wp__iso26262__management_551, std_wp__isosae21434__org_management_551, std_wp__isosae21434__org_management_552, std_wp__isosae21434__org_management_553, std_wp__isosae21434__org_management_554, std_wp__isosae21434__org_management_555
+   :complies: std_wp__iso26262__management_551[version==1],
+              std_wp__isosae21434__org_management_551[version==1],
+              std_wp__isosae21434__org_management_552[version==1],
+              std_wp__isosae21434__org_management_553[version==1],
+              std_wp__isosae21434__org_management_554[version==1],
+              std_wp__isosae21434__org_management_555[version==1]
 
    Strategy to manage and guide execution of the process management activities.
 
@@ -62,8 +69,19 @@ Here only project specific work products are listed, which are generic for the p
 .. workproduct:: Process Description
    :id: wp__process_description
    :status: valid
+   :version: 1
    :tags: doc_lifecycle_model_2
-   :complies: std_wp__iso26262__management_551, std_wp__isosae21434__org_management_551, std_wp__isosae21434__org_management_552, std_wp__isosae21434__org_management_553, std_wp__isosae21434__org_management_554, std_wp__isosae21434__org_management_555, std_req__aspice_40__iic-10-00, std_req__aspice_40__iic-10-50, std_req__aspice_40__iic-06-51, std_req__aspice_40__iic-15-54, std_req__aspice_40__iic-14-53
+   :complies: std_wp__iso26262__management_551[version==1],
+              std_wp__isosae21434__org_management_551[version==1],
+              std_wp__isosae21434__org_management_552[version==1],
+              std_wp__isosae21434__org_management_553[version==1],
+              std_wp__isosae21434__org_management_554[version==1],
+              std_wp__isosae21434__org_management_555[version==1],
+              std_req__aspice_40__iic-10-00[version==1],
+              std_req__aspice_40__iic-10-50[version==1],
+              std_req__aspice_40__iic-06-51[version==1],
+              std_req__aspice_40__iic-15-54[version==1],
+              std_req__aspice_40__iic-14-53[version==1]
 
    The process description is defined here: :ref:`process_description`.
 
@@ -72,8 +90,44 @@ Here only project specific work products are listed, which are generic for the p
 .. workproduct:: Tailoring Document Work Products
    :id: wp__tailoring_work_products
    :status: valid
+   :version: 1
    :tags: doc_lifecycle_model_2
-   :complies: std_wp__iso26262__management_651, std_wp__iso26262__management_751, std_wp__iso26262__system_652, std_wp__iso26262__system_653, std_wp__iso26262__system_654, std_wp__iso26262__system_655, std_wp__iso26262__system_656, std_wp__iso26262__system_657, std_wp__iso26262__system_751, std_wp__iso26262__system_752, std_wp__iso26262__system_851, std_wp__iso26262__system_852, std_wp__iso26262__software_652, std_wp__iso26262__software_1052, std_wp__iso26262__software_1151, std_wp__iso26262__software_1152, std_wp__iso26262__software_app_c_52, std_wp__iso26262__software_app_c_54, std_wp__iso26262__software_app_c_57, std_wp__iso26262__support_551, std_wp__iso26262__support_552, std_wp__iso26262__support_553, std_wp__iso26262__support_554, std_wp__iso26262__support_555, std_wp__iso26262__support_1351, std_wp__iso26262__support_1352, std_wp__iso26262__support_1353, std_wp__iso26262__support_1451, std_wp__iso26262__support_1452, std_wp__iso26262__support_1551, std_wp__iso26262__support_1651, std_wp__iso26262__analysis_551, std_wp__iso26262__analysis_552, std_wp__isopas8926__4522, std_wp__isosae21434__assessment_15331, std_wp__isosae21434__assessment_15531
+   :complies: std_wp__iso26262__management_651[version==1],
+              std_wp__iso26262__management_751[version==1],
+              std_wp__iso26262__system_652[version==1],
+              std_wp__iso26262__system_653[version==1],
+              std_wp__iso26262__system_654[version==1],
+              std_wp__iso26262__system_655[version==1],
+              std_wp__iso26262__system_656[version==1],
+              std_wp__iso26262__system_657[version==1],
+              std_wp__iso26262__system_751[version==1],
+              std_wp__iso26262__system_752[version==1],
+              std_wp__iso26262__system_851[version==1],
+              std_wp__iso26262__system_852[version==1],
+              std_wp__iso26262__software_652[version==1],
+              std_wp__iso26262__software_1052[version==1],
+              std_wp__iso26262__software_1151[version==1],
+              std_wp__iso26262__software_1152[version==1],
+              std_wp__iso26262__software_app_c_52[version==1],
+              std_wp__iso26262__software_app_c_54[version==1],
+              std_wp__iso26262__software_app_c_57[version==1],
+              std_wp__iso26262__support_551[version==1],
+              std_wp__iso26262__support_552[version==1],
+              std_wp__iso26262__support_553[version==1],
+              std_wp__iso26262__support_554[version==1],
+              std_wp__iso26262__support_555[version==1],
+              std_wp__iso26262__support_1351[version==1],
+              std_wp__iso26262__support_1352[version==1],
+              std_wp__iso26262__support_1353[version==1],
+              std_wp__iso26262__support_1451[version==1],
+              std_wp__iso26262__support_1452[version==1],
+              std_wp__iso26262__support_1551[version==1],
+              std_wp__iso26262__support_1651[version==1],
+              std_wp__iso26262__analysis_551[version==1],
+              std_wp__iso26262__analysis_552[version==1],
+              std_wp__isopas8926__4522[version==1],
+              std_wp__isosae21434__assessment_15331[version==1],
+              std_wp__isosae21434__assessment_15531[version==1]
 
    This work product "definition" links to all the work products which are not covered by the
    processes work products documented. Make sure these are tailored out in the safety, security and quality plans

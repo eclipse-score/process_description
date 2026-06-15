@@ -48,7 +48,13 @@ To calculate the score link evidences to the Trustable Assertions (TA).
 .. tsf:: TRUSTABLE SOFTWARE
    :id: tsf__trust__trustable-software
    :status: valid
-   :links: tenet__trust__tt-provenance, tenet__trust__tt-construction, tenet__trust__tt-changes, tenet__trust__tt-expectations, tenet__trust__tt-results, tenet__trust__tt-confidence
+   :version: 1
+   :links: tenet__trust__tt-provenance[version==1],
+           tenet__trust__tt-construction[version==1],
+           tenet__trust__tt-changes[version==1],
+           tenet__trust__tt-expectations[version==1],
+           tenet__trust__tt-results[version==1],
+           tenet__trust__tt-confidence[version==1]
 
     This release of XYZ is Trustable.
 

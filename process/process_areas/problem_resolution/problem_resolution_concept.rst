@@ -18,6 +18,7 @@ Concept Description
 .. doc_concept:: Concept Description
    :id: doc_concept__problem_process
    :status: valid
+   :version: 1
    :tags: problem_resolution
 
 In this section a concept for the Problem Resolution will be discussed. Inputs for this concepts

@@ -18,6 +18,7 @@
 .. std_req:: 18-00 Standard
    :id: std_req__aspice_40__iic-18-00
    :status: valid
+   :version: 1
 
    Standard may have the following characteristics:
 
@@ -29,6 +30,7 @@
 .. std_req:: 18-06 Product release criteria
    :id: std_req__aspice_40__iic-18-06
    :status: valid
+   :version: 1
 
    Product release criteria may have the following characteristics:
 
@@ -43,6 +45,7 @@
 .. std_req:: 18-07 Quality criteria
    :id: std_req__aspice_40__iic-18-07
    :status: valid
+   :version: 1
 
    Quality criteria may have the following characteristics:
 
@@ -56,6 +59,7 @@
 .. std_req:: 18-52 Escalation path
    :id: std_req__aspice_40__iic-18-52
    :status: valid
+   :version: 1
 
    Escalation path may have the following characteristics:
 
@@ -66,6 +70,7 @@
 .. std_req:: 18-53 Configuration item selection criteria
    :id: std_req__aspice_40__iic-18-53
    :status: valid
+   :version: 1
 
    Configuration item selection criteria may have the following characteristics:
 
@@ -74,6 +79,7 @@
 .. std_req:: 18-57 Change analysis criteria
    :id: std_req__aspice_40__iic-18-57
    :status: valid
+   :version: 1
 
    Change analysis criteria may have the following characteristics:
 
@@ -86,6 +92,7 @@
 .. std_req:: 18-58 Process performance objectives
    :id: std_req__aspice_40__iic-18-58
    :status: valid
+   :version: 1
 
    Process performance objectives may have the following characteristics:
 
@@ -100,6 +107,7 @@
 .. std_req:: 18-59 Review and approval criteria for work products
    :id: std_req__aspice_40__iic-18-59
    :status: valid
+   :version: 1
 
    Process performance objectives may have the following characteristics:
 
@@ -113,6 +121,7 @@
 .. std_req:: 18-70 Business goals
    :id: std_req__aspice_40__iic-18-70
    :status: valid
+   :version: 1
 
    Business goals may have the following characteristics:
 
@@ -127,6 +136,7 @@
 .. std_req:: 18-80 Improvement opportunity
    :id: std_req__aspice_40__iic-18-80
    :status: valid
+   :version: 1
 
    Improvement opportunity may have the following characteristics:
 
@@ -142,6 +152,7 @@
 .. std_req:: 18-81 Improvement evaluation results
    :id: std_req__aspice_40__iic-18-81
    :status: valid
+   :version: 1
 
    Improvement evaluation results may have the following characteristics:
 

@@ -18,6 +18,7 @@
 .. std_req:: 01-03 Software Component
    :id: std_req__aspice_40__iic-01-03
    :status: valid
+   :version: 1
 
    Software Component may have the following characteristics:
 
@@ -30,6 +31,7 @@
 .. std_req:: 01-50 Integrated Software
    :id: std_req__aspice_40__iic-01-50
    :status: valid
+   :version: 1
 
    Integrated Software may have the following characteristics:
 
@@ -42,6 +44,7 @@
 .. std_req:: 01-52 Configuration item list
    :id: std_req__aspice_40__iic-01-52
    :status: valid
+   :version: 1
 
    Configuration item list may have the following characteristics:
 
@@ -52,12 +55,14 @@
 .. std_req:: 01-53 Trained ML model
    :id: std_req__aspice_40__iic-01-53
    :status: valid
+   :version: 1
 
    - The trained ML model is the output of the training process. It consists of the software representing the ML architecture, the set of weights which were optimized during the training, and the final set of hyperparameters.
 
 .. std_req:: 01-54 Hyperparameter
    :id: std_req__aspice_40__iic-01-54
    :status: valid
+   :version: 1
 
 
    - Hyperparameters are used to control the ML model which has to be trained, e.g.:

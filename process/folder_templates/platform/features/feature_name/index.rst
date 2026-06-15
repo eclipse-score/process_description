@@ -22,9 +22,10 @@
 .. document:: [Your Feature Name]
    :id: doc__feature_name
    :status: draft
+   :version: 1
    :safety: ASIL_B
    :security: YES
-   :realizes: wp__feat_request
+   :realizes: wp__feat_request[version==1]
    :tags: template
 
 .. attention::
@@ -58,6 +59,7 @@ Abstract
       :security: YES
       :safety: ASIL_B
       :status: invalid
+      :version: 1
       :includes: logic_arc_int__feature_name__interface_name1
 
       General Feature Description

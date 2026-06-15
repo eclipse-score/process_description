@@ -18,6 +18,7 @@ Concept Description
 .. doc_concept:: Concept Description
    :id: doc_concept__process_management
    :status: valid
+   :version: 1
    :tags: process_management
 
 In this section concepts for the Process Management are discussed. Inputs for these

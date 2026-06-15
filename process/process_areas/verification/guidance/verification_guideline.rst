@@ -17,7 +17,8 @@ Guideline
 .. gd_guidl:: Verification Guideline
    :id: gd_guidl__verification_guide
    :status: valid
-   :complies: std_req__isopas8926__445
+   :version: 1
+   :complies: std_req__isopas8926__445[version==1]
 
    This guideline outlines the responsibilities and procedures for developers performing
    verification activities (testcase creation, inspection, and review) for documentation,
@@ -151,9 +152,15 @@ Tailoring
 .. gd_guidl:: Verification Requirements Tailored
    :id: gd_guidl__verification_req_tailored
    :status: valid
-   :complies: std_req__iso26262__software_945,
-              std_req__iso26262__software_1045, std_req__iso26262__software_1046, std_req__iso26262__software_1047,
-              std_req__iso26262__software_1141, std_req__iso26262__software_1142, std_req__iso26262__software_1143, std_req__iso26262__software_1144
+   :version: 1
+   :complies: std_req__iso26262__software_945[version==1],
+              std_req__iso26262__software_1045[version==1],
+              std_req__iso26262__software_1046[version==1],
+              std_req__iso26262__software_1047[version==1],
+              std_req__iso26262__software_1141[version==1],
+              std_req__iso26262__software_1142[version==1],
+              std_req__iso26262__software_1143[version==1],
+              std_req__iso26262__software_1144[version==1]
 
    This part of the guideline links to all the requirements which are not fulfilled by the
    verification process. Make sure these are tailored out in the safety/security/quality plans

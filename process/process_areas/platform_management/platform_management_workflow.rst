@@ -22,14 +22,25 @@ For a detailed explanation of workflows and their role within the process model,
 .. workflow:: Create/Maintain Platform Management Plan
    :id: wf__platform_cr_mt_platform_mgmt_plan
    :status: valid
+   :version: 1
    :tags: platform_management
-   :responsible: rl__project_lead
-   :approved_by: rl__process_community
-   :supported_by: rl__safety_manager, rl__security_manager, rl__quality_manager
-   :input: wp__policies, wp__issue_track_system
-   :output: wp__platform_mgmt, wp__project_mgt, wp__document_mgt_plan, wp__config_mgt_plan, wp__prm_plan, wp__tlm_plan, wp__chm_plan
-   :contains: gd_temp__platform_mgmt_plan, gd_guidl__platform_mgmt_plan, gd_guidl__documentation, gd_chklst__documentation_review, gd_temp__documentation
-   :has: doc_concept__platform_process, doc_getstrt__platform_process
+   :responsible: rl__project_lead[version==1]
+   :approved_by: rl__process_community[version==1]
+   :supported_by: rl__safety_manager[version==1], rl__security_manager[version==1], rl__quality_manager[version==1]
+   :input: wp__policies[version==1], wp__issue_track_system[version==1]
+   :output: wp__platform_mgmt[version==1],
+            wp__project_mgt[version==1],
+            wp__document_mgt_plan[version==1],
+            wp__config_mgt_plan[version==1],
+            wp__prm_plan[version==1],
+            wp__tlm_plan[version==1],
+            wp__chm_plan[version==1]
+   :contains: gd_temp__platform_mgmt_plan[version==1],
+              gd_guidl__platform_mgmt_plan[version==1],
+              gd_guidl__documentation[version==1],
+              gd_chklst__documentation_review[version==1],
+              gd_temp__documentation[version==1]
+   :has: doc_concept__platform_process[version==1], doc_getstrt__platform_process[version==1]
 
    The Platform Management Plan shall include the plans as defined by the
    :ref:`Platform Management Plan Template <platform_templates>`.
@@ -40,14 +51,21 @@ For a detailed explanation of workflows and their role within the process model,
 .. workflow:: Monitor/Improve Platform Management Plan
    :id: wf__platform_mr_im_platform_mgmt_plan
    :status: valid
+   :version: 1
    :tags: platform_management
-   :responsible: rl__project_lead
-   :approved_by: rl__process_community
-   :supported_by: rl__safety_manager, rl__security_manager, rl__quality_manager
-   :input: wp__platform_mgmt, wp__project_mgt, wp__document_mgt_plan, wp__config_mgt_plan
-   :output: wp__issue_track_system
-   :contains: gd_temp__platform_mgmt_plan, gd_guidl__platform_mgmt_plan, gd_guidl__documentation, gd_chklst__documentation_review
-   :has: doc_concept__platform_process, doc_getstrt__platform_process
+   :responsible: rl__project_lead[version==1]
+   :approved_by: rl__process_community[version==1]
+   :supported_by: rl__safety_manager[version==1], rl__security_manager[version==1], rl__quality_manager[version==1]
+   :input: wp__platform_mgmt[version==1],
+           wp__project_mgt[version==1],
+           wp__document_mgt_plan[version==1],
+           wp__config_mgt_plan[version==1]
+   :output: wp__issue_track_system[version==1]
+   :contains: gd_temp__platform_mgmt_plan[version==1],
+              gd_guidl__platform_mgmt_plan[version==1],
+              gd_guidl__documentation[version==1],
+              gd_chklst__documentation_review[version==1]
+   :has: doc_concept__platform_process[version==1], doc_getstrt__platform_process[version==1]
 
    The :need:`Project Lead <rl__project_lead>` is responsible for the monitoring and reporting
    of the work products and activities against the platform management plan.

@@ -18,7 +18,8 @@ Configuration Management Work Products
 .. workproduct:: Platform Configuration Management Plan
    :id: wp__config_mgt_plan
    :status: valid
+   :version: 1
    :tags: doc_lifecycle_model_2
-   :complies: std_wp__iso26262__support_751
+   :complies: std_wp__iso26262__support_751[version==1]
 
    Config Management Plan (Part of the Platform Management Plan, :need:`wp__platform_mgmt`)

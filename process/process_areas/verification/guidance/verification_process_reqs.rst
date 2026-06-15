@@ -20,9 +20,13 @@ Process Requirements
 .. gd_req:: Linking Requirements to Tests
     :id: gd_req__verification_link_tests
     :status: valid
+    :version: 1
     :tags: prio_1_automation, verification
-    :satisfies: wf__verification_unit_test, wf__verification_comp_int_test, wf__verification_feat_int_test, wf__verification_platform_int_test
-    :complies: std_req__iso26262__support_6432
+    :satisfies: wf__verification_unit_test[version==1],
+                wf__verification_comp_int_test[version==1],
+                wf__verification_feat_int_test[version==1],
+                wf__verification_platform_int_test[version==1]
+    :complies: std_req__iso26262__support_6432[version==1]
 
 
     For linking test suites to requirements following metadata shall be used:
@@ -52,9 +56,16 @@ Process Requirements
 .. gd_req:: Linking Requirements to Tests (C++)
     :id: gd_req__verification_link_tests_cpp
     :status: valid
+    :version: 1
     :tags: prio_1_automation, verification
-    :satisfies: wf__verification_unit_test, wf__verification_comp_int_test, wf__verification_feat_int_test, wf__verification_platform_int_test
-    :complies: std_req__iso26262__support_6432, std_req__aspice_40__SWE-4-BP4, std_req__aspice_40__SWE-5-BP6, std_req__aspice_40__SWE-6-BP4
+    :satisfies: wf__verification_unit_test[version==1],
+                wf__verification_comp_int_test[version==1],
+                wf__verification_feat_int_test[version==1],
+                wf__verification_platform_int_test[version==1]
+    :complies: std_req__iso26262__support_6432[version==1],
+               std_req__aspice_40__SWE-4-BP4[version==1],
+               std_req__aspice_40__SWE-5-BP6[version==1],
+               std_req__aspice_40__SWE-6-BP4[version==1]
 
 
     For linking C++ tests to requirements **record properties** shall be used. Attributes
@@ -67,9 +78,16 @@ Process Requirements
 .. gd_req:: Linking Requirements to Tests (Python)
     :id: gd_req__verification_link_tests_python
     :status: valid
+    :version: 1
     :tags: prio_1_automation, verification
-    :satisfies: wf__verification_unit_test, wf__verification_comp_int_test, wf__verification_feat_int_test, wf__verification_platform_int_test
-    :complies: std_req__iso26262__support_6432, std_req__aspice_40__SWE-4-BP4, std_req__aspice_40__SWE-5-BP6, std_req__aspice_40__SWE-6-BP4
+    :satisfies: wf__verification_unit_test[version==1],
+                wf__verification_comp_int_test[version==1],
+                wf__verification_feat_int_test[version==1],
+                wf__verification_platform_int_test[version==1]
+    :complies: std_req__iso26262__support_6432[version==1],
+               std_req__aspice_40__SWE-4-BP4[version==1],
+               std_req__aspice_40__SWE-5-BP6[version==1],
+               std_req__aspice_40__SWE-6-BP4[version==1]
 
 
     For linking python tests to requirements **metadata** shall be used.
@@ -89,9 +107,16 @@ Process Requirements
 .. gd_req:: Linking Requirements to Tests (Rust)
     :id: gd_req__verification_link_tests_rust
     :status: valid
+    :version: 1
     :tags: prio_1_automation, verification
-    :satisfies: wf__verification_unit_test, wf__verification_comp_int_test, wf__verification_feat_int_test, wf__verification_platform_int_test
-    :complies: std_req__iso26262__support_6432, std_req__aspice_40__SWE-4-BP4, std_req__aspice_40__SWE-5-BP6, std_req__aspice_40__SWE-6-BP4
+    :satisfies: wf__verification_unit_test[version==1],
+                wf__verification_comp_int_test[version==1],
+                wf__verification_feat_int_test[version==1],
+                wf__verification_platform_int_test[version==1]
+    :complies: std_req__iso26262__support_6432[version==1],
+               std_req__aspice_40__SWE-4-BP4[version==1],
+               std_req__aspice_40__SWE-5-BP6[version==1],
+               std_req__aspice_40__SWE-6-BP4[version==1]
 
     For linking Rust tests to requirements **#[record_property]** shall be used:
 
@@ -100,17 +125,22 @@ Process Requirements
 .. gd_req:: Independence
     :id: gd_req__verification_independence
     :status: valid
+    :version: 1
     :tags: done_automation, verification
-    :satisfies: wf__verification_unit_test, wf__verification_comp_int_test, wf__verification_feat_int_test, wf__verification_platform_int_test
-    :complies: std_req__aspice_40__SWE-4-BP4, std_req__aspice_40__SWE-5-BP6, std_req__aspice_40__SWE-6-BP4
+    :satisfies: wf__verification_unit_test[version==1],
+                wf__verification_comp_int_test[version==1],
+                wf__verification_feat_int_test[version==1],
+                wf__verification_platform_int_test[version==1]
+    :complies: std_req__aspice_40__SWE-4-BP4[version==1], std_req__aspice_40__SWE-5-BP6[version==1], std_req__aspice_40__SWE-6-BP4[version==1]
 
     The approver of a pull request shall differ from the author(s) of the pull request in all pull requests.
 
 .. gd_req:: Verification Reporting
     :id: gd_req__verification_reporting
     :status: valid
+    :version: 1
     :tags: prio_1_automation, verification
-    :satisfies: wf__verification_mod_ver_report
+    :satisfies: wf__verification_mod_ver_report[version==1]
     :complies:
 
     The tool automation shall automatically generate the Verification reports.
@@ -120,8 +150,9 @@ Process Requirements
 .. gd_req:: Verification Report Archiving
     :id: gd_req__verification_report_archiving
     :status: valid
+    :version: 1
     :tags: prio_1_automation, verification
-    :satisfies: wf__verification_mod_ver_report
+    :satisfies: wf__verification_mod_ver_report[version==1]
     :complies:
 
     The tool automation shall automatically archive the Verification reports for releases.
@@ -130,8 +161,12 @@ Process Requirements
 .. gd_req:: Verification Documentation Checks
     :id: gd_req__verification_checks
     :status: valid
+    :version: 1
     :tags: prio_1_automation, verification
-    :satisfies: wf__verification_unit_test, wf__verification_comp_int_test, wf__verification_feat_int_test, wf__verification_platform_int_test
+    :satisfies: wf__verification_unit_test[version==1],
+                wf__verification_comp_int_test[version==1],
+                wf__verification_feat_int_test[version==1],
+                wf__verification_platform_int_test[version==1]
     :complies:
 
     The following checks shall be implemented on test metadata:
@@ -146,8 +181,12 @@ Process Requirements
 .. gd_req:: Verification Documentation Checks Extended
     :id: gd_req__verification_checks_extended
     :status: valid
+    :version: 1
     :tags: verification
-    :satisfies: wf__verification_unit_test, wf__verification_comp_int_test, wf__verification_feat_int_test, wf__verification_platform_int_test
+    :satisfies: wf__verification_unit_test[version==1],
+                wf__verification_comp_int_test[version==1],
+                wf__verification_feat_int_test[version==1],
+                wf__verification_platform_int_test[version==1]
     :complies:
 
     The following checks shall be implemented on test metadata:
@@ -158,8 +197,9 @@ Process Requirements
 .. gd_req:: Verification of External Components AoUs
     :id: gd_req__verification_external_aou
     :status: valid
+    :version: 1
     :tags: prio_2_automation, verification
-    :satisfies: wf__verification_comp_int_test, wf__verification_feat_int_test
+    :satisfies: wf__verification_comp_int_test[version==1], wf__verification_feat_int_test[version==1]
     :complies:
 
     External components AoUs shall be verified by integration tests or static analysis tooling.
@@ -171,8 +211,12 @@ Process Requirements
 .. gd_req:: Static Code Analysis Classification
     :id: gd_req__verification_sca_classification
     :status: valid
+    :version: 1
     :tags: prio_2_automation, verification
-    :satisfies: wf__verification_unit_test, wf__verification_comp_int_test, wf__verification_feat_int_test, wf__verification_platform_int_test
+    :satisfies: wf__verification_unit_test[version==1],
+                wf__verification_comp_int_test[version==1],
+                wf__verification_feat_int_test[version==1],
+                wf__verification_platform_int_test[version==1]
     :complies:
 
     Static code analysis findings shall be classified according to the following categories:
@@ -189,8 +233,12 @@ Process Requirements
 .. gd_req:: CI reference integration execution
     :id: gd_req__verification_ci_reference_execution
     :status: valid
+    :version: 1
     :tags: prio_2_automation, verification
-    :satisfies: wf__verification_unit_test, wf__verification_comp_int_test, wf__verification_feat_int_test, wf__verification_platform_int_test
+    :satisfies: wf__verification_unit_test[version==1],
+                wf__verification_comp_int_test[version==1],
+                wf__verification_feat_int_test[version==1],
+                wf__verification_platform_int_test[version==1]
     :complies:
 
     The CI reference integration execution shall be triggered on regular basis to guarantee the inter-operation of all integrated components

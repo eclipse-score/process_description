@@ -20,9 +20,15 @@ Process Requirements
 .. gd_req:: Requirements Structure
    :id: gd_req__req_structure
    :status: valid
+   :version: 1
    :tags: done_automation, structure
-   :satisfies: wf__req_stkh_req, wf__req_feat_req, wf__req_comp_req, wf__req_tool, wf__req_feat_aou, wf__req_comp_aou
-   :complies: std_req__iso26262__support_6431, std_req__iso26262__support_6432
+   :satisfies: wf__req_stkh_req[version==1],
+               wf__req_feat_req[version==1],
+               wf__req_comp_req[version==1],
+               wf__req_tool[version==1],
+               wf__req_feat_aou[version==1],
+               wf__req_comp_aou[version==1]
+   :complies: std_req__iso26262__support_6431[version==1], std_req__iso26262__support_6432[version==1]
 
    Requirements shall be hierarchically grouped into three levels.
 
@@ -45,9 +51,15 @@ Process Requirement Attributes
 .. gd_req:: Requirement attribute: UID
    :id: gd_req__req_attr_uid
    :status: valid
+   :version: 1
    :tags: manual_prio_1, attribute, mandatory
-   :satisfies: wf__req_stkh_req, wf__req_feat_req, wf__req_comp_req, wf__req_tool, wf__req_feat_aou, wf__req_comp_aou
-   :complies: std_req__iso26262__support_6425, std_req__iso26262__support_6432
+   :satisfies: wf__req_stkh_req[version==1],
+               wf__req_feat_req[version==1],
+               wf__req_comp_req[version==1],
+               wf__req_tool[version==1],
+               wf__req_feat_aou[version==1],
+               wf__req_comp_aou[version==1]
+   :complies: std_req__iso26262__support_6425[version==1], std_req__iso26262__support_6432[version==1]
 
    Each requirement shall have a unique ID. It shall consist of three parts:
 
@@ -60,9 +72,15 @@ Process Requirement Attributes
 .. gd_req:: Requirement attribute: title
    :id: gd_req__req_attr_title
    :status: valid
+   :version: 1
    :tags: manual_prio_1 attribute, mandatory
-   :satisfies: wf__req_stkh_req, wf__req_feat_req, wf__req_comp_req, wf__req_tool, wf__req_feat_aou, wf__req_comp_aou
-   :complies: std_req__iso26262__support_6424
+   :satisfies: wf__req_stkh_req[version==1],
+               wf__req_feat_req[version==1],
+               wf__req_comp_req[version==1],
+               wf__req_tool[version==1],
+               wf__req_feat_aou[version==1],
+               wf__req_comp_aou[version==1]
+   :complies: std_req__iso26262__support_6424[version==1]
 
    The title of the requirement shall provide a short summary of the description, but is not an "additional" requirement.
 
@@ -71,9 +89,15 @@ Process Requirement Attributes
 .. gd_req:: Requirement attribute: description
    :id: gd_req__req_attr_description
    :status: valid
+   :version: 1
    :tags: manual_prio_1, attribute, mandatory
-   :satisfies: wf__req_stkh_req, wf__req_feat_req, wf__req_comp_req, wf__req_tool, wf__req_feat_aou, wf__req_comp_aou
-   :complies: std_req__iso26262__support_6424
+   :satisfies: wf__req_stkh_req[version==1],
+               wf__req_feat_req[version==1],
+               wf__req_comp_req[version==1],
+               wf__req_tool[version==1],
+               wf__req_feat_aou[version==1],
+               wf__req_comp_aou[version==1]
+   :complies: std_req__iso26262__support_6424[version==1]
 
    Each requirement shall have a description.
 
@@ -86,9 +110,14 @@ Process Requirement Attributes
 .. gd_req:: Requirement attribute: type
    :id: gd_req__req_attr_type
    :status: valid
+   :version: 1
    :tags: manual_prio_2, attribute, mandatory
-   :satisfies: wf__req_stkh_req, wf__req_feat_req, wf__req_comp_req, wf__req_feat_aou, wf__req_comp_aou
-   :complies: std_req__aspice_40__iic-17-00
+   :satisfies: wf__req_stkh_req[version==1],
+               wf__req_feat_req[version==1],
+               wf__req_comp_req[version==1],
+               wf__req_feat_aou[version==1],
+               wf__req_comp_aou[version==1]
+   :complies: std_req__aspice_40__iic-17-00[version==1]
 
    Each requirement, apart from process and tool requirements, shall have a type of one of following options:
 
@@ -100,8 +129,12 @@ Process Requirement Attributes
 .. gd_req:: Requirements attribute: security
    :id: gd_req__req_attr_security
    :status: valid
+   :version: 1
    :tags: manual_prio_2, attribute, mandatory
-   :satisfies: wf__req_feat_req, wf__req_comp_req, wf__req_feat_aou, wf__req_comp_aou
+   :satisfies: wf__req_feat_req[version==1],
+               wf__req_comp_req[version==1],
+               wf__req_feat_aou[version==1],
+               wf__req_comp_aou[version==1]
 
    Each requirement, apart from process and tool requirements, shall have a security relevance identifier:
 
@@ -111,9 +144,14 @@ Process Requirement Attributes
 .. gd_req:: Requirement attribute: safety
    :id: gd_req__req_attr_safety
    :status: valid
+   :version: 1
    :tags: manual_prio_1, attribute, mandatory
-   :complies: std_req__iso26262__support_6421, std_req__iso26262__support_6425
-   :satisfies: wf__req_stkh_req, wf__req_feat_req, wf__req_comp_req, wf__req_feat_aou, wf__req_comp_aou
+   :complies: std_req__iso26262__support_6421[version==1], std_req__iso26262__support_6425[version==1]
+   :satisfies: wf__req_stkh_req[version==1],
+               wf__req_feat_req[version==1],
+               wf__req_comp_req[version==1],
+               wf__req_feat_aou[version==1],
+               wf__req_comp_aou[version==1]
 
    Each requirement, apart from process and tool requirements, shall have a automotive safety integrity level (ASIL) identifier:
 
@@ -123,9 +161,14 @@ Process Requirement Attributes
 .. gd_req:: Requirement attribute: status
    :id: gd_req__req_attr_status
    :status: valid
+   :version: 1
    :tags: manual_prio_1, attribute, mandatory
-   :complies: std_req__iso26262__support_6425
-   :satisfies: wf__req_stkh_req, wf__req_feat_req, wf__req_comp_req, wf__req_feat_aou, wf__req_comp_aou
+   :complies: std_req__iso26262__support_6425[version==1]
+   :satisfies: wf__req_stkh_req[version==1],
+               wf__req_feat_req[version==1],
+               wf__req_comp_req[version==1],
+               wf__req_feat_aou[version==1],
+               wf__req_comp_aou[version==1]
 
    Each requirement, apart from process and tool requirements, shall have a status:
 
@@ -135,8 +178,9 @@ Process Requirement Attributes
 .. gd_req:: Requirement attribute: rationale
    :id: gd_req__req_attr_rationale
    :status: valid
+   :version: 1
    :tags: manual_prio_1, attribute, mandatory
-   :satisfies: wf__req_stkh_req
+   :satisfies: wf__req_stkh_req[version==1]
 
    Each stakeholder requirement shall provide an attribute called rationale.
    The rationale shall contain the reason why the requirement is needed.
@@ -144,9 +188,10 @@ Process Requirement Attributes
 .. gd_req:: Requirement attribute: valid_from
    :id: gd_req__req_attr_valid_from
    :status: valid
+   :version: 1
    :tags: manual_prio_2, attribute
-   :satisfies: wf__req_stkh_req, wf__req_feat_req
-   :complies: std_req__aspice_40__SWE-1-BP2, std_req__aspice_40__iic-17-54
+   :satisfies: wf__req_stkh_req[version==1], wf__req_feat_req[version==1]
+   :complies: std_req__aspice_40__SWE-1-BP2[version==1], std_req__aspice_40__iic-17-54[version==1]
 
    Stakeholder and feature requirements can have a validity attribute that tells
    from which milestone onwards the requirement is part of a feature.
@@ -160,9 +205,10 @@ Process Requirement Attributes
 .. gd_req:: Requirement attribute: valid_until
    :id: gd_req__req_attr_valid_until
    :status: valid
+   :version: 1
    :tags: manual_prio_2, attribute
-   :satisfies: wf__req_stkh_req, wf__req_feat_req
-   :complies: std_req__aspice_40__SWE-1-BP2, std_req__aspice_40__iic-17-54
+   :satisfies: wf__req_stkh_req[version==1], wf__req_feat_req[version==1]
+   :complies: std_req__aspice_40__SWE-1-BP2[version==1], std_req__aspice_40__iic-17-54[version==1]
 
    Stakeholder and feature requirements can have a validity attribute that tells
    until which milestone the requirement is part of a feature.
@@ -181,9 +227,13 @@ Process Requirement Linkage
 .. gd_req:: Requirement Linkage
    :id: gd_req__req_linkage
    :status: valid
+   :version: 1
    :tags: manual_prio_1, attribute
-   :complies: std_req__iso26262__support_6432, std_req__aspice_40__SWE-1-BP5
-   :satisfies: wf__req_stkh_req, wf__req_feat_req, wf__req_comp_req, wf__req_tool
+   :complies: std_req__iso26262__support_6432[version==1], std_req__aspice_40__SWE-1-BP5[version==1]
+   :satisfies: wf__req_stkh_req[version==1],
+               wf__req_feat_req[version==1],
+               wf__req_comp_req[version==1],
+               wf__req_tool[version==1]
 
    Requirements shall be linked to its adjacent level via the attribute derived_from.
 
@@ -194,9 +244,10 @@ Process Requirement Linkage
 .. gd_req:: Requirement Linkage to AoU
    :id: gd_req__req_linkage_aou
    :status: valid
+   :version: 1
    :tags: manual_prio_1, attribute
-   :complies: std_req__iso26262__support_6432, std_req__aspice_40__SWE-1-BP5
-   :satisfies: wf__req_feat_req, wf__req_comp_req
+   :complies: std_req__iso26262__support_6432[version==1], std_req__aspice_40__SWE-1-BP5[version==1]
+   :satisfies: wf__req_feat_req[version==1], wf__req_comp_req[version==1]
 
    Requirements shall be linked to AoU via the attribute covers, if they already cover these.
 
@@ -209,18 +260,23 @@ Process Requirement Linkage
 .. gd_req:: Requirement Traceability
    :id: gd_req__req_traceability
    :status: valid
+   :version: 1
    :tags: done_automation, attribute
-   :complies: std_req__iso26262__support_6432, std_req__aspice_40__SWE-1-BP5
-   :satisfies: wf__req_stkh_req, wf__req_feat_req, wf__req_comp_req, wf__req_tool
+   :complies: std_req__iso26262__support_6432[version==1], std_req__aspice_40__SWE-1-BP5[version==1]
+   :satisfies: wf__req_stkh_req[version==1],
+               wf__req_feat_req[version==1],
+               wf__req_comp_req[version==1],
+               wf__req_tool[version==1]
 
    Bi-directional traceability shall be provided by adding a "back-link" via attribute derives (i.e. make a <-> out of the <- in :need:`gd_req__req_linkage`).
 
 .. gd_req:: Requirement attribute: requirement covered
    :id: gd_req__req_attr_req_cov
    :status: valid
+   :version: 1
    :tags: manual_prio_1, attribute
-   :complies: std_req__iso26262__support_6423, std_req__aspice_40__iic-13-51
-   :satisfies: wf__req_stkh_req, wf__req_feat_req
+   :complies: std_req__iso26262__support_6423[version==1], std_req__aspice_40__iic-13-51[version==1]
+   :satisfies: wf__req_stkh_req[version==1], wf__req_feat_req[version==1]
 
    It shall be possible to specify the requirement coverage, meaning the requirement is covered fully by its linked children.
 
@@ -230,26 +286,29 @@ Process Requirement Linkage
 .. gd_req:: Requirement attribute: link to implementation
    :id: gd_req__req_attr_impl
    :status: valid
+   :version: 1
    :tags: done_automation, attribute
-   :satisfies: wf__req_feat_req, wf__req_comp_req
+   :satisfies: wf__req_feat_req[version==1], wf__req_comp_req[version==1]
 
    It shall be possible to link requirements to code (to the respective line of code in an attribute of the requirement).
 
 .. gd_req:: Requirement attribute: link to test
    :id: gd_req__req_attr_testlink
    :status: valid
+   :version: 1
    :tags: done_automation, attribute
-   :satisfies: wf__req_feat_req, wf__req_comp_req
-   :complies: std_req__iso26262__support_6433, std_req__iso26262__software_944
+   :satisfies: wf__req_feat_req[version==1], wf__req_comp_req[version==1]
+   :complies: std_req__iso26262__support_6433[version==1], std_req__iso26262__software_944[version==1]
 
    It shall be possible to link requirements to tests and automatically include a link to the test case in the attribute testlink.
 
 .. gd_req:: Requirement attribute: complete test coverage
    :id: gd_req__req_attr_test_covered
    :status: valid
+   :version: 1
    :tags: manual_prio_1, attribute
-   :satisfies: wf__req_feat_req, wf__req_comp_req
-   :complies: std_req__iso26262__support_6433, std_req__iso26262__software_944, std_req__aspice_40__iic-13-51
+   :satisfies: wf__req_feat_req[version==1], wf__req_comp_req[version==1]
+   :complies: std_req__iso26262__support_6433[version==1], std_req__iso26262__software_944[version==1], std_req__aspice_40__iic-13-51[version==1]
 
    It shall be possible to specify if a requirement is completely satisfied by the linked test case(s).
 
@@ -259,9 +318,10 @@ Process Requirement Linkage
 .. gd_req:: Requirement attribute: versioning
    :id: gd_req__req_attr_version
    :status: valid
+   :version: 1
    :tags: prio_1_automation, attribute
-   :satisfies: wf__req_stkh_req, wf__req_feat_req, wf__req_comp_req
-   :complies: std_req__iso26262__support_6425, std_req__iso26262__support_6434
+   :satisfies: wf__req_stkh_req[version==1], wf__req_feat_req[version==1], wf__req_comp_req[version==1]
+   :complies: std_req__iso26262__support_6425[version==1], std_req__iso26262__support_6434[version==1]
 
    A versioning for requirements shall be provided. For this all mandatory attributes shall be taken into account: see :need:`gd_req__req_check_mandatory`
 
@@ -273,9 +333,10 @@ Process Requirements Checks
 .. gd_req:: Requirement check: suspicious
    :id: gd_req__req_suspicious
    :status: valid
+   :version: 1
    :tags: prio_2_automation, check
-   :satisfies: wf__req_stkh_req, wf__req_feat_req, wf__req_comp_req
-   :complies: std_req__iso26262__support_6425, std_req__iso26262__support_6434, std_req__aspice_40__iic-13-51
+   :satisfies: wf__req_stkh_req[version==1], wf__req_feat_req[version==1], wf__req_comp_req[version==1]
+   :complies: std_req__iso26262__support_6425[version==1], std_req__iso26262__support_6434[version==1], std_req__aspice_40__iic-13-51[version==1]
 
    Based on the requirement versioning it shall be checked if a parent requirement was updated but not the linked child requirements (or tests).
    In case an update was detected, the attribute `requirement covered` (or `complete test coverage`) shall be set to "No"
@@ -285,8 +346,14 @@ Process Requirements Checks
 .. gd_req:: Requirements mandatory attributes provided
    :id: gd_req__req_check_mandatory
    :status: valid
+   :version: 1
    :tags: done_automation, check
-   :satisfies: wf__req_stkh_req, wf__req_feat_req, wf__req_comp_req, wf__req_tool, wf__req_feat_aou, wf__req_comp_aou
+   :satisfies: wf__req_stkh_req[version==1],
+               wf__req_feat_req[version==1],
+               wf__req_comp_req[version==1],
+               wf__req_tool[version==1],
+               wf__req_feat_aou[version==1],
+               wf__req_comp_aou[version==1]
 
    It shall be checked if all mandatory attributes for each requirement is provided by the user. For all requirements following attributes shall be mandatory:
 
@@ -301,8 +368,14 @@ Process Requirements Checks
 .. gd_req:: Requirements no weak words
    :id: gd_req__req_desc_weak
    :status: valid
+   :version: 1
    :tags: done_automation, check
-   :satisfies: wf__req_stkh_req, wf__req_feat_req, wf__req_comp_req, wf__req_tool, wf__req_feat_aou, wf__req_comp_aou
+   :satisfies: wf__req_stkh_req[version==1],
+               wf__req_feat_req[version==1],
+               wf__req_comp_req[version==1],
+               wf__req_tool[version==1],
+               wf__req_feat_aou[version==1],
+               wf__req_comp_aou[version==1]
 
    It shall be ensured that no *weak words* are contained in the requirement description for:
 
@@ -317,9 +390,10 @@ Process Requirements Checks
 .. gd_req:: Requirements linkage level
    :id: gd_req__req_linkage_fulfill
    :status: valid
+   :version: 1
    :tags: done_automation, check
-   :complies: std_req__iso26262__support_6432, std_req__aspice_40__iic-13-51
-   :satisfies: wf__req_stkh_req, wf__req_feat_req, wf__req_comp_req
+   :complies: std_req__iso26262__support_6432[version==1], std_req__aspice_40__iic-13-51[version==1]
+   :satisfies: wf__req_stkh_req[version==1], wf__req_feat_req[version==1], wf__req_comp_req[version==1]
 
    Every feature- and component requirement shall be linked to at least one parent requirement according to the defined traceability scheme:
 
@@ -328,9 +402,10 @@ Process Requirements Checks
 .. gd_req:: Requirements mandatory architecture linkage
    :id: gd_req__req_linkage_architecture_mandatory
    :status: valid
+   :version: 1
    :tags: done_automation, check
-   :complies: std_req__iso26262__support_6423
-   :satisfies: wf__req_feat_req, wf__req_comp_req
+   :complies: std_req__iso26262__support_6423[version==1]
+   :satisfies: wf__req_feat_req[version==1], wf__req_comp_req[version==1]
 
    Every feature- and component requirement shall be linked via satisfied_by at least to one valid architectural element on the same level.
 
@@ -340,9 +415,10 @@ Process Requirements Checks
 .. gd_req:: Requirements linkage architecture
    :id: gd_req__req_linkage_architecture
    :status: valid
+   :version: 1
    :tags: prio_3_automation, check
-   :complies: std_req__iso26262__support_6423
-   :satisfies: wf__req_feat_req, wf__req_comp_req
+   :complies: std_req__iso26262__support_6423[version==1]
+   :satisfies: wf__req_feat_req[version==1], wf__req_comp_req[version==1]
 
    It shall be checked if every feature requirement is linked via fulfilled_by at least to one valid architectural diagram/interface on the same level.
    This should also include requirement type checking:
@@ -355,18 +431,20 @@ Process Requirements Checks
 .. gd_req:: Requirements linkage architecture switch
    :id: gd_req__req_linkage_architecture_switch
    :status: valid
+   :version: 1
    :tags: prio_3_automation, check
-   :complies: std_req__iso26262__support_6423
-   :satisfies: wf__req_feat_req, wf__req_comp_req
+   :complies: std_req__iso26262__support_6423[version==1]
+   :satisfies: wf__req_feat_req[version==1], wf__req_comp_req[version==1]
 
    The check :need:`gd_req__req_linkage_architecture` shall only be enabled for a release build, otherwise it would block creating requirements first without architecture.
 
 .. gd_req:: Requirements linkage safety
    :id: gd_req__req_linkage_safety
    :status: valid
+   :version: 1
    :tags: done_automation, check
-   :satisfies: wf__req_stkh_req, wf__req_feat_req, wf__req_comp_req
-   :complies: std_req__iso26262__support_6422
+   :satisfies: wf__req_stkh_req[version==1], wf__req_feat_req[version==1], wf__req_comp_req[version==1]
+   :complies: std_req__iso26262__support_6422[version==1]
 
    It shall be checked that (child) QM requirements (Safety == QM) can not be linked against a (parent) safety requirement (Safety != QM).
 
@@ -375,8 +453,9 @@ Process Requirements Checks
 .. gd_req:: Requirements validity
    :id: gd_req__req_validity
    :status: valid
+   :version: 1
    :tags: prio_3_automation, check
-   :satisfies: wf__req_stkh_req, wf__req_feat_req
+   :satisfies: wf__req_stkh_req[version==1], wf__req_feat_req[version==1]
 
    Validity attributes (:need:`gd_req__req_attr_valid_from` and :need:`gd_req__req_attr_valid_until`) shall be checked for correctness (i.e. they denote an existing milestone) and consistent (e.g. the until is not before from)
    Several of the above checks are not to be executed on requirements not valid in the next milestone, these are TBD

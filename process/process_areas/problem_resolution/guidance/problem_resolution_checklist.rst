@@ -20,6 +20,7 @@ Problem Checklist
 .. gd_chklst:: Problem Review Checklist
    :id: gd_chklst__problem_cr_review
    :status: valid
+   :version: 1
    :tags: problem_resolution
    :complies:
 

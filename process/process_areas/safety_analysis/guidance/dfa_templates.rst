@@ -20,7 +20,17 @@ DFA Templates
 .. gd_temp:: Platform DFA Templates
    :id: gd_temp__plat_saf_dfa
    :status: valid
-   :complies: std_req__iso26262__software_7411, std_req__iso26262__analysis_741, std_req__iso26262__analysis_742, std_req__iso26262__analysis_743, std_req__iso26262__analysis_745, std_req__iso26262__analysis_746, std_req__iso26262__analysis_747, std_req__iso26262__analysis_748, std_req__iso26262__analysis_749, std_req__isopas8926__44432
+   :version: 1
+   :complies: std_req__iso26262__software_7411[version==1],
+              std_req__iso26262__analysis_741[version==1],
+              std_req__iso26262__analysis_742[version==1],
+              std_req__iso26262__analysis_743[version==1],
+              std_req__iso26262__analysis_745[version==1],
+              std_req__iso26262__analysis_746[version==1],
+              std_req__iso26262__analysis_747[version==1],
+              std_req__iso26262__analysis_748[version==1],
+              std_req__iso26262__analysis_749[version==1],
+              std_req__isopas8926__44432[version==1]
 
    For the content see here: :need:`doc__platform_dfa`
 
@@ -28,7 +38,17 @@ DFA Templates
 .. gd_temp:: Feature DFA Templates
    :id: gd_temp__feat_saf_dfa
    :status: valid
-   :complies: std_req__iso26262__software_7411, std_req__iso26262__analysis_741, std_req__iso26262__analysis_742, std_req__iso26262__analysis_743, std_req__iso26262__analysis_745, std_req__iso26262__analysis_746, std_req__iso26262__analysis_747, std_req__iso26262__analysis_748, std_req__iso26262__analysis_749, std_req__isopas8926__44432
+   :version: 1
+   :complies: std_req__iso26262__software_7411[version==1],
+              std_req__iso26262__analysis_741[version==1],
+              std_req__iso26262__analysis_742[version==1],
+              std_req__iso26262__analysis_743[version==1],
+              std_req__iso26262__analysis_745[version==1],
+              std_req__iso26262__analysis_746[version==1],
+              std_req__iso26262__analysis_747[version==1],
+              std_req__iso26262__analysis_748[version==1],
+              std_req__iso26262__analysis_749[version==1],
+              std_req__isopas8926__44432[version==1]
 
    For the content see here: `Feature DFA Template <https://eclipse-score.github.io/module_template/main/docs/features/feature_example/safety_analysis/dfa.html>`__
 
@@ -36,6 +56,16 @@ DFA Templates
 .. gd_temp:: Component DFA Templates
    :id: gd_temp__comp_saf_dfa
    :status: valid
-   :complies: std_req__iso26262__software_7411, std_req__iso26262__analysis_741, std_req__iso26262__analysis_742, std_req__iso26262__analysis_743, std_req__iso26262__analysis_745, std_req__iso26262__analysis_746, std_req__iso26262__analysis_747, std_req__iso26262__analysis_748, std_req__iso26262__analysis_749, std_req__isopas8926__44432
+   :version: 1
+   :complies: std_req__iso26262__software_7411[version==1],
+              std_req__iso26262__analysis_741[version==1],
+              std_req__iso26262__analysis_742[version==1],
+              std_req__iso26262__analysis_743[version==1],
+              std_req__iso26262__analysis_745[version==1],
+              std_req__iso26262__analysis_746[version==1],
+              std_req__iso26262__analysis_747[version==1],
+              std_req__iso26262__analysis_748[version==1],
+              std_req__iso26262__analysis_749[version==1],
+              std_req__isopas8926__44432[version==1]
 
    For the content see here: `Component DFA Template <https://eclipse-score.github.io/module_template/main/score/component_example/docs/safety_analysis/dfa.html>`__

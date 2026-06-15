@@ -37,7 +37,8 @@ Base practices
 .. std_req:: MLE.4.BP1: Specify an ML test approach
    :id: std_req__aspice_40__MLE-4-BP1
    :status: valid
-   :links: std_req__aspice_40__iic-08-64
+   :version: 1
+   :links: std_req__aspice_40__iic-08-64[version==1]
 
    Specify an ML test approach suitable to provide evidence for compliance of the trained ML model and the deployed ML model with the ML requirements. The ML test approach includes
 
@@ -67,7 +68,8 @@ Base practices
 .. std_req:: MLE.4.BP2: Create ML test data set
    :id: std_req__aspice_40__MLE-4-BP2
    :status: valid
-   :links: std_req__aspice_40__iic-03-51
+   :version: 1
+   :links: std_req__aspice_40__iic-03-51[version==1]
 
    Create the ML test data set needed for testing of the trained ML model and testing of the deployed ML model from the ML data collection provided by SUP.11 considering the ML test approach. The ML test data set shall not be used for training.
 
@@ -82,7 +84,8 @@ Base practices
 .. std_req:: MLE.4.BP3: Test trained ML model
    :id: std_req__aspice_40__MLE-4-BP3
    :status: valid
-   :links: std_req__aspice_40__iic-13-50
+   :version: 1
+   :links: std_req__aspice_40__iic-13-50[version==1]
 
    Test the trained ML model according to the ML test approach using the created ML test data set. Record and evaluate the ML test results.
 
@@ -93,7 +96,8 @@ Base practices
 .. std_req:: MLE.4.BP4: Derive deployed ML model
    :id: std_req__aspice_40__MLE-4-BP4
    :status: valid
-   :links: std_req__aspice_40__iic-11-50, std_req__aspice_40__iic-13-50
+   :version: 1
+   :links: std_req__aspice_40__iic-11-50[version==1], std_req__aspice_40__iic-13-50[version==1]
 
    Derive the deployed ML model from the trained ML model according to the ML architecture. The deployed ML model shall be used for testing and delivery to software integration.
 
@@ -104,14 +108,16 @@ Base practices
 .. std_req:: MLE.4.BP5: Test deployed ML model
    :id: std_req__aspice_40__MLE-4-BP5
    :status: valid
-   :links: std_req__aspice_40__iic-11-50, std_req__aspice_40__iic-13-50
+   :version: 1
+   :links: std_req__aspice_40__iic-11-50[version==1], std_req__aspice_40__iic-13-50[version==1]
 
    Test the deployed ML model according to the ML test approach using the created ML test data set. Record and evaluate the ML test results.
 
 .. std_req:: MLE.4.BP6: Ensure consistency and establish bidirectional traceability
    :id: std_req__aspice_40__MLE-4-BP6
    :status: valid
-   :links: std_req__aspice_40__iic-13-51
+   :version: 1
+   :links: std_req__aspice_40__iic-13-51[version==1]
 
    Ensure consistency and establish bidirectional traceability between the ML test approach and the ML requirements, and the ML test data set and the ML data requirements; and bidirectional traceability is established between the ML test approach and ML test results.
 
@@ -122,7 +128,8 @@ Base practices
 .. std_req:: MLE.4.BP7: Summarize and communicate results
    :id: std_req__aspice_40__MLE-4-BP7
    :status: valid
-   :links: std_req__aspice_40__iic-13-52
+   :version: 1
+   :links: std_req__aspice_40__iic-13-52[version==1]
 
    Summarize the ML test results of the ML model. Inform all affected parties about the agreed results and the deployed ML model.
 

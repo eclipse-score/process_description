@@ -19,9 +19,10 @@ Platform Safety Analysis Formal Review Report
 .. document:: Platform Safety Analysis Formal Review Report
    :id: doc__platform_safety_analysis_fdr
    :status: draft
+   :version: 1
    :safety: ASIL_B
    :security: YES
-   :realizes: wp__fdr_reports
+   :realizes: wp__fdr_reports[version==1]
    :tags: template
 
 

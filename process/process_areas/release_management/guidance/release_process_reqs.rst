@@ -18,9 +18,10 @@ Process Requirements
 .. gd_req:: Release note automated generation
    :id: gd_req__release_note
    :status: valid
+   :version: 1
    :tags: prio_2_automation, release_management
-   :satisfies: wf__rel_platform_rel_note, wf__rel_mod_rel_note
-   :complies: std_req__iso26262__management_64134, std_req__iso26262__management_64135, std_req__aspice_40__SUP-8-BP7
+   :satisfies: wf__rel_platform_rel_note[version==1], wf__rel_mod_rel_note[version==1]
+   :complies: std_req__iso26262__management_64134[version==1], std_req__iso26262__management_64135[version==1], std_req__aspice_40__SUP-8-BP7[version==1]
 
    | The release note shall be generated progressively and automatically compiling the content as far as possible.
    | This shall be done according to templates :need:`gd_temp__rel_plat_rel_note` and :need:`gd_temp__rel_mod_rel_note`.

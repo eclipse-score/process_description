@@ -18,6 +18,7 @@ Concept Description
 .. doc_concept:: Concept Description
    :id: doc_concept__imp_concept
    :status: valid
+   :version: 1
    :tags: implementation
 
 In this section a concept for the implementation will be discussed. Inputs for this concepts are

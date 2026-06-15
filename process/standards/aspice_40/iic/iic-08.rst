@@ -18,6 +18,7 @@
 .. std_req:: 08-53 Scope of work
    :id: std_req__aspice_40__iic-08-53
    :status: valid
+   :version: 1
 
    Scope of work may have the following characteristics:
 
@@ -34,6 +35,7 @@
 .. std_req:: 08-54 Feasibility analysis
    :id: std_req__aspice_40__iic-08-54
    :status: valid
+   :version: 1
 
    Feasibility analysis may have the following characteristics:
 
@@ -43,6 +45,7 @@
 .. std_req:: 08-55 Risk measure
    :id: std_req__aspice_40__iic-08-55
    :status: valid
+   :version: 1
 
    Risk measure may have the following characteristics:
 
@@ -62,6 +65,7 @@
 .. std_req:: 08-56 Schedule
    :id: std_req__aspice_40__iic-08-56
    :status: valid
+   :version: 1
 
    Schedule may have the following characteristics:
 
@@ -78,6 +82,7 @@
 .. std_req:: 08-58 Verification Measure Selection Set
    :id: std_req__aspice_40__iic-08-58
    :status: valid
+   :version: 1
 
    Verification Measure Selection Set may have the following characteristics:
 
@@ -87,6 +92,7 @@
 .. std_req:: 08-60 Verification Measure
    :id: std_req__aspice_40__iic-08-60
    :status: valid
+   :version: 1
 
    Verification Measure may have the following characteristics:
 
@@ -106,6 +112,7 @@
 .. std_req:: 08-61 Resource allocation
    :id: std_req__aspice_40__iic-08-61
    :status: valid
+   :version: 1
 
    Resource allocation may have the following characteristics:
 
@@ -127,6 +134,7 @@
 .. std_req:: 08-62 Communication matrix
    :id: std_req__aspice_40__iic-08-62
    :status: valid
+   :version: 1
 
    Communication matrix may have the following characteristics:
 
@@ -140,6 +148,7 @@
 .. std_req:: 08-63 Process Monitoring Method
    :id: std_req__aspice_40__iic-08-63
    :status: valid
+   :version: 1
 
    Process Monitoring Method may have the following characteristics:
 
@@ -149,6 +158,7 @@
 .. std_req:: 08-64 ML test approach
    :id: std_req__aspice_40__iic-08-64
    :status: valid
+   :version: 1
 
    - The ML test approach describes
         - ML test scenarios with distribution of data characteristics (e.g., gender, weather conditions, street conditions within the ODD) defined by ML requirements
@@ -161,6 +171,7 @@
 .. std_req:: 08-65 ML training and validation approach
    :id: std_req__aspice_40__iic-08-65
    :status: valid
+   :version: 1
 
    Process Monitoring Method may have the following characteristics:
 
@@ -176,6 +187,7 @@
 .. std_req:: 08-66 Measures against deviations in quantitative process analysis
    :id: std_req__aspice_40__iic-08-66
    :status: valid
+   :version: 1
 
    Measures against deviations in quantitative process analysis may have the following characteristics:
 

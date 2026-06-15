@@ -36,7 +36,8 @@ Base practices
 .. std_req:: MLE.1.BP1: Specify ML requirements
    :id: std_req__aspice_40__MLE-1-BP1
    :status: valid
-   :links: std_req__aspice_40__iic-17-00
+   :version: 1
+   :links: std_req__aspice_40__iic-17-00[version==1]
 
    Use the software requirements and the software architecture to identify and specify functional and non-functional ML requirements, as well as ML data requirements specifying data characteristics (e.g., gender, weather conditions, street conditions within the ODD) and their expected distributions.
 
@@ -55,7 +56,8 @@ Base practices
 .. std_req:: MLE.1.BP2: Structure ML requirements
    :id: std_req__aspice_40__MLE-1-BP2
    :status: valid
-   :links: std_req__aspice_40__iic-17-00, std_req__aspice_40__iic-17-54
+   :version: 1
+   :links: std_req__aspice_40__iic-17-00[version==1], std_req__aspice_40__iic-17-54[version==1]
 
    Structure and prioritize the ML requirements.
 
@@ -70,7 +72,8 @@ Base practices
 .. std_req:: MLE.1.BP3: Analyze ML requirements
    :id: std_req__aspice_40__MLE-1-BP3
    :status: valid
-   :links: std_req__aspice_40__iic-17-54,std_req__aspice_40__iic-15-51
+   :version: 1
+   :links: std_req__aspice_40__iic-17-54[version==1], std_req__aspice_40__iic-15-51[version==1]
 
    Analyze the specified ML requirements including their interdependencies to ensure correctness, technical feasibility, and ability for machine learning model testing, and to support project management regarding project estimates.
 
@@ -81,7 +84,8 @@ Base practices
 .. std_req:: MLE.1.BP4: Analyze the impact on the ML operating environment
    :id: std_req__aspice_40__MLE-1-BP4
    :status: valid
-   :links: std_req__aspice_40__iic-15-51
+   :version: 1
+   :links: std_req__aspice_40__iic-15-51[version==1]
 
    Analyze the impact that the ML requirements will have on interfaces of software components and the ML operating environment.
 
@@ -92,7 +96,8 @@ Base practices
 .. std_req:: MLE.1.BP5: Ensure consistency and establish bidirectional traceability
    :id: std_req__aspice_40__MLE-1-BP5
    :status: valid
-   :links: std_req__aspice_40__iic-13-51
+   :version: 1
+   :links: std_req__aspice_40__iic-13-51[version==1]
 
    Ensure consistency and establish bidirectional traceability between ML requirements and software requirements and between ML requirements and the software architecture.
 
@@ -107,7 +112,8 @@ Base practices
 .. std_req:: MLE.1.BP6: Communicate agreed ML requirements and impact on the operating environment
    :id: std_req__aspice_40__MLE-1-BP6
    :status: valid
-   :links: std_req__aspice_40__iic-13-52
+   :version: 1
+   :links: std_req__aspice_40__iic-13-52[version==1]
 
    Communicate the agreed ML requirements, and the results of the impact analysis on the ML operating environment to all affected parties.
 

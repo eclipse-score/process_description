@@ -18,6 +18,7 @@ Getting Started
 .. doc_getstrt:: Getting Started on Change Management
    :id: doc_getstrt__security_management_process
    :status: valid
+   :version: 1
    :tags: security_management
 
 This document and sub chapters outlines the required steps to ensure that project complies with ISO SAE 21434 security standard.

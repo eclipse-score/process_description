@@ -19,10 +19,28 @@ Guideline
 .. gd_guidl:: Process Management Guideline
    :id: gd_guidl__process_management
    :status: valid
+   :version: 1
    :tags: process_management
-   :complies: std_req__iso26262__management_5421, std_req__iso26262__management_5422, std_req__iso26262__management_5426, std_req__aspice_40__gp-311, std_req__aspice_40__iic-10-00, std_req__aspice_40__iic-15-54,
-              std_req__aspice_40__gp-211, std_req__aspice_40__gp-212, std_req__aspice_40__gp-213, std_req__aspice_40__gp-214, std_req__aspice_40__gp-215, std_req__aspice_40__gp-216, std_req__aspice_40__gp-224,
-              std_req__aspice_40__gp-312, std_req__aspice_40__gp-313, std_req__aspice_40__gp-314, std_req__aspice_40__gp-321, std_req__aspice_40__gp-322, std_req__aspice_40__gp-323, std_req__aspice_40__gp-324
+   :complies: std_req__iso26262__management_5421[version==1],
+              std_req__iso26262__management_5422[version==1],
+              std_req__iso26262__management_5426[version==1],
+              std_req__aspice_40__gp-311[version==1],
+              std_req__aspice_40__iic-10-00[version==1],
+              std_req__aspice_40__iic-15-54[version==1],
+              std_req__aspice_40__gp-211[version==1],
+              std_req__aspice_40__gp-212[version==1],
+              std_req__aspice_40__gp-213[version==1],
+              std_req__aspice_40__gp-214[version==1],
+              std_req__aspice_40__gp-215[version==1],
+              std_req__aspice_40__gp-216[version==1],
+              std_req__aspice_40__gp-224[version==1],
+              std_req__aspice_40__gp-312[version==1],
+              std_req__aspice_40__gp-313[version==1],
+              std_req__aspice_40__gp-314[version==1],
+              std_req__aspice_40__gp-321[version==1],
+              std_req__aspice_40__gp-322[version==1],
+              std_req__aspice_40__gp-323[version==1],
+              std_req__aspice_40__gp-324[version==1]
 
 This document describes the general guidances for Process Management based on the concept which is defined :need:`[[title]]<doc_concept__process_management>`.
 
@@ -129,20 +147,56 @@ Tailoring
 .. gd_guidl:: IIC Requirements Tailored
    :id: gd_guidl__iic_req_tailored
    :status: valid
-   :complies: std_req__aspice_40__iic-01-53, std_req__aspice_40__iic-01-54,
-              std_req__aspice_40__iic-02-01,
-              std_req__aspice_40__iic-03-06, std_req__aspice_40__iic-03-51, std_req__aspice_40__iic-03-53,
-              std_req__aspice_40__iic-04-02, std_req__aspice_40__iic-04-51,
-              std_req__aspice_40__iic-06-51,
-              std_req__aspice_40__iic-07-04, std_req__aspice_40__iic-07-05, std_req__aspice_40__iic-07-06, std_req__aspice_40__iic-07-08, std_req__aspice_40__iic-07-51, std_req__aspice_40__iic-07-61, std_req__aspice_40__iic-07-62, std_req__aspice_40__iic-07-63, std_req__aspice_40__iic-07-64,
-              std_req__aspice_40__iic-08-54, std_req__aspice_40__iic-08-61, std_req__aspice_40__iic-08-63, std_req__aspice_40__iic-08-64, std_req__aspice_40__iic-08-65, std_req__aspice_40__iic-08-66,
-              std_req__aspice_40__iic-11-50,
-              std_req__aspice_40__iic-13-06, std_req__aspice_40__iic-13-09, std_req__aspice_40__iic-13-13, std_req__aspice_40__iic-13-14, std_req__aspice_40__iic-13-18, std_req__aspice_40__iic-13-25, std_req__aspice_40__iic-13-50, std_req__aspice_40__iic-13-55,
-              std_req__aspice_40__iic-15-57, std_req__aspice_40__iic-15-58,
-              std_req__aspice_40__iic-16-00, std_req__aspice_40__iic-16-06, std_req__aspice_40__iic-16-50, std_req__aspice_40__iic-16-52,
-              std_req__aspice_40__iic-17-05, std_req__aspice_40__iic-17-55,
-              std_req__aspice_40__iic-18-00, std_req__aspice_40__iic-18-58, std_req__aspice_40__iic-18-59, std_req__aspice_40__iic-18-70, std_req__aspice_40__iic-18-80, std_req__aspice_40__iic-18-81,
-              std_req__aspice_40__iic-19-01, std_req__aspice_40__iic-19-50
+   :version: 1
+   :complies: std_req__aspice_40__iic-01-53[version==1],
+              std_req__aspice_40__iic-01-54[version==1],
+              std_req__aspice_40__iic-02-01[version==1],
+              std_req__aspice_40__iic-03-06[version==1],
+              std_req__aspice_40__iic-03-51[version==1],
+              std_req__aspice_40__iic-03-53[version==1],
+              std_req__aspice_40__iic-04-02[version==1],
+              std_req__aspice_40__iic-04-51[version==1],
+              std_req__aspice_40__iic-06-51[version==1],
+              std_req__aspice_40__iic-07-04[version==1],
+              std_req__aspice_40__iic-07-05[version==1],
+              std_req__aspice_40__iic-07-06[version==1],
+              std_req__aspice_40__iic-07-08[version==1],
+              std_req__aspice_40__iic-07-51[version==1],
+              std_req__aspice_40__iic-07-61[version==1],
+              std_req__aspice_40__iic-07-62[version==1],
+              std_req__aspice_40__iic-07-63[version==1],
+              std_req__aspice_40__iic-07-64[version==1],
+              std_req__aspice_40__iic-08-54[version==1],
+              std_req__aspice_40__iic-08-61[version==1],
+              std_req__aspice_40__iic-08-63[version==1],
+              std_req__aspice_40__iic-08-64[version==1],
+              std_req__aspice_40__iic-08-65[version==1],
+              std_req__aspice_40__iic-08-66[version==1],
+              std_req__aspice_40__iic-11-50[version==1],
+              std_req__aspice_40__iic-13-06[version==1],
+              std_req__aspice_40__iic-13-09[version==1],
+              std_req__aspice_40__iic-13-13[version==1],
+              std_req__aspice_40__iic-13-14[version==1],
+              std_req__aspice_40__iic-13-18[version==1],
+              std_req__aspice_40__iic-13-25[version==1],
+              std_req__aspice_40__iic-13-50[version==1],
+              std_req__aspice_40__iic-13-55[version==1],
+              std_req__aspice_40__iic-15-57[version==1],
+              std_req__aspice_40__iic-15-58[version==1],
+              std_req__aspice_40__iic-16-00[version==1],
+              std_req__aspice_40__iic-16-06[version==1],
+              std_req__aspice_40__iic-16-50[version==1],
+              std_req__aspice_40__iic-16-52[version==1],
+              std_req__aspice_40__iic-17-05[version==1],
+              std_req__aspice_40__iic-17-55[version==1],
+              std_req__aspice_40__iic-18-00[version==1],
+              std_req__aspice_40__iic-18-58[version==1],
+              std_req__aspice_40__iic-18-59[version==1],
+              std_req__aspice_40__iic-18-70[version==1],
+              std_req__aspice_40__iic-18-80[version==1],
+              std_req__aspice_40__iic-18-81[version==1],
+              std_req__aspice_40__iic-19-01[version==1],
+              std_req__aspice_40__iic-19-50[version==1]
 
    This part of the guideline links to all the information item characteristics (IIC) which are not fulfilled by the
    current process description. Make sure these are tailored out in the safety/security/quality plans

@@ -18,6 +18,18 @@ Safety Package Formal Review Checklist
 .. gd_chklst:: Safety Package Formal Review Checklist
    :id: gd_chklst__safety_package
    :status: valid
-   :complies: std_req__iso26262__management_5425, std_req__iso26262__management_6469, std_req__iso26262__management_6481, std_req__iso26262__management_6482, std_req__iso26262__management_6491, std_req__iso26262__management_6492, std_req__iso26262__management_6493, std_req__iso26262__management_64101, std_req__iso26262__management_64102, std_req__iso26262__management_64103, std_req__iso26262__management_64104, std_req__iso26262__management_64105
+   :version: 1
+   :complies: std_req__iso26262__management_5425[version==1],
+              std_req__iso26262__management_6469[version==1],
+              std_req__iso26262__management_6481[version==1],
+              std_req__iso26262__management_6482[version==1],
+              std_req__iso26262__management_6491[version==1],
+              std_req__iso26262__management_6492[version==1],
+              std_req__iso26262__management_6493[version==1],
+              std_req__iso26262__management_64101[version==1],
+              std_req__iso26262__management_64102[version==1],
+              std_req__iso26262__management_64103[version==1],
+              std_req__iso26262__management_64104[version==1],
+              std_req__iso26262__management_64105[version==1]
 
    For the content see here: `Safety Package Formal Review Checklist <https://eclipse-score.github.io/module_template/main/docs/safety_mgt/module_safety_package_fdr.html>`__

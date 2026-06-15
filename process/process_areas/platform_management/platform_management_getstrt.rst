@@ -18,6 +18,7 @@ Getting Started
 .. doc_getstrt:: Getting Started on Platform/Project Management
    :id: doc_getstrt__platform_process
    :status: valid
+   :version: 1
    :tags: platform_management
 
 In case you want to manage contributions to <Project> consider to:
