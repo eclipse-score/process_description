@@ -20,7 +20,7 @@ Tool Verification Report Template
 .. doc_tool:: [Your Tool Name]
    :id: doc_tool__tool_name_version
    :status: draft
-   :version: vX.Y.Z
+   :tool_version: vX.Y.Z
    :tcl: LOW
    :safety_affected: YES
    :security_affected: YES
