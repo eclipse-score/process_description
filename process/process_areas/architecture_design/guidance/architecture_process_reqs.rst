@@ -298,12 +298,14 @@ Process Monitoring and Improvement
 .. gd_req:: Monitor architecture process performance
    :id: gd_req__arch_process_monitoring
    :status: valid
-   :tags: manual_prio_1, process_monitoring
+   :tags: manual_prio_2, process_monitoring
    :complies: std_req__aspice_40__gp-324, std_req__aspice_40__iic-03-06
    :satisfies: wf__cr_mt_featarch, wf__cr_mt_comparch
 
    Information about the execution and outcomes of the architecture process shall be collected and analyzed to evaluate the effectiveness and adequacy of the defined process.
 
    Analysis results shall be made available to affected parties and used to identify and trigger continual improvement actions for the architecture process.
+
+   Monitoring is expected as a periodic, predominantly manual activity (for example as part of quality checks and retrospectives), not as a fully automated check.
 
    Improvement actions should be handled according to :ref:`pm_monitor_improve_process`.

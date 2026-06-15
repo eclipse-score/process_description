@@ -105,8 +105,8 @@ Project Development Roles
    * Knowledge of the platform domain (middleware, OS abstraction, communication)
    * Ability to work with Sphinx-Needs and PlantUML tooling
    * Understanding of safety/security attributes and their impact on architecture
-   * Review of existing architecture examples in module template
-   * Knowledge of UML/SysML notation (component diagrams, sequence diagrams)
+   * Knowledge of existing architecture examples in module template
+   * Knowledge of UML notation (component diagrams, sequence diagrams)
 
 
    .. note::

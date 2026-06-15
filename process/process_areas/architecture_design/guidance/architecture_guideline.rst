@@ -273,7 +273,10 @@ Model component architecture
 
 According to the architecture design description, the model for the component architecture shall be created. It shall consist of components, real interfaces and real interface operations. Depending on the size and complexity of the component, it can also be split into multiple (lower-level) components.
 
-**Tailoring for Component Complexity:** For simple components with fewer than 3 internal sub-components, the internal component architecture decomposition may be omitted. However, the external interface view is always mandatory and must be documented.
+**Tailoring for Component Complexity:** For simple components with fewer than 3 internal sub-components, the internal component architecture decomposition may be omitted.
+However, the external interface view (to interfaces from other modules) is always mandatory and must be documented.
+
+Complexity can be assessed project-specifically (for example by Lines of Code, interface size, decomposition depth, coupling, or control-flow metrics such as McCabe). For default measurement see :need:`Implementation Complexity Analysis <gd_req__impl_complexity_analysis>`.
 
 .. list-table:: Architectural Elements of the Component Architecture
    :header-rows: 1
