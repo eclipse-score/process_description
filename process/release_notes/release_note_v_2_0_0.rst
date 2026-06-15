@@ -113,6 +113,7 @@ Improvements
 - Correct automation tag for process reqs in requirements process by @aschemmel-tech in https://github.com/eclipse-score/process_description/pull/699
 - Update linking check from req to architecture by @aschemmel-tech https://github.com/eclipse-score/process_description/pull/700
 - Clarify tool verification report version attribute by @aschemmel-tech https://github.com/eclipse-score/process_description/pull/701
+- Apply tool version and Bzlmod locking, update docs-as-code by @AlexanderLanin https://github.com/eclipse-score/process_description/pull/705
 
 Bug Fixes
 ---------
