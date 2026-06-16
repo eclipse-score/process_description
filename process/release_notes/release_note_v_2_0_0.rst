@@ -119,6 +119,7 @@ Improvements
 - Apply tool version and Bzlmod locking, update docs-as-code by @AlexanderLanin https://github.com/eclipse-score/process_description/pull/705
 - add versioning of requirements by @AlexanderLanin in https://github.com/eclipse-score/process_description/pull/708
 - upgrade docs-as-code version 4.5.0 by @AlexanderLanin in https://github.com/eclipse-score/process_description/pull/710
+- add aspice 4 ml3 architecture by @RolandJentschETAS in https://github.com/eclipse-score/process_description/pull/702
 
 Bug Fixes
 ---------
