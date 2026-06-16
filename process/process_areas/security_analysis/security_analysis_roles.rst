@@ -20,7 +20,8 @@ Roles
 .. role:: Security Engineer
    :id: rl__security_engineer
    :status: valid
-   :contains: rl__committer
+   :version: 1
+   :contains: rl__committer[version==1]
 
    The Security Engineer is responsible for the Security Analysis in the project.
    There might be several analyses on different levels (Platform, Feature and Component).

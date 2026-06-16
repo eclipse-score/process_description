@@ -43,7 +43,8 @@ Base practices
 .. std_req:: SWE.6.BP1: Specify verification measures for software verification
    :id: std_req__aspice_40__SWE-6-BP1
    :status: valid
-   :links: std_req__aspice_40__iic-08-60
+   :version: 1
+   :links: std_req__aspice_40__iic-08-60[version==1]
 
    Specify the verification
    measures for software verification suitable to provide evidence for compliance of the integrated
@@ -66,7 +67,8 @@ Base practices
 .. std_req:: SWE.6.BP2: Select verification measures
    :id: std_req__aspice_40__SWE-6-BP2
    :status: valid
-   :links: std_req__aspice_40__iic-08-58
+   :version: 1
+   :links: std_req__aspice_40__iic-08-58[version==1]
 
    Document the selection of verification measures
    considering selection criteria including criteria for regression verification. The documented
@@ -83,7 +85,8 @@ Base practices
 .. std_req:: SWE.6.BP3: Verify the integrated software
    :id: std_req__aspice_40__SWE-6-BP3
    :status: valid
-   :links: std_req__aspice_40__iic-03-50;std_req__aspice_40__iic-15-52
+   :version: 1
+   :links: std_req__aspice_40__iic-03-50[version==1], std_req__aspice_40__iic-15-52[version==1]
 
    Perform the verification of the integrated software
    using the selected verification measures. Record the verification results including pass/fail status
@@ -97,7 +100,8 @@ Base practices
 .. std_req:: SWE.6.BP4: Ensure consistency and establish bidirectional traceability
    :id: std_req__aspice_40__SWE-6-BP4
    :status: valid
-   :links: std_req__aspice_40__iic-13-51
+   :version: 1
+   :links: std_req__aspice_40__iic-13-51[version==1]
 
    Ensure
    consistency and establish bidirectional traceability between verification measures and software
@@ -114,7 +118,8 @@ Base practices
 .. std_req:: SWE.6.BP5: Summarize and communicate results
    :id: std_req__aspice_40__SWE-6-BP5
    :status: valid
-   :links: std_req__aspice_40__iic-13-52
+   :version: 1
+   :links: std_req__aspice_40__iic-13-52[version==1]
 
    Summarize the software verification
    results and communicate them to all affected parties.

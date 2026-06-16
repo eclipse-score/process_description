@@ -18,6 +18,7 @@
 .. std_req:: 02-01 Commitment / agreement
    :id: std_req__aspice_40__iic-02-01
    :status: valid
+   :version: 1
 
    Commitment / agreement may have the following characteristics:
 

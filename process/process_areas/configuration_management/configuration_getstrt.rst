@@ -18,6 +18,7 @@ Getting Started
 .. doc_getstrt:: Configuration Management Get Started
    :id: doc_getstrt__configuration_process
    :status: valid
+   :version: 1
 
 In case you are appointed as a :need:`rl__project_lead` in the project:
 

@@ -18,6 +18,7 @@ Getting Started
 .. doc_getstrt:: Getting Started on Tool Management
    :id: doc_getstrt__tool_process
    :status: valid
+   :version: 1
    :tags: tool_management
 
 This document describes the steps to evaluate tools and qualify them according to

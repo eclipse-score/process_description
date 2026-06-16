@@ -23,6 +23,7 @@ Project Management Roles
 .. role:: Project Lead
    :id: rl__project_lead
    :status: valid
+   :version: 1
    :tags: process_management
 
    The Project Leads decide about strategy, approve feature requests and perform the
@@ -61,8 +62,9 @@ Project Process Roles
 .. role:: Process Community Member
    :id: rl__process_community
    :status: valid
+   :version: 1
    :tags: process_management
-   :contains: rl__committer
+   :contains: rl__committer[version==1]
 
    The process community members are responsible for the definition of the process architecture of the project integrated management system and how they processes interact.
    The approval and release of the process is done by the safety, quality and security managers and the project leads (for the parts which affect them).
@@ -73,14 +75,16 @@ Project Development Roles
 .. role:: Infrastructure Tooling Community Member
    :id: rl__infrastructure_tooling_community
    :status: valid
+   :version: 1
    :tags: development
-   :contains: rl__committer
+   :contains: rl__committer[version==1]
 
    The infrastructure and tooling community members are responsible for the infrastructure and tooling setup for development, but also the rest of the tool chain.
 
 .. role:: Contributor
    :id: rl__contributor
    :status: valid
+   :version: 1
    :tags: development
 
    (Eclipse) Open Source Role, person(s) who provide(s) possible contribution(s) as pull request(s) to the main line.
@@ -92,6 +96,7 @@ Project Development Roles
 .. role:: Committer
    :id: rl__committer
    :status: valid
+   :version: 1
    :tags: development
 
    (Eclipse) Open Source Role, person(s) who accept(s) possible contribution(s) as pull request(s) to the main line and maintains the product.
@@ -115,8 +120,9 @@ Project Development Roles
 .. role:: Testing Community Member
    :id: rl__testing_community
    :status: valid
+   :version: 1
    :tags: verification
-   :contains: rl__committer
+   :contains: rl__committer[version==1]
 
    The testing community members are responsible for the test case development from component to
    platform level. They shall be included in any requirements reviews. They can also improve
@@ -126,8 +132,9 @@ Project Development Roles
 .. role:: Architecture Community Member
    :id: rl__architecture_community
    :status: valid
+   :version: 1
    :tags: architecture_design
-   :contains: rl__committer
+   :contains: rl__committer[version==1]
 
    The architecture community members are responsible for the features and components of
    the platform. Feature and Components requests, which add new ones or modifications, are
@@ -136,8 +143,9 @@ Project Development Roles
 .. role:: Project Security Team
    :id: rl__security_team
    :status: valid
+   :version: 1
    :tags: verification, security_analysis
-   :contains: rl__committer, rl__security_engineer
+   :contains: rl__committer[version==1], rl__security_engineer[version==1]
 
    (Eclipse) Open Source Role, person(s) who is(are) responsible for coordinating the resolution of Vulnerabilities within the Project.
    By default, the project Security Team includes all Committers. However, the Project may choose a different arrangement and establish specific criteria for team nominations.
@@ -148,8 +156,17 @@ Project Teams
 .. role:: Platform Team
    :id: rl__platform_team
    :status: valid
+   :version: 1
    :tags: cross_functional
-   :contains: rl__project_lead, rl__safety_manager, rl__quality_manager, rl__security_manager, rl__contributor, rl__committer, rl__infrastructure_tooling_community, rl__process_community, rl__architecture_community
+   :contains: rl__project_lead[version==1],
+              rl__safety_manager[version==1],
+              rl__quality_manager[version==1],
+              rl__security_manager[version==1],
+              rl__contributor[version==1],
+              rl__committer[version==1],
+              rl__infrastructure_tooling_community[version==1],
+              rl__process_community[version==1],
+              rl__architecture_community[version==1]
 
    The platform team is responsible for all artifacts within the platform SEooC.
    Additionally it is also responsible for the overall process including its support
@@ -159,8 +176,13 @@ Project Teams
 .. role:: Delivery Team
    :id: rl__delivery_team
    :status: valid
+   :version: 1
    :tags: cross_functional
-   :contains: rl__safety_manager, rl__quality_manager, rl__security_manager, rl__contributor, rl__committer
+   :contains: rl__safety_manager[version==1],
+              rl__quality_manager[version==1],
+              rl__security_manager[version==1],
+              rl__contributor[version==1],
+              rl__committer[version==1]
 
    The delivery team is responsible for all artifacts within the Delivery Container
    SEooCs containing the Dependable Elements. Each Delivery Container has only one
@@ -172,8 +194,13 @@ Project Teams
 .. role:: Release Team
    :id: rl__release_team
    :status: valid
+   :version: 1
    :tags: cross_functional
-   :contains: rl__safety_manager, rl__quality_manager, rl__security_manager, rl__contributor, rl__committer
+   :contains: rl__safety_manager[version==1],
+              rl__quality_manager[version==1],
+              rl__security_manager[version==1],
+              rl__contributor[version==1],
+              rl__committer[version==1]
 
    The release team is responsible for the release. The release team consists of different stakeholders like
    module leads, project leads and quality managers.

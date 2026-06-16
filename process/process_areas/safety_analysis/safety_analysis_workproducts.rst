@@ -18,16 +18,18 @@ Safety Analysis Work Products
 .. workproduct:: Platform DFA
    :id: wp__platform_dfa
    :status: valid
+   :version: 1
    :tags: doc_lifecycle_model_2
-   :complies: std_wp__iso26262__analysis_751, std_wp__iso26262__software_753, std_wp__isopas8926__4524
+   :complies: std_wp__iso26262__analysis_751[version==1], std_wp__iso26262__software_753[version==1], std_wp__isopas8926__4524[version==1]
 
    Analyse the dependencies between features that references all platform feature static architecture diagrams, highlighting potential shared use of features.
 
 .. workproduct:: Feature FMEA
    :id: wp__feature_fmea
    :status: valid
+   :version: 1
    :tags: doc_lifecycle_model_2
-   :complies: std_wp__iso26262__analysis_851, std_wp__iso26262__software_752, std_wp__isopas8926__4524
+   :complies: std_wp__iso26262__analysis_851[version==1], std_wp__iso26262__software_752[version==1], std_wp__isopas8926__4524[version==1]
 
    FMEA verifies the feature architecture (as part of SW Safety Concept)
 
@@ -36,8 +38,9 @@ Safety Analysis Work Products
 .. workproduct:: Feature DFA
    :id: wp__feature_dfa
    :status: valid
+   :version: 1
    :tags: doc_lifecycle_model_2
-   :complies: std_wp__iso26262__analysis_751, std_wp__iso26262__software_753, std_wp__isopas8926__4524
+   :complies: std_wp__iso26262__analysis_751[version==1], std_wp__iso26262__software_753[version==1], std_wp__isopas8926__4524[version==1]
 
    Dependent Failure Analysis on feature level.
 
@@ -48,8 +51,12 @@ Safety Analysis Work Products
 .. workproduct:: Component FMEA
    :id: wp__sw_component_fmea
    :status: valid
+   :version: 1
    :tags: doc_lifecycle_model_2
-   :complies: std_wp__iso26262__analysis_851, std_wp__iso26262__software_752, std_wp__isopas8926__4524, std_wp__iso26262__software_752
+   :complies: std_wp__iso26262__analysis_851[version==1],
+              std_wp__iso26262__software_752[version==1],
+              std_wp__isopas8926__4524[version==1],
+              std_wp__iso26262__software_752[version==1]
 
    FMEA, verifies the component architecture (as part of SW Safety Concept)
 
@@ -58,8 +65,12 @@ Safety Analysis Work Products
 .. workproduct:: Component DFA
    :id: wp__sw_component_dfa
    :status: valid
+   :version: 1
    :tags: doc_lifecycle_model_2
-   :complies: std_wp__iso26262__analysis_751, std_wp__iso26262__software_753, std_wp__isopas8926__4524, std_wp__iso26262__software_752
+   :complies: std_wp__iso26262__analysis_751[version==1],
+              std_wp__iso26262__software_753[version==1],
+              std_wp__isopas8926__4524[version==1],
+              std_wp__iso26262__software_752[version==1]
 
    Dependent Failure Analysis on component level.
 

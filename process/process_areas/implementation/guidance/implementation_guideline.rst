@@ -18,7 +18,11 @@ Guideline
 .. gd_guidl:: Implementation Guideline
    :id: gd_guidl__implementation
    :status: valid
-   :complies: std_req__iso26262__software_744, std_req__iso26262__software_841, std_req__iso26262__software_842, std_req__aspice_40__iic-11-05
+   :version: 1
+   :complies: std_req__iso26262__software_744[version==1],
+              std_req__iso26262__software_841[version==1],
+              std_req__iso26262__software_842[version==1],
+              std_req__aspice_40__iic-11-05[version==1]
 
 This document describes the general guidance for implementation based on the concept which is defined :need:`[[title]]<doc_concept__imp_concept>`.
 An example of a Detailed Design is maintained in the

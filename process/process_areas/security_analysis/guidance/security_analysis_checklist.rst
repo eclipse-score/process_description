@@ -20,6 +20,7 @@ Security Analysis Checklist
 .. gd_chklst:: Security Analysis Checklist Template
    :id: gd_chklst__security_analysis
    :status: valid
+   :version: 1
    :tags: security_analysis
 
    For the content see here:

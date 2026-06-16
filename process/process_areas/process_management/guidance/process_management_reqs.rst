@@ -22,9 +22,10 @@ Process Requirements
 .. gd_req:: Process Model Building Blocks
    :id: gd_req__process_management_build_blocks
    :status: valid
+   :version: 1
    :tags: done_automation, attribute, mandatory
-   :satisfies: wf__cr_mt_process_mgt_strategy, wf__def_app_process_description, wf__mon_imp_process_description
-   :complies: std_req__iso26262__management_5421, std_req__iso26262__management_5422, std_req__aspice_40__gp-311
+   :satisfies: wf__cr_mt_process_mgt_strategy[version==1], wf__def_app_process_description[version==1], wf__mon_imp_process_description[version==1]
+   :complies: std_req__iso26262__management_5421[version==1], std_req__iso26262__management_5422[version==1], std_req__aspice_40__gp-311[version==1]
 
    The process model building blocks are defined. Compare also the process model
    overview here: :ref:`processes_introduction`.
@@ -66,9 +67,10 @@ Process Building Blocks Attributes
 .. gd_req:: Building blocks attributes
    :id: gd_req__process_management_build_blocks_attr
    :status: valid
+   :version: 1
    :tags: manual_prio_1, attribute, mandatory
-   :satisfies: wf__cr_mt_process_mgt_strategy, wf__def_app_process_description, wf__mon_imp_process_description
-   :complies: std_req__iso26262__management_5421, std_req__iso26262__management_5422, std_req__aspice_40__gp-311
+   :satisfies: wf__cr_mt_process_mgt_strategy[version==1], wf__def_app_process_description[version==1], wf__mon_imp_process_description[version==1]
+   :complies: std_req__iso26262__management_5421[version==1], std_req__iso26262__management_5422[version==1], std_req__aspice_40__gp-311[version==1]
 
    Each building block shall have defined attributes as defined here:
    :ref:`process_management_templates`.
@@ -88,9 +90,10 @@ Process Building Blocks Linkage
 .. gd_req:: Building blocks linkage
    :id: gd_req__process_management_build_blocks_link
    :status: valid
+   :version: 1
    :tags: manual_prio_1, attribute, mandatory
-   :satisfies: wf__cr_mt_process_mgt_strategy, wf__def_app_process_description, wf__mon_imp_process_description
-   :complies: std_req__iso26262__management_5421, std_req__iso26262__management_5422, std_req__aspice_40__gp-311
+   :satisfies: wf__cr_mt_process_mgt_strategy[version==1], wf__def_app_process_description[version==1], wf__mon_imp_process_description[version==1]
+   :complies: std_req__iso26262__management_5421[version==1], std_req__iso26262__management_5422[version==1], std_req__aspice_40__gp-311[version==1]
 
    Each building block shall have defined links as defined here:
    :ref:`process_management_templates`.
@@ -102,9 +105,10 @@ Process Building Blocks Checks
 .. gd_req:: Building blocks check
    :id: gd_req__process_management_build_blocks_check
    :status: valid
+   :version: 1
    :tags: done_automation
-   :satisfies: wf__cr_mt_process_mgt_strategy, wf__def_app_process_description, wf__mon_imp_process_description
-   :complies: std_req__iso26262__management_5421, std_req__iso26262__management_5422, std_req__aspice_40__gp-311
+   :satisfies: wf__cr_mt_process_mgt_strategy[version==1], wf__def_app_process_description[version==1], wf__mon_imp_process_description[version==1]
+   :complies: std_req__iso26262__management_5421[version==1], std_req__iso26262__management_5422[version==1], std_req__aspice_40__gp-311[version==1]
 
    It shall be checked, that all attributes defined here
    :ref:`process_management_templates` are provided and correctly linked by the user.

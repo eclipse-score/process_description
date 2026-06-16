@@ -32,7 +32,8 @@ Base practices
 .. std_req:: MAN.5.BP1: Identify sources of risks
    :id: std_req__aspice_40__MAN-5-BP1
    :status: valid
-   :links: std_req__aspice_40__iic-15-09,std_req__aspice_40__iic-15-51
+   :version: 1
+   :links: std_req__aspice_40__iic-15-09[version==1], std_req__aspice_40__iic-15-51[version==1]
 
    Identify and regularly update the sources of risks with affected parties.
 
@@ -51,14 +52,16 @@ Base practices
 .. std_req:: MAN.5.BP2: Identify potential undesirable events
    :id: std_req__aspice_40__MAN-5-BP2
    :status: valid
-   :links: std_req__aspice_40__iic-15-51
+   :version: 1
+   :links: std_req__aspice_40__iic-15-51[version==1]
 
    Identify potential undesirable events within the scope of the risk management for the project.
 
 .. std_req:: MAN.5.BP3: Determine risks
    :id: std_req__aspice_40__MAN-5-BP3
    :status: valid
-   :links: std_req__aspice_40__iic-15-09,std_req__aspice_40__iic-15-51
+   :version: 1
+   :links: std_req__aspice_40__iic-15-09[version==1], std_req__aspice_40__iic-15-51[version==1]
 
    Determine the probability and severity of the undesirable events to support priorities for the mitigation of the risks.
 
@@ -69,21 +72,30 @@ Base practices
 .. std_req:: MAN.5.BP4: Define risk treatment options
    :id: std_req__aspice_40__MAN-5-BP4
    :status: valid
-   :links: std_req__aspice_40__iic-08-55,std_req__aspice_40__iic-14-02,std_req__aspice_40__iic-15-09,std_req__aspice_40__iic-15-51
+   :version: 1
+   :links: std_req__aspice_40__iic-08-55[version==1],
+           std_req__aspice_40__iic-14-02[version==1],
+           std_req__aspice_40__iic-15-09[version==1],
+           std_req__aspice_40__iic-15-51[version==1]
 
    For each risk select a treatment option to accept, mitigate, avoid, or share (transfer) the risk.
 
 .. std_req:: MAN.5.BP5: Define and perform risk treatment activities
    :id: std_req__aspice_40__MAN-5-BP5
    :status: valid
-   :links: std_req__aspice_40__iic-08-55,std_req__aspice_40__iic-14-02,std_req__aspice_40__iic-15-09,std_req__aspice_40__iic-15-51
+   :version: 1
+   :links: std_req__aspice_40__iic-08-55[version==1],
+           std_req__aspice_40__iic-14-02[version==1],
+           std_req__aspice_40__iic-15-09[version==1],
+           std_req__aspice_40__iic-15-51[version==1]
 
    Define and perform risk activities for risk treatment options.
 
 .. std_req:: MAN.5.BP6: Monitor risks
    :id: std_req__aspice_40__MAN-5-BP6
    :status: valid
-   :links: std_req__aspice_40__iic-08-55,std_req__aspice_40__iic-14-02,std_req__aspice_40__iic-15-09
+   :version: 1
+   :links: std_req__aspice_40__iic-08-55[version==1], std_req__aspice_40__iic-14-02[version==1], std_req__aspice_40__iic-15-09[version==1]
 
    Regularly re-evaluate the risk related to the identified potential undesirable events to determine
    changes in the status of a risk and to evaluate the progress of the risk treatment activities.
@@ -95,7 +107,11 @@ Base practices
 .. std_req:: MAN.5.BP7: Take corrective action
    :id: std_req__aspice_40__MAN-5-BP7
    :status: valid
-   :links: std_req__aspice_40__iic-08-55,std_req__aspice_40__iic-14-02,std_req__aspice_40__iic-15-09,std_req__aspice_40__iic-15-51
+   :version: 1
+   :links: std_req__aspice_40__iic-08-55[version==1],
+           std_req__aspice_40__iic-14-02[version==1],
+           std_req__aspice_40__iic-15-09[version==1],
+           std_req__aspice_40__iic-15-51[version==1]
 
    When risk treatment activities are not effective, take appropriate corrective action.
 

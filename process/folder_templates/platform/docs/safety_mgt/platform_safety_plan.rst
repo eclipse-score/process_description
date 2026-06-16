@@ -20,9 +20,10 @@ Platform Safety Planning
 .. document:: Platform Safety Plan
    :id: doc__platform_safety_plan
    :status: draft
+   :version: 1
    :safety: ASIL_B
    :security: NO
-   :realizes: wp__platform_safety_plan
+   :realizes: wp__platform_safety_plan[version==1]
    :tags: template
 
 .. attention::

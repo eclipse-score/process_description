@@ -18,9 +18,10 @@ Safety Management Process Requirements
 .. gd_req:: Safety Management Document Status
    :id: gd_req__safety_doc_status
    :status: valid
+   :version: 1
    :tags: done_automation
-   :complies: std_req__iso26262__management_6468
-   :satisfies: wf__cr_mt_safety_plan, wf__cr_comp_class, wf__cr_mt_safety_manual
+   :complies: std_req__iso26262__management_6468[version==1]
+   :satisfies: wf__cr_mt_safety_plan[version==1], wf__cr_comp_class[version==1], wf__cr_mt_safety_manual[version==1]
 
    Safety plans shall contain documents references where the status is derived automatically.
 
@@ -29,9 +30,10 @@ Safety Management Process Requirements
 .. gd_req:: Safety Management Work Product Status
    :id: gd_req__safety_wp_status
    :status: valid
+   :version: 1
    :tags: prio_2_automation
-   :complies: std_req__iso26262__management_6468
-   :satisfies: wf__cr_mt_safety_plan, wf__cr_comp_class, wf__cr_mt_safety_manual
+   :complies: std_req__iso26262__management_6468[version==1]
+   :satisfies: wf__cr_mt_safety_plan[version==1], wf__cr_comp_class[version==1], wf__cr_mt_safety_manual[version==1]
 
    Safety plans shall contain work product references where the accumulated status is derived automatically.
 

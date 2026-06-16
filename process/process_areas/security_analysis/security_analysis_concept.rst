@@ -20,6 +20,7 @@ Concept Description
 .. doc_concept:: Security Analysis Concept
    :id: doc_concept__security_analysis
    :status: valid
+   :version: 1
    :tags: security_analysis
 
 This section discusses a concept for Security Analysis. Various methods can be used for Security Analysis (e.g. STRIDE).

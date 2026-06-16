@@ -22,6 +22,7 @@ Security Analysis Threat Scenario Templates
 .. gd_temp:: Platform Security Analysis Templates
    :id: gd_temp__plat_threat_scenario
    :status: valid
+   :version: 1
    :complies:
 
    For the content see here: (tbd)need:`doc__platform_security_analysis`
@@ -32,6 +33,7 @@ Security Analysis Threat Scenario Templates
 .. gd_temp:: Feature Security Analysis Templates
    :id: gd_temp__feat_threat_scenario
    :status: valid
+   :version: 1
    :complies:
 
    For the content see here: (tbd)need:`doc__feature_name_security_analysis`
@@ -41,6 +43,7 @@ Security Analysis Threat Scenario Templates
 .. gd_temp:: Component Security Analysis Templates
    :id: gd_temp__comp_threat_scenario
    :status: valid
+   :version: 1
    :complies:
 
    For the content see here: (tbd) `Component Security Analysis Template <https://eclipse-score.github.io/module_template/main/score/component_example/docs/index.html>`__

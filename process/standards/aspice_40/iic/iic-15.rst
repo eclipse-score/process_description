@@ -18,6 +18,7 @@
 .. std_req:: 15-06 Project status
    :id: std_req__aspice_40__iic-15-06
    :status: valid
+   :version: 1
 
    Project status may have the following characteristics:
 
@@ -32,6 +33,7 @@
 .. std_req:: 15-07 Reuse analysis evidence
    :id: std_req__aspice_40__iic-15-07
    :status: valid
+   :version: 1
 
    Reuse analysis evidence may have the following characteristics:
 
@@ -44,6 +46,7 @@
 .. std_req:: 15-09 Risk status
    :id: std_req__aspice_40__iic-15-09
    :status: valid
+   :version: 1
 
    Risk status may have the following characteristics:
 
@@ -57,6 +60,7 @@
 .. std_req:: 15-12 Problem status
    :id: std_req__aspice_40__iic-15-12
    :status: valid
+   :version: 1
 
    Problem status may have the following characteristics:
 
@@ -68,6 +72,7 @@
 .. std_req:: 15-13 Assessment/audit report
    :id: std_req__aspice_40__iic-15-13
    :status: valid
+   :version: 1
 
    Assessment/audit report may have the following characteristics:
    - States the purpose of assessment
@@ -90,6 +95,7 @@
 .. std_req:: 15-16 Improvement opportunity
    :id: std_req__aspice_40__iic-15-16
    :status: valid
+   :version: 1
 
    Improvement opportunity may have the following characteristics:
 
@@ -102,6 +108,7 @@
 .. std_req:: 15-51 Analysis Results
    :id: std_req__aspice_40__iic-15-51
    :status: valid
+   :version: 1
 
    Analysis Results may have the following characteristics:
 
@@ -130,6 +137,7 @@
 .. std_req:: 15-52 Verification Results
    :id: std_req__aspice_40__iic-15-52
    :status: valid
+   :version: 1
 
    Verification Results may have the following characteristics:
 
@@ -143,6 +151,7 @@
 .. std_req:: 15-54 Tailoring documentation
    :id: std_req__aspice_40__iic-15-54
    :status: valid
+   :version: 1
 
    Tailoring documentation results may have the following characteristics:
 
@@ -153,6 +162,7 @@
 .. std_req:: 15-55 Problem analysis evidence
    :id: std_req__aspice_40__iic-15-55
    :status: valid
+   :version: 1
 
    Problem analysis evidence may have the following characteristics:
 
@@ -168,6 +178,7 @@
 .. std_req:: 15-56 Configuration status
    :id: std_req__aspice_40__iic-15-56
    :status: valid
+   :version: 1
 
    Configuration status may have the following characteristics:
 
@@ -178,6 +189,7 @@
 .. std_req:: 15-57 Quantitative process analysis results
    :id: std_req__aspice_40__iic-15-57
    :status: valid
+   :version: 1
 
    Quantitative process analysis results may have the following characteristics:
 
@@ -187,6 +199,7 @@
 .. std_req:: 15-58 Common cause of variation analysis results
    :id: std_req__aspice_40__iic-15-58
    :status: valid
+   :version: 1
 
    Common cause of variation analysis results may have the following characteristics:
 

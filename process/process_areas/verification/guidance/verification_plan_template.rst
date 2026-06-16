@@ -20,10 +20,20 @@ Verification Plan Template
 .. gd_temp:: Platform Verification Plan Template
     :id: gd_temp__verification_plan
     :status: valid
-    :complies: std_req__iso26262__support_9411, std_req__iso26262__support_9412, std_req__iso26262__support_12422, std_req__iso26262__support_12424, std_req__iso26262__support_12425,
-               std_req__aspice_40__SWE-4-BP1, std_req__aspice_40__SWE-5-BP1, std_req__aspice_40__SWE-6-BP1,
-               std_req__aspice_40__SWE-4-BP2, std_req__aspice_40__SWE-5-BP2, std_req__aspice_40__SWE-6-BP2,
-               std_req__aspice_40__SWE-5-BP3, std_req__aspice_40__iic-06-50
+    :version: 1
+    :complies: std_req__iso26262__support_9411[version==1],
+               std_req__iso26262__support_9412[version==1],
+               std_req__iso26262__support_12422[version==1],
+               std_req__iso26262__support_12424[version==1],
+               std_req__iso26262__support_12425[version==1],
+               std_req__aspice_40__SWE-4-BP1[version==1],
+               std_req__aspice_40__SWE-5-BP1[version==1],
+               std_req__aspice_40__SWE-6-BP1[version==1],
+               std_req__aspice_40__SWE-4-BP2[version==1],
+               std_req__aspice_40__SWE-5-BP2[version==1],
+               std_req__aspice_40__SWE-6-BP2[version==1],
+               std_req__aspice_40__SWE-5-BP3[version==1],
+               std_req__aspice_40__iic-06-50[version==1]
 
     This document implements :need:`wp__verification_plan`.
 
@@ -37,6 +47,7 @@ Verification Plan Template
          .. document:: Software Verification Plan
             :id: doc__verification_plan
             :status: draft
+            :version: 1
             :safety: ASIL_B
             :tags: platform_management
 

@@ -22,7 +22,14 @@ Requirement Inspection Checklist
 .. gd_chklst:: Requirements Inspection Checklist Template
    :id: gd_chklst__req_inspection
    :status: valid
-   :complies: std_req__iso26262__system_6412, std_req__iso26262__system_6414, std_req__iso26262__system_6421, std_req__iso26262__system_6422, std_req__aspice_40__SWE-1-BP3, std_req__aspice_40__SWE-1-BP4, std_req__aspice_40__SWE-1-BP6
+   :version: 1
+   :complies: std_req__iso26262__system_6412[version==1],
+              std_req__iso26262__system_6414[version==1],
+              std_req__iso26262__system_6421[version==1],
+              std_req__iso26262__system_6422[version==1],
+              std_req__aspice_40__SWE-1-BP3[version==1],
+              std_req__aspice_40__SWE-1-BP4[version==1],
+              std_req__aspice_40__SWE-1-BP6[version==1]
    :tags: requirements_engineering
 
    For the content see here:

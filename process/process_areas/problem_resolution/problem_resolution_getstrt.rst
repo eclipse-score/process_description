@@ -18,6 +18,7 @@ Getting Started
 .. doc_getstrt:: Getting Started on Problem Resolution
    :id: doc_getstrt__problem_process
    :status: valid
+   :version: 1
    :tags: problem_resolution
 
 This document describes the steps to create a problem report, and further to analyze,

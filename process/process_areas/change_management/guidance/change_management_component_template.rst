@@ -20,6 +20,16 @@ Component Template
 .. gd_temp:: Component Request Template
    :id: gd_temp__change_component_request
    :status: valid
-   :complies: std_req__aspice_40__SUP-10-BP1, std_req__aspice_40__SUP-10-BP2, std_req__aspice_40__SUP-10-BP3, std_req__aspice_40__SUP-10-BP5, std_req__aspice_40__iic-18-57, std_req__iso26262__support_8422, std_req__iso26262__support_8431, std_req__iso26262__support_8432, std_req__aspice_40__iic-13-16, std_req__aspice_40__iic-14-02
+   :version: 1
+   :complies: std_req__aspice_40__SUP-10-BP1[version==1],
+              std_req__aspice_40__SUP-10-BP2[version==1],
+              std_req__aspice_40__SUP-10-BP3[version==1],
+              std_req__aspice_40__SUP-10-BP5[version==1],
+              std_req__aspice_40__iic-18-57[version==1],
+              std_req__iso26262__support_8422[version==1],
+              std_req__iso26262__support_8431[version==1],
+              std_req__iso26262__support_8432[version==1],
+              std_req__aspice_40__iic-13-16[version==1],
+              std_req__aspice_40__iic-14-02[version==1]
 
    for the content see `Component Request Template <https://eclipse-score.github.io/module_template/main/score/component_example/docs/index.html>`__

@@ -19,6 +19,12 @@ Detailed Design Template
 .. gd_temp:: Detailed Design Templates
    :id: gd_temp__detailed_design
    :status: valid
-   :complies: std_req__iso26262__software_542, std_req__iso26262__support_641, std_req__iso26262__support_6421, std_req__iso26262__support_6425, std_req__iso26262__software_744, std_req__aspice_40__iic-04-05
+   :version: 1
+   :complies: std_req__iso26262__software_542[version==1],
+              std_req__iso26262__support_641[version==1],
+              std_req__iso26262__support_6421[version==1],
+              std_req__iso26262__support_6425[version==1],
+              std_req__iso26262__software_744[version==1],
+              std_req__aspice_40__iic-04-05[version==1]
 
    For the content see here: `Detailed Design Template <https://eclipse-score.github.io/module_template/main/score/component_example/docs/detailed_design/index.html>`__

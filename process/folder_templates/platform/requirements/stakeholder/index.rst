@@ -18,9 +18,10 @@ Stakeholder Requirements
 .. document:: Platform Requirements
    :id: doc__platform_name_requirements
    :status: draft
+   :version: 1
    :safety: ASIL_B
    :security: YES
-   :realizes: wp__requirements_feat
+   :realizes: wp__requirements_feat[version==1]
    :tags: template
 
 .. attention::
@@ -43,6 +44,7 @@ Stakeholder Requirements
       :valid_from: v0.0.1
       :valid_until: v1.0.1
       :status: invalid
+      :version: 1
 
       The platform shall ...
 
@@ -54,6 +56,7 @@ Stakeholder Requirements
       :security: YES
       :safety: ASIL_B
       :status: invalid
+      :version: 1
 
       The Platform User shall do xyz to use the platform safely.
 

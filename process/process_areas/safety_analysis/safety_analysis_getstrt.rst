@@ -18,6 +18,7 @@ Getting Started
 .. doc_getstrt:: Getting Started on Safety Analysis (FMEA and DFA)
    :id: doc_getstrt__safety_analysis
    :status: valid
+   :version: 1
    :tags: safety_analysis
 
 

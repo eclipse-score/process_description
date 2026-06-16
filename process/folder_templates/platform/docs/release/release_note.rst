@@ -20,9 +20,10 @@ Platform Release Note
 .. document:: Platform Release Note
    :id: doc__platform_release_note
    :status: draft
+   :version: 1
    :safety: ASIL_B
    :security: NO
-   :realizes: wp__platform_sw_release_note
+   :realizes: wp__platform_sw_release_note[version==1]
    :tags: template
 
    .. attention::

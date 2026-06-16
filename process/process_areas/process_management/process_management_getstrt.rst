@@ -18,6 +18,7 @@ Getting Started
 .. doc_getstrt:: Getting Started on Process Management
    :id: doc_getstrt__process_management
    :status: valid
+   :version: 1
    :tags: process_management
 
 This document describes the steps to create and maintain the process strategy and the

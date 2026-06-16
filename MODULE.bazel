@@ -11,11 +11,7 @@
 # SPDX-License-Identifier: Apache-2.0
 # *******************************************************************************
 
-module(
-    name = "score_process",
-    version = "0.0.0",
-    compatibility_level = 1,
-)
+module(name = "score_process")
 
 ###############################################################################
 #
@@ -39,11 +35,10 @@ python.toolchain(
     is_default = True,
     python_version = PYTHON_VERSION,
 )
-use_repo(python)
 
 ###############################################################################
 #
 # Documentation tooling
 #
 ###############################################################################
-bazel_dep(name = "score_docs_as_code", version = "4.3.0")
+bazel_dep(name = "score_docs_as_code", version = "4.5.0")

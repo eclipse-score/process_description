@@ -36,14 +36,19 @@ Base practices
 .. std_req:: MAN.3.BP1: Define the scope of work
    :id: std_req__aspice_40__MAN-3-BP1
    :status: valid
-   :links: std_req__aspice_40__iic-08-53
+   :version: 1
+   :links: std_req__aspice_40__iic-08-53[version==1]
 
    Identify the project's goals, motivation and boundaries.
 
 .. std_req:: MAN.3.BP2: Define project life cycle
    :id: std_req__aspice_40__MAN-3-BP2
    :status: valid
-   :links: std_req__aspice_40__iic-08-53,std_req__aspice_40__iic-08-54,std_req__aspice_40__iic-13-51,std_req__aspice_40__iic-13-52
+   :version: 1
+   :links: std_req__aspice_40__iic-08-53[version==1],
+           std_req__aspice_40__iic-08-54[version==1],
+           std_req__aspice_40__iic-13-51[version==1],
+           std_req__aspice_40__iic-13-52[version==1]
 
    Define the life cycle for the project, which is appropriate to the scope, context, and
    complexity of the project. Define a release scope for relevant milestones.
@@ -55,7 +60,8 @@ Base practices
 .. std_req:: MAN.3.BP3: Evaluate feasibility of the project
    :id: std_req__aspice_40__MAN-3-BP3
    :status: valid
-   :links: std_req__aspice_40__iic-08-54,std_req__aspice_40__iic-13-51,std_req__aspice_40__iic-13-52
+   :version: 1
+   :links: std_req__aspice_40__iic-08-54[version==1], std_req__aspice_40__iic-13-51[version==1], std_req__aspice_40__iic-13-52[version==1]
 
    Evaluate the feasibility of achieving the goals of the project with respect to time, project estimates, and available resources.
 
@@ -67,7 +73,17 @@ Base practices
 .. std_req:: MAN.3.BP4: Define and monitor work packages
    :id: std_req__aspice_40__MAN-3-BP4
    :status: valid
-   :links: std_req__aspice_40__iic-08-54,std_req__aspice_40__iic-08-56,std_req__aspice_40__iic-13-16,std_req__aspice_40__iic-13-51,std_req__aspice_40__iic-13-52,std_req__aspice_40__iic-14-02,std_req__aspice_40__iic-14-10,std_req__aspice_40__iic-14-50,std_req__aspice_40__iic-15-06,std_req__aspice_40__iic-18-52
+   :version: 1
+   :links: std_req__aspice_40__iic-08-54[version==1],
+           std_req__aspice_40__iic-08-56[version==1],
+           std_req__aspice_40__iic-13-16[version==1],
+           std_req__aspice_40__iic-13-51[version==1],
+           std_req__aspice_40__iic-13-52[version==1],
+           std_req__aspice_40__iic-14-02[version==1],
+           std_req__aspice_40__iic-14-10[version==1],
+           std_req__aspice_40__iic-14-50[version==1],
+           std_req__aspice_40__iic-15-06[version==1],
+           std_req__aspice_40__iic-18-52[version==1]
 
    Define and monitor work packages and their dependencies according to defined project life cycle and estimations.
 
@@ -82,7 +98,15 @@ Base practices
 .. std_req:: MAN.3.BP5: Define and monitor project estimates and resources
    :id: std_req__aspice_40__MAN-3-BP5
    :status: valid
-   :links: std_req__aspice_40__iic-08-54,std_req__aspice_40__iic-08-56,std_req__aspice_40__iic-13-16,std_req__aspice_40__iic-13-51,std_req__aspice_40__iic-13-52,std_req__aspice_40__iic-14-02,std_req__aspice_40__iic-14-10,std_req__aspice_40__iic-18-52
+   :version: 1
+   :links: std_req__aspice_40__iic-08-54[version==1],
+           std_req__aspice_40__iic-08-56[version==1],
+           std_req__aspice_40__iic-13-16[version==1],
+           std_req__aspice_40__iic-13-51[version==1],
+           std_req__aspice_40__iic-13-52[version==1],
+           std_req__aspice_40__iic-14-02[version==1],
+           std_req__aspice_40__iic-14-10[version==1],
+           std_req__aspice_40__iic-18-52[version==1]
 
    Define and monitor project estimates of effort and resources based on project's goals, project risks, motivation and boundaries.
 
@@ -101,7 +125,14 @@ Base practices
 .. std_req:: MAN.3.BP6: Define and monitor required skills, knowledge, and experience
    :id: std_req__aspice_40__MAN-3-BP6
    :status: valid
-   :links: std_req__aspice_40__iic-08-56,std_req__aspice_40__iic-13-16,std_req__aspice_40__iic-13-51,std_req__aspice_40__iic-13-52,std_req__aspice_40__iic-14-02,std_req__aspice_40__iic-14-10,std_req__aspice_40__iic-18-52
+   :version: 1
+   :links: std_req__aspice_40__iic-08-56[version==1],
+           std_req__aspice_40__iic-13-16[version==1],
+           std_req__aspice_40__iic-13-51[version==1],
+           std_req__aspice_40__iic-13-52[version==1],
+           std_req__aspice_40__iic-14-02[version==1],
+           std_req__aspice_40__iic-14-10[version==1],
+           std_req__aspice_40__iic-18-52[version==1]
 
    Identify and monitor the required skills, knowledge, and experience for the project in line with the estimates and work packages.
 
@@ -112,7 +143,14 @@ Base practices
 .. std_req:: MAN.3.BP7: Define and monitor project interfaces and agreed commitments
    :id: std_req__aspice_40__MAN-3-BP7
    :status: valid
-   :links: std_req__aspice_40__iic-08-56,std_req__aspice_40__iic-13-16,std_req__aspice_40__iic-13-51,std_req__aspice_40__iic-13-52,std_req__aspice_40__iic-14-02,std_req__aspice_40__iic-14-10,std_req__aspice_40__iic-18-52
+   :version: 1
+   :links: std_req__aspice_40__iic-08-56[version==1],
+           std_req__aspice_40__iic-13-16[version==1],
+           std_req__aspice_40__iic-13-51[version==1],
+           std_req__aspice_40__iic-13-52[version==1],
+           std_req__aspice_40__iic-14-02[version==1],
+           std_req__aspice_40__iic-14-10[version==1],
+           std_req__aspice_40__iic-18-52[version==1]
 
    Identify and agree interfaces of the project with affected stakeholders and monitor agreed commitments. Define an escalation mechanism for commitments that are not fulfilled.
 
@@ -123,14 +161,30 @@ Base practices
 .. std_req:: MAN.3.BP8: Define and monitor project schedule
    :id: std_req__aspice_40__MAN-3-BP8
    :status: valid
-   :links: std_req__aspice_40__iic-13-16,std_req__aspice_40__iic-13-51,std_req__aspice_40__iic-14-02,std_req__aspice_40__iic-14-10,std_req__aspice_40__iic-15-06,std_req__aspice_40__iic-18-52
+   :version: 1
+   :links: std_req__aspice_40__iic-13-16[version==1],
+           std_req__aspice_40__iic-13-51[version==1],
+           std_req__aspice_40__iic-14-02[version==1],
+           std_req__aspice_40__iic-14-10[version==1],
+           std_req__aspice_40__iic-15-06[version==1],
+           std_req__aspice_40__iic-18-52[version==1]
 
    Allocate resources to work packages and schedule each activity of the project. Monitor the performance of activities against schedule.
 
 .. std_req:: MAN.3.BP9: Ensure consistency
    :id: std_req__aspice_40__MAN-3-BP9
    :status: valid
-   :links: std_req__aspice_40__iic-08-54,std_req__aspice_40__iic-08-56,std_req__aspice_40__iic-13-16,std_req__aspice_40__iic-13-51,std_req__aspice_40__iic-13-52,std_req__aspice_40__iic-14-02,std_req__aspice_40__iic-14-10,std_req__aspice_40__iic-14-50,std_req__aspice_40__iic-15-06,std_req__aspice_40__iic-18-52
+   :version: 1
+   :links: std_req__aspice_40__iic-08-54[version==1],
+           std_req__aspice_40__iic-08-56[version==1],
+           std_req__aspice_40__iic-13-16[version==1],
+           std_req__aspice_40__iic-13-51[version==1],
+           std_req__aspice_40__iic-13-52[version==1],
+           std_req__aspice_40__iic-14-02[version==1],
+           std_req__aspice_40__iic-14-10[version==1],
+           std_req__aspice_40__iic-14-50[version==1],
+           std_req__aspice_40__iic-15-06[version==1],
+           std_req__aspice_40__iic-18-52[version==1]
 
    Regularly adjust estimates, resources, skills, work packages and their dependencies, schedules, plans, interfaces, and
    commitments for the project to ensure consistency with the scope of work.
@@ -142,7 +196,13 @@ Base practices
 .. std_req:: MAN.3.BP10: Review and report progress of the project
    :id: std_req__aspice_40__MAN-3-BP10
    :status: valid
-   :links: std_req__aspice_40__iic-13-16,std_req__aspice_40__iic-13-51,std_req__aspice_40__iic-14-02,std_req__aspice_40__iic-14-10,std_req__aspice_40__iic-15-06,std_req__aspice_40__iic-18-52
+   :version: 1
+   :links: std_req__aspice_40__iic-13-16[version==1],
+           std_req__aspice_40__iic-13-51[version==1],
+           std_req__aspice_40__iic-14-02[version==1],
+           std_req__aspice_40__iic-14-10[version==1],
+           std_req__aspice_40__iic-15-06[version==1],
+           std_req__aspice_40__iic-18-52[version==1]
 
    Regularly review and report the status of the project and the fulfillment of work packages against
    estimated effort and duration to all affected parties. Prevent recurrence of identified problems.

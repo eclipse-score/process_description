@@ -18,6 +18,7 @@ Concept Description
 .. doc_concept:: Safety Management Concept
    :id: doc_concept__safety_management_process
    :status: valid
+   :version: 1
 
 In this section a concept for the Safety Management will be discussed.
 Inputs for this concepts are mainly the requirements of ISO26262 "Part 2: Management of functional safety".

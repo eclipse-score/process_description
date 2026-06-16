@@ -25,18 +25,26 @@ Problem Attributes
 .. gd_req:: Problem attribute: UID
    :id: gd_req__problem_attr_uid
    :status: valid
+   :version: 1
    :tags: done_automation, problem_resolution, attribute, mandatory
-   :satisfies: wf__problem_create_pr, wf__problem_analyze_pr, wf__problem_initiate_monitor_pr, wf__problem_close_pr
-   :complies: std_req__aspice_40__SUP-9-BP1
+   :satisfies: wf__problem_create_pr[version==1],
+               wf__problem_analyze_pr[version==1],
+               wf__problem_initiate_monitor_pr[version==1],
+               wf__problem_close_pr[version==1]
+   :complies: std_req__aspice_40__SUP-9-BP1[version==1]
 
    Each Problem shall have a unique ID. It shall be in an integer number.
 
 .. gd_req:: Problem attribute: status
    :id: gd_req__problem_attr_status
    :status: valid
+   :version: 1
    :tags: manual_prio_1, problem_resolution, attribute, mandatory
-   :satisfies: wf__problem_create_pr, wf__problem_analyze_pr, wf__problem_initiate_monitor_pr, wf__problem_close_pr
-   :complies: std_req__aspice_40__SUP-9-BP1
+   :satisfies: wf__problem_create_pr[version==1],
+               wf__problem_analyze_pr[version==1],
+               wf__problem_initiate_monitor_pr[version==1],
+               wf__problem_close_pr[version==1]
+   :complies: std_req__aspice_40__SUP-9-BP1[version==1]
 
    Each Problem shall have a status:
 
@@ -49,18 +57,26 @@ Problem Attributes
 .. gd_req:: Problem attribute: title
    :id: gd_req__problem_attr_title
    :status: valid
+   :version: 1
    :tags: manual_prio_1, problem_resolution, attribute, mandatory
-   :satisfies: wf__problem_create_pr, wf__problem_analyze_pr, wf__problem_initiate_monitor_pr, wf__problem_close_pr
-   :complies: std_req__aspice_40__SUP-9-BP1
+   :satisfies: wf__problem_create_pr[version==1],
+               wf__problem_analyze_pr[version==1],
+               wf__problem_initiate_monitor_pr[version==1],
+               wf__problem_close_pr[version==1]
+   :complies: std_req__aspice_40__SUP-9-BP1[version==1]
 
    Reason for Problem Report
 
 .. gd_req:: Problem attribute: description
    :id: gd_req__problem_attr_impact_description
    :status: valid
+   :version: 1
    :tags: manual_prio_1, problem_resolution, attribute, mandatory
-   :satisfies: wf__problem_create_pr, wf__problem_analyze_pr, wf__problem_initiate_monitor_pr, wf__problem_close_pr
-   :complies: std_req__aspice_40__SUP-9-BP1, std_req__aspice_40__SUP-9-BP2
+   :satisfies: wf__problem_create_pr[version==1],
+               wf__problem_analyze_pr[version==1],
+               wf__problem_initiate_monitor_pr[version==1],
+               wf__problem_close_pr[version==1]
+   :complies: std_req__aspice_40__SUP-9-BP1[version==1], std_req__aspice_40__SUP-9-BP2[version==1]
 
    Exact description of the Problem, including potential cause and impact of the problem.
 
@@ -72,18 +88,26 @@ Problem Attributes
 .. gd_req:: Problem attribute: analysis results
    :id: gd_req__problem_attr_analysis_results
    :status: valid
+   :version: 1
    :tags: manual_prio_1, problem_resolution, attribute, mandatory
-   :satisfies: wf__problem_create_pr, wf__problem_analyze_pr, wf__problem_initiate_monitor_pr, wf__problem_close_pr
-   :complies: std_req__aspice_40__SUP-9-BP2
+   :satisfies: wf__problem_create_pr[version==1],
+               wf__problem_analyze_pr[version==1],
+               wf__problem_initiate_monitor_pr[version==1],
+               wf__problem_close_pr[version==1]
+   :complies: std_req__aspice_40__SUP-9-BP2[version==1]
 
    Record analysis results (e.g. reason for rejection, safety, security, quality impact) as comments.
 
 .. gd_req:: Problem attribute: stakeholder
    :id: gd_req__problem_attr_stakeholder
    :status: valid
+   :version: 1
    :tags: prio_1_automation, problem_resolution, attribute, mandatory
-   :satisfies: wf__problem_create_pr, wf__problem_analyze_pr, wf__problem_initiate_monitor_pr, wf__problem_close_pr
-   :complies: std_req__aspice_40__SUP-9-BP2, std_req__aspice_40__SUP-9-BP5
+   :satisfies: wf__problem_create_pr[version==1],
+               wf__problem_analyze_pr[version==1],
+               wf__problem_initiate_monitor_pr[version==1],
+               wf__problem_close_pr[version==1]
+   :complies: std_req__aspice_40__SUP-9-BP2[version==1], std_req__aspice_40__SUP-9-BP5[version==1]
 
    Assign responsible stakeholder for analyzing the problem
    Assign responsible stakeholder to resolve the problem
@@ -91,9 +115,13 @@ Problem Attributes
 .. gd_req:: Problem attribute: classification
    :id: gd_req__problem_attr_classification
    :status: valid
+   :version: 1
    :tags: prio_1_automation, problem_resolution, attribute, mandatory
-   :satisfies: wf__problem_create_pr, wf__problem_analyze_pr, wf__problem_initiate_monitor_pr, wf__problem_close_pr
-   :complies: std_req__aspice_40__SUP-9-BP1, std_req__aspice_40__SUP-9-BP2
+   :satisfies: wf__problem_create_pr[version==1],
+               wf__problem_analyze_pr[version==1],
+               wf__problem_initiate_monitor_pr[version==1],
+               wf__problem_close_pr[version==1]
+   :complies: std_req__aspice_40__SUP-9-BP1[version==1], std_req__aspice_40__SUP-9-BP2[version==1]
 
    Each Problem shall have a classification identifier:
 
@@ -105,9 +133,13 @@ Problem Attributes
 .. gd_req:: Problem attribute:: safety affected
    :id: gd_req__problem_attr_safety_affected
    :status: valid
+   :version: 1
    :tags: prio_1_automation, problem_resolution, attribute, mandatory
-   :satisfies: wf__problem_create_pr, wf__problem_analyze_pr, wf__problem_initiate_monitor_pr, wf__problem_close_pr
-   :complies: std_req__aspice_40__SUP-9-BP1
+   :satisfies: wf__problem_create_pr[version==1],
+               wf__problem_analyze_pr[version==1],
+               wf__problem_initiate_monitor_pr[version==1],
+               wf__problem_close_pr[version==1]
+   :complies: std_req__aspice_40__SUP-9-BP1[version==1]
 
    Each Problem shall have a safety relevance identifier:
 
@@ -119,9 +151,13 @@ Problem Attributes
 .. gd_req:: Problem attribute:: security affected
    :id: gd_req__problem_attr_security_affected
    :status: valid
+   :version: 1
    :tags: prio_1_automation, problem_resolution, attribute, mandatory
-   :satisfies: wf__problem_create_pr, wf__problem_analyze_pr, wf__problem_initiate_monitor_pr, wf__problem_close_pr
-   :complies: std_req__aspice_40__SUP-9-BP1
+   :satisfies: wf__problem_create_pr[version==1],
+               wf__problem_analyze_pr[version==1],
+               wf__problem_initiate_monitor_pr[version==1],
+               wf__problem_close_pr[version==1]
+   :complies: std_req__aspice_40__SUP-9-BP1[version==1]
 
    Each Problem shall have a security relevance identifier:
 
@@ -133,9 +169,13 @@ Problem Attributes
 .. gd_req:: Problem attribute: milestone
    :id: gd_req__problem_attr_milestone
    :status: valid
+   :version: 1
    :tags: manual_prio_1, problem_resolution, attribute, mandatory
-   :satisfies: wf__problem_create_pr, wf__problem_analyze_pr, wf__problem_initiate_monitor_pr, wf__problem_close_pr
-   :complies: std_req__aspice_40__SUP-9-BP1, std_req__aspice_40__SUP-9-BP6
+   :satisfies: wf__problem_create_pr[version==1],
+               wf__problem_analyze_pr[version==1],
+               wf__problem_initiate_monitor_pr[version==1],
+               wf__problem_close_pr[version==1]
+   :complies: std_req__aspice_40__SUP-9-BP1[version==1], std_req__aspice_40__SUP-9-BP6[version==1]
 
    Milestone until the Problem must be implemented (used for prioritization)
 
@@ -146,9 +186,13 @@ Problem Resolution Checks
 .. gd_req:: Problem Resolution mandatory attributes provided
    :id: gd_req__problem_check_mandatory
    :status: valid
+   :version: 1
    :tags: prio_2_automation, problem_resolution, attribute, check
-   :satisfies: wf__problem_create_pr, wf__problem_analyze_pr, wf__problem_initiate_monitor_pr, wf__problem_close_pr
-   :complies: std_req__aspice_40__SUP-9-BP1
+   :satisfies: wf__problem_create_pr[version==1],
+               wf__problem_analyze_pr[version==1],
+               wf__problem_initiate_monitor_pr[version==1],
+               wf__problem_close_pr[version==1]
+   :complies: std_req__aspice_40__SUP-9-BP1[version==1]
 
    It shall be checked if all mandatory attributes for each Problem
    is provided by the user. Following attributes shall be mandatory:
@@ -164,9 +208,13 @@ Problem Resolution Checks
 .. gd_req:: Problem Report issues closing constraints
    :id: gd_req__problem_check_closing
    :status: valid
+   :version: 1
    :tags: prio_1_automation, problem_resolution, attribute, check
-   :satisfies: wf__problem_create_pr, wf__problem_analyze_pr, wf__problem_initiate_monitor_pr, wf__problem_close_pr
-   :complies: std_req__aspice_40__SUP-9-BP1
+   :satisfies: wf__problem_create_pr[version==1],
+               wf__problem_analyze_pr[version==1],
+               wf__problem_initiate_monitor_pr[version==1],
+               wf__problem_close_pr[version==1]
+   :complies: std_req__aspice_40__SUP-9-BP1[version==1]
 
    ISSUEs related to Problem Reports shall not automatically closed, if linked ISSUEs or PRs are closed or merged and
    these ISSUEs shall be closed only manually from the :need:`Committer <rl__committer>`.

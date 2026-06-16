@@ -18,6 +18,7 @@ Platform Management Work Products
 .. workproduct:: Platform Management Plan
    :id: wp__platform_mgmt
    :status: valid
+   :version: 1
    :tags: doc_lifecycle_model_2
    :complies:
 
@@ -34,8 +35,14 @@ Platform Management Work Products
 .. workproduct:: Project Management Plan
    :id: wp__project_mgt
    :status: valid
+   :version: 1
    :tags: doc_lifecycle_model_2
-   :complies: std_req__aspice_40__iic-08-53, std_req__aspice_40__iic-14-10, std_req__aspice_40__iic-13-52, std_req__aspice_40__iic-18-52, std_req__aspice_40__iic-08-56, std_req__aspice_40__iic-14-50
+   :complies: std_req__aspice_40__iic-08-53[version==1],
+              std_req__aspice_40__iic-14-10[version==1],
+              std_req__aspice_40__iic-13-52[version==1],
+              std_req__aspice_40__iic-18-52[version==1],
+              std_req__aspice_40__iic-08-56[version==1],
+              std_req__aspice_40__iic-14-50[version==1]
 
    Project Management Plan (Part of the Platform Management Plan)
 

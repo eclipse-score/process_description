@@ -18,12 +18,14 @@
 .. std_req:: 04-02 Domain architecture
    :id: std_req__aspice_40__iic-04-02
    :status: valid
+   :version: 1
 
    Definition not available yet in PAM4.0 document.
 
 .. std_req:: 04-04 Software Architecture
    :id: std_req__aspice_40__iic-04-04
    :status: valid
+   :version: 1
 
    Software Architecture may have the following characteristics:
 
@@ -57,6 +59,7 @@
 .. std_req:: 04-05 Software detailed design
    :id: std_req__aspice_40__iic-04-05
    :status: valid
+   :version: 1
 
    Software detailed design may have the following characteristics:
 
@@ -79,6 +82,7 @@
 .. std_req:: 04-51 ML architecture
    :id: std_req__aspice_40__iic-04-51
    :status: valid
+   :version: 1
 
    - An ML architecture is basically a special part of a software architecture (see 04-04). Additionally
 

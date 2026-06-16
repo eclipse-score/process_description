@@ -21,7 +21,8 @@ Tenets
 .. tenet:: TT-PROVENANCE
    :id: tenet__trust__tt-provenance
    :status: valid
-   :links: assertion__trust__ta-supply-chain, assertion__trust__ta-inputs
+   :version: 1
+   :links: assertion__trust__ta-supply-chain[version==1], assertion__trust__ta-inputs[version==1]
 
    All source code (and attestations for claims) for XYZ are provided with
    known provenance.
@@ -57,7 +58,8 @@ Tenets
 .. tenet:: TT-CONSTRUCTION
    :id: tenet__trust__tt-construction
    :status: valid
-   :links: assertion__trust__ta-tests, assertion__trust__ta-releases, assertion__trust__ta-iterations
+   :version: 1
+   :links: assertion__trust__ta-tests[version==1], assertion__trust__ta-releases[version==1], assertion__trust__ta-iterations[version==1]
 
    Tools are provided to build XYZ from trusted sources (also provided) with
    full reproducibility.
@@ -88,7 +90,8 @@ Tenets
 .. tenet:: TT-CHANGES
    :id: tenet__trust__tt-changes
    :status: valid
-   :links: assertion__trust__ta-fixes, assertion__trust__ta-updates
+   :version: 1
+   :links: assertion__trust__ta-fixes[version==1], assertion__trust__ta-updates[version==1]
 
    XYZ is actively maintained, with regular updates to dependencies, and changes
    are verified to prevent regressions.
@@ -121,7 +124,11 @@ Tenets
 .. tenet:: TT-EXPECTATIONS
    :id: tenet__trust__tt-expectations
    :status: valid
-   :links: assertion__trust__ta-behaviours, assertion__trust__ta-misbehaviours, assertion__trust__ta-indicators, assertion__trust__ta-constraints
+   :version: 1
+   :links: assertion__trust__ta-behaviours[version==1],
+           assertion__trust__ta-misbehaviours[version==1],
+           assertion__trust__ta-indicators[version==1],
+           assertion__trust__ta-constraints[version==1]
 
    Documentation is provided, specifying what XYZ is expected to do, and what
    it must not do, and how this is verified.
@@ -150,7 +157,8 @@ Tenets
 .. tenet:: TT-RESULTS
    :id: tenet__trust__tt-results
    :status: valid
-   :links: assertion__trust__ta-validation, assertion__trust__ta-data, assertion__trust__ta-analysis
+   :version: 1
+   :links: assertion__trust__ta-validation[version==1], assertion__trust__ta-data[version==1], assertion__trust__ta-analysis[version==1]
 
    Evidence is provided to demonstrate that XYZ does what it is supposed to
    do, and does not do what it must not do.
@@ -175,7 +183,8 @@ Tenets
 .. tenet:: TT-CONFIDENCE
    :id: tenet__trust__tt-confidence
    :status: valid
-   :links: assertion__trust__ta-methodologies, assertion__trust__ta-confidence
+   :version: 1
+   :links: assertion__trust__ta-methodologies[version==1], assertion__trust__ta-confidence[version==1]
 
    Confidence in XYZ is measured by analysing actual performance in tests and in
    production.

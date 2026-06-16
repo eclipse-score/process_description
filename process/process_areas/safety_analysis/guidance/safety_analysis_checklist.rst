@@ -19,8 +19,13 @@ Safety Analysis Checklist
 .. gd_chklst:: Safety Analysis Checklist Template
    :id: gd_chklst__safety_analysis
    :status: valid
+   :version: 1
    :tags: safety_analysis
-   :complies: std_req__iso26262__management_64101, std_req__iso26262__management_64102, std_req__iso26262__management_64103, std_req__iso26262__management_64104, std_req__iso26262__management_64105
+   :complies: std_req__iso26262__management_64101[version==1],
+              std_req__iso26262__management_64102[version==1],
+              std_req__iso26262__management_64103[version==1],
+              std_req__iso26262__management_64104[version==1],
+              std_req__iso26262__management_64105[version==1]
 
 
     For the content see here:

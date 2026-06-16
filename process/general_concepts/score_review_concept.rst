@@ -20,6 +20,7 @@ Review and Inspection Concept
 .. doc_concept:: Work product Inspections Concept
    :id: doc_concept__wp_inspections
    :status: valid
+   :version: 1
 
 Inspection Definition
 ^^^^^^^^^^^^^^^^^^^^^
@@ -185,9 +186,10 @@ Process Requirements
 .. gd_req:: Version for inspected requirements
    :id: gd_req__general_requirements_version
    :status: valid
+   :version: 1
    :tags: prio_1_automation, general
-   :complies: std_req__iso26262__support_6433, std_req__iso26262__software_7414
-   :satisfies: wf__monitor_verify_requirements
+   :complies: std_req__iso26262__support_6433[version==1], std_req__iso26262__software_7414[version==1]
+   :satisfies: wf__monitor_verify_requirements[version==1]
 
    The version of a requirement shall not change by an inspection.
 
@@ -198,9 +200,10 @@ Process Requirements
 .. gd_req:: Version for inspected architecture
    :id: gd_req__general_architecture_version
    :status: valid
+   :version: 1
    :tags: general
-   :complies: std_req__iso26262__support_6433, std_req__iso26262__software_7414
-   :satisfies: wf__mr_vy_arch
+   :complies: std_req__iso26262__support_6433[version==1], std_req__iso26262__software_7414[version==1]
+   :satisfies: wf__mr_vy_arch[version==1]
 
    The version of architecture element shall not change by an inspection.
 
@@ -213,9 +216,10 @@ Process Requirements
 .. gd_req:: Checklist templates in pull requests
    :id: gd_req__general_checklist_templates
    :status: valid
+   :version: 1
    :tags: prio_2_automation, general
-   :complies: std_req__iso26262__support_6433, std_req__iso26262__software_7414, std_req__iso26262__software_942
-   :satisfies: wf__monitor_verify_requirements, wf__mr_vy_arch
+   :complies: std_req__iso26262__support_6433[version==1], std_req__iso26262__software_7414[version==1], std_req__iso26262__software_942[version==1]
+   :satisfies: wf__monitor_verify_requirements[version==1], wf__mr_vy_arch[version==1]
 
    For every pull request that modifies a work product subject to inspection,
    a pull‑request template containing the applicable inspection checklist items shall be provided.
@@ -225,17 +229,19 @@ Process Requirements
 .. gd_req:: Status Set Check
    :id: gd_req__general_status_set_check
    :status: valid
+   :version: 1
    :tags: prio_2_automation, general
-   :complies: std_req__iso26262__support_6433, std_req__iso26262__software_7414
-   :satisfies: wf__monitor_verify_requirements, wf__mr_vy_arch
+   :complies: std_req__iso26262__support_6433[version==1], std_req__iso26262__software_7414[version==1]
+   :satisfies: wf__monitor_verify_requirements[version==1], wf__mr_vy_arch[version==1]
 
    It shall be checked that only a PR with the inspection checklist filled out can set a status to valid(inspected).
 
 .. gd_req:: Status Reset Check
    :id: gd_req__general_status_reset_check
    :status: valid
+   :version: 1
    :tags: prio_2_automation, general
-   :complies: std_req__iso26262__support_6433, std_req__iso26262__software_7414
-   :satisfies: wf__monitor_verify_requirements, wf__mr_vy_arch
+   :complies: std_req__iso26262__support_6433[version==1], std_req__iso26262__software_7414[version==1]
+   :satisfies: wf__monitor_verify_requirements[version==1], wf__mr_vy_arch[version==1]
 
    It shall be checked that the status is reset to valid whenever a requirement is modified (changes version).

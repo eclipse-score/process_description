@@ -20,7 +20,15 @@ Architecture Guideline
 .. gd_guidl:: Architectural Design Guideline
    :id: gd_guidl__arch_design
    :status: valid
-   :complies: std_req__isopas8926__44411, std_req__isopas8926__44412, std_req__iso26262__software_743, std_req__iso26262__software_744, std_req__iso26262__software_745, std_req__aspice_40__iic-10-50, std_req__aspice_40__iic-10-51, std_req__aspice_40__iic-10-52
+   :version: 1
+   :complies: std_req__isopas8926__44411[version==1],
+              std_req__isopas8926__44412[version==1],
+              std_req__iso26262__software_743[version==1],
+              std_req__iso26262__software_744[version==1],
+              std_req__iso26262__software_745[version==1],
+              std_req__aspice_40__iic-10-50[version==1], 
+              std_req__aspice_40__iic-10-51[version==1], 
+              std_req__aspice_40__iic-10-52[version==1]
 
 The guideline focuses on the steps which need to be performed in order to create the architectural design. The concept behind those steps is described in the :need:`[[title]] <doc_concept__arch_process>`.
 

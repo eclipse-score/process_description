@@ -20,11 +20,12 @@ Tool Verification Report Template
 .. doc_tool:: [Your Tool Name]
    :id: doc_tool__tool_name_version
    :status: draft
-   :version: vX.Y.Z
+   :version: 1
+   :tool_version: vX.Y.Z
    :tcl: LOW
    :safety_affected: YES
    :security_affected: YES
-   :realizes: wp__tool_verification_report
+   :realizes: wp__tool_verification_report[version==1]
    :tags: template, tool_management
 
 .. attention::

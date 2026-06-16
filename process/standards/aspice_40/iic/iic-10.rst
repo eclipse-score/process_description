@@ -18,6 +18,7 @@
 .. std_req:: 10-00 Process description
    :id: std_req__aspice_40__iic-10-00
    :status: valid
+   :version: 1
 
    Process description may have the following characteristics:
 
@@ -33,6 +34,7 @@
 .. std_req:: 10-50 Role description
    :id: std_req__aspice_40__iic-10-50
    :status: valid
+   :version: 1
 
    Role description may have the following characteristics:
 
@@ -44,6 +46,7 @@
 .. std_req:: 10-51 Qualification method description
    :id: std_req__aspice_40__iic-10-51
    :status: valid
+   :version: 1
 
    Qualification method description may have the following characteristics:
 
@@ -55,6 +58,7 @@
 .. std_req:: 10-52 Process resource and infrastructure description
    :id: std_req__aspice_40__iic-10-52
    :status: valid
+   :version: 1
 
    Process resource and infrastructure description may have the following characteristics:
 

@@ -21,6 +21,7 @@ Assertions
 .. assertion:: TA-SUPPLY-CHAIN
    :id: assertion__trust__ta-supply-chain
    :status: valid
+   :version: 1
 
    All sources for XYZ and tools are mirrored in our controlled environment
 
@@ -75,6 +76,7 @@ Assertions
 .. assertion:: TA-INPUTS
    :id: assertion__trust__ta-inputs
    :status: valid
+   :version: 1
 
    Components and tools used to construct and verify XYZ are assessed, to identify
    potential risks and issues
@@ -157,6 +159,7 @@ Assertions
 .. assertion:: TA-TESTS
    :id: assertion__trust__ta-tests
    :status: valid
+   :version: 1
 
    All tests for XYZ, and its build and test environments, are constructed from
    controlled/mirrored sources and are reproducible, with any exceptions documented
@@ -205,6 +208,7 @@ Assertions
 .. assertion:: TA-RELEASES
    :id: assertion__trust__ta-releases
    :status: valid
+   :version: 1
 
    Construction of XYZ releases is fully repeatable and the results are fully
    reproducible, with any exceptions documented and justified.
@@ -267,6 +271,7 @@ Assertions
 .. assertion:: TA-ITERATIONS
    :id: assertion__trust__ta-iterations
    :status: valid
+   :version: 1
 
    All constructed iterations of XYZ include source code, build instructions,
    tests, results and attestations.
@@ -311,6 +316,7 @@ Assertions
 .. assertion:: TA-FIXES
    :id: assertion__trust__ta-fixes
    :status: valid
+   :version: 1
 
    Known bugs or misbehaviours are analysed and triaged, and critical fixes or
    mitigations are implemented or applied.
@@ -381,6 +387,7 @@ Assertions
 .. assertion:: TA-UPDATES
    :id: assertion__trust__ta-updates
    :status: valid
+   :version: 1
 
    XYZ components, configurations and tools are updated under specified change and
    configuration management controls.
@@ -413,6 +420,7 @@ Assertions
 .. assertion:: TA-BEHAVIOURS
    :id: assertion__trust__ta-behaviours
    :status: valid
+   :version: 1
 
    Expected or required behaviours for XYZ are identified, specified, verified and
    validated based on analysis.
@@ -467,6 +475,7 @@ Assertions
 .. assertion:: TA-MISBEHAVIOURS
    :id: assertion__trust__ta-misbehaviours
    :status: valid
+   :version: 1
 
    Prohibited misbehaviours for XYZ are identified, and mitigations are specified,
    verified and validated based on analysis.
@@ -565,6 +574,7 @@ Assertions
 .. assertion:: TA-INDICATORS
    :id: assertion__trust__ta-indicators
    :status: valid
+   :version: 1
 
    Advance warning indicators for misbehaviours are identified, and monitoring
    mechanisms are specified, verified and validated based on analysis.
@@ -646,6 +656,7 @@ Assertions
 .. assertion:: TA-CONSTRAINTS
    :id: assertion__trust__ta-constraints
    :status: valid
+   :version: 1
 
    Constraints on adaptation and deployment of XYZ are specified.
 
@@ -706,6 +717,7 @@ Assertions
 .. assertion:: TA-VALIDATION
    :id: assertion__trust__ta-validation
    :status: valid
+   :version: 1
 
    All specified tests are executed repeatedly, under defined conditions in
    controlled environments, according to specified objectives.
@@ -746,6 +758,7 @@ Assertions
 .. assertion:: TA-DATA
    :id: assertion__trust__ta-data
    :status: valid
+   :version: 1
 
    Data is collected from tests, and from monitoring of deployed software,
    according to specified objectives.
@@ -787,6 +800,7 @@ Assertions
 .. assertion:: TA-ANALYSIS
    :id: assertion__trust__ta-analysis
    :status: valid
+   :version: 1
 
    Collected data from tests and monitoring of deployed software is analysed
    according to specified objectives.
@@ -839,6 +853,7 @@ Assertions
 .. assertion:: TA-METHODOLOGIES
    :id: assertion__trust__ta-methodologies
    :status: valid
+   :version: 1
 
    Manual methodologies applied for XYZ by contributors, and their results, are
    managed according to specified objectives.
@@ -886,6 +901,7 @@ Assertions
 .. assertion:: TA-CONFIDENCE
    :id: assertion__trust__ta-confidence
    :status: valid
+   :version: 1
 
    Confidence in XYZ is measured based on results of analysis
 

@@ -18,7 +18,8 @@ Problem Resolution Work Products
 .. workproduct:: Platform Problem Resolution Plan
    :id: wp__prm_plan
    :status: valid
+   :version: 1
    :tags: doc_lifecycle_model_2
-   :complies: std_wp__iso26262__support_851
+   :complies: std_wp__iso26262__support_851[version==1]
 
    Problem Resolution Plan (Part of the Platform Management Plan)

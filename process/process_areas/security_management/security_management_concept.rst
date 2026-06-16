@@ -20,6 +20,7 @@ Concept Description
 .. doc_concept:: Concept Description
    :id: doc_concept__security_management_process
    :status: valid
+   :version: 1
    :tags: security_management
 
 In this section a concept for the security management will be discussed. Inputs for this concepts

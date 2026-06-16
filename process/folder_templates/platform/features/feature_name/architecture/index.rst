@@ -23,9 +23,10 @@ Feature Architecture
 .. document:: [Your Feature Name] Architecture
    :id: doc__feature_name_architecture
    :status: draft
+   :version: 1
    :safety: ASIL_B
    :security: NO
-   :realizes: wp__feature_arch
+   :realizes: wp__feature_arch[version==1]
    :tags: template
 
 .. attention::
@@ -93,6 +94,7 @@ Logical Interfaces
       :security: YES
       :safety: ASIL_B
       :status: invalid
+      :version: 1
       :fulfils: feat_req__feature_name__some_title
 
       General Interface Description
@@ -108,6 +110,7 @@ Logical Interfaces
       :security: YES
       :safety: ASIL_B
       :status: invalid
+      :version: 1
       :included_by: logic_arc_int__feature_name__interface_name1
 
       General Operation Description

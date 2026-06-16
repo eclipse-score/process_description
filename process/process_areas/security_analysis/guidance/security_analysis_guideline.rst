@@ -20,6 +20,7 @@ Security Analysis Guidelines
 .. gd_guidl:: Security Analysis Guideline
    :id: gd_guidl__security_analysis
    :status: valid
+   :version: 1
    :complies:
 
 This document describes the general guidance for Security Analysis based on the concept

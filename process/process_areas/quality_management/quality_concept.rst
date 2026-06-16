@@ -18,6 +18,7 @@ Concept
 .. doc_concept:: Quality Management Concept
    :id: doc_concept__quality_process
    :status: valid
+   :version: 1
    :tags: quality_management
 
 In this section a concept for the Quality Management will be discussed. Inputs for this concepts is ASPICE SUP.1

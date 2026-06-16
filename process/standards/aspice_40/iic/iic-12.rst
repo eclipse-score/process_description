@@ -18,6 +18,7 @@
 .. std_req:: 12-03 Reuse candidate
    :id: std_req__aspice_40__iic-12-03
    :status: valid
+   :version: 1
 
    Reuse candidate may have the following characteristics:
 

@@ -20,7 +20,8 @@ Decision Record Template
 .. gd_temp:: Decision Record Template
    :id: gd_temp__change_decision_record
    :status: valid
-   :complies: std_req__aspice_40__SWE-2-BP3, std_req__aspice_40__iic-17-00
+   :version: 1
+   :complies: std_req__aspice_40__SWE-2-BP3[version==1], std_req__aspice_40__iic-17-00[version==1]
 
 This template is used to create new Decision Records (DRs) in the project.
 
@@ -33,6 +34,7 @@ In each DR file, include the following sections:
    .. dec_rec:: <Title>
       :id: dec_rec__<Platform|Feature|Component>__<Title>
       :status: <proposed|accepted|deprecated|rejected|superseded>
+      :version: 1
       :affects: <link>
 
       <Description>

@@ -18,7 +18,8 @@ Checklists
 .. gd_chklst:: Documentation Review Checklist
    :id: gd_chklst__documentation_review
    :status: valid
-   :complies: std_req__iso26262__support_1045
+   :version: 1
+   :complies: std_req__iso26262__support_1045[version==1]
 
    | **1. Purpose**
    | The purpose of this checklist is to collect the formal topics to be checked during a

@@ -20,6 +20,7 @@ Introduction
 .. doc_concept:: Process Meta Model
    :id: doc_concept__process_meta_model
    :status: valid
+   :version: 1
    :tags: process_management
 
 .. toctree::

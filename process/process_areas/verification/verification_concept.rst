@@ -18,6 +18,7 @@ Concept Description
 .. doc_concept:: Verification Concept
    :id: doc_concept__verification_process
    :status: valid
+   :version: 1
    :tags: requirements_engineering
 
    In this section a concept for the verification activities will be discussed.

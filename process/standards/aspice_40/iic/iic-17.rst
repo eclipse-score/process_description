@@ -18,6 +18,7 @@
 .. std_req:: 17-00 Requirement
    :id: std_req__aspice_40__iic-17-00
    :status: valid
+   :version: 1
 
    Requirements may have the following characteristics:
 
@@ -68,6 +69,7 @@
 .. std_req:: 17-05 Requirements for work products
    :id: std_req__aspice_40__iic-17-05
    :status: valid
+   :version: 1
 
    Requirements for work products may have the following characteristics:
 
@@ -86,6 +88,7 @@
 .. std_req:: 17-54 Requirement Attribute
    :id: std_req__aspice_40__iic-17-54
    :status: valid
+   :version: 1
 
    Requirement Attributes may have the following characteristics:
 
@@ -101,6 +104,7 @@
 .. std_req:: 17-55 Resource needs
    :id: std_req__aspice_40__iic-17-55
    :status: valid
+   :version: 1
 
    Resource needs may have the following characteristics:
 

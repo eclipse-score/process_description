@@ -23,8 +23,12 @@ Platform
 .. workproduct:: Verification Plan
    :id: wp__verification_plan
    :status: valid
+   :version: 1
    :tags: doc_lifecycle_model_2
-   :complies: std_wp__iso26262__support_951, std_wp__iso26262__support_952, std_wp__iso26262__support_1252, std_wp__isosae21434__development_1056
+   :complies: std_wp__iso26262__support_951[version==1],
+              std_wp__iso26262__support_952[version==1],
+              std_wp__iso26262__support_1252[version==1],
+              std_wp__isosae21434__development_1056[version==1]
 
    Verification planning for each phase of the safety lifecycle must detail the work products,
    objectives, methods, criteria, environments, equipment, resources, actions for anomalies, and
@@ -35,8 +39,9 @@ Platform
 .. workproduct:: Platform Integration Test
    :id: wp__verification_platform_int_test
    :status: valid
+   :version: 1
    :tags: doc_lifecycle_model_2
-   :complies: std_wp__iso26262__support_952, std_wp__isosae21434__development_1057
+   :complies: std_wp__iso26262__support_952[version==1], std_wp__isosae21434__development_1057[version==1]
 
    Platform Integration Testing verifies Stakeholder Requirements performed on reference HW.
    Depending on the nature of the project, respective tailoring (e.g. for reduced requirements
@@ -49,8 +54,14 @@ Platform
 .. workproduct:: Platform Verification Report
    :id: wp__verification_platform_ver_report
    :status: valid
+   :version: 1
    :tags: doc_lifecycle_model_2
-   :complies: std_wp__iso26262__software_1053, std_wp__iso26262__support_953, std_wp__iso26262__analysis_752, std_wp__iso26262__analysis_852, std_wp__isosae21434__development_1054, std_wp__isosae21434__development_1057
+   :complies: std_wp__iso26262__software_1053[version==1],
+              std_wp__iso26262__support_953[version==1],
+              std_wp__iso26262__analysis_752[version==1],
+              std_wp__iso26262__analysis_852[version==1],
+              std_wp__isosae21434__development_1054[version==1],
+              std_wp__isosae21434__development_1057[version==1]
 
    Verification Report contains:
 
@@ -73,8 +84,9 @@ Feature
 .. workproduct:: Feature Integration test
    :id: wp__verification_feat_int_test
    :status: valid
+   :version: 1
    :tags: doc_lifecycle_model_2
-   :complies: std_wp__iso26262__software_1051, std_wp__iso26262__support_952
+   :complies: std_wp__iso26262__software_1051[version==1], std_wp__iso26262__support_952[version==1]
 
    Integration Testing verifies feature requirements and architecture:
 
@@ -92,8 +104,17 @@ Module
 .. workproduct:: Module Verification Report
    :id: wp__verification_module_ver_report
    :status: valid
+   :version: 1
    :tags: doc_lifecycle_model_2
-   :complies: std_wp__iso26262__software_952, std_wp__iso26262__software_1053, std_wp__iso26262__support_953, std_wp__iso26262__support_1253, std_wp__iso26262__analysis_752, std_wp__iso26262__analysis_852, std_wp__iso26262__support_1252, std_wp__isopas8926__4526, std_wp__iso26262__software_app_c_56
+   :complies: std_wp__iso26262__software_952[version==1],
+              std_wp__iso26262__software_1053[version==1],
+              std_wp__iso26262__support_953[version==1],
+              std_wp__iso26262__support_1253[version==1],
+              std_wp__iso26262__analysis_752[version==1],
+              std_wp__iso26262__analysis_852[version==1],
+              std_wp__iso26262__support_1252[version==1],
+              std_wp__isopas8926__4526[version==1],
+              std_wp__iso26262__software_app_c_56[version==1]
 
    Verification Report contains:
 
@@ -124,8 +145,12 @@ Component
 .. workproduct:: Component Integration test
    :id: wp__verification_comp_int_test
    :status: valid
+   :version: 1
    :tags: doc_lifecycle_model_2
-   :complies: std_wp__iso26262__software_1051, std_wp__iso26262__support_952, std_wp__isopas8926__4525, std_wp__iso26262__software_app_c_55
+   :complies: std_wp__iso26262__software_1051[version==1],
+              std_wp__iso26262__support_952[version==1],
+              std_wp__isopas8926__4525[version==1],
+              std_wp__iso26262__software_app_c_55[version==1]
 
    Component Integration Testing verifies the component architecture and component requirements:
 
@@ -143,8 +168,12 @@ Component
 .. workproduct:: Unit test
    :id: wp__verification_sw_unit_test
    :status: valid
+   :version: 1
    :tags: doc_lifecycle_model_2
-   :complies: std_wp__iso26262__software_951, std_wp__iso26262__support_952, std_wp__isopas8926__4525, std_wp__iso26262__software_app_c_55
+   :complies: std_wp__iso26262__software_951[version==1],
+              std_wp__iso26262__support_952[version==1],
+              std_wp__isopas8926__4525[version==1],
+              std_wp__iso26262__software_app_c_55[version==1]
 
    Unit testing verifies detailed design (traced to).
    Respective tooling is defined in :need:`wp__platform_mgmt`, :need:`wp__verification_plan` and integrated in CI/Build.

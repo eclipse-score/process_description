@@ -22,13 +22,14 @@ For a detailed explanation of workflows and their role within the process model,
 .. workflow:: Create/Maintain Process Management Strategy
    :id: wf__cr_mt_process_mgt_strategy
    :status: valid
-   :responsible: rl__contributor
-   :approved_by: rl__process_community
-   :supported_by: rl__safety_external_auditor, rl__security_external_auditor, rl__project_lead
-   :input: wp__policies, wp__issue_track_system
-   :output: wp__process_strategy, wp__policies
-   :contains: gd_guidl__process_management, gd_temp__process_workflow
-   :has: doc_concept__process_management, doc_getstrt__process_management
+   :version: 1
+   :responsible: rl__contributor[version==1]
+   :approved_by: rl__process_community[version==1]
+   :supported_by: rl__safety_external_auditor[version==1], rl__security_external_auditor[version==1], rl__project_lead[version==1]
+   :input: wp__policies[version==1], wp__issue_track_system[version==1]
+   :output: wp__process_strategy[version==1], wp__policies[version==1]
+   :contains: gd_guidl__process_management[version==1], gd_temp__process_workflow[version==1]
+   :has: doc_concept__process_management[version==1], doc_getstrt__process_management[version==1]
 
    The process management strategy is created and maintained. Policies are
    reviewed and updated, if required.
@@ -36,26 +37,28 @@ For a detailed explanation of workflows and their role within the process model,
 .. workflow:: Define/Approve Process Description
    :id: wf__def_app_process_description
    :status: valid
-   :responsible: rl__contributor
-   :approved_by: rl__process_community
-   :supported_by: rl__safety_external_auditor, rl__security_external_auditor, rl__project_lead
-   :input: wp__process_strategy, wp__issue_track_system
-   :output: wp__process_description, wp__tailoring_work_products
-   :contains: gd_guidl__process_management, gd_temp__process_workflow
-   :has: doc_concept__process_management, doc_getstrt__process_management
+   :version: 1
+   :responsible: rl__contributor[version==1]
+   :approved_by: rl__process_community[version==1]
+   :supported_by: rl__safety_external_auditor[version==1], rl__security_external_auditor[version==1], rl__project_lead[version==1]
+   :input: wp__process_strategy[version==1], wp__issue_track_system[version==1]
+   :output: wp__process_description[version==1], wp__tailoring_work_products[version==1]
+   :contains: gd_guidl__process_management[version==1], gd_temp__process_workflow[version==1]
+   :has: doc_concept__process_management[version==1], doc_getstrt__process_management[version==1]
 
    The process description is defined and approved.
 
 .. workflow:: Monitor/Improve Process Implementation
    :id: wf__mon_imp_process_description
    :status: valid
-   :responsible: rl__contributor
-   :approved_by: rl__process_community
-   :supported_by: rl__safety_external_auditor, rl__security_external_auditor, rl__project_lead
-   :input: wp__process_description
-   :output: wp__process_impr_report, wp__issue_track_system
-   :contains: gd_guidl__process_management, gd_temp__process_workflow
-   :has: doc_concept__process_management, doc_getstrt__process_management
+   :version: 1
+   :responsible: rl__contributor[version==1]
+   :approved_by: rl__process_community[version==1]
+   :supported_by: rl__safety_external_auditor[version==1], rl__security_external_auditor[version==1], rl__project_lead[version==1]
+   :input: wp__process_description[version==1]
+   :output: wp__process_impr_report[version==1], wp__issue_track_system[version==1]
+   :contains: gd_guidl__process_management[version==1], gd_temp__process_workflow[version==1]
+   :has: doc_concept__process_management[version==1], doc_getstrt__process_management[version==1]
 
    The process strategy and description implementation is monitored and improvements are
    triggered, if required.

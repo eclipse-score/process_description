@@ -18,6 +18,7 @@
 .. std_req:: 11-03 Release note
    :id: std_req__aspice_40__iic-11-03
    :status: valid
+   :version: 1
 
    Release note may have the following characteristics:
 
@@ -46,6 +47,7 @@
 .. std_req:: 11-04 Product release package
    :id: std_req__aspice_40__iic-11-04
    :status: valid
+   :version: 1
 
    Product release package may have the following characteristics:
 
@@ -61,6 +63,7 @@
 .. std_req:: 11-05 Software Unit
    :id: std_req__aspice_40__iic-11-05
    :status: valid
+   :version: 1
 
    Software Unit may have the following characteristics:
 
@@ -74,6 +77,7 @@
 .. std_req:: 11-50 Deployed ML model
    :id: std_req__aspice_40__iic-11-50
    :status: valid
+   :version: 1
 
    -  It is derived from the trained ML model (see 01-53) and is to be integrated into the target system.
    - It may differ from the trained ML model which often requires powerful hardware and uses interpretative languages.

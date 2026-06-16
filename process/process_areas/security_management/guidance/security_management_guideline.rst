@@ -20,8 +20,16 @@ Security Management Guideline
 .. gd_guidl:: Security plan definitions
    :id: gd_guidl__security_plan_definitions
    :status: valid
-   :complies: std_req__isosae21434__org_management_5421, std_req__isosae21434__org_management_5422, std_req__isosae21434__org_management_5423, std_req__isosae21434__org_management_5443, std_req__isosae21434__org_management_5451, std_req__isosae21434__org_management_5461, std_req__isosae21434__continual_8321, std_req__isosae21434__continual_8322,
-              std_req__aspice_40__iic-14-55
+   :version: 1
+   :complies: std_req__isosae21434__org_management_5421[version==1],
+              std_req__isosae21434__org_management_5422[version==1],
+              std_req__isosae21434__org_management_5423[version==1],
+              std_req__isosae21434__org_management_5443[version==1],
+              std_req__isosae21434__org_management_5451[version==1],
+              std_req__isosae21434__org_management_5461[version==1],
+              std_req__isosae21434__continual_8321[version==1],
+              std_req__isosae21434__continual_8322[version==1],
+              std_req__aspice_40__iic-14-55[version==1]
 
    **Security Culture:**
 
@@ -172,7 +180,8 @@ Security Management Guideline
 .. gd_guidl:: Security Manual Generation
    :id: gd_guidl__security_manual
    :status: valid
-   :complies: std_req__isosae21434__prj_management_6491, std_req__isosae21434__prj_management_6492
+   :version: 1
+   :complies: std_req__isosae21434__prj_management_6491[version==1], std_req__isosae21434__prj_management_6492[version==1]
 
    The Security Manual collects several work products and adds some additional content mainly to
    instruct the user of a OoC (in this project on platform and module level) to securely use it
@@ -183,7 +192,8 @@ Security Management Guideline
 .. gd_guidl:: Security Package Automated Generation
    :id: gd_guidl__security_package
    :status: valid
-   :complies: std_req__isosae21434__prj_management_6471
+   :version: 1
+   :complies: std_req__isosae21434__prj_management_6471[version==1]
 
    The Security Package shall be generated progressively and automatically compiling the work products.
    One of the checks to perform on the platform safety package is to check completeness of the

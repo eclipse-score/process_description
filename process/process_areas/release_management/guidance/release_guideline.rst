@@ -18,7 +18,16 @@ Guideline
 .. gd_guidl:: Release Management Guideline
    :id: gd_guidl__rel_management
    :status: valid
-   :complies: std_req__iso26262__software_1041, std_req__iso26262__management_6424, std_req__iso26262__management_64102, std_req__iso26262__management_64131, std_req__iso26262__management_64132, std_req__iso26262__management_64133, std_req__iso26262__management_64134, std_req__iso26262__management_64135, std_req__aspice_40__SPL-2-BP7
+   :version: 1
+   :complies: std_req__iso26262__software_1041[version==1],
+              std_req__iso26262__management_6424[version==1],
+              std_req__iso26262__management_64102[version==1],
+              std_req__iso26262__management_64131[version==1],
+              std_req__iso26262__management_64132[version==1],
+              std_req__iso26262__management_64133[version==1],
+              std_req__iso26262__management_64134[version==1],
+              std_req__iso26262__management_64135[version==1],
+              std_req__aspice_40__SPL-2-BP7[version==1]
 
 .. _workflow_release:
 
@@ -116,7 +125,8 @@ Release Handbook
 .. gd_guidl:: Release Handbook
    :id: gd_guidl__rel_handbook
    :status: valid
-   :complies: std_req__iso26262__software_1041
+   :version: 1
+   :complies: std_req__iso26262__software_1041[version==1]
 
    The release handbook incorporates an overview including a tutorial to explain the usage of the released software.
    It extends as a decent documentation for users and contributors beyond the pure release notes created according to the template :need:`gd_temp__rel_plat_rel_note`.

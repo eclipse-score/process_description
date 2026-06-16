@@ -19,9 +19,10 @@ Security Management Process Requirements
 .. gd_req:: Security Management attribute: status derivation
    :id: gd_req__security_doc_status
    :status: valid
+   :version: 1
    :tags: done_automation, attribute, mandatory
-   :satisfies: wf__cr_mt_security_plan
-   :complies: std_req__isosae21434__prj_management_6429
+   :satisfies: wf__cr_mt_security_plan[version==1]
+   :complies: std_req__isosae21434__prj_management_6429[version==1]
 
    Security Plans shall contain documents references where the status is derived automatically.
 
@@ -30,9 +31,10 @@ Security Management Process Requirements
 .. gd_req:: Security Management attribute: status accumulation
    :id: gd_req__security_wp_status
    :status: valid
+   :version: 1
    :tags: prio_2_automation, attribute, mandatory
-   :satisfies: wf__cr_mt_security_plan
-   :complies: std_req__isosae21434__prj_management_6429
+   :satisfies: wf__cr_mt_security_plan[version==1]
+   :complies: std_req__isosae21434__prj_management_6429[version==1]
 
    Security Plans shall contain work product references where the accumulated status is derived automatically.
 

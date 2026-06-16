@@ -42,7 +42,8 @@ Base practices
 .. std_req:: SWE.4.BP1: Specify software unit verification measures
    :id: std_req__aspice_40__SWE-4-BP1
    :status: valid
-   :links: std_req__aspice_40__iic-08-60
+   :version: 1
+   :links: std_req__aspice_40__iic-08-60[version==1]
 
    Specify verification measures for
    each software unit defined in the software detailed design, including
@@ -62,7 +63,8 @@ Base practices
 .. std_req:: SWE.4.BP2: Select software unit verification measures
    :id: std_req__aspice_40__SWE-4-BP2
    :status: valid
-   :links: std_req__aspice_40__iic-08-58
+   :version: 1
+   :links: std_req__aspice_40__iic-08-58[version==1]
 
    Document the selection of
    verification measures considering selection criteria including criteria for regression verification.
@@ -72,7 +74,8 @@ Base practices
 .. std_req:: SWE.4.BP3: Verify software units
    :id: std_req__aspice_40__SWE-4-BP3
    :status: valid
-   :links: std_req__aspice_40__iic-03-50;std_req__aspice_40__iic-15-52
+   :version: 1
+   :links: std_req__aspice_40__iic-03-50[version==1], std_req__aspice_40__iic-15-52[version==1]
 
    Perform software unit verification using the selected
    verification measures. Record the verification results including pass/fail status and
@@ -86,7 +89,8 @@ Base practices
 .. std_req:: SWE.4.BP4: Ensure consistency and establish bidirectional traceability
    :id: std_req__aspice_40__SWE-4-BP4
    :status: valid
-   :links: std_req__aspice_40__iic-13-51
+   :version: 1
+   :links: std_req__aspice_40__iic-13-51[version==1]
 
    Ensure
    consistency and establish bidirectional traceability between verification measures and the
@@ -103,7 +107,8 @@ Base practices
 .. std_req:: SWE.4.BP5: Summarize and communicate results
    :id: std_req__aspice_40__SWE-4-BP5
    :status: valid
-   :links: std_req__aspice_40__iic-13-52
+   :version: 1
+   :links: std_req__aspice_40__iic-13-52[version==1]
 
    Summarize the results of software unit
    verification and communicate them to all affected parties.

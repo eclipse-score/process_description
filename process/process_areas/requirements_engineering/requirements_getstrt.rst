@@ -18,6 +18,7 @@ Getting Started
 .. doc_getstrt:: Getting Started on Requirements
    :id: doc_getstrt__req_process
    :status: valid
+   :version: 1
    :tags: requirements_engineering
 
 This document describes the steps which need to be done to create requirements, derive child requirements and finally to perform the formal requirement inspection.

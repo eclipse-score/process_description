@@ -33,7 +33,8 @@ Base practices
 .. std_req:: SUP.11.BP1: Establish an ML data management system
    :id: std_req__aspice_40__SUP-11-BP1
    :status: valid
-   :links: std_req__aspice_40__iic-16-52
+   :version: 1
+   :links: std_req__aspice_40__iic-16-52[version==1]
 
    Establish an ML data management system which supports
 
@@ -49,7 +50,8 @@ Base practices
 .. std_req:: SUP.11.BP2: Develop an ML data quality approach
    :id: std_req__aspice_40__SUP-11-BP2
    :status: valid
-   :links: std_req__aspice_40__iic-19-50
+   :version: 1
+   :links: std_req__aspice_40__iic-19-50[version==1]
 
    Develop an approach to ensure that the quality of ML data is analyzed based on defined ML data quality criteria and activities are performed to support avoidance of biases of data.
 
@@ -72,7 +74,8 @@ Base practices
 .. std_req:: SUP.11.BP3: Collect ML data
    :id: std_req__aspice_40__SUP-11-BP3
    :status: valid
-   :links: std_req__aspice_40__iic-03-53
+   :version: 1
+   :links: std_req__aspice_40__iic-03-53[version==1]
 
    Relevant sources for raw data are identified and continuously monitored for changes. The raw data is collected according to the ML data requirements.
 
@@ -87,14 +90,16 @@ Base practices
 .. std_req:: SUP.11.BP4: Process ML data
    :id: std_req__aspice_40__SUP-11-BP4
    :status: valid
-   :links: std_req__aspice_40__iic-03-53
+   :version: 1
+   :links: std_req__aspice_40__iic-03-53[version==1]
 
    The raw data are processed (annotated, analyzed, and structured) according to the ML data requirements.
 
 .. std_req:: SUP.11.BP5: Assure quality of ML data
    :id: std_req__aspice_40__SUP-11-BP5
    :status: valid
-   :links: std_req__aspice_40__iic-03-53
+   :version: 1
+   :links: std_req__aspice_40__iic-03-53[version==1]
 
    Perform the activities according to the ML data quality approach to ensure that the ML data meets the defined ML data quality criteria.
 
@@ -105,7 +110,8 @@ Base practices
 .. std_req:: SUP.11.BP6: Communicate agreed processed ML data
    :id: std_req__aspice_40__SUP-11-BP6
    :status: valid
-   :links: std_req__aspice_40__iic-13-52
+   :version: 1
+   :links: std_req__aspice_40__iic-13-52[version==1]
 
    Inform all affected parties about the agreed processed ML data and provide them to the affected parties.
 

@@ -20,9 +20,10 @@ Platform Verification Report
 .. document:: Platform Verification Report
    :id: doc__platform_verification_report
    :status: draft
+   :version: 1
    :safety: ASIL_B
    :security: YES
-   :realizes: wp__verification_platform_ver_report
+   :realizes: wp__verification_platform_ver_report[version==1]
    :tags: template
 
 .. attention::

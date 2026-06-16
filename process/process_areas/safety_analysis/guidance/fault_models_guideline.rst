@@ -20,7 +20,8 @@ FMEA Fault Models
 .. gd_guidl:: FMEA Fault Models
   :id: gd_guidl__fault_models
   :status: valid
-  :complies: std_req__iso26262__software_7410, std_req__iso26262__analysis_846
+  :version: 1
+  :complies: std_req__iso26262__software_7410[version==1], std_req__iso26262__analysis_846[version==1]
 
   | Fault Model for sequence diagrams
 

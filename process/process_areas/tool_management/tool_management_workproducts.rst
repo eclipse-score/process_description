@@ -18,16 +18,21 @@ Tool Management Work Products
 .. workproduct:: Platform Tool Management Plan
    :id: wp__tlm_plan
    :status: valid
+   :version: 1
    :tags: doc_lifecycle_model_2
-   :complies: std_wp__isosae21434__org_management_554, std_req__aspice_40__iic-16-03, std_req__aspice_40__iic-01-52, std_req__aspice_40__iic-10-52
+   :complies: std_wp__isosae21434__org_management_554[version==1],
+              std_req__aspice_40__iic-16-03[version==1],
+              std_req__aspice_40__iic-01-52[version==1],
+              std_req__aspice_40__iic-10-52[version==1]
 
    Tool Management Plan (Part of the Platform Management Plan)
 
 .. workproduct:: Tool Verification Report
    :id: wp__tool_verification_report
    :status: valid
+   :version: 1
    :tags: doc_lifecycle_model_2
-   :complies: std_wp__iso26262__support_1151, std_wp__iso26262__support_1152, std_wp__isosae21434__org_management_554
+   :complies: std_wp__iso26262__support_1151[version==1], std_wp__iso26262__support_1152[version==1], std_wp__isosae21434__org_management_554[version==1]
 
    According to the safety tool process, each tool's confidence level (TCL) must be determined.
    In addition security topics must be considered, as tool user manuals, access control for tools,

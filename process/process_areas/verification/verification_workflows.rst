@@ -22,15 +22,22 @@ For a detailed explanation of workflows and their role within the process model,
 .. workflow:: Create/Perform Unit Test
    :id: wf__verification_unit_test
    :status: valid
+   :version: 1
    :tags: implementation
-   :responsible: rl__contributor
-   :approved_by: rl__committer
-   :supported_by: rl__safety_manager
-   :input: wp__sw_implementation, wp__verification_plan
-   :output: wp__verification_sw_unit_test
-   :contains: gd_req__verification_link_tests, gd_req__verification_link_tests_cpp, gd_req__verification_link_tests_python, gd_req__verification_link_tests_rust, gd_req__verification_independence
-   :has: doc_concept__verification_process, doc_getstrt__verification_process,
-         doc_concept__imp_concept, doc_getstrt__imp_getstrt
+   :responsible: rl__contributor[version==1]
+   :approved_by: rl__committer[version==1]
+   :supported_by: rl__safety_manager[version==1]
+   :input: wp__sw_implementation[version==1], wp__verification_plan[version==1]
+   :output: wp__verification_sw_unit_test[version==1]
+   :contains: gd_req__verification_link_tests[version==1],
+              gd_req__verification_link_tests_cpp[version==1],
+              gd_req__verification_link_tests_python[version==1],
+              gd_req__verification_link_tests_rust[version==1],
+              gd_req__verification_independence[version==1]
+   :has: doc_concept__verification_process[version==1],
+         doc_getstrt__verification_process[version==1],
+         doc_concept__imp_concept[version==1],
+         doc_getstrt__imp_getstrt[version==1]
 
    Every Unit shall have at least one Unit Test. They verify the detailed design of the implementation.
    Unit tests are automatically executed as part of the CI after PR merge.
@@ -52,14 +59,24 @@ For a detailed explanation of workflows and their role within the process model,
 .. workflow:: Create/Maintain Component Integration Test
    :id: wf__verification_comp_int_test
    :status: valid
+   :version: 1
    :tags: verification
-   :responsible: rl__contributor
-   :approved_by: rl__committer, rl__testing_community
-   :supported_by: rl__safety_manager
-   :input: wp__component_arch, wp__sw_implementation, wp__requirements_comp, wp__requirements_comp_aou, wp__verification_plan
-   :output: wp__verification_comp_int_test
-   :contains: gd_req__verification_link_tests, gd_req__verification_link_tests_cpp, gd_req__verification_link_tests_python, gd_req__verification_link_tests_rust, gd_req__verification_independence, gd_guidl__verification_specification
-   :has: doc_concept__verification_process, doc_getstrt__verification_process
+   :responsible: rl__contributor[version==1]
+   :approved_by: rl__committer[version==1], rl__testing_community[version==1]
+   :supported_by: rl__safety_manager[version==1]
+   :input: wp__component_arch[version==1],
+           wp__sw_implementation[version==1],
+           wp__requirements_comp[version==1],
+           wp__requirements_comp_aou[version==1],
+           wp__verification_plan[version==1]
+   :output: wp__verification_comp_int_test[version==1]
+   :contains: gd_req__verification_link_tests[version==1],
+              gd_req__verification_link_tests_cpp[version==1],
+              gd_req__verification_link_tests_python[version==1],
+              gd_req__verification_link_tests_rust[version==1],
+              gd_req__verification_independence[version==1],
+              gd_guidl__verification_specification[version==1]
+   :has: doc_concept__verification_process[version==1], doc_getstrt__verification_process[version==1]
 
    Component Integration test cases are based on component architecture and component requirements.
    They also cover the detailed design and integration of units forming a component.
@@ -75,15 +92,23 @@ For a detailed explanation of workflows and their role within the process model,
 .. workflow:: Create/Maintain Feature Integration Test
    :id: wf__verification_feat_int_test
    :status: valid
+   :version: 1
    :tags: verification
-   :responsible: rl__contributor
-   :approved_by: rl__committer, rl__testing_community
-   :supported_by: rl__safety_manager
-   :input: wp__feature_arch, wp__requirements_feat, wp__requirements_feat_aou,
-           wp__verification_plan
-   :output: wp__verification_feat_int_test
-   :contains: gd_req__verification_link_tests, gd_req__verification_link_tests_cpp, gd_req__verification_link_tests_python, gd_req__verification_link_tests_rust, gd_req__verification_independence, gd_guidl__verification_specification
-   :has: doc_concept__verification_process, doc_getstrt__verification_process
+   :responsible: rl__contributor[version==1]
+   :approved_by: rl__committer[version==1], rl__testing_community[version==1]
+   :supported_by: rl__safety_manager[version==1]
+   :input: wp__feature_arch[version==1],
+           wp__requirements_feat[version==1],
+           wp__requirements_feat_aou[version==1],
+           wp__verification_plan[version==1]
+   :output: wp__verification_feat_int_test[version==1]
+   :contains: gd_req__verification_link_tests[version==1],
+              gd_req__verification_link_tests_cpp[version==1],
+              gd_req__verification_link_tests_python[version==1],
+              gd_req__verification_link_tests_rust[version==1],
+              gd_req__verification_independence[version==1],
+              gd_guidl__verification_specification[version==1]
+   :has: doc_concept__verification_process[version==1], doc_getstrt__verification_process[version==1]
 
    Feature Integration test cases are based on feature requirements and architecture of a specific feature.
    Any contributor can create a feature integration test and create a PR for it.
@@ -95,14 +120,20 @@ For a detailed explanation of workflows and their role within the process model,
 .. workflow:: Create/Maintain Platform Integration Test
    :id: wf__verification_platform_int_test
    :status: valid
+   :version: 1
    :tags: verification
-   :responsible: rl__contributor
-   :approved_by: rl__committer, rl__testing_community
-   :supported_by: rl__safety_manager
-   :input: wp__requirements_stkh, wp__verification_plan
-   :output: wp__verification_platform_int_test
-   :contains: gd_req__verification_link_tests, gd_req__verification_link_tests_cpp, gd_req__verification_link_tests_python, gd_req__verification_link_tests_rust, gd_req__verification_independence, gd_guidl__verification_specification
-   :has: doc_concept__verification_process, doc_getstrt__verification_process
+   :responsible: rl__contributor[version==1]
+   :approved_by: rl__committer[version==1], rl__testing_community[version==1]
+   :supported_by: rl__safety_manager[version==1]
+   :input: wp__requirements_stkh[version==1], wp__verification_plan[version==1]
+   :output: wp__verification_platform_int_test[version==1]
+   :contains: gd_req__verification_link_tests[version==1],
+              gd_req__verification_link_tests_cpp[version==1],
+              gd_req__verification_link_tests_python[version==1],
+              gd_req__verification_link_tests_rust[version==1],
+              gd_req__verification_independence[version==1],
+              gd_guidl__verification_specification[version==1]
+   :has: doc_concept__verification_process[version==1], doc_getstrt__verification_process[version==1]
 
    Platform Integration Test cases are based on Stakeholder requirements. This is the highest test level.
    Any contributor can create a platform integration test and create a PR for it.
@@ -114,14 +145,15 @@ For a detailed explanation of workflows and their role within the process model,
 .. workflow:: Create Verification Plan
    :id: wf__verification_plan
    :status: valid
+   :version: 1
    :tags: verification
-   :responsible: rl__committer, rl__testing_community
-   :approved_by: rl__project_lead
-   :supported_by: rl__safety_manager, rl__infrastructure_tooling_community
-   :input: wp__requirements_stkh, wp__platform_mgmt, wp__tool_verification_report
-   :output: wp__verification_plan
-   :contains: gd_guidl__verification_guide, gd_temp__verification_plan
-   :has: doc_concept__verification_process, doc_getstrt__verification_process
+   :responsible: rl__committer[version==1], rl__testing_community[version==1]
+   :approved_by: rl__project_lead[version==1]
+   :supported_by: rl__safety_manager[version==1], rl__infrastructure_tooling_community[version==1]
+   :input: wp__requirements_stkh[version==1], wp__platform_mgmt[version==1], wp__tool_verification_report[version==1]
+   :output: wp__verification_plan[version==1]
+   :contains: gd_guidl__verification_guide[version==1], gd_temp__verification_plan[version==1]
+   :has: doc_concept__verification_process[version==1], doc_getstrt__verification_process[version==1]
 
    The verification plan is created by :need:`rl__committer`. It clearly
    outlines all aspects of the verification activities, provide a roadmap for the verification
@@ -131,17 +163,24 @@ For a detailed explanation of workflows and their role within the process model,
 .. workflow:: Maintain Verification Plan
    :id: wf__verification_plan_maintain
    :status: valid
+   :version: 1
    :tags: verification
-   :responsible: rl__committer, rl__testing_community
-   :approved_by: rl__project_lead
-   :supported_by: rl__safety_manager, rl__infrastructure_tooling_community
-   :input: wp__verification_plan, wp__requirements_stkh, wp__platform_mgmt,
-           wp__feature_arch, wp__requirements_feat, wp__requirements_feat_aou,
-           wp__component_arch, wp__requirements_comp, wp__requirements_comp_aou,
-           wp__tool_verification_report
-   :output: wp__verification_plan
-   :contains: gd_guidl__verification_guide, gd_temp__verification_plan
-   :has: doc_concept__verification_process, doc_getstrt__verification_process
+   :responsible: rl__committer[version==1], rl__testing_community[version==1]
+   :approved_by: rl__project_lead[version==1]
+   :supported_by: rl__safety_manager[version==1], rl__infrastructure_tooling_community[version==1]
+   :input: wp__verification_plan[version==1],
+           wp__requirements_stkh[version==1],
+           wp__platform_mgmt[version==1],
+           wp__feature_arch[version==1],
+           wp__requirements_feat[version==1],
+           wp__requirements_feat_aou[version==1],
+           wp__component_arch[version==1],
+           wp__requirements_comp[version==1],
+           wp__requirements_comp_aou[version==1],
+           wp__tool_verification_report[version==1]
+   :output: wp__verification_plan[version==1]
+   :contains: gd_guidl__verification_guide[version==1], gd_temp__verification_plan[version==1]
+   :has: doc_concept__verification_process[version==1], doc_getstrt__verification_process[version==1]
 
    The verification plan is maintained by :need:`rl__committer`. The plan should be dynamic and updated
    as needed throughout the project lifecycle, as verification activities may be impacted, by new
@@ -153,18 +192,28 @@ For a detailed explanation of workflows and their role within the process model,
 .. workflow:: Set Requirement Test Coverage
    :id: wf__verification_req_test_coverage
    :status: valid
+   :version: 1
    :tags: verification
-   :responsible: rl__committer, rl__testing_community
-   :approved_by: rl__project_lead
-   :supported_by: rl__safety_manager, rl__security_manager,
-   :input: wp__requirements_stkh, wp__requirements_feat, wp__requirements_feat_aou,
-           wp__requirements_comp, wp__requirements_comp_aou,
-           wp__verification_plan, wp__verification_sw_unit_test,
-           wp__verification_comp_int_test, wp__verification_feat_int_test, wp__verification_platform_int_test
-   :output: wp__requirements_stkh, wp__requirements_feat, wp__requirements_feat_aou,
-            wp__requirements_comp, wp__requirements_comp_aou
-   :contains: gd_req__req_attr_test_covered, gd_req__req_suspicious, gd_guidl__verification_guide
-   :has: doc_concept__verification_process, doc_getstrt__verification_process
+   :responsible: rl__committer[version==1], rl__testing_community[version==1]
+   :approved_by: rl__project_lead[version==1]
+   :supported_by: rl__safety_manager[version==1], rl__security_manager[version==1]
+   :input: wp__requirements_stkh[version==1],
+           wp__requirements_feat[version==1],
+           wp__requirements_feat_aou[version==1],
+           wp__requirements_comp[version==1],
+           wp__requirements_comp_aou[version==1],
+           wp__verification_plan[version==1],
+           wp__verification_sw_unit_test[version==1],
+           wp__verification_comp_int_test[version==1],
+           wp__verification_feat_int_test[version==1],
+           wp__verification_platform_int_test[version==1]
+   :output: wp__requirements_stkh[version==1],
+            wp__requirements_feat[version==1],
+            wp__requirements_feat_aou[version==1],
+            wp__requirements_comp[version==1],
+            wp__requirements_comp_aou[version==1]
+   :contains: gd_req__req_attr_test_covered[version==1], gd_req__req_suspicious[version==1], gd_guidl__verification_guide[version==1]
+   :has: doc_concept__verification_process[version==1], doc_getstrt__verification_process[version==1]
 
    The requirement attribute `complete test coverage` is set to `yes` by a :need:`rl__committer` when it is verified
    that the requirement is fully covered by test cases. This means the linked test cases in sum fully satisfy the requirement.
@@ -175,18 +224,27 @@ For a detailed explanation of workflows and their role within the process model,
 .. workflow:: Create Module Verification Report
    :id: wf__verification_mod_ver_report
    :status: valid
+   :version: 1
    :tags: verification
-   :responsible: rl__committer, rl__testing_community
-   :approved_by: rl__project_lead
-   :supported_by: rl__safety_manager, rl__infrastructure_tooling_community, rl__contributor
-   :input: wp__verification_plan, wp__requirements_comp, wp__requirements_comp_aou,
-           wp__component_arch, wp__module_sw_release_note, wp__platform_mgmt,
-           wp__sw_component_fmea, wp__sw_component_dfa,
-           wp__sw_arch_verification, wp__sw_implementation_inspection, wp__requirements_inspect,
-           wp__verification_comp_int_test, wp__verification_sw_unit_test
-   :output: wp__verification_module_ver_report
-   :contains: gd_temp__mod_ver_report
-   :has: doc_concept__verification_process, doc_getstrt__verification_process
+   :responsible: rl__committer[version==1], rl__testing_community[version==1]
+   :approved_by: rl__project_lead[version==1]
+   :supported_by: rl__safety_manager[version==1], rl__infrastructure_tooling_community[version==1], rl__contributor[version==1]
+   :input: wp__verification_plan[version==1],
+           wp__requirements_comp[version==1],
+           wp__requirements_comp_aou[version==1],
+           wp__component_arch[version==1],
+           wp__module_sw_release_note[version==1],
+           wp__platform_mgmt[version==1],
+           wp__sw_component_fmea[version==1],
+           wp__sw_component_dfa[version==1],
+           wp__sw_arch_verification[version==1],
+           wp__sw_implementation_inspection[version==1],
+           wp__requirements_inspect[version==1],
+           wp__verification_comp_int_test[version==1],
+           wp__verification_sw_unit_test[version==1]
+   :output: wp__verification_module_ver_report[version==1]
+   :contains: gd_temp__mod_ver_report[version==1]
+   :has: doc_concept__verification_process[version==1], doc_getstrt__verification_process[version==1]
 
    The verification report is created and maintained by a :need:`rl__committer`.
    It is based on the :need:`wp__verification_plan` and covers all the components of a developed module.
@@ -206,18 +264,28 @@ For a detailed explanation of workflows and their role within the process model,
 .. workflow:: Create Platform Verification Report
    :id: wf__verification_platform_ver_report
    :status: valid
+   :version: 1
    :tags: verification
-   :responsible: rl__committer, rl__testing_community
-   :approved_by: rl__project_lead
-   :supported_by: rl__safety_manager, rl__infrastructure_tooling_community
-   :input: wp__verification_plan, wp__requirements_stkh, wp__requirements_feat, wp__requirements_feat_aou,
-           wp__feature_arch, wp__platform_sw_release_note, wp__platform_mgmt,
-           wp__feature_fmea, wp__feature_dfa, wp__platform_dfa,
-           wp__sw_arch_verification, wp__requirements_inspect,
-           wp__verification_feat_int_test, wp__verification_platform_int_test
-   :output: wp__verification_platform_ver_report
-   :contains: gd_temp__platform_ver_report
-   :has: doc_concept__verification_process, doc_getstrt__verification_process
+   :responsible: rl__committer[version==1], rl__testing_community[version==1]
+   :approved_by: rl__project_lead[version==1]
+   :supported_by: rl__safety_manager[version==1], rl__infrastructure_tooling_community[version==1]
+   :input: wp__verification_plan[version==1],
+           wp__requirements_stkh[version==1],
+           wp__requirements_feat[version==1],
+           wp__requirements_feat_aou[version==1],
+           wp__feature_arch[version==1],
+           wp__platform_sw_release_note[version==1],
+           wp__platform_mgmt[version==1],
+           wp__feature_fmea[version==1],
+           wp__feature_dfa[version==1],
+           wp__platform_dfa[version==1],
+           wp__sw_arch_verification[version==1],
+           wp__requirements_inspect[version==1],
+           wp__verification_feat_int_test[version==1],
+           wp__verification_platform_int_test[version==1]
+   :output: wp__verification_platform_ver_report[version==1]
+   :contains: gd_temp__platform_ver_report[version==1]
+   :has: doc_concept__verification_process[version==1], doc_getstrt__verification_process[version==1]
 
    The verification report is created and maintained by a :need:`rl__committer`.
    It is based on the :need:`wp__verification_plan` and covers all the selected features of a SW platform.

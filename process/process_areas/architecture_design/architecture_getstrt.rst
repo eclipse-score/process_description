@@ -20,6 +20,7 @@ Getting Started
 .. doc_getstrt:: Architecture Design Process
    :id: doc_getstrt__arch_process
    :status: valid
+   :version: 1
 
 This document describes the steps to create the architectural design of a system. It provides an overview of the necessary activities and their sequence to effectively design both the feature architecture and the component architecture.
 

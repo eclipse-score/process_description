@@ -20,9 +20,10 @@ Platform Security Manual
 .. document:: Platform Security Manual
    :id: doc__platform_security_manual
    :status: draft
+   :version: 1
    :safety: ASIL_B
    :security: YES
-   :realizes: wp__platform_security_manual
+   :realizes: wp__platform_security_manual[version==1]
    :tags: template
 
 Introduction/Scope

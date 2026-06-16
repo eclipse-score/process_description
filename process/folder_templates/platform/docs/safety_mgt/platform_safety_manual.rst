@@ -20,9 +20,10 @@ Platform Safety Manual
 .. document:: Platform Safety Manual
    :id: doc__platform_safety_manual
    :status: draft
+   :version: 1
    :safety: ASIL_B
    :security: NO
-   :realizes: wp__platform_safety_manual
+   :realizes: wp__platform_safety_manual[version==1]
    :tags: template
 
 .. attention::

@@ -18,6 +18,7 @@ Getting Started
 .. doc_getstrt:: Documentation Management Get Started
    :id: doc_getstrt__documentation_process
    :status: valid
+   :version: 1
 
 This document describes how to get started with documentation management in the project.
 

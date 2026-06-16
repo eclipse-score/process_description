@@ -18,6 +18,7 @@ Getting Started
 .. doc_getstrt:: Getting Started on Change Management
    :id: doc_getstrt__change_process
    :status: valid
+   :version: 1
    :tags: change_management
 
 This document describes the steps to create a change request, and further to analyze,

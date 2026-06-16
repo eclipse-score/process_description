@@ -20,7 +20,8 @@ Checklist Quality Work Product Review
 .. gd_chklst:: Quality Work Product Review Checklist
    :id: gd_chklst__review_checklist
    :status: valid
-   :complies: std_req__aspice_40__iic-13-19
+   :version: 1
+   :complies: std_req__aspice_40__iic-13-19[version==1]
    :tags: quality_management
 
 

@@ -18,6 +18,24 @@ Safety Plan Formal Review Checklist
 .. gd_chklst:: Safety Plan Formal Review Checklist
    :id: gd_chklst__safety_plan
    :status: valid
-   :complies: std_req__iso26262__management_6451, std_req__iso26262__management_6452, std_req__iso26262__management_6455, std_req__iso26262__management_6457, std_req__iso26262__management_6461, std_req__iso26262__management_6462, std_req__iso26262__management_6463, std_req__iso26262__management_6464, std_req__iso26262__management_6465, std_req__iso26262__management_6467, std_req__iso26262__management_6468, std_req__iso26262__management_6491, std_req__iso26262__management_64101, std_req__iso26262__management_64102, std_req__iso26262__management_64103, std_req__iso26262__management_64104, std_req__iso26262__management_64105, std_req__iso26262__management_64111
+   :version: 1
+   :complies: std_req__iso26262__management_6451[version==1],
+              std_req__iso26262__management_6452[version==1],
+              std_req__iso26262__management_6455[version==1],
+              std_req__iso26262__management_6457[version==1],
+              std_req__iso26262__management_6461[version==1],
+              std_req__iso26262__management_6462[version==1],
+              std_req__iso26262__management_6463[version==1],
+              std_req__iso26262__management_6464[version==1],
+              std_req__iso26262__management_6465[version==1],
+              std_req__iso26262__management_6467[version==1],
+              std_req__iso26262__management_6468[version==1],
+              std_req__iso26262__management_6491[version==1],
+              std_req__iso26262__management_64101[version==1],
+              std_req__iso26262__management_64102[version==1],
+              std_req__iso26262__management_64103[version==1],
+              std_req__iso26262__management_64104[version==1],
+              std_req__iso26262__management_64105[version==1],
+              std_req__iso26262__management_64111[version==1]
 
    For the content see here: `Safety Plan Formal Review Checklist <https://eclipse-score.github.io/module_template/main/docs/safety_mgt/module_safety_plan_fdr.html>`__

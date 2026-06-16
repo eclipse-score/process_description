@@ -16,9 +16,10 @@
 .. document:: Stakeholder Requirements Inspection Checklist
    :id: doc__stakeholder_req_inspection
    :status: draft
+   :version: 1
    :safety: ASIL_B
    :security: YES
-   :realizes: wp__requirements_inspect
+   :realizes: wp__requirements_inspect[version==1]
    :tags: template
 
 .. attention::

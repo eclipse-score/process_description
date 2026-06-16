@@ -18,7 +18,18 @@ Guideline
 .. gd_guidl:: Working model
    :id: gd_guidl__platform_mgmt_plan
    :status: valid
-   :complies: std_req__aspice_40__MAN-3-BP1, std_req__aspice_40__MAN-3-BP2, std_req__aspice_40__MAN-3-BP3, std_req__aspice_40__MAN-3-BP4, std_req__aspice_40__MAN-3-BP5, std_req__aspice_40__MAN-3-BP6, std_req__aspice_40__MAN-3-BP7, std_req__aspice_40__MAN-3-BP8, std_req__aspice_40__MAN-3-BP9, std_req__aspice_40__MAN-3-BP10, std_req__aspice_40__iic-15-06
+   :version: 1
+   :complies: std_req__aspice_40__MAN-3-BP1[version==1],
+              std_req__aspice_40__MAN-3-BP2[version==1],
+              std_req__aspice_40__MAN-3-BP3[version==1],
+              std_req__aspice_40__MAN-3-BP4[version==1],
+              std_req__aspice_40__MAN-3-BP5[version==1],
+              std_req__aspice_40__MAN-3-BP6[version==1],
+              std_req__aspice_40__MAN-3-BP7[version==1],
+              std_req__aspice_40__MAN-3-BP8[version==1],
+              std_req__aspice_40__MAN-3-BP9[version==1],
+              std_req__aspice_40__MAN-3-BP10[version==1],
+              std_req__aspice_40__iic-15-06[version==1]
 
 This document describes the general guidances for Platform Management based on the concept which is defined :need:`[[title]]<doc_concept__platform_process>`.
 
@@ -123,8 +134,17 @@ Tailoring
 .. gd_guidl:: Platform Management Plan Requirements Tailored
    :id: gd_guidl__platform_mgmt_plan_req_tailored
    :status: valid
-   :complies: std_req__aspice_40__MAN-5-BP1, std_req__aspice_40__MAN-5-BP2, std_req__aspice_40__MAN-5-BP3, std_req__aspice_40__MAN-5-BP4, std_req__aspice_40__MAN-5-BP5, std_req__aspice_40__MAN-5-BP6, std_req__aspice_40__MAN-5-BP7,
-              std_req__aspice_40__iic-15-09, std_req__aspice_40__iic-15-51, std_req__aspice_40__iic-08-55
+   :version: 1
+   :complies: std_req__aspice_40__MAN-5-BP1[version==1],
+              std_req__aspice_40__MAN-5-BP2[version==1],
+              std_req__aspice_40__MAN-5-BP3[version==1],
+              std_req__aspice_40__MAN-5-BP4[version==1],
+              std_req__aspice_40__MAN-5-BP5[version==1],
+              std_req__aspice_40__MAN-5-BP6[version==1],
+              std_req__aspice_40__MAN-5-BP7[version==1],
+              std_req__aspice_40__iic-15-09[version==1],
+              std_req__aspice_40__iic-15-51[version==1],
+              std_req__aspice_40__iic-08-55[version==1]
 
    This part of the guideline links to all the requirements which are not fulfilled by the
    platform management plan process. Make sure these are tailored out in the corresponding sub-plans

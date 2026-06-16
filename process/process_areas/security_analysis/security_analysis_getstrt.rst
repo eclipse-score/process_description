@@ -20,6 +20,7 @@ Getting Started
 .. doc_getstrt:: Getting Started on Security Analysis
    :id: doc_getstrt__security_analysis
    :status: valid
+   :version: 1
    :tags: security_analysis
 
 

@@ -20,8 +20,9 @@ Security Analysis Work Products
 .. workproduct:: Platform Security Analysis
    :id: wp__platform_security_analysis
    :status: valid
+   :version: 1
    :tags: doc_lifecycle_model_2
-   :complies: std_wp__isosae21434__development_1055, std_wp__isosae21434__assessment_15332, std_wp__isosae21434__assessment_15431
+   :complies: std_wp__isosae21434__development_1055[version==1], std_wp__isosae21434__assessment_15332[version==1], std_wp__isosae21434__assessment_15431[version==1]
 
    Analyze the attack surfaces between features that references all platform feature
    static architecture diagrams, highlighting potential shared attack vectors.
@@ -29,8 +30,15 @@ Security Analysis Work Products
 .. workproduct:: Feature Security Analysis
    :id: wp__feature_security_analysis
    :status: valid
+   :version: 1
    :tags: doc_lifecycle_model_2
-   :complies: std_wp__isosae21434__development_1055, std_wp__isosae21434__assessment_15332, std_wp__isosae21434__assessment_15431, std_wp__isosae21434__assessment_15631, std_wp__isosae21434__assessment_15731, std_wp__isosae21434__assessment_15831, std_wp__isosae21434__assessment_15931
+   :complies: std_wp__isosae21434__development_1055[version==1],
+              std_wp__isosae21434__assessment_15332[version==1],
+              std_wp__isosae21434__assessment_15431[version==1],
+              std_wp__isosae21434__assessment_15631[version==1],
+              std_wp__isosae21434__assessment_15731[version==1],
+              std_wp__isosae21434__assessment_15831[version==1],
+              std_wp__isosae21434__assessment_15931[version==1]
 
    Bottom-Up Security Analysis with defined methods, verifies the feature architecture (as part of SW Security Concept)
    - Mitigations linked to Software Feature Requirements or Assumptions of Use
@@ -46,8 +54,15 @@ Security Analysis Work Products
 .. workproduct:: Component Security Analysis
    :id: wp__sw_component_security_analysis
    :status: valid
+   :version: 1
    :tags: doc_lifecycle_model_2
-   :complies: std_wp__isosae21434__development_1055, std_wp__isosae21434__assessment_15332, std_wp__isosae21434__assessment_15431, std_wp__isosae21434__assessment_15631, std_wp__isosae21434__assessment_15731, std_wp__isosae21434__assessment_15831, std_wp__isosae21434__assessment_15931
+   :complies: std_wp__isosae21434__development_1055[version==1],
+              std_wp__isosae21434__assessment_15332[version==1],
+              std_wp__isosae21434__assessment_15431[version==1],
+              std_wp__isosae21434__assessment_15631[version==1],
+              std_wp__isosae21434__assessment_15731[version==1],
+              std_wp__isosae21434__assessment_15831[version==1],
+              std_wp__isosae21434__assessment_15931[version==1]
 
    Bottom-Up Security Analysis with defined methods, verifies the component architecture (as part of SW Security Concept)
    - Mitigations linked to Software Component Requirements or Assumptions of Use
