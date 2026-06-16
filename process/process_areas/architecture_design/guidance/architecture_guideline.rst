@@ -26,8 +26,8 @@ Architecture Guideline
               std_req__iso26262__software_743[version==1],
               std_req__iso26262__software_744[version==1],
               std_req__iso26262__software_745[version==1],
-              std_req__aspice_40__iic-10-50[version==1], 
-              std_req__aspice_40__iic-10-51[version==1], 
+              std_req__aspice_40__iic-10-50[version==1],
+              std_req__aspice_40__iic-10-51[version==1],
               std_req__aspice_40__iic-10-52[version==1]
 
 The guideline focuses on the steps which need to be performed in order to create the architectural design. The concept behind those steps is described in the :need:`[[title]] <doc_concept__arch_process>`.
@@ -282,7 +282,6 @@ Model component architecture
 According to the architecture design description, the model for the component architecture shall be created. It shall consist of components, real interfaces and real interface operations. Depending on the size and complexity of the component, it can also be split into multiple (lower-level) components.
 
 **Tailoring for Component Complexity:** For simple components with fewer than 3 internal sub-components, the internal component architecture decomposition may be omitted.
-However, the external interface view (to interfaces from other modules) is always mandatory and must be documented.
 
 Complexity can be assessed project-specifically (for example by Lines of Code, interface size, decomposition depth, coupling, or control-flow metrics such as McCabe). For default measurement see :need:`Implementation Complexity Analysis <gd_req__impl_complexity_analysis>`.
 
