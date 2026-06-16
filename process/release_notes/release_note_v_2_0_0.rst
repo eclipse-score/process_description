@@ -71,6 +71,9 @@ moved now to module_templates folder
 
 Implementation is now defined.
 
+Now versioning of sphinx-needs elements is introduced. Thus this version is the first
+baseline of the process_description.
+
 The process model contains
 
 - General concepts e.g. for Building Blocks and their traceability
@@ -114,6 +117,8 @@ Improvements
 - Update linking check from req to architecture by @aschemmel-tech https://github.com/eclipse-score/process_description/pull/700
 - Clarify tool verification report version attribute by @aschemmel-tech https://github.com/eclipse-score/process_description/pull/701
 - Apply tool version and Bzlmod locking, update docs-as-code by @AlexanderLanin https://github.com/eclipse-score/process_description/pull/705
+- add versioning of requirements by @AlexanderLanin in https://github.com/eclipse-score/process_description/pull/708
+- upgrade docs-as-code version 4.5.0 by @AlexanderLanin in https://github.com/eclipse-score/process_description/pull/710
 
 Bug Fixes
 ---------
@@ -153,6 +158,8 @@ Upgrade Instructions
 ^^^^^^^^^^^^^^^^^^^^
 
 As Building Blocks Meta Model is adapted and Templates are removed, consider to use the compatible doc-as-code version and the module templates from the module_template repository.
+
+Versionning is introduced. Updated with the latest doc-as-code version.
 
 Contact Information
 For any questions or support, please contact the SW Process Development Community (https://github.com/orgs/eclipse-score/discussions/108) or raise an issue/discussion.
