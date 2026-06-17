@@ -120,6 +120,8 @@ Improvements
 - add versioning of requirements by @AlexanderLanin in https://github.com/eclipse-score/process_description/pull/708
 - upgrade docs-as-code version 4.5.0 by @AlexanderLanin in https://github.com/eclipse-score/process_description/pull/710
 - add aspice 4 ml3 architecture by @RolandJentschETAS in https://github.com/eclipse-score/process_description/pull/702
+- Fix links to requirement templates by @PandaeDo in https://github.com/eclipse-score/process_description/pull/713
+- add initial version of the release notes for version 2.0.0 by @masc2023 in https://github.com/eclipse-score/process_description/pull/688
 
 Bug Fixes
 ---------
