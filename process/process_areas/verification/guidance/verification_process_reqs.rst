@@ -122,6 +122,22 @@ Process Requirements
 
     A more detailed description of how to link code to requirements looks like is available in the :ref:`verification_template_rust`
 
+.. gd_req:: Multiple derivation techniques in testing
+    :id: gd_req__verification_methods_multiple
+    :status: valid
+    :version: 1
+    :tags: prio_1_automation, verification
+    :satisfies: wf__verification_unit_test[version==1],
+                wf__verification_comp_int_test[version==1],
+                wf__verification_feat_int_test[version==1],
+                wf__verification_platform_int_test[version==1]
+    :complies: std_req__iso26262__support_6432[version==1],
+               std_req__aspice_40__SWE-4-BP4[version==1],
+               std_req__aspice_40__SWE-5-BP6[version==1],
+               std_req__aspice_40__SWE-6-BP4[version==1]
+
+    Multiple derivation techniques can be used in a single test case
+
 .. gd_req:: Independence
     :id: gd_req__verification_independence
     :status: valid
