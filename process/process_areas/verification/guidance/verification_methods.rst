@@ -193,7 +193,7 @@ injection value x = A and verifying that output y = B. "Negative" testing techni
 be also considered: i.e. testing what happens when input x = C (if not already specified
 in other requirements).
 
-Note that requirement-based derived test case may also cover other techniques and derivation methods
+Note that requirement-based derived test case may also include other techniques and derivation methods
 mentioned here, such as Boundary Values, Equivalence Classes, Fuzzy Testing, Interface
 Testing and Fault Injection.
 
