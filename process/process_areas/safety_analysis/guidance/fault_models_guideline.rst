@@ -31,10 +31,9 @@ FMEA Fault Models
 .. note:: An ASIL related message is trustable in that manner that it is not corrupted, repeated, lost, delayed, masqueraded or addressed incorrectly.
 
 
-Fault Models for sequence diagrams
-  .. list-table:: Fault Models for sequence diagrams
-     :header-rows: 1
-     :widths: 15,15,45,15
+.. list-table:: Fault Models for sequence diagrams
+    :header-rows: 1
+    :widths: 15,15,45,15
 
     * - Element
       - ID
