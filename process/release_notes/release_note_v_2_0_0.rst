@@ -123,6 +123,7 @@ Improvements
 - Fix links to requirement templates by @PandaeDo in https://github.com/eclipse-score/process_description/pull/713
 - Selection of codeowner @RolandJentsch by @masc2023 in https://github.com/eclipse-score/process_description/pull/712
 - Attifunel process req test description added by @attifunel in https://github.com/eclipse-score/process_description/pull/679
+- Update process requirements by @PandaeDo in https://github.com/eclipse-score/process_description/pull/716
 - add initial version of the release notes for version 2.0.0 by @masc2023 in https://github.com/eclipse-score/process_description/pull/688
 
 Bug Fixes
