@@ -100,12 +100,12 @@ execute affected test cases locally upfront using the execution framework of the
 following basically the steps the CI does locally.
 
 Tests have to be identifiable by a unique identifier, as described in :need:`gd_guidl__verification_specification`.
-They need need to have a clear passed or failed result and a documented configuration to enable proper evaluation of the result.
+They need to have a clear pass/fail result and a documented configuration to enable proper evaluation of the result.
 
 Automated tests can also be executed locally, as the sources and binaries are available for re-execution.
 Failing test cases during re-execution can be reported following the guide :need:`gd_temp__problem_template`.
 
-During a relase, for any non executed test case, the reason for non-execution has to be documented in the
+During a release, for any non-executed test case, the reason for non-execution must be documented in the
 :need:`wp__platform_sw_release_note` or :need:`wp__module_sw_release_plan` depending on the level (unit to platform) of the test case.
 
 Execution of manual test cases
@@ -136,9 +136,8 @@ in the :need:`wp__verification_plan`. Due to the high degree of automation, it i
 that a pass rate lower 95% is not acceptable. This percentage may increase with the maturity of
 the overall platform and the test coverage.
 
-In case an existing test case is failing due to regression in the CI, the respective issue of the
-PR in their role as :need:`rl__contributor` is responsible for fixing the test case as part of
-respective PR.
+In case an existing test case is failing due to regression in the CI, the PR author in their role as
+:need:`rl__contributor` is responsible for fixing the test case as part of the respective PR.
 
 Test case results are also documented in the :need:`wp__verification_platform_ver_report` and
 :need:`wp__verification_module_ver_report`.
@@ -146,10 +145,9 @@ Test case results are also documented in the :need:`wp__verification_platform_ve
 Reporting of not executed or skipped test cases
 -----------------------------------------------
 
-In case a test case is not executed or skipped, a rational has to be provided in the release notes
-in case they are link against a requirement. A skipped or not executed test case is not counting into
-the value for the requirements coverage, as only executed and passed test cases can be counted for the
-coverage of a requirement.
+In case a test case is not executed or skipped, a rationale has to be provided in the release notes
+if the test case is linked to a requirement. A skipped or non-executed test case does not count towards
+requirement coverage, as only executed and passed test cases can be counted for the coverage of a requirement.
 
 Skipped or not executed test cases are also documented in the :need:`wp__verification_platform_ver_report` and
 :need:`wp__verification_module_ver_report`.
