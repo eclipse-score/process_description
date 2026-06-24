@@ -124,7 +124,6 @@ Usually the defined methods are not applied on each verification level between u
 Also their execution may differ whether it is a QM or ASIL rated test case.
 The rigor is described in the implementation of :need:`wp__verification_plan`.
 
-
 Automated test cases (as well as manual, where applicable) shall contain further information about which methods have been applied.
 The corresponding guidance is given here: :need:`gd_guidl__verification_guide`.
 The identifier of the respective method is to be used as meta data (*TestType* and *DerivationTechnique*).
@@ -161,17 +160,20 @@ tests or component tests. This linking is done using metatags. This is also true
 integration tests linking to the component requirements and architecture.
 
 Traceability of feature integration tests shall be established through linking those test cases to
-feature requirements and architecture as features describe the integrated behaviour of all components.
+feature requirements and architecture as features describe the integrated behavior of all components.
 
 Traceability of platform integration tests shall be established through linking those test cases to
-stakeholder requirements as stakeholder requirements describe the platform behaviour.
+stakeholder requirements as stakeholder requirements describe the platform behavior.
 
 Note that all the above tests shall only link to requirements of type "Functional" and "Interface".
 The verification of requirements of types "Process" and "Non-Functional" will be done via Analysis,
 which is part of the requirement inspection :need:`doc__feature_name_req_inspection` and `Component Requirements Inspection Checklist <https://eclipse-score.github.io/module_template/main/score/component_example/docs/requirements/chklst_req_inspection.html>`__.
 Requirements always include Assumptions Of Use.
 
-A more detailed description of how to link code to requirements is available here: :need:`gd_req__verification_link_tests`
+A more detailed description of how to link code to requirements is available by :need:`gd_req__verification_link_tests`.
+
+Another element of traceability for a proper backlink is the unique identification of test cases as described in the
+:need:`gd_guidl__verification_specification`.
 
 Workflow for Verification Guidance
 ----------------------------------

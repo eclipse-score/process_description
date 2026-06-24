@@ -55,8 +55,9 @@ A test specification contains the following attributes.
 
        - The objective of the test.
        - Inputs
-       - Expected outcome (e.g. "A success message is displayed.")
+       - Expected outcome/output/result (e.g. "A success message is displayed." or "Result should be 42.")
        - Test environment (e.g. network configuration, clean system state)
+       - Expected time sequence of events and behavior (where applicable and an expectation)
      -
    * - TestType
      - Examples are:
@@ -82,6 +83,14 @@ A test specification contains the following attributes.
 
 The implementation of :need:`wp__verification_plan` defines the full list of allowed types and methods.
 
+It is assumed that tests will be written as code (also for manual tests, which are script based)
+and each test case will have a unique identifier, by its script, execution call, or function name.
+The call used to execute the test marks the uniqueness of the test case and its identification,
+e.g. guaranteeing proper traceability and reproducibility.
+
+As the tests are stored in a repository close to the implementation code, versioning is done by the versioning of the repository.
+
+Any specification and resulting implementation ends with a clear passed or failed result.
 
 Test description
 ----------------

@@ -41,8 +41,8 @@ General Workflow
 
 The workflows can be split into 4 major parts:
 
-* Test planning filling the template :need:`gd_temp__verification_plan`.
-* Test specification and implementation for the respective testing level
+* Test planning by filling the template :need:`gd_temp__verification_plan`.
+* Test specification and implementation for the respective testing level (unit to platform).
 * Test execution by the CI.
   (Manual test cases are treated as automated test with user interaction and timeouts.)
 * Test reports are created when all verification artifacts on a module and platform level are
