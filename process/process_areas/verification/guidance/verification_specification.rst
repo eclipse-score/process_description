@@ -57,7 +57,7 @@ A test specification contains the following attributes.
        - Inputs
        - Expected outcome/output/result (e.g. "A success message is displayed." or "Result should be 42.")
        - Test environment (e.g. network configuration, clean system state)
-       - Expected time sequence of events and behavior (where applicable and an expectation)
+       - Expected time sequence of events and behavior (where applicable and where such an expectation exists)
      -
    * - TestType
      - Examples are:
@@ -85,7 +85,7 @@ The implementation of :need:`wp__verification_plan` defines the full list of all
 
 It is assumed that tests will be written as code (also for manual tests, which are script-based)
 and that each test case will have a unique identifier (e.g. its script name, execution call, or function name).
-The invocation used to execute the test defines the test case identification, thereby guaranteeing
+The invocation used to execute the test defines the test case identification, thereby supporting
 proper traceability and reproducibility.
 
 As the tests are stored in a repository close to the implementation code, versioning is handled by the repository's version control.

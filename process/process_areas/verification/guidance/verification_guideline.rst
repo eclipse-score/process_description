@@ -106,7 +106,7 @@ Automated tests can also be executed locally, as the sources and binaries are av
 Failing test cases during re-execution can be reported following the guide :need:`gd_temp__problem_template`.
 
 During a release, for any non-executed test case, the reason for non-execution must be documented in the
-:need:`wp__platform_sw_release_note` or :need:`wp__module_sw_release_plan` depending on the level (unit to platform) of the test case.
+:need:`wp__platform_sw_release_note` or :need:`wp__module_sw_release_note` depending on the level (unit to platform) of the test case.
 
 Execution of manual test cases
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -122,18 +122,18 @@ Also manual test cases are written following the :need:`gd_guidl__verification_s
 A tag `manual` is suggested to mark the test case as manual, so that it can be filtered out from automated test execution.
 
 In case a manual test case is not executed for a release, the reason for non-execution has to be documented in the
-:need:`wp__platform_sw_release_note` or :need:`wp__module_sw_release_plan` depending on the level of the test case.
+:need:`wp__platform_sw_release_note` or :need:`wp__module_sw_release_note` depending on the level of the test case.
 
 Reporting of failing test cases
 -------------------------------
 
 Any failing test case requires an ISSUE.
 
-The passing rate of safety-critical test cases need to be 100% in order to release the affected component.
+The passing rate of safety-critical test cases needs to be 100% in order to release the affected component.
 In case of a lower pass rate than 100% for QM level tests, the :need:`rl__project_lead`
-can decide, if the platform is in a releasable state. The accepted minimal pass rate is defined
+can decide if the platform is in a releasable state. The accepted minimal pass rate is defined
 in the :need:`wp__verification_plan`. Due to the high degree of automation, it is recommended
-that a pass rate lower 95% is not acceptable. This percentage may increase with the maturity of
+that a pass rate lower than 95% is not acceptable. This percentage may increase with the maturity of
 the overall platform and the test coverage.
 
 In case an existing test case is failing due to regression in the CI, the PR author in their role as
