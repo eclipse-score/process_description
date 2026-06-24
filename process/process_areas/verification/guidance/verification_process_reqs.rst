@@ -136,7 +136,7 @@ Process Requirements
                std_req__aspice_40__SWE-5-BP6[version==1],
                std_req__aspice_40__SWE-6-BP4[version==1]
 
-    Multiple derivation techniques can be used in a single test case
+    It shall be possible to use multiple derivation techniques as one property within a single test case
 
 .. gd_req:: Independence
     :id: gd_req__verification_independence
