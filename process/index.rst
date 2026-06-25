@@ -148,7 +148,7 @@ Development
       Develop and unit-test software units according to the design.
 
    .. grid-item-card::
-      :class-card: card-ml1
+      :class-card: card-ml2
 
       :ref:`Verification <process_verification>`
       ^^^
