@@ -2124,31 +2124,9 @@ Part 9: Automotive safety integrity level (ASIL)-oriented and safety-oriented an
 Exida Audit Status of Iso Requirements
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. needpie:: Audit Status - Software
+.. needpie:: Audit Status - Part 2: Management of functional safety
    :labels: deviation, action, open, ok, recommendation, not applicable
-   :colors: red, orange, grey, green, green, green
-
-   type == 'std_req' and "__software" in id and 'deviation' in tags
-   type == 'std_req' and "__software" in id and 'action' in tags
-   type == 'std_req' and "__software" in id and 'open' in tags
-   type == 'std_req' and "__software" in id and 'ok' in tags
-   type == 'std_req' and "__software" in id and 'recommendation' in tags
-   type == 'std_req' and "__software" in id and 'n/a' in tags
-
-.. needpie:: Audit Status - System
-   :labels: deviation, action, open, ok, recommendation, not applicable
-   :colors: red, orange, grey, green, green, green
-
-   type == 'std_req' and "__system" in id and 'deviation' in tags
-   type == 'std_req' and "__system" in id and 'action' in tags
-   type == 'std_req' and "__system" in id and 'open' in tags
-   type == 'std_req' and "__system" in id and 'ok' in tags
-   type == 'std_req' and "__system" in id and 'recommendation' in tags
-   type == 'std_req' and "__system" in id and 'n/a' in tags
-
-.. needpie:: Audit Status - Management
-   :labels: deviation, action, open, ok, recommendation, not applicable
-   :colors: red, orange, grey, green, green, green
+   :colors: red, orange, grey, green, forestgreen, mediumseagreen
 
    type == 'std_req' and "__management" in id and 'deviation' in tags
    type == 'std_req' and "__management" in id and 'action' in tags
@@ -2157,9 +2135,31 @@ Exida Audit Status of Iso Requirements
    type == 'std_req' and "__management" in id and 'recommendation' in tags
    type == 'std_req' and "__management" in id and 'n/a' in tags
 
-.. needpie:: Audit Status - Support
+.. needpie:: Audit Status - Part 4: Product development at system level
    :labels: deviation, action, open, ok, recommendation, not applicable
-   :colors: red, orange, grey, green, green, green
+   :colors: red, orange, grey, green, forestgreen, mediumseagreen
+
+   type == 'std_req' and "__system" in id and 'deviation' in tags
+   type == 'std_req' and "__system" in id and 'action' in tags
+   type == 'std_req' and "__system" in id and 'open' in tags
+   type == 'std_req' and "__system" in id and 'ok' in tags
+   type == 'std_req' and "__system" in id and 'recommendation' in tags
+   type == 'std_req' and "__system" in id and 'n/a' in tags
+
+.. needpie:: Audit Status - Part 6: Product development at software level
+   :labels: deviation, action, open, ok, recommendation, not applicable
+   :colors: red, orange, grey, green, forestgreen, mediumseagreen
+
+   type == 'std_req' and "__software" in id and 'deviation' in tags
+   type == 'std_req' and "__software" in id and 'action' in tags
+   type == 'std_req' and "__software" in id and 'open' in tags
+   type == 'std_req' and "__software" in id and 'ok' in tags
+   type == 'std_req' and "__software" in id and 'recommendation' in tags
+   type == 'std_req' and "__software" in id and 'n/a' in tags
+
+.. needpie:: Audit Status - Part 8: Supporting processes
+   :labels: deviation, action, open, ok, recommendation, not applicable
+   :colors: red, orange, grey, green, forestgreen, mediumseagreen
 
    type == 'std_req' and "__support" in id and 'deviation' in tags
    type == 'std_req' and "__support" in id and 'action' in tags
