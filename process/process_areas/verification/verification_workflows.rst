@@ -152,7 +152,7 @@ For a detailed explanation of workflows and their role within the process model,
    :supported_by: rl__safety_manager[version==1], rl__infrastructure_tooling_community[version==1]
    :input: wp__requirements_stkh[version==1], wp__platform_mgmt[version==1], wp__tool_verification_report[version==1]
    :output: wp__verification_plan[version==1]
-   :contains: gd_guidl__verification_guide[version==1], gd_temp__verification_plan[version==1]
+   :contains: gd_guidl__verification_guide[version==2], gd_temp__verification_plan[version==1]
    :has: doc_concept__verification_process[version==1], doc_getstrt__verification_process[version==1]
 
    The verification plan is created by :need:`rl__committer`. It clearly
@@ -179,7 +179,7 @@ For a detailed explanation of workflows and their role within the process model,
            wp__requirements_comp_aou[version==1],
            wp__tool_verification_report[version==1]
    :output: wp__verification_plan[version==1]
-   :contains: gd_guidl__verification_guide[version==1], gd_temp__verification_plan[version==1]
+   :contains: gd_guidl__verification_guide[version==2], gd_temp__verification_plan[version==1]
    :has: doc_concept__verification_process[version==1], doc_getstrt__verification_process[version==1]
 
    The verification plan is maintained by :need:`rl__committer`. The plan should be dynamic and updated
@@ -212,7 +212,7 @@ For a detailed explanation of workflows and their role within the process model,
             wp__requirements_feat_aou[version==1],
             wp__requirements_comp[version==1],
             wp__requirements_comp_aou[version==1]
-   :contains: gd_req__req_attr_test_covered[version==1], gd_req__req_suspicious[version==1], gd_guidl__verification_guide[version==1]
+   :contains: gd_req__req_attr_test_covered[version==1], gd_req__req_suspicious[version==1], gd_guidl__verification_guide[version==2]
    :has: doc_concept__verification_process[version==1], doc_getstrt__verification_process[version==1]
 
    The requirement attribute `complete test coverage` is set to `yes` by a :need:`rl__committer` when it is verified

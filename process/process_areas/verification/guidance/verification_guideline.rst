@@ -17,7 +17,7 @@ Guideline
 .. gd_guidl:: Verification Guideline
    :id: gd_guidl__verification_guide
    :status: valid
-   :version: 1
+   :version: 2
    :complies: std_req__isopas8926__445[version==1]
 
    This guideline outlines the responsibilities and procedures for developers performing
