@@ -128,6 +128,7 @@ Improvements
 - Rename ISO 26262 audit status charts and adjust colors by @pahmann in https://github.com/eclipse-score/process_description/pull/720
 - Set verification process to ML2 by @pahmann in https://github.com/eclipse-score/process_description/pull/722
 - Verification: Update test specification details by @pahmann in https://github.com/eclipse-score/process_description/pull/719
+- fix implementation review findings by @RolandJentschETAS in https://github.com/eclipse-score/process_description/pull/717
 - add initial version of the release notes for version 2.0.0 by @masc2023 in https://github.com/eclipse-score/process_description/pull/688
 
 Bug Fixes
