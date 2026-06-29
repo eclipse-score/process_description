@@ -129,6 +129,7 @@ Improvements
 - Set verification process to ML2 by @pahmann in https://github.com/eclipse-score/process_description/pull/722
 - Verification: Update test specification details by @pahmann in https://github.com/eclipse-score/process_description/pull/719
 - fix implementation review findings by @RolandJentschETAS in https://github.com/eclipse-score/process_description/pull/717
+- Update dependency score_docs_as_code to v4.6.0 by @eclipse-score-bot in https://github.com/eclipse-score/process_description/pull/725
 - add initial version of the release notes for version 2.0.0 by @masc2023 in https://github.com/eclipse-score/process_description/pull/688
 
 Bug Fixes
