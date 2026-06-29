@@ -601,7 +601,7 @@
                   
   <section id="guideline">
 <h1>Guideline<a class="headerlink" href="#guideline" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-776a999e">
+<div class="need_container docutils container" id="SNCB-4363c500">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_guidl table" id="gd_guidl__implementation">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -739,12 +739,10 @@ introduce new terminology or concepts that are not present in the code.</p>
 <h4>Design Principles of the Units<a class="headerlink" href="#design-principles-of-the-units" title="Link to this heading">#</a></h4>
 <p>The unit design and implementation should target quality attributes like simplicity, modularity and encapsulation,
 using project-defined coding guidelines and static analysis tooling appropriate for the language
-in use (e.g. MISRA C for C/C++, Clippy lints for Rust) as specified in the software development plan.</p>
+in use as specified in the software development plan.</p>
 <p>For ASIL B components, the software development plan shall mandate compliance with the design principles
-specified in ISO 26262-6 §8.4.5 Table 6, including requirements for limited complexity (one-entry-one-exit,
-no recursion, no unconditional jumps), restricted use of pointers, limited global variables, and absence
-of hidden data/control flow. These principles shall be enforced through coding guidelines and automated
-static analysis tooling.</p>
+specified in ISO 26262-6 §8.4.5 Table 6. These principles shall be enforced through project-specific
+coding guidelines and automated static analysis tooling.</p>
 <p>The <strong>source code</strong> itself should be self-documenting with meaningful naming and structure.
 <strong>Code comments</strong> may be used where the logic is not self-evident and to provide rationale.
 These comments, along with commit messages, and any additional documentation accompanying the
@@ -762,9 +760,9 @@ updated as the implementation evolves.</p>
 </section>
 <section id="diagrams">
 <h3>Diagrams<a class="headerlink" href="#diagrams" title="Link to this heading">#</a></h3>
-<p>Developers may add <strong>class diagrams</strong> or <strong>sequence diagrams</strong> at the unit level if they believe
-it helps to explain the source code better. These are optional and serve as supplementary
-documentation.</p>
+<p>Developers may add optional diagrams at the unit level if they believe it helps to explain the
+source code better. These are supplementary documentation and are not mandatory. Details are
+described in the following sections.</p>
 <section id="static-view">
 <h4>Static View<a class="headerlink" href="#static-view" title="Link to this heading">#</a></h4>
 <p>If a static view is used, it should provide an overview of the <strong>units</strong> and their relationships
