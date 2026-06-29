@@ -125,9 +125,10 @@ Improvements
 - Attifunel process req test description added by @attifunel in https://github.com/eclipse-score/process_description/pull/679
 - Update process requirements by @PandaeDo in https://github.com/eclipse-score/process_description/pull/716
 - Fix FMEA fault model table layout by @aschemmel-tech in https://github.com/eclipse-score/process_description/pull/718
-- add initial version of the release notes for version 2.0.0 by @masc2023 in https://github.com/eclipse-score/process_description/pull/688
 - Rename ISO 26262 audit status charts and adjust colors by @pahmann in https://github.com/eclipse-score/process_description/pull/720
 - Set verification process to ML2 by @pahmann in https://github.com/eclipse-score/process_description/pull/722
+- Verification: Update test specification details by @pahmann in https://github.com/eclipse-score/process_description/pull/719
+- add initial version of the release notes for version 2.0.0 by @masc2023 in https://github.com/eclipse-score/process_description/pull/688
 
 Bug Fixes
 ---------
