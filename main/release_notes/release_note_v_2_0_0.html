@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Trustable Software Framework &#8212; Process Description  documentation</title>
+    <title>Release Note v2.0.0 &#8212; Process Description  documentation</title>
   
   
   
@@ -63,7 +63,7 @@
     <script src="../_static/sphinx-needs/libs/html/datatables.min.js?v=8a4aee21"></script>
     <script src="../_static/sphinx-needs/libs/html/datatables_loader.js?v=a2cae175"></script>
     <script src="../_static/sphinx-needs/libs/html/sphinx_needs_collapse.js?v=dca66431"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'trustable/index';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'release_notes/release_note_v_2_0_0';</script>
     <script>
         DOCUMENTATION_OPTIONS.theme_version = '0.17.0';
         DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://eclipse-score.github.io/process_description/versions.json';
@@ -74,8 +74,8 @@
     <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Tenets" href="tenets/tenets.html" />
-    <link rel="prev" title="Process Requirements List" href="../standards/process_reqs_list/index.html" />
+    <link rel="next" title="Release Note v1.5.3" href="release_note_v_1_5_3.html" />
+    <link rel="prev" title="Release notes" href="index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="0.1" />
@@ -214,8 +214,8 @@
 </li>
 
 
-<li class=" current active">
-  <a class="nav-link dropdown-item nav-internal" href="#">
+<li class=" ">
+  <a class="nav-link dropdown-item nav-internal" href="../trustable/index.html">
     Trustable Software Framework
   </a>
 </li>
@@ -235,8 +235,8 @@
 </li>
 
 
-<li class=" ">
-  <a class="nav-link dropdown-item nav-internal" href="../release_notes/index.html">
+<li class=" current active">
+  <a class="nav-link dropdown-item nav-internal" href="index.html">
     Release notes
   </a>
 </li>
@@ -402,8 +402,8 @@
 </li>
 
 
-<li class="nav-item current active">
-  <a class="nav-link nav-internal" href="#">
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../trustable/index.html">
     Trustable Software Framework
   </a>
 </li>
@@ -423,8 +423,8 @@
 </li>
 
 
-<li class="nav-item ">
-  <a class="nav-link nav-internal" href="../release_notes/index.html">
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="index.html">
     Release notes
   </a>
 </li>
@@ -499,10 +499,10 @@
 <nav class="bd-docs-nav bd-links"
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
-  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Contents:</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="tenets/tenets.html">Tenets</a></li>
-<li class="toctree-l1"><a class="reference internal" href="assertions/assertions.html">Assertions</a></li>
+  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Content</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Release Note v2.0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="release_note_v_1_5_3.html">Release Note v1.5.3</a></li>
 </ul>
 </div>
 </nav></div>
@@ -543,7 +543,10 @@
         <i class="fa-solid fa-home"></i>
       </a>
     </li>
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Trustable Software Framework</span></li>
+    
+    <li class="breadcrumb-item"><a href="index.html" class="nav-link">Release notes</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Release Note v2.0.0</span></li>
   </ul>
 </nav>
 </div>
@@ -560,45 +563,19 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="trustable-software-framework">
-<span id="external-tsf"></span><h1>Trustable Software Framework<a class="headerlink" href="#trustable-software-framework" title="Link to this heading">#</a></h1>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>The copyright check ignores all files in trustable and its subdirectories.
-Modified BUILD file in process repository to be reverted after reuse implementation
-is implemented in tooling.</p>
-</div>
-<p><em>The</em> <a class="reference external" href="https://codethinklabs.gitlab.io/trustable/trustable/index.html">Trustable Software Framework (TSF)</a>
-<em>approach is designed for consideration of software where factors such as safety, security,
-performance, availability and reliability are considered critical. Broadly it asserts that any
-consideration of trust must be based on evidence.</em></p>
-<p>The tenets and assertions defined in the Trustable Software Framework can be used to measure an (OSS) project trust score.
-To calculate the score link evidences to the Trustable Assertions (TA).</p>
-<figure class="align-center" id="id2">
-<a class="reference internal image-reference" href="../_images/tsf_overview.drawio.svg"><img alt="TSF Overview" src="../_images/tsf_overview.drawio.svg" style="width: 100%;" />
-</a>
-<figcaption>
-<p><span class="caption-number">Fig. 28 </span><span class="caption-text">TSF Overview</span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
-<div class="toctree-wrapper compound">
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Contents:</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="tenets/tenets.html">Tenets</a></li>
-<li class="toctree-l1"><a class="reference internal" href="assertions/assertions.html">Assertions</a></li>
-</ul>
-</div>
-<div class="need_container docutils container" id="SNCB-625f7835">
-<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_tsf table" id="tsf__trust__trustable-software">
+  <section id="release-note-v2-0-0">
+<h1>Release Note v2.0.0<a class="headerlink" href="#release-note-v2-0-0" title="Link to this heading">#</a></h1>
+<div class="need_container docutils container" id="SNCB-717defff">
+<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_document table" id="doc__process_description_release_note_v200">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
-<div class="line"><span><span class="needs_title"><span class="needs_data">TRUSTABLE SOFTWARE</span></span></span></div>
+<div class="line"><span><span class="needs_title"><span class="needs_data">Process description Release Note v2.0.0</span></span></span></div>
 </div>
 </td>
 <td class="head_center" colspan="2"><div class="needs_head line-block">
 <div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></span></div>
-<div class="line"><span></span></div>
-<div class="line"><span></span></div>
+<div class="line"><span><span class="needs_security"><span class="needs_label">security: </span><span class="needs_data">YES</span></span></span></div>
+<div class="line"><span><span class="needs_safety"><span class="needs_label">safety: </span><span class="needs_data">ASIL_B</span></span></span></div>
 </div>
 </td>
 <td class="head_right" colspan="2"><div class="needs_head_right line-block">
@@ -607,29 +584,22 @@ To calculate the score link evidences to the Trustable Assertions (TA).</p>
 </td>
 </tr>
 <tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
-<div class="line"><span><span><div class="line"><span class="needs_version"><span class="needs_label">version: </span>1</span></div>
+<div class="line"><span><span><div class="line"><span class="needs_version"><span class="needs_label">version: </span>0</span></div>
 </span></span></div>
-<div class="line"><span><div class="line">links outgoing: <span class="links"><span><a class="reference internal" href="tenets/tenets.html#tenet__trust__tt-provenance" title="tsf__trust__trustable-software">tenet__trust__tt-provenance</a>, <a class="reference internal" href="tenets/tenets.html#tenet__trust__tt-construction" title="tsf__trust__trustable-software">tenet__trust__tt-construction</a>, <a class="reference internal" href="tenets/tenets.html#tenet__trust__tt-changes" title="tsf__trust__trustable-software">tenet__trust__tt-changes</a>, <a class="reference internal" href="tenets/tenets.html#tenet__trust__tt-expectations" title="tsf__trust__trustable-software">tenet__trust__tt-expectations</a>, <a class="reference internal" href="tenets/tenets.html#tenet__trust__tt-results" title="tsf__trust__trustable-software">tenet__trust__tt-results</a>, <a class="reference internal" href="tenets/tenets.html#tenet__trust__tt-confidence" title="tsf__trust__trustable-software">tenet__trust__tt-confidence</a></span></span></div>
+<div class="line"><span><div class="line">realizes: <span class="realizes"><span><a class="reference internal" href="../process_areas/release_management/release_workproducts.html#wp__module_sw_release_note" title="doc__process_description_release_note_v200">wp__module_sw_release_note</a></span></span></div>
 </span></div>
 </div>
 </td>
 <td class="meta" colspan="3"></td>
 </tr>
-<tr class="content row-odd"><td class="content" colspan="6"><blockquote>
-<div><p>This release of XYZ is Trustable.</p>
-<p>Trustability of the release is based on aggregation of the evidence from all
-of the Trustable Tenets and Trustable Assertions.
-The algorithm for aggregation may involve weighting of specific Tenets or
-Assertions based on project priorities or experience.</p>
-</div></blockquote>
-</td>
+<tr class="content row-odd"><td class="content" colspan="6"></td>
 </tr>
 <tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
-<div class="line"><span><span class="needs-id"><a class="reference internal" href="#tsf__trust__trustable-software" title="tsf__trust__trustable-software">tsf__trust__trustable-software</a></span></span></div>
+<div class="line"><span><span class="needs-id"><a class="reference internal" href="#doc__process_description_release_note_v200" title="doc__process_description_release_note_v200">doc__process_description_release_note_v200</a></span></span></div>
 </div>
 </td>
 <td class="footer" colspan="2"><div class="needs_footer line-block">
-<div class="line"><span><span class="needs_type_name"><span class="needs_data">TSF</span></span></span></div>
+<div class="line"><span><span class="needs_type_name"><span class="needs_data">Generic Document</span></span></span></div>
 </div>
 </td>
 <td class="footer_right" colspan="2"></td>
@@ -638,192 +608,145 @@ Assertions based on project priorities or experience.</p>
 </table>
 </div>
 </div>
-<section id="xyz-trustable-overview">
-<h2>XYZ Trustable Overview<a class="headerlink" href="#xyz-trustable-overview" title="Link to this heading">#</a></h2>
-<section id="id1">
-<h3>Trustable Software Framework<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
-<div class="needstable_wrapper docutils container" id="needtable-trustable/index-0">
-<div class="pst-scrollable-table-container"><table class="NEEDS_TABLE table" id="needtable-trustable/index-0-table_node">
-<colgroup>
-<col style="width: 25.0%" />
-<col style="width: 25.0%" />
-<col style="width: 25.0%" />
-<col style="width: 25.0%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>Title</p></th>
-<th class="head"><p>ID</p></th>
-<th class="head"><p>Status</p></th>
-<th class="head"><p>Links</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="need row-even"><td class="needs_title"><p>TRUSTABLE SOFTWARE</p></td>
-<td class="needs_id"><p><a class="reference internal" href="#tsf__trust__trustable-software">tsf__trust__trustable-software</a></p></td>
-<td class="needs_status"><p>valid</p></td>
-<td class="needs_links"><p><a class="reference internal" href="tenets/tenets.html#tenet__trust__tt-provenance">tenet__trust__tt-provenance</a><em>; </em><a class="reference internal" href="tenets/tenets.html#tenet__trust__tt-construction">tenet__trust__tt-construction</a><em>; </em><a class="reference internal" href="tenets/tenets.html#tenet__trust__tt-changes">tenet__trust__tt-changes</a><em>; </em><a class="reference internal" href="tenets/tenets.html#tenet__trust__tt-expectations">tenet__trust__tt-expectations</a><em>; </em><a class="reference internal" href="tenets/tenets.html#tenet__trust__tt-results">tenet__trust__tt-results</a><em>; </em><a class="reference internal" href="tenets/tenets.html#tenet__trust__tt-confidence">tenet__trust__tt-confidence</a></p></td>
-</tr>
-</tbody>
-</table>
+<div class="line-block">
+<div class="line"><strong>Module Name:</strong> Process description</div>
+<div class="line"><strong>Release Tag:</strong> v2.0.0</div>
+<div class="line"><strong>Origin Release Tag:</strong> v1.5.4</div>
+<div class="line"><strong>Release Date:</strong> 2026-06-28</div>
 </div>
-</div>
+<section id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Link to this heading">#</a></h2>
+<p>The module process_description provides a process model establishing organization rules
+for developing open source software in the automotive industry, which can be used in
+safety and security context.</p>
+<p>The process model provides processes, which conform to state-of the art standards</p>
+<p>ASPICE 4.0
+ISO 26262
+ISO 21434
+ISO PAS 8926</p>
+<section id="disclaimer">
+<h3>Disclaimer<a class="headerlink" href="#disclaimer" title="Link to this heading">#</a></h3>
+<p>This release note does not “release for production”, as it does not come with a safety
+argumentation and a performed safety assessment.
+The work products compiled in the safety package are created with care according to a
+process satisfying standards, but the project, being a non-profit and open source
+organization, can not take over any liability for its content.</p>
 </section>
-<section id="trustable-tenets-overview">
-<h3>Trustable Tenets Overview<a class="headerlink" href="#trustable-tenets-overview" title="Link to this heading">#</a></h3>
-<div class="needstable_wrapper docutils container" id="needtable-trustable/index-1">
-<div class="pst-scrollable-table-container"><table class="NEEDS_TABLE table" id="needtable-trustable/index-1-table_node">
-<colgroup>
-<col style="width: 25.0%" />
-<col style="width: 25.0%" />
-<col style="width: 25.0%" />
-<col style="width: 25.0%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>Title</p></th>
-<th class="head"><p>ID</p></th>
-<th class="head"><p>Status</p></th>
-<th class="head"><p>Links</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="need row-even"><td class="needs_title"><p>TT-CHANGES</p></td>
-<td class="needs_id"><p><a class="reference internal" href="tenets/tenets.html#tenet__trust__tt-changes">tenet__trust__tt-changes</a></p></td>
-<td class="needs_status"><p>valid</p></td>
-<td class="needs_links"><p><a class="reference internal" href="assertions/assertions.html#assertion__trust__ta-fixes">assertion__trust__ta-fixes</a><em>; </em><a class="reference internal" href="assertions/assertions.html#assertion__trust__ta-updates">assertion__trust__ta-updates</a></p></td>
-</tr>
-<tr class="need row-odd"><td class="needs_title"><p>TT-CONFIDENCE</p></td>
-<td class="needs_id"><p><a class="reference internal" href="tenets/tenets.html#tenet__trust__tt-confidence">tenet__trust__tt-confidence</a></p></td>
-<td class="needs_status"><p>valid</p></td>
-<td class="needs_links"><p><a class="reference internal" href="assertions/assertions.html#assertion__trust__ta-methodologies">assertion__trust__ta-methodologies</a><em>; </em><a class="reference internal" href="assertions/assertions.html#assertion__trust__ta-confidence">assertion__trust__ta-confidence</a></p></td>
-</tr>
-<tr class="need row-even"><td class="needs_title"><p>TT-CONSTRUCTION</p></td>
-<td class="needs_id"><p><a class="reference internal" href="tenets/tenets.html#tenet__trust__tt-construction">tenet__trust__tt-construction</a></p></td>
-<td class="needs_status"><p>valid</p></td>
-<td class="needs_links"><p><a class="reference internal" href="assertions/assertions.html#assertion__trust__ta-tests">assertion__trust__ta-tests</a><em>; </em><a class="reference internal" href="assertions/assertions.html#assertion__trust__ta-releases">assertion__trust__ta-releases</a><em>; </em><a class="reference internal" href="assertions/assertions.html#assertion__trust__ta-iterations">assertion__trust__ta-iterations</a></p></td>
-</tr>
-<tr class="need row-odd"><td class="needs_title"><p>TT-EXPECTATIONS</p></td>
-<td class="needs_id"><p><a class="reference internal" href="tenets/tenets.html#tenet__trust__tt-expectations">tenet__trust__tt-expectations</a></p></td>
-<td class="needs_status"><p>valid</p></td>
-<td class="needs_links"><p><a class="reference internal" href="assertions/assertions.html#assertion__trust__ta-behaviours">assertion__trust__ta-behaviours</a><em>; </em><a class="reference internal" href="assertions/assertions.html#assertion__trust__ta-misbehaviours">assertion__trust__ta-misbehaviours</a><em>; </em><a class="reference internal" href="assertions/assertions.html#assertion__trust__ta-indicators">assertion__trust__ta-indicators</a><em>; </em><a class="reference internal" href="assertions/assertions.html#assertion__trust__ta-constraints">assertion__trust__ta-constraints</a></p></td>
-</tr>
-<tr class="need row-even"><td class="needs_title"><p>TT-PROVENANCE</p></td>
-<td class="needs_id"><p><a class="reference internal" href="tenets/tenets.html#tenet__trust__tt-provenance">tenet__trust__tt-provenance</a></p></td>
-<td class="needs_status"><p>valid</p></td>
-<td class="needs_links"><p><a class="reference internal" href="assertions/assertions.html#assertion__trust__ta-supply-chain">assertion__trust__ta-supply-chain</a><em>; </em><a class="reference internal" href="assertions/assertions.html#assertion__trust__ta-inputs">assertion__trust__ta-inputs</a></p></td>
-</tr>
-<tr class="need row-odd"><td class="needs_title"><p>TT-RESULTS</p></td>
-<td class="needs_id"><p><a class="reference internal" href="tenets/tenets.html#tenet__trust__tt-results">tenet__trust__tt-results</a></p></td>
-<td class="needs_status"><p>valid</p></td>
-<td class="needs_links"><p><a class="reference internal" href="assertions/assertions.html#assertion__trust__ta-validation">assertion__trust__ta-validation</a><em>; </em><a class="reference internal" href="assertions/assertions.html#assertion__trust__ta-data">assertion__trust__ta-data</a><em>; </em><a class="reference internal" href="assertions/assertions.html#assertion__trust__ta-analysis">assertion__trust__ta-analysis</a></p></td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
 </section>
-<section id="trustable-assertions-overview">
-<h3>Trustable Assertions Overview<a class="headerlink" href="#trustable-assertions-overview" title="Link to this heading">#</a></h3>
-<div class="needstable_wrapper docutils container" id="needtable-trustable/index-2">
-<div class="pst-scrollable-table-container"><table class="NEEDS_TABLE table" id="needtable-trustable/index-2-table_node">
-<colgroup>
-<col style="width: 25.0%" />
-<col style="width: 25.0%" />
-<col style="width: 25.0%" />
-<col style="width: 25.0%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>Title</p></th>
-<th class="head"><p>ID</p></th>
-<th class="head"><p>Status</p></th>
-<th class="head"><p>Links</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="need row-even"><td class="needs_title"><p>TA-ANALYSIS</p></td>
-<td class="needs_id"><p><a class="reference internal" href="assertions/assertions.html#assertion__trust__ta-analysis">assertion__trust__ta-analysis</a></p></td>
-<td class="needs_status"><p>valid</p></td>
-<td class="needs_links"><p></p></td>
-</tr>
-<tr class="need row-odd"><td class="needs_title"><p>TA-BEHAVIOURS</p></td>
-<td class="needs_id"><p><a class="reference internal" href="assertions/assertions.html#assertion__trust__ta-behaviours">assertion__trust__ta-behaviours</a></p></td>
-<td class="needs_status"><p>valid</p></td>
-<td class="needs_links"><p></p></td>
-</tr>
-<tr class="need row-even"><td class="needs_title"><p>TA-CONFIDENCE</p></td>
-<td class="needs_id"><p><a class="reference internal" href="assertions/assertions.html#assertion__trust__ta-confidence">assertion__trust__ta-confidence</a></p></td>
-<td class="needs_status"><p>valid</p></td>
-<td class="needs_links"><p></p></td>
-</tr>
-<tr class="need row-odd"><td class="needs_title"><p>TA-CONSTRAINTS</p></td>
-<td class="needs_id"><p><a class="reference internal" href="assertions/assertions.html#assertion__trust__ta-constraints">assertion__trust__ta-constraints</a></p></td>
-<td class="needs_status"><p>valid</p></td>
-<td class="needs_links"><p></p></td>
-</tr>
-<tr class="need row-even"><td class="needs_title"><p>TA-DATA</p></td>
-<td class="needs_id"><p><a class="reference internal" href="assertions/assertions.html#assertion__trust__ta-data">assertion__trust__ta-data</a></p></td>
-<td class="needs_status"><p>valid</p></td>
-<td class="needs_links"><p></p></td>
-</tr>
-<tr class="need row-odd"><td class="needs_title"><p>TA-FIXES</p></td>
-<td class="needs_id"><p><a class="reference internal" href="assertions/assertions.html#assertion__trust__ta-fixes">assertion__trust__ta-fixes</a></p></td>
-<td class="needs_status"><p>valid</p></td>
-<td class="needs_links"><p></p></td>
-</tr>
-<tr class="need row-even"><td class="needs_title"><p>TA-INDICATORS</p></td>
-<td class="needs_id"><p><a class="reference internal" href="assertions/assertions.html#assertion__trust__ta-indicators">assertion__trust__ta-indicators</a></p></td>
-<td class="needs_status"><p>valid</p></td>
-<td class="needs_links"><p></p></td>
-</tr>
-<tr class="need row-odd"><td class="needs_title"><p>TA-INPUTS</p></td>
-<td class="needs_id"><p><a class="reference internal" href="assertions/assertions.html#assertion__trust__ta-inputs">assertion__trust__ta-inputs</a></p></td>
-<td class="needs_status"><p>valid</p></td>
-<td class="needs_links"><p></p></td>
-</tr>
-<tr class="need row-even"><td class="needs_title"><p>TA-ITERATIONS</p></td>
-<td class="needs_id"><p><a class="reference internal" href="assertions/assertions.html#assertion__trust__ta-iterations">assertion__trust__ta-iterations</a></p></td>
-<td class="needs_status"><p>valid</p></td>
-<td class="needs_links"><p></p></td>
-</tr>
-<tr class="need row-odd"><td class="needs_title"><p>TA-METHODOLOGIES</p></td>
-<td class="needs_id"><p><a class="reference internal" href="assertions/assertions.html#assertion__trust__ta-methodologies">assertion__trust__ta-methodologies</a></p></td>
-<td class="needs_status"><p>valid</p></td>
-<td class="needs_links"><p></p></td>
-</tr>
-<tr class="need row-even"><td class="needs_title"><p>TA-MISBEHAVIOURS</p></td>
-<td class="needs_id"><p><a class="reference internal" href="assertions/assertions.html#assertion__trust__ta-misbehaviours">assertion__trust__ta-misbehaviours</a></p></td>
-<td class="needs_status"><p>valid</p></td>
-<td class="needs_links"><p></p></td>
-</tr>
-<tr class="need row-odd"><td class="needs_title"><p>TA-RELEASES</p></td>
-<td class="needs_id"><p><a class="reference internal" href="assertions/assertions.html#assertion__trust__ta-releases">assertion__trust__ta-releases</a></p></td>
-<td class="needs_status"><p>valid</p></td>
-<td class="needs_links"><p></p></td>
-</tr>
-<tr class="need row-even"><td class="needs_title"><p>TA-SUPPLY-CHAIN</p></td>
-<td class="needs_id"><p><a class="reference internal" href="assertions/assertions.html#assertion__trust__ta-supply-chain">assertion__trust__ta-supply-chain</a></p></td>
-<td class="needs_status"><p>valid</p></td>
-<td class="needs_links"><p></p></td>
-</tr>
-<tr class="need row-odd"><td class="needs_title"><p>TA-TESTS</p></td>
-<td class="needs_id"><p><a class="reference internal" href="assertions/assertions.html#assertion__trust__ta-tests">assertion__trust__ta-tests</a></p></td>
-<td class="needs_status"><p>valid</p></td>
-<td class="needs_links"><p></p></td>
-</tr>
-<tr class="need row-even"><td class="needs_title"><p>TA-UPDATES</p></td>
-<td class="needs_id"><p><a class="reference internal" href="assertions/assertions.html#assertion__trust__ta-updates">assertion__trust__ta-updates</a></p></td>
-<td class="needs_status"><p>valid</p></td>
-<td class="needs_links"><p></p></td>
-</tr>
-<tr class="need row-odd"><td class="needs_title"><p>TA-VALIDATION</p></td>
-<td class="needs_id"><p><a class="reference internal" href="assertions/assertions.html#assertion__trust__ta-validation">assertion__trust__ta-validation</a></p></td>
-<td class="needs_status"><p>valid</p></td>
-<td class="needs_links"><p></p></td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
+<section id="changes-to-the-module">
+<h2>Changes to the Module<a class="headerlink" href="#changes-to-the-module" title="Link to this heading">#</a></h2>
+<section id="new-features">
+<h3>New Features<a class="headerlink" href="#new-features" title="Link to this heading">#</a></h3>
+<p>Building blocks meta model is reworked.
+(<a class="reference external" href="https://eclipse-score.github.io/process_description/main/index.html">https://eclipse-score.github.io/process_description/main/index.html</a>).
+Contains now Features, Components as own elements, adapt linkage names, e.g.
+Requirements are now “derived_from” parent requirements, correct some linkages between
+elements</p>
+<p>Module Templates removed from Folder Templates and
+(<a class="reference external" href="https://eclipse-score.github.io/process_description/main/folder_templates/index.html">https://eclipse-score.github.io/process_description/main/folder_templates/index.html</a>)</p>
+<p>moved now to module_templates folder
+(<a class="reference external" href="https://eclipse-score.github.io/module_template/main/">https://eclipse-score.github.io/module_template/main/</a>)</p>
+<p>Implementation is now defined.</p>
+<p>Now versioning of sphinx-needs elements is introduced. Thus this version is the first
+baseline of the process_description.</p>
+<p>The process model contains</p>
+<ul class="simple">
+<li><p>General concepts e.g. for Building Blocks and their traceability</p></li>
+<li><p>Process meta model for proper modeling</p></li>
+<li><p>Process areas covering the required standards</p></li>
+<li><p>Roles, Work Products, Workflows defining the process areas</p></li>
+<li><p>Standard overview and coverage information</p></li>
+<li><p>Folder templates for simplifying deployment for users</p></li>
+<li><p>Glossary</p></li>
+<li><p>Release Notes</p></li>
+</ul>
 </section>
+<section id="improvements">
+<h3>Improvements<a class="headerlink" href="#improvements" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Fix trace to external AoU for Components by &#64;aschemmel-tech in <a class="reference external" href="https://github.com/eclipse-score/process_description/pull/654">https://github.com/eclipse-score/process_description/pull/654</a></p></li>
+<li><p>Update Safety Analysis  by &#64;PandaeDo in <a class="reference external" href="https://github.com/eclipse-score/process_description/pull/659">https://github.com/eclipse-score/process_description/pull/659</a></p></li>
+<li><p>fix meta model example picture by &#64;RolandJentschETAS in <a class="reference external" href="https://github.com/eclipse-score/process_description/pull/665">https://github.com/eclipse-score/process_description/pull/665</a></p></li>
+<li><p>Update Safety Analysis templates and process descriptions by &#64;PandaeDo in <a class="reference external" href="https://github.com/eclipse-score/process_description/pull/663">https://github.com/eclipse-score/process_description/pull/663</a></p></li>
+<li><p>PR for platform analysis template #455 #454 by &#64;NarasipurRohini in <a class="reference external" href="https://github.com/eclipse-score/process_description/pull/662">https://github.com/eclipse-score/process_description/pull/662</a></p></li>
+<li><p>Add release trigger to docs workflow by &#64;Saumya-R in <a class="reference external" href="https://github.com/eclipse-score/process_description/pull/667">https://github.com/eclipse-score/process_description/pull/667</a></p></li>
+<li><p>add minimal required elements in meta model as example by &#64;masc2023 in <a class="reference external" href="https://github.com/eclipse-score/process_description/pull/666">https://github.com/eclipse-score/process_description/pull/666</a></p></li>
+<li><p>Update safety analysis process requirements by &#64;PandaeDo in <a class="reference external" href="https://github.com/eclipse-score/process_description/pull/673">https://github.com/eclipse-score/process_description/pull/673</a></p></li>
+<li><p>Update process req of documentation management by &#64;PandaeDo in <a class="reference external" href="https://github.com/eclipse-score/process_description/pull/674">https://github.com/eclipse-score/process_description/pull/674</a></p></li>
+<li><p>Update Safety Analysis FDR by &#64;PandaeDo in <a class="reference external" href="https://github.com/eclipse-score/process_description/pull/677">https://github.com/eclipse-score/process_description/pull/677</a></p></li>
+<li><p>Correct branch name by &#64;RolandJentschETAS in <a class="reference external" href="https://github.com/eclipse-score/process_description/pull/678">https://github.com/eclipse-score/process_description/pull/678</a></p></li>
+<li><p>Metamodel link renames by &#64;aschemmel-tech in <a class="reference external" href="https://github.com/eclipse-score/process_description/pull/621">https://github.com/eclipse-score/process_description/pull/621</a></p></li>
+<li><p>Enhance test log details with execution log links by &#64;pahmann in <a class="reference external" href="https://github.com/eclipse-score/process_description/pull/682">https://github.com/eclipse-score/process_description/pull/682</a></p></li>
+<li><p>rename relations for SysML compatibility by &#64;RSingh1511 in <a class="reference external" href="https://github.com/eclipse-score/process_description/pull/618">https://github.com/eclipse-score/process_description/pull/618</a></p></li>
+<li><p>Document iso26262 audit 7 status by &#64;aschemmel-tech in <a class="reference external" href="https://github.com/eclipse-score/process_description/pull/685">https://github.com/eclipse-score/process_description/pull/685</a></p></li>
+<li><p>upgrade doc-as-code to v4.1.0 by &#64;masc2023 in <a class="reference external" href="https://github.com/eclipse-score/process_description/pull/687">https://github.com/eclipse-score/process_description/pull/687</a></p></li>
+<li><p>remove module folder template by &#64;RolandJentschETAS in <a class="reference external" href="https://github.com/eclipse-score/process_description/pull/683">https://github.com/eclipse-score/process_description/pull/683</a></p></li>
+<li><p>Update Safety Analysis Template by &#64;ANegm-ETAS in <a class="reference external" href="https://github.com/eclipse-score/process_description/pull/669">https://github.com/eclipse-score/process_description/pull/669</a></p></li>
+<li><p>rework implementation by &#64;RolandJentschETAS in <a class="reference external" href="https://github.com/eclipse-score/process_description/pull/689">https://github.com/eclipse-score/process_description/pull/689</a></p></li>
+<li><p>Add attribute requirement to config mgm by &#64;pahmann in <a class="reference external" href="https://github.com/eclipse-score/process_description/pull/690">https://github.com/eclipse-score/process_description/pull/690</a></p></li>
+<li><p>adopt pictures to new implementation concept by &#64;RolandJentschETAS in <a class="reference external" href="https://github.com/eclipse-score/process_description/pull/691">https://github.com/eclipse-score/process_description/pull/691</a></p></li>
+<li><p>increase docs as code version by &#64;RolandJentschETAS in <a class="reference external" href="https://github.com/eclipse-score/process_description/pull/692">https://github.com/eclipse-score/process_description/pull/692</a></p></li>
+<li><p>increase bazel version to 8.6 by &#64;RolandJentschETAS in <a class="reference external" href="https://github.com/eclipse-score/process_description/pull/693">https://github.com/eclipse-score/process_description/pull/693</a></p></li>
+<li><p>upgrade doc-as-code version 4.3.0 by &#64;masc2023 in <a class="reference external" href="https://github.com/eclipse-score/process_description/pull/694">https://github.com/eclipse-score/process_description/pull/694</a></p></li>
+<li><p>Update status to valid for merged Requirements and Documents by &#64;PandaeDo in <a class="reference external" href="https://github.com/eclipse-score/process_description/pull/697">https://github.com/eclipse-score/process_description/pull/697</a></p></li>
+<li><p>Correct automation tag for process reqs in requirements process by &#64;aschemmel-tech in <a class="reference external" href="https://github.com/eclipse-score/process_description/pull/699">https://github.com/eclipse-score/process_description/pull/699</a></p></li>
+<li><p>Update linking check from req to architecture by &#64;aschemmel-tech <a class="reference external" href="https://github.com/eclipse-score/process_description/pull/700">https://github.com/eclipse-score/process_description/pull/700</a></p></li>
+<li><p>Clarify tool verification report version attribute by &#64;aschemmel-tech <a class="reference external" href="https://github.com/eclipse-score/process_description/pull/701">https://github.com/eclipse-score/process_description/pull/701</a></p></li>
+<li><p>Apply tool version and Bzlmod locking, update docs-as-code by &#64;AlexanderLanin <a class="reference external" href="https://github.com/eclipse-score/process_description/pull/705">https://github.com/eclipse-score/process_description/pull/705</a></p></li>
+<li><p>add versioning of requirements by &#64;AlexanderLanin in <a class="reference external" href="https://github.com/eclipse-score/process_description/pull/708">https://github.com/eclipse-score/process_description/pull/708</a></p></li>
+<li><p>upgrade docs-as-code version 4.5.0 by &#64;AlexanderLanin in <a class="reference external" href="https://github.com/eclipse-score/process_description/pull/710">https://github.com/eclipse-score/process_description/pull/710</a></p></li>
+<li><p>add aspice 4 ml3 architecture by &#64;RolandJentschETAS in <a class="reference external" href="https://github.com/eclipse-score/process_description/pull/702">https://github.com/eclipse-score/process_description/pull/702</a></p></li>
+<li><p>Fix links to requirement templates by &#64;PandaeDo in <a class="reference external" href="https://github.com/eclipse-score/process_description/pull/713">https://github.com/eclipse-score/process_description/pull/713</a></p></li>
+<li><p>Selection of codeowner &#64;RolandJentsch by &#64;masc2023 in <a class="reference external" href="https://github.com/eclipse-score/process_description/pull/712">https://github.com/eclipse-score/process_description/pull/712</a></p></li>
+<li><p>Attifunel process req test description added by &#64;attifunel in <a class="reference external" href="https://github.com/eclipse-score/process_description/pull/679">https://github.com/eclipse-score/process_description/pull/679</a></p></li>
+<li><p>Update process requirements by &#64;PandaeDo in <a class="reference external" href="https://github.com/eclipse-score/process_description/pull/716">https://github.com/eclipse-score/process_description/pull/716</a></p></li>
+<li><p>Fix FMEA fault model table layout by &#64;aschemmel-tech in <a class="reference external" href="https://github.com/eclipse-score/process_description/pull/718">https://github.com/eclipse-score/process_description/pull/718</a></p></li>
+<li><p>Rename ISO 26262 audit status charts and adjust colors by &#64;pahmann in <a class="reference external" href="https://github.com/eclipse-score/process_description/pull/720">https://github.com/eclipse-score/process_description/pull/720</a></p></li>
+<li><p>Set verification process to ML2 by &#64;pahmann in <a class="reference external" href="https://github.com/eclipse-score/process_description/pull/722">https://github.com/eclipse-score/process_description/pull/722</a></p></li>
+<li><p>Verification: Update test specification details by &#64;pahmann in <a class="reference external" href="https://github.com/eclipse-score/process_description/pull/719">https://github.com/eclipse-score/process_description/pull/719</a></p></li>
+<li><p>fix implementation review findings by &#64;RolandJentschETAS in <a class="reference external" href="https://github.com/eclipse-score/process_description/pull/717">https://github.com/eclipse-score/process_description/pull/717</a></p></li>
+<li><p>Update dependency score_docs_as_code to v4.6.0 by &#64;eclipse-score-bot in <a class="reference external" href="https://github.com/eclipse-score/process_description/pull/725">https://github.com/eclipse-score/process_description/pull/725</a></p></li>
+<li><p>fix one link and update some requirements automation status by &#64;RolandJentschETAS in <a class="reference external" href="https://github.com/eclipse-score/process_description/pull/727">https://github.com/eclipse-score/process_description/pull/727</a></p></li>
+<li><p>fix requirement picture for linkage &#64;RolandJentschETAS in <a class="reference external" href="https://github.com/eclipse-score/process_description/pull/728">https://github.com/eclipse-score/process_description/pull/728</a></p></li>
+<li><p>add initial version of the release notes for version 2.0.0 by &#64;masc2023 in <a class="reference external" href="https://github.com/eclipse-score/process_description/pull/688">https://github.com/eclipse-score/process_description/pull/688</a></p></li>
+</ul>
+</section>
+<section id="bug-fixes">
+<h3>Bug Fixes<a class="headerlink" href="#bug-fixes" title="Link to this heading">#</a></h3>
+<p>not applicable</p>
+</section>
+<section id="other-changes-by-label">
+<h3>Other changes by Label<a class="headerlink" href="#other-changes-by-label" title="Link to this heading">#</a></h3>
+<p>not applicable</p>
+</section>
+</section>
+<section id="compatibility">
+<h2>Compatibility<a class="headerlink" href="#compatibility" title="Link to this heading">#</a></h2>
+<p>Doc-as-code, module_template</p>
+<p>For a detailed list checkout here: <a class="reference external" href="https://github.com/eclipse-score/process_description/blob/main/MODULE.bazel">https://github.com/eclipse-score/process_description/blob/main/MODULE.bazel</a></p>
+</section>
+<section id="performed-verification">
+<h2>Performed Verification<a class="headerlink" href="#performed-verification" title="Link to this heading">#</a></h2>
+<p>Initial Safety Audit by external assessor teams for every process area.</p>
+<section id="known-issues">
+<h3>Known Issues<a class="headerlink" href="#known-issues" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Issue 1: Standard requirements and work products are not yet fully mapped to the process model, <a class="reference external" href="https://eclipse-score.github.io/process_description//main/standards/index.html">https://eclipse-score.github.io/process_description//main/standards/index.html</a></p></li>
+<li><p>Issue 2: Safety package containing external Audit report not available, due to open improvement proposals/recommendation from external assessor team, #652</p></li>
+<li><p>Issue 3: Maturity level 2 no yet completed in total, but deploying is still ongoing also auditing per external auditor to achieve higher maturity levels, #652, <a class="reference external" href="https://github.com/eclipse-score/score/issues/2911">https://github.com/eclipse-score/score/issues/2911</a></p></li>
+</ul>
+</section>
+<section id="known-vulnerabilities">
+<h3>Known Vulnerabilities<a class="headerlink" href="#known-vulnerabilities" title="Link to this heading">#</a></h3>
+<p>None</p>
+</section>
+</section>
+<section id="upgrade-instructions">
+<h2>Upgrade Instructions<a class="headerlink" href="#upgrade-instructions" title="Link to this heading">#</a></h2>
+<p>As Building Blocks Meta Model is adapted and Templates are removed, consider to use the compatible doc-as-code version and the module templates from the module_template repository.</p>
+<p>Versionning is introduced. Updated with the latest doc-as-code version.</p>
+<p>Contact Information
+For any questions or support, please contact the SW Process Development Community (<a class="reference external" href="https://github.com/orgs/eclipse-score/discussions/108">https://github.com/orgs/eclipse-score/discussions/108</a>) or raise an issue/discussion.</p>
 </section>
 </section>
 
@@ -838,20 +761,20 @@ Assertions based on project priorities or experience.</p>
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="../standards/process_reqs_list/index.html"
+       href="index.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Process Requirements List</p>
+        <p class="prev-next-title">Release notes</p>
       </div>
     </a>
     <a class="right-next"
-       href="tenets/tenets.html"
+       href="release_note_v_1_5_3.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Tenets</p>
+        <p class="prev-next-title">Release Note v1.5.3</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -874,12 +797,24 @@ Assertions based on project priorities or experience.</p>
   </div>
   <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="pst-show_toc_level nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#xyz-trustable-overview">XYZ Trustable Overview</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Trustable Software Framework</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#trustable-tenets-overview">Trustable Tenets Overview</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#trustable-assertions-overview">Trustable Assertions Overview</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#overview">Overview</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#disclaimer">Disclaimer</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#changes-to-the-module">Changes to the Module</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#new-features">New Features</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#improvements">Improvements</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bug-fixes">Bug Fixes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#other-changes-by-label">Other changes by Label</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#compatibility">Compatibility</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#performed-verification">Performed Verification</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#known-issues">Known Issues</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#known-vulnerabilities">Known Vulnerabilities</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#upgrade-instructions">Upgrade Instructions</a></li>
 </ul>
   </nav></div>
 
@@ -887,7 +822,7 @@ Assertions based on project priorities or experience.</p>
 
   
   <div class="tocsection editthispage">
-    <a href="https://github.com/eclipse-score/process_description/edit/main/process/trustable/index.rst">
+    <a href="https://github.com/eclipse-score/process_description/edit/main/process/release_notes/release_note_v_2_0_0.rst">
       <i class="fa-solid fa-pencil"></i>
       
       
