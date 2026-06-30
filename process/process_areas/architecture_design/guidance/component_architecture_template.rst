@@ -27,4 +27,4 @@ Component Architecture Template
               std_req__aspice_40__iic-04-04[version==1]
 
    For the content see the
-   `module template documentation <https://eclipse-score.github.io/module_template/component_architecture_template.html>`__.
+   `module template documentation <https://eclipse-score.github.io/module_template/main/score/component_example/docs/architecture/component_architecture.html>`__.
