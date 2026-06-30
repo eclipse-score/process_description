@@ -81,6 +81,30 @@ Diagram Attributes
 
 .. _detailed_design_linkage:
 
+Diagram Linkage
+'''''''''''''''
+
+.. gd_req:: Diagram Linkage check Component ID
+   :id: gd_req__impl_diagram_check_id
+   :status: valid
+   :version: 1
+   :tags: prio_2_automation, attribute, automated
+   :complies: std_req__iso26262__support_6421[version==1], std_req__iso26262__support_6425[version==1]
+   :satisfies: wf__sw_detailed_design[version==1]
+
+   Each diagram shall be linked to the corresponding component id via the attribute belongs_to.
+
+.. gd_req:: Diagram Linkage Component ID
+   :id: gd_req__impl_diagram_linkage_id
+   :status: valid
+   :version: 1
+   :tags: prio_2_automation, attribute, automated
+   :complies: std_req__iso26262__support_6421[version==1], std_req__iso26262__support_6425[version==1]
+   :satisfies: wf__sw_detailed_design[version==1]
+
+   Each diagram shall be automatically linked (inverse direction) to the corresponding component id via the "belongs by" linkage.
+
+
 Diagram Checks
 ''''''''''''''
 
