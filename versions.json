@@ -10,5 +10,9 @@
   {
     "version": "pr-730",
     "url": "https://eclipse-score.github.io/process_description/pr-730/"
+  },
+  {
+    "version": "v2.0.0-test",
+    "url": "https://eclipse-score.github.io/process_description/v2.0.0-test/"
   }
 ]
