@@ -14,5 +14,9 @@
   {
     "version": "v2.0.0-test",
     "url": "https://eclipse-score.github.io/process_description/v2.0.0-test/"
+  },
+  {
+    "version": "v2.0.0-test1",
+    "url": "https://eclipse-score.github.io/process_description/v2.0.0-test1/"
   }
 ]
