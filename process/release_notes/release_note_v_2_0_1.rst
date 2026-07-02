@@ -132,10 +132,12 @@ Improvements
 - Update dependency score_docs_as_code to v4.6.0 by @eclipse-score-bot in https://github.com/eclipse-score/process_description/pull/725
 - fix one link and update some requirements automation status by @RolandJentschETAS in https://github.com/eclipse-score/process_description/pull/727
 - fix requirement picture for linkage @RolandJentschETAS in https://github.com/eclipse-score/process_description/pull/728
+- add initial version of the release notes for version 2.0.0 by @masc2023 in https://github.com/eclipse-score/process_description/pull/688
 - Improvement: Align Safety Analysis Process Requirements by @PandaeDo in https://github.com/eclipse-score/process_description/pull/729
 - fix(ci): trigger docs build on release published instead of created by @dcalavrezo-qorix in https://github.com/eclipse-score/process_description/pull/731
 - fix: Restore accidentally deleted requirements by @a-zw in https://github.com/eclipse-score/process_description/pull/730
-- add initial version of the release notes for version 2.0.0 by @masc2023 in https://github.com/eclipse-score/process_description/pull/688
+- create patch release v2.0.1 by @masc2023 in https://github.com/eclipse-score/process_description/pull/733
+
 
 Bug Fixes
 ---------
