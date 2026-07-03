@@ -602,7 +602,7 @@
                   
   <section id="decision-record-template">
 <span id="id1"></span><h1>Decision Record Template<a class="headerlink" href="#decision-record-template" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-2392fdf8">
+<div class="need_container docutils container" id="SNCB-8826cfa7">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_temp table" id="gd_temp__change_decision_record">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -631,7 +631,7 @@
 </td>
 <td class="meta" colspan="3"></td>
 </tr>
-<tr class="content row-odd"><td class="content" colspan="6"></td>
+<tr class="content row-odd"><td class="content" colspan="6"><p>For the content see here: <a class="reference internal" href="../../../folder_templates/platform/docs/change/decision_record.html#decision-record-template"><span class="std std-ref">Decision Record Template</span></a>.</p></td>
 </tr>
 <tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
 <div class="line"><span><span class="needs-id"><a class="reference internal" href="#gd_temp__change_decision_record" title="gd_temp__change_decision_record">gd_temp__change_decision_record</a></span></span></div>
@@ -646,72 +646,6 @@
 </tbody>
 </table>
 </div>
-</div>
-<p>This template is used to create new Decision Records (DRs) in the project.</p>
-<p>Suggest to store close to the artefact which is affected by the DR. For example for platform wide decisions store close to the platform’s stakeholder requirements.</p>
-<p>In each DR file, include the following sections:</p>
-<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">dec_rec</span><span class="p">::</span> <span class="nt">&lt;Title&gt;</span>
-   <span class="nc">:id:</span> dec_rec__&lt;Platform|Feature|Component&gt;__&lt;Title&gt;
-   <span class="nc">:status:</span> <span class="nt">&lt;proposed|accepted|deprecated|rejected|superseded&gt;</span>
-   <span class="nc">:version:</span> 1
-   <span class="nc">:affects:</span> <span class="nt">&lt;link&gt;</span>
-
-   &lt;Description&gt;
-   Descriptions shall contain at least the following sections:
-   Context: &lt;Your text&gt;
-   Decision: &lt;Your text&gt;
-   Consequences: &lt;Your text&gt;
-
-   or use the the provided template below (if not marked as optional, it is mandatory content):
-
-   &lt;Decision&gt;
-
-   Context
-   -------
-   &lt;your text, diagrams, etc&gt;
-
-   Consequences
-   ------------
-   &lt;your text, diagrams, etc&gt;
-
-   (optional)
-   [
-   Alternatives Considered
-   -----------------------
-
-   &lt;Alternative A&gt;
-   ^^^^^^^^^^^^^^^
-   &lt;description of the alternative&gt;
-
-   Advantages
-   &quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;
-   <span class="m">*</span>  <span class="gs">**&lt;Advantage 1&gt;:**</span> &lt;Explanation&gt;
-   <span class="m">*</span>  <span class="gs">**&lt;Advantage 2&gt;:**</span> &lt;Explanation&gt;
-
-   Disadvantages
-   &quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;
-   <span class="m">*</span>  <span class="gs">**&lt;Disadvantage 1&gt;:**</span> &lt;Explanation&gt;
-   <span class="m">*</span>  <span class="gs">**&lt;Disadvantage 2&gt;:**</span> &lt;Explanation&gt;
-   ]
-
-   Justification for the Decision
-   ------------------------------
-   &lt;your text&gt;
-</pre></div>
-</div>
-<div class="admonition attention">
-<p class="admonition-title">Attention</p>
-<p>The above directive must be updated according to your decision record.</p>
-<ul class="simple">
-<li><p>Modify <code class="docutils literal notranslate"><span class="pre">dec_rec</span></code> to provide a descriptive and concise title. Summarizing the decision. (mandatory)</p></li>
-<li><p>Modify <code class="docutils literal notranslate"><span class="pre">id</span></code> to contain the Platform/Feature/Component name the DR belongs to and the title, in upper snake case preceded by <code class="docutils literal notranslate"><span class="pre">dec_rec__</span></code> (mandatory)</p></li>
-<li><p>Adjust <code class="docutils literal notranslate"><span class="pre">status</span></code> according to your needs (mandatory)</p></li>
-<li><p>Modify <code class="docutils literal notranslate"><span class="pre">affects</span></code> to point to the work product it affects, mostly this will be requirements, architecture or design (recommended)</p></li>
-<li><p>Provide <code class="docutils literal notranslate"><span class="pre">Description</span></code> (mandatory)</p></li>
-<li><p>Add <code class="docutils literal notranslate"><span class="pre">Context</span></code> to describe the issue or motivation behind this decision or change (mandatory)</p></li>
-<li><p>Add <code class="docutils literal notranslate"><span class="pre">decision</span></code> to detail the proposed change or decision (mandatory)</p></li>
-<li><p>Add <code class="docutils literal notranslate"><span class="pre">consequences</span></code> to explain the impact of this change, including what becomes easier or more difficult (recommended)</p></li>
-</ul>
 </div>
 </section>
 
