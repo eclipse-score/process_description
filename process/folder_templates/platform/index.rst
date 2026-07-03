@@ -23,6 +23,7 @@ Platform
    features/index.rst
    requirements/stakeholder/chklst_req_inspection.rst
    requirements/stakeholder/index.rst
+   docs/change/decision_record.rst
    docs/release/release_note.rst
    docs/safety_mgt/index.rst
    docs/security_mgt/index.rst
