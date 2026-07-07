@@ -590,7 +590,7 @@
                   
   <section id="concept-description">
 <h1>Concept Description<a class="headerlink" href="#concept-description" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-80d35151">
+<div class="need_container docutils container" id="SNCB-36d74b31">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_doc_concept table" id="doc_concept__req_process">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -799,7 +799,7 @@ i.e. the assumption on what content is needed, which shall be matched by the use
 <td><p>In this attribute the content for the requirement will be specified. Please be aware that a note in a requirement is not part of the requirement itself. This means that notes should only be used to give additional explanation or context to the requirement.</p></td>
 </tr>
 <tr class="row-even"><td><p>Version</p></td>
-<td><p>Version updated whenever an attribute changed which may affect the linked child requirements.</p></td>
+<td><p>Version of the requirement adapted with each significat change, see <a class="reference internal" href="#significant-requirement-changes"><span class="std std-ref">Versioning on Significant Changes</span></a>.</p></td>
 </tr>
 <tr class="row-odd"><td><p>Rationale / Linkage</p></td>
 <td><p>In either of those attributes the reasoning for the requirement is included.
@@ -863,32 +863,39 @@ For any other requirement the reasoning can be deduced from the top level requir
 <section id="individual-requirements">
 <h3>Individual Requirements<a class="headerlink" href="#individual-requirements" title="Link to this heading">#</a></h3>
 <p>For the requirements the version management is basically provided by version management tooling (e.g. git history). However it needs to be identified if the content of a requirement changed. So this concept aims only at identifying a significant change in the attributes of a requirement.</p>
-<section id="versioning">
-<h4>Versioning<a class="headerlink" href="#versioning" title="Link to this heading">#</a></h4>
-<p>Only significant changes to the attributes of a requirement shall result in a version change:</p>
+<section id="versioning-on-significant-changes">
+<span id="significant-requirement-changes"></span><h4>Versioning on Significant Changes<a class="headerlink" href="#versioning-on-significant-changes" title="Link to this heading">#</a></h4>
+<p>Only significant changes to the attributes of a requirement shall result in a version change,
+generally this is everything which may affect the content of the child requirements:</p>
 <div class="pst-scrollable-table-container"><table class="table" id="id7">
 <caption><span class="caption-number">Table 36 </span><span class="caption-text">Significant Attributes</span><a class="headerlink" href="#id7" title="Link to this table">#</a></caption>
 <colgroup>
 <col style="width: 30.0%" />
-<col style="width: 70.0%" />
+<col style="width: 35.0%" />
+<col style="width: 35.0%" />
 </colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Attribute link</p></th>
 <th class="head"><p>What is significant</p></th>
+<th class="head"><p>What is not significant</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="row-even"><td><p><a class="reference internal" href="guidance/requirements_process_reqs.html#gd_req__req_attr_description" title="gd_req__req_attr_description"><em class="xref need">Requirement attribute: desc...</em></a></p></td>
-<td><p>Functional changes shall lead to a version change, no formal corrections or modifications of the notes</p></td>
+<td><p>Functional changes and also re-writes which might lead to a better understanding of the content</p></td>
+<td><p>typo corrections, formal adaptions (e.g. layout), modifications of the requirement’s notes</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="guidance/requirements_process_reqs.html#gd_req__req_attr_safety" title="gd_req__req_attr_safety"><em class="xref need">Requirement attribute: safety</em></a></p></td>
 <td><p>every change</p></td>
+<td><p>n/a</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="guidance/requirements_process_reqs.html#gd_req__req_attr_security" title="gd_req__req_attr_security"><em class="xref need">Requirements attribute: sec...</em></a></p></td>
 <td><p>every change</p></td>
+<td><p>n/a</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="guidance/requirements_process_reqs.html#gd_req__req_attr_type" title="gd_req__req_attr_type"><em class="xref need">Requirement attribute: type</em></a></p></td>
 <td><p>every change</p></td>
+<td><p>n/a</p></td>
 </tr>
 </tbody>
 </table>
@@ -992,7 +999,7 @@ For any other requirement the reasoning can be deduced from the top level requir
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#attributes-of-the-requirements">Attributes of the Requirements</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#requirements-versioning">Requirements Versioning</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#individual-requirements">Individual Requirements</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#versioning">Versioning</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#versioning-on-significant-changes">Versioning on Significant Changes</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#linking-child-requirements-including-versions">Linking child requirements including versions</a></li>
 </ul>
 </li>
