@@ -34,6 +34,7 @@ Methods
    * :ref:`Fault Injection <ver_fault>`
    * :ref:`Interface Test <ver_interface>`
    * :ref:`Structural Coverage <ver_structural>`
+   * :ref:`Static Code Analysis <ver_sta>`
 
 .. _ver_fault:
 
