@@ -20,6 +20,7 @@ Release Note v2.0.0
    :status: valid
    :safety: ASIL_B
    :security: YES
+   :version: 1
    :realizes: wp__module_sw_release_note
    :tags:
 

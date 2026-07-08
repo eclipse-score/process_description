@@ -19,6 +19,7 @@ Release Note v2.0.1
    :id: doc__process_description_release_note_v201
    :status: valid
    :safety: ASIL_B
+   :version: 1
    :security: YES
    :realizes: wp__module_sw_release_note
    :tags:
