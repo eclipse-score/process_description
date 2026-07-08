@@ -599,7 +599,7 @@
                   
   <section id="guideline">
 <h1>Guideline<a class="headerlink" href="#guideline" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-8e840fd2">
+<div class="need_container docutils container" id="SNCB-c4475483">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_guidl table" id="gd_guidl__req_engineering">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -618,8 +618,8 @@
 </td>
 </tr>
 <tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
-<div class="line"><span><span><div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">requirements_engineering</span><span class="needs_spacer">, </span><span class="needs_data">requirements_engineering</span></span></span></div>
-<div class="line"><span class="needs_version"><span class="needs_label">version: </span>1</span></div>
+<div class="line"><span><span><div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">requirements_engineering</span></span></span></div>
+<div class="line"><span class="needs_version"><span class="needs_label">version: </span>2</span></div>
 </span></span></div>
 <div class="line"><span><div class="line">complies: <span class="complies"><span><a class="reference internal" href="../../../standards/isopas8926/isopas8926.html#std_req__isopas8926__44421" title="gd_guidl__req_engineering">std_req__isopas8926__44421</a>, <a class="reference internal" href="../../../standards/isopas8926/isopas8926.html#std_req__isopas8926__44422" title="gd_guidl__req_engineering">std_req__isopas8926__44422</a>, <a class="reference internal" href="../../../standards/isopas8926/isopas8926.html#std_req__isopas8926__44423" title="gd_guidl__req_engineering">std_req__isopas8926__44423</a>, <a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_req__iso26262__software_app_c_41" title="gd_guidl__req_engineering">std_req__iso26262__software_app_c_41</a>, <a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_req__iso26262__software_app_c_43" title="gd_guidl__req_engineering">std_req__iso26262__software_app_c_43</a></span></span></div>
 </span></div>
@@ -649,8 +649,8 @@
 <section id="templates">
 <h3>Templates<a class="headerlink" href="#templates" title="Link to this heading">#</a></h3>
 <p><em>Need</em> templates displaying the correct syntax and attribute definition are provided for each requirement type. For VScode, code snippets are included in the workspace settings which will provide in-place the definition of requirements including all mandatory attributes:</p>
-<div class="pst-scrollable-table-container"><table class="table" id="id5">
-<caption><span class="caption-number">Table 36 </span><span class="caption-text">Overview</span><a class="headerlink" href="#id5" title="Link to this table">#</a></caption>
+<div class="pst-scrollable-table-container"><table class="table" id="id4">
+<caption><span class="caption-number">Table 37 </span><span class="caption-text">Overview</span><a class="headerlink" href="#id4" title="Link to this table">#</a></caption>
 <colgroup>
 <col style="width: 37.4%" />
 <col style="width: 37.4%" />
@@ -712,9 +712,13 @@
 </tr>
 <tr class="need row-even"><td class="needs_title"><p>Requirement attribute: status</p></td>
 </tr>
-<tr class="need row-odd"><td class="needs_title"><p>Requirement attribute: type</p></td>
+<tr class="need row-odd"><td class="needs_title"><p>Requirement attribute: title</p></td>
 </tr>
-<tr class="need row-even"><td class="needs_title"><p>Requirement attribute: UID</p></td>
+<tr class="need row-even"><td class="needs_title"><p>Requirement attribute: type</p></td>
+</tr>
+<tr class="need row-odd"><td class="needs_title"><p>Requirement attribute: UID</p></td>
+</tr>
+<tr class="need row-even"><td class="needs_title"><p>Requirement attribute: versioning</p></td>
 </tr>
 </tbody>
 </table>
@@ -723,7 +727,7 @@
 <ul class="simple">
 <li><p>Title and description: For formulating requirements, the following template shall be used <a class="reference internal" href="requirements_templates.html#gd_temp__req_formulation" title="gd_temp__req_formulation"><em class="xref need">Requirement Formulation Tem...</em></a></p></li>
 <li><p>ID: The naming convention for the ID is defined for every project in a central place (e.g. in the general contributor’s guidelines)</p></li>
-<li><p>Furthermore the requirements need to be versioned. Therefore, a hash value of the requirement will to be calculated. The concept is described: <a class="reference internal" href="../requirements_concept.html#traceability-concept-for-requirements"><span class="std std-ref">Traceability Concept for Requirements</span></a></p></li>
+<li><p>Furthermore the requirements need to be versioned to document content changes, see <a class="reference internal" href="../requirements_concept.html#significant-requirement-changes"><span class="std std-ref">Versioning on Significant Changes</span></a></p></li>
 <li><p>For the remaining attributes only predefined values can be used. A more detailed description can be found here: <a class="reference internal" href="../requirements_concept.html#attributes-of-the-requirements"><span class="std std-ref">Attributes of the Requirements</span></a></p></li>
 <li><p>Note that “rationale” is only mandatory for Stakeholder Requirements.</p></li>
 <li><p>Process requirements do not need the security and safety attributes because these can be derived from the standards they comply with. Type attributes are also unnecessary, as these requirements are always non‑functional.</p></li>
@@ -781,8 +785,8 @@
 <section id="workflow-for-creating-a-requirement">
 <span id="workflow-requirements"></span><h2>Workflow for Creating a Requirement<a class="headerlink" href="#workflow-for-creating-a-requirement" title="Link to this heading">#</a></h2>
 <p>This section describes in detail which steps need to be performed to create a requirement based on <a class="reference internal" href="../requirements_getstrt.html#requirements-workflow-fig"><span class="std std-ref">Requirements Workflow</span></a></p>
-<div class="pst-scrollable-table-container"><table class="table" id="id6">
-<caption><span class="caption-number">Table 37 </span><span class="caption-text">Workflow for creating a requirement</span><a class="headerlink" href="#id6" title="Link to this table">#</a></caption>
+<div class="pst-scrollable-table-container"><table class="table" id="id5">
+<caption><span class="caption-number">Table 38 </span><span class="caption-text">Workflow for creating a requirement</span><a class="headerlink" href="#id5" title="Link to this table">#</a></caption>
 <colgroup>
 <col style="width: 10.0%" />
 <col style="width: 60.0%" />
@@ -819,12 +823,8 @@
 <td><p>Merge valid child requirement to main branch</p></td>
 <td><p><a class="reference internal" href="../../../roles/index.html#rl__committer" title="rl__committer"><em class="xref need">Committer</em></a></p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#generate-linkage-document"><span class="std std-ref">7.</span></a></p></td>
-<td><p>Generate linkage document</p></td>
-<td><p><a class="reference internal" href="../../../roles/index.html#rl__contributor" title="rl__contributor"><em class="xref need">Contributor</em></a></p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#formal-requirement-review"><span class="std std-ref">8.</span></a></p></td>
-<td><p>Perform formal review of requirements</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#formal-requirement-review"><span class="std std-ref">7.</span></a></p></td>
+<td><p>Perform formal review (inspection) of requirements (or start with the next iteration of requirements changes)</p></td>
 <td><p><a class="reference internal" href="../../../roles/index.html#rl__committer" title="rl__committer"><em class="xref need">Committer</em></a></p></td>
 </tr>
 </tbody>
@@ -865,13 +865,9 @@ To ease verification a link to these (“process” type) requirements can be es
 <span id="id3"></span><h3>Review child requirement<a class="headerlink" href="#review-child-requirement" title="Link to this heading">#</a></h3>
 <p>As soon as also the child requirements are in a mature state they can be <a class="reference internal" href="../../../general_concepts/score_review_concept.html#review-concept"><span class="std std-ref">reviewed</span></a> and merged into the main branch of the respective repository. Again this is not a formal inspection as it will be performed in a later step.</p>
 </section>
-<section id="generate-linkage-document">
-<span id="id4"></span><h3>Generate linkage document<a class="headerlink" href="#generate-linkage-document" title="Link to this heading">#</a></h3>
-<p>As parent and child requirements are now available, the linkage of the requirements can be established. This should be performed as described in <a class="reference internal" href="../requirements_concept.html#coverage-of-requirements"><span class="std std-ref">Coverage of Requirements</span></a></p>
-</section>
 <section id="perform-formal-review-of-requirements">
 <span id="formal-requirement-review"></span><h3>Perform formal review of requirements<a class="headerlink" href="#perform-formal-review-of-requirements" title="Link to this heading">#</a></h3>
-<p>In a last step the requirements shall be formally inspected. Therefore a checklist exists: <a class="reference internal" href="requirements_inspection_checklist.html#gd_chklst__req_inspection" title="gd_chklst__req_inspection"><em class="xref need">Requirements Inspection Che...</em></a></p>
+<p>In a last step the requirements shall be formally inspected. For this a checklist exists: see <a class="reference internal" href="requirements_inspection_checklist.html#gd_chklst__req_inspection" title="gd_chklst__req_inspection"><em class="xref need">Requirements Inspection Che...</em></a></p>
 <p>Following roles should be included in the review:</p>
 <ul class="simple">
 <li><p><a class="reference internal" href="../../safety_management/safety_management_roles.html#rl__safety_manager" title="rl__safety_manager"><em class="xref need">Safety Manager</em></a></p></li>
@@ -909,7 +905,7 @@ or are defining general assumptions every user and/or every module in the platfo
 <a class="reference internal image-reference" href="../../../_images/aou_traceability.drawio.svg"><img alt="../../../_images/aou_traceability.drawio.svg" src="../../../_images/aou_traceability.drawio.svg" style="width: 100%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 21 </span><span class="caption-text">AoU Traceability</span><a class="headerlink" href="#aou-traceability" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 20 </span><span class="caption-text">AoU Traceability</span><a class="headerlink" href="#aou-traceability" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p><a class="reference internal" href="#aou-traceability"><span class="std std-ref">AoU Traceability</span></a> is an extension of the workproduct traceability to show the handling of AoU.
@@ -949,7 +945,7 @@ new function is planned and the requirement with the new specification is valid_
 </section>
 <section id="tailoring">
 <h2>Tailoring<a class="headerlink" href="#tailoring" title="Link to this heading">#</a></h2>
-<div class="need_container docutils container" id="SNCB-2a8fb04c">
+<div class="need_container docutils container" id="SNCB-21b13e90">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_guidl table" id="gd_guidl__req_tailored">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -968,7 +964,7 @@ new function is planned and the requirement with the new specification is valid_
 </td>
 </tr>
 <tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
-<div class="line"><span><span><div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">requirements_engineering</span><span class="needs_spacer">, </span><span class="needs_data">requirements_engineering</span></span></span></div>
+<div class="line"><span><span><div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">requirements_engineering</span></span></span></div>
 <div class="line"><span class="needs_version"><span class="needs_label">version: </span>1</span></div>
 </span></span></div>
 <div class="line"><span><div class="line">complies: <span class="complies"><span><a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_req__iso26262__system_6423" title="gd_guidl__req_tailored">std_req__iso26262__system_6423</a>, <a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_req__iso26262__system_6424" title="gd_guidl__req_tailored">std_req__iso26262__system_6424</a>, <a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_req__iso26262__system_6425" title="gd_guidl__req_tailored">std_req__iso26262__system_6425</a>, <a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_req__iso26262__software_643" title="gd_guidl__req_tailored">std_req__iso26262__software_643</a>, <a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_req__iso26262__software_644" title="gd_guidl__req_tailored">std_req__iso26262__software_644</a>, <a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_req__iso26262__software_646" title="gd_guidl__req_tailored">std_req__iso26262__software_646</a></span></span></div>
@@ -1062,7 +1058,6 @@ for your project (documented in the PMP). Reasoning given below must be confirme
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#review-parent-requirement">Review parent requirement</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#derive-child-requirement-and-establish-traceability">Derive child requirement and establish traceability</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#review-child-requirement">Review child requirement</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#generate-linkage-document">Generate linkage document</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#perform-formal-review-of-requirements">Perform formal review of requirements</a></li>
 </ul>
 </li>
