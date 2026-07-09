@@ -274,6 +274,17 @@ and they include the available templates for the work products already in the ri
    folder_templates/index.rst
 
 
+Trainings
+---------
+
+Interactive self-paced training portals for the S-CORE process areas:
+
+.. toctree::
+   :maxdepth: 1
+
+   trainings/index.rst
+
+
 Glossary
 --------
 

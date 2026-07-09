@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<!--
+  Copyright (c) 2026 Contributors to the Eclipse Foundation
+
+  See the NOTICE file(s) distributed with this work for additional
+  information regarding copyright ownership.
+
+  This program and the accompanying materials are made available under the
+  terms of the Apache License Version 2.0 which is available at
+  https://www.apache.org/licenses/LICENSE-2.0
+
+  SPDX-License-Identifier: Apache-2.0
+
+  AI Disclosure: This file was largely AI-generated. The AI-generated
+  portions are made available under CC0-1.0 and not subject to the
+  project's license. The human contributor has reviewed and verified
+  that the code is correct.
+  SPDX-License-Identifier: CC0-1.0
+  Assisted-by: Claude Sonnet 4.6
+-->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Why Requirements Engineering? | S-CORE Process Training</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body data-page="module-1">
+<div id="sidebar"></div>
+<div id="main">
+
+  <!-- ── Top bar ──────────────────────────────────────────────────────── -->
+  <div id="topbar">
+    <a href="index.html">Course Overview</a>
+    
+    <span class="sep">›</span>
+    <span>Module 1: Why Requirements Engineering?</span>
+    
+  </div>
+
+  <div id="content">
+
+    
+    
+
+    <h1 class="module-title">Why Requirements Engineering?</h1>
+    <div class="module-meta">
+      <span>⏱ ~30 min</span>
+      <span>📖 Module 1 of 4</span>
+      <span>🗂 Requirements</span>
+    </div>
+
+    <h1>Why Requirements Engineering?</h1>
+<p>Requirements engineering is not bureaucracy — it is the foundation that connects
+a customer's need to the last line of tested code. In safety- and security-critical
+automotive software this chain must be complete, correct, and auditable.
+This module explains why, who is involved, and what standards demand.</p>
+<h2>1.1 The Role of Requirements in Safety-Critical Software</h2>
+<p>Modern automotive software controls safety-critical actuators — brakes, steering,
+power management — and runs in open-source collaborative environments where dozens of
+contributors work across organisational boundaries. Without a structured requirements
+process two problems become inevitable:</p>
+<ol>
+<li><strong>No agreed specification</strong> — contributors implement different interpretations
+   of the same need.</li>
+<li><strong>No audit trail</strong> — safety and security auditors cannot verify that every
+   standard requirement is addressed.</li>
+</ol>
+<div class="callout important">
+<div class="callout-label">Why RE is Mandated by Standards</div>
+<p>ISO 26262 (Part 8, SWE.1), ASPICE PAM 4.0, ISO/SAE 21434, and ISO PAS 8926 all
+explicitly require a documented, traceable requirements hierarchy as a precondition
+for safety and security releases. Without it, certification is impossible.</p>
+</div>
+
+<p>The S-CORE Requirements Engineering process provides a single, standardised answer
+to both problems: a hierarchy of requirement levels with defined attributes,
+mandatory reviews, and automatic traceability links to code and tests.</p>
+<h2>1.2 Stakeholders and Their Information Needs</h2>
+<p>The requirements hierarchy must satisfy the needs of every stakeholder who will
+either write, review, implement, test, or audit requirements. The S-CORE process
+identifies the following key stakeholders:</p>
+<table>
+<thead>
+<tr>
+<th>Stakeholder</th>
+<th>Role in S-CORE</th>
+<th>What they need from requirements</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Project Lead</strong></td>
+<td>Defines platform specification and timeline, tracks progress</td>
+<td>Clear stakeholder requirements as a project description</td>
+</tr>
+<tr>
+<td><strong>SW Architect</strong></td>
+<td>Derives features from stakeholder reqs, allocates to architecture</td>
+<td>Feature requirements and AoUs to drive architecture decisions</td>
+</tr>
+<tr>
+<td><strong>Tester</strong></td>
+<td>Verifies specification is satisfied</td>
+<td>Verifiable, testable requirements with traceability to test cases</td>
+</tr>
+<tr>
+<td><strong>Safety Manager</strong></td>
+<td>Initiates safety requirements, performs DFA and FMEA support</td>
+<td>Requirements with safety attributes and independence information</td>
+</tr>
+<tr>
+<td><strong>Security Manager</strong></td>
+<td>Initiates security requirements, performs TARA support</td>
+<td>Requirements with security attributes</td>
+</tr>
+<tr>
+<td><strong>SW Developer</strong></td>
+<td>Implements requirements, creates traceability to code</td>
+<td>Component requirements with clear acceptance criteria</td>
+</tr>
+<tr>
+<td><strong>Feature User</strong></td>
+<td>Integrates platform components into their vehicle project</td>
+<td>AoUs — boundary conditions they must fulfil when using the SW</td>
+</tr>
+<tr>
+<td><strong>Platform Integration Developer</strong></td>
+<td>Implements requirements for integration</td>
+<td>Component and feature requirements</td>
+</tr>
+</tbody>
+</table>
+<div class="callout tip">
+<div class="callout-label">Open Source Working Mode</div>
+<p>In S-CORE <strong>any Contributor may write a requirement</strong>, but every requirement must be
+approved by a Committer or Project Lead before it is merged. Safety and Security
+Managers provide support when their domain is involved.</p>
+</div>
+
+<h2>1.3 Standard Connections</h2>
+<p>The S-CORE requirements process implements requirements from multiple standards
+simultaneously. Understanding these connections helps prioritise engineering effort.</p>
+<table>
+<thead>
+<tr>
+<th>Standard</th>
+<th>Relevant Clause</th>
+<th>What it requires</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>ISO 26262</strong></td>
+<td>Part 8, SWE.1</td>
+<td>SW requirements specification with safety classification, traceability, and review</td>
+</tr>
+<tr>
+<td><strong>ASPICE PAM 4.0</strong></td>
+<td>SWE.1</td>
+<td>Elicitation, documentation, agreement, and traceability of SW requirements</td>
+</tr>
+<tr>
+<td><strong>ISO/SAE 21434</strong></td>
+<td>§10.5.1</td>
+<td>Cybersecurity requirements derived from TARA, traceable through development</td>
+</tr>
+<tr>
+<td><strong>ISO PAS 8926</strong></td>
+<td>§4.5.2.1</td>
+<td>Safety and cybersecurity requirements for automated driving</td>
+</tr>
+</tbody>
+</table>
+<div class="callout definition">
+<div class="callout-label">Assumptions of Use (AoU)</div>
+<p>A special requirement type that defines the <strong>boundary conditions the user of a
+software element must fulfil</strong> to ensure safe and secure operation. AoUs are
+exportable to integrators so they can include them in their own requirements
+management systems.</p>
+</div>
+
+<h2>1.4 Roles and Approval Chains</h2>
+<p>The S-CORE process defines clear responsibility for each level of the hierarchy:</p>
+<ul>
+<li><strong>Stakeholder requirements and SW-Platform AoU:</strong> Written by Contributor, approved by Project Lead, supported by Safety Manager.</li>
+<li><strong>Feature requirements and Feature AoU:</strong> Written by Contributor, approved by Project Lead, supported by Safety Manager and Security Manager.</li>
+<li><strong>Component requirements and Component AoU:</strong> Written by Contributor, approved by Committer, supported by Safety Manager and Security Manager.</li>
+<li><strong>Tool/Process requirements:</strong> Written by Contributor, approved by Committer.</li>
+</ul>
+<p>This separation ensures that the level of scrutiny matches the safety and security
+implications of the requirement.</p>
+<div class="collapsible">
+  <div class="collapsible-header">Why does the approval chain differ between Feature and Component level? <span class="arrow">▼</span></div>
+  <div class="collapsible-body"><p>Feature requirements describe platform-level integration behaviour and are visible
+to all users of the platform — they require Project Lead approval because they
+represent agreements between the platform team and its stakeholders.</p>
+<p>Component requirements are implementation-specific and concern only the component
+team — Committer approval is sufficient, as Committers are the technical
+gatekeepers for their component.</p></div>
+</div>
+    <div class="quiz-section" id="module-1-check">
+  <h2>Module Check-In</h2>
+  <p class="quiz-intro">Answer all questions and click Submit to check your understanding.</p>
+  <div class="question-block">
+  <p class="question-text"><span class="question-num">Q1.</span> Who is responsible for approving Feature Requirements in S-CORE?</p>
+  <ul class="options">
+    <li data-correct="false"><span class="opt-letter">A</span> Contributor</li>
+    <li data-correct="true"><span class="opt-letter">B</span> Project Lead</li>
+    <li data-correct="false"><span class="opt-letter">C</span> Safety Manager</li>
+    <li data-correct="false"><span class="opt-letter">D</span> Feature User</li>
+  </ul>
+  <div class="feedback">Correct: B. Feature requirements are written by any Contributor but must be approved by the Project Lead. Safety and Security Managers provide support but do not approve.</div>
+</div>
+<div class="question-block">
+  <p class="question-text"><span class="question-num">Q2.</span> Which standard requires SW requirements with a safety classification attribute, traceability, and formal review?</p>
+  <ul class="options">
+    <li data-correct="false"><span class="opt-letter">A</span> ISO/SAE 21434</li>
+    <li data-correct="false"><span class="opt-letter">B</span> ISO PAS 8926</li>
+    <li data-correct="true"><span class="opt-letter">C</span> ISO 26262 Part 8 / ASPICE SWE.1</li>
+    <li data-correct="false"><span class="opt-letter">D</span> IEC 61508</li>
+  </ul>
+  <div class="feedback">Correct: C. ISO 26262 Part 8 (in conjunction with ASPICE SWE.1) drives the SW requirements specification obligations in S-CORE. ISO/SAE 21434 and ISO PAS 8926 add cybersecurity and ADS-specific requirements on top.</div>
+</div>
+<div class="question-block">
+  <p class="question-text"><span class="question-num">Q3.</span> An integrator using an S-CORE platform component needs to know the boundary conditions they must satisfy for safe use. Which requirement type addresses this?</p>
+  <ul class="options">
+    <li data-correct="false"><span class="opt-letter">A</span> Stakeholder Requirements</li>
+    <li data-correct="false"><span class="opt-letter">B</span> Feature Requirements</li>
+    <li data-correct="false"><span class="opt-letter">C</span> Process Requirements</li>
+    <li data-correct="true"><span class="opt-letter">D</span> Assumptions of Use (AoU)</li>
+  </ul>
+  <div class="feedback">Correct: D. Assumptions of Use (AoUs) define the boundary conditions that the user of a software element must fulfil. They are exportable so integrators can incorporate them into their own requirements management systems.</div>
+</div>
+  <button class="quiz-submit">Submit Answers</button>
+  <div class="quiz-result"></div>
+</div>
+
+    
+    
+
+    <!-- ── Page navigation ───────────────────────────────────────────── -->
+    <div class="page-nav">
+      
+      <a class="btn-nav btn-prev" href="index.html">← Course Overview</a>
+      
+      
+      <a class="btn-nav btn-next"
+         href="module-2.html"
+         >
+        Module 2: Requirement Levels and Types →
+      </a>
+      
+    </div>
+
+  </div><!-- #content -->
+</div><!-- #main -->
+
+<script src="app.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  
+  initQuiz('module-1-check', 70, null);
+  
+
+  
+});
+</script>
+
+</body>
+</html>

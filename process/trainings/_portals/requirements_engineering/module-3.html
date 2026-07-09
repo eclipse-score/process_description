@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<!--
+  Copyright (c) 2026 Contributors to the Eclipse Foundation
+
+  See the NOTICE file(s) distributed with this work for additional
+  information regarding copyright ownership.
+
+  This program and the accompanying materials are made available under the
+  terms of the Apache License Version 2.0 which is available at
+  https://www.apache.org/licenses/LICENSE-2.0
+
+  SPDX-License-Identifier: Apache-2.0
+
+  AI Disclosure: This file was largely AI-generated. The AI-generated
+  portions are made available under CC0-1.0 and not subject to the
+  project's license. The human contributor has reviewed and verified
+  that the code is correct.
+  SPDX-License-Identifier: CC0-1.0
+  Assisted-by: Claude Sonnet 4.6
+-->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Requirement Attributes and Quality | S-CORE Process Training</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body data-page="module-3">
+<div id="sidebar"></div>
+<div id="main">
+
+  <!-- ── Top bar ──────────────────────────────────────────────────────── -->
+  <div id="topbar">
+    <a href="index.html">Course Overview</a>
+    
+    <span class="sep">›</span>
+    <span>Module 3: Requirement Attributes and Quality</span>
+    
+  </div>
+
+  <div id="content">
+
+    
+    
+
+    <h1 class="module-title">Requirement Attributes and Quality</h1>
+    <div class="module-meta">
+      <span>⏱ ~45 min</span>
+      <span>📖 Module 3 of 4</span>
+      <span>🗂 Requirements</span>
+    </div>
+
+    <h1>Requirement Attributes and Quality</h1>
+<p>A requirement without well-defined attributes is not a requirement — it is a
+wish. S-CORE mandates a specific attribute set for every requirement and
+automates part of its population. This module covers all attributes, versioning
+rules, and the formulation principles that make requirements verifiable.</p>
+<h2>3.1 Manual Attributes</h2>
+<p>Every S-CORE requirement must have the following attributes set by the author
+before a pull request can be merged:</p>
+<table>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Values / Format</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Unique ID</strong></td>
+<td><code>&lt;type_prefix&gt;__&lt;keyword&gt;_&lt;shortname&gt;</code></td>
+<td>Stable identifier used for all traceability links</td>
+</tr>
+<tr>
+<td><strong>Status</strong></td>
+<td><code>valid</code> | <code>invalid</code></td>
+<td>Only <code>valid</code> requirements are accepted in main branch</td>
+</tr>
+<tr>
+<td><strong>Title</strong></td>
+<td>Free text, expressive</td>
+<td>Human-readable label</td>
+</tr>
+<tr>
+<td><strong>Description</strong></td>
+<td>Free text</td>
+<td>The actual requirement statement</td>
+</tr>
+<tr>
+<td><strong>Version</strong></td>
+<td>Integer (1, 2, 3, …)</td>
+<td>Bumped on every <em>significant</em> change</td>
+</tr>
+<tr>
+<td><strong>Rationale / Linkage</strong></td>
+<td>Free text | derived_from link</td>
+<td>Stakeholder reqs need a rationale; derived reqs link to parent</td>
+</tr>
+<tr>
+<td><strong>Safety</strong></td>
+<td><code>QM</code> | <code>ASIL_B</code></td>
+<td>Safety integrity level of this requirement</td>
+</tr>
+<tr>
+<td><strong>Security</strong></td>
+<td>Boolean / free text</td>
+<td>Whether the requirement has security relevance</td>
+</tr>
+<tr>
+<td><strong>Type</strong></td>
+<td><code>Functional</code> | <code>Interface</code> | <code>Process</code> | <code>Non-Functional</code></td>
+<td>Determines verification method and linkage rules</td>
+</tr>
+</tbody>
+</table>
+<div class="callout important">
+<div class="callout-label">No "Draft" Status in Main Branch</div>
+<p>S-CORE intentionally has no <code>draft</code> status value. A requirement is either
+<code>valid</code> (merged) or it lives in a pull request / feature branch. This forces
+engineers to complete a requirement before integrating it rather than
+accumulating technical debt in the form of unfinished requirements.</p>
+</div>
+
+<h2>3.2 The Safety Attribute in Detail</h2>
+<p>The <code>safety</code> attribute is the cornerstone of ISO 26262 compliance. S-CORE
+currently supports two values:</p>
+<table>
+<thead>
+<tr>
+<th>Value</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>QM</code></td>
+<td>Quality Management — no ASIL claim; standard software quality processes apply</td>
+</tr>
+<tr>
+<td><code>ASIL_B</code></td>
+<td>Automotive Safety Integrity Level B — requires ASIL-B process measures, verification rigour, and traceability</td>
+</tr>
+</tbody>
+</table>
+<div class="callout important">
+<div class="callout-label">ASIL Decomposition Is Not Used</div>
+<p>S-CORE does not currently apply ASIL decomposition, so ASIL_A, ASIL_C, and
+ASIL_D are not required. Only QM and ASIL_B are defined. All safety-relevant
+requirements must be classified ASIL_B — a safety-relevant requirement that is
+incorrectly marked QM is a safety defect.</p>
+</div>
+
+<p>The tooling enforces linkage rules: an ASIL_B requirement may only be linked to
+other ASIL_B requirements or to QM requirements with a documented rationale.</p>
+<h2>3.3 Auto-Generated Attributes</h2>
+<p>The Docs-as-Code build populates three attributes automatically, eliminating
+manual maintenance overhead and ensuring the attributes are always current:</p>
+<table>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>How it is populated</th>
+<th>Tool</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Derives</strong></td>
+<td>Automatically inserted into the parent requirement when a child requirement references it via <code>derived_from</code></td>
+<td>Docs-as-Code</td>
+</tr>
+<tr>
+<td><strong>Implemented by</strong></td>
+<td>Source files are scanned for a defined tag containing the requirement ID; matching code locations are linked</td>
+<td>Docs-as-Code</td>
+</tr>
+<tr>
+<td><strong>Verified by</strong></td>
+<td>Test files are scanned for a defined marker containing the requirement ID; matching test cases are linked</td>
+<td>Docs-as-Code</td>
+</tr>
+</tbody>
+</table>
+<div class="callout example">
+<div class="callout-label">How Implemented by Works</div>
+<p>A developer adds the following tag in C++ source code:</p>
+<pre><code class="language-cpp">// [feat__json_config__parse_body]
+void ConfigParser::parseBody(const std::string&amp; json) { ... }
+</code></pre>
+<p>During the docs build, the tool finds this tag, resolves <code>feat__json_config__parse_body</code>
+to the corresponding feature requirement, and automatically links the source
+file and line to the <code>implemented_by</code> attribute.</p>
+</div>
+
+<p>This automatic population means that the traceability matrix is always
+regenerated from the actual code and test artefacts — it cannot be manually
+falsified or forgotten.</p>
+<h2>3.4 Requirement Versioning</h2>
+<h3>Significant vs. Non-Significant Changes</h3>
+<p>Not every edit to a requirement warrants a version increment. S-CORE defines
+precisely which changes are significant:</p>
+<table>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Significant change</th>
+<th>Non-significant change</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Description</strong></td>
+<td>Functional content change or rewrite affecting meaning</td>
+<td>Typo corrections, layout, notes</td>
+</tr>
+<tr>
+<td><strong>Safety</strong></td>
+<td>Any change</td>
+<td>—</td>
+</tr>
+<tr>
+<td><strong>Security</strong></td>
+<td>Any change</td>
+<td>—</td>
+</tr>
+<tr>
+<td><strong>Type</strong></td>
+<td>Any change</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<div class="callout important">
+<div class="callout-label">Version Mismatch Is a Build Error</div>
+<p>Child requirements reference their parent requirement with an explicit version number
+(e.g., <code>derived_from: stkh__platform__config_files[version==2]</code>). If the parent
+requirement's version is later bumped, all child derivation links become stale and
+the docs build emits a warning that <strong>blocks merging</strong> until the child requirements
+are updated. This ensures that a change in a parent requirement always triggers a
+review of all its children.</p>
+</div>
+
+<h3>Versioning Sets of Requirements</h3>
+<p>Individual requirement versioning covers single-requirement changes. For
+<strong>baselines</strong> — frozen sets of requirements used as the basis for a release or
+for a safety case — S-CORE uses standard version control tagging: a git tag
+applied to the repository records the exact state of all requirement files.</p>
+<h2>3.5 Requirement Quality and Formulation</h2>
+<p>A well-written requirement has four properties:</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Test question</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Atomic</strong></td>
+<td>Does the requirement describe exactly one thing?</td>
+</tr>
+<tr>
+<td><strong>Verifiable</strong></td>
+<td>Can we write a test or review criterion that definitively confirms conformance?</td>
+</tr>
+<tr>
+<td><strong>Unambiguous</strong></td>
+<td>Is there exactly one valid interpretation?</td>
+</tr>
+<tr>
+<td><strong>Traceable</strong></td>
+<td>Does the requirement link upward to a parent (or have a rationale) and downward to implementation and test?</td>
+</tr>
+</tbody>
+</table>
+<div class="callout important">
+<div class="callout-label">Notes Are Not Requirements</div>
+<p>A note in a requirement (marked as such in the Docs-as-Code tool) is <strong>not part of
+the requirement</strong> itself. Notes provide additional explanation or context but
+must not contain normative content. Reviewers must check that normative
+statements are in the description, not buried in notes.</p>
+</div>
+
+<h2>3.6 Requirement Reviews</h2>
+<p>Requirements that cannot be checked automatically require a manual inspection.
+The S-CORE process supports two kinds of review:</p>
+<ol>
+<li><strong>Peer review (PR review)</strong> — every requirement passes through a pull request
+   where Committers and Project Leads review it before it is merged to <code>main</code>.</li>
+<li><strong>Formal inspection</strong> — triggered explicitly when a contributor wants a
+   thorough review of a set of requirements. Uses a structured inspection
+   checklist that may be integrated into the requirements management tooling.</li>
+</ol>
+<div class="collapsible">
+  <div class="collapsible-header">What does the inspection checklist cover? <span class="arrow">▼</span></div>
+  <div class="collapsible-body"><p>The inspection checklist verifies:</p>
+<ul>
+<li>Completeness: all mandatory attributes are populated</li>
+<li>Consistency: no contradictions between requirements at the same level</li>
+<li>Feasibility: the requirement can realistically be implemented and tested</li>
+<li>Traceability: every requirement is derived from a parent or has a documented rationale</li>
+<li>Safety/security classification: safety attribute is correct relative to safety analysis</li>
+<li>Formulation quality: atomic, verifiable, unambiguous</li>
+</ul></div>
+</div>
+    <div class="quiz-section" id="module-3-check">
+  <h2>Module Check-In</h2>
+  <p class="quiz-intro">Answer all questions and click Submit to check your understanding.</p>
+  <div class="question-block">
+  <p class="question-text"><span class="question-num">Q1.</span> A developer edits a requirement's description to fix a typo and improve layout, with no change to its functional meaning. Should the version attribute be incremented?</p>
+  <ul class="options">
+    <li data-correct="false"><span class="opt-letter">A</span> Yes — any edit to a requirement must increment the version</li>
+    <li data-correct="true"><span class="opt-letter">B</span> No — only significant changes (functional content, safety, security, type) trigger a version increment</li>
+    <li data-correct="false"><span class="opt-letter">C</span> Yes — the version must be incremented so child links are re-validated</li>
+    <li data-correct="false"><span class="opt-letter">D</span> No — versions are only managed by git tags, not per-requirement</li>
+  </ul>
+  <div class="feedback">Correct: B. S-CORE explicitly distinguishes significant changes (content changes, safety/security/type attribute changes) from non-significant ones (typos, layout, notes). Only significant changes require a version bump so that child requirement links are re-validated.</div>
+</div>
+<div class="question-block">
+  <p class="question-text"><span class="question-num">Q2.</span> Which attribute is automatically populated by the Docs-as-Code build when test files contain a defined marker with the requirement ID?</p>
+  <ul class="options">
+    <li data-correct="false"><span class="opt-letter">A</span> Derives</li>
+    <li data-correct="false"><span class="opt-letter">B</span> Implemented by</li>
+    <li data-correct="true"><span class="opt-letter">C</span> Verified by</li>
+    <li data-correct="false"><span class="opt-letter">D</span> Status</li>
+  </ul>
+  <div class="feedback">Correct: C. The build scans test files for a defined marker containing the requirement ID and automatically links matching test cases to the 'verified_by' attribute. This makes the traceability matrix always current without manual maintenance.</div>
+</div>
+<div class="question-block">
+  <p class="question-text"><span class="question-num">Q3.</span> A requirement is marked safety=QM but a safety analysis has determined it is ASIL_B relevant. What is the consequence?</p>
+  <ul class="options">
+    <li data-correct="false"><span class="opt-letter">A</span> Nothing — QM and ASIL_B requirements can be freely mixed</li>
+    <li data-correct="true"><span class="opt-letter">B</span> The build will flag a linkage violation and the requirement is a safety defect</li>
+    <li data-correct="false"><span class="opt-letter">C</span> The requirement is automatically upgraded to ASIL_B at build time</li>
+    <li data-correct="false"><span class="opt-letter">D</span> A note is added to the requirement by the tool</li>
+  </ul>
+  <div class="feedback">Correct: B. An incorrectly classified safety attribute is a safety defect. The S-CORE tooling enforces linkage rules so that ASIL_B requirements may only be linked to other ASIL_B requirements (or QM with documented rationale). A wrong safety attribute would allow a safety-relevant element to be inadequately verified and could invalidate the safety case.</div>
+</div>
+  <button class="quiz-submit">Submit Answers</button>
+  <div class="quiz-result"></div>
+</div>
+
+    
+    
+
+    <!-- ── Page navigation ───────────────────────────────────────────── -->
+    <div class="page-nav">
+      
+      <a class="btn-nav btn-prev" href="module-2.html">← Module 2: Requirement Levels and Types</a>
+      
+      
+      <a class="btn-nav btn-next"
+         href="module-4.html"
+         >
+        Module 4: Workflows and Work Products →
+      </a>
+      
+    </div>
+
+  </div><!-- #content -->
+</div><!-- #main -->
+
+<script src="app.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  
+  initQuiz('module-3-check', 70, null);
+  
+
+  
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Requirement Levels and Types | S-CORE Process Training</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body data-page="module-2">
+<div id="sidebar"></div>
+<div id="main">
+
+  <!-- ── Top bar ──────────────────────────────────────────────────────── -->
+  <div id="topbar">
+    <a href="index.html">Course Overview</a>
+    
+    <span class="sep">›</span>
+    <span>Module 2: Requirement Levels and Types</span>
+    
+  </div>
+
+  <div id="content">
+
+    
+    
+
+    <h1 class="module-title">Requirement Levels and Types</h1>
+    <div class="module-meta">
+      <span>⏱ ~45 min</span>
+      <span>📖 Module 2 of 4</span>
+      <span>🗂 Requirements</span>
+    </div>
+
+    <h1>Requirement Levels and Types</h1>
+<p>S-CORE defines a five-level requirement hierarchy. Each level has a precise
+meaning, a defined audience, a characteristic abstraction, and specific
+compliance obligations under ISO 26262, ASPICE, and ISO/SAE 21434.
+This module maps the hierarchy and explains when to use each level.</p>
+<h2>2.1 The S-CORE Requirement Hierarchy</h2>
+<p>The following diagram summarises the levels and their derivation relationships:</p>
+<pre><code>Stakeholder Requirements (SW-Platform level)
+    │
+    ▼
+Feature Requirements  ←→  Feature AoU
+    │
+    ▼
+Component Requirements  ←→  Component AoU
+    │
+    ├── Code (Implemented by)
+    └── Tests (Verified by)
+</code></pre>
+<p>Additionally, <strong>Process/Tool Requirements</strong> sit alongside the hierarchy and
+describe the tooling and process activities that support it.</p>
+<p>A child requirement is always <em>derived from</em> its parent. The derivation link
+includes the parent's version number so that stale links are automatically
+detected during the docs build.</p>
+<h2>2.2 Stakeholder Requirements</h2>
+<p><strong>Stakeholder Requirements</strong> are defined at the SW-Platform level. They describe
+<strong>what the platform needs to contain</strong> from the perspective of the customer
+(stakeholder), expressed as technical requirements at the highest level of
+abstraction.</p>
+<div class="callout important">
+<div class="callout-label">Assumed Technical Safety Requirements</div>
+<p>In SEooC (Safety Element out of Context) development — which is the S-CORE model
+— Stakeholder Requirements represent the <strong>assumed Technical Safety Requirements</strong>.
+The integrator must verify that these assumptions match their vehicle-level
+safety goals before using the platform.</p>
+</div>
+
+<div class="callout example">
+<div class="callout-label">Stakeholder Requirement Example</div>
+<pre><code>The platform shall support configuration of applications via files
+(e.g. yaml, json).
+</code></pre>
+<p>This describes a platform-level capability without specifying how it is
+implemented or which component provides it.</p>
+</div>
+
+<p><strong>Compliance obligations:</strong> ISO 26262 §8 / SWE.1, ISO/SAE 21434 §10.5.1</p>
+<h2>2.3 Feature Requirements</h2>
+<p><strong>Feature Requirements</strong> are derived from Stakeholder Requirements and describe
+the behaviour of a feature <strong>at platform integration level</strong>, independent of
+which components implement it.</p>
+<p>A "feature" represents a coherent set of requirements that together deliver a
+platform-level capability. Feature requirements are the primary input for
+architects, testers, and integrators.</p>
+<div class="callout example">
+<div class="callout-label">Feature Requirement Example</div>
+<pre><code>The feature shall use JSON formatted string according to RFC-8259 for
+configuration.
+</code></pre>
+<p>This specifies the format at feature level without naming an implementation component.</p>
+</div>
+
+<p>Feature requirements also serve as the basis for integration testing on
+platform level.</p>
+<p><strong>Compliance obligations:</strong> ISO 26262 §8 / SWE.1, ISO/SAE 21434 §10.5.1</p>
+<h2>2.4 Component Requirements</h2>
+<p><strong>Component Requirements</strong> are derived from Feature Requirements and describe
+component-specific behaviour. They are implementation-facing: they tell a
+developer exactly what a component must do within the context of its feature.</p>
+<div class="callout example">
+<div class="callout-label">Component Requirement Example</div>
+<pre><code>The component shall provide API calls to read and interpret every field of a
+JSON body in C++.
+</code></pre>
+<p>This is unambiguously allocated to a single component and is directly testable
+at unit level.</p>
+</div>
+
+<p>Component Requirements are the lowest level in the hierarchy and have the most
+direct link to code and test artefacts via the auto-generated <code>implemented_by</code>
+and <code>verified_by</code> attributes.</p>
+<p><strong>Compliance obligations:</strong> ISO 26262 §8 / SWE.1, ISO PAS 8926 §4.5.2.1,
+ISO 26262 (analysis appendix), ISO/SAE 21434 §10.5.1 + §10.5.2</p>
+<h2>2.5 Assumptions of Use (AoU)</h2>
+<p>AoUs can exist at <strong>every level</strong> — SW-Platform, Feature, and Component. They
+define the boundary conditions that the <em>user</em> of the software element must
+fulfil to ensure correct, safe, and secure operation.</p>
+<table>
+<thead>
+<tr>
+<th>AoU Level</th>
+<th>Audience</th>
+<th>Compliance</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SW-Platform AoU</td>
+<td>Vehicle integrators using the platform</td>
+<td>ISO 26262, ISO/SAE 21434 §10.5.1–2</td>
+</tr>
+<tr>
+<td>Feature AoU</td>
+<td>Teams integrating the feature into a product</td>
+<td>ISO 26262, ISO/SAE 21434 §10.5.1–2</td>
+</tr>
+<tr>
+<td>Component AoU</td>
+<td>Developers using the component API</td>
+<td>ISO 26262, ISO PAS 8926, ISO/SAE 21434 §10.5.1–2</td>
+</tr>
+</tbody>
+</table>
+<div class="callout example">
+<div class="callout-label">AoU Example</div>
+<pre><code>The user shall provide a string as input which is not corrupted due to HW or
+QM SW errors.
+</code></pre>
+<p>This AoU tells the caller of the JSON configuration component what quality of
+input they must guarantee.</p>
+</div>
+
+<div class="callout important">
+<div class="callout-label">AoU and the Safety Manual</div>
+<p>Feature and Component AoUs feed directly into the <strong>Platform Safety Manual</strong> and
+<strong>Module Safety Manual</strong> respectively. These manuals are the exportable artefacts
+that document all conditions an integrator must satisfy when deploying S-CORE
+components in a safety-relevant context.</p>
+</div>
+
+<h2>2.6 Process and Tool Requirements</h2>
+<p><strong>Process/Tool Requirements</strong> describe the activities and tooling constraints
+that support the development process. They are derived from the process
+description and specify what must be done manually versus what must be
+automated (tool-supported).</p>
+<div class="callout example">
+<div class="callout-label">Process/Tool Requirement Example</div>
+<pre><code>It shall be checked that safety requirements (Safety != QM) can only be linked
+against safety requirements.
+</code></pre>
+<p>This is a process requirement that drives tool implementation in the
+Docs-as-Code build.</p>
+</div>
+
+<p>Process Requirements are verified by <strong>reviewing the process description</strong> rather
+than by functional testing.</p>
+<h2>2.7 Requirement Types</h2>
+<p>Every requirement — regardless of level — carries a <strong>type</strong> attribute that
+determines how it is verified and how it participates in traceability:</p>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Definition</th>
+<th>Verification method</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Functional</strong></td>
+<td>Describes a behaviour that can be demonstrated by test</td>
+<td>Unit test, integration test</td>
+</tr>
+<tr>
+<td><strong>Interface</strong></td>
+<td>Defines an API or protocol; does not itself describe a behaviour</td>
+<td>Review / analysis</td>
+</tr>
+<tr>
+<td><strong>Process</strong></td>
+<td>Describes a process activity or constraint; sub-type of Non-Functional</td>
+<td>Review of process description</td>
+</tr>
+<tr>
+<td><strong>Non-Functional</strong></td>
+<td>All other quality constraints (performance, capacity, …)</td>
+<td>Review / analysis</td>
+</tr>
+</tbody>
+</table>
+<div class="callout important">
+<div class="callout-label">Type Affects Linkage Rules</div>
+<p>The <code>type</code> attribute controls which architecture and safety linkage rules apply.
+For example, safety requirements of type Functional must eventually be linked to
+a test that exercises the functional behaviour. A Process requirement linked to a
+Functional safety requirement would be flagged as a linkage violation.</p>
+</div>
+
+<div class="collapsible">
+  <div class="collapsible-header">Interface requirements — when are they needed? <span class="arrow">▼</span></div>
+  <div class="collapsible-body"><p>Use the <strong>Interface</strong> type when a requirement defines a contract between two
+parties (e.g., an API signature, a protocol format, a data format) rather than a
+behaviour. Interface requirements are important for safety analysis because they
+define the boundaries across which faults can propagate — they often appear as
+inputs to DFA (Dependent Failure Analysis) and TARA.</p></div>
+</div>
+    <div class="quiz-section" id="module-2-check">
+  <h2>Module Check-In</h2>
+  <p class="quiz-intro">Answer all questions and click Submit to check your understanding.</p>
+  <div class="question-block">
+  <p class="question-text"><span class="question-num">Q1.</span> A requirement states: 'The feature shall use JSON formatted strings according to RFC-8259 for configuration.' At which requirement level does this belong?</p>
+  <ul class="options">
+    <li data-correct="false"><span class="opt-letter">A</span> Stakeholder Requirements</li>
+    <li data-correct="true"><span class="opt-letter">B</span> Feature Requirements</li>
+    <li data-correct="false"><span class="opt-letter">C</span> Component Requirements</li>
+    <li data-correct="false"><span class="opt-letter">D</span> Process Requirements</li>
+  </ul>
+  <div class="feedback">Correct: B. The requirement describes behaviour at feature (platform integration) level — it specifies the format the feature uses without naming a specific component. Stakeholder requirements would be even more abstract; component requirements would name the implementing component and its API.</div>
+</div>
+<div class="question-block">
+  <p class="question-text"><span class="question-num">Q2.</span> An integrator is building a vehicle product using an S-CORE platform component. They receive a document listing the conditions their application must satisfy to use the component safely. What type of requirement is this?</p>
+  <ul class="options">
+    <li data-correct="false"><span class="opt-letter">A</span> Stakeholder Requirements</li>
+    <li data-correct="false"><span class="opt-letter">B</span> Process Requirements</li>
+    <li data-correct="true"><span class="opt-letter">C</span> Assumptions of Use (AoU)</li>
+    <li data-correct="false"><span class="opt-letter">D</span> Functional Requirements</li>
+  </ul>
+  <div class="feedback">Correct: C. Assumptions of Use (AoUs) define boundary conditions for the user of a software element. They are exportable to integrators precisely so they can be incorporated into the integrator's own requirements management system.</div>
+</div>
+<div class="question-block">
+  <p class="question-text"><span class="question-num">Q3.</span> Which requirement type is verified by reviewing the process description rather than by functional test execution?</p>
+  <ul class="options">
+    <li data-correct="false"><span class="opt-letter">A</span> Functional</li>
+    <li data-correct="false"><span class="opt-letter">B</span> Interface</li>
+    <li data-correct="true"><span class="opt-letter">C</span> Process</li>
+    <li data-correct="false"><span class="opt-letter">D</span> Non-Functional</li>
+  </ul>
+  <div class="feedback">Correct: C. Process requirements describe activities in the development process and are verified by reviewing the process description (or checking that tooling enforces them). They cannot be verified by running a functional test.</div>
+</div>
+  <button class="quiz-submit">Submit Answers</button>
+  <div class="quiz-result"></div>
+</div>
+
+    
+    
+
+    <!-- ── Page navigation ───────────────────────────────────────────── -->
+    <div class="page-nav">
+      
+      <a class="btn-nav btn-prev" href="module-1.html">← Module 1: Why Requirements Engineering?</a>
+      
+      
+      <a class="btn-nav btn-next"
+         href="module-3.html"
+         >
+        Module 3: Requirement Attributes and Quality →
+      </a>
+      
+    </div>
+
+  </div><!-- #content -->
+</div><!-- #main -->
+
+<script src="app.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  
+  initQuiz('module-2-check', 70, null);
+  
+
+  
+});
+</script>
+
+</body>
+</html>
