@@ -159,15 +159,16 @@ questions:
   - q: "A new feature is being specified. The correct end-to-end flow in S-CORE is:"
     options:
       - text: "Write Component Requirements first to anchor implementation, then derive Feature and Stakeholder Requirements bottom-up."
-      - text: "Write Process Requirements, then Stakeholder Requirements, then derive Feature and Component Requirements top-down, linking each level to its parent with a versioned derived_from reference."
+      - text: "Write Stakeholder Requirements first, then derive Feature Requirements, then derive Component Requirements top-down, linking each level to its parent with a versioned derived_from reference."
         correct: true
       - text: "Write Feature Requirements first, then both Stakeholder Requirements and Component Requirements independently."
       - text: "Only Stakeholder Requirements and Component Requirements are needed; Feature Requirements are optional in S-CORE."
     feedback: >-
       Correct: B. S-CORE follows the standards' top-down derivation model. Stakeholder
-      Requirements define the 'what' at platform level; Feature Requirements break this
+      Requirements describe what the platform must contain; Feature Requirements break this
       down to integration level; Component Requirements specify individual component
       behaviour. Each level links to its parent using a versioned 'derived_from'
-      reference. Top-down derivation is mandatory per ISO 26262 / ASPICE SWE.1.
+      reference. Process Requirements are a separate, parallel concern derived from the
+      process description, not a step that precedes stakeholder requirements.
 
 ---

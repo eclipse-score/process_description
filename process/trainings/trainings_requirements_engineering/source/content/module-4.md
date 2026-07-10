@@ -46,19 +46,27 @@ picture.
 
 | Workflow ID | Workflow name | Responsible | Approved by |
 |-------------|---------------|-------------|-------------|
-| `wf__req_stkh_req` | Create/Maintain Stakeholder Requirements and SW-Platform AoU | Contributor | Project Lead |
-| `wf__req_feat_req` | Create/Maintain Feature Requirements | Contributor | Project Lead |
-| `wf__req_feat_aou` | Create/Maintain Feature AoUs | Contributor | Project Lead |
-| `wf__req_comp_req` | Create/Maintain Component Requirements | Contributor | Committer |
-| `wf__req_comp_aou` | Create/Maintain Component AoUs | Contributor | Committer |
-| `wf__req_tool` | Create/Maintain Tool/Process Requirements | Contributor | Committer |
+| `wf__req_stkh_req` | Create/Maintain Stakeholder Requirements and SW-Platform AoU | Contributor `rl__contributor` | Project Lead `rl__project_lead` |
+| `wf__req_feat_req` | Create/Maintain Feature Requirements | Contributor `rl__contributor` | Project Lead `rl__project_lead` |
+| `wf__req_feat_aou` | Create/Maintain Feature AoUs | Contributor `rl__contributor` | Project Lead `rl__project_lead` |
+| `wf__req_comp_req` | Create/Maintain Component Requirements | Contributor `rl__contributor` | Committer `rl__committer` |
+| `wf__req_comp_aou` | Create/Maintain Component AoUs | Contributor `rl__contributor` | Committer `rl__committer` |
+| `wf__req_tool` | Create/Maintain Tool/Process Requirements | Contributor `rl__contributor` | Committer `rl__committer` |
+| `wf__monitor_verify_requirements` | Monitor/Verify Requirements | Committer `rl__committer` | Committer `rl__committer` |
 
-All six workflows can be initiated as part of a **Change Request** — the
-Change Management process is the single entry point for all content changes
+All six creation workflows can be initiated as part of a **Change Request** —
+the Change Management process is the single entry point for all content changes
 in S-CORE.
 
-Safety Managers are *supported_by* in the three stakeholder/feature workflows;
-both Safety and Security Managers are *supported_by* in the two AoU workflows
+The **Monitor/Verify Requirements** workflow (`wf__monitor_verify_requirements`)
+is responsible for inspecting the full requirements set. Unlike the creation
+workflows it is owned by the Committer, who checks all requirement levels and
+safety manuals against the inspection checklist (`gd_chklst__req_inspection`).
+Its output is either an updated issue tracker entry or a completed Requirements
+Inspection work product.
+
+Safety Managers (`rl__safety_manager`) are *supported_by* in the three stakeholder/feature workflows;
+both Safety and Security Managers (`rl__security_manager`) are *supported_by* in the two AoU workflows
 at feature and component level.
 
 ## 4.2 Workflow: Stakeholder Requirements and SW-Platform AoU
@@ -173,10 +181,11 @@ The S-CORE Docs-as-Code tool provides:
 4. **PR-based review workflow** — all requirement changes go through a pull request; the Committer or Project Lead review is recorded in git history.
 
 :::tip Getting Started
-The Requirements Engineering "Getting Started" guide (`doc_getstrt__req_process`)
-describes the exact steps for creating a new requirement, deriving child
-requirements, and triggering a formal inspection. The workflow diagram in that
-guide maps every step to the corresponding workflow ID listed in Section 4.1.
+The Requirements Engineering concept (`doc_concept__req_process`) and Getting
+Started guide (`doc_getstrt__req_process`) describe the exact steps for creating
+a new requirement, deriving child requirements, and triggering a formal inspection.
+The workflow diagram in the getting started guide maps every step to the
+corresponding workflow ID listed in Section 4.1.
 :::
 
 :::collapsible Linking requirements to code and tests — practical steps

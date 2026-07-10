@@ -55,7 +55,7 @@ process two problems become inevitable:
 
 :::important Why RE is Mandated by Standards
 ISO 26262 (Part 8, SWE.1), ASPICE PAM 4.0, ISO/SAE 21434, and ISO PAS 8926 all
-explicitly require a documented, traceable requirements hierarchy as a precondition
+iltiyexplicitly require a documented, traceable requirements hierarchy as a precondition
 for safety and security releases. Without it, certification is impossible.
 :::
 
@@ -69,16 +69,16 @@ The requirements hierarchy must satisfy the needs of every stakeholder who will
 either write, review, implement, test, or audit requirements. The S-CORE process
 identifies the following key stakeholders:
 
-| Stakeholder | Role in S-CORE | What they need from requirements |
-|-------------|---------------|----------------------------------|
-| **Project Lead** | Defines platform specification and timeline, tracks progress | Clear stakeholder requirements as a project description |
-| **SW Architect** | Derives features from stakeholder reqs, allocates to architecture | Feature requirements and AoUs to drive architecture decisions |
-| **Tester** | Verifies specification is satisfied | Verifiable, testable requirements with traceability to test cases |
-| **Safety Manager** | Initiates safety requirements, performs DFA and FMEA support | Requirements with safety attributes and independence information |
-| **Security Manager** | Initiates security requirements, performs TARA support | Requirements with security attributes |
-| **SW Developer** | Implements requirements, creates traceability to code | Component requirements with clear acceptance criteria |
-| **Feature User** | Integrates platform components into their vehicle project | AoUs — boundary conditions they must fulfil when using the SW |
-| **Platform Integration Developer** | Implements requirements for integration | Component and feature requirements |
+| Stakeholder | Source ID | Role in S-CORE | What they need from requirements |
+|-------------|-----------|---------------|----------------------------------|
+| **Project Lead** | `rl__project_lead` | Defines platform specification and content, creates project timeline, tracks project progress | Clear stakeholder requirements as a project description |
+| **SW Architect** | `rl__committer` | Breaks down platform specification into features, derives feature/component architecture, allocates requirements to architecture elements, defines AoUs from architecture | Feature requirements and AoUs to drive architecture decisions |
+| **Tester** | `rl__committer` | Verifies that the specification is satisfied by the elements under test, considers AoUs for test case specification | Verifiable, testable requirements with traceability to test cases |
+| **Safety Architect** | `rl__safety_engineer` | Performs Dependent Failure Analysis, qualitative safety analysis (e.g. FMEA), initiates additional requirements and AoUs to cover failures | Requirements with safety attributes and independence information |
+| **Security Architect** | `rl__security_engineer` | Performs Trust Boundary Analysis, Defense in Depth Analysis, qualitative security analysis (TARA) | Requirements with security attributes |
+| **Module/Tooling SW Developer** | `rl__delivery_team` | Implements SW according to specification, creates traceability by linking specification to code, considers AoUs of other components, creates AoUs for the component under development | Component requirements with clear acceptance criteria |
+| **Feature User** | *(no formal role ID)* | Gets detailed information on the specification of a feature, is informed about boundary conditions (AoUs) | AoUs — boundary conditions they must fulfil when using the SW |
+| **Platform SW Developer of the Reference Integration** | `rl__platform_team` | Implements requirements for reference integration | Component and feature requirements |
 
 :::tip Open Source Working Mode
 In S-CORE **any Contributor may write a requirement**, but every requirement must be
@@ -96,7 +96,7 @@ simultaneously. Understanding these connections helps prioritise engineering eff
 | **ISO 26262** | Part 8, SWE.1 | SW requirements specification with safety classification, traceability, and review |
 | **ASPICE PAM 4.0** | SWE.1 | Elicitation, documentation, agreement, and traceability of SW requirements |
 | **ISO/SAE 21434** | §10.5.1 | Cybersecurity requirements derived from TARA, traceable through development |
-| **ISO PAS 8926** | §4.5.2.1 | Safety and cybersecurity requirements for automated driving |
+| **ISO PAS 8926** | §4.5.2.1 | To Be Defined |
 
 :::definition Assumptions of Use (AoU)
 A special requirement type that defines the **boundary conditions the user of a
@@ -109,10 +109,10 @@ management systems.
 
 The S-CORE process defines clear responsibility for each level of the hierarchy:
 
-- **Stakeholder requirements and SW-Platform AoU:** Written by Contributor, approved by Project Lead, supported by Safety Manager.
-- **Feature requirements and Feature AoU:** Written by Contributor, approved by Project Lead, supported by Safety Manager and Security Manager.
-- **Component requirements and Component AoU:** Written by Contributor, approved by Committer, supported by Safety Manager and Security Manager.
-- **Tool/Process requirements:** Written by Contributor, approved by Committer.
+- **Stakeholder requirements and SW-Platform AoU:** Written by Contributor (`rl__contributor`), approved by Project Lead (`rl__project_lead`), supported by Safety Manager (`rl__safety_manager`).
+- **Feature requirements and Feature AoU:** Written by Contributor (`rl__contributor`), approved by Project Lead (`rl__project_lead`), supported by Safety Manager (`rl__safety_manager`) and Security Manager (`rl__security_manager`).
+- **Component requirements and Component AoU:** Written by Contributor (`rl__contributor`), approved by Committer (`rl__committer`), supported by Safety Manager (`rl__safety_manager`) and Security Manager (`rl__security_manager`).
+- **Tool/Process requirements:** Written by Contributor (`rl__contributor`), approved by Committer (`rl__committer`).
 
 This separation ensures that the level of scrutiny matches the safety and security
 implications of the requirement.

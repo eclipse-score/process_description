@@ -70,7 +70,7 @@ process two problems become inevitable:</p>
 <div class="callout important">
 <div class="callout-label">Why RE is Mandated by Standards</div>
 <p>ISO 26262 (Part 8, SWE.1), ASPICE PAM 4.0, ISO/SAE 21434, and ISO PAS 8926 all
-explicitly require a documented, traceable requirements hierarchy as a precondition
+iltiyexplicitly require a documented, traceable requirements hierarchy as a precondition
 for safety and security releases. Without it, certification is impossible.</p>
 </div>
 
@@ -85,6 +85,7 @@ identifies the following key stakeholders:</p>
 <thead>
 <tr>
 <th>Stakeholder</th>
+<th>Source ID</th>
 <th>Role in S-CORE</th>
 <th>What they need from requirements</th>
 </tr>
@@ -92,42 +93,50 @@ identifies the following key stakeholders:</p>
 <tbody>
 <tr>
 <td><strong>Project Lead</strong></td>
-<td>Defines platform specification and timeline, tracks progress</td>
+<td><code>rl__project_lead</code></td>
+<td>Defines platform specification and content, creates project timeline, tracks project progress</td>
 <td>Clear stakeholder requirements as a project description</td>
 </tr>
 <tr>
 <td><strong>SW Architect</strong></td>
-<td>Derives features from stakeholder reqs, allocates to architecture</td>
+<td><code>rl__committer</code></td>
+<td>Breaks down platform specification into features, derives feature/component architecture, allocates requirements to architecture elements, defines AoUs from architecture</td>
 <td>Feature requirements and AoUs to drive architecture decisions</td>
 </tr>
 <tr>
 <td><strong>Tester</strong></td>
-<td>Verifies specification is satisfied</td>
+<td><code>rl__committer</code></td>
+<td>Verifies that the specification is satisfied by the elements under test, considers AoUs for test case specification</td>
 <td>Verifiable, testable requirements with traceability to test cases</td>
 </tr>
 <tr>
-<td><strong>Safety Manager</strong></td>
-<td>Initiates safety requirements, performs DFA and FMEA support</td>
+<td><strong>Safety Architect</strong></td>
+<td><code>rl__safety_engineer</code></td>
+<td>Performs Dependent Failure Analysis, qualitative safety analysis (e.g. FMEA), initiates additional requirements and AoUs to cover failures</td>
 <td>Requirements with safety attributes and independence information</td>
 </tr>
 <tr>
-<td><strong>Security Manager</strong></td>
-<td>Initiates security requirements, performs TARA support</td>
+<td><strong>Security Architect</strong></td>
+<td><code>rl__security_engineer</code></td>
+<td>Performs Trust Boundary Analysis, Defense in Depth Analysis, qualitative security analysis (TARA)</td>
 <td>Requirements with security attributes</td>
 </tr>
 <tr>
-<td><strong>SW Developer</strong></td>
-<td>Implements requirements, creates traceability to code</td>
+<td><strong>Module/Tooling SW Developer</strong></td>
+<td><code>rl__delivery_team</code></td>
+<td>Implements SW according to specification, creates traceability by linking specification to code, considers AoUs of other components, creates AoUs for the component under development</td>
 <td>Component requirements with clear acceptance criteria</td>
 </tr>
 <tr>
 <td><strong>Feature User</strong></td>
-<td>Integrates platform components into their vehicle project</td>
+<td><em>(no formal role ID)</em></td>
+<td>Gets detailed information on the specification of a feature, is informed about boundary conditions (AoUs)</td>
 <td>AoUs — boundary conditions they must fulfil when using the SW</td>
 </tr>
 <tr>
-<td><strong>Platform Integration Developer</strong></td>
-<td>Implements requirements for integration</td>
+<td><strong>Platform SW Developer of the Reference Integration</strong></td>
+<td><code>rl__platform_team</code></td>
+<td>Implements requirements for reference integration</td>
 <td>Component and feature requirements</td>
 </tr>
 </tbody>
@@ -169,7 +178,7 @@ simultaneously. Understanding these connections helps prioritise engineering eff
 <tr>
 <td><strong>ISO PAS 8926</strong></td>
 <td>§4.5.2.1</td>
-<td>Safety and cybersecurity requirements for automated driving</td>
+<td>To Be Defined</td>
 </tr>
 </tbody>
 </table>
@@ -184,10 +193,10 @@ management systems.</p>
 <h2>1.4 Roles and Approval Chains</h2>
 <p>The S-CORE process defines clear responsibility for each level of the hierarchy:</p>
 <ul>
-<li><strong>Stakeholder requirements and SW-Platform AoU:</strong> Written by Contributor, approved by Project Lead, supported by Safety Manager.</li>
-<li><strong>Feature requirements and Feature AoU:</strong> Written by Contributor, approved by Project Lead, supported by Safety Manager and Security Manager.</li>
-<li><strong>Component requirements and Component AoU:</strong> Written by Contributor, approved by Committer, supported by Safety Manager and Security Manager.</li>
-<li><strong>Tool/Process requirements:</strong> Written by Contributor, approved by Committer.</li>
+<li><strong>Stakeholder requirements and SW-Platform AoU:</strong> Written by Contributor (<code>rl__contributor</code>), approved by Project Lead (<code>rl__project_lead</code>), supported by Safety Manager (<code>rl__safety_manager</code>).</li>
+<li><strong>Feature requirements and Feature AoU:</strong> Written by Contributor (<code>rl__contributor</code>), approved by Project Lead (<code>rl__project_lead</code>), supported by Safety Manager (<code>rl__safety_manager</code>) and Security Manager (<code>rl__security_manager</code>).</li>
+<li><strong>Component requirements and Component AoU:</strong> Written by Contributor (<code>rl__contributor</code>), approved by Committer (<code>rl__committer</code>), supported by Safety Manager (<code>rl__safety_manager</code>) and Security Manager (<code>rl__security_manager</code>).</li>
+<li><strong>Tool/Process requirements:</strong> Written by Contributor (<code>rl__contributor</code>), approved by Committer (<code>rl__committer</code>).</li>
 </ul>
 <p>This separation ensures that the level of scrutiny matches the safety and security
 implications of the requirement.</p>

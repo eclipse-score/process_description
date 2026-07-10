@@ -65,7 +65,7 @@ A child requirement is always *derived from* its parent. The derivation link
 includes the parent's version number so that stale links are automatically
 detected during the docs build.
 
-## 2.2 Stakeholder Requirements
+## 2.2 Stakeholder Requirements (`wp__requirements_stkh`)
 
 **Stakeholder Requirements** are defined at the SW-Platform level. They describe
 **what the platform needs to contain** from the perspective of the customer
@@ -90,7 +90,7 @@ implemented or which component provides it.
 
 **Compliance obligations:** ISO 26262 §8 / SWE.1, ISO/SAE 21434 §10.5.1
 
-## 2.3 Feature Requirements
+## 2.3 Feature Requirements (`wp__requirements_feat`)
 
 **Feature Requirements** are derived from Stakeholder Requirements and describe
 the behaviour of a feature **at platform integration level**, independent of
@@ -113,7 +113,7 @@ platform level.
 
 **Compliance obligations:** ISO 26262 §8 / SWE.1, ISO/SAE 21434 §10.5.1
 
-## 2.4 Component Requirements
+## 2.4 Component Requirements (`wp__requirements_comp`)
 
 **Component Requirements** are derived from Feature Requirements and describe
 component-specific behaviour. They are implementation-facing: they tell a
@@ -141,11 +141,11 @@ AoUs can exist at **every level** — SW-Platform, Feature, and Component. They
 define the boundary conditions that the *user* of the software element must
 fulfil to ensure correct, safe, and secure operation.
 
-| AoU Level | Audience | Compliance |
-|-----------|----------|------------|
-| SW-Platform AoU | Vehicle integrators using the platform | ISO 26262, ISO/SAE 21434 §10.5.1–2 |
-| Feature AoU | Teams integrating the feature into a product | ISO 26262, ISO/SAE 21434 §10.5.1–2 |
-| Component AoU | Developers using the component API | ISO 26262, ISO PAS 8926, ISO/SAE 21434 §10.5.1–2 |
+| AoU Level | Work Product ID | Audience | Compliance |
+|-----------|----------------|----------|------------|
+| SW-Platform AoU | `wp__requirements_sw_platform_aou` | Vehicle integrators using the platform | ISO 26262, ISO/SAE 21434 §10.5.1–2 |
+| Feature AoU | `wp__requirements_feat_aou` | Teams integrating the feature into a product | ISO 26262, ISO/SAE 21434 §10.5.1–2 |
+| Component AoU | `wp__requirements_comp_aou` | Developers using the component API | ISO 26262, ISO PAS 8926, ISO/SAE 21434 §10.5.1–2 |
 
 :::example AoU Example
 ```
@@ -163,7 +163,7 @@ that document all conditions an integrator must satisfy when deploying S-CORE
 components in a safety-relevant context.
 :::
 
-## 2.6 Process and Tool Requirements
+## 2.6 Process and Tool Requirements (`wp__requirements_proc_tool`)
 
 **Process/Tool Requirements** describe the activities and tooling constraints
 that support the development process. They are derived from the process

@@ -167,10 +167,10 @@ Requirements that cannot be checked automatically require a manual inspection.
 The S-CORE process supports two kinds of review:
 
 1. **Peer review (PR review)** — every requirement passes through a pull request
-   where Committers and Project Leads review it before it is merged to `main`.
+   where Committers (`rl__committer`) and Project Leads (`rl__project_lead`) review it before it is merged to `main`.
 2. **Formal inspection** — triggered explicitly when a contributor wants a
    thorough review of a set of requirements. Uses a structured inspection
-   checklist that may be integrated into the requirements management tooling.
+   checklist (`gd_chklst__req_inspection`) that may be integrated into requirements/version management tooling.
 
 :::collapsible What does the inspection checklist cover?
 The inspection checklist verifies:

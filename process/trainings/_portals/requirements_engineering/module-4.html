@@ -71,46 +71,58 @@ picture.</p>
 <tr>
 <td><code>wf__req_stkh_req</code></td>
 <td>Create/Maintain Stakeholder Requirements and SW-Platform AoU</td>
-<td>Contributor</td>
-<td>Project Lead</td>
+<td>Contributor <code>rl__contributor</code></td>
+<td>Project Lead <code>rl__project_lead</code></td>
 </tr>
 <tr>
 <td><code>wf__req_feat_req</code></td>
 <td>Create/Maintain Feature Requirements</td>
-<td>Contributor</td>
-<td>Project Lead</td>
+<td>Contributor <code>rl__contributor</code></td>
+<td>Project Lead <code>rl__project_lead</code></td>
 </tr>
 <tr>
 <td><code>wf__req_feat_aou</code></td>
 <td>Create/Maintain Feature AoUs</td>
-<td>Contributor</td>
-<td>Project Lead</td>
+<td>Contributor <code>rl__contributor</code></td>
+<td>Project Lead <code>rl__project_lead</code></td>
 </tr>
 <tr>
 <td><code>wf__req_comp_req</code></td>
 <td>Create/Maintain Component Requirements</td>
-<td>Contributor</td>
-<td>Committer</td>
+<td>Contributor <code>rl__contributor</code></td>
+<td>Committer <code>rl__committer</code></td>
 </tr>
 <tr>
 <td><code>wf__req_comp_aou</code></td>
 <td>Create/Maintain Component AoUs</td>
-<td>Contributor</td>
-<td>Committer</td>
+<td>Contributor <code>rl__contributor</code></td>
+<td>Committer <code>rl__committer</code></td>
 </tr>
 <tr>
 <td><code>wf__req_tool</code></td>
 <td>Create/Maintain Tool/Process Requirements</td>
-<td>Contributor</td>
-<td>Committer</td>
+<td>Contributor <code>rl__contributor</code></td>
+<td>Committer <code>rl__committer</code></td>
+</tr>
+<tr>
+<td><code>wf__monitor_verify_requirements</code></td>
+<td>Monitor/Verify Requirements</td>
+<td>Committer <code>rl__committer</code></td>
+<td>Committer <code>rl__committer</code></td>
 </tr>
 </tbody>
 </table>
-<p>All six workflows can be initiated as part of a <strong>Change Request</strong> — the
-Change Management process is the single entry point for all content changes
+<p>All six creation workflows can be initiated as part of a <strong>Change Request</strong> —
+the Change Management process is the single entry point for all content changes
 in S-CORE.</p>
-<p>Safety Managers are <em>supported_by</em> in the three stakeholder/feature workflows;
-both Safety and Security Managers are <em>supported_by</em> in the two AoU workflows
+<p>The <strong>Monitor/Verify Requirements</strong> workflow (<code>wf__monitor_verify_requirements</code>)
+is responsible for inspecting the full requirements set. Unlike the creation
+workflows it is owned by the Committer, who checks all requirement levels and
+safety manuals against the inspection checklist (<code>gd_chklst__req_inspection</code>).
+Its output is either an updated issue tracker entry or a completed Requirements
+Inspection work product.</p>
+<p>Safety Managers (<code>rl__safety_manager</code>) are <em>supported_by</em> in the three stakeholder/feature workflows;
+both Safety and Security Managers (<code>rl__security_manager</code>) are <em>supported_by</em> in the two AoU workflows
 at feature and component level.</p>
 <h2>4.2 Workflow: Stakeholder Requirements and SW-Platform AoU</h2>
 <p><strong>Purpose:</strong> Establish the top-level specification of what the platform must
@@ -252,10 +264,11 @@ that references that requirement ID.</p>
 </ol>
 <div class="callout tip">
 <div class="callout-label">Getting Started</div>
-<p>The Requirements Engineering "Getting Started" guide (<code>doc_getstrt__req_process</code>)
-describes the exact steps for creating a new requirement, deriving child
-requirements, and triggering a formal inspection. The workflow diagram in that
-guide maps every step to the corresponding workflow ID listed in Section 4.1.</p>
+<p>The Requirements Engineering concept (<code>doc_concept__req_process</code>) and Getting
+Started guide (<code>doc_getstrt__req_process</code>) describe the exact steps for creating
+a new requirement, deriving child requirements, and triggering a formal inspection.
+The workflow diagram in the getting started guide maps every step to the
+corresponding workflow ID listed in Section 4.1.</p>
 </div>
 
 <div class="collapsible">

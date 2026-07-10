@@ -74,7 +74,7 @@ describe the tooling and process activities that support it.</p>
 <p>A child requirement is always <em>derived from</em> its parent. The derivation link
 includes the parent's version number so that stale links are automatically
 detected during the docs build.</p>
-<h2>2.2 Stakeholder Requirements</h2>
+<h2>2.2 Stakeholder Requirements (<code>wp__requirements_stkh</code>)</h2>
 <p><strong>Stakeholder Requirements</strong> are defined at the SW-Platform level. They describe
 <strong>what the platform needs to contain</strong> from the perspective of the customer
 (stakeholder), expressed as technical requirements at the highest level of
@@ -97,7 +97,7 @@ implemented or which component provides it.</p>
 </div>
 
 <p><strong>Compliance obligations:</strong> ISO 26262 §8 / SWE.1, ISO/SAE 21434 §10.5.1</p>
-<h2>2.3 Feature Requirements</h2>
+<h2>2.3 Feature Requirements (<code>wp__requirements_feat</code>)</h2>
 <p><strong>Feature Requirements</strong> are derived from Stakeholder Requirements and describe
 the behaviour of a feature <strong>at platform integration level</strong>, independent of
 which components implement it.</p>
@@ -115,7 +115,7 @@ configuration.
 <p>Feature requirements also serve as the basis for integration testing on
 platform level.</p>
 <p><strong>Compliance obligations:</strong> ISO 26262 §8 / SWE.1, ISO/SAE 21434 §10.5.1</p>
-<h2>2.4 Component Requirements</h2>
+<h2>2.4 Component Requirements (<code>wp__requirements_comp</code>)</h2>
 <p><strong>Component Requirements</strong> are derived from Feature Requirements and describe
 component-specific behaviour. They are implementation-facing: they tell a
 developer exactly what a component must do within the context of its feature.</p>
@@ -141,6 +141,7 @@ fulfil to ensure correct, safe, and secure operation.</p>
 <thead>
 <tr>
 <th>AoU Level</th>
+<th>Work Product ID</th>
 <th>Audience</th>
 <th>Compliance</th>
 </tr>
@@ -148,16 +149,19 @@ fulfil to ensure correct, safe, and secure operation.</p>
 <tbody>
 <tr>
 <td>SW-Platform AoU</td>
+<td><code>wp__requirements_sw_platform_aou</code></td>
 <td>Vehicle integrators using the platform</td>
 <td>ISO 26262, ISO/SAE 21434 §10.5.1–2</td>
 </tr>
 <tr>
 <td>Feature AoU</td>
+<td><code>wp__requirements_feat_aou</code></td>
 <td>Teams integrating the feature into a product</td>
 <td>ISO 26262, ISO/SAE 21434 §10.5.1–2</td>
 </tr>
 <tr>
 <td>Component AoU</td>
+<td><code>wp__requirements_comp_aou</code></td>
 <td>Developers using the component API</td>
 <td>ISO 26262, ISO PAS 8926, ISO/SAE 21434 §10.5.1–2</td>
 </tr>
@@ -180,7 +184,7 @@ that document all conditions an integrator must satisfy when deploying S-CORE
 components in a safety-relevant context.</p>
 </div>
 
-<h2>2.6 Process and Tool Requirements</h2>
+<h2>2.6 Process and Tool Requirements (<code>wp__requirements_proc_tool</code>)</h2>
 <p><strong>Process/Tool Requirements</strong> describe the activities and tooling constraints
 that support the development process. They are derived from the process
 description and specify what must be done manually versus what must be
