@@ -23,6 +23,11 @@
 Trainings
 =========
 
+.. note::
+   ATTENTION: THE CONTENT IS CREATED BY AI AND MAY CONTAIN ERRORS. PLEASE VERIFY THE INFORMATION BEFORE USE.
+
+   Human verification has NOT YET been performed to ensure the accuracy of the content.
+
 Self-paced interactive training portals for the Eclipse S-CORE process areas.
 Each portal is built from editable Markdown source files and rendered as a
 standalone HTML site with progress tracking and embedded quizzes.
