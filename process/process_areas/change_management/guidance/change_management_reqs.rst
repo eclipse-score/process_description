@@ -160,6 +160,23 @@ Change Request Attributes
       This Change Request describes a scope modification of an existing component (requirement or work
       product). The Change Request modifies the already existing Component Request template: :ref:`chm_component_templates`.
 
+.. gd_req:: Change Request attribute: Tracking
+   :id: gd_req__change_attr_tracking_wp
+   :status: valid
+   :version: 1
+   :tags: attribute, mandatory
+   :satisfies: wf__change_create_cr[version==1],
+               wf__change_analyze_cr[version==1],
+               wf__change_implement_monitor_cr[version==1],
+               wf__change_close_cr[version==1]
+   :complies: std_req__aspice_40__SUP-10-BP4[version==1],
+              std_req__iso26262__support_8412[version==1],
+              std_req__iso26262__support_8422[version==1],
+              std_req__iso26262__support_8452[version==1],
+              std_req__iso26262__support_8453[version==1]
+
+   Links to the issues implementing Change Request
+
 .. gd_req:: Change Request attribute: Affected Work Products
    :id: gd_req__change_attr_affected_wp
    :status: valid

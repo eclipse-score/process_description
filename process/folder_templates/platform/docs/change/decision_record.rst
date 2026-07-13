@@ -29,8 +29,9 @@ In each DR file, include the following sections:
 .. code-block:: rst
 
    .. dec_rec:: <Title>
-      :id: dec_rec__<Platform|Feature|Component>__<Title>
+      :id: dec_rec__<Platform|Feature|Component>__<Title>, dec_rec__<arch|proc|strat|infra|int>__<slug>
       :status: <proposed|accepted|deprecated|rejected|superseded>
+      :tracking: <link to GitHub issue URL, required once a DR is confirmed>
       :version: 1
       :affects: <link>
 
@@ -82,6 +83,8 @@ In each DR file, include the following sections:
     - Modify ``dec_rec`` to provide a descriptive and concise title. Summarizing the decision. (mandatory)
     - Modify ``id`` to contain the Platform/Feature/Component name the DR belongs to and the title, in upper snake case preceded by ``dec_rec__`` (mandatory)
     - Adjust ``status`` according to your needs (mandatory)
+    - Modify ``tracking`` to point to the implementation issue, required once a DR is confirmed for implementation (recommended)
+    - Modify ``version`` if original scope is changed (mandatory)
     - Modify ``affects`` to point to the work product it affects, mostly this will be requirements, architecture or design (recommended)
     - Provide ``Description`` (mandatory)
     - Add ``Context`` to describe the issue or motivation behind this decision or change (mandatory)
