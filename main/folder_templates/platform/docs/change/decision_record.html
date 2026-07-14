@@ -584,8 +584,9 @@ The content of the DR is the same, only the syntax differs.</p>
 platform wide decisions store close to the platform’s stakeholder requirements.</p>
 <p>In each DR file, include the following sections:</p>
 <div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">dec_rec</span><span class="p">::</span> <span class="nt">&lt;Title&gt;</span>
-   <span class="nc">:id:</span> dec_rec__&lt;Platform|Feature|Component&gt;__&lt;Title&gt;
+   <span class="nc">:id:</span> dec_rec__&lt;Platform|Feature|Component&gt;__&lt;Title&gt;, dec_rec__&lt;arch|proc|strat|infra|int&gt;__&lt;slug&gt;
    <span class="nc">:status:</span> <span class="nt">&lt;proposed|accepted|deprecated|rejected|superseded&gt;</span>
+   <span class="nc">:tracking:</span> <span class="nt">&lt;link to GitHub issue URL, required once a DR is confirmed&gt;</span>
    <span class="nc">:version:</span> 1
    <span class="nc">:affects:</span> <span class="nt">&lt;link&gt;</span>
 
@@ -639,6 +640,8 @@ platform wide decisions store close to the platform’s stakeholder requirements
 <li><p>Modify <code class="docutils literal notranslate"><span class="pre">dec_rec</span></code> to provide a descriptive and concise title. Summarizing the decision. (mandatory)</p></li>
 <li><p>Modify <code class="docutils literal notranslate"><span class="pre">id</span></code> to contain the Platform/Feature/Component name the DR belongs to and the title, in upper snake case preceded by <code class="docutils literal notranslate"><span class="pre">dec_rec__</span></code> (mandatory)</p></li>
 <li><p>Adjust <code class="docutils literal notranslate"><span class="pre">status</span></code> according to your needs (mandatory)</p></li>
+<li><p>Modify <code class="docutils literal notranslate"><span class="pre">tracking</span></code> to point to the implementation issue, required once a DR is confirmed for implementation (recommended)</p></li>
+<li><p>Modify <code class="docutils literal notranslate"><span class="pre">version</span></code> if original scope is changed (mandatory)</p></li>
 <li><p>Modify <code class="docutils literal notranslate"><span class="pre">affects</span></code> to point to the work product it affects, mostly this will be requirements, architecture or design (recommended)</p></li>
 <li><p>Provide <code class="docutils literal notranslate"><span class="pre">Description</span></code> (mandatory)</p></li>
 <li><p>Add <code class="docutils literal notranslate"><span class="pre">Context</span></code> to describe the issue or motivation behind this decision or change (mandatory)</p></li>
