@@ -80,7 +80,8 @@ In each DR file, include the following sections:
 
       Impact Analysis (Optional)
       --------------------------
-      The impact analysis template can be used to detail out the impact on safety/security.
+      The impact analysis template can be used to detail out the impact on the platform
+      and if applicable, especially for safety/security.
       Copy the relevant parts from the impact analysis template and fill it out.
       The impact analysis template is available in [1].
 

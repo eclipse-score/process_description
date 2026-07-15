@@ -33,9 +33,9 @@ For a detailed explanation of workflows and their role within the process model,
            wp__cmpt_request[version==1]
    :output: wp__issue_track_system[version==1], wp__feat_request[version==1], wp__cmpt_request[version==1]
    :contains: gd_guidl__change_change_request[version==1],
-              gd_temp__change_feature_request[version==1],
+              gd_temp__change_feature_request[version==2],
               gd_temp__change_component_request[version==1],
-              gd_temp__change_impact_analysis[version==1],
+              gd_temp__change_impact_analysis[version==2],
               gd_temp__component_classification[version==1],
               gd_temp__change_decision_record[version==2]
    :has: doc_concept__change_process[version==2], doc_getstrt__change_process[version==2]
@@ -61,9 +61,9 @@ For a detailed explanation of workflows and their role within the process model,
            wp__cmpt_request[version==1]
    :output: wp__issue_track_system[version==1], wp__feat_request[version==1], wp__cmpt_request[version==1]
    :contains: gd_guidl__change_change_request[version==1],
-              gd_temp__change_feature_request[version==1],
+              gd_temp__change_feature_request[version==2],
               gd_temp__change_component_request[version==1],
-              gd_temp__change_impact_analysis[version==1],
+              gd_temp__change_impact_analysis[version==2],
               gd_temp__component_classification[version==1],
               gd_temp__change_decision_record[version==2]
    :has: doc_concept__change_process[version==2], doc_getstrt__change_process[version==2]
@@ -90,9 +90,9 @@ For a detailed explanation of workflows and their role within the process model,
    :input: wp__issue_track_system[version==1], wp__feat_request[version==1], wp__cmpt_request[version==1]
    :output: wp__issue_track_system[version==1], wp__feat_request[version==1], wp__cmpt_request[version==1]
    :contains: gd_guidl__change_change_request[version==1],
-              gd_temp__change_feature_request[version==1],
+              gd_temp__change_feature_request[version==2],
               gd_temp__change_component_request[version==1],
-              gd_temp__change_impact_analysis[version==1],
+              gd_temp__change_impact_analysis[version==2],
               gd_temp__component_classification[version==1],
               gd_temp__change_decision_record[version==2]
    :has: doc_concept__change_process[version==2], doc_getstrt__change_process[version==2]
@@ -129,9 +129,9 @@ For a detailed explanation of workflows and their role within the process model,
    :input: wp__issue_track_system[version==1], wp__feat_request[version==1], wp__cmpt_request[version==1]
    :output: wp__issue_track_system[version==1], wp__feat_request[version==1], wp__cmpt_request[version==1]
    :contains: gd_guidl__change_change_request[version==1],
-              gd_temp__change_feature_request[version==1],
+              gd_temp__change_feature_request[version==2],
               gd_temp__change_component_request[version==1],
-              gd_temp__change_impact_analysis[version==1],
+              gd_temp__change_impact_analysis[version==2],
               gd_temp__component_classification[version==1],
               gd_temp__change_decision_record[version==2]
    :has: doc_concept__change_process[version==2], doc_getstrt__change_process[version==2]

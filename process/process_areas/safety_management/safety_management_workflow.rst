@@ -161,7 +161,7 @@ Safety Management Workflows
            wp__sw_component_class[version==1],
            wp__safety_tailoring[version==1]
    :output: wp__issue_track_system[version==1]
-   :contains: gd_temp__change_component_request[version==1], gd_temp__change_decision_record[version==2], gd_temp__change_impact_analysis[version==1]
+   :contains: gd_temp__change_component_request[version==1], gd_temp__change_decision_record[version==2], gd_temp__change_impact_analysis[version==2]
    :has: doc_concept__safety_management_process[version==1], doc_getstrt__safety_management_process[version==1]
 
    | In accordance with ISO 26262-2:2018 section 5.2.2.3 d/e (Impact Analysis), the project implements a dedicated workflow for analyzing change requests.

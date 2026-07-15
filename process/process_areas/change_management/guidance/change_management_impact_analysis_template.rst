@@ -20,7 +20,7 @@ Impact Analysis Template
 .. gd_temp:: Impact Analysis Template
    :id: gd_temp__change_impact_analysis
    :status: valid
-   :version: 1
+   :version: 2
    :complies: std_req__aspice_40__SUP-10-BP2[version==1],
               std_req__aspice_40__iic-18-57[version==1],
               std_req__iso26262__support_8431[version==1],
@@ -72,16 +72,14 @@ Estimates for Realization
      A draft realization plan may support the realization proposal.
 
 
+Potential Impact on the platform
+--------------------------------
+
+
 Potential Impact on Security
 -----------------------------
 
-Add the potential impact in the chapter Security Impact of the concerned Feature Request
-(compare :need:`Feature Request Template <gd_temp__change_feature_request>`) or Component Request
-(compare :need:`Component Request Template <gd_temp__change_component_request>`).
+
 
 Potential Impact on Safety
 --------------------------
-
-Add the potential impact in the chapter Safety Impact of the concerned Feature Request
-(compare :need:`Feature Request Template <gd_temp__change_feature_request>`) or Component Request
-(compare :need:`Component Request Template <gd_temp__change_component_request>`).
