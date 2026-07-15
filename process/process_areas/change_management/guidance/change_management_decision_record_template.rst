@@ -20,7 +20,7 @@ Decision Record Template
 .. gd_temp:: Decision Record Template
    :id: gd_temp__change_decision_record
    :status: valid
-   :version: 1
+   :version: 2
    :complies: std_req__aspice_40__SWE-2-BP3[version==1], std_req__aspice_40__iic-17-00[version==1]
 
    For the content see here: :ref:`decision_record_template`.
