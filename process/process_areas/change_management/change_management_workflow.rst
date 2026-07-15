@@ -37,8 +37,8 @@ For a detailed explanation of workflows and their role within the process model,
               gd_temp__change_component_request[version==1],
               gd_temp__change_impact_analysis[version==1],
               gd_temp__component_classification[version==1],
-              gd_temp__change_decision_record[version==1]
-   :has: doc_concept__change_process[version==1], doc_getstrt__change_process[version==1]
+              gd_temp__change_decision_record[version==2]
+   :has: doc_concept__change_process[version==2], doc_getstrt__change_process[version==2]
 
    The Change Request is created.
 
@@ -65,8 +65,8 @@ For a detailed explanation of workflows and their role within the process model,
               gd_temp__change_component_request[version==1],
               gd_temp__change_impact_analysis[version==1],
               gd_temp__component_classification[version==1],
-              gd_temp__change_decision_record[version==1]
-   :has: doc_concept__change_process[version==1], doc_getstrt__change_process[version==1]
+              gd_temp__change_decision_record[version==2]
+   :has: doc_concept__change_process[version==2], doc_getstrt__change_process[version==2]
 
    The Change Request is analyzed.
 
@@ -94,8 +94,8 @@ For a detailed explanation of workflows and their role within the process model,
               gd_temp__change_component_request[version==1],
               gd_temp__change_impact_analysis[version==1],
               gd_temp__component_classification[version==1],
-              gd_temp__change_decision_record[version==1]
-   :has: doc_concept__change_process[version==1], doc_getstrt__change_process[version==1]
+              gd_temp__change_decision_record[version==2]
+   :has: doc_concept__change_process[version==2], doc_getstrt__change_process[version==2]
 
    The Change Request is implemented and monitored.
 
@@ -133,8 +133,8 @@ For a detailed explanation of workflows and their role within the process model,
               gd_temp__change_component_request[version==1],
               gd_temp__change_impact_analysis[version==1],
               gd_temp__component_classification[version==1],
-              gd_temp__change_decision_record[version==1]
-   :has: doc_concept__change_process[version==1], doc_getstrt__change_process[version==1]
+              gd_temp__change_decision_record[version==2]
+   :has: doc_concept__change_process[version==2], doc_getstrt__change_process[version==2]
 
    The Change Request is closed.
 

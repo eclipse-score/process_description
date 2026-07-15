@@ -18,7 +18,7 @@ Getting Started
 .. doc_getstrt:: Getting Started on Change Management
    :id: doc_getstrt__change_process
    :status: valid
-   :version: 1
+   :version: 2
    :tags: change_management
 
 This document describes the steps to create a change request, and further to analyze,
@@ -32,9 +32,11 @@ Examples for change requests:
 * New component for parsing a protocol introduced (component request).
 * API change for an existing component (component modification).
 
-Therefore guidelines :need:`gd_temp__change_feature_request` and
+
+Therefore guideline :need:`gd_temp__change_decision_record` is available. This guideline
+is complemented by the :need:`gd_temp__change_feature_request`,
 :need:`gd_temp__change_component_request`, :need:`gd_guidl__change_change_request` and
-a :need:`doc_concept__change_process` are available.
+:need:`doc_concept__change_process`.
 
 General Workflow
 ****************

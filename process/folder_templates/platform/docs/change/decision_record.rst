@@ -32,7 +32,7 @@ In each DR file, include the following sections:
       :id: dec_rec__<Platform|Feature|Component>__<Title>, dec_rec__<arch|proc|strat|infra|int>__<slug>
       :status: <proposed|accepted|deprecated|rejected|superseded>
       :tracking: <link to GitHub issue URL, required once a DR is confirmed>
-      :version: 1
+      :version: 2
       :affects: <link>
 
       <Description>
@@ -77,6 +77,14 @@ In each DR file, include the following sections:
       ------------------------------
       <your text>
 
+
+      Impact Analysis (Optional)
+      --------------------------
+      The impact analysis template can be used to detail out the impact on safety/security.
+      Copy the relevant parts from the impact analysis template and fill it out.
+      The impact analysis template is available here [1]_.
+
+
 .. attention::
     The above directive must be updated according to your decision record.
 
@@ -90,3 +98,5 @@ In each DR file, include the following sections:
     - Add ``Context`` to describe the issue or motivation behind this decision or change (mandatory)
     - Add ``decision`` to detail the proposed change or decision (mandatory)
     - Add ``consequences`` to explain the impact of this change, including what becomes easier or more difficult (recommended)
+
+.. [1] The impact analysis template is available here: :ref:`Impact Analysis Template <chm_impact_analysis_templates>`

@@ -18,7 +18,7 @@ Concept Description
 .. doc_concept:: Concept Description
    :id: doc_concept__change_process
    :status: valid
-   :version: 1
+   :version: 2
    :tags: change_management
 
 In this section a concept for the Change Management will be discussed. Inputs for this concepts
@@ -95,12 +95,14 @@ Activities for a Change Request
 
 Creation of the Change Request
 ==============================
-Use the content :ref:`Feature Request Template <chm_feature_templates>` or
-:ref:`Component Request Template <chm_component_templates>` to create a Change Request.
+
+Use the content :ref:`Decision Record Template <decision_record_template>` to create a
+Change Request.
 
 In case safety or security is affected, in addition the impact analysis template
 : :ref:`Impact Analysis Template <chm_impact_analysis_templates>` can be used to detail
-out the impact on safety/security.
+out the impact on safety/security. Copy the relevant parts from the impact analysis
+template into the decision record and fill it out.
 
 The impact analysis tool (:need:`gd_req__change_tool_impact_analysis`) can support to
 here to identify the affected work products.
@@ -130,6 +132,10 @@ If the Change Request is accepted, the implementation of the change must be init
 monitored.
 
 The Change Request implementation must be tracked until it is closed.
+
+Use the content :ref:`Feature Request Template <chm_feature_templates>` or
+:ref:`Component Request Template <chm_component_templates>` to document the implementation
+of a new feature or component or the modification of an existing feature or component.
 
 The status of the Change Request must be communicated by the
 :need:`Project Lead <rl__project_lead>` (for feature requests) and the lead of the
