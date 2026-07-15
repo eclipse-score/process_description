@@ -82,8 +82,9 @@ In each DR file, include the following sections:
       --------------------------
       The impact analysis template can be used to detail out the impact on safety/security.
       Copy the relevant parts from the impact analysis template and fill it out.
-      The impact analysis template is available here [1]_.
+      The impact analysis template is available in [1].
 
+The impact analysis template is available here [1]_.
 
 .. attention::
     The above directive must be updated according to your decision record.

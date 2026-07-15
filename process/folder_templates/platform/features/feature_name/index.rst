@@ -37,7 +37,7 @@
     - Adjust ``safety``, ``security`` and ``tags`` according to your needs
 
 Feature flag (KEEP this section)
-============
+================================
 
 To activate this feature, use the following feature flag:
 
@@ -48,7 +48,7 @@ To activate this feature, use the following feature flag:
    long as the feature is not yet stable.
 
 Abstract (KEEP this section)
-========
+============================
 
 [Provide the feature and a brief summary of the feature]
 
@@ -67,7 +67,7 @@ Abstract (KEEP this section)
 [A short (~200 word) description of the contribution being addressed.]
 
 Motivation (KEEP this section)
-==========
+==============================
 
 [Clearly explain why the existing platform/project solution is inadequate to address the topic that the CR solves.]
 
@@ -78,7 +78,7 @@ Motivation (KEEP this section)
    CRs submissions without sufficient motivation may be rejected.
 
 Rationale (KEEP this section)
-=========
+=============================
 
 [Describe why particular design decisions were made.]
 
@@ -88,7 +88,7 @@ Rationale (KEEP this section)
 
 
 Specification (KEEP this section)
-=============
+=================================
 
 [Describe the requirements, architecture of any new feature.] or
 [Describe the change to requirements, architecture, implementation, process, documentation, infrastructure of any change request.]
@@ -98,13 +98,13 @@ Specification (KEEP this section)
    Thereby the :need:`rl__project_lead` will approve these requirements as part of accepting the CR (e.g. merging the PR with the CR).
 
 Backwards Compatibility (Delete this section)
-=======================
+=============================================
 
 [Describe potential impact (especially including safety and security impacts) and severity on pre-existing platform/project elements.]
 
 
 Security Impact (Delete this section)
-===============
+=====================================
 
 [How could a malicious user take advantage of this new/modified feature?]
 
@@ -124,7 +124,7 @@ If applicable, which additional security measures must be implemented to mitigat
    These analyses may not be available at the time of creation of the feature (request) but content will be improved iteratively.
 
 Safety Impact (Delete this section)
-=============
+===================================
 
 [How could the safety be impacted by the new/modified feature?]
 
@@ -147,13 +147,13 @@ For new feature contributions:
 
 
 License Impact (Keep this section)
-==============
+==================================
 
 [How could the copyright impacted by the license of the new contribution?]
 
 
 How to Teach This (Keep this section)
-=================
+=====================================
 
 [How to teach users, new and experienced, how to apply the CR to their work.]
 
@@ -162,7 +162,7 @@ How to Teach This (Keep this section)
 
 
 Rejected Ideas (Keep this section)
-==============
+==================================
 
 [Why certain ideas that were brought while discussing this CR were not ultimately pursued.]
 
@@ -173,7 +173,7 @@ Rejected Ideas (Keep this section)
    In a way this section can be thought of as a breakout section of the Rationale section that is focused specifically on why certain ideas were not ultimately pursued.
 
 Open Issues (Keep this section)
-===========
+===============================
 
 [Any points that are still being decided/discussed.]
 
@@ -183,7 +183,7 @@ Open Issues (Keep this section)
    This helps make sure all issues required for the CR to be ready for consideration are complete and reduces people duplicating prior discussion.
 
 Footnotes (Keep this section)
-=========
+=============================
 
 [A collection of footnotes cited in the CR, and a place to list non-inline hyperlink targets.]
 
