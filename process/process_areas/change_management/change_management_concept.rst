@@ -33,6 +33,9 @@ As features are built-up by components a Change Request is also needed to add ne
 components or to modify the scope of existing components.
 All statements here for components are also valid for *SW Modules*.
 
+As a rule of thumb, a Change Request is needed, if feature or component requirements
+are changed.
+
 Inputs
 ******
 
