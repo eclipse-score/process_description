@@ -36,7 +36,7 @@
     - Adjust ``status`` to be ``valid``
     - Adjust ``safety``, ``security`` and ``tags`` according to your needs
 
-Feature flag
+Feature flag (KEEP this section)
 ============
 
 To activate this feature, use the following feature flag:
@@ -47,7 +47,7 @@ To activate this feature, use the following feature flag:
    The feature flag must reflect the feature name in snake_case. Further, it is prepended with ``experimental_``, as
    long as the feature is not yet stable.
 
-Abstract
+Abstract (KEEP this section)
 ========
 
 [Provide the feature and a brief summary of the feature]
@@ -66,7 +66,7 @@ Abstract
 
 [A short (~200 word) description of the contribution being addressed.]
 
-Motivation
+Motivation (KEEP this section)
 ==========
 
 [Clearly explain why the existing platform/project solution is inadequate to address the topic that the CR solves.]
@@ -77,7 +77,7 @@ Motivation
    Motivation may based on criteria as resource requirements, scheduling issues, risks, benefits, etc.
    CRs submissions without sufficient motivation may be rejected.
 
-Rationale
+Rationale (KEEP this section)
 =========
 
 [Describe why particular design decisions were made.]
@@ -87,7 +87,7 @@ Rationale
    For the documentation of the decision the :need:`gd_temp__change_decision_record` can be used.
 
 
-Specification
+Specification (KEEP this section)
 =============
 
 [Describe the requirements, architecture of any new feature.] or
@@ -97,13 +97,13 @@ Specification
    A CR shall specify the stakeholder requirements as part of our platform/project.
    Thereby the :need:`rl__project_lead` will approve these requirements as part of accepting the CR (e.g. merging the PR with the CR).
 
-Backwards Compatibility
+Backwards Compatibility (Delete this section)
 =======================
 
 [Describe potential impact (especially including safety and security impacts) and severity on pre-existing platform/project elements.]
 
 
-Security Impact
+Security Impact (Delete this section)
 ===============
 
 [How could a malicious user take advantage of this new/modified feature?]
@@ -123,7 +123,7 @@ If applicable, which additional security measures must be implemented to mitigat
    [Methods will be defined later in Process area Security Analysis]
    These analyses may not be available at the time of creation of the feature (request) but content will be improved iteratively.
 
-Safety Impact
+Safety Impact (Delete this section)
 =============
 
 [How could the safety be impacted by the new/modified feature?]
@@ -146,13 +146,13 @@ For new feature contributions:
 [What is the expected ASIL level?]
 
 
-License Impact
+License Impact (Keep this section)
 ==============
 
 [How could the copyright impacted by the license of the new contribution?]
 
 
-How to Teach This
+How to Teach This (Keep this section)
 =================
 
 [How to teach users, new and experienced, how to apply the CR to their work.]
@@ -161,7 +161,7 @@ How to Teach This
    For a CR that adds new functionality or changes behaviour, it is helpful to include a section on how to teach users, new and experienced, how to apply the CR to their work.
 
 
-Rejected Ideas
+Rejected Ideas (Keep this section)
 ==============
 
 [Why certain ideas that were brought while discussing this CR were not ultimately pursued.]
@@ -172,7 +172,7 @@ Rejected Ideas
    This both helps record the thought process behind the final version of the CR as well as preventing people from bringing up the same rejected idea again in subsequent discussions.
    In a way this section can be thought of as a breakout section of the Rationale section that is focused specifically on why certain ideas were not ultimately pursued.
 
-Open Issues
+Open Issues (Keep this section)
 ===========
 
 [Any points that are still being decided/discussed.]
@@ -182,7 +182,7 @@ Open Issues
    Those ideas should be recorded so people know that they are being thought about but do not have a concrete resolution.
    This helps make sure all issues required for the CR to be ready for consideration are complete and reduces people duplicating prior discussion.
 
-Footnotes
+Footnotes (Keep this section)
 =========
 
 [A collection of footnotes cited in the CR, and a place to list non-inline hyperlink targets.]
