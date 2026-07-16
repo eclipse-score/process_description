@@ -33,7 +33,7 @@ Examples for change requests:
 * API change for an existing component (component modification).
 
 
-Therefore guideline :need:`gd_temp__change_decision_record` is available. This guideline
+Therefore a template :need:`gd_temp__change_decision_record` is available. This template
 is complemented by the :need:`gd_temp__change_feature_request`,
 :need:`gd_temp__change_component_request`, :need:`gd_guidl__change_change_request` and
 :need:`doc_concept__change_process`.

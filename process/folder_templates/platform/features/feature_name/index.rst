@@ -95,17 +95,6 @@ How to Teach This
 .. note::
    For a CR that adds new functionality or changes behaviour, it is helpful to include a section on how to teach users, new and experienced, how to apply the CR to their work.
 
-Rejected Ideas
-==============
-
-[Why certain ideas that were brought while discussing this CR were not ultimately pursued.]
-
-.. note::
-   Throughout the discussion of a CR, various ideas will be proposed which are not accepted.
-   Those rejected ideas should be recorded along with the reasoning as to why they were rejected.
-   This both helps record the thought process behind the final version of the CR as well as preventing people from bringing up the same rejected idea again in subsequent discussions.
-   In a way this section can be thought of as a breakout section of the Rationale section that is focused specifically on why certain ideas were not ultimately pursued.
-
 Footnotes
 =========
 

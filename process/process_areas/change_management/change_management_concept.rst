@@ -34,7 +34,8 @@ components or to modify the scope of existing components.
 All statements here for components are also valid for *SW Modules*.
 
 As a rule of thumb, a Change Request is needed, if feature or component requirements
-are changed.
+are changed in a way that also will cause version update
+(compare :ref:`significant_requirement_changes`).
 
 Inputs
 ******
@@ -104,8 +105,9 @@ Change Request.
 
 In case safety or security is affected, in addition the impact analysis template
 : :ref:`Impact Analysis Template <chm_impact_analysis_templates>` can be used to detail
-out the impact on safety/security. Copy the relevant parts from the impact analysis
-template into the decision record and fill it out.
+out the impact on platform, or any other aspect including especially safety/security.
+The template can be referenced in the decision record or copied into the decision record
+and filled out there.
 
 The impact analysis tool (:need:`gd_req__change_tool_impact_analysis`) can support to
 here to identify the affected work products.
@@ -137,8 +139,10 @@ monitored.
 The Change Request implementation must be tracked until it is closed.
 
 Use the content :ref:`Feature Request Template <chm_feature_templates>` or
-:ref:`Component Request Template <chm_component_templates>` to document the implementation
-of a new feature or component or the modification of an existing feature or component.
+:ref:`Component Request Template <chm_component_templates>` to document the creation
+of a new feature or component. In case of modification of an existing feature or
+component,  the same templates (which should be already existing) can be used to
+document the modification.
 
 The status of the Change Request must be communicated by the
 :need:`Project Lead <rl__project_lead>` (for feature requests) and the lead of the
