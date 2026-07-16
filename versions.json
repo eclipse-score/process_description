@@ -12,11 +12,11 @@
     "url": "https://eclipse-score.github.io/process_description/pr-742/"
   },
   {
-    "version": "v2.0.1",
-    "url": "https://eclipse-score.github.io/process_description/v2.0.1/"
-  },
-  {
     "version": "pr-748",
     "url": "https://eclipse-score.github.io/process_description/pr-748/"
+  },
+  {
+    "version": "v2.0.1",
+    "url": "https://eclipse-score.github.io/process_description/v2.0.1/"
   }
 ]
