@@ -38,11 +38,11 @@
     <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-data-viewer/jsonview.bundle.css?v=f6ef2277" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/libs/html/datatables.min.css?v=4b4fd840" />
-    <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/common_css/needstable.css?v=5e1b6797" />
-    <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/common_css/need_links.css?v=2150a916" />
-    <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/common_css/need_style.css?v=92936fa5" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/common_css/need_core.css?v=f5b60a78" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/common_css/need_toggle.css?v=5c6620df" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/common_css/need_style.css?v=92936fa5" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/common_css/needstable.css?v=5e1b6797" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/common_css/need_links.css?v=2150a916" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/modern.css?v=803738c0" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/custom.css?v=c6286864" />
   
@@ -587,7 +587,7 @@ platform wide decisions store close to the platform’s stakeholder requirements
    <span class="nc">:id:</span> dec_rec__&lt;Platform|Feature|Component&gt;__&lt;Title&gt;, dec_rec__&lt;arch|proc|strat|infra|int&gt;__&lt;slug&gt;
    <span class="nc">:status:</span> <span class="nt">&lt;proposed|accepted|deprecated|rejected|superseded&gt;</span>
    <span class="nc">:tracking:</span> <span class="nt">&lt;link to GitHub issue URL, required once a DR is confirmed&gt;</span>
-   <span class="nc">:version:</span> 1
+   <span class="nc">:version:</span> 2
    <span class="nc">:affects:</span> <span class="nt">&lt;link&gt;</span>
 
    &lt;Description&gt;
@@ -628,11 +628,27 @@ platform wide decisions store close to the platform’s stakeholder requirements
    <span class="m">*</span>  <span class="gs">**&lt;Disadvantage 2&gt;:**</span> &lt;Explanation&gt;
    ]
 
+   Note:
+   Throughout the discussion of a CR, various ideas will be proposed which are not accepted.
+   Those rejected ideas should be recorded along with the reasoning as to why they were rejected.
+   This both helps record the thought process behind the final version of the CR as well as preventing people from bringing up the same rejected idea again in subsequent discussions.
+   In a way this section can be thought of as a breakout section of the Rationale section that is focused specifically on why certain ideas were not ultimately pursued.
+
    Justification for the Decision
    ------------------------------
    &lt;your text&gt;
+
+
+   Impact Analysis (Optional)
+   --------------------------
+   The impact analysis template can be used to detail out the impact on the platform
+   and if applicable for other aspects, especially for safety/security.
+   Either reference here to the filled-out template or copy the content from
+   the template in this chapter and fill it out here.
+   The impact analysis template is available in [1].
 </pre></div>
 </div>
+<p>The impact analysis template is available here <a class="footnote-reference brackets" href="#id3" id="id2" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a>.</p>
 <div class="admonition attention">
 <p class="admonition-title">Attention</p>
 <p>The above directive must be updated according to your decision record.</p>
@@ -649,6 +665,12 @@ platform wide decisions store close to the platform’s stakeholder requirements
 <li><p>Add <code class="docutils literal notranslate"><span class="pre">consequences</span></code> to explain the impact of this change, including what becomes easier or more difficult (recommended)</p></li>
 </ul>
 </div>
+<aside class="footnote-list brackets">
+<aside class="footnote brackets" id="id3" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id2">1</a><span class="fn-bracket">]</span></span>
+<p>The impact analysis template is available here: <a class="reference internal" href="../../../../process_areas/change_management/guidance/change_management_impact_analysis_template.html#chm-impact-analysis-templates"><span class="std std-ref">Impact Analysis Template</span></a></p>
+</aside>
+</aside>
 </section>
 
 
