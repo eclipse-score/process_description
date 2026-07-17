@@ -103,8 +103,13 @@ Creation of the Change Request
 Use the content :ref:`Decision Record Template <decision_record_template>` to create a
 Change Request.
 
-In case safety or security is affected, in addition the impact analysis template
-: :ref:`Impact Analysis Template <chm_impact_analysis_templates>` can be used to detail
+As outlined in the :need:`Guideline for Change Requests <gd_guidl__change_change_request>`,
+the project's selected Issue Tracking System may also use the content of these templates
+to provide a more lightweight change request template including an impact analysis
+field.
+
+Additionally, the impact analysis template
+:ref:`Impact Analysis Template <chm_impact_analysis_templates>` can be used to detail
 out the impact on platform, or any other aspect including especially safety/security.
 The template can be referenced in the decision record or copied into the decision record
 and filled out there.
