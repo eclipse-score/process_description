@@ -28,6 +28,15 @@ next:
   label: "Module 1: Why Requirements Engineering?"
 ---
 
+```{caution}
+THE CONTENT IS CREATED BY AI AND MAY CONTAIN ERRORS.
+THE CONTENT PURPOSE IS ONLY PROVIDED FOR VISUALIZATION AND DEMONSTRATION OF THE TRAINING PORTAL.
+PLEASE VERIFY THE INFORMATION BEFORE USE.
+
+Human verification has NOT been performed to ensure the accuracy of the content,
+and the content may not be suitable for actual training purposes.
+```
+
 # S-CORE Requirements Engineering
 
 A focused, self-paced training on the **Requirements Engineering** process area

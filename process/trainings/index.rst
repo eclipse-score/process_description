@@ -23,10 +23,13 @@
 Trainings
 =========
 
-.. note::
-   ATTENTION: THE CONTENT IS CREATED BY AI AND MAY CONTAIN ERRORS. PLEASE VERIFY THE INFORMATION BEFORE USE.
+.. caution::
+   THE CONTENT IS CREATED BY AI AND MAY CONTAIN ERRORS.
+   THE CONTENT PURPOSE IS ONLY PROVIDED FOR VISUALIZATION AND DEMONSTRATION OF THE TRAINING PORTAL.
+   PLEASE VERIFY THE INFORMATION BEFORE USE.
 
-   Human verification has NOT YET been performed to ensure the accuracy of the content.
+   Human verification has NOT been performed to ensure the accuracy of the content,
+   and the content may not be suitable for actual training purposes.
 
 Self-paced interactive training portals for the Eclipse S-CORE process areas.
 Each portal is built from editable Markdown source files and rendered as a
@@ -36,8 +39,8 @@ standalone HTML site with progress tracking and embedded quizzes.
    The portals open as self-contained HTML applications.
    Progress is saved locally in your browser — no server or login required.
 
-Available Trainings
--------------------
+Available Trainings (VISUALIZATION AND DEMONSTRATION PURPOSE ONLY)
+------------------------------------------------------------------
 
 .. grid:: 1 1 2 2
    :class-container: score-grid
@@ -45,8 +48,8 @@ Available Trainings
    .. grid-item-card::
       :class-card: card-ml2
 
-      Requirements Engineering
-      ^^^^^^^^^^^^^^^^^^^^^^^^
+      Requirements Engineering (VISUALIZATION AND DEMONSTRATION PURPOSE ONLY)
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
       A focused 4-module training covering the S-CORE requirements engineering
       process: concepts, requirement levels, attributes, and workflows.
 
