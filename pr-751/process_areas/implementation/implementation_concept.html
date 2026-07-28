@@ -591,7 +591,7 @@
                   
   <section id="concept-description">
 <h1>Concept Description<a class="headerlink" href="#concept-description" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-aa1e7334">
+<div class="need_container docutils container" id="SNCB-6097cdd8">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_doc_concept table" id="doc_concept__imp_concept">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -709,15 +709,7 @@ relevant unit relationships.</p>
 <p>The unit design shall achieve quality attributes (like simplicity, modularity, and encapsulation) which shall be enforced through coding guidelines and static analysis tooling appropriate for the programming language in use (e.g. MISRA C for C/C++, Clippy lints for Rust) as specified in the project development plan to fulfill the guidelines <a class="reference internal" href="../../standards/iso26262/iso26262.html#std_req__iso26262__software_845" title="std_req__iso26262__software_845"><em class="xref need">ISO 26262-6 §8.4.5, Table 6</em></a> and <a class="reference internal" href="../../standards/aspice_40/swe/swe.3.html#std_req__aspice_40__SWE-3-BP3" title="std_req__aspice_40__SWE-3-BP3"><em class="xref need">ASPICE SWE.3/SWE.4</em></a> requirements.</p>
 <p>For safety-related (ASIL) units, the design and coding principles for software unit design and
 implementation of <a class="reference internal" href="../../standards/iso26262/iso26262.html#std_req__iso26262__software_845" title="std_req__iso26262__software_845"><em class="xref need">ISO 26262-6 §8.4.5, Table 6</em></a> shall be
-applied, in particular:</p>
-<ul class="simple">
-<li><p>one entry and one exit point per function,</p></li>
-<li><p>initialization of variables before use,</p></li>
-<li><p>no (or justified) use of dynamic objects and dynamic memory allocation,</p></li>
-<li><p>limited use of pointers and no implicit type conversions,</p></li>
-<li><p>no hidden data flow or control flow,</p></li>
-<li><p>no unconditional jumps and no (or bounded) recursion.</p></li>
-</ul>
+applied.</p>
 <p>These principles are not enforced manually only: the project’s coding guideline together with the
 static and dynamic code analysis defined in the project development plan (e.g. MISRA C for C/C++,
 Clippy lints for Rust) shall enforce them for ASIL units. For QM units the same activities apply,
