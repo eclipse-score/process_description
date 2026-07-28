@@ -40,21 +40,22 @@ For a detailed explanation of workflows and their role within the process model,
    :status: valid
    :version: 1
    :responsible: rl__contributor[version==1]
-   :approved_by: rl__project_lead[version==1]
-   :supported_by: rl__safety_manager[version==1], rl__security_manager[version==1]
+   :approved_by: rl__architecture_community[version==1]
+   :supported_by: rl__safety_manager[version==1], rl__security_manager[version==1], rl__delivery_team[version==1]
    :input: wp__requirements_stkh[version==1], wp__issue_track_system[version==1]
    :output: wp__requirements_feat[version==1]
    :contains: gd_temp__req_feat_req[version==1], gd_temp__req_formulation[version==1]
    :has: doc_concept__req_process[version==2], doc_getstrt__req_process[version==2]
 
-   Depending on the stakeholder requirements feature requirements can be derived. This can be done by any contributor and will be approved by a project lead. If needed safety and security managers can provide support.
+   Depending on the stakeholder requirements feature requirements can be derived. This can be done by any contributor and will be approved by the architecture community. If needed safety and security managers can provide support.
+   In case of modification of already implemented feature requirements the feature delivery team will be consulted.
 
 .. workflow:: Create/Maintain Feature AoUs
    :id: wf__req_feat_aou
    :status: valid
    :version: 1
    :responsible: rl__contributor[version==1]
-   :approved_by: rl__project_lead[version==1]
+   :approved_by: rl__committer[version==1]
    :supported_by: rl__safety_manager[version==1], rl__security_manager[version==1]
    :input: wp__requirements_feat[version==1], wp__feature_arch[version==1], wp__issue_track_system[version==1]
    :output: wp__requirements_feat_aou[version==1], wp__platform_safety_manual[version==1]

@@ -41,13 +41,13 @@ For a detailed explanation of workflows and their role within the process model,
    :tags: architecture_design
    :responsible: rl__contributor[version==1]
    :approved_by: rl__committer[version==1]
-   :supported_by: rl__safety_manager[version==1], rl__security_manager[version==1]
+   :supported_by: rl__safety_manager[version==1], rl__security_manager[version==1], rl__architecture_community[version==1]
    :input: wp__requirements_feat[version==1], wp__issue_track_system[version==1]
    :output: wp__feature_arch[version==1]
    :contains: gd_guidl__arch_design[version==1], gd_temp__arch_feature[version==1]
    :has: doc_concept__arch_process[version==1], doc_getstrt__arch_process[version==1]
 
-   The feature architectures are created and maintained.
+   The feature architectures are created and maintained. This is supported by the architecture community (which for example has to approve logical interfaces on feature level).
 
 .. workflow:: Create/Maintain Components architecture
    :id: wf__cr_mt_comparch
