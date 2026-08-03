@@ -32,6 +32,7 @@ prev:
 next:
   url: module-3.html
   label: "Module 3: Requirement Attributes and Quality"
+orphan: true
 ---
 
 # Requirement Levels and Types

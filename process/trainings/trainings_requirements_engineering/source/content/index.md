@@ -26,6 +26,8 @@ prev: null
 next:
   url: module-1.html
   label: "Module 1: Why Requirements Engineering?"
+orphan: true
+suppress_warnings: ["myst.xref_missing"]
 ---
 
 ```{caution}
@@ -55,12 +57,12 @@ security-critical automotive open-source software development.
 
 | Module | Title | Description | Duration |
 |--------|-------|-------------|----------|
-| Module 1 | [Why Requirements Engineering?](module-1.html) | Role of RE in safety-critical OSS, stakeholders, roles, and how standards drive the process. | ~30 min |
-| Module 2 | [Requirement Levels and Types](module-2.html) | The five requirement levels (Stakeholder, Feature, Component, AoU, Process), types, and their traceability relationships. | ~45 min |
-| Module 3 | [Requirement Attributes and Quality](module-3.html) | Mandatory and auto-generated attributes, formulation rules, versioning, and reviews. | ~45 min |
-| Module 4 | [Workflows and Work Products](module-4.html) | The six S-CORE workflows, work products with compliance tags, and end-to-end traceability. | ~45 min |
+| Module 1 | <a href="module-1.html">Why Requirements Engineering?</a> | Role of RE in safety-critical OSS, stakeholders, roles, and how standards drive the process. | ~30 min |
+| Module 2 | <a href="module-2.html">Requirement Levels and Types</a> | The five requirement levels (Stakeholder, Feature, Component, AoU, Process), types, and their traceability relationships. | ~45 min |
+| Module 3 | <a href="module-3.html">Requirement Attributes and Quality</a> | Mandatory and auto-generated attributes, formulation rules, versioning, and reviews. | ~45 min |
+| Module 4 | <a href="module-4.html">Workflows and Work Products</a> | The six S-CORE workflows, work products with compliance tags, and end-to-end traceability. | ~45 min |
 
-**[Checkpoint Quiz — All Modules](quiz-1.html)**
+**<a href="quiz-1.html">Checkpoint Quiz — All Modules</a>**
 10 questions covering all four modules. Pass mark: 70%. Instant scoring with explanations. (~20 min)
 
 ## About This Course

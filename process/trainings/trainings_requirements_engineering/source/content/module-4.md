@@ -32,6 +32,7 @@ prev:
 next:
   url: quiz-1.html
   label: "Checkpoint Quiz"
+orphan: true
 ---
 
 # Workflows and Work Products

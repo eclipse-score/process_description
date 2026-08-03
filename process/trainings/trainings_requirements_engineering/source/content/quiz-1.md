@@ -170,5 +170,5 @@ questions:
       behaviour. Each level links to its parent using a versioned 'derived_from'
       reference. Process Requirements are a separate, parallel concern derived from the
       process description, not a step that precedes stakeholder requirements.
-
+orphan: true
 ---

@@ -149,3 +149,5 @@ questions:
       - text: "[Distractor 3]"
     feedback: >-
       Correct: B. [Explanation.]
+orphan: true
+---

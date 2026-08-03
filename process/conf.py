@@ -40,15 +40,18 @@ html_css_files = ["custom.css"]
 # into the Sphinx HTML output root so portals are served alongside the docs.
 html_extra_path = ["trainings/_portals"]
 
+# exclude pattern are not supported when calling sphinx-build from other repositories,
+# so we do not use them here.  Instead, the exclusion of training source files
+# and generated portal files is handled in the Sphinx build hook below.
 # Exclude training source files and generated portal files from Sphinx processing.
 # - trainings/*/source/**   : Markdown source files for the training portals
 # - trainings/trainings_templates/** : Template files, not Sphinx documents
 # - trainings/_portals/**   : Generated portal HTML (served via html_extra_path)
-exclude_patterns = [
-    "trainings/*/source/**",
-    "trainings/trainings_templates/**",
-    "trainings/_portals/**",
-]
+#exclude_patterns = [
+#    "trainings/*/source/**",
+#    "trainings/trainings_templates/**",
+#    "trainings/_portals/**",
+#]
 
 # :need:`{title}` is used in the needs templates to display the title of the need
 needs_role_need_template = "{title}"

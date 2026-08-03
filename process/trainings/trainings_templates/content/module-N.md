@@ -32,6 +32,7 @@ prev:
 next:
   url: module-2.html                    # or quiz-1.html for last module
   label: "Module 2: [Next Title]"       # or "[Quiz Title]"
+orphan: true
 ---
 
 # [Module Title]

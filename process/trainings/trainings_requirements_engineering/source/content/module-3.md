@@ -32,6 +32,7 @@ prev:
 next:
   url: module-4.html
   label: "Module 4: Workflows and Work Products"
+orphan: true
 ---
 
 # Requirement Attributes and Quality

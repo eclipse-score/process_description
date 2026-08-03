@@ -26,6 +26,8 @@ prev: null
 next:
   url: module-1.html
   label: "Module 1: [First Module Title]"
+orphan: true
+suppress_warnings: ["myst.xref_missing"]
 ---
 
 # [PROCESS AREA] — Training Overview
@@ -45,12 +47,12 @@ and work products.
 
 | Module | Title | Description | Duration |
 |--------|-------|-------------|----------|
-| Module 1 | [[Module 1 Title]](module-1.html) | [Short description] | ~XX min |
-| Module 2 | [[Module 2 Title]](module-2.html) | [Short description] | ~XX min |
-| Module 3 | [[Module 3 Title]](module-3.html) | [Short description] | ~XX min |
-| Module 4 | [[Module 4 Title]](module-4.html) | [Short description] | ~XX min |
+| Module 1 | <a href="module-1.html">[Module 1 Title]</a> | [Short description] | ~XX min |
+| Module 2 | <a href="module-2.html">[Module 2 Title]</a> | [Short description] | ~XX min |
+| Module 3 | <a href="module-3.html">[Module 3 Title]</a> | [Short description] | ~XX min |
+| Module 4 | <a href="module-4.html">[Module 4 Title]</a> | [Short description] | ~XX min |
 
-**[[Quiz Title]](quiz-1.html)**
+**<a href="quiz-1.html">[Quiz Title]</a>**
 [N] questions covering all modules. Pass mark: 70%. Instant scoring with explanations. (~20 min)
 
 ## About This Course
