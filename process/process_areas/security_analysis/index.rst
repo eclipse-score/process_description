@@ -29,5 +29,5 @@ Security Analysis
    security_analysis_workflow
    security_analysis_workproducts
 
-.. needextend:: docname is not None and "process_areas/security_analysis" in docname
+.. needextend:: "c.this_doc()"
    :+tags: security_analysis

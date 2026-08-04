@@ -28,5 +28,5 @@ Problem Resolution
    problem_resolution_workflow
    problem_resolution_workproducts
 
-.. needextend:: docname is not None and "process_areas/problem_resolution" in docname
+.. needextend:: "c.this_doc()"
    :+tags: problem_resolution

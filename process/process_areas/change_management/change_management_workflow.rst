@@ -153,7 +153,7 @@ For a detailed explanation of workflows and their role within the process model,
 
    Otherwise the responsible teams keeps the status "in implementation".
 
-.. needextend:: docname is not None and "process_areas/change_management" in docname
+.. needextend:: "c.this_doc()"
    :+tags: change_management
 
 RAS(IC) for Change Management:

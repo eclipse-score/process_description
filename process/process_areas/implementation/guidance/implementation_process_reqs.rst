@@ -194,7 +194,7 @@ Dependency Analysis
    It shall show the libraries used by the component (i.e. which libraries are linked to the component,
    defined as CI build tool target) up to the leaves of the tree.
 
-.. needextend:: docname is not None and "process_areas/implementation" in docname
+.. needextend:: "c.this_doc()"
    :+tags: implementation
 
 .. _impl_process_requirements_complexity:

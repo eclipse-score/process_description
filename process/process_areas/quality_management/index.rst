@@ -27,5 +27,5 @@ Quality Management
    quality_workflow
    quality_workproducts
 
-.. needextend:: docname is not None and "process_areas/quality_management" in docname
+.. needextend:: "c.this_doc()"
    :+tags: quality_management

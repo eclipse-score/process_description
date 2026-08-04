@@ -28,5 +28,5 @@ Process Management
    process_management_workflow
    process_management_workproducts
 
-.. needextend:: docname is not None and "process_areas/process_management" in docname
+.. needextend:: "c.this_doc()"
    :+tags: process_management

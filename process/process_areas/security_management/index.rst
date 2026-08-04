@@ -28,5 +28,5 @@ Security Management
    security_management_workflow
    security_management_workproducts
 
-.. needextend:: docname is not None and "process_areas/security_management" in docname
+.. needextend:: "c.this_doc()"
    :+tags: security_management

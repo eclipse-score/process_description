@@ -280,5 +280,5 @@ Change Request Traceability Impact Analysis Tool
       :align: center
       :alt: How to follow changes for impact analysis iteratively.
 
-.. needextend:: docname is not None and "process_areas/change_management" in docname
+.. needextend:: "c.this_doc()"
    :+tags: change_management

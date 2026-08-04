@@ -114,5 +114,5 @@ Process Building Blocks Checks
    :ref:`process_management_templates` are provided and correctly linked by the user.
 
 
-.. needextend:: docname is not None and "process_areas/process_management" in docname
+.. needextend:: "c.this_doc()"
    :+tags: process_management

@@ -174,7 +174,7 @@ Safety Management Workflows
    | The outcome is a change impact analysis report and a documented decision, which are reviewed and approved as part of the Safety Management process.
 
 
-.. needextend:: docname is not None and "process_areas/safety_management" in docname
+.. needextend:: "c.this_doc()"
    :+tags: safety_management
 
 RAS(IC) for Safety Management:

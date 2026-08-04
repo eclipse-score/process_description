@@ -305,5 +305,5 @@ FMEA Process Requirements
    The fault ID links to the corresponding fault which describes how a potential violation can occur.
 
 
-.. needextend:: docname is not None and "process_areas/safety_analysis" in docname
+.. needextend:: "c.this_doc()"
    :+tags: safety_analysis

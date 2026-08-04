@@ -117,7 +117,7 @@ For a detailed explanation of workflows and their role within the process model,
    | The :need:`rl__quality_manager` is responsible to adjust the quality management plan, if deviations are detected.
 
 
-.. needextend:: docname is not None and "process_areas/quality_management" in docname
+.. needextend:: "c.this_doc()"
    :+tags: quality_management
 
 RAS(IC) for Safety Analysis

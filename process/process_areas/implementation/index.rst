@@ -27,5 +27,5 @@ Implementation
    implementation_workflow
    implementation_workproducts
 
-.. needextend:: docname is not None and "process_areas/implementation" in docname
+.. needextend:: "c.this_doc()"
    :+tags: implementation
