@@ -212,8 +212,8 @@ Traceability to Requirements and AoU
 
    **Examples:**
 
-   * feat_req <-> feat_arc_(sta|dyn), logic_arc_(int|int_op)
-   * comp_req <-> comp_arc_(sta|dyn), real_arc_(int|int_op)
+   * feat_req <-> feat_arc_(sta|dyn), logic_arc_int
+   * comp_req <-> comp_arc_(sta|dyn), real_arc_int
 
 .. gd_req:: Architecture attribute: fulfils (AoU)
    :id: gd_req__arch_attr_fulfils_aou
