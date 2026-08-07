@@ -8,6 +8,10 @@
     "url": "https://eclipse-score.github.io/process_description/pr-714/"
   },
   {
+    "version": "pr-764",
+    "url": "https://eclipse-score.github.io/process_description/pr-764/"
+  },
+  {
     "version": "v2.0.1",
     "url": "https://eclipse-score.github.io/process_description/v2.0.1/"
   },
@@ -18,17 +22,5 @@
   {
     "version": "v2.0.3",
     "url": "https://eclipse-score.github.io/process_description/v2.0.3/"
-  },
-  {
-    "version": "pr-762",
-    "url": "https://eclipse-score.github.io/process_description/pr-762/"
-  },
-  {
-    "version": "pr-763",
-    "url": "https://eclipse-score.github.io/process_description/pr-763/"
-  },
-  {
-    "version": "pr-764",
-    "url": "https://eclipse-score.github.io/process_description/pr-764/"
   }
 ]
