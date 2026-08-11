@@ -37,4 +37,4 @@ Component Classification Guideline
               std_req__aspice_40__REU-2-BP2[version==1],
               std_req__aspice_40__REU-2-BP3[version==1]
 
-   For the content see here: `Component Classification Template <https://eclipse-score.github.io/module_template/main/score/component_example/docs/component_classification.html>`__
+   For the content see here: `Component Classification Template <https://eclipse-score.github.io/module_template/main/components/component_example/component_classification.html>`__

@@ -33,7 +33,7 @@ Requirement Inspection Checklist
 
    For the content see here:
 
-   - `Component Requirements Inspection Checklist <https://eclipse-score.github.io/module_template/main/score/component_example/docs/requirements/chklst_req_inspection.html>`__
+   - `Component Requirements Inspection Checklist <https://eclipse-score.github.io/module_template/main/components/component_example/requirements/chklst_req_inspection.html>`__
    - :need:`doc__feature_name_req_inspection`
    - :need:`doc__stakeholder_req_inspection`
 

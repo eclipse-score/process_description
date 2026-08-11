@@ -51,7 +51,7 @@ Templates
               std_req__aspice_40__SPL-2-BP6[version==1],
               std_req__aspice_40__REU-2-BP6[version==1]
 
-   For the content see here: `Module Release Note Template <https://eclipse-score.github.io/module_template/main/docs/release/release_note.html>`__
+   For the content see here: `Module Release Note Template <https://eclipse-score.github.io/module_template/main/module/release/release_note.html>`__
 
 
 .. gd_temp:: Release Issue Template

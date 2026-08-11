@@ -31,4 +31,4 @@ Implementation Inspection Checklist
 
     For the content see here:
 
-    - `Component Implementation Inspection Checklist <https://eclipse-score.github.io/module_template/main/score/component_example/docs/detailed_design/chklst_impl_inspection.html>`__
+    - `Component Implementation Inspection Checklist <https://eclipse-score.github.io/module_template/main/components/component_example/detailed_design/chklst_impl_inspection.html>`__

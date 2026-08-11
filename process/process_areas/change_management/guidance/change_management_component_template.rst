@@ -32,4 +32,4 @@ Component Template
               std_req__aspice_40__iic-13-16[version==1],
               std_req__aspice_40__iic-14-02[version==1]
 
-   for the content see `Component Request Template <https://eclipse-score.github.io/module_template/main/score/component_example/docs/index.html>`__
+   for the content see `Component Request Template <https://eclipse-score.github.io/module_template/main/components/component_example/index.html>`__

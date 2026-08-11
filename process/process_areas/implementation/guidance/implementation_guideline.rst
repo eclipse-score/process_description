@@ -33,7 +33,7 @@ Guideline
 
 This document describes the general guidance for implementation based on the concept which is defined :need:`[[title]]<doc_concept__imp_concept>`.
 An example of a Detailed Design is maintained in the
-`module template documentation <https://eclipse-score.github.io/module_template/detailed_design_example.html>`_.
+`module template documentation <https://eclipse-score.github.io/module_template/main/components/component_example/detailed_design/detailed_design_example.html>`_.
 
 **Scope:** This guideline applies to both QM (Quality Management) and ASIL B components. Where specific requirements differ between QM and ASIL B (e.g., complexity thresholds, design principles), they are explicitly noted.
 

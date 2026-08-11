@@ -52,7 +52,7 @@ Templates
               std_req__aspice_40__SWE-1-BP1[version==1]
 
    See the component requirements template in
-   `module template documentation <https://eclipse-score.github.io/module_template/main/score/component_example/docs/requirements/index.html>`__.
+   `module template documentation <https://eclipse-score.github.io/module_template/main/components/component_example/requirements/index.html>`__.
 
 .. gd_temp:: AoU Requirement Template
    :id: gd_temp__req_aou_req
@@ -64,7 +64,7 @@ Templates
               std_req__aspice_40__SWE-1-BP1[version==1]
 
    See the Assumption of Use requirement snippets in the
-   `module template documentation <https://eclipse-score.github.io/module_template/main/score/component_example/docs/requirements/index.html>`__.
+   `module template documentation <https://eclipse-score.github.io/module_template/main/components/component_example/requirements/index.html>`__.
 
 
 .. gd_temp:: Tool Requirements Template
