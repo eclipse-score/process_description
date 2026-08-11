@@ -154,3 +154,6 @@ Tailoring
    The reasoning is:
 
    - Main deliveries are source code, which is not a product, thus product risk management and process risk is not applicable (for safety and security related risk separate processes as safety/security analysis exists).
+
+.. needextend:: "c.this_doc()"
+   :+tags: platform_management

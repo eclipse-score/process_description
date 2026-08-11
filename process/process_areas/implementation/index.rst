@@ -26,6 +26,3 @@ Implementation
    implementation_roles
    implementation_workflow
    implementation_workproducts
-
-.. needextend:: "c.this_doc()"
-   :+tags: implementation

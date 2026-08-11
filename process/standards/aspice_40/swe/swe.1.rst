@@ -165,5 +165,5 @@ Base practices
    of impact on the operating environment, to all affected parties.
 
 
-.. needextend:: "c.this_doc()" 
+.. needextend:: "c.this_doc()"
    :+tags: aspice40_swe1

@@ -86,3 +86,6 @@ Guidance
 ^^^^^^^^
 
 The document management guideline can be found here :need:`gd_guidl__documentation`.
+
+.. needextend:: "c.this_doc()"
+   :+tags: documentation_management

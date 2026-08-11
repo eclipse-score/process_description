@@ -48,3 +48,6 @@ Additional to the continuous workflows the following workflows shall be executed
 
 For open issues the issue tracking system is used to track the issues and to ensure that they are resolved in time.
 The issue tracking system is defined in the :need:`wp__issue_track_system`.
+
+.. needextend:: "c.this_doc()"
+   :+tags: safety_management

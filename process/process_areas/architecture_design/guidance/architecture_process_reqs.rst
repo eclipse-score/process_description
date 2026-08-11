@@ -360,3 +360,6 @@ Process Monitoring and Improvement
    Monitoring is expected as a periodic, predominantly manual activity (for example as part of quality checks and retrospectives), not as a fully automated check.
 
    Improvement actions should be handled according to :ref:`pm_monitor_improve_process`.
+
+.. needextend:: "c.this_doc()"
+   :+tags: architecture_design

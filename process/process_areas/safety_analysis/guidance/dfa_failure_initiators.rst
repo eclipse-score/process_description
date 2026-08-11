@@ -203,3 +203,6 @@ DFA failure initiators
   * - SC_01_05
     - Development fault (e.g. human error, insufficient qualification, insufficient methods). Only applicable if diverse development is needed.
     - Medium
+
+.. needextend:: "c.this_doc()"
+   :+tags: safety_analysis

@@ -137,3 +137,6 @@ Problem Report to be closed.
 
 Especially the effectiveness of the solution measures must be shown, based on convincing
 arguments, e.g. verification measures must be used to confirm the implementation.
+
+.. needextend:: "c.this_doc()"
+   :+tags: problem_resolution

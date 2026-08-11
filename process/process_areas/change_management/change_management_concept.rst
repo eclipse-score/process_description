@@ -169,3 +169,6 @@ The standards require that a Change Request can be traced throughout the complet
 hierarchy levels including all affected work products.
 
 In general the traceability is visualized in the general traceability concept (:ref:`general_concepts_traceability`).
+
+.. needextend:: "c.this_doc()"
+   :+tags: change_management

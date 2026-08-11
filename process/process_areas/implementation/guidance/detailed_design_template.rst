@@ -28,3 +28,6 @@ Detailed Design Template
               std_req__aspice_40__iic-04-05[version==1]
 
    For the content see here: `Detailed Design Template <https://eclipse-score.github.io/module_template/main/components/component_example/detailed_design/index.html>`__
+
+.. needextend:: "c.this_doc()"
+   :+tags: implementation

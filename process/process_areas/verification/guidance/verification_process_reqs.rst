@@ -246,3 +246,6 @@ Process Requirements
     when a new component is added to the system or an existing component is updated via a PR.
 
     **TODO: Align this to the ongoing work in https://github.com/eclipse-score/reference_integration/pull/190 which reworks the CI reference integration execution.**
+
+.. needextend:: "c.this_doc()"
+   :+tags: verification

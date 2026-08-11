@@ -65,3 +65,6 @@ SW development tools
 ^^^^^^^^^^^^^^^^^^^^
 
 Description of used SW development tools.
+
+.. needextend:: "c.this_doc()"
+   :+tags: implementation

@@ -48,3 +48,6 @@ For every problem identified, the following workflows are executed:
 * Close the problem resolution according to :need:`wf__problem_close_pr`
 
 In addition create a problem resolution plan as part of the platform management plan according to :need:`wf__platform_cr_mt_platform_mgmt_plan`.
+
+.. needextend:: "c.this_doc()"
+   :+tags: problem_resolution

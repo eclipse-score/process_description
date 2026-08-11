@@ -84,3 +84,6 @@ Roles
    Authority
 
    * Decision on the passing or failing of an audit
+
+.. needextend:: "c.this_doc()"
+   :+tags: security_management

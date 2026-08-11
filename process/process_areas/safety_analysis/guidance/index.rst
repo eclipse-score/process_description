@@ -25,3 +25,6 @@ Guidance
    safety_analysis_checklist
    safety_analysis_guideline
    safety_analysis_process_reqs
+
+.. needextend:: "c.this_doc()"
+   :+tags: safety_analysis

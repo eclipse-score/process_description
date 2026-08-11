@@ -57,3 +57,6 @@ FMEA Templates
               std_req__isopas8926__44431[version==1]
 
       For the content see here: `Component FMEA Template <https://eclipse-score.github.io/module_template/main/components/component_example/safety_analysis/fmea.html>`__
+
+.. needextend:: "c.this_doc()"
+   :+tags: safety_analysis

@@ -24,3 +24,6 @@ Decision Record Template
    :complies: std_req__aspice_40__SWE-2-BP3[version==1], std_req__aspice_40__iic-17-00[version==1]
 
    For the content see here: :ref:`decision_record_template`.
+
+.. needextend:: "c.this_doc()"
+   :+tags: change_management

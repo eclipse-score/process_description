@@ -457,3 +457,6 @@ Software Development Plan review checklist template
           -
           - Check if all tools used for software development are clearly described and listed in the project's tool list. If possible check if they are used as defined.
           -
+
+.. needextend:: "c.this_doc()"
+   :+tags: quality_management

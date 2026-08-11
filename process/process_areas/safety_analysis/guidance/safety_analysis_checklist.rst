@@ -32,3 +32,6 @@ Safety Analysis Checklist
 
     - :need:`doc__platform_safety_analysis_fdr` (platform)
     - `Safety Analysis Checklist <https://eclipse-score.github.io/module_template/main/module/safety_mgt/module_safety_analysis_fdr.html>`__ (module)
+
+.. needextend:: "c.this_doc()"
+   :+tags: safety_analysis

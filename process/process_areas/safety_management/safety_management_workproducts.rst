@@ -171,3 +171,6 @@ Safety Management Work Products
    * Feature/Component
 
    It belongs to the Safety Plan.
+
+.. needextend:: "c.this_doc()"
+   :+tags: safety_management

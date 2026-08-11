@@ -32,3 +32,6 @@ Implementation Inspection Checklist
     For the content see here:
 
     - `Component Implementation Inspection Checklist <https://eclipse-score.github.io/module_template/main/components/component_example/detailed_design/chklst_impl_inspection.html>`__
+
+.. needextend:: "c.this_doc()"
+   :+tags: implementation

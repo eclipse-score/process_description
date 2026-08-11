@@ -294,3 +294,6 @@ Tailoring
 
    - for "system" standard requirements: see platform safety plan in PMP
    - for "software" standard requirements: 644, 646: because they refer to (PMP) tailored work product, 643: because this refers to (PMP) tailored activity
+
+.. needextend:: "c.this_doc()"
+   :+tags: requirements_engineering

@@ -33,3 +33,6 @@ Safety Manual Template
               std_req__aspice_40__iic-13-53[version==1]
 
    For the content see here: `Safety Manual Template <https://eclipse-score.github.io/module_template/main/module/manuals/safety_manual.html>`__
+
+.. needextend:: "c.this_doc()"
+   :+tags: safety_management

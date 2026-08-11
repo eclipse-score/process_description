@@ -28,6 +28,3 @@ Security Analysis
    security_analysis_roles
    security_analysis_workflow
    security_analysis_workproducts
-
-.. needextend:: "c.this_doc()"
-   :+tags: security_analysis

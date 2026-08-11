@@ -55,3 +55,6 @@ Platform Management Work Products
    Defines the schedule of the project.
 
    Defines escalation path.
+
+.. needextend:: "c.this_doc()"
+   :+tags: platform_management

@@ -32,5 +32,5 @@
        - facilities
 
 
-.. needextend:: "c.this_doc()" 
+.. needextend:: "c.this_doc()"
    :+tags: aspice40_iic02

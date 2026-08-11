@@ -51,3 +51,6 @@ Implementation Work Products
    - coding guideline (e.g. MISRA, can also include style guide or naming convention)
    - SW configuration guideline
    - development tools
+
+.. needextend:: "c.this_doc()"
+   :+tags: implementation

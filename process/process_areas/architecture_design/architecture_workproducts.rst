@@ -70,3 +70,6 @@ Architecture Work Products
 
    Depends on architecture guideline and tooling.
    May include several methods like inspection, modelling, ... which are selected in projects SW Verification Plan.
+
+.. needextend:: "c.this_doc()"
+   :+tags: architecture_design

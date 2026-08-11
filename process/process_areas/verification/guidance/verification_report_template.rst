@@ -70,3 +70,6 @@ Verification Report Templates
     This document implements :need:`wp__verification_platform_ver_report`.
 
      |  For the content, see :need:`doc__platform_verification_report`.
+
+.. needextend:: "c.this_doc()"
+   :+tags: verification

@@ -22,3 +22,6 @@ Guidance
    requirements_inspection_checklist
    requirements_templates
    requirements_process_reqs
+
+.. needextend:: "c.this_doc()"
+   :+tags: requirements_engineering

@@ -100,7 +100,7 @@ For a detailed explanation of workflows and their role within the process model,
    If the verification is not successful or due to any other reason, e.g. the tool is
    not needed any more as planned, the tool verification may also rejected at this point.
 
-.. needextend:: docname is not None and "process_areas/tool_management" in docname
+.. needextend:: c.this_doc() and docname is not None and "process_areas/tool_management" in docname
    :+tags: tool_management
 
 RAS(IC) for Tool Management:

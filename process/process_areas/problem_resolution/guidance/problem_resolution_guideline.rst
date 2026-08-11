@@ -303,3 +303,6 @@ When confirmed, the author sets the status to "closed" manually, if not done aut
 
 :need:`[[title]] <rl__committer>` has the freedom to reject it at any time by setting the status
 to "reject".
+
+.. needextend:: "c.this_doc()"
+   :+tags: problem_resolution

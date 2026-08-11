@@ -62,3 +62,6 @@ Checklists
       * - 6
         - Is the Document linked via realizes to the correct workproduct of the process description?
         -
+
+.. needextend:: "c.this_doc()"
+   :+tags: documentation_management

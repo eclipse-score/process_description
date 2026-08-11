@@ -26,6 +26,3 @@ Safety Analysis
    safety_analysis_roles
    safety_analysis_workflow
    safety_analysis_workproducts
-
-.. needextend:: "c.this_doc()"
-   :+tags: safety_analysis

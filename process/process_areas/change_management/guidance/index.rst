@@ -25,3 +25,6 @@ Guidance
    change_management_impact_analysis_template
    change_management_reqs
    change_management_decision_record_template
+
+.. needextend:: "c.this_doc()"
+   :+tags: change_management

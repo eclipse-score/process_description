@@ -201,3 +201,6 @@ Tailoring
    - For SW requirement 1141, 1143, 1144 the SW only points to AoUs, but will not be executed on the final product environment as part of the project scope.
    - For SW requirement 1142 there will be :need:`wp__verification_platform_int_test` available for re-use, but they are not supposed to deliver full coverage.
      Fault Injection Testing is not considered for higher level integration testing.
+
+.. needextend:: "c.this_doc()"
+   :+tags: verification

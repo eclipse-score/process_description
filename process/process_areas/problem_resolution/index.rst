@@ -27,6 +27,3 @@ Problem Resolution
    problem_resolution_roles
    problem_resolution_workflow
    problem_resolution_workproducts
-
-.. needextend:: "c.this_doc()"
-   :+tags: problem_resolution

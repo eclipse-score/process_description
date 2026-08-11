@@ -30,3 +30,6 @@ A detailed overview of the responsibilities for the steps of the problem resolut
 listed here:
 
 :ref:`workflow_prm_requirements`
+
+.. needextend:: "c.this_doc()"
+   :+tags: problem_resolution

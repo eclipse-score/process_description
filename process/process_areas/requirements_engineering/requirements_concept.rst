@@ -307,3 +307,6 @@ Traceability Concept for Requirements
 The standards require that a requirement can be traced throughout the complete hierarchy levels including its :ref:`implementation <implementation>` and :ref:`verification <process_verification>`.
 
 In general the traceability is visualized in main development work product traceability model (:ref:`general_concepts_traceability`).
+
+.. needextend:: "c.this_doc()"
+   :+tags: requirements_engineering

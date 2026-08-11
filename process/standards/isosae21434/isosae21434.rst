@@ -589,5 +589,5 @@ Clause 15: Threat analysis and risk assessment methods
    All work products of the relevant clauses are included in the list to enable the documentation of the project wide tailoring,
    but the related requirements are not included as these are not needed to be covered.
 
-.. needextend:: docname is not None and "process/standards/isosae21434" in docname
+.. needextend:: c.this_doc() and docname is not None and "process/standards/isosae21434" in docname
    :+tags: isosae21434

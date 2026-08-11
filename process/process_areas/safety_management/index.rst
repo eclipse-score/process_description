@@ -26,6 +26,3 @@ Safety Management
    safety_management_roles
    safety_management_workflow
    safety_management_workproducts
-
-.. needextend:: "c.this_doc()"
-   :+tags: safety_management

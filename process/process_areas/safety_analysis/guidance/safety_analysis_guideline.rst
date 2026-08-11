@@ -233,3 +233,6 @@ Tailoring
    The reasoning is:
 
    - see platform safety plan in PMP
+
+.. needextend:: "c.this_doc()"
+   :+tags: safety_analysis

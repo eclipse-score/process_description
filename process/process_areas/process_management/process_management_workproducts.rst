@@ -134,3 +134,6 @@ Here only project specific work products are listed, which are generic for the p
    for your project (documented in the PMP), to be able to demonstrate completeness.
    It is not really a work product definition,
    but this is the best way to link to the tailored out standard work products.
+
+.. needextend:: "c.this_doc()"
+   :+tags: process_management

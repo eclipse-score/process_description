@@ -108,3 +108,6 @@ For the safety planning and safety manual a “Docs-as-Code” approach is used 
 For the activities planning (who, when) we use :need:`wp__issue_track_system` to create and manage issues, and monitor progress through a project management dashboard.
 
 For the reporting (e.g. displaying the status of the work products) additional tooling is created.
+
+.. needextend:: "c.this_doc()"
+   :+tags: safety_management

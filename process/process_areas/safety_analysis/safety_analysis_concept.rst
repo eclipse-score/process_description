@@ -165,3 +165,6 @@ The Safety Analysis (DFA and FMEA) shall consider the architectural elements on 
 
     | **Example DFA:** Similar to the feature level, but with a focus on the interactions between sub-components within a single component.
     | **Example FMEA:** The FMEA shall used to analyse if the safety requirements of a component can be violated. This might be a unintended sent of a message between two sub-components.
+
+.. needextend:: "c.this_doc()"
+   :+tags: safety_analysis

@@ -218,3 +218,6 @@ Problem Resolution Checks
 
    ISSUEs related to Problem Reports shall not automatically closed, if linked ISSUEs or PRs are closed or merged and
    these ISSUEs shall be closed only manually from the :need:`Committer <rl__committer>`.
+
+.. needextend:: "c.this_doc()"
+   :+tags: problem_resolution

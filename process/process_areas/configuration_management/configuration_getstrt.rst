@@ -29,3 +29,6 @@ In case you are appointed as a :need:`rl__project_lead` in the project:
 
 As a normal contributor or committer consult the configuration management plan, it should
 be mainly your task to use the project's selected version management tool.
+
+.. needextend:: "c.this_doc()"
+   :+tags: configuration_management

@@ -51,3 +51,6 @@ For every change identified, the following workflows are executed:
 * Close the change request according to :need:`wf__change_close_cr`
 
 In addition create a change management plan as part of the platform management plan according to :need:`wf__platform_cr_mt_platform_mgmt_plan`
+
+.. needextend:: "c.this_doc()"
+   :+tags: change_management

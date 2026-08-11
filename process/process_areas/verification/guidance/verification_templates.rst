@@ -144,3 +144,6 @@ Python Properties Template
 
 When writing test cases in python, they shall follow the recommendations from the official python and community documentation.
 https://docs.python-guide.org/writing/tests/
+
+.. needextend:: "c.this_doc()"
+   :+tags: verification

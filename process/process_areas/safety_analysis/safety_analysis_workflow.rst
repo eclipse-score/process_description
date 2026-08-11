@@ -134,3 +134,6 @@ RAS(IC) for Safety Analysis  (FMEA and DFA)
    :sort: status
    :columns: id as "Activity";responsible as "Responsible";approved_by as "Approver";supported_by as "Supporter"
    :colwidths: 30,30,30,30
+
+.. needextend:: "c.this_doc()"
+   :+tags: safety_analysis

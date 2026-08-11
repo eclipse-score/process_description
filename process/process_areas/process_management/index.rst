@@ -27,6 +27,3 @@ Process Management
    process_management_roles
    process_management_workflow
    process_management_workproducts
-
-.. needextend:: "c.this_doc()"
-   :+tags: process_management

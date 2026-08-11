@@ -160,3 +160,6 @@ Security Management Work Products
 
    Module Software Bill of Material
    - comprehensive inventory of software components to ensure security, integrity, and compliance.
+
+.. needextend:: "c.this_doc()"
+   :+tags: security_management

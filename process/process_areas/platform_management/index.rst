@@ -27,6 +27,3 @@ Platform Management
    platform_management_roles
    platform_management_workflow
    platform_management_workproducts
-
-.. needextend:: docname is not None and "process_areas/platform_management" in docname
-   :+tags: platform_management

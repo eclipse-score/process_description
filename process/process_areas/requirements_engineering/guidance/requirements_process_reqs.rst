@@ -446,3 +446,6 @@ Process Requirements Checks
 
    Validity attributes (:need:`gd_req__req_attr_valid_from` and :need:`gd_req__req_attr_valid_until`) shall be checked for correctness (i.e. they denote an existing milestone) and consistent (e.g. the until is not before from)
    Several of the above checks are not to be executed on requirements not valid in the next milestone, these are TBD
+
+.. needextend:: "c.this_doc()"
+   :+tags: requirements_engineering

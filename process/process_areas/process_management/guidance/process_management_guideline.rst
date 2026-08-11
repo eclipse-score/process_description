@@ -209,3 +209,6 @@ Tailoring
    - For IICs concerning commitment, agreements, organizational processes, as these are not in the scope of the current project.
    - For IICs concerning GPs (2 and 3), at the are not addressed yet in the current project phase or higher, which are out of scope for the current project phase.
    - For IICs concerning specific techniques or methods not used in the current project.
+
+.. needextend:: "c.this_doc()"
+   :+tags: process_management

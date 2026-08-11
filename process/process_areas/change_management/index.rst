@@ -27,6 +27,3 @@ Change Management
    change_management_roles
    change_management_workflow
    change_management_workproducts
-
-.. needextend:: "c.this_doc()"
-   :+tags: change_management

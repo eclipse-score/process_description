@@ -29,3 +29,6 @@ Documentation Templates
    |    :security: <YES|NO>
    |    :safety: <QM|ASIL_B>
    |    :realizes: wp__<name of wp in process description>
+
+.. needextend:: "c.this_doc()"
+   :+tags: documentation_management

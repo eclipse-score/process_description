@@ -39,3 +39,6 @@ Safety Plan Formal Review Checklist
               std_req__iso26262__management_64111[version==1]
 
    For the content see here: `Safety Plan Formal Review Checklist <https://eclipse-score.github.io/module_template/main/module/safety_mgt/module_safety_plan_fdr.html>`__
+
+.. needextend:: "c.this_doc()"
+   :+tags: safety_management

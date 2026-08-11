@@ -26,6 +26,3 @@ Quality Management
    quality_roles
    quality_workflow
    quality_workproducts
-
-.. needextend:: "c.this_doc()"
-   :+tags: quality_management

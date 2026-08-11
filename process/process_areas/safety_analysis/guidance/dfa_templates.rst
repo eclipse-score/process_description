@@ -69,3 +69,6 @@ DFA Templates
               std_req__isopas8926__44432[version==1]
 
    For the content see here: `Component DFA Template <https://eclipse-score.github.io/module_template/main/components/component_example/safety_analysis/dfa.html>`__
+
+.. needextend:: "c.this_doc()"
+   :+tags: safety_analysis

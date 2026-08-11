@@ -27,3 +27,6 @@ Guidance
    security_analysis_threat_templates
    security_analysis_checklist
    security_analysis_process_reqs
+
+.. needextend:: "c.this_doc()"
+   :+tags: security_analysis

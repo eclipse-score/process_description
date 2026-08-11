@@ -101,3 +101,6 @@ Security Planning Templates
               std_req__isosae21434__prj_management_6462[version==1]
 
    For the content see here: `Module Security Plan Template <https://eclipse-score.github.io/module_template/main/module/security_mgt/module_security_plan.html>`__
+
+.. needextend:: "c.this_doc()"
+   :+tags: security_management

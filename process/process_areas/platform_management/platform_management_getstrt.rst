@@ -26,3 +26,6 @@ In case you want to manage contributions to <Project> consider to:
 * Contact the :need:`Project Lead <rl__project_lead>` for your contribution to establish planning and reporting
 * Make familiar with the management, development and supporting process descriptions in :ref:`process_description`
 * Make familiar with the relevant sections of the `Platform Management Plan <gd_temp__platform_mgmt_plan>`
+
+.. needextend:: "c.this_doc()"
+   :+tags: platform_management

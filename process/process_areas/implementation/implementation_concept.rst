@@ -61,3 +61,6 @@ continuous improvements in quality through multiple cycles of refinement.
 The implementation concept intentionally stays at a high level. Practical guidance for
 unit decomposition, source-code documentation, optional diagrams and naming consistency
 for traceability is defined in :need:`Implementation Guideline <gd_guidl__implementation>`.
+
+.. needextend:: "c.this_doc()"
+   :+tags: implementation

@@ -140,3 +140,6 @@ Every :need:`rl__contributor` can propose improvements using the project ISSUE T
 system.
 
 Improvements are approved by the :need:`rl__process_community`.
+
+.. needextend:: "c.this_doc()"
+   :+tags: process_management

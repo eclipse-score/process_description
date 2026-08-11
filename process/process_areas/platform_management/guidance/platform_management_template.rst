@@ -116,3 +116,6 @@ Plan Work Products
       -
       - this document
       - see above
+
+.. needextend:: "c.this_doc()"
+   :+tags: platform_management

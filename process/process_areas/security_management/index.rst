@@ -27,6 +27,3 @@ Security Management
    security_management_roles
    security_management_workflow
    security_management_workproducts
-
-.. needextend:: "c.this_doc()"
-   :+tags: security_management

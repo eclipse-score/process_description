@@ -66,3 +66,6 @@ Contributing Roles:
 A detailed overview of the responsibility for the steps of the Safety Analysis process is listed in the section titled "Workflow for Safety Analysis". You can find it here:
 
 :ref:`workflow_safety_analysis`
+
+.. needextend:: "c.this_doc()"
+   :+tags: safety_analysis

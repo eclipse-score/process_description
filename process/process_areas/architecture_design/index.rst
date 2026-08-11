@@ -27,7 +27,3 @@ Architecture Design
    architecture_roles
    architecture_workflow
    architecture_workproducts
-
-
-.. needextend:: docname is not None and "process_areas/architecture_design" in docname
-   :+tags: architecture_design

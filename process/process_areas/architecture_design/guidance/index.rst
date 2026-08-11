@@ -23,3 +23,6 @@ Guidances
    feature_architecture_template
    component_architecture_template
    architecture_process_reqs
+
+.. needextend:: "c.this_doc()"
+   :+tags: architecture_design

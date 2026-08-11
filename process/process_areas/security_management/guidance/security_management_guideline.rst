@@ -198,3 +198,6 @@ Security Management Guideline
    The Security Package shall be generated progressively and automatically compiling the work products.
    One of the checks to perform on the platform safety package is to check completeness of the
    process compliance to standards, which can be seen from standard linkage charts in :ref:`external_standards`.
+
+.. needextend:: "c.this_doc()"
+   :+tags: security_management

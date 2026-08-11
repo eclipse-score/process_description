@@ -28,3 +28,6 @@ A detailed overview of the responsibilities for the steps of the tool management
 listed here:
 
 :ref:`tlm_workflows`
+
+.. needextend:: "c.this_doc()"
+   :+tags: tool_management

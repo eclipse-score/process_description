@@ -25,3 +25,6 @@ Feature Architecture Template
                std_req__aspice_40__iic-04-04[version==1]
 
     For the content see here: :ref:`feature_architecture_template`
+
+.. needextend:: "c.this_doc()"
+   :+tags: architecture_design

@@ -37,3 +37,6 @@ Tool Verification Report Template
               std_req__aspice_40__SUP-8-BP2[version==1]
 
    For the content see here: :need:`doc_tool__tool_name_version`
+
+.. needextend:: "c.this_doc()"
+   :+tags: tool_management

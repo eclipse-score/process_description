@@ -135,3 +135,6 @@ Description of Quality Management Specifics.
 4.4 Quality Management Generic workproducts
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Description of used Generic Workproducts for Quality Management.
+
+.. needextend:: "c.this_doc()"
+   :+tags: quality_management

@@ -78,3 +78,6 @@ Security Analysis Work Products
    Perform analysis on interactions between security-relevant and non-security-relevant
    sub-components or sub-components with different security levels of one component.
    Including potential influences from the other components in the component's module.
+
+.. needextend:: "c.this_doc()"
+   :+tags: security_analysis

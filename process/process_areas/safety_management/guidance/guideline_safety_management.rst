@@ -263,3 +263,6 @@ Tailoring
    - for "support" standard requirements: The requirement is not applicable for an ASIL_B process
    - for "management" standard requirements: 6453 - not proven in use argument, 6454 - no HW part of SW platform, 6456 - no confidence in use, 64610 - no distributed development
    - for "management" standard requirements 6412*: No assessment planned, as also no finalized safety case is planned
+
+.. needextend:: "c.this_doc()"
+   :+tags: safety_management

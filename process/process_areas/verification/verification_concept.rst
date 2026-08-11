@@ -214,3 +214,6 @@ Also, details in :ref:`external_tsf` to collect evidence required for component 
 of the externally provided component.
 Eclipse projects are further supposed to align with the Eclipse Functional Safety Process which is documented
 in the `Eclipse Foundation Functional Safety Process GitLab <https://gitlab.eclipse.org/eclipsefdn/emo-team/policies/functional-safety-process>`_.
+
+.. needextend:: "c.this_doc()"
+   :+tags: verification

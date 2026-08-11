@@ -39,3 +39,6 @@ The Safety Analysis is performed in three steps.
 
 The details of what needs to be done in each step are described in the :need:`gd_guidl__safety_analysis`. For the Safety Analysis
 templates are used. The templates are described in the :ref:`FMEA_templates` and :ref:`DFA_templates`.
+
+.. needextend:: "c.this_doc()"
+   :+tags: safety_analysis

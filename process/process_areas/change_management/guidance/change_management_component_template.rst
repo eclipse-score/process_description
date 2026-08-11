@@ -33,3 +33,6 @@ Component Template
               std_req__aspice_40__iic-14-02[version==1]
 
    for the content see `Component Request Template <https://eclipse-score.github.io/module_template/main/components/component_example/index.html>`__
+
+.. needextend:: "c.this_doc()"
+   :+tags: change_management

@@ -99,3 +99,6 @@ FMEA Fault Models
       - EX_01_06
       - processing is not complete (infinite loop)
       - High
+
+.. needextend:: "c.this_doc()"
+   :+tags: safety_analysis

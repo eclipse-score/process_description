@@ -424,3 +424,6 @@ How to perform fuzzy testing:
 
    **5. Analyze and Fix Issues** When a problem is detected, analyze the input that caused it
    and fix the underlying issue in the code.
+
+.. needextend:: "c.this_doc()"
+   :+tags: verification

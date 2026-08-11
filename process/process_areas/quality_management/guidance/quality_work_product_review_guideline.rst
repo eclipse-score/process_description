@@ -44,3 +44,6 @@ Process
 | Step  8: Trigger authors of WPs with deviations to resolve them in the same PR and close the corresponding bug issue
 | Step  9: If all bug issues are resolved, continue with 5, otherwise continue with 8
 | Step 10: Merge the PR and communicate the result, initial issue is now in status CLOSED
+
+.. needextend:: "c.this_doc()"
+   :+tags: quality_management

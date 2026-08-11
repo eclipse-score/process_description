@@ -93,3 +93,6 @@ Configuration Management Process Requirements
    It shall be possible to define global tags with the docs-as-code tool, which can be used for filtering and reporting.
 
    Note: This requirement exists to enable the use of global tags for filtering and reporting purposes, while still prohibiting the overriding of mandatory attributes or elements globally.
+
+.. needextend:: "c.this_doc()"
+   :+tags: configuration_management

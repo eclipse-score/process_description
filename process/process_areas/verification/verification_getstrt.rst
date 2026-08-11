@@ -49,3 +49,6 @@ The workflows can be split into 4 major parts:
   available for a specific baseline.
 
 The details of what needs to be done in each part are described in the :ref:`verification_workflows`.
+
+.. needextend:: "c.this_doc()"
+   :+tags: verification

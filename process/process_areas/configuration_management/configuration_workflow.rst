@@ -24,3 +24,6 @@ Thus the work flow :need:`wf__platform_cr_mt_platform_mgmt_plan` applies.
 Baselines (sets of configuration items and their versions) defining a SW Release on platform or module level
 are created as part of this process but are documented in the respective release notes.
 This is part of workflows :need:`wf__rel_mod_rel_note` and :need:`wf__rel_platform_rel_note`
+
+.. needextend:: "c.this_doc()"
+   :+tags: configuration_management

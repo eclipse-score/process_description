@@ -243,5 +243,5 @@ ISO PAS 8926
 .. note::
    Sub-Clause numbers from the official standard document are used for Ids creation for better reference.
 
-.. needextend:: docname is not None and "process/standards/isopas8926" in docname
+.. needextend:: c.this_doc() and docname is not None and "process/standards/isopas8926" in docname
    :+tags: isopas8926

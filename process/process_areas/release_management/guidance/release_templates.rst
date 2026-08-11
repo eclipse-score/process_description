@@ -77,3 +77,6 @@ Templates
    | 6. Document project manager's consent by asking review approval of the release note
    | 7. Create the "release" in version management tool according to :need:`gd_guidl__rel_management`
    | 8. Merge PR and close this issue to complete the release
+
+.. needextend:: "c.this_doc()"
+   :+tags: release_management

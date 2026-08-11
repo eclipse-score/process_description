@@ -119,3 +119,6 @@ Tool Verification Report Checks
       :style: table
       :columns: title
       :colwidths: 30
+
+.. needextend:: "c.this_doc()"
+   :+tags: tool_management

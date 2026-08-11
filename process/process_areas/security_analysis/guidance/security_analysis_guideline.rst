@@ -157,4 +157,7 @@ The security analysis shall be used to analyze whether the security goals of a f
 Examples for Security Analysis at component level
 =================================================
 
-The security analysis shall be used to analyze whether the vulnerabilities within the component can be exploited. This could be unintended privilege escalation between two sub-components, allowing unauthorized access to senstive data or security-critical functions.  
+The security analysis shall be used to analyze whether the vulnerabilities within the component can be exploited. This could be unintended privilege escalation between two sub-components, allowing unauthorized access to senstive data or security-critical functions.
+
+.. needextend:: "c.this_doc()"
+   :+tags: security_analysis

@@ -128,3 +128,6 @@ License Impact
 ==============
 
 [How could the copyright impacted by the license of the new contribution?]
+
+.. needextend:: "c.this_doc()"
+   :+tags: change_management

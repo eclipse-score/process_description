@@ -143,3 +143,6 @@ Additional information can also be found in :need:`gd_guidl__verification_guide`
 
 The specification is part of the test implementation and has to comply to the requirements
 specified in :need:`gd_req__verification_link_tests`.
+
+.. needextend:: "c.this_doc()"
+   :+tags: verification

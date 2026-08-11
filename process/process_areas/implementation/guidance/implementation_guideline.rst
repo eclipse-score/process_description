@@ -274,3 +274,6 @@ Example using PlantUML:
    UnitA -> UnitB : request()
    UnitB --> UnitA : response()
    @enduml
+
+.. needextend:: "c.this_doc()"
+   :+tags: implementation

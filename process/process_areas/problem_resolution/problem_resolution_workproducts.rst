@@ -23,3 +23,6 @@ Problem Resolution Work Products
    :complies: std_wp__iso26262__support_851[version==1]
 
    Problem Resolution Plan (Part of the Platform Management Plan)
+
+.. needextend:: "c.this_doc()"
+   :+tags: problem_resolution

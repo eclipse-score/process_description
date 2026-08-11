@@ -133,3 +133,6 @@ Templates
 
    .. note::
       Of the last three columns of the above sentence template table, filling one is mandatory the others are optional.
+
+.. needextend:: "c.this_doc()"
+   :+tags: requirements_engineering

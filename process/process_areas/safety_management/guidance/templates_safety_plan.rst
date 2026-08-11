@@ -73,3 +73,6 @@ Safety Planning Templates
               std_req__iso26262__management_6421[version==1]
 
    For the content see here: :need:`doc__platform_safety_plan`
+
+.. needextend:: "c.this_doc()"
+   :+tags: safety_management

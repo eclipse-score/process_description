@@ -24,3 +24,6 @@ Guidance
    quality_process_reqs
    quality_work_product_review_guideline
    quality_plan_template
+
+.. needextend:: "c.this_doc()"
+   :+tags: quality_management

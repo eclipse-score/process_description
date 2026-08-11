@@ -25,3 +25,6 @@ Process Requirements
 
    | The quality report shall be generated progressively and automatically compiling the work products.
    | A template exists to guide the reporting and the right collection of the required work products.
+
+.. needextend:: "c.this_doc()"
+   :+tags: quality_management

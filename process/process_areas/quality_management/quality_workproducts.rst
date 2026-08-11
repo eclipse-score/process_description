@@ -64,3 +64,6 @@ Quality Management Work Products
    :complies: std_wp__iso26262__management_552[version==1], std_req__aspice_40__iic-06-04[version==1], std_req__aspice_40__iic-10-51[version==1]
 
    | Trainings shall give dedicated information how to apply the processes and work products in the project.
+
+.. needextend:: "c.this_doc()"
+   :+tags: quality_management

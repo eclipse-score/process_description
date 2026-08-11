@@ -22,3 +22,6 @@ management plan. Thus the work flow :need:`wf__platform_cr_mt_platform_mgmt_plan
 
 The documentation management plan should contain the strategy to manage the identified
 documentations in an effective and repeatable way for the project life cycle.
+
+.. needextend:: "c.this_doc()"
+   :+tags: documentation_management

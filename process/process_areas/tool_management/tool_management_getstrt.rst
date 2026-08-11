@@ -41,3 +41,6 @@ For every tool identified, the following workflows are executed:
 * Approve tool verification report according to :need:`wf__tool_approve_tool_verification_report`
 
 In addition create a tool management plan as part of the platform management plan according to :need:`wf__platform_cr_mt_platform_mgmt_plan`.
+
+.. needextend:: "c.this_doc()"
+   :+tags: tool_management

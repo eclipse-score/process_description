@@ -110,3 +110,6 @@ In principle same as lifecycle model 2, but an additional inspection step is req
 as described here: :ref:`review_concept`.
 
 Example: :need:`wp__requirements_stkh`
+
+.. needextend:: "c.this_doc()"
+   :+tags: documentation_management

@@ -84,3 +84,6 @@ Monitor/Improve Platform Management Plan
 :need:`Project Lead <rl__project_lead>` is responsible for the monitoring of the
 work products and activities against the platform management plan. If deviations are detected,
 the plan must be adjusted.
+
+.. needextend:: "c.this_doc()"
+   :+tags: platform_management

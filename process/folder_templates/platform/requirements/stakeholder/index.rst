@@ -72,5 +72,5 @@ Stakeholder Requirements
     - Add other needed requirements for the platform
     - Set ``status`` to ``valid`` and start the review/merge process
 
-.. needextend:: "platform" in id
+.. needextend:: c.this_doc() and "platform" in id
    :+tags: platform

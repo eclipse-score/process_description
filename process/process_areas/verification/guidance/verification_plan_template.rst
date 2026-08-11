@@ -294,3 +294,6 @@ Verification Plan Template
          It should include information about any specific hardware platforms or simulators used.
          It should also define how the verification environment interacts with the CI system, including
          access control and maintenance.
+
+.. needextend:: "c.this_doc()"
+   :+tags: verification

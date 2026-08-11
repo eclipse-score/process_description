@@ -28,3 +28,6 @@ Component Architecture Template
 
    For the content see the
    `module template documentation <https://eclipse-score.github.io/module_template/main/components/component_example/architecture/component_architecture.html>`__.
+
+.. needextend:: "c.this_doc()"
+   :+tags: architecture_design

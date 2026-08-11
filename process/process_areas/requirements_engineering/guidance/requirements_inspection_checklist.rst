@@ -38,3 +38,6 @@ Requirement Inspection Checklist
    - :need:`doc__stakeholder_req_inspection`
 
    These have the same questions, but different scope and document naming.
+
+.. needextend:: "c.this_doc()"
+   :+tags: requirements_engineering

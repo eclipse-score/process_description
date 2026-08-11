@@ -573,3 +573,6 @@ Limitations
 * Grouping functionality needs improvement
 * Manual extendability is limited to the same type as the underlying drawing, either class or association diagram types
 * Currently only uses the need attributes *includes, included_by, uses, implements*
+
+.. needextend:: "c.this_doc()"
+   :+tags: architecture_design

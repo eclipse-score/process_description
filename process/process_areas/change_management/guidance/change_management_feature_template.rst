@@ -35,3 +35,6 @@ Feature Template
               std_req__aspice_40__iic-14-02[version==1]
 
    for the content see :need:`doc__feature_name`
+
+.. needextend:: "c.this_doc()"
+   :+tags: change_management

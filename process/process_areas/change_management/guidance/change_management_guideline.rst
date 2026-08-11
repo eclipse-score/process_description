@@ -305,3 +305,6 @@ Tailoring
    The reasoning is:
 
    - Trustable Software Framework is planned for evaluation of existing OSS, thus the requirements for evaluation are not applicable.
+
+.. needextend:: "c.this_doc()"
+   :+tags: change_management

@@ -2169,5 +2169,5 @@ Exida Audit Status of Iso Requirements
    type == 'std_req' and "__support" in id and 'n/a' in tags
 
 
-.. needextend:: docname is not None and "process/standards/iso26262" in docname
+.. needextend:: c.this_doc() and docname is not None and "process/standards/iso26262" in docname
    :+tags: iso26262
