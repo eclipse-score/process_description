@@ -53,8 +53,8 @@ html_extra_path = ["trainings/_portals"]
 #    "trainings/_portals/**",
 #]
 
-# :need:`{title}` is used in the needs templates to display the title of the need
-needs_role_need_template = "{title}"
+# :need:`{{ title }}` is used in the needs templates to display the title of the need
+needs_role_need_template = "{{ title }}"
 
 
 # ---------------------------------------------------------------------------
