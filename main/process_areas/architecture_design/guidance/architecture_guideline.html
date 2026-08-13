@@ -27,8 +27,8 @@
   </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../../_static/styles/theme.css?digest=7f76b32a3354e82990f2" rel="stylesheet" />
-<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=7f76b32a3354e82990f2" rel="stylesheet" />
+  <link href="../../../_static/styles/theme.css?digest=90905a2f556bf617f1a9" rel="stylesheet" />
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=90905a2f556bf617f1a9" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="../../../_static/graphviz.css?v=4ae1632d" />
@@ -38,19 +38,19 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-data-viewer/jsonview.bundle.css?v=f6ef2277" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/libs/html/datatables.min.css?v=4b4fd840" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/need_style.css?v=92936fa5" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/needstable.css?v=5e1b6797" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/need_toggle.css?v=5c6620df" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/need_core.css?v=f5b60a78" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/need_style.css?v=92936fa5" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/need_links.css?v=2150a916" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/needstable.css?v=5e1b6797" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/modern.css?v=803738c0" />
     <link rel="stylesheet" type="text/css" href="../../../_static/custom.css?v=c6286864" />
   
   <!-- So that users can add custom icons -->
-  <script defer src="../../../_static/scripts/fontawesome.js?digest=7f76b32a3354e82990f2"></script>
+  <script defer src="../../../_static/scripts/fontawesome.js?digest=90905a2f556bf617f1a9"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=7f76b32a3354e82990f2" />
-<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=7f76b32a3354e82990f2" />
+  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=90905a2f556bf617f1a9" />
+<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=90905a2f556bf617f1a9" />
 
     <script src="../../../_static/jquery.js?v=5d32c60e"></script>
     <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
@@ -65,7 +65,7 @@
     <script src="../../../_static/sphinx-needs/libs/html/sphinx_needs_collapse.js?v=dca66431"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'process_areas/architecture_design/guidance/architecture_guideline';</script>
     <script>
-        DOCUMENTATION_OPTIONS.theme_version = '0.17.0';
+        DOCUMENTATION_OPTIONS.theme_version = '0.20.0';
         DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://eclipse-score.github.io/process_description/versions.json';
         DOCUMENTATION_OPTIONS.theme_switcher_version_match = '';
         DOCUMENTATION_OPTIONS.show_version_warning_banner =
@@ -96,7 +96,9 @@
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
     <i class="fa-solid fa-arrow-up"></i>Back to top</button>
-
+  
+  
+  
   
   <dialog id="pst-search-dialog">
     
@@ -272,11 +274,18 @@
       
         <div class="navbar-item">
 
-<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
-  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
-  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
-  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
-</button></div>
+<div class="theme-switch-container dropdown pst-js-only" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Color mode">
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button dropdown-toggle" aria-label="Color mode" data-bs-toggle="dropdown">
+    <i class="theme-switch fa-solid fa-sun fa-lg fa-fw" data-mode="light" title="Light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg fa-fw" data-mode="dark" title="Dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg fa-fw" data-mode="auto" title="System Settings"></i>
+  </button>
+  <ul class="dropdown-menu dropdown-menu-end">
+    <li><button class="dropdown-item d-flex align-items-center theme-change-button" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg fa-fw me-1"></i>System Settings</button></li>
+    <li><button class="dropdown-item d-flex align-items-center theme-change-button" data-mode="light"><i class="fa-solid fa-sun fa-lg fa-fw me-1"></i>Light</button></li>
+    <li><button class="dropdown-item d-flex align-items-center theme-change-button" data-mode="dark"><i class="fa-solid fa-moon fa-lg fa-fw me-1"></i>Dark</button></li>
+  </ul>
+</div></div>
       
         <div class="navbar-item"><ul class="navbar-icon-links"
     aria-label="Icon Links">
@@ -289,8 +298,7 @@
           
           
           
-          <a href="https://github.com/eclipse-score" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i>
-            <span class="sr-only">GitHub</span></a>
+          <a href="https://github.com/eclipse-score" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i><span class="visually-hidden">GitHub</span></a>
         </li>
 </ul></div>
       
@@ -455,11 +463,18 @@
         
           <div class="navbar-item">
 
-<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
-  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
-  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
-  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
-</button></div>
+<div class="theme-switch-container dropdown pst-js-only" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Color mode">
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button dropdown-toggle" aria-label="Color mode" data-bs-toggle="dropdown">
+    <i class="theme-switch fa-solid fa-sun fa-lg fa-fw" data-mode="light" title="Light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg fa-fw" data-mode="dark" title="Dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg fa-fw" data-mode="auto" title="System Settings"></i>
+  </button>
+  <ul class="dropdown-menu dropdown-menu-end">
+    <li><button class="dropdown-item d-flex align-items-center theme-change-button" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg fa-fw me-1"></i>System Settings</button></li>
+    <li><button class="dropdown-item d-flex align-items-center theme-change-button" data-mode="light"><i class="fa-solid fa-sun fa-lg fa-fw me-1"></i>Light</button></li>
+    <li><button class="dropdown-item d-flex align-items-center theme-change-button" data-mode="dark"><i class="fa-solid fa-moon fa-lg fa-fw me-1"></i>Dark</button></li>
+  </ul>
+</div></div>
         
           <div class="navbar-item"><ul class="navbar-icon-links"
     aria-label="Icon Links">
@@ -472,8 +487,7 @@
           
           
           
-          <a href="https://github.com/eclipse-score" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i>
-            <span class="sr-only">GitHub</span></a>
+          <a href="https://github.com/eclipse-score" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i><span class="visually-hidden">GitHub</span></a>
         </li>
 </ul></div>
         
@@ -502,7 +516,8 @@
   </div>
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
-        <div class="sidebar-primary-item pst-sidebar-collapse"><button id="pst-collapse-sidebar-button" aria-expanded="true" aria-controls="pst-primary-sidebar"><svg class="pst-icon svg-inline--fa" role="img" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+        <div class="sidebar-primary-item pst-sidebar-collapse"><button id="pst-collapse-sidebar-button" aria-expanded="true" aria-controls="pst-primary-sidebar">
+  <svg class="pst-icon" role="img" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
     <path fill="currentColor" d="M3 15.5C2.36232 15.5 1.74874 15.2564 1.28478 14.8189C0.820828 14.3815 0.541576 13.7832 0.504167 13.1467L0.5 13L0.5 3C0.499965 2.36232 0.743605 1.74874 1.18107 1.28478C1.61854 0.820828 2.21676 0.541576 2.85333 0.504167L3 0.5L13 0.5C13.6377 0.499965 14.2513 0.743605 14.7152 1.18107C15.1792 1.61854 15.4584 2.21676 15.4958 2.85333L15.5 3L15.5 13C15.5 13.6377 15.2564 14.2513 14.8189 14.7152C14.3815 15.1792 13.7832 15.4584 13.1467 15.4958L13 15.5L3 15.5ZM3 13.8333L10.5 13.8333L10.5 2.16667L3 2.16667C2.79589 2.16669 2.59889 2.24163 2.44636 2.37726C2.29383 2.5129 2.19638 2.69979 2.1725 2.9025L2.16667 3L2.16667 13C2.16669 13.2041 2.24163 13.4011 2.37726 13.5536C2.5129 13.7062 2.69979 13.8036 2.9025 13.8275L3 13.8333ZM6.65583 10.325L6.5775 10.2558L4.91083 8.58917C4.76735 8.44567 4.68116 8.25476 4.66843 8.05223C4.65569 7.84971 4.71729 7.6495 4.84167 7.48917L4.91083 7.41083L6.5775 5.74417C6.72747 5.59471 6.9287 5.50794 7.14032 5.50148C7.35194 5.49502 7.55809 5.56935 7.7169 5.70937C7.8757 5.8494 7.97525 6.04463 7.99533 6.25539C8.01541 6.46616 7.95451 6.67667 7.825 6.84417L7.75583 6.9225L6.67917 8L7.75583 9.0775C7.89931 9.22099 7.98551 9.41191 7.99824 9.61443C8.01097 9.81695 7.94938 10.0172 7.825 10.1775L7.75583 10.2558C7.61234 10.3993 7.42142 10.4855 7.2189 10.4982C7.01638 10.511 6.81617 10.4494 6.65583 10.325Z"/>
   </svg>
   <span class="pst-collapse-sidebar-label">Collapse Sidebar</span>
@@ -614,7 +629,7 @@
                   
   <section id="architecture-guideline">
 <span id="arch-design-guideline"></span><h1>Architecture Guideline<a class="headerlink" href="#architecture-guideline" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-357fc906">
+<div class="need_container docutils container" id="SNCB-e7b37529">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_guidl table" id="gd_guidl__arch_design">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -636,8 +651,8 @@
 <div class="line"><span><span><div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">architecture_design</span></span></span></div>
 <div class="line"><span class="needs_version"><span class="needs_label">version: </span>1</span></div>
 </span></span></div>
-<div class="line"><span><div class="line">contained by: <span class="contains"><span><a class="reference internal" href="../architecture_workflow.html#wf__cr_mt_platarch" title="gd_guidl__arch_design">wf__cr_mt_platarch</a>, <a class="reference internal" href="../architecture_workflow.html#wf__cr_mt_featarch" title="gd_guidl__arch_design">wf__cr_mt_featarch</a>, <a class="reference internal" href="../architecture_workflow.html#wf__cr_mt_comparch" title="gd_guidl__arch_design">wf__cr_mt_comparch</a>, <a class="reference internal" href="../architecture_workflow.html#wf__mr_vy_arch" title="gd_guidl__arch_design">wf__mr_vy_arch</a></span></span></div>
-<div class="line">complies: <span class="complies"><span><a class="reference internal" href="../../../standards/isopas8926/isopas8926.html#std_req__isopas8926__44411" title="gd_guidl__arch_design">std_req__isopas8926__44411</a>, <a class="reference internal" href="../../../standards/isopas8926/isopas8926.html#std_req__isopas8926__44412" title="gd_guidl__arch_design">std_req__isopas8926__44412</a>, <a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_req__iso26262__software_743" title="gd_guidl__arch_design">std_req__iso26262__software_743</a>, <a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_req__iso26262__software_744" title="gd_guidl__arch_design">std_req__iso26262__software_744</a>, <a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_req__iso26262__software_745" title="gd_guidl__arch_design">std_req__iso26262__software_745</a>, <a class="reference internal" href="../../../standards/aspice_40/iic/iic-10.html#std_req__aspice_40__iic-10-50" title="gd_guidl__arch_design">std_req__aspice_40__iic-10-50</a>, <a class="reference internal" href="../../../standards/aspice_40/iic/iic-10.html#std_req__aspice_40__iic-10-51" title="gd_guidl__arch_design">std_req__aspice_40__iic-10-51</a>, <a class="reference internal" href="../../../standards/aspice_40/iic/iic-10.html#std_req__aspice_40__iic-10-52" title="gd_guidl__arch_design">std_req__aspice_40__iic-10-52</a></span></span></div>
+<div class="line"><span><div class="line">contained by: <span class="contains"><span><a class="reference internal" href="../architecture_workflow.html#wf__cr_mt_comparch" title="gd_guidl__arch_design">wf__cr_mt_comparch</a>, <a class="reference internal" href="../architecture_workflow.html#wf__cr_mt_featarch" title="gd_guidl__arch_design">wf__cr_mt_featarch</a>, <a class="reference internal" href="../architecture_workflow.html#wf__cr_mt_platarch" title="gd_guidl__arch_design">wf__cr_mt_platarch</a>, <a class="reference internal" href="../architecture_workflow.html#wf__mr_vy_arch" title="gd_guidl__arch_design">wf__mr_vy_arch</a></span></span></div>
+<div class="line">complies: <span class="complies"><span><a class="reference internal" href="../../../standards/aspice_40/iic/iic-10.html#std_req__aspice_40__iic-10-50" title="gd_guidl__arch_design">std_req__aspice_40__iic-10-50</a>, <a class="reference internal" href="../../../standards/aspice_40/iic/iic-10.html#std_req__aspice_40__iic-10-51" title="gd_guidl__arch_design">std_req__aspice_40__iic-10-51</a>, <a class="reference internal" href="../../../standards/aspice_40/iic/iic-10.html#std_req__aspice_40__iic-10-52" title="gd_guidl__arch_design">std_req__aspice_40__iic-10-52</a>, <a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_req__iso26262__software_743" title="gd_guidl__arch_design">std_req__iso26262__software_743</a>, <a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_req__iso26262__software_744" title="gd_guidl__arch_design">std_req__iso26262__software_744</a>, <a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_req__iso26262__software_745" title="gd_guidl__arch_design">std_req__iso26262__software_745</a>, <a class="reference internal" href="../../../standards/isopas8926/isopas8926.html#std_req__isopas8926__44411" title="gd_guidl__arch_design">std_req__isopas8926__44411</a>, <a class="reference internal" href="../../../standards/isopas8926/isopas8926.html#std_req__isopas8926__44412" title="gd_guidl__arch_design">std_req__isopas8926__44412</a></span></span></div>
 </span></div>
 </div>
 </td>
@@ -888,8 +903,8 @@
 <section id="create-platform-architecture-concept">
 <span id="create-platform-architecture"></span><h3>Create platform architecture (Concept)<a class="headerlink" href="#create-platform-architecture-concept" title="Link to this heading">#</a></h3>
 <p>The platform architecture (= top-level architecture) shall be created in the platform delivery container. It provides the overall decomposition of the platform into features and defines the logical interfaces at the platform boundary.</p>
-<p>The platform architecture shall describe the concept of the platform, including supporting figures and drawings. If multiple solutions are possible, these should be documented here with the rationale for the final decision. A design decision template is provided in <a class="reference internal" href="../../change_management/guidance/change_management_decision_record_template.html#gd_temp__change_decision_record" title="gd_temp__change_decision_record"><em class="xref need">{ title }</em></a>.</p>
-<p>Additionally, you should consult your project’s specific guidelines, e.g., for using the version management tooling or architecture element naming conventions, which should be defined (or linked) in the <a class="reference internal" href="../../implementation/implementation_workproducts.html#wp__sw_development_plan" title="wp__sw_development_plan"><em class="xref need">{ title }</em></a>.</p>
+<p>The platform architecture shall describe the concept of the platform, including supporting figures and drawings. If multiple solutions are possible, these should be documented here with the rationale for the final decision. A design decision template is provided in <a class="reference internal" href="../../change_management/guidance/change_management_decision_record_template.html#gd_temp__change_decision_record" title="gd_temp__change_decision_record"><em class="xref need">Decision Record Template</em></a>.</p>
+<p>Additionally, you should consult your project’s specific guidelines, e.g., for using the version management tooling or architecture element naming conventions, which should be defined (or linked) in the <a class="reference internal" href="../../implementation/implementation_workproducts.html#wp__sw_development_plan" title="wp__sw_development_plan"><em class="xref need">Project SW development Plan</em></a>.</p>
 </section>
 <section id="model-platform-architecture">
 <span id="id1"></span><h3>Model platform architecture<a class="headerlink" href="#model-platform-architecture" title="Link to this heading">#</a></h3>
@@ -927,9 +942,9 @@
 </section>
 <section id="review-platform-architecture">
 <span id="id2"></span><h3>Review platform architecture<a class="headerlink" href="#review-platform-architecture" title="Link to this heading">#</a></h3>
-<p>As soon as the design is in a mature state, it can be reviewed according to <a class="reference internal" href="../../../general_concepts/score_review_concept.html#doc_concept__wp_inspections" title="doc_concept__wp_inspections"><em class="xref need">{ title }</em></a>
-and merged into the main branch of the platform delivery container. See also the document life-cycle guideline <a class="reference internal" href="../../documentation_management/guidance/documentation_guideline.html#gd_guidl__documentation" title="gd_guidl__documentation"><em class="xref need">{ title }</em></a> for more information about the documentation for the platform architecture <a class="reference internal" href="../architecture_workproducts.html#wp__platform_arch" title="wp__platform_arch"><em class="xref need">{ title }</em></a>.</p>
-<p>For the review process, a checklist template is available: <a class="reference internal" href="architecture_inspection_checklist.html#gd_chklst__arch_inspection_checklist" title="gd_chklst__arch_inspection_checklist"><em class="xref need">{ title }</em></a>.</p>
+<p>As soon as the design is in a mature state, it can be reviewed according to <a class="reference internal" href="../../../general_concepts/score_review_concept.html#doc_concept__wp_inspections" title="doc_concept__wp_inspections"><em class="xref need">Work product Inspections Co...</em></a>
+and merged into the main branch of the platform delivery container. See also the document life-cycle guideline <a class="reference internal" href="../../documentation_management/guidance/documentation_guideline.html#gd_guidl__documentation" title="gd_guidl__documentation"><em class="xref need">Documentation</em></a> for more information about the documentation for the platform architecture <a class="reference internal" href="../architecture_workproducts.html#wp__platform_arch" title="wp__platform_arch"><em class="xref need">Platform Architecture</em></a>.</p>
+<p>For the review process, a checklist template is available: <a class="reference internal" href="architecture_inspection_checklist.html#gd_chklst__arch_inspection_checklist" title="gd_chklst__arch_inspection_checklist"><em class="xref need">Architecture Inspection Checklist Template</em></a>.</p>
 <p>The following roles should be included in the review:</p>
 <ul class="simple">
 <li><p><a class="reference internal" href="../../safety_management/safety_management_roles.html#rl__safety_manager" title="rl__safety_manager"><em class="xref need">Safety Manager</em></a></p></li>
@@ -941,8 +956,8 @@ and merged into the main branch of the platform delivery container. See also the
 <section id="create-feature-architecture-concept">
 <span id="create-feature-architecture"></span><h3>Create feature architecture (Concept)<a class="headerlink" href="#create-feature-architecture-concept" title="Link to this heading">#</a></h3>
 <p>The feature architecture (= high-level architecture) shall be created in the feature tree of the platform delivery container.</p>
-<p>For this step, the following guidance is available: <a class="reference internal" href="feature_architecture_template.html#gd_temp__arch_feature" title="gd_temp__arch_feature"><em class="xref need">{ title }</em></a>. Based on this template, the feature architecture shall describe the concept of the feature, including supporting figures and drawings. If multiple solutions are possible, these should be documented here with the rationale for the final decision. A design decision template is provided in <a class="reference internal" href="../../change_management/guidance/change_management_decision_record_template.html#gd_temp__change_decision_record" title="gd_temp__change_decision_record"><em class="xref need">{ title }</em></a>.</p>
-<p>Additionally, you should consult your project’s specific guidelines, e.g., for using the version management tooling or architecture element naming conventions, which should be defined (or linked) in the <a class="reference internal" href="../../implementation/implementation_workproducts.html#wp__sw_development_plan" title="wp__sw_development_plan"><em class="xref need">{ title }</em></a>.</p>
+<p>For this step, the following guidance is available: <a class="reference internal" href="feature_architecture_template.html#gd_temp__arch_feature" title="gd_temp__arch_feature"><em class="xref need">Feature Architecture Template</em></a>. Based on this template, the feature architecture shall describe the concept of the feature, including supporting figures and drawings. If multiple solutions are possible, these should be documented here with the rationale for the final decision. A design decision template is provided in <a class="reference internal" href="../../change_management/guidance/change_management_decision_record_template.html#gd_temp__change_decision_record" title="gd_temp__change_decision_record"><em class="xref need">Decision Record Template</em></a>.</p>
+<p>Additionally, you should consult your project’s specific guidelines, e.g., for using the version management tooling or architecture element naming conventions, which should be defined (or linked) in the <a class="reference internal" href="../../implementation/implementation_workproducts.html#wp__sw_development_plan" title="wp__sw_development_plan"><em class="xref need">Project SW development Plan</em></a>.</p>
 </section>
 <section id="model-feature-architecture">
 <span id="id3"></span><h3>Model feature architecture<a class="headerlink" href="#model-feature-architecture" title="Link to this heading">#</a></h3>
@@ -988,9 +1003,9 @@ but all the feature requirements must be allocated to the feature element via th
 </section>
 <section id="review-architectural-design">
 <span id="id4"></span><h3>Review architectural design<a class="headerlink" href="#review-architectural-design" title="Link to this heading">#</a></h3>
-<p>As soon as the design is in a mature state, it can be reviewed according to <a class="reference internal" href="../../../general_concepts/score_review_concept.html#doc_concept__wp_inspections" title="doc_concept__wp_inspections"><em class="xref need">{ title }</em></a>
-and merged into the main branch of the platform delivery container. See also the document life-cycle guideline <a class="reference internal" href="../../documentation_management/guidance/documentation_guideline.html#gd_guidl__documentation" title="gd_guidl__documentation"><em class="xref need">{ title }</em></a> for more information about the documentation for the feature architecture <a class="reference internal" href="../architecture_workproducts.html#wp__feature_arch" title="wp__feature_arch"><em class="xref need">{ title }</em></a>.</p>
-<p>For the review process, a checklist template is available: <a class="reference internal" href="architecture_inspection_checklist.html#gd_chklst__arch_inspection_checklist" title="gd_chklst__arch_inspection_checklist"><em class="xref need">{ title }</em></a>.</p>
+<p>As soon as the design is in a mature state, it can be reviewed according to <a class="reference internal" href="../../../general_concepts/score_review_concept.html#doc_concept__wp_inspections" title="doc_concept__wp_inspections"><em class="xref need">Work product Inspections Co...</em></a>
+and merged into the main branch of the platform delivery container. See also the document life-cycle guideline <a class="reference internal" href="../../documentation_management/guidance/documentation_guideline.html#gd_guidl__documentation" title="gd_guidl__documentation"><em class="xref need">Documentation</em></a> for more information about the documentation for the feature architecture <a class="reference internal" href="../architecture_workproducts.html#wp__feature_arch" title="wp__feature_arch"><em class="xref need">Feature Architecture</em></a>.</p>
+<p>For the review process, a checklist template is available: <a class="reference internal" href="architecture_inspection_checklist.html#gd_chklst__arch_inspection_checklist" title="gd_chklst__arch_inspection_checklist"><em class="xref need">Architecture Inspection Checklist Template</em></a>.</p>
 <p>The following roles should be included in the review:</p>
 <ul class="simple">
 <li><p><a class="reference internal" href="../../safety_management/safety_management_roles.html#rl__safety_manager" title="rl__safety_manager"><em class="xref need">Safety Manager</em></a></p></li>
@@ -1001,8 +1016,8 @@ and merged into the main branch of the platform delivery container. See also the
 </section>
 <section id="create-component-architecture-concept">
 <span id="create-component-architecture"></span><h3>Create component architecture (Concept)<a class="headerlink" href="#create-component-architecture-concept" title="Link to this heading">#</a></h3>
-<p>Based on the <em>feature architecture</em>, the concept for the <em>component architecture</em> shall be created in the module’s delivery container. It shall describe which components need to be created and how they correlate with each other in order to provide the required functionality. As a starting point, a <a class="reference internal" href="component_architecture_template.html#gd_temp__arch_comp" title="gd_temp__arch_comp"><em class="xref need">{ title }</em></a> is provided.</p>
-<p>For this step, the following guidance is available: <a class="reference internal" href="feature_architecture_template.html#gd_temp__arch_feature" title="gd_temp__arch_feature"><em class="xref need">{ title }</em></a>. Additionally, you should consult your project’s specific guidelines, e.g., for using the version management tooling or architecture element naming conventions, which should be defined (or linked) in the <a class="reference internal" href="../../implementation/implementation_workproducts.html#wp__sw_development_plan" title="wp__sw_development_plan"><em class="xref need">{ title }</em></a>.</p>
+<p>Based on the <em>feature architecture</em>, the concept for the <em>component architecture</em> shall be created in the module’s delivery container. It shall describe which components need to be created and how they correlate with each other in order to provide the required functionality. As a starting point, a <a class="reference internal" href="component_architecture_template.html#gd_temp__arch_comp" title="gd_temp__arch_comp"><em class="xref need">template</em></a> is provided.</p>
+<p>For this step, the following guidance is available: <a class="reference internal" href="feature_architecture_template.html#gd_temp__arch_feature" title="gd_temp__arch_feature"><em class="xref need">Feature Architecture Template</em></a>. Additionally, you should consult your project’s specific guidelines, e.g., for using the version management tooling or architecture element naming conventions, which should be defined (or linked) in the <a class="reference internal" href="../../implementation/implementation_workproducts.html#wp__sw_development_plan" title="wp__sw_development_plan"><em class="xref need">Project SW development Plan</em></a>.</p>
 <p><strong>Reuse of Existing Components:</strong> For proven-in-use components, the architecture documentation may reference the existing documentation instead of re-creating it. In such cases, a delta analysis documenting deviations from the original context and any changes in application conditions shall be provided.</p>
 </section>
 <section id="allocate-component-requirements-to-architectural-elements">
@@ -1013,7 +1028,7 @@ and merged into the main branch of the platform delivery container. See also the
 <span id="id5"></span><h3>Model component architecture<a class="headerlink" href="#model-component-architecture" title="Link to this heading">#</a></h3>
 <p>According to the architecture design description, the model for the component architecture shall be created. It shall consist of components, real interfaces and real interface operations. Depending on the size and complexity of the component, it can also be split into multiple (lower-level) components.</p>
 <p><strong>Tailoring for Component Complexity:</strong> For simple components with fewer than 3 internal sub-components, the internal component architecture decomposition may be omitted.</p>
-<p>Complexity can be assessed project-specifically (for example by Lines of Code, interface size, decomposition depth, coupling, or control-flow metrics such as McCabe). For default measurement see <a class="reference internal" href="../../implementation/guidance/implementation_process_reqs.html#gd_req__impl_complexity_analysis" title="gd_req__impl_complexity_analysis"><em class="xref need">{ title }</em></a>.</p>
+<p>Complexity can be assessed project-specifically (for example by Lines of Code, interface size, decomposition depth, coupling, or control-flow metrics such as McCabe). For default measurement see <a class="reference internal" href="../../implementation/guidance/implementation_process_reqs.html#gd_req__impl_complexity_analysis" title="gd_req__impl_complexity_analysis"><em class="xref need">Implementation Complexity Analysis</em></a>.</p>
 <div class="pst-scrollable-table-container"><table class="table" id="id11">
 <caption><span class="caption-number">Table 11 </span><span class="caption-text">Architectural Elements of the Component Architecture</span><a class="headerlink" href="#id11" title="Link to this table">#</a></caption>
 <colgroup>
@@ -1042,14 +1057,14 @@ and merged into the main branch of the platform delivery container. See also the
 </section>
 <section id="review-component-architecture">
 <span id="id6"></span><h3>Review component architecture<a class="headerlink" href="#review-component-architecture" title="Link to this heading">#</a></h3>
-<p>As soon as the design is in a mature state, it can be <a class="reference internal" href="../../../general_concepts/score_review_concept.html#review-concept"><span class="std std-ref">reviewed</span></a> and merged into the main branch of the module’s delivery container. See also the document life-cycle guideline <a class="reference internal" href="../../documentation_management/guidance/documentation_guideline.html#gd_guidl__documentation" title="gd_guidl__documentation"><em class="xref need">{ title }</em></a> for more information about the documentation for the component architecture <a class="reference internal" href="../architecture_workproducts.html#wp__component_arch" title="wp__component_arch"><em class="xref need">{ title }</em></a>.</p>
+<p>As soon as the design is in a mature state, it can be <a class="reference internal" href="../../../general_concepts/score_review_concept.html#review-concept"><span class="std std-ref">reviewed</span></a> and merged into the main branch of the module’s delivery container. See also the document life-cycle guideline <a class="reference internal" href="../../documentation_management/guidance/documentation_guideline.html#gd_guidl__documentation" title="gd_guidl__documentation"><em class="xref need">Documentation</em></a> for more information about the documentation for the component architecture <a class="reference internal" href="../architecture_workproducts.html#wp__component_arch" title="wp__component_arch"><em class="xref need">Component Architecture</em></a>.</p>
 <p>Following roles should be included in the review:</p>
 <ul class="simple">
 <li><p><a class="reference internal" href="../../safety_management/safety_management_roles.html#rl__safety_manager" title="rl__safety_manager"><em class="xref need">Safety Manager</em></a></p></li>
 <li><p><a class="reference internal" href="../../security_management/security_management_roles.html#rl__security_manager" title="rl__security_manager"><em class="xref need">Security Manager</em></a></p></li>
 <li><p><a class="reference internal" href="../../../roles/index.html#rl__committer" title="rl__committer"><em class="xref need">Committer</em></a></p></li>
 </ul>
-<p>For the review process, a checklist template is available: <a class="reference internal" href="architecture_inspection_checklist.html#gd_chklst__arch_inspection_checklist" title="gd_chklst__arch_inspection_checklist"><em class="xref need">{ title }</em></a>.</p>
+<p>For the review process, a checklist template is available: <a class="reference internal" href="architecture_inspection_checklist.html#gd_chklst__arch_inspection_checklist" title="gd_chklst__arch_inspection_checklist"><em class="xref need">Architecture Inspection Checklist Template</em></a>.</p>
 </section>
 </section>
 <section id="uml-diagram-selection">
@@ -1062,7 +1077,7 @@ for the static architecture a UML component diagram is expected (and supported  
 </section>
 <section id="dynamic-architecture">
 <h3>Dynamic architecture<a class="headerlink" href="#dynamic-architecture" title="Link to this heading">#</a></h3>
-<p>The <a class="reference internal" href="../architecture_concept.html#doc_concept__arch_process" title="doc_concept__arch_process"><em class="xref need">{ title }</em></a> shows the usage of UML sequence diagrams to describe dynamic
+<p>The <a class="reference internal" href="../architecture_concept.html#doc_concept__arch_process" title="doc_concept__arch_process"><em class="xref need">Architecture Process</em></a> shows the usage of UML sequence diagrams to describe dynamic
 behavior. This is also the expected default diagram. Alternatively, state machine diagrams can be used
 to describe stateful behavior. Other types like the activity diagram are not encouraged to use,
 if an activity diagram is used instead of a sequence diagram, this has to be argued as part of the
@@ -1198,8 +1213,8 @@ architecture description.</p>
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script defer src="../../../_static/scripts/bootstrap.js?digest=7f76b32a3354e82990f2"></script>
-<script defer src="../../../_static/scripts/pydata-sphinx-theme.js?digest=7f76b32a3354e82990f2"></script>
+  <script defer src="../../../_static/scripts/bootstrap.js?digest=90905a2f556bf617f1a9"></script>
+<script defer src="../../../_static/scripts/pydata-sphinx-theme.js?digest=90905a2f556bf617f1a9"></script>
 
   <footer class="bd-footer">
 <div class="bd-footer__inner bd-page-width">
@@ -1223,7 +1238,7 @@ architecture description.</p>
         <div class="footer-item">
 <p class="theme-version">
   <!-- # L10n: Setting the PST URL as an argument as this does not need to be localized -->
-  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.17.0.
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.20.0.
 </p></div>
       
     </div>
