@@ -34,32 +34,32 @@ In this project there are inspections on the following work products, which are 
         * - inspected work product Id
           - Link to checklist
 
-        * - :need:`wp__requirements_stkh`
-          - :need:`gd_chklst__req_inspection`
+        * - :need:`[[title]] <wp__requirements_stkh>`
+          - :need:`[[title]] <gd_chklst__req_inspection>`
 
-        * - :need:`wp__requirements_feat`
-          - :need:`gd_chklst__req_inspection`
+        * - :need:`[[title]] <wp__requirements_feat>`
+          - :need:`[[title]] <gd_chklst__req_inspection>`
 
-        * - :need:`wp__requirements_comp`
-          - :need:`gd_chklst__req_inspection`
+        * - :need:`[[title]] <wp__requirements_comp>`
+          - :need:`[[title]] <gd_chklst__req_inspection>`
 
-        * - :need:`wp__requirements_sw_platform_aou`
-          - :need:`gd_chklst__req_inspection`
+        * - :need:`[[title]] <wp__requirements_sw_platform_aou>`
+          - :need:`[[title]] <gd_chklst__req_inspection>`
 
-        * - :need:`wp__requirements_feat_aou`
-          - :need:`gd_chklst__req_inspection`
+        * - :need:`[[title]] <wp__requirements_feat_aou>`
+          - :need:`[[title]] <gd_chklst__req_inspection>`
 
-        * - :need:`wp__requirements_comp_aou`
-          - :need:`gd_chklst__req_inspection`
+        * - :need:`[[title]] <wp__requirements_comp_aou>`
+          - :need:`[[title]] <gd_chklst__req_inspection>`
 
-        * - :need:`wp__feature_arch`
-          - :need:`gd_chklst__arch_inspection_checklist`
+        * - :need:`[[title]] <wp__feature_arch>`
+          - :need:`[[title]] <gd_chklst__arch_inspection_checklist>`
 
-        * - :need:`wp__component_arch`
-          - :need:`gd_chklst__arch_inspection_checklist`
+        * - :need:`[[title]] <wp__component_arch>`
+          - :need:`[[title]] <gd_chklst__arch_inspection_checklist>`
 
-        * - :need:`wp__sw_implementation`
-          - :need:`gd_chklst__impl_inspection_checklist`
+        * - :need:`[[title]] <wp__sw_implementation>`
+          - :need:`[[title]] <gd_chklst__impl_inspection_checklist>`
 
 Note that for test cases also a review checklist is provided for guidance, but no formal inspection is required.
 The same is true for Safety Analysis and DFA.
