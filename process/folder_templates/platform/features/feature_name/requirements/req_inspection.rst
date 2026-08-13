@@ -12,8 +12,11 @@
    # SPDX-License-Identifier: Apache-2.0
    # *******************************************************************************
 
+[Feature Name] Requirements Inspection
+===========================================
 
-.. document:: [Your Feature Name] Requirements Inspection Checklist
+
+.. document:: [Feature Name] Requirements Inspection
    :id: doc__feature_name_req_inspection
    :status: draft
    :version: 2
@@ -25,37 +28,52 @@
 .. attention::
     The above directive must be updated according to your Feature.
 
-    - Modify ``Your Feature Name`` to be your Feature Name
+    - Modify ``Feature Name`` to be your Feature Name
     - Modify ``id`` to be your Feature Name in lower snake case preceded by ``doc__`` and followed by ``_req_inspection``
     - Adjust ``status`` to be ``valid``
     - Adjust ``safety``, ``security`` and ``tags`` according to your needs
 
+Participants
+------------
+
+.. note::
+
+   As described in the concept :need:`doc_concept__wp_inspections` the following “inspection roles” are expected to be filled:
+
+   * content responsible (author): <contributor/committer explicitly named here, who is the main author, as can be seen in config mgt tooling>
+   * reviewer: <contributor/committer explicitly named here, who is the main content reviewer, must be different from content responsible>
+   * moderator: <committer explicitly named here, who is is the safety manager, security manager or quality manager initiating the inspection>
+
+
+.. list-table:: [Feature Name] Requirements Inspection Particpants
+    :header-rows: 1
+
+    * - Author(s)
+      - Reviewer(s)
+      - Moderator
+    * - `<https://github.com/NN>`_, `<https://github.com/NN>`_
+      - `<https://github.com/NN>`_, `<https://github.com/NN>`_
+      - `<https://github.com/NN>`_
+
+
 Requirement Inspection Checklist
-================================
+--------------------------------
 
-Purpose
--------
+.. note::
 
-The purpose of this requirement inspection checklist is to collect the topics to be checked during requirements inspection.
+   **Purpose**
 
-Conduct
--------
+   The purpose of this requirement inspection checklist is to collect the topics to be checked during requirements inspection.
 
-As described in the concept :need:`doc_concept__wp_inspections` the following "inspection roles" are expected to be filled:
+   **Checklist**
 
-- content responsible (author): <contributor/committer explicitly named here, who is the main author, as can be seen in config mgt tooling>
-- reviewer: <contributor/committer explicitly named here, who is the main content reviewer, must be different from content responsible>
-- moderator: <committer explicitly named here, who is is the safety manager, security manager or quality manager initiating the inspection>
-- test expert: <one of the reviewers explicitly named here, to cover REQ_08_01 as described>
+   It is mandatory to fill in the "passed" column with "yes" or "no" for each checklist item and additionally to add in the remarks why it is passed or not passed.
+   In case of "no" an issue link to the issue tracking system has to be added in the last column (if not solved in the same issue).
+   If a Review ID is not applicable for your requirements, then state ""n/a" in status and comment accordingly in remarks.
+   See also :need:`doc_concept__wp_inspections` for further information about reviews in general and inspection in particular.
 
-Checklist
----------
 
-It is mandatory to fill in the "passed" column with "yes" or "no" for each checklist item and additionally to add in the remarks why it is passed or not passed.
-In case of "no" an issue link to the issue tracking system has to be added in the last column (if not solved in the same issue).
-See also :need:`doc_concept__wp_inspections` for further information about reviews in general and inspection in particular.
-
-.. list-table:: Feature Requirement Inspection Checklist
+.. list-table:: [Feature Name] Requirement Inspection Checklist
     :header-rows: 1
     :widths: 10,30,50,6,6,8
 
@@ -162,10 +180,15 @@ See also :need:`doc_concept__wp_inspections` for further information about revie
       -
       -
 
-.. attention::
-    The above checklist entries must be filled according to your component requirements in scope.
+Summary
+-------
 
-Note: If a Review ID is not applicable for your requirement, then state ""n/a" in status and comment accordingly in remarks.
+.. note::
+
+   The filtering must be updated according to your Feature.
+
+Inspected Requirements
+^^^^^^^^^^^^^^^^^^^^^^
 
 The following requirements in "valid" state and with "inspected" tag set are in the scope of this inspection:
 
@@ -178,6 +201,9 @@ The following requirements in "valid" state and with "inspected" tag set are in 
    :colwidths: 25,25,25
    :sort: title
 
+Inspected Assumptions of Use
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 And also the following AoUs in "valid" state and with "inspected" tag set (for these please answer the questions above as if the AoUs are requirements, except question REQ_03_01):
 
 .. needtable::
@@ -188,8 +214,3 @@ And also the following AoUs in "valid" state and with "inspected" tag set (for t
    :columns: id;status;tags
    :colwidths: 25,25,25
    :sort: title
-
-.. attention::
-    The above tables filtering must be updated according to your Feature.
-
-    - Modify ``feature_name`` to be your Feature Name in lower snake case

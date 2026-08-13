@@ -105,4 +105,4 @@ Footnotes
 
    architecture/index.rst
    requirements/index.rst
-   requirements/chklst_req_inspection.rst
+   requirements/req_inspection.rst
