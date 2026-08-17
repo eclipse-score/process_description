@@ -27,3 +27,6 @@ Guidance
    checklist_safety_plan.rst
    checklist_safety_package.rst
    process_req.rst
+
+.. needextend:: "c.this_doc()"
+   :+tags: safety_management

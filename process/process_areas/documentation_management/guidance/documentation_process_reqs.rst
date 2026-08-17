@@ -121,3 +121,6 @@ Document Management Process Requirements
    which is usually the person with "write-rights" on the document approving
    the merge of a Pull Request (this may also be more than one person).
    Note that every approver is also reviewer.
+
+.. needextend:: "c.this_doc()"
+   :+tags: documentation_management

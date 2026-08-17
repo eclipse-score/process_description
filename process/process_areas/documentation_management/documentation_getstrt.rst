@@ -28,3 +28,6 @@ General Workflow
 ****************
 
 The main workflow is to create and maintain the :need:`wp__document_mgt_plan`.
+
+.. needextend:: "c.this_doc()"
+   :+tags: documentation_management

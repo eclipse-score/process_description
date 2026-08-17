@@ -18,8 +18,7 @@ Getting Started
 .. doc_getstrt:: Getting Started on Requirements
    :id: doc_getstrt__req_process
    :status: valid
-   :version: 1
-   :tags: requirements_engineering
+   :version: 2
 
 This document describes the steps which need to be done to create requirements, derive child requirements and finally to perform the formal requirement inspection.
 
@@ -50,3 +49,6 @@ Tooling Support
 The requirements templates and examples are built by using the means of a specific "Docs-as-Code" tool,
 but this does not mean that projects are required to use this, as long as the content (e.g. attributes)
 and functionality described in :ref:`process_requirements` is covered by the selected tool.
+
+.. needextend:: "c.this_doc()"
+   :+tags: requirements_engineering

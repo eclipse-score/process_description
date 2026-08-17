@@ -48,7 +48,7 @@ Security Management Work Products
 
    Guidelines on how an impact analysis shall be concluded on each item or element involved together with it's connected items or elements.
 
-   For the template see here: `Module Security Manual Template <https://eclipse-score.github.io/module_template/main/docs/manuals/security_manual.html>`__
+   For the template see here: `Module Security Manual Template <https://eclipse-score.github.io/module_template/main/module/manuals/security_manual.html>`__
 
    This is on following level:
 
@@ -88,8 +88,8 @@ Security Management Work Products
    Will contain formal review report for Security Plan, Security Package and Security Analyses.
 
    For the different review checklist see here:
-     - Review checklist for Security Plans: :need:`doc__platform_name_security_plan_fdr` and `Module Security Plan Formal Review Checklist <https://eclipse-score.github.io/module_template/main/docs/security_mgt/module_security_plan_fdr.html>`__
-     - Review checklist for Security Packages: :need:`doc__platform_name_security_package_fdr` and `Module Security Package Formal Review Checklist <https://eclipse-score.github.io/module_template/main/docs/security_mgt/module_security_package_fdr.html>`__
+     - Review checklist for Security Plans: :need:`doc__platform_name_security_plan_fdr` and `Module Security Plan Formal Review Checklist <https://eclipse-score.github.io/module_template/main/module/security_mgt/module_security_plan_fdr.html>`__
+     - Review checklist for Security Packages: :need:`doc__platform_name_security_package_fdr` and `Module Security Package Formal Review Checklist <https://eclipse-score.github.io/module_template/main/module/security_mgt/module_security_package_fdr.html>`__
 
 .. workproduct:: Process Security Audit Report
    :id: wp__audit_report_security
@@ -139,7 +139,7 @@ Security Management Work Products
 
    This is on module level. One manual per each module.
 
-   For template see here: `Module Security Manual Template <https://eclipse-score.github.io/module_template/main/docs/manuals/security_manual.html>`__
+   For template see here: `Module Security Manual Template <https://eclipse-score.github.io/module_template/main/module/manuals/security_manual.html>`__
 
 .. workproduct:: Platform Software Bill of Material (SBOM)
    :id: wp__sw_platform_sbom
@@ -160,3 +160,6 @@ Security Management Work Products
 
    Module Software Bill of Material
    - comprehensive inventory of software components to ensure security, integrity, and compliance.
+
+.. needextend:: "c.this_doc()"
+   :+tags: security_management

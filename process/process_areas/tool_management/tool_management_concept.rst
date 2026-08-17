@@ -85,3 +85,6 @@ Attributes for Tool Management
 
 The required attributes for the Tool Verification Report are defined here:
 :ref:`tlm_process_attributes`.
+
+.. needextend:: "c.this_doc()"
+   :+tags: tool_management

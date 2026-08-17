@@ -27,6 +27,3 @@ Change Management
    change_management_roles
    change_management_workflow
    change_management_workproducts
-
-.. needextend:: docname is not None and "process_areas/change_management" in docname
-   :+tags: change_management

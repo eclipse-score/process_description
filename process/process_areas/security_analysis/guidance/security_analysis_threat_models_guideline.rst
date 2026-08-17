@@ -152,3 +152,6 @@ Threat Models for sequence diagrams
       - LA_01_03
       - sensitive data is logged (Information Disclosure)
       - High
+
+.. needextend:: "c.this_doc()"
+   :+tags: security_analysis

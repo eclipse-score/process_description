@@ -20,7 +20,7 @@ Feature Template
 .. gd_temp:: Feature Request Template
    :id: gd_temp__change_feature_request
    :status: valid
-   :version: 1
+   :version: 2
    :complies: std_req__aspice_40__SUP-10-BP1[version==1],
               std_req__aspice_40__SUP-10-BP2[version==1],
               std_req__aspice_40__SUP-10-BP3[version==1],
@@ -35,3 +35,6 @@ Feature Template
               std_req__aspice_40__iic-14-02[version==1]
 
    for the content see :need:`doc__feature_name`
+
+.. needextend:: "c.this_doc()"
+   :+tags: change_management

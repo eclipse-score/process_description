@@ -40,3 +40,6 @@ Tool Management Work Products
 
    Based on TCL the appropriate qualification methods shall be applied. For the project
    the method **validation of software tool** must be used.
+
+.. needextend:: "c.this_doc()"
+   :+tags: tool_management

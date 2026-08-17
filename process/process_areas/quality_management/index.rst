@@ -26,6 +26,3 @@ Quality Management
    quality_roles
    quality_workflow
    quality_workproducts
-
-.. needextend:: docname is not None and "process_areas/quality_management" in docname
-   :+tags: quality_management

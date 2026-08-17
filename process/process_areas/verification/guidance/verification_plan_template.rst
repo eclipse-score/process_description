@@ -33,7 +33,8 @@ Verification Plan Template
                std_req__aspice_40__SWE-5-BP2[version==1],
                std_req__aspice_40__SWE-6-BP2[version==1],
                std_req__aspice_40__SWE-5-BP3[version==1],
-               std_req__aspice_40__iic-06-50[version==1]
+               std_req__aspice_40__iic-06-50[version==1],
+               std_req__iso26262__software_942[version==1]
 
     This document implements :need:`wp__verification_plan`.
 
@@ -293,3 +294,6 @@ Verification Plan Template
          It should include information about any specific hardware platforms or simulators used.
          It should also define how the verification environment interacts with the CI system, including
          access control and maintenance.
+
+.. needextend:: "c.this_doc()"
+   :+tags: verification

@@ -15,18 +15,42 @@
 Process Requirements
 ####################
 
+.. gd_req:: Design Decision Rationale
+   :id: gd_req__impl_design_decision
+   :status: valid
+   :version: 1
+   :tags: manual_prio_1, mandatory
+   :satisfies: wf__sw_detailed_design[version==1]
+   :complies: std_req__iso26262__software_842[version==1],
+              std_req__iso26262__support_6421[version==1],
+              std_req__iso26262__support_6425[version==1],
+              std_req__aspice_40__SWE-3-BP2[version==1]
+
+   The detailed design decisions shall be documented and justified, in particular those
+   that shape the decomposition of a component into its units. The rationale shall be
+   captured close to the design, i.e. in the source and header files (e.g. as
+   doxygen-style comments) and, where applicable, in the detailed design documentation.
+
+Please notice, that detail design description files (within MarkDown or RestructuredText) are optional.
+Also diagrams are optional, but if they are created, they shall have the following attributes to ensure consistency and traceability.
+
 .. gd_req:: Static Diagram for Unit Interactions
    :id: gd_req__impl_static_diagram
    :status: valid
    :version: 1
-   :tags: manual_prio_1, mandatory
+   :tags: manual_prio_1, optional
    :satisfies: wf__sw_detailed_design[version==1]
    :complies: std_req__iso26262__software_843[version==1],
               std_req__iso26262__software_844[version==1],
               std_req__iso26262__software_845[version==1],
               std_req__aspice_40__SWE-3-BP1[version==1]
 
-   The static diagram shall represent the unit and their relationships using UML notations.
+   A static diagram is optional. The decomposition of a component into its units is
+   primarily represented by the directory and file structure (see
+   :need:`doc_concept__imp_concept`), so a static diagram is only added when it helps to
+   explain complex components or a large number of unit interactions.
+   If a static diagram is provided, it shall represent the units and their relationships
+   using UML notations, and it shall provide the attributes and linkages defined below.
 
 Diagram Attributes
 ------------------
@@ -42,11 +66,11 @@ Diagram Attributes
               std_req__iso26262__software_845[version==1],
               std_req__aspice_40__SWE-3-BP2[version==1]
 
-   Each diagram shall have a unique ID. It shall consist of three parts:
+   Each diagram shall have a unique identifier (UID) (realized by its file name). It shall consist of three parts:
 
-      * type of diagram
-      * structural element
-      * keyword describing the content of the diagram
+   * type of diagram
+   * structural element
+   * keyword describing the content of the diagram
 
    Consider the project's naming convention.
 
@@ -66,44 +90,6 @@ Diagram Attributes
 
    This means for example that the word "shall" is not allowed in the title for all diagram.
 
-.. gd_req:: Diagram attribute: security
-   :id: gd_req__impl_diagram_security
-   :status: valid
-   :version: 1
-   :tags: manual_prio_2, attribute, mandatory
-   :satisfies: wf__sw_detailed_design[version==1]
-
-   Each diagram shall have a security relevance identifier:
-
-      * Yes
-      * No
-
-.. gd_req:: Diagram attribute: safety
-   :id: gd_req__impl_diagram_safety
-   :status: valid
-   :version: 1
-   :tags: manual_prio_1, attribute, mandatory
-   :complies: std_req__iso26262__support_6421[version==1], std_req__iso26262__support_6425[version==1]
-   :satisfies: wf__sw_detailed_design[version==1]
-
-   Each diagram shall have a automotive safety integrity level (ASIL) identifier:
-
-      * QM
-      * ASIL_B
-
-.. gd_req:: Diagram attribute: status
-   :id: gd_req__impl_diagram_status
-   :status: valid
-   :version: 1
-   :tags: manual_prio_1, attribute, mandatory
-   :complies: std_req__iso26262__support_6421[version==1], std_req__iso26262__support_6425[version==1]
-   :satisfies: wf__sw_detailed_design[version==1]
-
-   Each diagram shall have a status:
-
-      * valid
-      * invalid
-
 .. gd_req:: Diagram attribute: description
    :id: gd_req__impl_diagram_description
    :status: valid
@@ -112,117 +98,25 @@ Diagram Attributes
    :complies: std_req__iso26262__support_6421[version==1], std_req__iso26262__support_6425[version==1]
    :satisfies: wf__sw_detailed_design[version==1]
 
-   Each diagram shall have a description. The description shall provide a needarch or image of the diagram.
+   Each diagram shall have a description.
 
-.. _detailed_design_linkage:
-
-Diagram Linkage
-'''''''''''''''
-
-.. gd_req:: Diagram Linkage check Component Requirement
-   :id: gd_req__impl_diagram_check_req
-   :status: valid
-   :version: 1
-   :tags: prio_2_automation, attribute, automated
-   :complies: std_req__iso26262__support_6421[version==1], std_req__iso26262__support_6425[version==1], std_req__aspice_40__iic-13-51[version==1]
-   :satisfies: wf__sw_detailed_design[version==1]
-
-   Each diagram shall be linked to the corresponding component requirement via the attribute implements.
-
-.. gd_req:: Diagram Linkage Component Requirement
-   :id: gd_req__impl_diagram_linkage_req
-   :status: valid
-   :version: 1
-   :tags: prio_2_automation, attribute, automated
-   :complies: std_req__iso26262__support_6421[version==1], std_req__iso26262__support_6425[version==1]
-   :satisfies: wf__sw_detailed_design[version==1]
-
-   Each diagram shall be automatically linked (inverse direction) to the corresponding component requirement via the "implemented by" linkage.
-
-.. gd_req:: Diagram Linkage check Component Architecture
-   :id: gd_req__impl_diagram_check_arch
-   :status: valid
-   :version: 1
-   :tags: prio_2_automation, attribute, automated
-   :complies: std_req__iso26262__support_6421[version==1], std_req__iso26262__support_6425[version==1], std_req__aspice_40__iic-13-51[version==1]
-   :satisfies: wf__sw_detailed_design[version==1]
-
-   Each diagram shall be linked to the corresponding component architecture via the attribute satisfies.
-
-.. gd_req:: Diagram Linkage Component Architecture
-   :id: gd_req__impl_diagram_linkage_arch
-   :status: valid
-   :version: 1
-   :tags: prio_2_automation, attribute, automated
-   :complies: std_req__iso26262__support_6421[version==1], std_req__iso26262__support_6425[version==1]
-   :satisfies: wf__sw_detailed_design[version==1]
-
-   Each diagram shall be automatically linked (inverse direction) to the corresponding component architecture via the "satisfied by" linkage.
-
-.. gd_req:: Diagram Linkage check Component ID
-   :id: gd_req__impl_diagram_check_id
-   :status: valid
-   :version: 1
-   :tags: prio_2_automation, attribute, automated
-   :complies: std_req__iso26262__support_6421[version==1], std_req__iso26262__support_6425[version==1]
-   :satisfies: wf__sw_detailed_design[version==1]
-
-   Each diagram shall be linked to the corresponding component id via the attribute belongs_to.
-
-.. gd_req:: Diagram Linkage Component ID
-   :id: gd_req__impl_diagram_linkage_id
-   :status: valid
-   :version: 1
-   :tags: prio_2_automation, attribute, automated
-   :complies: std_req__iso26262__support_6421[version==1], std_req__iso26262__support_6425[version==1]
-   :satisfies: wf__sw_detailed_design[version==1]
-
-   Each diagram shall be automatically linked (inverse direction) to the corresponding component id via the "belongs by" linkage.
-
-.. gd_req:: Diagram Linkage includes
-   :id: gd_req__impl_diagram_check_includes
-   :status: valid
-   :version: 1
-   :tags: prio_2_automation, attribute, automated
-   :complies: std_req__iso26262__support_6421[version==1], std_req__iso26262__support_6425[version==1]
-   :satisfies: wf__sw_detailed_design[version==1]
-
-   Each diagram shall be linked to the corresponding
-   - SW Unit
-   - SW Unit Interface
-   via the attribute includes.
-
-.. gd_req:: Diagram Linkage includes
-   :id: gd_req__impl_diagram_linkage_includes
-   :status: valid
-   :version: 1
-   :tags: prio_2_automation, attribute, automated
-   :complies: std_req__iso26262__support_6421[version==1], std_req__iso26262__support_6425[version==1]
-   :satisfies: wf__sw_detailed_design[version==1]
-
-   Each diagram shall be automatically linked (inverse direction) to the corresponding
-   - SW Unit
-   - SW Unit Interface
-   via the "included by" linkage.
 
 Diagram Checks
 ''''''''''''''
 
-.. gd_req:: Diagram mandatory attributes provided
-   :id: gd_req__impl_diagram_mandatory
+.. gd_req:: Diagram mandatory consistency
+   :id: gd_req__impl_diagram_consistency
    :status: valid
-   :version: 1
-   :tags: prio_2_automation, attribute, check
+   :version: 2
+   :tags: prio_3_automation, attribute, check
    :complies: std_req__iso26262__support_6421[version==1], std_req__iso26262__support_6425[version==1]
    :satisfies: wf__sw_detailed_design[version==1]
 
-   It shall be checked if all mandatory attributes for each diagram are provided by the user. For all diagrams following attributes shall be mandatory:
-
-   .. needtable:: Overview mandatory Diagram attributes
-      :filter: "mandatory" in tags and "attribute" in tags and "implementation" in tags and type == "gd_req"
-      :style: table
-      :columns: title
-      :colwidths: 30
+   It shall be checked if all diagrams are consistent with the source code and the design principles
+   outlined in the development plan. This includes checking that the naming of the units, their
+   interfaces and functions in any diagrams or descriptions matches the naming in the source code to ensure traceability.
+   That means the diagrams and descriptions should not be outdated and be consistent with
+   the source code and not introduce new terminology or concepts that are not present in the code.
 
 Unit Attributes
 ---------------
@@ -235,13 +129,10 @@ Unit Attributes
    :satisfies: wf__sw_detailed_design[version==1]
    :complies: std_req__iso26262__software_843[version==1], std_req__aspice_40__SWE-3-BP1[version==1]
 
-   Each unit shall have a unique ID. It shall consist of three parts:
+   Each unit shall have a unique ID. It is build by the path and file name(s) of the unit within the component and following a consistent naming convention. The name should be descriptive and reflect
+   the functionality of the unit to ensure traceability and understandability.
 
-      * type of unit
-      * structural element
-      * keyword describing the content of the unit
-
-   Consider the project's naming convention.
+   The naming convention should be defined in the project guidelines and consistently applied across all units.
 
 .. gd_req:: Unit attribute: description
    :id: gd_req__impl_unit_description
@@ -251,30 +142,7 @@ Unit Attributes
    :complies: std_req__iso26262__support_6421[version==1], std_req__iso26262__support_6425[version==1]
    :satisfies: wf__sw_detailed_design[version==1]
 
-   Each unit shall have a description.
-
-Unit Linkage
-''''''''''''
-
-.. gd_req:: Unit Linkage check Component ID
-   :id: gd_req__impl_unit_check_id
-   :status: valid
-   :version: 1
-   :tags: prio_2_automation, attribute, automated
-   :complies: std_req__iso26262__support_6421[version==1], std_req__iso26262__support_6425[version==1]
-   :satisfies: wf__sw_detailed_design[version==1]
-
-   Each unit shall be linked to the corresponding component id via the attribute belongs_to.
-
-.. gd_req:: Unit Linkage Component ID
-   :id: gd_req__impl_unit_linkage_id
-   :status: valid
-   :version: 1
-   :tags: prio_2_automation, attribute, automated
-   :complies: std_req__iso26262__support_6421[version==1], std_req__iso26262__support_6425[version==1]
-   :satisfies: wf__sw_detailed_design[version==1]
-
-   Each unit shall be automatically linked (inverse direction) to the corresponding component id via the "belongs by" linkage.
+   Each unit shall have a description in the source code.
 
 Interface Attributes
 --------------------
@@ -287,11 +155,10 @@ Interface Attributes
    :satisfies: wf__sw_detailed_design[version==1]
    :complies: std_req__iso26262__software_843[version==1], std_req__aspice_40__SWE-3-BP1[version==1]
 
-   Each interface shall have a unique ID. It shall consist of three parts:
-
-      * type of interface
-      * structural element
-      * keyword describing the content of the interface
+   Each interface shall have a unique ID, which is defined by the path and file name(s)
+   of the interface within the component and the namespace and name of the interface inside the file.
+   The name should be descriptive and reflect the functionality of the interface to ensure
+   traceability and understandability.
 
    Consider the project's naming convention.
 
@@ -303,50 +170,14 @@ Interface Attributes
    :complies: std_req__iso26262__support_6421[version==1], std_req__iso26262__support_6425[version==1]
    :satisfies: wf__sw_detailed_design[version==1]
 
-   Each interface shall have a description.
-
-Interface Linkage
-'''''''''''''''''
-
-.. gd_req:: Interface Linkage check SW Unit ID
-   :id: gd_req__impl_interface_check_id
-   :status: valid
-   :version: 1
-   :tags: prio_2_automation, attribute, automated
-   :complies: std_req__iso26262__support_6421[version==1], std_req__iso26262__support_6425[version==1]
-   :satisfies: wf__sw_detailed_design[version==1]
-
-   Each interface shall be linked to the corresponding SW Unit id via the attribute belongs_to.
-
-.. gd_req:: Interface Linkage SW Unit ID
-   :id: gd_req__impl_interface_linkage_id
-   :status: valid
-   :version: 1
-   :tags: prio_2_automation, attribute, automated
-   :complies: std_req__iso26262__support_6421[version==1], std_req__iso26262__support_6425[version==1]
-   :satisfies: wf__sw_detailed_design[version==1]
-
-   Each interface shall be automatically linked (inverse direction) to the corresponding SW Unit id via the "belongs by" linkage.
-
-.. gd_req:: Interface Linkage check Architecture
-   :id: gd_req__impl_interface_check_req
-   :status: valid
-   :version: 1
-   :tags: prio_2_automation, attribute, automated
-   :complies: std_req__iso26262__support_6421[version==1], std_req__iso26262__support_6425[version==1]
-   :satisfies: wf__sw_detailed_design[version==1]
-
-   Each interface shall be linked to the corresponding architecture via the attribute implements.
-
-.. gd_req:: Interface Linkage Architecture
-   :id: gd_req__impl_interface_linkage_req
-   :status: valid
-   :version: 1
-   :tags: prio_2_automation, attribute, automated
-   :complies: std_req__iso26262__support_6421[version==1], std_req__iso26262__support_6425[version==1]
-   :satisfies: wf__sw_detailed_design[version==1]
-
-   Each interface shall be automatically linked (inverse direction) to the corresponding architecture via the "implemented by" linkage.
+   Each interface shall have a description in the source code if the source code does not
+   already provide sufficient information. It should provide a clear and comprehensive explanation
+   of the interface's purpose, its inputs and outputs, and how it interacts with other units
+   or components. The description should be sufficient to allow users of the interface
+   to understand how to interact with it without needing   to read the implementation details.
+   It should also include any relevant information about the expected behavior, constraints,
+   and any assumptions made in the design of the interface. The documentation should be
+   maintained and updated as the implementation evolves to ensure it remains accurate and useful.
 
 Dependency Analysis
 '''''''''''''''''''
@@ -360,9 +191,10 @@ Dependency Analysis
    :complies: std_req__iso26262__software_942[version==1]
 
    For each component a dependency tree view shall be created to support design inspection and Safety Analysis.
-   It shall show the libraries used by the component (i.e. which libraries are linked to the component, defined as CI build tool target) up to the leaves of the tree.
+   It shall show the libraries used by the component (i.e. which libraries are linked to the component,
+   defined as CI build tool target) up to the leaves of the tree.
 
-.. needextend:: docname is not None and "process_areas/implementation" in docname
+.. needextend:: "c.this_doc()"
    :+tags: implementation
 
 .. _impl_process_requirements_complexity:

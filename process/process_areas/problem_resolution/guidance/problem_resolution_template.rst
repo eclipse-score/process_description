@@ -187,3 +187,6 @@ Problem escalations
 
 | (to be filled out during :need:`wf__problem_initiate_monitor_pr`)
 | (to be updated during :need:`wf__problem_close_pr`)
+
+.. needextend:: "c.this_doc()"
+   :+tags: problem_resolution

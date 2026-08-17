@@ -18,7 +18,7 @@ Concept Description
 .. doc_concept:: Concept Description
    :id: doc_concept__change_process
    :status: valid
-   :version: 1
+   :version: 2
    :tags: change_management
 
 In this section a concept for the Change Management will be discussed. Inputs for this concepts
@@ -32,6 +32,10 @@ of existing features in the project.
 As features are built-up by components a Change Request is also needed to add new
 components or to modify the scope of existing components.
 All statements here for components are also valid for *SW Modules*.
+
+As a rule of thumb, a Change Request is needed, if feature or component requirements
+are changed in a way that also will cause version update
+(compare :ref:`significant_requirement_changes`).
 
 Inputs
 ******
@@ -95,12 +99,20 @@ Activities for a Change Request
 
 Creation of the Change Request
 ==============================
-Use the content :ref:`Feature Request Template <chm_feature_templates>` or
-:ref:`Component Request Template <chm_component_templates>` to create a Change Request.
 
-In case safety or security is affected, in addition the impact analysis template
-: :ref:`Impact Analysis Template <chm_impact_analysis_templates>` can be used to detail
-out the impact on safety/security.
+Use the content :ref:`Decision Record Template <decision_record_template>` to create a
+Change Request.
+
+As outlined in the :need:`Guideline for Change Requests <gd_guidl__change_change_request>`,
+the project's selected Issue Tracking System may also use the content of these templates
+to provide a more lightweight change request template including an impact analysis
+field.
+
+Additionally, the impact analysis template
+:ref:`Impact Analysis Template <chm_impact_analysis_templates>` can be used to detail
+out the impact on platform, or any other aspect including especially safety/security.
+The template can be referenced in the decision record or copied into the decision record
+and filled out there.
 
 The impact analysis tool (:need:`gd_req__change_tool_impact_analysis`) can support to
 here to identify the affected work products.
@@ -131,6 +143,12 @@ monitored.
 
 The Change Request implementation must be tracked until it is closed.
 
+Use the content :ref:`Feature Request Template <chm_feature_templates>` or
+:ref:`Component Request Template <chm_component_templates>` to document the creation
+of a new feature or component. In case of modification of an existing feature or
+component,  the same templates (which should be already existing) can be used to
+document the modification.
+
 The status of the Change Request must be communicated by the
 :need:`Project Lead <rl__project_lead>` (for feature requests) and the lead of the
 :need:`Delivery Team <rl__delivery_team>` (for component requests) until
@@ -151,3 +169,6 @@ The standards require that a Change Request can be traced throughout the complet
 hierarchy levels including all affected work products.
 
 In general the traceability is visualized in the general traceability concept (:ref:`general_concepts_traceability`).
+
+.. needextend:: "c.this_doc()"
+   :+tags: change_management

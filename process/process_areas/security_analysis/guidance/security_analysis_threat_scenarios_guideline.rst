@@ -214,3 +214,6 @@ Security Analysis threat scenarios
   * - SC_01_05
     - Development vulnerabilities (e.g. human error, insufficient security training, insufficient secure coding practices).
     - High
+
+.. needextend:: "c.this_doc()"
+   :+tags: security_analysis

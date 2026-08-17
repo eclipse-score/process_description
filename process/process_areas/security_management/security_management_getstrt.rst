@@ -46,3 +46,6 @@ Some of the workproducts are currently either tailored out or not in scope of th
 Refer :need:`wp__tailoring_work_products` section for the details about tailoring.
 
 .. note:: The term security is used here synonymously for the term cybersecurity as defined in ISO SAE 21434.
+
+.. needextend:: "c.this_doc()"
+   :+tags: security_management

@@ -69,3 +69,6 @@ A detailed overview of the responsibility for the steps of the Security Analysis
 is listed in the section titled "Security Analysis Workflows". You can find it here:
 
 :ref:`workflow_security_analysis`
+
+.. needextend:: "c.this_doc()"
+   :+tags: security_analysis

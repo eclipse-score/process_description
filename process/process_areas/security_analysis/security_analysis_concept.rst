@@ -157,3 +157,6 @@ The Security Analysis shall consider the architectural elements on different lev
 3. **Component Level**: If a component consists of multiple sub-components, the analysis
    must be extended to these sub-components. This level of detail is necessary to
    identify specific threat models that may not be apparent at higher levels.
+
+.. needextend:: "c.this_doc()"
+   :+tags: security_analysis

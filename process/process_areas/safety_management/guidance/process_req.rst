@@ -39,3 +39,6 @@ Safety Management Process Requirements
 
    Note: This can be done as for documents if the work product is a single sphinx-need.
    For work products collections (e.g. all requirements of a component) an accumulated status is needed (e.g. like "% valid state")
+
+.. needextend:: "c.this_doc()"
+   :+tags: safety_management

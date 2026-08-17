@@ -200,3 +200,6 @@ As part of tool management as supporting function it is handled as follows
      * :need:`wf__tool_create_tool_verification_report` describes implementation of :need:`wp__tool_verification_report`
 
 It is planned in the :need:`wp__platform_mgmt`
+
+.. needextend:: "c.this_doc()"
+   :+tags: verification

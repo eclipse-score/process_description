@@ -79,3 +79,6 @@ Safety Analysis Work Products
    Perform analysis of safety related and non-safety related sub-elements or sub-elements with different ASIL.
 
    Perform analysis on interactions between safety related and non-safety related lower level components or lower level components with different ASIL of one (higher level) component.
+
+.. needextend:: "c.this_doc()"
+   :+tags: safety_analysis

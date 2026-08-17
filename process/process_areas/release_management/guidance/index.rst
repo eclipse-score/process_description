@@ -21,3 +21,6 @@ Guidance
    release_guideline
    release_templates
    release_process_reqs
+
+.. needextend:: "c.this_doc()"
+   :+tags: release_management

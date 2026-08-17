@@ -106,3 +106,6 @@ For the activities planning (who, when) we use :need:`wp__issue_track_system` to
 Also, refer :need:`wf__mr_sec_analyses` for the monitoring of security analyses.
 
 For the reporting (e.g. displaying the status of the work products) additional tooling is created (see :doc:`guidance/security_management_process_reqs`).
+
+.. needextend:: "c.this_doc()"
+   :+tags: security_management

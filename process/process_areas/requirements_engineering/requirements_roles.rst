@@ -28,3 +28,6 @@ Contributing Roles:
 A detailed overview of the responsibility for the steps of the requirement process is listed here:
 
 :ref:`workflow_requirements`
+
+.. needextend:: "c.this_doc()"
+   :+tags: requirements_engineering

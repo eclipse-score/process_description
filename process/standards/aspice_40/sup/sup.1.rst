@@ -145,5 +145,5 @@ Base practices
       The decision whether to escalate non-conformances may be based on criteria such as delay of resolution, urgency, and risk.
 
 
-.. needextend:: "c.this_doc()" 
+.. needextend:: "c.this_doc()"
    :+tags: aspice40_sup1

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<!--
+  Copyright (c) 2026 Contributors to the Eclipse Foundation
+
+  See the NOTICE file(s) distributed with this work for additional
+  information regarding copyright ownership.
+
+  This program and the accompanying materials are made available under the
+  terms of the Apache License Version 2.0 which is available at
+  https://www.apache.org/licenses/LICENSE-2.0
+
+  SPDX-License-Identifier: Apache-2.0
+
+  AI Disclosure: This file was largely AI-generated. The AI-generated
+  portions are made available under CC0-1.0 and not subject to the
+  project's license. The human contributor has reviewed and verified
+  that the code is correct.
+  SPDX-License-Identifier: CC0-1.0
+  Assisted-by: Claude Sonnet 4.6
+-->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ title }} | S-CORE Process Training</title>
+<link rel="stylesheet" href="style.css">
+{% if page_type == 'quiz' %}
+<style>
+  .quiz-header {
+    background: linear-gradient(135deg, #2d1942, #7c4daa);
+    border-radius: 12px; padding: 32px 40px; color: #fff; margin-bottom: 36px;
+  }
+  .quiz-header h1 { font-size: 1.8rem; margin-bottom: 8px; }
+  .quiz-header p  { color: #c8d6e5; line-height: 1.6; }
+  .quiz-stats { display:flex; gap:24px; margin-top:16px; flex-wrap:wrap; }
+  .quiz-stats span { background:rgba(255,255,255,.15); padding:6px 14px;
+                     border-radius:20px; font-size:.82rem; }
+  #quiz-final .question-block {
+    background:#fff; border:1.5px solid #e2e8f0; border-radius:10px;
+    padding:24px 28px; margin-bottom:20px;
+  }
+  #quiz-final .question-text { font-size:1rem; margin-bottom:14px; }
+  .scenario-box {
+    background:#eff6ff; border-left:4px solid #1a4d8f; border-radius:6px;
+    padding:14px 18px; margin-bottom:16px; font-size:.9rem; line-height:1.6;
+  }
+  #certificate {
+    display:none; background:#fff; border:3px solid #1a4d8f; border-radius:12px;
+    padding:40px; text-align:center; margin-top:24px;
+  }
+  #certificate h2  { color:#1a4d8f; font-size:1.5rem; margin-bottom:8px; }
+  #certificate .cert-name { font-size:1.2rem; font-weight:700; color:#1e293b; margin:12px 0; }
+</style>
+{% endif %}
+</head>
+<body data-page="{{ id }}">
+<div id="sidebar"></div>
+<div id="main">
+
+  <!-- ── Top bar ──────────────────────────────────────────────────────── -->
+  <div id="topbar">
+    <a href="index.html">Course Overview</a>
+    {% if breadcrumb %}
+    <span class="sep">›</span>
+    <span>{{ breadcrumb }}</span>
+    {% endif %}
+  </div>
+
+  <div id="content">
+
+    {# ════════════════════════════════════════════════════════════════════
+       MODULE PAGE
+    ════════════════════════════════════════════════════════════════════ #}
+    {% if page_type == 'module' %}
+
+    <h1 class="module-title">{{ title }}</h1>
+    <div class="module-meta">
+      {% if duration %}<span>⏱ {{ duration }}</span>{% endif %}
+      {% if module_number %}<span>📖 Module {{ module_number }} of 4</span>{% endif %}
+      {% if standard %}<span>🗂 {{ standard }}</span>{% endif %}
+    </div>
+
+    {{ content }}
+    {{ quiz_html }}
+
+    {# ════════════════════════════════════════════════════════════════════
+       STANDALONE CHECKPOINT QUIZ PAGE
+    ════════════════════════════════════════════════════════════════════ #}
+    {% elif page_type == 'quiz' %}
+
+    <div class="quiz-header">
+      <h1>{{ title }}</h1>
+      <p>{{ description | default('') }}</p>
+      <div class="quiz-stats">
+        {% for s in (stats | default([])) %}<span>{{ s }}</span>{% endfor %}
+      </div>
+    </div>
+
+    <form id="quiz-final">
+      {{ questions_html }}
+      <button class="quiz-submit">Submit All Answers</button>
+      <div class="quiz-result" id="quiz-result-final"></div>
+
+      <div id="certificate">
+        <div style="font-size:3rem;">🏆</div>
+        <h2>{{ certificate_title | default('Quiz Complete') }}</h2>
+        <p>{{ certificate_desc | default('You have successfully passed this quiz.') }}</p>
+        <div class="cert-name">{{ certificate_name | default(title) }}</div>
+        <p style="color:#94a3b8;font-size:.82rem;margin-top:12px;">
+          Eclipse S-CORE Training Program · <span id="cert-date"></span>
+        </p>
+      </div>
+    </form>
+
+    {# ════════════════════════════════════════════════════════════════════
+       INDEX / OVERVIEW PAGE
+    ════════════════════════════════════════════════════════════════════ #}
+    {% else %}
+
+    {{ content }}
+
+    {% endif %}
+
+    <!-- ── Page navigation ───────────────────────────────────────────── -->
+    <div class="page-nav">
+      {% if prev %}
+      <a class="btn-nav btn-prev" href="{{ prev.url }}">← {{ prev.label }}</a>
+      {% endif %}
+      {% if next %}
+      <a class="btn-nav btn-next"
+         href="{{ next.url }}"
+         {% if next.style is defined %}style="{{ next.style }}"{% endif %}>
+        {{ next.label }} →
+      </a>
+      {% endif %}
+    </div>
+
+  </div><!-- #content -->
+</div><!-- #main -->
+
+<script src="app.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  {% if quiz_init %}
+  {{ quiz_init }}
+  {% endif %}
+
+  {% if page_type == 'quiz' %}
+  var certDate = document.getElementById('cert-date');
+  if (certDate) {
+    certDate.textContent = new Date().toLocaleDateString('en-GB',
+      { year: 'numeric', month: 'long', day: 'numeric' });
+  }
+  initQuiz('quiz-final', {{ pass_mark | default(70) }}, '{{ id }}');
+
+  var observer = new MutationObserver(function() {
+    var result = document.getElementById('quiz-result-final');
+    if (result && result.classList.contains('pass')) {
+      var cert = document.getElementById('certificate');
+      if (cert) {
+        cert.style.display = 'block';
+        cert.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+      observer.disconnect();
+    }
+  });
+  var target = document.getElementById('quiz-result-final');
+  if (target) {
+    observer.observe(target, { attributes: true, attributeFilter: ['class'] });
+  }
+  {% endif %}
+});
+</script>
+
+</body>
+</html>

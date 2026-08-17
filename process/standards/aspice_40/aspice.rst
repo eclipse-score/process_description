@@ -450,4 +450,4 @@ Appendix
 .. needtable:: General Practices
    :style: datatables
    :columns: id;title;status;content
-   :filter: c.this_doc()
+   :filter: "c.this_doc()"

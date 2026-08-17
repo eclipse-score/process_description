@@ -27,3 +27,6 @@ Contributing Roles:
 A detailed overview of the responsibility for the steps of the architecture design process is listed here:
 
 :ref:`arch_workflow`
+
+.. needextend:: "c.this_doc()"
+   :+tags: architecture_design

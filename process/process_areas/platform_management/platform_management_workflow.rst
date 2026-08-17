@@ -43,7 +43,7 @@ For a detailed explanation of workflows and their role within the process model,
    :has: doc_concept__platform_process[version==1], doc_getstrt__platform_process[version==1]
 
    The Platform Management Plan shall include the plans as defined by the
-   :ref:`Platform Management Plan Template <platform_templates>`.
+   :ref:`Platform Management Plan Template <platform_management_templates>`.
 
    The project management plan should contain the scope of work, project life cycle, work packages,
    planning and monitoring approaches, project schedule, escalation and communication path.
@@ -84,3 +84,6 @@ RAS(IC) for Platform Management:
    :sort: status
    :columns: id as "Activity";responsible as "Responsible";approved_by as "Approver";supported_by as "Supporter"
    :colwidths: 30,30,30,30
+
+.. needextend:: "c.this_doc()"
+   :+tags: platform_management

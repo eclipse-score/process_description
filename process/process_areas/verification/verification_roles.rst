@@ -36,3 +36,6 @@ The tool verification and qualification is handled by:
 
 Approval is handled by:
    * :need:`Project Lead <rl__project_lead>`
+
+.. needextend:: "c.this_doc()"
+   :+tags: verification

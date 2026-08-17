@@ -81,3 +81,6 @@ Change Management Work Products
    | Change Request for a new component or a modification of an existing component,
    | which changes the scope of the component.
    | This includes the allocation of components into SW Modules.
+
+.. needextend:: "c.this_doc()"
+   :+tags: change_management

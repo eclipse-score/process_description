@@ -80,7 +80,7 @@ Architectural Model
 .. gd_req:: Correlations of the architectural building blocks
    :id: gd_req__arch_build_blocks_corr
    :status: valid
-   :version: 1
+   :version: 3
    :tags: done_automation
    :complies: std_req__iso26262__support_6431[version==1], std_req__iso26262__support_6432[version==1]
    :satisfies: wf__cr_mt_featarch[version==1], wf__cr_mt_comparch[version==1]
@@ -173,6 +173,29 @@ Attributes of Architectural Elements
    * valid
    * invalid
 
+Diagram Linkage
+'''''''''''''''
+
+.. gd_req:: Diagram Linkage check Component ID
+   :id: gd_req__impl_diagram_check_id
+   :status: valid
+   :version: 1
+   :tags: prio_2_automation, attribute, automated
+   :complies: std_req__iso26262__support_6421[version==1], std_req__iso26262__support_6425[version==1]
+   :satisfies: wf__sw_detailed_design[version==1]
+
+   Each diagram shall be linked to the corresponding component id via the attribute belongs_to.
+
+.. gd_req:: Diagram Linkage Component ID
+   :id: gd_req__impl_diagram_linkage_id
+   :status: valid
+   :version: 1
+   :tags: prio_2_automation, attribute, automated
+   :complies: std_req__iso26262__support_6421[version==1], std_req__iso26262__support_6425[version==1]
+   :satisfies: wf__sw_detailed_design[version==1]
+
+   Each diagram shall be automatically linked (inverse direction) to the corresponding component id via the "belongs by" linkage.
+
 Traceability to Requirements and AoU
 ------------------------------------
 
@@ -189,8 +212,8 @@ Traceability to Requirements and AoU
 
    **Examples:**
 
-   * feat_req <-> feat_arc_(sta|dyn), logic_arc_(int|int_op)
-   * comp_req <-> comp_arc_(sta|dyn), real_arc_(int|int_op)
+   * feat_req <-> feat_arc_(sta|dyn), logic_arc_int
+   * comp_req <-> comp_arc_(sta|dyn), real_arc_int
 
 .. gd_req:: Architecture attribute: fulfils (AoU)
    :id: gd_req__arch_attr_fulfils_aou
@@ -227,7 +250,7 @@ Checks for Architectural Design
    :id: gd_req__arch_attr_mandatory
    :status: valid
    :version: 1
-   :tags: prio_1_automation, attribute, check
+   :tags: done_automation, attribute, check
    :satisfies: wf__cr_mt_featarch[version==1], wf__cr_mt_comparch[version==1]
 
    It shall be checked if all mandatory attributes for each architectural element are provided by the user. For all elements following attributes shall be mandatory:
@@ -262,7 +285,7 @@ Checks for Architectural Design
    :id: gd_req__arch_linkage_security_trace
    :status: valid
    :version: 1
-   :tags: prio_2_automation, attribute, check
+   :tags: done_automation, attribute, check
    :satisfies: wf__cr_mt_featarch[version==1], wf__cr_mt_comparch[version==1]
 
    It shall be checked that security relevant architectural elements (Security==YES) can only be linked against security relevant architectural elements.
@@ -271,7 +294,7 @@ Checks for Architectural Design
    :id: gd_req__arch_linkage_requirement
    :status: valid
    :version: 1
-   :tags: prio_1_automation, attribute, check
+   :tags: done_automation, attribute, check
    :satisfies: wf__cr_mt_featarch[version==1], wf__cr_mt_comparch[version==1]
 
    It shall be checked that each architectural element (safety!=QM) is linked against at least one safety requirement (safety!=QM).
@@ -303,11 +326,11 @@ Checks for Architectural Design
 .. gd_req:: Check of Architecture consistency interfaces in modules
    :id: gd_req__arch_consistency_interf
    :status: valid
-   :version: 1
+   :version: 2
    :tags: prio_2_automation, model, check
    :satisfies: wf__cr_mt_featarch[version==1], wf__cr_mt_comparch[version==1]
 
-   It shall be checked if any interface referred by the features (link from Feature to Logical Arc. Interfaces must be defined and exists) is matched by an "implements" link in the Module (from component to Logical Arc. Interface). Additionally it shall be checked if the feature architecture are linked against at least one logical architectural interface.
+   It shall be checked if any interface linked to the features (link from Logical Arc. Interface to Feature via the "included_by" link must be defined and exists) is matched by an "implements" link in the Module (from component to Logical Arc. Interface). Additionally it shall be checked if the feature architecture are linked against at least one logical architectural interface.
 
 .. gd_req:: Check of Architecture consistency in dynamic architecture
    :id: gd_req__arch_consistency_dynamic
@@ -325,6 +348,7 @@ Process Monitoring and Improvement
 .. gd_req:: Monitor architecture process performance
    :id: gd_req__arch_process_monitoring
    :status: valid
+   :version: 1
    :tags: manual_prio_2, process_monitoring
    :complies: std_req__aspice_40__gp-324, std_req__aspice_40__iic-03-06
    :satisfies: wf__cr_mt_featarch, wf__cr_mt_comparch
@@ -336,3 +360,6 @@ Process Monitoring and Improvement
    Monitoring is expected as a periodic, predominantly manual activity (for example as part of quality checks and retrospectives), not as a fully automated check.
 
    Improvement actions should be handled according to :ref:`pm_monitor_improve_process`.
+
+.. needextend:: "c.this_doc()"
+   :+tags: architecture_design

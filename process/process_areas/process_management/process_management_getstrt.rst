@@ -37,3 +37,6 @@ For every change identified, the following workflows are executed:
 * Create and maintain process management strategy according to :need:`wf__cr_mt_process_mgt_strategy`
 * Define and approves process description according to :need:`wf__def_app_process_description`
 * Monitor and improve process implementation and trigger improvements according  :need:`wf__mon_imp_process_description`
+
+.. needextend:: "c.this_doc()"
+   :+tags: process_management

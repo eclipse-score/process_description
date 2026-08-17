@@ -182,3 +182,6 @@ The respective tools used in the project are:
 Note 1: A versioning tool covers part of configuration management but not all (namely: storage, retrieval, control and modification, branching and baselining).
 
 Note 2: A "Docs-as-Code" tool is used to identify, attribute and link parts of text files and generate human and machine readable documentation.
+
+.. needextend:: "c.this_doc()"
+   :+tags: configuration_management

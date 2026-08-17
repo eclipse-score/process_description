@@ -95,3 +95,6 @@ Requirements Engineering Work Products
    Depends on requirements management tooling, expect text based requirements.
 
    Review done with inspection checklist. This checklist may be integrated in requirements/version management tooling.
+
+.. needextend:: "c.this_doc()"
+   :+tags: requirements_engineering

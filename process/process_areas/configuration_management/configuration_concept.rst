@@ -60,3 +60,6 @@ Almost all requirements of the standards towards configuration management can be
 standard versioning tooling and of tooling for the "Docs-as-Code" approach.
 
 For the automated storage additional tooling is needed see :doc:`guidance/configuration_process_req`)
+
+.. needextend:: "c.this_doc()"
+   :+tags: configuration_management

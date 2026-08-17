@@ -359,3 +359,6 @@ Since SCORE provides a middleware platform, the following aspects are explicitly
 * System-level safety architecture (e.g., ASIL decomposition at vehicle level)
 
 Architectural views describing integration aspects at the system level (above platform boundary) are the responsibility of the platform user (system integrator). The platform shall provide Assumptions of Use (AoU) documenting architectural constraints that the platform user must satisfy. These responsibilities shall be communicated to platform users via AoUs associated with the platform and feature architectures.
+
+.. needextend:: "c.this_doc()"
+   :+tags: architecture_design

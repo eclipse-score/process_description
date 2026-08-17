@@ -27,3 +27,6 @@ Guidance
    verification_plan_template
    verification_report_template
    verification_process_reqs
+
+.. needextend:: "c.this_doc()"
+   :+tags: verification

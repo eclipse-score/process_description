@@ -30,12 +30,14 @@ Requirement Inspection Checklist
               std_req__aspice_40__SWE-1-BP3[version==1],
               std_req__aspice_40__SWE-1-BP4[version==1],
               std_req__aspice_40__SWE-1-BP6[version==1]
-   :tags: requirements_engineering
 
    For the content see here:
 
-   - `Component Requirements Inspection Checklist <https://eclipse-score.github.io/module_template/main/score/component_example/docs/requirements/chklst_req_inspection.html>`__
+   - `Component Requirements Inspection Checklist <https://eclipse-score.github.io/module_template/main/components/component_example/requirements/chklst_req_inspection.html>`__
    - :need:`doc__feature_name_req_inspection`
    - :need:`doc__stakeholder_req_inspection`
 
    These have the same questions, but different scope and document naming.
+
+.. needextend:: "c.this_doc()"
+   :+tags: requirements_engineering

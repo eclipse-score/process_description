@@ -28,4 +28,7 @@ Security Manual Templates
    :version: 1
    :complies: std_req__isosae21434__development_10421[version==1], std_req__isosae21434__development_10422[version==1]
 
-   For the content see here: `Module Security Manual Template <https://eclipse-score.github.io/module_template/main/docs/manuals/security_manual.html>`__
+   For the content see here: `Module Security Manual Template <https://eclipse-score.github.io/module_template/main/module/manuals/security_manual.html>`__
+
+.. needextend:: "c.this_doc()"
+   :+tags: security_management

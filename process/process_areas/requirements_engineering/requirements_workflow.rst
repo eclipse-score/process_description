@@ -24,14 +24,13 @@ For a detailed explanation of workflows and their role within the process model,
    :id: wf__req_stkh_req
    :status: valid
    :version: 1
-   :tags: requirements_engineering
    :responsible: rl__contributor[version==1]
    :approved_by: rl__project_lead[version==1]
    :supported_by: rl__safety_manager[version==1]
    :input: wp__policies[version==1], wp__issue_track_system[version==1]
    :output: wp__requirements_stkh[version==1], wp__requirements_sw_platform_aou[version==1]
    :contains: gd_temp__req_stkh_req[version==1], gd_temp__req_formulation[version==1]
-   :has: doc_concept__req_process[version==1], doc_getstrt__req_process[version==1]
+   :has: doc_concept__req_process[version==2], doc_getstrt__req_process[version==2]
 
    Stakeholder requirements and SW-Platform Assumptions of Use (AoU) can be created during a change request.
    Any contributor can create a stakeholder requirement (or AoU) and propose it for approval.
@@ -40,29 +39,28 @@ For a detailed explanation of workflows and their role within the process model,
    :id: wf__req_feat_req
    :status: valid
    :version: 1
-   :tags: requirements_engineering
    :responsible: rl__contributor[version==1]
-   :approved_by: rl__project_lead[version==1]
-   :supported_by: rl__safety_manager[version==1], rl__security_manager[version==1]
+   :approved_by: rl__architecture_community[version==1]
+   :supported_by: rl__safety_manager[version==1], rl__security_manager[version==1], rl__delivery_team[version==1]
    :input: wp__requirements_stkh[version==1], wp__issue_track_system[version==1]
    :output: wp__requirements_feat[version==1]
    :contains: gd_temp__req_feat_req[version==1], gd_temp__req_formulation[version==1]
-   :has: doc_concept__req_process[version==1], doc_getstrt__req_process[version==1]
+   :has: doc_concept__req_process[version==2], doc_getstrt__req_process[version==2]
 
-   Depending on the stakeholder requirements feature requirements can be derived. This can be done by any contributor and will be approved by a project lead. If needed safety and security managers can provide support.
+   Depending on the stakeholder requirements feature requirements can be derived. This can be done by any contributor and will be approved by the architecture community. If needed safety and security managers can provide support.
+   In case of modification of already implemented feature requirements the feature delivery team will be consulted.
 
 .. workflow:: Create/Maintain Feature AoUs
    :id: wf__req_feat_aou
    :status: valid
    :version: 1
-   :tags: requirements_engineering
    :responsible: rl__contributor[version==1]
-   :approved_by: rl__project_lead[version==1]
+   :approved_by: rl__committer[version==1]
    :supported_by: rl__safety_manager[version==1], rl__security_manager[version==1]
    :input: wp__requirements_feat[version==1], wp__feature_arch[version==1], wp__issue_track_system[version==1]
    :output: wp__requirements_feat_aou[version==1], wp__platform_safety_manual[version==1]
    :contains: gd_temp__req_aou_req[version==1], gd_temp__req_formulation[version==1]
-   :has: doc_concept__req_process[version==1], doc_getstrt__req_process[version==1]
+   :has: doc_concept__req_process[version==2], doc_getstrt__req_process[version==2]
 
    Based on the safety concept on feature level, feature AoUs can be derived. See also :ref:`aou_workflow`
 
@@ -70,27 +68,25 @@ For a detailed explanation of workflows and their role within the process model,
    :id: wf__req_comp_req
    :status: valid
    :version: 1
-   :tags: requirements_engineering
    :responsible: rl__contributor[version==1]
    :approved_by: rl__committer[version==1]
    :supported_by: rl__safety_manager[version==1], rl__security_manager[version==1]
    :input: wp__requirements_feat[version==1], wp__issue_track_system[version==1]
    :output: wp__requirements_comp[version==1]
    :contains: gd_temp__req_comp_req[version==1], gd_temp__req_formulation[version==1]
-   :has: doc_concept__req_process[version==1], doc_getstrt__req_process[version==1]
+   :has: doc_concept__req_process[version==2], doc_getstrt__req_process[version==2]
 
 .. workflow:: Create/Maintain Component AoUs
    :id: wf__req_comp_aou
    :status: valid
    :version: 1
-   :tags: requirements_engineering
    :responsible: rl__contributor[version==1]
    :approved_by: rl__committer[version==1]
    :supported_by: rl__safety_manager[version==1], rl__security_manager[version==1]
    :input: wp__requirements_comp[version==1], wp__component_arch[version==1], wp__issue_track_system[version==1]
    :output: wp__requirements_comp_aou[version==1], wp__module_safety_manual[version==1]
    :contains: gd_temp__req_aou_req[version==1], gd_temp__req_formulation[version==1]
-   :has: doc_concept__req_process[version==1], doc_getstrt__req_process[version==1]
+   :has: doc_concept__req_process[version==2], doc_getstrt__req_process[version==2]
 
    Based on the safety concept on component level, component AoUs can be derived. See also :ref:`aou_workflow`
 
@@ -98,14 +94,13 @@ For a detailed explanation of workflows and their role within the process model,
    :id: wf__req_tool
    :status: valid
    :version: 1
-   :tags: requirements_engineering
    :responsible: rl__contributor[version==1]
    :approved_by: rl__committer[version==1]
    :supported_by: rl__safety_manager[version==1], rl__security_manager[version==1]
    :input: wp__process_description[version==1]
    :output: wp__requirements_proc_tool[version==1]
    :contains: gd_temp__req_tool_req[version==1], gd_temp__req_formulation[version==1]
-   :has: doc_concept__req_process[version==1], doc_getstrt__req_process[version==1]
+   :has: doc_concept__req_process[version==2], doc_getstrt__req_process[version==2]
 
    Based on the process descriptions (which comply to standards) and/or stakeholder/feature/component requirements tool requirements are derived.
 
@@ -113,7 +108,6 @@ For a detailed explanation of workflows and their role within the process model,
    :id: wf__monitor_verify_requirements
    :status: valid
    :version: 1
-   :tags: requirements_engineering
    :responsible: rl__committer[version==1]
    :approved_by: rl__committer[version==1]
    :supported_by: rl__safety_manager[version==1]
@@ -140,3 +134,6 @@ RAS(IC) for Requirements Engineering:
    :sort: status
    :columns: id as "Activity";responsible as "Responsible";approved_by as "Approver";supported_by as "Supporter"
    :colwidths: 30,30,30,30
+
+.. needextend:: "c.this_doc()"
+   :+tags: requirements_engineering

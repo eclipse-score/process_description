@@ -104,3 +104,6 @@ Guideline Quality Management Plan
    | * Training content
    | * Training schedule
    | * Responsible persons
+
+.. needextend:: "c.this_doc()"
+   :+tags: quality_management

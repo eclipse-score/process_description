@@ -25,3 +25,6 @@ Contributing Roles:
 
 A detailed overview of the responsibility for the steps of the Release Management process
 is listed here: :need:`doc_concept__rel_process`
+
+.. needextend:: "c.this_doc()"
+   :+tags: release_management

@@ -279,3 +279,6 @@ Templates
    'fullfils' link from a 'TEXT FILE' to a work product defined in the process
    description. This link is implemented by the ':realize:' attribute in the template
    above.
+
+.. needextend:: "c.this_doc()"
+   :+tags: process_management

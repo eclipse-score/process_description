@@ -26,6 +26,3 @@ Requirements Engineering
    requirements_roles
    requirements_workflow
    requirements_workproducts
-
-.. needextend:: docname is not None and "process_areas/requirements_engineering" in docname
-   :+tags: requirements_engineering

@@ -96,6 +96,7 @@ Logical Interfaces
       :status: invalid
       :version: 1
       :fulfils: feat_req__feature_name__some_title
+      :included_by: feat__feature_name
 
       General Interface Description
 

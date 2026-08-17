@@ -12,7 +12,7 @@
    # SPDX-License-Identifier: Apache-2.0
    # *******************************************************************************
 
-.. _platform_templates:
+.. _platform_management_templates:
 
 Platform Management Template
 ============================
@@ -116,3 +116,6 @@ Plan Work Products
       -
       - this document
       - see above
+
+.. needextend:: "c.this_doc()"
+   :+tags: platform_management

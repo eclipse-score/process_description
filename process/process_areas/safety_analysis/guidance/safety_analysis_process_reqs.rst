@@ -170,6 +170,13 @@ Safety Analysis Linkage
    :complies: std_req__iso26262__analysis_842[version==1], std_req__iso26262__software_7410[version==1], std_req__iso26262__software_7411[version==1]
 
    Safety Analysis shall be linked to the architecture view on the corresponding level via the attribute violates.
+   The following linkages are defined in detail:
+
+       * plat_saf_dfa <-> feat_arc_sta
+       * feat_saf_dfa <-> feat_arc_sta
+       * feat_saf_dfa <-> comp_arc_sta
+       * feat_saf_fmea <-> feat_arc_dyn, feat_arc_sta
+       * comp_saf_fmea <-> comp_arc_dyn, comp_arc_sta
 
 .. gd_req:: Safety Analysis Linkage
    :id: gd_req__saf_linkage
@@ -179,7 +186,9 @@ Safety Analysis Linkage
    :satisfies: wf__analyse_platform_featarch[version==1], wf__analyse_featarch[version==1], wf__analyse_comparch[version==1]
    :complies: std_req__iso26262__analysis_842[version==1], std_req__iso26262__software_7410[version==1], std_req__iso26262__software_7411[version==1]
 
-   Each Safety Analysis shall be automatically linked (inverse direction) to the corresponding architecture view via the "violates by" linkage.
+   Each Safety Analysis shall be automatically linked (inverse direction) to the corresponding architecture view via
+   the "violates by" linkage. The linkages are defined in detail at :need:`gd_req__saf_linkage_check`.
+
 
 .. gd_req:: Safety Analysis attribute: check Requirements linkage
    :id: gd_req__saf_attr_requirements_check
@@ -215,7 +224,7 @@ Safety Analysis Linkage
    :id: gd_req__saf_attr_ver
    :status: valid
    :version: 1
-   :tags: prio_2_automation, attribute, automated
+   :tags: done_automation, attribute, automated
    :satisfies: wf__analyse_platform_featarch[version==1], wf__analyse_featarch[version==1], wf__analyse_comparch[version==1]
    :complies: std_req__iso26262__support_6425[version==1], std_req__iso26262__support_6434[version==1]
 
@@ -266,19 +275,6 @@ Safety Analysis Checks
    as the corresponding ASIL of the Feature or Component that is analysed and linked via violates.
 
 
-.. gd_req:: Safety Analysis finalization check
-   :id: gd_req__saf_finalization_check
-   :status: valid
-   :version: 1
-   :tags: prio_2_automation, attribute, automated
-   :satisfies: wf__analyse_platform_featarch[version==1], wf__analyse_featarch[version==1], wf__analyse_comparch[version==1]
-   :complies: std_req__iso26262__analysis_848[version==1],
-              std_req__iso26262__analysis_749[version==1],
-              std_req__isopas8926__44431[version==1],
-              std_req__isopas8926__44432[version==1]
-
-    It shall be checked if all artifacts of the analysis are "valid" and "sufficient".
-
 DFA Process Requirements
 ========================
 
@@ -309,5 +305,5 @@ FMEA Process Requirements
    The fault ID links to the corresponding fault which describes how a potential violation can occur.
 
 
-.. needextend:: docname is not None and "process_areas/safety_analysis" in docname
+.. needextend:: "c.this_doc()"
    :+tags: safety_analysis

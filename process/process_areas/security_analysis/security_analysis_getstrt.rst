@@ -44,3 +44,6 @@ The details of what needs to be done in each step are described in the
 :need:`gd_guidl__security_analysis`. For the Security Analysis
 templates are used. The templates are described in the
 :ref:`security_analysis_threat_templates` and :ref:`security_analysis_templates`.
+
+.. needextend:: "c.this_doc()"
+   :+tags: security_analysis

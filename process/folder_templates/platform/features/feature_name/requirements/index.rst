@@ -77,5 +77,5 @@ Feature Requirements
     - Adjust ``valid_from`` and ``valid_until`` to the right version numbers
     - Set ``status`` to ``valid`` and start the review/merge process
 
-.. needextend:: docname is not None and "feature_name" in id
+.. needextend:: c.this_doc() and docname is not None and "feature_name" in id
    :+tags: feature_name

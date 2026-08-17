@@ -157,5 +157,5 @@ Identify issues from the analysis of process performance and derive improvement 
    Knowledge gained from the improvements and progress of the improvement implementation is communicated to affected parties.
 
 
-.. needextend:: "c.this_doc()"  
+.. needextend:: "c.this_doc()"
    :+tags: aspice40_pim3

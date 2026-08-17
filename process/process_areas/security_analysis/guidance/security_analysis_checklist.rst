@@ -26,4 +26,7 @@ Security Analysis Checklist
    For the content see here:
 
    - :need:`doc__platform_name_security_analysis_fdr` (platform)
-   - (tbd) `Security Analysis Checklist <https://eclipse-score.github.io/module_template/main/docs/security_mgt/index.html>`__ (module)
+   - (tbd) `Security Analysis Checklist <https://eclipse-score.github.io/module_template/main/module/security_mgt/index.html>`__ (module)
+
+.. needextend:: "c.this_doc()"
+   :+tags: security_analysis

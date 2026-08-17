@@ -33,3 +33,6 @@ Documentation Management Work Products
    * How to avoid distribution of obsolete documents?
    * Which formal elements are used?
    * List of all documents including their status
+
+.. needextend:: "c.this_doc()"
+   :+tags: documentation_management

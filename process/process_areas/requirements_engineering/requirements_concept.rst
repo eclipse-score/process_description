@@ -18,8 +18,7 @@ Concept Description
 .. doc_concept:: Requirements Concept
    :id: doc_concept__req_process
    :status: valid
-   :version: 1
-   :tags: requirements_engineering
+   :version: 2
 
 In this section a concept for the requirements management will be discussed. Inputs for this concepts are both the requirements of ISO26262 Part-8 and ASPICE Requirements from SWE.1 additionally including the requirements of the different stakeholders for the requirement process.
 
@@ -181,6 +180,8 @@ Following attributes need to be filled manually for each requirement:
      - The title of the requirement shall be expressive and rely to the description of the requirement.
    * - Description
      - In this attribute the content for the requirement will be specified. Please be aware that a note in a requirement is not part of the requirement itself. This means that notes should only be used to give additional explanation or context to the requirement.
+   * - Version
+     - Version of the requirement adapted with each significat change, see :ref:`significant_requirement_changes`.
    * - Rationale / Linkage
      - In either of those attributes the reasoning for the requirement is included.
        For *Stakeholder Requirements* a rationale which provides some more background infos shall be provided.
@@ -211,20 +212,11 @@ Following attributes are automatically generated:
    * - Derives
      - This attribute is automatically generated into the parent requirement based on the attribute derived_from of the current requirement
      - Docs-as-Code
-   * - Hash
-     - This attribute contains a hash value which is calculated over all mandatory requirement attributes. However this script needs to be executed manually, as this information is required to be present in the rst file.
-     - Script
-   * - Derived Hash
-     - It contains the hash of the parent requirement. If the parent requirement is changed the hash will also change and the linkage has to be revisited again. A more detailed description is provided here: :need:`gd_req__req_attr_version`
-     - Script
    * - Implemented by
      - During Build the code files are parsed for a defined tag which includes the requirement id. If this is located a link to the code will be added in the requirement
      - Docs-as-Code
    * - Verified by
      - During build the test files are parsed for a defined marker which includes the requirement id. If the marker is located in the test a link to the test case will be added to the requirement
-     - Docs-as-Code
-   * - Requirement Covered
-     - During build it will be checked if the requirements hashes which are mentioned in the coverage file match the hashes of the linked child requirements. If so then this attribute will be set to yes.
      - Docs-as-Code
 
 More details about the generation of the automated attributes are explained in the following chapter where the general workflow for generating requirements including their status is shown.
@@ -237,38 +229,42 @@ Requirements Versioning
 Individual Requirements
 =======================
 
-For the requirements the version management is basically provided by version management tooling (e.g. git history). However it needs to be identified if the content of a requirement changed. So this concept aims only at identifying a change in the mandatory attributes of a requirement.
+For the requirements the version management is basically provided by version management tooling (e.g. git history). However it needs to be identified if the content of a requirement changed. So this concept aims only at identifying a significant change in the attributes of a requirement.
 
-Calculate hash for current requirements
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.. _significant_requirement_changes:
 
-For each requirement a hash shall be calculated and stored in its dedicated own attribute *Hash* in the RST file. It shall include all mandatory manual attributes:
+Versioning on Significant Changes
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. _requirement_mandatory_attributes:
+Only significant changes to the attributes of a requirement shall result in a version change,
+generally this is everything which may affect the content of the child requirements:
 
-.. needtable:: Overview mandatory requirement attributes
-   :filter: "mandatory" in tags and "attribute" in tags and "requirements_engineering" in tags and type == "gd_req" and is_external == False
-   :style: table
-   :columns: title;id
-   :colwidths: 60,40
+.. list-table:: Significant Attributes
+   :header-rows: 1
+   :widths: 30,35, 35
 
-There shall be a tooling available which can be executed by the user during the creation of the requirements. This tooling shall calculate the hashes based on the mandatory attributes, calculate the hash values and enter the calculated hash values into the rst file for each requirement in the attribute *hash*.
+   * - Attribute link
+     - What is significant
+     - What is not significant
+   * - :need:`gd_req__req_attr_description`
+     - Functional changes and also re-writes which might lead to a better understanding of the content
+     - typo corrections, formal adaptions (e.g. layout), modifications of the requirement's notes
+   * - :need:`gd_req__req_attr_safety`
+     - every change
+     - n/a
+   * - :need:`gd_req__req_attr_security`
+     - every change
+     - n/a
+   * - :need:`gd_req__req_attr_type`
+     - every change
+     - n/a
 
-During docs build it shall be checked if the attribute hash matches the actual has value of the requirement.
+Linking child requirements including versions
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Linking child requirements including hashes
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+If a requirement is linked to a top level requirement also the version of the target requirement shall be part of the link. Upon docs build it shall be checked if the version contained in the link matches the *version* attribute of the requirement which is linked via *derived_from*.
 
-If a requirement is linked to a top level requirement also the hash of the target requirement shall be part of the link. It shall automatically be written into the attribute *derived hash*. Upon docs build it shall be checked if the attribute *derived hash* matches the calculated hash of the requirement which is linked via *derived_from*.
-
-As this check is included in the docs build as a warning it can be guaranteed that a change of a parent requirement can only be merged if the `linkhashes` in the requirements are also updated in a `Depends-On` PR.
-
-.. figure:: _assets/requirements_versioning.drawio.svg
-   :alt: Requirements Versioning
-   :align: center
-   :width: 50%
-
-   Versioning of Requirements
+As this check is included in the docs build as a warning it can be guaranteed that a change of a parent requirement can only be merged if the derived child requirements are also updated accordingly.
 
 
 Sets of Requirements / Baselines
@@ -295,19 +291,22 @@ In the general for the reviews a :ref:`guideline <review_concept>` exists.
 Coverage of Requirements
 ************************
 
-According to the standards, requirements shall be derived from top to bottom. This means that at the point in time when the parent requirement is generated the coverage for itself can not be evaluated. In a second step all the parent requirements need to be broken down into child requirements which are linked to the parent requirement again. If during the creation of the child requirements any of the parent requirements would be touched again the hash value of the parent requirement would change and the linkage from the child to the parent requirement would be invalid again.
+According to the standards, requirements shall be derived from top to bottom. This means that at the point in time when the parent requirement is generated the coverage (by child requirements) can not be evaluated. In a second step every parent requirements need to be completely broken down into child requirements which are linked to the parent requirement.
 
-Therefore the information concerning requirement coverage is stored in a config file located in the same folder as the requirements file. It contains the parent requirements and its links to child requirements including hashes to the of the child requirements. If it is merged to the main branch it will specify exactly the coverage of child requirements which are required to fulfil the coverage of the parent requirement.
+The completeness of all the child requirements (i.e. that their parent requirement is "covered") will be confirmed latest in the formal review (inspection) of the child requirements.
 
-If this file will now be merged to the main branch a review will be triggered again. During this review it will only be checked if the parent requirement is covered by its child requirements.
+If after the creation of the child requirements any of the parent requirements would be touched again the version of the parent requirement would change and the linkage from the child to the parent requirement would be invalid again.
 
-Additionally during build it shall be checked if exactly the requirements and hashes which are specified in this file are linked to the requirement in the current documentation. If all items match then the requirement can be seen as covered. If now a child requirement is changed its hash will also be changed and the requirement coverage needs to be revisited again.
+Therefore the link from child to parent also contains the version of the parent - a mismatch should be detected automatically (e.g. during the documentation build).
 
 .. _traceability concept for requirements:
 
 Traceability Concept for Requirements
 *************************************
 
-The standards require that a requirement can be traced throughout the complete hierarchy levels including its :ref:`implementation <implementation>` and :ref:`verification <process_verification>`. In this project it is implemented the following way:
+The standards require that a requirement can be traced throughout the complete hierarchy levels including its :ref:`implementation <implementation>` and :ref:`verification <process_verification>`.
 
 In general the traceability is visualized in main development work product traceability model (:ref:`general_concepts_traceability`).
+
+.. needextend:: "c.this_doc()"
+   :+tags: requirements_engineering

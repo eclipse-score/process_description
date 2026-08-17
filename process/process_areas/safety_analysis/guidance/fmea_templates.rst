@@ -35,7 +35,7 @@ FMEA Templates
               std_req__iso26262__analysis_8410[version==1],
               std_req__isopas8926__44431[version==1]
 
-      For the content see here: `Feature FMEA Template <https://eclipse-score.github.io/module_template/main/docs/features/feature_example/safety_analysis/fmea.html>`__
+      For the content see here: `Feature FMEA Template <https://eclipse-score.github.io/module_template/main/features/feature_example/safety_analysis/fmea.html>`__
 
 
 .. gd_temp:: Component FMEA Template
@@ -56,4 +56,7 @@ FMEA Templates
               std_req__iso26262__analysis_8410[version==1],
               std_req__isopas8926__44431[version==1]
 
-      For the content see here: `Component FMEA Template <https://eclipse-score.github.io/module_template/main/score/component_example/docs/safety_analysis/fmea.html>`__
+      For the content see here: `Component FMEA Template <https://eclipse-score.github.io/module_template/main/components/component_example/safety_analysis/fmea.html>`__
+
+.. needextend:: "c.this_doc()"
+   :+tags: safety_analysis

@@ -73,7 +73,7 @@ Process Requirement Attributes
    :id: gd_req__req_attr_title
    :status: valid
    :version: 1
-   :tags: manual_prio_1 attribute, mandatory
+   :tags: manual_prio_1, attribute, mandatory
    :satisfies: wf__req_stkh_req[version==1],
                wf__req_feat_req[version==1],
                wf__req_comp_req[version==1],
@@ -270,19 +270,6 @@ Process Requirement Linkage
 
    Bi-directional traceability shall be provided by adding a "back-link" via attribute derives (i.e. make a <-> out of the <- in :need:`gd_req__req_linkage`).
 
-.. gd_req:: Requirement attribute: requirement covered
-   :id: gd_req__req_attr_req_cov
-   :status: valid
-   :version: 1
-   :tags: manual_prio_1, attribute
-   :complies: std_req__iso26262__support_6423[version==1], std_req__aspice_40__iic-13-51[version==1]
-   :satisfies: wf__req_stkh_req[version==1], wf__req_feat_req[version==1]
-
-   It shall be possible to specify the requirement coverage, meaning the requirement is covered fully by its linked children.
-
-      * Yes
-      * No
-
 .. gd_req:: Requirement attribute: link to implementation
    :id: gd_req__req_attr_impl
    :status: valid
@@ -318,12 +305,12 @@ Process Requirement Linkage
 .. gd_req:: Requirement attribute: versioning
    :id: gd_req__req_attr_version
    :status: valid
-   :version: 1
-   :tags: prio_1_automation, attribute
+   :version: 2
+   :tags: manual_prio_1, attribute, mandatory
    :satisfies: wf__req_stkh_req[version==1], wf__req_feat_req[version==1], wf__req_comp_req[version==1]
    :complies: std_req__iso26262__support_6425[version==1], std_req__iso26262__support_6434[version==1]
 
-   A versioning for requirements shall be provided. For this all mandatory attributes shall be taken into account: see :need:`gd_req__req_check_mandatory`
+   A versioning for requirements shall be provided. For this all significant attributes shall be taken into account: see :ref:`requirement_versioning`
 
 .. _process_requirement_checks:
 
@@ -333,15 +320,15 @@ Process Requirements Checks
 .. gd_req:: Requirement check: suspicious
    :id: gd_req__req_suspicious
    :status: valid
-   :version: 1
+   :version: 3
    :tags: prio_2_automation, check
    :satisfies: wf__req_stkh_req[version==1], wf__req_feat_req[version==1], wf__req_comp_req[version==1]
    :complies: std_req__iso26262__support_6425[version==1], std_req__iso26262__support_6434[version==1], std_req__aspice_40__iic-13-51[version==1]
 
-   Based on the requirement versioning it shall be checked if a parent requirement was updated but not the linked child requirements (or tests).
-   In case an update was detected, the attribute `requirement covered` (or `complete test coverage`) shall be set to "No"
+   Based on the requirement versioning it shall be checked if a requirement was updated but not the linked tests.
+   In case an update was detected the attribute `complete test coverage` shall be set to "No"
 
-   Note: This refers to :need:`gd_req__req_attr_req_cov` and :need:`gd_req__req_attr_test_covered`
+   Note: This refers to :need:`gd_req__req_attr_test_covered`
 
 .. gd_req:: Requirements mandatory attributes provided
    :id: gd_req__req_check_mandatory
@@ -460,5 +447,5 @@ Process Requirements Checks
    Validity attributes (:need:`gd_req__req_attr_valid_from` and :need:`gd_req__req_attr_valid_until`) shall be checked for correctness (i.e. they denote an existing milestone) and consistent (e.g. the until is not before from)
    Several of the above checks are not to be executed on requirements not valid in the next milestone, these are TBD
 
-.. needextend:: docname is not None and "process_areas/requirements_engineering" in docname
+.. needextend:: "c.this_doc()"
    :+tags: requirements_engineering

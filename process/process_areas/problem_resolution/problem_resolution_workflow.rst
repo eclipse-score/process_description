@@ -112,7 +112,7 @@ For a detailed explanation of workflows and their role within the process model,
 
    Otherwise the :need:`Committer <rl__committer>` keeps the status "in implementation".
 
-.. needextend:: docname is not None and "process_areas/problem_resolution" in docname
+.. needextend:: "c.this_doc()"
    :+tags: problem_resolution
 
 RAS(IC) for Problem Resolution:

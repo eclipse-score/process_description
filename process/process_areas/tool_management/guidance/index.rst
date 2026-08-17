@@ -22,3 +22,6 @@ Guidance
    tool_management_checklist
    tool_management_template
    tool_management_reqs
+
+.. needextend:: "c.this_doc()"
+   :+tags: tool_management

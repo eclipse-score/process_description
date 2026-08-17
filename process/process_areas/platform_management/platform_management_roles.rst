@@ -28,3 +28,6 @@ Contributing Roles:
 A detailed overview of the responsibility for the steps of the platform management process is listed here:
 
 :ref:`workflow_platform_management`
+
+.. needextend:: "c.this_doc()"
+   :+tags: platform_management

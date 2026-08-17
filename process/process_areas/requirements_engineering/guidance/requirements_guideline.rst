@@ -18,7 +18,7 @@ Guideline
 .. gd_guidl:: Requirements Guideline
    :id: gd_guidl__req_engineering
    :status: valid
-   :version: 1
+   :version: 2
    :complies: std_req__isopas8926__44421[version==1],
               std_req__isopas8926__44422[version==1],
               std_req__isopas8926__44423[version==1],
@@ -75,7 +75,7 @@ For all requirements following mandatory attributes are defined:
 
 * Title and description: For formulating requirements, the following template shall be used :need:`[[title]]<gd_temp__req_formulation>`
 * ID: The naming convention for the ID is defined for every project in a central place (e.g. in the general contributor's guidelines)
-* Furthermore the requirements need to be versioned. Therefore, a hash value of the requirement will to be calculated. The concept is described: :ref:`traceability concept for requirements`
+* Furthermore the requirements need to be versioned to document content changes, see :ref:`significant_requirement_changes`
 * For the remaining attributes only predefined values can be used. A more detailed description can be found here: :ref:`attributes of the requirements`
 * Note that "rationale" is only mandatory for Stakeholder Requirements.
 * Process requirements do not need the security and safety attributes because these can be derived from the standards they comply with. Type attributes are also unnecessary, as these requirements are always non‑functional.
@@ -124,11 +124,8 @@ This section describes in detail which steps need to be performed to create a re
    * - :ref:`6. <review_child_requirement>`
      - Merge valid child requirement to main branch
      - :need:`[[title]] <rl__committer>`
-   * - :ref:`7. <generate_linkage_document>`
-     - Generate linkage document
-     - :need:`[[title]] <rl__contributor>`
-   * - :ref:`8. <formal_requirement_review>`
-     - Perform formal review of requirements
+   * - :ref:`7. <formal_requirement_review>`
+     - Perform formal review (inspection) of requirements (or start with the next iteration of requirements changes)
      - :need:`[[title]] <rl__committer>`
 
 .. _create_parent_requirement:
@@ -180,20 +177,12 @@ Review child requirement
 
 As soon as also the child requirements are in a mature state they can be :ref:`reviewed <review_concept>` and merged into the main branch of the respective repository. Again this is not a formal inspection as it will be performed in a later step.
 
-.. _generate_linkage_document:
-
-Generate linkage document
--------------------------
-
-As parent and child requirements are now available, the linkage of the requirements can be established. This should be performed as described in :ref:`coverage_of_requirements`
-
-
 .. _formal_requirement_review:
 
 Perform formal review of requirements
 -------------------------------------
 
-In a last step the requirements shall be formally inspected. Therefore a checklist exists: :need:`[[title]] <gd_chklst__req_inspection>`
+In a last step the requirements shall be formally inspected. For this a checklist exists: see :need:`[[title]] <gd_chklst__req_inspection>`
 
 Following roles should be included in the review:
 
@@ -305,3 +294,6 @@ Tailoring
 
    - for "system" standard requirements: see platform safety plan in PMP
    - for "software" standard requirements: 644, 646: because they refer to (PMP) tailored work product, 643: because this refers to (PMP) tailored activity
+
+.. needextend:: "c.this_doc()"
+   :+tags: requirements_engineering

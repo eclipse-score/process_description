@@ -30,12 +30,15 @@ Architecture Inspection Checklist Template
                std_req__aspice_40__SWE-2-BP4[version==1],
                std_req__aspice_40__iic-13-51[version==1],
                std_req__aspice_40__SWE-2-BP5[version==1],
-               std_req__aspice_40__iic-08-63[version==1], 
+               std_req__aspice_40__iic-08-63[version==1],
                std_req__aspice_40__iic-03-06[version==1]
 
     For the content see here:
 
-    - `Component Architecture Inspection Checklist <https://eclipse-score.github.io/module_template/main/score/component_example/docs/architecture/chklst_arc_inspection.html>`__
-    - `Feature Architecture Inspection Checklist <https://eclipse-score.github.io/module_template/main/docs/features/feature_example/architecture/chklst_arc_inspection.html>`__
+    - `Component Architecture Inspection Checklist <https://eclipse-score.github.io/module_template/main/components/component_example/architecture/chklst_arc_inspection.html>`__
+    - `Feature Architecture Inspection Checklist <https://eclipse-score.github.io/module_template/main/features/feature_example/architecture/chklst_arc_inspection.html>`__
 
     These two documents have the same questions, but different scope and document naming.
+
+.. needextend:: "c.this_doc()"
+   :+tags: architecture_design

@@ -43,7 +43,7 @@ Tool Verification Report Template
 
 .. note::
    An example of a Tool Verification Report can be found here:
-   `Example Tool Verification Report <https://eclipse-score.github.io/score/main/score_tools/gtest.html#doc_tool__gtest>`_
+   `Example Tool Verification Report <https://eclipse-score.github.io/score/main/score_tools/score_tools_evaluation_list.html#doc_tool__gtest>`_
 
 
 [Your Tool Name] Verification Report

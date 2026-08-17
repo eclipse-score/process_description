@@ -26,6 +26,3 @@ Documentation Management
    documentation_roles
    documentation_workflow
    documentation_workproducts
-
-.. needextend:: docname is not None and "process_areas/documentation_management" in docname
-   :+tags: documentation_management

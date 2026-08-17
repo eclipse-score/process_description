@@ -49,3 +49,6 @@ Tailoring
    The reasoning is:
 
    - Some methods for tool qualification are not applied
+
+.. needextend:: "c.this_doc()"
+   :+tags: tool_management

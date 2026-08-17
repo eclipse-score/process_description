@@ -35,6 +35,9 @@ Security Analysis Threat Templates
    :version: 1
    :complies:
 
-      For the content see here: (tbd) `Component Threat Template <https://eclipse-score.github.io/module_template/main/score/component_example/docs/index.html>`__
+      For the content see here: (tbd) `Component Threat Template <https://eclipse-score.github.io/module_template/main/components/component_example/index.html>`__
 
       Future PR (https://github.com/eclipse-score/process_description/issues/409).
+
+.. needextend:: "c.this_doc()"
+   :+tags: security_analysis

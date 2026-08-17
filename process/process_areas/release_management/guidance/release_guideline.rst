@@ -161,3 +161,6 @@ For the release note a template has been created for module level and for platfo
      - :need:`[[title]] <gd_temp__rel_plat_rel_note>`
 
 The above templates shall be used
+
+.. needextend:: "c.this_doc()"
+   :+tags: release_management

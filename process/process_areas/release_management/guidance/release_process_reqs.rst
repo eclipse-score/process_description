@@ -25,3 +25,6 @@ Process Requirements
 
    | The release note shall be generated progressively and automatically compiling the content as far as possible.
    | This shall be done according to templates :need:`gd_temp__rel_plat_rel_note` and :need:`gd_temp__rel_mod_rel_note`.
+
+.. needextend:: "c.this_doc()"
+   :+tags: release_management

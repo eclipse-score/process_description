@@ -71,7 +71,7 @@ Roles
    * Refusing the approval of his team's role nomination (i.e. requesting that the role will be withdrawn)
 
 .. role:: Safety External Auditor
-   :id: rl__safety_external_auditor 
+   :id: rl__safety_external_auditor
    :status: valid
    :version: 1
 
@@ -87,3 +87,6 @@ Roles
    Authority
 
    * Decision on the passing or failing of an audit
+
+.. needextend:: "c.this_doc()"
+   :+tags: safety_management

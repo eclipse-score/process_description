@@ -50,7 +50,7 @@ DFA Templates
               std_req__iso26262__analysis_749[version==1],
               std_req__isopas8926__44432[version==1]
 
-   For the content see here: `Feature DFA Template <https://eclipse-score.github.io/module_template/main/docs/features/feature_example/safety_analysis/dfa.html>`__
+   For the content see here: `Feature DFA Template <https://eclipse-score.github.io/module_template/main/features/feature_example/safety_analysis/dfa.html>`__
 
 
 .. gd_temp:: Component DFA Templates
@@ -68,4 +68,7 @@ DFA Templates
               std_req__iso26262__analysis_749[version==1],
               std_req__isopas8926__44432[version==1]
 
-   For the content see here: `Component DFA Template <https://eclipse-score.github.io/module_template/main/score/component_example/docs/safety_analysis/dfa.html>`__
+   For the content see here: `Component DFA Template <https://eclipse-score.github.io/module_template/main/components/component_example/safety_analysis/dfa.html>`__
+
+.. needextend:: "c.this_doc()"
+   :+tags: safety_analysis

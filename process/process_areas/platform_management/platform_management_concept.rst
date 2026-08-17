@@ -28,7 +28,7 @@ including the requirements of the different stakeholders for the Platform Manage
 Key concept
 ***********
 The Platform Management Plan is the container for all plan documents. As container it shall include
-the plans defined in the :ref:`Platform Management Plan Template <platform_templates>`.
+the plans defined in the :ref:`Platform Management Plan Template <platform_management_templates>`.
 The concept of the plan documents, beside Project Management is defined in the
 corresponding process areas, which generate them.
 
@@ -66,7 +66,7 @@ Also requirements of standards need to be taken into consideration:
 Plans for Platform Management
 *****************************
 
-Compare :ref:`Platform Management Plan Template <platform_templates>`.
+Compare :ref:`Platform Management Plan Template <platform_management_templates>`.
 
 
 Activities for the Platform Management Plan
@@ -84,3 +84,6 @@ Monitor/Improve Platform Management Plan
 :need:`Project Lead <rl__project_lead>` is responsible for the monitoring of the
 work products and activities against the platform management plan. If deviations are detected,
 the plan must be adjusted.
+
+.. needextend:: "c.this_doc()"
+   :+tags: platform_management

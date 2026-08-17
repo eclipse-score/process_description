@@ -18,7 +18,7 @@ Getting Started
 .. doc_getstrt:: Getting Started on Change Management
    :id: doc_getstrt__change_process
    :status: valid
-   :version: 1
+   :version: 2
    :tags: change_management
 
 This document describes the steps to create a change request, and further to analyze,
@@ -32,9 +32,11 @@ Examples for change requests:
 * New component for parsing a protocol introduced (component request).
 * API change for an existing component (component modification).
 
-Therefore guidelines :need:`gd_temp__change_feature_request` and
+
+Therefore a template :need:`gd_temp__change_decision_record` is available. This template
+is complemented by the :need:`gd_temp__change_feature_request`,
 :need:`gd_temp__change_component_request`, :need:`gd_guidl__change_change_request` and
-a :need:`doc_concept__change_process` are available.
+:need:`doc_concept__change_process`.
 
 General Workflow
 ****************
@@ -49,3 +51,6 @@ For every change identified, the following workflows are executed:
 * Close the change request according to :need:`wf__change_close_cr`
 
 In addition create a change management plan as part of the platform management plan according to :need:`wf__platform_cr_mt_platform_mgmt_plan`
+
+.. needextend:: "c.this_doc()"
+   :+tags: change_management

@@ -112,3 +112,6 @@ Tool Verification Report Review Checklist
       * - 16
         - Is the tool confidence level based on tool impact and tool error detection defined?
         -
+
+.. needextend:: "c.this_doc()"
+   :+tags: tool_management

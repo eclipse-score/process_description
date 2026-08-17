@@ -26,6 +26,3 @@ Safety Analysis
    safety_analysis_roles
    safety_analysis_workflow
    safety_analysis_workproducts
-
-.. needextend:: docname is not None and "process_areas/safety_analysis" in docname
-   :+tags: safety_analysis

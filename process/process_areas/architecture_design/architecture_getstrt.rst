@@ -37,3 +37,6 @@ General Workflow
    Architecture Design Workflow
 
 The above figure shows all steps which are required to create an architectural design. In this getting started only a short overview is given. A more detailed description of all the step is provided in the :need:`guideline <gd_guidl__arch_design>`.
+
+.. needextend:: "c.this_doc()"
+   :+tags: architecture_design

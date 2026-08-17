@@ -26,6 +26,3 @@ Tool Management
    tool_management_roles
    tool_management_workflow
    tool_management_workproducts
-
-.. needextend:: docname is not None and "docs/process/tool_management" in docname
-   :+tags: tool_management

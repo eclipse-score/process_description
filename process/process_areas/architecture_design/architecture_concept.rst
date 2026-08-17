@@ -433,7 +433,6 @@ The following section links to the rendered feature example that is now maintain
       :safety: ASIL_B
       :status: invalid
       :version: 1
-      :includes: logic_arc_int__feature_name__interface_name
       :consists_of: comp__component_name
 
    .. feat_arc_sta:: Feature Static Architecture View Getting Started
@@ -573,4 +572,7 @@ Limitations
 
 * Grouping functionality needs improvement
 * Manual extendability is limited to the same type as the underlying drawing, either class or association diagram types
-* Currently only uses the need attributes *includes, uses, implements*
+* Currently only uses the need attributes *includes, included_by, uses, implements*
+
+.. needextend:: "c.this_doc()"
+   :+tags: architecture_design

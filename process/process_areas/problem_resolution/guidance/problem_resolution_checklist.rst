@@ -95,3 +95,6 @@ Problem Checklist
       * - 14
         - If the Problem report is not closed and pending solution measures are open, escalated to the :need:`rl__safety_manager` or :need:`rl__security_manager`?
         -
+
+.. needextend:: "c.this_doc()"
+   :+tags: problem_resolution

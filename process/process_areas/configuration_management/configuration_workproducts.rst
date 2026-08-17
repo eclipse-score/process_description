@@ -23,3 +23,6 @@ Configuration Management Work Products
    :complies: std_wp__iso26262__support_751[version==1]
 
    Config Management Plan (Part of the Platform Management Plan, :need:`wp__platform_mgmt`)
+
+.. needextend:: "c.this_doc()"
+   :+tags: configuration_management

@@ -36,7 +36,7 @@ This document describes the general guidances for Platform Management based on t
 General Hints
 =============
 
-A template of the Platform Management Plan for <Project> is described in the :ref:`Platform Management Plan Template <platform_templates>`.
+A template of the Platform Management Plan for <Project> is described in the :ref:`Platform Management Plan Template <platform_management_templates>`.
 
 An iterative and incremental development model shall be used.
 
@@ -51,7 +51,7 @@ Templates
 ---------
 
 The content of the Platform Management Plan shall consider the
-:ref:`Platform Management Plan Template <platform_templates>`.
+:ref:`Platform Management Plan Template <platform_management_templates>`.
 
 Activities for Platform Management Plan
 =======================================
@@ -154,3 +154,6 @@ Tailoring
    The reasoning is:
 
    - Main deliveries are source code, which is not a product, thus product risk management and process risk is not applicable (for safety and security related risk separate processes as safety/security analysis exists).
+
+.. needextend:: "c.this_doc()"
+   :+tags: platform_management

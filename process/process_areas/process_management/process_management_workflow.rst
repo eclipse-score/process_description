@@ -64,7 +64,7 @@ For a detailed explanation of workflows and their role within the process model,
    triggered, if required.
 
 
-.. needextend:: docname is not None and "process_areas/process_management" in docname
+.. needextend:: "c.this_doc()"
    :+tags: process_management
 
 RAS(IC) for Process Management:

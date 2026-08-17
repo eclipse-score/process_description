@@ -24,3 +24,6 @@ Guidance
    checklist_security_package
    checklist_security_plan
    security_management_process_reqs
+
+.. needextend:: "c.this_doc()"
+   :+tags: security_management

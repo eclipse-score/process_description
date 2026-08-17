@@ -68,3 +68,6 @@ Template Quality Report
     - Status of the process improvements (open / closed)
 
     **Note1:** All the above lists are generated automatically
+
+.. needextend:: "c.this_doc()"
+   :+tags: quality_management

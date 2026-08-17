@@ -30,3 +30,6 @@ Contributing Roles:
 A detailed overview of the responsibility for the steps of the documentation management is listed here:
 
 :need:`wf__platform_cr_mt_platform_mgmt_plan`
+
+.. needextend:: "c.this_doc()"
+   :+tags: documentation_management

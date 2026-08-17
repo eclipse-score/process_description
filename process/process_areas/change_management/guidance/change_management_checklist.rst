@@ -86,3 +86,6 @@ Checklists
       * - 11
         - Does the Change Request has verification measure as specified?
         -
+
+.. needextend:: "c.this_doc()"
+   :+tags: change_management

@@ -51,7 +51,7 @@ Verification Report Templates
 
     This document implements :need:`wp__verification_module_ver_report`.
 
-      | For the content, see `Module Verification Report Template <https://eclipse-score.github.io/module_template/main/docs/verification_report/module_verification_report.html>`__.
+      | For the content, see `Module Verification Report Template <https://eclipse-score.github.io/module_template/main/verification_report/module_verification_report.html>`__.
 
 .. gd_temp:: Platform Verification Report Template
     :id: gd_temp__platform_ver_report
@@ -70,3 +70,6 @@ Verification Report Templates
     This document implements :need:`wp__verification_platform_ver_report`.
 
      |  For the content, see :need:`doc__platform_verification_report`.
+
+.. needextend:: "c.this_doc()"
+   :+tags: verification

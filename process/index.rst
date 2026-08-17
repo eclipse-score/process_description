@@ -86,7 +86,7 @@ Management
       Plan and oversee cybersecurity activities across the project lifecycle.
 
    .. grid-item-card::
-      :class-card: card-ml2
+      :class-card: card-ml3
 
       :ref:`Quality Management <quality_management>`
       ^^^
@@ -148,14 +148,14 @@ Development
       Develop and unit-test software units according to the design.
 
    .. grid-item-card::
-      :class-card: card-ml1
+      :class-card: card-ml2
 
       :ref:`Verification <process_verification>`
       ^^^
       Verify that work products fulfil their specified requirements.
 
    .. grid-item-card::
-      :class-card: card-ml2
+      :class-card: card-ml3
 
       :ref:`Safety Analysis <safety_analysis>`
       ^^^
@@ -189,7 +189,7 @@ Support
       Qualify and manage tools used in the development process.
 
    .. grid-item-card::
-      :class-card: card-ml2
+      :class-card: card-ml3
 
       :ref:`Documentation Management <process_documentation_management>`
       ^^^
@@ -272,6 +272,17 @@ and they include the available templates for the work products already in the ri
    :maxdepth: 1
 
    folder_templates/index.rst
+
+
+Trainings
+---------
+
+Interactive self-paced training portals for the S-CORE process areas:
+
+.. toctree::
+   :maxdepth: 1
+
+   trainings/index.rst
 
 
 Glossary

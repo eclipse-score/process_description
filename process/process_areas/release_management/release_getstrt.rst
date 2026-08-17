@@ -46,3 +46,6 @@ The following workflows are executed:
 * According to the planning create the platform handbook :need:`wf__rel_platform_handbook`
 
 In addition create a release management plan as part of the platform management plan according to :need:`wf__platform_cr_mt_platform_mgmt_plan`.
+
+.. needextend:: "c.this_doc()"
+   :+tags: release_management

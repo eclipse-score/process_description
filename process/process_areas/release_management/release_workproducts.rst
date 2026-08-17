@@ -93,3 +93,6 @@ Release Management Work Products
    - Integration process
    - Getting started guide
    - Contribution guide
+
+.. needextend:: "c.this_doc()"
+   :+tags: release_management
