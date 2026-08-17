@@ -180,7 +180,7 @@ Derivation Techniques
    * :ref:`Equivalence Classes <ver_equivalence>`
    * :ref:`Fuzzy Testing <ver_fuzzy>`
 
-   Note: more than one derivation technique can be used in a single test case
+   Note: More than one derivation technique can be used in a single test case.
    
 .. _ver_req_anal:
 
