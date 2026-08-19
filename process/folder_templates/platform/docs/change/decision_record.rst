@@ -12,10 +12,19 @@
    # SPDX-License-Identifier: Apache-2.0
    # *******************************************************************************
 
-.. _decision_record_template:
+.. _decision_record_template_instance:
 
 Decision Record Template
 ========================
+
+.. document:: [Number] Decision Record
+   :id: doc__number_decision_record_template
+   :status: draft
+   :version: 3
+   :safety: ASIL_B
+   :security: YES
+   :realizes: wp__feat_request
+   :tags: template
 
 This template is used to create new Decision Records (DRs) in the project using rst files.
 For markdown files, please convert the sphinx directive to markdown syntax yourself.
@@ -31,9 +40,12 @@ In each DR file, include the following sections:
    .. dec_rec:: <Title>
       :id: dec_rec__<Platform|Feature|Component>__<Title>, dec_rec__<arch|proc|strat|infra|int>__<slug>
       :status: <proposed|accepted|deprecated|rejected|superseded>
+      :context: <what kind of problem does it address>
+      :decision: <state the decision which alternative is selected>
       :tracking: <link to GitHub issue URL, required once a DR is confirmed>
-      :version: 2
-      :affects: <link>
+      :version: <version of the decision record>
+      :affects: <link to work products>
+      :consequences: <impact of this change>
 
       <Description>
       Descriptions shall contain at least the following sections:
