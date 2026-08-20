@@ -22,7 +22,7 @@ Requirements Engineering Work Products
    :complies: std_wp__iso26262__system_651[version==1], std_wp__isosae21434__development_1051[version==1]
    :tags: doc_lifecycle_model_3
 
-   Technical requirements from a stakeholder viewpoint on SW-platform level, contain "assumed Technical Safety Requirements" in SW-Platform SEooC development.
+   Technical requirements from a stakeholder viewpoint on SW-platform level, contain "assumed Technical Safety and Security Requirements" in SW-Platform SEooC development.
 
 .. workproduct:: Feature Requirements
    :id: wp__requirements_feat
@@ -53,7 +53,7 @@ Requirements Engineering Work Products
    :complies: std_wp__iso26262__software_651[version==1], std_wp__isosae21434__development_1051[version==1], std_wp__isosae21434__development_1052[version==1]
    :tags: doc_lifecycle_model_3
 
-   SW Safety Requirements for the user of the platform, exportable requirements for the user to integrate in their requirements management system.
+   SW Safety and Security Requirements for the user of the platform, exportable requirements for the user to integrate in their requirements management system.
 
 .. workproduct:: Feature Assumptions of Use
    :id: wp__requirements_feat_aou
