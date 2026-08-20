@@ -605,7 +605,51 @@
                 <article class="bd-article">
                   
   <section id="decision-record-template">
-<span id="id1"></span><h1>Decision Record Template<a class="headerlink" href="#decision-record-template" title="Link to this heading">#</a></h1>
+<span id="decision-record-template-instance"></span><h1>Decision Record Template<a class="headerlink" href="#decision-record-template" title="Link to this heading">#</a></h1>
+<div class="need_container docutils container" id="SNCB-6e652cc4">
+<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_document table" id="doc__number_decision_record_template">
+<tbody>
+<tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
+<div class="line"><span><span class="needs_title"><span class="needs_data">[Number] Decision Record</span></span></span></div>
+</div>
+</td>
+<td class="head_center" colspan="2"><div class="needs_head line-block">
+<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">draft</span></span></span></div>
+<div class="line"><span><span class="needs_security"><span class="needs_label">security: </span><span class="needs_data">YES</span></span></span></div>
+<div class="line"><span><span class="needs_safety"><span class="needs_label">safety: </span><span class="needs_data">ASIL_B</span></span></span></div>
+</div>
+</td>
+<td class="head_right" colspan="2"><div class="needs_head_right line-block">
+<div class="line"><span><span class="needs needs_collapse" id="target__show__meta"><span class="needs collapsed"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg></span><span class="needs visible collapse_is_hidden"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg></span></span></span></div>
+</div>
+</td>
+</tr>
+<tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
+<div class="line"><span><span><div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">template</span></span></span></div>
+<div class="line"><span class="needs_version"><span class="needs_label">version: </span>3</span></div>
+</span></span></div>
+<div class="line"><span><div class="line">realizes: <span class="realizes"><span><a class="reference internal" href="../../../../process_areas/change_management/change_management_workproducts.html#wp__feat_request" title="doc__number_decision_record_template">wp__feat_request</a></span></span></div>
+</span></div>
+</div>
+</td>
+<td class="meta" colspan="3"></td>
+</tr>
+<tr class="content row-odd"><td class="content" colspan="6"></td>
+</tr>
+<tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
+<div class="line"><span><span class="needs-id"><a class="reference internal" href="#doc__number_decision_record_template" title="doc__number_decision_record_template">doc__number_decision_record_template</a></span></span></div>
+</div>
+</td>
+<td class="footer" colspan="2"><div class="needs_footer line-block">
+<div class="line"><span><span class="needs_type_name"><span class="needs_data">Generic Document</span></span></span></div>
+</div>
+</td>
+<td class="footer_right" colspan="2"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
 <p>This template is used to create new Decision Records (DRs) in the project using rst files.
 For markdown files, please convert the sphinx directive to markdown syntax yourself.
 The content of the DR is the same, only the syntax differs.</p>
@@ -615,9 +659,12 @@ platform wide decisions store close to the platform’s stakeholder requirements
 <div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">dec_rec</span><span class="p">::</span> <span class="nt">&lt;Title&gt;</span>
    <span class="nc">:id:</span> dec_rec__&lt;Platform|Feature|Component&gt;__&lt;Title&gt;, dec_rec__&lt;arch|proc|strat|infra|int&gt;__&lt;slug&gt;
    <span class="nc">:status:</span> <span class="nt">&lt;proposed|accepted|deprecated|rejected|superseded&gt;</span>
+   <span class="nc">:context:</span> <span class="nt">&lt;what kind of problem does it address&gt;</span>
+   <span class="nc">:decision:</span> <span class="nt">&lt;state the decision which alternative is selected&gt;</span>
    <span class="nc">:tracking:</span> <span class="nt">&lt;link to GitHub issue URL, required once a DR is confirmed&gt;</span>
-   <span class="nc">:version:</span> 2
-   <span class="nc">:affects:</span> <span class="nt">&lt;link&gt;</span>
+   <span class="nc">:version:</span> <span class="nt">&lt;version of the decision record&gt;</span>
+   <span class="nc">:affects:</span> <span class="nt">&lt;link to work products&gt;</span>
+   <span class="nc">:consequences:</span> <span class="nt">&lt;impact of this change&gt;</span>
 
    &lt;Description&gt;
    Descriptions shall contain at least the following sections:
@@ -677,7 +724,7 @@ platform wide decisions store close to the platform’s stakeholder requirements
    The impact analysis template is available in [1].
 </pre></div>
 </div>
-<p>The impact analysis template is available here <a class="footnote-reference brackets" href="#id3" id="id2" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a>.</p>
+<p>The impact analysis template is available here <a class="footnote-reference brackets" href="#id2" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a>.</p>
 <div class="admonition attention">
 <p class="admonition-title">Attention</p>
 <p>The above directive must be updated according to your decision record.</p>
@@ -695,8 +742,8 @@ platform wide decisions store close to the platform’s stakeholder requirements
 </ul>
 </div>
 <aside class="footnote-list brackets">
-<aside class="footnote brackets" id="id3" role="doc-footnote">
-<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id2">1</a><span class="fn-bracket">]</span></span>
+<aside class="footnote brackets" id="id2" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">1</a><span class="fn-bracket">]</span></span>
 <p>The impact analysis template is available here: <a class="reference internal" href="../../../../process_areas/change_management/guidance/change_management_impact_analysis_template.html#chm-impact-analysis-templates"><span class="std std-ref">Impact Analysis Template</span></a></p>
 </aside>
 </aside>
