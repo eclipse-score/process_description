@@ -62,7 +62,7 @@ Requirements Engineering Work Products
    :complies: std_wp__iso26262__software_651[version==1], std_wp__isosae21434__development_1051[version==1], std_wp__isosae21434__development_1052[version==1]
    :tags: doc_lifecycle_model_3
 
-   SW Safety Requirements for the user of the feature, exportable requirements for the user to integrate in their req mgt system.
+   SW Safety or Security Requirements for the user of the feature, exportable requirements for the user to integrate in their req mgt system.
 
 .. workproduct:: Component Assumptions of Use
    :id: wp__requirements_comp_aou
@@ -74,7 +74,7 @@ Requirements Engineering Work Products
               std_wp__isosae21434__development_1052[version==1]
    :tags: doc_lifecycle_model_3
 
-   SW Safety Requirements for the user of the component, exportable requirements for the user to integrate in their req mgt system.
+   SW Safety or Security Requirements for the user of the component, exportable requirements for the user to integrate in their req mgt system.
 
 .. workproduct:: Process/Tool Requirements
    :id: wp__requirements_proc_tool
