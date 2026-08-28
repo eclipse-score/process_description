@@ -41,4 +41,4 @@ python.toolchain(
 # Documentation tooling
 #
 ###############################################################################
-bazel_dep(name = "score_docs_as_code", version = "8.0.1")
+bazel_dep(name = "score_docs_as_code", version = "8.1.0")
