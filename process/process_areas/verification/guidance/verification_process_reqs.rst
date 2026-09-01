@@ -161,7 +161,7 @@ Process Requirements
 
     The tool automation shall automatically generate the Verification reports.
     These may be independent documents (i.e. not integrated into docs-as-code based repositories).
-    The content of the reports is specified in :need:`gd_temp__platform_ver_report` and :need:`gd_temp__mod_ver_report`.
+    The content of the reports is specified in :need:`gd_temp__platform_ver_report` (:need:`wp__verification_module_ver_report`) and :need:`gd_temp__mod_ver_report` (:need:`wp__verification_module_ver_report`).
     The execution results of test cases are marked with a clear pass/fail result.
 
 .. gd_req:: Verification Report Archiving
@@ -261,7 +261,7 @@ Process Requirements
     The CI reference integration execution shall be triggered on regular basis to guarantee the inter-operation of all integrated components
     when a new component is added to the system or an existing component is updated via a PR.
 
-    **TODO: Align this to the ongoing work in https://github.com/eclipse-score/reference_integration/pull/190 which reworks the CI reference integration execution.**
+    **TODO: Align this to the ongoing work in `PR #190 <https://github.com/eclipse-score/reference_integration/pull/190>`_ which reworks the CI reference integration execution.**
 
 .. needextend:: "c.this_doc()"
    :+tags: verification
