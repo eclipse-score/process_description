@@ -161,7 +161,8 @@ Process Requirements
 
     The tool automation shall automatically generate the Verification reports.
     These may be independent documents (i.e. not integrated into docs-as-code based repositories).
-    The reports shall be documented within :need:`gd_temp__platform_ver_report` and :need:`gd_temp__mod_ver_report` and its content is specified in :need:`wp__verification_platform_ver_report` and :need:`wp__verification_module_ver_report`.
+    The reports shall use :need:`gd_temp__platform_ver_report` and :need:`gd_temp__mod_ver_report`.
+    The content of the reports is specified in :need:`wp__verification_platform_ver_report` and :need:`wp__verification_module_ver_report`.
     The execution results of test cases are marked with a clear pass/fail result.
 
 .. gd_req:: Verification Report Archiving
