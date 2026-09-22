@@ -1,0 +1,181 @@
+/* Process area card color coding */
+.sd-card.card-management {
+	--card-border-color: #000000;
+	--card-divider-color: #000000;
+	--card-background-color: #fcd364;
+	--card-header-text-color: #000000;
+	--card-body-text-color: #000000;
+}
+
+.sd-card.card-development {
+	--card-border-color: #000000;
+	--card-divider-color: #ffffff;
+	--card-background-color: #1e1bf1;
+	--card-header-text-color: #ffffff;
+	--card-body-text-color: #ffffff;
+}
+
+.sd-card.card-support {
+	--card-border-color: #000000;
+	--card-divider-color: #000000;
+	--card-background-color: #7edffc;
+	--card-header-text-color: #000000;
+	--card-body-text-color: #000000;
+}
+
+.sd-card.card-ml0 {
+	--card-border-color: #000000;
+	--card-divider-color: #000000;
+	--card-background-color: #f9fafa;
+	--card-header-text-color: #000000;
+	--card-body-text-color: #000000;
+}
+
+.sd-card.card-ml1 {
+	--card-border-color: #000000;
+	--card-divider-color: #000000;
+	--card-background-color: #fff2cc;
+	--card-header-text-color: #000000;
+	--card-body-text-color: #000000;
+}
+
+.sd-card.card-ml2 {
+	--card-border-color: #000000;
+	--card-divider-color: #000000;
+	--card-background-color: #e1d5e7;
+	--card-header-text-color: #000000;
+	--card-body-text-color: #000000;
+}
+
+.sd-card.card-ml3 {
+	--card-border-color: #000000;
+	--card-divider-color: #000000;
+	--card-background-color: #d5e8d4;
+	--card-header-text-color: #000000;
+	--card-body-text-color: #000000;
+}
+
+.sd-card.card-ml4 {
+	--card-border-color: #000000;
+	--card-divider-color: #000000;
+	--card-background-color: #ffffff;
+	--card-header-text-color: #000000;
+	--card-body-text-color: #000000;
+}
+
+.sd-card.card-management,
+.sd-card.card-development,
+.sd-card.card-support,
+.sd-card.card-ml0,
+.sd-card.card-ml1,
+.sd-card.card-ml2,
+.sd-card.card-ml3,
+.sd-card.card-ml4 {
+	border: 1px solid var(--card-border-color);
+	border-left: 4px solid var(--card-border-color);
+}
+
+.sd-card.card-management,
+.sd-card.card-management .sd-card-body,
+.sd-card.card-management .sd-card-header,
+.sd-card.card-management .sd-card-footer,
+.sd-card.card-development,
+.sd-card.card-development .sd-card-body,
+.sd-card.card-development .sd-card-header,
+.sd-card.card-development .sd-card-footer,
+.sd-card.card-support,
+.sd-card.card-support .sd-card-body,
+.sd-card.card-support .sd-card-header,
+.sd-card.card-support .sd-card-footer,
+.sd-card.card-ml0,
+.sd-card.card-ml0 .sd-card-body,
+.sd-card.card-ml0 .sd-card-header,
+.sd-card.card-ml0 .sd-card-footer,
+.sd-card.card-ml1,
+.sd-card.card-ml1 .sd-card-body,
+.sd-card.card-ml1 .sd-card-header,
+.sd-card.card-ml1 .sd-card-footer,
+.sd-card.card-ml2,
+.sd-card.card-ml2 .sd-card-body,
+.sd-card.card-ml2 .sd-card-header,
+.sd-card.card-ml2 .sd-card-footer,
+.sd-card.card-ml3,
+.sd-card.card-ml3 .sd-card-body,
+.sd-card.card-ml3 .sd-card-header,
+.sd-card.card-ml3 .sd-card-footer,
+.sd-card.card-ml4,
+.sd-card.card-ml4 .sd-card-body,
+.sd-card.card-ml4 .sd-card-header,
+.sd-card.card-ml4 .sd-card-footer {
+	background-color: var(--card-background-color);
+}
+
+.score-grid .sd-card.card-management .sd-card-header,
+.score-grid .sd-card.card-development .sd-card-header,
+.score-grid .sd-card.card-support .sd-card-header,
+.score-grid .sd-card.card-ml0 .sd-card-header,
+.score-grid .sd-card.card-ml1 .sd-card-header,
+.score-grid .sd-card.card-ml2 .sd-card-header,
+.score-grid .sd-card.card-ml3 .sd-card-header,
+.score-grid .sd-card.card-ml4 .sd-card-header {
+	background-color: var(--card-background-color) !important;
+	border-bottom: 1px solid var(--card-divider-color) !important;
+	color: var(--card-header-text-color) !important;
+}
+
+.score-grid .sd-card.card-management .sd-card-footer,
+.score-grid .sd-card.card-development .sd-card-footer,
+.score-grid .sd-card.card-support .sd-card-footer,
+.score-grid .sd-card.card-ml0 .sd-card-footer,
+.score-grid .sd-card.card-ml1 .sd-card-footer,
+.score-grid .sd-card.card-ml2 .sd-card-footer,
+.score-grid .sd-card.card-ml3 .sd-card-footer,
+.score-grid .sd-card.card-ml4 .sd-card-footer {
+	border-top: 1px solid var(--card-divider-color) !important;
+}
+
+.score-grid .sd-card.card-management .sd-card-header a,
+.score-grid .sd-card.card-development .sd-card-header a,
+.score-grid .sd-card.card-support .sd-card-header a,
+.score-grid .sd-card.card-ml0 .sd-card-header a,
+.score-grid .sd-card.card-ml1 .sd-card-header a,
+.score-grid .sd-card.card-ml2 .sd-card-header a,
+.score-grid .sd-card.card-ml3 .sd-card-header a,
+.score-grid .sd-card.card-ml4 .sd-card-header a {
+	color: var(--card-header-text-color) !important;
+}
+
+.score-grid .sd-card.card-management .sd-card-body,
+.score-grid .sd-card.card-development .sd-card-body,
+.score-grid .sd-card.card-support .sd-card-body,
+.score-grid .sd-card.card-ml0 .sd-card-body,
+.score-grid .sd-card.card-ml1 .sd-card-body,
+.score-grid .sd-card.card-ml2 .sd-card-body,
+.score-grid .sd-card.card-ml3 .sd-card-body,
+.score-grid .sd-card.card-ml4 .sd-card-body,
+.score-grid .sd-card.card-management .sd-card-footer,
+.score-grid .sd-card.card-development .sd-card-footer,
+.score-grid .sd-card.card-support .sd-card-footer,
+.score-grid .sd-card.card-ml0 .sd-card-footer,
+.score-grid .sd-card.card-ml1 .sd-card-footer,
+.score-grid .sd-card.card-ml2 .sd-card-footer,
+.score-grid .sd-card.card-ml3 .sd-card-footer,
+.score-grid .sd-card.card-ml4 .sd-card-footer,
+.score-grid .sd-card.card-management .sd-card-body a,
+.score-grid .sd-card.card-development .sd-card-body a,
+.score-grid .sd-card.card-support .sd-card-body a,
+.score-grid .sd-card.card-ml0 .sd-card-body a,
+.score-grid .sd-card.card-ml1 .sd-card-body a,
+.score-grid .sd-card.card-ml2 .sd-card-body a,
+.score-grid .sd-card.card-ml3 .sd-card-body a,
+.score-grid .sd-card.card-ml4 .sd-card-body a,
+.score-grid .sd-card.card-management .sd-card-footer a,
+.score-grid .sd-card.card-development .sd-card-footer a,
+.score-grid .sd-card.card-support .sd-card-footer a,
+.score-grid .sd-card.card-ml0 .sd-card-footer a,
+.score-grid .sd-card.card-ml1 .sd-card-footer a,
+.score-grid .sd-card.card-ml2 .sd-card-footer a,
+.score-grid .sd-card.card-ml3 .sd-card-footer a,
+.score-grid .sd-card.card-ml4 .sd-card-footer a {
+	color: var(--card-body-text-color) !important;
+}
