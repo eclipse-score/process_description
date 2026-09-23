@@ -190,6 +190,7 @@ Complexity Analyses
    :status: valid
    :version: 1
    :tags: implementation, prio_3_automation, model, check
+   :satisfies: wf__sw_detailed_design[version==1]
    :complies: std_req__iso26262__software_743[version==1], std_req__aspice_40__SWE-3-BP3[version==1]
 
    A complexity analysis for the components shall be performed by automated tool support. It shall consider appropriate code metrics like lines of code, cyclomatic complexity, number of public interfaces, number of parameters and so on. The results of the analysis shall be documented in the SW Verification Report. As default an exceeds of the following limits shall be reported for the complexity measures (ASIL B / QM):
