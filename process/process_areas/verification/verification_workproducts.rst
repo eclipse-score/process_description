@@ -68,7 +68,10 @@ Platform
    - List of requirements (stakeholder and feature) and architecture tested by which test
      (can be several levels), passed/failed and completeness verdict, including normal
      operation and failure reactions
-   - The list of requirements may also contain other verification methods like "Analysis"
+
+     - The list of requirements may also contain other verification methods like "Analysis"
+
+   - Reports from manual Inspection Checklist (applies to ASIL related artifacts) on requirements
    - Formal evidence about the performed DFA
    - Formal evidence about the performed Safety Analyses
    - Test result per test case from
@@ -118,22 +121,28 @@ Module
 
    Verification Report contains:
 
-   - List of requirements (and architecture/detailed design tags) tested by which test
-     (can be several levels), passed/failed and completeness verdict, including normal
-     operation and failure reactions
-   - The list of requirements may also contain other verification methods like "Analysis"
+   - List of requirements, architecture, and detailed design, their test coverage
+     including assumptions of use satisfied by the component, tested by which test
+     (can be several levels and types), passed/failed and completeness verdict, including normal
+     operation and failure reactions.
+
+     - The list of requirements may also contain other verification methods like "Analysis"
+
+   - Reports from manual Inspection Checklist (applies to ASIL related artifacts) on requirements, architecture, and implementation
    - Structural Coverage (C0 and C1, from unit testing on host) per unit
    - Static Code Analysis (including compiler warnings, automated checking of coding guidelines
      and additional checks)
-   - Formal evidence about the performed DFA
-   - Formal evidence about the performed Safety Analyses
+   - DFA Report containing the list of performed Dependent Failure Analysis with identified mitigations
+   - FMEA Report containing the list of performed Failure Mode and Effects Analysis on component and feature level
+   - Safety Analysis Report containing the list of the performed component Safety Analysis with identified mitigations
    - Software component qualification verification report
    - Test result per test case from
      :need:`wp__verification_sw_unit_test` and :need:`wp__verification_comp_int_test`
      with status passed/failed/not_run
    - Test log per test case from
      :need:`wp__verification_sw_unit_test` and :need:`wp__verification_comp_int_test`
-     with status passed/failed/not_run including a link to the matching retained execution log artifacts for the specific release version
+     with status passed/failed/not_run including a link to the matching retained execution
+     log artifacts for the specific release version
 
    It also serves as SW Component Qualification Verification Report for pre-existing Open Source
    Projects developed and maintained outside of the project to which this process is applied to.
