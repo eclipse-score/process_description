@@ -61,7 +61,7 @@ For a detailed explanation of workflows and their role within the process model,
    :responsible: rl__committer[version==1]
    :approved_by: rl__committer[version==1]
    :input: wp__sw_implementation[version==1], wp__sw_development_plan[version==1]
-   :output: wp__issue_track_system[version==1], wp__sw_implementation_inspection[version==1], wp__verification_module_ver_report[version==1]
+   :output: wp__issue_track_system[version==1], wp__sw_implementation_inspection[version==1], wp__verification_module_ver_report[version==2]
    :contains: gd_chklst__impl_inspection_checklist[version==1]
    :has: doc_concept__imp_concept[version==1], doc_getstrt__imp_getstrt[version==1]
 
@@ -80,4 +80,3 @@ RAS(IC) for Implementation:
    :sort: status
    :columns: id as "Activity";responsible as "Responsible";approved_by as "Approver";supported_by as "Supporter"
    :colwidths: 30,30,30,30
-

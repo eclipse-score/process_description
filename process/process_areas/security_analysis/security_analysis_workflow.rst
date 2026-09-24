@@ -85,7 +85,7 @@ Security analysis is used as an umbrella term.
    :approved_by: rl__security_manager[version==1]
    :supported_by: rl__contributor[version==1], rl__committer[version==1], rl__safety_manager[version==1]
    :input: wp__platform_security_analysis[version==1], wp__feature_security_analysis[version==1], wp__sw_component_security_analysis[version==1]
-   :output: wp__verification_platform_ver_report[version==1], wp__issue_track_system[version==1], wp__verification_module_ver_report[version==1]
+   :output: wp__verification_platform_ver_report[version==2], wp__issue_track_system[version==1], wp__verification_module_ver_report[version==2]
    :contains: gd_guidl__sec_ana_threat_scenarios[version==1],
               gd_temp__feat_threat_scenario[version==1],
               gd_temp__comp_threat_scenario[version==1],
@@ -105,7 +105,7 @@ Security analysis is used as an umbrella term.
    :approved_by: rl__security_manager[version==1]
    :supported_by: rl__contributor[version==1], rl__committer[version==1], rl__safety_manager[version==1]
    :input: wp__platform_security_analysis[version==1], wp__feature_security_analysis[version==1], wp__sw_component_security_analysis[version==1]
-   :output: wp__verification_platform_ver_report[version==1], wp__verification_module_ver_report[version==1]
+   :output: wp__verification_platform_ver_report[version==2], wp__verification_module_ver_report[version==2]
    :contains: gd_guidl__sec_ana_threat_scenarios[version==1],
               gd_temp__feat_threat_scenario[version==1],
               gd_temp__comp_threat_scenario[version==1],
