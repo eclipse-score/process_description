@@ -36,7 +36,7 @@ Architecture Inspection Checklist Template
     For the content see here:
 
     - `Component Architecture Inspection Checklist <https://eclipse-score.github.io/module_template/main/components/component_example/architecture/chklst_arc_inspection.html>`__
-    - `Feature Architecture Inspection Checklist <https://eclipse-score.github.io/module_template/main/features/feature_example/architecture/chklst_arc_inspection.html>`__
+    - `Feature Architecture Inspection Checklist <https://eclipse-score.github.io/module_template/main/features/architecture/arc_inspection.html#architecture-inspection-checklist>`__
 
     These two documents have the same questions, but different scope and document naming.
 
