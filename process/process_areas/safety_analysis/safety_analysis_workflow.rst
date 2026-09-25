@@ -86,7 +86,7 @@ Safety Analysis is used as a umbrella term for the methods FMEA (Failure Modes a
            wp__feature_dfa[version==1],
            wp__sw_component_fmea[version==1],
            wp__sw_component_dfa[version==1]
-   :output: wp__verification_platform_ver_report[version==1], wp__issue_track_system[version==1], wp__verification_module_ver_report[version==1]
+   :output: wp__verification_platform_ver_report[version==2], wp__issue_track_system[version==1], wp__verification_module_ver_report[version==2]
    :contains: gd_guidl__dfa_failure_initiators[version==1],
               gd_temp__feat_saf_dfa[version==1],
               gd_temp__comp_saf_dfa[version==1],
@@ -110,7 +110,7 @@ Safety Analysis is used as a umbrella term for the methods FMEA (Failure Modes a
            wp__feature_dfa[version==1],
            wp__sw_component_fmea[version==1],
            wp__sw_component_dfa[version==1]
-   :output: wp__verification_platform_ver_report[version==1], wp__verification_module_ver_report[version==1]
+   :output: wp__verification_platform_ver_report[version==2], wp__verification_module_ver_report[version==2]
    :contains: gd_guidl__dfa_failure_initiators[version==1],
               gd_temp__feat_saf_dfa[version==1],
               gd_temp__comp_saf_dfa[version==1],
