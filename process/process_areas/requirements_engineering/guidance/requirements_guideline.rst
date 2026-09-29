@@ -265,8 +265,12 @@ For the "only specification" use case, the following attributes can be used:
 - :need:`gd_req__req_attr_valid_from`
 - :need:`gd_req__req_attr_valid_until`
 
-These attributes can be used for stakeholder and feature requirements, but not for
-the component requirements, as these are expected to be developed during small implementation cycles.
+These attributes can be used for stakeholder, feature and component requirements.
+Release version numbers are not synced between platform and modules, therefore for the validity
+attribute only the planned (future) and done platform release numbers are allowed.
+It is not recommended to use validity attribute for the component requirements,
+as these are expected to be developed based on feature requirements in sync and during
+small implementation cycles.
 
 If an existing requirement needs to be reworked for the new function it will be split in two.
 The requirement with the old specification will be valid_until the milestone before the
