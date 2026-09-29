@@ -188,36 +188,36 @@ Process Requirement Attributes
 .. gd_req:: Requirement attribute: valid_from
    :id: gd_req__req_attr_valid_from
    :status: valid
-   :version: 1
+   :version: 2
    :tags: manual_prio_2, attribute
    :satisfies: wf__req_stkh_req[version==1], wf__req_feat_req[version==1]
    :complies: std_req__aspice_40__SWE-1-BP2[version==1], std_req__aspice_40__iic-17-54[version==1]
 
-   Stakeholder and feature requirements can have a validity attribute that tells
+   Stakeholder, feature and component requirements can have a validity attribute that tells
    from which milestone onwards the requirement is part of a feature.
 
    This validity attribute is defined as including the defined milestone.
 
-   Milestone shall be valid release version tag, e.g. v1.0.2 as defined in
-   Platform Release Note Template: :need:`gd_temp__rel_plat_rel_note`. Thus the
-   corresponding requirement is valid from the defined milestone, including it.
+   Milestone should be a valid platform release version tag, e.g. v1.0.2 as defined in
+   Platform Release planning. If a requirement is not planned already this can also be a potential future milestone.
+   The corresponding requirement is valid from the defined milestone, including it.
 
 .. gd_req:: Requirement attribute: valid_until
    :id: gd_req__req_attr_valid_until
    :status: valid
-   :version: 1
+   :version: 2
    :tags: manual_prio_2, attribute
    :satisfies: wf__req_stkh_req[version==1], wf__req_feat_req[version==1]
    :complies: std_req__aspice_40__SWE-1-BP2[version==1], std_req__aspice_40__iic-17-54[version==1]
 
-   Stakeholder and feature requirements can have a validity attribute that tells
+   Stakeholder, feature and component requirements can have a validity attribute that tells
    until which milestone the requirement is part of a feature.
 
    This validity attribute is defined as excluding the defined milestone.
 
-   Milestone shall be valid release version tag, e.g. v1.0.2 as defined in
-   Platform Release Note Template: :need:`gd_temp__rel_plat_rel_note`. Thus the
-   corresponding requirement is only valid until the defined milestone, excluding it.
+   Milestone shall be a valid platform release version tag, e.g. v1.0.2 as defined in
+   Platform Release planning.
+   The corresponding requirement is only valid until the defined milestone, excluding it.
 
 .. _process_requirement_linkage:
 
