@@ -193,7 +193,7 @@ Process Requirement Attributes
    :satisfies: wf__req_stkh_req[version==1], wf__req_feat_req[version==1]
    :complies: std_req__aspice_40__SWE-1-BP2[version==1], std_req__aspice_40__iic-17-54[version==1]
 
-   Stakeholder, feature and component requirements can have a validity attribute that tells
+   Stakeholder and feature requirements shall and component requirements can have a validity attribute that tells
    from which milestone onwards the requirement is part of a feature.
 
    This validity attribute is defined as including the defined milestone.

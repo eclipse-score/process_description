@@ -261,11 +261,11 @@ A use case where the specification AND implementation of a new/modified feature 
 already during the development time of an earlier milestone than the feature is planned
 can be realized by the feature flags (for new features) or by branching off.
 
-For the "only specification" use case, the following attributes can be used:
+For the "only specification" use case, the following attributes are defined:
 - :need:`gd_req__req_attr_valid_from`
 - :need:`gd_req__req_attr_valid_until`
 
-These attributes can be used for stakeholder, feature and component requirements.
+These attributes are defined for stakeholder, feature and component requirements.
 Release version numbers are not synced between platform and modules, therefore for the validity
 attribute only the planned (future) and done platform release numbers are allowed.
 It is not recommended to use validity attribute for the component requirements,
