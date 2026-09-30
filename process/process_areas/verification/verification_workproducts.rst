@@ -122,7 +122,7 @@ Module
      (can be several levels), passed/failed and completeness verdict, including normal
      operation and failure reactions
    - The list of requirements may also contain other verification methods like "Analysis"
-   - Structural Coverage (C0 and C1, from unit testing on host) per component
+   - Structural Coverage (C0 and C1, from unit testing on host) per component (to map any shortcomings to the component requirement level)
    - Static Code Analysis (including compiler warnings, automated checking of coding guidelines
      and additional checks)
    - Formal evidence about the performed DFA
