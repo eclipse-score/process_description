@@ -74,7 +74,7 @@ For a detailed explanation of workflows and their role within the process model,
    :approved_by: rl__project_lead[version==1]
    :supported_by: rl__committer[version==1]
    :input: wp__qms_plan[version==1], wp__process_description[version==1]
-   :output: wp__verification_platform_ver_report[version==1]
+   :output: wp__verification_platform_ver_report[version==2]
    :contains: gd_guidl__qlm_plan_definitions[version==1], gd_chklst__review_checklist[version==1], gd_guidl__wp_review[version==1]
    :has: doc_concept__quality_process[version==1], doc_getstrt__quality_process[version==1]
 
@@ -106,8 +106,8 @@ For a detailed explanation of workflows and their role within the process model,
            wp__module_sw_release_note[version==1],
            wp__process_impr_report[version==1],
            wp__qms_report[version==1],
-           wp__verification_platform_ver_report[version==1],
-           wp__verification_module_ver_report[version==1],
+           wp__verification_platform_ver_report[version==2],
+           wp__verification_module_ver_report[version==2],
            wp__training_path[version==1]
    :output: wp__issue_track_system[version==1]
    :contains: gd_guidl__qlm_plan_definitions[version==1], gd_chklst__review_checklist[version==1], gd_req__quality_report[version==1]

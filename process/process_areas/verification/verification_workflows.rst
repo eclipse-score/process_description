@@ -243,7 +243,7 @@ For a detailed explanation of workflows and their role within the process model,
            wp__requirements_inspect[version==1],
            wp__verification_comp_int_test[version==1],
            wp__verification_sw_unit_test[version==1]
-   :output: wp__verification_module_ver_report[version==1]
+   :output: wp__verification_module_ver_report[version==2]
    :contains: gd_temp__mod_ver_report[version==1]
    :has: doc_concept__verification_process[version==1], doc_getstrt__verification_process[version==1]
 
@@ -284,7 +284,7 @@ For a detailed explanation of workflows and their role within the process model,
            wp__requirements_inspect[version==1],
            wp__verification_feat_int_test[version==1],
            wp__verification_platform_int_test[version==1]
-   :output: wp__verification_platform_ver_report[version==1]
+   :output: wp__verification_platform_ver_report[version==2]
    :contains: gd_temp__platform_ver_report[version==1]
    :has: doc_concept__verification_process[version==1], doc_getstrt__verification_process[version==1]
 

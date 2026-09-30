@@ -25,7 +25,7 @@ For a detailed explanation of workflows and their role within the process model,
    :version: 1
    :responsible: rl__committer[version==1]
    :approved_by: rl__project_lead[version==1]
-   :input: wp__module_safety_package[version==1], wp__module_sw_release_plan[version==1], wp__verification_module_ver_report[version==1]
+   :input: wp__module_safety_package[version==1], wp__module_sw_release_plan[version==1], wp__verification_module_ver_report[version==2]
    :output: wp__module_sw_release_note[version==1]
    :contains: gd_temp__rel_mod_rel_note[version==1], gd_guidl__rel_management[version==1]
    :has: doc_concept__rel_process[version==1], doc_getstrt__release_process[version==1]
@@ -39,7 +39,7 @@ For a detailed explanation of workflows and their role within the process model,
    :version: 1
    :responsible: rl__project_lead[version==1]
    :approved_by: rl__project_lead[version==1]
-   :input: wp__platform_safety_package[version==1], wp__platform_sw_release_plan[version==1], wp__verification_platform_ver_report[version==1]
+   :input: wp__platform_safety_package[version==1], wp__platform_sw_release_plan[version==1], wp__verification_platform_ver_report[version==2]
    :output: wp__platform_sw_release_note[version==1]
    :contains: gd_temp__rel_plat_rel_note[version==1], gd_guidl__rel_management[version==1]
    :has: doc_concept__rel_process[version==1], doc_getstrt__release_process[version==1]
@@ -80,7 +80,7 @@ For a detailed explanation of workflows and their role within the process model,
    :version: 1
    :responsible: rl__project_lead[version==1]
    :approved_by: rl__project_lead[version==1]
-   :input: wp__platform_safety_package[version==1], wp__platform_sw_release_plan[version==1], wp__verification_platform_ver_report[version==1]
+   :input: wp__platform_safety_package[version==1], wp__platform_sw_release_plan[version==1], wp__verification_platform_ver_report[version==2]
    :output: wp__platform_handbook[version==1]
    :contains: gd_guidl__rel_handbook[version==1]
    :has: doc_concept__rel_process[version==1], doc_getstrt__release_process[version==1]

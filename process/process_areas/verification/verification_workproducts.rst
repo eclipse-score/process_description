@@ -54,7 +54,7 @@ Platform
 .. workproduct:: Platform Verification Report
    :id: wp__verification_platform_ver_report
    :status: valid
-   :version: 1
+   :version: 2
    :tags: doc_lifecycle_model_2
    :complies: std_wp__iso26262__software_1053[version==1],
               std_wp__iso26262__support_953[version==1],
@@ -68,7 +68,10 @@ Platform
    - List of requirements (stakeholder and feature) and architecture tested by which test
      (can be several levels), passed/failed and completeness verdict, including normal
      operation and failure reactions
-   - The list of requirements may also contain other verification methods like "Analysis"
+
+     - The list of requirements may also contain other verification methods like "Analysis"
+
+   - Reports from manual Requirements Inspection Checklist (applies to ASIL related artifacts)
    - Formal evidence about the performed DFA
    - Formal evidence about the performed Safety Analyses
    - Test result per test case from
@@ -104,7 +107,7 @@ Module
 .. workproduct:: Module Verification Report
    :id: wp__verification_module_ver_report
    :status: valid
-   :version: 1
+   :version: 2
    :tags: doc_lifecycle_model_2
    :complies: std_wp__iso26262__software_952[version==1],
               std_wp__iso26262__software_1053[version==1],
@@ -118,22 +121,28 @@ Module
 
    Verification Report contains:
 
-   - List of requirements (and architecture/detailed design tags) tested by which test
-     (can be several levels), passed/failed and completeness verdict, including normal
-     operation and failure reactions
-   - The list of requirements may also contain other verification methods like "Analysis"
+   - List of requirements, architecture, and detailed design, their test coverage
+     including assumptions of use satisfied by the component, tested by which test
+     (can be several levels and types), passed/failed and completeness verdict, including normal
+     operation and failure reactions.
+
+     - The list of requirements may also contain other verification methods like "Analysis"
+
+   - Reports from manual Requirements, Architecture, and Implementation Inspection Checklists (applies to ASIL related artifacts)
    - Structural Coverage (C0 and C1, from unit testing on host) per unit
    - Static Code Analysis (including compiler warnings, automated checking of coding guidelines
      and additional checks)
-   - Formal evidence about the performed DFA
-   - Formal evidence about the performed Safety Analyses
+   - DFA Report containing the list of performed Dependent Failure Analysis with identified mitigations
+   - FMEA Report containing the list of performed Failure Mode and Effects Analysis on component and feature level
+   - Safety Analysis Report containing the list of the performed component Safety Analysis with identified mitigations
    - Software component qualification verification report
    - Test result per test case from
      :need:`wp__verification_sw_unit_test` and :need:`wp__verification_comp_int_test`
-     with status passed/failed/not_run
+     with status passed/failed/not_run as a summary
    - Test log per test case from
      :need:`wp__verification_sw_unit_test` and :need:`wp__verification_comp_int_test`
-     with status passed/failed/not_run including a link to the matching retained execution log artifacts for the specific release version
+     with status passed/failed/not_run as a link to the matching retained execution
+     log artifacts for the specific release version (only linkis, not a full log in the report).
 
    It also serves as SW Component Qualification Verification Report for pre-existing Open Source
    Projects developed and maintained outside of the project to which this process is applied to.
