@@ -12,10 +12,6 @@
     "url": "https://eclipse-score.github.io/process_description/pr-798/"
   },
   {
-    "version": "pr-800",
-    "url": "https://eclipse-score.github.io/process_description/pr-800/"
-  },
-  {
     "version": "v2.0.1",
     "url": "https://eclipse-score.github.io/process_description/v2.0.1/"
   },
@@ -30,9 +26,5 @@
   {
     "version": "v2.1.1",
     "url": "https://eclipse-score.github.io/process_description/v2.1.1/"
-  },
-  {
-    "version": "pr-803",
-    "url": "https://eclipse-score.github.io/process_description/pr-803/"
   }
 ]
