@@ -461,5 +461,19 @@ Process Requirements Checks
    Validity attributes (:need:`gd_req__req_attr_valid_from` and :need:`gd_req__req_attr_valid_until`) shall be checked for correctness (i.e. they denote an existing milestone) and consistent (e.g. the until is not before from)
    Several of the above checks are not to be executed on requirements not valid in the next milestone, these are TBD
 
+Process Requirements Monitoring
+'''''''''''''''''''''''''''''''
+
+.. gd_req:: Requirement linkage complete
+   :id: gd_req__req_link_complete
+   :status: valid
+   :version: 1
+   :tags: prio_3_automation, monitor
+   :satisfies: wf__req_stkh_req[version==1], wf__req_feat_req[version==1]
+   :complies: std_req__iso26262__support_6431[version==1], std_req__aspice_40__iic-13-51[version==1]
+
+   Valid stakeholder and feature requirements shall be reported which are not linked by a valid child requirement
+   (i.e. no valid feature, component requirement has a derived_from link pointing to those).
+
 .. needextend:: "c.this_doc()"
    :+tags: requirements_engineering
