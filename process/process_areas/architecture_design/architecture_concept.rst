@@ -340,6 +340,51 @@ Establish traceability between requirements and architectural elements
 
 During the architectural design process all feature and component requirements shall be allocated to a single architecture element at the corresponding level via the attribute **satisfies**.
 
+.. _architecture_versioning:
+
+Architecture Versioning
+***********************
+
+Individual Architecture Elements and Views
+==========================================
+
+For the architecture the version management is basically provided by version management tooling (e.g. git history).
+However to support impact analysis via versioned links also a "version" attribute is maintained for architectural elements (feat, comp, logic_arc_int) and views (feat/comp_arch_sta, feat/comp_arch_dyn).
+
+.. _significant_architecture_changes:
+
+Versioning on Significant Changes
+---------------------------------
+
+Only significant changes to the attributes of a requirement (or AoU) shall result in a version change,
+generally this is everything which may affect the content of the child requirements or other linked work products like the architecture:
+
+.. list-table:: Significant Attributes
+   :header-rows: 1
+   :widths: 30,35, 35
+
+   * - Attribute
+     - What is significant
+     - What is not significant
+   * - description
+     - Addition/deletion/modification of elements in a view, operations in an interface, feature/component request functional changes for feat/comp elements
+     - typo corrections, formal adaptions (e.g. layout)
+   * - :need:`gd_req__arch_attr_safety`
+     - every change
+     - n/a
+   * - :need:`gd_req__arch_attr_security`
+     - every change
+     - n/a
+
+Linking child elements including versions
+-----------------------------------------
+
+If an element/view is linked to a "parent" also the version of the parent shall be part of the link. Upon docs build it is checked if the version contained in the link matches the *version* attribute of parent.
+
+As this check is included in the docs build as a warning it can be guaranteed that a change of a parent can only be merged if the derived child are also updated accordingly.
+
+All links to and from architecture elements/views as depicted in :ref:`Building Blocks Overwiew <general_concepts_building_blocks>` shall use versioing.
+
 .. _reviews of the architecture:
 
 Reviews of the architecture

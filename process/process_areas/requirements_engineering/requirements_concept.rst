@@ -236,8 +236,8 @@ For the requirements the version management is basically provided by version man
 Versioning on Significant Changes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Only significant changes to the attributes of a requirement shall result in a version change,
-generally this is everything which may affect the content of the child requirements:
+Only significant changes to the attributes of a requirement (or AoU) shall result in a version change,
+generally this is everything which may affect the content of the child requirements or other linked work products like the architecture:
 
 .. list-table:: Significant Attributes
    :header-rows: 1
@@ -262,7 +262,7 @@ generally this is everything which may affect the content of the child requireme
 Linking child requirements including versions
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-If a requirement is linked to a top level requirement also the version of the target requirement shall be part of the link. Upon docs build it shall be checked if the version contained in the link matches the *version* attribute of the requirement which is linked via *derived_from*.
+If a requirement is linked to a top level requirement also the version of the target requirement shall be part of the link. Upon docs build it is checked if the version contained in the link matches the *version* attribute of the requirement which is linked via *derived_from*.
 
 As this check is included in the docs build as a warning it can be guaranteed that a change of a parent requirement can only be merged if the derived child requirements are also updated accordingly.
 

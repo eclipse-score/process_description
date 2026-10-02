@@ -173,6 +173,28 @@ Attributes of Architectural Elements
    * valid
    * invalid
 
+.. gd_req:: Architecture attribute: version
+   :id: gd_req__arch_attr_version
+   :status: valid
+   :version: 1
+   :tags: manual_prio_2, attribute, mandatory
+   :satisfies:  wf__cr_mt_featarch[version==1], wf__cr_mt_comparch[version==1]
+   :complies: std_req__iso26262__support_8453[version==1]
+
+   A version attribute for architectural elements (feat, feat_arch_sta, feat_arch_dyn, logic_arc_int, comp, comp_arch_sta, comp_arch_dyn) shall be provided.
+
+.. gd_req:: Architecture attribute: versioning hash
+   :id: gd_req__arch_attr_version_hash
+   :status: valid
+   :version: 1
+   :tags: prio_2_automation
+   :satisfies:  wf__cr_mt_featarch[version==1], wf__cr_mt_comparch[version==1]
+   :complies: std_req__iso26262__support_8453[version==1]
+
+   For automatically created views a hash shall be calculated from the generated image source code and documented as a version.
+
+   Note: Automatically created views are for example supported for static views and interfaces.
+
 Diagram Linkage
 '''''''''''''''
 
@@ -194,7 +216,7 @@ Diagram Linkage
    :complies: std_req__iso26262__support_6421[version==1], std_req__iso26262__support_6425[version==1]
    :satisfies: wf__sw_detailed_design[version==1]
 
-   Each diagram shall be automatically linked (inverse direction) to the corresponding component id via the "belongs by" linkage.
+   Each diagram shall be automatically linked (inverse direction) to the corresponding component id via the "has" linkage.
 
 Traceability to Requirements and AoU
 ------------------------------------
@@ -208,12 +230,14 @@ Traceability to Requirements and AoU
    :satisfies: wf__cr_mt_featarch[version==1], wf__cr_mt_comparch[version==1]
 
    Architectural views (feature/comp_arc_sta, feature/comp_arc_dyn) and interfaces (logic/real_arc_int)
-   should be linked to a requirement on the corresponding level.
+   shall be linked to its corresponding requirement on the corresponding level.
 
    **Examples:**
 
    * feat_req <-> feat_arc_(sta|dyn), logic_arc_int
    * comp_req <-> comp_arc_(sta|dyn), real_arc_int
+
+   Note: This supports change impact analysis (via versioned links) and is not redundant to the "belongs_to" backlink as there can be multiple views/interfaces.
 
 .. gd_req:: Architecture attribute: fulfils (AoU)
    :id: gd_req__arch_attr_fulfils_aou
