@@ -18,13 +18,13 @@ safety evidence. The checklist profile is not identical at every level.
 Filling that checklist is **manual, time-consuming, and repetitive** — the
 same quality questions apply to every requirement. Meanwhile, Large Language
 Models (LLMs) are now capable of performing exactly this kind of structured
-text assessment. The question is not whether they can help — they can — but
+text assessment. The question is now
 **under what conditions their output can legitimately enter a safety case**.
 
-The goal is development support: AI assists an engineer during development.
+**The goal is development support**: AI assists an engineer during development.
 
-The AI is a **development support tool** — it never runs in the vehicle and never
-generates safety evidence autonomously.
+So AI is only considered here as a **development support tool** —
+it shall never generate safety evidence autonomously.
 
 The safety premise is therefore:
 
@@ -56,12 +56,12 @@ The chat-first demonstration follows this sequence:
 2. Agent prepares permitted input and a structured draft assessment
       │
       ▼
-3. Validated editable Markdown review is presented
-  Agent stops; user may edit or request corrections
+3. Validated editable review file is presented
+   Agent stops; engineer may edit or request corrections
       │
       ▼
 4. A later explicit named Chat confirmation applies to that revision
-  Rejection produces no approved report
+   Rejection produces no approved report
     │
     ▼
 5. Agent writes final report and audit record for the confirmed revision
@@ -127,9 +127,9 @@ Engineer starts the inspection directly in Chat
   -> agent prepares input and automatically collects tool metadata
     -> Copilot Chat Agent produces a JSON assessment
     -> deterministic validation rejects wrong IDs or structure
-    -> editable Markdown review is written and the agent stops
-    -> human edits or requests corrections; new revisions are presented
-    -> human confirms a previously presented revision in a later Chat message
+    -> editable review file is written and the agent stops
+    -> engineer edits or requests corrections; new revisions are presented
+    -> engineer confirms a previously presented revision in a later Chat message
     -> agent writes report and audit with approver and detected tool information
 ```
 
@@ -141,7 +141,8 @@ findings. Unknown IDs, duplicate JSON keys, additional fields, invalid verdicts,
 or missing requirements are rejected. The report template is a proposed
 demonstration template, not a pre-approved S-CORE work-product template.
 
-There is one editable set of verdicts, rationales, and findings in `review.md`,
+There is one editable set of verdicts, rationales, and findings in
+[`example/review.md`](https://github.com/eclipse-score/process_description/blob/main/process_extensions/example/review.md),
 not a duplicate checklist. The original judgment remains preserved separately.
 Missing context must be resolved or dispositioned by the reviewer; `n/a` must
 not silently mean that evidence has been verified.
@@ -149,10 +150,11 @@ not silently mean that evidence has been verified.
 ### 3.3 Human finalization
 
 After judgment the agent presents the editable review and ends its turn.
-The user edits the Markdown tables or requests corrections in Chat. Changed
-artifacts are validated and shown as new revisions. A later explicit message
-`Approve as <name>` confirms the presented revision, or the user rejects it.
-Only then does the agent run local finalization; no user terminal step is needed.
+The engineer edits the tables in the [`example/review.md`](https://github.com/eclipse-score/process_description/blob/main/process_extensions/example/review.md)
+or requests corrections in Chat.
+Changed artifacts are validated and shown as new revisions. A later explicit message
+`Approve as <name>` confirms the presented revision, or the engineer rejects it.
+Only then does the agent run local finalization; no engineer terminal step is needed.
 File edits after presentation invalidate confirmation and require a new revision.
 
 The report records original/reviewed judgments, declared approver, relayed
@@ -160,47 +162,28 @@ confirmation, timestamps, changes, revision snapshots/hashes, and detected
 provenance. Rejected runs produce no approved report. Existing runs are preserved
 and final artifacts cannot be overwritten.
 
-Chat instructions and agent tool-permission prompts are not evidence-review approval.
-These local controls are not an access-control or authentication system: a user
-or agent with equivalent filesystem and terminal privileges can bypass or alter
-them. Accepted project evidence still requires the existing review and change
-management process. Helpers cannot authenticate the Chat author or prove a
-separate conversational turn; an agent could fabricate a confirmation string.
-The pause is governed by the Chat protocol, not cryptographic enforcement.
-Hashes identify artifacts; they are not signed attestations.
-
 ### Copilot provenance
 
-Helpers automatically collect Python/Markdown versions, workflow version and
+Helpers automatically collect tool versions, workflow version and
 code hashes, available editor metadata, and installed Copilot Chat versions.
 Every value has a source; no manual model/version arguments are required for
 the chat-first path. Finalization records its executing environment as well.
 
-Installed versions do not prove the active extension instance. Selected model,
-Auto-resolved backend, and exact agent tool IDs remain unknown when the built-in
-Chat request does not expose them. No separate editor integration is included.
-
-The resolved immutable model version and response ID are recorded as unknown
-when the interface does not expose them. The demonstrator does not invent an
-exact version or claim that a model alias guarantees reproducibility. Model,
-prompt, configuration, or usage changes trigger evaluation of the impact on
-existing tool evidence before further authorized use.
-
 ## 4. Requirements inspection demonstration
 
-The included input is a snapshot of four publicly available S-CORE baselibs
+The included example used is a snapshot of four publicly available S-CORE baselibs
 feature requirements. For example, the Utils Library requirement lists Base64,
 scoped operations, string views, safe arithmetic, atomic operations, and
 termination handling. This input demonstrates parsing and review flow; it is
 not a set of independently validated expected verdicts.
 
 The prompt summarizes the public S-CORE inspection checklist. It requests
-structured draft assessments, not an ISO compliance verdict. Reviewers must
+structured draft assessments. Reviewers must
 consider parent requirements, traceability, timing, interfaces, safety/security
 attributes, verifiability, completeness, and justified exceptions.
 
 Start in Chat using the reusable workflow prompt. The agent prepares input,
-validates its JSON judgment, presents the Markdown review, and stops. A later
+validates its JSON judgment, presents the review file, and stops. A later
 named confirmation authorizes finalization of the presented artifact. Check
 permission to share input before starting. Local helpers collect metadata,
 validate, track revisions, and render reports; they never invoke Copilot or
@@ -246,15 +229,7 @@ definitions.
 - Published RST nodes express intended responsibilities; executable review
   controls do not replace project governance.
 
-## 7. Community questions
-
-1. Who owns the report template, prompt, and reference evaluation cases?
-2. How should reviewer competence and independent review be documented?
-3. What evidence supports the error-detection judgment for each intended use?
-4. How should model/configuration changes affect tool authorization?
-5. Which further checklist-based activities should be piloted after inspection?
-
-## 8. Public references
+## 7. Public references
 
 | Reference | URL |
 |---|---|

@@ -4,8 +4,8 @@ AI-Assisted Workflow Extensions
 ################################
 
 These draft proposals describe optional AI-supported requirements inspection.
-They are adapted from the external pilot using the publication-oriented concept
-and public S-CORE process definitions. They do not establish standards compliance,
+They are based on the proposed concept and public S-CORE process definitions.
+They do not establish standards compliance,
 tool qualification, or coverage of a particular safety level.
 
 The Bazel documentation bundle publishes these draft nodes alongside the

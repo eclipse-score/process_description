@@ -1,6 +1,6 @@
 ---
 name: score-requirements-review
-description: "Start requirements inspection in Chat, pause for editable review, and finalize only after separate named user confirmation."
+description: "Start requirements inspection in Chat, pause for editable review, and finalize only after separate named engineer confirmation."
 agent: agent
 argument-hint: "Inspect baselibs, inspect a named requirements file, revise, approve, or reject"
 ---
@@ -9,7 +9,7 @@ argument-hint: "Inspect baselibs, inspect a named requirements file, revise, app
 
 Use this protocol for the entire inspection conversation. Keep all artifacts
 under `process_extensions/out/`. Do not change process definitions or existing
-runs. User confirmation is declared approval, not authenticated safety sign-off.
+runs. Engineer confirmation is declared approval, not authenticated safety sign-off.
 
 ## Start and judgment
 
@@ -39,7 +39,7 @@ runs. User confirmation is declared approval, not authenticated safety sign-off.
    Repair invalid assessment structure or ask for missing context if needed.
    Never convert missing evidence into an invented pass.
 6. Present the review.md link, run name, revision number/token, finding count,
-   and material metadata limitations. Ask the user to review, edit, or request
+   and material metadata limitations. Ask the engineer to review, edit, or request
    corrections. They can reply `Ready` after edits or `Approve as <name>` for
    the unchanged presented revision.
 7. **STOP AND END YOUR TURN.** Do not approve, auto-confirm, or finalize in the
@@ -47,7 +47,7 @@ runs. User confirmation is declared approval, not authenticated safety sign-off.
 
 ## Edits and revisions
 
-The user may edit `review.md` or request specific corrections in Chat. Apply
+The engineer may edit `review.md` or request specific corrections in Chat. Apply
 only requested corrections to its tables; preserve IDs and headers. Do not
 fill a second checklist or modify the original manifest/response.
 Run `python -m workflows.req_safety_inspection.workflow stage <run>`, present
@@ -56,20 +56,20 @@ the updated revision and review link, and **end your turn** for human review.
 
 ## Separate confirmation or rejection
 
-- Accept only a later explicit user message `Approve as <name>` or
+- Accept only a later explicit engineer message `Approve as <name>` or
   `Approve this revision as <name>` for the revision already presented.
   Ask before proceeding if the run or identity is ambiguous.
 - Run `python -m workflows.req_safety_inspection.workflow confirm <run>
-  --revision <previously-presented-token> --message <verbatim-user-message>`.
+  --revision <previously-presented-token> --message <verbatim-engineer-message>`.
   Quote arguments for the local terminal. Do not fabricate a confirmation,
-  default an approver, or approve on the user's behalf. Do not stage a changed
+  default an approver, or approve on the engineer's behalf. Do not stage a changed
   artifact and confirm it in the same turn using an earlier approval.
 - If the artifact changed, stage and present the new revision, then **stop for
-  a new user confirmation**.
+  a new engineer confirmation**.
 - On success link `report.rst` and `audit.json`. Do not claim qualification,
   authenticated identity, or automatic acceptance into a safety case.
-- For user rejection, run `python -m workflows.req_safety_inspection.workflow
-  reject <run> --reason <user-reason>` and stop without final output.
+- For engineer rejection, run `python -m workflows.req_safety_inspection.workflow
+  reject <run> --reason <engineer-reason>` and stop without final output.
 
 Helpers do not contact Copilot. They validate, collect non-secret metadata,
 snapshot revisions, and render local reports. Installed versions do not prove

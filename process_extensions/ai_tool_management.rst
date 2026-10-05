@@ -5,8 +5,7 @@ AI Tool Management
 
 This draft extension proposes evaluation and monitoring of offline AI
 development-support tools. It uses original explanatory wording based on the
-publication-oriented concept and public S-CORE process definitions, not
-non-public standard text or committee-draft procedures.
+proposed concept and public S-CORE process definitions.
 
 These nodes are published as drafts through the Bazel documentation bundle.
 Role assignments are proposals, not recorded approvals. Nothing here

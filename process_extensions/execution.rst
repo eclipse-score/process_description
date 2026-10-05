@@ -107,7 +107,7 @@ session metadata.
 Approval and Safety Boundary
 -----------------------------
 
-Chat confirmation is declared user approval relayed by the agent. Helpers enforce
+Chat confirmation is declared engineer approval relayed by the agent. Helpers enforce
 valid structure, a named message, revision/hash matching, and no overwrite, but
 cannot authenticate the author or prove the agent stopped between Chat turns.
 A privileged agent could supply a fabricated message or modify local files.
@@ -128,7 +128,7 @@ Use the applicable separate S-CORE checklist for direct stakeholder inspection.
 Helpers require Python 3.11+ and Markdown as declared in ``pyproject.toml``.
 The agent uses an existing suitable interpreter and asks before installing
 missing dependencies. Setup can use ``pip install -e .`` from this directory
-in an appropriate environment; this is not a per-inspection user step.
+in an appropriate environment; this is not a per-inspection engineer step.
 
 Developers run offline tests from ``process_extensions/``:
 
