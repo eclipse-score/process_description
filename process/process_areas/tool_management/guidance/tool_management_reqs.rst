@@ -48,7 +48,7 @@ Tool Verification Report Attributes
       * released
       * rejected
 
-.. gd_req:: Tool attribute:: version
+.. gd_req:: Tool attribute:: tool_version
    :id: gd_req__tool_attr_version
    :status: valid
    :version: 1
