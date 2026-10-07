@@ -98,7 +98,7 @@ Logical Interfaces
       :fulfils: feat_req__feature_name__some_title
       :included_by: feat__feature_name
 
-      General Interface Description
+      <General Interface Description with description of the interface and its purpose. The description should be as detailed as possible to provide a clear understanding of the interface's role within the feature architecture and the input/output interactions and data (on high level) it supports. Also, include any relevant information about the interface's design decisions (if not already covered in the general description of the feature), constraints, and any specific requirements (for example timings) it have to fulfill. This will help in understanding the rationale behind the interface's design and its contribution to the overall feature architecture. Please describe also the intended error handling mechanisms on high level, security considerations, and any other relevant aspects that are crucial for the interface's implementation and usage within the feature architecture.>
 
       .. needarch::
          :scale: 50
@@ -114,4 +114,4 @@ Logical Interfaces
       :version: 1
       :included_by: logic_arc_int__feature_name__interface_name1
 
-      General Operation Description
+      <General Operation Description with description of the operation of the interface and its purpose. The description should be as detailed as possible to provide a clear understanding of the operation's role within the interface and the input/output interactions it supports. Also, include any relevant information about the operation's design decisions, constraints, and any specific requirements it fulfills. This will help in understanding the rationale behind the operation's design and its contribution to the overall feature architecture. Please describe also the intended error handling mechanisms on high level, security considerations, and any other relevant aspects that are crucial for the operation's implementation and usage within the feature architecture.
