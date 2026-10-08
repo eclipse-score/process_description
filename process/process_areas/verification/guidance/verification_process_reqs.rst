@@ -192,8 +192,8 @@ Process Requirements
     - TestType and DerivationTechnique shall be set
     - Description shall not be empty
     - In a Platform Integration Test Partially/FullyVerifies shall be set to at least one Platform Requirement
-    - If Partially/FullyVerifies are set in Feature Integration Test these shall link to at least one Feature Requirement
-    - If Partially/FullyVerifies are set in Component Integration Test these shall link to at least one Component Requirement
+    - If Partially/FullyVerifies are set in Feature Integration Test these shall link to at least one Feature Requirement or Architectural element
+    - If Partially/FullyVerifies are set in Component Integration Test these shall link to at least one Component Requirement or Architectural element
     - If Partially/FullyVerifies are set in Unit Test these shall link to at least one Component Requirement
 
 .. gd_req:: Verification Documentation Checks Extended
