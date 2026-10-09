@@ -71,7 +71,7 @@ Security Planning Templates
               std_req__isosae21434__prj_management_6461[version==1],
               std_req__isosae21434__prj_management_6462[version==1]
 
-   For the content see here: `Feature Security Work Products Template <https://eclipse-score.github.io/module_template/main/features/feature_example/security_planning/index.html>`__
+   For the content see here: `Feature Security Work Products Template <https://eclipse-score.github.io/module_template/main/features/security_planning/index.html>`__
 
 .. gd_temp:: Module Security Plan Template
    :id: gd_temp__module_security_plan

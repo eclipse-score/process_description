@@ -25,7 +25,7 @@ Safety Planning Templates
               std_req__iso26262__management_6468[version==1],
               std_req__iso26262__management_6469[version==1]
 
-   For the content see here: `Feature Safety Work Products Template <https://eclipse-score.github.io/module_template/main/features/feature_example/safety_planning/index.html>`__
+   For the content see here: `Feature Safety Work Products Template <https://eclipse-score.github.io/module_template/main/features/safety_planning/index.html>`__
 
 
 .. gd_temp:: Module Safety Plan Template
