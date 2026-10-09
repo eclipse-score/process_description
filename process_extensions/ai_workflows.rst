@@ -21,74 +21,63 @@ in :doc:`ai_tool_management`.
    :id: wf__ai_req_safety_inspect
    :status: draft
    :version: 1
-   :responsible: rl__safety_manager
+   :tags: requirements_engineering
+   :responsible: rl__committer
    :approved_by: rl__committer
-   :supported_by: rl__contributor
-   :input: wp__requirements_feat, wp__requirements_comp
-   :output: wp__requirements_inspect
-   :contains: gd_chklst__req_inspection
+   :supported_by: rl__safety_manager
+   :input: wp__requirements_feat[version==1], wp__requirements_comp[version==1]
+   :output: wp__requirements_inspect[version==1]
+   :contains: gd_chklst__req_inspection[version==1]
 
    An engineer selects feature or component requirements, context, and the
    applicable public S-CORE inspection checklist. Before sharing input with an
-   AI service, the engineer verifies that sharing is permitted.
+   AI service, the engineer verifies that sharing is permitted. Roles match
+   :need:`wf__monitor_verify_requirements`, which this workflow augments: the
+   committer remains responsible and approving, with the safety manager
+   supporting as moderator, consistent with :need:`doc_concept__wp_inspections`.
+   This also applies to re-inspection triggered by change or release review;
+   no separate reusable sub-workflow is defined for that case.
 
-   The AI prepares draft assessments without changing requirements or inventing
-   checklist IDs. Each entry contains a ``yes`` / ``no`` / ``n/a`` verdict and
-   rationale. Findings contain a severity and suggested improvement. The result
-   is presented as one editable Markdown review; the original judgment remains
-   preserved separately.
+   The AI fills the checklist content directly in the exact column structure of
+   :need:`gd_chklst__req_inspection` (Review ID, Acceptance Criteria, Guidance,
+   Passed, Remarks, Issue link), parsed from that template rather than
+   paraphrased, without changing requirements or inventing checklist IDs. Each
+   entry has a ``yes`` / ``no`` / ``n/a`` / ``not_assessed`` verdict (missing
+   context is never silently treated as ``n/a``) and full remarks; an issue
+   link is mandatory for every ``no``. The result is presented as one editable
+   table; the original judgment remains preserved separately.
 
    **Scope:** The existing ``wf__monitor_verify_requirements`` includes
    ``wp__requirements_stkh``, ``wp__requirements_feat``, and
    ``wp__requirements_comp``. This AI variant assesses feature and component
    requirements only. Stakeholder requirements may be relevant parent context,
    but their distinct checklist profile is not implemented and their text is
-   not retrieved automatically. Assumptions of use are also out of scope.
+   not retrieved automatically unless the engineer explicitly supplies it as
+   context, in which case linkage/completeness items may be assessed instead
+   of marked ``not_assessed``.
 
    **Proposed review guardrail:** After presenting a validated draft, the agent
    ends its turn. The reviewer independently checks the assessment, evidence
-   gaps, parent traceability, and consistency, and may edit the review or request
-   corrections. The agent validates and presents every changed revision, then
-   stops again. Only a later named Chat confirmation referring to the presented
-   revision authorizes finalization. Editing, ``Ready``, positive feedback, and
-   tool permissions are not approval.
-
-   The final record retains original and reviewed results, declared approver,
-   relayed confirmation message, revision/hash, timestamps, changes, and
-   available tool metadata. Unexposed active-extension or model information
-   remains unknown. Local controls do not authenticate the Chat author or prove
-   a separate turn; prompt instructions are not security controls.
+   gaps, parent traceability, and consistency, and may edit the checklist or
+   request corrections; the agent validates and presents every changed
+   revision, then stops again. There is no local chat-confirmation command:
+   the engineer copies the checked checklist into the project's real
+   inspection document (for example ``doc__<feature>_req_inspection``), commits
+   it, and the normal Git/GitHub review of that change is the only approval
+   this workflow recognizes. Editing, ``Ready``, positive feedback, and tool
+   permissions are not that approval.
 
    **Proposed constraints:**
 
-   - The project reviews and approves the demonstration report structure before
-     adoption; it is not an approved S-CORE template.
-   - Validation rejects entries outside the feature/component checklist profile.
+   - Validation rejects entries outside the feature/component checklist profile,
+     unknown checklist IDs, or checklist text diverging from
+     :need:`gd_chklst__req_inspection`.
    - The reviewer checks the AI assessment independently against the requirements
-     and applicable checklist.
-   - Drafts are distinguished from accepted evidence.
+     and applicable checklist as part of the normal PR review; there is no
+     separate local confirmation step to substitute for that review.
+   - Drafts are distinguished from accepted evidence: nothing is written to the
+     project's inspection document until the engineer does so themselves.
    - Human approval alone does not establish tool qualification. Tool evaluation
-     and review controls must be assessed for the intended use before adoption.
+     under the existing tool-management workflows (see :doc:`ai_tool_management`)
+     must be assessed for the intended use before adoption.
    - Model, prompt, configuration, or usage changes trigger impact evaluation.
-
-
-.. workflow:: AI-Assisted Requirements Inspection (reusable sub-workflow)
-  :id: wf__ai_req_inspect_sub
-  :status: draft
-  :version: 1
-  :responsible: rl__safety_manager
-  :approved_by: rl__committer
-  :input: wp__requirements_feat, wp__requirements_comp
-  :output: wp__requirements_inspect
-  :contains: gd_chklst__req_inspection
-
-  Reusable proposal for activities that trigger feature or component
-  requirements re-inspection, such as change review or release review. The
-  calling activity supplies requirements, feature context, intended safety
-  level, and inspection scope. Stakeholder requirements and assumptions of use
-  are outside this checklist profile.
-
-  The same draft, independent human review, revision presentation, and separate
-  named Chat confirmation as ``wf__ai_req_safety_inspect`` apply. Calling this
-  activity must not bypass the review pause or confirm a revision that was not
-  presented to the user.

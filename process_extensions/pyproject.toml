@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "score-ai-process-demonstrator"
-version = "0.2.0"
+version = "0.3.0"
 description = "Copilot Chat Agent requirements inspection demonstrator"
 requires-python = ">=3.11"
 dependencies = ["Markdown>=3.7,<4"]
@@ -15,4 +15,4 @@ include = ["workflows*"]
 namespaces = true
 
 [tool.setuptools.package-data]
-"workflows.req_safety_inspection" = ["prompts/*.md", "templates/*.rst"]
+"workflows.req_safety_inspection" = ["prompts/*.md"]

@@ -1,19 +1,22 @@
-"""Editable Markdown review and revision-bound chat confirmation."""
+"""Editable requirements inspection checklist, in the exact public template shape.
+
+There is no local approval step here. The engineer copies the confirmed table
+into the project's real inspection work product (for example
+``doc__<feature>_req_inspection.rst``) and commits it; approval is the normal
+Git/GitHub review of that change, not a Chat message relayed by this tool.
+"""
 
 from __future__ import annotations
 
-import html
 import csv
-import json
-import re
+import html
 from datetime import datetime, timezone
 from html.parser import HTMLParser
 from pathlib import Path
 
 import markdown
 
-from workflows.base import CHECKLIST_IDS, TEMPLATE, WorkflowError, _digest, _rst_text, _write_json, read_json, validate_assessment
-from workflows.environment import collect_environment
+from workflows.base import CHECKLIST, CHECKLIST_IDS, WorkflowError, _write_json, read_json, validate_assessment
 
 
 def _now() -> str:
@@ -27,34 +30,37 @@ def _cell(value: str) -> str:
     return text.replace("\n", "<br>")
 
 
-def render_review(assessment: dict) -> str:
+def render_checklist(assessment: dict) -> str:
     lines = [
-        "# Requirements review", "",
-        "Edit the verdicts, rationales, and findings in these tables. Keep the",
-        "requirement/checklist IDs and table headers unchanged. Missing context",
-        "is not a pass. Return to Chat when ready; editing is not approval.", "",
+        "# Requirements inspection checklist", "",
+        "Draft prepared by a Chat Agent; not reviewed or approved. The",
+        "**Criterion** and **Guidance** columns are the canonical public S-CORE",
+        "checklist text and are not editable here (edits to them are ignored on",
+        "re-check). Edit **Passed**, **Remarks**, and **Issue link** only.",
+        "`not_assessed` means missing context, never a pass. An issue link is",
+        "mandatory for every `no` and not allowed otherwise. When ready, copy",
+        "this table into the project's real requirements inspection document",
+        "and open it for the normal Git/GitHub review; that review is the only",
+        "approval this tool recognizes.", "",
     ]
     for entry in assessment["requirements"]:
         lines.extend([
             f"## `{entry['req_id']}`", "", _cell(entry["req_title"]), "",
-            "### Checklist", "", "| Check | Verdict | Rationale |",
-            "| --- | --- | --- |",
+            "| Check | Criterion | Guidance | Passed | Remarks | Issue link |",
+            "| --- | --- | --- | --- | --- | --- |",
         ])
         for check_id in CHECKLIST_IDS:
             check = entry["checklist"][check_id]
-            lines.append(f"| {check_id} | {check['verdict']} | {_cell(check['rationale'])} |")
-        lines.extend([
-            "", "### Findings", "", "| Check | Severity | Description | Suggestion |",
-            "| --- | --- | --- | --- |",
-        ])
-        for finding in entry["findings"]:
-            lines.append("| " + " | ".join(_cell(finding[key]) for key in
-                         ("check_id", "severity", "description", "suggestion")) + " |")
+            lines.append(
+                f"| {check_id} | {_cell(CHECKLIST[check_id]['criterion'])} | "
+                f"{_cell(CHECKLIST[check_id]['guidance'])} | {check['passed']} | "
+                f"{_cell(check['remarks'])} | {_cell(check['issue_link'])} |"
+            )
         lines.append("")
     return "\n".join(lines) + "\n"
 
 
-class _ReviewTables(HTMLParser):
+class _ChecklistTables(HTMLParser):
     def __init__(self):
         super().__init__(convert_charrefs=True)
         self.sections = []
@@ -68,7 +74,7 @@ class _ReviewTables(HTMLParser):
             self.heading = []
         elif tag == "table":
             if not self.sections or self.table is not None:
-                raise WorkflowError("Review tables must belong to a requirement heading")
+                raise WorkflowError("Checklist tables must belong to a requirement heading")
             self.table = []
         elif tag == "tr" and self.table is not None:
             self.row = []
@@ -98,7 +104,7 @@ class _ReviewTables(HTMLParser):
             self.table = None
 
 
-def parse_review(text: str, requirements: list[dict[str, str]]) -> dict:
+def parse_checklist(text: str, requirements: list[dict[str, str]]) -> dict:
     width = None
     for line in text.splitlines():
         if not line.strip().startswith("|"):
@@ -106,177 +112,81 @@ def parse_review(text: str, requirements: list[dict[str, str]]) -> dict:
             continue
         cells = next(csv.reader([line.strip()], delimiter="|", escapechar="\\", quoting=csv.QUOTE_NONE))
         if cells[0] != "" or cells[-1] != "":
-            raise WorkflowError("Review table rows must start and end with a pipe")
+            raise WorkflowError("Checklist table rows must start and end with a pipe")
         count = len(cells) - 2
         if width is None:
             width = count
         if count != width:
-            raise WorkflowError("Review table cell count changed; escape literal pipes")
-    parser = _ReviewTables()
+            raise WorkflowError("Checklist table cell count changed; escape literal pipes")
+    parser = _ChecklistTables()
     parser.feed(markdown.markdown(text, extensions=["tables"]))
     parser.close()
     expected = {entry["id"]: entry for entry in requirements}
     assessment = {"requirements": []}
+    header = ["Check", "Criterion", "Guidance", "Passed", "Remarks", "Issue link"]
     for section in parser.sections:
         identifier = section["id"]
-        if identifier not in expected or len(section["tables"]) != 2:
-            raise WorkflowError("Each known requirement must have exactly two review tables")
-        checklist_rows, finding_rows = section["tables"]
-        if not checklist_rows or checklist_rows[0] != ["Check", "Verdict", "Rationale"]:
+        if identifier not in expected or len(section["tables"]) != 1:
+            raise WorkflowError("Each known requirement must have exactly one checklist table")
+        rows = section["tables"][0]
+        if not rows or rows[0] != header:
             raise WorkflowError("Checklist table header changed")
-        if not finding_rows or finding_rows[0] != ["Check", "Severity", "Description", "Suggestion"]:
-            raise WorkflowError("Findings table header changed")
         checklist = {}
-        for row in checklist_rows[1:]:
-            if len(row) != 3 or row[0] in checklist:
-                raise WorkflowError("Checklist rows must be unique and have three cells")
-            checklist[row[0]] = {"verdict": row[1], "rationale": row[2]}
-        findings = []
-        for row in finding_rows[1:]:
-            if not any(row):
-                continue
-            if len(row) != 4:
-                raise WorkflowError("Finding rows must have four cells")
-            findings.append(dict(zip(("check_id", "severity", "description", "suggestion"), row)))
+        for row in rows[1:]:
+            if len(row) != 6 or row[0] in checklist:
+                raise WorkflowError("Checklist rows must be unique and have six cells")
+            check_id = row[0]
+            if check_id not in CHECKLIST_IDS:
+                raise WorkflowError(f"Unknown checklist ID: {check_id}")
+            # Criterion/guidance (row[1], row[2]) are not trusted from the file;
+            # they are always taken from the canonical template.
+            checklist[check_id] = {"passed": row[3], "remarks": row[4], "issue_link": row[5]}
+        if set(checklist) != set(CHECKLIST_IDS):
+            raise WorkflowError(f"Checklist for {identifier} is missing rows")
         assessment["requirements"].append({
             "req_id": identifier, "req_title": expected[identifier]["title"],
-            "checklist": checklist, "findings": findings,
+            "checklist": checklist,
         })
     return validate_assessment(assessment, requirements)
 
 
-def _load(directory: Path) -> tuple[dict, dict]:
-    manifest = read_json((directory / "manifest.json").read_text(encoding="utf-8"))
-    state = read_json((directory / "review_state.json").read_text(encoding="utf-8"))
-    if _digest(directory / "manifest.json") != state["manifest_sha256"]:
-        raise WorkflowError("Run manifest changed; original judgment must remain intact")
-    if state["status"] in ("approved", "rejected"):
-        raise WorkflowError("Run is closed; start a new run")
-    return manifest, state
-
-
-def prepare_chat_review(directory: Path, requirements: list[dict[str, str]],
-                        assessment: dict, context: dict, provenance: dict) -> dict:
+def prepare_inspection(directory: Path, requirements: list[dict[str, str]],
+                       assessment: dict, context: dict, provenance: dict) -> dict:
     validate_assessment(assessment, requirements)
     allowed = {"request.json", "prompt.md", "response.json"}
     if directory.exists() and any(path.name not in allowed for path in directory.iterdir()):
-        raise WorkflowError("Run already contains review artifacts; do not overwrite")
+        raise WorkflowError("Run already contains inspection artifacts; do not overwrite")
     directory.mkdir(parents=True, exist_ok=True)
     _write_json(directory / "manifest.json", {
-        "format_version": 2, "requirements": requirements, "context": context,
+        "format_version": 3, "requirements": requirements, "context": context,
         "provenance": provenance, "initial_assessment": assessment, "run_timestamp": _now(),
     })
-    (directory / "review.md").write_text(render_review(assessment), encoding="utf-8")
-    _write_json(directory / "review_state.json", {
-        "status": "awaiting_review", "revision": 0, "review_sha256": None,
-        "manifest_sha256": _digest(directory / "manifest.json"),
-    })
-    return stage_review(directory)
+    (directory / "inspection.md").write_text(render_checklist(assessment), encoding="utf-8")
+    return check_inspection(directory)
 
 
-def stage_review(directory: Path) -> dict:
-    manifest, state = _load(directory)
-    review_path = directory / "review.md"
-    text = review_path.read_text(encoding="utf-8")
-    assessment = parse_review(text, manifest["requirements"])
-    digest = _digest(review_path)
-    if digest != state["review_sha256"]:
-        state["revision"] += 1
-        revisions = directory / "revisions"
-        revisions.mkdir(exist_ok=True)
-        snapshot = revisions / f"review-{state['revision']:04d}.md"
-        if snapshot.exists():
-            raise WorkflowError("Revision snapshot already exists; history must not be overwritten")
-        snapshot.write_text(text, encoding="utf-8")
-    state.update(status="awaiting_confirmation", review_sha256=digest,
-                 revision_token=f"r{state['revision']}-{digest}", staged_at=_now())
-    _write_json(directory / "review_state.json", state)
-    return {**state, "review_file": str(review_path),
-            "requirement_count": len(assessment["requirements"]),
-            "finding_count": sum(len(entry["findings"]) for entry in assessment["requirements"])}
+def check_inspection(directory: Path) -> dict:
+    """Re-validate the current ``inspection.md`` and summarize it for presentation.
 
-
-def _report(manifest: dict, reviewed: dict) -> str:
-    original = {entry["req_id"]: entry for entry in manifest["initial_assessment"]["requirements"]}
-    sections = []
-    for entry in reviewed["requirements"]:
-        identifier = entry["req_id"]
-        sections.extend([
-            _rst_text(identifier), "~" * (len(_rst_text(identifier)) + 1), "",
-            ".. list-table:: Original and reviewed assessment", "   :header-rows: 1", "",
-            "   * - Check", "     - Original AI verdict", "     - Original AI rationale",
-            "     - Reviewed verdict", "     - Reviewed rationale",
-        ])
-        for check_id in CHECKLIST_IDS:
-            before = original[identifier]["checklist"][check_id]
-            after = entry["checklist"][check_id]
-            cells = (check_id, before["verdict"], before["rationale"], after["verdict"], after["rationale"])
-            sections.append("   * - " + _rst_text(cells[0]))
-            sections.extend("     - " + _rst_text(cell) for cell in cells[1:])
-        sections.append("")
-        for finding in entry["findings"]:
-            sections.append("- " + _rst_text(
-                f"{finding['check_id']} ({finding['severity']}): {finding['description']} "
-                f"Suggestion: {finding['suggestion']}"
-            ))
-        sections.append("")
-    return (TEMPLATE.read_text(encoding="utf-8")
-            .replace("{{STATUS}}", "HUMAN-CONFIRMED DEMONSTRATION")
-            .replace("{{FEATURE_NAME}}", _rst_text(manifest["context"]["feature_name"]))
-            .replace("{{REQUIREMENT_SECTIONS}}", "\n".join(sections)))
-
-
-def confirm_review(directory: Path, revision: str, message: str) -> Path:
-    manifest, state = _load(directory)
-    match = re.fullmatch(r"Approve(?: this revision)? as ([^\r\n]+)", message.strip(), re.IGNORECASE)
-    if not match or not match[1].strip():
-        raise WorkflowError("An explicit user message 'Approve as <name>' is required")
-    if state["status"] != "awaiting_confirmation" or revision != state["revision_token"]:
-        raise WorkflowError("Confirmation does not match the revision presented in Chat")
-    review_path = directory / "review.md"
-    digest = _digest(review_path)
-    if digest != state["review_sha256"]:
-        raise WorkflowError("Review changed after presentation; stage and confirm the new revision")
-    snapshot = directory / "revisions" / f"review-{state['revision']:04d}.md"
-    if _digest(snapshot) != digest:
-        raise WorkflowError("Presented revision snapshot changed")
-    reviewed = parse_review(review_path.read_text(encoding="utf-8"), manifest["requirements"])
-    if any((directory / name).exists() for name in ("report.rst", "audit.json")):
-        raise WorkflowError("Final artifacts already exist; do not overwrite")
-    timestamp = _now()
-    final_environment = collect_environment()
-    original_environment = manifest["provenance"].get("environment", {})
-    original_fingerprint = original_environment.get("workflow", {}).get("sha256")
-    if original_fingerprint and original_fingerprint != final_environment["workflow"]["sha256"]:
-        raise WorkflowError("Workflow implementation changed since judgment; start a new run")
-    audit = {
-        "provenance": manifest["provenance"], "run_timestamp": manifest["run_timestamp"],
-        "finalization_environment": final_environment,
-        "tools_used": ["Copilot Chat Agent judgment", "Python input and schema validation",
-                       "Markdown review parser", "Python revision tracking and report renderer"],
-        "approver": match[1].strip(), "decision": "approved", "confirmation_timestamp": timestamp,
-        "confirmation_source": "user Chat message relayed by agent; not authenticated",
-        "confirmation_message": message, "revision": state["revision"], "revision_token": revision,
-        "review_sha256": digest, "manifest_sha256": state["manifest_sha256"],
-        "assessment_corrections_applied": reviewed != manifest["initial_assessment"],
-        "original_assessment": manifest["initial_assessment"], "reviewed_assessment": reviewed,
-        "qualification_claim": "none; Chat confirmation is not tool qualification",
+    This has no approval semantics: it is immediate feedback while editing,
+    not a gate. Nothing here can be fabricated into an approval.
+    """
+    manifest = read_json((directory / "manifest.json").read_text(encoding="utf-8"))
+    checklist_path = directory / "inspection.md"
+    assessment = parse_checklist(checklist_path.read_text(encoding="utf-8"), manifest["requirements"])
+    counts = {"yes": 0, "no": 0, "n/a": 0, "not_assessed": 0}
+    issue_links = []
+    for entry in assessment["requirements"]:
+        for check_id, check in entry["checklist"].items():
+            counts[check["passed"]] += 1
+            if check["passed"] == "no":
+                issue_links.append({"req_id": entry["req_id"], "check_id": check_id,
+                                     "issue_link": check["issue_link"]})
+    return {
+        "checklist_file": str(checklist_path), "requirement_count": len(assessment["requirements"]),
+        "verdict_counts": counts, "open_issues": issue_links,
+        "changed_since_draft": assessment != manifest["initial_assessment"],
+        "next_step": "Copy this table into the project's real inspection document, "
+                     "commit it, and open it for Git/GitHub review. This tool does not "
+                     "approve or finalize the inspection.",
     }
-    report = _report(manifest, reviewed)
-    report += "\nAudit Record\n------------\n\n.. code-block:: json\n\n"
-    report += "\n".join("   " + line for line in json.dumps(audit, indent=2).splitlines()) + "\n"
-    if _digest(review_path) != digest or _digest(directory / "manifest.json") != state["manifest_sha256"]:
-        raise WorkflowError("Artifacts changed during finalization; confirmation invalidated")
-    (directory / "report.rst").write_text(report, encoding="utf-8")
-    _write_json(directory / "audit.json", audit)
-    state.update(status="approved", approver=match[1].strip(), confirmed_at=timestamp)
-    _write_json(directory / "review_state.json", state)
-    return directory / "report.rst"
-
-
-def reject_review(directory: Path, reason: str) -> None:
-    _, state = _load(directory)
-    if not reason.strip():
-        raise WorkflowError("A rejection reason is required")
-    state.update(status="rejected", rejection_reason=reason, rejected_at=_now())
-    _write_json(directory / "review_state.json", state)

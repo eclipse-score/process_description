@@ -56,19 +56,23 @@ The chat-first demonstration follows this sequence:
 2. Agent prepares permitted input and a structured draft assessment
       │
       ▼
-3. Validated editable review file is presented
+3. Validated editable checklist (inspection.md) is presented
    Agent stops; engineer may edit or request corrections
       │
       ▼
-4. A later explicit named Chat confirmation applies to that revision
-   Rejection produces no approved report
-    │
-    ▼
-5. Agent writes final report and audit record for the confirmed revision
+4. Engineer copies the checked checklist into the project's real
+   requirements inspection document and commits it
+      │
+      ▼
+5. The normal Git/GitHub review of that change is the approval
 ```
 
 This means the AI output is never in the safety case — only the
-**human-reviewed and approved** version is.
+**human-reviewed and approved** version is. There is no local "approve"
+command: this tool cannot fabricate, relay, or otherwise stand in for that
+review. Approval is whatever the project's existing PR review already is —
+authenticated by the platform, structurally unable to be the same person as
+the content's author, and retained in the project's own version history.
 
 The diagram below illustrates the same guardrail as a data-flow: every
 human-readable/machine-readable conversion is performed by a deterministic
@@ -86,15 +90,22 @@ normal repository pull-request review — this satisfies the diagram's
 
 ### 2.2 Fixed output schema (no invented structure)
 
-The AI fills a fixed demonstration schema:
+The AI fills the exact public checklist, parsed directly from the canonical
+[feature inspection checklist template](https://eclipse-score.github.io/process_description/main/folder_templates/platform/features/feature_name/requirements/req_inspection.html)
+rather than a paraphrased or hand-copied summary — the same Review ID,
+Acceptance Criteria, and Guidance columns, so there is no separate copy that
+can silently drift from the template:
 
-- Verdict per checklist item: `yes` / `no` / `n/a`
-- One-sentence rationale per item
-- List of flagged findings with severity and suggested improvement
+- `passed` per checklist item: `yes` / `no` / `n/a` / `not_assessed`.
+  `not_assessed` means the AI lacked sufficient context (for example, a
+  requirement's parent text was not supplied); it is never conflated with a
+  genuine `n/a` or treated as a pass.
+- Full remarks per item.
+- A mandatory issue link whenever an item is `no`, matching the template's own
+  mandatory "Issue link" column; forbidden for every other verdict.
 
 The AI cannot add new sections, invent checklist IDs, or change the document
-structure. Schema validation rejects any response that does not conform. The
-demonstration report template is not a pre-approved S-CORE work-product template.
+structure. Schema validation rejects any response that does not conform.
 
 ### 2.3 Model provenance and evaluation trigger
 
@@ -149,48 +160,50 @@ The Chat Agent workflow is:
 Engineer starts the inspection directly in Chat
   -> agent prepares input and automatically collects tool metadata
     -> Copilot Chat Agent produces a JSON assessment
-    -> deterministic validation rejects wrong IDs or structure
-    -> editable review file is written and the agent stops
-    -> engineer edits or requests corrections; new revisions are presented
-    -> engineer confirms a previously presented revision in a later Chat message
-    -> agent writes report and audit with approver and detected tool information
+    -> deterministic validation rejects wrong IDs, structure, or checklist drift
+    -> editable inspection.md checklist is written and the agent stops
+    -> engineer edits or requests corrections; re-validated on every check
+    -> engineer copies the checklist into the project's real inspection
+       document, commits it, and opens it for the normal Git/GitHub review
 ```
 
 ### 3.2 Fixed structure
 
 Assessments contain one entry per input requirement, the exact public S-CORE
-checklist IDs, `yes` / `no` / `n/a` verdicts, full rationales, and structured
-findings. Unknown IDs, duplicate JSON keys, additional fields, invalid verdicts,
-or missing requirements are rejected. The report template is a proposed
-demonstration template, not a pre-approved S-CORE work-product template.
+checklist IDs parsed from the canonical template, `yes` / `no` / `n/a` /
+`not_assessed` verdicts, full remarks, and a mandatory issue link for every
+`no`. Unknown IDs, duplicate JSON keys, additional fields, invalid verdicts,
+missing requirements, or checklist text diverging from the canonical template
+are rejected.
 
-There is one editable set of verdicts, rationales, and findings in
-[`example/review.md`](https://github.com/eclipse-score/process_description/blob/main/process_extensions/example/review.md),
-not a duplicate checklist. The original judgment remains preserved separately.
-Missing context must be resolved or dispositioned by the reviewer; `n/a` must
-not silently mean that evidence has been verified.
+There is one editable checklist in
+[`example/inspection.md`](https://github.com/eclipse-score/process_description/blob/main/process_extensions/example/inspection.md),
+not a duplicate schema invented on top of it. The original judgment remains
+preserved separately in a local manifest. Missing context must be resolved or
+dispositioned by the reviewer; `not_assessed` must not silently become a pass.
 
-### 3.3 Human finalization
+### 3.3 Hand-off to the project's own review
 
-After judgment the agent presents the editable review and ends its turn.
-The engineer edits the tables in the [`example/review.md`](https://github.com/eclipse-score/process_description/blob/main/process_extensions/example/review.md)
-or requests corrections in Chat.
-Changed artifacts are validated and shown as new revisions. A later explicit message
-`Approve as <name>` confirms the presented revision, or the engineer rejects it.
-Only then does the agent run local finalization; no engineer terminal step is needed.
-File edits after presentation invalidate confirmation and require a new revision.
+After judgment the agent presents the editable checklist and ends its turn.
+The engineer edits the table in [`example/inspection.md`](https://github.com/eclipse-score/process_description/blob/main/process_extensions/example/inspection.md)
+or requests corrections in Chat. Every edit is re-validated and reported back
+immediately; there is no local approval state to track, so no edit can be
+mistaken for one.
 
-The report records original/reviewed judgments, declared approver, relayed
-confirmation, timestamps, changes, revision snapshots/hashes, and detected
-provenance. Rejected runs produce no approved report. Existing runs are preserved
-and final artifacts cannot be overwritten.
+There is no `Approve as <name>` command, no revision token, no audit.json, and
+no report.rst produced by this tool. Finalization is the engineer copying the
+checked checklist into the project's actual inspection work product (for
+example ``doc__<feature>_req_inspection``), committing it, and relying on the
+normal Git/GitHub review of that change — with its existing identity,
+independence, and retention guarantees — as the only approval.
 
 ### Copilot provenance
 
 Helpers automatically collect tool versions, workflow version and
 code hashes, available editor metadata, and installed Copilot Chat versions.
-Every value has a source; no manual model/version arguments are required for
-the chat-first path. Finalization records its executing environment as well.
+Every value has a source. The active Copilot model cannot be auto-detected;
+an engineer may optionally declare a model label explicitly, recorded with
+its source as "reviewer supplied" rather than inferred or defaulted.
 
 ## 4. Requirements inspection demonstration
 
@@ -206,11 +219,11 @@ consider parent requirements, traceability, timing, interfaces, safety/security
 attributes, verifiability, completeness, and justified exceptions.
 
 Start in Chat using the reusable workflow prompt. The agent prepares input,
-validates its JSON judgment, presents the review file, and stops. A later
-named confirmation authorizes finalization of the presented artifact. Check
-permission to share input before starting. Local helpers collect metadata,
-validate, track revisions, and render reports; they never invoke Copilot or
-transmit data. Existing manually imported runs remain unchanged.
+validates its JSON judgment, presents the checklist file, and stops. Check
+permission to share input before starting. Local helpers collect metadata and
+validate the checklist; they never invoke Copilot, transmit data, or approve
+anything. Finalization happens outside this tool, through the project's own
+requirements-inspection PR review.
 
 The execution guide gives the Chat requests. Offline tests use constructed
 responses, without invoking Copilot. No live Copilot result or timing measurement
@@ -227,28 +240,43 @@ the existing process using `bazel run //:docs`.
 The existing `wf__monitor_verify_requirements` accepts stakeholder, feature, and
 component requirements, including `wp__requirements_stkh`. The optional
 `wf__ai_req_safety_inspect` proposal augments it for feature/component
-assessments only; it references `wp__requirements_feat`,
-`wp__requirements_comp`, and `wp__requirements_inspect`. Stakeholder requirements
-remain upstream context in the existing workflow, not direct input to this AI
-profile. The S-CORE stakeholder checklist differs and is not implemented here.
-Published nodes remain draft proposals, not approved process changes. Runtime
-templates, inputs, tests, and generated outputs are not published as process
-definitions.
+assessments only, with the same responsible/approving roles (committer,
+supported by the safety manager as moderator) rather than a separate role set;
+it references `wp__requirements_feat`, `wp__requirements_comp`, and
+`wp__requirements_inspect`. Stakeholder requirements remain upstream context in
+the existing workflow, not direct input to this AI profile. The S-CORE
+stakeholder checklist differs and is not implemented here. Tool evaluation runs
+through the existing `wf__tool_evaluate_tool`, `wf__tool_qualify_tool`, and
+`wf__tool_approve_tool_verification_report` — this proposal supplements their
+evidence with AI-specific guidance rather than adding parallel workflows or
+roles for the same work product. Published nodes remain draft proposals, not
+approved process changes. Runtime templates, inputs, tests, and generated
+outputs are not published as process definitions.
 
 ## 6. Limitations
 
 - The RST reader accepts simple feature/component requirement directives only.
   It rejects stakeholder/AOU and mixed-level files rather than applying the
   wrong checklist, and does not implement general Sphinx-Needs parsing.
-- Parent IDs may be supplied, but parent text (including stakeholder
-  requirements), implementation evidence, test traces, and related requirements
-  are not automatically retrieved.
+- Parent IDs may be supplied, and an engineer may optionally supply parent or
+  related requirement text as explicit context; without it, the linkage and
+  completeness items are forced to `not_assessed` rather than guessed. Nothing
+  retrieves that text automatically from `needs.json` or another repository yet.
 - Copilot outputs are non-deterministic and require strict validation and human
   review. No ASIL coverage or completed qualification is claimed.
 - Installed versions are not active-session metadata; selected or Auto-resolved
   model information remains unavailable without a supported editor integration.
-- The guardrail does not establish reviewer identity or prevent a privileged
-  agent from bypassing the local scripts.
+  An engineer may declare a model label explicitly; nothing infers it.
+- There is no automated comparison against already-inspected reference
+  requirements to measure AI verdict accuracy; this would need an agreed
+  evaluation set and acceptance criteria before use beyond a pilot.
+- The tool's behavior (validation rules, the no-local-approval boundary,
+  rejection of stakeholder/AoU input) is not yet expressed as tool requirements
+  linked to the test suite that verifies it; the tests currently verify
+  behavior that is not separately specified as a requirement.
+- The guardrail no longer has a fabricate-able local approval step, but it
+  still cannot prevent a privileged agent from bypassing the local scripts
+  entirely or editing files outside the documented protocol.
 - Published RST nodes express intended responsibilities; executable review
   controls do not replace project governance.
 

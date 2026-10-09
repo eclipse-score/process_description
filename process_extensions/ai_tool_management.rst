@@ -21,11 +21,19 @@ Tool acceptance is separate from an individual inspection report's approval.
 This proposal separates two kinds of tool-confidence subjects. The local
 deterministic helpers (requirements parser, JSON schema validator, Markdown
 renderer) perform a fixed, independently testable conversion and are evaluated
-like any other development tool under ``wf__ai_tool_qualify`` below. The LLM
-performing the draft assessment is treated as categorically not qualifiable
-by this evaluation: its output never earns qualification credit and remains
-subject to the full human review and approval guardrail regardless of model
-evaluation results.
+like any other development tool. The LLM performing the draft assessment is
+treated as categorically not qualifiable: its output never earns qualification
+credit and remains subject to the full human review guardrail regardless of
+model evaluation results.
+
+This proposal does **not** define a separate AI tool-management workflow. The
+AI development-support tool goes through the existing
+:need:`wf__tool_evaluate_tool`, :need:`wf__tool_qualify_tool`, and
+:need:`wf__tool_approve_tool_verification_report` with their existing roles
+and approvals unchanged. The guidance below only supplements the existing
+``wp__tool_verification_report`` content for this specific kind of tool; it
+is additive guidance, not a parallel process or a second set of roles for the
+same work product.
 
 The proposed requirements inspection activity is described in
 :doc:`ai_workflows`.
@@ -38,9 +46,11 @@ Evaluation Guidance
    :id: gd_temp__ai_tool_evaluation_record
    :status: draft
    :version: 1
+   :tags: tool_management
 
    Proposed guidance for recording a tool's intended use in the existing
-   ``wp__tool_verification_report``. It supplements the public S-CORE Tool
+   ``wp__tool_verification_report``, used during :need:`wf__tool_evaluate_tool`
+   and :need:`wf__tool_qualify_tool`. It supplements the public S-CORE Tool
    Verification Report Template; it is not a completed evidence record.
 
    The project documents the tool, model selection and available version information, affected work
@@ -56,82 +66,25 @@ Evaluation Guidance
    retention are defined by the project. This proposal is not a completed
    evidence record and contains no private evaluation results or reviewer data.
 
+   Evaluation should explicitly cover, in addition to the existing tool
+   evaluation criteria:
 
-Workflows
----------
+   1. Impact and error detection under the public S-CORE plan, with the
+      detection/prevention claim justified rather than assumed from the mere
+      presence of a reviewer.
+   2. Error modes specific to this kind of tool: an invented pass, a false
+      ``n/a``/``not_assessed``, an omitted checklist item, a rationale that
+      contradicts its verdict, and prompt injection through requirement text.
+   3. The schema validation and hand-off boundary itself (rejection of
+      malformed structure, mandatory issue links, parent-context enforcement)
+      as a control, not as a substitute for independent human review.
+   4. Model, prompt, configuration, or usage changes, each triggering a new
+      impact assessment of which evaluation cases must be repeated; results
+      are compared against the previously approved baseline.
+   5. Whether accepted inspection records show an identifiable model/tool
+      version, an independent reviewer distinct from the requirements author,
+      and per-item review evidence consistent with the authorized scope.
 
-.. workflow:: Evaluate AI Development Tool Before Use
-   :id: wf__ai_tool_qualify
-   :status: draft
-   :version: 1
-   :responsible: rl__safety_manager
-   :approved_by: rl__project_lead
-   :supported_by: rl__contributor
-   :input: wp__tlm_plan
-   :output: wp__tool_verification_report
-   :contains: gd_temp__ai_tool_evaluation_record
-
-   Proposed initial evaluation before adoption:
-
-   1. Agree the intended use, permitted input data, report structure, and
-      reviewer responsibilities within the existing tool-management process.
-   2. Identify possible incorrect or missing assessments and how the review
-      and validation controls should detect them.
-   3. Evaluate impact and error detection under the public S-CORE plan and record
-      whether qualification is required. Justify the detection/prevention claim.
-   4. If qualification is required, apply the existing software-tool validation
-      process. Define representative cases with independently reviewed expected results
-      and project-approved acceptance criteria before evaluating the tool.
-   5. Evaluate draft generation, structure validation, and the approval boundary,
-      including rejection, missing named Chat confirmation, changed revisions,
-      and the risk of an agent fabricating a relayed confirmation message.
-   6. Record results, limitations, and unresolved issues in the evaluation record.
-   7. Obtain the required project approval before use. If the evidence is
-      insufficient, do not authorize adoption.
-
-   This activity supports the existing tool-management process; it does not
-   replace that process or decide qualification from human review alone.
-
-
-.. workflow:: Re-evaluate AI Tool on Model Change
-   :id: wf__ai_tool_requalify
-   :status: draft
-   :version: 1
-   :responsible: rl__safety_manager
-   :approved_by: rl__project_lead
-   :input: wp__tool_verification_report
-   :output: wp__tool_verification_report
-   :contains: gd_temp__ai_tool_evaluation_record
-
-   Record the proposed model selection and available version information, then re-run the agreed evaluation cases
-   before using a changed model. Compare results with the approved baseline,
-   investigate regressions, and update the evidence record and limitations.
-   Changes to prompts, report structure, or usage scope also require an impact
-   assessment to determine which evaluation cases must be repeated.
-
-   The project applies its approved acceptance criteria and records an explicit
-   approval decision before adoption. A failed evaluation must not be treated
-   as approval. No universal numerical pass threshold is specified here.
-
-
-.. workflow:: Monitor AI Tool Usage and Review Controls
-   :id: wf__ai_tool_monitor
-   :status: draft
-   :version: 1
-   :responsible: rl__safety_manager
-   :approved_by: rl__project_lead
-   :input: wp__requirements_inspect, wp__tool_verification_report
-   :output: wp__tool_verification_report
-   :contains: gd_temp__ai_tool_evaluation_record
-
-   Periodically review whether accepted records contain the expected model,
-   timestamp, reviewer, approval decision, and correction metadata. Check that
-   reviewers meet project-defined competency expectations and detected tool
-   configurations match the authorized scope. Unknown active-model and extension
-   versions remain limitations; do not infer them from installed inventories.
-
-   Investigate missing approvals, unexpected model changes, and recurring
-   corrections or missed findings. Record issues and determine whether usage
-   must be restricted or suspended pending renewed evaluation and approval.
-   Audit metadata is evidence for review, not proof that the controls are
-   implemented correctly or that every error has been detected.
+   A failed or incomplete evaluation must not be treated as approval, and
+   project-approved acceptance criteria apply before adoption, exactly as for
+   any other tool reaching :need:`wf__tool_approve_tool_verification_report`.
