@@ -24,6 +24,9 @@ docs_bundle(
         "process_extensions/ai_workflows.rst",
         "process_extensions/ai_tool_management.rst",
     ],
+    data = [
+        "process_extensions/_assets/ai_supported_sldc_review_example.drawio.svg",
+    ],
 )
 
 docs(

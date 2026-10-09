@@ -27,6 +27,11 @@ unsupported. The agent asks for missing details rather than guessing them.
 Check organizational sharing rules before supplying input. The public baselibs
 fixture is example input, not independently validated qualification evidence.
 
+This demonstrator typically runs while a requirements change is under review
+in a pull request: the requirements file being inspected is the one proposed
+by that PR. The inspection itself happens locally in Chat and is independent
+of any CI trigger; nothing here opens or reacts to a PR automatically.
+
 Judgment and Pause
 ------------------
 
@@ -85,6 +90,12 @@ drafts and history remain available. On named confirmation, the agent writes
 revision/hash, original/reviewed judgments, changes, input/prompt/response hashes,
 and detected tool information. Full rationales and snapshots are retained.
 Final artifacts are not overwritten.
+
+Commit the confirmed ``report.rst`` and ``audit.json`` as part of the same
+requirements PR (or a dedicated follow-up PR) before it is merged, so the
+inspection evidence travels with the requirements change it covers. This
+repository does not script that commit or merge step; it remains a normal,
+reviewed Git/GitHub action.
 
 Automatic Tool Information
 --------------------------

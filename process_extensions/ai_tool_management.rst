@@ -18,6 +18,15 @@ is YES and tool error detection is NO; otherwise qualification is not required.
 The presence of a human reviewer must not automatically establish error detection.
 Tool acceptance is separate from an individual inspection report's approval.
 
+This proposal separates two kinds of tool-confidence subjects. The local
+deterministic helpers (requirements parser, JSON schema validator, Markdown
+renderer) perform a fixed, independently testable conversion and are evaluated
+like any other development tool under ``wf__ai_tool_qualify`` below. The LLM
+performing the draft assessment is treated as categorically not qualifiable
+by this evaluation: its output never earns qualification credit and remains
+subject to the full human review and approval guardrail regardless of model
+evaluation results.
+
 The proposed requirements inspection activity is described in
 :doc:`ai_workflows`.
 

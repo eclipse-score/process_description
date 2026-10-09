@@ -70,6 +70,20 @@ The chat-first demonstration follows this sequence:
 This means the AI output is never in the safety case — only the
 **human-reviewed and approved** version is.
 
+The diagram below illustrates the same guardrail as a data-flow: every
+human-readable/machine-readable conversion is performed by a deterministic
+transform tool, never by the LLM, and a human explicitly reviews and approves
+both the templates that feed the process and every artifact it produces.
+
+![AI-supported requirements review concept: human-approved templates are transformed to machine-readable form, the LLM drafts a checklist fill-out, and a human reviews/approves the re-transformed result before iteration or sign-off](_assets/ai_supported_sldc_review_example.drawio.svg)
+
+The requirements document and checklist templates themselves are ordinary
+repository content (the `feat_req`/`comp_req` directive schema and
+`workflows/req_safety_inspection/prompts/inspection.md`).
+They are reviewed and approved the same way as any other change, through
+normal repository pull-request review — this satisfies the diagram's
+"Template (Reviewed & Approved)" gates without a separate runtime step.
+
 ### 2.2 Fixed output schema (no invented structure)
 
 The AI fills a fixed demonstration schema:
@@ -96,6 +110,15 @@ errors are detected, that the reviewer is competent, or that the tool is qualifi
 Tool qualification may also be required, based on the S-CORE tool evaluation
 described in the [Tool Management process](https://eclipse-score.github.io/process_description/main/process_areas/tool_management/index.html),
 if independent human review is not sufficient to establish error detection.
+
+The pilot distinguishes two different kinds of tool confidence subjects. The
+deterministic transform tools — the RST requirement parser, JSON schema
+validator, and Markdown renderer in `workflows/` — perform a fixed,
+independently testable conversion and can be evaluated and, if applicable,
+qualified like any other development tool. The LLM reasoning step is treated
+as categorically **not qualifiable** in this pilot: its output is never
+evaluated for qualification credit and is always subject to the mandatory
+human review and approval guardrail described above.
 
 ---
 
