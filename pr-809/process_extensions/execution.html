@@ -613,9 +613,10 @@
 <h2>Start in Copilot Chat<a class="headerlink" href="#start-in-copilot-chat" title="Link to this heading">#</a></h2>
 <p>Open this repository in a Copilot-enabled editor and use Chat Agent mode.
 You do not need to prepare input, copy JSON, enter tool versions, run import
-commands, or finalize in a separate terminal. Paste this into a new conversation:</p>
+commands, or approve anything in a separate terminal. Paste this into a new
+conversation:</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Inspect baselibs using #file:process_extensions/chat_workflow.prompt.md
-Prepare the draft, present the editable review, and stop for my confirmation.
+Prepare the draft, present the editable checklist, and stop.
 </pre></div>
 </div>
 <p>If the reference is not resolved, attach <code class="docutils literal notranslate"><span class="pre">chat_workflow.prompt.md</span></code> using Add
@@ -630,56 +631,69 @@ not assess them because their checklist differs. Assumptions of use are also
 unsupported. The agent asks for missing details rather than guessing them.
 Check organizational sharing rules before supplying input. The public baselibs
 fixture is example input, not independently validated qualification evidence.</p>
+<p>Optionally supply <code class="docutils literal notranslate"><span class="pre">--context</span> <span class="pre">&lt;file.json&gt;</span></code>, mapping requirement IDs to
+supplied parent/related requirement text, so the linkage and completeness
+checklist items can be genuinely assessed instead of being forced to
+<code class="docutils literal notranslate"><span class="pre">not_assessed</span></code>. Optionally supply <code class="docutils literal notranslate"><span class="pre">--model-label</span> <span class="pre">&lt;label&gt;</span></code> to explicitly
+record which model you selected; nothing infers this automatically.</p>
+<p>This demonstrator runs while a requirements change is under review in a pull
+request: the requirements file being inspected is the one proposed by that PR,
+and the checked checklist is meant to become part of that same PR. The
+inspection itself happens locally in Chat and is independent of any CI
+trigger; nothing here opens, reacts to, or merges a PR automatically.</p>
 </section>
 <section id="judgment-and-pause">
 <h2>Judgment and Pause<a class="headerlink" href="#judgment-and-pause" title="Link to this heading">#</a></h2>
 <p>The agent prepares a fresh uniquely named run, detects available tool metadata,
-judges the requirements, validates the JSON response, and creates <code class="docutils literal notranslate"><span class="pre">review.md</span></code>
-under <code class="docutils literal notranslate"><span class="pre">process_extensions/out/&lt;run&gt;/</span></code>. It presents the file link, revision,
-and findings, then <strong>ends its turn</strong>. No approved report is written at this stage.</p>
-<p>Input, prompt, original judgment, and manifest are preserved separately. Existing
-runs, including older <code class="docutils literal notranslate"><span class="pre">out/baselibs/</span></code> artifacts, are not overwritten or
-migrated. Start a fresh inspection for this chat-first format. Helpers never
-invoke Copilot or transmit input; the Chat conversation performs judgment.</p>
+judges the requirements against the exact canonical checklist (parsed directly
+from the public template, not a paraphrase), validates the JSON response, and
+creates <code class="docutils literal notranslate"><span class="pre">inspection.md</span></code> under <code class="docutils literal notranslate"><span class="pre">process_extensions/out/&lt;run&gt;/</span></code>. It presents
+the file link and verdict counts, then <strong>ends its turn</strong>. Nothing is written
+outside that scratch run directory at this stage.</p>
+<p>Input, prompt, original judgment, and manifest are preserved separately in the
+same run directory for local traceability only; they are not evidence by
+themselves. Helpers never invoke Copilot or transmit input; the Chat
+conversation performs judgment.</p>
 </section>
 <section id="edit-or-request-corrections">
 <h2>Edit or Request Corrections<a class="headerlink" href="#edit-or-request-corrections" title="Link to this heading">#</a></h2>
-<p>Open the linked <code class="docutils literal notranslate"><span class="pre">review.md</span></code>. There is one set of editable verdicts, rationales,
-and findings, not a duplicate checklist. Independently review every entry,
-including evidence gaps; an <code class="docutils literal notranslate"><span class="pre">n/a</span></code> is not proof of successful verification.</p>
+<p>Open the linked <code class="docutils literal notranslate"><span class="pre">inspection.md</span></code>. There is one editable checklist, in the
+same Review ID / Acceptance Criteria / Guidance / Passed / Remarks / Issue
+link columns as the public template, not an invented schema. Independently
+review every entry, including evidence gaps; <code class="docutils literal notranslate"><span class="pre">not_assessed</span></code> is not proof of
+successful verification, and neither is <code class="docutils literal notranslate"><span class="pre">n/a</span></code>.</p>
 <ul class="simple">
-<li><p>Edit existing table cells or ask for a precise correction in Chat, identifying
-the requirement and checklist item.</p></li>
-<li><p>Add, correct, or remove findings consistently with the reviewed verdicts.</p></li>
+<li><p>Edit the <strong>Passed</strong>, <strong>Remarks</strong>, and <strong>Issue link</strong> cells, or ask for a
+precise correction in Chat, identifying the requirement and checklist item.
+The <strong>Criterion</strong> and <strong>Guidance</strong> cells are read-only: they are always
+re-derived from the canonical template, so edits to them are ignored.</p></li>
+<li><p>An issue link is mandatory for every <code class="docutils literal notranslate"><span class="pre">no</span></code> and not allowed otherwise.</p></li>
 <li><p>Keep requirement/checklist IDs and table headers unchanged. Put assessment
 content in table cells, not additional free-form notes. Escape literal pipes
 as <code class="docutils literal notranslate"><span class="pre">\|</span></code> or <code class="docutils literal notranslate"><span class="pre">&amp;#124;</span></code>; use <code class="docutils literal notranslate"><span class="pre">&lt;br&gt;</span></code> for a line break within a cell.</p></li>
-<li><p>After requested changes, the agent validates and shows a new revision, then
-stops again. It must not treat requested edits as approval.</p></li>
+<li><p>After requested or direct changes, re-run the check (see below); the agent
+reports the current verdict counts and any open issue links.</p></li>
 </ul>
-<p>After direct edits, reply:</p>
-<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Ready. Show the current review revision for confirmation.
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>-m<span class="w"> </span>workflows.req_safety_inspection.workflow<span class="w"> </span>check<span class="w"> </span>&lt;run&gt;
 </pre></div>
 </div>
-<p>The agent snapshots and presents the current revision. <code class="docutils literal notranslate"><span class="pre">Ready</span></code>, positive
-feedback, file editing, and tool-permission approval are not named confirmation.</p>
+<p>There is no local confirmation command and nothing to approve here: this step
+is immediate feedback while editing, not a gate.</p>
 </section>
-<section id="confirm-or-reject-in-chat">
-<h2>Confirm or Reject in Chat<a class="headerlink" href="#confirm-or-reject-in-chat" title="Link to this heading">#</a></h2>
-<p>After reviewing the revision already presented, reply:</p>
-<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Approve as Jane Reviewer
-</pre></div>
-</div>
-<p>Use your own identity, not the example name. An unchanged presented draft can
-be confirmed directly; you need not reproduce every verdict. If any file changed
-after presentation, the agent must show the changed revision and stop for a new
-confirmation. It must not stage and approve new edits using an earlier approval.</p>
-<p>To reject, state the rejection and reason. The run closes without final output;
-drafts and history remain available. On named confirmation, the agent writes
-<code class="docutils literal notranslate"><span class="pre">report.rst</span></code> and <code class="docutils literal notranslate"><span class="pre">audit.json</span></code> with approver, relayed message and timestamp,
-revision/hash, original/reviewed judgments, changes, input/prompt/response hashes,
-and detected tool information. Full rationales and snapshots are retained.
-Final artifacts are not overwritten.</p>
+<section id="hand-off-to-the-project-s-own-review">
+<h2>Hand Off to the Project’s Own Review<a class="headerlink" href="#hand-off-to-the-project-s-own-review" title="Link to this heading">#</a></h2>
+<p>Once satisfied with <code class="docutils literal notranslate"><span class="pre">inspection.md</span></code>, copy its checklist content into the
+project’s real requirements inspection document (for example
+<code class="docutils literal notranslate"><span class="pre">doc__&lt;feature&gt;_req_inspection</span></code>), or into a comment on the existing
+inspection PR, and commit it as part of that same pull request (or a
+dedicated follow-up PR) before it is merged. The normal Git/GitHub review of
+that change — authenticated by the platform, requiring a reviewer distinct
+from the content’s author, and retained in the project’s own history — is the
+only approval this tool recognizes. This repository does not script that
+commit, PR, or merge step; it remains a normal, reviewed Git/GitHub action.</p>
+<p>This tool never writes a report, an audit record, or any other artifact that
+claims to represent approval. There is nothing here that can be mistaken for,
+or fabricate, a reviewer’s sign-off.</p>
 </section>
 <section id="automatic-tool-information">
 <h2>Automatic Tool Information<a class="headerlink" href="#automatic-tool-information" title="Link to this heading">#</a></h2>
@@ -689,31 +703,32 @@ Markdown parser and workflow versions, code hashes, available editor metadata,
 and installed Copilot Chat versions, recording a source for each value.</p>
 <p>Installed inventories do not prove the active extension instance. A local helper
 cannot read the built-in Chat request’s selected model or backend chosen by
-<code class="docutils literal notranslate"><span class="pre">Auto</span></code>. These fields and unexposed agent tool IDs remain unknown; no manual
-placeholders or guesses are needed. Exact request metadata would require a
-supported editor integration, which this demonstrator does not provide.</p>
-<p>The audit lists logical workflow tools and available versions, not an invented
-complete trace of hidden agent tools. Installation metadata is not authenticated
-session metadata.</p>
+<code class="docutils literal notranslate"><span class="pre">Auto</span></code>. These fields and unexposed agent tool IDs remain unknown unless the
+engineer explicitly supplies <code class="docutils literal notranslate"><span class="pre">--model-label</span></code>, which is recorded as
+“reviewer supplied”, never inferred or defaulted. Exact request metadata would
+require a supported editor integration, which this demonstrator does not provide.</p>
 </section>
-<section id="approval-and-safety-boundary">
-<h2>Approval and Safety Boundary<a class="headerlink" href="#approval-and-safety-boundary" title="Link to this heading">#</a></h2>
-<p>Chat confirmation is declared engineer approval relayed by the agent. Helpers enforce
-valid structure, a named message, revision/hash matching, and no overwrite, but
-cannot authenticate the author or prove the agent stopped between Chat turns.
-A privileged agent could supply a fabricated message or modify local files.
-The reusable prompt governs the pause; it is not an access control. Hashes are
-not signatures. Project review, reviewer competence, tool acceptance, and the
-public S-CORE qualification decision remain separate.</p>
+<section id="safety-boundary">
+<h2>Safety Boundary<a class="headerlink" href="#safety-boundary" title="Link to this heading">#</a></h2>
+<p>This tool has no approval authority and makes no qualification claim. It
+validates structure, enforces the canonical checklist, and stops for human
+judgment at every stage; it cannot authenticate a reviewer or prove anything
+about what happened in a Chat conversation. The actual approval — the
+project’s own PR review — is outside this tool entirely, with its own
+existing identity, independence, and retention guarantees. Reviewer
+competence, tool acceptance, and the public S-CORE qualification decision
+remain separate, governed by the existing tool-management process (see
+<a class="reference internal" href="ai_tool_management.html"><span class="doc">AI Tool Management</span></a>).</p>
 </section>
 <section id="environment-and-developer-checks">
 <h2>Environment and Developer Checks<a class="headerlink" href="#environment-and-developer-checks" title="Link to this heading">#</a></h2>
 <p>The parser accepts simple <code class="docutils literal notranslate"><span class="pre">feat_req</span></code> and <code class="docutils literal notranslate"><span class="pre">comp_req</span></code> directives only, with
 single-line options and three-space-indented bodies. It rejects stakeholder
 requirements (<code class="docutils literal notranslate"><span class="pre">stkh_req</span></code>), assumptions of use (<code class="docutils literal notranslate"><span class="pre">aou_req</span></code>), and mixed-level
-files rather than applying a mismatched checklist. Parent IDs are assessed only
-from supplied information; parent requirement text is not fetched automatically.
-Use the applicable separate S-CORE checklist for direct stakeholder inspection.</p>
+files rather than applying a mismatched checklist. Parent IDs are recorded
+from supplied information; parent requirement text is only used when supplied
+through <code class="docutils literal notranslate"><span class="pre">--context</span></code>, never fetched automatically. Use the applicable
+separate S-CORE checklist for direct stakeholder inspection.</p>
 <p>Helpers require Python 3.11+ and Markdown as declared in <code class="docutils literal notranslate"><span class="pre">pyproject.toml</span></code>.
 The agent uses an existing suitable interpreter and asks before installing
 missing dependencies. Setup can use <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">-e</span> <span class="pre">.</span></code> from this directory
@@ -723,8 +738,8 @@ in an appropriate environment; this is not a per-inspection engineer step.</p>
 </pre></div>
 </div>
 <p>Tests use constructed responses without invoking Copilot. They do not establish
-inspection quality or qualification. Earlier helper commands remain for legacy
-compatibility but are not the chat-first path.</p>
+inspection quality or qualification. There is no separate legacy command path:
+<code class="docutils literal notranslate"><span class="pre">start</span></code>, <code class="docutils literal notranslate"><span class="pre">draft</span></code>, and <code class="docutils literal notranslate"><span class="pre">check</span></code> are the only commands this workflow has.</p>
 <p>From the repository root publish these pages with the existing command:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>bazel<span class="w"> </span>run<span class="w"> </span>//:docs
 </pre></div>
@@ -785,9 +800,9 @@ document inputs. Documentation builds never invoke Copilot.</p>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#start-in-copilot-chat">Start in Copilot Chat</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#judgment-and-pause">Judgment and Pause</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#edit-or-request-corrections">Edit or Request Corrections</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#confirm-or-reject-in-chat">Confirm or Reject in Chat</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hand-off-to-the-project-s-own-review">Hand Off to the Project’s Own Review</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#automatic-tool-information">Automatic Tool Information</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#approval-and-safety-boundary">Approval and Safety Boundary</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#safety-boundary">Safety Boundary</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#environment-and-developer-checks">Environment and Developer Checks</a></li>
 </ul>
   </nav></div>

@@ -619,11 +619,26 @@ defines the evaluation decision: qualification is required when tool impact
 is YES and tool error detection is NO; otherwise qualification is not required.
 The presence of a human reviewer must not automatically establish error detection.
 Tool acceptance is separate from an individual inspection report’s approval.</p>
+<p>This proposal separates two kinds of tool-confidence subjects. The local
+deterministic helpers (requirements parser, JSON schema validator, Markdown
+renderer) perform a fixed, independently testable conversion and are evaluated
+like any other development tool. The LLM performing the draft assessment is
+treated as categorically not qualifiable: its output never earns qualification
+credit and remains subject to the full human review guardrail regardless of
+model evaluation results.</p>
+<p>This proposal does <strong>not</strong> define a separate AI tool-management workflow. The
+AI development-support tool goes through the existing
+<a class="reference internal" href="../process_areas/tool_management/tool_management_workflow.html#wf__tool_evaluate_tool" title="wf__tool_evaluate_tool"><em class="xref need">Evaluate Tool and Update To...</em></a>, <a class="reference internal" href="../process_areas/tool_management/tool_management_workflow.html#wf__tool_qualify_tool" title="wf__tool_qualify_tool"><em class="xref need">Qualify Tool and Update Too...</em></a>, and
+<a class="reference internal" href="../process_areas/tool_management/tool_management_workflow.html#wf__tool_approve_tool_verification_report" title="wf__tool_approve_tool_verification_report"><em class="xref need">Approve Tool Verification R...</em></a> with their existing roles
+and approvals unchanged. The guidance below only supplements the existing
+<code class="docutils literal notranslate"><span class="pre">wp__tool_verification_report</span></code> content for this specific kind of tool; it
+is additive guidance, not a parallel process or a second set of roles for the
+same work product.</p>
 <p>The proposed requirements inspection activity is described in
 <a class="reference internal" href="ai_workflows.html"><span class="doc">AI-Assisted Workflow Extensions</span></a>.</p>
 <section id="evaluation-guidance">
 <h2>Evaluation Guidance<a class="headerlink" href="#evaluation-guidance" title="Link to this heading">#</a></h2>
-<div class="need_container docutils container" id="SNCB-ff5d7e50">
+<div class="need_container docutils container" id="SNCB-06be7028">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_temp table" id="gd_temp__ai_tool_evaluation_record">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -642,16 +657,17 @@ Tool acceptance is separate from an individual inspection report’s approval.</
 </td>
 </tr>
 <tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
-<div class="line"><span><span><div class="line"><span class="needs_version"><span class="needs_label">version: </span>1</span></div>
+<div class="line"><span><span><div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">tool_management</span></span></span></div>
+<div class="line"><span class="needs_version"><span class="needs_label">version: </span>1</span></div>
 </span></span></div>
-<div class="line"><span><div class="line">contained by: <span class="contains"><span><a class="reference internal" href="#wf__ai_tool_monitor" title="gd_temp__ai_tool_evaluation_record">wf__ai_tool_monitor</a>, <a class="reference internal" href="#wf__ai_tool_qualify" title="gd_temp__ai_tool_evaluation_record">wf__ai_tool_qualify</a>, <a class="reference internal" href="#wf__ai_tool_requalify" title="gd_temp__ai_tool_evaluation_record">wf__ai_tool_requalify</a></span></span></div>
-</span></div>
+<div class="line"><span></span></div>
 </div>
 </td>
 <td class="meta" colspan="3"></td>
 </tr>
 <tr class="content row-odd"><td class="content" colspan="6"><p>Proposed guidance for recording a tool’s intended use in the existing
-<code class="docutils literal notranslate"><span class="pre">wp__tool_verification_report</span></code>. It supplements the public S-CORE Tool
+<code class="docutils literal notranslate"><span class="pre">wp__tool_verification_report</span></code>, used during <a class="reference internal" href="../process_areas/tool_management/tool_management_workflow.html#wf__tool_evaluate_tool" title="wf__tool_evaluate_tool"><em class="xref need">Evaluate Tool and Update To...</em></a>
+and <a class="reference internal" href="../process_areas/tool_management/tool_management_workflow.html#wf__tool_qualify_tool" title="wf__tool_qualify_tool"><em class="xref need">Qualify Tool and Update Too...</em></a>. It supplements the public S-CORE Tool
 Verification Report Template; it is not a completed evidence record.</p>
 <p>The project documents the tool, model selection and available version information, affected work
 products, permitted input data, intended scope, known limitations, and
@@ -664,6 +680,28 @@ active Chat extension or model. Unexposed request metadata stays unknown.</p>
 <p>Review competence, report ownership, model-change handling, and audit
 retention are defined by the project. This proposal is not a completed
 evidence record and contains no private evaluation results or reviewer data.</p>
+<p>Evaluation should explicitly cover, in addition to the existing tool
+evaluation criteria:</p>
+<ol class="arabic simple">
+<li><p>Impact and error detection under the public S-CORE plan, with the
+detection/prevention claim justified rather than assumed from the mere
+presence of a reviewer.</p></li>
+<li><p>Error modes specific to this kind of tool: an invented pass, a false
+<code class="docutils literal notranslate"><span class="pre">n/a</span></code>/<code class="docutils literal notranslate"><span class="pre">not_assessed</span></code>, an omitted checklist item, a rationale that
+contradicts its verdict, and prompt injection through requirement text.</p></li>
+<li><p>The schema validation and hand-off boundary itself (rejection of
+malformed structure, mandatory issue links, parent-context enforcement)
+as a control, not as a substitute for independent human review.</p></li>
+<li><p>Model, prompt, configuration, or usage changes, each triggering a new
+impact assessment of which evaluation cases must be repeated; results
+are compared against the previously approved baseline.</p></li>
+<li><p>Whether accepted inspection records show an identifiable model/tool
+version, an independent reviewer distinct from the requirements author,
+and per-item review evidence consistent with the authorized scope.</p></li>
+</ol>
+<p>A failed or incomplete evaluation must not be treated as approval, and
+project-approved acceptance criteria apply before adoption, exactly as for
+any other tool reaching <a class="reference internal" href="../process_areas/tool_management/tool_management_workflow.html#wf__tool_approve_tool_verification_report" title="wf__tool_approve_tool_verification_report"><em class="xref need">Approve Tool Verification R...</em></a>.</p>
 </td>
 </tr>
 <tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
@@ -672,189 +710,6 @@ evidence record and contains no private evaluation results or reviewer data.</p>
 </td>
 <td class="footer" colspan="2"><div class="needs_footer line-block">
 <div class="line"><span><span class="needs_type_name"><span class="needs_data">Process Template</span></span></span></div>
-</div>
-</td>
-<td class="footer_right" colspan="2"></td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-</section>
-<section id="workflows">
-<h2>Workflows<a class="headerlink" href="#workflows" title="Link to this heading">#</a></h2>
-<div class="need_container docutils container" id="SNCB-40348a00">
-<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workflow table" id="wf__ai_tool_qualify">
-<tbody>
-<tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
-<div class="line"><span><span class="needs_title"><span class="needs_data">Evaluate AI Development Tool Before Use</span></span></span></div>
-</div>
-</td>
-<td class="head_center" colspan="2"><div class="needs_head line-block">
-<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">draft</span></span></span></div>
-<div class="line"><span></span></div>
-<div class="line"><span></span></div>
-</div>
-</td>
-<td class="head_right" colspan="2"><div class="needs_head_right line-block">
-<div class="line"><span><span class="needs needs_collapse" id="target__show__meta"><span class="needs collapsed"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg></span><span class="needs visible collapse_is_hidden"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg></span></span></span></div>
-</div>
-</td>
-</tr>
-<tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
-<div class="line"><span><span><div class="line"><span class="needs_version"><span class="needs_label">version: </span>1</span></div>
-</span></span></div>
-<div class="line"><span><div class="line">contains: <span class="contains"><span><a class="reference internal" href="#gd_temp__ai_tool_evaluation_record" title="wf__ai_tool_qualify">gd_temp__ai_tool_evaluation_record</a></span></span></div>
-<div class="line">needs input: <span class="input"><span><a class="reference internal" href="../process_areas/tool_management/tool_management_workproducts.html#wp__tlm_plan" title="wf__ai_tool_qualify">wp__tlm_plan</a></span></span></div>
-<div class="line">outputs: <span class="output"><span><a class="reference internal" href="../process_areas/tool_management/tool_management_workproducts.html#wp__tool_verification_report" title="wf__ai_tool_qualify">wp__tool_verification_report</a></span></span></div>
-<div class="line">responsible: <span class="responsible"><span><a class="reference internal" href="../process_areas/safety_management/safety_management_roles.html#rl__safety_manager" title="wf__ai_tool_qualify">rl__safety_manager</a></span></span></div>
-<div class="line">approved by: <span class="approved_by"><span><a class="reference internal" href="../roles/index.html#rl__project_lead" title="wf__ai_tool_qualify">rl__project_lead</a></span></span></div>
-<div class="line">supported by: <span class="supported_by"><span><a class="reference internal" href="../roles/index.html#rl__contributor" title="wf__ai_tool_qualify">rl__contributor</a></span></span></div>
-</span></div>
-</div>
-</td>
-<td class="meta" colspan="3"></td>
-</tr>
-<tr class="content row-odd"><td class="content" colspan="6"><p>Proposed initial evaluation before adoption:</p>
-<ol class="arabic simple">
-<li><p>Agree the intended use, permitted input data, report structure, and
-reviewer responsibilities within the existing tool-management process.</p></li>
-<li><p>Identify possible incorrect or missing assessments and how the review
-and validation controls should detect them.</p></li>
-<li><p>Evaluate impact and error detection under the public S-CORE plan and record
-whether qualification is required. Justify the detection/prevention claim.</p></li>
-<li><p>If qualification is required, apply the existing software-tool validation
-process. Define representative cases with independently reviewed expected results
-and project-approved acceptance criteria before evaluating the tool.</p></li>
-<li><p>Evaluate draft generation, structure validation, and the approval boundary,
-including rejection, missing named Chat confirmation, changed revisions,
-and the risk of an agent fabricating a relayed confirmation message.</p></li>
-<li><p>Record results, limitations, and unresolved issues in the evaluation record.</p></li>
-<li><p>Obtain the required project approval before use. If the evidence is
-insufficient, do not authorize adoption.</p></li>
-</ol>
-<p>This activity supports the existing tool-management process; it does not
-replace that process or decide qualification from human review alone.</p>
-</td>
-</tr>
-<tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
-<div class="line"><span><span class="needs-id"><a class="reference internal" href="#wf__ai_tool_qualify" title="wf__ai_tool_qualify">wf__ai_tool_qualify</a></span></span></div>
-</div>
-</td>
-<td class="footer" colspan="2"><div class="needs_footer line-block">
-<div class="line"><span><span class="needs_type_name"><span class="needs_data">Workflow</span></span></span></div>
-</div>
-</td>
-<td class="footer_right" colspan="2"></td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<div class="need_container docutils container" id="SNCB-ebda7bf0">
-<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workflow table" id="wf__ai_tool_requalify">
-<tbody>
-<tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
-<div class="line"><span><span class="needs_title"><span class="needs_data">Re-evaluate AI Tool on Model Change</span></span></span></div>
-</div>
-</td>
-<td class="head_center" colspan="2"><div class="needs_head line-block">
-<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">draft</span></span></span></div>
-<div class="line"><span></span></div>
-<div class="line"><span></span></div>
-</div>
-</td>
-<td class="head_right" colspan="2"><div class="needs_head_right line-block">
-<div class="line"><span><span class="needs needs_collapse" id="target__show__meta"><span class="needs collapsed"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg></span><span class="needs visible collapse_is_hidden"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg></span></span></span></div>
-</div>
-</td>
-</tr>
-<tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
-<div class="line"><span><span><div class="line"><span class="needs_version"><span class="needs_label">version: </span>1</span></div>
-</span></span></div>
-<div class="line"><span><div class="line">contains: <span class="contains"><span><a class="reference internal" href="#gd_temp__ai_tool_evaluation_record" title="wf__ai_tool_requalify">gd_temp__ai_tool_evaluation_record</a></span></span></div>
-<div class="line">needs input: <span class="input"><span><a class="reference internal" href="../process_areas/tool_management/tool_management_workproducts.html#wp__tool_verification_report" title="wf__ai_tool_requalify">wp__tool_verification_report</a></span></span></div>
-<div class="line">outputs: <span class="output"><span><a class="reference internal" href="../process_areas/tool_management/tool_management_workproducts.html#wp__tool_verification_report" title="wf__ai_tool_requalify">wp__tool_verification_report</a></span></span></div>
-<div class="line">responsible: <span class="responsible"><span><a class="reference internal" href="../process_areas/safety_management/safety_management_roles.html#rl__safety_manager" title="wf__ai_tool_requalify">rl__safety_manager</a></span></span></div>
-<div class="line">approved by: <span class="approved_by"><span><a class="reference internal" href="../roles/index.html#rl__project_lead" title="wf__ai_tool_requalify">rl__project_lead</a></span></span></div>
-</span></div>
-</div>
-</td>
-<td class="meta" colspan="3"></td>
-</tr>
-<tr class="content row-odd"><td class="content" colspan="6"><p>Record the proposed model selection and available version information, then re-run the agreed evaluation cases
-before using a changed model. Compare results with the approved baseline,
-investigate regressions, and update the evidence record and limitations.
-Changes to prompts, report structure, or usage scope also require an impact
-assessment to determine which evaluation cases must be repeated.</p>
-<p>The project applies its approved acceptance criteria and records an explicit
-approval decision before adoption. A failed evaluation must not be treated
-as approval. No universal numerical pass threshold is specified here.</p>
-</td>
-</tr>
-<tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
-<div class="line"><span><span class="needs-id"><a class="reference internal" href="#wf__ai_tool_requalify" title="wf__ai_tool_requalify">wf__ai_tool_requalify</a></span></span></div>
-</div>
-</td>
-<td class="footer" colspan="2"><div class="needs_footer line-block">
-<div class="line"><span><span class="needs_type_name"><span class="needs_data">Workflow</span></span></span></div>
-</div>
-</td>
-<td class="footer_right" colspan="2"></td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<div class="need_container docutils container" id="SNCB-2045dbc7">
-<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workflow table" id="wf__ai_tool_monitor">
-<tbody>
-<tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
-<div class="line"><span><span class="needs_title"><span class="needs_data">Monitor AI Tool Usage and Review Controls</span></span></span></div>
-</div>
-</td>
-<td class="head_center" colspan="2"><div class="needs_head line-block">
-<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">draft</span></span></span></div>
-<div class="line"><span></span></div>
-<div class="line"><span></span></div>
-</div>
-</td>
-<td class="head_right" colspan="2"><div class="needs_head_right line-block">
-<div class="line"><span><span class="needs needs_collapse" id="target__show__meta"><span class="needs collapsed"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg></span><span class="needs visible collapse_is_hidden"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg></span></span></span></div>
-</div>
-</td>
-</tr>
-<tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
-<div class="line"><span><span><div class="line"><span class="needs_version"><span class="needs_label">version: </span>1</span></div>
-</span></span></div>
-<div class="line"><span><div class="line">contains: <span class="contains"><span><a class="reference internal" href="#gd_temp__ai_tool_evaluation_record" title="wf__ai_tool_monitor">gd_temp__ai_tool_evaluation_record</a></span></span></div>
-<div class="line">needs input: <span class="input"><span><a class="reference internal" href="../process_areas/requirements_engineering/requirements_workproducts.html#wp__requirements_inspect" title="wf__ai_tool_monitor">wp__requirements_inspect</a>, <a class="reference internal" href="../process_areas/tool_management/tool_management_workproducts.html#wp__tool_verification_report" title="wf__ai_tool_monitor">wp__tool_verification_report</a></span></span></div>
-<div class="line">outputs: <span class="output"><span><a class="reference internal" href="../process_areas/tool_management/tool_management_workproducts.html#wp__tool_verification_report" title="wf__ai_tool_monitor">wp__tool_verification_report</a></span></span></div>
-<div class="line">responsible: <span class="responsible"><span><a class="reference internal" href="../process_areas/safety_management/safety_management_roles.html#rl__safety_manager" title="wf__ai_tool_monitor">rl__safety_manager</a></span></span></div>
-<div class="line">approved by: <span class="approved_by"><span><a class="reference internal" href="../roles/index.html#rl__project_lead" title="wf__ai_tool_monitor">rl__project_lead</a></span></span></div>
-</span></div>
-</div>
-</td>
-<td class="meta" colspan="3"></td>
-</tr>
-<tr class="content row-odd"><td class="content" colspan="6"><p>Periodically review whether accepted records contain the expected model,
-timestamp, reviewer, approval decision, and correction metadata. Check that
-reviewers meet project-defined competency expectations and detected tool
-configurations match the authorized scope. Unknown active-model and extension
-versions remain limitations; do not infer them from installed inventories.</p>
-<p>Investigate missing approvals, unexpected model changes, and recurring
-corrections or missed findings. Record issues and determine whether usage
-must be restricted or suspended pending renewed evaluation and approval.
-Audit metadata is evidence for review, not proof that the controls are
-implemented correctly or that every error has been detected.</p>
-</td>
-</tr>
-<tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
-<div class="line"><span><span class="needs-id"><a class="reference internal" href="#wf__ai_tool_monitor" title="wf__ai_tool_monitor">wf__ai_tool_monitor</a></span></span></div>
-</div>
-</td>
-<td class="footer" colspan="2"><div class="needs_footer line-block">
-<div class="line"><span><span class="needs_type_name"><span class="needs_data">Workflow</span></span></span></div>
 </div>
 </td>
 <td class="footer_right" colspan="2"></td>
@@ -905,7 +760,6 @@ implemented correctly or that every error has been detected.</p>
   <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="pst-show_toc_level nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#evaluation-guidance">Evaluation Guidance</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#workflows">Workflows</a></li>
 </ul>
   </nav></div>
 

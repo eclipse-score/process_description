@@ -657,31 +657,53 @@ pilot rests on three pillars:</p>
 2. Agent prepares permitted input and a structured draft assessment
       │
       ▼
-3. Validated editable review file is presented
+3. Validated editable checklist (inspection.md) is presented
    Agent stops; engineer may edit or request corrections
       │
       ▼
-4. A later explicit named Chat confirmation applies to that revision
-   Rejection produces no approved report
-    │
-    ▼
-5. Agent writes final report and audit record for the confirmed revision
+4. Engineer copies the checked checklist into the project&#39;s real
+   requirements inspection document and commits it
+      │
+      ▼
+5. The normal Git/GitHub review of that change is the approval
 </pre></div>
 </div>
 <p>This means the AI output is never in the safety case — only the
-<strong>human-reviewed and approved</strong> version is.</p>
+<strong>human-reviewed and approved</strong> version is. There is no local “approve”
+command: this tool cannot fabricate, relay, or otherwise stand in for that
+review. Approval is whatever the project’s existing PR review already is —
+authenticated by the platform, structurally unable to be the same person as
+the content’s author, and retained in the project’s own version history.</p>
+<p>The diagram below illustrates the same guardrail as a data-flow: every
+human-readable/machine-readable conversion is performed by a deterministic
+transform tool, never by the LLM, and a human explicitly reviews and approves
+both the templates that feed the process and every artifact it produces.</p>
+<p><img alt="AI-supported requirements review concept: human-approved templates are transformed to machine-readable form, the LLM drafts a checklist fill-out, and a human reviews/approves the re-transformed result before iteration or sign-off" src="../_images/ai_supported_sldc_review_example.drawio.svg" /></p>
+<p>The requirements document and checklist templates themselves are ordinary
+repository content (the <code class="docutils literal notranslate"><span class="pre">feat_req</span></code>/<code class="docutils literal notranslate"><span class="pre">comp_req</span></code> directive schema and
+<code class="docutils literal notranslate"><span class="pre">workflows/req_safety_inspection/prompts/inspection.md</span></code>).
+They are reviewed and approved the same way as any other change, through
+normal repository pull-request review — this satisfies the diagram’s
+“Template (Reviewed &amp; Approved)” gates without a separate runtime step.</p>
 </section>
 <section id="fixed-output-schema-no-invented-structure">
 <h3>2.2 Fixed output schema (no invented structure)<a class="headerlink" href="#fixed-output-schema-no-invented-structure" title="Link to this heading">#</a></h3>
-<p>The AI fills a fixed demonstration schema:</p>
+<p>The AI fills the exact public checklist, parsed directly from the canonical
+<a class="reference external" href="https://eclipse-score.github.io/process_description/main/folder_templates/platform/features/feature_name/requirements/req_inspection.html">feature inspection checklist template</a>
+rather than a paraphrased or hand-copied summary — the same Review ID,
+Acceptance Criteria, and Guidance columns, so there is no separate copy that
+can silently drift from the template:</p>
 <ul class="simple">
-<li><p>Verdict per checklist item: <code class="docutils literal notranslate"><span class="pre">yes</span></code> / <code class="docutils literal notranslate"><span class="pre">no</span></code> / <code class="docutils literal notranslate"><span class="pre">n/a</span></code></p></li>
-<li><p>One-sentence rationale per item</p></li>
-<li><p>List of flagged findings with severity and suggested improvement</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">passed</span></code> per checklist item: <code class="docutils literal notranslate"><span class="pre">yes</span></code> / <code class="docutils literal notranslate"><span class="pre">no</span></code> / <code class="docutils literal notranslate"><span class="pre">n/a</span></code> / <code class="docutils literal notranslate"><span class="pre">not_assessed</span></code>.
+<code class="docutils literal notranslate"><span class="pre">not_assessed</span></code> means the AI lacked sufficient context (for example, a
+requirement’s parent text was not supplied); it is never conflated with a
+genuine <code class="docutils literal notranslate"><span class="pre">n/a</span></code> or treated as a pass.</p></li>
+<li><p>Full remarks per item.</p></li>
+<li><p>A mandatory issue link whenever an item is <code class="docutils literal notranslate"><span class="pre">no</span></code>, matching the template’s own
+mandatory “Issue link” column; forbidden for every other verdict.</p></li>
 </ul>
 <p>The AI cannot add new sections, invent checklist IDs, or change the document
-structure. Schema validation rejects any response that does not conform. The
-demonstration report template is not a pre-approved S-CORE work-product template.</p>
+structure. Schema validation rejects any response that does not conform.</p>
 </section>
 <section id="model-provenance-and-evaluation-trigger">
 <h3>2.3 Model provenance and evaluation trigger<a class="headerlink" href="#model-provenance-and-evaluation-trigger" title="Link to this heading">#</a></h3>
@@ -695,6 +717,14 @@ errors are detected, that the reviewer is competent, or that the tool is qualifi
 <p>Tool qualification may also be required, based on the S-CORE tool evaluation
 described in the <a class="reference external" href="https://eclipse-score.github.io/process_description/main/process_areas/tool_management/index.html">Tool Management process</a>,
 if independent human review is not sufficient to establish error detection.</p>
+<p>The pilot distinguishes two different kinds of tool confidence subjects. The
+deterministic transform tools — the RST requirement parser, JSON schema
+validator, and Markdown renderer in <code class="docutils literal notranslate"><span class="pre">workflows/</span></code> — perform a fixed,
+independently testable conversion and can be evaluated and, if applicable,
+qualified like any other development tool. The LLM reasoning step is treated
+as categorically <strong>not qualifiable</strong> in this pilot: its output is never
+evaluated for qualification credit and is always subject to the mandatory
+human review and approval guardrail described above.</p>
 </section>
 </section>
 <hr class="docutils" />
@@ -720,47 +750,49 @@ not implemented. Assumptions of use are also out of scope.</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Engineer starts the inspection directly in Chat
   -&gt; agent prepares input and automatically collects tool metadata
     -&gt; Copilot Chat Agent produces a JSON assessment
-    -&gt; deterministic validation rejects wrong IDs or structure
-    -&gt; editable review file is written and the agent stops
-    -&gt; engineer edits or requests corrections; new revisions are presented
-    -&gt; engineer confirms a previously presented revision in a later Chat message
-    -&gt; agent writes report and audit with approver and detected tool information
+    -&gt; deterministic validation rejects wrong IDs, structure, or checklist drift
+    -&gt; editable inspection.md checklist is written and the agent stops
+    -&gt; engineer edits or requests corrections; re-validated on every check
+    -&gt; engineer copies the checklist into the project&#39;s real inspection
+       document, commits it, and opens it for the normal Git/GitHub review
 </pre></div>
 </div>
 </section>
 <section id="fixed-structure">
 <h3>3.2 Fixed structure<a class="headerlink" href="#fixed-structure" title="Link to this heading">#</a></h3>
 <p>Assessments contain one entry per input requirement, the exact public S-CORE
-checklist IDs, <code class="docutils literal notranslate"><span class="pre">yes</span></code> / <code class="docutils literal notranslate"><span class="pre">no</span></code> / <code class="docutils literal notranslate"><span class="pre">n/a</span></code> verdicts, full rationales, and structured
-findings. Unknown IDs, duplicate JSON keys, additional fields, invalid verdicts,
-or missing requirements are rejected. The report template is a proposed
-demonstration template, not a pre-approved S-CORE work-product template.</p>
-<p>There is one editable set of verdicts, rationales, and findings in
-<a class="reference external" href="https://github.com/eclipse-score/process_description/blob/main/process_extensions/example/review.md"><code class="docutils literal notranslate"><span class="pre">example/review.md</span></code></a>,
-not a duplicate checklist. The original judgment remains preserved separately.
-Missing context must be resolved or dispositioned by the reviewer; <code class="docutils literal notranslate"><span class="pre">n/a</span></code> must
-not silently mean that evidence has been verified.</p>
+checklist IDs parsed from the canonical template, <code class="docutils literal notranslate"><span class="pre">yes</span></code> / <code class="docutils literal notranslate"><span class="pre">no</span></code> / <code class="docutils literal notranslate"><span class="pre">n/a</span></code> /
+<code class="docutils literal notranslate"><span class="pre">not_assessed</span></code> verdicts, full remarks, and a mandatory issue link for every
+<code class="docutils literal notranslate"><span class="pre">no</span></code>. Unknown IDs, duplicate JSON keys, additional fields, invalid verdicts,
+missing requirements, or checklist text diverging from the canonical template
+are rejected.</p>
+<p>There is one editable checklist in
+<a class="reference external" href="https://github.com/eclipse-score/process_description/blob/main/process_extensions/example/inspection.md"><code class="docutils literal notranslate"><span class="pre">example/inspection.md</span></code></a>,
+not a duplicate schema invented on top of it. The original judgment remains
+preserved separately in a local manifest. Missing context must be resolved or
+dispositioned by the reviewer; <code class="docutils literal notranslate"><span class="pre">not_assessed</span></code> must not silently become a pass.</p>
 </section>
-<section id="human-finalization">
-<h3>3.3 Human finalization<a class="headerlink" href="#human-finalization" title="Link to this heading">#</a></h3>
-<p>After judgment the agent presents the editable review and ends its turn.
-The engineer edits the tables in the <a class="reference external" href="https://github.com/eclipse-score/process_description/blob/main/process_extensions/example/review.md"><code class="docutils literal notranslate"><span class="pre">example/review.md</span></code></a>
-or requests corrections in Chat.
-Changed artifacts are validated and shown as new revisions. A later explicit message
-<code class="docutils literal notranslate"><span class="pre">Approve</span> <span class="pre">as</span> <span class="pre">&lt;name&gt;</span></code> confirms the presented revision, or the engineer rejects it.
-Only then does the agent run local finalization; no engineer terminal step is needed.
-File edits after presentation invalidate confirmation and require a new revision.</p>
-<p>The report records original/reviewed judgments, declared approver, relayed
-confirmation, timestamps, changes, revision snapshots/hashes, and detected
-provenance. Rejected runs produce no approved report. Existing runs are preserved
-and final artifacts cannot be overwritten.</p>
+<section id="hand-off-to-the-project-s-own-review">
+<h3>3.3 Hand-off to the project’s own review<a class="headerlink" href="#hand-off-to-the-project-s-own-review" title="Link to this heading">#</a></h3>
+<p>After judgment the agent presents the editable checklist and ends its turn.
+The engineer edits the table in <a class="reference external" href="https://github.com/eclipse-score/process_description/blob/main/process_extensions/example/inspection.md"><code class="docutils literal notranslate"><span class="pre">example/inspection.md</span></code></a>
+or requests corrections in Chat. Every edit is re-validated and reported back
+immediately; there is no local approval state to track, so no edit can be
+mistaken for one.</p>
+<p>There is no <code class="docutils literal notranslate"><span class="pre">Approve</span> <span class="pre">as</span> <span class="pre">&lt;name&gt;</span></code> command, no revision token, no audit.json, and
+no report.rst produced by this tool. Finalization is the engineer copying the
+checked checklist into the project’s actual inspection work product (for
+example <code class="docutils literal notranslate"><span class="pre">doc__&lt;feature&gt;_req_inspection</span></code>), committing it, and relying on the
+normal Git/GitHub review of that change — with its existing identity,
+independence, and retention guarantees — as the only approval.</p>
 </section>
 <section id="copilot-provenance">
 <h3>Copilot provenance<a class="headerlink" href="#copilot-provenance" title="Link to this heading">#</a></h3>
 <p>Helpers automatically collect tool versions, workflow version and
 code hashes, available editor metadata, and installed Copilot Chat versions.
-Every value has a source; no manual model/version arguments are required for
-the chat-first path. Finalization records its executing environment as well.</p>
+Every value has a source. The active Copilot model cannot be auto-detected;
+an engineer may optionally declare a model label explicitly, recorded with
+its source as “reviewer supplied” rather than inferred or defaulted.</p>
 </section>
 </section>
 <section id="requirements-inspection-demonstration">
@@ -775,11 +807,11 @@ structured draft assessments. Reviewers must
 consider parent requirements, traceability, timing, interfaces, safety/security
 attributes, verifiability, completeness, and justified exceptions.</p>
 <p>Start in Chat using the reusable workflow prompt. The agent prepares input,
-validates its JSON judgment, presents the review file, and stops. A later
-named confirmation authorizes finalization of the presented artifact. Check
-permission to share input before starting. Local helpers collect metadata,
-validate, track revisions, and render reports; they never invoke Copilot or
-transmit data. Existing manually imported runs remain unchanged.</p>
+validates its JSON judgment, presents the checklist file, and stops. Check
+permission to share input before starting. Local helpers collect metadata and
+validate the checklist; they never invoke Copilot, transmit data, or approve
+anything. Finalization happens outside this tool, through the project’s own
+requirements-inspection PR review.</p>
 <p>The execution guide gives the Chat requests. Offline tests use constructed
 responses, without invoking Copilot. No live Copilot result or timing measurement
 is claimed by those tests. The historical pilot’s assessments are not reported
@@ -794,13 +826,18 @@ the existing process using <code class="docutils literal notranslate"><span clas
 <p>The existing <code class="docutils literal notranslate"><span class="pre">wf__monitor_verify_requirements</span></code> accepts stakeholder, feature, and
 component requirements, including <code class="docutils literal notranslate"><span class="pre">wp__requirements_stkh</span></code>. The optional
 <code class="docutils literal notranslate"><span class="pre">wf__ai_req_safety_inspect</span></code> proposal augments it for feature/component
-assessments only; it references <code class="docutils literal notranslate"><span class="pre">wp__requirements_feat</span></code>,
-<code class="docutils literal notranslate"><span class="pre">wp__requirements_comp</span></code>, and <code class="docutils literal notranslate"><span class="pre">wp__requirements_inspect</span></code>. Stakeholder requirements
-remain upstream context in the existing workflow, not direct input to this AI
-profile. The S-CORE stakeholder checklist differs and is not implemented here.
-Published nodes remain draft proposals, not approved process changes. Runtime
-templates, inputs, tests, and generated outputs are not published as process
-definitions.</p>
+assessments only, with the same responsible/approving roles (committer,
+supported by the safety manager as moderator) rather than a separate role set;
+it references <code class="docutils literal notranslate"><span class="pre">wp__requirements_feat</span></code>, <code class="docutils literal notranslate"><span class="pre">wp__requirements_comp</span></code>, and
+<code class="docutils literal notranslate"><span class="pre">wp__requirements_inspect</span></code>. Stakeholder requirements remain upstream context in
+the existing workflow, not direct input to this AI profile. The S-CORE
+stakeholder checklist differs and is not implemented here. Tool evaluation runs
+through the existing <code class="docutils literal notranslate"><span class="pre">wf__tool_evaluate_tool</span></code>, <code class="docutils literal notranslate"><span class="pre">wf__tool_qualify_tool</span></code>, and
+<code class="docutils literal notranslate"><span class="pre">wf__tool_approve_tool_verification_report</span></code> — this proposal supplements their
+evidence with AI-specific guidance rather than adding parallel workflows or
+roles for the same work product. Published nodes remain draft proposals, not
+approved process changes. Runtime templates, inputs, tests, and generated
+outputs are not published as process definitions.</p>
 </section>
 <section id="limitations">
 <h2>6. Limitations<a class="headerlink" href="#limitations" title="Link to this heading">#</a></h2>
@@ -808,15 +845,25 @@ definitions.</p>
 <li><p>The RST reader accepts simple feature/component requirement directives only.
 It rejects stakeholder/AOU and mixed-level files rather than applying the
 wrong checklist, and does not implement general Sphinx-Needs parsing.</p></li>
-<li><p>Parent IDs may be supplied, but parent text (including stakeholder
-requirements), implementation evidence, test traces, and related requirements
-are not automatically retrieved.</p></li>
+<li><p>Parent IDs may be supplied, and an engineer may optionally supply parent or
+related requirement text as explicit context; without it, the linkage and
+completeness items are forced to <code class="docutils literal notranslate"><span class="pre">not_assessed</span></code> rather than guessed. Nothing
+retrieves that text automatically from <code class="docutils literal notranslate"><span class="pre">needs.json</span></code> or another repository yet.</p></li>
 <li><p>Copilot outputs are non-deterministic and require strict validation and human
 review. No ASIL coverage or completed qualification is claimed.</p></li>
 <li><p>Installed versions are not active-session metadata; selected or Auto-resolved
-model information remains unavailable without a supported editor integration.</p></li>
-<li><p>The guardrail does not establish reviewer identity or prevent a privileged
-agent from bypassing the local scripts.</p></li>
+model information remains unavailable without a supported editor integration.
+An engineer may declare a model label explicitly; nothing infers it.</p></li>
+<li><p>There is no automated comparison against already-inspected reference
+requirements to measure AI verdict accuracy; this would need an agreed
+evaluation set and acceptance criteria before use beyond a pilot.</p></li>
+<li><p>The tool’s behavior (validation rules, the no-local-approval boundary,
+rejection of stakeholder/AoU input) is not yet expressed as tool requirements
+linked to the test suite that verifies it; the tests currently verify
+behavior that is not separately specified as a requirement.</p></li>
+<li><p>The guardrail no longer has a fabricate-able local approval step, but it
+still cannot prevent a privileged agent from bypassing the local scripts
+entirely or editing files outside the documented protocol.</p></li>
 <li><p>Published RST nodes express intended responsibilities; executable review
 controls do not replace project governance.</p></li>
 </ul>
@@ -923,7 +970,7 @@ controls do not replace project governance.</p></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-executable-concept">3. The executable concept</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-the-pilot-implements">3.1 What the pilot implements</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fixed-structure">3.2 Fixed structure</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#human-finalization">3.3 Human finalization</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hand-off-to-the-project-s-own-review">3.3 Hand-off to the project’s own review</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#copilot-provenance">Copilot provenance</a></li>
 </ul>
 </li>
