@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "score-ai-process-demonstrator"
+version = "0.3.0"
+description = "Copilot Chat Agent requirements inspection demonstrator"
+requires-python = ">=3.11"
+dependencies = ["Markdown>=3.7,<4"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["workflows*"]
+namespaces = true
+
+[tool.setuptools.package-data]
+"workflows.req_safety_inspection" = ["prompts/*.md"]
