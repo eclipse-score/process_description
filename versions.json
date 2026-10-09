@@ -42,5 +42,9 @@
   {
     "version": "pr-823",
     "url": "https://eclipse-score.github.io/process_description/pr-823/"
+  },
+  {
+    "version": "pr-825",
+    "url": "https://eclipse-score.github.io/process_description/pr-825/"
   }
 ]
