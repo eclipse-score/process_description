@@ -263,17 +263,15 @@ Change Request Traceability Impact Analysis Tool
    The picture is derived from the building blocks metamodel containing all the work products
    (:ref:`general_concepts_building_blocks`). Its arrows show how every work product is
    linked (manually) to other work products (e.g. feature requirements are linked to
-   stakeholder requirements via "derived_from"). The color code describes which of these Links
-   need to be followed for the impact analysis (so for the example this means: if a stakeholder
-   requirement is changed, the feature requirements linked are affected, but not the other way round).
-   "Black" links do not need to be followed, these are the "verifies" links. And these are
-   expected to fail after implementation change, so the impact on testing will be detected
-   by the test automation without the need for an additional tooling. Note that for some
-   links it is expected to have both directions followed (red arrows) - these are the
-   artefacts which reside in different repositories.
+   stakeholder requirements via "derived_from"). The impact analysis is supported by
+   versioned linking, i.e. some of the workproducts have versions (as depicted in the picture)
+   and the links pointing to these will also hold a version attribute. The tooling will
+   detect and report a mismatch (blocking document generation).
 
    Note also: The impact analysis needs to follow the links iteratively, so first to the directly
-   connected work products, then to the next, ... (see the next illustration):
+   connected work products, then to the next, ... (see the next illustration for an
+   example where a feature requirement change impacts the derived component requirements
+   but not the feature level architecture artefacts):
 
    .. figure:: ../_assets/impact_iteration.drawio.svg
       :width: 100%

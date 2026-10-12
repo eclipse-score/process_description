@@ -46,14 +46,15 @@ Dependencies on other Change Requests
 Estimates for Realization
 -------------------------
 
-[List all work products and elements affected by the Change Request]
+[List all work products and elements affected/to be modified by the Change Request]
 
     .. note::
      For the identification of the affected work products use the Traceability Analysis approach.
      Traceability analysis uses the existing links between different elements (requirements, architecture, implementation, etc.)
-     for the identification of the affected work products and elements.
+     for the identification of the affected work products and elements. This can be supported by tooling
+     see :need:`gd_req__change_tool_impact_analysis` and can be documented by adding a PR to the Change Request issue
+     showing all work products expected version changes.
 
-[Describe here which work products to be modified by the Change Request]
 
 [Describe here the verification methods used for the changed work products or elements]
 
@@ -125,7 +126,7 @@ For new feature contributions:
 
 
 License Impact
-==============
+--------------
 
 [How could the copyright impacted by the license of the new contribution?]
 

@@ -114,7 +114,7 @@ out the impact on platform, or any other aspect including especially safety/secu
 The template can be referenced in the decision record or copied into the decision record
 and filled out there.
 
-The impact analysis tool (:need:`gd_req__change_tool_impact_analysis`) can support to
+The impact analysis tooling (:need:`gd_req__change_tool_impact_analysis`) can support to
 here to identify the affected work products.
 
 .. _chm_analysis:
