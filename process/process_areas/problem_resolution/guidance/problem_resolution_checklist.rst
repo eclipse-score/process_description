@@ -20,7 +20,7 @@ Problem Checklist
 .. gd_chklst:: Problem Review Checklist
    :id: gd_chklst__problem_cr_review
    :status: valid
-   :version: 1
+   :version: 2
    :tags: problem_resolution
    :complies:
 
@@ -73,7 +73,7 @@ Problem Checklist
         -
 
       * - 9
-        - Does the Problem report have a category as specified?
+        - Is the category provided, with safety or security relevance confirmed or disconfirmed by the respective manager where applicable?
         -
 
       * - 10
@@ -81,19 +81,31 @@ Problem Checklist
         -
 
       * - 11
-        - Does the Problem report have the affected release versions as specified?
+        - Are the detection version and affected versions, including versions derived from the faulty version, documented?
         -
 
       * - 12
-        - Does the Problem report have an expected closure date as specified?
+        - Does the Problem report have an expected closure version or milestone as specified?
         -
 
       * - 13
-        - Does the Problem report have the solution measures specified, verified and reported?
+        - Where measures are implemented, are they specified with implementation and effectiveness-verification evidence?
         -
 
       * - 14
         - If the Problem report is not closed and pending solution measures are open, escalated to the :need:`rl__safety_manager` or :need:`rl__security_manager`?
+        -
+
+      * - 15
+        - Is the need for notification explained, and is any notification recorded?
+        -
+
+      * - 16
+        - Where safety is affected, does a rationale support either an implemented adequate safety measure with verified effectiveness, or an evaluation that the problem does not constitute an unreasonable risk?
+        -
+
+      * - 17
+        - Where safety is affected, is the closure rationale documented and reviewed, with the review result recorded?
         -
 
 .. needextend:: "c.this_doc()"

@@ -31,7 +31,7 @@ For a detailed explanation of workflows and their role within the process model,
                   rl__quality_manager[version==1]
    :input: wp__issue_track_system[version==1], wp__prm_plan[version==1]
    :output: wp__issue_track_system[version==1]
-   :contains: gd_temp__problem_template[version==1], gd_chklst__problem_cr_review[version==1], gd_guidl__problem_problem[version==1]
+   :contains: gd_temp__problem_template[version==2], gd_chklst__problem_cr_review[version==2], gd_guidl__problem_problem[version==2]
    :has: doc_concept__problem_process[version==1], doc_getstrt__problem_process[version==1]
 
    The Problem Report is created.
@@ -52,7 +52,7 @@ For a detailed explanation of workflows and their role within the process model,
                   rl__quality_manager[version==1]
    :input: wp__issue_track_system[version==1], wp__prm_plan[version==1]
    :output: wp__issue_track_system[version==1]
-   :contains: gd_temp__problem_template[version==1], gd_chklst__problem_cr_review[version==1], gd_guidl__problem_problem[version==1]
+   :contains: gd_temp__problem_template[version==2], gd_chklst__problem_cr_review[version==2], gd_guidl__problem_problem[version==2]
    :has: doc_concept__problem_process[version==1], doc_getstrt__problem_process[version==1]
 
    The Problem Report is analyzed.
@@ -77,7 +77,7 @@ For a detailed explanation of workflows and their role within the process model,
                   rl__quality_manager[version==1]
    :input: wp__issue_track_system[version==1], wp__prm_plan[version==1]
    :output: wp__issue_track_system[version==1]
-   :contains: gd_temp__problem_template[version==1], gd_chklst__problem_cr_review[version==1], gd_guidl__problem_problem[version==1]
+   :contains: gd_temp__problem_template[version==2], gd_chklst__problem_cr_review[version==2], gd_guidl__problem_problem[version==2]
    :has: doc_concept__problem_process[version==1], doc_getstrt__problem_process[version==1]
 
    The Problem Resolution is implemented and monitored.
@@ -102,7 +102,7 @@ For a detailed explanation of workflows and their role within the process model,
    :supported_by: rl__safety_manager[version==1], rl__security_manager[version==1], rl__quality_manager[version==1]
    :input: wp__issue_track_system[version==1], wp__prm_plan[version==1]
    :output: wp__issue_track_system[version==1]
-   :contains: gd_temp__problem_template[version==1], gd_chklst__problem_cr_review[version==1], gd_guidl__problem_problem[version==1]
+   :contains: gd_temp__problem_template[version==2], gd_chklst__problem_cr_review[version==2], gd_guidl__problem_problem[version==2]
    :has: doc_concept__problem_process[version==1], doc_getstrt__problem_process[version==1]
 
    The Problem Resolution is closed.

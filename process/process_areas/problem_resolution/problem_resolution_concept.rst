@@ -30,7 +30,7 @@ Key concept
 A Problem Report is the **ONLY** way to report deviations of an expected result for
 existing features in the project. Deviations include problems found by user,
 bugs found during verification activities by tester, quality issues found by quality
-checks, safety anomalies, vulnerabilities or any other malfunction.
+checks, problems where safety is affected, vulnerabilities or any other malfunction.
 
 Inputs
 ******
@@ -137,6 +137,8 @@ Problem Report to be closed.
 
 Especially the effectiveness of the solution measures must be shown, based on convincing
 arguments, e.g. verification measures must be used to confirm the implementation.
+
+For problems where safety is affected, see :ref:`prm_safety_affected_closure`.
 
 .. needextend:: "c.this_doc()"
    :+tags: problem_resolution

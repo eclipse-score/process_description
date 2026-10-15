@@ -20,7 +20,7 @@ Problem Report Template
 .. gd_temp:: Problem Template
    :id: gd_temp__problem_template
    :status: valid
-   :version: 1
+   :version: 2
    :complies: std_req__aspice_40__SUP-9-BP1[version==1],
               std_req__aspice_40__SUP-9-BP2[version==1],
               std_req__aspice_40__SUP-9-BP3[version==1],
@@ -51,11 +51,22 @@ Problem description
 -------------------
 [What is the problem?]
 
-| Determine the cause of the problem, if possible.
-| Determine the impact of the problem, if possible.
-| Is notification required due to determined impact on affected parties?
+| Describe the observed deviation and its known or potential impact.
+| Document the cause, if known; otherwise record that it is under investigation.
 
 | (to be filled out during :need:`wf__problem_create_pr`)
+| (to be updated during :need:`wf__problem_analyze_pr`)
+
+Problem notifications
+---------------------
+[Is notification needed, and who was notified?]
+
+Record whether notification is needed and why. If needed, record who was notified,
+when and how, for example a link to an issue comment with an explicit mention or an
+email reference. Listing a recipient alone does not record a performed notification.
+See :ref:`prm_notifications`.
+
+| (to be filled out during :need:`wf__problem_create_pr`, as far as known)
 | (to be updated during :need:`wf__problem_analyze_pr`)
 
 Problem supporting information
@@ -79,8 +90,8 @@ Problem category
 
 Safety, Security: Additional qualifiers to highlight, if safety or security is affected
 
-They qualifiers have to be filled. If not filled out, a quality problem is assumed as
-default category.
+Record whether safety or security is affected. If uncertain, state this for analysis.
+If neither is affected, the problem is quality relevant.
 
 In addition to the category Safety affected, the ASIL classification may be added in the
 documentation, if applicable.
@@ -127,24 +138,27 @@ Determine if Urgent resolution is required? (yes, no, only valid for critical, b
 | (to be filled out during :need:`wf__problem_create_pr`)
 | (to be updated during :need:`wf__problem_analyze_pr`)
 
-Problem affected version
-------------------------
-[What version of the release is affected?]
+Problem affected versions
+-------------------------
+[Where was the problem detected, and which versions are affected?]
 
-Document the version of the release where the problem was detected.
+Document the detection version and the first and last affected versions, including versions
+derived from the faulty version. Add affected branches or dependent integrations where
+applicable. Record unknowns as "under investigation" and update them during analysis.
 
-| (to be filled out during :need:`wf__problem_create_pr`)
+| (to be filled out during :need:`wf__problem_create_pr`, as far as known)
+| (to be updated during :need:`wf__problem_analyze_pr`)
 
 Problem analysis results
 ------------------------
 [What is the problem analysis result? Accepted or Rejected?]
 
-| Especially document rejection reason, if applicable
+Record the analysis result and the reason for rejection, if applicable.
 
-In addition the safety/security relevance is confirmed or disconfirmed by safety/Security
-Experts.
-
-| Especially document disconfirming reason, if applicable
+The responsible :need:`Safety Manager <rl__safety_manager>` confirms or disconfirms safety
+relevance where safety may be affected; the responsible
+:need:`Security Manager <rl__security_manager>` does so where security may be affected.
+Record the reason, especially when disconfirming relevance.
 
 (to be filled out during :need:`wf__problem_analyze_pr`)
 
@@ -180,6 +194,20 @@ Are all arguments convincing
 
 | (to be filled out during :need:`wf__problem_initiate_monitor_pr`)
 | (to be updated during :need:`wf__problem_close_pr`)
+
+Problem closure where safety is affected
+----------------------------------------
+[Which safety-specific closure condition is met, and what supports it?]
+
+Select and justify one condition according to :ref:`prm_safety_affected_closure`:
+
+* An adequate safety measure is implemented and its effectiveness is verified.
+* A risk evaluation concludes that the problem does not constitute an unreasonable risk.
+
+Document the rationale, supporting verification results or risk evaluation, and the
+rationale review result.
+
+(to be filled out during :need:`wf__problem_close_pr`)
 
 Problem escalations
 -------------------

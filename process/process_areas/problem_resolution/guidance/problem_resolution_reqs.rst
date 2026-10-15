@@ -70,7 +70,7 @@ Problem Attributes
 .. gd_req:: Problem attribute: description
    :id: gd_req__problem_attr_impact_description
    :status: valid
-   :version: 1
+   :version: 2
    :tags: manual_prio_1, problem_resolution, attribute, mandatory
    :satisfies: wf__problem_create_pr[version==1],
                wf__problem_analyze_pr[version==1],
@@ -80,10 +80,26 @@ Problem Attributes
 
    Exact description of the Problem, including potential cause and impact of the problem.
 
-   Record especially, if functional safety or cybersecurity may affected here.
+   Record especially whether functional safety or cybersecurity may be affected.
 
-   Record potential affected parties, and if it may required to notify them about the potential
-   problem.
+   Record affected parties, whether notification is needed and why, and who was notified
+   and when. See :ref:`prm_notifications`.
+
+.. gd_req:: Problem attribute: affected versions
+   :id: gd_req__problem_attr_affected_versions
+   :status: valid
+   :version: 1
+   :tags: manual_prio_1, problem_resolution, attribute, mandatory
+   :satisfies: wf__problem_create_pr[version==1],
+               wf__problem_analyze_pr[version==1],
+               wf__problem_initiate_monitor_pr[version==1],
+               wf__problem_close_pr[version==1]
+   :complies: std_req__aspice_40__SUP-9-BP2[version==1]
+
+   Each Problem shall record the detection version and the first and last affected versions,
+   including versions derived from the faulty version. Identify affected branches and
+   dependent integrations where applicable. Record unknowns as under investigation and
+   update them during analysis.
 
 .. gd_req:: Problem attribute: analysis results
    :id: gd_req__problem_attr_analysis_results
@@ -133,7 +149,7 @@ Problem Attributes
 .. gd_req:: Problem attribute:: safety affected
    :id: gd_req__problem_attr_safety_affected
    :status: valid
-   :version: 1
+   :version: 2
    :tags: prio_1_automation, problem_resolution, attribute, mandatory
    :satisfies: wf__problem_create_pr[version==1],
                wf__problem_analyze_pr[version==1],
@@ -146,12 +162,15 @@ Problem Attributes
       * Yes
       * No
 
-   Note: If neither security or safety relevance is set the bug is always quality relevant.
+   Where safety may be affected, the responsible :need:`Safety Manager <rl__safety_manager>`
+   shall confirm or disconfirm safety relevance and record the reason.
+
+   Note: If neither safety nor security is affected, the problem is quality relevant.
 
 .. gd_req:: Problem attribute:: security affected
    :id: gd_req__problem_attr_security_affected
    :status: valid
-   :version: 1
+   :version: 2
    :tags: prio_1_automation, problem_resolution, attribute, mandatory
    :satisfies: wf__problem_create_pr[version==1],
                wf__problem_analyze_pr[version==1],
@@ -164,7 +183,10 @@ Problem Attributes
       * Yes
       * No
 
-   Note: If neither security or safety relevance is set the bug is always quality relevant.
+   Where security may be affected, the responsible :need:`Security Manager <rl__security_manager>`
+   shall confirm or disconfirm security relevance and record the reason.
+
+   Note: If neither safety nor security is affected, the problem is quality relevant.
 
 .. gd_req:: Problem attribute: milestone
    :id: gd_req__problem_attr_milestone
@@ -218,6 +240,30 @@ Problem Resolution Checks
 
    ISSUEs related to Problem Reports shall not automatically closed, if linked ISSUEs or PRs are closed or merged and
    these ISSUEs shall be closed only manually from the :need:`Committer <rl__committer>`.
+
+.. gd_req:: Closure conditions for problems where safety is affected
+   :id: gd_req__problem_check_safety_closure
+   :status: valid
+   :version: 1
+   :tags: manual_prio_1, problem_resolution, check
+   :satisfies: wf__problem_close_pr[version==1]
+   :complies: std_req__iso26262__management_5433[version==1]
+
+   A problem classified as Safety affected shall be considered managed to closure only
+   when a rationale supports either an implemented adequate safety measure whose
+   effectiveness has been verified, or an evaluation that the problem does not constitute
+   an unreasonable risk.
+
+.. gd_req:: Documentation and review of closure rationale where safety is affected
+   :id: gd_req__problem_check_safety_rationale
+   :status: valid
+   :version: 1
+   :tags: manual_prio_1, problem_resolution, check
+   :satisfies: wf__problem_close_pr[version==1]
+   :complies: std_req__iso26262__management_5434[version==1]
+
+   For either safety-specific closure condition, the rationale shall be documented and
+   reviewed. Record the review result. See :ref:`prm_safety_affected_closure`.
 
 .. needextend:: "c.this_doc()"
    :+tags: problem_resolution

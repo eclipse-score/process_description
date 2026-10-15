@@ -18,7 +18,7 @@ Guideline
 .. gd_guidl:: Problem Resolution Guideline
    :id: gd_guidl__problem_problem
    :status: valid
-   :version: 1
+   :version: 2
    :complies: std_req__iso26262__management_5431[version==1],
               std_req__iso26262__management_5433[version==1],
               std_req__iso26262__management_5434[version==1],
@@ -130,9 +130,9 @@ Tracking System.
 
 The title of the Problem Report should reflect the topic accordingly.
 
-The description should reflect the problem root cause and impact in detail.
+The description should reflect the problem root cause, if known, and its impact.
 
-If applicable affected parties should be notified.
+Assess notification needs according to :ref:`prm_notifications`.
 
 Further supporting information should ge given, especially how to reproduce the problem,
 and what is the error occurrence rate?
@@ -142,9 +142,10 @@ If safety is affected, the ASIL classification should be added, if applicable.
 
 The problem should be classified according minor, major, critical or blocker.
 
-The affected versions of the release should be documented. After detection of the
-problem, checking the affected versions is critical to understand the impact of the
-problem. Thus document the first affected version and the last affected version.
+Document the version where the problem was detected and the first and last affected
+versions, including versions derived from the faulty version. Where applicable, identify
+affected branches and dependent integrations. Record unknown affected versions as
+"under investigation" and update them during analysis.
 
 .. note::
   | For the Problem Report Example:
@@ -167,6 +168,23 @@ When ready to review and to analyze, the author sets the status to "in review" m
   | * The "Process Development Community" dashboard is added and the status must be changed to **Todo**
   | * The combination of the issue**Open** and **Todo** defines the status **in review**
 
+.. _prm_notifications:
+
+Notification of Affected Parties
+--------------------------------
+
+Notification is needed when the problem's impact requires affected parties to assess
+their use of the software or take action, such as applying a workaround or an update.
+Consider affected users, integrators and feature or component maintainers, and the
+Safety or Security Manager where applicable.
+
+The :need:`Project Lead <rl__project_lead>` communicates the problem status to affected
+parties. Record whether notification is needed and why in the Problem Report's notification
+section. If needed, notify the affected parties through an issue comment with an explicit
+mention or another appropriate channel. Record who was notified, when and how, using a
+comment link or communication reference.
+For suspected vulnerabilities, follow the project's confidential reporting policy.
+
 .. _prm_analyze_problem_report:
 
 Analyze Problem Report
@@ -188,25 +206,36 @@ If applicable, the features affected should be identified too.
 
 The description shall reflect the result of the analysis.
 
-Topics to checked (critical topics are marked with x):
+Where safety or security may be affected, the responsible
+:need:`Safety Manager <rl__safety_manager>` or :need:`Security Manager <rl__security_manager>`,
+respectively, confirms or disconfirms the relevance and records the reason.
 
-- [x] Is the problem description clear and detailed enough to understand the problem and its impact?
-- [x] Is the problem root cause clearly described?
-- [x] Is the problem impact clearly described?
-- [ ] Is notification of affected parties required? If yes, are the affected parties notified?
-- [ ] Are there any proposed solutions provided?
-- [ ] Are there any further linked issues or pull requests provided?
-- [x] Is the error occurrence rate provided? If yes, is it high enough to accept the problem?
-- [x] Is the problem reproducible?
-- [ ] Are there any further supporting information provided?
-- [x] Is the problem classification correct?
-- [x] Is information for the affected version of the release provided? If yes, is it correct?
-- [ ] Is the information for the expected closure version provided? If yes, is it correct?
-- [x] Is the problem affecting safety or security? If yes, is the classification correct?
+A review **topic** is a question used to check the information and decisions in a Problem
+Report. A **critical review topic** must be addressed before approving the analysis.
+This is independent of the problem severity classification **critical**.
+The following topics shall be checked:
 
-The analysis phase can not be closed, until all critical topics are
-clarified and provided in the description. If not, the problem report should be rejected
-and closed with the reason "Closed as not planned".
+* **Critical:** Is the problem description clear, including its impact?
+* **Critical:** Is the root cause described, or identified as under investigation?
+* **Critical:** Are the occurrence rate and reproduction information provided, as far as known?
+* **Critical:** Is the problem classification correct?
+* **Critical:** Are the affected versions identified, including versions derived from the faulty version?
+* **Critical:** Is the safety or security relevance assessed, where applicable?
+* Is notification needed, and have affected parties been notified?
+* Are proposed solutions, supporting information and related issues or pull requests provided?
+* Are the responsible stakeholders and expected closure version identified?
+
+.. _prm_problem_disposition:
+
+Disposition of Review Topics
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+If a critical topic is not clarified, keep the report "in review" or return it to "open"
+for further information according to :need:`wf__problem_analyze_pr`. Record the open
+question and the analysis result. Missing information alone is not a reason for rejection.
+If the problem is rejected, document the reason. Rejection or cancellation does not mean
+that a problem where safety is affected is managed to closure; see
+:ref:`prm_safety_affected_closure`.
 
 .. note::
   | For the Problem Report Example:
@@ -291,18 +320,38 @@ the problem, until they are closed.
 :need:`[[title]] <rl__committer>` checks finally if the problem Resolution is sufficient before
 the status is finally closed.
 To check, if it is sufficient, :need:`Problem Checklist <gd_chklst__problem_cr_review>` may used.
-Further the effectiveness of the implemented measure is confirmed and the availability
-of the required reports, as verification results, if applicable.
+Where measures are implemented, confirm their effectiveness and record the verification
+results. For problems where safety is affected, apply :ref:`prm_safety_affected_closure`.
 
-When confirmed, the author sets the status to "closed" manually, if not done automatically.
+Closure follows :need:`wf__problem_close_pr` and :need:`gd_req__problem_check_closing`.
 
 .. note::
   | For the Problem Report Example 2:
   | * The status of the issue is provided by the Issue Tracking System as: **Closed**
   | * The combination of **Closed** and any "Process Development Community" status **Done** and the Pull Request status **Merged** defines the status **closed**
 
-:need:`[[title]] <rl__committer>` has the freedom to reject it at any time by setting the status
-to "reject".
+If the resolution is insufficient, keep the status "in implementation".
+
+.. _prm_safety_affected_closure:
+
+Closure of Problems Where Safety Is Affected
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+For a Problem Report classified as **Safety affected**, closure shall be supported by
+one of the following:
+
+* An adequate safety measure has been implemented to resolve the problem, based on a
+  rationale, and its effectiveness has been verified.
+* An evaluation concludes that the problem does not constitute an unreasonable risk,
+  supported by a rationale.
+
+For either condition, document the rationale and its review result in the Problem Report.
+Include effectiveness-verification results for an implemented measure, or the risk
+evaluation for the second condition. A software fix or fixed version is not required
+for the second condition.
+
+Without a documented and reviewed rationale, the problem is not managed to closure.
+These conditions do not change the responsibilities defined in :need:`wf__problem_close_pr`.
 
 .. needextend:: "c.this_doc()"
    :+tags: problem_resolution
