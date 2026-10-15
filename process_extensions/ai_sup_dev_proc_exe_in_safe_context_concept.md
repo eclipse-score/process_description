@@ -77,16 +77,20 @@ the content's author, and retained in the project's own version history.
 The diagram below illustrates the same guardrail as a data-flow: every
 human-readable/machine-readable conversion is performed by a deterministic
 transform tool, never by the LLM, and a human explicitly reviews and approves
-both the templates that feed the process and every artifact it produces.
+the templates, the skills/rules/prompts that shape the LLM's reasoning, and
+every artifact the process produces.
 
-![AI-supported requirements review concept: human-approved templates are transformed to machine-readable form, the LLM drafts a checklist fill-out, and a human reviews/approves the re-transformed result before iteration or sign-off](_assets/ai_supported_sldc_review_example.drawio.svg)
+![AI-supported requirements review concept: human-approved templates are transformed to machine-readable form, human-approved skills/rules/prompts directly inform the LLM's reasoning, the LLM drafts a checklist fill-out, and a human reviews/approves the re-transformed result before iteration or sign-off](_assets/ai_supported_sldc_review_example.drawio.svg)
 
 The requirements document and checklist templates themselves are ordinary
 repository content (the `feat_req`/`comp_req` directive schema and
-`workflows/req_safety_inspection/prompts/inspection.md`).
-They are reviewed and approved the same way as any other change, through
-normal repository pull-request review — this satisfies the diagram's
-"Template (Reviewed & Approved)" gates without a separate runtime step.
+`workflows/req_safety_inspection/prompts/inspection.md`), and so is the
+reusable prompt that shapes the LLM's reasoning
+(`chat_workflow.prompt.md`), along with any skill or rule files added
+alongside it. All of these are reviewed and approved the same way as any
+other change, through normal repository pull-request review — this
+satisfies the diagram's "Reviewed & Approved" gates for templates and
+reasoning inputs alike, without a separate runtime step.
 
 ### 2.2 Fixed output schema (no invented structure)
 
@@ -130,6 +134,12 @@ qualified like any other development tool. The LLM reasoning step is treated
 as categorically **not qualifiable** in this pilot: its output is never
 evaluated for qualification credit and is always subject to the mandatory
 human review and approval guardrail described above.
+
+Skills, rules, and prompts that shape the LLM's reasoning (for example
+`chat_workflow.prompt.md`) are not a third tool-confidence subject. They are
+reviewed repository content, governed the same way as the requirements
+document and checklist templates in §2.1 — reviewed and approved through
+normal pull-request review, not evaluated or qualified as a tool.
 
 ---
 
