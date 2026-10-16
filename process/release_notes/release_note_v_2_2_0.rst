@@ -26,8 +26,9 @@ Release Note v2.2.0
 
 | **Module Name:** Process description
 | **Release Tag:** v2.2.0
-| **Origin Release Tag:** v2.1.0...v2.1.3
+| **Origin Release Tag:** v2.1.0...v2.2.0
 | **Release Date:** 2026-11-02
+
 
 Overview
 ^^^^^^^^
@@ -81,40 +82,41 @@ The process model contains
 Improvements
 ------------
 
-- chore(docs): align score_docs_as_code repository files by @AlexanderLanin in https://github.com/eclipse-score/process_description/pull/762
-- refactor decision record template, move to folder templates by @masc2023 in https://github.com/eclipse-score/process_description/pull/734
-- Remove Covered attribute from req process by @aschemmel-tech in https://github.com/eclipse-score/process_description/pull/739
-- Fix: Add versions where missing by @MaximilianSoerenPollak in https://github.com/eclipse-score/process_description/pull/740
-- Bug: Link to static code analysis by @aschemmel-tech in https://github.com/eclipse-score/process_description/pull/741
-- upgrade doc-as-code to version 4.6.1 by @masc2023 in https://github.com/eclipse-score/process_description/pull/743
-- Correct Requirement check: suspicious by @aschemmel-tech in https://github.com/eclipse-score/process_description/pull/746
-- DR Template: add new attributes by @masc2023 in https://github.com/eclipse-score/process_description/pull/745
-- update of change management to consider new FEP proposal by @masc2023 in https://github.com/eclipse-score/process_description/pull/748
-- Add framework for trainings and an example training by @masc2023 in https://github.com/eclipse-score/process_description/pull/742
-- Update dependency score_docs_as_code to v5 by @eclipse-score-bot in https://github.com/eclipse-score/process_description/pull/750
-- Change responsibles for Feature docs approval by @aschemmel-tech in https://github.com/eclipse-score/process_description/pull/752
-- improve implementation by @RolandJentschETAS in https://github.com/eclipse-score/process_description/pull/751
-- link is optional for log_arc_int by @RolandJentschETAS in https://github.com/eclipse-score/process_description/pull/753
-- Update dependency score_docs_as_code to v6 by @eclipse-score-bot in https://github.com/eclipse-score/process_description/pull/755
-- build: bump Bazel version to 8.7.0 by @RolandJentschETAS in https://github.com/eclipse-score/process_description/pull/756
-- switch link direction between feat and log_arc_int by @RolandJentschETAS in https://github.com/eclipse-score/process_description/pull/754
-- fix build error for training files by @RolandJentschETAS in https://github.com/eclipse-score/process_description/pull/758
-- update most needextend directives to affect only the current file by @AlexanderLanin in https://github.com/eclipse-score/process_description/pull/759
-- remove operations from examples by @RolandJentschETAS in https://github.com/eclipse-score/process_description/pull/760
-- remove superflued optional linking of logic_arc_int_op by @RolandJentschETAS in https://github.com/eclipse-score/process_description/pull/761
-- Update dependency score_docs_as_code to v7 by @eclipse-score-bot in https://github.com/eclipse-score/process_description/pull/763
-- Update Documentation Mgt to ML3 by @PandaeDo in https://github.com/eclipse-score/process_description/pull/765
-- Update Quality Mgt ML2->3 by @PandaeDo in https://github.com/eclipse-score/process_description/pull/767
-- Rename _platform_templates to platform_management_templates by @anmittag in https://github.com/eclipse-score/process_description/pull/768
-- fix urls after structure changes in other repos by @RolandJentschETAS in https://github.com/eclipse-score/process_description/pull/769
-- fix: Fix needextend for future needextend changes by @MaximilianSoerenPollak in https://github.com/eclipse-score/process_description/pull/770
-- Update dependency score_docs_as_code to v7.0.1 by @eclipse-score-bot in https://github.com/eclipse-score/process_description/pull/764
-- fix: migrate needs role template to Jinja by @AlexanderLanin in https://github.com/eclipse-score/process_description/pull/771
-- Update dependency score_docs_as_code to v7.1.0 by @eclipse-score-bot in https://github.com/eclipse-score/process_description/pull/772
-- fix: Add git_override for docs-as-code by @MaximilianSoerenPollak in https://github.com/eclipse-score/process_description/pull/774
-- Updated RequirementsInspection Template by @anmittag in https://github.com/eclipse-score/process_description/pull/775
-- Allow multiple test derivation techniques by @attifunel in https://github.com/eclipse-score/process_description/pull/714
-- fix naming of bazel module by @masc2023 in https://github.com/eclipse-score/process_description/pull/776
+- fix: MODULE.bazel.lock by @AlexanderLanin in https://github.com/eclipse-score/process_description/pull/782
+- Update implementation process requirement and needextend by @PandaeDo in https://github.com/eclipse-score/process_description/pull/783
+- Update dependency score_docs_as_code to v8.1.0 by @eclipse-score-bot in https://github.com/eclipse-score/process_description/pull/786
+- Add workpackages in tool requirements by @RolandJentschETAS in https://github.com/eclipse-score/process_description/pull/787
+- Update dependency score_docs_as_code to v8.1.1 by @eclipse-score-bot in https://github.com/eclipse-score/process_description/pull/788
+- Update dependency score_docs_as_code to v8.1.2 by @eclipse-score-bot in https://github.com/eclipse-score/process_description/pull/790
+- Update dependency score_docs_as_code to v8.2.0 by @eclipse-score-bot in https://github.com/eclipse-score/process_description/pull/791
+- fix: missing 'satisfies' link by @a-zw in https://github.com/eclipse-score/process_description/pull/792
+- Fix broken link to feature architecture inspection checklist by @NicolasFussberger in https://github.com/eclipse-score/process_description/pull/795
+- Improvement: Add security process checks by @PandaeDo in https://github.com/eclipse-score/process_description/pull/796
+- Update dependency score_docs_as_code to v8.3.0 by @eclipse-score-bot in https://github.com/eclipse-score/process_description/pull/797
+- Modify valid_from/until attribute requirements by @aschemmel-tech in https://github.com/eclipse-score/process_description/pull/799
+- split feature integration test place by @RolandJentschETAS in https://github.com/eclipse-score/process_description/pull/793
+- Modify valid_from/until attribute description by @aschemmel-tech in https://github.com/eclipse-score/process_description/pull/800
+- Lists al QM related wp in the Quality Plan by @PandaeDo in https://github.com/eclipse-score/process_description/pull/803
+- Update structural coverage reference from unit to component by @pahmann in https://github.com/eclipse-score/process_description/pull/798
+- Monitoring requirement link completeness by @aschemmel-tech in https://github.com/eclipse-score/process_description/pull/806
+- Extend versioned links concept for reqs and arch by @aschemmel-tech in https://github.com/eclipse-score/process_description/pull/807
+- chore(docs): update score_docs_as_code gitignore configuration by @eclipse-score-bot in https://github.com/eclipse-score/process_description/pull/808
+- update version to tool_version by @masc2023 in https://github.com/eclipse-score/process_description/pull/814
+- Add Documentation Management Plan Template by @PandaeDo in https://github.com/eclipse-score/process_description/pull/818
+- change architecture element definition by @RolandJentschETAS in https://github.com/eclipse-score/process_description/pull/815
+- Improve guidance on interface documentation by @RolandJentschETAS in https://github.com/eclipse-score/process_description/pull/819
+- Update verification requirements to include Architectural elements by @pahmann in https://github.com/eclipse-score/process_description/pull/820
+- add line breaks in arc template by @RolandJentschETAS in https://github.com/eclipse-score/process_description/pull/822
+- Fix several spellings by @PandaeDo in https://github.com/eclipse-score/process_description/pull/824
+- Change style for notes by @PandaeDo in https://github.com/eclipse-score/process_description/pull/823
+- Add module user manual to release mgt process by @PandaeDo in https://github.com/eclipse-score/process_description/pull/821
+- Update links for template consistency by @PandaeDo in https://github.com/eclipse-score/process_description/pull/825
+- chore(devcontainer): sync standard SCORE tool launcher by @eclipse-score-bot in https://github.com/eclipse-score/process_description/pull/826
+- Change impact tooling corrections by @aschemmel-tech in https://github.com/eclipse-score/process_description/pull/827
+- Update dependency score_docs_as_code to v8.4.0 by @eclipse-score-bot in https://github.com/eclipse-score/process_description/pull/829
+- Fix title and list rendering in Security Management Getting Started section by @CryptoNutcase in https://github.com/eclipse-score/process_description/pull/831
+- update problem resolution to close  audit findings by @masc2023 in https://github.com/eclipse-score/process_description/pull/832
+
 
 Bug Fixes
 ---------
