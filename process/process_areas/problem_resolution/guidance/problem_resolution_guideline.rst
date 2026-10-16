@@ -130,7 +130,8 @@ Tracking System.
 
 The title of the Problem Report should reflect the topic accordingly.
 
-The description should reflect the problem root cause, if known, and its impact.
+The description should reflect the problem root cause, if known, and its impact, including
+known side effects on other functionality or dependent components.
 
 Assess notification needs according to :ref:`prm_notifications`.
 
@@ -321,7 +322,9 @@ the problem, until they are closed.
 the status is finally closed.
 To check, if it is sufficient, :need:`Problem Checklist <gd_chklst__problem_cr_review>` may used.
 Where measures are implemented, confirm their effectiveness and record the verification
-results. For problems where safety is affected, apply :ref:`prm_safety_affected_closure`.
+results. Consider and document side effects of the implemented measure, such as reduced
+performance, and include them in the verification as applicable.
+For problems where safety is affected, apply :ref:`prm_safety_affected_closure`.
 
 Closure follows :need:`wf__problem_close_pr` and :need:`gd_req__problem_check_closing`.
 
