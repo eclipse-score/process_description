@@ -17,6 +17,19 @@
 Process Requirements
 ====================
 
+.. gd_req:: Change management planning
+   :id: gd_req__change_planning
+   :status: valid
+   :version: 1
+   :tags: manual_prio_1, change_management
+   :satisfies: wf__change_create_cr[version==1]
+   :complies: std_req__iso26262__support_8412[version==1],
+              std_req__iso26262__support_8413[version==1]
+
+   The Change Management Plan shall identify the work products and elements
+   subject to change management, including those identified according to
+   :need:`std_req__iso26262__support_743`, and define when change management applies to them.
+
 Change Request Attributes
 -------------------------
 
@@ -78,7 +91,7 @@ Change Request Attributes
 .. gd_req:: Change Request attribute: description
    :id: gd_req__change_attr_impact_description
    :status: valid
-   :version: 1
+   :version: 2
    :tags: manual_prio_1, attribute, mandatory
    :satisfies: wf__change_create_cr[version==1],
                wf__change_analyze_cr[version==1],
@@ -94,6 +107,11 @@ Change Request Attributes
 
    Exact description of the Change Request, including impact analysis on functional safety,
    security, implementation (schedule, risks, resources) verification (measures defined).
+
+   Record the request date (issue creation date) and the starting release version on
+   which the change is based. The impact analysis shall cover the affected elements, its
+   interfaces and connected elements, the parties and responsibilities in distributed
+   development, and the schedule for implementation and verification.
 
 .. gd_req:: Change Request attribute: safety
    :id: gd_req__change_attr_impact_safety
@@ -170,7 +188,6 @@ Change Request Attributes
                wf__change_implement_monitor_cr[version==1],
                wf__change_close_cr[version==1]
    :complies: std_req__aspice_40__SUP-10-BP4[version==1],
-              std_req__iso26262__support_8412[version==1],
               std_req__iso26262__support_8422[version==1],
               std_req__iso26262__support_8452[version==1],
               std_req__iso26262__support_8453[version==1]
@@ -180,32 +197,37 @@ Change Request Attributes
 .. gd_req:: Change Request attribute: Affected Work Products
    :id: gd_req__change_attr_affected_wp
    :status: valid
-   :version: 1
+   :version: 2
    :tags: attribute, mandatory
    :satisfies: wf__change_create_cr[version==1],
                wf__change_analyze_cr[version==1],
                wf__change_implement_monitor_cr[version==1],
                wf__change_close_cr[version==1]
    :complies: std_req__aspice_40__SUP-10-BP4[version==1],
-              std_req__iso26262__support_8412[version==1],
+              std_req__iso26262__support_8431[version==1],
               std_req__iso26262__support_8422[version==1],
               std_req__iso26262__support_8452[version==1],
               std_req__iso26262__support_8453[version==1]
 
-   Links to the work products affected by the Change Request
+   Links to the work products affected by the Change Request.
+   Distinguish those affected from those requiring modification.
 
 .. gd_req:: Change Request attribute: Milestone
    :id: gd_req__change_attr_milestone
    :status: valid
-   :version: 1
+   :version: 2
    :tags: done_automation, attribute, mandatory
    :satisfies: wf__change_create_cr[version==1],
                wf__change_analyze_cr[version==1],
                wf__change_implement_monitor_cr[version==1],
                wf__change_close_cr[version==1]
-   :complies: std_req__aspice_40__SUP-10-BP6[version==1], std_req__iso26262__support_8413[version==1]
+   :complies: std_req__aspice_40__SUP-10-BP6[version==1], std_req__iso26262__support_8442[version==1]
 
    Milestone until the Change Request must be implemented (used for prioritization)
+
+   For each accepted Change Request, record who will carry out the change and when it
+   is due, considering the interfaces involved. The request or linked implementation
+   issues may provide this information.
 
 
 .. _chm_process_change_requests_checks:
