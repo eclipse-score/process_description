@@ -20,7 +20,7 @@ Impact Analysis Template
 .. gd_temp:: Impact Analysis Template
    :id: gd_temp__change_impact_analysis
    :status: valid
-   :version: 2
+   :version: 3
    :complies: std_req__aspice_40__SUP-10-BP2[version==1],
               std_req__aspice_40__iic-18-57[version==1],
               std_req__iso26262__support_8431[version==1],
@@ -46,7 +46,8 @@ Dependencies on other Change Requests
 Estimates for Realization
 -------------------------
 
-[List all work products and elements affected/to be modified by the Change Request]
+[Identify the affected elements, its interfaces and connected elements.
+List the affected work products, and distinguish those requiring modification.]
 
     .. note::
      For the identification of the affected work products use the Traceability Analysis approach.
@@ -60,14 +61,15 @@ Estimates for Realization
 
 [Estimate the effort, resources, risk for the realization]
 
-[Describe here which stakeholder and which roles of the stakeholder are involved to execute the Change Request]
+[Identify the parties involved and their responsibilities, including responsibilities
+across organizations where development is distributed.]
 
    .. note::
       Typically the :need:`Project Leads <rl__project_lead>` are involved
       for planning and approval activities. As well as :need:`Safety Manager <rl__safety_manager>` or :need:`Security Manager <rl__security_manager>`
       are responsible for Change Request which has impact on functional safety or security.
 
-[Describe here which Milestones are considered to realize the Change Request]
+[Describe the schedule or milestones for implementation and verification of the change.]
 
     .. note::
      A draft realization plan may support the realization proposal.

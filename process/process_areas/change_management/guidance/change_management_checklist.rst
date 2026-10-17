@@ -20,7 +20,7 @@ Checklists
 .. gd_chklst:: Change Request Review Checklist
    :id: gd_chklst__change_cr_review
    :status: valid
-   :version: 1
+   :version: 2
    :tags: change_management
    :complies: std_req__aspice_40__SUP-10-BP1[version==1],
               std_req__aspice_40__SUP-10-BP3[version==1],
@@ -60,11 +60,11 @@ Checklists
         -
 
       * - 5
-        - Does the Change Request has a description as specified?
+        - Does the Change Request include its date, reason, exact description and starting release version?
         -
 
       * - 6
-        - Does the Change Request has a impact analysis as specified?
+        - Does the impact analysis cover the affected element, interfaces, connected elements and affected work products, distinguishing those requiring modification?
         -
 
       * - 7
@@ -80,11 +80,11 @@ Checklists
         -
 
       * - 10
-        - Does the Change Request has a milestone as specified?
+        - For an accepted Change Request, are the implementation assignee and due date recorded, considering the interfaces involved?
         -
 
       * - 11
-        - Does the Change Request has verification measure as specified?
+        - Are verification methods and the implementation and verification schedule recorded?
         -
 
 .. needextend:: "c.this_doc()"

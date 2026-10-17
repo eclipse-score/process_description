@@ -18,7 +18,7 @@ Guideline
 .. gd_guidl:: Change Request Guideline
    :id: gd_guidl__change_change_request
    :status: valid
-   :version: 1
+   :version: 2
    :tags: change_management
    :complies: std_req__iso26262__support_8414[version==1],
               std_req__iso26262__support_8432[version==1],
@@ -33,6 +33,15 @@ General Hints
 =============
 
 The detailed implementation of the Change Management for the project shall be described in the :ref:`Workflow Platform Management <workflow_platform_management>`.
+
+Change Management Planning
+--------------------------
+
+The Change Management Plan shall identify the work products and elements according to
+:need:`std_req__iso26262__support_743`.
+
+The plan shall define when change management applies to the work products and elements, compare
+:need:`gd_req__change_planning`.
 
 Templates
 ---------
@@ -150,10 +159,11 @@ It is expected, that
 * The change request submitter will be set automatically by the Issue Tracking System.
 * The title of the change request reflects the topic accordingly.
 * The change request type reflects level of the change: feature or component.
-* The description reflects in detail: Exact description of the Change Request including reason, impact analysis on user, effort for implementation (schedule, risks, resources) and verification (measures defined).
+* The description reflects in detail: Exact description of the Change Request including date (issue create date), release version (starting, expected to implement), reason, impact analysis on user, effort for implementation (schedule, risks, resources) and verification (measures defined).
 * A detailed impact analysis is available.
     * If the change affects safety or security it should be stated explicitly.
     * If safety is affected, the ASIL classification should be added, if applicable.
+
 
 .. note::
   | For the Change Request Example:
@@ -194,6 +204,10 @@ If required, the information is updated accordingly.
 
 If accepted, the stakeholder of the change and the expected release, where the change
 should be closed, shall be defined. Optionally, the corresponding milestone can be set.
+
+For an accepted Change Request, record who will carry out the change and when it is due,
+considering the interfaces involved. This information may be recorded in the request or
+linked implementation issues.
 
 .. note::
   | For the Change Request Example:
