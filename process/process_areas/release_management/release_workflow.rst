@@ -27,7 +27,7 @@ For a detailed explanation of workflows and their role within the process model,
    :approved_by: rl__project_lead[version==1]
    :input: wp__module_safety_package[version==1], wp__module_sw_release_plan[version==1], wp__verification_module_ver_report[version==1]
    :output: wp__module_sw_release_note[version==1]
-   :contains: gd_temp__rel_mod_rel_note[version==1], gd_guidl__rel_management[version==1]
+   :contains: gd_temp__rel_mod_rel_note[version==1], gd_guidl__rel_management[version==2]
    :has: doc_concept__rel_process[version==1], doc_getstrt__release_process[version==1]
 
    The module release note is created for each release by the committer acting as the module lead.
@@ -41,7 +41,7 @@ For a detailed explanation of workflows and their role within the process model,
    :approved_by: rl__project_lead[version==1]
    :input: wp__platform_safety_package[version==1], wp__platform_sw_release_plan[version==1], wp__verification_platform_ver_report[version==1]
    :output: wp__platform_sw_release_note[version==1]
-   :contains: gd_temp__rel_plat_rel_note[version==1], gd_guidl__rel_management[version==1]
+   :contains: gd_temp__rel_plat_rel_note[version==1], gd_guidl__rel_management[version==2]
    :has: doc_concept__rel_process[version==1], doc_getstrt__release_process[version==1]
 
    The platform release note is prepared and approved by the project lead circle.
@@ -55,7 +55,7 @@ For a detailed explanation of workflows and their role within the process model,
    :approved_by: rl__project_lead[version==1]
    :input: wp__issue_track_system[version==1], wp__platform_mgmt[version==1]
    :output: wp__module_sw_release_plan[version==1]
-   :contains: gd_temp__rel_issue[version==1], gd_guidl__rel_management[version==1]
+   :contains: gd_temp__rel_issue[version==1], gd_guidl__rel_management[version==2]
    :has: doc_concept__rel_process[version==1], doc_getstrt__release_process[version==1]
 
    The module release plan is created as part of the modules planning and documented as part of the module's project planning.
@@ -68,7 +68,7 @@ For a detailed explanation of workflows and their role within the process model,
    :approved_by: rl__project_lead[version==1]
    :input: wp__issue_track_system[version==1], wp__platform_mgmt[version==1]
    :output: wp__platform_sw_release_plan[version==1]
-   :contains: gd_temp__rel_issue[version==1], gd_guidl__rel_management[version==1]
+   :contains: gd_temp__rel_issue[version==1], gd_guidl__rel_management[version==2]
    :has: doc_concept__rel_process[version==1], doc_getstrt__release_process[version==1]
 
    The platform release plan is created as part of the project planning and documented in the platform management plan.
@@ -97,7 +97,7 @@ For a detailed explanation of workflows and their role within the process model,
    :approved_by: rl__project_lead[version==1]
    :input: wp__module_sw_release_plan[version==1], wp__module_safety_manual[version==1], wp__module_security_manual[version==1]
    :output: wp__module_user_manual[version==1]
-   :contains: gd_temp__rel_mod_user_manual[version==1], gd_guidl__rel_management[version==1]
+   :contains: gd_temp__rel_mod_user_manual[version==1], gd_guidl__rel_management[version==2]
    :has: doc_concept__rel_process[version==1], doc_getstrt__release_process[version==1]
 
    The module user manual is created and maintained by the committer acting as the module lead
@@ -107,35 +107,44 @@ For a detailed explanation of workflows and their role within the process model,
 .. workflow:: Verify/Approve Module Release
    :id: wf__vy_ap_modrelease
    :status: valid
-   :version: 1
+   :version: 2
    :responsible: rl__release_team[version==1]
    :approved_by: rl__project_lead[version==1], rl__quality_manager[version==1]
-   :input: wp__module_sw_release_plan[version==1]
+   :input: wp__module_sw_release_plan[version==1], wp__qms_report[version==1], wp__verification_module_ver_report[version==1]
    :output: wp__module_sw_release_note[version==1]
-   :contains: gd_temp__rel_mod_rel_note[version==1], gd_guidl__rel_management[version==1]
-   :has: doc_concept__rel_process[version==1], doc_getstrt__release_process[version==1]
+   :contains: gd_temp__rel_mod_rel_note[version==1], gd_guidl__rel_management[version==2]
+   :has: doc_concept__rel_process[version==1], doc_getstrt__release_process[version==1],
+         doc_concept__quality_process[version==1], doc_getstrt__quality_process[version==1]
 
    | The module release is verified and approved.
+   | This confirms that the process conformance check (:need:`wf__exe_featprocess_conformance_checks`) has
+     been performed, as documented in :need:`wp__qms_report`, and that the required work product reviews
+     (:need:`wf__exe_wp_review`) have been completed and passed, as documented in
+     :need:`wp__verification_module_ver_report`.
 
 
 .. workflow:: Verify/Approve Platform Release
    :id: wf__vy_ap_pltrelease
    :status: valid
-   :version: 1
+   :version: 2
    :responsible: rl__release_team[version==1]
    :approved_by: rl__project_lead[version==1], rl__quality_manager[version==1]
-   :input: wp__qms_plan[version==1], wp__platform_sw_release_plan[version==1]
+   :input: wp__qms_plan[version==1], wp__platform_sw_release_plan[version==1], wp__qms_report[version==1], wp__verification_platform_ver_report[version==1]
    :output: wp__platform_sw_release_note[version==1]
    :contains: gd_guidl__qlm_plan_definitions[version==1],
               gd_chklst__review_checklist[version==1],
               gd_temp__rel_plat_rel_note[version==1],
-              gd_guidl__rel_management[version==1]
+              gd_guidl__rel_management[version==2]
    :has: doc_concept__quality_process[version==1],
          doc_getstrt__quality_process[version==1],
          doc_concept__rel_process[version==1],
          doc_getstrt__release_process[version==1]
 
    | The project/platform release is verified and approved.
+   | This confirms that the process conformance check (:need:`wf__exe_featprocess_conformance_checks`) has
+     been performed, as documented in :need:`wp__qms_report`, and that the required work product reviews
+     (:need:`wf__exe_wp_review`) have been completed and passed, as documented in
+     :need:`wp__verification_platform_ver_report`.
 
 
 RAS(IC) for Release Management:
