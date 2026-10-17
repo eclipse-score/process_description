@@ -18,7 +18,7 @@ Guideline
 .. gd_guidl:: Release Management Guideline
    :id: gd_guidl__rel_management
    :status: valid
-   :version: 1
+   :version: 2
    :complies: std_req__iso26262__software_1041[version==1],
               std_req__iso26262__management_6424[version==1],
               std_req__iso26262__management_64102[version==1],
@@ -57,6 +57,7 @@ Software Module Release
    * Prepare release notes documenting the changes, improvements, and bug fixes.
    * Check if all planned configuration items are in correct state (i.e. work products are valid, external libraries/tools are used in the correct released version).
    * Ensure the module's safety package is available and complete.
+   * Confirm the process conformance check has been performed (:need:`wf__exe_featprocess_conformance_checks`, documented in :need:`wp__qms_report`) and that the required work product reviews have been completed and passed (:need:`wf__exe_wp_review`, documented in :need:`wp__verification_module_ver_report`), with no work products left in draft or template state.
    * Tag the release in the repository.
 
 5. **Release Execution**:
@@ -94,6 +95,7 @@ Platform Release
    * Prepare platform release notes summarizing the updates from all integrated software modules.
    * Check if all planned configuration items are in correct state (i.e. work products are valid, external libraries/tools are used in the correct released version).
    * Ensure the relevant safety packages are available and complete.
+   * Confirm the process conformance check has been performed (:need:`wf__exe_featprocess_conformance_checks`, documented in :need:`wp__qms_report`) and that the required work product reviews have been completed and passed (:need:`wf__exe_wp_review`, documented in :need:`wp__verification_platform_ver_report`), with no work products left in draft or template state.
    * Create/Maintain Platform Handbook for the release.
    * Tag the platform release in the repository.
 
