@@ -98,7 +98,7 @@ The next activity is the formal inspection, which follows the following workflow
 1. Inspection initiation
 
 The inspection is initiated by the safety manager, security manager or quality manager who will be the moderator for the inspection.
-He sets the work product's status to "valid(inspected)" and starts a Pull-Request (PR).
+He sets the work product's status to "valid_inspected" and starts a Pull-Request (PR).
 This marks the scope of the inspection but also the work product's version.
 For documentation of the review either the PR comments are used (based on latest inspection templates),
 or the safety manager creates/updates an inspection documentation file based on the latest respective templates in the same PR
@@ -147,7 +147,7 @@ The lifecycle for other work product should be similar.
 #. During development and verification steps the requirement is reworked and again put to PR Review
 #. Implementation and verification work products are linked
 #. Safety manager initiates a (formal) Pull-Request Inspection
-#. After finding resolution, the requirement is merged in valid(inspected) state
+#. After finding resolution, the requirement is merged in valid_inspected state
 #. In case of changes the requirement returns in the valid state
 
 Note: This workflow can be shortcut in case an already mature work product (in this case requirement)
@@ -178,7 +178,7 @@ to be able to later explain what they considered during review
 (for example in case a requirement is found to be wrong after the release, to be able to do a lessons learned).
 
 Any work product which is subject to inspection and is modified after an inspection
-shall transition from "valid(inspected)" back to "valid" state. This shall be automatically checked.
+shall transition from "valid_inspected" back to "valid" state. This shall be automatically checked.
 
 Process Requirements
 ^^^^^^^^^^^^^^^^^^^^
@@ -234,7 +234,7 @@ Process Requirements
    :complies: std_req__iso26262__support_6433[version==1], std_req__iso26262__software_7414[version==1]
    :satisfies: wf__monitor_verify_requirements[version==1], wf__mr_vy_arch[version==1]
 
-   It shall be checked that only a PR with the inspection checklist filled out can set a status to valid(inspected).
+   It shall be checked that only a PR with the inspection checklist filled out can set a status to valid_inspected.
 
 .. gd_req:: Status Reset Check
    :id: gd_req__general_status_reset_check

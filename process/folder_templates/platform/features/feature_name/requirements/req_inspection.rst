@@ -19,7 +19,7 @@
 .. document:: [Feature Name] Requirements Inspection
    :id: doc__feature_name_req_inspection
    :status: draft
-   :version: 2
+   :version: 3
    :safety: ASIL_B
    :security: YES
    :realizes: wp__requirements_inspect[version==1]
@@ -190,10 +190,10 @@ Summary
 Inspected Requirements
 ^^^^^^^^^^^^^^^^^^^^^^
 
-The following requirements in "valid" state and with "inspected" tag set are in the scope of this inspection:
+The following requirements in "valid_inspected" state are in the scope of this inspection:
 
 .. needtable::
-   :filter: "feature_name" in docname and "requirements" in docname and docname is not None and status == "valid"
+   :filter: "feature_name" in docname and "requirements" in docname and docname is not None
    :style: table
    :types: feat_req
    :tags: feature_name
@@ -204,10 +204,10 @@ The following requirements in "valid" state and with "inspected" tag set are in 
 Inspected Assumptions of Use
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-And also the following AoUs in "valid" state and with "inspected" tag set (for these please answer the questions above as if the AoUs are requirements, except question REQ_03_01):
+And also the following AoUs in "valid_inspected" state (for these please answer the questions above as if the AoUs are requirements, except question REQ_03_01):
 
 .. needtable::
-   :filter: "feature_name" in docname and "requirements" in docname and docname is not None and status == "valid"
+   :filter: "feature_name" in docname and "requirements" in docname and docname is not None
    :style: table
    :types: aou_req
    :tags: feature_name
