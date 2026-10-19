@@ -12,11 +12,11 @@
    # SPDX-License-Identifier: Apache-2.0
    # *******************************************************************************
 
-Release Note v2.2.0
+Release Note v2.2.1
 ===================
 
-.. document:: Process description Release Note v2.2.0
-   :id: doc__process_description_release_note_v220
+.. document:: Process description Release Note v2.2.1
+   :id: doc__process_description_release_note_v221
    :status: valid
    :safety: ASIL_B
    :version: 1
@@ -25,8 +25,8 @@ Release Note v2.2.0
    :tags:
 
 | **Module Name:** Process description
-| **Release Tag:** v2.2.0
-| **Origin Release Tag:** v2.1.0...v2.2.0
+| **Release Tag:** v2.2.1
+| **Origin Release Tag:** v2.1.0...v2.2.1
 | **Release Date:** 2026-11-02
 
 
@@ -116,6 +116,8 @@ Improvements
 - Update dependency score_docs_as_code to v8.4.0 by @eclipse-score-bot in https://github.com/eclipse-score/process_description/pull/829
 - Fix title and list rendering in Security Management Getting Started section by @CryptoNutcase in https://github.com/eclipse-score/process_description/pull/831
 - update problem resolution to close  audit findings by @masc2023 in https://github.com/eclipse-score/process_description/pull/832
+- fix qlm audit findings by @masc2023 in https://github.com/eclipse-score/process_description/pull/835
+- fix audit findings chm by @masc2023 in https://github.com/eclipse-score/process_description/pull/834
 
 
 Bug Fixes
