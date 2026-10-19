@@ -59,9 +59,17 @@ Changes to the Module
 New Features
 ------------
 
-Update of change management to consider new FEP proposal.
+Closed external audit findings (audit meeting #7, #652) for three process areas:
 
-Add framework for trainings and an example training.
+- Problem Resolution: clarified critical-review topics, notification handling and the two
+  closure conditions for safety-affected problems (#557, by @PandaeDo in
+  https://github.com/eclipse-score/process_description/pull/832)
+- Change Management: clarified Change Management Plan scope, request attributes and
+  impact-analysis prompts, aligned with ISO 26262-8:2018 8.4.1-8.4.4 (#567, by @PandaeDo in
+  https://github.com/eclipse-score/process_description/pull/834)
+- Release/Quality Management: referenced the conformance check and work-product reviews as
+  mandatory input to module/platform release approval (#562, #564, by @PandaeDo in
+  https://github.com/eclipse-score/process_description/pull/835)
 
 Maturity Level 3 is achieved for:
 Documentation Management
@@ -118,6 +126,7 @@ Improvements
 - update problem resolution to close  audit findings by @masc2023 in https://github.com/eclipse-score/process_description/pull/832
 - fix qlm audit findings by @masc2023 in https://github.com/eclipse-score/process_description/pull/835
 - fix audit findings chm by @masc2023 in https://github.com/eclipse-score/process_description/pull/834
+- Add release notes for S-CORE release v10.0 by @masc2023 in https://github.com/eclipse-score/process_description/pull/833
 
 
 Bug Fixes
@@ -146,7 +155,7 @@ Known Issues
 ------------
 
 - Issue 1: Standard requirements and work products are not yet fully mapped to the process model, https://eclipse-score.github.io/process_description//main/standards/index.html
-- Issue 2: Safety package containing external Audit report not available, due to open improvement proposals/recommendation from external assessor team, #652
+- Issue 2: Safety package containing external Audit report not available, due to open improvement proposals/recommendation from external assessor team, #652. Findings for Problem Resolution, Change Management and Release/Quality Management are closed as of this release; findings for other process areas remain open.
 - Issue 3: Maturity level 2 no yet completed for security processes, but deploying is still ongoing also auditing per external auditor to achieve higher maturity levels, #652, https://github.com/eclipse-score/score/issues/2911
 
 Known Vulnerabilities
