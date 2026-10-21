@@ -26,5 +26,6 @@
     "linked_to_requirements": 0,
     "linked_to_requirements_pct": 100.0,
     "broken_references": []
-  }
+  },
+  "verification_metrics": {}
 }
