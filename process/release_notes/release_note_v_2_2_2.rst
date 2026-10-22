@@ -26,9 +26,8 @@ Release Note v2.2.1
 
 | **Module Name:** Process description
 | **Release Tag:** v2.2.2
-| **Origin Release Tag:** v2.1.0...v2.2.1
+| **Origin Release Tag:** v2.1.0...v2.2.2
 | **Release Date:** 2026-11-02
-
 
 Overview
 ^^^^^^^^
@@ -128,6 +127,9 @@ Improvements
 - fix qlm audit findings by @masc2023 in https://github.com/eclipse-score/process_description/pull/835
 - fix audit findings chm by @masc2023 in https://github.com/eclipse-score/process_description/pull/834
 - Add release notes for S-CORE release v10.0 by @masc2023 in https://github.com/eclipse-score/process_description/pull/833
+- Change to valid_inspected state by @aschemmel-tech in https://github.com/eclipse-score/process_description/pull/836
+- Update dependency score_docs_as_code to v8.5.0 by @eclipse-score-bot in https://github.com/eclipse-score/process_description/pull/837
+- Add ai supported concept by @masc2023 in https://github.com/eclipse-score/process_description/pull/809
 
 
 Bug Fixes
