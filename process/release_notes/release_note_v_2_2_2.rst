@@ -15,8 +15,8 @@
 Release Note v2.2.1
 ===================
 
-.. document:: Process description Release Note v2.2.1
-   :id: doc__process_description_release_note_v221
+.. document:: Process description Release Note v2.2.2
+   :id: doc__process_description_release_note_v222
    :status: valid
    :safety: ASIL_B
    :version: 1
@@ -25,7 +25,7 @@ Release Note v2.2.1
    :tags:
 
 | **Module Name:** Process description
-| **Release Tag:** v2.2.1
+| **Release Tag:** v2.2.2
 | **Origin Release Tag:** v2.1.0...v2.2.1
 | **Release Date:** 2026-11-02
 
@@ -75,6 +75,7 @@ Maturity Level 3 is achieved for:
 Documentation Management
 Quality Management
 Safety Analysis
+Requirements Engineering
 
 The process model contains
 
