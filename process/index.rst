@@ -127,14 +127,14 @@ Development
    :class-container: score-grid
 
    .. grid-item-card::
-      :class-card: card-ml2
+      :class-card: card-ml3
 
       :ref:`Requirements Engineering <requirements_engineering>`
       ^^^
       Elicit, specify and manage stakeholder and system requirements.
 
    .. grid-item-card::
-      :class-card: card-ml3
+      :class-card: card-ml2
 
       :ref:`Architecture Design <arch_design_process>`
       ^^^
