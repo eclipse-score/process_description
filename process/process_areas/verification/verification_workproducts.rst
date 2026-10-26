@@ -126,8 +126,6 @@ Module
      (can be several levels and types), passed/failed and completeness verdict, including normal
      operation and failure reactions.
    - The list of requirements may also contain other verification methods like "Analysis"
-   - Reports from manual Requirements, Architecture, and Implementation Inspection Checklists (applies to ASIL related artifacts)
-   - Structural Coverage (C0 and C1, from unit testing on host) per unit
    - Structural Coverage (C0 and C1, from unit testing on host) per component (to map any shortcomings to the component requirement level)
    - Static Code Analysis (including compiler warnings, automated checking of coding guidelines
      and additional checks)
@@ -142,6 +140,8 @@ Module
      :need:`wp__verification_sw_unit_test` and :need:`wp__verification_comp_int_test`
      with status passed/failed/not_run as a link to the matching retained execution
      log artifacts for the specific release version (only linkis, not a full log in the report).
+   - Reports from manual Requirements, Architecture, and Implementation Inspection Checklists (applies to ASIL related artifacts)
+   - Structural Coverage (C0 and C1, from unit testing on host) per unit
 
    It also serves as SW Component Qualification Verification Report for pre-existing Open Source
    Projects developed and maintained outside of the project to which this process is applied to.
