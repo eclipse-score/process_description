@@ -20,7 +20,7 @@ Process Requirements
 .. gd_req:: Linking Requirements to Tests
     :id: gd_req__verification_link_tests
     :status: valid
-    :version: 1
+    :version: 2
     :tags: prio_1_automation, verification
     :satisfies: wf__verification_unit_test[version==1],
                 wf__verification_comp_int_test[version==1],
@@ -29,25 +29,23 @@ Process Requirements
     :complies: std_req__iso26262__support_6432[version==1]
 
 
-    For linking test suites to requirements following metadata shall be used:
+    For linking test suites to requirements following metadata shall be used. Each field may contain multiple
+    comma-separated values from the applicable levels below:
 
     * Verifies
         * PartiallyVerifies
         * FullyVerifies
     * Description
     * TestType
-        * Fault Injection (fault-injection)
-        * Interface Test (interface-test)
-        * Requirements-based Test (requirements-based)
-        * Resource Usage Evaluation (resource-usage)
+        * Interface Test (interface-test): unit, component, feature
+        * Requirements-based Test (requirements-based): component, feature, platform
     * DerivationTechnique
-        * Analysis of requirements (requirements-analysis)
-        * Analysis of design (design-analysis)
-        * Analysis of boundary values (boundary-values)
-        * Analysis of equivalence classes (equivalence-classes)
-        * Fuzzy testing (fuzz-testing)
-        * Error guessing based on knowledge or experience (error-guessing)
-        * Explorative testing (explorative-testing)
+        * Analysis of requirements (requirements-analysis): all levels
+        * Analysis of boundary values (boundary-values): component, feature, platform
+        * Analysis of equivalence classes (equivalence-classes): all levels
+        * Fuzzy testing (fuzz-testing): unit, component, feature
+        * Error guessing based on knowledge or experience (error-guessing): all levels
+        * Explorative testing (explorative-testing): all levels
 
 
     More information can be found in the :need:`gd_guidl__verification_guide`, :need:`doc_concept__verification_process`,
@@ -179,7 +177,7 @@ Process Requirements
 .. gd_req:: Verification Documentation Checks
     :id: gd_req__verification_checks
     :status: valid
-    :version: 1
+    :version: 2
     :tags: prio_1_automation, verification
     :satisfies: wf__verification_unit_test[version==1],
                 wf__verification_comp_int_test[version==1],
@@ -191,10 +189,20 @@ Process Requirements
 
     - TestType and DerivationTechnique shall be set
     - Description shall not be empty
-    - In a Platform Integration Test Partially/FullyVerifies shall be set to at least one Platform Requirement
-    - If Partially/FullyVerifies are set in Feature Integration Test these shall link to at least one Feature Requirement or Architectural element
-    - If Partially/FullyVerifies are set in Component Integration Test these shall link to at least one Component Requirement or Architectural element
-    - If Partially/FullyVerifies are set in Unit Test these shall link to at least one Component Requirement
+
+    The test level is determined by the test's folder path. Verifies links shall use only the allowed types for that level:
+
+    - ``platform_integration_tests/`` (Platform): ``stkh_req``
+    - ``score/tests/`` (Feature): ``feat``, ``feat_req``, ``feat_arc_dyn``, ``feat_arc_sta``, ``mod``, ``mod_view_dyn``, ``mod_view_sta``, ``tool_req``
+    - ``score/.*/tests/`` (Component): ``comp``, ``comp_req``, ``comp_arc_dyn``, ``comp_arc_sta``, ``real_arc_int``, ``real_arc_int_op``
+    - Anything else (Unit): ``comp_req``, ``feat_req``
+
+    The minimum link coverage shall also be enforced:
+
+    - Platform Integration Tests shall link to at least one stakeholder requirement.
+    - If Partially/FullyVerifies are set in a Feature Integration Test, these shall use one or more allowed Feature links.
+    - If Partially/FullyVerifies are set in a Component Integration Test, these shall use one or more allowed Component links.
+    - If Partially/FullyVerifies are set in a Unit Test, these shall use one or more allowed Unit links.
 
 .. gd_req:: Verification Documentation Checks Extended
     :id: gd_req__verification_checks_extended
