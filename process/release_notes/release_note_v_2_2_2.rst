@@ -137,6 +137,7 @@ Improvements
 - Fix safety fdr linkage by @panddo in https://github.com/eclipse-score/process_description/pull/843
 - Add platform aou template by @panddo in https://github.com/eclipse-score/process_description/pull/844
 - Add complies links to work products by @panddo in https://github.com/eclipse-score/process_description/pull/845
+- Align process req to metamodel by @panddo in https://github.com/eclipse-score/process_description/pull/846
 - Add release notes for S-CORE release v10.0 by @masc2023 in https://github.com/eclipse-score/process_description/pull/833
 
 
