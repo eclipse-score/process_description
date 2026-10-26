@@ -125,11 +125,10 @@ Module
      including assumptions of use satisfied by the component, tested by which test
      (can be several levels and types), passed/failed and completeness verdict, including normal
      operation and failure reactions.
-
-     - The list of requirements may also contain other verification methods like "Analysis"
-
+   - The list of requirements may also contain other verification methods like "Analysis"
    - Reports from manual Requirements, Architecture, and Implementation Inspection Checklists (applies to ASIL related artifacts)
    - Structural Coverage (C0 and C1, from unit testing on host) per unit
+   - Structural Coverage (C0 and C1, from unit testing on host) per component (to map any shortcomings to the component requirement level)
    - Static Code Analysis (including compiler warnings, automated checking of coding guidelines
      and additional checks)
    - DFA Report containing the list of performed Dependent Failure Analysis with identified mitigations
