@@ -134,6 +134,8 @@ Improvements
 - Solves id naming convention by @PandaeDo in https://github.com/eclipse-score/process_description/pull/841
 - Improve verification report based on module template by @pahmann in https://github.com/eclipse-score/process_description/pull/794
 - Fix safety fdr linkage by @panddo in https://github.com/eclipse-score/process_description/pull/842
+- Fix safety fdr linkage by @panddo in https://github.com/eclipse-score/process_description/pull/843
+- Add platform aou template by @panddo in https://github.com/eclipse-score/process_description/pull/844
 - Add release notes for S-CORE release v10.0 by @masc2023 in https://github.com/eclipse-score/process_description/pull/833
 
 
