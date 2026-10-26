@@ -130,6 +130,11 @@ Improvements
 - Change to valid_inspected state by @aschemmel-tech in https://github.com/eclipse-score/process_description/pull/836
 - Update dependency score_docs_as_code to v8.5.0 by @eclipse-score-bot in https://github.com/eclipse-score/process_description/pull/837
 - Add ai supported concept by @masc2023 in https://github.com/eclipse-score/process_description/pull/809
+- Update dependency score_docs_as_code to v8.5.1 by @eclipse-score-bot in https://github.com/eclipse-score/process_description/pull/839
+- Solves id naming convention by @PandaeDo in https://github.com/eclipse-score/process_description/pull/841
+- Improve verification report based on module template by @pahmann in https://github.com/eclipse-score/process_description/pull/794
+- Fix safety fdr linkage by @panddo in https://github.com/eclipse-score/process_description/pull/842
+- Add release notes for S-CORE release v10.0 by @masc2023 in https://github.com/eclipse-score/process_description/pull/833
 
 
 Bug Fixes
