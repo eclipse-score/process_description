@@ -12,7 +12,7 @@
    # SPDX-License-Identifier: Apache-2.0
    # *******************************************************************************
 
-Release Note v2.2.1
+Release Note v2.2.2
 ===================
 
 .. document:: Process description Release Note v2.2.2
