@@ -34,5 +34,9 @@
   {
     "version": "v2.2.2",
     "url": "https://eclipse-score.github.io/process_description/v2.2.2/"
+  },
+  {
+    "version": "pr-848",
+    "url": "https://eclipse-score.github.io/process_description/pr-848/"
   }
 ]
