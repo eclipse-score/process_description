@@ -37,16 +37,18 @@ Process Requirements
         * FullyVerifies
     * Description
     * TestType
+        * Fault Injection (fault-injection)
         * Interface Test (interface-test): unit, component, feature
         * Requirements-based Test (requirements-based): component, feature, platform
+        * Resource Usage Evaluation (resource-usage)
     * DerivationTechnique
         * Analysis of requirements (requirements-analysis): all levels
+        * Analysis of design (design-analysis)
         * Analysis of boundary values (boundary-values): component, feature, platform
         * Analysis of equivalence classes (equivalence-classes): all levels
         * Fuzzy testing (fuzz-testing): unit, component, feature
         * Error guessing based on knowledge or experience (error-guessing): all levels
         * Explorative testing (explorative-testing): all levels
-
 
     More information can be found in the :need:`gd_guidl__verification_guide`, :need:`doc_concept__verification_process`,
     and :need:`gd_guidl__verification_specification` .
