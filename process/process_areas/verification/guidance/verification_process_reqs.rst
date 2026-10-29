@@ -37,13 +37,13 @@ Process Requirements
         * FullyVerifies
     * Description
     * TestType
-        * Fault Injection (fault-injection)
+        * Fault Injection (fault-injection): unit, component, feature
         * Interface Test (interface-test): unit, component, feature
         * Requirements-based Test (requirements-based): component, feature, platform
-        * Resource Usage Evaluation (resource-usage)
+        * Resource Usage Evaluation (resource-usage): feature
     * DerivationTechnique
         * Analysis of requirements (requirements-analysis): all levels
-        * Analysis of design (design-analysis)
+        * Analysis of design (design-analysis): all levels
         * Analysis of boundary values (boundary-values): component, feature, platform
         * Analysis of equivalence classes (equivalence-classes): all levels
         * Fuzzy testing (fuzz-testing): unit, component, feature
