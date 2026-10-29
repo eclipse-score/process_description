@@ -642,7 +642,7 @@
                   
   <section id="ai-usage-guideline">
 <span id="id1"></span><h1>AI Usage Guideline<a class="headerlink" href="#ai-usage-guideline" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-a1957dbd">
+<div class="need_container docutils container" id="SNCB-5e4b2211">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_guidl table" id="gd_guidl__ai_usage">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -672,10 +672,9 @@
 </tr>
 <tr class="content row-odd"><td class="content" colspan="6"><p>This guideline defines how the
 <a class="reference external" href="https://www.eclipse.org/projects/guidelines/genai/">Eclipse Generative AI Usage Guidelines</a>,
-made applicable by <a class="reference internal" href="../process_management_workproducts.html#wp__policies" title="wp__policies"><em class="xref need">Policies</em></a>, are applied in <em>S-CORE</em>. It applies to every
-contribution to any <em>S-CORE</em> repository (source code, documentation, process description,
-tests, tooling and infrastructure) and to all GitHub content (issues, pull requests, review
-comments).</p>
+made applicable by <a class="reference internal" href="../process_management_workproducts.html#wp__policies" title="wp__policies"><em class="xref need">Policies</em></a>, are applied in the project. It applies to every
+contribution to the project, independent of the repository and the kind of content,
+including issues, pull requests and review comments.</p>
 <p>The Eclipse guidelines remain the governing document. This guideline only makes them
 concrete where the Eclipse guidelines leave a choice to the project.</p>
 </td>
@@ -703,10 +702,6 @@ tool. The contributor shall have reviewed and understood every change and shall 
 defend it in the review.</p></li>
 <li><p>The use of a generative AI tool shall not reduce the scope of the review, the acceptance
 criteria or the automated checks that apply to a contribution.</p></li>
-<li><p>The contributor shall follow the terms of use of the AI tool and the policy of their
-employer on the use of generative AI.</p></li>
-<li><p>The contributor shall not enter confidential information, personally identifiable
-information or other sensitive information into an AI tool.</p></li>
 </ol>
 </section>
 <section id="disclosure">
@@ -718,15 +713,13 @@ way for which a human would be given credit.</p>
 corrections, formatting, code completion of single statements or rote boilerplate that
 the contributor modifies and supplements.</p>
 </li>
-<li><p>The disclosure shall be given in both of the following places:</p>
+<li><p>The disclosure shall be given where the AI-assisted content is created:</p>
 <ul class="simple">
-<li><p>in every affected commit, as <code class="docutils literal notranslate"><span class="pre">Assisted-by:</span></code> trailer in the commit message, and</p></li>
-<li><p>in the description of the pull request, in a section “AI disclosure” with a statement
-that the contributor has reviewed every change and takes responsibility for it, followed
-by the <code class="docutils literal notranslate"><span class="pre">Assisted-by:</span></code> line.</p></li>
+<li><p>for changes in a repository, as <code class="docutils literal notranslate"><span class="pre">Assisted-by:</span></code> trailer in the message of every affected
+commit;</p></li>
+<li><p>for issues, pull request descriptions and comments whose text is AI-assisted, as
+<code class="docutils literal notranslate"><span class="pre">Assisted-by:</span></code> line in that text.</p></li>
 </ul>
-<p>Disclosing in both places keeps the information in the history also when commits are
-squashed during merge.</p>
 </li>
 <li><p>The AI tool shall be identified in the following format, as complete as possible:</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Assisted-by: &lt;Provider&gt; &lt;Model&gt; (&lt;Version/ID&gt;)
@@ -740,7 +733,7 @@ Assisted-by: Anthropic Claude Opus 5.5 (claude-opus-5-5)
 <p>If several AI tools were used, one <code class="docutils literal notranslate"><span class="pre">Assisted-by:</span></code> line per tool shall be given.</p>
 </li>
 <li><p>A file that is largely or entirely AI-generated shall carry, in addition to the standard
-<em>S-CORE</em> copyright header, an AI disclosure block directly below it:</p>
+copyright header of the project, an AI disclosure block directly below it:</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>AI Disclosure: This file was largely AI-generated. The AI-generated
 portions are made available under CC0-1.0 and not subject to the
 project's license. The human contributor has reviewed and verified
@@ -749,7 +742,7 @@ SPDX-License-Identifier: Apache-2.0 AND CC0-1.0
 Assisted-by: &lt;Provider&gt; &lt;Model&gt; (&lt;Version/ID&gt;)
 </pre></div>
 </div>
-<p>The standard copyright header shall stay unchanged, so that the automated copyright
+<p>The copyright header of the project shall stay unchanged, so that the automated copyright
 checks keep working.</p>
 </li>
 </ol>
@@ -757,13 +750,13 @@ checks keep working.</p>
 <section id="review-and-merge">
 <h2>Review and Merge<a class="headerlink" href="#review-and-merge" title="Link to this heading">#</a></h2>
 <ol class="arabic simple">
-<li><p>Every merge into an <em>S-CORE</em> repository shall be approved by a human committer
+<li><p>Every merge into a repository of the project shall be approved by a human committer
 (<a class="reference internal" href="../../../roles/index.html#rl__committer" title="rl__committer"><em class="xref need">Committer</em></a>). AI agents or bots shall not push directly to protected
 branches or merge pull requests.</p></li>
 <li><p>A committer may reject an AI-assisted contribution that they do not understand or are not
 willing to maintain, or request that it is split into smaller pull requests.</p></li>
-<li><p>A committer may request the missing disclosure, if a contribution appears to be AI-assisted
-and is not disclosed.</p></li>
+<li><p>A committer shall request the missing disclosure, if a contribution appears to be
+AI-assisted and is not disclosed.</p></li>
 </ol>
 </section>
 <section id="functional-safety-and-security">
@@ -772,9 +765,10 @@ and is not disclosed.</p></li>
 <li><p>AI-assisted content in safety or security related work products shall follow the same
 process, review and verification requirements as any other content. No additional rules
 apply.</p></li>
-<li><p>The output of an AI tool shall not be used as verification evidence on its own. If AI
-output becomes part of a work product without a complete human review, the AI tool shall be
-handled by Tool Management (<a class="reference internal" href="../../tool_management/tool_management_workflow.html#wf__tool_evaluate_tool" title="wf__tool_evaluate_tool"><em class="xref need">Evaluate Tool and Update To...</em></a>).</p></li>
+<li><p>AI tools used to create or verify work products shall be identified and evaluated like any
+other tool according to Tool Management (<a class="reference internal" href="../../tool_management/tool_management_workflow.html#wf__tool_evaluate_tool" title="wf__tool_evaluate_tool"><em class="xref need">Evaluate Tool and Update To...</em></a>). A qualification of
+AI tools is not intended. Therefore the output of an AI tool shall not be used as work product
+or verification evidence without human review.</p></li>
 </ol>
 </section>
 </section>
