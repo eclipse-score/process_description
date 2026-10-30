@@ -126,7 +126,9 @@ The rigor is described in the implementation of :need:`wp__verification_plan`.
 
 Automated test cases (as well as manual, where applicable) shall contain further information about which methods have been applied.
 The corresponding guidance is given here: :need:`gd_guidl__verification_guide`.
-The identifier of the respective method is to be used as meta data (*TestType* and *DerivationTechnique*).
+For Sphinx-Needs test metadata, use only the identifiers and test levels listed in
+:need:`gd_req__verification_link_tests`. Other verification methods described here remain applicable, but their
+identifiers are not supported as *TestType* or *DerivationTechnique* values.
 
 Test Case Development
 =====================
@@ -155,9 +157,9 @@ Following aspect should be considered when developing test cases:
 General Traceability Concept
 ============================
 
-To allow a traceability of code to a written requirement, unit tests are linked to other unit
-tests or component tests. This linking is done using metatags. This is also true for component
-integration tests linking to the component requirements and architecture.
+To allow a traceability of code to a written requirement, unit tests use ``Verifies`` links to component or feature
+requirements as allowed by :need:`gd_req__verification_checks`. They may also link to related unit or component tests.
+Component integration tests link to the component requirements and architecture as allowed by the same requirement.
 
 Traceability of feature integration tests shall be established through linking those test cases to
 feature requirements and architecture as features describe the integrated behavior of all components.
