@@ -285,3 +285,14 @@ Analysis perspective
    Where is the safety analysis for the tool defined
 
    Where is the security analysis for the tool defined
+
+Unresolved Tool Bugs
+~~~~~~~~~~~~~~~~~~~~
+[List of unresolved tool bugs]
+
+.. tip::
+   Add a link to the bug list of the (open-source) tool
+
+   Include own bugs detected during qualification testing
+
+   The bug should include a work around if possible

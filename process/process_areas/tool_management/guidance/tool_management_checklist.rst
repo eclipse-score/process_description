@@ -113,5 +113,7 @@ Tool Verification Report Review Checklist
         - Is the tool confidence level based on tool impact and tool error detection defined?
         -
 
+Note: If you are unsure about the correctness of tool impact and tool error detection values ask for the more conservative value.
+
 .. needextend:: "c.this_doc()"
    :+tags: tool_management
