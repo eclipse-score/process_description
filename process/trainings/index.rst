@@ -23,6 +23,44 @@
 Trainings
 =========
 
+S-CORE offers hands-on trainings, which you work through in a GitHub repository, and
+self-paced interactive training portals.
+
+Hands-on Trainings
+------------------
+
+Unlike the training portals below, a hands-on training is a GitHub repository: you copy it into
+your own account and work through task issues, defect branches and prepared pull requests in a
+fictive S-CORE module.
+
+.. grid:: 1 1 2 2
+   :class-container: score-grid
+
+   .. grid-item-card::
+      :class-card: card-ml2
+
+      Contributor Training
+      ^^^^^^^^^^^^^^^^^^^^
+      Build, review, fix and rebase in a module made from the S-CORE module template, with tracks
+      for the quality, safety and security roles. Self-organised, without a tutor; the solutions
+      are open. Ends with a certificate of completion, which is no Eclipse Foundation
+      certification. Further tracks are planned.
+
+      | **Duration:** about five working days
+      | **Stages:** 7 (environment to formal review)
+      | **Tracks:** quality · safety · security
+
+      .. raw:: html
+
+         <a href="https://github.com/eclipse-score/contributor_training"
+            class="sd-btn sd-btn-primary sd-text-wrap"
+            style="margin-top:12px;display:inline-block;">
+           Open Training Repository →
+         </a>
+
+Training Portals
+----------------
+
 .. caution::
    THE CONTENT IS CREATED BY AI AND MAY CONTAIN ERRORS.
    THE CONTENT PURPOSE IS ONLY PROVIDED FOR VISUALIZATION AND DEMONSTRATION OF THE TRAINING PORTAL.
@@ -40,7 +78,7 @@ standalone HTML site with progress tracking and embedded quizzes.
    Progress is saved locally in your browser — no server or login required.
 
 Available Trainings (VISUALIZATION AND DEMONSTRATION PURPOSE ONLY)
-------------------------------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. grid:: 1 1 2 2
    :class-container: score-grid
@@ -66,7 +104,7 @@ Available Trainings (VISUALIZATION AND DEMONSTRATION PURPOSE ONLY)
          </a>
 
 Training Source and Build
--------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Each training is maintained under
 ``process/trainings/<training_name>/source/`` as editable Markdown files and
@@ -81,7 +119,7 @@ To rebuild a specific training manually:
    python build.py
 
 Adding a new training
----------------------
+~~~~~~~~~~~~~~~~~~~~~
 
 1. Copy the template from ``process/trainings/trainings_templates/content/``
    into a new ``trainings_<area>/source/content/`` directory.
