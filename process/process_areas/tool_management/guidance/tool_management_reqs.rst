@@ -120,5 +120,21 @@ Tool Verification Report Checks
       :columns: title
       :colwidths: 30
 
+Tool Usage Checks
+'''''''''''''''''
+
+.. gd_req:: Tool Version Checks
+   :id: gd_req__tool_version_check
+   :status: valid
+   :version: 1
+   :tags: prio_2_automation, tool_management, check
+   :satisfies: wf__tool_approve_tool_verification_report[version==1]
+   :complies: std_req__iso26262__support_11441[version==1]
+
+   It shall be checked if the tool versions which are planned to be used (i.e. documented in the Tool Verification Report)
+   are matching the ones used in the project.
+
+   Note: Expectation is that the tools used are called by a build system to create the work products, so this check can be automated.
+
 .. needextend:: "c.this_doc()"
    :+tags: tool_management
