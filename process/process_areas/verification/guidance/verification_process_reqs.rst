@@ -197,7 +197,7 @@ Process Requirements
     Verifies links shall use only the allowed types for that level. The following folder structure is the default:
 
     - ``platform_integration_tests/`` (Platform): ``stkh_req``
-    - ``score/tests/`` (Feature): ``feat``, ``feat_req``, ``feat_arc_dyn``, ``feat_arc_sta``, ``mod``, ``mod_view_dyn``, ``mod_view_sta``, ``tool_req``
+    - ``score/tests/`` in the feature repository (Feature) or ``feature_integration_tests/`` in the reference integration repository : ``feat``, ``feat_req``, ``feat_arc_dyn``, ``feat_arc_sta``, ``mod``, ``mod_view_dyn``, ``mod_view_sta``, ``tool_req``
     - ``score/.*/tests/`` (Component): ``comp``, ``comp_req``, ``comp_arc_dyn``, ``comp_arc_sta``, ``real_arc_int``, ``real_arc_int_op``
     - Anything else (Unit): ``comp_req``, ``feat_req`` (units have no requirements of their own, but unit tests can verify component or feature requirements)
 
@@ -205,6 +205,7 @@ Process Requirements
 
     - Platform Integration Tests shall link to at least one stakeholder requirement.
     - If Partially/FullyVerifies are set in a Feature Integration Test, these shall use one or more allowed Feature links.
+      Requirements and architecture links are equally allowed, none of them is mandatory.
     - If Partially/FullyVerifies are set in a Component Integration Test, these shall use one or more allowed Component links.
     - If Partially/FullyVerifies are set in a Unit Test, these shall use one or more allowed Unit links.
 
