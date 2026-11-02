@@ -632,7 +632,7 @@
                   
   <section id="process-requirements">
 <span id="verification-process-reqs"></span><h1>Process Requirements<a class="headerlink" href="#process-requirements" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-be15e9b5">
+<div class="need_container docutils container" id="SNCB-a50fb161">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__verification_link_tests">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -652,7 +652,7 @@
 </tr>
 <tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
 <div class="line"><span><span><div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">prio_1_automation</span><span class="needs_spacer">, </span><span class="needs_data">verification</span><span class="needs_spacer">, </span><span class="needs_data">verification</span></span></span></div>
-<div class="line"><span class="needs_version"><span class="needs_label">version: </span>2</span></div>
+<div class="line"><span class="needs_version"><span class="needs_label">version: </span>3</span></div>
 </span></span></div>
 <div class="line"><span><div class="line">contained by: <span class="contains"><span><a class="reference internal" href="../verification_workflows.html#wf__verification_comp_int_test" title="gd_req__verification_link_tests">wf__verification_comp_int_test</a>, <a class="reference internal" href="../verification_workflows.html#wf__verification_feat_int_test" title="gd_req__verification_link_tests">wf__verification_feat_int_test</a>, <a class="reference internal" href="../verification_workflows.html#wf__verification_platform_int_test" title="gd_req__verification_link_tests">wf__verification_platform_int_test</a>, <a class="reference internal" href="../verification_workflows.html#wf__verification_unit_test" title="gd_req__verification_link_tests">wf__verification_unit_test</a></span></span></div>
 <div class="line">complies: <span class="complies"><span><a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_req__iso26262__support_6432" title="gd_req__verification_link_tests">std_req__iso26262__support_6432</a></span></span></div>
@@ -676,23 +676,23 @@ comma-separated values from the applicable levels below:</p>
 <li><p>Description</p></li>
 <li><dl class="simple">
 <dt>TestType</dt><dd><ul>
-<li><p>Fault Injection (fault-injection): unit, component, feature</p></li>
-<li><p>Interface Test (interface-test): unit, component, feature</p></li>
-<li><p>Requirements-based Test (requirements-based): component, feature, platform</p></li>
-<li><p>Resource Usage Evaluation (resource-usage): feature</p></li>
+<li><p>Requirements-based Test (requirements-based): unit, component, feature, platform -&gt; for testing functional, process, tool or other non-functional requirements which are not resource-related (units have no requirements of their own, but unit tests can verify component or feature requirements)</p></li>
+<li><p>Interface Test (interface-test): unit, component, feature -&gt; for testing interfaces or interface requirements</p></li>
+<li><p>Resource Usage Evaluation (resource-usage): feature -&gt; for testing non-functional requirements on resources (e.g. execution time, memory, CPU load, communication bandwidth)</p></li>
+<li><p>Fault Injection (fault-injection): unit, component, feature -&gt; for testing the behavior of the software in case of faults or failures of external parts influencing it</p></li>
 </ul>
 </dd>
 </dl>
 </li>
 <li><dl class="simple">
 <dt>DerivationTechnique</dt><dd><ul>
-<li><p>Analysis of requirements (requirements-analysis): all levels</p></li>
-<li><p>Analysis of design (design-analysis): all levels</p></li>
-<li><p>Analysis of boundary values (boundary-values): component, feature, platform</p></li>
-<li><p>Analysis of equivalence classes (equivalence-classes): all levels</p></li>
-<li><p>Fuzzy testing (fuzz-testing): unit, component, feature</p></li>
-<li><p>Error guessing based on knowledge or experience (error-guessing): all levels</p></li>
-<li><p>Explorative testing (explorative-testing): all levels</p></li>
+<li><p>Analysis of design (design-analysis): unit, component, feature -&gt; for testing architectural and design aspects</p></li>
+<li><p>Analysis of requirements (requirements-analysis): all levels -&gt; for testing requirements (positive and negative cases)</p></li>
+<li><p>Analysis of boundary values (boundary-values): all levels -&gt; for interfaces, interface requirements or functional requirements containing values; can be combined with equivalence-classes</p></li>
+<li><p>Analysis of equivalence classes (equivalence-classes): all levels -&gt; for interfaces, interface requirements or functional requirements containing values; can be combined with boundary-values</p></li>
+<li><p>Fuzz testing (fuzz-testing): unit, component, feature -&gt; for interfaces, interface requirements or functional requirements containing values which are tested with random values</p></li>
+<li><p>Error guessing based on knowledge or experience (error-guessing): all levels -&gt; for testing known error-prone areas; applicable for all test types</p></li>
+<li><p>Explorative testing (explorative-testing): feature, platform -&gt; for exploring the system and its boundaries without predefined test cases</p></li>
 </ul>
 </dd>
 </dl>
@@ -716,7 +716,7 @@ and <a class="reference internal" href="verification_specification.html#gd_guidl
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-95ae58f0">
+<div class="need_container docutils container" id="SNCB-24543880">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__verification_link_tests_cpp">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -766,7 +766,7 @@ attributes which are specific for each test case need to be specified within the
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-b7b8e701">
+<div class="need_container docutils container" id="SNCB-fedd07e4">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__verification_link_tests_python">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -823,7 +823,7 @@ Further more, this decorator will also check if your test has a <cite>docstring<
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-8023beab">
+<div class="need_container docutils container" id="SNCB-5f0eb83f">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__verification_link_tests_rust">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -871,7 +871,7 @@ Further more, this decorator will also check if your test has a <cite>docstring<
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-4cb67ac6">
+<div class="need_container docutils container" id="SNCB-860474cf">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__verification_methods_multiple">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -916,7 +916,7 @@ Further more, this decorator will also check if your test has a <cite>docstring<
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-328fac6b">
+<div class="need_container docutils container" id="SNCB-e3d7d5a1">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__verification_independence">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -962,7 +962,7 @@ Further more, this decorator will also check if your test has a <cite>docstring<
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-b92747c6">
+<div class="need_container docutils container" id="SNCB-13659042">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__verification_reporting">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1010,7 +1010,7 @@ The execution results of test cases are marked with a clear pass/fail result.</p
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-f1f65a25">
+<div class="need_container docutils container" id="SNCB-bf680c6e">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__verification_report_archiving">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1055,7 +1055,7 @@ The reports are generated according to <a class="reference internal" href="#gd_r
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-c86f2a3b">
+<div class="need_container docutils container" id="SNCB-dc855bd7">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__verification_checks">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1088,12 +1088,14 @@ The reports are generated according to <a class="reference internal" href="#gd_r
 <li><p>TestType and DerivationTechnique shall be set</p></li>
 <li><p>Description shall not be empty</p></li>
 </ul>
-<p>The test level is determined by the test’s folder path. Verifies links shall use only the allowed types for that level:</p>
+<p>The test level is determined by the test’s location as configured for the tooling (e.g. per repository and folder),
+so that tests of one level can reside in different repositories (e.g. feature repository or reference integration).
+Verifies links shall use only the allowed types for that level. The following folder structure is the default:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">platform_integration_tests/</span></code> (Platform): <code class="docutils literal notranslate"><span class="pre">stkh_req</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">score/tests/</span></code> (Feature): <code class="docutils literal notranslate"><span class="pre">feat</span></code>, <code class="docutils literal notranslate"><span class="pre">feat_req</span></code>, <code class="docutils literal notranslate"><span class="pre">feat_arc_dyn</span></code>, <code class="docutils literal notranslate"><span class="pre">feat_arc_sta</span></code>, <code class="docutils literal notranslate"><span class="pre">mod</span></code>, <code class="docutils literal notranslate"><span class="pre">mod_view_dyn</span></code>, <code class="docutils literal notranslate"><span class="pre">mod_view_sta</span></code>, <code class="docutils literal notranslate"><span class="pre">tool_req</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">score/.*/tests/</span></code> (Component): <code class="docutils literal notranslate"><span class="pre">comp</span></code>, <code class="docutils literal notranslate"><span class="pre">comp_req</span></code>, <code class="docutils literal notranslate"><span class="pre">comp_arc_dyn</span></code>, <code class="docutils literal notranslate"><span class="pre">comp_arc_sta</span></code>, <code class="docutils literal notranslate"><span class="pre">real_arc_int</span></code>, <code class="docutils literal notranslate"><span class="pre">real_arc_int_op</span></code></p></li>
-<li><p>Anything else (Unit): <code class="docutils literal notranslate"><span class="pre">comp_req</span></code>, <code class="docutils literal notranslate"><span class="pre">feat_req</span></code></p></li>
+<li><p>Anything else (Unit): <code class="docutils literal notranslate"><span class="pre">comp_req</span></code>, <code class="docutils literal notranslate"><span class="pre">feat_req</span></code> (units have no requirements of their own, but unit tests can verify component or feature requirements)</p></li>
 </ul>
 <p>The minimum link coverage shall also be enforced:</p>
 <ul class="simple">
@@ -1118,7 +1120,7 @@ The reports are generated according to <a class="reference internal" href="#gd_r
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-19a08e6a">
+<div class="need_container docutils container" id="SNCB-ec73b2f1">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__verification_checks_extended">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1167,7 +1169,7 @@ The reports are generated according to <a class="reference internal" href="#gd_r
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-45e1be9b">
+<div class="need_container docutils container" id="SNCB-7c8d6e1c">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__verification_external_aou">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1214,7 +1216,7 @@ The reports are generated according to <a class="reference internal" href="#gd_r
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-32bb3219">
+<div class="need_container docutils container" id="SNCB-4091d8ca">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__verification_sca_classification">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1267,7 +1269,7 @@ The reports are generated according to <a class="reference internal" href="#gd_r
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-5a888ade">
+<div class="need_container docutils container" id="SNCB-3ce81439">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__verification_ci_reference_execution">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
