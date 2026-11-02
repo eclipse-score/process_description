@@ -20,7 +20,7 @@ Process Requirements
 .. gd_req:: Linking Requirements to Tests
     :id: gd_req__verification_link_tests
     :status: valid
-    :version: 2
+    :version: 3
     :tags: prio_1_automation, verification
     :satisfies: wf__verification_unit_test[version==1],
                 wf__verification_comp_int_test[version==1],
@@ -37,18 +37,18 @@ Process Requirements
         * FullyVerifies
     * Description
     * TestType
-        * Fault Injection (fault-injection): unit, component, feature
-        * Interface Test (interface-test): unit, component, feature
-        * Requirements-based Test (requirements-based): component, feature, platform
-        * Resource Usage Evaluation (resource-usage): feature
+        * Requirements-based Test (requirements-based): unit, component, feature, platform -> for testing functional, process, tool or other non-functional requirements which are not resource-related (units have no requirements of their own, but unit tests can verify component or feature requirements)
+        * Interface Test (interface-test): unit, component, feature -> for testing interfaces or interface requirements
+        * Resource Usage Evaluation (resource-usage): feature -> for testing non-functional requirements on resources (e.g. execution time, memory, CPU load, communication bandwidth)
+        * Fault Injection (fault-injection): unit, component, feature -> for testing the behavior of the software in case of faults or failures of external parts influencing it
     * DerivationTechnique
-        * Analysis of requirements (requirements-analysis): all levels
-        * Analysis of design (design-analysis): all levels
-        * Analysis of boundary values (boundary-values): component, feature, platform
-        * Analysis of equivalence classes (equivalence-classes): all levels
-        * Fuzzy testing (fuzz-testing): unit, component, feature
-        * Error guessing based on knowledge or experience (error-guessing): all levels
-        * Explorative testing (explorative-testing): all levels
+        * Analysis of design (design-analysis): unit, component, feature -> for testing architectural and design aspects
+        * Analysis of requirements (requirements-analysis): all levels -> for testing requirements (positive and negative cases)
+        * Analysis of boundary values (boundary-values): all levels -> for interfaces, interface requirements or functional requirements containing values; can be combined with equivalence-classes
+        * Analysis of equivalence classes (equivalence-classes): all levels -> for interfaces, interface requirements or functional requirements containing values; can be combined with boundary-values
+        * Fuzz testing (fuzz-testing): unit, component, feature -> for interfaces, interface requirements or functional requirements containing values which are tested with random values
+        * Error guessing based on knowledge or experience (error-guessing): all levels -> for testing known error-prone areas; applicable for all test types
+        * Explorative testing (explorative-testing): feature, platform -> for exploring the system and its boundaries without predefined test cases
 
     More information can be found in the :need:`gd_guidl__verification_guide`, :need:`doc_concept__verification_process`,
     and :need:`gd_guidl__verification_specification` .
@@ -192,12 +192,14 @@ Process Requirements
     - TestType and DerivationTechnique shall be set
     - Description shall not be empty
 
-    The test level is determined by the test's folder path. Verifies links shall use only the allowed types for that level:
+    The test level is determined by the test's location as configured for the tooling (e.g. per repository and folder),
+    so that tests of one level can reside in different repositories (e.g. feature repository or reference integration).
+    Verifies links shall use only the allowed types for that level. The following folder structure is the default:
 
     - ``platform_integration_tests/`` (Platform): ``stkh_req``
     - ``score/tests/`` (Feature): ``feat``, ``feat_req``, ``feat_arc_dyn``, ``feat_arc_sta``, ``mod``, ``mod_view_dyn``, ``mod_view_sta``, ``tool_req``
     - ``score/.*/tests/`` (Component): ``comp``, ``comp_req``, ``comp_arc_dyn``, ``comp_arc_sta``, ``real_arc_int``, ``real_arc_int_op``
-    - Anything else (Unit): ``comp_req``, ``feat_req``
+    - Anything else (Unit): ``comp_req``, ``feat_req`` (units have no requirements of their own, but unit tests can verify component or feature requirements)
 
     The minimum link coverage shall also be enforced:
 

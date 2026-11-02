@@ -117,7 +117,7 @@ The derivation of test cases can also be based on certain methods.
  * Analysis of requirements (requirements-analysis)
  * Analysis of design (design-analysis)
  * Error guessing based on knowledge or experience (error-guessing)
- * Fuzzy testing (fuzz-testing)
+ * Fuzz testing (fuzz-testing)
  * Explorative testing (explorative-testing)
 
 Usually the defined methods are not applied on each verification level between unit and platform level.
@@ -126,7 +126,7 @@ The rigor is described in the implementation of :need:`wp__verification_plan`.
 
 Automated test cases (as well as manual, where applicable) shall contain further information about which methods have been applied.
 The corresponding guidance is given here: :need:`gd_guidl__verification_guide`.
-For Sphinx-Needs test metadata, use only the identifiers and test levels listed in
+For test metadata, use only the identifiers and test levels listed in
 :need:`gd_req__verification_link_tests`. Other verification methods described here remain applicable, but their
 identifiers are not supported as *TestType* or *DerivationTechnique* values.
 

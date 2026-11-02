@@ -64,7 +64,6 @@ A test specification contains the following attributes.
 
        - requirements-based
        - interface-test
-       - coverage (various types apply, shall be tool supported)
      - These are example values and an incomplete list.
        A full list of test types is available in :need:`doc_concept__verification_process` at
        :ref:`verification_concept_types_methods`.
