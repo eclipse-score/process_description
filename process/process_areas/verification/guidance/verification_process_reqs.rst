@@ -20,7 +20,7 @@ Process Requirements
 .. gd_req:: Linking Requirements to Tests
     :id: gd_req__verification_link_tests
     :status: valid
-    :version: 3
+    :version: 2
     :tags: prio_1_automation, verification
     :satisfies: wf__verification_unit_test[version==1],
                 wf__verification_comp_int_test[version==1],
