@@ -32,7 +32,7 @@ Multiple values are always possible for both and should be combined where it mak
 The test types ``requirements-based``, ``interface-test``, ``fault-injection`` and ``resource-usage`` and the
 derivation techniques ``requirements-analysis``, ``equivalence-classes``, ``boundary-values`` and ``error-guessing``
 correspond to the methods of ISO 26262-6 (software unit and software integration verification).
-``design-analysis``, ``fuzz-testing`` and ``explorative-testing`` are additional S-CORE techniques.
+``design-analysis``, ``fuzz-testing`` and ``explorative-testing`` are further techniques.
 
 .. list-table:: Test Type
    :header-rows: 1
