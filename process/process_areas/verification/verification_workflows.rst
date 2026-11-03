@@ -29,7 +29,7 @@ For a detailed explanation of workflows and their role within the process model,
    :supported_by: rl__safety_manager[version==1]
    :input: wp__sw_implementation[version==1], wp__verification_plan[version==1]
    :output: wp__verification_sw_unit_test[version==1]
-   :contains: gd_req__verification_link_tests[version==3],
+   :contains: gd_req__verification_link_tests[version==2],
               gd_req__verification_link_tests_cpp[version==1],
               gd_req__verification_link_tests_python[version==1],
               gd_req__verification_link_tests_rust[version==1],
