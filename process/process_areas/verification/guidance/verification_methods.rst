@@ -20,6 +20,74 @@ Verification methods and derivation techniques
 This guide helps to get an understanding what the different methods and derivation techniques mean
 and how to create test cases using the same.
 
+.. _verification_quick_guide:
+
+Quick Guide: What to use when
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Each test case needs at least one ``TestType`` and one ``DerivationTechnique``
+(see :need:`gd_req__verification_link_tests`).
+Multiple values are always possible for both and should be combined where it makes sense.
+
+The test types ``requirements-based``, ``interface-test``, ``fault-injection`` and ``resource-usage`` and the
+derivation techniques ``requirements-analysis``, ``equivalence-classes``, ``boundary-values`` and ``error-guessing``
+correspond to the methods of ISO 26262-6 (software unit and software integration verification).
+``design-analysis``, ``fuzz-testing`` and ``explorative-testing`` are further techniques.
+
+.. list-table:: Test Type
+   :header-rows: 1
+   :widths: 25 20 55
+
+   * - TestType
+     - Recommended levels
+     - Use when
+   * - ``requirements-based``
+     - all
+     - A functional, process, tool or other non-functional requirement (not resource-related) is tested.
+       Units have no requirements of their own, but unit tests can verify component or feature requirements.
+   * - ``interface-test``
+     - unit, component, feature
+     - An interface or interface requirement is tested.
+   * - ``resource-usage``
+     - feature
+     - A non-functional requirement on resources (e.g. execution time, memory, CPU load,
+       communication bandwidth) is tested.
+   * - ``fault-injection``
+     - unit, component, feature
+     - The behavior of the software in case of faults or failures of external parts influencing it is tested.
+
+.. list-table:: Derivation Technique
+   :header-rows: 1
+   :widths: 25 20 55
+
+   * - DerivationTechnique
+     - Recommended levels
+     - Use when
+   * - ``requirements-analysis``
+     - all
+     - Testing requirements (positive and negative cases).
+   * - ``design-analysis``
+     - unit, component, feature
+     - Testing architectural and design aspects.
+   * - ``boundary-values``
+     - all
+     - Interfaces, interface requirements or functional requirements contain values.
+       Can be combined with ``equivalence-classes``.
+   * - ``equivalence-classes``
+     - all
+     - Interfaces, interface requirements or functional requirements contain values.
+       Can be combined with ``boundary-values``.
+   * - ``fuzz-testing``
+     - unit, component, feature
+     - Interfaces, interface requirements or functional requirements contain values
+       which are tested with random values.
+   * - ``error-guessing``
+     - all
+     - Known error-prone areas shall be tested, based on knowledge or experience. Fits all test types.
+   * - ``explorative-testing``
+     - feature, platform
+     - The system and its boundaries are explored without predefined test cases.
+
 Methods
 ^^^^^^^
 
@@ -178,10 +246,10 @@ Derivation Techniques
    * :ref:`Requirements analysis <ver_req_anal>`
    * :ref:`Boundary Values <ver_boundary>`
    * :ref:`Equivalence Classes <ver_equivalence>`
-   * :ref:`Fuzzy Testing <ver_fuzzy>`
+   * :ref:`Fuzz Testing <ver_fuzzy>`
 
    Note: More than one derivation technique can be used in a single test case.
-   
+
 .. _ver_req_anal:
 
 Requirements analysis
@@ -199,7 +267,7 @@ be also considered: i.e. testing what happens when input x = C (if not already s
 in other requirements).
 
 Note that requirement-based derived test case may also include other techniques and derivation methods
-mentioned here, such as Boundary Values, Equivalence Classes, Fuzzy Testing, Interface
+mentioned here, such as Boundary Values, Equivalence Classes, Fuzz Testing, Interface
 Testing and Fault Injection.
 
 .. _ver_boundary:
@@ -380,40 +448,40 @@ as well as during audits and assessments.
 
 .. _ver_fuzzy:
 
-Fuzzy Testing
-"""""""""""""
+Fuzz Testing
+""""""""""""
 
-Fuzzy Testing, often called Fuzz Testing, is a software testing technique that involves providing
+Fuzz Testing is a software testing technique that involves providing
 invalid, unexpected, or random data as inputs to a component or system to detect defects. The goal
-of fuzzy testing is to expose unhandled exceptions, memory leaks, assertion failures, and other
+of fuzz testing is to expose unhandled exceptions, memory leaks, assertion failures, and other
 critical issues by generating semi-random inputs and observing the system's behaviour.
 
 The following perspectives are included in ``fuzz-testing``:
 
    **Detect Security Vulnerabilities**
 
-   By feeding malformed or unexpected inputs, fuzzy testing can reveal security vulnerabilities
+   By feeding malformed or unexpected inputs, fuzz testing can reveal security vulnerabilities
    like buffer overflows, SQL injections, and other input validation issues.
 
    **Uncover Edge Cases**
 
-   Fuzzy testing can discover edge cases that might not be covered by traditional testing methods,
+   Fuzz testing can discover edge cases that might not be covered by traditional testing methods,
    as it generates inputs that developers might not have anticipated.
 
    **Automate Input Generation**
 
-   Instead of manually creating test inputs, fuzzy testing automates the process, allowing for a
+   Instead of manually creating test inputs, fuzz testing automates the process, allowing for a
    much larger number of test cases to be executed.
 
    **Improve Robustness**
 
-   By exposing the system to a wide variety of inputs, fuzzy testing helps ensure that the
+   By exposing the system to a wide variety of inputs, fuzz testing helps ensure that the
    software can handle unexpected situations gracefully.
 
-How to perform fuzzy testing:
+How to perform fuzz testing:
 
    **1. Identify Target Functions** Determine which functions or interfaces are suitable for
-   fuzzy testing, focusing on those that process external inputs.
+   fuzz testing, focusing on those that process external inputs.
 
    **2. Define Input Structure** Understand the basic structure or format of valid inputs to
    create effective fuzzers that can produce semi-valid inputs.

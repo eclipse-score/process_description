@@ -32,6 +32,12 @@ Verification Templates
    The sections below are seen as typical ways when writing tests and their specification.
    Their usage differs based on the selected testing framework and the implementation language of the component(s).
 
+   Allowed values for *TestType* and *DerivationTechnique* and a short guide when to use which are available in the
+   :ref:`verification_quick_guide`. Multiple values can be given for both.
+
+   The Ids used in *PartiallyVerifies* and *FullyVerifies* are the Ids of component, feature or stakeholder requirements or architectural element,
+   depending on the test level (see :need:`gd_req__verification_checks`).
+
 C++
 ---
 
