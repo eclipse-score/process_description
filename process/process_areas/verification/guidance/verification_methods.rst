@@ -42,7 +42,7 @@ correspond to the methods of ISO 26262-6 (software unit and software integration
      - Applicable levels
      - Use when
    * - ``requirements-based``
-     - unit, component, feature, platform
+     - all
      - A functional, process, tool or other non-functional requirement (not resource-related) is tested.
        Units have no requirements of their own, but unit tests can verify component or feature requirements.
    * - ``interface-test``
