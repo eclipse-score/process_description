@@ -34,6 +34,21 @@ Test Specification Guideline
 Test specification
 ------------------
 
+A test specification defines a unique test case in a structured format.
+Its properties identify the applicable test type, verification level, implementation conditions, and the requirements or architectural elements to which the test case is traced.
+
+A test case may be executed multiple times for different platform variants, platform versions, programming languages, environments, or configurations.
+These execution-specific conditions are defined by the applicable test scenario, while the unique test case ID remains unchanged.
+This allows the same test case to be reused across different executions while maintaining consistent traceability to the elements it verifies.
+
+Each test execution produces a specific result for the selected test scenario and version of the software under test.
+Module and platform verification reports therefore summarize the results of specific execution runs,
+whereas the unique test case ID provides traceability between the test specification and its results across different runs, variants, and versions.
+
+The test specification shall contain sufficient information to understand and reproduce the intended test.
+This includes the test objective, required inputs and their relevant ranges, expected results, test environment
+(e.g. target hardware or simulation and operating system), and, where applicable, expected timing, sequencing, and performance behavior.
+
 A test specification contains the following attributes.
 
 .. list-table:: Test specification properties
@@ -93,6 +108,11 @@ Any specification and resulting implementation ends with a clear pass/fail resul
 
 Test description
 ----------------
+
+The test description shall contain sufficient information to understand and reproduce the intended test.
+It also requires sufficient detail to understand how the linked upstream requirement or architectural element is verified.
+Examples of this are the test objective, required inputs and their relevant ranges, expected results, test environment
+(e.g. target hardware or simulation and operating system), and, where applicable, expected timing, sequencing, and performance behavior.
 
 Following Given-When-Then is a preferred way to write test specifications.
 
