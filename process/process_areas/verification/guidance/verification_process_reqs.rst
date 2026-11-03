@@ -205,7 +205,7 @@ Process Requirements
 
     - Platform Integration Tests shall link to at least one stakeholder requirement.
     - If Partially/FullyVerifies are set in a Feature Integration Test, these shall use one or more allowed Feature links.
-      Requirements and architecture links are equally allowed, none of them is mandatory.
+      At least one link is required; requirements and architecture links are equally allowed, and either or both may be used.
     - If Partially/FullyVerifies are set in a Component Integration Test, these shall use one or more allowed Component links.
     - If Partially/FullyVerifies are set in a Unit Test, these shall use one or more allowed Unit links.
 

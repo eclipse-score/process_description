@@ -39,7 +39,7 @@ correspond to the methods of ISO 26262-6 (software unit and software integration
    :widths: 25 20 55
 
    * - TestType
-     - Applicable levels
+     - Recommended levels
      - Use when
    * - ``requirements-based``
      - all
@@ -61,7 +61,7 @@ correspond to the methods of ISO 26262-6 (software unit and software integration
    :widths: 25 20 55
 
    * - DerivationTechnique
-     - Applicable levels
+     - Recommended levels
      - Use when
    * - ``requirements-analysis``
      - all
