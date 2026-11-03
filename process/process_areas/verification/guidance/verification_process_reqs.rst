@@ -37,18 +37,18 @@ Process Requirements
         * FullyVerifies
     * Description
     * TestType
-        * Requirements-based Test (requirements-based): unit, component, feature, platform -> for testing functional, process, tool or other non-functional requirements which are not resource-related (units have no requirements of their own, but unit tests can verify component or feature requirements)
-        * Interface Test (interface-test): unit, component, feature -> for testing interfaces or interface requirements
-        * Resource Usage Evaluation (resource-usage): feature -> for testing non-functional requirements on resources (e.g. execution time, memory, CPU load, communication bandwidth)
-        * Fault Injection (fault-injection): unit, component, feature -> for testing the behavior of the software in case of faults or failures of external parts influencing it
+        * Requirements-based Test (requirements-based): unit, component, feature, platform
+        * Interface Test (interface-test): unit, component, feature
+        * Resource Usage Evaluation (resource-usage): feature
+        * Fault Injection (fault-injection): unit, component, feature
     * DerivationTechnique
-        * Analysis of design (design-analysis): unit, component, feature -> for testing architectural and design aspects
-        * Analysis of requirements (requirements-analysis): all levels -> for testing requirements (positive and negative cases)
-        * Analysis of boundary values (boundary-values): all levels -> for interfaces, interface requirements or functional requirements containing values; can be combined with equivalence-classes
-        * Analysis of equivalence classes (equivalence-classes): all levels -> for interfaces, interface requirements or functional requirements containing values; can be combined with boundary-values
-        * Fuzz testing (fuzz-testing): unit, component, feature -> for interfaces, interface requirements or functional requirements containing values which are tested with random values
-        * Error guessing based on knowledge or experience (error-guessing): all levels -> for testing known error-prone areas; applicable for all test types
-        * Explorative testing (explorative-testing): feature, platform -> for exploring the system and its boundaries without predefined test cases
+        * Analysis of design (design-analysis): unit, component, feature
+        * Analysis of requirements (requirements-analysis): all levels
+        * Analysis of boundary values (boundary-values): all levels
+        * Analysis of equivalence classes (equivalence-classes): all levels
+        * Fuzz testing (fuzz-testing): unit, component, feature
+        * Error guessing based on knowledge or experience (error-guessing): all levels
+        * Explorative testing (explorative-testing): feature, platform
 
     More information can be found in the :need:`gd_guidl__verification_guide`, :need:`doc_concept__verification_process`,
     and :need:`gd_guidl__verification_specification` .
