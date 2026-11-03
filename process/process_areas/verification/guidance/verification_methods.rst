@@ -486,7 +486,7 @@ How to perform fuzz testing:
    **2. Define Input Structure** Understand the basic structure or format of valid inputs to
    create effective fuzzers that can produce semi-valid inputs.
 
-   **3. Generate Fuzz Inputs** Create inputs that are slightly malformed or unexpected, either
+   **3. Generate Fuzzy Inputs** Create inputs that are slightly malformed or unexpected, either
    through complete randomization or by mutating valid inputs.
 
    **4. Monitor System behaviour** Execute the system with fuzz inputs and monitor for crashes,
