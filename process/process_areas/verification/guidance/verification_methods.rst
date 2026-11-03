@@ -489,7 +489,7 @@ How to perform fuzz testing:
    **3. Generate Fuzzy Inputs** Create inputs that are slightly malformed or unexpected, either
    through complete randomization or by mutating valid inputs.
 
-   **4. Monitor System behaviour** Execute the system with fuzz inputs and monitor for crashes,
+   **4. Monitor System behaviour** Execute the system with fuzzy inputs and monitor for crashes,
    hangs, memory leaks, or other unexpected behaviours.
 
    **5. Analyze and Fix Issues** When a problem is detected, analyze the input that caused it
