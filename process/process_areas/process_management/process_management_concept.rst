@@ -22,7 +22,7 @@ Concept Description
    :tags: process_management
 
 In this section concepts for the Process Management are discussed. Inputs for these
-concepts are the requirements of ISO26262 Part-2, ISO/SAE21434 Clause 5 and ASPICE
+concepts are the requirements of ISO 26262 Part-2, ISO/SAE 21434 Clause 5 and ASPICE
 Requirements from PA 3.1 Process definition process attribute, additionally including
 the requirements of the different stakeholders for the Process Management process.
 
