@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<!--
+  Copyright (c) 2026 Contributors to the Eclipse Foundation
+
+  See the NOTICE file(s) distributed with this work for additional
+  information regarding copyright ownership.
+
+  This program and the accompanying materials are made available under the
+  terms of the Apache License Version 2.0 which is available at
+  https://www.apache.org/licenses/LICENSE-2.0
+
+  SPDX-License-Identifier: Apache-2.0
+
+  AI Disclosure: This file was largely AI-generated. The AI-generated
+  portions are made available under CC0-1.0 and not subject to the
+  project's license. The human contributor has reviewed and verified
+  that the code is correct.
+  SPDX-License-Identifier: CC0-1.0
+  Assisted-by: Claude Sonnet 4.6
+-->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Workflows and Work Products | S-CORE Process Training</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body data-page="module-4">
+<div id="sidebar"></div>
+<div id="main">
+
+  <!-- ── Top bar ──────────────────────────────────────────────────────── -->
+  <div id="topbar">
+    <a href="index.html">Course Overview</a>
+    
+    <span class="sep">›</span>
+    <span>Module 4: Workflows and Work Products</span>
+    
+  </div>
+
+  <div id="content">
+
+    
+    
+
+    <h1 class="module-title">Workflows and Work Products</h1>
+    <div class="module-meta">
+      <span>⏱ ~45 min</span>
+      <span>📖 Module 4 of 4</span>
+      <span>🗂 Requirements</span>
+    </div>
+
+    <h1>Workflows and Work Products</h1>
+<p>S-CORE defines six specific workflows for requirements engineering and eight
+formal work products. This module walks through each workflow, its inputs and
+outputs, its responsible parties, and how the work products satisfy the
+applicable standards. The module closes with the end-to-end traceability
+picture.</p>
+<h2>4.1 Overview of the Six Workflows</h2>
+<table>
+<thead>
+<tr>
+<th>Workflow ID</th>
+<th>Workflow name</th>
+<th>Responsible</th>
+<th>Approved by</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>wf__req_stkh_req</code></td>
+<td>Create/Maintain Stakeholder Requirements and SW-Platform AoU</td>
+<td>Contributor <code>rl__contributor</code></td>
+<td>Project Lead <code>rl__project_lead</code></td>
+</tr>
+<tr>
+<td><code>wf__req_feat_req</code></td>
+<td>Create/Maintain Feature Requirements</td>
+<td>Contributor <code>rl__contributor</code></td>
+<td>Project Lead <code>rl__project_lead</code></td>
+</tr>
+<tr>
+<td><code>wf__req_feat_aou</code></td>
+<td>Create/Maintain Feature AoUs</td>
+<td>Contributor <code>rl__contributor</code></td>
+<td>Project Lead <code>rl__project_lead</code></td>
+</tr>
+<tr>
+<td><code>wf__req_comp_req</code></td>
+<td>Create/Maintain Component Requirements</td>
+<td>Contributor <code>rl__contributor</code></td>
+<td>Committer <code>rl__committer</code></td>
+</tr>
+<tr>
+<td><code>wf__req_comp_aou</code></td>
+<td>Create/Maintain Component AoUs</td>
+<td>Contributor <code>rl__contributor</code></td>
+<td>Committer <code>rl__committer</code></td>
+</tr>
+<tr>
+<td><code>wf__req_tool</code></td>
+<td>Create/Maintain Tool/Process Requirements</td>
+<td>Contributor <code>rl__contributor</code></td>
+<td>Committer <code>rl__committer</code></td>
+</tr>
+<tr>
+<td><code>wf__monitor_verify_requirements</code></td>
+<td>Monitor/Verify Requirements</td>
+<td>Committer <code>rl__committer</code></td>
+<td>Committer <code>rl__committer</code></td>
+</tr>
+</tbody>
+</table>
+<p>All six creation workflows can be initiated as part of a <strong>Change Request</strong> —
+the Change Management process is the single entry point for all content changes
+in S-CORE.</p>
+<p>The <strong>Monitor/Verify Requirements</strong> workflow (<code>wf__monitor_verify_requirements</code>)
+is responsible for inspecting the full requirements set. Unlike the creation
+workflows it is owned by the Committer, who checks all requirement levels and
+safety manuals against the inspection checklist (<code>gd_chklst__req_inspection</code>).
+Its output is either an updated issue tracker entry or a completed Requirements
+Inspection work product.</p>
+<p>Safety Managers (<code>rl__safety_manager</code>) are <em>supported_by</em> in the three stakeholder/feature workflows;
+both Safety and Security Managers (<code>rl__security_manager</code>) are <em>supported_by</em> in the two AoU workflows
+at feature and component level.</p>
+<h2>4.2 Workflow: Stakeholder Requirements and SW-Platform AoU</h2>
+<p><strong>Purpose:</strong> Establish the top-level specification of what the platform must
+contain. This workflow produces the assumed Technical Safety Requirements for
+the SEooC.</p>
+<p><strong>Inputs:</strong> <code>wp__policies</code>, <code>wp__issue_track_system</code></p>
+<p><strong>Outputs:</strong> <code>wp__requirements_stkh</code>, <code>wp__requirements_sw_platform_aou</code></p>
+<div class="callout example">
+<div class="callout-label">Triggering this workflow</div>
+<p>A project lead opens a change request: <em>"The platform shall support OTA software
+updates for individual components."</em> A contributor writes the stakeholder
+requirement and the SW-Platform AoU (the conditions the OEM integrator must
+satisfy to use OTA safely). The project lead reviews and approves the PR.</p>
+</div>
+
+<p><strong>Key guidance templates available:</strong> <code>gd_temp__req_stkh_req</code>,
+<code>gd_temp__req_formulation</code></p>
+<h2>4.3 Workflow: Feature Requirements</h2>
+<p><strong>Purpose:</strong> Break down stakeholder requirements into feature-level
+specifications that describe integration behaviour independent of implementation.</p>
+<p><strong>Inputs:</strong> <code>wp__requirements_stkh</code>, <code>wp__issue_track_system</code></p>
+<p><strong>Output:</strong> <code>wp__requirements_feat</code></p>
+<p>Feature requirements are the primary driver of SW Architecture work. The SW
+Architect reads them to derive the feature architecture that allocates
+behaviour to components.</p>
+<h2>4.4 Workflows: AoU Requirements</h2>
+<p>Feature AoUs and Component AoUs are managed by their own workflows because
+they involve additional inputs from architecture work products and feed directly
+into the Safety Manual artefacts:</p>
+<ul>
+<li><strong>Feature AoU</strong> (<code>wf__req_feat_aou</code>):</li>
+<li>Extra input: <code>wp__feature_arch</code></li>
+<li>
+<p>Additional output: <code>wp__platform_safety_manual</code></p>
+</li>
+<li>
+<p><strong>Component AoU</strong> (<code>wf__req_comp_aou</code>):</p>
+</li>
+<li>Extra input: <code>wp__component_arch</code></li>
+<li>Additional output: <code>wp__module_safety_manual</code></li>
+</ul>
+<div class="callout important">
+<div class="callout-label">AoU and Architecture Are Coupled</div>
+<p>AoUs cannot be written without the architecture work product because AoUs
+emerge from the safety concept: once the architecture defines the isolation
+boundaries and safety mechanisms, the AoUs state what conditions must hold
+<em>outside</em> those boundaries for the safety concept to be valid.</p>
+</div>
+
+<h2>4.5 Work Products and Their Compliance Tags</h2>
+<p>Each work product carries compliance tags that map it to the specific standard
+clauses it satisfies. Understanding these tags is important for auditors and
+safety managers.</p>
+<table>
+<thead>
+<tr>
+<th>Work Product</th>
+<th>ID</th>
+<th>Compliance tags</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Stakeholder Requirements</td>
+<td><code>wp__requirements_stkh</code></td>
+<td>ISO 26262 §8/6.5.1, ISO/SAE 21434 §10.5.1</td>
+</tr>
+<tr>
+<td>Feature Requirements</td>
+<td><code>wp__requirements_feat</code></td>
+<td>ISO 26262 §8/6.5.1, ISO/SAE 21434 §10.5.1</td>
+</tr>
+<tr>
+<td>Component Requirements</td>
+<td><code>wp__requirements_comp</code></td>
+<td>ISO 26262 §8/6.5.1, ISO PAS 8926 §4.5.2.1, ISO 26262 analysis annex, ISO/SAE 21434 §10.5.1</td>
+</tr>
+<tr>
+<td>SW-Platform AoU</td>
+<td><code>wp__requirements_sw_platform_aou</code></td>
+<td>ISO 26262 §8/6.5.1, ISO/SAE 21434 §10.5.1–2</td>
+</tr>
+<tr>
+<td>Feature AoU</td>
+<td><code>wp__requirements_feat_aou</code></td>
+<td>ISO 26262 §8/6.5.1, ISO/SAE 21434 §10.5.1–2</td>
+</tr>
+<tr>
+<td>Component AoU</td>
+<td><code>wp__requirements_comp_aou</code></td>
+<td>ISO 26262 §8/6.5.1, ISO PAS 8926 §4.5.2.1, ISO/SAE 21434 §10.5.1–2</td>
+</tr>
+<tr>
+<td>Process/Tool Requirements</td>
+<td><code>wp__requirements_proc_tool</code></td>
+<td>(internal process lifecycle)</td>
+</tr>
+<tr>
+<td>Requirements Inspection</td>
+<td><code>wp__requirements_inspect</code></td>
+<td>ISO 26262 §8/6.5.3</td>
+</tr>
+</tbody>
+</table>
+<p>The <strong>Requirements Inspection</strong> work product is based on a structured checklist
+and may be integrated into requirements or version management tooling. It
+addresses the ISO 26262 requirement for formal review of SW requirements.</p>
+<h2>4.6 End-to-End Traceability</h2>
+<p>The S-CORE traceability model connects every requirement from its origin at
+stakeholder level down to the implementation artefacts and verification
+evidence:</p>
+<pre><code>Stakeholder Requirements
+      │ derived_from
+      ▼
+Feature Requirements ──────────────────────► Feature AoU
+      │ derived_from
+      ▼
+Component Requirements ────────────────────► Component AoU
+      │ implemented_by (auto)   │ verified_by (auto)
+      ▼                         ▼
+   Source code              Test cases
+</code></pre>
+<div class="callout important">
+<div class="callout-label">Traceability Is Automatically Maintained</div>
+<p>The <code>implemented_by</code> and <code>verified_by</code> links are populated automatically by the
+Docs-as-Code build. This means <strong>the traceability matrix is always regenerated
+from the real artefacts</strong> — it cannot drift from the code. Auditors can trust
+that a requirement shown as "verified by test X" genuinely corresponds to a test
+that references that requirement ID.</p>
+</div>
+
+<h2>4.7 Using the Tooling</h2>
+<p>The S-CORE Docs-as-Code tool provides:</p>
+<ol>
+<li><strong>Requirement templates</strong> — pre-formatted stubs for each requirement type that enforce the mandatory attribute set.</li>
+<li><strong>Build-time validation</strong> — attribute completeness, version link consistency, linkage rule enforcement, and safety attribute propagation checks.</li>
+<li><strong>Coverage reports</strong> — automatically generated views showing which requirements lack <code>implemented_by</code> or <code>verified_by</code> links (coverage gaps).</li>
+<li><strong>PR-based review workflow</strong> — all requirement changes go through a pull request; the Committer or Project Lead review is recorded in git history.</li>
+</ol>
+<div class="callout tip">
+<div class="callout-label">Getting Started</div>
+<p>The Requirements Engineering concept (<code>doc_concept__req_process</code>) and Getting
+Started guide (<code>doc_getstrt__req_process</code>) describe the exact steps for creating
+a new requirement, deriving child requirements, and triggering a formal inspection.
+The workflow diagram in the getting started guide maps every step to the
+corresponding workflow ID listed in Section 4.1.</p>
+</div>
+
+<div class="collapsible">
+  <div class="collapsible-header">Linking requirements to code and tests — practical steps <span class="arrow">▼</span></div>
+  <div class="collapsible-body"><ol>
+<li><strong>Find the requirement ID</strong> in the generated HTML portal or in the RST source.</li>
+<li><strong>Add the implementation tag</strong> in the source file as a structured comment:
+   <code>// [&lt;requirement_id&gt;]</code> (exact syntax depends on the Docs-as-Code version).</li>
+<li><strong>Add the verification marker</strong> in the test file using the framework-specific
+   marker (e.g., a pytest mark or a comment annotation).</li>
+<li><strong>Run the docs build</strong> (<code>bazel run //:docs</code>). The build will now populate
+   <code>implemented_by</code> and <code>verified_by</code> in the HTML output.</li>
+<li><strong>Verify coverage</strong> in the generated requirements traceability report.</li>
+</ol></div>
+</div>
+    <div class="quiz-section" id="module-4-check">
+  <h2>Module Check-In</h2>
+  <p class="quiz-intro">Answer all questions and click Submit to check your understanding.</p>
+  <div class="question-block">
+  <p class="question-text"><span class="question-num">Q1.</span> A contributor wants to create new Component Requirements. Which approval chain applies?</p>
+  <ul class="options">
+    <li data-correct="false"><span class="opt-letter">A</span> Written by Safety Manager, approved by Project Lead</li>
+    <li data-correct="true"><span class="opt-letter">B</span> Written by Contributor, approved by Committer</li>
+    <li data-correct="false"><span class="opt-letter">C</span> Written by Committer, approved by Project Lead</li>
+    <li data-correct="false"><span class="opt-letter">D</span> Written by Contributor, approved by Safety Manager</li>
+  </ul>
+  <div class="feedback">Correct: B. Component Requirements are created by any Contributor and approved by a Committer. Project Lead approval is required for Stakeholder and Feature level requirements; Committer approval is sufficient for Component level because this is an implementation-specific concern.</div>
+</div>
+<div class="question-block">
+  <p class="question-text"><span class="question-num">Q2.</span> Feature AoU requirements have an additional input compared to Feature Requirements. What is it?</p>
+  <ul class="options">
+    <li data-correct="false"><span class="opt-letter">A</span> wp__requirements_stkh (Stakeholder Requirements)</li>
+    <li data-correct="false"><span class="opt-letter">B</span> wp__requirements_comp (Component Requirements)</li>
+    <li data-correct="true"><span class="opt-letter">C</span> wp__feature_arch (Feature Architecture)</li>
+    <li data-correct="false"><span class="opt-letter">D</span> wp__issue_track_system (Issue Tracker)</li>
+  </ul>
+  <div class="feedback">Correct: C. AoUs at feature level emerge from the safety concept defined in the Feature Architecture. Without the architecture there is no basis for determining what boundary conditions must hold outside the software element.</div>
+</div>
+<div class="question-block">
+  <p class="question-text"><span class="question-num">Q3.</span> An auditor asks: 'How do you guarantee that the traceability matrix between requirements and test cases is up to date?' What is the correct S-CORE answer?</p>
+  <ul class="options">
+    <li data-correct="false"><span class="opt-letter">A</span> The traceability matrix is maintained manually by the Safety Manager and reviewed quarterly</li>
+    <li data-correct="false"><span class="opt-letter">B</span> Traceability is managed in an external ALM tool which is synced monthly</li>
+    <li data-correct="true"><span class="opt-letter">C</span> The Docs-as-Code build automatically regenerates the verified_by links from test file markers on every build, so the matrix cannot drift from the actual test artefacts</li>
+    <li data-correct="false"><span class="opt-letter">D</span> Developers are required to update the traceability spreadsheet when they add tests</li>
+  </ul>
+  <div class="feedback">Correct: C. The 'verified_by' attribute is auto-populated by scanning test files for the requirement ID marker on every build. This means the traceability matrix is always regenerated from the real artefacts — it is impossible for it to show a test link that does not exist in the codebase.</div>
+</div>
+  <button class="quiz-submit">Submit Answers</button>
+  <div class="quiz-result"></div>
+</div>
+
+    
+    
+
+    <!-- ── Page navigation ───────────────────────────────────────────── -->
+    <div class="page-nav">
+      
+      <a class="btn-nav btn-prev" href="module-3.html">← Module 3: Requirement Attributes and Quality</a>
+      
+      
+      <a class="btn-nav btn-next"
+         href="quiz-1.html"
+         >
+        Checkpoint Quiz →
+      </a>
+      
+    </div>
+
+  </div><!-- #content -->
+</div><!-- #main -->
+
+<script src="app.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  
+  initQuiz('module-4-check', 70, null);
+  
+
+  
+});
+</script>
+
+</body>
+</html>
