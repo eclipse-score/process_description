@@ -75,6 +75,8 @@ but this is not the recommended configuration.
    * Writes platform release notes
    * Approves the platform release notes
    * Adds and removes delivery containers to the platform
+   * Ensures that requirements with valid_until the released version are set to invalid
+     before the release (see :need:`gd_req__req_expiry`)
    * Releases the platform
 
 Module Release Plan
