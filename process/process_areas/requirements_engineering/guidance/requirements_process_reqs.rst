@@ -325,7 +325,24 @@ Process Requirement Linkage
    (PartiallyVerifies, FullyVerifies), links of code and references in descriptions (``:need:``).
 
    Note: The links of needs and tests are checked automatically by :need:`gd_req__req_linkage_status` and
-   :need:`gd_req__verification_link_status`. References in descriptions are checked in the review of the pull request.
+   :need:`gd_req__verification_link_status`. Links of code and references in descriptions are checked in the
+   review of the pull request.
+
+.. gd_req:: Requirement expiry
+   :id: gd_req__req_expiry
+   :status: valid
+   :version: 1
+   :tags: manual_prio_2, attribute
+   :satisfies: wf__req_stkh_req[version==1], wf__req_feat_req[version==1], wf__req_comp_req[version==1]
+   :complies: std_req__iso26262__support_6432[version==1]
+
+   A requirement whose :need:`gd_req__req_attr_valid_until` milestone has been reached shall be set to
+   status invalid. This shall be done before the release of this milestone, as the requirement is
+   not part of it (valid_until excludes the defined milestone). :need:`gd_req__req_invalidation` applies,
+   i.e. references are redirected to the successor requirement (valid_from the same milestone).
+
+   Note: The specification of the expired requirement stays available in the documentation of the
+   earlier releases.
 
 .. _process_requirement_checks:
 
@@ -473,6 +490,11 @@ Process Requirements Checks
 
    It shall be checked that valid requirements and AoUs (status == valid) are only linked to valid needs
    (status == valid) via their link attributes (e.g. derived_from, satisfies, covers).
+
+   If the linked need has a validity attribute (:need:`gd_req__req_attr_valid_from`,
+   :need:`gd_req__req_attr_valid_until`), the validity range of the linking requirement or AoU shall lie
+   within the validity range of the linked need (e.g. a requirement valid_from v2.0.0 shall not be derived
+   from a requirement valid_until v2.0.0).
 
    A finding of this check shall fail the documentation build.
 
