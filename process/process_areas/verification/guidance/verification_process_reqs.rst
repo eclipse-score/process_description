@@ -209,6 +209,25 @@ Process Requirements
     - If Partially/FullyVerifies are set in a Component Integration Test, these shall use one or more allowed Component links.
     - If Partially/FullyVerifies are set in a Unit Test, these shall use one or more allowed Unit links.
 
+.. gd_req:: Verification Link Status Check
+    :id: gd_req__verification_link_status
+    :status: valid
+    :version: 1
+    :tags: prio_2_automation, verification
+    :satisfies: wf__verification_unit_test[version==1],
+                wf__verification_comp_int_test[version==1],
+                wf__verification_feat_int_test[version==1],
+                wf__verification_platform_int_test[version==1]
+    :complies: std_req__iso26262__support_6432[version==1]
+
+    It shall be checked that tests only verify valid needs: every PartiallyVerifies and FullyVerifies link
+    shall point to a need with status == valid.
+
+    A finding of this check shall fail the documentation build.
+
+    Note: A test linked to an invalid requirement does not provide verification evidence, but would
+    otherwise be counted in the test coverage.
+
 .. gd_req:: Verification Documentation Checks Extended
     :id: gd_req__verification_checks_extended
     :status: valid
