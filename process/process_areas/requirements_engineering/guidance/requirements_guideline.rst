@@ -276,7 +276,9 @@ If an existing requirement needs to be reworked for the new function it will be 
 The requirement with the old specification will be valid_until the milestone in which the
 new function is planned (valid_until excludes this milestone) and the requirement with the new
 specification is valid_from the same milestone (valid_from includes it). So exactly one of both
-requirements is valid in each milestone.
+requirements is valid in each milestone. The old requirement keeps status valid, as it is still in
+force for the earlier releases. Once its valid_until milestone is reached, it may be deleted from the
+main branch (see :need:`gd_req__req_release_scope`).
 
 Tailoring
 =========

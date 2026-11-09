@@ -75,6 +75,8 @@ but this is not the recommended configuration.
    * Writes platform release notes
    * Approves the platform release notes
    * Adds and removes delivery containers to the platform
+   * Ensures that the release documentation only contains the requirements and AoUs in the scope
+     of the released version (see :need:`gd_req__req_release_scope`)
    * Releases the platform
 
 Module Release Plan

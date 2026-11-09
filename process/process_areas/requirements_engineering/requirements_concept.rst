@@ -173,7 +173,7 @@ Following attributes need to be filled manually for each requirement:
    * - Attribute
      - Description
    * - Status
-     - The status for a requirement can either be valid or invalid. The reasoning for this is that the goal is to only have valid requirements in the main branch. So a status *draft* is not required. It is obvious that the requirement is in the status draft as long as the PR is not merged. A requirement which is no longer in force is set to invalid; valid needs and tests shall not link to it (see :need:`gd_req__req_invalidation`).
+     - The status for a requirement can either be valid or invalid. The reasoning for this is that the goal is to only have valid requirements in the main branch. So a status *draft* is not required. It is obvious that the requirement is in the status draft as long as the PR is not merged. A requirement which is withdrawn for all releases is set to invalid; valid needs and tests shall not link to it (see :need:`gd_req__req_invalidation`). A requirement which is only replaced from a release onwards stays valid and is limited by its validity attributes (see :need:`gd_req__req_release_scope`).
    * - Unique ID
      - The unique id consist of a prefix for the requirement type followed by a keyword for the feature/component and a short keyword describing its content. It is used as a unique identifier for a requirement which can be used e.g. for linking the requirements.
    * - Title

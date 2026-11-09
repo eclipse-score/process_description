@@ -320,29 +320,36 @@ Process Requirement Linkage
    :satisfies: wf__req_stkh_req[version==1], wf__req_feat_req[version==1], wf__req_comp_req[version==1], wf__req_feat_aou[version==1], wf__req_comp_aou[version==1]
    :complies: std_req__iso26262__support_6432[version==1]
 
-   If a requirement or AoU is set to status invalid, all references to it shall be removed or redirected
-   to its successor in the same pull request. This covers links of other needs, links of tests
-   (PartiallyVerifies, FullyVerifies), links of code and references in descriptions (``:need:``).
+   If a requirement or AoU is withdrawn for all releases, it shall be set to status invalid and all
+   references to it shall be removed or redirected to its successor in the same pull request. This covers
+   links of other needs, links of tests (PartiallyVerifies, FullyVerifies), links of code and references in
+   descriptions (``:need:``).
 
    Note: The links of needs and tests are checked automatically by :need:`gd_req__req_linkage_status` and
    :need:`gd_req__verification_link_status`. Links of code and references in descriptions are checked in the
    review of the pull request.
 
-.. gd_req:: Requirement expiry
-   :id: gd_req__req_expiry
+.. gd_req:: Requirement release scope
+   :id: gd_req__req_release_scope
    :status: valid
    :version: 1
-   :tags: manual_prio_2, attribute
+   :tags: prio_3_automation, attribute
    :satisfies: wf__req_stkh_req[version==1], wf__req_feat_req[version==1], wf__req_comp_req[version==1]
    :complies: std_req__iso26262__support_6432[version==1]
 
-   A requirement whose :need:`gd_req__req_attr_valid_until` milestone has been reached shall be set to
-   status invalid. This shall be done before the release of this milestone, as the requirement is
-   not part of it (valid_until excludes the defined milestone). :need:`gd_req__req_invalidation` applies,
-   i.e. references are redirected to the successor requirement (valid_from the same milestone).
+   A requirement or AoU shall be part of a platform release vN if its status is valid and vN lies within
+   its validity range: valid_from <= vN < valid_until (see :need:`gd_req__req_attr_valid_from` and
+   :need:`gd_req__req_attr_valid_until`). A missing valid_until does not limit the range. A requirement
+   without own validity attributes inherits the range of the requirements it is derived from.
 
-   Note: The specification of the expired requirement stays available in the documentation of the
-   earlier releases.
+   The documentation, traceability, checks and verification coverage of a release shall only consider
+   the requirements and AoUs in its scope.
+
+   A requirement keeps status valid when its valid_until milestone is reached, as it is still in force
+   for earlier releases which may still be in use and maintained. From then on it may be deleted from the
+   main branch; its specification stays available in the release branches and tags of the earlier
+   releases. Status invalid is only used for requirements which are withdrawn for all releases (see
+   :need:`gd_req__req_invalidation`).
 
 .. _process_requirement_checks:
 
@@ -494,7 +501,8 @@ Process Requirements Checks
    If the linked need has a validity attribute (:need:`gd_req__req_attr_valid_from`,
    :need:`gd_req__req_attr_valid_until`), the validity range of the linking requirement or AoU shall lie
    within the validity range of the linked need (e.g. a requirement valid_from v2.0.0 shall not be derived
-   from a requirement valid_until v2.0.0).
+   from a requirement valid_until v2.0.0). So in every release the linked need is also part of the
+   release scope (see :need:`gd_req__req_release_scope`).
 
    A finding of this check shall fail the documentation build.
 
@@ -504,12 +512,26 @@ Process Requirements Checks
 .. gd_req:: Requirements validity
    :id: gd_req__req_validity
    :status: valid
-   :version: 1
+   :version: 2
    :tags: prio_3_automation, check
    :satisfies: wf__req_stkh_req[version==1], wf__req_feat_req[version==1]
 
-   Validity attributes (:need:`gd_req__req_attr_valid_from` and :need:`gd_req__req_attr_valid_until`) shall be checked for correctness (i.e. they denote an existing milestone) and consistent (e.g. the until is not before from)
-   Several of the above checks are not to be executed on requirements not valid in the next milestone, these are TBD
+   Validity attributes (:need:`gd_req__req_attr_valid_from` and :need:`gd_req__req_attr_valid_until`) shall be
+   checked for correctness (i.e. they denote an existing milestone) and consistency (e.g. the until is not
+   before from).
+
+   Requirements which are not in the scope of the next release (see :need:`gd_req__req_release_scope`), i.e.
+   future requirements with valid_from after the next milestone, shall only be checked formally:
+
+   * Always checked: attributes, IDs, link types, parent linkage and link status, e.g.
+     :need:`gd_req__req_check_mandatory`, :need:`gd_req__req_desc_weak`, :need:`gd_req__req_linkage_fulfill`,
+     :need:`gd_req__req_linkage_safety`, :need:`gd_req__req_linkage_security`,
+     :need:`gd_req__req_linkage_status` and the validity checks above.
+   * Only checked for requirements in the scope of the next release (completeness): architecture allocation
+     (:need:`gd_req__req_linkage_architecture_mandatory`, :need:`gd_req__req_linkage_architecture`,
+     :need:`gd_req__req_linkage_architecture_switch`), linked child requirements
+     (:need:`gd_req__req_link_complete`), linked tests and code (:need:`gd_req__req_suspicious`) and
+     verification coverage.
 
 Process Requirements Monitoring
 '''''''''''''''''''''''''''''''
