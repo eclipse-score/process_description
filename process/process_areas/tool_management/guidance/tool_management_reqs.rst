@@ -48,17 +48,33 @@ Tool Verification Report Attributes
       * released
       * rejected
 
+.. gd_req:: Tool attribute:: version
+   :id: gd_req__tool_attr_need_version
+   :status: valid
+   :version: 1
+   :tags: prio_1_automation, tool_management, attribute, mandatory
+   :satisfies: wf__tool_create_tool_verification_report[version==1]
+   :complies: std_req__iso26262__support_1141[version==1], std_req__aspice_40__SUP-8-BP1[version==1]
+
+   Each Tool Verification Report shall have a ``version`` attribute (positive integer, e.g. 1, 2, 3)
+   denoting the version of the Tool Verification Report itself.
+   It shall be incremented on each significant change of the report,
+   e.g. when the ``tool_version`` changes or the evaluation is updated.
+
 .. gd_req:: Tool attribute:: tool_version
    :id: gd_req__tool_attr_version
    :status: valid
-   :version: 1
+   :version: 2
    :tags: manual_prio_1, tool_management, attribute, mandatory
    :satisfies: wf__tool_create_tool_verification_report[version==1]
    :complies: std_req__iso26262__support_1141[version==1], std_req__aspice_40__SUP-8-BP1[version==1]
 
-   Each Tool Verification Report shall document the tool version it applies to:
+   Each Tool Verification Report shall document in the ``tool_version`` attribute the version
+   of the tool it applies to, as identified by the tool supplier (e.g. v1.2.3, 2024.1, commit hash).
 
-      * v.X.Y.Z (major, minor, patch)
+   .. note::
+      ``tool_version`` (version of the tool) is different from ``version``
+      (version of the Tool Verification Report, see :need:`gd_req__tool_attr_need_version`).
 
 .. gd_req:: Tool attribute:: tcl
    :id: gd_req__tool_attr_tcl

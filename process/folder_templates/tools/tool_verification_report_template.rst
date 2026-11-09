@@ -18,10 +18,10 @@ Tool Verification Report Template
 .. note:: Tool Verification Report header
 
 .. doc_tool:: [Your Tool Name]
-   :id: doc_tool__tool_name_version
+   :id: doc_tool__tool_name
    :status: draft
    :version: 1
-   :tool_version: vX.Y.Z
+   :tool_version: [version of the tool, e.g. v1.2.3]
    :tcl: LOW
    :safety_affected: YES
    :security_affected: YES
@@ -39,7 +39,11 @@ Tool Verification Report Template
 
    TCL may (LOW, HIGH)
 
-   Version may v.MAJOR.MINOR.PATCH
+   Version (``version``) is the version of this Tool Verification Report (positive integer),
+   increment it on each significant change of the report (e.g. new tool version)
+
+   Tool version (``tool_version``) is the version of the evaluated tool,
+   as identified by the tool supplier (e.g. v1.2.3, 2024.1, commit hash)
 
 .. note::
    An example of a Tool Verification Report can be found here:

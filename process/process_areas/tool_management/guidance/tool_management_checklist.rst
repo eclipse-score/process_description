@@ -54,7 +54,7 @@ Tool Verification Report Review Checklist
         -
 
       * - 2
-        - Is the tool version defined?
+        - Is the tool version (``tool_version``) defined and does it match the version used in the project?
         -
 
       * - 3
