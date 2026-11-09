@@ -633,7 +633,7 @@
                   
   <section id="concept-description">
 <h1>Concept Description<a class="headerlink" href="#concept-description" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-2ce7ae93">
+<div class="need_container docutils container" id="SNCB-fe8903e9">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_doc_concept table" id="doc_concept__req_process">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -830,7 +830,7 @@ i.e. the assumption on what content is needed, which shall be matched by the use
 </thead>
 <tbody>
 <tr class="row-even"><td><p>Status</p></td>
-<td><p>The status for a requirement can either be valid or invalid. The reasoning for this is that the goal is to only have valid requirements in the main branch. So a status <em>draft</em> is not required. It is obvious that the requirement is in the status draft as long as the PR is not merged. A requirement which is no longer in force is set to invalid; valid needs and tests shall not link to it (see <a class="reference internal" href="guidance/requirements_process_reqs.html#gd_req__req_invalidation" title="gd_req__req_invalidation"><em class="xref need">Requirement invalidation</em></a>).</p></td>
+<td><p>The status for a requirement can either be valid or invalid. The reasoning for this is that the goal is to only have valid requirements in the main branch. So a status <em>draft</em> is not required. It is obvious that the requirement is in the status draft as long as the PR is not merged. A requirement which is withdrawn for all releases is set to invalid; valid needs and tests shall not link to it (see <a class="reference internal" href="guidance/requirements_process_reqs.html#gd_req__req_invalidation" title="gd_req__req_invalidation"><em class="xref need">Requirement invalidation</em></a>). A requirement which is only replaced from a release onwards stays valid and is limited by its validity attributes (see <a class="reference internal" href="guidance/requirements_process_reqs.html#gd_req__req_release_scope" title="gd_req__req_release_scope"><em class="xref need">Requirement release scope</em></a>).</p></td>
 </tr>
 <tr class="row-odd"><td><p>Unique ID</p></td>
 <td><p>The unique id consist of a prefix for the requirement type followed by a keyword for the feature/component and a short keyword describing its content. It is used as a unique identifier for a requirement which can be used e.g. for linking the requirements.</p></td>
