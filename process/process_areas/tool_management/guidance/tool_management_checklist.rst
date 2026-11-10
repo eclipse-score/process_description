@@ -62,7 +62,7 @@ Tool Verification Report Review Checklist
         -
 
       * - 4
-        - Are the purposes of the tool (e.g. use cases) defined?
+        - Are the purposes of the tool (e.g. functions, use cases) defined in sufficient detail to derive tool requirements?
         -
 
       * - 5
