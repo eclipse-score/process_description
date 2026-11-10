@@ -136,10 +136,11 @@ Monitoring/Improving of the Process Description Implementation
 The process strategy and description implementation is monitored and improvements are
 triggered, if required.
 
-Every :need:`rl__contributor` can propose improvements using the project ISSUE Tracking
-system.
+Every :need:`rl__contributor` is encouraged to propose process improvements he found during execution of the processes,
+by using the project ISSUE Tracking system.
 
 Improvements are approved by the :need:`rl__process_community`.
+See also :ref:`pm_monitor_improve_process`.
 
 .. needextend:: "c.this_doc()"
    :+tags: process_management
