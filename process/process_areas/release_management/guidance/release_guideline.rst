@@ -21,7 +21,6 @@ Guideline
    :version: 2
    :complies: std_req__iso26262__software_1041[version==1],
               std_req__iso26262__management_6424[version==1],
-              std_req__iso26262__management_64102[version==1],
               std_req__iso26262__management_64131[version==1],
               std_req__iso26262__management_64132[version==1],
               std_req__iso26262__management_64133[version==1],

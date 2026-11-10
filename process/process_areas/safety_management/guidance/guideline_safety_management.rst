@@ -240,6 +240,11 @@ Tailoring
               std_req__iso26262__management_6454[version==1],
               std_req__iso26262__management_6456[version==1],
               std_req__iso26262__management_64610[version==1],
+              std_req__iso26262__management_64101[version==1],
+              std_req__iso26262__management_64102[version==1],
+              std_req__iso26262__management_64103[version==1],
+              std_req__iso26262__management_64104[version==1],
+              std_req__iso26262__management_64105[version==1],
               std_req__iso26262__management_64121[version==1],
               std_req__iso26262__management_64122[version==1],
               std_req__iso26262__management_64123[version==1],
@@ -262,6 +267,7 @@ Tailoring
 
    - for "support" standard requirements: The requirement is not applicable for an ASIL_B process
    - for "management" standard requirements: 6453 - not proven in use argument, 6454 - no HW part of SW platform, 6456 - no confidence in use, 64610 - no distributed development
+   - for "management" standard requirements 6410*: No confirmation reviews planned, formal documentation reviews are done as a verification of the work products content
    - for "management" standard requirements 6412*: No assessment planned, as also no finalized safety case is planned
 
 .. needextend:: "c.this_doc()"

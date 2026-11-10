@@ -21,11 +21,23 @@ Safety Analysis Checklist
    :status: valid
    :version: 1
    :tags: safety_analysis
-   :complies: std_req__iso26262__management_64101[version==1],
-              std_req__iso26262__management_64102[version==1],
-              std_req__iso26262__management_64103[version==1],
-              std_req__iso26262__management_64104[version==1],
-              std_req__iso26262__management_64105[version==1]
+   :complies: std_req__iso26262__analysis_741[version==1],
+              std_req__iso26262__analysis_742[version==1],
+              std_req__iso26262__analysis_743[version==1],
+              std_req__iso26262__analysis_744[version==1],
+              std_req__iso26262__analysis_745[version==1],
+              std_req__iso26262__analysis_746[version==1],
+              std_req__iso26262__analysis_747[version==1],
+              std_req__iso26262__analysis_748[version==1],
+              std_req__iso26262__analysis_841[version==1],
+              std_req__iso26262__analysis_842[version==1],
+              std_req__iso26262__analysis_843[version==1],
+              std_req__iso26262__analysis_844[version==1],
+              std_req__iso26262__analysis_845[version==1],
+              std_req__iso26262__analysis_846[version==1],
+              std_req__iso26262__analysis_847[version==1],
+              std_req__iso26262__analysis_849[version==1],
+              std_req__iso26262__analysis_8410[version==1]
 
 
     For the content see here:
