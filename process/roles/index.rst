@@ -67,6 +67,7 @@ Project Process Roles
    :contains: rl__committer[version==1]
 
    The process community members are responsible for the definition of the process architecture of the project integrated management system and how they processes interact.
+   They also discuss and decide on process improvements suggested by the :need:`rl__contributor` and :need:`rl__committer`.
    The approval and release of the process is done by the safety, quality and security managers and the project leads (for the parts which affect them).
 
 Project Development Roles

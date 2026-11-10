@@ -137,9 +137,14 @@ If potential improvements are detected, the :need:`[[title]] <rl__contributor>` 
 an ISSUE for improvement by using the
 `Issue Template Improvement <https://github.com/eclipse-score/.github/blob/main/.github/ISSUE_TEMPLATE/4_Task.yml>`_.
 
-The potential improvement is discussed during the public Process Community Meetings
+The potential improvement is discussed during the regular public Process Community Meetings
 and if decided to implement, a pull request to follow :ref:`pm_create_maintain_strategy`
-or :ref:`pm_define_approve_process_description` must be created.
+or :ref:`pm_define_approve_process_description` must be created. See for example for the S-CORE project:
+`Process Community Meeting Minutes <https://github.com/orgs/eclipse-score/discussions/categories/sw-dev-process-community>`_
+
+To encourage suggestions on process improvements "lessons-learned" meetings should be planned.
+See for example for the S-CORE project:
+`Issue for "lessons-learned" <https://github.com/eclipse-score/process_description/issues/522>`_
 
 
 Tailoring
