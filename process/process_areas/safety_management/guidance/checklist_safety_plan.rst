@@ -31,14 +31,12 @@ Safety Plan Formal Review Checklist
               std_req__iso26262__management_6467[version==1],
               std_req__iso26262__management_6468[version==1],
               std_req__iso26262__management_6491[version==1],
-              std_req__iso26262__management_64101[version==1],
-              std_req__iso26262__management_64102[version==1],
-              std_req__iso26262__management_64103[version==1],
-              std_req__iso26262__management_64104[version==1],
-              std_req__iso26262__management_64105[version==1],
               std_req__iso26262__management_64111[version==1]
 
-   For the content see here: `Safety Plan Formal Review Checklist <https://eclipse-score.github.io/module_template/main/module/safety_mgt/module_safety_plan_fdr.html>`__
+   For the content see here:
+
+    - :need:`doc__platform_safety_plan_fdr` (platform)
+    - `Safety Plan Formal Review Checklist <https://eclipse-score.github.io/module_template/main/module/safety_mgt/module_safety_plan_fdr.html>`__ (module)
 
 .. needextend:: "c.this_doc()"
    :+tags: safety_management

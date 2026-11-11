@@ -44,29 +44,36 @@ As described in :need:`wf__p_formal_rv`, the formal document review is performed
         * - Id
           - Safety package activity
           - Compliant to ISO 26262?
+          - Reference
           - Comment
 
         * - 1
           - Is a safety package provided which matches the safety plan (i.e. all planned work products referenced)?
           - [YES | NO ]
+          - :need:`[[title]] <std_req__iso26262__management_6481>`
           - <Rationale for result>
 
         * - 2
           - Is the argument how functional safety is achieved, provided in the safety package, plausible and sufficient?
           - NO
+          - :need:`[[title]] <std_req__iso26262__management_6481>`
           - The argument is intentionally not provided by the project.
 
         * - 3
           - Are the referenced work products available?
           - [YES | NO ]
+          - :need:`[[title]] <std_req__iso26262__management_6482>`
           - <Rationale for result>
 
         * - 4
           - Are the referenced work products in released state, including the process safety audit?
           - [YES | NO ]
+          - :need:`[[title]] <std_req__iso26262__management_6482>`
+            :need:`[[title]] <std_req__iso26262__management_6469>`
           - <Rationale for result>
 
         * - 5
           - If safety related deviations from the process or safety concept are documented, are these argued understandably?
           - [YES | NO ]
+          - :need:`[[title]] <std_req__iso26262__management_6481>`
           - <Rationale for result>
