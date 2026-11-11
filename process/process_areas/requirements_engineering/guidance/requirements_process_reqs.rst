@@ -217,7 +217,7 @@ Process Requirement Attributes
 
    Milestone shall be a valid platform release version tag, e.g. v1.0.2 as defined in
    Platform Release planning.
-   The corresponding requirement is only valid until the defined milestone, excluding it.
+   The corresponding requirement is valid up to, but not including, the defined milestone..
 
 .. _process_requirement_linkage:
 
