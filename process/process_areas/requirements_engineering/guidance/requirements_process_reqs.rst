@@ -495,19 +495,20 @@ Process Requirements Checks
    :satisfies: wf__req_stkh_req[version==1], wf__req_feat_req[version==1], wf__req_comp_req[version==1], wf__req_feat_aou[version==1], wf__req_comp_aou[version==1]
    :complies: std_req__iso26262__support_6432[version==1]
 
-   It shall be checked that valid requirements and AoUs (status == valid) are only linked to valid needs
-   (status == valid) via their link attributes (e.g. derived_from, satisfies, covers).
+   It shall be checked that every link attribute (e.g. derived_from, satisfies, covers) of a valid
+   requirement or AoU (status == valid) contains at least one valid need (status == valid).
 
-   If the linked need has a validity attribute (:need:`gd_req__req_attr_valid_from`,
+   If the linked needs have validity attributes (:need:`gd_req__req_attr_valid_from`,
    :need:`gd_req__req_attr_valid_until`), the validity range of the linking requirement or AoU shall lie
-   within the validity range of the linked need (e.g. a requirement valid_from v2.0.0 shall not be derived
-   from a requirement valid_until v2.0.0). So in every release the linked need is also part of the
-   release scope (see :need:`gd_req__req_release_scope`).
+   within the validity range of at least one valid linked need per link attribute (e.g. a requirement
+   valid_from v2.0.0 shall not be derived only from a requirement valid_until v2.0.0). So in every release
+   a linked need is also part of the release scope (see :need:`gd_req__req_release_scope`).
 
-   A finding of this check shall fail the documentation build.
+   A finding of this check shall fail the documentation build. Additional links to invalid needs shall be
+   reported as a warning.
 
-   Note: Without this check a valid requirement may still trace to an invalidated parent, so that the
-   traceability looks complete although it ends in a requirement which is no longer in force.
+   Note: Without this check a valid requirement may trace only to invalidated parents, so that the
+   traceability looks complete although it ends in requirements which are no longer in force.
 
 .. gd_req:: Requirements validity
    :id: gd_req__req_validity

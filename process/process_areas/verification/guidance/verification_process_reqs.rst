@@ -220,13 +220,14 @@ Process Requirements
                 wf__verification_platform_int_test[version==1]
     :complies: std_req__iso26262__support_6432[version==1]
 
-    It shall be checked that tests only verify valid needs: every PartiallyVerifies and FullyVerifies link
-    shall point to a need with status == valid.
+    It shall be checked that every test with PartiallyVerifies or FullyVerifies links to at least one
+    valid need (status == valid).
 
-    A finding of this check shall fail the documentation build.
+    A finding of this check shall fail the documentation build. Additional links to invalid needs shall be
+    reported as a warning.
 
-    Note: A test linked to an invalid requirement does not provide verification evidence, but would
-    otherwise be counted in the test coverage.
+    Note: A test which only verifies invalid needs provides no verification evidence and is either
+    obsolete or has to be linked to the successor.
 
 .. gd_req:: Verification Documentation Checks Extended
     :id: gd_req__verification_checks_extended
