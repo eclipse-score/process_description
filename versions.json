@@ -42,17 +42,5 @@
   {
     "version": "v2.2.3",
     "url": "https://eclipse-score.github.io/process_description/v2.2.3/"
-  },
-  {
-    "version": "pr-870",
-    "url": "https://eclipse-score.github.io/process_description/pr-870/"
-  },
-  {
-    "version": "pr-871",
-    "url": "https://eclipse-score.github.io/process_description/pr-871/"
-  },
-  {
-    "version": "pr-872",
-    "url": "https://eclipse-score.github.io/process_description/pr-872/"
   }
 ]
