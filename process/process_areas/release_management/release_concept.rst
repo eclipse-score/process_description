@@ -114,11 +114,12 @@ Branching Strategy
 Branches:
 
 * main: for implementation and documentation in development phase.
-* release/\*: Branches for distinct releases, named release/<version-number>, no functional changes, only bugfixes, quality and documentation improvements.
+* release/\*: Branches for distinct releases, named as defined in the project's configuration management plan
+  (e.g. release/<version-number>), no functional changes, only bugfixes, quality and documentation improvements.
 
 Workflow:
 
-#. When ready for a new release, create a branch release/<version-number> from main (if needed).
+#. When ready for a new release, create a release branch from main (if needed).
 #. Perform final testing and adjustments on the release branch (test results should be available continuously, but maybe not all).
 #. Tag the release in the release branch.
 
