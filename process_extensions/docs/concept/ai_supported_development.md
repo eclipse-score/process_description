@@ -15,11 +15,9 @@ safety evidence. Requirements inspection applies a level-appropriate checklist
 to stakeholder, feature, and component requirements before they are accepted as
 safety evidence. The checklist profile is not identical at every level.
 
-Filling that checklist is **manual, time-consuming, and repetitive** — the
-same quality questions apply to every requirement. Meanwhile, Large Language
-Models (LLMs) are now capable of performing exactly this kind of structured
-text assessment. The question is now
-**under what conditions their output can legitimately enter a safety case**.
+The same quality questions apply to many requirements. A Large Language Model
+(LLM) can propose a first assessment, but its judgments may be wrong. The
+question is how to use that draft while keeping human review and approval.
 
 **The goal is development support**: AI assists an engineer during development.
 
@@ -40,7 +38,7 @@ controls around it) must be demonstrated.
 
 ---
 
-## 2. Concept: AI as a qualified development support tool
+## 2. Concept: AI as a development support tool
 
 Based on ISO 26262 Part 8 tool confidence principles, the approach in this
 pilot rests on three pillars:
@@ -67,12 +65,10 @@ The chat-first demonstration follows this sequence:
 5. The normal Git/GitHub review of that change is the approval
 ```
 
-This means the AI output is never in the safety case — only the
-**human-reviewed and approved** version is. There is no local "approve"
-command: this tool cannot fabricate, relay, or otherwise stand in for that
-review. Approval is whatever the project's existing PR review already is —
-authenticated by the platform, structurally unable to be the same person as
-the content's author, and retained in the project's own version history.
+Only the **human-reviewed and approved** version may enter the safety case.
+There is no local "approve" command. Approval uses the project's existing PR
+review, with a reviewer other than the content's author and a decision recorded
+by GitHub.
 
 The diagram below illustrates the same guardrail as a data-flow: every
 human-readable/machine-readable conversion is performed by a deterministic
@@ -80,7 +76,7 @@ transform tool, never by the LLM, and a human explicitly reviews and approves
 the templates, the skills/rules/prompts that shape the LLM's reasoning, and
 every artifact the process produces.
 
-![AI-supported requirements review concept: human-approved templates are transformed to machine-readable form, human-approved skills/rules/prompts directly inform the LLM's reasoning, the LLM drafts a checklist fill-out, and a human reviews/approves the re-transformed result before iteration or sign-off](_assets/ai_supported_sldc_review_example.drawio.svg)
+![AI-supported requirements review concept: human-approved templates are transformed to machine-readable form, human-approved skills/rules/prompts directly inform the LLM's reasoning, the LLM drafts a checklist fill-out, and a human reviews/approves the re-transformed result before iteration or sign-off](../_assets/ai_supported_sldc_review_example.drawio.svg)
 
 The requirements document and checklist templates themselves are ordinary
 repository content (the `feat_req`/`comp_req` directive schema and
@@ -108,8 +104,9 @@ can silently drift from the template:
 - A mandatory issue link whenever an item is `no`, matching the template's own
   mandatory "Issue link" column; forbidden for every other verdict.
 
-The AI cannot add new sections, invent checklist IDs, or change the document
-structure. Schema validation rejects any response that does not conform.
+Schema validation rejects responses with additional sections, unknown checklist
+IDs, or a different document structure. It does not check whether the AI's
+judgment is correct; that remains the human reviewer's task.
 
 ### 2.3 Model provenance and evaluation trigger
 
@@ -179,33 +176,27 @@ Engineer starts the inspection directly in Chat
 
 ### 3.2 Fixed structure
 
-Assessments contain one entry per input requirement, the exact public S-CORE
-checklist IDs parsed from the canonical template, `yes` / `no` / `n/a` /
-`not_assessed` verdicts, full remarks, and a mandatory issue link for every
-`no`. Unknown IDs, duplicate JSON keys, additional fields, invalid verdicts,
-missing requirements, or checklist text diverging from the canonical template
-are rejected.
+The helper validates the assessment against the
+[fixed output schema](#fixed-output-schema-no-invented-structure). It also
+rejects duplicate JSON keys and missing requirements.
 
-There is one editable checklist in
-[`example/inspection.md`](https://github.com/eclipse-score/process_description/blob/main/process_extensions/example/inspection.md),
-not a duplicate schema invented on top of it. The original judgment remains
-preserved separately in a local manifest. Missing context must be resolved or
-dispositioned by the reviewer; `not_assessed` must not silently become a pass.
+Each run produces an editable `inspection.md`; the
+[bundled example](https://github.com/eclipse-score/process_description/blob/main/process_extensions/example/inspection.md)
+shows its format. The original judgment is preserved separately in the local
+manifest. The reviewer must address missing context rather than treating
+`not_assessed` as a pass.
 
 ### 3.3 Hand-off to the project's own review
 
-After judgment the agent presents the editable checklist and ends its turn.
-The engineer edits the table in [`example/inspection.md`](https://github.com/eclipse-score/process_description/blob/main/process_extensions/example/inspection.md)
-or requests corrections in Chat. Every edit is re-validated and reported back
-immediately; there is no local approval state to track, so no edit can be
-mistaken for one.
+The prompt instructs the agent to present the editable checklist and end its
+turn. The engineer then edits that run's `inspection.md` or requests corrections
+in Chat. After edits, ask the agent to run `check <run>` or run the command
+described in the [execution guide](../demonstrator/execution.rst).
+The helper does not watch the file or revalidate edits automatically.
 
-There is no `Approve as <name>` command, no revision token, no audit.json, and
-no report.rst produced by this tool. Finalization is the engineer copying the
-checked checklist into the project's actual inspection work product (for
-example ``doc__<feature>_req_inspection``), committing it, and relying on the
-normal Git/GitHub review of that change — with its existing identity,
-independence, and retention guarantees — as the only approval.
+There is no local approval command. The engineer copies the checked checklist
+into the project's actual inspection work product, commits it, and submits it
+to the existing Git/GitHub review.
 
 ### Copilot provenance
 
@@ -223,27 +214,29 @@ scoped operations, string views, safe arithmetic, atomic operations, and
 termination handling. This input demonstrates parsing and review flow; it is
 not a set of independently validated expected verdicts.
 
-The prompt summarizes the public S-CORE inspection checklist. It requests
-structured draft assessments. Reviewers must
-consider parent requirements, traceability, timing, interfaces, safety/security
-attributes, verifiability, completeness, and justified exceptions.
+The prepared prompt contains the public checklist criteria and asks for a draft
+assessment. The [execution guide](../demonstrator/execution.rst) explains how to
+start in Chat, review the result, and submit it for the project's own review.
 
-Start in Chat using the reusable workflow prompt. The agent prepares input,
-validates its JSON judgment, presents the checklist file, and stops. Check
-permission to share input before starting. Local helpers collect metadata and
-validate the checklist; they never invoke Copilot, transmit data, or approve
-anything. Finalization happens outside this tool, through the project's own
-requirements-inspection PR review.
-
-The execution guide gives the Chat requests. Offline tests use constructed
-responses, without invoking Copilot. No live Copilot result or timing measurement
-is claimed by those tests. The historical pilot's assessments are not reported
-as results from this implementation.
+Offline tests use constructed responses, without invoking Copilot. They check
+the helpers, not AI assessment accuracy or review time.
 
 ## 5. Additive S-CORE integration
 
-All extension content is under `process_extensions/`. Existing process
-directories and workflows remain in place. An additive Bazel bundle mount
+The [technical-workflow guidance](../technical_workflows/index.rst) explains how
+to carry out the existing process with tools. It describes
+reusable PR Authoring and PR Review, with optional AI editing and AI review
+in parallel with independent human review. The
+[platform-management example](../technical_workflows/examples/platform_management_plan.rst)
+maps `wf__platform_cr_mt_platform_mgmt_plan` to those technical workflows.
+Existing process roles and work products remain authoritative; only humans
+provide final sign-off. This documentation is separate from the executable
+requirements-inspection demonstrator and does not apply its assessment schema
+to ordinary plan review.
+
+Published documentation is under `process_extensions/docs/`; runtime helpers,
+prompts, tests, and examples remain directly under `process_extensions/`.
+Existing process directories and workflows remain in place. An additive Bazel bundle mount
 publishes the concept, execution guide, and draft workflow definitions alongside
 the existing process using `bazel run //:docs`.
 
@@ -284,9 +277,8 @@ outputs are not published as process definitions.
   rejection of stakeholder/AoU input) is not yet expressed as tool requirements
   linked to the test suite that verifies it; the tests currently verify
   behavior that is not separately specified as a requirement.
-- The guardrail no longer has a fabricate-able local approval step, but it
-  still cannot prevent a privileged agent from bypassing the local scripts
-  entirely or editing files outside the documented protocol.
+- The helpers do not restrict the agent's file permissions. They cannot
+  prevent it from editing files outside the requested scope.
 - Published RST nodes express intended responsibilities; executable review
   controls do not replace project governance.
 
