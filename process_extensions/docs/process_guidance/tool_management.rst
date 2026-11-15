@@ -3,13 +3,9 @@
 AI Tool Management
 ##################
 
-This draft extension proposes evaluation and monitoring of offline AI
-development-support tools. It uses original explanatory wording based on the
-proposed concept and public S-CORE process definitions.
-
-These nodes are published as drafts through the Bazel documentation bundle.
-Role assignments are proposals, not recorded approvals. Nothing here
-demonstrates completed qualification or coverage of a particular safety level.
+This draft gives AI-specific guidance for the existing tool-management process.
+It covers AI development-support tools and their local helpers, not a completed
+tool evaluation or qualification.
 
 The public `S-CORE Tool Management Plan
 <https://eclipse-score.github.io/score/main/platform_management_plan/tool_management.html>`_
@@ -36,7 +32,7 @@ is additive guidance, not a parallel process or a second set of roles for the
 same work product.
 
 The proposed requirements inspection activity is described in
-:doc:`ai_workflows`.
+:doc:`requirements_inspection`.
 
 
 Evaluation Guidance

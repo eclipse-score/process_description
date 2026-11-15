@@ -1,12 +1,23 @@
-# Copilot Chat Agent process execution demonstrator
+# AI-supported process execution
 
 All extension content is in this directory. Start with the
-[concept](ai_sup_dev_proc_exe_in_safe_context_concept.md) and
-[execution guide](execution.rst). The public reference list is in the concept.
+[concept](docs/concept/ai_supported_development.md). The public reference
+list is in the concept.
 
-- [ai_workflows.rst](ai_workflows.rst) describes draft inspection workflows,
+- [Technical workflows](docs/technical_workflows/index.rst) defines an additive
+  execution-guidance layer, not new process workflow nodes:
+  - [PR Review](docs/technical_workflows/pr_review.rst) combines parallel AI and
+    independent human review, retaining human sign-off and approval.
+  - [PR Authoring](docs/technical_workflows/pr_authoring.rst) describes bounded AI
+    editing with author verification.
+  - [Change Management Plan pilot](docs/technical_workflows/examples/platform_management_plan.rst)
+    compares the published S-CORE plan with the current process and proposes
+    corrections using both technical workflows. The upstream plan is not yet
+    changed or approved.
+- [Requirements inspection](docs/process_guidance/requirements_inspection.rst)
+  describes draft inspection workflows,
   with the same roles as the existing `wf__monitor_verify_requirements`.
-- [ai_tool_management.rst](ai_tool_management.rst) uses the public S-CORE
+- [Tool management](docs/process_guidance/tool_management.rst) uses the public S-CORE
   qualification-required/not-required decision and Tool Verification Report
   directly, with no parallel tool-management workflows.
 - The `workflows/` package implements preparation, automatic metadata,
@@ -14,7 +25,23 @@ All extension content is in this directory. Start with the
   transmits input to an AI service, or approves anything locally.
 - The `tests/` directory contains offline tests and the public baselibs example.
 
-## Quick start
+Technical workflow guidance needs no helper installation or new automation.
+Existing process definitions, roles, and acceptance criteria remain unchanged.
+For the separate executable requirements-inspection demonstration, use the
+[execution guide](docs/demonstrator/execution.rst) and quick start below.
+
+## Layout
+
+- `docs/concept/`: AI-supported development concept.
+- `docs/technical_workflows/`: reusable technical workflows and concrete examples.
+- `docs/process_guidance/`: draft inspection and tool-management guidance.
+- `docs/demonstrator/`: executable demonstration instructions.
+- `docs/_assets/`: published diagrams.
+- `workflows/`, `tests/`, `example/`: unchanged executable package and fixtures.
+
+The documentation entry point is [docs/index.rst](docs/index.rst).
+
+## Requirements inspection quick start
 
 Attach [chat_workflow.prompt.md](chat_workflow.prompt.md) in Chat and ask:
 
@@ -53,9 +80,11 @@ boundaries. Unknown request-level model data stays unknown unless explicitly
 supplied with `--model-label`.
 
 From the repository root, build the publication pages with `bazel run //:docs`.
-The root BUILD file mounts only the five publication pages; prompts, templates,
-tests, fixtures, and ignored `out/` artifacts are not Sphinx document inputs.
-Existing process directories stay in place.
+The root BUILD file discovers publication sources only under `docs/` and mounts
+them at the existing `process_extensions` publication location. Keep runtime
+prompts, templates, tests, fixtures, and ignored `out/` artifacts outside `docs/`
+so they cannot become Sphinx document inputs. Existing process directories stay
+in place; helper imports, commands, and output locations are unchanged.
 
 ## Publication boundary
 
