@@ -130,6 +130,14 @@ invent a rule requiring every request to use FEP, or assume a Decision Record
 is always optional. Update the linked FEP guide only if the agreed correction
 affects it.
 
+Also ask the Process Community to resolve an inconsistency in the guideline's
+analysis responsibilities. The responsibility table lists the Architecture
+Community as responsible for analysis and the Project Lead as approver, while
+the "Analyze Change Request" prose describes the Project Lead, supported by
+the Platform Team, as analyzing the request together with the Architecture
+Community. Do not select one interpretation in the proposed plan correction
+until the intended responsibilities are confirmed.
+
 How Humans and AI Do the Work
 -----------------------------
 
