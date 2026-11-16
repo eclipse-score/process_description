@@ -13,7 +13,8 @@
    # *******************************************************************************
 
 ..
-   AI Disclosure: This draft was largely AI-generated and awaits human review.
+   AI Disclosure: This draft was largely AI-generated and reviewed by the
+   author before contribution; it remains subject to independent human review.
    The AI-generated portions are made available under CC0-1.0.
    SPDX-License-Identifier: Apache-2.0 AND CC0-1.0
    Assisted-by: GitHub Copilot (active model/version unavailable)
