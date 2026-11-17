@@ -31,7 +31,7 @@ Security Management Work Products
 
    Guidelines on how an change impact analysis shall be concluded on each item or element involved together with it's connected items or elements.
 
-   For the template see here: :need:`doc__platform_security_manual`
+   For the template see here: :need:`doc__platform_security_plan`
 
    This is on following level:
 
@@ -48,7 +48,7 @@ Security Management Work Products
 
    Guidelines on how an impact analysis shall be concluded on each item or element involved together with it's connected items or elements.
 
-   For the template see here: `Module Security Manual Template <https://eclipse-score.github.io/module_template/main/module/manuals/security_manual.html>`__
+   For the template see here: `Module Security Plan Template <https://eclipse-score.github.io/module_template/main/module/security_mgt/module_security_plan.html>`__
 
    This is on following level:
 
