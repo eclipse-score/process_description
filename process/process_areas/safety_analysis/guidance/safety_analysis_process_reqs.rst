@@ -81,12 +81,12 @@ Process Safety Analysis Attributes
 .. gd_req:: Safety Analysis attribute: mitigation issue
    :id: gd_req__saf_attr_mitigation_issue
    :status: valid
-   :version: 1
+   :version: 2
    :tags: done_automation, attribute, optional
    :satisfies: wf__analyse_platform_featarch[version==1], wf__analyse_featarch[version==1], wf__analyse_comparch[version==1]
    :complies: std_req__iso26262__analysis_844[version==1], std_req__iso26262__analysis_746[version==1], std_req__iso26262__analysis_747[version==1]
 
-   If a new mitigation (e.g. prevention, detection or mitigation) is needed, link to the issue and keep status sufficient == no until mitigation is sufficient.
+   If a new mitigation (e.g. prevention, detection or mitigation) is needed, link to the issue and keep sufficient == no and status == draft until mitigation is sufficient.
 
 .. gd_req:: Safety Analysis attribute: sufficient
    :id: gd_req__saf_attr_sufficient
@@ -116,7 +116,7 @@ Process Safety Analysis Attributes
 .. gd_req:: Safety Analysis attribute: status
    :id: gd_req__saf_attr_status
    :status: valid
-   :version: 1
+   :version: 2
    :tags: done_automation, attribute, mandatory
    :satisfies: wf__analyse_platform_featarch[version==1], wf__analyse_featarch[version==1], wf__analyse_comparch[version==1]
    :complies: std_req__iso26262__analysis_848[version==1],
@@ -124,7 +124,12 @@ Process Safety Analysis Attributes
               std_req__isopas8926__44431[version==1],
               std_req__isopas8926__44432[version==1]
 
-   Each Safety Analysis shall have a status which can be either "valid" or "invalid".
+   Each Safety Analysis shall have a status:
+
+      * draft: The Safety Analysis is not yet finished, e.g. only a mitigation issue is linked via the attribute
+        "mitigation_issue" and no sufficient mitigation is linked via the attribute "mitigated_by" yet.
+      * valid: The Safety Analysis is finished, i.e. a sufficient mitigation is linked via the attribute "mitigated_by".
+      * invalid: Used in the same way as for requirements (see :need:`gd_req__req_attr_status`).
 
 .. gd_req:: Safety Analysis attribute: failure effect
    :id: gd_req__saf_attr_feffect
