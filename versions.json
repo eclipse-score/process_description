@@ -12,6 +12,10 @@
     "url": "https://eclipse-score.github.io/process_description/pr-867/"
   },
   {
+    "version": "pr-876",
+    "url": "https://eclipse-score.github.io/process_description/pr-876/"
+  },
+  {
     "version": "v2.0.1",
     "url": "https://eclipse-score.github.io/process_description/v2.0.1/"
   },
@@ -46,9 +50,5 @@
   {
     "version": "v2.2.4",
     "url": "https://eclipse-score.github.io/process_description/v2.2.4/"
-  },
-  {
-    "version": "pr-876",
-    "url": "https://eclipse-score.github.io/process_description/pr-876/"
   }
 ]
