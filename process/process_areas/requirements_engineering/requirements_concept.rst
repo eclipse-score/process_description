@@ -212,10 +212,10 @@ Following attributes are automatically generated:
    * - Derives
      - This attribute is automatically generated into the parent requirement based on the attribute derived_from of the current requirement
      - Docs-as-Code
-   * - Implemented by
-     - During Build the code files are parsed for a defined tag which includes the requirement id. If this is located a link to the code will be added in the requirement
+   * - Source Code Link
+     - During Build the code files are parsed for a defined tag which includes the requirement id. If this is located a link to the code will be added in the requirement. This can be used to mark that a requirement is already implemented.
      - Docs-as-Code
-   * - Verified by
+   * - Test Link
      - During build the test files are parsed for a defined marker which includes the requirement id. If the marker is located in the test a link to the test case will be added to the requirement
      - Docs-as-Code
 

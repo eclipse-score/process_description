@@ -270,14 +270,14 @@ Process Requirement Linkage
 
    Bi-directional traceability shall be provided by adding a "back-link" via attribute derives (i.e. make a <-> out of the <- in :need:`gd_req__req_linkage`).
 
-.. gd_req:: Requirement attribute: link to implementation
+.. gd_req:: Requirement attribute: link to source code
    :id: gd_req__req_attr_impl
    :status: valid
    :version: 1
    :tags: done_automation, attribute
    :satisfies: wf__req_feat_req[version==1], wf__req_comp_req[version==1]
 
-   It shall be possible to link requirements to code (to the respective line of code in an attribute of the requirement).
+   It shall be possible to link requirements to source code and automatically include a link to the respective line of code in the attribute source_code_link.
 
 .. gd_req:: Requirement attribute: link to test
    :id: gd_req__req_attr_testlink
