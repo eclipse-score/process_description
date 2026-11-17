@@ -106,13 +106,12 @@ For a detailed explanation of workflows and their role within the process model,
    :input: wp__requirements_feat_aou[version==1],
            wp__requirements_feat[version==1],
            wp__feature_arch[version==1],
-           wp__feature_fmea[version==1],
-           wp__feature_dfa[version==1],
+           wp__feature_security_analysis[version==1],
            wp__requirements_comp_aou[version==1],
            wp__requirements_comp[version==1],
            wp__component_arch[version==1],
-           wp__sw_component_fmea[version==1],
-           wp__sw_component_dfa[version==1]
+           wp__sw_component_security_analysis[version==1],
+           wp__platform_security_analysis[version==1]
    :output: wp__platform_security_manual[version==1], wp__module_security_manual[version==1]
    :contains: gd_guidl__security_manual[version==1],
               gd_temp__platform_security_manual[version==1],
