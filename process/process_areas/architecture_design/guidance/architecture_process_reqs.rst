@@ -219,13 +219,13 @@ Traceability to Requirements and AoU
 .. gd_req:: Architecture attribute: fulfils
    :id: gd_req__arch_attr_fulfils
    :status: valid
-   :version: 1
+   :version: 2
    :tags: manual_prio_1, attribute
    :complies: std_req__iso26262__support_6425[version==1], std_req__aspice_40__SWE-2-BP4[version==1]
    :satisfies: wf__cr_mt_featarch[version==1], wf__cr_mt_comparch[version==1]
 
    Architectural views (feature/comp_arc_sta, feature/comp_arc_dyn) and interfaces (logic/real_arc_int)
-   shall be linked to its corresponding requirement on the corresponding level.
+   should be linked to its corresponding requirement on the corresponding level.
 
    **Examples:**
 
