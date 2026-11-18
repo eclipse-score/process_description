@@ -648,7 +648,7 @@
                   
   <section id="safety-analysis-guidelines">
 <h1>Safety Analysis Guidelines<a class="headerlink" href="#safety-analysis-guidelines" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-5c75c203">
+<div class="need_container docutils container" id="SNCB-775521f7">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_guidl table" id="gd_guidl__safety_analysis">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -719,6 +719,7 @@ content of the document, so it can be recognized.</p>
 <li><p>Document the safety mitigation. This can be a detection, prevention or mitigation of the fault. If only testability is defined as mitigation measure, complexity requirements shall be allocated to the feature/component.</p></li>
 <li><p>If there is no mitigation or existing mitigation is not sufficient a mitigation issue has to be created in the Issue Tracking system and linked in the “mitigation_issue” attribute.</p></li>
 <li><p>The analysis is finished, if for each identified fault a sufficient mitigation exists.</p></li>
+<li><p>As long as the analysis is not finished, keep the “status” attribute to “draft. The “status” shall only be change to “valid” only if the analysis is finished, means all mitigation is linked via “mitigated_by”.</p></li>
 <li><p>Unless the attribute sufficient is yes, mitigation and argument attribute can be still empty.</p></li>
 <li><p>Continue the analysis until all applicable fault models are checked.</p></li>
 <li><p>The verification is done by applying the checklist <a class="reference internal" href="safety_analysis_checklist.html#gd_chklst__safety_analysis" title="gd_chklst__safety_analysis"><em class="xref need">Safety Analysis Checklist T...</em></a>.</p></li>
@@ -748,6 +749,7 @@ can be recognized.</p>
 <li><p>Document the safety mitigation. This can be a detection, prevention or mitigation of the fault. If only testability is defined as mitigation measure, complexity requirements shall be allocated to the feature/component.</p></li>
 <li><p>If there is no mitigation or the mitigation is not sufficient a mitigation issue has to be created in the Issue Tracking system and linked in the “mitigation_issue” attribute.</p></li>
 <li><p>The analysis is finished, if for each identified fault a sufficient mitigation exists.</p></li>
+<li><p>As long as the analysis is not finished, keep the “status” attribute to “draft. The “status” shall only be change to “valid” only if the analysis is finished, means all mitigation is linked via “mitigated_by”.</p></li>
 <li><p>Unless the attribute sufficient is yes, mitigation and argument attribute can be still empty.</p></li>
 <li><p>Continue the analysis until all applicable failure initiators are checked.</p></li>
 <li><p>The verification is done by applying the checklist <a class="reference internal" href="safety_analysis_checklist.html#gd_chklst__safety_analysis" title="gd_chklst__safety_analysis"><em class="xref need">Safety Analysis Checklist T...</em></a>.</p></li>
@@ -843,7 +845,7 @@ Additionally in the static view we see Component 4 is a library used by Componen
 </section>
 <section id="tailoring">
 <h2>Tailoring<a class="headerlink" href="#tailoring" title="Link to this heading">#</a></h2>
-<div class="need_container docutils container" id="SNCB-1e6f07b7">
+<div class="need_container docutils container" id="SNCB-636ab58f">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_guidl table" id="gd_guidl__analysis_tailored">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
