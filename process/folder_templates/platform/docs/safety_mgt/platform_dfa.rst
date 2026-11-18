@@ -270,7 +270,7 @@ For all identified applicable failure initiators, the DFA is performed in the fo
        :mitigated_by: <ID from Stakeholder Requirement | ID from AoU Feature Requirement>
        :mitigation_issue: <ID from Issue Tracker>
        :sufficient: <yes|no>
-       :status: <valid|invalid>
+       :status: <draft|valid|invalid>
        :version: 1
 .. note::   Argument is inside the 'content'. Therefore content is mandatory.
 
