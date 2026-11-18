@@ -54,5 +54,9 @@
   {
     "version": "v2.2.4",
     "url": "https://eclipse-score.github.io/process_description/v2.2.4/"
+  },
+  {
+    "version": "v2.2.5",
+    "url": "https://eclipse-score.github.io/process_description/v2.2.5/"
   }
 ]
