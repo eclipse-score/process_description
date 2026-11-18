@@ -134,7 +134,12 @@ Branches are used as a means of parallel development. In the <project name> proj
 * main branch - a "remote" branch (named "main") which contains all the latest file versions checked by CI, reviewed, accepted and merged.
 * release branch - a "remote" branch derived from main branch which is used to prepare a release,
   no functional code changes are allowed, only bug fixes and verification based improvements.
-  Only the project lead is allowed to approve a merge into a release branch. The branch name is given as defined in :need:`doc_concept__rel_process`.
+  The branch name is given as defined in :need:`doc_concept__rel_process`.
+  <Define who approves a merge into a release branch, e.g. a committer of the delivery container
+  for a module release branch, and a committer of each integrated delivery container for a
+  platform release branch.>
+  The approval of a merge into a release branch does not replace the release approval
+  (:need:`wf__vy_ap_modrelease`, :need:`wf__vy_ap_pltrelease`).
 
 The "remote" branch is not "local" to the developer but resides on the "remote" version management server.
 
@@ -143,7 +148,7 @@ In <project name> project all configuration items are kept in the version manage
 <Describe how baselines are created by using the version management tool.>
 See also <link to doc__platform_release_management_plan>.
 
-Every change in the release repository is also taken over into the main branch. The :need:`rl__delivery_team` responsible for the repository
+Every change in the release branch is also taken over into the main branch. The :need:`rl__delivery_team` responsible for the repository
 can decide how to ensure this (e.g. by development in main and cherrypick to release branch).
 
 
