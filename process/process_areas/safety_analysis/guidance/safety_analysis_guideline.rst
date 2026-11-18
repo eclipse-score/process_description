@@ -75,7 +75,7 @@ The attributes of the template are described in :ref:`process_requirements_safet
 #. Document the safety mitigation. This can be a detection, prevention or mitigation of the fault. If only testability is defined as mitigation measure, complexity requirements shall be allocated to the feature/component.
 #. If there is no mitigation or existing mitigation is not sufficient a mitigation issue has to be created in the Issue Tracking system and linked in the "mitigation_issue" attribute.
 #. The analysis is finished, if for each identified fault a sufficient mitigation exists.
-#. Set the "status" attribute to "draft" as long as the analysis is not finished (e.g. only a mitigation issue is linked) and to "valid" once a sufficient mitigation is linked via "mitigated_by".
+#. As long as the analysis is not finished, keep the "status" attribute to "draft. The "status" shall only be change to "valid" only if the analysis is finished, means all mitigation is linked via "mitigated_by".
 #. Unless the attribute sufficient is yes, mitigation and argument attribute can be still empty.
 #. Continue the analysis until all applicable fault models are checked.
 #. The verification is done by applying the checklist :need:`gd_chklst__safety_analysis`.
@@ -106,7 +106,7 @@ The attributes of the template are described in :ref:`process_requirements_safet
 #. Document the safety mitigation. This can be a detection, prevention or mitigation of the fault. If only testability is defined as mitigation measure, complexity requirements shall be allocated to the feature/component.
 #. If there is no mitigation or the mitigation is not sufficient a mitigation issue has to be created in the Issue Tracking system and linked in the "mitigation_issue" attribute.
 #. The analysis is finished, if for each identified fault a sufficient mitigation exists.
-#. Set the "status" attribute to "draft" as long as the analysis is not finished (e.g. only a mitigation issue is linked) and to "valid" once a sufficient mitigation is linked via "mitigated_by".
+#. As long as the analysis is not finished, keep the "status" attribute to "draft. The "status" shall only be change to "valid" only if the analysis is finished, means all mitigation is linked via "mitigated_by".
 #. Unless the attribute sufficient is yes, mitigation and argument attribute can be still empty.
 #. Continue the analysis until all applicable failure initiators are checked.
 #. The verification is done by applying the checklist :need:`gd_chklst__safety_analysis`.
