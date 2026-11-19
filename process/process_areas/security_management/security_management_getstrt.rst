@@ -42,8 +42,8 @@ The following workflows shall be executed continuously:
 
 Additional to the continuous workflows the following workflows shall be executed according to the project needs:
 
-* Perform Security Audit (to be discussed, currently not in scope)
-* Perform Formal Security Reviews
+* Perform Security Audit (tailored out for the current increment, see workflow)
+* Perform Formal Security Reviews (tailored out for the current increment, see workflow)
 
 Some of the workproducts are currently either tailored out or not in scope of this project (due to Out-of-Context development).
 Refer :need:`wp__tailoring_work_products` section for the details about tailoring.

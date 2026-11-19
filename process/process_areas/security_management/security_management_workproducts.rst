@@ -99,7 +99,7 @@ Security Management Work Products
    :complies: std_wp__isosae21434__org_management_555[version==1]
 
    Examination of an implemented process with regard to the process objectives and that those match the ISO SAE 21434.
-   (Currently tailored out, needs discussion)
+   (Tailored out for the current increment, planned before the ML 3 assessment)
 
 .. workproduct:: Platform Security Manual
    :id: wp__platform_security_manual

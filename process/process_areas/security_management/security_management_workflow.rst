@@ -72,9 +72,7 @@ For a detailed explanation of workflows and their role within the process model,
    | The Security Manager and the process community shall support the external auditor during this.
    | The Project Manager and and the Security Manager shall approve the audit report.
    |
-   | This is currently tailored out (needs discussion).
-
-.. workflow:: Perform Formal Security Reviews
+   | This is tailored out for the platform in the current increment (out-of-context development). The external security audit is planned before the ML 3 assessment and is then re-evaluated.
    :id: wf__p_formal_security_rv
    :status: valid
    :version: 1
@@ -94,9 +92,7 @@ For a detailed explanation of workflows and their role within the process model,
    | The Project Lead and and the Security Manager shall approve the formal reviews.
    | Therefore a checklists exist to guide the creator of the relevant security documents.
    |
-   | This is currently tailored out (needs discussion).
-
-.. workflow:: Create/Maintain Security Manual
+   | This is tailored out for the platform in the current increment. Verification for ML 2 is performed as internal inspection by a security manager, documented with the security FDR checklists. The external formal review is planned before the ML 3 assessment.
    :id: wf__cr_mt_security_manual
    :status: valid
    :version: 1

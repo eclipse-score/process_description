@@ -40,7 +40,7 @@ The purpose of this review checklist is to report status of the formal review fo
 
 **Conduct**
 
-As described in :need:`wf__p_formal_security_rv`, the formal document review is performed by an independent reviewer. The external security auditor is responsible for the review, the security manager supports it:
+As described in :need:`wf__p_formal_security_rv`, the formal document review is performed by an independent reviewer. The external security auditor is responsible for the review, the security manager supports it. The external review is currently tailored out for the platform; for ML 2 the review is performed as internal inspection:
 
 - reviewer: <committer with security manager skills explicitly named here, not the author of the package>
 
