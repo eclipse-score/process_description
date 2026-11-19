@@ -40,7 +40,7 @@ The purpose of this security plan formal review checklist is to report status of
 
 **Conduct**
 
-As described in :need:`wf__p_formal_security_rv`, the formal document review is performed by an independent security manager:
+As described in :need:`wf__p_formal_security_rv`, the formal document review is performed by an independent reviewer. The external security auditor is responsible for the review, the security manager supports it:
 
 - reviewer: <committer with security manager skills explicitly named here, not the author of the plan>
 
