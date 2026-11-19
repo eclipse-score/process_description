@@ -55,7 +55,7 @@ As described in :need:`wf__p_formal_security_rv`, the formal document review is 
           - Comment
 
         * - 1
-          - Is the rationale for the security work products tailoring included (incl. the tailoring of the process audit)?
+          - Is the rationale for the security work products tailoring included and reviewed (incl. the tailoring of the process audit and of the formal review)? (RQ-06-14)
           - [YES | NO ]
           - <Rationale for result>
 
@@ -85,7 +85,7 @@ As described in :need:`wf__p_formal_security_rv`, the formal document review is 
           - <Rationale for result>
 
         * - 7
-          - Does the security plan document a responsible for all activities?
+          - Does the security plan define for each activity the objective, dependencies, responsible persons, resources, start and end, and the work products to be produced? (RQ-06-03, RQ-06-04)
           - [YES | NO ]
           - <Rationale for result>
 
@@ -100,7 +100,7 @@ As described in :need:`wf__p_formal_security_rv`, the formal document review is 
           - <Rationale for result>
 
         * - 10
-          - Is the competence requirement for committers and approvers defined and consistent with the process?
+          - Are the competence and awareness of the persons with security roles defined, incl. committers and approvers? (RQ-05-07)
           - [YES | NO ]
           - <Rationale for result>
 
@@ -111,5 +111,30 @@ As described in :need:`wf__p_formal_security_rv`, the formal document review is 
 
         * - 12
           - Is the security plan updated iteratively to show the progress?
+          - [YES | NO ]
+          - <Rationale for result>
+
+        * - 13
+          - Is the cybersecurity relevance of each item or component determined, and is the choice between new development and reuse documented? (RQ-06-02)
+          - [YES | NO ]
+          - <Rationale for result>
+
+        * - 14
+          - Are configuration management and documentation management defined for the security plan and its work products? (RQ-06-11, RQ-06-12)
+          - [YES | NO ]
+          - <Rationale for result>
+
+        * - 15
+          - Is the decision whether to perform a cybersecurity assessment documented with a risk-based rationale, and is this rationale reviewed independently? (RQ-06-24, RQ-06-25)
+          - [YES | NO ]
+          - <Rationale for result>
+
+        * - 16
+          - If an assessment is performed, is an independent person appointed to plan and perform it, with access to the information and tools needed? (RQ-06-27, RQ-06-28)
+          - [YES | NO ]
+          - <Rationale for result>
+
+        * - 17
+          - If an assessment is performed, does its scope include the plan, the work products, the risk treatment and the rationales, and does its report recommend acceptance, conditional acceptance or rejection? (RQ-06-30, RQ-06-31, RQ-06-32)
           - [YES | NO ]
           - <Rationale for result>

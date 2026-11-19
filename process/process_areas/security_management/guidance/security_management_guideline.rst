@@ -52,8 +52,8 @@ Security Management Guideline
    The :need:`rl__security_manager` on SW platform level is responsible to define a competence
    management for the whole platform. Expectation is that the security competence of the persons
    nominated for the roles is already given and only has to be checked. The exception from this
-   are the committers. Their security competence is defined by the project's committer election criteria
-   in the platform security plan and is not enforced by this generic process.
+   are the committers. Their security competence is required (RQ-05-07) and defined by the project's committer
+   election criteria in the platform security plan.
    So the Module Security Managers shall consult the :need:`wp__platform_security_plan` and
    perform accordingly in their module project.
 
