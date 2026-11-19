@@ -35,8 +35,51 @@ Platform Security Package Checklist
 
 
 **Purpose**
-The purpose of this Platform Security Package Checklist template is to collect the topics to be checked during verification of the Platform Security Package.
+
+The purpose of this review checklist is to report status of the formal review for the platform security package.
+
+**Conduct**
+
+As described in :need:`wf__p_formal_security_rv`, the formal document review is performed by an independent reviewer. The external security auditor is responsible for the review, the security manager supports it:
+
+- reviewer: <committer with security manager skills explicitly named here, not the author of the package>
 
 **Checklist**
 
-To be filled as part of https://github.com/eclipse-score/process_description/issues/452.
+.. list-table:: Security Package Checklist
+        :header-rows: 1
+
+        * - Id
+          - Security package activity
+          - Compliant to ISO/SAE 21434?
+          - Comment
+
+        * - 1
+          - Is a security package provided which matches the security plan (i.e. all planned work products referenced)?
+          - [YES | NO ]
+          - <Rationale for result>
+
+        * - 2
+          - Is the argument how security is achieved, provided in the security package, plausible and sufficient?
+          - NO
+          - The argument is intentionally not provided by the project (see wp__platform_security_package).
+
+        * - 3
+          - Are the referenced work products available (e.g. security analyses, platform security manual, SBOM)?
+          - [YES | NO ]
+          - <Rationale for result>
+
+        * - 4
+          - Are the referenced work products in released state? The process security audit report is tailored out, see the platform security plan.
+          - [YES | NO ]
+          - <Rationale for result>
+
+        * - 5
+          - If security related deviations from the process or security concept are documented, are these argued understandably?
+          - [YES | NO ]
+          - <Rationale for result>
+
+        * - 6
+          - Is the SBOM of the platform generated automatically and does it cover all open source components?
+          - [YES | NO ]
+          - <Rationale for result>
