@@ -20,7 +20,7 @@ Process Requirements
 .. gd_req:: Linking Requirements to Tests
     :id: gd_req__verification_link_tests
     :status: valid
-    :version: 2
+    :version: 3
     :tags: prio_1_automation, verification
     :satisfies: wf__verification_unit_test[version==1],
                 wf__verification_comp_int_test[version==1],
@@ -35,6 +35,7 @@ Process Requirements
     * Verifies
         * PartiallyVerifies
         * FullyVerifies
+        * RequiredForFullyVerifying (optional, only in combination with FullyVerifies)
     * Description
     * TestType
         * Requirements-based Test (requirements-based): unit, component, feature, platform
@@ -49,6 +50,16 @@ Process Requirements
         * Fuzz testing (fuzz-testing): unit, component, feature
         * Error guessing based on knowledge or experience (error-guessing): all levels
         * Explorative testing (explorative-testing): feature, platform
+
+    *PartiallyVerifies* expresses that the test covers some part of the linked requirement, while *FullyVerifies*
+    expresses that the test alone fully covers the linked requirement. If several tests are needed to fully cover a
+    requirement, one representative test shall be selected as *anchor test* and declare the complete test set: it
+    links the requirement via *FullyVerifies* and lists the unique identifiers (see
+    :need:`gd_guidl__verification_specification`) of all additionally required tests in *RequiredForFullyVerifying*.
+    The semantics are: the anchor test plus all tests listed in *RequiredForFullyVerifying* form the complete test
+    set for the referenced requirement, i.e. their combined coverage is sufficient. The anchor test is only the
+    owner of this declaration. Neither *FullyVerifies* nor *RequiredForFullyVerifying* imply any execution result.
+    The aggregated verdict is derived on build as defined in :need:`gd_req__verification_fully_verified`.
 
     More information can be found in the :need:`gd_guidl__verification_guide`, :need:`doc_concept__verification_process`,
     and :need:`gd_guidl__verification_specification` .
@@ -78,7 +89,7 @@ Process Requirements
 .. gd_req:: Linking Requirements to Tests (Python)
     :id: gd_req__verification_link_tests_python
     :status: valid
-    :version: 1
+    :version: 2
     :tags: prio_1_automation, verification
     :satisfies: wf__verification_unit_test[version==1],
                 wf__verification_comp_int_test[version==1],
@@ -95,6 +106,7 @@ Process Requirements
     You need to add it to the test and fill out:
 
     * partially_verifies OR fully_verifies
+    * required_for_fully_verifying (optional, only on an anchor test together with fully_verifies)
     * test_type
     * derivation_technique
 
@@ -224,6 +236,32 @@ Process Requirements
 
     - If TestType is set to requirements-based then PartiallyVerifies or FullyVerifies shall contain a link to at least one requirement
     - If TestType is set to interface-test then PartiallyVerifies or FullyVerifies shall contain a link to at least one interface
+
+.. gd_req:: Fully Verified Requirement Verdict
+    :id: gd_req__verification_fully_verified
+    :status: valid
+    :version: 1
+    :tags: prio_1_automation, verification
+    :satisfies: wf__verification_req_test_coverage[version==2]
+    :complies: std_req__iso26262__support_6433[version==1],
+               std_req__iso26262__software_1044[version==1],
+               std_req__aspice_40__iic-13-51[version==1]
+
+    For every requirement linked via FullyVerifies the tool automation shall derive at build whether the
+    requirement is fully verified. A requirement is fully verified if and only if:
+
+    - the anchor test and all tests listed in its RequiredForFullyVerifying exist
+    - AND all tests listed in RequiredForFullyVerifying link to the same requirement as the anchor test
+      (via PartiallyVerifies or FullyVerifies)
+    - AND the anchor declaration is valid for the current version of the requirement, i.e. neither the anchor test
+      nor a required test is suspicious (see :need:`gd_req__req_suspicious`)
+    - AND the anchor test and every required test have the execution result *passed*.
+
+    The derived verdict shall be used to set the requirement attribute defined in
+    :need:`gd_req__req_attr_test_covered` during the build. A manual update of the requirement attribute shall not
+    be required. A failed, skipped or not executed required test immediately results in the requirement not being
+    fully verified for the current build/release, while the anchor declaration still records the intended complete
+    test set (skipped and not executed tests are additionally handled according to :need:`gd_guidl__verification_guide`).
 
 .. gd_req:: Verification of External Components AoUs
     :id: gd_req__verification_external_aou
