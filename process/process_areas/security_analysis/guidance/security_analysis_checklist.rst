@@ -22,6 +22,7 @@ Security Analysis Checklist
    :status: valid
    :version: 1
    :tags: security_analysis
+   :complies: std_req__isosae21434__concept_9425[version==1], std_req__isosae21434__concept_9524[version==1]
 
    For the content see here:
 

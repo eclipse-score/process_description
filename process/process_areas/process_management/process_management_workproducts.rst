@@ -126,9 +126,7 @@ Here only project specific work products are listed, which are generic for the p
               std_wp__iso26262__support_1651[version==1],
               std_wp__iso26262__analysis_551[version==1],
               std_wp__iso26262__analysis_552[version==1],
-              std_wp__isopas8926__4522[version==1],
-              std_wp__isosae21434__assessment_15331[version==1],
-              std_wp__isosae21434__assessment_15531[version==1]
+              std_wp__isopas8926__4522[version==1]
 
    This work product "definition" links to all the work products which are not covered by the
    processes work products documented. Make sure these are tailored out in the safety, security and quality plans

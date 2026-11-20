@@ -242,12 +242,18 @@ Security Management Guideline
    :id: gd_guidl__security_manual
    :status: valid
    :version: 1
-   :complies: std_req__isosae21434__prj_management_6491[version==1], std_req__isosae21434__prj_management_6492[version==1]
+   :complies: std_req__isosae21434__prj_management_6491[version==1], std_req__isosae21434__prj_management_6492[version==1],
+              std_req__isosae21434__concept_9521[version==1],
+              std_req__isosae21434__concept_9522[version==1],
+              std_req__isosae21434__concept_9523[version==1]
 
    The Security Manual collects several work products and adds some additional content mainly to
    instruct the user of a OoC (in this project on platform and module level) to securely use it
    in the context of the user's OoC and requirements for post-development.
    Its main content is described in :need:`wp__platform_security_manual` and :need:`wp__module_security_manual`.
+   The cybersecurity concept of the platform in the Security Manual describes the cybersecurity controls that achieve
+   the cybersecurity goals, the cybersecurity requirements and the requirements on the operational environment derived
+   from them, and their allocation to the platform, its features and the integrator.
    A template exists to guide the definition of the security manual on platform and module level (`Module Security Manual Template <https://eclipse-score.github.io/module_template/main/module/manuals/security_manual.html>`__).
 
 .. gd_guidl:: Security Package Automated Generation

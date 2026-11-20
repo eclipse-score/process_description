@@ -83,10 +83,11 @@ Security Management Work Products
    :status: valid
    :version: 1
    :tags: doc_lifecycle_model_2
+   :complies: std_wp__isosae21434__concept_9434[version==1], std_wp__isosae21434__concept_9532[version==1]
 
    Review that a work product provides sufficient and convincing evidence of their contribution to the achievement of security considering the corresponding objectives and requirements of ISO SAE 21434.
 
-   Will contain formal review report for Security Plan, Security Package and Security Analyses.
+   Will contain formal review report for Security Plan, Security Package and Security Analyses, and the verification of the cybersecurity goals and of the cybersecurity concept of the platform.
 
    For the different review checklist see here:
      - Review checklist for Security Plans: :need:`doc__platform_name_security_plan_fdr` and `Module Security Plan Formal Review Checklist <https://eclipse-score.github.io/module_template/main/module/security_mgt/module_security_plan_fdr.html>`__
@@ -120,12 +121,16 @@ Security Management Work Products
    :version: 1
    :tags: doc_lifecycle_model_2
    :complies: std_wp__isosae21434__development_1052[version==1],
-              std_wp__isosae21434__distributed_751[version==1]
+              std_wp__isosae21434__distributed_751[version==1],
+              std_wp__isosae21434__concept_9432[version==1],
+              std_wp__isosae21434__concept_9433[version==1],
+              std_wp__isosae21434__concept_9531[version==1]
 
    The Security Manual describes:
 
    * the assumed platform requirements (security related, including for post-development);
    * the security concept of the OoC (i.e. which attack paths are taken care of);
+   * the cybersecurity goals of the platform, derived from the threat scenarios whose risk is reduced;
    * the assumptions of use (of the features);
    * a link to the user manual;
    * the reactions of the implemented functions under threatened operating conditions;

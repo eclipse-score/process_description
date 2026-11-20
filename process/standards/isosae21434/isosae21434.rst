@@ -24,8 +24,6 @@ Irrelevant clauses for the project process requirements and work products compli
 
 "Clause 1-4:" - as it contains no requirements and work products
 
-"Clause 9: Concept" - as this is in responsibility of system integrator
-
 "Annex A-H:" - as it contains no requirements and work products
 
 Clauses performed by the system integrator are distributed cybersecurity activities (see clause 7), not tailored activities.
@@ -43,6 +41,9 @@ Partly relevant clauses are:
 cybersecurity interface agreement are relevant. Supplier capability (7.4.1) and request for quotation (7.4.2) are tailored out,
 because S-CORE is an open-source project and does not select suppliers. The rationale is documented in the platform security plan
 and reviewed in its formal review (:need:`[[title]] <std_req__isosae21434__prj_management_6432>`).
+
+"Clause 9: Concept" - relevant at platform level (item definition, TARA, cybersecurity goals, claims and concept of the platform).
+The item level is performed by the system integrator through the cybersecurity interface (clause 7).
 
 Tailoring rationales are documented in the platform security plan (score repository, tailoring section).
 
@@ -436,6 +437,107 @@ Clause 8: Continual cybersecurity activities
        :version: 1
 
 
+Clause 9: Concept
+~~~~~~~~~~~~~~~~~
+
+Partly relevant: the concept requirements apply at platform level (item definition, threat analysis,
+cybersecurity goals, claims and cybersecurity concept of the platform). The item-level part belongs to the
+system integrator and is covered by the cybersecurity interface (see clause 7). Identifiers are
+modelled after the other clauses; the claims are made where the process produces the evidence (work products and guidance).
+
+* Requirements
+   .. std_req:: concept_9321
+       :id: std_req__isosae21434__concept_9321
+       :status: valid
+       :version: 1
+
+   .. std_req:: concept_9322
+       :id: std_req__isosae21434__concept_9322
+       :status: valid
+       :version: 1
+
+   .. std_req:: concept_9421
+       :id: std_req__isosae21434__concept_9421
+       :status: valid
+       :version: 1
+
+   .. std_req:: concept_9422
+       :id: std_req__isosae21434__concept_9422
+       :status: valid
+       :version: 1
+
+   .. std_req:: concept_9423
+       :id: std_req__isosae21434__concept_9423
+       :status: valid
+       :version: 1
+
+   .. std_req:: concept_9424
+       :id: std_req__isosae21434__concept_9424
+       :status: valid
+       :version: 1
+
+   .. std_req:: concept_9425
+       :id: std_req__isosae21434__concept_9425
+       :status: valid
+       :version: 1
+
+   .. std_req:: concept_9521
+       :id: std_req__isosae21434__concept_9521
+       :status: valid
+       :version: 1
+
+   .. std_req:: concept_9522
+       :id: std_req__isosae21434__concept_9522
+       :status: valid
+       :version: 1
+
+   .. std_req:: concept_9523
+       :id: std_req__isosae21434__concept_9523
+       :status: valid
+       :version: 1
+
+   .. std_req:: concept_9524
+       :id: std_req__isosae21434__concept_9524
+       :status: valid
+       :version: 1
+
+* Work products
+   .. std_wp:: concept_9331
+       :id: std_wp__isosae21434__concept_9331
+       :status: valid
+       :version: 1
+
+   .. std_wp:: concept_9431
+       :id: std_wp__isosae21434__concept_9431
+       :status: valid
+       :version: 1
+
+   .. std_wp:: concept_9432
+       :id: std_wp__isosae21434__concept_9432
+       :status: valid
+       :version: 1
+
+   .. std_wp:: concept_9433
+       :id: std_wp__isosae21434__concept_9433
+       :status: valid
+       :version: 1
+
+   .. std_wp:: concept_9434
+       :id: std_wp__isosae21434__concept_9434
+       :status: valid
+       :version: 1
+
+   .. std_wp:: concept_9531
+       :id: std_wp__isosae21434__concept_9531
+       :status: valid
+       :version: 1
+
+   .. std_wp:: concept_9532
+       :id: std_wp__isosae21434__concept_9532
+       :status: valid
+       :version: 1
+
+
 Clause 10: Product development
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -574,6 +676,41 @@ Clause 15: Threat analysis and risk assessment methods
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 * Requirements
+
+   .. std_req:: assessment_15321
+      :id: std_req__isosae21434__assessment_15321
+      :status: valid
+      :version: 1
+
+   .. std_req:: assessment_15322
+      :id: std_req__isosae21434__assessment_15322
+      :status: valid
+      :version: 1
+
+   .. std_req:: assessment_15421
+      :id: std_req__isosae21434__assessment_15421
+      :status: valid
+      :version: 1
+
+   .. std_req:: assessment_15521
+      :id: std_req__isosae21434__assessment_15521
+      :status: valid
+      :version: 1
+
+   .. std_req:: assessment_15522
+      :id: std_req__isosae21434__assessment_15522
+      :status: valid
+      :version: 1
+
+   .. std_req:: assessment_15523
+      :id: std_req__isosae21434__assessment_15523
+      :status: valid
+      :version: 1
+
+   .. std_req:: assessment_15524
+      :id: std_req__isosae21434__assessment_15524
+      :status: valid
+      :version: 1
 
    .. std_req:: assessment_15621
       :id: std_req__isosae21434__assessment_15621
