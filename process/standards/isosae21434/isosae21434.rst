@@ -24,23 +24,29 @@ Irrelevant clauses for the project process requirements and work products compli
 
 "Clause 1-4:" - as it contains no requirements and work products
 
-"Clause 7: Distributed cybersecurity activities" - as the project is organized as open source project
-
 "Clause 9: Concept" - as this is in responsibility of system integrator
-
-"Clause 11: Cybersecurity validation" - as this is in responsibility of system integrator
-
-"Clause 12: Production" -  as this is in responsibility of system integrator
-
-"Clause 14: End of cybersecurity support and decommissioning" - as this is in responsibility of system integrator
 
 "Annex A-H:" - as it contains no requirements and work products
 
+Clauses performed by the system integrator are distributed cybersecurity activities (see clause 7), not tailored activities.
+Their interface to the platform is the cybersecurity interface agreement; the platform part is documented in the platform security plan and the platform security manual:
+
+"Clause 11: Cybersecurity validation"
+
+"Clause 12: Production"
+
+"Clause 14: End of cybersecurity support and decommissioning"
+
+Partly relevant clauses are:
+
+"Clause 7: Distributed cybersecurity activities" - only the alignment of responsibilities with the system integrator (7.4.3) and the
+cybersecurity interface agreement are relevant. Supplier capability (7.4.1) and request for quotation (7.4.2) are tailored out,
+because S-CORE is an open-source project and does not select suppliers. The rationale is documented in the platform security plan
+and reviewed in its formal review (:need:`[[title]] <std_req__isosae21434__prj_management_6432>`).
+
+Tailoring rationales are documented in the platform security plan (score repository, tailoring section).
 
 Relevant clauses are:
-
-Tailoring documentation is planned in
-https://github.com/eclipse-score/score/issues/696
 
 
 Clause 5: Organizational cybersecurity management
@@ -239,6 +245,51 @@ Clause 6: Project dependent cybersecurity management
        :status: valid
        :version: 1
 
+   .. std_req:: prj_management_6481
+       :id: std_req__isosae21434__prj_management_6481
+       :status: valid
+       :version: 1
+
+   .. std_req:: prj_management_6482
+       :id: std_req__isosae21434__prj_management_6482
+       :status: valid
+       :version: 1
+
+   .. std_req:: prj_management_6483
+       :id: std_req__isosae21434__prj_management_6483
+       :status: valid
+       :version: 1
+
+   .. std_req:: prj_management_6484
+       :id: std_req__isosae21434__prj_management_6484
+       :status: valid
+       :version: 1
+
+   .. std_req:: prj_management_6485
+       :id: std_req__isosae21434__prj_management_6485
+       :status: valid
+       :version: 1
+
+   .. std_req:: prj_management_6486
+       :id: std_req__isosae21434__prj_management_6486
+       :status: valid
+       :version: 1
+
+   .. std_req:: prj_management_6487
+       :id: std_req__isosae21434__prj_management_6487
+       :status: valid
+       :version: 1
+
+   .. std_req:: prj_management_6488
+       :id: std_req__isosae21434__prj_management_6488
+       :status: valid
+       :version: 1
+
+   .. std_req:: prj_management_6489
+       :id: std_req__isosae21434__prj_management_6489
+       :status: valid
+       :version: 1
+
    .. std_req:: prj_management_6491
        :id: std_req__isosae21434__prj_management_6491
        :status: valid
@@ -268,6 +319,42 @@ Clause 6: Project dependent cybersecurity management
 
     .. std_wp:: prj_management_654
        :id: std_wp__isosae21434__prj_management_654
+       :status: valid
+       :version: 1
+
+
+Clause 7: Distributed cybersecurity activities
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+* Requirements
+   .. std_req:: distributed_7431
+       :id: std_req__isosae21434__distributed_7431
+       :status: valid
+       :version: 1
+
+   .. std_req:: distributed_7432
+       :id: std_req__isosae21434__distributed_7432
+       :status: valid
+       :version: 1
+
+   .. std_req:: distributed_7433
+       :id: std_req__isosae21434__distributed_7433
+       :status: valid
+       :version: 1
+
+   .. std_req:: distributed_7434
+       :id: std_req__isosae21434__distributed_7434
+       :status: valid
+       :version: 1
+
+   .. std_req:: distributed_7435
+       :id: std_req__isosae21434__distributed_7435
+       :status: valid
+       :version: 1
+
+* Work products
+   .. std_wp:: distributed_751
+       :id: std_wp__isosae21434__distributed_751
        :status: valid
        :version: 1
 

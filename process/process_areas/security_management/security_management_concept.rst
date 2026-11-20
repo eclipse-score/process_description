@@ -35,10 +35,10 @@ This approach supports risk mitigation, regulatory compliance, and continuous im
 Inputs
 ******
 
-#. Stakeholders for the security management work products?
-#. Which security plans do we have?
-#. Which other work products of security management are important?
-#. What tooling do we need?
+#. Stakeholders: the roles listed below (security manager, security engineer, project lead, committer, security external auditor, and the safety, quality and process community roles they work with).
+#. Security plans: one platform security plan, which is part of the platform management plan, and one security plan per module.
+#. Other work products: the security package, the security manual, the formal review reports, the cybersecurity assessment report, the release for post-development report, the incident response plans, the off-the-shelf and open-source component assessment, the SBOM, and the security analyses of the security analysis area.
+#. Tooling: the issue tracking work product of the platform management plan and the tool management of the platform.
 
 
 Stakeholders for the Security Management
@@ -94,14 +94,15 @@ Apart from the security plans the main work products of security management are 
 
 * :need:`Security Manual <wp__platform_security_manual>` - the Security Manual defines the requirements for safe and secure usage or integration of the SW platform (or its individual modules)
 * :need:`Reviews <wp__fdr_reports_security>` - on Security Plan, Security Package and Security Analyses, according to ISO SAE 21434 requirements
+* :need:`Cybersecurity Assessment Report <wp__security_assessment_report>` - the independent judgement of the cybersecurity of the platform before its release for post-development
 * :need:`Security Package <wp__platform_security_package>` - the Security Package does not contain the security argumentation. By this the development project ensures it does not take over liability for the SW platform (or its individual modules). But it enables the distributors to integrate the SW platform (or its individual modules) in their Security Package.
 
 Security Management Tooling
 ***************************
 
-For the security planning and security manual a “docs-as-code” approach is used and within that approach Id will be used for referencing.
+For the security planning and security manual the documentation approach of this process is used, and IDs are used for referencing.
 
-For the activities planning (who, when) we use :need:`wp__issue_track_system` to create and manage issues, and monitor progress through a project management dashboard.
+For the activities planning (who, when) we use :need:`wp__issue_track_system` to create and manage issues, and monitor progress through the status reporting of the project.
 
 Also, refer :need:`wf__mr_sec_analyses` for the monitoring of security analyses.
 

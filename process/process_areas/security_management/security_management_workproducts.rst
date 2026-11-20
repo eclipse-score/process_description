@@ -20,16 +20,18 @@ Security Management Work Products
    :version: 1
    :tags: doc_lifecycle_model_2
    :complies: std_wp__isosae21434__prj_management_651[version==1],
-              std_wp__isosae21434__maintenance_13331[version==1],
               std_wp__isosae21434__continual_8331[version==1],
-              std_wp__isosae21434__continual_8332[version==1],
-              std_wp__isosae21434__prj_management_653[version==1]
+              std_wp__isosae21434__continual_8332[version==1]
 
    Plan to manage and guide the execution of the security activities of a project including dates, milestones, tasks, deliverables, responsibilities (including the Security Manager appointment)  and resources.
 
    This Platform Security Plan also takes into account the eclipse organization's rules relevant for security development.
 
-   Guidelines on how an change impact analysis shall be concluded on each item or element involved together with it's connected items or elements.
+   The Platform Security Plan defines the sources of cybersecurity information and the triggers for the monitoring
+   (part of the vulnerability management of the platform), and it documents the decision whether a cybersecurity
+   assessment is performed, with its rationale.
+
+   Changes to an item or component are analysed with the change impact analysis of the change management (template :need:`gd_temp__change_impact_analysis`). The reuse analysis of the standard is part of that analysis.
 
    For the template see here: :need:`doc__platform_security_plan`
 
@@ -46,7 +48,7 @@ Security Management Work Products
 
    Plan to manage and guide the execution of the security activities of a project including dates, milestones, tasks, deliverables, responsibilities (including the Security Manager appointment) and resources.
 
-   Guidelines on how an impact analysis shall be concluded on each item or element involved together with it's connected items or elements.
+   Changes to an item or component are analysed with the change impact analysis of the change management (template :need:`gd_temp__change_impact_analysis`). The reuse analysis of the standard is part of that analysis.
 
    For the template see here: `Module Security Plan Template <https://eclipse-score.github.io/module_template/main/module/security_mgt/module_security_plan.html>`__
 
@@ -81,7 +83,6 @@ Security Management Work Products
    :status: valid
    :version: 1
    :tags: doc_lifecycle_model_2
-   :complies: std_wp__isosae21434__prj_management_654[version==1]
 
    Review that a work product provides sufficient and convincing evidence of their contribution to the achievement of security considering the corresponding objectives and requirements of ISO SAE 21434.
 
@@ -100,14 +101,26 @@ Security Management Work Products
    :complies: std_wp__isosae21434__org_management_555[version==1]
 
    Examination of an implemented process with regard to the process objectives and that those match the ISO SAE 21434.
-   (Currently tailored out, needs discussion)
+   (Performed before the assessment for maturity level 3, see :need:`wf__p_fs_audit_security`)
+
+.. workproduct:: Cybersecurity Assessment Report
+   :id: wp__security_assessment_report
+   :status: valid
+   :version: 1
+   :tags: doc_lifecycle_model_2
+   :complies: std_wp__isosae21434__prj_management_653[version==1]
+
+   Result of the cybersecurity assessment of the platform (see :need:`gd_guidl__security_assessment`):
+   the judgement of the cybersecurity of the platform and the recommendation for acceptance, conditional
+   acceptance or rejection, with the conditions for a conditional acceptance.
 
 .. workproduct:: Platform Security Manual
    :id: wp__platform_security_manual
    :status: valid
    :version: 1
    :tags: doc_lifecycle_model_2
-   :complies: std_wp__isosae21434__prj_management_654[version==1]
+   :complies: std_wp__isosae21434__development_1052[version==1],
+              std_wp__isosae21434__distributed_751[version==1]
 
    The Security Manual describes:
 
@@ -115,8 +128,9 @@ Security Management Work Products
    * the security concept of the OoC (i.e. which attack paths are taken care of);
    * the assumptions of use (of the features);
    * a link to the user manual;
-   * the reactions of the implemented functions under threatened operating conditions; and
-   * a description of known vulnerabilities with corresponding workaround measures.
+   * the reactions of the implemented functions under threatened operating conditions;
+   * a description of known vulnerabilities with corresponding workaround measures; and
+   * the platform part of the cybersecurity interface agreement with the integrator (see :need:`gd_guidl__security_interface`).
 
    This is on platform level. Only one manual for the entire platform.
 
@@ -127,7 +141,8 @@ Security Management Work Products
    :status: valid
    :version: 1
    :tags: doc_lifecycle_model_2
-   :complies: std_wp__isosae21434__prj_management_654[version==1]
+   :complies: std_wp__isosae21434__development_1052[version==1],
+              std_wp__isosae21434__distributed_751[version==1]
 
    The Security Manual describes:
 
@@ -135,8 +150,9 @@ Security Management Work Products
    * the security concept of the OoC (i.e. which attack paths are taken care of);
    * the assumptions of use (of the module's components);
    * a link to the module user manual (:need:`wp__module_user_manual`);
-   * the reactions of the implemented functions under threatened operating conditions; and
-   * a description of known vulnerabilities with corresponding workaround measures.
+   * the reactions of the implemented functions under threatened operating conditions;
+   * a description of known vulnerabilities with corresponding workaround measures; and
+   * the module part of the cybersecurity interface agreement with the integrator (see :need:`gd_guidl__security_interface`).
 
    This is on module level. One manual per each module.
 
@@ -147,7 +163,6 @@ Security Management Work Products
    :status: valid
    :version: 1
    :tags: doc_lifecycle_model_2
-   :complies: std_wp__isosae21434__continual_8631[version==1]
 
    Platform Software Bill of Material
    - comprehensive inventory of software components to ensure security, integrity, and compliance.
@@ -157,10 +172,36 @@ Security Management Work Products
    :status: valid
    :version: 1
    :tags: doc_lifecycle_model_2
-   :complies: std_wp__isosae21434__continual_8631[version==1]
 
    Module Software Bill of Material
    - comprehensive inventory of software components to ensure security, integrity, and compliance.
+
+.. workproduct:: Release for Post-Development Report (Security)
+   :id: wp__release_post_development_security
+   :status: valid
+   :version: 1
+   :tags: doc_lifecycle_model_2
+   :complies: std_wp__isosae21434__prj_management_654[version==1]
+
+   Evidence that the conditions for the release for post-development are fulfilled: the security case is convincing, the case is confirmed by the cybersecurity assessment (:need:`wp__security_assessment_report`), and the cybersecurity requirements for post-development are accepted.
+
+.. workproduct:: Cybersecurity Incident Response Plan
+   :id: wp__security_incident_response_plan
+   :status: valid
+   :version: 1
+   :tags: doc_lifecycle_model_2
+   :complies: std_wp__isosae21434__maintenance_13331[version==1]
+
+   One incident response plan per cybersecurity incident, recorded in the security problem issue of the
+   incident in the :need:`wp__issue_track_system`. Its content is described in :need:`gd_guidl__security_plan_definitions`.
+
+.. workproduct:: Off-the-Shelf and Open-Source Component Assessment (Security)
+   :id: wp__sw_component_oss_assessment
+   :status: valid
+   :version: 1
+   :tags: doc_lifecycle_model_2
+
+   Assessment of each off-the-shelf or open-source component the platform uses, with three results: whether the allocated cybersecurity requirements can be fulfilled by the component, whether the component is suitable for the intended use, and whether its documentation is sufficient for the cybersecurity activities. Where the documentation is insufficient, the activities to close the gap are named (requirements :need:`std_req__isosae21434__prj_management_6461` and :need:`std_req__isosae21434__prj_management_6462` of the standard).
 
 .. needextend:: "c.this_doc()"
    :+tags: security_management

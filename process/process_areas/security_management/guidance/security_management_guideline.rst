@@ -24,11 +24,13 @@ Security Management Guideline
    :complies: std_req__isosae21434__org_management_5421[version==1],
               std_req__isosae21434__org_management_5422[version==1],
               std_req__isosae21434__org_management_5423[version==1],
-              std_req__isosae21434__org_management_5443[version==1],
+              std_req__isosae21434__org_management_5441[version==1],
+              std_req__isosae21434__org_management_5442[version==1],
               std_req__isosae21434__org_management_5451[version==1],
-              std_req__isosae21434__org_management_5461[version==1],
               std_req__isosae21434__continual_8321[version==1],
               std_req__isosae21434__continual_8322[version==1],
+              std_req__isosae21434__maintenance_13321[version==1],
+              std_req__isosae21434__maintenance_13322[version==1],
               std_req__aspice_40__iic-14-55[version==1]
 
    **Security Culture:**
@@ -52,7 +54,9 @@ Security Management Guideline
    The :need:`rl__security_manager` on SW platform level is responsible to define a competence
    management for the whole platform. Expectation is that the security competence of the persons
    nominated for the roles is already given and only has to be checked. The exception from this
-   are the committers, for these no security competence needs to be enforced.
+   are the committers. Their security competence is required
+   (:need:`std_req__isosae21434__org_management_5422`) and defined by the committer
+   election criteria in the :need:`wp__platform_security_plan`.
    So the Module Security Managers shall consult the :need:`wp__platform_security_plan` and
    perform accordingly in their module project.
 
@@ -64,6 +68,12 @@ Security Management Guideline
    are used (e.g. mailing lists)
 
    **Security Weaknesses, Vulnerabilities:**
+
+   Reports of weaknesses and incidents from the field and from the community are triaged, analysed and managed in the monitor workflow; that is how the platform handles incidents (:need:`std_req__isosae21434__maintenance_13321`, :need:`std_req__isosae21434__maintenance_13322`).
+   For each cybersecurity incident the :need:`wp__security_incident_response_plan` is recorded in the
+   security problem issue of the incident and implemented there. It contains the remedial actions, the
+   communication plan, the responsibilities for the remedial actions, how new information on the incident
+   is recorded, how the progress is determined, and the criteria and actions for closure.
 
    As the SW platform organization does not have own vehicles in the field, it relies on feedback
    from OEMs and Distributors on bugs discovered in the field. The need for this feedback is part
@@ -137,7 +147,7 @@ Security Management Guideline
    **Scheduling of Reviews, Audit and Assessment:**
 
    Scheduling is done in the same way as for all work products definition by issues.
-   The respective work products are :need:`wp__fdr_reports_security`,  and  :need:`wp__audit_report_security`
+   The respective work products are :need:`wp__fdr_reports_security`, :need:`wp__security_assessment_report` and :need:`wp__audit_report_security`.
 
 
    **Planning of Security Analyses:**
@@ -177,6 +187,57 @@ Security Management Guideline
    The :need:`Security Team <rl__security_team>` is responsible for coordinating the resolution of
    vulnerabilities within the Project.
 
+.. gd_guidl:: Cybersecurity Assessment
+   :id: gd_guidl__security_assessment
+   :status: valid
+   :version: 1
+   :complies: std_req__isosae21434__prj_management_6481[version==1],
+              std_req__isosae21434__prj_management_6482[version==1],
+              std_req__isosae21434__prj_management_6483[version==1],
+              std_req__isosae21434__prj_management_6484[version==1],
+              std_req__isosae21434__prj_management_6485[version==1],
+              std_req__isosae21434__prj_management_6487[version==1],
+              std_req__isosae21434__prj_management_6488[version==1],
+              std_req__isosae21434__prj_management_6489[version==1]
+
+   The decision whether a cybersecurity assessment is performed, and its risk-based rationale, are
+   documented in the :need:`wp__platform_security_plan` (for a module in the :need:`wp__module_security_plan`).
+   The rationale is reviewed independently in the formal review of the security plan.
+
+   The assessment is planned and performed by an assessor who is independent of the assessed activities
+   and has access to the information, the tools and the cooperation of the persons who performed them.
+   Its scope is the security plan and all work products identified in it, the treatment of the
+   cybersecurity risks, the appropriateness and effectiveness of the cybersecurity controls and activities,
+   and the rationales for the achievement of the objectives of the standard (including the tailoring).
+
+   The result is the :need:`wp__security_assessment_report`. It recommends acceptance, conditional
+   acceptance or rejection, and it states the conditions for a conditional acceptance.
+
+.. gd_guidl:: Cybersecurity Interface with the Integrator
+   :id: gd_guidl__security_interface
+   :status: valid
+   :version: 1
+   :complies: std_req__isosae21434__distributed_7431[version==1],
+              std_req__isosae21434__distributed_7433[version==1],
+              std_req__isosae21434__distributed_7434[version==1]
+
+   The platform is developed out of context, so its integrators are not known during development.
+   The platform part of the cybersecurity interface agreement is therefore published in the
+   :need:`wp__platform_security_manual` (for a module in the :need:`wp__module_security_manual`).
+   It contains:
+
+   * the points of contact for cybersecurity of the platform;
+   * the cybersecurity activities performed by the platform and those left to the integrator;
+   * the joint tailoring, i.e. the tailoring of the platform security plan that the integrator has to consider;
+   * the information and work products the platform shares, and how the integrator reports cybersecurity issues;
+   * the milestones, i.e. the releases for post-development; and
+   * the end of cybersecurity support of a release.
+
+   An integrator who uses the platform adopts this interface or agrees a specific one with the project.
+   For a vulnerability that has to be managed, the actions and the responsibility for them are agreed
+   with the affected integrators in the security problem issue. Unclear, infeasible or conflicting
+   requirements are reported in both directions through the same channels.
+
 .. gd_guidl:: Security Manual Generation
    :id: gd_guidl__security_manual
    :status: valid
@@ -196,7 +257,7 @@ Security Management Guideline
    :complies: std_req__isosae21434__prj_management_6471[version==1]
 
    The Security Package shall be generated progressively and automatically compiling the work products.
-   One of the checks to perform on the platform safety package is to check completeness of the
+   One of the checks to perform on the platform security package is to check completeness of the
    process compliance to standards, which can be seen from standard linkage charts in :ref:`external_standards`.
 
 .. needextend:: "c.this_doc()"
