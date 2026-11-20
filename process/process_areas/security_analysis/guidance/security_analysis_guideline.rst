@@ -21,7 +21,19 @@ Security Analysis Guidelines
    :id: gd_guidl__security_analysis
    :status: valid
    :version: 1
-   :complies:
+   :complies: std_req__isosae21434__concept_9321[version==1],
+              std_req__isosae21434__concept_9322[version==1],
+              std_req__isosae21434__concept_9421[version==1],
+              std_req__isosae21434__concept_9422[version==1],
+              std_req__isosae21434__concept_9423[version==1],
+              std_req__isosae21434__concept_9424[version==1],
+              std_req__isosae21434__assessment_15321[version==1],
+              std_req__isosae21434__assessment_15322[version==1],
+              std_req__isosae21434__assessment_15421[version==1],
+              std_req__isosae21434__assessment_15521[version==1],
+              std_req__isosae21434__assessment_15522[version==1],
+              std_req__isosae21434__assessment_15523[version==1],
+              std_req__isosae21434__assessment_15524[version==1]
 
 This document describes the general guidance for Security Analysis based on the concept
 which is defined :need:`Security Analysis Concept<doc_concept__security_analysis>`.
@@ -158,6 +170,35 @@ Examples for Security Analysis at component level
 =================================================
 
 The security analysis shall be used to analyze whether the vulnerabilities within the component can be exploited. This could be unintended privilege escalation between two sub-components, allowing unauthorized access to sensitive data or security-critical functions.
+
+Risk determination of the platform security analysis
+=====================================================
+
+The platform security analysis starts with the item definition of the platform: its boundary, its functions and its
+preliminary architecture (the platform feature architecture), and the assumed operational environment from the
+platform security manual.
+
+Each threat scenario of the platform security analysis is rated as follows. The ratings are recorded per
+threat scenario in the platform security analysis.
+
+* Assets and damage scenarios: for each asset of the platform and its cybersecurity properties
+  (confidentiality, integrity, availability), the damage scenarios that a compromise causes for road users
+  are identified, based on the assumed use of the platform documented in the platform security manual.
+* Impact: each damage scenario is rated per impact category (safety, financial, operational, privacy) as
+  severe, major, moderate or negligible. The safety impact is derived from the severity classes of
+  ISO 26262-3. If one category is rated and every other category is clearly less critical, the other
+  categories need not be analysed further.
+* Attack feasibility: each attack path is rated high, medium, low or very low with the attack potential-based
+  approach (elapsed time, specialist expertise, knowledge of the item, window of opportunity, equipment).
+  The feasibility of a threat scenario is the highest feasibility of its attack paths.
+* Risk value: for each threat scenario the risk value is determined from the impact rating and the attack
+  feasibility rating with the risk matrix example of Annex H of the standard (Table H.8). The risk value is
+  between 1 and 5, where 1 is the minimal risk. If a threat scenario has impacts in more than one category,
+  a risk value is determined per category.
+
+For each threat scenario a risk treatment decision is taken and recorded: avoid, reduce, share or retain the
+risk. A reduced risk leads to a cybersecurity goal; a risk that is shared or retained because of an
+assumption leads to a cybersecurity claim.
 
 .. needextend:: "c.this_doc()"
    :+tags: security_analysis

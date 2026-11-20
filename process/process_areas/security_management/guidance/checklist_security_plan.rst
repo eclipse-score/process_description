@@ -40,7 +40,14 @@ Security Plan Formal Review Checklist
               std_req__isosae21434__prj_management_6452[version==1],
               std_req__isosae21434__prj_management_6453[version==1],
               std_req__isosae21434__prj_management_6461[version==1],
-              std_req__isosae21434__prj_management_6462[version==1]
+              std_req__isosae21434__prj_management_6462[version==1],
+              std_req__isosae21434__prj_management_6481[version==1],
+              std_req__isosae21434__prj_management_6482[version==1],
+              std_req__isosae21434__prj_management_6484[version==1],
+              std_req__isosae21434__prj_management_6485[version==1],
+              std_req__isosae21434__prj_management_6487[version==1],
+              std_req__isosae21434__prj_management_6488[version==1],
+              std_req__isosae21434__prj_management_6489[version==1]
 
    For the content see here: :need:`doc__platform_name_security_plan_fdr`
 

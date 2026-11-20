@@ -26,7 +26,7 @@ Security Management Process Requirements
 
    Security Plans shall contain documents references where the status is derived automatically.
 
-   Note: This can be done by defining the document as a sphinx-need and using sphinx mechanisms.
+   Note: This can be done by defining the document as a need and using the mechanisms of the documentation tooling.
 
 .. gd_req:: Security Management attribute: status accumulation
    :id: gd_req__security_wp_status
@@ -38,7 +38,7 @@ Security Management Process Requirements
 
    Security Plans shall contain work product references where the accumulated status is derived automatically.
 
-   Note: This can be done as for documents if the work product is a single sphinx-need.
+   Note: This can be done as for documents if the work product is a single need.
    For work products collections (e.g. all requirements of a component) an accumulated status is needed (e.g. like "% valid state")
 
 .. needextend:: "c.this_doc()"

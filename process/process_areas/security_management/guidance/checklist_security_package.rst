@@ -19,7 +19,8 @@ Security Package Formal Review Checklist
    :id: gd_chklst__security_package
    :status: valid
    :version: 1
-   :complies: std_req__isosae21434__prj_management_6471[version==1], std_req__isosae21434__prj_management_6491[version==1], std_req__isosae21434__prj_management_6492[version==1]
+   :complies: std_req__isosae21434__prj_management_6471[version==1], std_req__isosae21434__prj_management_6491[version==1], std_req__isosae21434__prj_management_6492[version==1],
+              std_req__isosae21434__prj_management_6488[version==1], std_req__isosae21434__prj_management_6489[version==1]
 
    For the content see here: `Security Package Formal Review Checklist <https://eclipse-score.github.io/module_template/main/module/security_mgt/module_security_package_fdr.html>`__
 

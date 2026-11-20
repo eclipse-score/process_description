@@ -24,23 +24,30 @@ Irrelevant clauses for the project process requirements and work products compli
 
 "Clause 1-4:" - as it contains no requirements and work products
 
-"Clause 7: Distributed cybersecurity activities" - as the project is organized as open source project
-
-"Clause 9: Concept" - as this is in responsibility of system integrator
-
-"Clause 11: Cybersecurity validation" - as this is in responsibility of system integrator
-
-"Clause 12: Production" -  as this is in responsibility of system integrator
-
-"Clause 14: End of cybersecurity support and decommissioning" - as this is in responsibility of system integrator
-
 "Annex A-H:" - as it contains no requirements and work products
 
+Clauses performed by the system integrator are distributed cybersecurity activities (see clause 7), not tailored activities.
+Their interface to the platform is the cybersecurity interface agreement; the platform part is documented in the platform security plan and the platform security manual:
+
+"Clause 11: Cybersecurity validation"
+
+"Clause 12: Production"
+
+"Clause 14: End of cybersecurity support and decommissioning"
+
+Partly relevant clauses are:
+
+"Clause 7: Distributed cybersecurity activities" - only the alignment of responsibilities with the system integrator (7.4.3) and the
+cybersecurity interface agreement are relevant. Supplier capability (7.4.1) and request for quotation (7.4.2) are tailored out,
+because S-CORE is an open-source project and does not select suppliers. The rationale is documented in the platform security plan
+and reviewed in its formal review (:need:`[[title]] <std_req__isosae21434__prj_management_6432>`).
+
+"Clause 9: Concept" - relevant at platform level (item definition, TARA, cybersecurity goals, claims and concept of the platform).
+The item level is performed by the system integrator through the cybersecurity interface (clause 7).
+
+Tailoring rationales are documented in the platform security plan (score repository, tailoring section).
 
 Relevant clauses are:
-
-Tailoring documentation is planned in
-https://github.com/eclipse-score/score/issues/696
 
 
 Clause 5: Organizational cybersecurity management
@@ -239,6 +246,51 @@ Clause 6: Project dependent cybersecurity management
        :status: valid
        :version: 1
 
+   .. std_req:: prj_management_6481
+       :id: std_req__isosae21434__prj_management_6481
+       :status: valid
+       :version: 1
+
+   .. std_req:: prj_management_6482
+       :id: std_req__isosae21434__prj_management_6482
+       :status: valid
+       :version: 1
+
+   .. std_req:: prj_management_6483
+       :id: std_req__isosae21434__prj_management_6483
+       :status: valid
+       :version: 1
+
+   .. std_req:: prj_management_6484
+       :id: std_req__isosae21434__prj_management_6484
+       :status: valid
+       :version: 1
+
+   .. std_req:: prj_management_6485
+       :id: std_req__isosae21434__prj_management_6485
+       :status: valid
+       :version: 1
+
+   .. std_req:: prj_management_6486
+       :id: std_req__isosae21434__prj_management_6486
+       :status: valid
+       :version: 1
+
+   .. std_req:: prj_management_6487
+       :id: std_req__isosae21434__prj_management_6487
+       :status: valid
+       :version: 1
+
+   .. std_req:: prj_management_6488
+       :id: std_req__isosae21434__prj_management_6488
+       :status: valid
+       :version: 1
+
+   .. std_req:: prj_management_6489
+       :id: std_req__isosae21434__prj_management_6489
+       :status: valid
+       :version: 1
+
    .. std_req:: prj_management_6491
        :id: std_req__isosae21434__prj_management_6491
        :status: valid
@@ -268,6 +320,42 @@ Clause 6: Project dependent cybersecurity management
 
     .. std_wp:: prj_management_654
        :id: std_wp__isosae21434__prj_management_654
+       :status: valid
+       :version: 1
+
+
+Clause 7: Distributed cybersecurity activities
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+* Requirements
+   .. std_req:: distributed_7431
+       :id: std_req__isosae21434__distributed_7431
+       :status: valid
+       :version: 1
+
+   .. std_req:: distributed_7432
+       :id: std_req__isosae21434__distributed_7432
+       :status: valid
+       :version: 1
+
+   .. std_req:: distributed_7433
+       :id: std_req__isosae21434__distributed_7433
+       :status: valid
+       :version: 1
+
+   .. std_req:: distributed_7434
+       :id: std_req__isosae21434__distributed_7434
+       :status: valid
+       :version: 1
+
+   .. std_req:: distributed_7435
+       :id: std_req__isosae21434__distributed_7435
+       :status: valid
+       :version: 1
+
+* Work products
+   .. std_wp:: distributed_751
+       :id: std_wp__isosae21434__distributed_751
        :status: valid
        :version: 1
 
@@ -345,6 +433,107 @@ Clause 8: Continual cybersecurity activities
 
     .. std_wp:: continual_8631
        :id: std_wp__isosae21434__continual_8631
+       :status: valid
+       :version: 1
+
+
+Clause 9: Concept
+~~~~~~~~~~~~~~~~~
+
+Partly relevant: the concept requirements apply at platform level (item definition, threat analysis,
+cybersecurity goals, claims and cybersecurity concept of the platform). The item-level part belongs to the
+system integrator and is covered by the cybersecurity interface (see clause 7). Identifiers are
+modelled after the other clauses; the claims are made where the process produces the evidence (work products and guidance).
+
+* Requirements
+   .. std_req:: concept_9321
+       :id: std_req__isosae21434__concept_9321
+       :status: valid
+       :version: 1
+
+   .. std_req:: concept_9322
+       :id: std_req__isosae21434__concept_9322
+       :status: valid
+       :version: 1
+
+   .. std_req:: concept_9421
+       :id: std_req__isosae21434__concept_9421
+       :status: valid
+       :version: 1
+
+   .. std_req:: concept_9422
+       :id: std_req__isosae21434__concept_9422
+       :status: valid
+       :version: 1
+
+   .. std_req:: concept_9423
+       :id: std_req__isosae21434__concept_9423
+       :status: valid
+       :version: 1
+
+   .. std_req:: concept_9424
+       :id: std_req__isosae21434__concept_9424
+       :status: valid
+       :version: 1
+
+   .. std_req:: concept_9425
+       :id: std_req__isosae21434__concept_9425
+       :status: valid
+       :version: 1
+
+   .. std_req:: concept_9521
+       :id: std_req__isosae21434__concept_9521
+       :status: valid
+       :version: 1
+
+   .. std_req:: concept_9522
+       :id: std_req__isosae21434__concept_9522
+       :status: valid
+       :version: 1
+
+   .. std_req:: concept_9523
+       :id: std_req__isosae21434__concept_9523
+       :status: valid
+       :version: 1
+
+   .. std_req:: concept_9524
+       :id: std_req__isosae21434__concept_9524
+       :status: valid
+       :version: 1
+
+* Work products
+   .. std_wp:: concept_9331
+       :id: std_wp__isosae21434__concept_9331
+       :status: valid
+       :version: 1
+
+   .. std_wp:: concept_9431
+       :id: std_wp__isosae21434__concept_9431
+       :status: valid
+       :version: 1
+
+   .. std_wp:: concept_9432
+       :id: std_wp__isosae21434__concept_9432
+       :status: valid
+       :version: 1
+
+   .. std_wp:: concept_9433
+       :id: std_wp__isosae21434__concept_9433
+       :status: valid
+       :version: 1
+
+   .. std_wp:: concept_9434
+       :id: std_wp__isosae21434__concept_9434
+       :status: valid
+       :version: 1
+
+   .. std_wp:: concept_9531
+       :id: std_wp__isosae21434__concept_9531
+       :status: valid
+       :version: 1
+
+   .. std_wp:: concept_9532
+       :id: std_wp__isosae21434__concept_9532
        :status: valid
        :version: 1
 
@@ -487,6 +676,41 @@ Clause 15: Threat analysis and risk assessment methods
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 * Requirements
+
+   .. std_req:: assessment_15321
+      :id: std_req__isosae21434__assessment_15321
+      :status: valid
+      :version: 1
+
+   .. std_req:: assessment_15322
+      :id: std_req__isosae21434__assessment_15322
+      :status: valid
+      :version: 1
+
+   .. std_req:: assessment_15421
+      :id: std_req__isosae21434__assessment_15421
+      :status: valid
+      :version: 1
+
+   .. std_req:: assessment_15521
+      :id: std_req__isosae21434__assessment_15521
+      :status: valid
+      :version: 1
+
+   .. std_req:: assessment_15522
+      :id: std_req__isosae21434__assessment_15522
+      :status: valid
+      :version: 1
+
+   .. std_req:: assessment_15523
+      :id: std_req__isosae21434__assessment_15523
+      :status: valid
+      :version: 1
+
+   .. std_req:: assessment_15524
+      :id: std_req__isosae21434__assessment_15524
+      :status: valid
+      :version: 1
 
    .. std_req:: assessment_15621
       :id: std_req__isosae21434__assessment_15621
