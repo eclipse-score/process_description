@@ -14,10 +14,7 @@
 name: Documentation
 
 permissions:
-  contents: write
-  pages: write
-  pull-requests: write
-  id-token: write
+  contents: read
 
 on:
   pull_request_target:
@@ -32,12 +29,9 @@ on:
 
 jobs:
   build-docs:
-    uses: eclipse-score/cicd-workflows/.github/workflows/docs.yml@c1c90b1a82a1fab0fc202979dde6686b2162d5a8 # v0.0.0
+    uses: eclipse-score/cicd-workflows/.github/workflows/docs.yml@972e0bd6ce2e41bd627635d3355e8c56efb99530 # 2026-11-13
     permissions:
-      contents: write
-      pages: write
-      pull-requests: write
-      id-token: write
+      contents: read
 
     with:
       bazel-target: "//:docs -- --github_user=${{ github.repository_owner }} --github_repo=${{ github.event.repository.name }}"
