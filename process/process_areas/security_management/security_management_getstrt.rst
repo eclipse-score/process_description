@@ -42,8 +42,10 @@ The following workflows shall be executed continuously:
 
 Additional to the continuous workflows the following workflows shall be executed according to the project needs:
 
-* Perform Security Audit (to be discussed, currently not in scope)
+* Perform Security Audit (before the assessment for maturity level 3, see workflow)
 * Perform Formal Security Reviews
+* Perform Cybersecurity Assessment
+* Assess Off-the-Shelf and Open-Source Components
 
 Some of the workproducts are currently either tailored out or not in scope of this project (due to Out-of-Context development).
 Refer :need:`wp__tailoring_work_products` section for the details about tailoring.
