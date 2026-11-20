@@ -5,9 +5,7 @@ Start in Copilot Chat
 -----------------------
 
 Open this repository in a Copilot-enabled editor and use Chat Agent mode.
-You do not need to prepare input, copy JSON, enter tool versions, run import
-commands, or approve anything in a separate terminal. Paste this into a new
-conversation:
+For the bundled example, paste this into a new conversation:
 
 .. code-block:: text
 
@@ -16,9 +14,9 @@ conversation:
 
 If the reference is not resolved, attach ``chat_workflow.prompt.md`` using Add
 Context. Alternatively, open that file and use its Run Prompt button where the
-editor supports it, supplying ``Inspect baselibs``. The prompt stays inside this
-directory; it is not installed globally or automatically discovered as a slash
-command. Reattach it when starting a new Chat.
+editor supports it, supplying ``Inspect baselibs``. The prompt stays at
+``process_extensions/chat_workflow.prompt.md``; it is not installed globally or
+automatically discovered as a slash command. Reattach it when starting a new Chat.
 
 For other input, name a feature/component requirements file, feature, safety-level
 context, and permitted scope. Stakeholder requirements remain part of the
@@ -43,12 +41,11 @@ trigger; nothing here opens, reacts to, or merges a PR automatically.
 Judgment and Pause
 ------------------
 
-The agent prepares a fresh uniquely named run, detects available tool metadata,
-judges the requirements against the exact canonical checklist (parsed directly
-from the public template, not a paraphrase), validates the JSON response, and
-creates ``inspection.md`` under ``process_extensions/out/<run>/``. It presents
-the file link and verdict counts, then **ends its turn**. Nothing is written
-outside that scratch run directory at this stage.
+Following the prompt, the agent uses local helpers to prepare a new run,
+collect available tool metadata, and validate its draft assessment against the
+public checklist. The helpers create ``inspection.md`` under
+``process_extensions/out/<run>/``. The prompt instructs the agent to present the
+file link and verdict counts, then **end its turn** for human review.
 
 Input, prompt, original judgment, and manifest are preserved separately in the
 same run directory for local traceability only; they are not evidence by
@@ -79,8 +76,9 @@ successful verification, and neither is ``n/a``.
 
    python -m workflows.req_safety_inspection.workflow check <run>
 
-There is no local confirmation command and nothing to approve here: this step
-is immediate feedback while editing, not a gate.
+Run this command from ``process_extensions/``, or ask the agent to run it after
+corrections. The helper does not detect file edits automatically.
+Checking the file is not approval.
 
 Hand Off to the Project's Own Review
 -------------------------------------
@@ -94,10 +92,6 @@ that change — authenticated by the platform, requiring a reviewer distinct
 from the content's author, and retained in the project's own history — is the
 only approval this tool recognizes. This repository does not script that
 commit, PR, or merge step; it remains a normal, reviewed Git/GitHub action.
-
-This tool never writes a report, an audit record, or any other artifact that
-claims to represent approval. There is nothing here that can be mistaken for,
-or fabricate, a reviewer's sign-off.
 
 Automatic Tool Information
 --------------------------
@@ -117,15 +111,10 @@ require a supported editor integration, which this demonstrator does not provide
 Safety Boundary
 -----------------------------
 
-This tool has no approval authority and makes no qualification claim. It
-validates structure, enforces the canonical checklist, and stops for human
-judgment at every stage; it cannot authenticate a reviewer or prove anything
-about what happened in a Chat conversation. The actual approval — the
-project's own PR review — is outside this tool entirely, with its own
-existing identity, independence, and retention guarantees. Reviewer
-competence, tool acceptance, and the public S-CORE qualification decision
-remain separate, governed by the existing tool-management process (see
-:doc:`ai_tool_management`).
+The helpers validate structure, not the correctness of the assessment. They
+cannot enforce the agent's turn boundary or authenticate a reviewer.
+Human review and approval take place through the project's existing process.
+Tool evaluation is separate; see :doc:`../process_guidance/tool_management`.
 
 Environment and Developer Checks
 -----------------------------------
@@ -140,7 +129,7 @@ separate S-CORE checklist for direct stakeholder inspection.
 
 Helpers require Python 3.11+ and Markdown as declared in ``pyproject.toml``.
 The agent uses an existing suitable interpreter and asks before installing
-missing dependencies. Setup can use ``pip install -e .`` from this directory
+missing dependencies. Setup can use ``pip install -e .`` from ``process_extensions/``
 in an appropriate environment; this is not a per-inspection engineer step.
 
 Developers run offline tests from ``process_extensions/``:
@@ -149,9 +138,8 @@ Developers run offline tests from ``process_extensions/``:
 
    python -m unittest discover -s tests/req_inspection -v
 
-Tests use constructed responses without invoking Copilot. They do not establish
-inspection quality or qualification. There is no separate legacy command path:
-``start``, ``draft``, and ``check`` are the only commands this workflow has.
+Tests use constructed responses without invoking Copilot. They check helper
+behavior, not inspection quality or qualification.
 
 From the repository root publish these pages with the existing command:
 
@@ -159,6 +147,7 @@ From the repository root publish these pages with the existing command:
 
    bazel run //:docs
 
-The Bazel bundle mounts only the publication pages under ``process_extensions``.
+The Bazel bundle mounts publication sources from ``process_extensions/docs/``
+at the published ``process_extensions`` location.
 Runtime prompts, templates, fixtures, tests, and run outputs are not Sphinx
 document inputs. Documentation builds never invoke Copilot.

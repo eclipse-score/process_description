@@ -3,18 +3,14 @@
 AI-Assisted Workflow Extensions
 ################################
 
-These draft proposals describe optional AI-supported requirements inspection.
-They are based on the proposed concept and public S-CORE process definitions.
-They do not establish standards compliance,
-tool qualification, or coverage of a particular safety level.
-
-The Bazel documentation bundle publishes these draft nodes alongside the
-existing process. Role assignments are proposed responsibilities, not recorded
-approvals. The executable demonstration is described in :doc:`execution`.
+This draft describes optional AI-supported requirements inspection, not an
+approved process change or tool qualification. The executable demonstration is
+described in
+:doc:`../demonstrator/execution`.
 
 The workflow augments ``wf__monitor_verify_requirements`` without replacing the
 existing manual inspection. Proposed tool evaluation and monitoring are described
-in :doc:`ai_tool_management`.
+in :doc:`tool_management`.
 
 
 .. workflow:: AI-Assisted Safety Requirements Inspection
@@ -59,8 +55,9 @@ in :doc:`ai_tool_management`.
    **Proposed review guardrail:** After presenting a validated draft, the agent
    ends its turn. The reviewer independently checks the assessment, evidence
    gaps, parent traceability, and consistency, and may edit the checklist or
-   request corrections; the agent validates and presents every changed
-   revision, then stops again. There is no local chat-confirmation command:
+   request corrections. After changes, the engineer runs the check command
+   or asks the agent to run it. The prompt instructs the agent to present the
+   checked result and end its turn. There is no local chat-confirmation command:
    the engineer copies the checked checklist into the project's real
    inspection document (for example ``doc__<feature>_req_inspection``), commits
    it, and the normal Git/GitHub review of that change is the only approval
@@ -78,6 +75,6 @@ in :doc:`ai_tool_management`.
    - Drafts are distinguished from accepted evidence: nothing is written to the
      project's inspection document until the engineer does so themselves.
    - Human approval alone does not establish tool qualification. Tool evaluation
-     under the existing tool-management workflows (see :doc:`ai_tool_management`)
+     under the existing tool-management workflows (see :doc:`tool_management`)
      must be assessed for the intended use before adoption.
    - Model, prompt, configuration, or usage changes trigger impact evaluation.
