@@ -39,6 +39,12 @@ Assumed Platform Security Requirements
 Assumptions of Use
 ------------------
 
+Assumed Intended Use and Impact
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+| The platform is developed out of context and has no item. The assumed intended use of the platform and the assumptions on the environment below are the basis of the platform security analysis (see :need:`gd_guidl__security_analysis`).
+| The risk values of the platform security analysis are based on an assumed worst-case impact (severe) for every threat scenario. The integrator rates the impact with the damage scenarios of the item and re-determines the risk values and the risk treatment decisions.
+| <Describe here the assumed intended use of the platform: the vehicle functions it is expected to host.>
+
 Assumptions on the Environment
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | The platform and its components are developed as Out of Context (OoC) with assumptions on the environment.

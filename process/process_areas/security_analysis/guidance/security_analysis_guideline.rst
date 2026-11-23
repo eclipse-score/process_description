@@ -159,5 +159,36 @@ Examples for Security Analysis at component level
 
 The security analysis shall be used to analyze whether the vulnerabilities within the component can be exploited. This could be unintended privilege escalation between two sub-components, allowing unauthorized access to sensitive data or security-critical functions.
 
+Risk determination of the platform security analysis
+=====================================================
+
+The platform is developed out of context and has no item. Damage scenarios and impact ratings depend on the item
+and are therefore not produced by the platform (see :need:`wp__tailoring_work_products`); they are determined by
+the integrator. The platform security analysis is based on the assumptions on the intended use and the operational
+environment of the platform, documented in the :need:`wp__platform_security_manual`.
+
+Each threat scenario of the platform security analysis is rated as follows. The ratings are recorded per
+threat scenario in the platform security analysis.
+
+* Assets and threat scenarios: the assets of the platform with their cybersecurity properties (confidentiality,
+  integrity, availability) and the threat scenarios that compromise them are identified.
+* Attack feasibility: each attack path is rated high, medium, low or very low with the attack potential-based
+  approach (elapsed time, specialist expertise, knowledge of the platform, window of opportunity, equipment).
+  The feasibility of a threat scenario is the highest feasibility of its attack paths.
+* Risk value: the impact of every threat scenario is assumed as severe (worst case), because the use of the
+  platform in the item is not known. The risk value is determined from this assumed impact and the attack
+  feasibility rating with the risk matrix example of Annex H of the standard. The risk value is between 1 and 5,
+  where 1 is the minimal risk.
+
+For each threat scenario a risk treatment decision is taken and recorded: avoid, reduce, share or retain (accept)
+the risk. A reduced risk is mitigated by security requirements; a risk that is shared with the integrator or retained is documented as an assumption of use in the :need:`wp__platform_security_manual`.
+
+The assumed worst-case impact is itself an assumption of use: the integrator rates the impact with the damage
+scenarios of the item and re-determines the risk values and the risk treatment decisions, when validating the
+assumptions of the out-of-context platform (:need:`std_req__isosae21434__prj_management_6453`). The risk values of the
+platform are therefore an upper bound.
+
+The feature and component security analyses use the same assumed impact for the risk values of their threat scenarios.
+
 .. needextend:: "c.this_doc()"
    :+tags: security_analysis

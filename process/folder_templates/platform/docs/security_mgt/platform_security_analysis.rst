@@ -45,7 +45,7 @@ Platform Security Analysis
 --------------------------
 The following deliverables are the outcome of a security analysis on the platform.
 
-#. Identification of threats and mitigations
+#. Identification of threats and mitigations, with the risk determination of each threat scenario (see :need:`gd_guidl__security_analysis`)
 #. Stakeholder security requirements definition
 #. Security assumptions definition
 
@@ -58,24 +58,40 @@ Threat and Risk Identification
         :header-rows: 1
 
         * - Id
-          - Identified Threat
-          - Corresponding mitigation
+          - Threat scenario
+          - Asset and cybersecurity property
+          - Attack feasibility rating
+          - Risk value (assumed impact: severe)
+          - Risk treatment decision
+          - Mitigation (security requirement) or assumption of use
           - Comment/Remark
 
         * - 1
           - Eg: A backend attacker performs MiTM between the OEM cloud and the platform component.
+          - <asset, confidentiality / integrity / availability>
+          - <high / medium / low / very low>
+          - <1 to 5>
+          - <avoid / reduce / share / retain>
           - Eg: End to end TLS between the platform component and the OEM cloud service mitigates the MiTM attacks.
-          - <Rationale for mitigation>
+          - <Rationale for the ratings and the treatment>
 
         * - 2
           - Eg: Unauthorized access to the onboard diagnostic stack from external interfaces.
+          - <asset, confidentiality / integrity / availability>
+          - <high / medium / low / very low>
+          - <1 to 5>
+          - <avoid / reduce / share / retain>
           - Eg: Authentication and authorization mechanisms such as usage of tokens prevents such unauthorized access.
-          - <Rationale for result>
+          - <Rationale for the ratings and the treatment>
 
         * - 3
           - Eg: Static configuration files are manipulated by an inside attacker.
+          - <asset, confidentiality / integrity / availability>
+          - <high / medium / low / very low>
+          - <1 to 5>
+          - <avoid / reduce / share / retain>
           - Eg: OS specific access control mechanisms and least privilege principle prevents such unauthorized manipulation.
-          - <Rationale for result>
+          - <Rationale for the ratings and the treatment>
 
 
 

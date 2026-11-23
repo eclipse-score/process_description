@@ -22,10 +22,20 @@ Security Analysis Work Products
    :status: valid
    :version: 1
    :tags: doc_lifecycle_model_2
-   :complies: std_wp__isosae21434__development_1055[version==1], std_wp__isosae21434__assessment_15332[version==1], std_wp__isosae21434__assessment_15431[version==1]
+   :complies: std_wp__isosae21434__development_1055[version==1],
+              std_wp__isosae21434__assessment_15332[version==1],
+              std_wp__isosae21434__assessment_15431[version==1],
+              std_wp__isosae21434__assessment_15631[version==1],
+              std_wp__isosae21434__assessment_15731[version==1],
+              std_wp__isosae21434__assessment_15831[version==1],
+              std_wp__isosae21434__assessment_15931[version==1]
 
    Analyze the attack surfaces between features that references all platform feature
    static architecture diagrams, highlighting potential shared attack vectors.
+
+   Contains the threat analysis and risk assessment at platform level (assets, threat scenarios, attack paths,
+   attack feasibility ratings, risk values with the assumed worst-case impact, and risk treatment decisions),
+   see :need:`gd_guidl__security_analysis`.
 
 .. workproduct:: Feature Security Analysis
    :id: wp__feature_security_analysis
