@@ -95,6 +95,7 @@ Which security requirements are affected or has to be changed?
 Could the new/modified feature enable new threat scenarios?
 Could the new/modified feature enable new attack paths?
 Could the new/modified feature impact functional safety?
+Are the cybersecurity claims and assumptions still valid after the change? (reuse analysis)
 If applicable, which additional security measures must be implemented to mitigate the risk?
 
 .. note::

@@ -35,8 +35,57 @@ Platform Security Package Checklist
 
 
 **Purpose**
-The purpose of this Platform Security Package Checklist template is to collect the topics to be checked during verification of the Platform Security Package.
+
+The purpose of this security package formal review checklist is to report status of the review for the platform security package.
+
+**Conduct**
+As described in :need:`wf__p_formal_security_rv`, the formal document review is performed by the external auditor, supported by the Security Manager:
+
+- reviewer: <external auditor explicitly named here>
 
 **Checklist**
 
-To be filled as part of https://github.com/eclipse-score/process_description/issues/452.
+.. list-table:: Security Package Checklist
+        :header-rows: 1
+
+        * - Id
+          - Security package activity
+          - Compliant to ISO/SAE 21434?
+          - Reference
+          - Comment
+
+        * - 1
+          - Is a security package provided which matches the security plan (i.e. all planned work products referenced)?
+          - [YES | NO ]
+          - :need:`[[title]] <std_req__isosae21434__prj_management_6471>`
+          - <Rationale for result>
+
+        * - 2
+          - Is the argument how cybersecurity is achieved (cybersecurity case), provided in the security package, plausible and sufficient?
+          - NO
+          - :need:`[[title]] <std_req__isosae21434__prj_management_6471>`
+          - The argument is intentionally not provided by the project.
+
+        * - 3
+          - Are the referenced work products available (e.g. security analyses, platform security manual, SBOM)?
+          - [YES | NO ]
+          - :need:`[[title]] <std_req__isosae21434__prj_management_6491>`
+          - <Rationale for result>
+
+        * - 4
+          - Are the referenced work products in released state?
+          - [YES | NO ]
+          - :need:`[[title]] <std_req__isosae21434__prj_management_6492>`
+          - <Rationale for result>
+
+        * - 5
+          - If security related deviations from the process or security concept are documented, are these argued understandably?
+          - [YES | NO ]
+          - :need:`[[title]] <std_req__isosae21434__prj_management_6471>`
+          - <Rationale for result>
+
+        * - 6
+          - Is the SBOM of the platform generated automatically, and does the generation cover all open source components?
+          - [YES | NO ]
+          -
+          - <Rationale for result>
