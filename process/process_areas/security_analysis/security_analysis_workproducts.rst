@@ -26,16 +26,13 @@ Security Analysis Work Products
               std_wp__isosae21434__assessment_15332[version==1],
               std_wp__isosae21434__assessment_15431[version==1],
               std_wp__isosae21434__assessment_15631[version==1],
-              std_wp__isosae21434__assessment_15731[version==1],
-              std_wp__isosae21434__assessment_15831[version==1],
-              std_wp__isosae21434__assessment_15931[version==1]
+              std_wp__isosae21434__assessment_15731[version==1]
 
    Analyze the attack surfaces between features that references all platform feature
    static architecture diagrams, highlighting potential shared attack vectors.
 
-   Contains the threat analysis and risk assessment at platform level (assets, threat scenarios, attack paths,
-   attack feasibility ratings, risk values with the assumed worst-case impact, and risk treatment decisions),
-   see :need:`gd_guidl__security_analysis`.
+   Contains the threat analysis at platform level (assets with their cybersecurity properties, threat scenarios,
+   attack paths and attack feasibility ratings), see :need:`gd_guidl__security_analysis`.
 
 .. workproduct:: Feature Security Analysis
    :id: wp__feature_security_analysis
@@ -46,11 +43,9 @@ Security Analysis Work Products
               std_wp__isosae21434__assessment_15332[version==1],
               std_wp__isosae21434__assessment_15431[version==1],
               std_wp__isosae21434__assessment_15631[version==1],
-              std_wp__isosae21434__assessment_15731[version==1],
-              std_wp__isosae21434__assessment_15831[version==1],
-              std_wp__isosae21434__assessment_15931[version==1]
+              std_wp__isosae21434__assessment_15731[version==1]
 
-   Bottom-Up Security Analysis with defined methods, verifies the feature architecture (as part of SW Security Concept)
+   Bottom-Up Security Analysis with defined methods, verifies the feature architecture
    - Mitigations linked to Software Feature Requirements or Assumptions of Use
 
    Analyze the attack surfaces between modules/components that references all feature
@@ -70,11 +65,9 @@ Security Analysis Work Products
               std_wp__isosae21434__assessment_15332[version==1],
               std_wp__isosae21434__assessment_15431[version==1],
               std_wp__isosae21434__assessment_15631[version==1],
-              std_wp__isosae21434__assessment_15731[version==1],
-              std_wp__isosae21434__assessment_15831[version==1],
-              std_wp__isosae21434__assessment_15931[version==1]
+              std_wp__isosae21434__assessment_15731[version==1]
 
-   Bottom-Up Security Analysis with defined methods, verifies the component architecture (as part of SW Security Concept)
+   Bottom-Up Security Analysis with defined methods, verifies the component architecture
    - Mitigations linked to Software Component Requirements or Assumptions of Use
 
    Analyze the attack surfaces between sub-components, units that references all

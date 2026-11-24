@@ -34,10 +34,7 @@ Security Analysis Process Requirements
               std_req__isosae21434__assessment_15722[version==1],
               std_req__isosae21434__assessment_15723[version==1],
               std_req__isosae21434__assessment_15724[version==1],
-              std_req__isosae21434__assessment_15725[version==1],
-              std_req__isosae21434__assessment_15821[version==1],
-              std_req__isosae21434__assessment_15822[version==1],
-              std_req__isosae21434__assessment_15921[version==1]
+              std_req__isosae21434__assessment_15725[version==1]
 
    Security Analysis shall be hierarchically grouped into different levels.
 
@@ -92,10 +89,7 @@ Process Security Analysis Attributes
               std_req__isosae21434__assessment_15722[version==1],
               std_req__isosae21434__assessment_15723[version==1],
               std_req__isosae21434__assessment_15724[version==1],
-              std_req__isosae21434__assessment_15725[version==1],
-              std_req__isosae21434__assessment_15821[version==1],
-              std_req__isosae21434__assessment_15822[version==1],
-              std_req__isosae21434__assessment_15921[version==1]
+              std_req__isosae21434__assessment_15725[version==1]
 
    Each threat shall have an associated treatment (accept, avoid, reduce, share) or AoU.
    If mitigation has not yet been implemented, do not use this option.
@@ -110,8 +104,7 @@ Process Security Analysis Attributes
    :complies: std_req__isosae21434__continual_8322[version==1],
               std_req__isosae21434__continual_8323[version==1],
               std_req__isosae21434__continual_8621[version==1],
-              std_req__isosae21434__continual_8622[version==1],
-              std_req__isosae21434__assessment_15921[version==1]
+              std_req__isosae21434__continual_8622[version==1]
 
    If a new security mitigation (avoid, reduce, or share) is needed, link to the issue and keep status invalid until the mitigation is sufficient.
 
@@ -127,10 +120,7 @@ Process Security Analysis Attributes
               std_req__isosae21434__assessment_15722[version==1],
               std_req__isosae21434__assessment_15723[version==1],
               std_req__isosae21434__assessment_15724[version==1],
-              std_req__isosae21434__assessment_15725[version==1],
-              std_req__isosae21434__assessment_15821[version==1],
-              std_req__isosae21434__assessment_15822[version==1],
-              std_req__isosae21434__assessment_15921[version==1]
+              std_req__isosae21434__assessment_15725[version==1]
 
    The mitigation(s) shall be rated as sufficient with <yes> or <no>.
    A mitigation can only be sufficient if a mitigation is linked via the attribute mitigation.
@@ -152,10 +142,7 @@ Process Security Analysis Attributes
               std_req__isosae21434__assessment_15722[version==1],
               std_req__isosae21434__assessment_15723[version==1],
               std_req__isosae21434__assessment_15724[version==1],
-              std_req__isosae21434__assessment_15725[version==1],
-              std_req__isosae21434__assessment_15821[version==1],
-              std_req__isosae21434__assessment_15822[version==1],
-              std_req__isosae21434__assessment_15921[version==1]
+              std_req__isosae21434__assessment_15725[version==1]
 
    The argument shall describe why the mitigation is sufficient or not. If it is not sufficient, the argument shall describe how the mitigation
    can be improved to achieve sufficiency. The argument shall be written in the content.
@@ -168,8 +155,7 @@ Process Security Analysis Attributes
    :satisfies: wf__analyse_sec_platform_featarch[version==1], wf__analyse_sec_featarch[version==1], wf__analyse_sec_comparch[version==1]
    :complies: std_req__isosae21434__continual_8322[version==1],
               std_req__isosae21434__continual_8621[version==1],
-              std_req__isosae21434__continual_8622[version==1],
-              std_req__isosae21434__assessment_15921[version==1]
+              std_req__isosae21434__continual_8622[version==1]
 
    Each Security Analysis shall have the status invalid until the analysis is finished.
    The status shall be set to valid if the analysis is finished and all issues are closed.
@@ -187,9 +173,7 @@ Process Security Analysis Attributes
               std_req__isosae21434__assessment_15722[version==1],
               std_req__isosae21434__assessment_15723[version==1],
               std_req__isosae21434__assessment_15724[version==1],
-              std_req__isosae21434__assessment_15725[version==1],
-              std_req__isosae21434__assessment_15822[version==1],
-              std_req__isosae21434__assessment_15921[version==1]
+              std_req__isosae21434__assessment_15725[version==1]
 
    Every Security Analysis shall have a short description of the threat impact
    (e.g. threat leads to unauthorized access of the analyzed element)
@@ -335,10 +319,7 @@ Threat Scenario Security Process Requirements
               std_req__isosae21434__assessment_15622[version==1],
               std_req__isosae21434__assessment_15723[version==1],
               std_req__isosae21434__assessment_15724[version==1],
-              std_req__isosae21434__assessment_15725[version==1],
-              std_req__isosae21434__assessment_15821[version==1],
-              std_req__isosae21434__assessment_15822[version==1],
-              std_req__isosae21434__assessment_15921[version==1]
+              std_req__isosae21434__assessment_15725[version==1]
 
    Each threat scenario used for the Security Analysis shall have a threat scenario ID.
    The threat scenario ID is used to identify the related threat <:need:`gd_guidl__sec_ana_threat_scenarios`>.
@@ -359,10 +340,7 @@ Threat Models Process Requirements
               std_req__isosae21434__assessment_15622[version==1],
               std_req__isosae21434__assessment_15723[version==1],
               std_req__isosae21434__assessment_15724[version==1],
-              std_req__isosae21434__assessment_15725[version==1],
-              std_req__isosae21434__assessment_15821[version==1],
-              std_req__isosae21434__assessment_15822[version==1],
-              std_req__isosae21434__assessment_15921[version==1]
+              std_req__isosae21434__assessment_15725[version==1]
 
    Each threat used for Security Analysis shall have a threat ID. The threat ID is used
    to identify the related threat <:need:`gd_guidl__threat_models_stride`>.

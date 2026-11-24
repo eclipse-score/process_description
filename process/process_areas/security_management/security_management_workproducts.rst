@@ -112,7 +112,7 @@ Security Management Work Products
    The Security Manual describes:
 
    * the assumed platform requirements (security related, including for post-development);
-   * the security concept of the OoC (i.e. which attack paths are taken care of);
+   * the security controls of the OoC (i.e. which attack paths are taken care of);
    * the assumptions of use (of the features);
    * a link to the user manual;
    * the reactions of the implemented functions under threatened operating conditions; and
@@ -132,7 +132,7 @@ Security Management Work Products
    The Security Manual describes:
 
    * the assumed platform requirements (security related, including for post-development);
-   * the security concept of the OoC (i.e. which attack paths are taken care of);
+   * the security controls of the OoC (i.e. which attack paths are taken care of);
    * the assumptions of use (of the module's components);
    * a link to the module user manual (:need:`wp__module_user_manual`);
    * the reactions of the implemented functions under threatened operating conditions; and

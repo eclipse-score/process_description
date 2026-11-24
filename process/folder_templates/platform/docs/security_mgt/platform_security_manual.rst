@@ -39,17 +39,11 @@ Assumed Platform Security Requirements
 Assumptions of Use
 ------------------
 
-Assumed Intended Use and Impact
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-| The platform is developed out of context and has no item. The assumed intended use of the platform and the assumptions on the environment below are the basis of the platform security analysis (see :need:`gd_guidl__security_analysis`).
-| The risk values of the platform security analysis are based on an assumed worst-case impact (severe) for every threat scenario. The integrator rates the impact with the damage scenarios of the item and re-determines the risk values and the risk treatment decisions.
-| <Describe here the assumed intended use of the platform: the vehicle functions it is expected to host.>
-
 Assumptions on the Environment
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | The platform and its components are developed as Out of Context (OoC) with assumptions on the environment.
   It is assumed that the platform/components are integrated in a secure system, i.e. qualified POSIX OS.
-  Also the HW related failures are taken into account by the system integrator, if not otherwise stated in the module's security concept.
+  Also the HW related failures are taken into account by the system integrator, if not otherwise stated in the module's security manual.
 | <List here all the OS calls the Project platform expects to be secure.>
 
 List of AoUs expected from the environment the platform / module runs on:
@@ -87,9 +81,9 @@ List of AoUs on the user of the platform features or the module of this Security
       if need and "environment" not in need["tags"]:
                 results.append(need)
 
-Security concept of the OoC
-----------------------------
-| <Describe here the security concept incl. which attack paths are taken care of, reactions of the implemented functions under threatened operating conditions ... if this is not already documented sufficiently in the feature documentation "security impact" section of all the features the module is used in.>
+Security controls of the OoC
+-----------------------------
+| <Describe here the security controls incl. which attack paths are taken care of, reactions of the implemented functions under threatened operating conditions ... if this is not already documented sufficiently in the feature documentation "security impact" section of all the features the module is used in.>
 
 Security Weaknesses, Vulnerabilities
 ------------------------------------
