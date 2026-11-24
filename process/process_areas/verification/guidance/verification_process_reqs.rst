@@ -51,14 +51,17 @@ Process Requirements
         * Error guessing based on knowledge or experience (error-guessing): all levels
         * Explorative testing (explorative-testing): feature, platform
 
-    *PartiallyVerifies* expresses that the test covers some part of the linked requirement, while *FullyVerifies*
-    expresses that the test alone fully covers the linked requirement. If several tests are needed to fully cover a
-    requirement, one representative test shall be selected as *anchor test* and declare the complete test set: it
-    links the requirement via *FullyVerifies* and lists the unique identifiers (see
-    :need:`gd_guidl__verification_specification`) of all additionally required tests in *RequiredForFullyVerifying*.
-    The semantics are: the anchor test plus all tests listed in *RequiredForFullyVerifying* form the complete test
-    set for the referenced requirement, i.e. their combined coverage is sufficient. The anchor test is only the
-    owner of this declaration. Neither *FullyVerifies* nor *RequiredForFullyVerifying* imply any execution result.
+    *PartiallyVerifies* expresses that the test covers some part of the linked requirement.
+    Both *PartiallyVerifies* and *FullyVerifies* may link a test to multiple requirements.
+    *FullyVerifies* identifies the requirements whose complete coverage is declared by this test.
+    If *RequiredForFullyVerifying* is absent, this test alone fully covers each linked requirement.
+    If *RequiredForFullyVerifying* is present, this test is the *anchor test*, and the anchor test together
+    with all tests identified in *RequiredForFullyVerifying* collectively fully cover each linked requirement.
+    The anchor test shall list the unique identifiers (see :need:`gd_guidl__verification_specification`)
+    of all additionally required tests. Each listed test shall link to every requirement listed in the anchor test's
+    *FullyVerifies*, via *PartiallyVerifies* or *FullyVerifies*. The anchor test is only the owner of this declaration.
+    Neither *FullyVerifies* nor *RequiredForFullyVerifying* imply any execution result.
+
     The aggregated verdict is derived on build as defined in :need:`gd_req__verification_fully_verified`.
 
     More information can be found in the :need:`gd_guidl__verification_guide`, :need:`doc_concept__verification_process`,
@@ -203,6 +206,13 @@ Process Requirements
 
     - TestType and DerivationTechnique shall be set
     - Description shall not be empty
+    - *RequiredForFullyVerifying* shall only be used together with *FullyVerifies*
+    - Every test ID listed in *RequiredForFullyVerifying* shall identify an existing test
+    - Every listed test shall link to each requirement in the anchor test's *FullyVerifies*, via
+      *PartiallyVerifies* or *FullyVerifies*
+
+    The tool automation shall report violations of these *RequiredForFullyVerifying* checks, identifying the field
+    and, where applicable, the missing test ID or requirement link.
 
     The test level is determined by the test's location as configured for the tooling (e.g. per repository and folder),
     so that tests of one level can reside in different repositories (e.g. feature repository or reference integration).
@@ -248,20 +258,22 @@ Process Requirements
                std_req__aspice_40__iic-13-51[version==1]
 
     For every requirement linked via FullyVerifies the tool automation shall derive at build whether the
-    requirement is fully verified. A requirement is fully verified if and only if:
+    requirement is fully verified. Each FullyVerifies declaration for the requirement defines a test set,
+    meaning the declaring test and, if present, all tests listed in its *RequiredForFullyVerifying*.
+    A requirement is fully verified if every declaration satisfies all of the following:
 
-    - the anchor test and all tests listed in its RequiredForFullyVerifying exist
-    - AND all tests listed in RequiredForFullyVerifying link to the same requirement as the anchor test
-      (via PartiallyVerifies or FullyVerifies)
-    - AND the anchor declaration is valid for the current version of the requirement, i.e. neither the anchor test
+    - the anchor test and all tests listed in its *RequiredForFullyVerifying* exist
+    - AND the declaration passes the *RequiredForFullyVerifying* checks in :need:`gd_req__verification_checks`
+    - AND the anchor is valid for the current version of the requirement, i.e. neither the declaring test
       nor a required test is suspicious (see :need:`gd_req__req_suspicious`)
-    - AND the anchor test and every required test have the execution result *passed*.
+    - AND the declaring test and every required test have the execution result *passed*.
 
     The derived verdict shall be used to set the requirement attribute defined in
     :need:`gd_req__req_attr_test_covered` during the build. A manual update of the requirement attribute shall not
-    be required. A failed, skipped or not executed required test immediately results in the requirement not being
-    fully verified for the current build/release, while the anchor declaration still records the intended complete
-    test set (skipped and not executed tests are additionally handled according to :need:`gd_guidl__verification_guide`).
+    be required. An invalid declaration shall not result in *testcovered=YES* for any requirement declared by it.
+    A failed, skipped or not executed test in any declared set results in *testcovered=NO*, even if another
+    declared set passes. The declarations still record the intended complete test sets (skipped and not executed
+    tests are additionally handled according to :need:`gd_guidl__verification_guide`).
 
 .. gd_req:: Verification of External Components AoUs
     :id: gd_req__verification_external_aou

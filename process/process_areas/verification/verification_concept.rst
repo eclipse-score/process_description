@@ -190,9 +190,9 @@ Workflow for Verification Guidance
     Requirements Workflow
 
 The :ref:`requirement_verification_workflow` above displays the whole workflow including the traceability concept for the
-requirements where requirements shall be linked to test cases on the respective level. However also a statement
+requirements where requirements shall be linked to test cases on the respective level. However, also a statement
 concerning the completeness of the test suite shall be generated. This statement is not maintained in a separate
-requirement-level source, but is declared in the test sources on one selected, representative test case - the so called *anchor test*:
+requirement-level source, but is declared in the test sources:
 
 - If a single test case alone fully covers a requirement, it links the requirement via *FullyVerifies*.
 - If several test cases are needed, each of them links the requirement via *PartiallyVerifies*. One of these test
@@ -207,10 +207,11 @@ test execution of each individual test case. The completeness statement itself (
 cases sufficient?") remains a review decision taken in :need:`wf__verification_req_test_coverage`, but its evidence
 is kept next to the test links that justify it and is version controlled together with the tests.
 
-The verdict whether a requirement is fully verified is recalculated on every build from the anchor declaration and
-the current test results (see :need:`gd_req__verification_fully_verified`): the attribute *testcovered* is set to
-*YES* during the SW Build only if the anchor test and all required test cases exist, link to the declared
-requirement and passed. So if the content of the requirement is altered, also its version will change, making the
+The verdict whether a requirement is fully verified is recalculated on every build from all *FullyVerifies*
+declarations and the current test results (see :need:`gd_req__verification_fully_verified`). The attribute
+*testcovered* is set to *YES* only if every declared test set is valid and every test in each set passed.
+This includes declarations by a single test without *RequiredForFullyVerifying*. So if the content of the
+requirement is altered, also its version will change, making the
 linked test cases suspicious and thus making it necessary to revisit the anchor declaration (see
 :need:`gd_req__req_suspicious`). Nobody has to remember to update a requirement status after a test is added,
 removed, changed or rerun.

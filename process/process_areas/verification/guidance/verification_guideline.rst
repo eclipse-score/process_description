@@ -91,10 +91,10 @@ and lists the unique identifiers of all additionally required test cases in Requ
 The anchor test case description should clearly describe how the linked element is fully covered by the referenced tests.
 It should provide enough context to understand the relationship between the anchor test and the required tests.
 
-From the anchor test declaration and the current test results the requirement attribute mentioned by
+From all *FullyVerifies* declarations and the current test results the requirement attribute mentioned by
 :need:`gd_req__req_attr_test_covered` is recalculated (see :need:`gd_req__verification_fully_verified`).
-It is set to `yes` only if the anchor test and all required test cases exist, link to the requirement and passed,
-which shows that the set of partially covering test cases in sum fully satisfy the requirement.
+It is set to `yes` only if every declared test set is valid and all its test cases passed.
+This includes declarations by a single test without *RequiredForFullyVerifying*.
 No manual update of the requirement attribute is needed.
 
 

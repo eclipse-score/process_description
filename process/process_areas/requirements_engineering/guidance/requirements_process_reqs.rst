@@ -303,8 +303,8 @@ Process Requirement Linkage
       * No
 
    The attribute should not be maintained manually on the requirement. It shall be derived automatically
-   based on the complete test set declared on an anchor test (via FullyVerifies and RequiredForFullyVerifying,
-   see :need:`gd_req__verification_link_tests`) and the current test results, as defined in
+   based on all test sets declared via FullyVerifies and, where needed, RequiredForFullyVerifying
+   (see :need:`gd_req__verification_link_tests`) and the current test results, as defined in
    :need:`gd_req__verification_fully_verified`.
 
 .. gd_req:: Requirement attribute: versioning
