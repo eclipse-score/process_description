@@ -73,7 +73,7 @@
     <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="AI-supported development process execution in a safety context" href="ai_sup_dev_proc_exe_in_safe_context_concept.html" />
+    <link rel="next" title="AI-supported development process execution in a safety context" href="concept/ai_supported_development.html" />
     <link rel="prev" title="Release Note v1.5.3" href="../release_notes/release_note_v_1_5_3.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="color-scheme" content="light dark"/>
@@ -549,10 +549,11 @@
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
   <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="ai_sup_dev_proc_exe_in_safe_context_concept.html">AI-supported development process execution in a safety context</a></li>
-<li class="toctree-l1"><a class="reference internal" href="execution.html">Execute the Requirements Inspection Demonstrator</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ai_workflows.html">AI-Assisted Workflow Extensions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ai_tool_management.html">AI Tool Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="concept/ai_supported_development.html">AI-supported development process execution in a safety context</a></li>
+<li class="toctree-l1"><a class="reference internal" href="technical_workflows/index.html">Technical Workflows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="process_guidance/requirements_inspection.html">AI-Assisted Workflow Extensions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="process_guidance/tool_management.html">AI Tool Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="demonstrator/execution.html">Execute the Requirements Inspection Demonstrator</a></li>
 </ul>
 </div>
 </nav></div>
@@ -612,34 +613,47 @@
                   
   <section id="ai-supported-process-execution">
 <h1>AI-Supported Process Execution<a class="headerlink" href="#ai-supported-process-execution" title="Link to this heading">#</a></h1>
-<p>Concept, draft process extensions, and an executable Copilot Chat Agent
-requirements inspection demonstration. These documents are proposals for
-discussion, not evidence of tool qualification or approved process changes.</p>
+<p>These draft documents explain how humans and AI tools can work together within
+the existing process. They do not change its responsibilities or approval rules.</p>
+<p>For the Change Management Plan pilot, start with
+<a class="reference internal" href="technical_workflows/examples/platform_management_plan.html"><span class="doc">Pilot: Update the Change Management Plan</span></a>. It uses two
+technical workflows: editing a plan and reviewing its pull request.</p>
+<p>The concept explains the reasoning behind the approach. The requirements
+inspection guidance and demonstrator describe a separate example; they are not
+needed to edit or review a platform management plan.</p>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="ai_sup_dev_proc_exe_in_safe_context_concept.html">AI-supported development process execution in a safety context</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="ai_sup_dev_proc_exe_in_safe_context_concept.html#the-problem">1. The problem</a></li>
-<li class="toctree-l2"><a class="reference internal" href="ai_sup_dev_proc_exe_in_safe_context_concept.html#concept-ai-as-a-qualified-development-support-tool">2. Concept: AI as a qualified development support tool</a></li>
-<li class="toctree-l2"><a class="reference internal" href="ai_sup_dev_proc_exe_in_safe_context_concept.html#the-executable-concept">3. The executable concept</a></li>
-<li class="toctree-l2"><a class="reference internal" href="ai_sup_dev_proc_exe_in_safe_context_concept.html#requirements-inspection-demonstration">4. Requirements inspection demonstration</a></li>
-<li class="toctree-l2"><a class="reference internal" href="ai_sup_dev_proc_exe_in_safe_context_concept.html#additive-s-core-integration">5. Additive S-CORE integration</a></li>
-<li class="toctree-l2"><a class="reference internal" href="ai_sup_dev_proc_exe_in_safe_context_concept.html#limitations">6. Limitations</a></li>
-<li class="toctree-l2"><a class="reference internal" href="ai_sup_dev_proc_exe_in_safe_context_concept.html#public-references">7. Public references</a></li>
+<li class="toctree-l1"><a class="reference internal" href="concept/ai_supported_development.html">AI-supported development process execution in a safety context</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="concept/ai_supported_development.html#the-problem">1. The problem</a></li>
+<li class="toctree-l2"><a class="reference internal" href="concept/ai_supported_development.html#concept-ai-as-a-development-support-tool">2. Concept: AI as a development support tool</a></li>
+<li class="toctree-l2"><a class="reference internal" href="concept/ai_supported_development.html#the-executable-concept">3. The executable concept</a></li>
+<li class="toctree-l2"><a class="reference internal" href="concept/ai_supported_development.html#requirements-inspection-demonstration">4. Requirements inspection demonstration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="concept/ai_supported_development.html#additive-s-core-integration">5. Additive S-CORE integration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="concept/ai_supported_development.html#limitations">6. Limitations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="concept/ai_supported_development.html#public-references">7. Public references</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="execution.html">Execute the Requirements Inspection Demonstrator</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="execution.html#start-in-copilot-chat">Start in Copilot Chat</a></li>
-<li class="toctree-l2"><a class="reference internal" href="execution.html#judgment-and-pause">Judgment and Pause</a></li>
-<li class="toctree-l2"><a class="reference internal" href="execution.html#edit-or-request-corrections">Edit or Request Corrections</a></li>
-<li class="toctree-l2"><a class="reference internal" href="execution.html#hand-off-to-the-project-s-own-review">Hand Off to the Project’s Own Review</a></li>
-<li class="toctree-l2"><a class="reference internal" href="execution.html#automatic-tool-information">Automatic Tool Information</a></li>
-<li class="toctree-l2"><a class="reference internal" href="execution.html#safety-boundary">Safety Boundary</a></li>
-<li class="toctree-l2"><a class="reference internal" href="execution.html#environment-and-developer-checks">Environment and Developer Checks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="technical_workflows/index.html">Technical Workflows</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="technical_workflows/pr_review.html">Technical Workflow: Pull Request Review</a></li>
+<li class="toctree-l2"><a class="reference internal" href="technical_workflows/pr_authoring.html">Technical Workflow: Pull Request Authoring</a></li>
+<li class="toctree-l2"><a class="reference internal" href="technical_workflows/examples/platform_management_plan.html">Pilot: Update the Change Management Plan</a></li>
+<li class="toctree-l2"><a class="reference internal" href="technical_workflows/index.html#rules-for-ai-assistance">Rules for AI Assistance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="technical_workflows/index.html#existing-responsibilities-still-apply">Existing Responsibilities Still Apply</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="ai_workflows.html">AI-Assisted Workflow Extensions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ai_tool_management.html">AI Tool Management</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="ai_tool_management.html#evaluation-guidance">Evaluation Guidance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="process_guidance/requirements_inspection.html">AI-Assisted Workflow Extensions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="process_guidance/tool_management.html">AI Tool Management</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="process_guidance/tool_management.html#evaluation-guidance">Evaluation Guidance</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="demonstrator/execution.html">Execute the Requirements Inspection Demonstrator</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="demonstrator/execution.html#start-in-copilot-chat">Start in Copilot Chat</a></li>
+<li class="toctree-l2"><a class="reference internal" href="demonstrator/execution.html#judgment-and-pause">Judgment and Pause</a></li>
+<li class="toctree-l2"><a class="reference internal" href="demonstrator/execution.html#edit-or-request-corrections">Edit or Request Corrections</a></li>
+<li class="toctree-l2"><a class="reference internal" href="demonstrator/execution.html#hand-off-to-the-project-s-own-review">Hand Off to the Project’s Own Review</a></li>
+<li class="toctree-l2"><a class="reference internal" href="demonstrator/execution.html#automatic-tool-information">Automatic Tool Information</a></li>
+<li class="toctree-l2"><a class="reference internal" href="demonstrator/execution.html#safety-boundary">Safety Boundary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="demonstrator/execution.html#environment-and-developer-checks">Environment and Developer Checks</a></li>
 </ul>
 </li>
 </ul>
@@ -666,7 +680,7 @@ discussion, not evidence of tool qualification or approved process changes.</p>
       </div>
     </a>
     <a class="right-next"
-       href="ai_sup_dev_proc_exe_in_safe_context_concept.html"
+       href="concept/ai_supported_development.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
@@ -689,7 +703,7 @@ discussion, not evidence of tool qualification or approved process changes.</p>
 
   
   <div class="tocsection editthispage">
-    <a href="https://github.com/eclipse-score/process_description/edit/main/process_extensions/index.rst">
+    <a href="https://github.com/eclipse-score/process_description/edit/main/process_extensions/docs/index.rst">
       <i class="fa-solid fa-pencil"></i>
       
       
