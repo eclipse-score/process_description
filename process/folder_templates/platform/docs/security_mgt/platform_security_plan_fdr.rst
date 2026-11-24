@@ -69,27 +69,30 @@ As described in :need:`wf__p_formal_security_rv`, the formal document review is 
           - <Rationale for result>
 
         * - 3
-          - Does the security plan define all needed activities for security management (including formal security reviews and security audit, or the rationale why they are tailored out)?
+          - Does the security plan define all needed activities for security management (including formal security reviews and security audit, or the rationale why they are tailored out), and the rationale why no cybersecurity assessment is performed?
           - [YES | NO ]
-          -
+          - :need:`[[title]] <std_req__isosae21434__prj_management_6432>`
+            :need:`[[title]] <std_req__isosae21434__prj_management_6481>`
           - <Rationale for result>
 
         * - 4
           - Does the security plan define all needed activities for security analysis on platform, feature and component level?
           - [YES | NO ]
-          -
+          - :need:`[[title]] <std_req__isosae21434__prj_management_6425>`
           - <Rationale for result>
 
         * - 5
           - Does the security plan define all needed activities for security development and verification (e.g. fuzz testing, static analysis)?
           - [YES | NO ]
-          -
+          - :need:`[[title]] <std_req__isosae21434__prj_management_6425>`
           - <Rationale for result>
 
         * - 6
           - Does the security plan define all needed activities for supporting processes (including vulnerability management, tool management and SBOM)?
           - [YES | NO ]
-          -
+          - :need:`[[title]] <std_req__isosae21434__org_management_5451>`
+            :need:`[[title]] <std_req__isosae21434__org_management_5442>`
+            :need:`[[title]] <std_req__isosae21434__continual_8621>`
           - <Rationale for result>
 
         * - 7
@@ -102,7 +105,8 @@ As described in :need:`wf__p_formal_security_rv`, the formal document review is 
         * - 8
           - Are all open source components and third-party dependencies covered (SBOM, monitoring for known vulnerabilities)?
           - [YES | NO ]
-          -
+          - :need:`[[title]] <std_req__isosae21434__org_management_5442>`
+            :need:`[[title]] <std_req__isosae21434__continual_8323>`
           - <Rationale for result>
 
         * - 9
@@ -115,7 +119,7 @@ As described in :need:`wf__p_formal_security_rv`, the formal document review is 
         * - 10
           - Is a security manager and a project manager appointed for the platform?
           - [YES | NO ]
-          -
+          - :need:`[[title]] <std_req__isosae21434__prj_management_6411>`
           - <Rationale for result>
 
         * - 11
@@ -127,13 +131,13 @@ As described in :need:`wf__p_formal_security_rv`, the formal document review is 
         * - 12
           - Is the security plan linked to the project plan and to the module security plans?
           - [YES | NO ]
-          -
+          - :need:`[[title]] <std_req__isosae21434__prj_management_6424>`
           - <Rationale for result>
 
         * - 13
           - Is the security plan updated iteratively to show the progress?
           - [YES | NO ]
-          -
+          - :need:`[[title]] <std_req__isosae21434__prj_management_6426>`
           - <Rationale for result>
 
         * - 14

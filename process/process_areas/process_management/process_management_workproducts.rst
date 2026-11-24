@@ -127,6 +127,7 @@ Here only project specific work products are listed, which are generic for the p
               std_wp__iso26262__analysis_551[version==1],
               std_wp__iso26262__analysis_552[version==1],
               std_wp__isopas8926__4522[version==1],
+              std_wp__isosae21434__prj_management_653[version==1],
               std_wp__isosae21434__assessment_15331[version==1],
               std_wp__isosae21434__assessment_15531[version==1]
 

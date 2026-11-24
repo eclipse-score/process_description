@@ -79,13 +79,7 @@ As described in :need:`wf__p_formal_security_rv`, the formal document review is 
           - <Rationale for result>
 
         * - 5
-          - If security related deviations from the process or security concept are documented, are these argued understandably?
+          - If security related deviations from the process are documented, are these argued understandably?
           - [YES | NO ]
           - :need:`[[title]] <std_req__isosae21434__prj_management_6471>`
-          - <Rationale for result>
-
-        * - 6
-          - Is the SBOM of the platform generated automatically, and does the generation cover all open source components?
-          - [YES | NO ]
-          -
           - <Rationale for result>
