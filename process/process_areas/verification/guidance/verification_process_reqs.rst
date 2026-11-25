@@ -194,7 +194,7 @@ Process Requirements
 .. gd_req:: Verification Documentation Checks
     :id: gd_req__verification_checks
     :status: valid
-    :version: 2
+    :version: 3
     :tags: prio_1_automation, verification
     :satisfies: wf__verification_unit_test[version==1],
                 wf__verification_comp_int_test[version==1],
@@ -257,14 +257,14 @@ Process Requirements
                std_req__iso26262__software_1044[version==1],
                std_req__aspice_40__iic-13-51[version==1]
 
-    For every requirement linked via FullyVerifies the tool automation shall derive at build whether the
-    requirement is fully verified. Each FullyVerifies declaration for the requirement defines a test set,
+    For every element linked via FullyVerifies the tool automation shall derive at build whether the
+    element is fully verified. Each FullyVerifies declaration for the element defines a test set,
     meaning the declaring test and, if present, all tests listed in its *RequiredForFullyVerifying*.
-    A requirement is fully verified if every declaration satisfies all of the following:
+    An element is fully verified if every declaration satisfies all of the following:
 
     - the anchor test and all tests listed in its *RequiredForFullyVerifying* exist
     - AND the declaration passes the *RequiredForFullyVerifying* checks in :need:`gd_req__verification_checks`
-    - AND the anchor is valid for the current version of the requirement, i.e. neither the declaring test
+    - AND the anchor is valid for the current version of the element, i.e. neither the declaring test
       nor a required test is suspicious (see :need:`gd_req__req_suspicious`)
     - AND the declaring test and every required test have the execution result *passed*.
 
