@@ -169,15 +169,15 @@ Safety Analysis Linkage
 .. gd_req:: Safety Analysis Linkage check
    :id: gd_req__saf_linkage_check
    :status: valid
-   :version: 2
+   :version: 3
    :tags: done_automation, attribute, automated
    :satisfies: wf__analyse_platform_featarch[version==1], wf__analyse_featarch[version==1], wf__analyse_comparch[version==1]
    :complies: std_req__iso26262__analysis_842[version==1], std_req__iso26262__software_7410[version==1], std_req__iso26262__software_7411[version==1]
 
-   Safety Analysis shall be linked to the architecture view on the corresponding level via the attribute violates.
+   Safety Analysis shall be linked to the architecture element or view on the corresponding level via the attribute violates.
    The following linkages are defined in detail:
 
-       * plat_saf_dfa <-> feat_arc_sta
+       * plat_saf_dfa <-> feat
        * feat_saf_dfa <-> feat_arc_sta
        * comp_saf_dfa <-> comp_arc_sta
        * feat_saf_fmea <-> feat_arc_dyn, feat_arc_sta
