@@ -221,13 +221,20 @@ Process Requirements
     :complies: std_req__iso26262__support_6432[version==1]
 
     It shall be checked that every test with PartiallyVerifies or FullyVerifies links to at least one
-    valid need (status == valid).
+    valid requirement or architectural element (status == valid). This applies to all tests,
+    independent of whether they are executed or skipped.
 
-    A finding of this check shall fail the documentation build. Additional links to invalid needs shall be
-    reported as a warning.
+    A finding of this check shall fail the documentation build. Additional links to invalid
+    requirements or architectural elements shall be reported as a warning.
 
-    Note: A test which only verifies invalid needs provides no verification evidence and is either
-    obsolete or has to be linked to the successor.
+    Note: A test which only verifies invalid requirements or architectural elements provides no
+    verification evidence and is either obsolete or has to be linked to the successor.
+    If a requirement is withdrawn (status invalid), the test links to it are removed or redirected in
+    the same pull request (see :need:`gd_req__req_invalidation`). If a requirement is only replaced
+    from a release onwards (valid_until), it stays valid and the test links stay, as the test is still
+    evidence for the earlier releases. They are removed together with the requirement when it is
+    deleted from the main branch (see :need:`gd_req__req_release_scope`). Skipped tests do not count
+    towards coverage (see :need:`gd_guidl__verification_guide`).
 
 .. gd_req:: Verification Documentation Checks Extended
     :id: gd_req__verification_checks_extended

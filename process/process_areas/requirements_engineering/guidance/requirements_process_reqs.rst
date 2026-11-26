@@ -345,6 +345,13 @@ Process Requirement Linkage
    The documentation, traceability, checks and verification coverage of a release shall only consider
    the requirements and AoUs in its scope.
 
+   For the reference integration, the scope is determined by the platform release version it is
+   based on. Requirements and AoUs outside this scope are not taken into its requirements set.
+   E.g. for an integration based on v2.1, a valid requirement with valid_until v2.2 is included,
+   while requirements with valid_until v2.1 or valid_from v2.2 are excluded. Requirements with
+   status invalid are excluded regardless of the release. So an older integration baseline can still
+   include a requirement which is no longer in the scope of a newer platform release.
+
    A requirement keeps status valid when its valid_until milestone is reached, as it is still in force
    for earlier releases which may still be in use and maintained. From then on it may be deleted from the
    main branch; its specification stays available in the release branches and tags of the earlier
