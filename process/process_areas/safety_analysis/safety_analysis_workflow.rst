@@ -30,7 +30,7 @@ Safety Analysis is used as a umbrella term for the methods FMEA (Failure Modes a
    :responsible: rl__safety_engineer[version==1]
    :approved_by: rl__safety_manager[version==1]
    :supported_by: rl__contributor[version==1], rl__committer[version==1], rl__security_manager[version==1]
-   :input: wp__requirements_feat[version==1], wp__feature_arch[version==1], wp__issue_track_system[version==1]
+   :input: wp__requirements_feat[version==1], wp__platform_arch[version==1], wp__issue_track_system[version==1]
    :output: wp__platform_dfa[version==1]
    :contains: gd_guidl__dfa_failure_initiators[version==1], gd_temp__plat_saf_dfa[version==1]
    :has: doc_concept__safety_analysis[version==1], doc_getstrt__safety_analysis[version==1]

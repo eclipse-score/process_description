@@ -262,7 +262,7 @@ For all identified applicable failure initiators, the DFA is performed in the fo
 .. code-block:: rst
 
     .. plat_saf_dfa:: <Title>
-       :violates: <Feature architecture>
+       :violates: <ID of the analysed feature (feat)>
        :id: plat_saf_DFA__Platform__<Element descriptor>
        :failure_id: <ID from DFA failure initiators :need:`gd_guidl__dfa_failure_initiators`>
        :failure_effect: "description of failure effect of the failure initiator on the element"
