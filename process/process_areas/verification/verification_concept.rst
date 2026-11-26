@@ -190,17 +190,35 @@ Workflow for Verification Guidance
     Requirements Workflow
 
 The :ref:`requirement_verification_workflow` above displays the whole workflow including the traceability concept for the
-requirements where requirements shall be linked to test cases on the respective level. However also a statement
-concerning the completeness of the test suite shall be generated. This means that also a linkage document shall be
-generated including:
+requirements where requirements shall be linked to test cases on the respective level. However, also a statement
+concerning the completeness of the test suite shall be generated. This statement is not maintained in a separate
+requirement-level source, but is declared in the test sources:
 
-- the hash and UID of the requirement which was evaluated for test coverage
-- the UIDs of the test cases which are required to fully cover the requirement.
+- If a single test case alone fully covers a requirement, it links the requirement via *FullyVerifies*.
+- If several test cases are needed, each of them links the requirement via *PartiallyVerifies*. One of these test
+  cases is additionally selected as anchor test: it links the requirement via *FullyVerifies* and lists the unique
+  identifiers of all other required test cases in *RequiredForFullyVerifying*. The semantics are: the anchor test
+  plus all test cases listed in *RequiredForFullyVerifying* form the complete test set for the referenced
+  requirement, i.e. their combined coverage is sufficient.
 
-So if the content of the requirement is altered also the hash will change making it necessary to
-revisit the linkage of all test cases to the requirement again.
+The anchor test is only the owner of this declaration. It is not necessarily the test case covering the most
+behavior, and its *FullyVerifies* link does not imply any execution result - the results are always taken from the
+test execution of each individual test case. The completeness statement itself ("is the union of the linked test
+cases sufficient?") remains a review decision taken in :need:`wf__verification_req_test_coverage`, but its evidence
+is kept next to the test links that justify it and is version controlled together with the tests.
 
-If the status of the linked test case and the linkage document is valid the attribute *testcovered* shall be set to *YES* during the SW Build.
+The verdict whether a requirement is fully verified is recalculated on every build from all *FullyVerifies*
+declarations and the current test results (see :need:`gd_req__verification_fully_verified`). The attribute
+*testcovered* is set to *YES* only if at least one test set is declared, every declared test set is valid and every
+test in each set passed. This includes declarations by a single test without *RequiredForFullyVerifying*.
+Without a *FullyVerifies* declaration, it is set to *NO*. So if the content of the requirement is altered,
+also its version will change, making the linked test cases suspicious and thus making it necessary to revisit the anchor declaration
+(see :need:`gd_req__req_suspicious`).
+Nobody has to remember to update a requirement status after a test is added, removed, changed or rerun.
+
+Note: the "Anchor Test Declaration" shown in the :ref:`requirement_verification_workflow` figure is part of the
+test metadata of the anchor test. It is not a separately maintained document.
+
 Further information can also be depicted from the :ref:`requirements_engineering` process.
 
 Software Component Qualification

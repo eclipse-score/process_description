@@ -71,8 +71,10 @@ Simplified in a nutshell:
 
 #. Implement test case
 #. Link test case to requirements and specify metatags
-#. Confirm requirement test coverage by creating linkage document
-#. Set requirement attribute [testcovered=YES] during software build
+#. Confirm requirement test coverage by declaring the complete test set on an anchor test
+   (metatag `RequiredForFullyVerifying`, see :need:`gd_req__verification_link_tests`)
+#. Requirement attribute [testcovered=YES] is derived automatically during software build
+   (see :need:`gd_req__verification_fully_verified`)
 
 More information on the concept of requirements verification can be found in :ref:`requirement_verification_workflow`
 
@@ -81,12 +83,19 @@ A more detailed description of how to link code to requirements is available her
 Traceability matrix and consistency checks will be automatically established with tool support.
 
 Two properties exists; one to show partial and one to show full coverage of a requirement.
+If a single test case alone fully covers a requirement, it uses "full coverage" (FullyVerifies) directly.
 For multiple test cases having a "partial coverage" a review has to be conducted to confirm
-that a requirement is fully covered. The pull request description should indicate which requirements
-are fully covered by the PR commits and which test cases are needed to fully cover the test case.
-This is important, as multiple PRs may be needed to fully verify a single requirement.
-This information is later on used to set the requirement attribute to `yes` as mentioned by :need:`gd_req__req_attr_test_covered`
-which shows that the set of partially covering test cases in sum fully satisfy the requirement.
+that a requirement is fully covered. The result of this review is documented in the test sources.
+For this operation, one representative test case is selected as *anchor test*. It links the requirement via FullyVerifies
+and lists the unique identifiers of all additionally required test cases in RequiredForFullyVerifying (see :need:`gd_req__verification_link_tests`).
+The anchor test case description should clearly describe how the linked element is fully covered by the referenced tests.
+It should provide enough context to understand the relationship between the anchor test and the required tests.
+
+From all *FullyVerifies* declarations and the current test results the requirement attribute mentioned by
+:need:`gd_req__req_attr_test_covered` is recalculated (see :need:`gd_req__verification_fully_verified`).
+It is set to `yes` if at least one test set is declared, all declared sets are valid, and all their tests pass.
+Otherwise, it is set to `no`. A test without *RequiredForFullyVerifying* forms a test set on its own.
+No manual update of the requirement attribute is needed.
 
 
 Test case execution

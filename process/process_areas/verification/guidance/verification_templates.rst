@@ -20,7 +20,7 @@ Verification Templates
 .. gd_temp:: Verification Specification Template
    :id: gd_temp__verification_specification
    :status: valid
-   :version: 1
+   :version: 2
    :complies: std_req__iso26262__software_942[version==1],
               std_req__iso26262__software_943[version==1],
               std_req__iso26262__software_1042[version==1],
@@ -37,6 +37,11 @@ Verification Templates
 
    The Ids used in *PartiallyVerifies* and *FullyVerifies* are the Ids of component, feature or stakeholder requirements or architectural element,
    depending on the test level (see :need:`gd_req__verification_checks`).
+
+   The Ids used in *RequiredForFullyVerifying* are the unique identifiers of test cases
+   (see :need:`gd_guidl__verification_specification`). This attribute is only used on an anchor test together with
+   *FullyVerifies* to declare the complete set of test cases which together fully cover the referenced
+   requirement(s) (see :need:`gd_req__verification_link_tests`).
 
 C++
 ---
@@ -72,6 +77,9 @@ C++ Properties Template
       {
          RecordProperty("PartiallyVerifies", "ID_2, ID_3, ...");
          RecordProperty("FullyVerifies", "ID_4, ID_5, ...");
+         // Only on an anchor test: unique identifiers of the additionally required test cases
+         // which together with this test fully cover the requirement(s) in FullyVerifies
+         RecordProperty("RequiredForFullyVerifying", "TestUID_1, TestUID_2, ...");
          RecordProperty("Description", "<Description>");
 
          ASSERT ...
@@ -106,6 +114,9 @@ Rust Properties Template
 
       #[record_property("PartiallyVerifies", "ID_2, ID_3, ...")]
       #[record_property("FullyVerifies", "ID_4, ID_5, ...")]
+      // Only on an anchor test: unique identifiers of the additionally required test cases
+      // which together with this test fully cover the requirement(s) in FullyVerifies
+      #[record_property("RequiredForFullyVerifying", "TestUID_1, TestUID_2, ...")]
       #[record_property("Description", "<Description>")]
       #[record_property("TestType", "<TestType>")]
       #[record_property("DerivationTechnique", "<DerivationTechnique>")]
@@ -146,6 +157,24 @@ Python Properties Template
       )
       def test_group_by_need_empty_list():
             """Test grouping empty list of needlinks."""
+            ...
+
+If several test cases are needed to fully cover a requirement, one of them is selected as anchor test and
+declares the complete test set via `required_for_fully_verifying`:
+
+   .. code-block:: python
+
+      @add_test_properties(
+            fully_verifies=["tool_req__docs_dd_link_source_code_link"],
+            required_for_fully_verifying=[
+                  "test_group_by_need_empty_list",
+                  "test_group_by_need_single_need",
+            ],
+            test_type="requirements-based",
+            derivation_technique="requirements-analysis",
+      )
+      def test_group_by_need_multiple_needs():
+            """Test grouping multiple needlinks. Anchor test declaring the complete test set."""
             ...
 
 When writing test cases in python, they shall follow the recommendations from the official python and community documentation.

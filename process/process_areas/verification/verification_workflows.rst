@@ -29,9 +29,9 @@ For a detailed explanation of workflows and their role within the process model,
    :supported_by: rl__safety_manager[version==1]
    :input: wp__sw_implementation[version==1], wp__verification_plan[version==1]
    :output: wp__verification_sw_unit_test[version==1]
-   :contains: gd_req__verification_link_tests[version==2],
+   :contains: gd_req__verification_link_tests[version==3],
               gd_req__verification_link_tests_cpp[version==1],
-              gd_req__verification_link_tests_python[version==1],
+              gd_req__verification_link_tests_python[version==2],
               gd_req__verification_link_tests_rust[version==1],
               gd_req__verification_independence[version==1]
    :has: doc_concept__verification_process[version==1],
@@ -71,9 +71,9 @@ For a detailed explanation of workflows and their role within the process model,
            wp__requirements_comp_aou[version==1],
            wp__verification_plan[version==1]
    :output: wp__verification_comp_int_test[version==1]
-   :contains: gd_req__verification_link_tests[version==2],
+   :contains: gd_req__verification_link_tests[version==3],
               gd_req__verification_link_tests_cpp[version==1],
-              gd_req__verification_link_tests_python[version==1],
+              gd_req__verification_link_tests_python[version==2],
               gd_req__verification_link_tests_rust[version==1],
               gd_req__verification_independence[version==1],
               gd_guidl__verification_specification[version==1]
@@ -103,9 +103,9 @@ For a detailed explanation of workflows and their role within the process model,
            wp__requirements_feat_aou[version==1],
            wp__verification_plan[version==1]
    :output: wp__verification_feat_int_test[version==1]
-   :contains: gd_req__verification_link_tests[version==2],
+   :contains: gd_req__verification_link_tests[version==3],
               gd_req__verification_link_tests_cpp[version==1],
-              gd_req__verification_link_tests_python[version==1],
+              gd_req__verification_link_tests_python[version==2],
               gd_req__verification_link_tests_rust[version==1],
               gd_req__verification_independence[version==1],
               gd_guidl__verification_specification[version==1]
@@ -128,9 +128,9 @@ For a detailed explanation of workflows and their role within the process model,
    :supported_by: rl__safety_manager[version==1]
    :input: wp__requirements_stkh[version==1], wp__verification_plan[version==1]
    :output: wp__verification_platform_int_test[version==1]
-   :contains: gd_req__verification_link_tests[version==2],
+   :contains: gd_req__verification_link_tests[version==3],
               gd_req__verification_link_tests_cpp[version==1],
-              gd_req__verification_link_tests_python[version==1],
+              gd_req__verification_link_tests_python[version==2],
               gd_req__verification_link_tests_rust[version==1],
               gd_req__verification_independence[version==1],
               gd_guidl__verification_specification[version==1]
@@ -193,7 +193,7 @@ For a detailed explanation of workflows and their role within the process model,
 .. workflow:: Set Requirement Test Coverage
    :id: wf__verification_req_test_coverage
    :status: valid
-   :version: 1
+   :version: 2
    :tags: verification
    :responsible: rl__committer[version==1], rl__testing_community[version==1]
    :approved_by: rl__project_lead[version==1]
@@ -213,14 +213,23 @@ For a detailed explanation of workflows and their role within the process model,
             wp__requirements_feat_aou[version==1],
             wp__requirements_comp[version==1],
             wp__requirements_comp_aou[version==1]
-   :contains: gd_req__req_attr_test_covered[version==1], gd_req__req_suspicious[version==4], gd_guidl__verification_guide[version==2]
+   :contains: gd_req__req_attr_test_covered[version==3], gd_req__req_suspicious[version==4], gd_req__verification_link_tests[version==3], gd_req__verification_fully_verified[version==1], gd_guidl__verification_guide[version==2]
    :has: doc_concept__verification_process[version==1], doc_getstrt__verification_process[version==1]
 
-   The requirement attribute `complete test coverage` is set to `yes` by a :need:`rl__committer` when it is verified
+   Complete test coverage of a requirement is declared by a :need:`rl__committer` when it is verified
    that the requirement is fully covered by test cases. This means the linked test cases in sum fully satisfy the requirement.
+   The declaration is encoded in the test sources on a selected anchor test via the metadata `FullyVerifies` and,
+   if more than one test case is needed, `RequiredForFullyVerifying` (see :need:`gd_req__verification_link_tests`).
 
-   A fully covered requirement will be set to `no` automatically via the implementation of the check described in :need:`gd_req__req_suspicious`.
-   A recheck is needed in this case to get the status back to `yes`.
+   The requirement attribute `complete test coverage` is an additional element and does not need to be maintained manually.
+   It is set to `yes` only if the anchor test and all required test cases exist, link to the requirement and passed.
+   Any failed, skipped or removed required test case automatically results in `no`.
+
+   Where `RequiredForFullyVerifying` is used, the test description need to explain how the linked test cases collectively fully verify the requirement.
+   Where `FullyVerifies` is used without `RequiredForFullyVerifying`, the test description also needs to explain how the test case fully verifies the requirement.
+
+   A fully covered requirement will also be set to `no` automatically via the implementation of the check described in :need:`gd_req__req_suspicious`.
+   A recheck of the anchor test declaration is needed in this case to get the status back to `yes`.
 
 .. workflow:: Create Module Verification Report
    :id: wf__verification_mod_ver_report
