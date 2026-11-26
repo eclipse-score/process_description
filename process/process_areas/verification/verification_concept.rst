@@ -209,12 +209,12 @@ is kept next to the test links that justify it and is version controlled togethe
 
 The verdict whether a requirement is fully verified is recalculated on every build from all *FullyVerifies*
 declarations and the current test results (see :need:`gd_req__verification_fully_verified`). The attribute
-*testcovered* is set to *YES* only if every declared test set is valid and every test in each set passed.
-This includes declarations by a single test without *RequiredForFullyVerifying*. So if the content of the
-requirement is altered, also its version will change, making the
-linked test cases suspicious and thus making it necessary to revisit the anchor declaration (see
-:need:`gd_req__req_suspicious`). Nobody has to remember to update a requirement status after a test is added,
-removed, changed or rerun.
+*testcovered* is set to *YES* only if at least one test set is declared, every declared test set is valid and every
+test in each set passed. This includes declarations by a single test without *RequiredForFullyVerifying*.
+Without a *FullyVerifies* declaration, it is set to *NO*. So if the content of the requirement is altered,
+also its version will change, making the linked test cases suspicious and thus making it necessary to revisit the anchor declaration
+(see :need:`gd_req__req_suspicious`).
+Nobody has to remember to update a requirement status after a test is added, removed, changed or rerun.
 
 Note: the "Anchor Test Declaration" shown in the :ref:`requirement_verification_workflow` figure is part of the
 test metadata of the anchor test. It is not a separately maintained document.

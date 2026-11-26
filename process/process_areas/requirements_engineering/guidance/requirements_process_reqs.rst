@@ -292,7 +292,7 @@ Process Requirement Linkage
 .. gd_req:: Requirement attribute: complete test coverage
    :id: gd_req__req_attr_test_covered
    :status: valid
-   :version: 2
+   :version: 3
    :tags: prio_1_automation, attribute, optional
    :satisfies: wf__req_feat_req[version==1], wf__req_comp_req[version==1]
    :complies: std_req__iso26262__support_6433[version==1], std_req__iso26262__software_944[version==1], std_req__aspice_40__iic-13-51[version==1]
@@ -305,7 +305,7 @@ Process Requirement Linkage
    The attribute should not be maintained manually on the requirement. It shall be derived automatically
    based on all test sets declared via FullyVerifies and, where needed, RequiredForFullyVerifying
    (see :need:`gd_req__verification_link_tests`) and the current test results, as defined in
-   :need:`gd_req__verification_fully_verified`.
+   :need:`gd_req__verification_fully_verified`. Without a FullyVerifies declaration, the derived value is No.
 
 .. gd_req:: Requirement attribute: versioning
    :id: gd_req__req_attr_version

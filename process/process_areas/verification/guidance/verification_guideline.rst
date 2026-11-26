@@ -93,8 +93,8 @@ It should provide enough context to understand the relationship between the anch
 
 From all *FullyVerifies* declarations and the current test results the requirement attribute mentioned by
 :need:`gd_req__req_attr_test_covered` is recalculated (see :need:`gd_req__verification_fully_verified`).
-It is set to `yes` only if every declared test set is valid and all its test cases passed.
-This includes declarations by a single test without *RequiredForFullyVerifying*.
+It is set to `yes` if at least one test set is declared, all declared sets are valid, and all their tests pass.
+Otherwise, it is set to `no`. A test without *RequiredForFullyVerifying* forms a test set on its own.
 No manual update of the requirement attribute is needed.
 
 

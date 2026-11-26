@@ -257,20 +257,25 @@ Process Requirements
                std_req__iso26262__software_1044[version==1],
                std_req__aspice_40__iic-13-51[version==1]
 
-    For every element linked via FullyVerifies the tool automation shall derive at build whether the
-    element is fully verified. Each FullyVerifies declaration for the element defines a test set,
-    meaning the declaring test and, if present, all tests listed in its *RequiredForFullyVerifying*.
-    An element is fully verified if every declaration satisfies all of the following:
+    At every build, the tool automation shall derive whether each requirement is fully verified, including
+    those with no *FullyVerifies* link (to detect also potential removal of linked test cases).
+    It shall also derive the verdict for every other element linked via *FullyVerifies*.
+    Each *FullyVerifies* link represents a full coverage claim for the linked element.
+    Its test set consists of the declaring test and any tests listed in *RequiredForFullyVerifying*.
+
+    An element is fully verified only if it has at least one full coverage claim and every claim meets the following conditions:
 
     - the anchor test and all tests listed in its *RequiredForFullyVerifying* exist
-    - AND the declaration passes the *RequiredForFullyVerifying* checks in :need:`gd_req__verification_checks`
+    - AND the claim passes the *RequiredForFullyVerifying* checks in :need:`gd_req__verification_checks`
     - AND the anchor is valid for the current version of the element, i.e. neither the declaring test
       nor a required test is suspicious (see :need:`gd_req__req_suspicious`)
     - AND the declaring test and every required test have the execution result *passed*.
 
     The derived verdict shall be used to set the requirement attribute defined in
-    :need:`gd_req__req_attr_test_covered` during the build. A manual update of the requirement attribute shall not
-    be required. An invalid declaration shall not result in *testcovered=YES* for any requirement declared by it.
+    :need:`gd_req__req_attr_test_covered` to *YES* if the requirement is fully verified and to *NO* otherwise.
+    Without a FullyVerifies declaration, it shall be set to *NO*, including after the final declaration is removed.
+    No manual update of the attribute shall be required. An invalid declaration shall not result in
+    *testcovered=YES* for any requirement declared by it.
     A failed, skipped or not executed test in any declared set results in *testcovered=NO*, even if another
     declared set passes. The declarations still record the intended complete test sets (skipped and not executed
     tests are additionally handled according to :need:`gd_guidl__verification_guide`).

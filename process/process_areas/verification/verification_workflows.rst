@@ -213,7 +213,7 @@ For a detailed explanation of workflows and their role within the process model,
             wp__requirements_feat_aou[version==1],
             wp__requirements_comp[version==1],
             wp__requirements_comp_aou[version==1]
-   :contains: gd_req__req_attr_test_covered[version==2], gd_req__req_suspicious[version==4], gd_req__verification_link_tests[version==3], gd_req__verification_fully_verified[version==1], gd_guidl__verification_guide[version==2]
+   :contains: gd_req__req_attr_test_covered[version==3], gd_req__req_suspicious[version==4], gd_req__verification_link_tests[version==3], gd_req__verification_fully_verified[version==1], gd_guidl__verification_guide[version==2]
    :has: doc_concept__verification_process[version==1], doc_getstrt__verification_process[version==1]
 
    Complete test coverage of a requirement is declared by a :need:`rl__committer` when it is verified
