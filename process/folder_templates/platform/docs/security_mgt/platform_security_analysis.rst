@@ -45,7 +45,7 @@ Platform Security Analysis
 --------------------------
 The following deliverables are the outcome of a security analysis on the platform.
 
-#. Identification of threats and mitigations
+#. Identification of threats and mitigations, with the assets, attack paths and attack feasibility of each threat scenario (see :need:`gd_guidl__security_analysis`)
 #. Stakeholder security requirements definition
 #. Security assumptions definition
 
@@ -58,24 +58,36 @@ Threat and Risk Identification
         :header-rows: 1
 
         * - Id
-          - Identified Threat
-          - Corresponding mitigation
+          - Threat scenario
+          - Asset and cybersecurity property
+          - Attack path
+          - Attack feasibility rating
+          - Mitigation (security requirement) or assumption of use
           - Comment/Remark
 
         * - 1
           - Eg: A backend attacker performs MiTM between the OEM cloud and the platform component.
+          - <asset, confidentiality / integrity / availability>
+          - <attack path that realizes the threat scenario>
+          - <high / medium / low / very low>
           - Eg: End to end TLS between the platform component and the OEM cloud service mitigates the MiTM attacks.
-          - <Rationale for mitigation>
+          - <Rationale for the attack feasibility rating>
 
         * - 2
           - Eg: Unauthorized access to the onboard diagnostic stack from external interfaces.
+          - <asset, confidentiality / integrity / availability>
+          - <attack path that realizes the threat scenario>
+          - <high / medium / low / very low>
           - Eg: Authentication and authorization mechanisms such as usage of tokens prevents such unauthorized access.
-          - <Rationale for result>
+          - <Rationale for the attack feasibility rating>
 
         * - 3
           - Eg: Static configuration files are manipulated by an inside attacker.
+          - <asset, confidentiality / integrity / availability>
+          - <attack path that realizes the threat scenario>
+          - <high / medium / low / very low>
           - Eg: OS specific access control mechanisms and least privilege principle prevents such unauthorized manipulation.
-          - <Rationale for result>
+          - <Rationale for the attack feasibility rating>
 
 
 

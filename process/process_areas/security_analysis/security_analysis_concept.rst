@@ -43,7 +43,7 @@ categories:
 
 The objective of the **Security Analysis** is to show that the architecture created to
 fulfill the requirements does not introduce possible vulnerabilities which would
-break the security requirements (cybersecurity goals are top level security requirements).
+break the security requirements.
 Alternatively, it ensures that the possibility of these vulnerabilities is reduced to an acceptable
 level. This can be achieved by mitigation actions (accept, avoid, reduce, share). The Security
 Analysis is used to find possible threats and their effects. The possible threats are

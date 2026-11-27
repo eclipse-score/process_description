@@ -138,7 +138,7 @@ The analysis is done by as described in the flowchart :ref:`platform_security_an
 #. If a threat scenario applies, use the template :need:`gd_temp__plat_threat_scenario` to perform the analysis.
 #. For each identified potential threat, identify and document the potential mitigations. The potential mitigations are security requirements, which then serve as the stakeholder requirements for features.
 #. Document the Security assumptions derived from this process.
-#. Risk treatment can be done by using the following options: accept, avoid, reduce, share. The chosen risk treatment shall be documented.
+#. For each threat scenario, identify the attack paths and rate the attack feasibility of each attack path, see :ref:`security_analysis_scope`.
 #. If there is no mitigation or the mitigation is not sufficient, a mitigation issue has to be created in the Issue Tracking system and linked in the "mitigation_issue" attribute.
 #. The analysis shall continue until all applicable threat scenarios for each attack surface of each asset has been evaluated.
 #. The verification is done by applying the checklist :need:`gd_chklst__security_analysis`.
@@ -152,12 +152,53 @@ The analysis is done by as described in the flowchart :ref:`platform_security_an
 Examples for Security Analysis at feature level
 ===============================================
 
-The security analysis shall be used to analyze whether the security goals of a feature can be compromised. This could be an unauthorized tranimission of a control message between two components of feature, for example due to missing authentication or insufficient access control.
+The security analysis shall be used to analyze whether the security requirements of a feature can be compromised. This could be an unauthorized transmission of a control message between two components of feature, for example due to missing authentication or insufficient access control.
 
 Examples for Security Analysis at component level
 =================================================
 
 The security analysis shall be used to analyze whether the vulnerabilities within the component can be exploited. This could be unintended privilege escalation between two sub-components, allowing unauthorized access to sensitive data or security-critical functions.
+
+.. _security_analysis_scope:
+
+Scope of the threat analysis
+============================
+
+The platform is developed out of context and has no item. Damage scenarios, impact ratings, risk values and risk
+treatment decisions depend on the item and are not part of the security analysis on platform, feature and component
+level (see :need:`wp__tailoring_work_products` and :need:`gd_guidl__security_analysis_tailored`). The security analysis
+is based on the out-of-context assumptions documented in the :need:`wp__platform_security_manual`.
+
+The following activities are performed and recorded for each threat scenario:
+
+* Asset identification: the assets with their cybersecurity properties (confidentiality, integrity, availability)
+  are identified.
+* Threat scenario identification: the threat scenarios that compromise the cybersecurity properties of the assets are
+  identified. STRIDE (:need:`gd_guidl__threat_models_stride`) can be used to elicit threat scenarios; it does not
+  replace the attack path analysis or the attack feasibility rating.
+* Attack path analysis: the attack paths that can realize the threat scenario are identified.
+* Attack feasibility rating: the attack feasibility of each attack path is rated high, medium, low or very low with
+  the attack potential-based approach (elapsed time, specialist expertise, knowledge of the item or component, window
+  of opportunity, equipment). The rationale of the rating is recorded.
+
+Security requirements or security controls identified from a threat scenario, and assumptions of use, are recorded as
+outputs of the analysis. They are not risk treatment decisions.
+
+.. gd_guidl:: Security Analysis Tailored
+   :id: gd_guidl__security_analysis_tailored
+   :status: valid
+   :version: 1
+   :complies: std_req__isosae21434__assessment_15821[version==1],
+              std_req__isosae21434__assessment_15822[version==1],
+              std_req__isosae21434__assessment_15921[version==1]
+
+   This part of the guideline links to all the requirements which are not fulfilled by the
+   security analysis process. Make sure these are tailored out in the safety/security/quality plans
+   for your project (documented in the PMP). Reasoning given below must be confirmed there.
+
+   The reasoning is:
+
+   - for "assessment" standard requirements 158* and 159*: No risk values and no risk treatment decisions, as there is no item and therefore no damage scenarios and impact ratings; these are determined by the system integrator
 
 .. needextend:: "c.this_doc()"
    :+tags: security_analysis
