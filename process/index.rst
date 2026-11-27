@@ -65,7 +65,7 @@ Management
    :class-container: score-grid
 
    .. grid-item-card::
-      :class-card: card-ml2
+      :class-card: card-ml3
 
       :ref:`Platform Management <platform_management>`
       ^^^
@@ -93,7 +93,7 @@ Management
       Define and monitor quality objectives, measures and improvements.
 
    .. grid-item-card::
-      :class-card: card-ml2
+      :class-card: card-ml3
 
       :ref:`Change Management <change_management>`
       ^^^
@@ -107,14 +107,14 @@ Management
       Identify, analyse and resolve problems found during development.
 
    .. grid-item-card::
-      :class-card: card-ml2
+      :class-card: card-ml3
 
       :ref:`Release Management <release_management>`
       ^^^
       Plan, prepare and control the release of deliverables.
 
    .. grid-item-card::
-      :class-card: card-ml2
+      :class-card: card-ml3
 
       :ref:`Process Management <process_management>`
       ^^^
@@ -175,7 +175,7 @@ Support
    :class-container: score-grid
 
    .. grid-item-card::
-      :class-card: card-ml2
+      :class-card: card-ml3
 
       :ref:`Configuration Management <process_configuration_management>`
       ^^^
