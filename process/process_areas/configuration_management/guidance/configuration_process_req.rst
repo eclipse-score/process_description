@@ -49,7 +49,7 @@ Configuration Management Process Requirements
    :id: gd_req__config_pull_request_storage
    :status: valid
    :version: 1
-   :tags: prio_2_automation, config_mgt
+   :tags: prio_3_automation, config_mgt
    :complies: std_req__iso26262__support_6433[version==1], std_req__iso26262__software_7414[version==1]
    :satisfies: wf__monitor_verify_requirements[version==1], wf__mr_vy_arch[version==1]
 
@@ -62,7 +62,7 @@ Configuration Management Process Requirements
    :id: gd_req__config_baseline_diff
    :status: valid
    :version: 1
-   :tags: prio_2_automation, config_mgt
+   :tags: done_automation, config_mgt
    :complies: std_req__iso26262__support_741[version==1]
    :satisfies: wf__rel_platform_rel_note[version==1], wf__rel_mod_rel_note[version==1]
 
@@ -74,7 +74,7 @@ Configuration Management Process Requirements
    :id: gd_req__config_consistent_attributes
    :status: valid
    :version: 1
-   :tags: prio_2_automation
+   :tags: done_automation
    :complies: std_req__aspice_40__SUP-8-BP3[version==1], std_req__aspice_40__SUP-8-BP4[version==1]
    :satisfies: wf__platform_cr_mt_platform_mgmt_plan[version==1]
 
