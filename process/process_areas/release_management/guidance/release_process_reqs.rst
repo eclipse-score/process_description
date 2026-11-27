@@ -19,7 +19,7 @@ Process Requirements
    :id: gd_req__release_note
    :status: valid
    :version: 1
-   :tags: prio_2_automation, release_management
+   :tags: done_automation, release_management
    :satisfies: wf__rel_platform_rel_note[version==1], wf__rel_mod_rel_note[version==1]
    :complies: std_req__iso26262__management_64134[version==1], std_req__iso26262__management_64135[version==1], std_req__aspice_40__SUP-8-BP7[version==1]
 
