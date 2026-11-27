@@ -32,6 +32,7 @@ For a detailed explanation of workflows and their role within the process model,
    :has: doc_concept__security_management_process[version==1], doc_getstrt__security_management_process[version==1]
 
    | The Security Manager is responsible for the planning and coordination of the security activities for the platform/module.
+   | For each item or component the Security Manager determines whether it is cybersecurity relevant, and whether it is a new development or a reuse.
    | The Security Manager creates and maintains the Security Plan.
    | For this a template exists to guide the creator of the Security Plan.
 

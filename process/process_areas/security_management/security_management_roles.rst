@@ -50,7 +50,7 @@ Roles
 
    * Creates and maintains following security artifacts at platform level: Platform Security Plan, Platform Security Package, Platform Security Manual, Platform SBOM
    * Approves following security artifacts at module: Module Security Plan, Module Security Package, Module Security Manual, Module SBOM
-   * Verifies, that the preconditions for the "release for production", which are  part of the release notes, are fulfilled, and the correctness, completeness and consistency of the release notes
+   * Verifies, that the preconditions for the "release for post-development", which are  part of the release notes, are fulfilled, and the correctness, completeness and consistency of the release notes
    * Supports reporting of security related project status
    * Reports security weaknesses, vulnerabilities
    * Coaches the project team w.r.t all questions related to security

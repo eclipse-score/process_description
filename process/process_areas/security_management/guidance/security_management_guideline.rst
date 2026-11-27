@@ -134,10 +134,15 @@ Security Management Guideline
    Any unspecified functions, such as code for debugging or instrumentation, must either be deactivated
    or removed prior to release, unless their presence does not affect security compliance.
 
-   **Scheduling of Reviews, Audit and Assessment:**
+   **Scheduling of Reviews and Audit:**
 
    Scheduling is done in the same way as for all work products definition by issues.
    The respective work products are :need:`wp__fdr_reports_security`,  and  :need:`wp__audit_report_security`
+
+   **Cybersecurity Assessment:**
+
+   No cybersecurity assessment is planned, see :need:`gd_guidl__security_tailored`.
+   The formal document reviews, the security audit and the security analyses are not a cybersecurity assessment.
 
 
    **Planning of Security Analyses:**
@@ -196,8 +201,30 @@ Security Management Guideline
    :complies: std_req__isosae21434__prj_management_6471[version==1]
 
    The Security Package shall be generated progressively and automatically compiling the work products.
-   One of the checks to perform on the platform safety package is to check completeness of the
+   One of the checks to perform on the platform security package is to check completeness of the
    process compliance to standards, which can be seen from standard linkage charts in :ref:`external_standards`.
+
+.. gd_guidl:: Security Mgt Tailored
+   :id: gd_guidl__security_tailored
+   :status: valid
+   :version: 1
+   :complies: std_req__isosae21434__prj_management_6481[version==1],
+              std_req__isosae21434__prj_management_6482[version==1],
+              std_req__isosae21434__prj_management_6483[version==1],
+              std_req__isosae21434__prj_management_6484[version==1],
+              std_req__isosae21434__prj_management_6485[version==1],
+              std_req__isosae21434__prj_management_6486[version==1],
+              std_req__isosae21434__prj_management_6487[version==1],
+              std_req__isosae21434__prj_management_6488[version==1],
+              std_req__isosae21434__prj_management_6489[version==1]
+
+   This part of the guideline links to all the requirements which are not fulfilled by the
+   security management process. Make sure these are tailored out in the safety/security/quality plans
+   for your project (documented in the PMP). Reasoning given below must be confirmed there.
+
+   The reasoning is:
+
+   - for "prj_management" standard requirements 648*: No cybersecurity assessment planned, as also no finalized cybersecurity case is planned
 
 .. needextend:: "c.this_doc()"
    :+tags: security_management

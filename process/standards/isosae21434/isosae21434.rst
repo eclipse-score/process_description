@@ -239,6 +239,51 @@ Clause 6: Project dependent cybersecurity management
        :status: valid
        :version: 1
 
+   .. std_req:: prj_management_6481
+       :id: std_req__isosae21434__prj_management_6481
+       :status: valid
+       :version: 1
+
+   .. std_req:: prj_management_6482
+       :id: std_req__isosae21434__prj_management_6482
+       :status: valid
+       :version: 1
+
+   .. std_req:: prj_management_6483
+       :id: std_req__isosae21434__prj_management_6483
+       :status: valid
+       :version: 1
+
+   .. std_req:: prj_management_6484
+       :id: std_req__isosae21434__prj_management_6484
+       :status: valid
+       :version: 1
+
+   .. std_req:: prj_management_6485
+       :id: std_req__isosae21434__prj_management_6485
+       :status: valid
+       :version: 1
+
+   .. std_req:: prj_management_6486
+       :id: std_req__isosae21434__prj_management_6486
+       :status: valid
+       :version: 1
+
+   .. std_req:: prj_management_6487
+       :id: std_req__isosae21434__prj_management_6487
+       :status: valid
+       :version: 1
+
+   .. std_req:: prj_management_6488
+       :id: std_req__isosae21434__prj_management_6488
+       :status: valid
+       :version: 1
+
+   .. std_req:: prj_management_6489
+       :id: std_req__isosae21434__prj_management_6489
+       :status: valid
+       :version: 1
+
    .. std_req:: prj_management_6491
        :id: std_req__isosae21434__prj_management_6491
        :status: valid

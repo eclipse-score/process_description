@@ -22,8 +22,7 @@ Security Management Work Products
    :complies: std_wp__isosae21434__prj_management_651[version==1],
               std_wp__isosae21434__maintenance_13331[version==1],
               std_wp__isosae21434__continual_8331[version==1],
-              std_wp__isosae21434__continual_8332[version==1],
-              std_wp__isosae21434__prj_management_653[version==1]
+              std_wp__isosae21434__continual_8332[version==1]
 
    Plan to manage and guide the execution of the security activities of a project including dates, milestones, tasks, deliverables, responsibilities (including the Security Manager appointment)  and resources.
 
